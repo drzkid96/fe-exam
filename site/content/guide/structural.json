@@ -61,7 +61,17 @@
      "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
      "note": "The official list of topics and question counts."
     }
-   ]
+   ],
+   "tips": {
+    "from": "Mark Mattson, FE Structural Analysis Review Session 2022",
+    "url": "https://www.youtube.com/watch?v=a0b8GrswZIM",
+    "items": [
+     "At a pin joining two members, the forces on the two members are equal and opposite.",
+     "Do not forget the moment. A fixed support and a cut through a beam both carry a moment as well as forces.",
+     "Fixed-end moments for standard loads are in the handbook; for a point load they are P a b^{2} / L^{2} and P a^{2} b / L^{2}.",
+     "If an answer is off by a factor of 1,000 or 12, the units are the first thing to check."
+    ]
+   }
   },
   {
    "id": "structural-a-lesson",

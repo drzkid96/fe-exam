@@ -56,7 +56,20 @@
      "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
      "note": "The official list of topics and question counts."
     }
-   ]
+   ],
+   "tips": {
+    "from": "Mark Mattson, FE Water Resources Engineering Review Session 2022",
+    "url": "https://www.youtube.com/watch?v=-M2hNo1RC98",
+    "items": [
+     "In the rational formula, inches per hour times acres gives cubic feet per second directly. The units look wrong, but the handbook formula is set up that way.",
+     "Know what initial abstraction covers in the NRCS method, since concept questions ask about it: the losses before runoff starts.",
+     "In Manning's equation the hydraulic radius is raised to the 2/3 power. Put the exponent in parentheses on the calculator.",
+     "To turn a pressure into a head, divide by the specific weight in matching units: 62.4 lb/ft^{3} goes with pounds per square foot.",
+     "When a formula needs a height or a head, check which one: usually a difference between two levels.",
+     "Ultimate BOD from a five-day value: divide BOD_{5} by (1 - e^{-k t}).",
+     "Hardness, softening and flow regime (Froude number) are worth knowing; recent examinees reported them."
+    ]
+   }
   },
   {
    "id": "water-a-lesson",

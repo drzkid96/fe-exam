@@ -48,7 +48,22 @@
      "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
      "note": "The official list of topics and question counts."
     }
-   ]
+   ],
+   "tips": {
+    "from": "Mark Mattson, FE Statics Review Session 2022",
+    "url": "https://www.youtube.com/watch?v=VDflcZZkB30",
+    "items": [
+     "Write your sign convention on the page before summing anything (for example up positive, counter-clockwise positive) and keep it for the whole problem.",
+     "Draw the free-body diagram every time, even when the problem looks short.",
+     "A mass is not a force. Multiply kilograms by 9.81 to get newtons, and watch N against kN.",
+     "Carry the digits. Do not round an intermediate value toward an answer choice that looks close.",
+     "Read the whole question first; what it asks for is often not the first thing you would solve for.",
+     "In the method of joints, draw each member force's x and y components separately so they are not mixed up.",
+     "For a composite moment of inertia, split the section into simple shapes and use the parallel axis theorem. Do not swap in an 'equivalent' rectangle, because the A d^{2} term dominates.",
+     "On an incline, line the axes up with the surface.",
+     "Know the common unit conversions by heart; looking them up costs time."
+    ]
+   }
   },
   {
    "id": "statics-a-lesson",

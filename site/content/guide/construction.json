@@ -48,7 +48,20 @@
      "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
      "note": "The official list of topics and question counts."
     }
-   ]
+   ],
+   "tips": {
+    "from": "Mark Mattson, FE Construction Engineering Review Session 2022",
+    "url": "https://www.youtube.com/watch?v=2Q_UvBAJxIs",
+    "items": [
+     "Indemnification means one party agrees to cover another's losses from claims, usually including legal fees.",
+     "The pre-construction conference comes after award. A meeting before award is a different thing.",
+     "Submittals are product data, shop drawings and samples.",
+     "Trenches kill. OSHA requires a protective system at 5 ft (1.5 m) depth or more, and a competent person must inspect the excavation.",
+     "The engineer does not direct the contractor's means and methods. Work that does not conform is rejected through the owner.",
+     "Earned value is the budgeted cost of the work actually performed, not what was spent.",
+     "In a takeoff, convert inches to feet before multiplying."
+    ]
+   }
   },
   {
    "id": "construction-a-lesson",

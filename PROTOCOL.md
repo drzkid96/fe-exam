@@ -68,7 +68,7 @@ Progress can be reset for everything (Setup), for one topic (the topic page) or 
 
 ## Outside sources
 
-Each topic overview links to free outside material: Mark Mattson's 2022 FE review sessions (video and problem set per topic), the Marshall University FE review lectures, Texas A&M's FE review page and the NCEES specification. These are links only. The lesson text is original and nothing from those sources is copied. The video links were taken from the EngineerOnUp exam prep page and have not been opened to confirm them; YouTube pages and transcripts could not be read from the build session.
+Each topic overview links to free outside material: Mark Mattson's 2022 FE review sessions (video and problem set per topic), the Marshall University FE review lectures, Texas A&M's FE review page and the NCEES specification. These are links only. The lesson text is original and nothing from those sources is copied. Six topic overviews (statics, mechanics of materials, water, structural, geotechnical, construction) also carry a short list of points the instructor stresses in those sessions. They were written in this site's own words after reading the session transcripts through the owner's browser, and each list names and links its source. The video links for math, statics, mechanics of materials, water, structural analysis, geotechnical, transportation and construction were opened and confirmed; the transportation link is only the first part of that session. The other six were taken from the EngineerOnUp exam prep page and not opened.
 
 In the exam the handbook is searched with the search box beside the reference, not with Ctrl+F, so the site says "search the handbook for".
 

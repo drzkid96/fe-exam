@@ -1,0 +1,184 @@
+{
+ "topic": "dynamics",
+ "sections": [
+  {
+   "id": "dynamics-overview",
+   "subtopic": null,
+   "title": "Start here",
+   "body": "Dynamics is statics with motion added. Forces that do not cancel make things speed up, slow down or turn.\n\nThere are three ways in: follow position, speed and acceleration through time; balance force against mass times acceleration; or track energy from start to finish. Energy is usually the fastest when the question does not ask about time.",
+   "formulas": [],
+   "pitfalls": [
+    "Using an energy method when the question asks for time, or a time method when it asks only for final speed.",
+    "Forgetting that friction acts against the direction of motion."
+   ],
+   "read": [
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Dynamics, pages 114–129"
+    },
+    {
+     "source": "Lindeburg review manual, file 2 of 3",
+     "where": "Topic VIII, Dynamics"
+    }
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "dynamics-a-lesson",
+   "subtopic": "dynamics-a",
+   "title": "Kinematics",
+   "body": "Kinematics describes motion without asking what causes it. Position, velocity and acceleration are linked: velocity is how fast position changes, and acceleration is how fast velocity changes.\n\nWith constant acceleration, three equations cover everything. For a projectile, treat horizontal and vertical motion separately: horizontal speed is constant, and vertical motion has gravity pulling down. On a curved path there is acceleration toward the centre even at steady speed. Spinning bodies follow the same equations with angle, angular velocity and angular acceleration.",
+   "formulas": [
+    {
+     "name": "Velocity",
+     "expr": "v = v_{0} + at",
+     "handbook": "Dynamics, p. 114–129"
+    },
+    {
+     "name": "Position",
+     "expr": "s = s_{0} + v_{0}t + \\frac{1}{2}at^{2}",
+     "handbook": "Dynamics, p. 114–129"
+    },
+    {
+     "name": "Without time",
+     "expr": "v^{2} = v_{0}^{2} + 2a(s - s_{0})",
+     "handbook": "Dynamics, p. 114–129"
+    },
+    {
+     "name": "Normal acceleration",
+     "expr": "a_{n} = \\frac{v^{2}}{r}",
+     "handbook": "Dynamics, p. 114–129"
+    },
+    {
+     "name": "Point on a rotating body",
+     "expr": "v = r × angular velocity",
+     "handbook": "Dynamics, p. 114–129"
+    }
+   ],
+   "pitfalls": [
+    "Mixing units, such as km/h with m/s^{2}.",
+    "Forgetting that deceleration is a negative acceleration."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A car brakes from 30 m/s at 6 m/s^{2}. How far does it travel before stopping?",
+    "steps": "0 = 30^{2} - 2(6)s, so s = \\frac{900}{12} = 75 m."
+   }
+  },
+  {
+   "id": "dynamics-b-lesson",
+   "subtopic": "dynamics-b",
+   "title": "Mass moments of inertia",
+   "body": "The mass moment of inertia is a body's resistance to being spun up or slowed down. It plays the role for rotation that mass plays for straight-line motion. It depends on how much mass there is and how far that mass sits from the axis.\n\nThe handbook lists values for common shapes about their centres. To use a different parallel axis, add the mass times the square of the distance between the axes.",
+   "formulas": [
+    {
+     "name": "Slender rod about its centre",
+     "expr": "I = \\frac{mL^{2}}{12}",
+     "handbook": "Dynamics, p. 114–129"
+    },
+    {
+     "name": "Slender rod about one end",
+     "expr": "I = \\frac{mL^{2}}{3}",
+     "handbook": "Dynamics, p. 114–129"
+    },
+    {
+     "name": "Solid disk or cylinder",
+     "expr": "I = \\frac{mr^{2}}{2}",
+     "handbook": "Dynamics, p. 114–129"
+    },
+    {
+     "name": "Parallel axis theorem",
+     "expr": "I = I_{c} + md^{2}",
+     "handbook": "Dynamics, p. 114–129"
+    }
+   ],
+   "pitfalls": [
+    "Confusing the mass moment of inertia (kg·m^{2}) with the area moment of inertia (mm^{4})."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A 4 kg rod is 1.5 m long. Find its moment of inertia about one end.",
+    "steps": "I = \\frac{4(1.5)^{2}}{3} = 3.0 kg·m^{2}."
+   }
+  },
+  {
+   "id": "dynamics-c-lesson",
+   "subtopic": "dynamics-c",
+   "title": "Force and acceleration",
+   "body": "Newton's second law says an unbalanced force makes a mass accelerate in the direction of that force. Draw a free body diagram exactly as in statics, but set the sum of forces equal to mass times acceleration instead of zero.\n\nChoose axes along and perpendicular to the motion. Friction acts against motion and equals the kinetic coefficient times the normal force. For rotation about a fixed axis, the sum of moments equals the moment of inertia times the angular acceleration.",
+   "formulas": [
+    {
+     "name": "Newton's second law",
+     "expr": "sum F = ma",
+     "handbook": "Dynamics, p. 114–129"
+    },
+    {
+     "name": "Rotation about a fixed axis",
+     "expr": "sum M = I × angular acceleration",
+     "handbook": "Dynamics, p. 114–129"
+    },
+    {
+     "name": "Kinetic friction",
+     "expr": "F = μ_{k}N",
+     "handbook": "Dynamics, p. 114–129"
+    },
+    {
+     "name": "Weight",
+     "expr": "W = mg",
+     "handbook": "Dynamics, p. 114–129"
+    }
+   ],
+   "pitfalls": [
+    "Using weight (N) where mass (kg) is needed, or the reverse.",
+    "Leaving out the component of weight along an incline."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A 10 kg block is pushed along a smooth floor by a 40 N force. Find its acceleration.",
+    "steps": "a = \\frac{F}{m} = \\frac{40}{10} = 4 m/s^{2}."
+   }
+  },
+  {
+   "id": "dynamics-d-lesson",
+   "subtopic": "dynamics-d",
+   "title": "Work, energy and power",
+   "body": "Work is force times the distance moved in the direction of the force. Energy is the ability to do work. Kinetic energy belongs to motion, and potential energy is stored in height or in a stretched spring.\n\nIf only gravity and springs act, total mechanical energy stays the same, so you can jump straight from the start to the finish without tracking time. Friction removes energy equal to the friction force times the distance. Power is the rate of doing work. Impulse and momentum handle impacts: force times time equals the change in mass times velocity.",
+   "formulas": [
+    {
+     "name": "Kinetic energy",
+     "expr": "KE = \\frac{1}{2}mv^{2}",
+     "handbook": "Dynamics, p. 114–129"
+    },
+    {
+     "name": "Potential energy of height",
+     "expr": "PE = mgh",
+     "handbook": "Dynamics, p. 114–129"
+    },
+    {
+     "name": "Spring energy",
+     "expr": "PE = \\frac{1}{2}kx^{2}",
+     "handbook": "Dynamics, p. 114–129"
+    },
+    {
+     "name": "Work-energy",
+     "expr": "work done = change in kinetic energy",
+     "handbook": "Dynamics, p. 114–129"
+    },
+    {
+     "name": "Power",
+     "expr": "P = Fv",
+     "handbook": "Dynamics, p. 114–129"
+    }
+   ],
+   "pitfalls": [
+    "Forgetting that speed is squared in kinetic energy: doubling speed quadruples the energy.",
+    "Using energy methods when the question asks for time."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A 1,000 kg car moving at 20 m/s brakes to a stop. How much energy do the brakes absorb?",
+    "steps": "KE = \\frac{1}{2}(1,000)(20)^{2} = 200,000 J = 200 kJ."
+   }
+  }
+ ]
+}

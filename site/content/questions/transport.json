@@ -1,0 +1,696 @@
+[
+ {
+  "id": "transport-0001",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A vehicle travels at 60 mph on a level road. Using a perception-reaction time of 2.5 s and a deceleration rate of 11.2 ft/s^{2}, what is the stopping sight distance?",
+  "options": [
+   {
+    "id": "a",
+    "text": "221 ft"
+   },
+   {
+    "id": "b",
+    "text": "345 ft"
+   },
+   {
+    "id": "c",
+    "text": "566 ft"
+   },
+   {
+    "id": "d",
+    "text": "680 ft"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Stopping takes two stretches of road: the distance you cover while you notice the problem and move your foot, then the distance you cover while braking.",
+  "solution": "Reaction distance = 1.47Vt = 1.47(60)(2.5) = 220.5 ft.\n\nBraking distance = \\frac{V^{2}}{30(a / 32.2)} = \\frac{60^{2}}{30(0.348)} = 345 ft.\n\nSSD = 220.5 + 345 = 566 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "stopping sight distance",
+   "geometric design"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "transport-0002",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "What is the minimum radius of a horizontal curve for a design speed of 50 mph, with a superelevation of 6% and a side friction factor of 0.14?",
+  "answer": {
+   "value": 833,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "A car on a curve wants to keep going straight. Banking the road and tyre grip hold it in. The faster the design speed, the gentler the curve has to be.",
+  "solution": "R = \\frac{V^{2}}{15(e + f)} = \\frac{50^{2}}{15(0.06 + 0.14)} = \\frac{2,500}{3.0} = 833 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "horizontal curve",
+   "superelevation"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "transport-0003",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "Traffic in a freeway lane has a density of 40 veh/mi and a space mean speed of 45 mph. What is the flow rate?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1.1 veh/h"
+   },
+   {
+    "id": "b",
+    "text": "85 veh/h"
+   },
+   {
+    "id": "c",
+    "text": "900 veh/h"
+   },
+   {
+    "id": "d",
+    "text": "1,800 veh/h"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Flow is how many cars pass you each hour. It depends on how tightly packed the cars are and how fast the pack is moving.",
+  "solution": "Flow = density × speed = 40(45) = 1,800 veh/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "traffic flow",
+   "density",
+   "speed"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "transport-0004",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "An intersection approach carries 1,200 vehicles in the peak hour. The busiest 15 minutes of that hour carries 375 vehicles. What is the peak hour factor?",
+  "answer": {
+   "value": 0.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Traffic within the busiest hour is not even. The peak hour factor compares the real hour with an hour in which every quarter is as busy as the worst one.",
+  "solution": "PHF = \\frac{hourly volume}{4 × peak 15-minute volume} = \\frac{1,200}{4(375)} = 0.80.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "peak hour factor"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "transport-0005",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A crest vertical curve connects a +3% grade to a -2% grade and is 500 ft long. How far from the start of the curve (PVC) is the high point?",
+  "options": [
+   {
+    "id": "a",
+    "text": "200 ft"
+   },
+   {
+    "id": "b",
+    "text": "250 ft"
+   },
+   {
+    "id": "c",
+    "text": "300 ft"
+   },
+   {
+    "id": "d",
+    "text": "333 ft"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Going over a hill, the road climbs less and less steeply, is flat for an instant at the top, then starts down. The top sits closer to the gentler side.",
+  "solution": "The slope changes evenly from +3% to -2% over 500 ft. It reaches zero after the fraction \\frac{3}{3 + 2} of the length.\n\nx = \\frac{g_{1}L}{g_{1} - g_{2}} = \\frac{3(500)}{3 - (-2)} = 300 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "vertical curve",
+   "high point"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "transport-0006",
+  "topic": "transport",
+  "subtopic": "transport-d",
+  "format": "multi",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Which of these are regulatory signs under the MUTCD? Select the three that apply.",
+  "selectCount": 3,
+  "options": [
+   {
+    "id": "a",
+    "text": "STOP sign"
+   },
+   {
+    "id": "b",
+    "text": "Speed Limit sign"
+   },
+   {
+    "id": "c",
+    "text": "Curve sign on a yellow diamond"
+   },
+   {
+    "id": "d",
+    "text": "YIELD sign"
+   },
+   {
+    "id": "e",
+    "text": "Street name sign"
+   }
+  ],
+  "answer": [
+   "a",
+   "b",
+   "d"
+  ],
+  "eli5": "Regulatory signs give orders you can be ticketed for ignoring. Warning signs give a heads-up. Guide signs help you find your way.",
+  "solution": "STOP, YIELD and Speed Limit signs state traffic laws, so they are regulatory.\n\nA curve sign on a yellow diamond is a warning sign. A street name sign is a guide sign.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "mutcd",
+   "regulatory signs",
+   "traffic control devices"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "MUTCD Part 2: Chapter 2B regulatory signs (STOP R1-1, YIELD R1-2, Speed Limit R2-1), Chapter 2C warning signs, Chapter 2D guide signs"
+  }
+ },
+ {
+  "id": "transport-0007",
+  "topic": "transport",
+  "subtopic": "transport-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A flexible pavement has 4 in of asphalt (layer coefficient 0.44), 8 in of base (0.14) and 10 in of subbase (0.11). Drainage coefficients are 1.0. What is the structural number?",
+  "answer": {
+   "value": 3.98,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The structural number adds up the layers, giving more credit per inch to the stronger materials.",
+  "solution": "SN = a_{1}D_{1} + a_{2}D_{2}m_{2} + a_{3}D_{3}m_{3} = 0.44(4) + 0.14(8)(1.0) + 0.11(10)(1.0) = 1.76 + 1.12 + 1.10 = 3.98.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "transport-0008",
+  "topic": "transport",
+  "subtopic": "transport-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "Using the correlation M_{R} = 1,500 × CBR (psi), what is the resilient modulus of a subgrade with a CBR of 6?",
+  "options": [
+   {
+    "id": "a",
+    "text": "900 psi"
+   },
+   {
+    "id": "b",
+    "text": "4,000 psi"
+   },
+   {
+    "id": "c",
+    "text": "9,000 psi"
+   },
+   {
+    "id": "d",
+    "text": "15,000 psi"
+   }
+  ],
+  "answer": "c",
+  "eli5": "CBR is a quick test of how firm the subgrade is. A simple multiplier turns it into the stiffness value that pavement design needs.",
+  "solution": "M_{R} = 1,500(6) = 9,000 psi.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "transport-0009",
+  "topic": "transport",
+  "subtopic": "transport-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A highway lane carries 500 equivalent single axle loads (ESALs) per day with no growth. How many ESALs does it carry over a 20-year design life?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.18 million"
+   },
+   {
+    "id": "b",
+    "text": "3.65 million"
+   },
+   {
+    "id": "c",
+    "text": "10 million"
+   },
+   {
+    "id": "d",
+    "text": "36.5 million"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Pavement wears out from the total number of heavy axle passes over its life, so add up every day for the whole design period.",
+  "solution": "Total = 500 × 365 × 20 = 3,650,000 = 3.65 million ESALs.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "transport-0010",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A signalized approach has two lanes, each with a saturation flow rate of 1,900 veh/h. The approach gets 40 s of effective green in a 100 s cycle. What is its capacity?",
+  "answer": {
+   "value": 1520,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "veh/h"
+  },
+  "eli5": "Cars can only leave the stop line while the light is green. Capacity is what the lanes could discharge nonstop, scaled by the share of time they get green.",
+  "solution": "Capacity = saturation flow × lanes × \\frac{g}{C} = 1,900(2)(\\frac{40}{100}) = 1,520 veh/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "transport-0011",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A road follows the Greenshields model with a free-flow speed of 60 mph and a jam density of 120 veh/mi. What is its capacity?",
+  "options": [
+   {
+    "id": "a",
+    "text": "900 veh/h"
+   },
+   {
+    "id": "b",
+    "text": "1,800 veh/h"
+   },
+   {
+    "id": "c",
+    "text": "3,600 veh/h"
+   },
+   {
+    "id": "d",
+    "text": "7,200 veh/h"
+   }
+  ],
+  "answer": "b",
+  "eli5": "An empty road moves fast but carries few cars. A jammed road is full but nothing moves. The most cars get through halfway between.",
+  "solution": "Maximum flow occurs at half the free-flow speed and half the jam density.\n\nq_{max} = \\frac{v_{f}k_{j}}{4} = \\frac{60(120)}{4} = 1,800 veh/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "transport-0012",
+  "topic": "transport",
+  "subtopic": "transport-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A signal approach has a speed of 30 mph (44 ft/s) on level ground. Using a perception-reaction time of 1.0 s and a deceleration rate of 10 ft/s^{2}, what yellow change interval is needed?",
+  "answer": {
+   "value": 3.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "s"
+  },
+  "eli5": "The yellow has to last long enough for a driver who is too close to stop to keep going and reach the intersection.",
+  "solution": "y = t + \\frac{v}{2a} = 1.0 + \\frac{44}{2(10)} = 3.2 s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "transport-0013",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A subdivision has 250 single-family homes. The trip generation rate is 9.4 trips per dwelling unit per day. How many daily trips does it generate?",
+  "options": [
+   {
+    "id": "a",
+    "text": "27"
+   },
+   {
+    "id": "b",
+    "text": "235"
+   },
+   {
+    "id": "c",
+    "text": "2,350"
+   },
+   {
+    "id": "d",
+    "text": "23,500"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Trip generation is a head count of journeys. Multiply the number of homes by how many trips a typical home makes.",
+  "solution": "Trips = 250 × 9.4 = 2,350 per day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "transport-0014",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "An intersection has 12 crashes in one year. Its entering volume is 20,000 vehicles per day. What is the crash rate per million entering vehicles?",
+  "answer": {
+   "value": 1.64,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "per MEV"
+  },
+  "eli5": "Busy intersections have more crashes simply because more cars pass through. A rate lets you compare a busy one fairly with a quiet one.",
+  "solution": "Rate = \\frac{crashes × 10^{6}}{ADT × 365} = \\frac{12 × 10^{6}}{20,000(365)} = 1.64 crashes per million entering vehicles.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "transport-0015",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A logit mode choice model gives a utility of -0.5 for auto and -1.5 for bus. What share of travellers choose the bus?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.25"
+   },
+   {
+    "id": "b",
+    "text": "0.27"
+   },
+   {
+    "id": "c",
+    "text": "0.33"
+   },
+   {
+    "id": "d",
+    "text": "0.73"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Each choice gets a score. People mostly pick the better score, but not everyone, and the model turns the scores into shares.",
+  "solution": "P(bus) = \\frac{e^{-1.5}}{e^{-0.5} + e^{-1.5}} = \\frac{0.223}{0.607 + 0.223} = 0.27.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "transport-0016",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A horizontal curve has a radius of 1,000 ft and a deflection angle of 30°. What is the length of the curve?",
+  "options": [
+   {
+    "id": "a",
+    "text": "261.8 ft"
+   },
+   {
+    "id": "b",
+    "text": "523.6 ft"
+   },
+   {
+    "id": "c",
+    "text": "1,047 ft"
+   },
+   {
+    "id": "d",
+    "text": "30,000 ft"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A curve is a slice of a circle. Its length is the radius times the angle it turns through, with the angle in radians.",
+  "solution": "L = R × angle in radians = 1,000(30 × \\frac{π}{180}) = 523.6 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "transport-0017",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "For the same curve (radius 1,000 ft, deflection angle 30°), what is the tangent length from the PC to the PI?",
+  "answer": {
+   "value": 267.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "The two straight roads would meet at a corner, the PI. The tangent length is how far back from that corner the curve begins.",
+  "solution": "T = R tan(\\frac{30°}{2}) = 1,000 tan 15° = 267.9 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "transport-0018",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A crest vertical curve joins grades of +2% and -3%. The design requires a rate of vertical curvature K of 150. What minimum curve length is needed?",
+  "options": [
+   {
+    "id": "a",
+    "text": "30 ft"
+   },
+   {
+    "id": "b",
+    "text": "150 ft"
+   },
+   {
+    "id": "c",
+    "text": "750 ft"
+   },
+   {
+    "id": "d",
+    "text": "3,750 ft"
+   }
+  ],
+  "answer": "c",
+  "eli5": "K is the length of curve needed for each 1% change in grade. A bigger change in grade needs a longer curve to keep the hilltop from hiding the road ahead.",
+  "solution": "A = |2 - (-3)| = 5%.\n\nL = KA = 150(5) = 750 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ }
+]

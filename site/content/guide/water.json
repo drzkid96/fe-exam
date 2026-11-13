@@ -1,0 +1,388 @@
+{
+ "topic": "water",
+ "sections": [
+  {
+   "id": "water-overview",
+   "subtopic": null,
+   "title": "Start here",
+   "body": "This is the largest topic. It follows water from rain, across the land, through channels, pipes and pumps, into the ground, and through treatment before and after people use it.\n\nSplit it into three parts when studying: how much water there is (hydrology), how it moves (hydraulics) and how it is cleaned (treatment).",
+   "formulas": [],
+   "pitfalls": [
+    "Using the wrong form of Manning's equation: the SI form has no 1.49 factor.",
+    "Giving detention time in days when the options are in hours."
+   ],
+   "read": [
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Civil Engineering, pages 259–309"
+    },
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Environmental Engineering, pages 310–354"
+    },
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Fluid Mechanics, pages 177–203"
+    },
+    {
+     "source": "Lindeburg review manual, file 1 of 3",
+     "where": "Topic IV, Hydraulics and Hydrologic Systems, and Topic V, Environmental Engineering"
+    }
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "water-a-lesson",
+   "subtopic": "water-a",
+   "title": "Basic hydrology",
+   "body": "Hydrology follows rain from the sky to the stream. Some rain is caught by plants, some soaks in (infiltration), and the rest runs off. The share that runs off depends on the surface: pavement sheds nearly all of it, and forest very little.\n\nThe rational method estimates the peak flow from a small catchment using a runoff coefficient, the rainfall intensity for a storm lasting as long as the time of concentration, and the area. The NRCS curve number method estimates the depth of runoff from a storm. A hydrograph plots flow against time.",
+   "formulas": [
+    {
+     "name": "Rational method (USCS)",
+     "expr": "Q = CiA (cfs, in/h, acres)",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "NRCS storage",
+     "expr": "S = \\frac{1,000}{CN} - 10",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "NRCS runoff depth",
+     "expr": "Q = \\frac{(P - 0.2S)^{2}}{P + 0.8S}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Using a rainfall intensity for the wrong storm duration. It should match the time of concentration."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A 5 acre site with C = 0.4 receives rain at 3 in/h. Find the peak runoff.",
+    "steps": "Q = 0.4(3)(5) = 6 cfs."
+   }
+  },
+  {
+   "id": "water-b-lesson",
+   "subtopic": "water-b",
+   "title": "Basic hydraulics",
+   "body": "Open channels flow with a free surface, driven by gravity down the slope and resisted by friction on the bed and banks. Manning's equation gives the velocity from the roughness, the hydraulic radius (flow area divided by wetted perimeter) and the slope.\n\nSpecific energy is depth plus velocity head. Critical depth is the depth of least energy for a given flow. Flow shallower and faster than critical is supercritical; deeper and slower is subcritical. The Froude number tells which: below 1 is subcritical. A hydraulic jump is the abrupt change from supercritical to subcritical.",
+   "formulas": [
+    {
+     "name": "Manning's equation (SI)",
+     "expr": "V = \\frac{1}{n}R^{2/3}S^{1/2}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Hydraulic radius",
+     "expr": "R = \\frac{A}{P}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Critical depth, rectangular",
+     "expr": "y_{c} = (\\frac{q^{2}}{g})^{1/3}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Froude number",
+     "expr": "Fr = \\frac{V}{\\sqrt{gy}}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Including the free water surface in the wetted perimeter.",
+    "Using the USCS constant 1.49 with SI units."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A rectangular channel 2 m wide flows 0.5 m deep. Find its hydraulic radius.",
+    "steps": "A = 1.0 m^{2}. P = 2 + 2(0.5) = 3.0 m.\n\nR = \\frac{1.0}{3.0} = 0.333 m."
+   }
+  },
+  {
+   "id": "water-c-lesson",
+   "subtopic": "water-c",
+   "title": "Pumps",
+   "body": "A pump adds energy to water, measured as head: the height it could lift the water. The power delivered to the water is specific weight times flow times head. The motor must supply more than that because no pump is perfectly efficient.\n\nA pump curve shows the head a pump produces at each flow. The system curve shows the head the piping needs. They cross at the operating point. The affinity laws predict the effect of changing speed: flow changes in proportion, head with the square and power with the cube. Too little pressure at the inlet causes cavitation, so the available net positive suction head must exceed what the pump requires.",
+   "formulas": [
+    {
+     "name": "Water power",
+     "expr": "P = specific weight × Q × H",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Input power",
+     "expr": "P_{in} = \\frac{specific weight × Q × H}{efficiency}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Affinity laws",
+     "expr": "\\frac{Q_{2}}{Q_{1}} = \\frac{N_{2}}{N_{1}}, \\frac{H_{2}}{H_{1}} = (\\frac{N_{2}}{N_{1}})^{2}, \\frac{P_{2}}{P_{1}} = (\\frac{N_{2}}{N_{1}})^{3}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Multiplying by efficiency instead of dividing when finding input power."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A pump lifts 0.02 m^{3}/s through 25 m at 80% efficiency. Find the input power.",
+    "steps": "Water power = 9.81(0.02)(25) = 4.9 kW.\n\nInput = \\frac{4.9}{0.80} = 6.13 kW."
+   }
+  },
+  {
+   "id": "water-d-lesson",
+   "subtopic": "water-d",
+   "title": "Water distribution systems",
+   "body": "A distribution system delivers treated water at adequate pressure to every tap and hydrant. It is sized for demand that swings through the day and the year: average day, maximum day, peak hour, plus fire flow. Storage tanks even out the swings and keep pressure up by elevation.\n\nHead loss in pipes is found with the Hazen-Williams or Darcy-Weisbach equations. Pipes in series carry the same flow and their head losses add. Pipes in parallel share the flow so that the head loss is the same in each. Static pressure comes from the height of the water surface above the point.",
+   "formulas": [
+    {
+     "name": "Static pressure",
+     "expr": "p = specific weight × height",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Maximum-day demand",
+     "expr": "average demand × peaking factor",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Pipes in series",
+     "expr": "h_{total} = h_{1} + h_{2}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Pipes in parallel",
+     "expr": "Q_{total} = Q_{1} + Q_{2}, with h_{1} = h_{2}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Adding flows for pipes in series, or head losses for pipes in parallel."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A tank's water surface is 30 m above a tap. Find the static pressure at the tap.",
+    "steps": "p = 9.81(30) = 294 kPa."
+   }
+  },
+  {
+   "id": "water-e-lesson",
+   "subtopic": "water-e",
+   "title": "Flood control",
+   "body": "Floods are described by how often they are expected. A 100-year flood has a 1 in 100 chance of being equalled or exceeded in any year. It can happen two years running. Over a project's life, the chance of at least one such flood is far larger than the yearly chance.\n\nDams and reservoirs store flood water and release it slowly. Routing tracks a flood wave through a reservoir or river reach using inflow minus outflow equals change in storage. Spillways pass floods safely around a dam, and levees and floodways confine or divert the flow.",
+   "formulas": [
+    {
+     "name": "Annual exceedance probability",
+     "expr": "p = \\frac{1}{T}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Risk over n years",
+     "expr": "1 - (1 - p)^{n}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Storage routing",
+     "expr": "inflow - outflow = change in storage per unit time",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Reading a 100-year flood as one that comes exactly once a century."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "What is the chance of at least one 100-year flood during a 30-year mortgage?",
+    "steps": "Risk = 1 - (0.99)^{30} = 1 - 0.740 = 0.26, about one in four."
+   }
+  },
+  {
+   "id": "water-f-lesson",
+   "subtopic": "water-f",
+   "title": "Stormwater",
+   "body": "Development replaces soil and plants with roofs and pavement, so more rain runs off and it arrives faster. Stormwater design limits the damage. Detention basins hold runoff and release it slowly, cutting the peak. Retention basins hold it until it soaks in or evaporates.\n\nBasin sizing is a bookkeeping exercise: storage rises when inflow exceeds outflow. Water quality practices such as swales, filters and settling capture the first flush, which carries most of the pollutants.",
+   "formulas": [
+    {
+     "name": "Storage change",
+     "expr": "change in storage = (inflow - outflow) × time",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Rational peak flow",
+     "expr": "Q = CiA",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Forgetting to convert minutes to seconds."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A basin receives 2.5 m^{3}/s and releases 0.5 m^{3}/s for 15 minutes. Find the volume stored.",
+    "steps": "Storage = (2.5 - 0.5)(900 s) = 1,800 m^{3}."
+   }
+  },
+  {
+   "id": "water-g-lesson",
+   "subtopic": "water-g",
+   "title": "Collection systems",
+   "body": "Sewers carry wastewater and stormwater by gravity in pipes that usually flow partly full. They are designed like open channels with Manning's equation. The slope must give enough velocity to keep solids moving, typically at least 0.6 m/s (2 ft/s) when flowing full.\n\nDesign flow is the average flow times a peaking factor, plus an allowance for groundwater and rain leaking in (infiltration and inflow). For a circular pipe flowing full, the hydraulic radius is a quarter of the diameter.",
+   "formulas": [
+    {
+     "name": "Manning's equation",
+     "expr": "V = \\frac{1}{n}R^{2/3}S^{1/2}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Full circular pipe",
+     "expr": "R = \\frac{D}{4}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Peak flow",
+     "expr": "average flow × peaking factor",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Using the diameter as the hydraulic radius."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A sewer serves 5,000 people at 250 L per person per day with a peaking factor of 3.5. Find the peak flow in L/s.",
+    "steps": "Average = \\frac{5,000(250)}{86,400} = 14.5 L/s.\n\nPeak = 3.5(14.5) = 50.6 L/s."
+   }
+  },
+  {
+   "id": "water-h-lesson",
+   "subtopic": "water-h",
+   "title": "Groundwater",
+   "body": "Groundwater fills the gaps between soil grains below the water table. An aquifer is a layer that holds and passes useful amounts of water. Darcy's law says flow is proportional to the hydraulic conductivity of the soil and the slope of the water table (the hydraulic gradient).\n\nThe Darcy velocity is the flow per unit of total cross-section. The water itself moves faster because it only travels through the pores: divide by porosity for the seepage velocity. Pumping a well draws the water table down into a cone of depression.",
+   "formulas": [
+    {
+     "name": "Darcy's law",
+     "expr": "Q = KiA",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Hydraulic gradient",
+     "expr": "i = \\frac{head difference}{flow length}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Seepage velocity",
+     "expr": "v_{s} = \\frac{Ki}{porosity}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Unconfined well",
+     "expr": "Q = \\frac{π K(h_{2}^{2} - h_{1}^{2})}{ln(r_{2}/r_{1})}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Confusing Darcy velocity with seepage velocity."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "An aquifer has K = 20 m/day. Heads at two wells 500 m apart differ by 2 m. Find the Darcy velocity.",
+    "steps": "i = \\frac{2}{500} = 0.004.\n\nv = Ki = 20(0.004) = 0.08 m/day."
+   }
+  },
+  {
+   "id": "water-i-lesson",
+   "subtopic": "water-i",
+   "title": "Water quality",
+   "body": "Water quality is described by what is dissolved or suspended in the water. Dissolved oxygen keeps streams alive. Biochemical oxygen demand (BOD) is the oxygen that bacteria use up while breaking down organic waste: high BOD starves a stream of oxygen.\n\nHardness is mainly calcium and magnesium and is reported as an equivalent amount of calcium carbonate. Alkalinity is the water's capacity to neutralize acid. pH measures acidity. Turbidity measures cloudiness. Concentrations convert to equivalents by dividing by the equivalent weight.",
+   "formulas": [
+    {
+     "name": "BOD from a diluted sample",
+     "expr": "BOD = \\frac{DO_{initial} - DO_{final}}{dilution fraction}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "BOD exerted over time",
+     "expr": "BOD_{t} = L(1 - e^{-kt})",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "As CaCO_{3}",
+     "expr": "mg/L × \\frac{50}{equivalent weight}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Forgetting to divide by the dilution fraction."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A 10 mL sample diluted to 300 mL loses 4.0 mg/L of dissolved oxygen in five days. Find the BOD_{5}.",
+    "steps": "Dilution fraction = \\frac{10}{300}.\n\nBOD_{5} = \\frac{4.0}{10/300} = 120 mg/L."
+   }
+  },
+  {
+   "id": "water-j-lesson",
+   "subtopic": "water-j",
+   "title": "Testing and standards",
+   "body": "Standards set the limits that water, wastewater, air and noise must meet, and standard tests check compliance. For drinking water, the maximum contaminant level (MCL) is the enforceable limit and the MCLG is the health goal. Wastewater discharges are limited by permit for BOD, suspended solids and other measures.\n\nAir quality standards limit pollutants such as particulates and ozone. Noise is measured in decibels, a logarithmic scale: two equal sources together are 3 dB louder than one, and ten are 10 dB louder.",
+   "formulas": [
+    {
+     "name": "Combining sound levels",
+     "expr": "L = 10 log(sum of 10^{L_{i}/10})",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Mass loading",
+     "expr": "mass per day = concentration × flow",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Adding decibel values directly."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Three identical machines each produce 70 dB. Find the combined level.",
+    "steps": "L = 10 log(3 × 10^{7}) = 74.8 dB."
+   }
+  },
+  {
+   "id": "water-k-lesson",
+   "subtopic": "water-k",
+   "title": "Water and wastewater treatment",
+   "body": "Drinking water treatment removes particles and kills germs. Coagulation and flocculation make fine particles clump, sedimentation lets the clumps settle, filtration strains out the rest, and disinfection kills what remains. Softening removes hardness.\n\nWastewater treatment removes solids and organic matter. Primary treatment settles solids. Secondary treatment uses bacteria, as in activated sludge, to consume dissolved organic matter. Tanks are sized by detention time (volume over flow) and by surface overflow rate (flow over surface area). Chemical feed is dose times flow.",
+   "formulas": [
+    {
+     "name": "Detention time",
+     "expr": "t = \\frac{V}{Q}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Surface overflow rate",
+     "expr": "\\frac{Q}{surface area}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Chemical feed",
+     "expr": "mass per day = dose × Q",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Removal efficiency",
+     "expr": "\\frac{in - out}{in} × 100",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Leaving detention time in days when hours are asked.",
+    "A dose of 1 mg/L equals 1 g/m^{3}, or 1 kg per 1,000 m^{3}."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A 600 m^{3} tank treats 4,800 m^{3}/day. Find the detention time in hours.",
+    "steps": "t = \\frac{600}{4,800} = 0.125 day = 3.0 h."
+   }
+  }
+ ]
+}

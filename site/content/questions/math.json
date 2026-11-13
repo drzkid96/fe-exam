@@ -1,0 +1,711 @@
+[
+ {
+  "id": "math-0001",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A straight line passes through the points (2, 3) and (6, 11). What is its y-intercept?",
+  "options": [
+   {
+    "id": "a",
+    "text": "-3"
+   },
+   {
+    "id": "b",
+    "text": "-1"
+   },
+   {
+    "id": "c",
+    "text": "1"
+   },
+   {
+    "id": "d",
+    "text": "2"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Slope is how much the line climbs for each step to the right. Find the slope, then walk the line back to x = 0 and see where it lands.",
+  "solution": "Slope m = \\frac{11 - 3}{6 - 2} = 2.\n\nUse y = mx + b at the point (2, 3): 3 = 2(2) + b, so b = -1.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62"
+   }
+  ],
+  "tags": [
+   "line",
+   "slope",
+   "intercept"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "math-0002",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Find the area between the curve y = 3x^{2} and the x-axis from x = 0 to x = 2.",
+  "answer": {
+   "value": 8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "square units"
+  },
+  "eli5": "Integration adds up thin vertical strips under the curve. The antiderivative is the running total, so you read it at the end and subtract what it was at the start.",
+  "solution": "The antiderivative of 3x^{2} is x^{3}.\n\nArea = 2^{3} - 0^{3} = 8.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62"
+   }
+  ],
+  "tags": [
+   "integral",
+   "area"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "math-0003",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Vectors **A** = 3**i** + 4**j** and **B** = 4**i** - 3**j** lie in the same plane. What is the angle between them?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0°"
+   },
+   {
+    "id": "b",
+    "text": "45°"
+   },
+   {
+    "id": "c",
+    "text": "60°"
+   },
+   {
+    "id": "d",
+    "text": "90°"
+   }
+  ],
+  "answer": "d",
+  "eli5": "The dot product measures how much two arrows point the same way. A dot product of zero means they share no direction at all: they meet at a right angle.",
+  "solution": "**A** · **B** = (3)(4) + (4)(-3) = 0.\n\ncos(angle) = \\frac{A · B}{|A||B|} = 0, so the angle is 90°.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62"
+   }
+  ],
+  "tags": [
+   "dot product",
+   "vectors"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "math-0004",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A sample of five measurements is 2, 4, 4, 6 and 9. What is the sample standard deviation?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2.37"
+   },
+   {
+    "id": "b",
+    "text": "2.65"
+   },
+   {
+    "id": "c",
+    "text": "5.60"
+   },
+   {
+    "id": "d",
+    "text": "7.00"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Standard deviation is the typical distance of each value from the average. For a sample you divide by one less than the count, because a small sample tends to understate the spread.",
+  "solution": "Mean = \\frac{2 + 4 + 4 + 6 + 9}{5} = 5.\n\nSquared distances from the mean: 9, 1, 1, 1 and 16, which add to 28.\n\ns = \\sqrt{\\frac{28}{5 - 1}} = \\sqrt{7} = 2.65.\n\nDividing by 5 instead of 4 gives 2.37, which is the population value.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84"
+   }
+  ],
+  "tags": [
+   "standard deviation",
+   "statistics"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "math-0005",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "multi",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Which statements about a normal distribution are true? Select the two that apply.",
+  "selectCount": 2,
+  "options": [
+   {
+    "id": "a",
+    "text": "Its mean, median and mode are equal"
+   },
+   {
+    "id": "b",
+    "text": "About 68% of values fall within one standard deviation of the mean"
+   },
+   {
+    "id": "c",
+    "text": "It is skewed to the right"
+   },
+   {
+    "id": "d",
+    "text": "Its variance always equals its mean"
+   },
+   {
+    "id": "e",
+    "text": "It can only take positive values"
+   }
+  ],
+  "answer": [
+   "a",
+   "b"
+  ],
+  "eli5": "A normal distribution is the bell curve. It is perfectly balanced around its middle, and most values sit close to that middle.",
+  "solution": "The bell curve is symmetric with one peak, so its mean, median and mode are the same value. About 68% of values fall within one standard deviation of the mean.\n\nIt is not skewed, it extends to negative values, and its variance is a separate parameter from its mean.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84"
+   }
+  ],
+  "tags": [
+   "normal distribution",
+   "bell curve"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "FE Reference Handbook 10.0.1, Engineering Probability and Statistics, normal distribution. The 68% figure is also recomputed from the normal curve."
+  }
+ },
+ {
+  "id": "math-0006",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A circle has the equation x^{2} + y^{2} - 6x + 8y = 0. What is its radius?",
+  "options": [
+   {
+    "id": "a",
+    "text": "3"
+   },
+   {
+    "id": "b",
+    "text": "4"
+   },
+   {
+    "id": "c",
+    "text": "5"
+   },
+   {
+    "id": "d",
+    "text": "25"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Rearranging the equation shows where the centre is. The leftover number on the other side is the radius squared.",
+  "solution": "Complete the square: (x - 3)^{2} + (y + 4)^{2} = 9 + 16 = 25.\n\nRadius = \\sqrt{25} = 5.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62"
+   },
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "math-0007",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the straight-line distance between the points (1, 2) and (7, 10)?",
+  "answer": {
+   "value": 10,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "units"
+  },
+  "eli5": "Draw a right triangle between the two points. The distance is its long side.",
+  "solution": "d = \\sqrt{(7 - 1)^{2} + (10 - 2)^{2}} = \\sqrt{36 + 64} = 10.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62"
+   },
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "math-0008",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Two sides of a triangle are 5 m and 7 m long and meet at an angle of 60°. How long is the third side?",
+  "options": [
+   {
+    "id": "a",
+    "text": "4.36 m"
+   },
+   {
+    "id": "b",
+    "text": "6.24 m"
+   },
+   {
+    "id": "c",
+    "text": "8.60 m"
+   },
+   {
+    "id": "d",
+    "text": "10.44 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The law of cosines is the right-triangle rule with a correction for triangles that are not right-angled.",
+  "solution": "c^{2} = 5^{2} + 7^{2} - 2(5)(7) cos 60° = 25 + 49 - 35 = 39.\n\nc = \\sqrt{39} = 6.24 m.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62"
+   },
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "math-0009",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the slope of the curve y = x^{3} - 6x at x = 2?",
+  "options": [
+   {
+    "id": "a",
+    "text": "-4"
+   },
+   {
+    "id": "b",
+    "text": "6"
+   },
+   {
+    "id": "c",
+    "text": "12"
+   },
+   {
+    "id": "d",
+    "text": "18"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The derivative tells you how steep the curve is at one spot, like the grade of a road at one station.",
+  "solution": "\\frac{dy}{dx} = 3x^{2} - 6. At x = 2: 3(4) - 6 = 6.\n\nThe value -4 is the height of the curve there, not its slope.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62"
+   },
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "math-0010",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the maximum value of f(x) = -2x^{2} + 12x + 5?",
+  "answer": {
+   "value": 23,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "At the very top of a hill the ground is flat. Find where the slope is zero, then read the height there.",
+  "solution": "f'(x) = -4x + 12 = 0 gives x = 3.\n\nf(3) = -2(9) + 12(3) + 5 = 23.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62"
+   },
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "math-0011",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A vehicle's speed is v(t) = 4t + 2, in m/s. How far does it travel between t = 0 and t = 3 s?",
+  "answer": {
+   "value": 24,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Distance is speed added up over time, which is the area under the speed graph.",
+  "solution": "Distance = integral of (4t + 2) dt = 2t^{2} + 2t, from 0 to 3 = 18 + 6 = 24 m.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62"
+   },
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "math-0012",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "For **A** = 2**i** + 3**j** and **B** = 4**i** - **j**, what is the magnitude of the cross product **A** × **B**?",
+  "options": [
+   {
+    "id": "a",
+    "text": "5"
+   },
+   {
+    "id": "b",
+    "text": "10"
+   },
+   {
+    "id": "c",
+    "text": "14"
+   },
+   {
+    "id": "d",
+    "text": "20"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The cross product measures how much two arrows are not lined up. Its size is the area of the parallelogram they form.",
+  "solution": "For vectors in a plane, |A × B| = |A_{x}B_{y} - A_{y}B_{x}| = |2(-1) - 3(4)| = 14.\n\nThe value 5 is the dot product.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62"
+   },
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "math-0013",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the magnitude of the vector 3**i** - 4**j** + 12**k**?",
+  "answer": {
+   "value": 13,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The length of an arrow in three dimensions is the right-triangle rule used twice.",
+  "solution": "|V| = \\sqrt{3^{2} + 4^{2} + 12^{2}} = \\sqrt{169} = 13.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62"
+   },
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "math-0014",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Two fair dice are rolled. What is the probability that the total is 7?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.083"
+   },
+   {
+    "id": "b",
+    "text": "0.139"
+   },
+   {
+    "id": "c",
+    "text": "0.167"
+   },
+   {
+    "id": "d",
+    "text": "0.194"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Count the ways to win and divide by all the ways the dice can land.",
+  "solution": "There are 36 equally likely outcomes. Six of them total 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1).\n\nP = \\frac{6}{36} = 0.167.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62"
+   },
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "math-0015",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Concrete strength is normally distributed with a mean of 30 MPa and a standard deviation of 4 MPa. What fraction of tests fall below 26 MPa?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.0228"
+   },
+   {
+    "id": "b",
+    "text": "0.1587"
+   },
+   {
+    "id": "c",
+    "text": "0.3413"
+   },
+   {
+    "id": "d",
+    "text": "0.8413"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Turn the value into a count of standard deviations from the average, then look that count up in the normal table.",
+  "solution": "z = \\frac{26 - 30}{4} = -1.\n\nFrom the unit normal table, the area below z = -1 is 0.1587.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62"
+   },
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "math-0016",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A least-squares line is fitted to the points (1, 2), (2, 4) and (3, 5). What is its slope?",
+  "answer": {
+   "value": 1.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The best-fit line is the one that leaves the smallest total squared miss. Its slope compares how y moves with x to how x moves by itself.",
+  "solution": "Means: x = 2, y = 3.67.\n\nS_{xy} = (-1)(-1.67) + 0 + (1)(1.33) = 3.0 and S_{xx} = 1 + 0 + 1 = 2.\n\nSlope = \\frac{3.0}{2} = 1.5.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62"
+   },
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "math-0017",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Each item from a process has a 10% chance of being defective. In a sample of 5 items, what is the probability that exactly 2 are defective?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.0081"
+   },
+   {
+    "id": "b",
+    "text": "0.0729"
+   },
+   {
+    "id": "c",
+    "text": "0.3281"
+   },
+   {
+    "id": "d",
+    "text": "0.5905"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Work out the chance of one particular pattern of two bad and three good, then multiply by how many such patterns exist.",
+  "solution": "P = C(5, 2)(0.1)^{2}(0.9)^{3} = 10(0.01)(0.729) = 0.0729.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62"
+   },
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ }
+]

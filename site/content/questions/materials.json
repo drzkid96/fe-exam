@@ -1,0 +1,515 @@
+[
+ {
+  "id": "materials-0001",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete mix uses 180 kg of water and 400 kg of cement per cubic metre. What is the water-cement ratio?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.31"
+   },
+   {
+    "id": "b",
+    "text": "0.45"
+   },
+   {
+    "id": "c",
+    "text": "0.55"
+   },
+   {
+    "id": "d",
+    "text": "2.22"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The water-cement ratio is how soupy the cement paste is. Less water for the same cement makes stronger, less porous concrete.",
+  "solution": "w/c = \\frac{180}{400} = 0.45.\n\nThe ratio is water divided by cement, by mass.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "concrete",
+   "mix design"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "materials-0002",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 150 mm diameter concrete cylinder fails at a load of 530 kN in a compression test. What is the compressive strength?",
+  "options": [
+   {
+    "id": "a",
+    "text": "7.5 MPa"
+   },
+   {
+    "id": "b",
+    "text": "23.6 MPa"
+   },
+   {
+    "id": "c",
+    "text": "30.0 MPa"
+   },
+   {
+    "id": "d",
+    "text": "45.0 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Strength is the load the cylinder took at failure, spread over the flat circle it was pressed on.",
+  "solution": "Area = \\frac{π(150)^{2}}{4} = 17,671 mm^{2}.\n\nStrength = \\frac{530,000 N}{17,671 mm^{2}} = 30.0 MPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "concrete",
+   "compressive strength"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "materials-0003",
+  "topic": "materials",
+  "subtopic": "materials-b",
+  "format": "match",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Place each test on the property it measures.",
+  "tokens": [
+   {
+    "id": "slump",
+    "text": "Slump test"
+   },
+   {
+    "id": "marshall",
+    "text": "Marshall test"
+   },
+   {
+    "id": "charpy",
+    "text": "Charpy test"
+   },
+   {
+    "id": "la",
+    "text": "Los Angeles abrasion test"
+   }
+  ],
+  "targets": [
+   {
+    "id": "tough",
+    "label": "Impact toughness of a metal"
+   },
+   {
+    "id": "fresh",
+    "label": "Workability of fresh concrete"
+   },
+   {
+    "id": "agg",
+    "label": "Wear resistance of aggregate"
+   },
+   {
+    "id": "asph",
+    "label": "Stability and flow of an asphalt mix"
+   }
+  ],
+  "answer": {
+   "slump": "fresh",
+   "marshall": "asph",
+   "charpy": "tough",
+   "la": "agg"
+  },
+  "eli5": "Each material has a signature test. Wet concrete is checked for how easily it flows, asphalt for how it holds up when squeezed, metal for how it takes a sudden hit, and stone for how it wears.",
+  "solution": "The slump test measures the workability of fresh concrete. The Marshall test measures the stability and flow of an asphalt mix. The Charpy test measures the energy a notched metal bar absorbs under impact. The Los Angeles abrasion test measures how well aggregate resists wear.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106"
+   }
+  ],
+  "tags": [
+   "test methods",
+   "slump",
+   "marshall",
+   "charpy"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard test methods: ASTM C143 (slump), ASTM D6927 (Marshall stability and flow), ASTM E23 (Charpy impact), ASTM C131 (Los Angeles abrasion)"
+  }
+ },
+ {
+  "id": "materials-0004",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In a tension test, a steel bar reaches a stress of 140 MPa at a strain of 0.0007, still on the straight-line part of the curve. What is the modulus of elasticity?",
+  "answer": {
+   "value": 200,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "GPa"
+  },
+  "eli5": "The modulus of elasticity is the stiffness of the material: how much stress it takes to produce a given stretch. It is the slope of the straight part of the stress-strain curve.",
+  "solution": "E = \\frac{stress}{strain} = \\frac{140 MPa}{0.0007} = 200,000 MPa = 200 GPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   },
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106"
+   }
+  ],
+  "tags": [
+   "modulus of elasticity",
+   "stress-strain"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "materials-0005",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete mix contains 350 kg of cement per cubic metre. The specific gravity of cement is 3.15. What volume does the cement occupy?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.035 m^{3}"
+   },
+   {
+    "id": "b",
+    "text": "0.111 m^{3}"
+   },
+   {
+    "id": "c",
+    "text": "0.350 m^{3}"
+   },
+   {
+    "id": "d",
+    "text": "1.10 m^{3}"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Mix design is like filling a one cubic metre box. Each ingredient takes up space according to how heavy and how dense it is.",
+  "solution": "Volume = \\frac{mass}{specific gravity × density of water} = \\frac{350}{3.15(1,000)} = 0.111 m^{3}.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106"
+   },
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "materials-0006",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "An asphalt mix sample has a total mass of 1,200 g, of which 60 g is asphalt binder. What is the asphalt content by total mass of mix?",
+  "options": [
+   {
+    "id": "a",
+    "text": "4.8%"
+   },
+   {
+    "id": "b",
+    "text": "5.0%"
+   },
+   {
+    "id": "c",
+    "text": "5.3%"
+   },
+   {
+    "id": "d",
+    "text": "20%"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Asphalt content is the share of the whole mix that is binder. Be clear whether the share is of the whole mix or of the stone alone.",
+  "solution": "Asphalt content = \\frac{60}{1,200} × 100 = 5.0%.\n\nDividing by the aggregate mass (1,140 g) instead gives 5.3%, which is a different measure.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106"
+   },
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "materials-0007",
+  "topic": "materials",
+  "subtopic": "materials-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Which property does a Rockwell test measure?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Hardness"
+   },
+   {
+    "id": "b",
+    "text": "Fatigue life"
+   },
+   {
+    "id": "c",
+    "text": "Impact toughness"
+   },
+   {
+    "id": "d",
+    "text": "Creep rate"
+   }
+  ],
+  "answer": "a",
+  "eli5": "A Rockwell tester presses a small point into the metal and measures how deep the dent goes.",
+  "solution": "The Rockwell test measures hardness: resistance to permanent indentation.\n\nImpact toughness is measured by Charpy, fatigue by repeated load cycles, and creep by long-term loading.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106"
+   },
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "ASTM E18, Rockwell hardness of metallic materials"
+  }
+ },
+ {
+  "id": "materials-0008",
+  "topic": "materials",
+  "subtopic": "materials-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "What is the minimum yield strength of Grade 60 reinforcing steel?",
+  "options": [
+   {
+    "id": "a",
+    "text": "36 ksi"
+   },
+   {
+    "id": "b",
+    "text": "40 ksi"
+   },
+   {
+    "id": "c",
+    "text": "60 ksi"
+   },
+   {
+    "id": "d",
+    "text": "75 ksi"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The grade number of rebar is its yield strength in thousands of pounds per square inch.",
+  "solution": "Grade 60 bars have a minimum yield strength of 60 ksi, about 420 MPa.\n\n36 ksi is the yield strength of A36 structural steel.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106"
+   },
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "ASTM A615, deformed carbon-steel bars for concrete reinforcement"
+  }
+ },
+ {
+  "id": "materials-0009",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Using E_{c} = 4,700 × the square root of f'_{c} (both in MPa), what is the modulus of elasticity of concrete with a compressive strength of 25 MPa?",
+  "options": [
+   {
+    "id": "a",
+    "text": "4,700 MPa"
+   },
+   {
+    "id": "b",
+    "text": "11,750 MPa"
+   },
+   {
+    "id": "c",
+    "text": "23,500 MPa"
+   },
+   {
+    "id": "d",
+    "text": "117,500 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Stronger concrete is also stiffer, but stiffness grows more slowly than strength.",
+  "solution": "E_{c} = 4,700\\sqrt{25} = 4,700(5) = 23,500 MPa.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106"
+   },
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "materials-0010",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A tension specimen has a gauge length of 50 mm. After fracture the gauge length measures 62 mm. What is the percent elongation?",
+  "answer": {
+   "value": 24,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Percent elongation tells you how far a material stretches before it breaks. A high number means a ductile material.",
+  "solution": "Elongation = \\frac{62 - 50}{50} × 100 = 24%.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106"
+   },
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "materials-0011",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What does the total area under a material's stress-strain curve, up to fracture, represent?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Stiffness"
+   },
+   {
+    "id": "b",
+    "text": "Hardness"
+   },
+   {
+    "id": "c",
+    "text": "Toughness"
+   },
+   {
+    "id": "d",
+    "text": "Yield strength"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A tough material soaks up a lot of energy before it breaks. That takes both strength and stretch.",
+  "solution": "Toughness is the energy absorbed per unit volume up to fracture, which is the area under the whole curve.\n\nStiffness is the slope of the straight portion.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106"
+   },
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard definition of toughness (modulus of toughness)"
+  }
+ }
+]

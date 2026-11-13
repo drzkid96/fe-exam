@@ -1,0 +1,346 @@
+{
+ "topic": "geotech",
+ "sections": [
+  {
+   "id": "geotech-overview",
+   "subtopic": null,
+   "title": "Start here",
+   "body": "Soil is grains, water and air. Geotechnical questions start by describing that mixture, then ask how much load it can carry and how it will settle or push on a wall.\n\nThe idea behind most of the topic is effective stress: the grains carry only the part of the load that the water does not.",
+   "formulas": [],
+   "pitfalls": [
+    "Using total stress where effective stress is needed below the water table.",
+    "Confusing void ratio (voids over solids) with porosity (voids over total volume)."
+   ],
+   "read": [
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Civil Engineering, pages 259–309"
+    },
+    {
+     "source": "Lindeburg review manual, file 2 of 3",
+     "where": "Topic VI, Geotechnical Engineering"
+    }
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "geotech-a-lesson",
+   "subtopic": "geotech-a",
+   "title": "Index properties and soil classifications",
+   "body": "Index properties are quick measurements that tell soils apart. Grain size distribution, from sieving, shows whether a soil is gravel, sand or fines. The coefficients of uniformity and curvature say whether the sizes are well mixed.\n\nFor fine soils, the Atterberg limits mark the water contents at which the soil changes behaviour: the plastic limit (crumbly to mouldable) and the liquid limit (mouldable to runny). Their difference is the plasticity index. The Unified system (USCS) gives two-letter symbols such as SW, CL and GP. The AASHTO system rates soils for use as road subgrade.",
+   "formulas": [
+    {
+     "name": "Coefficient of uniformity",
+     "expr": "C_{u} = \\frac{D_{60}}{D_{10}}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Coefficient of curvature",
+     "expr": "C_{c} = \\frac{D_{30}^{2}}{D_{10}D_{60}}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Plasticity index",
+     "expr": "PI = LL - PL",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Mixing up D_{10} and D_{60}: D_{10} is the finer size."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A soil has D_{10} = 0.1 mm, D_{30} = 0.3 mm and D_{60} = 0.9 mm. Find C_{u} and C_{c}.",
+    "steps": "C_{u} = \\frac{0.9}{0.1} = 9.\n\nC_{c} = \\frac{0.3^{2}}{0.1(0.9)} = 1.0."
+   }
+  },
+  {
+   "id": "geotech-b-lesson",
+   "subtopic": "geotech-b",
+   "title": "Phase relations",
+   "body": "Soil is three things mixed together: solid grains, water and air. Phase relations describe the mix. Void ratio is the volume of voids over the volume of solids. Porosity is the volume of voids over the total volume. Water content is the mass of water over the mass of solids. Degree of saturation is the share of the voids that is filled with water.\n\nDraw a phase diagram, set the volume of solids to 1, and fill in the rest. Almost every question then solves itself. One identity ties everything together: Se = wG_{s}.",
+   "formulas": [
+    {
+     "name": "Key identity",
+     "expr": "Se = wG_{s}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Dry unit weight",
+     "expr": "\\frac{moist unit weight}{1 + w}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Void ratio from dry density",
+     "expr": "e = \\frac{G_{s} × density of water}{dry density} - 1",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Porosity",
+     "expr": "n = \\frac{e}{1 + e}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Dividing by total mass instead of dry mass for water content.",
+    "Confusing void ratio with porosity."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A saturated clay has a water content of 30% and G_{s} = 2.70. Find its void ratio.",
+    "steps": "With S = 1: e = wG_{s} = 0.30(2.70) = 0.81."
+   }
+  },
+  {
+   "id": "geotech-c-lesson",
+   "subtopic": "geotech-c",
+   "title": "Laboratory and field tests",
+   "body": "Tests turn a soil sample into design numbers. The Proctor compaction test finds the water content at which a soil packs densest, and that maximum dry density. Field density tests then check the contractor's compaction against it. Permeability tests measure how easily water passes: constant head for sands, falling head for clays.\n\nStrength comes from direct shear, triaxial and unconfined compression tests. In the field, the standard penetration test counts hammer blows to drive a sampler (the N-value), and the cone penetration test pushes a cone and records resistance.",
+   "formulas": [
+    {
+     "name": "Relative compaction",
+     "expr": "\\frac{field dry density}{maximum dry density} × 100",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Constant-head permeability",
+     "expr": "k = \\frac{QL}{Aht}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Relative density",
+     "expr": "D_{r} = \\frac{e_{max} - e}{e_{max} - e_{min}}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Comparing moist density with the Proctor dry density."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Compacted fill has a dry density of 1,750 kg/m^{3}. The Proctor maximum is 1,850 kg/m^{3}. Does it meet a 95% specification?",
+    "steps": "Relative compaction = \\frac{1,750}{1,850} × 100 = 94.6%, just short of 95%."
+   }
+  },
+  {
+   "id": "geotech-d-lesson",
+   "subtopic": "geotech-d",
+   "title": "Effective stress",
+   "body": "Total stress at a depth is the weight of everything above: soil and water. Pore water pressure is the pressure of the water in the voids. Effective stress is the difference, and it is what the soil grains actually feel. Strength and settlement depend on effective stress, not total.\n\nWork down layer by layer. Add each layer's unit weight times its thickness for total stress. Pore pressure is the unit weight of water times the depth below the water table. Subtract. A rising water table lowers effective stress and weakens the soil.",
+   "formulas": [
+    {
+     "name": "Total stress",
+     "expr": "sum of (unit weight × thickness)",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Pore pressure",
+     "expr": "unit weight of water × depth below water table",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Effective stress",
+     "expr": "total stress - pore pressure",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Using the saturated unit weight above the water table, or the moist one below it."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Saturated clay (unit weight 20 kN/m^{3}) has the water table at the surface. Find the effective stress at 5 m.",
+    "steps": "Total = 20(5) = 100 kPa. Pore pressure = 9.81(5) = 49 kPa.\n\nEffective stress = 51 kPa."
+   }
+  },
+  {
+   "id": "geotech-e-lesson",
+   "subtopic": "geotech-e",
+   "title": "Stability of retaining structures",
+   "body": "Soil pushes sideways on a wall. How hard depends on whether the wall moves. If it does not move, the pressure is at rest. If it yields slightly away from the soil, the pressure drops to the active value. If it is pushed into the soil, resistance rises to the passive value, which is much larger.\n\nRankine theory gives the coefficients from the friction angle. Lateral pressure grows linearly with depth, so the total force is a triangle acting at one third of the height. A wall is checked against sliding, overturning and bearing failure.",
+   "formulas": [
+    {
+     "name": "Active coefficient",
+     "expr": "K_{a} = tan^{2}(45° - \\frac{friction angle}{2})",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Passive coefficient",
+     "expr": "K_{p} = tan^{2}(45° + \\frac{friction angle}{2})",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "At rest",
+     "expr": "K_{0} = 1 - sin(friction angle)",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Active force",
+     "expr": "P_{a} = \\frac{1}{2}K_{a}(unit weight)H^{2}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Using the passive coefficient for the soil behind a yielding wall.",
+    "Forgetting water pressure when the backfill is not drained."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A 3 m wall retains sand with a unit weight of 17 kN/m^{3} and a friction angle of 30°. Find the active force.",
+    "steps": "K_{a} = 0.333.\n\nP_{a} = \\frac{1}{2}(0.333)(17)(3)^{2} = 25.5 kN/m."
+   }
+  },
+  {
+   "id": "geotech-f-lesson",
+   "subtopic": "geotech-f",
+   "title": "Shear strength",
+   "body": "Soil fails by sliding along a surface. Its resistance to sliding is its shear strength. The Mohr-Coulomb rule says strength has two parts: cohesion, which is there regardless of load, and friction, which grows with the effective stress pressing the grains together.\n\nSands have friction and no cohesion. Saturated clays loaded quickly behave as if they have cohesion only, called the undrained shear strength, which is half the unconfined compressive strength.",
+   "formulas": [
+    {
+     "name": "Mohr-Coulomb",
+     "expr": "strength = c' + (effective normal stress) tan(friction angle)",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Undrained strength",
+     "expr": "s_{u} = \\frac{q_{u}}{2}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Using total stress instead of effective stress in the friction term."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A dry sand with a friction angle of 32° has an effective normal stress of 150 kPa on a plane. Find its shear strength.",
+    "steps": "Strength = 150 tan 32° = 93.7 kPa."
+   }
+  },
+  {
+   "id": "geotech-g-lesson",
+   "subtopic": "geotech-g",
+   "title": "Bearing capacity",
+   "body": "Bearing capacity is the pressure a footing can put on the ground before the soil shears and squeezes out sideways. The ultimate value has three parts: one from cohesion, one from the weight of soil beside the footing above its base, and one from the weight of soil below it. Each is multiplied by a bearing capacity factor that depends on the friction angle.\n\nDesign uses an allowable pressure, the ultimate value divided by a factor of safety, commonly 3. Size the footing so that the column load divided by the footing area does not exceed it.",
+   "formulas": [
+    {
+     "name": "Ultimate capacity, strip footing",
+     "expr": "q_{ult} = cN_{c} + (unit weight)D_{f}N_{q} + \\frac{1}{2}(unit weight)BN_{third}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Allowable pressure",
+     "expr": "q_{all} = \\frac{q_{ult}}{FS}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Footing area",
+     "expr": "A = \\frac{P}{q_{all}}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Dividing by the factor of safety twice, or not at all."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A column load of 900 kN bears on soil with an allowable pressure of 200 kPa. What square footing is needed?",
+    "steps": "A = \\frac{900}{200} = 4.5 m^{2}.\n\nWidth = \\sqrt{4.5} = 2.12 m."
+   }
+  },
+  {
+   "id": "geotech-h-lesson",
+   "subtopic": "geotech-h",
+   "title": "Foundation types",
+   "body": "Shallow foundations spread load near the surface. A spread footing carries one column, a strip footing carries a wall, and a mat carries a whole building on one slab. They suit sites where good soil is close to the surface.\n\nDeep foundations carry load down through weak soil. Driven piles and drilled shafts resist load by friction along their sides and bearing at their tips. Choose a deep foundation when the upper soil is weak or compressible, loads are heavy, or scour could undermine a shallow footing.",
+   "formulas": [
+    {
+     "name": "Pile capacity",
+     "expr": "Q_{ult} = (skin friction × side area) + (end bearing × tip area)",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Using the tip area where the side (perimeter × length) area is needed."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A 0.4 m diameter drilled shaft is 12 m long with a skin friction of 50 kPa and no end bearing. Find its capacity.",
+    "steps": "Side area = π(0.4)(12) = 15.1 m^{2}.\n\nQ = 50(15.1) = 754 kN."
+   }
+  },
+  {
+   "id": "geotech-i-lesson",
+   "subtopic": "geotech-i",
+   "title": "Consolidation and differential settlement",
+   "body": "When clay is loaded, the water in its voids carries the load at first. The water drains slowly and the grains take over, and as they do the clay compresses and the ground settles. This is consolidation, and it can take years.\n\nHow much it settles depends on the compression index and the rise in effective stress. How long it takes depends on the square of the drainage path: with drainage at top and bottom, the path is half the layer thickness. Differential settlement, where one part of a structure sinks more than another, causes the damage.",
+   "formulas": [
+    {
+     "name": "Settlement, normally consolidated clay",
+     "expr": "S = \\frac{C_{c}H}{1 + e_{0}} log(\\frac{final stress}{initial stress})",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Time for consolidation",
+     "expr": "t = \\frac{T_{v}H_{dr}^{2}}{c_{v}}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Using the full layer thickness as the drainage path when the layer drains both ways.",
+    "Using natural log where log base 10 is required."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A 2 m clay layer has C_{c} = 0.25 and e_{0} = 0.9. Effective stress rises from 80 to 160 kPa. Find the settlement.",
+    "steps": "S = \\frac{0.25(2,000)}{1.9} log(2) = 263(0.301) = 79 mm."
+   }
+  },
+  {
+   "id": "geotech-j-lesson",
+   "subtopic": "geotech-j",
+   "title": "Slope stability",
+   "body": "A slope fails when the soil's strength along some surface is no longer enough to hold the weight above it. The factor of safety is resisting strength over driving force, or resisting moment over driving moment for a circular slip.\n\nA long uniform slope in dry sand is stable as long as it is flatter than the friction angle. In clay, failure is usually along a circular arc. Water is the usual trigger: it adds weight and raises pore pressure, which cuts effective stress and strength. Flattening the slope, draining it and adding a berm at the toe all improve stability.",
+   "formulas": [
+    {
+     "name": "Infinite slope, dry sand",
+     "expr": "FS = \\frac{tan(friction angle)}{tan(slope angle)}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Circular slip in clay",
+     "expr": "FS = \\frac{s_{u} × arc length × R}{W × x}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Dividing the angles themselves instead of their tangents."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A dry sand slope with a friction angle of 33° stands at 20°. Find the factor of safety.",
+    "steps": "FS = \\frac{tan 33°}{tan 20°} = \\frac{0.649}{0.364} = 1.78."
+   }
+  },
+  {
+   "id": "geotech-k-lesson",
+   "subtopic": "geotech-k",
+   "title": "Soil stabilization",
+   "body": "Poor soil can be improved rather than replaced. Compaction is the simplest method. Chemical stabilization mixes in lime or cement: lime reacts with clay to make it less plastic and easier to work, and cement binds granular soils.\n\nGeosynthetics are manufactured sheets and grids placed in the ground. Geotextiles separate layers, filter and drain. Geogrids reinforce. Geomembranes block water. Other methods include preloading soft clay with wick drains to speed settlement, and stone columns.",
+   "formulas": [
+    {
+     "name": "Additive quantity",
+     "expr": "mass of additive = percent × dry mass of soil",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Basing the additive on moist mass instead of dry mass."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Cement at 6% by dry mass is mixed into 500 m^{3} of soil with a dry density of 1,700 kg/m^{3}. How much cement is needed?",
+    "steps": "Dry mass = 1,700(500) = 850,000 kg.\n\nCement = 0.06(850,000) = 51,000 kg."
+   }
+  }
+ ]
+}

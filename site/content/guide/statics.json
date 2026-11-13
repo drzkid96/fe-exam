@@ -1,0 +1,239 @@
+{
+ "topic": "statics",
+ "sections": [
+  {
+   "id": "statics-overview",
+   "subtopic": null,
+   "title": "Start here",
+   "body": "Statics is about things that are not moving. If a beam or a truss sits still, every push on it is cancelled by another push, and every twist by another twist.\n\nAlmost every question is the same three steps: draw the body on its own, mark every force, and write that forces and moments each add to zero.",
+   "formulas": [],
+   "pitfalls": [
+    "Leaving a support reaction off the free body diagram.",
+    "Taking moments about a point that makes the arithmetic harder. Pick a point where an unknown force passes through."
+   ],
+   "read": [
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Statics, pages 107–113"
+    },
+    {
+     "source": "Lindeburg review manual, file 2 of 3",
+     "where": "Topic VII, Statics"
+    }
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "statics-a-lesson",
+   "subtopic": "statics-a",
+   "title": "Resultants of force systems",
+   "body": "A resultant is the single force that has the same effect as several forces acting together. To find it, break every force into x and y parts, add the x parts, add the y parts, and recombine with the right-triangle rule.\n\nA force also tends to turn a body about a point. That turning effect is its moment: the force times the perpendicular distance from the point to the force's line of action. Use a sign convention, such as counter-clockwise positive, and stick to it.",
+   "formulas": [
+    {
+     "name": "Components",
+     "expr": "F_{x} = F cos(angle), F_{y} = F sin(angle)",
+     "handbook": "Statics, p. 107–113"
+    },
+    {
+     "name": "Resultant",
+     "expr": "R = \\sqrt{R_{x}^{2} + R_{y}^{2}}",
+     "handbook": "Statics, p. 107–113"
+    },
+    {
+     "name": "Direction",
+     "expr": "angle = tan^{-1}(\\frac{R_{y}}{R_{x}})",
+     "handbook": "Statics, p. 107–113"
+    },
+    {
+     "name": "Moment",
+     "expr": "M = F × d",
+     "handbook": "Statics, p. 107–113"
+    }
+   ],
+   "pitfalls": [
+    "Using the full length of a member as the moment arm when the force is not perpendicular to it.",
+    "Measuring the angle from the wrong axis."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Forces of 60 N to the right and 80 N upward act at a point. Find the resultant and its angle above horizontal.",
+    "steps": "R = \\sqrt{60^{2} + 80^{2}} = 100 N.\n\nAngle = tan^{-1}(\\frac{80}{60}) = 53.1°."
+   }
+  },
+  {
+   "id": "statics-b-lesson",
+   "subtopic": "statics-b",
+   "title": "Equivalent force systems",
+   "body": "Two force systems are equivalent if they push and turn a body in exactly the same way. Any set of forces can be replaced by one force at a chosen point plus one couple.\n\nA couple is a pair of equal, opposite, parallel forces. It produces pure turning with no net push, and its moment is the same about every point. When you move a force to a new point, keep the force unchanged and add a couple equal to the moment the original force had about the new point.",
+   "formulas": [
+    {
+     "name": "Couple",
+     "expr": "M = F × d (d is the distance between the forces)",
+     "handbook": "Statics, p. 107–113"
+    },
+    {
+     "name": "Moving a force",
+     "expr": "M added = F × (perpendicular offset)",
+     "handbook": "Statics, p. 107–113"
+    }
+   ],
+   "pitfalls": [
+    "Changing the size or direction of the force when moving it. Only a couple is added."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A 400 N force acts at the end of a 0.5 m bracket. Replace it with a force and couple at the wall.",
+    "steps": "The force at the wall is still 400 N.\n\nThe couple is 400(0.5) = 200 N·m."
+   }
+  },
+  {
+   "id": "statics-c-lesson",
+   "subtopic": "statics-c",
+   "title": "Equilibrium of rigid bodies",
+   "body": "A body at rest is in equilibrium: the forces on it cancel and the moments on it cancel. In a plane that gives three equations, so you can solve for three unknowns.\n\nThe method never changes. Draw the free body diagram: the body alone, with every load and every support reaction shown. A pin gives two reaction components, a roller gives one perpendicular to its surface, and a fixed support gives two forces and a moment. Then take moments about a point where unknowns pass through, so they drop out of the equation.",
+   "formulas": [
+    {
+     "name": "Equilibrium in a plane",
+     "expr": "sum F_{x} = 0, sum F_{y} = 0, sum M = 0",
+     "handbook": "Statics, p. 107–113"
+    }
+   ],
+   "pitfalls": [
+    "Leaving a reaction off the free body diagram.",
+    "Replacing a distributed load with a point load at the wrong place. It acts at the centroid of the load diagram."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A 9 m beam on a pin at A and a roller at B carries 18 kN at 3 m from A. Find the reactions.",
+    "steps": "Moments about A: B(9) = 18(3), so B = 6 kN.\n\nA = 18 - 6 = 12 kN."
+   }
+  },
+  {
+   "id": "statics-d-lesson",
+   "subtopic": "statics-d",
+   "title": "Frames and trusses",
+   "body": "A truss is built from straight members pinned at their ends and loaded only at the joints. Each member carries only tension or compression along its length.\n\nTwo methods solve a truss. The method of joints isolates one pin and balances forces in x and y: use it when you need many member forces. The method of sections cuts through the truss and balances one whole piece: use it when you need one or two members. Zero-force members can be spotted by inspection: at an unloaded joint where two members meet at an angle, both carry zero. Frames have members that carry bending, so take them apart and write equilibrium for each piece.",
+   "formulas": [
+    {
+     "name": "Joint equilibrium",
+     "expr": "sum F_{x} = 0, sum F_{y} = 0",
+     "handbook": "Statics, p. 107–113"
+    },
+    {
+     "name": "Determinacy check",
+     "expr": "m + r = 2j",
+     "handbook": "Statics, p. 107–113"
+    }
+   ],
+   "pitfalls": [
+    "Assuming the wrong sense and not correcting the sign: a negative answer means the opposite of what you assumed.",
+    "Cutting more than three unknown members in a section."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A symmetric triangular truss spans 6 m and is 4 m high with 30 kN at the apex. Find the force in an inclined member.",
+    "steps": "Each reaction is 15 kN. The inclined member is 5 m long, so sin(angle) = \\frac{4}{5}.\n\nF = \\frac{15}{0.8} = 18.75 kN compression."
+   }
+  },
+  {
+   "id": "statics-e-lesson",
+   "subtopic": "statics-e",
+   "title": "Centroid of area",
+   "body": "The centroid is the balance point of a shape: the spot where a cardboard cutout would balance on a pin. For a symmetric shape it lies on the axis of symmetry.\n\nFor built-up shapes, split the area into simple pieces, find each piece's area and centroid, and take the area-weighted average. A hole is handled as a piece with negative area. The handbook tabulates centroids of common shapes.",
+   "formulas": [
+    {
+     "name": "Centroid of a composite area",
+     "expr": "x = \\frac{sum of (A_{i}x_{i})}{sum of A_{i}}",
+     "handbook": "Statics, p. 107–113"
+    },
+    {
+     "name": "Triangle",
+     "expr": "\\frac{h}{3} from the base",
+     "handbook": "Statics, p. 107–113"
+    },
+    {
+     "name": "Semicircle",
+     "expr": "\\frac{4r}{3π} from the diameter",
+     "handbook": "Statics, p. 107–113"
+    }
+   ],
+   "pitfalls": [
+    "Measuring the piece centroids from different reference lines."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A 60 mm by 20 mm rectangle sits on top of a 20 mm by 60 mm rectangle to form a T. Find the centroid height above the bottom.",
+    "steps": "Stem: 1,200 mm^{2} at 30 mm. Flange: 1,200 mm^{2} at 70 mm.\n\ny = \\frac{1,200(30) + 1,200(70)}{2,400} = 50 mm."
+   }
+  },
+  {
+   "id": "statics-f-lesson",
+   "subtopic": "statics-f",
+   "title": "Area moments of inertia",
+   "body": "The area moment of inertia measures how a shape's area is spread out from an axis. The farther the material sits from the axis, the stiffer the shape is in bending about it. That is why beams are deep rather than wide.\n\nUse tabulated formulas for simple shapes about their own centroid, then shift to another axis with the parallel axis theorem. For built-up shapes, shift each piece to the common axis and add. The radius of gyration turns I into an equivalent distance and appears in column design.",
+   "formulas": [
+    {
+     "name": "Rectangle about its centroid",
+     "expr": "I = \\frac{bh^{3}}{12}",
+     "handbook": "Statics, p. 107–113"
+    },
+    {
+     "name": "Circle about its centroid",
+     "expr": "I = \\frac{π d^{4}}{64}",
+     "handbook": "Statics, p. 107–113"
+    },
+    {
+     "name": "Parallel axis theorem",
+     "expr": "I = I_{c} + Ad^{2}",
+     "handbook": "Statics, p. 107–113"
+    },
+    {
+     "name": "Radius of gyration",
+     "expr": "r = \\sqrt{\\frac{I}{A}}",
+     "handbook": "Statics, p. 107–113"
+    }
+   ],
+   "pitfalls": [
+    "Cubing the wrong dimension: the dimension perpendicular to the axis is the one cubed.",
+    "Applying the parallel axis theorem from an axis that is not the centroidal one."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Find I about the centroidal axis for a rectangle 50 mm wide and 120 mm deep.",
+    "steps": "I = \\frac{50(120)^{3}}{12} = 7.2 × 10^{6} mm^{4}."
+   }
+  },
+  {
+   "id": "statics-g-lesson",
+   "subtopic": "statics-g",
+   "title": "Static friction",
+   "body": "Friction is the grip between two surfaces. It resists sliding and adjusts itself to match whatever force is trying to cause motion, up to a limit. That limit is the coefficient of static friction times the force pressing the surfaces together.\n\nIf the applied force is less than the limit, nothing moves and friction simply equals the applied force. At the limit, motion is about to start. On a slope, sliding starts when the tangent of the slope angle equals the friction coefficient.",
+   "formulas": [
+    {
+     "name": "Maximum friction",
+     "expr": "F_{max} = μ_{s}N",
+     "handbook": "Statics, p. 107–113"
+    },
+    {
+     "name": "Angle of impending slip",
+     "expr": "tan(angle) = μ_{s}",
+     "handbook": "Statics, p. 107–113"
+    },
+    {
+     "name": "Belt friction",
+     "expr": "T_{1} = T_{2}e^{μ × wrap angle in radians}",
+     "handbook": "Statics, p. 107–113"
+    }
+   ],
+   "pitfalls": [
+    "Assuming friction always equals μN. That is only its maximum.",
+    "Using the weight as the normal force on a slope or when a force has a vertical part."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A 300 N box rests on a floor with a friction coefficient of 0.4. A 90 N horizontal push is applied. Does it move, and what is the friction force?",
+    "steps": "Maximum friction = 0.4(300) = 120 N.\n\nThe 90 N push is below the limit, so the box stays put and friction is 90 N."
+   }
+  }
+ ]
+}

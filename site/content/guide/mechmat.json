@@ -1,0 +1,178 @@
+{
+ "topic": "mechmat",
+ "sections": [
+  {
+   "id": "mechmat-overview",
+   "subtopic": null,
+   "title": "Start here",
+   "body": "Mechanics of materials looks inside a loaded part. Stress is how hard the material is being pushed or pulled per unit of area. Strain is how much it deforms in response.\n\nFour loadings cover the topic: pulling along the length, twisting, bending and shear. Each has one formula for stress and one for deformation.",
+   "formulas": [],
+   "pitfalls": [
+    "Mixing units: stay in N, mm and MPa and the numbers work out.",
+    "Reading the maximum moment at midspan when the load is not symmetric. The peak is where shear crosses zero."
+   ],
+   "read": [
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Mechanics of Materials, pages 130–142"
+    },
+    {
+     "source": "Lindeburg review manual, file 2 of 3",
+     "where": "Topic IX, Mechanics of Materials"
+    }
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "mechmat-a-lesson",
+   "subtopic": "mechmat-a",
+   "title": "Shear and moment diagrams",
+   "body": "Shear and moment diagrams show the internal force and bending along a beam. Shear is the tendency of one part of the beam to slide past the next. Moment is the tendency to bend.\n\nBuild them from left to right. A point load makes the shear jump by the load. A uniform load makes the shear slope steadily. The moment at any point is the area under the shear diagram up to that point. The moment peaks where the shear crosses zero. Memorize the common cases: they save time.",
+   "formulas": [
+    {
+     "name": "Load, shear and moment",
+     "expr": "\\frac{dV}{dx} = -w, \\frac{dM}{dx} = V",
+     "handbook": "Mechanics of Materials, p. 130–142"
+    },
+    {
+     "name": "Simple span, uniform load",
+     "expr": "M_{max} = \\frac{wL^{2}}{8}",
+     "handbook": "Mechanics of Materials, p. 130–142"
+    },
+    {
+     "name": "Simple span, midspan point load",
+     "expr": "M_{max} = \\frac{PL}{4}",
+     "handbook": "Mechanics of Materials, p. 130–142"
+    },
+    {
+     "name": "Cantilever, end load",
+     "expr": "M_{max} = PL",
+     "handbook": "Mechanics of Materials, p. 130–142"
+    }
+   ],
+   "pitfalls": [
+    "Assuming the maximum moment is at midspan when the loading is not symmetric."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A simply supported beam spans 4 m with 12 kN/m. Find the maximum shear and moment.",
+    "steps": "V_{max} = \\frac{12(4)}{2} = 24 kN at the supports.\n\nM_{max} = \\frac{12(4)^{2}}{8} = 24 kN·m at midspan."
+   }
+  },
+  {
+   "id": "mechmat-b-lesson",
+   "subtopic": "mechmat-b",
+   "title": "Stresses and strains",
+   "body": "Stress is internal force per unit area. Strain is deformation per unit length. In the elastic range they are proportional, linked by the modulus of elasticity.\n\nEach kind of loading has its own stress formula. Axial load gives uniform normal stress. Bending gives normal stress that is zero at the neutral axis and largest at the outer edge. Torsion gives shear stress that is largest at the outer surface of a shaft. Transverse shear in a beam peaks at the neutral axis. A restrained bar that is heated develops thermal stress.",
+   "formulas": [
+    {
+     "name": "Axial stress",
+     "expr": "stress = \\frac{P}{A}",
+     "handbook": "Mechanics of Materials, p. 130–142"
+    },
+    {
+     "name": "Hooke's law",
+     "expr": "stress = E × strain",
+     "handbook": "Mechanics of Materials, p. 130–142"
+    },
+    {
+     "name": "Bending stress",
+     "expr": "stress = \\frac{Mc}{I}",
+     "handbook": "Mechanics of Materials, p. 130–142"
+    },
+    {
+     "name": "Torsional shear stress",
+     "expr": "shear stress = \\frac{Tr}{J}",
+     "handbook": "Mechanics of Materials, p. 130–142"
+    },
+    {
+     "name": "Restrained thermal stress",
+     "expr": "stress = E × expansion coefficient × temperature change",
+     "handbook": "Mechanics of Materials, p. 130–142"
+    }
+   ],
+   "pitfalls": [
+    "Mixing units. N and mm give MPa directly.",
+    "Using the diameter instead of the radius for the outer fibre distance."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A 25 mm square bar carries 40 kN in tension. Find the stress.",
+    "steps": "A = 625 mm^{2}.\n\nStress = \\frac{40,000}{625} = 64 MPa."
+   }
+  },
+  {
+   "id": "mechmat-c-lesson",
+   "subtopic": "mechmat-c",
+   "title": "Deformations",
+   "body": "Loaded parts change shape. A bar in tension gets longer, a shaft in torsion twists, and a beam in bending deflects. The amount depends on the load, the length, the size of the cross-section and the stiffness of the material.\n\nThe axial and torsional formulas have the same form: load times length over stiffness. Beam deflections come from tabulated cases in the handbook. Temperature changes cause free expansion in proportion to length and temperature change.",
+   "formulas": [
+    {
+     "name": "Axial deformation",
+     "expr": "change in length = \\frac{PL}{AE}",
+     "handbook": "Mechanics of Materials, p. 130–142"
+    },
+    {
+     "name": "Angle of twist",
+     "expr": "twist = \\frac{TL}{JG}",
+     "handbook": "Mechanics of Materials, p. 130–142"
+    },
+    {
+     "name": "Thermal deformation",
+     "expr": "change in length = expansion coefficient × L × temperature change",
+     "handbook": "Mechanics of Materials, p. 130–142"
+    },
+    {
+     "name": "Simple beam, uniform load",
+     "expr": "deflection = \\frac{5wL^{4}}{384EI}",
+     "handbook": "Mechanics of Materials, p. 130–142"
+    }
+   ],
+   "pitfalls": [
+    "Entering E in GPa with other values in N and mm. Convert GPa to MPa by multiplying by 1,000."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A 3 m aluminium bar (E = 70 GPa) with a 200 mm^{2} cross-section carries 14 kN. How much does it stretch?",
+    "steps": "Change in length = \\frac{14,000(3,000)}{200(70,000)} = 3.0 mm."
+   }
+  },
+  {
+   "id": "mechmat-d-lesson",
+   "subtopic": "mechmat-d",
+   "title": "Combined stresses, principal stresses and Mohr's circle",
+   "body": "At a point, the stresses you see depend on the direction you look. Rotate the element and the normal and shear stresses change. At one orientation the shear disappears and the normal stresses reach their largest and smallest values: the principal stresses.\n\nMohr's circle is a picture of all those orientations. Its centre is the average of the two normal stresses and its radius comes from half their difference and the shear stress. The principal stresses are centre plus and minus radius. The maximum in-plane shear equals the radius. Thin-walled pressure vessels are a common application.",
+   "formulas": [
+    {
+     "name": "Centre",
+     "expr": "C = \\frac{stress_{x} + stress_{y}}{2}",
+     "handbook": "Mechanics of Materials, p. 130–142"
+    },
+    {
+     "name": "Radius",
+     "expr": "R = \\sqrt{(\\frac{stress_{x} - stress_{y}}{2})^{2} + shear_{xy}^{2}}",
+     "handbook": "Mechanics of Materials, p. 130–142"
+    },
+    {
+     "name": "Principal stresses",
+     "expr": "C + R and C - R",
+     "handbook": "Mechanics of Materials, p. 130–142"
+    },
+    {
+     "name": "Hoop stress, thin cylinder",
+     "expr": "\\frac{pr}{t}",
+     "handbook": "Mechanics of Materials, p. 130–142"
+    }
+   ],
+   "pitfalls": [
+    "Using the full difference of the normal stresses instead of half of it in the radius.",
+    "Forgetting that compression is negative."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A point has stresses of 60 MPa and 0 MPa on perpendicular faces with 40 MPa shear. Find the principal stresses.",
+    "steps": "C = 30 MPa. R = \\sqrt{30^{2} + 40^{2}} = 50 MPa.\n\nPrincipal stresses: 80 MPa and -20 MPa."
+   }
+  }
+ ]
+}

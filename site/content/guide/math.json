@@ -1,0 +1,193 @@
+{
+ "topic": "math",
+ "sections": [
+  {
+   "id": "math-overview",
+   "subtopic": null,
+   "title": "Start here",
+   "body": "This topic is the toolkit the rest of the exam leans on: lines and curves, slopes and areas, arrows with direction, and making sense of scattered data.\n\nMost questions are one or two steps. The skill being tested is picking the right tool quickly, then doing clean arithmetic on the calculator.",
+   "formulas": [],
+   "pitfalls": [
+    "Using the population formula when the question says sample: a sample divides by n - 1.",
+    "Leaving the calculator in radians for a question given in degrees."
+   ],
+   "read": [
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Mathematics, pages 34–62"
+    },
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Engineering Probability and Statistics, pages 63–84"
+    },
+    {
+     "source": "Lindeburg review manual, file 1 of 3",
+     "where": "Topic I, Mathematics, and Topic II, Probability and Statistics"
+    },
+    {
+     "source": "GeniePrep cheat sheet",
+     "where": "Math pages at the front"
+    }
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "math-a-lesson",
+   "subtopic": "math-a",
+   "title": "Analytic geometry",
+   "body": "Analytic geometry describes shapes with equations so you can calculate with them. A straight line is fixed by its slope (how steeply it climbs) and one point on it. A circle is fixed by its centre and radius.\n\nMost questions give you points or an equation and ask for a slope, an intercept, a distance, a centre or an angle. Sketch the situation first: a quick drawing catches sign errors. For triangles that are not right-angled, use the law of sines when you know an angle and its opposite side, and the law of cosines when you know two sides and the angle between them.",
+   "formulas": [
+    {
+     "name": "Slope of a line",
+     "expr": "m = \\frac{y_{2} - y_{1}}{x_{2} - x_{1}}",
+     "handbook": "Mathematics, p. 34–62"
+    },
+    {
+     "name": "Line",
+     "expr": "y = mx + b",
+     "handbook": "Mathematics, p. 34–62"
+    },
+    {
+     "name": "Distance between points",
+     "expr": "d = \\sqrt{(x_{2} - x_{1})^{2} + (y_{2} - y_{1})^{2}}",
+     "handbook": "Mathematics, p. 34–62"
+    },
+    {
+     "name": "Circle",
+     "expr": "(x - h)^{2} + (y - k)^{2} = r^{2}",
+     "handbook": "Mathematics, p. 34–62"
+    },
+    {
+     "name": "Law of cosines",
+     "expr": "c^{2} = a^{2} + b^{2} - 2ab cos C",
+     "handbook": "Mathematics, p. 34–62"
+    }
+   ],
+   "pitfalls": [
+    "Perpendicular lines have slopes that multiply to -1, not slopes that are equal.",
+    "In the circle equation the centre is (h, k), so (x + 4) means k or h is -4."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Find the equation of the line through (1, 4) and (3, 10), and its value at x = 5.",
+    "steps": "Slope = \\frac{10 - 4}{3 - 1} = 3.\n\nUsing (1, 4): 4 = 3(1) + b, so b = 1 and y = 3x + 1.\n\nAt x = 5, y = 16."
+   }
+  },
+  {
+   "id": "math-b-lesson",
+   "subtopic": "math-b",
+   "title": "Single-variable calculus",
+   "body": "Calculus measures change. A derivative is a rate: the slope of a curve at one point. An integral is a total: the area built up under a curve. They undo each other.\n\nExam questions ask for a slope, a maximum or minimum, or an area or accumulated amount. For a maximum or minimum, set the derivative to zero and solve, then check which one you found. For an area or a distance from a speed, integrate between the limits.",
+   "formulas": [
+    {
+     "name": "Power rule",
+     "expr": "\\frac{d}{dx}x^{n} = nx^{n-1}",
+     "handbook": "Mathematics, p. 34–62"
+    },
+    {
+     "name": "Integral of a power",
+     "expr": "integral of x^{n} dx = \\frac{x^{n+1}}{n + 1}",
+     "handbook": "Mathematics, p. 34–62"
+    },
+    {
+     "name": "Product rule",
+     "expr": "(uv)' = u'v + uv'",
+     "handbook": "Mathematics, p. 34–62"
+    },
+    {
+     "name": "Maximum or minimum",
+     "expr": "f'(x) = 0",
+     "handbook": "Mathematics, p. 34–62"
+    }
+   ],
+   "pitfalls": [
+    "Forgetting to subtract the value at the lower limit of a definite integral.",
+    "Reporting the x where the maximum happens when the question asks for the maximum value."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A beam's deflection curve is y = x^{3} - 12x. Where is its slope zero for x greater than 0, and what is y there?",
+    "steps": "y' = 3x^{2} - 12 = 0 gives x = 2.\n\ny(2) = 8 - 24 = -16."
+   }
+  },
+  {
+   "id": "math-c-lesson",
+   "subtopic": "math-c",
+   "title": "Vector operations",
+   "body": "A vector is an arrow: it has a size and a direction. Forces, velocities and displacements are vectors. Adding vectors means adding their x, y and z parts separately.\n\nTwo kinds of multiplication matter. The dot product gives a plain number that tells you how much two vectors point the same way; it is zero when they are perpendicular. The cross product gives a new vector at right angles to both; its size is the area of the parallelogram they form and it is zero when they are parallel. Moments are cross products.",
+   "formulas": [
+    {
+     "name": "Magnitude",
+     "expr": "|A| = \\sqrt{A_{x}^{2} + A_{y}^{2} + A_{z}^{2}}",
+     "handbook": "Mathematics, p. 34–62"
+    },
+    {
+     "name": "Dot product",
+     "expr": "A · B = A_{x}B_{x} + A_{y}B_{y} + A_{z}B_{z} = |A||B| cos(angle)",
+     "handbook": "Mathematics, p. 34–62"
+    },
+    {
+     "name": "Cross product size",
+     "expr": "|A × B| = |A||B| sin(angle)",
+     "handbook": "Mathematics, p. 34–62"
+    },
+    {
+     "name": "Unit vector",
+     "expr": "u = \\frac{A}{|A|}",
+     "handbook": "Mathematics, p. 34–62"
+    }
+   ],
+   "pitfalls": [
+    "Mixing up the two products: dot gives a number, cross gives a vector.",
+    "Cross product order matters: A × B is the opposite of B × A."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Find the angle between A = 2i + 2j and B = 3i.",
+    "steps": "A · B = 6. |A| = 2.83 and |B| = 3.\n\ncos(angle) = \\frac{6}{2.83(3)} = 0.707, so the angle is 45°."
+   }
+  },
+  {
+   "id": "math-d-lesson",
+   "subtopic": "math-d",
+   "title": "Statistics",
+   "body": "Statistics summarizes data and puts numbers on uncertainty. The mean is the average. The standard deviation is the typical distance of values from the mean. For a sample, divide by n - 1.\n\nMany measured quantities follow the normal (bell) curve. Convert a value to a z-score, which counts standard deviations from the mean, then read the area from the unit normal table in the handbook. A confidence interval is the mean plus or minus a margin that shrinks as the sample grows. Regression fits the straight line that misses the points by the least total squared amount. For yes or no trials repeated n times, use the binomial formula.",
+   "formulas": [
+    {
+     "name": "Sample standard deviation",
+     "expr": "s = \\sqrt{\\frac{sum of (x - mean)^{2}}{n - 1}}",
+     "handbook": "Mathematics, p. 34–62"
+    },
+    {
+     "name": "z-score",
+     "expr": "z = \\frac{x - mean}{standard deviation}",
+     "handbook": "Mathematics, p. 34–62"
+    },
+    {
+     "name": "Binomial probability",
+     "expr": "P(x) = C(n, x)p^{x}(1 - p)^{n-x}",
+     "handbook": "Mathematics, p. 34–62"
+    },
+    {
+     "name": "Regression slope",
+     "expr": "b = \\frac{S_{xy}}{S_{xx}}",
+     "handbook": "Mathematics, p. 34–62"
+    },
+    {
+     "name": "Confidence interval for a mean",
+     "expr": "mean ± z\\frac{standard deviation}{\\sqrt{n}}",
+     "handbook": "Mathematics, p. 34–62"
+    }
+   ],
+   "pitfalls": [
+    "Reading the wrong tail of the normal table: check whether the table gives the area below z or between 0 and z.",
+    "Using n instead of n - 1 for a sample."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Test results have a mean of 50 and a standard deviation of 5. What z-score does a result of 60 have, and roughly what share of results exceed it?",
+    "steps": "z = \\frac{60 - 50}{5} = 2.0.\n\nThe area above z = 2 is about 0.023, so about 2.3% of results exceed 60."
+   }
+  }
+ ]
+}

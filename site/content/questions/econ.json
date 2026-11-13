@@ -1,0 +1,423 @@
+[
+ {
+  "id": "econ-0001",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "$5,000 is deposited in an account that pays 6% interest compounded annually. What is the balance after 10 years?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$8,000"
+   },
+   {
+    "id": "b",
+    "text": "$8,954"
+   },
+   {
+    "id": "c",
+    "text": "$9,097"
+   },
+   {
+    "id": "d",
+    "text": "$10,600"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Each year you earn interest on last year's interest too, so the pile grows a little faster every year.",
+  "solution": "F = P(1 + i)^{n} = 5,000(1.06)^{10} = 5,000 × 1.7908 = $8,954.\n\n$8,000 is what simple interest would give.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237"
+   }
+  ],
+  "tags": [
+   "future worth",
+   "compound interest"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "econ-0002",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A $20,000 loan is repaid in five equal end-of-year payments at 8% annual interest. What is each payment?",
+  "answer": {
+   "value": 5009,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$ per year"
+  },
+  "eli5": "Each payment covers that year's interest plus a slice of the loan. The capital recovery factor spreads the loan evenly so the last payment clears it exactly.",
+  "solution": "A = P × \\frac{i(1 + i)^{n}}{(1 + i)^{n} - 1} = 20,000 × \\frac{0.08(1.08)^{5}}{(1.08)^{5} - 1} = 20,000 × 0.2505 = $5,009.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237"
+   }
+  ],
+  "tags": [
+   "capital recovery",
+   "loan payment"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "econ-0003",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A plant has fixed costs of $120,000 per year. Each unit costs $18 to make and sells for $30. How many units per year must be sold to break even?",
+  "options": [
+   {
+    "id": "a",
+    "text": "4,000"
+   },
+   {
+    "id": "b",
+    "text": "6,667"
+   },
+   {
+    "id": "c",
+    "text": "10,000"
+   },
+   {
+    "id": "d",
+    "text": "12,000"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Every unit sold leaves a little money after paying for itself. Break-even is the number of units whose leftovers add up to the bills you pay no matter what.",
+  "solution": "Each unit contributes 30 - 18 = $12 toward fixed costs.\n\nBreak-even quantity = \\frac{120,000}{12} = 10,000 units.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237"
+   }
+  ],
+  "tags": [
+   "break-even"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "econ-0004",
+  "topic": "econ",
+  "subtopic": "econ-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A project has a 20% chance of losing $50,000, a 50% chance of earning $40,000 and a 30% chance of earning $100,000. What is its expected value?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$30,000"
+   },
+   {
+    "id": "b",
+    "text": "$40,000"
+   },
+   {
+    "id": "c",
+    "text": "$45,000"
+   },
+   {
+    "id": "d",
+    "text": "$90,000"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Expected value is the average result if you could run the project many times. Weight each outcome by how often it happens and add them up.",
+  "solution": "EV = 0.20(-50,000) + 0.50(40,000) + 0.30(100,000) = -10,000 + 20,000 + 30,000 = $40,000.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237"
+   }
+  ],
+  "tags": [
+   "expected value",
+   "risk"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "econ-0005",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A machine has fixed costs of $50,000 per year and variable costs of $12 per unit. What is the average cost per unit at 10,000 units per year?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$5"
+   },
+   {
+    "id": "b",
+    "text": "$12"
+   },
+   {
+    "id": "c",
+    "text": "$17"
+   },
+   {
+    "id": "d",
+    "text": "$62"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Fixed costs are shared out over everything you make. The more you make, the smaller each unit's share.",
+  "solution": "Total cost = 50,000 + 12(10,000) = $170,000.\n\nAverage cost = \\frac{170,000}{10,000} = $17 per unit.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "econ-0006",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A task needs 40 hours of direct labor at $35 per hour and $600 of materials. Overhead is charged at 50% of direct labor. What is the total cost?",
+  "answer": {
+   "value": 2700,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Direct costs are the hands and the materials on the job. Overhead is everything in the background, added as a share of the direct cost.",
+  "solution": "Direct labor = 40(35) = $1,400. Overhead = 0.50(1,400) = $700.\n\nTotal = 1,400 + 600 + 700 = $2,700.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "econ-0007",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the present worth of $10,000 received 6 years from now at an interest rate of 5% per year?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$7,462"
+   },
+   {
+    "id": "b",
+    "text": "$7,692"
+   },
+   {
+    "id": "c",
+    "text": "$7,835"
+   },
+   {
+    "id": "d",
+    "text": "$13,401"
+   }
+  ],
+  "answer": "a",
+  "eli5": "Money you have to wait for is worth less today, because today's money could have been earning interest the whole time.",
+  "solution": "P = \\frac{F}{(1 + i)^{n}} = \\frac{10,000}{(1.05)^{6}} = $7,462.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "econ-0008",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A loan charges a nominal rate of 12% per year, compounded monthly. What is the effective annual interest rate?",
+  "answer": {
+   "value": 12.68,
+   "tolerance": 0.005,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Charging 1% twelve times is slightly more than charging 12% once, because each month's interest earns interest too.",
+  "solution": "i_{e} = (1 + \\frac{0.12}{12})^{12} - 1 = (1.01)^{12} - 1 = 0.1268 = 12.68%.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "econ-0009",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A flood wall costs $300,000 to build and $15,000 per year to maintain. It prevents $60,000 of damage per year. Over 20 years at 6%, what is the benefit-cost ratio?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.69"
+   },
+   {
+    "id": "b",
+    "text": "1.20"
+   },
+   {
+    "id": "c",
+    "text": "1.46"
+   },
+   {
+    "id": "d",
+    "text": "2.29"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Put all the good the project does and all it costs into today's dollars, then see how many dollars of good you get per dollar spent.",
+  "solution": "(P/A, 6%, 20) = 11.47.\n\nBenefits = 60,000(11.47) = $688,200. Costs = 300,000 + 15,000(11.47) = $472,000.\n\nB/C = \\frac{688,200}{472,000} = 1.46.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "econ-0010",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A machine costs $40,000, costs $3,000 per year to run, and has a salvage value of $5,000 after 8 years. At 10% interest, what is its equivalent uniform annual cost?",
+  "answer": {
+   "value": 10060,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$ per year"
+  },
+  "eli5": "Spread the purchase price over the years like a loan payment, add the yearly running cost, and take off the yearly value of what you get back at the end.",
+  "solution": "EUAC = 40,000(A/P, 10%, 8) + 3,000 - 5,000(A/F, 10%, 8) = 40,000(0.1874) + 3,000 - 5,000(0.0874) = $10,060.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "econ-0011",
+  "topic": "econ",
+  "subtopic": "econ-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Option A pays a certain $30,000. Option B has a 60% chance of paying $60,000 and a 40% chance of losing $10,000. Based on expected value, which option is better and by how much?",
+  "options": [
+   {
+    "id": "a",
+    "text": "A by $2,000"
+   },
+   {
+    "id": "b",
+    "text": "B by $2,000"
+   },
+   {
+    "id": "c",
+    "text": "B by $6,000"
+   },
+   {
+    "id": "d",
+    "text": "They are equal"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Compare the sure thing with the average result of the gamble.",
+  "solution": "EV of B = 0.60(60,000) + 0.40(-10,000) = 36,000 - 4,000 = $32,000.\n\nThat is $2,000 more than the certain $30,000.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ }
+]

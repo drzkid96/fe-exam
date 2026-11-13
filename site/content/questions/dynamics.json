@@ -1,0 +1,424 @@
+[
+ {
+  "id": "dynamics-0001",
+  "topic": "dynamics",
+  "subtopic": "dynamics-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A car starts from rest and accelerates uniformly to 27 m/s in 9 s. How far does it travel in that time?",
+  "options": [
+   {
+    "id": "a",
+    "text": "81.0 m"
+   },
+   {
+    "id": "b",
+    "text": "121.5 m"
+   },
+   {
+    "id": "c",
+    "text": "243.0 m"
+   },
+   {
+    "id": "d",
+    "text": "364.5 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "When speed builds up steadily from zero, the average speed is half the final speed. Distance is that average speed times the time.",
+  "solution": "Acceleration a = \\frac{27}{9} = 3 m/s^{2}.\n\nDistance s = \\frac{1}{2}at^{2} = \\frac{1}{2}(3)(9)^{2} = 121.5 m.\n\nCheck: average speed 13.5 m/s × 9 s = 121.5 m.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129"
+   }
+  ],
+  "tags": [
+   "kinematics",
+   "constant acceleration"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "dynamics-0002",
+  "topic": "dynamics",
+  "subtopic": "dynamics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 50 kg crate is pulled along a level floor by a 300 N horizontal force. The coefficient of kinetic friction is 0.30. What is the acceleration of the crate? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 3.06,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s^{2}"
+  },
+  "eli5": "Friction eats part of the pull. Whatever push is left over is what actually speeds the crate up.",
+  "solution": "Normal force N = 50(9.81) = 490.5 N.\n\nFriction = 0.30(490.5) = 147.2 N.\n\nNet force = 300 - 147.2 = 152.8 N.\n\na = \\frac{152.8}{50} = 3.06 m/s^{2}.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129"
+   }
+  ],
+  "tags": [
+   "newton second law",
+   "friction"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "dynamics-0003",
+  "topic": "dynamics",
+  "subtopic": "dynamics-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 2 kg ball is dropped from rest from a height of 10 m. Ignoring air resistance, how fast is it moving just before it lands? Use g = 9.81 m/s^{2}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "9.9 m/s"
+   },
+   {
+    "id": "b",
+    "text": "14.0 m/s"
+   },
+   {
+    "id": "c",
+    "text": "19.6 m/s"
+   },
+   {
+    "id": "d",
+    "text": "98.1 m/s"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Height is stored energy. As the ball falls, all of that stored energy turns into speed. The mass cancels out, so a heavy ball and a light ball land at the same speed.",
+  "solution": "Energy balance: mgh = \\frac{1}{2}mv^{2}.\n\nv = \\sqrt{2gh} = \\sqrt{2(9.81)(10)} = 14.0 m/s.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129"
+   }
+  ],
+  "tags": [
+   "energy",
+   "free fall"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "dynamics-0004",
+  "topic": "dynamics",
+  "subtopic": "dynamics-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A thin uniform rod has a mass of 6 kg and a length of 2 m. What is its mass moment of inertia about an axis through one end, perpendicular to the rod?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2 kg·m^{2}"
+   },
+   {
+    "id": "b",
+    "text": "6 kg·m^{2}"
+   },
+   {
+    "id": "c",
+    "text": "8 kg·m^{2}"
+   },
+   {
+    "id": "d",
+    "text": "24 kg·m^{2}"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A rod is harder to swing from its end than to spin about its middle, because more of its mass is far from the pivot.",
+  "solution": "About one end: I = \\frac{mL^{2}}{3} = \\frac{6(2)^{2}}{3} = 8 kg·m^{2}.\n\nAbout the centre it would be \\frac{mL^{2}}{12} = 2 kg·m^{2}.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129"
+   }
+  ],
+  "tags": [
+   "mass moment of inertia",
+   "rod"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "dynamics-0005",
+  "topic": "dynamics",
+  "subtopic": "dynamics-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A ball is launched from level ground at 20 m/s, at 30° above the horizontal. Ignoring air resistance, how far away does it land? Use g = 9.81 m/s^{2}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "17.7 m"
+   },
+   {
+    "id": "b",
+    "text": "20.4 m"
+   },
+   {
+    "id": "c",
+    "text": "35.3 m"
+   },
+   {
+    "id": "d",
+    "text": "40.8 m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The ball moves sideways at a steady speed while gravity pulls it back down. How long it stays in the air decides how far it gets.",
+  "solution": "Range = \\frac{v^{2} sin(2 × 30°)}{g} = \\frac{400(0.866)}{9.81} = 35.3 m.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "dynamics-0006",
+  "topic": "dynamics",
+  "subtopic": "dynamics-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A car travels at a constant 20 m/s around a curve of radius 80 m. What is its acceleration toward the centre of the curve?",
+  "answer": {
+   "value": 5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s^{2}"
+  },
+  "eli5": "Even at steady speed, turning means the direction of travel keeps changing. That change is an acceleration pointing into the turn.",
+  "solution": "a_{n} = \\frac{v^{2}}{r} = \\frac{20^{2}}{80} = 5 m/s^{2}.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "dynamics-0007",
+  "topic": "dynamics",
+  "subtopic": "dynamics-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A solid uniform disk has a mass of 10 kg and a radius of 0.3 m. What is its mass moment of inertia about its central axis?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.15 kg·m^{2}"
+   },
+   {
+    "id": "b",
+    "text": "0.45 kg·m^{2}"
+   },
+   {
+    "id": "c",
+    "text": "0.90 kg·m^{2}"
+   },
+   {
+    "id": "d",
+    "text": "1.50 kg·m^{2}"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A disk is easier to spin than a ring of the same mass, because much of its mass sits near the middle.",
+  "solution": "I = \\frac{1}{2}mr^{2} = \\frac{1}{2}(10)(0.3)^{2} = 0.45 kg·m^{2}.\n\nA thin ring would be mr^{2} = 0.90 kg·m^{2}.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "dynamics-0008",
+  "topic": "dynamics",
+  "subtopic": "dynamics-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A block slides down a frictionless incline at 30° to the horizontal. What is its acceleration? Use g = 9.81 m/s^{2}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "4.91 m/s^{2}"
+   },
+   {
+    "id": "b",
+    "text": "5.66 m/s^{2}"
+   },
+   {
+    "id": "c",
+    "text": "8.50 m/s^{2}"
+   },
+   {
+    "id": "d",
+    "text": "9.81 m/s^{2}"
+   }
+  ],
+  "answer": "a",
+  "eli5": "Only the part of gravity that points down the slope speeds the block up. The rest presses it into the surface.",
+  "solution": "a = g sin 30° = 9.81(0.5) = 4.91 m/s^{2}.\n\nThe mass cancels.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "dynamics-0009",
+  "topic": "dynamics",
+  "subtopic": "dynamics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A net torque of 12 N·m acts on a flywheel with a mass moment of inertia of 3 kg·m^{2}. What is its angular acceleration?",
+  "answer": {
+   "value": 4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "rad/s^{2}"
+  },
+  "eli5": "Torque is the turning version of force, and moment of inertia is the turning version of mass.",
+  "solution": "Angular acceleration = \\frac{T}{I} = \\frac{12}{3} = 4 rad/s^{2}.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "dynamics-0010",
+  "topic": "dynamics",
+  "subtopic": "dynamics-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A hoist lifts a 500 kg load at a constant 2 m/s. What power is delivered to the load? Use g = 9.81 m/s^{2}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "1.0 kW"
+   },
+   {
+    "id": "b",
+    "text": "4.9 kW"
+   },
+   {
+    "id": "c",
+    "text": "9.8 kW"
+   },
+   {
+    "id": "d",
+    "text": "19.6 kW"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Power is how fast work is done. Lifting a heavier load, or lifting faster, takes more power.",
+  "solution": "P = F × v = (500)(9.81)(2) = 9,810 W = 9.8 kW.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "dynamics-0011",
+  "topic": "dynamics",
+  "subtopic": "dynamics-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A spring with a stiffness of 2,000 N/m is compressed 0.1 m and released against a 0.5 kg block on a frictionless surface. What speed does the block reach?",
+  "answer": {
+   "value": 6.32,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s"
+  },
+  "eli5": "A squeezed spring stores energy. When it lets go, that energy becomes the block's motion.",
+  "solution": "\\frac{1}{2}kx^{2} = \\frac{1}{2}mv^{2}: \\frac{1}{2}(2,000)(0.1)^{2} = 10 J.\n\nv = \\sqrt{\\frac{2(10)}{0.5}} = 6.32 m/s.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ }
+]

@@ -1,0 +1,169 @@
+{
+ "topic": "fluids",
+ "sections": [
+  {
+   "id": "fluids-overview",
+   "subtopic": null,
+   "title": "Start here",
+   "body": "Fluids at rest press equally in all directions, and the pressure grows with depth. Fluids in motion trade pressure, speed and height against each other while keeping the total the same, apart from losses.\n\nTwo ideas carry most questions: what goes in must come out, and energy is conserved along the flow.",
+   "formulas": [],
+   "pitfalls": [
+    "Mixing gauge and absolute pressure.",
+    "Using pipe diameter where the formula needs area: area changes with the square of diameter."
+   ],
+   "read": [
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Fluid Mechanics, pages 177–203"
+    },
+    {
+     "source": "Lindeburg review manual, file 1 of 3",
+     "where": "Topic III, Fluid Mechanics"
+    }
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "fluids-a-lesson",
+   "subtopic": "fluids-a",
+   "title": "Flow measurement",
+   "body": "Flow meters work by making the fluid trade pressure for speed and then measuring the pressure change. A Pitot tube points into the flow and stops a small stream of it; the extra pressure it reads is the velocity head. A venturi and an orifice plate squeeze the flow through a smaller opening and measure the pressure drop across it.\n\nReal meters lose a little energy and the jet narrows, so a discharge coefficient below 1 corrects the ideal answer. Weirs measure open-channel flow from the height of water over a crest.",
+   "formulas": [
+    {
+     "name": "Pitot tube",
+     "expr": "V = \\sqrt{2g × (stagnation head - static head)}",
+     "handbook": "Fluid Mechanics, p. 177–203"
+    },
+    {
+     "name": "Orifice discharging freely",
+     "expr": "Q = C_{d}A\\sqrt{2gh}",
+     "handbook": "Fluid Mechanics, p. 177–203"
+    },
+    {
+     "name": "Venturi or orifice meter",
+     "expr": "Q = C_{d}A_{2}\\sqrt{\\frac{2g × head difference}{1 - (A_{2}/A_{1})^{2}}}",
+     "handbook": "Fluid Mechanics, p. 177–203"
+    }
+   ],
+   "pitfalls": [
+    "Leaving out the discharge coefficient.",
+    "Using diameter where area is needed."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A tank drains through a 20 mm hole 2 m below the water surface with a discharge coefficient of 0.62. Find the flow in L/s.",
+    "steps": "A = 0.000314 m^{2}.\n\nQ = 0.62(0.000314)\\sqrt{2(9.81)(2)} = 0.00122 m^{3}/s = 1.22 L/s."
+   }
+  },
+  {
+   "id": "fluids-b-lesson",
+   "subtopic": "fluids-b",
+   "title": "Fluid properties",
+   "body": "Density is mass per volume. Specific weight is weight per volume, which is density times gravity. Specific gravity compares a fluid's density with water's.\n\nViscosity is a fluid's resistance to flowing: honey has a high viscosity and water a low one. Dynamic viscosity links shear stress to how fast one layer slides over the next. Kinematic viscosity is dynamic viscosity divided by density. The Reynolds number compares inertia with viscosity and tells you whether pipe flow is smooth (laminar, below about 2,100) or churning (turbulent).",
+   "formulas": [
+    {
+     "name": "Specific weight",
+     "expr": "specific weight = density × g",
+     "handbook": "Fluid Mechanics, p. 177–203"
+    },
+    {
+     "name": "Specific gravity",
+     "expr": "SG = \\frac{density}{density of water}",
+     "handbook": "Fluid Mechanics, p. 177–203"
+    },
+    {
+     "name": "Kinematic viscosity",
+     "expr": "\\frac{dynamic viscosity}{density}",
+     "handbook": "Fluid Mechanics, p. 177–203"
+    },
+    {
+     "name": "Reynolds number",
+     "expr": "Re = \\frac{VD}{kinematic viscosity}",
+     "handbook": "Fluid Mechanics, p. 177–203"
+    }
+   ],
+   "pitfalls": [
+    "Confusing dynamic and kinematic viscosity. Check the units: Pa·s versus m^{2}/s."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Oil with a kinematic viscosity of 4 × 10^{-5} m^{2}/s flows at 0.8 m/s in a 50 mm pipe. Is the flow laminar?",
+    "steps": "Re = \\frac{0.8(0.05)}{4 × 10^{-5}} = 1,000.\n\nThat is below 2,100, so the flow is laminar."
+   }
+  },
+  {
+   "id": "fluids-c-lesson",
+   "subtopic": "fluids-c",
+   "title": "Fluid statics",
+   "body": "In a fluid at rest, pressure depends only on depth and acts equally in all directions. It increases by the specific weight for every unit of depth. Gauge pressure is measured from atmospheric; absolute pressure includes the atmosphere.\n\nA manometer reads pressure as the height of a liquid column: move through it adding pressure going down and subtracting going up. The force on a submerged flat surface equals the pressure at the surface's centroid times its area, and it acts below the centroid. A floating or submerged body is pushed up by a force equal to the weight of fluid it displaces.",
+   "formulas": [
+    {
+     "name": "Pressure at depth",
+     "expr": "p = specific weight × h",
+     "handbook": "Fluid Mechanics, p. 177–203"
+    },
+    {
+     "name": "Force on a plane surface",
+     "expr": "F = specific weight × h_{c} × A",
+     "handbook": "Fluid Mechanics, p. 177–203"
+    },
+    {
+     "name": "Centre of pressure",
+     "expr": "y_{cp} = y_{c} + \\frac{I_{c}}{y_{c}A}",
+     "handbook": "Fluid Mechanics, p. 177–203"
+    },
+    {
+     "name": "Buoyancy",
+     "expr": "F_{b} = specific weight × displaced volume",
+     "handbook": "Fluid Mechanics, p. 177–203"
+    }
+   ],
+   "pitfalls": [
+    "Using the depth to the top of a surface instead of the depth to its centroid.",
+    "Mixing gauge and absolute pressures in one equation."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Find the gauge pressure at the bottom of a 5 m deep tank of oil with a specific gravity of 0.9.",
+    "steps": "p = 0.9(9.81)(5) = 44.1 kPa."
+   }
+  },
+  {
+   "id": "fluids-d-lesson",
+   "subtopic": "fluids-d",
+   "title": "Energy, impulse and momentum",
+   "body": "Three conservation laws solve most flow problems. Continuity: what flows in must flow out, so velocity rises where the pipe narrows. Energy: along a flow, pressure head, velocity head and elevation head add to a constant, less any losses. Momentum: a force is needed to change the speed or direction of a flow.\n\nAdd pump head as an energy gain and friction as a loss. Friction loss in pipes comes from the Darcy-Weisbach equation with a friction factor from the Moody diagram. The energy grade line shows total head; the hydraulic grade line sits below it by the velocity head.",
+   "formulas": [
+    {
+     "name": "Continuity",
+     "expr": "Q = A_{1}V_{1} = A_{2}V_{2}",
+     "handbook": "Fluid Mechanics, p. 177–203"
+    },
+    {
+     "name": "Energy equation",
+     "expr": "\\frac{p_{1}}{specific weight} + \\frac{V_{1}^{2}}{2g} + z_{1} + h_{pump} = \\frac{p_{2}}{specific weight} + \\frac{V_{2}^{2}}{2g} + z_{2} + h_{loss}",
+     "handbook": "Fluid Mechanics, p. 177–203"
+    },
+    {
+     "name": "Darcy-Weisbach",
+     "expr": "h_{f} = f\\frac{L}{D}\\frac{V^{2}}{2g}",
+     "handbook": "Fluid Mechanics, p. 177–203"
+    },
+    {
+     "name": "Momentum",
+     "expr": "F = density × Q × (change in velocity)",
+     "handbook": "Fluid Mechanics, p. 177–203"
+    }
+   ],
+   "pitfalls": [
+    "Forgetting that halving the diameter quarters the area and quadruples the velocity.",
+    "Putting a head loss on the wrong side of the energy equation."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Water flows at 0.03 m^{3}/s through a 150 mm pipe. Find the velocity and the velocity head.",
+    "steps": "A = 0.01767 m^{2}, so V = \\frac{0.03}{0.01767} = 1.70 m/s.\n\nVelocity head = \\frac{1.70^{2}}{2(9.81)} = 0.147 m."
+   }
+  }
+ ]
+}

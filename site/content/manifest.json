@@ -1,0 +1,38 @@
+{
+ "version": "0.3.0",
+ "updated": "2026-11-13",
+ "exam": "content/exam.json",
+ "questions": [
+  "content/questions/math.json",
+  "content/questions/ethics.json",
+  "content/questions/econ.json",
+  "content/questions/statics.json",
+  "content/questions/dynamics.json",
+  "content/questions/mechmat.json",
+  "content/questions/materials.json",
+  "content/questions/fluids.json",
+  "content/questions/surveying.json",
+  "content/questions/water.json",
+  "content/questions/structural.json",
+  "content/questions/geotech.json",
+  "content/questions/transport.json",
+  "content/questions/construction.json"
+ ],
+ "guide": [
+  "content/guide/math.json",
+  "content/guide/ethics.json",
+  "content/guide/econ.json",
+  "content/guide/statics.json",
+  "content/guide/dynamics.json",
+  "content/guide/mechmat.json",
+  "content/guide/materials.json",
+  "content/guide/fluids.json",
+  "content/guide/surveying.json",
+  "content/guide/water.json",
+  "content/guide/structural.json",
+  "content/guide/geotech.json",
+  "content/guide/transport.json",
+  "content/guide/construction.json"
+ ],
+ "reference": "content/reference.json"
+}

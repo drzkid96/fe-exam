@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FE Civil Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300..700;1,400..700&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Fehr & Peers palette. Layout idea: slate rail, white work surface on a gray ground,
+     emerald as the single accent, orange reserved for wrong answers. Single light theme by choice. */
+  --slate:#00242E; --emerald:#00574A; --jade:#1B795A; --lightgreen:#6BD688; --pale:#D9F1D6;
+  --cream:#EEEDE8; --band:#F2F2F2; --rule:#E7E8E8; --blue:#568CBB; --orange:#FF6622; --white:#FFFFFF;
+  --ink:var(--slate); --muted:rgb(0 36 46 / .68); --ground:var(--band); --surface:var(--white);
+  --font:"Albert Sans";
+  --r:6px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:var(--font);font-size:15px;line-height:1.5;color:var(--ink);background:var(--ground)}
+button,input,select,textarea{font:inherit;color:inherit}
+svg text{font-family:var(--font)}
+code{font-family:var(--font);background:var(--band);padding:0 .3em;border-radius:3px}
+h1,h2,h3{margin:0;font-weight:600;text-wrap:balance}
+h1{font-size:28px;letter-spacing:-.3px;line-height:1.2}
+h2{font-size:18px;color:var(--emerald)}
+h3{font-size:14px}
+p{margin:0}
+a{color:var(--emerald)}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+[hidden]{display:none!important}
+
+.app{display:grid;grid-template-columns:216px minmax(0,1fr);height:100%}
+.side{background:var(--slate);color:var(--white);display:flex;flex-direction:column;gap:20px;padding:20px 12px;overflow:auto}
+.brand{padding:0 10px;display:flex;flex-direction:column}
+.brand b{font-size:20px;font-weight:600;letter-spacing:-.2px;white-space:nowrap}
+.brand span{color:var(--lightgreen);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.side nav{display:flex;flex-direction:column;gap:2px}
+.side nav a{padding:8px 10px;border-radius:var(--r);color:var(--white);text-decoration:none;font-weight:500;opacity:.8;white-space:nowrap}
+.side nav a:hover{opacity:1;background:rgb(255 255 255 / .06)}
+.side nav a[aria-current=page]{opacity:1;background:rgb(255 255 255 / .1);box-shadow:inset 3px 0 0 var(--lightgreen)}
+.main{display:flex;flex-direction:column;min-width:0;height:100%}
+.top{display:flex;gap:12px;align-items:center;padding:10px 24px;background:var(--surface);border-bottom:1px solid var(--rule)}
+.top form{flex:1;max-width:520px}
+.top input{width:100%;padding:8px 12px;border:1px solid var(--rule);border-radius:var(--r);background:var(--band)}
+.status{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);white-space:nowrap}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--rule);flex:none}
+.dot.ok{background:var(--jade)} .dot.busy{background:var(--blue)} .dot.warn{background:var(--orange)}
+#view{flex:1;overflow:auto;padding:24px}
+.wrap{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+.head{display:flex;gap:16px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap}
+.head-actions{display:flex;gap:8px;flex-wrap:wrap}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--jade)}
+.sub{color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.card-h{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.note{background:var(--pale);border-left:3px solid var(--emerald);padding:12px 16px;border-radius:var(--r)}
+.empty{color:var(--muted);padding:8px 0}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+
+.btn{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:var(--r);border:1px solid var(--slate);background:var(--surface);font-weight:600;cursor:pointer;text-decoration:none;color:var(--ink);white-space:nowrap}
+.btn:hover{background:var(--band)}
+.btn.primary{background:var(--emerald);border-color:var(--emerald);color:var(--white)}
+.btn.primary:hover{background:var(--jade);border-color:var(--jade)}
+.btn.ghost{border-color:var(--rule);font-weight:500}
+.btn.sm{padding:4px 10px;font-size:13px}
+.btn:disabled{opacity:.45;cursor:default}
+.btn.on{background:var(--pale);border-color:var(--emerald)}
+
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.tile{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:6px}
+.tile .k{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.tile .v{font-size:30px;font-weight:600;line-height:1.1;font-variant-numeric:tabular-nums}
+.tile .d{font-size:13px;color:var(--muted)}
+
+.bar{height:8px;background:var(--rule);border-radius:4px;overflow:hidden;min-width:60px}
+.bar i{display:block;height:100%;background:var(--emerald);border-radius:4px}
+.bar.thin{height:4px}
+.bar.jade i{background:var(--lightgreen)}
+
+.tw{overflow-x:auto}
+table.t{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.t th{text-align:left;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);padding:8px 10px;border-bottom:1.5px solid var(--cream);white-space:nowrap}
+.t td{padding:10px;border-bottom:1px solid var(--rule);vertical-align:middle}
+.t tr:last-child td{border-bottom:0}
+.t .num{text-align:right;white-space:nowrap}
+.t a{font-weight:600;text-decoration:none}
+.t a:hover{text-decoration:underline}
+.t .n{color:var(--muted);width:28px}
+
+.chip{display:inline-flex;align-items:center;gap:6px;padding:2px 10px;border-radius:999px;border:1px solid var(--rule);background:var(--surface);font-size:12px;font-weight:600;white-space:nowrap}
+.chip::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--rule)}
+.chip.plain::before{display:none}
+.chip.new::before{background:var(--rule)} .chip.due::before{background:var(--blue)} .chip.missed::before{background:var(--orange)}
+.chip.learning::before{background:var(--lightgreen)} .chip.strong::before{background:var(--emerald)}
+.chip.sample{background:var(--cream);border-color:var(--cream)} .chip.sample::before{display:none}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+
+.topic-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.tcard{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--ink)}
+.tcard:hover{border-color:var(--emerald)}
+.tcard .tn{font-size:12px;font-weight:700;color:var(--jade);letter-spacing:.05em}
+.tcard strong{font-size:16px;font-weight:600;line-height:1.3}
+.tcard .row{display:flex;justify-content:space-between;gap:8px;font-size:13px;color:var(--muted)}
+
+details.sub-d{border:1px solid var(--rule);border-radius:var(--r);background:var(--surface)}
+details.sub-d>summary{display:flex;gap:12px;align-items:center;padding:12px 16px;cursor:pointer;list-style:none}
+details.sub-d>summary::-webkit-details-marker{display:none}
+details.sub-d>summary .code{font-weight:700;color:var(--jade);width:18px;flex:none}
+details.sub-d>summary .nm{flex:1;min-width:0;font-weight:500}
+details.sub-d[open]>summary{border-bottom:1px solid var(--rule)}
+.sub-body{padding:16px;display:flex;flex-direction:column;gap:14px}
+.gsec{border-left:3px solid var(--pale);padding-left:14px;display:flex;flex-direction:column;gap:8px}
+.gsec p,.stem p,.sol p{margin:0 0 8px;max-width:70ch} .gsec ul,.stem ul,.sol ul{margin:0 0 8px;padding-left:20px}
+.qlist{display:flex;flex-direction:column}
+.qrow{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--rule);text-decoration:none;color:var(--ink)}
+.qrow:last-child{border-bottom:0}
+.qrow:hover .qt{text-decoration:underline}
+.qrow .qt{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.qrow .meta{font-size:13px;color:var(--muted);white-space:nowrap}
+
+.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.mode{border:1px solid var(--rule);border-radius:var(--r);padding:14px;background:var(--surface);text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:4px}
+.mode strong{font-weight:600}.mode span{font-size:13px;color:var(--muted)}
+.mode[aria-pressed=true]{border-color:var(--emerald);background:var(--pale)}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field>label,.field>.lbl{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.field input,.field select,.filters select,.filters input{padding:8px 10px;border:1px solid var(--rule);border-radius:var(--r);background:var(--surface);min-width:0}
+.checks{display:flex;flex-wrap:wrap;gap:6px}
+.check{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border:1px solid var(--rule);border-radius:999px;font-size:13px;cursor:pointer;background:var(--surface)}
+.check input{accent-color:var(--emerald);margin:0}
+.check:has(input:checked){border-color:var(--emerald);background:var(--pale)}
+
+.qbar{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.qbar-r{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.clock{font-variant-numeric:tabular-nums;font-weight:600;padding:0 6px}
+.clock.low{color:var(--orange)}
+.qcard{gap:16px}
+.stem{font-size:16px}
+.figure svg,.hot svg{max-width:100%;width:520px;height:auto;display:block;border:1px solid var(--rule);border-radius:var(--r);background:var(--white)}
+.figure img{max-width:100%}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{display:flex;gap:12px;align-items:center;text-align:left;padding:10px 12px;border:1px solid var(--rule);border-radius:var(--r);background:var(--surface);cursor:pointer;width:100%}
+.opt:hover:not(:disabled){border-color:var(--slate)}
+.opt .key{flex:none;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--slate);display:grid;place-items:center;font-weight:700;font-size:13px}
+.opt.multi .key{border-radius:4px}
+.opt .otext{flex:1;min-width:0}
+.opt.sel{border-color:var(--emerald);background:var(--pale)}
+.opt.sel .key{background:var(--emerald);border-color:var(--emerald);color:var(--white)}
+.opt.right{border-color:var(--jade);background:var(--pale)}
+.opt.right .key{background:var(--jade);border-color:var(--jade);color:var(--white)}
+.opt.wrong{border-color:var(--orange);background:rgb(255 102 34 / .08)}
+.opt.wrong .key{border-color:var(--orange)}
+.opt:disabled{cursor:default;color:var(--ink)}
+.mark{flex:none;width:18px;height:18px}
+.mark.ok{color:var(--jade)} .mark.no{color:var(--orange)}
+.numq{display:flex;flex-direction:column;gap:6px}
+.numq label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.num-row{display:flex;gap:10px;align-items:center}
+.numq input{width:200px;max-width:100%;padding:10px 12px;border:1.5px solid var(--slate);border-radius:var(--r);font-size:16px;font-variant-numeric:tabular-nums;background:var(--surface)}
+.numq .unit{font-weight:600}
+.hot svg{cursor:crosshair}.hot.locked svg{cursor:default}
+.hint{font-size:13px;color:var(--muted)}
+.match{display:flex;flex-direction:column;gap:12px}
+.pool{display:flex;gap:8px;flex-wrap:wrap;align-items:center;min-height:54px;padding:10px;border:1px dashed var(--slate);border-radius:var(--r);background:var(--band)}
+.targets{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.target{border:1px solid var(--rule);border-radius:var(--r);padding:10px;display:flex;flex-direction:column;gap:8px;min-height:92px;background:var(--surface);cursor:pointer}
+.target .tlabel{font-weight:600}
+.target .slot{display:flex;gap:6px;flex-wrap:wrap;min-height:36px;border-radius:4px;background:var(--band);padding:4px}
+.holding .target,.holding .pool{border-color:var(--emerald)}
+.tok{padding:6px 12px;border:1.5px solid var(--slate);border-radius:var(--r);background:var(--surface);font-weight:600;cursor:grab}
+.tok.held{background:var(--emerald);border-color:var(--emerald);color:var(--white)}
+.tok.right{border-color:var(--jade);background:var(--pale)} .tok.wrong{border-color:var(--orange);background:rgb(255 102 34 / .08)}
+.tok:disabled{cursor:default;color:var(--ink)}
+.order{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;counter-reset:o}
+.oitem{display:flex;gap:12px;align-items:center;padding:8px 12px;border:1px solid var(--rule);border-radius:var(--r);background:var(--surface);cursor:grab;counter-increment:o}
+.oitem::before{content:counter(o);width:22px;font-weight:700;color:var(--jade)}
+.oitem .otext{flex:1}
+.oitem.right{border-color:var(--jade);background:var(--pale)} .oitem.wrong{border-color:var(--orange);background:rgb(255 102 34 / .08)}
+.obtns{display:flex;gap:4px}
+.obtns button{width:30px;height:30px;border:1px solid var(--rule);border-radius:var(--r);background:var(--surface);cursor:pointer;display:grid;place-items:center}
+.obtns button:disabled{opacity:.35;cursor:default}
+.obtns svg{width:14px;height:14px}
+.qfoot{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:var(--r);overflow:hidden}
+.seg button{border:0;background:var(--surface);padding:7px 12px;cursor:pointer;font-size:13px;font-weight:500;border-right:1px solid var(--rule)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed=true]{background:var(--slate);color:var(--white)}
+.conf{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.fb{border-radius:var(--r);padding:14px 16px;display:flex;flex-direction:column;gap:10px;border:1px solid var(--rule)}
+.fb.ok{background:var(--pale);border-color:var(--pale)} .fb.no{background:rgb(255 102 34 / .08);border-color:rgb(255 102 34 / .35)}
+.fb-h{display:flex;gap:8px;align-items:center}
+.fb-h span{margin-left:auto;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.sol{background:var(--surface);border-radius:var(--r);padding:12px 14px}
+.sol h3{margin-bottom:6px;text-transform:uppercase;font-size:12px;letter-spacing:.05em;color:var(--muted)}
+.palette{display:grid;grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:6px}
+.palette button{height:36px;border:1px solid var(--rule);border-radius:var(--r);background:var(--surface);cursor:pointer;font-weight:600;font-variant-numeric:tabular-nums;position:relative}
+.palette button.done{background:var(--pale);border-color:var(--pale)}
+.palette button.cur{border-color:var(--slate);border-width:2px}
+.palette button.mk::after{content:"";position:absolute;top:3px;right:3px;width:7px;height:7px;border-radius:50%;background:var(--blue)}
+.frac{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;font-size:.88em;line-height:1.2;margin:0 .15em}
+.frac>span:first-child{border-bottom:1px solid currentColor;padding:0 .25em}.frac>span:last-child{padding:0 .25em}
+.sqrt{display:inline-flex;align-items:stretch;vertical-align:middle}
+.sqrt svg{width:.7em;height:auto;flex:none}
+.sqrt>span{border-top:1px solid currentColor;padding:0 .15em;margin-top:.06em}
+
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--rule);flex-wrap:wrap}
+.tabs button{border:0;background:none;padding:8px 14px;cursor:pointer;font-weight:600;color:var(--muted);border-bottom:3px solid transparent;margin-bottom:-1px}
+.tabs button[aria-selected=true]{color:var(--ink);border-bottom-color:var(--emerald)}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters input[type=search]{flex:1;min-width:220px}
+.res{display:flex;flex-direction:column;gap:4px;padding:12px 0;border-bottom:1px solid var(--rule);text-decoration:none;color:var(--ink)}
+.res:last-child{border-bottom:0}
+.res strong{font-weight:600}.res:hover strong{text-decoration:underline}
+.res .x{font-size:13px;color:var(--muted)}
+mark{background:var(--pale);color:inherit;border-radius:2px}
+.heat{display:grid;grid-auto-flow:column;grid-template-rows:repeat(7,14px);gap:3px;justify-content:start}
+.heat i{width:14px;height:14px;border-radius:3px;background:var(--band)}
+.heat i.l1{background:var(--pale)} .heat i.l2{background:var(--lightgreen)} .heat i.l3{background:var(--jade)} .heat i.l4{background:var(--emerald)}
+.heat i.fut{background:none}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px}
+.kv dt{color:var(--muted)} .kv dd{margin:0;font-weight:500}
+
+#modal{position:fixed;inset:0;background:rgb(0 36 46 / .45);display:grid;place-items:center;padding:16px;z-index:10}
+#modal .card{max-width:440px;width:100%}
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--slate);color:var(--white);padding:10px 16px;border-radius:var(--r);z-index:11;max-width:90vw}
+
+@media (max-width:760px){
+  .app{grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr)}
+  .side{flex-direction:row;align-items:center;gap:12px;padding:8px 12px;overflow-x:auto}
+  .brand span{display:none}
+  .side nav{flex-direction:row}
+  .side nav a[aria-current=page]{box-shadow:inset 0 -3px 0 var(--lightgreen)}
+  .top{padding:10px 16px}
+  #view{padding:16px}
+  .status span{display:none}
+}
+@media (prefers-reduced-motion:no-preference){.bar i{transition:width .3s}}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand"><b>FE Civil</b><span>Study site</span></div>
+    <nav aria-label="Sections">
+      <a href="#home" data-to="home">Dashboard</a>
+      <a href="#practice" data-to="practice">Practice</a>
+      <a href="#topics" data-to="topics">Topics</a>
+      <a href="#review" data-to="review">Review</a>
+      <a href="#progress" data-to="progress">Progress</a>
+      <a href="#reference" data-to="reference">Reference</a>
+      <a href="#search" data-to="search">Search</a>
+      <a href="#setup" data-to="setup">Setup</a>
+    </nav>
+  </aside>
+  <div class="main">
+    <header class="top">
+      <form id="gform" role="search"><input id="gsearch" type="search" placeholder="Search questions, topics and guide" aria-label="Search the site" autocomplete="off"></form>
+      <div class="status" id="status" title=""><i class="dot"></i><span>Connecting</span></div>
+    </header>
+    <main id="view" tabindex="-1"><div class="wrap"><p class="sub">Loading the study site.</p></div></main>
+  </div>
+</div>
+<div id="modal" hidden></div>
+<div id="toast" hidden role="status"></div>
+
+<script>
+'use strict';
+/*CORE-START*/
+/* Pure logic: grading, learner model, question selection, search. No DOM, no storage. Tested in tools/test_core.js. */
+const Core = (() => {
+  const DAY = 86400000;
+  const INTERVALS = [0, 1, 3, 7, 14, 30];   // review interval in days for Leitner boxes 0 to 5
+  const MIN_N = 5;                           // attempts in a topic before a mastery figure is shown
+  const ALPHA = 0.2;                         // weight of the newest attempt in the mastery average
+  const FORMATS = ['mcq', 'multi', 'numeric', 'hotspot', 'match', 'order'];
+
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const RAD = '<svg viewBox="0 0 10 16" preserveAspectRatio="none" aria-hidden="true"><path d="M0 9.5l2-1 2.6 6.5L9 .6h1" fill="none" stroke="currentColor" stroke-width="1.1"/></svg>';
+
+  function inline(s) {            // s is already HTML-escaped
+    let prev;
+    do {
+      prev = s;
+      s = s.replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '<span class="frac"><span>$1</span><span>$2</span></span>')
+           .replace(/\\sqrt\{([^{}]*)\}/g, '<span class="sqrt">' + RAD + '<span>$1</span></span>')
+           .replace(/_\{([^{}]*)\}/g, '<sub>$1</sub>')
+           .replace(/\^\{([^{}]*)\}/g, '<sup>$1</sup>');
+    } while (s !== prev);
+    return s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/\*([^*]+)\*/g, '<em>$1</em>').replace(/`([^`]+)`/g, '<code>$1</code>');
+  }
+  const richInline = t => inline(esc(t));
+  function rich(text) {
+    const t = String(text == null ? '' : text).trim();
+    if (!t) return '';
+    return t.split(/\n{2,}/).map(b => {
+      const lines = b.split('\n');
+      if (lines.every(l => /^\s*-\s+/.test(l))) return '<ul>' + lines.map(l => '<li>' + richInline(l.replace(/^\s*-\s+/, '')) + '</li>').join('') + '</ul>';
+      return '<p>' + lines.map(richInline).join('<br>') + '</p>';
+    }).join('');
+  }
+  const plain = t => String(t == null ? '' : t).replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)').replace(/\\sqrt\{([^{}]*)\}/g, 'sqrt($1)').replace(/\^\{([^{}]*)\}/g, '^$1').replace(/_\{([^{}]*)\}/g, '$1').replace(/[*`]/g, '');
+
+  function parseNumber(s) {
+    if (typeof s === 'number') return isFinite(s) ? s : null;
+    if (s == null) return null;
+    const t = String(s).trim().replace(/,/g, '').replace(/\s+/g, '');
+    if (!/^[-+]?(\d+\.?\d*|\.\d+)(e[-+]?\d+)?$/i.test(t)) return null;
+    return Number(t);
+  }
+  function inPoly(pts, x, y) {
+    let inside = false;
+    for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) {
+      const [xi, yi] = pts[i], [xj, yj] = pts[j];
+      if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) inside = !inside;
+    }
+    return inside;
+  }
+  function hitRegion(regions, x, y) {
+    for (const r of regions || []) {
+      if (r.shape === 'rect' && x >= r.x && x <= r.x + r.w && y >= r.y && y <= r.y + r.h) return r;
+      if (r.shape === 'circle' && Math.hypot(x - r.cx, y - r.cy) <= r.r) return r;
+      if (r.shape === 'poly' && inPoly(r.points, x, y)) return r;
+    }
+    return null;
+  }
+  function numericRange(a) {
+    if (a.min != null && a.max != null) return [a.min, a.max];
+    const tol = a.tolerance == null ? 0.01 : a.tolerance;
+    const d = a.toleranceType === 'abs' ? tol : Math.abs(a.value) * tol;
+    return [a.value - d, a.value + d];
+  }
+  function isAnswered(q, r) {
+    switch (q.format) {
+      case 'mcq': return r != null && r !== '';
+      case 'multi': return Array.isArray(r) && r.length > 0;
+      case 'numeric': return parseNumber(r) != null;
+      case 'hotspot': return !!r && typeof r.x === 'number';
+      case 'match': return !!r && Object.keys(r).length > 0;
+      case 'order': return Array.isArray(r) && r.length > 0;
+    }
+    return false;
+  }
+  function grade(q, r) {
+    if (!isAnswered(q, r)) return {answered: false, correct: false};
+    let correct = false;
+    switch (q.format) {
+      case 'mcq': correct = r === q.answer; break;
+      case 'multi': { const a = [...q.answer].sort(), b = [...r].sort(); correct = a.length === b.length && a.every((v, i) => v === b[i]); break; }
+      case 'numeric': { const v = parseNumber(r), [lo, hi] = numericRange(q.answer); correct = v >= lo - 1e-12 && v <= hi + 1e-12; break; }
+      case 'hotspot': { const hit = hitRegion(q.regions, r.x, r.y); const ans = Array.isArray(q.answer) ? q.answer : [q.answer]; correct = !!hit && ans.includes(hit.id); break; }
+      case 'match': correct = q.tokens.every(t => (r[t.id] == null ? null : r[t.id]) === (q.answer[t.id] == null ? null : q.answer[t.id])); break;
+      case 'order': correct = r.length === q.answer.length && q.answer.every((v, i) => v === r[i]); break;
+    }
+    return {answered: true, correct};
+  }
+
+  const pad = n => String(n).padStart(2, '0');
+  function dayKey(ts) { const d = new Date(ts); return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  const hasReal = questions => questions.some(q => !q.sample);
+  function livePool(questions) { const real = hasReal(questions); return questions.filter(q => q.status !== 'draft' && (!real || !q.sample)); }
+  const weight = t => (t.min + t.max) / 2;
+  function qStatus(qs, now) {
+    if (!qs) return 'new';
+    if (!qs.last.correct) return 'missed';
+    if (qs.dueAt <= now) return 'due';
+    return qs.box >= 3 ? 'strong' : 'learning';
+  }
+
+  /* Learner model. Everything here is derived from the session log, so it can always be rebuilt.
+     Questions that are versions of one problem share a family. Review dates and mastery are kept per family:
+     a family is secure only after correct answers on three separate, spaced occasions, so one answer never masters anything. */
+  const famOf = q => q.family || q.id;
+  const SECURE_BOX = 3;
+  function buildModel(exam, questions, sessions, now) {
+    const real = hasReal(questions), live = livePool(questions);
+    const famById = new Map(questions.map(q => [q.id, famOf(q)]));
+    const attempts = [];
+    for (const s of sessions || []) for (const a of s.attempts || []) {
+      if (real && a.sample) continue;
+      attempts.push(Object.assign({}, a, {session: s.id, mode: s.mode, family: a.family || famById.get(a.qid) || a.qid}));
+    }
+    attempts.sort((a, b) => a.at < b.at ? -1 : a.at > b.at ? 1 : 0);
+    const mk = extra => Object.assign({n: 0, correct: 0, ms: 0, accuracy: null, avgMs: null}, extra);
+    const grp = () => mk({total: 0, versions: 0, seen: 0, due: 0, secure: 0, mastery: null});
+    const byTopic = {}, bySub = {}, byFormat = {}, byConf = {0: mk(), 1: mk(), 2: mk(), 3: mk()}, byDay = {}, byF = new Map(), byQ = new Map(), fams = new Map();
+    for (const t of exam.topics) { byTopic[t.id] = grp(); for (const st of t.subtopics) bySub[st.id] = grp(); }
+    for (const f of FORMATS) byFormat[f] = mk({total: 0});
+    for (const q of live) {
+      const f = famOf(q);
+      if (!fams.has(f)) fams.set(f, {id: f, topic: q.topic, subtopic: q.subtopic, versions: []});
+      fams.get(f).versions.push(q);
+      if (byFormat[q.format]) byFormat[q.format].total++;
+      if (byTopic[q.topic]) byTopic[q.topic].versions++;
+      if (bySub[q.subtopic]) bySub[q.subtopic].versions++;
+    }
+    for (const f of fams.values()) { if (byTopic[f.topic]) byTopic[f.topic].total++; if (bySub[f.subtopic]) bySub[f.subtopic].total++; }
+    for (const a of attempts) {
+      const bump = o => { if (!o) return; o.n++; if (a.correct) o.correct++; o.ms += a.ms || 0; };
+      bump(byTopic[a.topic]); bump(bySub[a.subtopic]); bump(byFormat[a.format]); bump(byConf[a.confidence || 0]);
+      const at = Date.parse(a.at), dk = dayKey(at);
+      if (!byDay[dk]) byDay[dk] = {n: 0, correct: 0};
+      byDay[dk].n++; if (a.correct) byDay[dk].correct++;
+      let fs = byF.get(a.family);
+      if (!fs) { fs = {n: 0, correct: 0, box: 0, last: null, dueAt: 0, seen: {}}; byF.set(a.family, fs); }
+      fs.n++; fs.seen[a.qid] = (fs.seen[a.qid] || 0) + 1;
+      const wasDue = fs.box === 0 || at >= fs.dueAt;          // answering again before it is due earns no promotion
+      if (!a.correct) { fs.box = 0; fs.dueAt = at; }
+      else {
+        fs.correct++;
+        if (wasDue) { fs.box = a.confidence === 1 ? Math.max(1, fs.box) : Math.min(5, fs.box + 1); fs.dueAt = at + INTERVALS[fs.box] * DAY; }
+      }
+      fs.last = {correct: !!a.correct, at: a.at, confidence: a.confidence || 0, ms: a.ms || 0, qid: a.qid};
+    }
+    let due = 0, seen = 0, secure = 0;
+    for (const f of fams.values()) {
+      const fs = byF.get(f.id); if (!fs) continue;
+      const tp = byTopic[f.topic], sb = bySub[f.subtopic];
+      seen++; if (tp) tp.seen++; if (sb) sb.seen++;
+      if (fs.dueAt <= now) { due++; if (tp) tp.due++; if (sb) sb.due++; }
+      if (fs.box >= SECURE_BOX) { secure++; if (tp) tp.secure++; if (sb) sb.secure++; }
+      for (const q of f.versions) byQ.set(q.id, fs);
+    }
+    const fin = o => { o.accuracy = o.n ? o.correct / o.n : null; o.avgMs = o.n ? o.ms / o.n : null; };
+    [byTopic, bySub, byFormat, byConf].forEach(g => Object.values(g).forEach(fin));
+    Object.values(bySub).forEach(o => { o.mastery = o.total ? o.secure / o.total : null; });
+    let wAll = 0, wSum = 0;
+    for (const t of exam.topics) {                             // a topic is the average of its subtopics, so every subtopic has to be earned
+      const subs = t.subtopics.map(x => bySub[x.id]).filter(o => o.total);
+      byTopic[t.id].mastery = subs.length ? subs.reduce((a, o) => a + o.mastery, 0) / subs.length : null;
+      if (subs.length) { wAll += weight(t); wSum += weight(t) * byTopic[t.id].mastery; }
+    }
+    let streak = 0, d = new Date(now);
+    if (!byDay[dayKey(d.getTime())]) d.setDate(d.getDate() - 1);
+    while (byDay[dayKey(d.getTime())]) { streak++; d.setDate(d.getDate() - 1); }
+    const n = attempts.length, correct = attempts.filter(a => a.correct).length, ms = attempts.reduce((x, a) => x + (a.ms || 0), 0);
+    return {attempts, byTopic, bySub, byFormat, byConf, byDay, byQ, byF, fams, live, real,
+      totals: {n, correct, accuracy: n ? correct / n : null, avgMs: n ? ms / n : null, due, seen, secure, bank: fams.size, versions: live.length,
+        weighted: wAll ? wSum / wAll : null, coverage: fams.size ? seen / fams.size : 0, streak}};
+  }
+
+  /* Split a question count across topics in proportion to the exam specification (largest remainder). */
+  function allocate(exam, count, topicIds) {
+    const ts = exam.topics.filter(t => !topicIds || !topicIds.length || topicIds.includes(t.id));
+    const sum = ts.reduce((s, t) => s + weight(t), 0), out = {};
+    const raw = ts.map(t => weight(t) / sum * count);
+    let left = count;
+    ts.forEach((t, i) => { out[t.id] = Math.floor(raw[i]); left -= out[t.id]; });
+    ts.map((t, i) => [t.id, raw[i] - Math.floor(raw[i])]).sort((a, b) => b[1] - a[1]).slice(0, left).forEach(([id]) => out[id]++);
+    return out;
+  }
+  function shuffle(a, rng) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rng() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+  function nextVersion(versions, fs, rng) {
+    if (!fs) return versions[Math.floor((rng || Math.random)() * versions.length)];
+    const order = shuffle(versions, rng || Math.random).sort((a, b) => (fs.seen[a.id] || 0) - (fs.seen[b.id] || 0));
+    return order.length > 1 && fs.last && order[0].id === fs.last.qid ? order[1] : order[0];
+  }
+  /* Choose the questions for a session. cfg: {mode, topics, subtopics, formats, count}. */
+  function pick(cfg, ctx) {
+    const rng = ctx.rng || Math.random, now = ctx.now, st = q => ctx.model.byQ.get(q.id);
+    const has = (list, v) => !list || !list.length || list.includes(v);
+    let pool = ctx.pool.filter(q => has(cfg.topics, q.topic) && has(cfg.subtopics, q.subtopic) && has(cfg.formats, q.format));
+    const count = Math.max(1, cfg.count || 10);
+    // one candidate per family: a version not seen yet if there is one, and never the version answered last time
+    const groups = new Map();
+    for (const q of pool) { const f = famOf(q); if (!groups.has(f)) groups.set(f, []); groups.get(f).push(q); }
+    pool = [...groups.values()].map(vs => nextVersion(vs, st(vs[0]), rng));
+    if (cfg.mode === 'missed') return pool.filter(q => st(q) && !st(q).last.correct).sort((a, b) => st(a).last.at < st(b).last.at ? -1 : 1).slice(0, count);
+    if (cfg.mode === 'flagged') return shuffle(pool.filter(q => ctx.flags[q.id]), rng).slice(0, count);
+    if (cfg.mode === 'due') return pool.filter(q => st(q) && st(q).dueAt <= now).sort((a, b) => st(a).dueAt - st(b).dueAt).slice(0, count);
+    if (cfg.mode === 'exam') {
+      const alloc = allocate(ctx.exam, count, cfg.topics), chosen = [], spare = [];
+      for (const t of ctx.exam.topics) {
+        if (alloc[t.id] == null) continue;
+        const cand = shuffle(pool.filter(q => q.topic === t.id), rng).sort((a, b) => (st(a) ? 1 : 0) - (st(b) ? 1 : 0));
+        chosen.push(...cand.slice(0, alloc[t.id])); spare.push(...cand.slice(alloc[t.id]));
+      }
+      chosen.push(...shuffle(spare, rng).slice(0, Math.max(0, count - chosen.length)));
+      const order = Object.fromEntries(ctx.exam.topics.map(t => [t.id, t.n]));
+      return chosen.sort((a, b) => order[a.topic] - order[b.topic]);
+    }
+    const due = pool.filter(q => st(q) && st(q).dueAt <= now).sort((a, b) => st(a).dueAt - st(b).dueAt);
+    const rest = pool.filter(q => st(q) && st(q).dueAt > now).sort((a, b) => st(a).box - st(b).box || st(a).dueAt - st(b).dueAt);
+    let fresh = pool.filter(q => !st(q));
+    if (cfg.mode === 'adaptive') {            // new questions weighted by exam weight and weakness
+      const tw = Object.fromEntries(ctx.exam.topics.map(t => { const m = ctx.model.byTopic[t.id].mastery; return [t.id, weight(t) * (1.05 - (m == null ? 0.5 : m))]; }));
+      fresh = fresh.map(q => [q, Math.pow(rng(), 1 / (tw[q.topic] || 1))]).sort((a, b) => b[1] - a[1]).map(x => x[0]);
+    } else fresh = shuffle(fresh, rng);
+    const takeDue = Math.min(due.length, Math.ceil(count * 0.6));
+    const out = due.slice(0, takeDue).concat(fresh, due.slice(takeDue), rest).slice(0, count);
+    return shuffle(out, rng);
+  }
+
+  const tokenize = s => String(s == null ? '' : s).toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, ' ').trim().split(' ').filter(Boolean);
+  function buildIndex(exam, questions, guide, reference) {
+    const docs = [], tn = Object.fromEntries(exam.topics.map(t => [t.id, t.name]));
+    const add = d => { d.tt = tokenize(d.title); d.tb = tokenize(d.body); docs.push(d); };
+    for (const t of exam.topics) {
+      add({type: 'topic', id: t.id, topic: t.id, title: t.name, body: 'Topic ' + t.n + '. ' + t.subtopics.map(s => s.name).join('. '), href: 'topic-' + t.id});
+      for (const s of t.subtopics) add({type: 'topic', id: s.id, topic: t.id, title: s.name, body: t.name + ' subtopic ' + s.code, href: 'topic-' + t.id, open: s.id});
+    }
+    const indexed = new Set();
+    for (const q of livePool(questions)) {
+      if (indexed.has(famOf(q))) continue;                     // one search entry per family of versions
+      indexed.add(famOf(q));
+      const parts = [q.eli5, q.solution].concat((q.options || []).map(o => o.text), (q.tokens || []).map(o => o.text), (q.targets || []).map(o => o.label), (q.items || []).map(o => o.text), q.tags || [], [tn[q.topic]]);
+      add({type: 'question', id: q.id, topic: q.topic, subtopic: q.subtopic, format: q.format, title: plain(q.stem), body: plain(parts.join(' ')), href: 'q-' + q.id});
+    }
+    for (const tid of Object.keys(guide || {})) for (const s of (guide[tid].sections || []))
+      add({type: 'guide', id: s.id, topic: tid, subtopic: s.subtopic, title: s.title, body: plain([s.body].concat((s.formulas || []).map(f => f.name + ' ' + f.expr), s.pitfalls || [], s.example ? [s.example.problem, s.example.steps] : [], (s.read || []).map(r => r.source + ' ' + r.where)).join(' ')), href: 'topic-' + tid, open: s.subtopic || ''});
+    for (const s of (reference && reference.sections) || [])
+      add({type: 'reference', id: s.id, topic: (s.topics || [])[0] || '', title: s.title, body: plain([s.notes, s.pages].join(' ')), href: 'reference'});
+    return docs;
+  }
+  function search(docs, query, pred) {
+    const terms = tokenize(query), out = [];
+    for (const d of docs) {
+      if (pred && !pred(d)) continue;
+      let score = 0, ok = true;
+      for (const t of terms) {
+        let s = 0;
+        for (const w of d.tt) { if (w === t) { s = 5; break; } if (w.startsWith(t)) s = Math.max(s, 3); }
+        if (!s) for (const w of d.tb) { if (w === t) { s = 2; break; } if (w.startsWith(t)) s = Math.max(s, 1); }
+        if (!s) { ok = false; break; }
+        score += s;
+      }
+      if (ok) out.push({doc: d, score});
+    }
+    return out.sort((a, b) => b.score - a.score || (a.doc.title < b.doc.title ? -1 : 1)).slice(0, 200);
+  }
+  return {DAY, INTERVALS, MIN_N, FORMATS, esc, rich, richInline, plain, parseNumber, hitRegion, numericRange, isAnswered, grade,
+    dayKey, livePool, hasReal, weight, qStatus, famOf, nextVersion, SECURE_BOX, buildModel, allocate, shuffle, pick, tokenize, buildIndex, search};
+})();
+if (typeof module !== 'undefined') module.exports = Core;
+/*CORE-END*/
+
+/* ---------- App state ---------- */
+const $ = (s, r) => (r || document).querySelector(s);
+const $$ = (s, r) => [...(r || document).querySelectorAll(s)];
+const esc = Core.esc;
+const clone = o => JSON.parse(JSON.stringify(o));
+const S = {
+  manifest: null, exam: null, questions: [], qById: new Map(), guide: {}, reference: {sections: []}, warnings: [],
+  sessions: [], flags: {}, settings: {dailyGoal: 20, sessionLength: 10, examDate: ''},
+  model: null, index: [], session: null,
+  store: {mode: 'loading', pending: 0, error: ''},
+  clock: {slot: null, since: null},
+  ui: {search: {q: '', type: '', topic: '', format: '', status: ''}, practice: {mode: 'adaptive', topics: [], formats: [], count: 0, examLen: 'full'},
+       reviewTab: 'missed', held: null, dragI: null, solo: null, resultId: null, open: null}
+};
+let R = {name: 'home'};
+const IC = {
+  check: '<svg class="mark ok" viewBox="0 0 16 16" aria-label="Correct"><path d="M3 8.5l3.2 3.2L13 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  cross: '<svg class="mark no" viewBox="0 0 16 16" aria-label="Not correct"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>',
+  up: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 10l5-5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  down: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+};
+
+/* ---------- Local storage (conveniences and the unsent-writes outbox only) ---------- */
+const mem = {};
+const LS = {
+  get(k, d) { if (k in mem) return mem[k]; try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { mem[k] = v; try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+  del(k) { delete mem[k]; try { localStorage.removeItem(k); } catch (e) {} }
+};
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+function withTimeout(p, ms) { return Promise.race([p, new Promise((_, rej) => setTimeout(() => rej({code: 'timeout', message: 'Storage did not answer in time'}), ms))]); }
+
+/* ---------- Store: the study log. Every answer is written here without any action from the user. ----------
+   Cloud documents (artifact database):
+     sessions/<id>   one document per study session, with its attempts appended as they happen
+     meta/flags      {items: {questionId: {at}}}
+     meta/settings   {examDate, dailyGoal, sessionLength}
+   A write goes to the on-device outbox first and is removed only after the cloud confirms it. */
+const Store = {
+  db: null, chains: {},
+  outbox() { return LS.get('fe.outbox', {}); },
+  async init() {
+    S.store.mode = 'loading'; S.store.error = ''; paintStatus();
+    let db = null;
+    try {
+      for (let i = 0; i < 40 && !(window.claude && typeof window.claude.use === 'function'); i++) await sleep(100);
+      if (window.claude && typeof window.claude.use === 'function') db = await withTimeout(window.claude.use('db'), 12000);
+    } catch (e) { db = null; }
+    this.db = db;
+    if (!db) {
+      S.store.mode = 'local';
+      S.sessions = LS.get('fe.local.sessions', []); S.flags = LS.get('fe.local.flags', {});
+      S.settings = Object.assign(S.settings, LS.get('fe.local.settings', {}));
+      paintStatus(); return;
+    }
+    try {
+      const got = await withTimeout(Promise.all([
+        db.collection('sessions').orderBy('startedAt', 'desc').limit(1000).get(),
+        db.doc('meta/flags').get(), db.doc('meta/settings').get()]), 12000);
+      S.sessions = got[0].docs.map(d => clone(d.data()));
+      if (got[1].exists) S.flags = clone(got[1].data().items || {});
+      if (got[2].exists) S.settings = Object.assign(S.settings, clone(got[2].data()));
+      S.store.mode = 'cloud';
+    } catch (e) { S.store.mode = 'offline'; S.store.error = (e && e.message) || 'Storage could not be reached'; }
+    const stranded = LS.get('fe.local.sessions', []);       // sessions saved on this device before storage was available
+    if (stranded.length) { const ob = this.outbox(); stranded.forEach(s => { ob['sessions/' + s.id] = s; }); LS.set('fe.outbox', ob); LS.del('fe.local.sessions'); }
+    const ob = this.outbox();
+    for (const path of Object.keys(ob)) {
+      const d = ob[path];
+      if (path.startsWith('sessions/')) {
+        const i = S.sessions.findIndex(s => s.id === d.id);
+        if (i < 0) S.sessions.unshift(clone(d));
+        else if ((d.attempts || []).length >= (S.sessions[i].attempts || []).length) S.sessions[i] = clone(d);
+        else { delete ob[path]; continue; }
+      } else if (path === 'meta/flags') { S.flags = Object.assign(S.flags, clone(d.items || {})); ob[path] = {items: S.flags}; }
+      else if (path === 'meta/settings') S.settings = Object.assign(S.settings, clone(d));
+    }
+    LS.set('fe.outbox', ob);
+    if (S.store.mode === 'cloud') Object.keys(ob).forEach(p => this.push(p));
+    paintStatus();
+  },
+  put(path, data) {
+    if (S.store.mode === 'local' || !this.db) {
+      LS.set('fe.local.sessions', S.sessions); LS.set('fe.local.flags', S.flags); LS.set('fe.local.settings', S.settings);
+      return;
+    }
+    const ob = this.outbox(); ob[path] = clone(data); LS.set('fe.outbox', ob);
+    this.push(path);
+  },
+  push(path) {
+    const run = async () => {
+      const data = this.outbox()[path];
+      if (!data) return;
+      const sent = JSON.stringify(data);
+      const attempt = () => withTimeout(this.db.doc(path).set(JSON.parse(sent)), 15000);
+      try {
+        try { await attempt(); }
+        catch (e) { if (e && (e.code === 'unavailable' || e.code === 'timeout')) { await sleep(1200 + Math.random() * 800); await attempt(); } else throw e; }
+        const ob = this.outbox();
+        if (JSON.stringify(ob[path]) === sent) { delete ob[path]; LS.set('fe.outbox', ob); }
+        S.store.error = ''; if (S.store.mode === 'offline') S.store.mode = 'cloud';
+      } catch (e) { S.store.error = (e && e.message) || 'A save did not go through'; }
+      paintStatus();
+    };
+    this.chains[path] = (this.chains[path] || Promise.resolve()).then(run, run);
+    paintStatus();
+  },
+  saveSession(doc) {
+    const i = S.sessions.findIndex(s => s.id === doc.id);
+    if (i < 0) S.sessions.unshift(doc); else S.sessions[i] = doc;
+    this.put('sessions/' + doc.id, doc);
+  },
+  saveFlags() { this.put('meta/flags', {items: S.flags}); },
+  saveSettings() { this.put('meta/settings', S.settings); },
+  retry() { if (!this.db || S.store.mode !== 'cloud') return this.init().then(() => { recompute(); render(); }); Object.keys(this.outbox()).forEach(p => this.push(p)); }
+};
+function paintStatus() {
+  const el = $('#status'); if (!el) return;
+  const pending = Object.keys(Store.outbox()).length, st = S.store;
+  let cls = 'ok', txt = 'Progress saved', tip = 'Every answer is saved to your study log.';
+  if (st.mode === 'loading') { cls = 'busy'; txt = 'Connecting'; tip = 'Opening your study log.'; }
+  else if (st.mode === 'local') { cls = 'warn'; txt = 'This device only'; tip = 'Storage is not available in this view. Answers are kept in this browser.'; }
+  else if (st.error || st.mode === 'offline') { cls = 'warn'; txt = pending ? pending + ' unsent, will retry' : 'Storage unreachable'; tip = st.error + '. Answers are kept on this device and sent when storage answers.'; }
+  else if (pending) { cls = 'busy'; txt = 'Saving'; }
+  el.innerHTML = '<i class="dot ' + cls + '"></i><span>' + esc(txt) + '</span>';
+  el.title = tip;
+}
+
+/* ---------- Content ---------- */
+async function getJSON(p) { const r = await fetch(p, {cache: 'no-cache'}); if (!r.ok) throw new Error(p + ' returned ' + r.status); return r.json(); }
+async function loadContent() {
+  const m = S.manifest = await getJSON('content/manifest.json');
+  S.exam = await getJSON(m.exam);
+  const soft = (p, d) => getJSON(p).catch(e => { S.warnings.push(p + ' did not load'); return d; });
+  const [ref, qs, gs] = await Promise.all([soft(m.reference, {sections: []}), Promise.all(m.questions.map(p => soft(p, []))), Promise.all(m.guide.map(p => soft(p, null)))]);
+  S.reference = ref;
+  const topics = new Set(S.exam.topics.map(t => t.id));
+  for (const q of [].concat(...qs)) {
+    if (!q || !q.id || !topics.has(q.topic) || !Core.FORMATS.includes(q.format)) { S.warnings.push('Skipped a question with a missing id, topic or format' + (q && q.id ? ': ' + q.id : '')); continue; }
+    if (S.qById.has(q.id)) { S.warnings.push('Duplicate question id skipped: ' + q.id); continue; }
+    S.qById.set(q.id, q); S.questions.push(q);
+  }
+  for (const g of gs) if (g && g.topic) S.guide[g.topic] = g;
+  S.index = Core.buildIndex(S.exam, S.questions, S.guide, S.reference);
+}
+function recompute() { S.model = Core.buildModel(S.exam, S.questions, S.sessions, Date.now()); }
+const topicOf = id => S.exam.topics.find(t => t.id === id);
+const topicName = id => (topicOf(id) || {name: id}).name;
+function subOf(id) { for (const t of S.exam.topics) for (const s of t.subtopics) if (s.id === id) return s; return null; }
+const fmtLabel = id => (S.exam.formats.find(f => f.id === id) || {label: id}).label;
+const shortName = s => s.replace(/\s*\(e\.g\.,.*\)$/, '');
+
+/* ---------- Formatting ---------- */
+const pct = x => x == null ? '–' : Math.round(x * 100) + '%';
+function dur(ms) { if (ms == null) return '–'; const s = Math.max(0, Math.round(ms / 1000)), h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), ss = String(s % 60).padStart(2, '0'); return h ? h + ':' + String(m).padStart(2, '0') + ':' + ss : m + ':' + ss; }
+const fdate = iso => new Date(iso).toLocaleDateString(undefined, {month: 'short', day: 'numeric'});
+const ftime = iso => new Date(iso).toLocaleTimeString(undefined, {hour: 'numeric', minute: '2-digit'});
+const targetMs = () => S.exam.examMinutes * 60000 / S.exam.questionCount;
+const bar = (v, cls) => '<div class="bar ' + (cls || '') + '"><i style="width:' + Math.round(Math.max(0, Math.min(1, v || 0)) * 100) + '%"></i></div>';
+const STATUS = {new: 'Not seen', due: 'Due', missed: 'Missed', learning: 'Learning', strong: 'Secure'};
+const famList = pred => [...S.model.fams.values()].filter(pred || (() => true));
+const nextOf = f => Core.nextVersion(f.versions, S.model.byF.get(f.id));
+const secureText = x => x.secure + ' of ' + x.total + ' secure';
+function statusChip(q) { const s = Core.qStatus(S.model.byQ.get(q.id), Date.now()); return '<span class="chip ' + s + '">' + STATUS[s] + '</span>'; }
+const MODES = {
+  adaptive: ['Adaptive', 'Due reviews first, then new questions weighted toward weak topics and exam weight.'],
+  topic: ['Topic drill', 'Only the topics and formats you pick.'],
+  exam: ['Exam simulation', 'Spec-weighted mix, timed at exam pace, no feedback until you submit.'],
+  missed: ['Missed questions', 'Questions whose latest answer was wrong.'],
+  due: ['Due reviews', 'Questions scheduled for review today.'],
+  flagged: ['Flagged', 'Questions you flagged.'],
+  single: ['Single questions', 'Answered one at a time from search or review.']
+};
+const modeName = m => (MODES[m] || [m])[0];
+function toast(msg) { const t = $('#toast'); t.textContent = msg; t.hidden = false; clearTimeout(toast.h); toast.h = setTimeout(() => { t.hidden = true; }, 2600); }
+function modal(o) {
+  const m = $('#modal'); modal.onOk = o.onOk || null;
+  m.innerHTML = '<div class="card" role="dialog" aria-modal="true" aria-labelledby="modal-t"><h2 id="modal-t">' + esc(o.title) + '</h2><div>' + (o.html || '<p>' + esc(o.body || '') + '</p>') + '</div><div class="head-actions">' +
+    (o.ok ? '<button class="btn primary" data-act="modalOk" id="modal-ok">' + esc(o.ok) + '</button>' : '') + '<button class="btn" data-act="modalClose">' + esc(o.cancel || 'Close') + '</button></div></div>';
+  m.hidden = false; const b = $('#modal-ok') || $('#modal button'); if (b) b.focus();
+}
+
+/* ---------- Question rendering ---------- */
+function sanitizeSvg(s) {
+  return String(s || '').replace(/<\s*(script|foreignObject|iframe|object|embed)[\s\S]*?<\s*\/\s*\1\s*>/gi, '').replace(/<\s*(script|foreignObject|iframe|object|embed)[^>]*>/gi, '')
+    .replace(/\son\w+\s*=\s*("[^"]*"|'[^']*'|[^\s>]+)/gi, '').replace(/(href)\s*=\s*("|')\s*javascript:[^"']*\2/gi, '');
+}
+function figureHTML(f) {
+  if (!f) return '';
+  const cap = f.caption ? '<figcaption class="hint">' + Core.richInline(f.caption) + '</figcaption>' : '';
+  if (f.svg) return '<figure class="figure" style="margin:0"><svg viewBox="' + esc(f.viewBox || '0 0 400 200') + '" role="img" aria-label="' + esc(f.alt || 'Figure') + '">' + sanitizeSvg(f.svg) + '</svg>' + cap + '</figure>';
+  if (f.src) return '<figure class="figure" style="margin:0"><img src="' + esc(f.src) + '" alt="' + esc(f.alt || 'Figure') + '">' + cap + '</figure>';
+  return '';
+}
+function newSlot(q) { return {r: q.format === 'order' ? q.items.map(i => i.id) : q.format === 'match' ? {} : q.format === 'multi' ? [] : null, conf: 0, result: null, ms: 0, touched: false, marked: false}; }
+const answered = (q, slot) => q.format === 'order' ? !!slot.touched : Core.isAnswered(q, slot.r);
+function regionShape(r, attrs) {
+  if (r.shape === 'rect') return '<rect x="' + r.x + '" y="' + r.y + '" width="' + r.w + '" height="' + r.h + '" ' + attrs + '/>';
+  if (r.shape === 'circle') return '<circle cx="' + r.cx + '" cy="' + r.cy + '" r="' + r.r + '" ' + attrs + '/>';
+  return '<polygon points="' + (r.points || []).map(p => p.join(',')).join(' ') + '" ' + attrs + '/>';
+}
+function questionHTML(q, slot, o) {
+  const locked = !!(o && o.locked), reveal = !!(o && o.reveal), dis = locked ? ' disabled' : '';
+  const sub = subOf(q.subtopic);
+  let h = '<div class="chips"><span class="chip plain">' + esc(topicName(q.topic)) + '</span>' + (sub ? '<span class="chip plain">' + esc(sub.code + '. ' + shortName(sub.name)) + '</span>' : '') +
+    '<span class="chip plain">' + esc(fmtLabel(q.format)) + '</span>' + (q.units ? '<span class="chip plain">' + esc(q.units) + '</span>' : '') + (q.versions > 1 ? '<span class="chip plain">Version ' + q.version + ' of ' + q.versions + '</span>' : '') + (q.sample ? '<span class="chip sample">Sample</span>' : '') + '</div>';
+  h += '<div class="stem">' + Core.rich(q.stem) + '</div>';
+  if (q.format !== 'hotspot') h += figureHTML(q.figure);
+  if (q.format === 'mcq' || q.format === 'multi') {
+    const multi = q.format === 'multi', pickd = v => multi ? (slot.r || []).includes(v) : slot.r === v, isAns = v => multi ? q.answer.includes(v) : q.answer === v;
+    if (multi) h += '<p class="hint">' + (q.selectCount ? 'Select ' + q.selectCount + '.' : 'Select all that apply.') + '</p>';
+    h += '<div class="opts" role="' + (multi ? 'group' : 'radiogroup') + '" aria-label="Answer choices">' + q.options.map((op, i) => {
+      const sel = pickd(op.id), cls = reveal ? (isAns(op.id) ? 'right' : sel ? 'wrong' : '') : (sel ? 'sel' : '');
+      return '<button type="button" class="opt ' + (multi ? 'multi ' : '') + cls + '" role="' + (multi ? 'checkbox' : 'radio') + '" aria-checked="' + sel + '" data-act="opt" data-id="' + esc(op.id) + '"' + dis + '><span class="key">' + String.fromCharCode(65 + i) + '</span><span class="otext">' + Core.richInline(op.text) + '</span>' +
+        (reveal && isAns(op.id) ? IC.check : reveal && sel ? IC.cross : '') + '</button>';
+    }).join('') + '</div>';
+  } else if (q.format === 'numeric') {
+    h += '<div class="numq"><label for="num-in">Your answer</label><div class="num-row"><input id="num-in" inputmode="decimal" autocomplete="off" data-input="num" value="' + esc(slot.r == null ? '' : slot.r) + '"' + dis + '><span class="unit">' + Core.richInline(q.answer.unit || '') + '</span></div></div>';
+  } else if (q.format === 'hotspot') {
+    const f = q.figure || {}, ans = Array.isArray(q.answer) ? q.answer : [q.answer];
+    h += '<div class="hot' + (locked ? ' locked' : '') + '"><svg id="hot-svg" viewBox="' + esc(f.viewBox || '0 0 400 200') + '" role="img" aria-label="' + esc(f.alt || 'Figure') + '" data-act="hot">' + sanitizeSvg(f.svg) +
+      (reveal ? (q.regions || []).filter(r => ans.includes(r.id)).map(r => regionShape(r, 'fill="#D9F1D6" fill-opacity=".55" stroke="#1B795A" stroke-width="2" stroke-dasharray="5 3"')).join('') : '') +
+      (slot.r ? '<circle cx="' + slot.r.x + '" cy="' + slot.r.y + '" r="7" fill="#FFFFFF" stroke="#00242E" stroke-width="2.5"/><circle cx="' + slot.r.x + '" cy="' + slot.r.y + '" r="2" fill="#00242E"/>' : '') +
+      '</svg>' + (locked ? '' : '<p class="hint">Click the figure to place your answer. Click again to move it.</p>') + '</div>';
+  } else if (q.format === 'match') {
+    const placed = slot.r || {}, held = S.ui.held;
+    const tok = t => { const ok = (placed[t.id] == null ? null : placed[t.id]) === (q.answer[t.id] == null ? null : q.answer[t.id]);
+      return '<button type="button" class="tok ' + (held === t.id ? 'held ' : '') + (reveal ? (ok ? 'right' : 'wrong') : '') + '" draggable="' + (!locked) + '" data-act="tok" data-id="' + esc(t.id) + '"' + dis + '>' + Core.richInline(t.text) + '</button>'; };
+    h += '<div class="match' + (held && !locked ? ' holding' : '') + '"><div class="pool" data-act="unplace" data-drop="pool">' + (q.tokens.filter(t => !placed[t.id]).map(tok).join('') || '<span class="hint">All placed</span>') + '</div><div class="targets">' +
+      q.targets.map(t => '<div class="target" data-act="place" data-drop="target" data-id="' + esc(t.id) + '"><span class="tlabel">' + Core.richInline(t.label) + '</span><div class="slot">' + q.tokens.filter(k => placed[k.id] === t.id).map(tok).join('') + '</div></div>').join('') +
+      '</div>' + (locked ? '' : '<p class="hint">Drag a tile onto a box, or click a tile and then click a box. Click the top area to take a tile back.</p>') + '</div>';
+  } else if (q.format === 'order') {
+    const byId = Object.fromEntries(q.items.map(i => [i.id, i]));
+    h += '<ol class="order">' + slot.r.map((id, i) => '<li class="oitem ' + (reveal ? (q.answer[i] === id ? 'right' : 'wrong') : '') + '" draggable="' + (!locked) + '" data-drag="order" data-i="' + i + '"><span class="otext">' + Core.richInline((byId[id] || {text: id}).text) + '</span><span class="obtns">' +
+      '<button type="button" data-act="up" data-i="' + i + '" aria-label="Move up"' + (i === 0 || locked ? ' disabled' : '') + '>' + IC.up + '</button><button type="button" data-act="down" data-i="' + i + '" aria-label="Move down"' + (i === slot.r.length - 1 || locked ? ' disabled' : '') + '>' + IC.down + '</button></span></li>').join('') + '</ol>' +
+      (locked ? '' : '<p class="hint">Drag the rows or use the arrow buttons.</p>');
+  }
+  if (reveal) h += feedbackHTML(q, slot);
+  return h;
+}
+function answerText(q) {
+  const letter = id => { const i = q.options.findIndex(o => o.id === id); return i < 0 ? id : String.fromCharCode(65 + i); };
+  switch (q.format) {
+    case 'mcq': return letter(q.answer);
+    case 'multi': return q.answer.map(letter).sort().join(', ');
+    case 'numeric': { const a = q.answer, r = Core.numericRange(a), u = a.unit ? ' ' + a.unit : ''; return (a.value != null ? a.value + u + ' (accepted ' : '(accepted ') + +r[0].toPrecision(6) + ' to ' + +r[1].toPrecision(6) + u + ')'; }
+    case 'hotspot': { const ans = Array.isArray(q.answer) ? q.answer : [q.answer]; return (q.regions || []).filter(r => ans.includes(r.id)).map(r => r.label || r.id).join(' or '); }
+    case 'match': return q.tokens.map(t => t.text + (q.answer[t.id] ? ' on ' + (q.targets.find(x => x.id === q.answer[t.id]) || {label: ''}).label : ' not used')).join('; ');
+    case 'order': return q.answer.map(id => (q.items.find(i => i.id === id) || {text: id}).text).join(', then ');
+  }
+  return '';
+}
+function feedbackHTML(q, slot) {
+  const ok = slot.result && slot.result.correct, skipped = slot.result && slot.result.skipped;
+  return '<div class="fb ' + (ok ? 'ok' : 'no') + '"><div class="fb-h">' + (ok ? IC.check : IC.cross) + '<strong>' + (ok ? 'Correct' : skipped ? 'Not answered' : 'Not correct') + '</strong><span>' + dur(slot.ms) + ' on this question, exam pace is ' + dur(targetMs()) + '</span></div>' +
+    '<p><strong>Answer:</strong> ' + Core.richInline(answerText(q)) + '</p>' + (q.eli5 ? '<div class="sol"><h3>In plain words</h3>' + Core.rich(q.eli5) + '</div>' : '') + (q.solution ? '<div class="sol"><h3>Worked solution</h3>' + Core.rich(q.solution) + '</div>' : '') +
+    '<div class="chips">' + (q.handbook || []).map(hb => '<span class="chip plain">Handbook: ' + esc(hb.section || '') + (hb.page ? ', p. ' + esc(hb.page) : '') + '</span>').join('') + (q.verify ? '<span class="chip strong" title="' + esc(q.verify.basis || 'The answer key is recomputed by tools/verify_answers.py') + '">' + (q.verify.method === 'computed' ? 'Answer recomputed by code' : 'Answer checked against a reference') + '</span>' : '') + '</div></div>';
+}
+
+/* ---------- Sessions ---------- */
+function ctx() { return {pool: S.model.live, model: S.model, exam: S.exam, flags: S.flags, now: Date.now(), rng: Math.random}; }
+function mkId(d) { const p = n => String(n).padStart(2, '0'); return 's-' + d.getFullYear() + p(d.getMonth() + 1) + p(d.getDate()) + '-' + p(d.getHours()) + p(d.getMinutes()) + p(d.getSeconds()) + '-' + Math.random().toString(36).slice(2, 6); }
+function startSession(cfg) {
+  if (S.session) return modal({title: 'A session is already in progress', body: 'Finish or end it before starting another. Your answers so far are saved.', ok: 'Resume it', onOk: () => go('quiz')});
+  const qs = Core.pick(cfg, ctx());
+  if (!qs.length) { toast('No questions match that selection yet.'); return; }
+  const now = new Date(), slots = {};
+  qs.forEach(q => { slots[q.id] = newSlot(q); });
+  S.session = {id: mkId(now), mode: cfg.mode, config: cfg, qids: qs.map(q => q.id), idx: 0, deferred: cfg.mode === 'exam',
+    limitMs: cfg.mode === 'exam' ? Math.round(qs.length * targetMs()) : 0, startedAt: now.toISOString(), slots, attempts: []};
+  if (qs.length < (cfg.count || 0)) toast('Only ' + qs.length + ' matching questions are in the bank.');
+  persistActive(); go('quiz');
+}
+function persistActive() { if (S.session) LS.set('fe.active', S.session); else LS.del('fe.active'); }
+function restoreActive() {
+  const a = LS.get('fe.active', null);
+  if (a && a.qids && a.qids.every(id => S.qById.has(id))) S.session = a; else LS.del('fe.active');
+}
+function sessionDoc(s, status) {
+  return {v: 1, id: s.id, mode: s.mode, config: s.config, startedAt: s.startedAt, endedAt: status === 'done' ? new Date().toISOString() : null, status,
+    planned: s.qids.length, contentVersion: S.manifest.version, attempts: s.attempts};
+}
+function mkAttempt(q, slot) {
+  const a = {qid: q.id, family: Core.famOf(q), topic: q.topic, subtopic: q.subtopic, format: q.format, correct: !!slot.result.correct, response: slot.r == null ? null : clone(slot.r),
+    ms: Math.round(slot.ms), confidence: slot.conf || 0, at: new Date().toISOString()};
+  if (q.sample) a.sample = true;
+  if (slot.result.skipped) a.skipped = true;
+  return a;
+}
+function adhocDoc() {
+  const day = Core.dayKey(Date.now());
+  if (!adhocDoc.id || adhocDoc.day !== day) { adhocDoc.day = day; adhocDoc.id = 'adhoc-' + day + '-' + Math.random().toString(36).slice(2, 6); }
+  const id = adhocDoc.id;
+  return S.sessions.find(s => s.id === id) || {v: 1, id, mode: 'single', config: {}, startedAt: new Date().toISOString(), endedAt: null, status: 'done', planned: 0, contentVersion: S.manifest.version, attempts: []};
+}
+function finishSession() {
+  const s = S.session; if (!s) return;
+  clockStop();
+  if (s.attempts.length) { Store.saveSession(sessionDoc(s, 'done')); S.ui.resultId = s.id; }
+  S.session = null; persistActive(); recompute();
+  go(s.attempts.length ? 'results' : 'practice');
+}
+function submitExam() {
+  const s = S.session; if (!s) return;
+  clockStop();
+  s.attempts = [];
+  for (const id of s.qids) {
+    const q = S.qById.get(id), slot = s.slots[id], ans = answered(q, slot);
+    slot.result = ans ? {correct: Core.grade(q, slot.r).correct} : {correct: false, skipped: true};
+    s.attempts.push(mkAttempt(q, slot));
+  }
+  finishSession();
+}
+function cur() {
+  if (R.name === 'quiz' && S.session) { const s = S.session, q = S.qById.get(s.qids[s.idx]), slot = s.slots[q.id]; return {kind: 'quiz', q, slot, locked: !s.deferred && !!slot.result}; }
+  if (R.name === 'q' && S.ui.solo) { const q = S.qById.get(S.ui.solo.qid); return q ? {kind: 'solo', q, slot: S.ui.solo.slot, locked: !!S.ui.solo.slot.result} : null; }
+  return null;
+}
+function clockStart(slot) { if (S.clock.slot === slot && S.clock.since) return; clockStop(); S.clock = {slot, since: Date.now()}; }
+function clockStop() { const c = S.clock; if (c.slot && c.since) c.slot.ms += Date.now() - c.since; S.clock = {slot: null, since: null}; }
+function changed() { const c = cur(); if (c) c.slot.touched = true; persistActive(); render(); }
+
+/* ---------- Views ---------- */
+const views = {};
+function emptyCard(title, body, to, label) { return '<div class="wrap"><div class="card"><h2>' + esc(title) + '</h2><p class="sub">' + esc(body) + '</p>' + (to ? '<div><a class="btn primary" href="#' + to + '">' + esc(label) + '</a></div>' : '') + '</div></div>'; }
+function bankNote() {
+  if (S.model.real) return '';
+  return '<div class="note"><strong>The question bank is empty.</strong> Six sample questions are loaded, one for each exam question format, so the quiz engine and progress tracking can be tried end to end. Sample results stop counting once real questions are added.</div>';
+}
+function examDays() { const d = S.settings.examDate; if (!d) return null; const t = Date.parse(d + 'T00:00:00'); return isNaN(t) ? null : Math.ceil((t - Date.now()) / Core.DAY); }
+function startButtons() {
+  if (S.session) return '<a class="btn primary" href="#quiz">Resume session (' + (S.session.idx + 1) + ' of ' + S.session.qids.length + ')</a>';
+  return '<button class="btn primary" data-act="quick" data-mode="adaptive">Start adaptive session</button><a class="btn" href="#practice">More options</a>';
+}
+function sessionRows(list) {
+  if (!list.length) return '<p class="empty">No sessions yet. Finished sessions are listed here.</p>';
+  return '<div class="tw"><table class="t"><thead><tr><th>Date</th><th>Mode</th><th class="num">Score</th><th class="num">Time</th><th></th></tr></thead><tbody>' + list.map(s => {
+    const n = (s.attempts || []).length, c = (s.attempts || []).filter(a => a.correct).length, ms = (s.attempts || []).reduce((x, a) => x + (a.ms || 0), 0);
+    return '<tr><td>' + fdate(s.startedAt) + ', ' + ftime(s.startedAt) + '</td><td>' + esc(modeName(s.mode)) + '</td><td class="num">' + c + ' of ' + n + ' (' + pct(n ? c / n : null) + ')</td><td class="num">' + dur(ms) + '</td><td class="num"><button class="btn sm ghost" data-act="openResult" data-id="' + esc(s.id) + '">Open</button></td></tr>';
+  }).join('') + '</tbody></table></div>';
+}
+views.home = () => {
+  const m = S.model, T = m.totals, e = S.exam, goal = S.settings.dailyGoal || 20, today = (m.byDay[Core.dayKey(Date.now())] || {n: 0}).n, days = examDays();
+  return '<div class="wrap"><header class="head"><div><p class="eyebrow">' + esc(e.spec) + '</p><h1>' + esc(e.name) + ' dashboard</h1><p class="sub">' + e.questionCount + ' questions in ' + Math.floor(e.examMinutes / 60) + ' h ' + (e.examMinutes % 60) + ' min, about ' + dur(targetMs()) + ' per question' +
+    (days != null ? '. ' + (days >= 0 ? days + ' days to your exam' : 'Exam date has passed') : '') + '.</p></div><div class="head-actions">' + startButtons() + '</div></header>' + bankNote() +
+    '<section class="tiles" aria-label="Summary">' +
+    '<div class="tile"><span class="k">Due for review</span><span class="v">' + T.due + '</span><span class="d">' + T.seen + ' of ' + T.bank + ' question types seen, ' + T.versions + ' versions in the bank</span></div>' +
+    '<div class="tile"><span class="k">Answered today</span><span class="v">' + today + ' / ' + goal + '</span>' + bar(today / goal) + '<span class="d">' + (T.streak ? T.streak + '-day streak' : 'No streak yet') + '</span></div>' +
+    '<div class="tile"><span class="k">Mastery, exam-weighted</span><span class="v">' + pct(T.weighted) + '</span><span class="d">' + T.secure + ' of ' + T.bank + ' question types secure. One counts after three correct answers on separate, spaced days.</span></div>' +
+    '<div class="tile"><span class="k">Pace</span><span class="v">' + dur(T.avgMs) + '</span><span class="d">Average per question, exam pace ' + dur(targetMs()) + '</span></div></section>' +
+    '<section class="card"><div class="card-h"><h2>Topics by exam weight</h2><a class="btn sm ghost" href="#topics">All topics</a></div><div class="tw"><table class="t"><thead><tr><th></th><th>Topic</th><th class="num">Exam questions</th><th class="num">Question types</th><th class="num">Seen</th><th>Mastery</th><th class="num">Due</th></tr></thead><tbody>' +
+    e.topics.map(t => { const x = m.byTopic[t.id]; return '<tr><td class="n">' + t.n + '</td><td><a href="#topic-' + t.id + '">' + esc(t.name) + '</a></td><td class="num">' + t.min + '–' + t.max + '</td><td class="num">' + x.total + '</td><td class="num">' + x.seen + '</td><td>' + (x.mastery == null ? '<span class="sub">No questions yet</span>' : '<div style="display:flex;gap:8px;align-items:center">' + bar(x.mastery) + '<span>' + secureText(x) + '</span></div>') + '</td><td class="num">' + x.due + '</td></tr>'; }).join('') +
+    '</tbody></table></div></section><section class="card"><div class="card-h"><h2>Recent sessions</h2><a class="btn sm ghost" href="#review">Review</a></div>' + sessionRows(S.sessions.filter(s => (s.attempts || []).length).slice(0, 5)) + '</section></div>';
+};
+views.topics = () => '<div class="wrap"><header class="head"><div><p class="eyebrow">' + esc(S.exam.spec) + '</p><h1>Topics</h1><p class="sub">The 14 knowledge areas of the exam, in specification order, with the number of exam questions each one carries.</p></div></header><div class="topic-grid">' +
+  S.exam.topics.map(t => { const x = S.model.byTopic[t.id], g = ((S.guide[t.id] || {}).sections || []).length;
+    return '<a class="tcard" href="#topic-' + t.id + '"><span class="tn">TOPIC ' + t.n + '</span><strong>' + esc(t.name) + '</strong><div class="row"><span>' + t.min + '–' + t.max + ' exam questions</span><span>' + t.subtopics.length + ' subtopics</span></div>' + bar(x.mastery || 0) +
+      '<div class="row"><span>' + (x.mastery == null ? 'No questions yet' : 'Mastery ' + pct(x.mastery) + ', ' + secureText(x)) + '</span><span>' + x.total + ' types, ' + x.versions + ' versions</span></div></a>'; }).join('') + '</div></div>';
+function guideSection(s) {
+  return '<div class="gsec" id="g-' + esc(s.id) + '"><h3>' + esc(s.title) + '</h3>' + Core.rich(s.body) +
+    ((s.formulas || []).length ? '<div class="tw"><table class="t"><thead><tr><th>Formula</th><th>Expression</th><th>Handbook</th></tr></thead><tbody>' + s.formulas.map(f => '<tr><td>' + esc(f.name) + '</td><td>' + Core.richInline(f.expr) + '</td><td>' + esc(f.handbook || '') + '</td></tr>').join('') + '</tbody></table></div>' : '') +
+    (s.example ? '<div class="sol" style="background:var(--band)"><h3>Worked example</h3><p><strong>' + Core.richInline(s.example.problem) + '</strong></p>' + Core.rich(s.example.steps) + '</div>' : '') +
+    ((s.pitfalls || []).length ? '<div><h3>Common mistakes</h3><ul>' + s.pitfalls.map(p => '<li>' + Core.richInline(p) + '</li>').join('') + '</ul></div>' : '') +
+    ((s.read || []).length ? '<div><h3>Where to read</h3><ul>' + s.read.map(r => '<li><strong>' + esc(r.source) + ':</strong> ' + esc(r.where) + '</li>').join('') + '</ul></div>' : '') + '</div>';
+}
+function qRow(q) { return '<a class="qrow" href="#q-' + esc(q.id) + '"><span class="qt">' + esc(Core.plain(q.stem)) + '</span><span class="meta">' + esc(fmtLabel(q.format)) + (q.versions > 1 ? ', ' + q.versions + ' versions' : '') + '</span>' + statusChip(q) + '</a>'; }
+views.topic = id => {
+  const t = topicOf(id); if (!t) return emptyCard('Topic not found', 'That topic is not in the exam specification.', 'topics', 'All topics');
+  const x = S.model.byTopic[t.id], secs = (S.guide[t.id] || {}).sections || [];
+  return '<div class="wrap"><header class="head"><div><p class="eyebrow">Topic ' + t.n + ' of ' + S.exam.topics.length + '</p><h1>' + esc(t.name) + '</h1><p class="sub">' + t.min + '–' + t.max + ' of ' + S.exam.questionCount + ' exam questions. ' + x.total + ' question types in ' + x.versions + ' versions. ' + x.seen + ' seen, ' + x.due + ' due, ' + x.secure + ' secure.' + (x.mastery != null ? ' Mastery ' + pct(x.mastery) + '.' : '') + '</p></div>' +
+    '<div class="head-actions"><button class="btn primary" data-act="quick" data-mode="topic" data-topic="' + t.id + '"' + (x.total ? '' : ' disabled') + '>Practice this topic</button><a class="btn" href="#topics">All topics</a></div></header>' +
+    (secs.filter(g => !g.subtopic).length ? '<section class="card">' + secs.filter(g => !g.subtopic).map(guideSection).join('') + '</section>' : '') +
+    t.subtopics.map(s => { const sx = S.model.bySub[s.id], gs = secs.filter(g => g.subtopic === s.id), qs = famList(f => f.subtopic === s.id).map(nextOf);
+      return '<details class="sub-d"' + (S.ui.open === s.id ? ' open' : '') + '><summary><span class="code">' + s.code + '</span><span class="nm">' + esc(s.name) + '</span><span class="chip plain">' + qs.length + (qs.length === 1 ? ' question type' : ' question types') + ', ' + sx.versions + ' versions</span>' + (sx.total ? '<span class="chip ' + (sx.mastery >= 0.8 ? 'strong' : sx.seen ? 'learning' : 'new') + '">' + secureText(sx) + '</span>' : '') + '</summary><div class="sub-body">' +
+        (gs.length ? gs.map(guideSection).join('') : '<p class="empty">No guide section written for this subtopic yet.</p>') +
+        (qs.length ? '<div><div class="card-h"><h3>Questions</h3><button class="btn sm" data-act="quick" data-mode="topic" data-sub="' + s.id + '">Drill this subtopic</button></div><div class="qlist">' + qs.map(qRow).join('') + '</div></div>' : '<p class="empty">No questions for this subtopic yet.</p>') + '</div></details>'; }).join('') + '</div>';
+};
+views.practice = () => {
+  const p = S.ui.practice, e = S.exam, count = p.count || S.settings.sessionLength || 10;
+  const lens = {full: e.questionCount, half: Math.round(e.questionCount / 2), quarter: Math.round(e.questionCount / 4)};
+  return '<div class="wrap"><header class="head"><div><p class="eyebrow">Practice</p><h1>Start a session</h1><p class="sub">Every answer is saved as you go. You can stop at any point and nothing is lost.</p></div>' + (S.session ? '<div class="head-actions"><a class="btn primary" href="#quiz">Resume session</a></div>' : '') + '</header>' + bankNote() +
+    '<section class="card"><h2>Mode</h2><div class="modes">' + ['adaptive', 'topic', 'exam', 'missed', 'due', 'flagged'].map(k => '<button type="button" class="mode" aria-pressed="' + (p.mode === k) + '" data-act="setMode" data-mode="' + k + '"><strong>' + MODES[k][0] + '</strong><span>' + MODES[k][1] + '</span></button>').join('') + '</div>' +
+    '<div class="fields">' + (p.mode === 'exam'
+      ? '<div class="field"><label for="p-len">Length</label><select id="p-len" data-change="examLen"><option value="full"' + (p.examLen === 'full' ? ' selected' : '') + '>Full exam, ' + lens.full + ' questions, ' + dur(lens.full * targetMs()) + '</option><option value="half"' + (p.examLen === 'half' ? ' selected' : '') + '>Half, ' + lens.half + ' questions, ' + dur(lens.half * targetMs()) + '</option><option value="quarter"' + (p.examLen === 'quarter' ? ' selected' : '') + '>Quarter, ' + lens.quarter + ' questions, ' + dur(lens.quarter * targetMs()) + '</option></select></div>'
+      : '<div class="field"><label for="p-count">Questions</label><input id="p-count" type="number" min="1" max="200" value="' + count + '" data-change="count"></div>') + '</div>' +
+    '<div class="field"><span class="lbl">Topics (none selected means all)</span><div class="checks">' + e.topics.map(t => '<label class="check"><input type="checkbox" id="pt-' + t.id + '" data-change="pTopic" value="' + t.id + '"' + (p.topics.includes(t.id) ? ' checked' : '') + '>' + esc(t.name) + '</label>').join('') + '</div></div>' +
+    '<div class="field"><span class="lbl">Question formats (none selected means all)</span><div class="checks">' + e.formats.map(f => '<label class="check"><input type="checkbox" id="pf-' + f.id + '" data-change="pFormat" value="' + f.id + '"' + (p.formats.includes(f.id) ? ' checked' : '') + '>' + esc(f.label) + '</label>').join('') + '</div></div>' +
+    '<div><button class="btn primary" data-act="start">Start ' + esc(MODES[p.mode][0].toLowerCase()) + '</button></div></section></div>';
+};
+views.quiz = () => {
+  const s = S.session; if (!s) return emptyCard('No session in progress', 'Start one from Practice.', 'practice', 'Go to Practice');
+  const n = s.qids.length, q = S.qById.get(s.qids[s.idx]), slot = s.slots[q.id], done = s.qids.filter(id => s.deferred ? answered(S.qById.get(id), s.slots[id]) : s.slots[id].result).length;
+  const locked = !s.deferred && !!slot.result, last = s.idx === n - 1, flagged = !!S.flags[q.id];
+  let foot;
+  if (s.deferred) foot = '<div class="qfoot"><div class="head-actions"><button class="btn" data-act="prev"' + (s.idx ? '' : ' disabled') + '>Previous</button><button class="btn' + (slot.marked ? ' on' : '') + '" data-act="mark" aria-pressed="' + !!slot.marked + '">' + (slot.marked ? 'Marked for review' : 'Mark for review') + '</button></div><button class="btn primary" id="primary" data-act="' + (last ? 'askSubmit' : 'next') + '">' + (last ? 'Submit exam' : 'Next') + '</button></div>';
+  else if (locked) foot = '<div class="qfoot"><span></span><button class="btn primary" id="primary" data-act="next">' + (last ? 'Finish session' : 'Next question') + '</button></div>';
+  else foot = '<div class="qfoot"><div class="conf"><span id="conf-l">How sure are you?</span><div class="seg" role="group" aria-labelledby="conf-l">' + [[1, 'Guessing'], [2, 'Unsure'], [3, 'Sure']].map(c => '<button type="button" data-act="conf" data-v="' + c[0] + '" aria-pressed="' + (slot.conf === c[0]) + '">' + c[1] + '</button>').join('') + '</div></div><button class="btn primary" id="primary" data-act="check">Check answer</button></div>';
+  return '<div class="wrap"><div class="qbar"><div><p class="eyebrow">' + esc(modeName(s.mode)) + '</p><strong>Question ' + (s.idx + 1) + ' of ' + n + '</strong></div><div class="qbar-r"><span class="clock" id="clock" aria-label="' + (s.deferred ? 'Time remaining' : 'Time on this question') + '"></span>' +
+    '<button class="btn sm' + (flagged ? ' on' : '') + '" data-act="flag" data-id="' + esc(q.id) + '" aria-pressed="' + flagged + '">' + (flagged ? 'Flagged' : 'Flag') + '</button><button class="btn sm ghost" data-act="' + (s.deferred ? 'askSubmit' : 'endSession') + '">' + (s.deferred ? 'Submit exam' : 'End session') + '</button></div></div>' + bar(done / n) +
+    '<article class="card qcard">' + questionHTML(q, slot, {locked, reveal: locked}) + '</article>' + foot +
+    (s.deferred ? '<section class="card"><h2>Questions</h2><div class="palette">' + s.qids.map((id, i) => '<button type="button" data-act="jump" data-i="' + i + '" class="' + (answered(S.qById.get(id), s.slots[id]) ? 'done ' : '') + (i === s.idx ? 'cur ' : '') + (s.slots[id].marked ? 'mk' : '') + '" aria-label="Question ' + (i + 1) + '">' + (i + 1) + '</button>').join('') + '</div><p class="hint">Filled boxes are answered. A blue dot means marked for review.</p></section>' : '') + '</div>';
+};
+views.results = () => {
+  const s = S.sessions.find(x => x.id === S.ui.resultId); if (!s) return emptyCard('No session selected', 'Open a finished session from Review.', 'review', 'Go to Review');
+  const at = s.attempts || [], n = at.length, c = at.filter(a => a.correct).length, ms = at.reduce((x, a) => x + (a.ms || 0), 0), byT = {};
+  at.forEach(a => { const o = byT[a.topic] || (byT[a.topic] = {n: 0, c: 0, ms: 0}); o.n++; if (a.correct) o.c++; o.ms += a.ms || 0; });
+  return '<div class="wrap"><header class="head"><div><p class="eyebrow">' + esc(modeName(s.mode)) + ', ' + fdate(s.startedAt) + '</p><h1>' + c + ' of ' + n + ' correct</h1><p class="sub">' + pct(n ? c / n : null) + ' in ' + dur(ms) + ', ' + dur(n ? ms / n : null) + ' per question against an exam pace of ' + dur(targetMs()) + '.' + (s.planned > n ? ' Ended early, ' + s.planned + ' were planned.' : '') + '</p></div><div class="head-actions"><button class="btn primary" data-act="quick" data-mode="adaptive">Start another session</button><a class="btn" href="#home">Dashboard</a></div></header>' +
+    '<section class="card"><h2>By topic</h2><div class="tw"><table class="t"><thead><tr><th>Topic</th><th class="num">Correct</th><th>Accuracy</th><th class="num">Avg time</th></tr></thead><tbody>' + S.exam.topics.filter(t => byT[t.id]).map(t => { const o = byT[t.id]; return '<tr><td><a href="#topic-' + t.id + '">' + esc(t.name) + '</a></td><td class="num">' + o.c + ' of ' + o.n + '</td><td>' + bar(o.c / o.n) + '</td><td class="num">' + dur(o.ms / o.n) + '</td></tr>'; }).join('') + '</tbody></table></div></section>' +
+    '<section class="card"><h2>Questions</h2>' + at.map((a, i) => { const q = S.qById.get(a.qid);
+      return '<details class="sub-d"><summary><span class="code">' + (i + 1) + '</span><span class="nm">' + esc(q ? Core.plain(q.stem) : a.qid + ' (no longer in the bank)') + '</span><span class="chip ' + (a.correct ? 'strong' : 'missed') + '">' + (a.correct ? 'Correct' : a.skipped ? 'Not answered' : 'Missed') + '</span><span class="chip plain">' + dur(a.ms) + '</span></summary>' +
+        (q ? '<div class="sub-body">' + questionHTML(q, {r: a.response == null ? newSlot(q).r : a.response, result: {correct: a.correct, skipped: a.skipped}, ms: a.ms, conf: a.confidence}, {locked: true, reveal: true}) + '</div>' : '') + '</details>'; }).join('') + '</section></div>';
+};
+views.q = id => {
+  const q = S.qById.get(id); if (!q) return emptyCard('Question not found', 'It may have been removed from the bank.', 'search', 'Search');
+  if (!S.ui.solo || S.ui.solo.qid !== id) S.ui.solo = {qid: id, slot: newSlot(q)};
+  const slot = S.ui.solo.slot, locked = !!slot.result, flagged = !!S.flags[id], hist = S.model.attempts.filter(a => a.family === Core.famOf(q)).reverse();
+  return '<div class="wrap"><div class="qbar"><div><p class="eyebrow">Single question</p><strong>' + esc(id) + '</strong></div><div class="qbar-r"><span class="clock" id="clock"></span>' + statusChip(q) + '<button class="btn sm' + (flagged ? ' on' : '') + '" data-act="flag" data-id="' + esc(id) + '" aria-pressed="' + flagged + '">' + (flagged ? 'Flagged' : 'Flag') + '</button><a class="btn sm ghost" href="#topic-' + q.topic + '">Open topic</a></div></div>' +
+    '<article class="card qcard">' + questionHTML(q, slot, {locked, reveal: locked}) + '</article>' +
+    (locked ? '<div class="qfoot"><span></span><button class="btn primary" id="primary" data-act="soloAgain">' + (q.versions > 1 ? 'Try another version' : 'Try again') + '</button></div>'
+      : '<div class="qfoot"><div class="conf"><span id="conf-l">How sure are you?</span><div class="seg" role="group" aria-labelledby="conf-l">' + [[1, 'Guessing'], [2, 'Unsure'], [3, 'Sure']].map(c => '<button type="button" data-act="conf" data-v="' + c[0] + '" aria-pressed="' + (slot.conf === c[0]) + '">' + c[1] + '</button>').join('') + '</div></div><button class="btn primary" id="primary" data-act="check">Check answer</button></div>') +
+    '<section class="card"><h2>Your history on this question type</h2>' + (hist.length ? '<div class="tw"><table class="t"><thead><tr><th>Date</th><th>Result</th><th>Confidence</th><th class="num">Time</th><th>Mode</th></tr></thead><tbody>' + hist.map(a => '<tr><td>' + fdate(a.at) + ', ' + ftime(a.at) + '</td><td>' + (a.correct ? 'Correct' : a.skipped ? 'Not answered' : 'Missed') + '</td><td>' + ['Not rated', 'Guessing', 'Unsure', 'Sure'][a.confidence || 0] + '</td><td class="num">' + dur(a.ms) + '</td><td>' + esc(modeName(a.mode)) + '</td></tr>').join('') + '</tbody></table></div>' : '<p class="empty">Not answered yet.</p>') + '</section></div>';
+};
+function searchResults() {
+  const f = S.ui.search, now = Date.now(), any = f.q.trim() || f.type || f.topic || f.format || f.status;
+  if (!any) return '<p class="empty">Type a term, or pick a filter to browse. Search covers questions, solutions, topics, guide sections and reference entries.</p>';
+  const res = Core.search(S.index, f.q, d => (!f.type || d.type === f.type) && (!f.topic || d.topic === f.topic) && (!f.format || d.format === f.format) && (!f.status || (d.type === 'question' && Core.qStatus(S.model.byQ.get(d.id), now) === f.status)));
+  if (!res.length) return '<p class="empty">Nothing matches. Try fewer words or clear a filter.</p>';
+  const terms = Core.tokenize(f.q), re = terms.length ? new RegExp('(^|[^a-z0-9&;#])((?:' + terms.join('|') + ')[a-z0-9]*)', 'gi') : null, hl = t => re ? esc(t).replace(re, '$1<mark>$2</mark>') : esc(t);
+  const TYPE = {question: 'Question', guide: 'Guide', topic: 'Topic', reference: 'Reference'};
+  return '<p class="sub">' + res.length + (res.length === 200 ? '+' : '') + ' results</p>' + res.map(r => { const d = r.doc; let body = d.body || ''; if (body.length > 180) { const i = Math.max(0, body.toLowerCase().indexOf(terms[0] || '\u0000') - 60); body = (i ? '…' : '') + body.slice(i, i + 180) + '…'; }
+    return '<a class="res" href="#' + esc(d.href) + '" data-open="' + esc(d.open || '') + '"><span class="chips"><span class="chip plain">' + TYPE[d.type] + '</span>' + (d.topic ? '<span class="chip plain">' + esc(topicName(d.topic)) + '</span>' : '') + (d.format ? '<span class="chip plain">' + esc(fmtLabel(d.format)) + '</span>' : '') + (d.type === 'question' && S.qById.get(d.id) ? statusChip(S.qById.get(d.id)) : '') + '</span><strong>' + hl(d.title.length > 160 ? d.title.slice(0, 160) + '…' : d.title) + '</strong><span class="x">' + hl(body) + '</span></a>'; }).join('');
+}
+views.search = () => {
+  const f = S.ui.search, opt = (v, l, cur) => '<option value="' + esc(v) + '"' + (cur === v ? ' selected' : '') + '>' + esc(l) + '</option>';
+  return '<div class="wrap"><header class="head"><div><p class="eyebrow">Search</p><h1>Find anything on the site</h1></div></header><section class="card"><div class="filters">' +
+    '<input id="s-q" type="search" placeholder="For example: Manning, effective stress, present worth" value="' + esc(f.q) + '" data-input="sq" aria-label="Search terms" autocomplete="off">' +
+    '<select id="s-type" data-change="sType" aria-label="Type">' + opt('', 'All types', f.type) + opt('question', 'Questions', f.type) + opt('guide', 'Guide', f.type) + opt('topic', 'Topics', f.type) + opt('reference', 'Reference', f.type) + '</select>' +
+    '<select id="s-topic" data-change="sTopic" aria-label="Topic">' + opt('', 'All topics', f.topic) + S.exam.topics.map(t => opt(t.id, t.name, f.topic)).join('') + '</select>' +
+    '<select id="s-format" data-change="sFormat" aria-label="Question format">' + opt('', 'All formats', f.format) + S.exam.formats.map(x => opt(x.id, x.label, f.format)).join('') + '</select>' +
+    '<select id="s-status" data-change="sStatus" aria-label="Your status">' + opt('', 'Any status', f.status) + Object.keys(STATUS).map(k => opt(k, STATUS[k], f.status)).join('') + '</select></div><div id="s-res">' + searchResults() + '</div></section></div>';
+};
+views.review = () => {
+  const now = Date.now(), tab = S.ui.reviewTab, live = famList().map(nextOf), st = q => S.model.byQ.get(q.id);
+  const sets = {missed: live.filter(q => st(q) && !st(q).last.correct), due: live.filter(q => st(q) && st(q).dueAt <= now), flagged: live.filter(q => S.flags[q.id])};
+  const hist = S.sessions.filter(s => (s.attempts || []).length), tabs = [['missed', 'Missed', sets.missed.length], ['due', 'Due', sets.due.length], ['flagged', 'Flagged', sets.flagged.length], ['history', 'Sessions', hist.length]];
+  const emptyMsg = {missed: 'Nothing missed. Questions whose latest answer was wrong are listed here.', due: 'Nothing due. Answered questions come back here on a spaced schedule.', flagged: 'Nothing flagged. Use Flag on any question to collect it here.'};
+  let body;
+  if (tab === 'history') body = sessionRows(hist);
+  else body = (sets[tab].length ? '<div><button class="btn primary" data-act="quick" data-mode="' + tab + '" data-count="' + Math.min(sets[tab].length, 40) + '">Practice these ' + Math.min(sets[tab].length, 40) + '</button></div><div class="qlist">' + sets[tab].map(qRow).join('') + '</div>' : '<p class="empty">' + emptyMsg[tab] + '</p>');
+  return '<div class="wrap"><header class="head"><div><p class="eyebrow">Review</p><h1>What needs another look</h1></div></header><section class="card"><div class="tabs" role="tablist">' + tabs.map(t => '<button role="tab" aria-selected="' + (tab === t[0]) + '" data-act="tab" data-tab="' + t[0] + '">' + t[1] + ' (' + t[2] + ')</button>').join('') + '</div>' + body + '</section></div>';
+};
+views.progress = () => {
+  const m = S.model, T = m.totals, e = S.exam;
+  const end = new Date(); end.setHours(0, 0, 0, 0); const start = new Date(end); start.setDate(start.getDate() - (7 * 11 + end.getDay()));
+  let cells = ''; for (let d = new Date(start), i = 0; i < 84; i++, d.setDate(d.getDate() + 1)) { const k = Core.dayKey(d.getTime()), n = (m.byDay[k] || {n: 0}).n, fut = d > end; cells += '<i class="' + (fut ? 'fut' : n >= 40 ? 'l4' : n >= 20 ? 'l3' : n >= 10 ? 'l2' : n ? 'l1' : '') + '" title="' + (fut ? '' : d.toLocaleDateString(undefined, {month: 'short', day: 'numeric'}) + ': ' + n + ' answered') + '"></i>'; }
+  const row = (name, o) => '<tr><td>' + name + '</td><td class="num">' + o.n + '</td><td class="num">' + pct(o.accuracy) + '</td><td>' + bar(o.accuracy || 0) + '</td><td class="num">' + dur(o.avgMs) + '</td></tr>';
+  return '<div class="wrap"><header class="head"><div><p class="eyebrow">Progress</p><h1>' + T.n + ' answers logged</h1><p class="sub">' + pct(T.accuracy) + ' overall accuracy. Exam-weighted mastery: ' + pct(T.weighted) + ', with ' + T.secure + ' of ' + T.bank + ' question types secure. A question type is secure after three correct answers on separate, spaced days, on a different version each time where one exists. Neither figure is a pass prediction.</p></div></header>' +
+    '<section class="card"><h2>Activity, last 12 weeks</h2><div class="heat" role="img" aria-label="Answers per day for the last 12 weeks">' + cells + '</div><p class="hint">Darker squares are days with more answers. Each column is a week.</p></section>' +
+    '<section class="card"><h2>By topic</h2><div class="tw"><table class="t"><thead><tr><th></th><th>Topic</th><th class="num">Answered</th><th class="num">Accuracy</th><th>Mastery</th><th class="num">Avg time</th><th class="num">Coverage</th></tr></thead><tbody>' + e.topics.map(t => { const x = m.byTopic[t.id]; return '<tr><td class="n">' + t.n + '</td><td><a href="#topic-' + t.id + '">' + esc(t.name) + '</a></td><td class="num">' + x.n + '</td><td class="num">' + pct(x.accuracy) + '</td><td>' + (x.mastery == null ? '<span class="sub">No questions yet</span>' : '<div style="display:flex;gap:8px;align-items:center">' + bar(x.mastery) + '<span>' + secureText(x) + '</span></div>') + '</td><td class="num">' + dur(x.avgMs) + '</td><td class="num">' + x.seen + ' of ' + x.total + '</td></tr>'; }).join('') + '</tbody></table></div></section>' +
+    '<div class="grid2"><section class="card"><h2>By question format</h2><div class="tw"><table class="t"><thead><tr><th>Format</th><th class="num">Answered</th><th class="num">Accuracy</th><th></th><th class="num">Avg time</th></tr></thead><tbody>' + e.formats.map(f => row(esc(f.label), m.byFormat[f.id])).join('') + '</tbody></table></div></section>' +
+    '<section class="card"><h2>Confidence check</h2><div class="tw"><table class="t"><thead><tr><th>You said</th><th class="num">Answered</th><th class="num">Accuracy</th><th></th><th class="num">Avg time</th></tr></thead><tbody>' + [[3, 'Sure'], [2, 'Unsure'], [1, 'Guessing'], [0, 'Not rated']].map(c => row(c[1], m.byConf[c[0]])).join('') + '</tbody></table></div><p class="hint">Low accuracy on answers marked Sure points to a misconception rather than a gap.</p></section></div></div>';
+};
+views.reference = () => {
+  const r = S.reference || {}, hb = r.handbook || {}, secs = r.sections || [];
+  return '<div class="wrap"><header class="head"><div><p class="eyebrow">Reference</p><h1>' + esc(hb.title || 'Reference handbook') + ' map</h1><p class="sub">Where each topic lives in the handbook you get on exam day' + (hb.edition ? ', edition ' + esc(hb.edition) : '') + '. This page points to sections. It does not reproduce the handbook.' + (hb.note ? ' ' + esc(hb.note) : '') + '</p></div></header>' +
+    '<section class="card"><h2>Handbook sections</h2>' + (secs.length ? '<div class="tw"><table class="t"><thead><tr><th>Section</th><th>Topics</th><th>Pages</th><th>Notes</th></tr></thead><tbody>' + secs.map(s => '<tr><td>' + esc(s.title) + '</td><td>' + (s.topics || []).map(t => '<a href="#topic-' + esc(t) + '">' + esc(topicName(t)) + '</a>').join(', ') + '</td><td>' + esc(s.pages || '') + '</td><td>' + Core.richInline(s.notes || '') + '</td></tr>').join('') + '</tbody></table></div>' : '<p class="empty">No handbook sections mapped yet. Each entry will name a handbook section, the exam topics it serves and what to look for there.</p>') + '</section>' +
+    ((r.sources || []).length ? '<section class="card"><h2>Your study materials</h2><p class="sub">Files in your Drive folder PE-FE-EXAM-PREP and what each one is for. Nothing from them is copied into this site.</p><div class="tw"><table class="t"><thead><tr><th>Material</th><th>File</th><th>Use it for</th><th>Watch out</th></tr></thead><tbody>' + r.sources.map(x => '<tr><td>' + esc(x.title) + '</td><td>' + esc(x.file) + '</td><td>' + esc(x.use) + '</td><td>' + esc(x.note || '') + '</td></tr>').join('') + '</tbody></table></div></section>' : '') +
+    '<section class="card"><h2>Formulas by topic</h2><div class="tw"><table class="t"><thead><tr><th></th><th>Topic</th><th class="num">Guide sections</th><th class="num">Formulas</th></tr></thead><tbody>' + S.exam.topics.map(t => { const g = (S.guide[t.id] || {}).sections || []; return '<tr><td class="n">' + t.n + '</td><td><a href="#topic-' + t.id + '">' + esc(t.name) + '</a></td><td class="num">' + g.length + '</td><td class="num">' + g.reduce((n, s) => n + (s.formulas || []).length, 0) + '</td></tr>'; }).join('') + '</tbody></table></div></section></div>';
+};
+views.setup = () => {
+  const st = S.store, pending = Object.keys(Store.outbox()).length, modeTxt = {cloud: 'Saved to your study log in the cloud', local: 'This browser only. Storage is not available in this view', offline: 'Storage unreachable. Answers are kept on this device until it answers', loading: 'Connecting'}[st.mode];
+  return '<div class="wrap"><header class="head"><div><p class="eyebrow">Setup</p><h1>Study settings</h1></div></header>' +
+    '<section class="card"><h2>Your plan</h2><div class="fields"><div class="field"><label for="set-date">Exam date</label><input id="set-date" type="date" value="' + esc(S.settings.examDate || '') + '" data-change="setDate"></div><div class="field"><label for="set-goal">Daily goal, questions</label><input id="set-goal" type="number" min="1" max="300" value="' + (S.settings.dailyGoal || 20) + '" data-change="setGoal"></div><div class="field"><label for="set-len">Default session length</label><input id="set-len" type="number" min="1" max="200" value="' + (S.settings.sessionLength || 10) + '" data-change="setLen"></div></div></section>' +
+    '<section class="card"><h2>Study log</h2><dl class="kv"><dt>Storage</dt><dd>' + esc(modeTxt) + '</dd><dt>Waiting to send</dt><dd>' + pending + '</dd><dt>Sessions</dt><dd>' + S.sessions.length + '</dd><dt>Answers</dt><dd>' + S.sessions.reduce((n, s) => n + (s.attempts || []).length, 0) + '</dd></dl><div class="head-actions"><button class="btn" data-act="copyLog">Copy study log as JSON</button>' + (st.mode !== 'cloud' || pending ? '<button class="btn" data-act="retry">Retry storage</button>' : '') + '</div></section>' +
+    '<section class="card"><h2>Content</h2><dl class="kv"><dt>Exam</dt><dd>' + esc(S.exam.name) + '</dd><dt>Specification</dt><dd>' + esc(S.exam.spec) + '</dd><dt>Content version</dt><dd>' + esc(S.manifest.version) + ', updated ' + esc(S.manifest.updated || '') + '</dd><dt>Questions</dt><dd>' + S.questions.filter(q => !q.sample).length + ' in the bank, ' + S.questions.filter(q => q.sample).length + ' format samples</dd><dt>Guide sections</dt><dd>' + Object.values(S.guide).reduce((n, g) => n + (g.sections || []).length, 0) + '</dd></dl>' + (S.warnings.length ? '<div class="note"><strong>Content warnings</strong><ul>' + S.warnings.map(w => '<li>' + esc(w) + '</li>').join('') + '</ul></div>' : '') + '</section></div>';
+};
+
+/* ---------- Router and rendering ---------- */
+function parseRoute() {
+  const h = (location.hash || '').replace(/^#/, '');
+  if (h.startsWith('topic-')) return {name: 'topic', arg: h.slice(6)};
+  if (h.startsWith('q-')) return {name: 'q', arg: h.slice(2)};
+  return {name: views[h] ? h : 'home'};
+}
+function go(name) { if (location.hash === '#' + name) { R = parseRoute(); render(true); } else location.hash = name; }
+const NAVKEY = {topic: 'topics', quiz: 'practice', results: 'review', q: 'review'};
+function render(nav) {
+  const v = $('#view'), keep = nav ? 0 : v.scrollTop;
+  if (!S.exam) return;
+  let html;
+  try { html = views[R.name](R.arg); } catch (e) { console.error(e); html = emptyCard('This page hit an error', e.message, 'home', 'Dashboard'); }
+  v.innerHTML = html; v.scrollTop = keep;
+  const key = NAVKEY[R.name] || R.name;
+  $$('.side nav a').forEach(a => { if (a.dataset.to === key) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+  const c = cur();
+  if (c && !c.locked) clockStart(c.slot); else clockStop();
+  tick();
+  if (nav && R.name === 'search') { const i = $('#s-q'); if (i) { i.focus(); i.setSelectionRange(i.value.length, i.value.length); } }
+  if (nav && R.name === 'topic' && S.ui.open) { const d = $('details.sub-d[open]'); if (d && d.scrollIntoView) d.scrollIntoView({block: 'start'}); }
+  if (nav) S.ui.open = null;
+}
+function tick() {
+  const el = $('#clock'); if (!el) return;
+  const s = S.session;
+  if (R.name === 'quiz' && s && s.deferred) {
+    const left = s.limitMs - (Date.now() - Date.parse(s.startedAt));
+    el.textContent = dur(left) + ' left'; el.classList.toggle('low', left < 300000);
+    if (left <= 0) { toast('Time is up. The exam was submitted.'); submitExam(); }
+  } else { const c = cur(); if (c) el.textContent = dur(c.slot.ms + (S.clock.slot === c.slot && S.clock.since ? Date.now() - S.clock.since : 0)); }
+}
+
+/* ---------- Actions ---------- */
+function moveOrder(from, to) { const c = cur(); if (!c || c.locked || c.q.format !== 'order' || from === to || to < 0 || to >= c.slot.r.length) return; const a = c.slot.r.slice(), x = a.splice(from, 1)[0]; a.splice(to, 0, x); c.slot.r = a; changed(); }
+const A = {
+  quick(el) { startSession({mode: el.dataset.mode, topics: el.dataset.topic ? [el.dataset.topic] : [], subtopics: el.dataset.sub ? [el.dataset.sub] : [], formats: [], count: +el.dataset.count || S.settings.sessionLength || 10}); },
+  setMode(el) { S.ui.practice.mode = el.dataset.mode; render(); },
+  start() { const p = S.ui.practice, e = S.exam, n = p.mode === 'exam' ? {full: e.questionCount, half: Math.round(e.questionCount / 2), quarter: Math.round(e.questionCount / 4)}[p.examLen] : (p.count || S.settings.sessionLength || 10);
+    startSession({mode: p.mode, topics: p.topics.slice(), subtopics: [], formats: p.formats.slice(), count: n}); },
+  opt(el) { const c = cur(); if (!c || c.locked) return; const id = el.dataset.id;
+    if (c.q.format === 'mcq') c.slot.r = id; else { const a = new Set(c.slot.r || []); if (a.has(id)) a.delete(id); else a.add(id); c.slot.r = [...a].sort(); }
+    changed(); },
+  hot(el, ev) { const c = cur(); if (!c || c.locked || !el.createSVGPoint) return; const pt = el.createSVGPoint(); pt.x = ev.clientX; pt.y = ev.clientY; const p = pt.matrixTransform(el.getScreenCTM().inverse()); c.slot.r = {x: Math.round(p.x * 10) / 10, y: Math.round(p.y * 10) / 10}; changed(); },
+  tok(el) { const c = cur(); if (!c || c.locked) return; S.ui.held = S.ui.held === el.dataset.id ? null : el.dataset.id; render(); },
+  place(el) { const c = cur(), held = S.ui.held; if (!c || c.locked || !held) return; const tid = el.dataset.id, tgt = c.q.targets.find(t => t.id === tid), r = Object.assign({}, c.slot.r);
+    if (!(tgt && tgt.multi)) Object.keys(r).forEach(k => { if (r[k] === tid) delete r[k]; });
+    r[held] = tid; c.slot.r = r; S.ui.held = null; changed(); },
+  unplace() { const c = cur(), held = S.ui.held; if (!c || c.locked || !held) return; const r = Object.assign({}, c.slot.r); delete r[held]; c.slot.r = r; S.ui.held = null; changed(); },
+  up(el) { moveOrder(+el.dataset.i, +el.dataset.i - 1); },
+  down(el) { moveOrder(+el.dataset.i, +el.dataset.i + 1); },
+  conf(el) { const c = cur(); if (!c || c.locked) return; const v = +el.dataset.v; c.slot.conf = c.slot.conf === v ? 0 : v; persistActive(); render(); },
+  check() { const c = cur(); if (!c || c.locked) return;
+    if (!Core.isAnswered(c.q, c.slot.r)) return toast('Answer the question first.');
+    clockStop(); c.slot.result = {correct: Core.grade(c.q, c.slot.r).correct};
+    const att = mkAttempt(c.q, c.slot);
+    if (c.kind === 'quiz') { S.session.attempts.push(att); Store.saveSession(sessionDoc(S.session, 'active')); persistActive(); }
+    else { const d = adhocDoc(); d.attempts.push(att); Store.saveSession(d); }
+    S.ui.held = null; recompute(); render(); },
+  next() { const s = S.session; if (!s) return; clockStop(); S.ui.held = null; if (s.idx < s.qids.length - 1) { s.idx++; persistActive(); render(true); } else if (s.deferred) A.askSubmit(); else finishSession(); },
+  prev() { const s = S.session; if (!s || !s.idx) return; clockStop(); s.idx--; persistActive(); render(true); },
+  jump(el) { const s = S.session; if (!s) return; clockStop(); s.idx = +el.dataset.i; persistActive(); render(true); },
+  mark() { const c = cur(); if (!c) return; c.slot.marked = !c.slot.marked; persistActive(); render(); },
+  endSession() { finishSession(); },
+  askSubmit() { const s = S.session; if (!s) return; const un = s.qids.filter(id => !answered(S.qById.get(id), s.slots[id])).length;
+    modal({title: 'Submit this exam?', body: un ? un + ' unanswered question' + (un > 1 ? 's' : '') + ' will be scored as wrong, as on the real exam.' : 'All questions are answered.', ok: 'Submit exam', cancel: 'Keep working', onOk: submitExam}); },
+  soloAgain() { const f = S.model.fams.get(Core.famOf(S.qById.get(S.ui.solo.qid))), q = f ? nextOf(f) : S.qById.get(S.ui.solo.qid); S.ui.solo = {qid: q.id, slot: newSlot(q)}; if (R.arg !== q.id) go('q-' + q.id); else render(); },
+  flag(el) { const id = el.dataset.id; if (S.flags[id]) delete S.flags[id]; else S.flags[id] = {at: new Date().toISOString()}; Store.saveFlags(); render(); },
+  tab(el) { S.ui.reviewTab = el.dataset.tab; render(); },
+  openResult(el) { S.ui.resultId = el.dataset.id; go('results'); },
+  retry() { Store.retry(); toast('Trying storage again.'); },
+  copyLog() { const text = JSON.stringify({exportedAt: new Date().toISOString(), contentVersion: S.manifest.version, settings: S.settings, flags: S.flags, sessions: S.sessions}, null, 1);
+    const fallback = () => modal({title: 'Study log', html: '<p class="sub">Copy the text below.</p><textarea id="log-out" rows="10" style="width:100%" readonly>' + esc(text) + '</textarea>'});
+    try { navigator.clipboard.writeText(text).then(() => toast('Study log copied.'), fallback); } catch (e) { fallback(); } },
+  modalOk() { const f = modal.onOk; $('#modal').hidden = true; if (f) f(); },
+  modalClose() { $('#modal').hidden = true; }
+};
+const C = {
+  count(el) { S.ui.practice.count = Math.max(1, Math.min(200, +el.value || 10)); },
+  examLen(el) { S.ui.practice.examLen = el.value; },
+  pTopic(el) { const p = S.ui.practice; p.topics = el.checked ? p.topics.concat(el.value) : p.topics.filter(x => x !== el.value); },
+  pFormat(el) { const p = S.ui.practice; p.formats = el.checked ? p.formats.concat(el.value) : p.formats.filter(x => x !== el.value); },
+  sType(el) { S.ui.search.type = el.value; $('#s-res').innerHTML = searchResults(); },
+  sTopic(el) { S.ui.search.topic = el.value; $('#s-res').innerHTML = searchResults(); },
+  sFormat(el) { S.ui.search.format = el.value; $('#s-res').innerHTML = searchResults(); },
+  sStatus(el) { S.ui.search.status = el.value; $('#s-res').innerHTML = searchResults(); },
+  setDate(el) { S.settings.examDate = el.value; Store.saveSettings(); },
+  setGoal(el) { S.settings.dailyGoal = Math.max(1, Math.min(300, +el.value || 20)); Store.saveSettings(); },
+  setLen(el) { S.settings.sessionLength = Math.max(1, Math.min(200, +el.value || 10)); Store.saveSettings(); }
+};
+document.addEventListener('click', ev => {
+  const res = ev.target.closest && ev.target.closest('a.res'); if (res && res.dataset.open) S.ui.open = res.dataset.open;
+  const el = ev.target.closest && ev.target.closest('[data-act]'); if (!el || el.disabled) return;
+  const f = A[el.dataset.act]; if (f) f(el, ev);
+});
+document.addEventListener('change', ev => { const el = ev.target, f = el.dataset && C[el.dataset.change]; if (f) f(el); });
+document.addEventListener('input', ev => {
+  const el = ev.target, k = el.dataset && el.dataset.input;
+  if (k === 'num') { const c = cur(); if (c && !c.locked) { c.slot.r = el.value; c.slot.touched = true; persistActive(); } }
+  else if (k === 'sq') { S.ui.search.q = el.value; $('#gsearch').value = el.value; $('#s-res').innerHTML = searchResults(); }
+});
+document.addEventListener('submit', ev => { ev.preventDefault(); if (ev.target.id === 'gform') { S.ui.search.q = $('#gsearch').value; go('search'); } });
+document.addEventListener('keydown', ev => {
+  if (!$('#modal').hidden) { if (ev.key === 'Escape') A.modalClose(); return; }
+  const tag = (ev.target.tagName || '').toLowerCase(), typing = tag === 'input' || tag === 'textarea' || tag === 'select';
+  if (ev.key === '/' && !typing) { ev.preventDefault(); $('#gsearch').focus(); return; }
+  const c = cur(); if (!c) return;
+  if (ev.key === 'Enter' && (!typing || ev.target.id === 'num-in') && tag !== 'button' && tag !== 'a') { const b = $('#primary'); if (b) { ev.preventDefault(); b.click(); } return; }
+  if (!typing && !c.locked && (c.q.format === 'mcq' || c.q.format === 'multi') && /^[a-h]$/i.test(ev.key) && !ev.metaKey && !ev.ctrlKey && !ev.altKey) { const o = c.q.options[ev.key.toLowerCase().charCodeAt(0) - 97]; if (o) A.opt({dataset: {id: o.id}}); }
+});
+document.addEventListener('dragstart', ev => {
+  const t = ev.target.closest && ev.target.closest('[data-act="tok"]'), o = ev.target.closest && ev.target.closest('[data-drag="order"]');
+  if (t) { S.ui.held = t.dataset.id; ev.dataTransfer.setData('text/plain', t.dataset.id); ev.dataTransfer.effectAllowed = 'move'; }
+  else if (o) { S.ui.dragI = +o.dataset.i; ev.dataTransfer.setData('text/plain', o.dataset.i); ev.dataTransfer.effectAllowed = 'move'; }
+});
+document.addEventListener('dragover', ev => { if (ev.target.closest && ev.target.closest('[data-drop],[data-drag="order"]')) ev.preventDefault(); });
+document.addEventListener('drop', ev => {
+  const d = ev.target.closest && ev.target.closest('[data-drop]'), o = ev.target.closest && ev.target.closest('[data-drag="order"]');
+  if (d && S.ui.held) { ev.preventDefault(); if (d.dataset.drop === 'pool') A.unplace(); else A.place(d); }
+  else if (o && S.ui.dragI != null) { ev.preventDefault(); const from = S.ui.dragI; S.ui.dragI = null; moveOrder(from, +o.dataset.i); }
+});
+document.addEventListener('dragend', () => { S.ui.dragI = null; });
+document.addEventListener('visibilitychange', () => { const c = S.clock; if (document.hidden) { if (c.slot && c.since) { c.slot.ms += Date.now() - c.since; c.since = null; } } else if (c.slot && !c.since) c.since = Date.now(); });
+window.addEventListener('hashchange', () => { clockStop(); S.ui.held = null; R = parseRoute(); render(true); });
+window.addEventListener('pagehide', () => { clockStop(); persistActive(); });
+setInterval(tick, 1000);
+
+/* ---------- Boot ---------- */
+(async function boot() {
+  try { await loadContent(); }
+  catch (e) { $('#view').innerHTML = '<div class="wrap"><div class="card"><h2>The site content did not load</h2><p class="sub">' + esc(e.message) + '. Reload the page. If it keeps happening, the content files need republishing.</p></div></div>'; return; }
+  recompute(); restoreActive(); R = parseRoute(); render(true);     // usable straight away, before storage answers
+  await Store.init();
+  recompute(); if (R.name !== 'quiz' || !S.session) render(); else paintStatus();
+})();
+</script>
+</body>
+</html>

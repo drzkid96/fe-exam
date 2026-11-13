@@ -1,0 +1,402 @@
+[
+ {
+  "id": "ethics-0001",
+  "topic": "ethics",
+  "subtopic": "ethics-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "An engineer tells a client that a retaining wall design is unsafe. The client overrules the engineer and orders construction to proceed as drawn. Under the NCEES Model Rules, what must the engineer do?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Proceed, because the client carries the liability once informed"
+   },
+   {
+    "id": "b",
+    "text": "Notify the client and any other authority that may be appropriate"
+   },
+   {
+    "id": "c",
+    "text": "Quietly strengthen the design without telling the client"
+   },
+   {
+    "id": "d",
+    "text": "Resign from the project and say nothing further"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Keeping people safe outranks keeping the client happy. If you are overruled and someone could get hurt, you have to tell someone who can stop it.",
+  "solution": "The first duty in the Model Rules is to the public. When an engineer's judgment is overruled in a way that endangers health, safety or welfare, the engineer must notify the client or employer and any other authority that may be appropriate.\n\nProceeding, working around the client in secret, or walking away silently all leave the hazard in place.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12"
+   }
+  ],
+  "tags": [
+   "public safety",
+   "model rules"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "FE Reference Handbook 10.0.1, Ethics and Professional Practice, Model Rules of Professional Conduct: obligation to the public"
+  }
+ },
+ {
+  "id": "ethics-0002",
+  "topic": "ethics",
+  "subtopic": "ethics-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A licensed engineer is asked to sign and seal drawings that were produced by another firm. She did not supervise or review the work. May she seal them?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Yes, if she is licensed in that state"
+   },
+   {
+    "id": "b",
+    "text": "Yes, if the other firm indemnifies her"
+   },
+   {
+    "id": "c",
+    "text": "No, because the work was not prepared under her responsible charge"
+   },
+   {
+    "id": "d",
+    "text": "No, unless the client approves in writing"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A seal is a promise that says \"I was in charge of this and I stand behind it.\" You cannot make that promise about work you did not direct.",
+  "solution": "The Model Rules allow a licensee to seal only work in their area of competence that was prepared under their responsible charge, meaning their direct control and personal supervision.\n\nBeing licensed in the state, being indemnified or having the client's approval does not change who was in charge of the work.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12"
+   }
+  ],
+  "tags": [
+   "seal",
+   "responsible charge",
+   "licensure"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "FE Reference Handbook 10.0.1, Ethics and Professional Practice, Model Rules of Professional Conduct: signing and sealing; Model Law definition of responsible charge"
+  }
+ },
+ {
+  "id": "ethics-0003",
+  "topic": "ethics",
+  "subtopic": "ethics-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "An engineer designing a pump station for a city is offered a paid consulting role by the pump supplier on the same project. When may the engineer accept both payments?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Never"
+   },
+   {
+    "id": "b",
+    "text": "When the supplier's fee is below a set dollar limit"
+   },
+   {
+    "id": "c",
+    "text": "When the circumstances are fully disclosed and all interested parties agree in writing"
+   },
+   {
+    "id": "d",
+    "text": "When the engineer judges that it will not affect the design"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Being paid by two sides of the same deal is only fair if nobody is kept in the dark. Everyone involved has to know and say yes.",
+  "solution": "The Model Rules bar compensation from more than one party for services on the same project unless the circumstances are fully disclosed and agreed to in writing by all interested parties.\n\nThe engineer's own belief that the design will not be affected is not enough, and there is no dollar threshold.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12"
+   }
+  ],
+  "tags": [
+   "conflict of interest",
+   "compensation"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "FE Reference Handbook 10.0.1, Ethics and Professional Practice, Model Rules of Professional Conduct: obligation to employers and clients"
+  }
+ },
+ {
+  "id": "ethics-0004",
+  "topic": "ethics",
+  "subtopic": "ethics-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A professional engineer licensed in one state wants to offer engineering services in a second state. Which route does the NCEES Model Law provide for someone who already holds a license elsewhere?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Practice under the home-state license for up to one year"
+   },
+   {
+    "id": "b",
+    "text": "Licensure by comity"
+   },
+   {
+    "id": "c",
+    "text": "Retake the FE exam"
+   },
+   {
+    "id": "d",
+    "text": "Register as an engineer intern"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A license only works in the state that issued it. The second state can recognize what you already earned instead of making you start over.",
+  "solution": "Licensure by comity lets a board license an engineer who holds a license from another jurisdiction with comparable requirements.\n\nA home-state license does not carry over on its own, and the FE exam and intern status are steps before a first license.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12"
+   }
+  ],
+  "tags": [
+   "licensure",
+   "comity"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "FE Reference Handbook 10.0.1, Ethics and Professional Practice, Model Law: licensure by comity"
+  }
+ },
+ {
+  "id": "ethics-0005",
+  "topic": "ethics",
+  "subtopic": "ethics-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "In a negligence claim, an engineer's work is judged against which standard?",
+  "options": [
+   {
+    "id": "a",
+    "text": "A guarantee that the finished work is free of defects"
+   },
+   {
+    "id": "b",
+    "text": "The care and skill ordinarily used by competent engineers in similar circumstances"
+   },
+   {
+    "id": "c",
+    "text": "Whatever the client instructed"
+   },
+   {
+    "id": "d",
+    "text": "The lowest-cost design that meets code"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Engineers are not expected to be perfect. They are expected to be as careful as a good engineer normally is.",
+  "solution": "The standard of care is what a reasonably prudent engineer would do in the same situation.\n\nIt is not a warranty of a perfect result, and following a client's instruction does not excuse careless work.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Common-law principle of professional negligence (standard of care for design professionals)"
+  }
+ },
+ {
+  "id": "ethics-0006",
+  "topic": "ethics",
+  "subtopic": "ethics-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Which type of insurance covers claims that an engineer's design errors caused a client financial loss?",
+  "options": [
+   {
+    "id": "a",
+    "text": "General liability"
+   },
+   {
+    "id": "b",
+    "text": "Professional liability (errors and omissions)"
+   },
+   {
+    "id": "c",
+    "text": "Workers' compensation"
+   },
+   {
+    "id": "d",
+    "text": "Builder's risk"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Different policies cover different kinds of trouble. Mistakes in professional advice have their own policy.",
+  "solution": "Professional liability insurance covers negligent acts, errors and omissions in professional services.\n\nGeneral liability covers bodily injury and property damage, workers' compensation covers employee injuries, and builder's risk covers the work while it is being built.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard insurance definitions used in construction and design contracts"
+  }
+ },
+ {
+  "id": "ethics-0007",
+  "topic": "ethics",
+  "subtopic": "ethics-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Which of the following is required for a contract to be enforceable?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Notarization of all signatures"
+   },
+   {
+    "id": "b",
+    "text": "Consideration exchanged by the parties"
+   },
+   {
+    "id": "c",
+    "text": "Approval by the state licensing board"
+   },
+   {
+    "id": "d",
+    "text": "A written document in every case"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A contract is a trade. Each side has to give something of value, or it is only a promise.",
+  "solution": "A valid contract needs an offer, acceptance, consideration, competent parties and a lawful purpose.\n\nMany contracts are enforceable without being written or notarized.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Common-law elements of a valid contract"
+  }
+ },
+ {
+  "id": "ethics-0008",
+  "topic": "ethics",
+  "subtopic": "ethics-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "An owner agrees to pay a contractor one fixed price for the whole job, whatever it actually costs the contractor. What type of contract is this?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Unit price"
+   },
+   {
+    "id": "b",
+    "text": "Cost plus fixed fee"
+   },
+   {
+    "id": "c",
+    "text": "Lump sum"
+   },
+   {
+    "id": "d",
+    "text": "Time and materials"
+   }
+  ],
+  "answer": "c",
+  "eli5": "With one fixed price, the builder keeps the savings if the job goes well and eats the loss if it does not.",
+  "solution": "A lump sum contract fixes the total price, so the contractor carries the cost risk.\n\nUnit price pays per measured quantity. Cost plus and time and materials reimburse actual costs.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard construction contract types"
+  }
+ },
+ {
+  "id": "ethics-0009",
+  "topic": "ethics",
+  "subtopic": "ethics-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A supplier offers an engineer a paid holiday if the engineer specifies the supplier's pumps on a client's project. Under the NCEES Model Rules, what should the engineer do?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Accept, provided the pumps meet the specification"
+   },
+   {
+    "id": "b",
+    "text": "Accept, then tell the client afterwards"
+   },
+   {
+    "id": "c",
+    "text": "Decline the offer"
+   },
+   {
+    "id": "d",
+    "text": "Accept only if the value is modest"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A gift tied to a decision you make for a client is a bribe, whatever it is called.",
+  "solution": "The Model Rules forbid soliciting or accepting gratuities from contractors, suppliers or other parties in connection with work for an employer or client.\n\nThe quality of the product does not change that.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "FE Reference Handbook 10.0.1, Ethics and Professional Practice, Model Rules of Professional Conduct: obligation to employers and clients"
+  }
+ }
+]

@@ -1,0 +1,149 @@
+{
+ "topic": "econ",
+ "sections": [
+  {
+   "id": "econ-overview",
+   "subtopic": null,
+   "title": "Start here",
+   "body": "Money today is worth more than the same money later, because money today can earn interest. Every question here moves money through time so that amounts can be compared fairly.\n\nDraw a timeline, mark each payment, and pick the factor that converts what you have into what you want.",
+   "formulas": [],
+   "pitfalls": [
+    "Mixing up the factor direction: finding a future amount when the question wants a present one.",
+    "Forgetting that a sunk cost has already been spent and does not belong in the comparison."
+   ],
+   "read": [
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Engineering Economics, pages 230–237"
+    },
+    {
+     "source": "Lindeburg review manual, file 3 of 3",
+     "where": "Topic XV, Engineering Economics"
+    }
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "econ-a-lesson",
+   "subtopic": "econ-a",
+   "title": "Time value of money",
+   "body": "Money now is worth more than the same amount later because money now can earn interest. To compare amounts at different times, move them to the same point in time using interest factors.\n\nP is a present amount, F a future amount, and A a uniform series of equal end-of-period payments. The handbook tabulates factors such as (F/P, i, n), read as find F given P. Draw a cash flow timeline, then choose the factor that converts what you have into what you need. When interest compounds more than once a year, convert the nominal rate to an effective rate first.",
+   "formulas": [
+    {
+     "name": "Future worth of a present amount",
+     "expr": "F = P(1 + i)^{n}",
+     "handbook": "Engineering Economics, p. 230–237"
+    },
+    {
+     "name": "Present worth of a future amount",
+     "expr": "P = \\frac{F}{(1 + i)^{n}}",
+     "handbook": "Engineering Economics, p. 230–237"
+    },
+    {
+     "name": "Uniform series to repay a present amount",
+     "expr": "A = P\\frac{i(1 + i)^{n}}{(1 + i)^{n} - 1}",
+     "handbook": "Engineering Economics, p. 230–237"
+    },
+    {
+     "name": "Effective annual rate",
+     "expr": "i_{e} = (1 + \\frac{r}{m})^{m} - 1",
+     "handbook": "Engineering Economics, p. 230–237"
+    }
+   ],
+   "pitfalls": [
+    "Using the F/P factor when the question needs P/F.",
+    "Using a nominal annual rate with monthly periods without dividing it by 12."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "How much must be invested today at 7% to have $50,000 in 15 years?",
+    "steps": "P = \\frac{50,000}{(1.07)^{15}} = \\frac{50,000}{2.759} = $18,122."
+   }
+  },
+  {
+   "id": "econ-b-lesson",
+   "subtopic": "econ-b",
+   "title": "Cost",
+   "body": "Cost questions ask you to sort costs into the right buckets. Fixed costs do not change with output: rent, salaried staff. Variable costs rise with each unit made: materials, piecework labor. Direct costs can be traced to one job. Indirect costs, or overhead, are shared across jobs.\n\nAverage cost is total cost divided by units. Incremental (marginal) cost is the cost of one more unit. A sunk cost is money already spent that cannot be recovered. It should be ignored when choosing what to do next.",
+   "formulas": [
+    {
+     "name": "Total cost",
+     "expr": "TC = fixed cost + (variable cost per unit)(units)",
+     "handbook": "Engineering Economics, p. 230–237"
+    },
+    {
+     "name": "Average cost",
+     "expr": "AC = \\frac{TC}{units}",
+     "handbook": "Engineering Economics, p. 230–237"
+    }
+   ],
+   "pitfalls": [
+    "Letting a sunk cost influence a forward-looking decision."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A shop has fixed costs of $8,000 a month and variable costs of $25 per part. What is the average cost per part at 400 parts?",
+    "steps": "TC = 8,000 + 25(400) = $18,000.\n\nAC = \\frac{18,000}{400} = $45 per part."
+   }
+  },
+  {
+   "id": "econ-c-lesson",
+   "subtopic": "econ-c",
+   "title": "Analyses",
+   "body": "These methods decide between alternatives. Present worth converts every cash flow to today's dollars. Equivalent uniform annual cost spreads everything into equal yearly amounts, which is handy when alternatives have different lives. Benefit-cost analysis divides the present worth of benefits by the present worth of costs; a ratio above 1 means the project pays. Break-even analysis finds the quantity at which revenue equals cost. Life-cycle cost adds purchase, operation, maintenance and disposal over the whole life.",
+   "formulas": [
+    {
+     "name": "Break-even quantity",
+     "expr": "Q = \\frac{fixed cost}{price - variable cost per unit}",
+     "handbook": "Engineering Economics, p. 230–237"
+    },
+    {
+     "name": "Benefit-cost ratio",
+     "expr": "B/C = \\frac{PW of benefits}{PW of costs}",
+     "handbook": "Engineering Economics, p. 230–237"
+    },
+    {
+     "name": "Equivalent uniform annual cost",
+     "expr": "EUAC = P(A/P) + annual cost - S(A/F)",
+     "handbook": "Engineering Economics, p. 230–237"
+    },
+    {
+     "name": "Straight-line depreciation",
+     "expr": "D = \\frac{cost - salvage}{life}",
+     "handbook": "Engineering Economics, p. 230–237"
+    }
+   ],
+   "pitfalls": [
+    "Comparing present worths of alternatives with different lives without using a common period.",
+    "Putting disbenefits or costs on the wrong side of a benefit-cost ratio."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A pump costs $12,000, lasts 10 years with no salvage, and costs $800 a year to run. At 8%, what is its equivalent uniform annual cost?",
+    "steps": "(A/P, 8%, 10) = 0.1490.\n\nEUAC = 12,000(0.1490) + 800 = $2,588."
+   }
+  },
+  {
+   "id": "econ-d-lesson",
+   "subtopic": "econ-d",
+   "title": "Uncertainty",
+   "body": "Real projects have uncertain outcomes. Expected value is the long-run average: multiply each outcome by its probability and add. It lets you compare a gamble with a sure thing.\n\nRisk is the spread around that average. Two options can have the same expected value while one is far riskier. A decision tree lays out choices and chances as branches. Work it from the right: compute the expected value at each chance node, then pick the best branch at each decision node.",
+   "formulas": [
+    {
+     "name": "Expected value",
+     "expr": "EV = sum of (probability × outcome)",
+     "handbook": "Engineering Economics, p. 230–237"
+    }
+   ],
+   "pitfalls": [
+    "Probabilities across the outcomes of one event must add to 1.",
+    "Forgetting to include costs that are paid whatever the outcome."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A bid costs $5,000 to prepare. It has a 25% chance of winning a job worth $60,000 in profit. What is the expected value of bidding?",
+    "steps": "EV = 0.25(60,000) - 5,000 = 15,000 - 5,000 = $10,000."
+   }
+  }
+ ]
+}

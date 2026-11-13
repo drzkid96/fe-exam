@@ -1,0 +1,162 @@
+{
+ "topic": "construction",
+ "sections": [
+  {
+   "id": "construction-overview",
+   "subtopic": null,
+   "title": "Start here",
+   "body": "Construction questions are about running a project: who is responsible for what, how long the work takes, what it costs and whether it is on track.\n\nScheduling and earned value questions are arithmetic once the network or the three cost figures are laid out clearly.",
+   "formulas": [],
+   "pitfalls": [
+    "Mixing up the cost index (earned value over actual cost) and the schedule index (earned value over planned value).",
+    "Forgetting to convert thickness to the same unit as length and width in a quantity takeoff."
+   ],
+   "read": [
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Civil Engineering, pages 259–309"
+    },
+    {
+     "source": "Lindeburg review manual, file 3 of 3",
+     "where": "Topic XIII, Construction"
+    }
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "construction-a-lesson",
+   "subtopic": "construction-a",
+   "title": "Project administration",
+   "body": "Project administration is the paperwork and relationships that hold a job together. The delivery method sets who contracts with whom. In design-bid-build the owner hires a designer, then bids the finished design to contractors. In design-build one entity does both. With a construction manager at risk, a builder advises during design and then guarantees a price.\n\nThe contract documents are the agreement, the general and special conditions, the drawings and the specifications. Bonds protect the owner: a bid bond, a performance bond and a payment bond. Changes go through change orders, and payment follows measured progress with retainage held back until completion.",
+   "formulas": [],
+   "pitfalls": [
+    "Confusing a performance bond (the work gets finished) with a payment bond (subcontractors and suppliers get paid)."
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "construction-b-lesson",
+   "subtopic": "construction-b",
+   "title": "Construction operations and methods",
+   "body": "Operations questions are about getting work done safely and productively. Production is how much a machine or crew does per hour: the amount per cycle times the cycles per hour, reduced for the minutes actually worked. Match the fleet so that the loader and its trucks keep each other busy.\n\nSafety comes first on site. OSHA sets rules for excavations, fall protection and equipment. Injury records are compared using an incidence rate per 200,000 hours worked. Temporary erosion controls such as silt fences and sediment basins keep soil on the site during construction.",
+   "formulas": [
+    {
+     "name": "Production rate",
+     "expr": "volume per cycle × cycles per hour × efficiency",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Trucks needed",
+     "expr": "\\frac{truck cycle time}{loading time}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Incidence rate",
+     "expr": "\\frac{recordable cases × 200,000}{hours worked}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Assuming a 60-minute working hour."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A scraper carries 15 m^{3} per trip and makes a trip every 6 minutes, working 45 minutes per hour. Find its hourly production.",
+    "steps": "Trips per hour = \\frac{45}{6} = 7.5.\n\nProduction = 15(7.5) = 112.5 m^{3}/h."
+   }
+  },
+  {
+   "id": "construction-c-lesson",
+   "subtopic": "construction-c",
+   "title": "Project controls",
+   "body": "Project controls track time and money against the plan. The critical path method lays the activities out as a network. A forward pass gives the earliest each can start and finish. A backward pass gives the latest. The difference is float. Activities with zero float form the critical path, and delaying any of them delays the project.\n\nEarned value compares three figures: planned value (what should be done by now), earned value (the budgeted worth of what is done), and actual cost. The cost index is earned over actual. The schedule index is earned over planned. Below 1.0 is bad news in both.",
+   "formulas": [
+    {
+     "name": "Total float",
+     "expr": "late start - early start",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Cost performance index",
+     "expr": "CPI = \\frac{EV}{AC}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Schedule performance index",
+     "expr": "SPI = \\frac{EV}{PV}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Estimate at completion",
+     "expr": "EAC = \\frac{budget at completion}{CPI}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Swapping PV and AC between the two indexes."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A project has EV = $180,000 and AC = $200,000, with a total budget of $500,000. Find the CPI and the estimate at completion.",
+    "steps": "CPI = \\frac{180,000}{200,000} = 0.90.\n\nEAC = \\frac{500,000}{0.90} = $555,600."
+   }
+  },
+  {
+   "id": "construction-d-lesson",
+   "subtopic": "construction-d",
+   "title": "Construction estimating",
+   "body": "An estimate prices a job before it is built. Start with a quantity takeoff: measure every item from the drawings in its pay unit, such as cubic metres of concrete or square metres of formwork. Multiply each quantity by a unit cost that covers labor, material and equipment.\n\nAdd indirect costs: site overhead, home office overhead, contingency and profit. Allow for waste on materials. Early estimates use cost per square metre or per unit. Detailed estimates price each item.",
+   "formulas": [
+    {
+     "name": "Item cost",
+     "expr": "quantity × unit cost",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Bid price",
+     "expr": "direct cost × (1 + overhead and profit)",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Order quantity",
+     "expr": "net quantity × (1 + waste)",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Mixing millimetres and metres in a takeoff."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A footing 2 m by 2 m by 0.5 m is poured 12 times. With 4% waste, how much concrete is ordered?",
+    "steps": "Net volume = 2(2)(0.5)(12) = 24 m^{3}.\n\nOrder = 24(1.04) = 24.96 m^{3}, about 25 m^{3}."
+   }
+  },
+  {
+   "id": "construction-e-lesson",
+   "subtopic": "construction-e",
+   "title": "Interpretation of engineering drawings",
+   "body": "Drawings are the language of construction. A plan looks straight down. An elevation looks at a face. A section slices through to show what is inside. Details enlarge a small area. A scale relates a length on paper to a length on the ground.\n\nOn site plans, contour lines join points of equal elevation: close together means steep, and contours bend upstream where they cross a valley. Profiles show elevation along a route, with stations marking distance. Symbols, line types and abbreviations are explained in the legend and general notes, which govern along with the specifications.",
+   "formulas": [
+    {
+     "name": "Scale",
+     "expr": "ground length = drawing length × scale factor",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Slope from contours",
+     "expr": "\\frac{contour interval}{horizontal distance between contours}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Reading a scale of 1:200 as 200 mm per metre. It means 1 unit on paper is 200 units on the ground."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Contours at a 2 m interval are 25 m apart in plan. Find the slope.",
+    "steps": "Slope = \\frac{2}{25} = 0.08 = 8%."
+   }
+  }
+ ]
+}

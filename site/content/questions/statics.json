@@ -1,0 +1,557 @@
+[
+ {
+  "id": "statics-0001",
+  "topic": "statics",
+  "subtopic": "statics-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 100 N force acts along the positive x-axis. An 80 N force acts at the same point, 60° above the positive x-axis. What is the magnitude of the resultant?",
+  "answer": {
+   "value": 156.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "Break each push into a sideways part and an upward part. Add the sideways parts, add the upward parts, then use the right-triangle rule to get the single push that does the same job.",
+  "solution": "R_{x} = 100 + 80 cos 60° = 140 N.\n\nR_{y} = 80 sin 60° = 69.3 N.\n\nR = \\sqrt{140^{2} + 69.3^{2}} = 156.2 N.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113"
+   }
+  ],
+  "tags": [
+   "resultant",
+   "components"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "statics-0002",
+  "topic": "statics",
+  "subtopic": "statics-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 6 m between a pin at A and a roller at B. A single 30 kN load acts 2 m from A. What is the vertical reaction at A?",
+  "options": [
+   {
+    "id": "a",
+    "text": "10 kN"
+   },
+   {
+    "id": "b",
+    "text": "15 kN"
+   },
+   {
+    "id": "c",
+    "text": "20 kN"
+   },
+   {
+    "id": "d",
+    "text": "30 kN"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Two people carrying a plank share the weight on it. Whoever stands closer to the weight carries more of it.",
+  "solution": "Take moments about A: B_{y}(6) = 30(2), so B_{y} = 10 kN.\n\nSum of vertical forces: A_{y} = 30 - 10 = 20 kN.\n\nThe load is closer to A, so A carries the larger share.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113"
+   }
+  ],
+  "tags": [
+   "reactions",
+   "equilibrium",
+   "beam"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "statics-0003",
+  "topic": "statics",
+  "subtopic": "statics-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A T-shaped section has a flange 100 mm wide and 20 mm thick on top of a web 20 mm wide and 80 mm tall. How far is the centroid above the bottom of the web?",
+  "options": [
+   {
+    "id": "a",
+    "text": "50.0 mm"
+   },
+   {
+    "id": "b",
+    "text": "60.0 mm"
+   },
+   {
+    "id": "c",
+    "text": "67.8 mm"
+   },
+   {
+    "id": "d",
+    "text": "72.2 mm"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The centroid is the balance point of the shape. Treat each rectangle as a weight sitting at its own centre, then find where the two would balance.",
+  "solution": "Web: area 1,600 mm^{2}, centre 40 mm above the bottom.\n\nFlange: area 2,000 mm^{2}, centre 90 mm above the bottom.\n\nCentroid height = \\frac{1,600(40) + 2,000(90)}{1,600 + 2,000} = \\frac{244,000}{3,600} = 67.8 mm.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113"
+   }
+  ],
+  "tags": [
+   "centroid",
+   "composite area"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "statics-0004",
+  "topic": "statics",
+  "subtopic": "statics-g",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A crate rests on a ramp. The coefficient of static friction between the crate and the ramp is 0.50. What is the steepest ramp angle at which the crate stays put?",
+  "options": [
+   {
+    "id": "a",
+    "text": "22.5°"
+   },
+   {
+    "id": "b",
+    "text": "26.6°"
+   },
+   {
+    "id": "c",
+    "text": "30.0°"
+   },
+   {
+    "id": "d",
+    "text": "63.4°"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Tilt a board with a book on it. The book slides when the downhill pull beats the grip. The grip coefficient tells you the tilt where that happens.",
+  "solution": "Sliding is about to start when tan(angle) = μ_{s}.\n\nAngle = tan^{-1}(0.50) = 26.6°.\n\nThe weight of the crate cancels out, so it does not matter.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113"
+   }
+  ],
+  "tags": [
+   "friction",
+   "incline"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "statics-0005",
+  "topic": "statics",
+  "subtopic": "statics-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangular section is 100 mm wide and 200 mm deep. What is its moment of inertia about the horizontal axis through its centroid? Give the answer in units of 10^{6} mm^{4}.",
+  "answer": {
+   "value": 66.67,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "× 10^{6} mm^{4}"
+  },
+  "eli5": "Moment of inertia measures how hard a shape is to bend. Material far from the middle counts far more than material near it, which is why depth is cubed.",
+  "solution": "I = \\frac{bh^{3}}{12} = \\frac{100(200)^{3}}{12} = 66.67 × 10^{6} mm^{4}.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113"
+   }
+  ],
+  "tags": [
+   "moment of inertia",
+   "rectangle"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "statics-0006",
+  "topic": "statics",
+  "subtopic": "statics-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Two parallel 50 N forces act in opposite directions, 0.4 m apart. What is the moment of this couple?",
+  "answer": {
+   "value": 20,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N·m"
+  },
+  "eli5": "Two equal and opposite pushes that are not in line make a pure twist, like turning a steering wheel with both hands.",
+  "solution": "M = F × d = 50(0.4) = 20 N·m.\n\nA couple has the same moment about every point.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "statics-0007",
+  "topic": "statics",
+  "subtopic": "statics-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 200 N downward force acts 0.3 m to the right of point O. It is replaced by a force at O plus a couple. What is the magnitude of the couple?",
+  "options": [
+   {
+    "id": "a",
+    "text": "6 N·m"
+   },
+   {
+    "id": "b",
+    "text": "60 N·m"
+   },
+   {
+    "id": "c",
+    "text": "200 N·m"
+   },
+   {
+    "id": "d",
+    "text": "667 N·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "You can slide a force sideways to a new point as long as you add the twist it used to make about that point.",
+  "solution": "The equivalent system is the same 200 N force at O plus a couple M = 200(0.3) = 60 N·m, clockwise.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "statics-0008",
+  "topic": "statics",
+  "subtopic": "statics-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A symmetric triangular truss spans 8 m and is 3 m high. A 24 kN load acts at the apex. What is the force in each inclined member?",
+  "options": [
+   {
+    "id": "a",
+    "text": "12 kN"
+   },
+   {
+    "id": "b",
+    "text": "15 kN"
+   },
+   {
+    "id": "c",
+    "text": "16 kN"
+   },
+   {
+    "id": "d",
+    "text": "20 kN"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Each sloping member has to hold up half the load, but it leans, so it must push harder than the share it supports.",
+  "solution": "Each support reaction is 12 kN. The inclined member is 5 m long (3-4-5 triangle), so sin(angle) = \\frac{3}{5}.\n\nAt a support joint: F(\\frac{3}{5}) = 12, so F = 20 kN, in compression.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "statics-0009",
+  "topic": "statics",
+  "subtopic": "statics-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "For the same truss (8 m span, 3 m high, 24 kN at the apex), what is the force in the horizontal bottom member?",
+  "answer": {
+   "value": 16,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "The sloping members push outward at the supports. The bottom member is the tie that stops the feet spreading apart.",
+  "solution": "The inclined member carries 20 kN. Its horizontal part is 20(\\frac{4}{5}) = 16 kN, which the bottom member resists in tension.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "statics-0010",
+  "topic": "statics",
+  "subtopic": "statics-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 150 N force is applied to the end of a 2 m lever, at 30° to the lever's axis. What is the moment about the pivot?",
+  "options": [
+   {
+    "id": "a",
+    "text": "75 N·m"
+   },
+   {
+    "id": "b",
+    "text": "150 N·m"
+   },
+   {
+    "id": "c",
+    "text": "260 N·m"
+   },
+   {
+    "id": "d",
+    "text": "300 N·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Only the part of the push that is square to the lever turns it. The part along the lever just pulls on the pivot.",
+  "solution": "M = F d sin(angle) = 150(2) sin 30° = 150 N·m.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "statics-0011",
+  "topic": "statics",
+  "subtopic": "statics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 10 m. It carries a uniform load of 4 kN/m over its full length and a 20 kN point load at midspan. What is each support reaction?",
+  "answer": {
+   "value": 30,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "When the loads are placed evenly about the middle, the two supports share the total equally.",
+  "solution": "Total load = 4(10) + 20 = 60 kN. By symmetry each reaction = \\frac{60}{2} = 30 kN.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "statics-0012",
+  "topic": "statics",
+  "subtopic": "statics-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An L-shaped area is made of a vertical leg 20 mm wide and 80 mm tall, with a horizontal leg 60 mm wide and 20 mm tall attached to the bottom of its right side. How far is the centroid from the left edge?",
+  "options": [
+   {
+    "id": "a",
+    "text": "20.0 mm"
+   },
+   {
+    "id": "b",
+    "text": "27.1 mm"
+   },
+   {
+    "id": "c",
+    "text": "32.9 mm"
+   },
+   {
+    "id": "d",
+    "text": "40.0 mm"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Split the shape into two rectangles, treat each as a weight at its own centre, and find the balance point.",
+  "solution": "Vertical leg: 1,600 mm^{2} at x = 10 mm. Horizontal leg: 1,200 mm^{2} at x = 50 mm.\n\nx = \\frac{1,600(10) + 1,200(50)}{2,800} = 27.1 mm.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "statics-0013",
+  "topic": "statics",
+  "subtopic": "statics-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangle is 100 mm wide and 200 mm tall. What is its moment of inertia about its base? Give the answer in units of 10^{6} mm^{4}.",
+  "answer": {
+   "value": 266.7,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "× 10^{6} mm^{4}"
+  },
+  "eli5": "Moving the axis away from the middle of a shape makes it look stiffer, because all the material is now farther from the axis.",
+  "solution": "Parallel axis theorem: I = \\frac{bh^{3}}{12} + Ad^{2} = 66.67 × 10^{6} + (20,000)(100)^{2} = 266.7 × 10^{6} mm^{4}.\n\nThe shortcut is \\frac{bh^{3}}{3}.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "statics-0014",
+  "topic": "statics",
+  "subtopic": "statics-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 500 N crate sits on a level floor with a static friction coefficient of 0.35. A rope pulls on it at 30° above the horizontal. What rope force starts the crate moving?",
+  "answer": {
+   "value": 168,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "Pulling upward at an angle does two things: it drags the crate forward and it lifts some weight off the floor, which reduces the grip.",
+  "solution": "Horizontal: P cos 30° = 0.35 N. Vertical: N = 500 - P sin 30°.\n\nP(0.866) = 0.35(500 - 0.5P), so P(0.866 + 0.175) = 175 and P = 168 N.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "statics-0015",
+  "topic": "statics",
+  "subtopic": "statics-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 1,000 N weight hangs from two cables. Each cable makes an angle of 30° with the horizontal. What is the tension in each cable?",
+  "options": [
+   {
+    "id": "a",
+    "text": "500 N"
+   },
+   {
+    "id": "b",
+    "text": "577 N"
+   },
+   {
+    "id": "c",
+    "text": "866 N"
+   },
+   {
+    "id": "d",
+    "text": "1,000 N"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Only the upward part of each cable's pull holds the weight. The flatter the cables, the harder they must pull to get the same lift.",
+  "solution": "Vertical equilibrium: 2T sin 30° = 1,000.\n\nT = \\frac{1,000}{2(0.5)} = 1,000 N.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ }
+]

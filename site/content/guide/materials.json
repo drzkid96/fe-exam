@@ -1,0 +1,109 @@
+{
+ "topic": "materials",
+ "sections": [
+  {
+   "id": "materials-overview",
+   "subtopic": null,
+   "title": "Start here",
+   "body": "This topic covers what civil works are built from: concrete, asphalt, steel, aggregate and wood. Questions ask how a mix is proportioned, how a material is tested and what the test result means.\n\nMuch of it is recognising which test goes with which property and reading a stress-strain curve.",
+   "formulas": [],
+   "pitfalls": [
+    "Confusing the water-cement ratio (by mass) with a volume ratio.",
+    "Using a cylinder diameter as if it were the radius when computing area."
+   ],
+   "read": [
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Materials Science/Structure of Matter, pages 94–106"
+    },
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Civil Engineering, pages 259–309"
+    },
+    {
+     "source": "Lindeburg review manual, file 2 of 3",
+     "where": "Topic X, Materials"
+    }
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "materials-a-lesson",
+   "subtopic": "materials-a",
+   "title": "Mix design of concrete and asphalt",
+   "body": "Concrete is cement, water, sand and stone. The water-cement ratio, by mass, controls strength and durability: less water gives stronger concrete but makes it harder to place. Mix design by absolute volume fills one cubic metre with the volumes of each ingredient plus air.\n\nAsphalt concrete is aggregate glued with asphalt binder. Its design balances binder content against air voids: too little binder and the mix ravels, too much and it ruts and bleeds. Air voids of about 4% are the usual target.",
+   "formulas": [
+    {
+     "name": "Water-cement ratio",
+     "expr": "w/c = \\frac{mass of water}{mass of cement}",
+     "handbook": "Materials Science/Structure of Matter, p. 94–106"
+    },
+    {
+     "name": "Absolute volume",
+     "expr": "V = \\frac{mass}{specific gravity × density of water}",
+     "handbook": "Materials Science/Structure of Matter, p. 94–106"
+    },
+    {
+     "name": "Air voids in asphalt",
+     "expr": "V_{a} = (1 - \\frac{bulk specific gravity}{maximum specific gravity}) × 100",
+     "handbook": "Materials Science/Structure of Matter, p. 94–106"
+    }
+   ],
+   "pitfalls": [
+    "Using volume instead of mass for the water-cement ratio."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A mix has 200 kg of water and a w/c ratio of 0.50. How much cement is needed, and what volume does it occupy at a specific gravity of 3.15?",
+    "steps": "Cement = \\frac{200}{0.50} = 400 kg.\n\nVolume = \\frac{400}{3,150} = 0.127 m^{3}."
+   }
+  },
+  {
+   "id": "materials-b-lesson",
+   "subtopic": "materials-b",
+   "title": "Test methods and specifications",
+   "body": "Every construction material has standard tests that measure the property that matters for it. Fresh concrete is checked for workability with a slump cone and hardened concrete for compressive strength by crushing cylinders. Metals are pulled in tension for strength and ductility, struck with a pendulum (Charpy) for toughness, and indented (Rockwell, Brinell) for hardness. Aggregates are sieved for gradation and tumbled (Los Angeles abrasion) for wear. Asphalt mixes are tested for stability and flow (Marshall).\n\nSpecifications name a grade and its minimum properties. Grade 60 rebar yields at 60 ksi. A36 steel yields at 36 ksi.",
+   "formulas": [],
+   "pitfalls": [
+    "Confusing hardness (resistance to indentation) with toughness (energy absorbed before fracture)."
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "materials-c-lesson",
+   "subtopic": "materials-c",
+   "title": "Physical and mechanical properties",
+   "body": "The stress-strain curve tells a material's story. The straight first part is elastic: unload and it springs back. Its slope is the modulus of elasticity, the stiffness. The yield point is where permanent stretching begins. The peak is the ultimate strength. The total stretch at fracture is the ductility, and the whole area under the curve is the toughness.\n\nSteel is strong in tension and compression and is ductile. Concrete is strong in compression and weak in tension, which is why it is reinforced. Wood is stronger along the grain than across it.",
+   "formulas": [
+    {
+     "name": "Modulus of elasticity",
+     "expr": "E = \\frac{stress}{strain}",
+     "handbook": "Materials Science/Structure of Matter, p. 94–106"
+    },
+    {
+     "name": "Percent elongation",
+     "expr": "\\frac{L_{final} - L_{original}}{L_{original}} × 100",
+     "handbook": "Materials Science/Structure of Matter, p. 94–106"
+    },
+    {
+     "name": "Concrete modulus",
+     "expr": "E_{c} = 4,700\\sqrt{f'_{c}} (MPa)",
+     "handbook": "Materials Science/Structure of Matter, p. 94–106"
+    },
+    {
+     "name": "Poisson's ratio",
+     "expr": "-\\frac{lateral strain}{axial strain}",
+     "handbook": "Materials Science/Structure of Matter, p. 94–106"
+    }
+   ],
+   "pitfalls": [
+    "Reading yield strength where ultimate strength is asked, or the reverse."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A bar stretches elastically by 0.0015 strain under 300 MPa. What is its modulus of elasticity?",
+    "steps": "E = \\frac{300}{0.0015} = 200,000 MPa = 200 GPa."
+   }
+  }
+ ]
+}

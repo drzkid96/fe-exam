@@ -1,0 +1,867 @@
+[
+ {
+  "id": "geotech-0001",
+  "topic": "geotech",
+  "subtopic": "geotech-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A moist soil sample has a mass of 1.92 kg and a volume of 0.001 m^{3}. Its water content is 20%. What is the dry density?",
+  "answer": {
+   "value": 1600,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg/m^{3}"
+  },
+  "eli5": "Moist soil is dry soil plus water. Take the water out of the weight but keep the same volume, and you have the dry density.",
+  "solution": "Moist density = \\frac{1.92}{0.001} = 1,920 kg/m^{3}.\n\nDry density = \\frac{moist density}{1 + w} = \\frac{1,920}{1.20} = 1,600 kg/m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "phase relations",
+   "dry density",
+   "water content"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0002",
+  "topic": "geotech",
+  "subtopic": "geotech-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil has a dry density of 1,600 kg/m^{3}. The specific gravity of its solids is 2.70. What is its void ratio?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.41"
+   },
+   {
+    "id": "b",
+    "text": "0.59"
+   },
+   {
+    "id": "c",
+    "text": "0.69"
+   },
+   {
+    "id": "d",
+    "text": "1.69"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Soil is grains with gaps between them. Void ratio compares the volume of the gaps with the volume of the grains.",
+  "solution": "e = \\frac{G_{s} × density of water}{dry density} - 1 = \\frac{2.70(1,000)}{1,600} - 1 = 0.69.\n\nThe value 0.41 is the porosity, which compares the gaps with the total volume.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "void ratio",
+   "phase relations"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0003",
+  "topic": "geotech",
+  "subtopic": "geotech-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sand deposit has a unit weight of 17 kN/m^{3} above the water table and a saturated unit weight of 19 kN/m^{3} below it. The water table is 2 m below the ground surface. What is the vertical effective stress at a depth of 6 m? Use 9.81 kN/m^{3} for water.",
+  "options": [
+   {
+    "id": "a",
+    "text": "39.2 kPa"
+   },
+   {
+    "id": "b",
+    "text": "70.8 kPa"
+   },
+   {
+    "id": "c",
+    "text": "110.0 kPa"
+   },
+   {
+    "id": "d",
+    "text": "149.2 kPa"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The soil grains only feel the part of the weight that the water is not already carrying. Take the full weight above the point and subtract the water pressure.",
+  "solution": "Total stress = 17(2) + 19(4) = 110 kPa.\n\nPore water pressure = 9.81(4) = 39.2 kPa.\n\nEffective stress = 110 - 39.2 = 70.8 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "effective stress",
+   "pore pressure"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0004",
+  "topic": "geotech",
+  "subtopic": "geotech-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A retaining wall holds back dry sand with a friction angle of 30° and a level surface. What is the Rankine active earth pressure coefficient?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.33"
+   },
+   {
+    "id": "b",
+    "text": "0.50"
+   },
+   {
+    "id": "c",
+    "text": "0.58"
+   },
+   {
+    "id": "d",
+    "text": "3.00"
+   }
+  ],
+  "answer": "a",
+  "eli5": "Soil pushes sideways on a wall, but less hard than it pushes down. The active coefficient is the share of the downward pressure that turns into sideways push when the wall gives a little.",
+  "solution": "K_{a} = tan^{2}(45° - \\frac{30°}{2}) = tan^{2}(30°) = 0.33.\n\nThe passive coefficient is the inverse, 3.0, and applies when the wall is pushed into the soil.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "rankine",
+   "active pressure",
+   "retaining wall"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0005",
+  "topic": "geotech",
+  "subtopic": "geotech-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil has an effective cohesion of 10 kPa and an effective friction angle of 30°. What is its shear strength on a plane where the effective normal stress is 100 kPa?",
+  "answer": {
+   "value": 67.7,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "Soil resists sliding in two ways: a bit of built-in stickiness, plus friction that grows the harder the grains are pressed together.",
+  "solution": "Mohr-Coulomb: strength = c' + (effective normal stress) tan(friction angle) = 10 + 100 tan 30° = 10 + 57.7 = 67.7 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "shear strength",
+   "mohr-coulomb"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0006",
+  "topic": "geotech",
+  "subtopic": "geotech-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A clay has a liquid limit of 45 and a plastic limit of 22. What is its plasticity index?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.49"
+   },
+   {
+    "id": "b",
+    "text": "23"
+   },
+   {
+    "id": "c",
+    "text": "33.5"
+   },
+   {
+    "id": "d",
+    "text": "67"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Add water to clay and it goes from crumbly, to mouldable like putty, to runny. The plasticity index is how wide the putty range is.",
+  "solution": "PI = LL - PL = 45 - 22 = 23.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "atterberg limits",
+   "plasticity index"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0007",
+  "topic": "geotech",
+  "subtopic": "geotech-d",
+  "format": "hotspot",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Click the layer in which the vertical effective stress equals the total stress. Ignore capillary rise.",
+  "figure": {
+   "viewBox": "0 0 400 200",
+   "alt": "A soil profile with three layers: sand above the water table, sand below the water table, and clay at the bottom.",
+   "svg": "<rect x='20' y='30' width='360' height='50' fill='#EEEDE8'/><rect x='20' y='80' width='360' height='60' fill='#D9F1D6'/><rect x='20' y='140' width='360' height='50' fill='#E7E8E8'/><line x1='20' y1='30' x2='380' y2='30' stroke='#00242E' stroke-width='3'/><line x1='20' y1='80' x2='380' y2='80' stroke='#568CBB' stroke-width='2' stroke-dasharray='8 4'/><line x1='20' y1='140' x2='380' y2='140' stroke='#00242E' stroke-width='1'/><path d='M340 80 L332 66 L348 66 Z' fill='#568CBB'/><text x='30' y='22' font-size='12' fill='#00242E'>Ground surface</text><text x='326' y='60' text-anchor='end' font-size='12' fill='#568CBB'>Water table</text><text x='30' y='60' font-size='13' font-weight='600' fill='#00242E'>Sand</text><text x='30' y='115' font-size='13' font-weight='600' fill='#00242E'>Sand</text><text x='30' y='170' font-size='13' font-weight='600' fill='#00242E'>Clay</text>"
+  },
+  "regions": [
+   {
+    "id": "dry",
+    "label": "Sand above the water table",
+    "shape": "rect",
+    "x": 20,
+    "y": 31,
+    "w": 360,
+    "h": 48
+   },
+   {
+    "id": "satsand",
+    "label": "Sand below the water table",
+    "shape": "rect",
+    "x": 20,
+    "y": 81,
+    "w": 360,
+    "h": 58
+   },
+   {
+    "id": "clay",
+    "label": "Clay",
+    "shape": "rect",
+    "x": 20,
+    "y": 141,
+    "w": 360,
+    "h": 49
+   }
+  ],
+  "answer": "dry",
+  "eli5": "Effective stress is total stress minus water pressure. Where there is no water pressure, there is nothing to subtract.",
+  "solution": "Effective stress = total stress - pore water pressure.\n\nAbove the water table the pore water pressure is zero, so the two are equal there. Below the water table, in both the sand and the clay, water pressure reduces the effective stress.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "effective stress",
+   "water table"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0008",
+  "topic": "geotech",
+  "subtopic": "geotech-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A sand has 3% fines, a coefficient of uniformity of 7 and a coefficient of curvature of 1.5. What is its Unified Soil Classification symbol?",
+  "options": [
+   {
+    "id": "a",
+    "text": "SP"
+   },
+   {
+    "id": "b",
+    "text": "SW"
+   },
+   {
+    "id": "c",
+    "text": "SM"
+   },
+   {
+    "id": "d",
+    "text": "GW"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A well-graded sand has a good mix of grain sizes, so small grains fill the gaps between big ones.",
+  "solution": "With less than 5% fines the sand is clean, so it is SW or SP.\n\nA sand is well graded when C_{u} is at least 6 and C_{c} is between 1 and 3. Both hold, so the symbol is SW.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Unified Soil Classification System, ASTM D2487"
+  }
+ },
+ {
+  "id": "geotech-0009",
+  "topic": "geotech",
+  "subtopic": "geotech-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A grain size curve gives D_{60} = 0.84 mm, D_{30} = 0.42 mm and D_{10} = 0.12 mm. What is the coefficient of uniformity?",
+  "answer": {
+   "value": 7,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The coefficient of uniformity compares a fairly coarse grain with a fairly fine one from the same soil. A big ratio means a wide spread of sizes.",
+  "solution": "C_{u} = \\frac{D_{60}}{D_{10}} = \\frac{0.84}{0.12} = 7.0.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0010",
+  "topic": "geotech",
+  "subtopic": "geotech-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A field density test gives a dry unit weight of 17.1 kN/m^{3}. The maximum dry unit weight from the Proctor test is 18.0 kN/m^{3}. What is the relative compaction?",
+  "answer": {
+   "value": 95,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "The Proctor test finds the densest the soil can be packed in the lab. Relative compaction says how close the crew got to that in the field.",
+  "solution": "Relative compaction = \\frac{17.1}{18.0} × 100 = 95%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0011",
+  "topic": "geotech",
+  "subtopic": "geotech-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In a constant-head permeability test, 600 cm^{3} of water passes through a sample in 300 s. The sample is 15 cm long with a cross-section of 40 cm^{2}, and the head difference is 30 cm. What is the coefficient of permeability?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.0025 cm/s"
+   },
+   {
+    "id": "b",
+    "text": "0.025 cm/s"
+   },
+   {
+    "id": "c",
+    "text": "0.25 cm/s"
+   },
+   {
+    "id": "d",
+    "text": "0.40 cm/s"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Permeability is how easily water passes through soil. Measure how much water gets through, how hard it was pushed and how far it had to travel.",
+  "solution": "k = \\frac{QL}{Aht} = \\frac{600(15)}{40(30)(300)} = 0.025 cm/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0012",
+  "topic": "geotech",
+  "subtopic": "geotech-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 4 m high wall retains dry sand with a unit weight of 18 kN/m^{3}. The Rankine active coefficient is 0.333. What is the total active force per metre of wall?",
+  "answer": {
+   "value": 48,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN/m"
+  },
+  "eli5": "The sideways push from soil grows with depth, so it forms a triangle. The total force is the area of that triangle.",
+  "solution": "P_{a} = \\frac{1}{2}K_{a}(unit weight)H^{2} = \\frac{1}{2}(0.333)(18)(4)^{2} = 48 kN/m, acting one third of the way up the wall.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0013",
+  "topic": "geotech",
+  "subtopic": "geotech-f",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An unconfined compression test on a clay gives a compressive strength of 120 kPa. What is the undrained shear strength?",
+  "options": [
+   {
+    "id": "a",
+    "text": "30 kPa"
+   },
+   {
+    "id": "b",
+    "text": "60 kPa"
+   },
+   {
+    "id": "c",
+    "text": "120 kPa"
+   },
+   {
+    "id": "d",
+    "text": "240 kPa"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Squeezing a clay cylinder until it fails makes it slide along a slanted surface. The shear on that surface is half the squeezing stress.",
+  "solution": "s_{u} = \\frac{q_{u}}{2} = \\frac{120}{2} = 60 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0014",
+  "topic": "geotech",
+  "subtopic": "geotech-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A strip footing bears 1 m below the surface of a clay with a cohesion of 50 kPa and a unit weight of 18 kN/m^{3}. Using bearing capacity factors N_{c} = 5.7, N_{q} = 1.0 and a zero third factor, what is the ultimate bearing capacity?",
+  "answer": {
+   "value": 303,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "The ground under a footing resists being squeezed out sideways. The soil's stickiness and the weight of soil beside the footing both help.",
+  "solution": "q_{ult} = cN_{c} + (unit weight × depth)N_{q} = 50(5.7) + 18(1)(1.0) = 285 + 18 = 303 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0015",
+  "topic": "geotech",
+  "subtopic": "geotech-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A square footing must carry a 600 kN column load. The ultimate bearing capacity is 450 kPa and the factor of safety is 3. What footing width is required?",
+  "answer": {
+   "value": 2.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Divide what the soil can take before failing by a safety factor, then make the footing big enough that the pressure stays under that.",
+  "solution": "Allowable pressure = \\frac{450}{3} = 150 kPa.\n\nArea = \\frac{600}{150} = 4.0 m^{2}, so the width is \\sqrt{4.0} = 2.0 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0016",
+  "topic": "geotech",
+  "subtopic": "geotech-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 0.3 m square pile is 10 m long. The average skin friction is 40 kPa and the end bearing resistance is 2,000 kPa. What is the ultimate capacity of the pile?",
+  "answer": {
+   "value": 660,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A pile holds load two ways: the soil grips its sides, and the soil under its tip pushes back.",
+  "solution": "Skin friction = 40 × (4 × 0.3 m perimeter) × 10 m = 480 kN.\n\nEnd bearing = 2,000 × (0.3)^{2} = 180 kN.\n\nTotal = 660 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0017",
+  "topic": "geotech",
+  "subtopic": "geotech-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Which foundation type is a single thick slab that supports all the columns of a building?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Spread footing"
+   },
+   {
+    "id": "b",
+    "text": "Mat foundation"
+   },
+   {
+    "id": "c",
+    "text": "Drilled shaft"
+   },
+   {
+    "id": "d",
+    "text": "Strip footing"
+   }
+  ],
+  "answer": "b",
+  "eli5": "When separate footings would be so big that they nearly touch, it is simpler to pour one slab under the whole building.",
+  "solution": "A mat, or raft, foundation spreads the building load over the whole footprint.\n\nSpread footings carry single columns, strip footings carry walls, and drilled shafts are deep foundations.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard foundation type definitions"
+  }
+ },
+ {
+  "id": "geotech-0018",
+  "topic": "geotech",
+  "subtopic": "geotech-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 4 m thick normally consolidated clay layer has a compression index of 0.30 and an initial void ratio of 1.0. The effective stress at mid-layer rises from 100 kPa to 200 kPa. What is the primary consolidation settlement?",
+  "answer": {
+   "value": 181,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "Loaded clay slowly squeezes water out, like a wet sponge under a book, and the ground settles as it does.",
+  "solution": "S = \\frac{C_{c}H}{1 + e_{0}} log(\\frac{200}{100}) = \\frac{0.30(4,000)}{2.0}(0.301) = 181 mm.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0019",
+  "topic": "geotech",
+  "subtopic": "geotech-i",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 4 m thick clay layer drains from both its top and bottom. Its coefficient of consolidation is 2.0 m^{2}/year. Using a time factor of 0.197 for 50% consolidation, how long does 50% consolidation take?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.099 years"
+   },
+   {
+    "id": "b",
+    "text": "0.394 years"
+   },
+   {
+    "id": "c",
+    "text": "0.788 years"
+   },
+   {
+    "id": "d",
+    "text": "1.576 years"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Water has to escape for clay to settle. With drainage at both faces, no drop of water travels more than half the thickness.",
+  "solution": "Drainage path H_{dr} = \\frac{4}{2} = 2 m.\n\nt = \\frac{T_{v}H_{dr}^{2}}{c_{v}} = \\frac{0.197(2)^{2}}{2.0} = 0.394 years, about 4.7 months.\n\nUsing the full 4 m would give 1.576 years.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0020",
+  "topic": "geotech",
+  "subtopic": "geotech-j",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A long slope of dry sand stands at 25° to the horizontal. The friction angle of the sand is 35°. What is the factor of safety against sliding?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.67"
+   },
+   {
+    "id": "b",
+    "text": "1.00"
+   },
+   {
+    "id": "c",
+    "text": "1.50"
+   },
+   {
+    "id": "d",
+    "text": "2.14"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Dry sand can stand no steeper than its own friction angle. The gentler the slope compared with that angle, the safer it is.",
+  "solution": "For an infinite slope in dry cohesionless soil: FS = \\frac{tan 35°}{tan 25°} = \\frac{0.700}{0.466} = 1.50.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0021",
+  "topic": "geotech",
+  "subtopic": "geotech-j",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A circular slip surface in clay has a radius of 15 m and an arc length of 20 m. The undrained shear strength is 30 kPa. The sliding mass weighs 1,500 kN per metre and its centroid is 4 m horizontally from the centre of the circle. What is the factor of safety?",
+  "answer": {
+   "value": 1.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The weight of the soil tries to rotate the mass downhill. The strength along the slip surface holds it back. Compare the two turning effects.",
+  "solution": "Resisting moment = s_{u} × arc length × R = 30(20)(15) = 9,000 kN·m.\n\nDriving moment = W × x = 1,500(4) = 6,000 kN·m.\n\nFS = \\frac{9,000}{6,000} = 1.5.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "geotech-0022",
+  "topic": "geotech",
+  "subtopic": "geotech-k",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A geotextile is placed between a soft clay subgrade and a crushed stone base. What is its primary function there?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Separation"
+   },
+   {
+    "id": "b",
+    "text": "Drainage of the base course"
+   },
+   {
+    "id": "c",
+    "text": "Increasing the plasticity of the clay"
+   },
+   {
+    "id": "d",
+    "text": "Chemical stabilization"
+   }
+  ],
+  "answer": "a",
+  "eli5": "The fabric is a divider. It stops the stone being pushed down into the mud and the mud pumping up into the stone.",
+  "solution": "In this position a geotextile mainly provides separation, keeping the two materials from mixing so the base keeps its thickness and strength.\n\nGeosynthetics can also filter, drain and reinforce, depending on type and placement.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard geosynthetic functions: separation, filtration, drainage, reinforcement"
+  }
+ },
+ {
+  "id": "geotech-0023",
+  "topic": "geotech",
+  "subtopic": "geotech-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A clay subgrade is to be treated with 5% lime by dry mass. The soil has a dry density of 1,800 kg/m^{3} and 300 m^{3} is to be treated. How much lime is needed?",
+  "answer": {
+   "value": 27000,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg"
+  },
+  "eli5": "Lime dries out and firms up sticky clay. The amount needed is a set share of the weight of soil being treated.",
+  "solution": "Dry mass of soil = 1,800(300) = 540,000 kg.\n\nLime = 0.05(540,000) = 27,000 kg.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ }
+]

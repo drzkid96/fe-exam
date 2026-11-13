@@ -1,0 +1,483 @@
+[
+ {
+  "id": "fluids-0001",
+  "topic": "fluids",
+  "subtopic": "fluids-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the gauge pressure 12 m below the surface of a freshwater reservoir? Use a specific weight of 9.81 kN/m^{3}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "12.0 kPa"
+   },
+   {
+    "id": "b",
+    "text": "58.9 kPa"
+   },
+   {
+    "id": "c",
+    "text": "117.7 kPa"
+   },
+   {
+    "id": "d",
+    "text": "219.0 kPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The deeper you dive, the more water is stacked on top of you. Pressure is just the weight of that stack on each square metre.",
+  "solution": "p = specific weight × depth = 9.81(12) = 117.7 kPa.\n\nGauge pressure leaves out the atmosphere. Adding 101.3 kPa would give the absolute pressure.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203"
+   }
+  ],
+  "tags": [
+   "hydrostatic pressure"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "fluids-0002",
+  "topic": "fluids",
+  "subtopic": "fluids-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An oil has a specific gravity of 0.85. What is its specific weight? Use 9.81 kN/m^{3} for water.",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.85 kN/m^{3}"
+   },
+   {
+    "id": "b",
+    "text": "8.34 kN/m^{3}"
+   },
+   {
+    "id": "c",
+    "text": "9.81 kN/m^{3}"
+   },
+   {
+    "id": "d",
+    "text": "11.54 kN/m^{3}"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Specific gravity says how heavy a liquid is compared with water. An oil at 0.85 weighs 85% as much as the same volume of water.",
+  "solution": "Specific weight = 0.85(9.81) = 8.34 kN/m^{3}.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203"
+   }
+  ],
+  "tags": [
+   "specific gravity",
+   "specific weight"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "fluids-0003",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Water flows at 2 m/s in a 200 mm diameter pipe. The pipe narrows to 100 mm. What is the velocity in the narrow section?",
+  "answer": {
+   "value": 8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s"
+  },
+  "eli5": "The same amount of water has to get through every second. Squeeze the pipe and the water must speed up, like putting your thumb over a hose.",
+  "solution": "Continuity: A_{1}V_{1} = A_{2}V_{2}.\n\nHalving the diameter cuts the area to a quarter, so the velocity is four times larger.\n\nV_{2} = 2 × (\\frac{200}{100})^{2} = 8 m/s.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203"
+   }
+  ],
+  "tags": [
+   "continuity"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "fluids-0004",
+  "topic": "fluids",
+  "subtopic": "fluids-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A Pitot tube in a water stream shows a stagnation head 0.45 m higher than the static head. What is the flow velocity? Use g = 9.81 m/s^{2}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.94 m/s"
+   },
+   {
+    "id": "b",
+    "text": "2.10 m/s"
+   },
+   {
+    "id": "c",
+    "text": "2.97 m/s"
+   },
+   {
+    "id": "d",
+    "text": "4.41 m/s"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A Pitot tube catches moving water and brings it to a stop. The speed turns into extra height in the tube, so the height tells you the speed.",
+  "solution": "The extra head is the velocity head: h = \\frac{V^{2}}{2g}.\n\nV = \\sqrt{2gh} = \\sqrt{2(9.81)(0.45)} = 2.97 m/s.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203"
+   }
+  ],
+  "tags": [
+   "pitot tube",
+   "flow measurement"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "fluids-0005",
+  "topic": "fluids",
+  "subtopic": "fluids-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A vertical rectangular gate is 2 m wide and 3 m tall. Its top edge is at the water surface. What is the total hydrostatic force on the gate? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 88.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "Water pushes harder the deeper you go. The total push on a flat gate equals the pressure at the middle of the gate times the gate's area.",
+  "solution": "Depth to the centre of the gate = 1.5 m. Area = 2(3) = 6 m^{2}.\n\nF = specific weight × depth to centroid × area = 9.81(1.5)(6) = 88.3 kN.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203"
+   }
+  ],
+  "tags": [
+   "hydrostatic force",
+   "gate"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "fluids-0006",
+  "topic": "fluids",
+  "subtopic": "fluids-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Water discharges through a 50 mm diameter orifice under a head of 3 m. The discharge coefficient is 0.60. What is the flow rate? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 9.04,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "Water squirts out of a hole faster when there is more water piled above it. The coefficient accounts for the jet being a bit narrower and slower than the ideal.",
+  "solution": "Area = \\frac{π(0.05)^{2}}{4} = 0.001963 m^{2}.\n\nQ = C_{d}A\\sqrt{2gh} = 0.60(0.001963)\\sqrt{2(9.81)(3)} = 0.00904 m^{3}/s = 9.04 L/s.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "fluids-0007",
+  "topic": "fluids",
+  "subtopic": "fluids-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Water flows at 1.5 m/s in a 100 mm diameter pipe. Its kinematic viscosity is 1.0 × 10^{-6} m^{2}/s. What is the Reynolds number?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1,500"
+   },
+   {
+    "id": "b",
+    "text": "15,000"
+   },
+   {
+    "id": "c",
+    "text": "150,000"
+   },
+   {
+    "id": "d",
+    "text": "1,500,000"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The Reynolds number compares how hard the flow pushes forward with how sticky the fluid is. Big numbers mean churning, turbulent flow.",
+  "solution": "Re = \\frac{VD}{kinematic viscosity} = \\frac{1.5(0.1)}{1.0 × 10^{-6}} = 150,000, which is turbulent.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "fluids-0008",
+  "topic": "fluids",
+  "subtopic": "fluids-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A liquid has a dynamic viscosity of 0.0012 Pa·s and a density of 800 kg/m^{3}. What is its kinematic viscosity? Give the answer in units of 10^{-6} m^{2}/s.",
+  "answer": {
+   "value": 1.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "× 10^{-6} m^{2}/s"
+  },
+  "eli5": "Dynamic viscosity is how sticky a fluid is. Kinematic viscosity is that stickiness compared with how heavy the fluid is.",
+  "solution": "Kinematic viscosity = \\frac{dynamic viscosity}{density} = \\frac{0.0012}{800} = 1.5 × 10^{-6} m^{2}/s.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "fluids-0009",
+  "topic": "fluids",
+  "subtopic": "fluids-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A mercury manometer (specific gravity 13.6) connects two water pipes at the same elevation and shows a deflection of 0.20 m. What is the pressure difference between the pipes? Use 9.81 kN/m^{3} for water.",
+  "options": [
+   {
+    "id": "a",
+    "text": "1.96 kPa"
+   },
+   {
+    "id": "b",
+    "text": "2.0 kPa"
+   },
+   {
+    "id": "c",
+    "text": "24.7 kPa"
+   },
+   {
+    "id": "d",
+    "text": "26.7 kPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The mercury is pushed down on the high-pressure side. Water fills the space the mercury left, so only the extra weight of mercury over water counts.",
+  "solution": "Pressure difference = (13.6 - 1)(9.81)(0.20) = 24.7 kPa.\n\nUsing 13.6 alone gives 26.7 kPa, which ignores the water on the other side.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "fluids-0010",
+  "topic": "fluids",
+  "subtopic": "fluids-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 0.5 m^{3} block with a specific gravity of 0.60 floats in water. What volume of the block is below the water surface?",
+  "answer": {
+   "value": 0.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "A floating object sinks until the water it pushes aside weighs as much as the object.",
+  "solution": "Weight of block = weight of displaced water, so submerged volume = 0.60(0.5) = 0.30 m^{3}.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "fluids-0011",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Water flows in a horizontal pipe. At section 1 the velocity is 2 m/s and the pressure is 200 kPa. At section 2 the pipe is narrower and the velocity is 8 m/s. Ignoring losses, what is the pressure at section 2?",
+  "options": [
+   {
+    "id": "a",
+    "text": "140 kPa"
+   },
+   {
+    "id": "b",
+    "text": "170 kPa"
+   },
+   {
+    "id": "c",
+    "text": "200 kPa"
+   },
+   {
+    "id": "d",
+    "text": "230 kPa"
+   }
+  ],
+  "answer": "b",
+  "eli5": "When water speeds up it has to pay for the extra speed with pressure. Faster flow means lower pressure.",
+  "solution": "Bernoulli on a level pipe: p_{2} = p_{1} - \\frac{density(V_{2}^{2} - V_{1}^{2})}{2} = 200,000 - \\frac{1,000(64 - 4)}{2} = 170,000 Pa = 170 kPa.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "fluids-0012",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 50 mm diameter water jet moving at 20 m/s strikes a flat plate at right angles. What force does the jet exert on the plate?",
+  "answer": {
+   "value": 785,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "The plate has to stop the water's forward motion. The force equals how much moving water arrives each second times how fast it was going.",
+  "solution": "Q = \\frac{π(0.05)^{2}}{4}(20) = 0.0393 m^{3}/s.\n\nF = density × Q × V = 1,000(0.0393)(20) = 785 N.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "fluids-0013",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Water flows at 2 m/s through 100 m of 200 mm diameter pipe with a friction factor of 0.02. What is the head loss? Use g = 9.81 m/s^{2}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.20 m"
+   },
+   {
+    "id": "b",
+    "text": "1.02 m"
+   },
+   {
+    "id": "c",
+    "text": "2.04 m"
+   },
+   {
+    "id": "d",
+    "text": "4.08 m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Water rubbing along a pipe wall loses energy. Longer, narrower and faster all make the loss bigger.",
+  "solution": "Darcy-Weisbach: h_{f} = f\\frac{L}{D}\\frac{V^{2}}{2g} = 0.02(\\frac{100}{0.2})(\\frac{4}{19.62}) = 2.04 m.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ }
+]

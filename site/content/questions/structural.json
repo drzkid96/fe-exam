@@ -1,0 +1,850 @@
+[
+ {
+  "id": "structural-0001",
+  "topic": "structural",
+  "subtopic": "structural-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A planar truss has 8 joints, 14 members and 3 support reactions. Assuming it is stable, how is it classified?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Statically determinate"
+   },
+   {
+    "id": "b",
+    "text": "Statically indeterminate to the first degree"
+   },
+   {
+    "id": "c",
+    "text": "Statically indeterminate to the second degree"
+   },
+   {
+    "id": "d",
+    "text": "Statically indeterminate to the third degree"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Each joint gives you two equations. Count the unknown forces. If you have more unknowns than equations, statics alone cannot solve it.",
+  "solution": "Unknowns = members + reactions = 14 + 3 = 17.\n\nEquations = 2 × joints = 2(8) = 16.\n\n17 - 16 = 1 extra unknown, so the truss is statically indeterminate to the first degree.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "determinacy",
+   "truss"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0002",
+  "topic": "structural",
+  "subtopic": "structural-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel column is 4 m long with pinned ends. E = 200 GPa and the moment of inertia about the weak axis is 8.0 × 10^{6} mm^{4}. What is the Euler buckling load?",
+  "answer": {
+   "value": 987,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "Push down on a long thin ruler and it suddenly bows sideways. The buckling load is the push at which that happens. Longer columns buckle far more easily.",
+  "solution": "P_{cr} = \\frac{π^{2}EI}{L^{2}} = \\frac{π^{2}(200,000)(8.0 × 10^{6})}{(4,000)^{2}} = 987,000 N = 987 kN.\n\nFor pinned ends the effective length equals the actual length.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   },
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "euler buckling",
+   "column"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0003",
+  "topic": "structural",
+  "subtopic": "structural-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 6 m and carries a 20 kN point load at midspan. Its flexural stiffness EI is 30,000 kN·m^{2}. What is the midspan deflection?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1.5 mm"
+   },
+   {
+    "id": "b",
+    "text": "3.0 mm"
+   },
+   {
+    "id": "c",
+    "text": "6.0 mm"
+   },
+   {
+    "id": "d",
+    "text": "9.4 mm"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A beam sags under a load the way a diving board does. A stiffer beam sags less and a longer one sags much more.",
+  "solution": "Deflection = \\frac{PL^{3}}{48EI} = \\frac{20(6)^{3}}{48(30,000)} = 0.003 m = 3.0 mm.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   },
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "deflection",
+   "point load"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0004",
+  "topic": "structural",
+  "subtopic": "structural-f",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A floor beam carries a dead load of 20 kN/m and a live load of 30 kN/m. Checking the load combinations 1.4D and 1.2D + 1.6L, what factored load governs?",
+  "options": [
+   {
+    "id": "a",
+    "text": "28 kN/m"
+   },
+   {
+    "id": "b",
+    "text": "50 kN/m"
+   },
+   {
+    "id": "c",
+    "text": "72 kN/m"
+   },
+   {
+    "id": "d",
+    "text": "80 kN/m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Design loads are padded with safety factors. Live load gets the bigger factor because it is less predictable than the weight of the structure itself.",
+  "solution": "1.4D = 1.4(20) = 28 kN/m.\n\n1.2D + 1.6L = 1.2(20) + 1.6(30) = 24 + 48 = 72 kN/m.\n\nThe larger value governs: 72 kN/m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "load combinations",
+   "lrfd"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0005",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A singly reinforced concrete beam is 300 mm wide with an effective depth of 500 mm. It has 1,500 mm^{2} of tension steel with a yield strength of 420 MPa, and the concrete strength is 28 MPa. Assuming the steel yields, what is the nominal moment capacity?",
+  "options": [
+   {
+    "id": "a",
+    "text": "258 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "287 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "315 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "343 kN·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "In a concrete beam, steel at the bottom pulls and a block of concrete at the top pushes. The moment the beam can resist is that pull times the distance between the two.",
+  "solution": "Depth of the compression block: a = \\frac{A_{s}f_{y}}{0.85f'_{c}b} = \\frac{1,500(420)}{0.85(28)(300)} = 88.2 mm.\n\nM_{n} = A_{s}f_{y}(d - \\frac{a}{2}) = 1,500(420)(500 - 44.1) = 287 × 10^{6} N·mm = 287 kN·m.\n\nMultiplying by 0.9 would give the design strength, which is a different quantity.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "reinforced concrete",
+   "nominal moment"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0006",
+  "topic": "structural",
+  "subtopic": "structural-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A cantilever beam is 3 m long and carries a 12 kN point load at its free end. What is the magnitude of the bending moment at the fixed support?",
+  "options": [
+   {
+    "id": "a",
+    "text": "12 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "18 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "36 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "54 kN·m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A cantilever is like holding a weight at arm's length. The farther out the weight, the harder your shoulder has to work.",
+  "solution": "M = P × L = 12(3) = 36 kN·m at the fixed end, where the lever arm is longest.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [
+   "cantilever",
+   "bending moment"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0007",
+  "topic": "structural",
+  "subtopic": "structural-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 6 m. It carries a uniform load of 5 kN/m over the full span and a 10 kN point load 2 m from the left support. What is the left reaction?",
+  "answer": {
+   "value": 21.7,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "The uniform load is shared equally. The point load is shared unequally, with more going to the nearer support.",
+  "solution": "From the uniform load: \\frac{5(6)}{2} = 15 kN. From the point load: 10(\\frac{4}{6}) = 6.67 kN.\n\nLeft reaction = 21.7 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0008",
+  "topic": "structural",
+  "subtopic": "structural-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 6 m and carries a 40 kN point load at midspan. What is the maximum bending moment?",
+  "options": [
+   {
+    "id": "a",
+    "text": "30 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "60 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "120 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "240 kN·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Each support pushes up with half the load. The bending in the middle is that push times its distance from the middle.",
+  "solution": "M_{max} = \\frac{PL}{4} = \\frac{40(6)}{4} = 60 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0009",
+  "topic": "structural",
+  "subtopic": "structural-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A cantilever beam 2 m long carries a 5 kN point load at its free end. EI = 10,000 kN·m^{2}. What is the deflection at the free end?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.33 mm"
+   },
+   {
+    "id": "b",
+    "text": "0.50 mm"
+   },
+   {
+    "id": "c",
+    "text": "1.33 mm"
+   },
+   {
+    "id": "d",
+    "text": "4.00 mm"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The tip of a diving board drops more with a heavier diver or a longer board, and less with a stiffer board.",
+  "solution": "Deflection = \\frac{PL^{3}}{3EI} = \\frac{5(2)^{3}}{3(10,000)} = 0.00133 m = 1.33 mm.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0010",
+  "topic": "structural",
+  "subtopic": "structural-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A column 5 m long is fixed at its base and pinned at its top. Using the theoretical effective length factor K = 0.7, what is its effective length?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2.5 m"
+   },
+   {
+    "id": "b",
+    "text": "3.5 m"
+   },
+   {
+    "id": "c",
+    "text": "5.0 m"
+   },
+   {
+    "id": "d",
+    "text": "10.0 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Holding the end of a column stops it bowing as freely, so it behaves like a shorter column.",
+  "solution": "Effective length = KL = 0.7(5) = 3.5 m.\n\nPinned-pinned is K = 1.0, fixed-fixed is 0.5 and fixed-free is 2.0.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0011",
+  "topic": "structural",
+  "subtopic": "structural-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A beam is fixed at one end and rests on a roller at the other. How is it classified?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Unstable"
+   },
+   {
+    "id": "b",
+    "text": "Statically determinate"
+   },
+   {
+    "id": "c",
+    "text": "Statically indeterminate to the first degree"
+   },
+   {
+    "id": "d",
+    "text": "Statically indeterminate to the second degree"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A flat beam gives you three balance equations. Count the support forces. Any extras are more than statics alone can find.",
+  "solution": "A fixed support gives three reactions and a roller gives one, for four unknowns.\n\nThere are three equations of equilibrium, so 4 - 3 = 1 degree of indeterminacy.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0012",
+  "topic": "structural",
+  "subtopic": "structural-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A beam 4 m long is fixed at one end and supported by a roller at the other. It carries a uniform load of 8 kN/m. What is the reaction at the roller?",
+  "answer": {
+   "value": 12,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "The fixed end is stiffer, so it attracts more than half of the load. The roller end gets the smaller share.",
+  "solution": "For a propped cantilever under uniform load, the roller reaction is \\frac{3wL}{8} = \\frac{3(8)(4)}{8} = 12 kN.\n\nThe fixed end carries the other \\frac{5wL}{8} = 20 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0013",
+  "topic": "structural",
+  "subtopic": "structural-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A beam fixed at both ends spans 6 m and carries a uniform load of 12 kN/m. What is the magnitude of the moment at each support?",
+  "options": [
+   {
+    "id": "a",
+    "text": "18 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "27 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "36 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "54 kN·m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Clamping both ends shares the bending between the supports and the middle, so the middle bends less than it would on simple supports.",
+  "solution": "Fixed-end moment = \\frac{wL^{2}}{12} = \\frac{12(6)^{2}}{12} = 36 kN·m.\n\nThe midspan moment is \\frac{wL^{2}}{24} = 18 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0014",
+  "topic": "structural",
+  "subtopic": "structural-f",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Floor beams are spaced 3 m apart and support a floor load of 4 kPa. What line load does an interior beam carry?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1.33 kN/m"
+   },
+   {
+    "id": "b",
+    "text": "7 kN/m"
+   },
+   {
+    "id": "c",
+    "text": "12 kN/m"
+   },
+   {
+    "id": "d",
+    "text": "36 kN/m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Each beam looks after the strip of floor that is closer to it than to its neighbours.",
+  "solution": "Tributary width = 3 m (half the spacing on each side).\n\nLine load = 4 kPa × 3 m = 12 kN/m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0015",
+  "topic": "structural",
+  "subtopic": "structural-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel tension member has a gross area of 2,000 mm^{2} and a yield strength of 345 MPa. Using LRFD with a resistance factor of 0.90, what is its design strength for yielding on the gross section?",
+  "answer": {
+   "value": 621,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A tension member is ruined once the whole bar starts to stretch permanently. The design strength is that load, trimmed by a safety factor.",
+  "solution": "Design strength = 0.90 F_{y}A_{g} = 0.90(345)(2,000) = 621,000 N = 621 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0016",
+  "topic": "structural",
+  "subtopic": "structural-g",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A compact, fully braced steel beam has a plastic section modulus of 1.2 × 10^{6} mm^{3} and a yield strength of 345 MPa. With a resistance factor of 0.90, what is its design flexural strength?",
+  "options": [
+   {
+    "id": "a",
+    "text": "311 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "373 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "414 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "460 kN·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A well-braced steel beam can bend until its whole cross-section has yielded. The plastic modulus measures that full capacity.",
+  "solution": "Design strength = 0.90 F_{y}Z_{x} = 0.90(345)(1.2 × 10^{6}) = 372.6 × 10^{6} N·mm = 373 kN·m.\n\nWithout the 0.90 factor the nominal strength is 414 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0017",
+  "topic": "structural",
+  "subtopic": "structural-g",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A steel column has an effective length of 4 m and a radius of gyration of 50 mm about the axis of buckling. What is its slenderness ratio?",
+  "options": [
+   {
+    "id": "a",
+    "text": "8"
+   },
+   {
+    "id": "b",
+    "text": "40"
+   },
+   {
+    "id": "c",
+    "text": "80"
+   },
+   {
+    "id": "d",
+    "text": "200"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Slenderness compares how long a column is with how spread out its cross-section is. Skinny columns buckle sooner.",
+  "solution": "Slenderness = \\frac{KL}{r} = \\frac{4,000}{50} = 80.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0018",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A reinforced concrete beam is 250 mm wide with 1,200 mm^{2} of tension steel. The steel yield strength is 420 MPa and the concrete strength is 30 MPa. What is the depth of the equivalent rectangular stress block?",
+  "answer": {
+   "value": 79.1,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "The squeezed concrete at the top of the beam has to push exactly as hard as the steel at the bottom pulls. That balance sets how deep the squeezed zone is.",
+  "solution": "a = \\frac{A_{s}f_{y}}{0.85f'_{c}b} = \\frac{1,200(420)}{0.85(30)(250)} = 79.1 mm.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0019",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Using V_{c} = 0.17 × the square root of f'_{c} × b × d (MPa and mm), what shear does the concrete carry in a beam 300 mm wide with an effective depth of 500 mm and a concrete strength of 25 MPa?",
+  "options": [
+   {
+    "id": "a",
+    "text": "63.8 kN"
+   },
+   {
+    "id": "b",
+    "text": "127.5 kN"
+   },
+   {
+    "id": "c",
+    "text": "255 kN"
+   },
+   {
+    "id": "d",
+    "text": "750 kN"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Concrete can carry some shear by itself before stirrups are needed. Bigger sections and stronger concrete carry more.",
+  "solution": "V_{c} = 0.17\\sqrt{25}(300)(500) = 0.17(5)(150,000) = 127,500 N = 127.5 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "structural-0020",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 400 mm square tied column has 3,200 mm^{2} of longitudinal steel with a yield strength of 420 MPa. The concrete strength is 28 MPa. What is the nominal axial strength at zero eccentricity, P_{0}?",
+  "answer": {
+   "value": 5076,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A short concrete column carries load on its concrete and on its steel bars. Add the two strengths together.",
+  "solution": "P_{0} = 0.85f'_{c}(A_{g} - A_{st}) + f_{y}A_{st} = 0.85(28)(160,000 - 3,200) + 420(3,200) = 3,732,000 + 1,344,000 = 5,076,000 N = 5,076 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ }
+]

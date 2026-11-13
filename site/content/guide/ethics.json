@@ -1,0 +1,75 @@
+{
+ "topic": "ethics",
+ "sections": [
+  {
+   "id": "ethics-overview",
+   "subtopic": null,
+   "title": "Start here",
+   "body": "Ethics questions ask what a licensed engineer must do when duties pull in different directions. The order never changes: the public first, then the client or employer, then other engineers.\n\nThe handbook prints the rules. You do not need to memorise them, but you need to know they are there and how they are organised.",
+   "formulas": [],
+   "pitfalls": [
+    "Choosing the answer that protects the client or the engineer when the public is at risk.",
+    "Treating a seal as a formality: it means the work was done under your direct control."
+   ],
+   "read": [
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Ethics and Professional Practice, pages 4–12"
+    },
+    {
+     "source": "Lindeburg review manual, file 3 of 3",
+     "where": "Topic XVI, Ethics and Professional Practice"
+    }
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "ethics-a-lesson",
+   "subtopic": "ethics-a",
+   "title": "Codes of ethics",
+   "body": "A code of ethics sets out what a licensed engineer owes to the public, to employers and clients, and to other engineers. The NCEES Model Rules, printed in the handbook, are the version the exam uses.\n\nThe order of duties decides most questions. Public health, safety and welfare come first. Next comes faithful service to the employer or client: confidentiality, disclosing conflicts of interest, and taking payment from only one party unless everyone agrees. Last comes fairness to other engineers: honest claims about your own qualifications and no attempts to win work with gifts. When two answers both sound reasonable, pick the one that protects the public or brings a conflict into the open.",
+   "formulas": [],
+   "pitfalls": [
+    "Choosing loyalty to the client over a real risk to the public.",
+    "Treating disclosure as optional: a conflict that is known and agreed to in writing is allowed, a hidden one is not."
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "ethics-b-lesson",
+   "subtopic": "ethics-b",
+   "title": "Professional liability",
+   "body": "Professional liability is legal responsibility for harm caused by your professional work. An engineer is not expected to be perfect. The test is the standard of care: what a reasonably careful engineer would have done in the same situation.\n\nTo succeed in a negligence claim, the injured party must show a duty, a breach of that duty, harm, and that the breach caused the harm. Engineers manage this risk with careful practice, clear contracts, good records and professional liability (errors and omissions) insurance. Other policies cover other things: general liability for injury or property damage, workers' compensation for employees, builder's risk for the work in progress.",
+   "formulas": [],
+   "pitfalls": [
+    "Assuming any defect means negligence. The question is whether the standard of care was met.",
+    "Confusing professional liability insurance with general liability insurance."
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "ethics-c-lesson",
+   "subtopic": "ethics-c",
+   "title": "Licensure",
+   "body": "A license is the state's permission to offer engineering services to the public. The usual path is an accredited degree, the FE exam, about four years of qualifying experience and the PE exam. Each state licenses separately. An engineer licensed in one state can apply to another by comity.\n\nA seal on a document means the engineer was in responsible charge: direct control and personal supervision of the work. Engineers may seal only work in their area of competence that was prepared under their responsible charge. Boards can discipline licensees for misconduct, incompetence or fraud.",
+   "formulas": [],
+   "pitfalls": [
+    "Sealing work you only reviewed briefly, or work outside your competence.",
+    "Assuming a license from one state allows practice in another."
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "ethics-d-lesson",
+   "subtopic": "ethics-d",
+   "title": "Contracts and contract law",
+   "body": "A contract is an agreement the law will enforce. It needs an offer, an acceptance, consideration (each side gives something of value), parties able to contract and a lawful purpose.\n\nConstruction contracts differ in who carries the cost risk. In a lump sum contract the contractor does. In a unit price contract the owner pays for measured quantities. In cost plus contracts the owner pays actual cost and a fee. A breach is a failure to do what was promised; the usual remedy is money damages that put the other party where it would have been. Changes to the work are made by written change order.",
+   "formulas": [],
+   "pitfalls": [
+    "Thinking a contract must be written to be valid. Many oral contracts are enforceable, though hard to prove.",
+    "Mixing up lump sum (fixed total) with unit price (fixed rate per quantity)."
+   ],
+   "updated": "2026-11-13"
+  }
+ ]
+}

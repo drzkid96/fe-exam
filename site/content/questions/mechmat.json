@@ -1,0 +1,562 @@
+[
+ {
+  "id": "mechmat-0001",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 20 mm diameter steel rod carries a 50 kN tensile load. What is the axial stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "79.6 MPa"
+   },
+   {
+    "id": "b",
+    "text": "125 MPa"
+   },
+   {
+    "id": "c",
+    "text": "159 MPa"
+   },
+   {
+    "id": "d",
+    "text": "318 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Stress is how hard each bit of the material is being pulled. Spread the load over the cut area, the same way pressure spreads a force over a surface.",
+  "solution": "Area = \\frac{π(20)^{2}}{4} = 314.2 mm^{2}.\n\nStress = \\frac{P}{A} = \\frac{50,000 N}{314.2 mm^{2}} = 159 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [
+   "axial stress"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "mechmat-0002",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel rod is 20 mm in diameter and 2 m long. It carries a 50 kN tensile load. The modulus of elasticity is 200 GPa. How much does the rod stretch?",
+  "answer": {
+   "value": 1.59,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "A rod is a very stiff spring. It stretches more if you pull harder or if it is longer, and less if it is thicker or made of stiffer material.",
+  "solution": "Area = 314.2 mm^{2}.\n\nStretch = \\frac{PL}{AE} = \\frac{50,000(2,000)}{314.2(200,000)} = 1.59 mm.\n\nUnits: N, mm and MPa work together.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [
+   "axial deformation",
+   "elongation"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "mechmat-0003",
+  "topic": "mechmat",
+  "subtopic": "mechmat-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 8 m and carries a uniform load of 10 kN/m over its full length. What is the maximum bending moment?",
+  "options": [
+   {
+    "id": "a",
+    "text": "40 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "80 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "160 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "320 kN·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A loaded beam bends most in the middle, like a plank sagging between two chairs. That is where the bending moment peaks.",
+  "solution": "For a uniform load on a simple span, the largest moment is at midspan.\n\nM_{max} = \\frac{wL^{2}}{8} = \\frac{10(8)^{2}}{8} = 80 kN·m.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [
+   "bending moment",
+   "uniform load"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "mechmat-0004",
+  "topic": "mechmat",
+  "subtopic": "mechmat-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "At a point in a plate, the normal stresses on two perpendicular faces are 80 MPa and 20 MPa, both tension. The shear stress on those faces is 40 MPa. What is the maximum principal stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "50 MPa"
+   },
+   {
+    "id": "b",
+    "text": "90 MPa"
+   },
+   {
+    "id": "c",
+    "text": "100 MPa"
+   },
+   {
+    "id": "d",
+    "text": "140 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Turn the little square of material and the stresses on its faces change. At one special angle the pull is as large as it can get and the shear vanishes. That largest pull is the maximum principal stress.",
+  "solution": "Mohr's circle centre = \\frac{80 + 20}{2} = 50 MPa.\n\nRadius = \\sqrt{(\\frac{80 - 20}{2})^{2} + 40^{2}} = \\sqrt{30^{2} + 40^{2}} = 50 MPa.\n\nMaximum principal stress = centre + radius = 100 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [
+   "principal stress",
+   "mohr circle"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "mechmat-0005",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangular beam is 100 mm wide and 200 mm deep. It carries a bending moment of 20 kN·m about its strong axis. What is the maximum bending stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "15 MPa"
+   },
+   {
+    "id": "b",
+    "text": "30 MPa"
+   },
+   {
+    "id": "c",
+    "text": "60 MPa"
+   },
+   {
+    "id": "d",
+    "text": "120 MPa"
+   }
+  ],
+  "answer": "b",
+  "eli5": "When a beam bends, the top is squeezed and the bottom is stretched. The stress is biggest at the outer edges, farthest from the middle.",
+  "solution": "I = \\frac{100(200)^{3}}{12} = 66.67 × 10^{6} mm^{4}, and the outer edge is c = 100 mm from the centre.\n\nStress = \\frac{Mc}{I} = \\frac{20 × 10^{6}(100)}{66.67 × 10^{6}} = 30 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [
+   "bending stress",
+   "flexure"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "mechmat-0006",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "multi",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A simply supported beam carries a uniform load. Which changes reduce its midspan deflection? Select all that apply.",
+  "options": [
+   {
+    "id": "a",
+    "text": "Use a material with a higher modulus of elasticity"
+   },
+   {
+    "id": "b",
+    "text": "Use a deeper section with a larger moment of inertia"
+   },
+   {
+    "id": "c",
+    "text": "Shorten the span"
+   },
+   {
+    "id": "d",
+    "text": "Increase the load"
+   },
+   {
+    "id": "e",
+    "text": "Turn a rectangular section on its side so it bends about its weak axis"
+   }
+  ],
+  "answer": [
+   "a",
+   "b",
+   "c"
+  ],
+  "eli5": "A beam sags less if the material is stiffer, the shape is deeper or the span is shorter. Span matters most of all.",
+  "solution": "Midspan deflection = \\frac{5wL^{4}}{384EI}.\n\nA larger E or a larger I sits in the bottom of the fraction, so each reduces deflection. A shorter L reduces it sharply because L is raised to the fourth power.\n\nMore load increases deflection. Bending a rectangle about its weak axis lowers I, which increases deflection.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [
+   "deflection",
+   "stiffness"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "mechmat-0007",
+  "topic": "mechmat",
+  "subtopic": "mechmat-a",
+  "format": "hotspot",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A simply supported beam carries one point load P at a third of the span from A. Click the place on the beam where the bending moment is largest.",
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "alt": "A simply supported beam with a pin at A on the left and a roller at B on the right. A downward point load P acts one third of the span from A.",
+   "svg": "<rect x='40' y='70' width='320' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M40 84 L26 110 L54 110 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='16' y1='110' x2='64' y2='110' stroke='#00242E' stroke-width='2'/><circle cx='360' cy='95' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='336' y1='106' x2='384' y2='106' stroke='#00242E' stroke-width='2'/><line x1='147' y1='18' x2='147' y2='64' stroke='#00574A' stroke-width='3'/><path d='M147 70 L140 56 L154 56 Z' fill='#00574A'/><text x='147' y='13' text-anchor='middle' font-size='13' font-weight='600' fill='#00574A'>P</text><text x='40' y='128' text-anchor='middle' font-size='13' font-weight='600' fill='#00242E'>A</text><text x='360' y='124' text-anchor='middle' font-size='13' font-weight='600' fill='#00242E'>B</text><line x1='40' y1='142' x2='360' y2='142' stroke='#00242E' stroke-width='1'/><line x1='40' y1='136' x2='40' y2='148' stroke='#00242E'/><line x1='147' y1='136' x2='147' y2='148' stroke='#00242E'/><line x1='360' y1='136' x2='360' y2='148' stroke='#00242E'/><text x='93' y='158' text-anchor='middle' font-size='12' fill='#00242E'>L / 3</text><text x='253' y='158' text-anchor='middle' font-size='12' fill='#00242E'>2L / 3</text>"
+  },
+  "regions": [
+   {
+    "id": "a",
+    "label": "At support A",
+    "shape": "rect",
+    "x": 18,
+    "y": 52,
+    "w": 44,
+    "h": 62
+   },
+   {
+    "id": "load",
+    "label": "Under the load",
+    "shape": "rect",
+    "x": 125,
+    "y": 12,
+    "w": 44,
+    "h": 78
+   },
+   {
+    "id": "mid",
+    "label": "At midspan",
+    "shape": "rect",
+    "x": 178,
+    "y": 52,
+    "w": 44,
+    "h": 38
+   },
+   {
+    "id": "b",
+    "label": "At support B",
+    "shape": "rect",
+    "x": 338,
+    "y": 52,
+    "w": 44,
+    "h": 58
+   }
+  ],
+  "answer": "load",
+  "eli5": "With a single point load, the bending moment diagram is a triangle. Its peak is right under the load, not automatically at midspan.",
+  "solution": "The moment is zero at both supports and rises in a straight line from each support to the load.\n\nThe two lines meet under the load, so the largest moment is there: M_{max} = \\frac{Pab}{L} with a = \\frac{L}{3} and b = \\frac{2L}{3}.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [
+   "moment diagram",
+   "point load"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "mechmat-0008",
+  "topic": "mechmat",
+  "subtopic": "mechmat-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 8 m and carries a uniform load of 10 kN/m. What is the maximum shear force?",
+  "options": [
+   {
+    "id": "a",
+    "text": "20 kN"
+   },
+   {
+    "id": "b",
+    "text": "40 kN"
+   },
+   {
+    "id": "c",
+    "text": "80 kN"
+   },
+   {
+    "id": "d",
+    "text": "160 kN"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Shear is biggest right next to a support, where the beam hands its whole share of the load to that support.",
+  "solution": "Each reaction = \\frac{wL}{2} = \\frac{10(8)}{2} = 40 kN, and the largest shear equals the reaction.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "mechmat-0009",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A solid circular shaft 50 mm in diameter carries a torque of 2 kN·m. What is the maximum shear stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "20.4 MPa"
+   },
+   {
+    "id": "b",
+    "text": "40.7 MPa"
+   },
+   {
+    "id": "c",
+    "text": "81.5 MPa"
+   },
+   {
+    "id": "d",
+    "text": "163 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Twisting a shaft shears it. The outside surface works hardest because it is farthest from the centre.",
+  "solution": "Shear stress = \\frac{Tc}{J} = \\frac{16T}{π d^{3}} = \\frac{16(2 × 10^{6})}{π(50)^{3}} = 81.5 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "mechmat-0010",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel bar is held rigidly between two walls and heated by 40 °C. Its coefficient of thermal expansion is 12 × 10^{-6} per °C and E = 200 GPa. What compressive stress develops?",
+  "answer": {
+   "value": 96,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "MPa"
+  },
+  "eli5": "A heated bar wants to grow. If the walls will not let it, the bar pushes on them, and that push is stress.",
+  "solution": "Stress = E × expansion coefficient × temperature change = 200,000(12 × 10^{-6})(40) = 96 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "mechmat-0011",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel rail 10 m long warms by 30 °C. Its coefficient of thermal expansion is 12 × 10^{-6} per °C. How much longer does it get if it is free to expand?",
+  "answer": {
+   "value": 3.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "Almost everything grows a little when it warms up. Longer pieces and bigger temperature swings mean more growth.",
+  "solution": "Change in length = expansion coefficient × length × temperature change = 12 × 10^{-6}(10,000 mm)(30) = 3.6 mm.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "mechmat-0012",
+  "topic": "mechmat",
+  "subtopic": "mechmat-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The principal stresses at a point are 120 MPa in tension and 40 MPa in compression. What is the maximum in-plane shear stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "40 MPa"
+   },
+   {
+    "id": "b",
+    "text": "80 MPa"
+   },
+   {
+    "id": "c",
+    "text": "120 MPa"
+   },
+   {
+    "id": "d",
+    "text": "160 MPa"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The biggest shear is half the gap between the largest pull and the largest push.",
+  "solution": "Maximum shear = \\frac{120 - (-40)}{2} = 80 MPa.\n\nIt is the radius of Mohr's circle.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "mechmat-0013",
+  "topic": "mechmat",
+  "subtopic": "mechmat-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A thin-walled cylindrical tank has a radius of 500 mm and a wall thickness of 10 mm. The internal pressure is 2 MPa. What is the hoop stress in the wall?",
+  "options": [
+   {
+    "id": "a",
+    "text": "25 MPa"
+   },
+   {
+    "id": "b",
+    "text": "50 MPa"
+   },
+   {
+    "id": "c",
+    "text": "100 MPa"
+   },
+   {
+    "id": "d",
+    "text": "200 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Pressure tries to split the tank along its length, like a sausage splitting when it is cooked. The stress around the tank is twice the stress along it.",
+  "solution": "Hoop stress = \\frac{pr}{t} = \\frac{2(500)}{10} = 100 MPa.\n\nThe axial stress is half that, 50 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ }
+]

@@ -1,0 +1,138 @@
+[
+ {
+  "id": "sample-mcq",
+  "sample": true,
+  "status": "live",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "mcq",
+  "difficulty": 1,
+  "units": null,
+  "stem": "**Format sample: multiple choice.** What is the slope of the line through (0, 0) and (2, 4)?",
+  "options": [
+   {"id": "a", "text": "0.5"},
+   {"id": "b", "text": "2"},
+   {"id": "c", "text": "4"},
+   {"id": "d", "text": "8"}
+  ],
+  "answer": "b",
+  "solution": "Slope is rise over run: \\frac{4 - 0}{2 - 0} = 2.",
+  "handbook": [],
+  "tags": ["sample"],
+  "source": "original"
+ },
+ {
+  "id": "sample-multi",
+  "sample": true,
+  "status": "live",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "multi",
+  "difficulty": 1,
+  "units": null,
+  "stem": "**Format sample: multiple correct.** Which of these are vector quantities? Select the two that apply.",
+  "selectCount": 2,
+  "options": [
+   {"id": "a", "text": "Force"},
+   {"id": "b", "text": "Mass"},
+   {"id": "c", "text": "Velocity"},
+   {"id": "d", "text": "Temperature"},
+   {"id": "e", "text": "Energy"}
+  ],
+  "answer": ["a", "c"],
+  "solution": "Force and velocity have both magnitude and direction. Mass, temperature and energy are scalars.\n\nOn the exam a multiple-correct item is scored right only when every selection is right.",
+  "handbook": [],
+  "tags": ["sample"],
+  "source": "original"
+ },
+ {
+  "id": "sample-numeric",
+  "sample": true,
+  "status": "live",
+  "topic": "statics",
+  "subtopic": "statics-a",
+  "format": "numeric",
+  "difficulty": 1,
+  "units": "SI",
+  "stem": "**Format sample: fill in the blank.** Two perpendicular forces of 3 kN and 4 kN act at a point. Enter the magnitude of the resultant.",
+  "answer": {"value": 5, "tolerance": 0.01, "toleranceType": "rel", "unit": "kN"},
+  "solution": "R = \\sqrt{3^{2} + 4^{2}} = 5 kN.",
+  "handbook": [],
+  "tags": ["sample"],
+  "source": "original"
+ },
+ {
+  "id": "sample-hotspot",
+  "sample": true,
+  "status": "live",
+  "topic": "statics",
+  "subtopic": "statics-c",
+  "format": "hotspot",
+  "difficulty": 1,
+  "units": null,
+  "stem": "**Format sample: point and click.** Click the roller support on the beam.",
+  "figure": {
+   "viewBox": "0 0 400 150",
+   "alt": "A simply supported beam with a pin support at A on the left and a roller support at B on the right.",
+   "svg": "<rect x='40' y='52' width='320' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M60 66 L46 92 L74 92 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='36' y1='92' x2='84' y2='92' stroke='#00242E' stroke-width='2'/><circle cx='340' cy='77' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='316' y1='88' x2='364' y2='88' stroke='#00242E' stroke-width='2'/><text x='60' y='116' text-anchor='middle' font-size='14' font-weight='600' fill='#00242E'>A</text><text x='340' y='112' text-anchor='middle' font-size='14' font-weight='600' fill='#00242E'>B</text>"
+  },
+  "regions": [
+   {"id": "pin", "label": "Pin support at A", "shape": "rect", "x": 36, "y": 62, "w": 48, "h": 36},
+   {"id": "roller", "label": "Roller support at B", "shape": "rect", "x": 316, "y": 62, "w": 48, "h": 32}
+  ],
+  "answer": "roller",
+  "solution": "The roller at B resists force in one direction only. The pin at A resists force in two directions.",
+  "handbook": [],
+  "tags": ["sample"],
+  "source": "original"
+ },
+ {
+  "id": "sample-match",
+  "sample": true,
+  "status": "live",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "match",
+  "difficulty": 1,
+  "units": "SI",
+  "stem": "**Format sample: drag and drop, match.** Place each SI unit on the quantity it measures. One unit is not used.",
+  "tokens": [
+   {"id": "pa", "text": "Pa"},
+   {"id": "j", "text": "J"},
+   {"id": "w", "text": "W"},
+   {"id": "n", "text": "N"}
+  ],
+  "targets": [
+   {"id": "stress", "label": "Stress"},
+   {"id": "energy", "label": "Energy"},
+   {"id": "power", "label": "Power"}
+  ],
+  "answer": {"pa": "stress", "j": "energy", "w": "power", "n": null},
+  "solution": "Stress is force per area (Pa), energy is in joules (J) and power is in watts (W). The newton (N) measures force and stays unused.",
+  "handbook": [],
+  "tags": ["sample"],
+  "source": "original"
+ },
+ {
+  "id": "sample-order",
+  "sample": true,
+  "status": "live",
+  "topic": "surveying",
+  "subtopic": "surveying-a",
+  "format": "order",
+  "difficulty": 1,
+  "units": null,
+  "stem": "**Format sample: drag and drop, rank.** Rank these lengths from shortest (top) to longest (bottom).",
+  "items": [
+   {"id": "km", "text": "1 km"},
+   {"id": "ft", "text": "1 ft"},
+   {"id": "mi", "text": "1 mi"},
+   {"id": "m", "text": "1 m"}
+  ],
+  "answer": ["ft", "m", "km", "mi"],
+  "solution": "1 ft = 0.3048 m, 1 km = 1,000 m and 1 mi = 1,609 m.",
+  "handbook": [],
+  "tags": ["sample"],
+  "source": "original"
+ }
+]

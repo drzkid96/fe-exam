@@ -1,0 +1,450 @@
+[
+ {
+  "id": "surveying-0001",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A level is set up between a benchmark at elevation 100.00 m and a new point. The backsight reading on the benchmark is 1.52 m and the foresight reading on the new point is 2.31 m. What is the elevation of the new point?",
+  "options": [
+   {
+    "id": "a",
+    "text": "96.17 m"
+   },
+   {
+    "id": "b",
+    "text": "99.21 m"
+   },
+   {
+    "id": "c",
+    "text": "100.79 m"
+   },
+   {
+    "id": "d",
+    "text": "103.83 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The level gives you a flat line of sight. Add the rod reading at the known point to find how high that line is, then subtract the rod reading at the new point.",
+  "solution": "Height of instrument = 100.00 + 1.52 = 101.52 m.\n\nNew elevation = 101.52 - 2.31 = 99.21 m.\n\nA bigger rod reading means lower ground.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "leveling",
+   "backsight",
+   "foresight"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "surveying-0002",
+  "topic": "surveying",
+  "subtopic": "surveying-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A four-sided parcel has corners, in order, at (0, 0), (60, 0), (80, 40) and (20, 50), with coordinates in metres. What is its area?",
+  "answer": {
+   "value": 2800,
+   "tolerance": 0.005,
+   "toleranceType": "rel",
+   "unit": "m^{2}"
+  },
+  "eli5": "Walk around the corners in order. For each side, cross-multiply the coordinates, keep a running total, and halve it at the end.",
+  "solution": "Cross-multiply around the corners: (0·0 - 60·0) + (60·40 - 80·0) + (80·50 - 20·40) + (20·0 - 0·50) = 0 + 2,400 + 3,200 + 0 = 5,600.\n\nArea = \\frac{5,600}{2} = 2,800 m^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "area by coordinates"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "surveying-0003",
+  "topic": "surveying",
+  "subtopic": "surveying-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Two road cross-sections 20 m apart have cut areas of 24 m^{2} and 36 m^{2}. Using the average end area method, what is the volume of cut between them?",
+  "options": [
+   {
+    "id": "a",
+    "text": "480 m^{3}"
+   },
+   {
+    "id": "b",
+    "text": "600 m^{3}"
+   },
+   {
+    "id": "c",
+    "text": "720 m^{3}"
+   },
+   {
+    "id": "d",
+    "text": "1,200 m^{3}"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Picture a loaf of bread. Average the size of the two end slices and multiply by the length of the loaf.",
+  "solution": "V = L × \\frac{A_{1} + A_{2}}{2} = 20 × \\frac{24 + 36}{2} = 600 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "earthwork",
+   "average end area"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "surveying-0004",
+  "topic": "surveying",
+  "subtopic": "surveying-a",
+  "format": "match",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Place each azimuth, measured clockwise from north, on its bearing.",
+  "tokens": [
+   {
+    "id": "az225",
+    "text": "225°"
+   },
+   {
+    "id": "az45",
+    "text": "45°"
+   },
+   {
+    "id": "az315",
+    "text": "315°"
+   },
+   {
+    "id": "az135",
+    "text": "135°"
+   }
+  ],
+  "targets": [
+   {
+    "id": "ne",
+    "label": "N 45° E"
+   },
+   {
+    "id": "se",
+    "label": "S 45° E"
+   },
+   {
+    "id": "sw",
+    "label": "S 45° W"
+   },
+   {
+    "id": "nw",
+    "label": "N 45° W"
+   }
+  ],
+  "answer": {
+   "az45": "ne",
+   "az135": "se",
+   "az225": "sw",
+   "az315": "nw"
+  },
+  "eli5": "An azimuth is one angle all the way around the compass from north. A bearing says which half you are in, north or south, then how far you turn toward east or west.",
+  "solution": "45° is in the northeast quarter: N 45° E.\n\n135° is 45° short of south, on the east side: S 45° E.\n\n225° is 45° past south, on the west side: S 45° W.\n\n315° is 45° short of north, on the west side: N 45° W.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "azimuth",
+   "bearing"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "surveying-0005",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A road rises from elevation 102.4 m to elevation 108.9 m over a horizontal distance of 260 m. What is the grade?",
+  "answer": {
+   "value": 2.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Grade is rise over run, written as a percent. A 2.5% grade climbs 2.5 m for every 100 m you travel along the map.",
+  "solution": "Grade = \\frac{108.9 - 102.4}{260} × 100 = \\frac{6.5}{260} × 100 = 2.5%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "grade",
+   "slope"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "surveying-0006",
+  "topic": "surveying",
+  "subtopic": "surveying-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A slope distance of 250.00 m is measured at a vertical angle of 12° above horizontal. What is the horizontal distance?",
+  "options": [
+   {
+    "id": "a",
+    "text": "51.98 m"
+   },
+   {
+    "id": "b",
+    "text": "244.54 m"
+   },
+   {
+    "id": "c",
+    "text": "250.00 m"
+   },
+   {
+    "id": "d",
+    "text": "255.59 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A tape laid up a hill measures more than the distance on the map. The map distance is the flat leg of the triangle.",
+  "solution": "Horizontal distance = slope distance × cos(vertical angle) = 250.00 cos 12° = 244.54 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "surveying-0007",
+  "topic": "surveying",
+  "subtopic": "surveying-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What should the interior angles of a closed five-sided traverse add up to?",
+  "options": [
+   {
+    "id": "a",
+    "text": "360°"
+   },
+   {
+    "id": "b",
+    "text": "540°"
+   },
+   {
+    "id": "c",
+    "text": "720°"
+   },
+   {
+    "id": "d",
+    "text": "900°"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Any closed shape can be cut into triangles, and every triangle holds 180°.",
+  "solution": "Sum = (n - 2)(180°) = (5 - 2)(180°) = 540°.\n\nThe difference between this and the measured sum is the angular misclosure.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "surveying-0008",
+  "topic": "surveying",
+  "subtopic": "surveying-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Two sides of a triangular parcel are 80 m and 60 m long and meet at an angle of 30°. What is the area of the parcel?",
+  "answer": {
+   "value": 1200,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{2}"
+  },
+  "eli5": "A triangle is half of a slanted rectangle. The sine of the angle accounts for the slant.",
+  "solution": "Area = \\frac{1}{2}ab sin C = \\frac{1}{2}(80)(60) sin 30° = 1,200 m^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "surveying-0009",
+  "topic": "surveying",
+  "subtopic": "surveying-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A borrow pit measures 20 m by 30 m in plan. Its average depth of cut is 2.5 m. What volume is excavated?",
+  "options": [
+   {
+    "id": "a",
+    "text": "600 m^{3}"
+   },
+   {
+    "id": "b",
+    "text": "750 m^{3}"
+   },
+   {
+    "id": "c",
+    "text": "1,500 m^{3}"
+   },
+   {
+    "id": "d",
+    "text": "3,000 m^{3}"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Volume is the footprint of the pit times how deep it is on average.",
+  "solution": "V = plan area × average depth = 20(30)(2.5) = 1,500 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "surveying-0010",
+  "topic": "surveying",
+  "subtopic": "surveying-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A traverse line is 200.00 m long with an azimuth of 60°. What is its departure (east-west component)?",
+  "options": [
+   {
+    "id": "a",
+    "text": "100.0 m"
+   },
+   {
+    "id": "b",
+    "text": "173.2 m"
+   },
+   {
+    "id": "c",
+    "text": "200.0 m"
+   },
+   {
+    "id": "d",
+    "text": "346.4 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Every survey line can be split into how far it goes north and how far it goes east. Departure is the east part.",
+  "solution": "Departure = L sin(azimuth) = 200 sin 60° = 173.2 m east.\n\nThe latitude (north part) is 200 cos 60° = 100.0 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "surveying-0011",
+  "topic": "surveying",
+  "subtopic": "surveying-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Point A has a northing of 1,000.00 m and an easting of 500.00 m. Point B is 100.00 m from A on a bearing of S 30° E. What is the northing of B?",
+  "answer": {
+   "value": 913.4,
+   "tolerance": 0.002,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "A bearing that starts with S means you are heading south, so the northing goes down.",
+  "solution": "Change in northing = -100 cos 30° = -86.6 m.\n\nNorthing of B = 1,000.00 - 86.6 = 913.4 m. The easting increases by 100 sin 30° = 50.0 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ }
+]

@@ -1,0 +1,568 @@
+{
+ "id": "fe-civil",
+ "name": "FE Civil",
+ "spec": "NCEES FE Civil CBT exam specifications, effective July 2020",
+ "specSource": "https://ncees.org/exams/fe-exam/",
+ "questionCount": 110,
+ "examMinutes": 320,
+ "appointmentMinutes": 360,
+ "units": [
+  "SI",
+  "USCS"
+ ],
+ "formats": [
+  {
+   "id": "mcq",
+   "label": "Multiple choice",
+   "exam": "Multiple choice, one correct answer"
+  },
+  {
+   "id": "multi",
+   "label": "Multiple correct",
+   "exam": "Alternative item type: multiple correct"
+  },
+  {
+   "id": "numeric",
+   "label": "Fill in the blank",
+   "exam": "Alternative item type: fill in the blank"
+  },
+  {
+   "id": "hotspot",
+   "label": "Point and click",
+   "exam": "Alternative item type: point and click"
+  },
+  {
+   "id": "match",
+   "label": "Drag and drop: match",
+   "exam": "Alternative item type: drag and drop"
+  },
+  {
+   "id": "order",
+   "label": "Drag and drop: rank",
+   "exam": "Alternative item type: drag and drop"
+  }
+ ],
+ "topics": [
+  {
+   "id": "math",
+   "n": 1,
+   "name": "Mathematics and Statistics",
+   "min": 8,
+   "max": 12,
+   "subtopics": [
+    {
+     "id": "math-a",
+     "code": "A",
+     "name": "Analytic geometry"
+    },
+    {
+     "id": "math-b",
+     "code": "B",
+     "name": "Single-variable calculus"
+    },
+    {
+     "id": "math-c",
+     "code": "C",
+     "name": "Vector operations"
+    },
+    {
+     "id": "math-d",
+     "code": "D",
+     "name": "Statistics (e.g., distributions, mean, mode, standard deviation, confidence interval, regression and curve fitting)"
+    }
+   ]
+  },
+  {
+   "id": "ethics",
+   "n": 2,
+   "name": "Ethics and Professional Practice",
+   "min": 4,
+   "max": 6,
+   "subtopics": [
+    {
+     "id": "ethics-a",
+     "code": "A",
+     "name": "Codes of ethics (professional and technical societies)"
+    },
+    {
+     "id": "ethics-b",
+     "code": "B",
+     "name": "Professional liability"
+    },
+    {
+     "id": "ethics-c",
+     "code": "C",
+     "name": "Licensure"
+    },
+    {
+     "id": "ethics-d",
+     "code": "D",
+     "name": "Contracts and contract law"
+    }
+   ]
+  },
+  {
+   "id": "econ",
+   "n": 3,
+   "name": "Engineering Economics",
+   "min": 5,
+   "max": 8,
+   "subtopics": [
+    {
+     "id": "econ-a",
+     "code": "A",
+     "name": "Time value of money (e.g., equivalence, present worth, equivalent annual worth, future worth, rate of return)"
+    },
+    {
+     "id": "econ-b",
+     "code": "B",
+     "name": "Cost (e.g., fixed, variable, direct and indirect labor, incremental, average, sunk)"
+    },
+    {
+     "id": "econ-c",
+     "code": "C",
+     "name": "Analyses (e.g., break-even, benefit-cost, life cycle, sustainability, renewable energy)"
+    },
+    {
+     "id": "econ-d",
+     "code": "D",
+     "name": "Uncertainty (e.g., expected value and risk)"
+    }
+   ]
+  },
+  {
+   "id": "statics",
+   "n": 4,
+   "name": "Statics",
+   "min": 8,
+   "max": 12,
+   "subtopics": [
+    {
+     "id": "statics-a",
+     "code": "A",
+     "name": "Resultants of force systems"
+    },
+    {
+     "id": "statics-b",
+     "code": "B",
+     "name": "Equivalent force systems"
+    },
+    {
+     "id": "statics-c",
+     "code": "C",
+     "name": "Equilibrium of rigid bodies"
+    },
+    {
+     "id": "statics-d",
+     "code": "D",
+     "name": "Frames and trusses"
+    },
+    {
+     "id": "statics-e",
+     "code": "E",
+     "name": "Centroid of area"
+    },
+    {
+     "id": "statics-f",
+     "code": "F",
+     "name": "Area moments of inertia"
+    },
+    {
+     "id": "statics-g",
+     "code": "G",
+     "name": "Static friction"
+    }
+   ]
+  },
+  {
+   "id": "dynamics",
+   "n": 5,
+   "name": "Dynamics",
+   "min": 4,
+   "max": 6,
+   "subtopics": [
+    {
+     "id": "dynamics-a",
+     "code": "A",
+     "name": "Kinematics (e.g., particles, rigid bodies)"
+    },
+    {
+     "id": "dynamics-b",
+     "code": "B",
+     "name": "Mass moments of inertia"
+    },
+    {
+     "id": "dynamics-c",
+     "code": "C",
+     "name": "Force acceleration (e.g., particles, rigid bodies)"
+    },
+    {
+     "id": "dynamics-d",
+     "code": "D",
+     "name": "Work, energy, and power (e.g., particles, rigid bodies)"
+    }
+   ]
+  },
+  {
+   "id": "mechmat",
+   "n": 6,
+   "name": "Mechanics of Materials",
+   "min": 7,
+   "max": 11,
+   "subtopics": [
+    {
+     "id": "mechmat-a",
+     "code": "A",
+     "name": "Shear and moment diagrams"
+    },
+    {
+     "id": "mechmat-b",
+     "code": "B",
+     "name": "Stresses and strains (e.g., diagrams, axial, torsion, bending, shear, thermal)"
+    },
+    {
+     "id": "mechmat-c",
+     "code": "C",
+     "name": "Deformations (e.g., axial, torsion, bending, thermal)"
+    },
+    {
+     "id": "mechmat-d",
+     "code": "D",
+     "name": "Combined stresses, principal stresses, and Mohr's circle"
+    }
+   ]
+  },
+  {
+   "id": "materials",
+   "n": 7,
+   "name": "Materials",
+   "min": 5,
+   "max": 8,
+   "subtopics": [
+    {
+     "id": "materials-a",
+     "code": "A",
+     "name": "Mix design of concrete and asphalt"
+    },
+    {
+     "id": "materials-b",
+     "code": "B",
+     "name": "Test methods and specifications of metals, concrete, aggregates, asphalt, and wood"
+    },
+    {
+     "id": "materials-c",
+     "code": "C",
+     "name": "Physical and mechanical properties of metals, concrete, aggregates, asphalt, and wood"
+    }
+   ]
+  },
+  {
+   "id": "fluids",
+   "n": 8,
+   "name": "Fluid Mechanics",
+   "min": 6,
+   "max": 9,
+   "subtopics": [
+    {
+     "id": "fluids-a",
+     "code": "A",
+     "name": "Flow measurement"
+    },
+    {
+     "id": "fluids-b",
+     "code": "B",
+     "name": "Fluid properties"
+    },
+    {
+     "id": "fluids-c",
+     "code": "C",
+     "name": "Fluid statics"
+    },
+    {
+     "id": "fluids-d",
+     "code": "D",
+     "name": "Energy, impulse, and momentum of fluids"
+    }
+   ]
+  },
+  {
+   "id": "surveying",
+   "n": 9,
+   "name": "Surveying",
+   "min": 6,
+   "max": 9,
+   "subtopics": [
+    {
+     "id": "surveying-a",
+     "code": "A",
+     "name": "Angles, distances, and trigonometry"
+    },
+    {
+     "id": "surveying-b",
+     "code": "B",
+     "name": "Area computations"
+    },
+    {
+     "id": "surveying-c",
+     "code": "C",
+     "name": "Earthwork and volume computations"
+    },
+    {
+     "id": "surveying-d",
+     "code": "D",
+     "name": "Coordinate systems (e.g., state plane, latitude/longitude)"
+    },
+    {
+     "id": "surveying-e",
+     "code": "E",
+     "name": "Leveling (e.g., differential, elevations, percent grades)"
+    }
+   ]
+  },
+  {
+   "id": "water",
+   "n": 10,
+   "name": "Water Resources and Environmental Engineering",
+   "min": 10,
+   "max": 15,
+   "subtopics": [
+    {
+     "id": "water-a",
+     "code": "A",
+     "name": "Basic hydrology (e.g., infiltration, rainfall, runoff, watersheds)"
+    },
+    {
+     "id": "water-b",
+     "code": "B",
+     "name": "Basic hydraulics (e.g., Manning equation, Bernoulli theorem, open-channel flow)"
+    },
+    {
+     "id": "water-c",
+     "code": "C",
+     "name": "Pumps"
+    },
+    {
+     "id": "water-d",
+     "code": "D",
+     "name": "Water distribution systems"
+    },
+    {
+     "id": "water-e",
+     "code": "E",
+     "name": "Flood control (e.g., dams, routing, spillways)"
+    },
+    {
+     "id": "water-f",
+     "code": "F",
+     "name": "Stormwater (e.g., detention, routing, quality)"
+    },
+    {
+     "id": "water-g",
+     "code": "G",
+     "name": "Collection systems (e.g., wastewater, stormwater)"
+    },
+    {
+     "id": "water-h",
+     "code": "H",
+     "name": "Groundwater (e.g., flow, wells, drawdown)"
+    },
+    {
+     "id": "water-i",
+     "code": "I",
+     "name": "Water quality (e.g., ground and surface, basic water chemistry)"
+    },
+    {
+     "id": "water-j",
+     "code": "J",
+     "name": "Testing and standards (e.g., water, wastewater, air, noise)"
+    },
+    {
+     "id": "water-k",
+     "code": "K",
+     "name": "Water and wastewater treatment (e.g., biological processes, softening, drinking water treatment)"
+    }
+   ]
+  },
+  {
+   "id": "structural",
+   "n": 11,
+   "name": "Structural Engineering",
+   "min": 10,
+   "max": 15,
+   "subtopics": [
+    {
+     "id": "structural-a",
+     "code": "A",
+     "name": "Analysis of statically determinant beams, columns, trusses, and frames"
+    },
+    {
+     "id": "structural-b",
+     "code": "B",
+     "name": "Deflection of statically determinant beams, trusses, and frames"
+    },
+    {
+     "id": "structural-c",
+     "code": "C",
+     "name": "Column analysis (e.g., buckling, boundary conditions)"
+    },
+    {
+     "id": "structural-d",
+     "code": "D",
+     "name": "Structural determinacy and stability analysis of beams, trusses, and frames"
+    },
+    {
+     "id": "structural-e",
+     "code": "E",
+     "name": "Elementary statically indeterminate structures"
+    },
+    {
+     "id": "structural-f",
+     "code": "F",
+     "name": "Loads, load combinations, and load paths (e.g., dead, live, lateral, influence lines and moving loads, tributary areas)"
+    },
+    {
+     "id": "structural-g",
+     "code": "G",
+     "name": "Design of steel components (e.g., codes and design philosophies, beams, columns, tension members, connections)"
+    },
+    {
+     "id": "structural-h",
+     "code": "H",
+     "name": "Design of reinforced concrete components (e.g., codes and design philosophies, beams, columns)"
+    }
+   ]
+  },
+  {
+   "id": "geotech",
+   "n": 12,
+   "name": "Geotechnical Engineering",
+   "min": 10,
+   "max": 15,
+   "subtopics": [
+    {
+     "id": "geotech-a",
+     "code": "A",
+     "name": "Index properties and soil classifications"
+    },
+    {
+     "id": "geotech-b",
+     "code": "B",
+     "name": "Phase relations"
+    },
+    {
+     "id": "geotech-c",
+     "code": "C",
+     "name": "Laboratory and field tests"
+    },
+    {
+     "id": "geotech-d",
+     "code": "D",
+     "name": "Effective stress"
+    },
+    {
+     "id": "geotech-e",
+     "code": "E",
+     "name": "Stability of retaining structures (e.g., active/passive/at-rest pressure)"
+    },
+    {
+     "id": "geotech-f",
+     "code": "F",
+     "name": "Shear strength"
+    },
+    {
+     "id": "geotech-g",
+     "code": "G",
+     "name": "Bearing capacity"
+    },
+    {
+     "id": "geotech-h",
+     "code": "H",
+     "name": "Foundation types (e.g., spread footings, deep foundations, wall footings, mats)"
+    },
+    {
+     "id": "geotech-i",
+     "code": "I",
+     "name": "Consolidation and differential settlement"
+    },
+    {
+     "id": "geotech-j",
+     "code": "J",
+     "name": "Slope stability (e.g., fills, embankments, cuts, dams)"
+    },
+    {
+     "id": "geotech-k",
+     "code": "K",
+     "name": "Soil stabilization (e.g., chemical additives, geosynthetics)"
+    }
+   ]
+  },
+  {
+   "id": "transport",
+   "n": 13,
+   "name": "Transportation Engineering",
+   "min": 9,
+   "max": 14,
+   "subtopics": [
+    {
+     "id": "transport-a",
+     "code": "A",
+     "name": "Geometric design (e.g., streets, highways, intersections)"
+    },
+    {
+     "id": "transport-b",
+     "code": "B",
+     "name": "Pavement system design (e.g., thickness, subgrade, drainage, rehabilitation)"
+    },
+    {
+     "id": "transport-c",
+     "code": "C",
+     "name": "Traffic capacity and flow theory"
+    },
+    {
+     "id": "transport-d",
+     "code": "D",
+     "name": "Traffic control devices"
+    },
+    {
+     "id": "transport-e",
+     "code": "E",
+     "name": "Transportation planning (e.g., travel forecast modeling, safety, trip generation)"
+    }
+   ]
+  },
+  {
+   "id": "construction",
+   "n": 14,
+   "name": "Construction Engineering",
+   "min": 8,
+   "max": 12,
+   "subtopics": [
+    {
+     "id": "construction-a",
+     "code": "A",
+     "name": "Project administration (e.g., documents, management, procurement, project delivery methods)"
+    },
+    {
+     "id": "construction-b",
+     "code": "B",
+     "name": "Construction operations and methods (e.g., safety, equipment, productivity analysis, temporary erosion control)"
+    },
+    {
+     "id": "construction-c",
+     "code": "C",
+     "name": "Project controls (e.g., earned value, scheduling, allocation of resources, activity relationships)"
+    },
+    {
+     "id": "construction-d",
+     "code": "D",
+     "name": "Construction estimating"
+    },
+    {
+     "id": "construction-e",
+     "code": "E",
+     "name": "Interpretation of engineering drawings"
+    }
+   ]
+  }
+ ]
+}

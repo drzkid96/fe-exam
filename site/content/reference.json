@@ -1,0 +1,160 @@
+{
+ "handbook": {
+  "title": "NCEES FE Reference Handbook",
+  "edition": "10.0.1",
+  "note": "Page ranges follow your copy, edition 10.0.1. NCEES has issued newer editions since, so download the current one from your MyNCEES account and expect pages to shift."
+ },
+ "sections": [
+  {
+   "id": "hb-1",
+   "title": "Ethics and Professional Practice",
+   "topics": [
+    "ethics"
+   ],
+   "pages": "4–12",
+   "notes": ""
+  },
+  {
+   "id": "hb-2",
+   "title": "Mathematics",
+   "topics": [
+    "math"
+   ],
+   "pages": "34–62",
+   "notes": ""
+  },
+  {
+   "id": "hb-3",
+   "title": "Engineering Probability and Statistics",
+   "topics": [
+    "math"
+   ],
+   "pages": "63–84",
+   "notes": ""
+  },
+  {
+   "id": "hb-4",
+   "title": "Materials Science/Structure of Matter",
+   "topics": [
+    "materials"
+   ],
+   "pages": "94–106",
+   "notes": ""
+  },
+  {
+   "id": "hb-5",
+   "title": "Statics",
+   "topics": [
+    "statics"
+   ],
+   "pages": "107–113",
+   "notes": ""
+  },
+  {
+   "id": "hb-6",
+   "title": "Dynamics",
+   "topics": [
+    "dynamics"
+   ],
+   "pages": "114–129",
+   "notes": ""
+  },
+  {
+   "id": "hb-7",
+   "title": "Mechanics of Materials",
+   "topics": [
+    "mechmat",
+    "structural"
+   ],
+   "pages": "130–142",
+   "notes": "Also holds beam deflection formulas and column buckling."
+  },
+  {
+   "id": "hb-8",
+   "title": "Fluid Mechanics",
+   "topics": [
+    "fluids",
+    "water"
+   ],
+   "pages": "177–203",
+   "notes": "Also holds pump and pipe flow formulas used in water resources."
+  },
+  {
+   "id": "hb-9",
+   "title": "Engineering Economics",
+   "topics": [
+    "econ"
+   ],
+   "pages": "230–237",
+   "notes": ""
+  },
+  {
+   "id": "hb-10",
+   "title": "Civil Engineering",
+   "topics": [
+    "surveying",
+    "water",
+    "structural",
+    "geotech",
+    "transport",
+    "construction",
+    "materials"
+   ],
+   "pages": "259–309",
+   "notes": "The longest section for this exam: geotechnical, structural, hydrology and hydraulics, transportation, surveying and construction."
+  },
+  {
+   "id": "hb-11",
+   "title": "Environmental Engineering",
+   "topics": [
+    "water"
+   ],
+   "pages": "310–354",
+   "notes": "Water and wastewater treatment, water quality and testing."
+  }
+ ],
+ "sources": [
+  {
+   "title": "NCEES FE Reference Handbook 10.0.1",
+   "file": "2026-03-04_FE-HANDBOOK-10-1.pdf",
+   "use": "The only reference allowed in the exam. Practise finding formulas in it.",
+   "note": "Not the current edition."
+  },
+  {
+   "title": "Lindeburg FE Civil Review Manual (2018), file 1 of 3",
+   "file": "2026-03-04_PE-FE-LINDEBURG-REVIEW-MANUAL-1-OF-3-2018.pdf",
+   "use": "Reading for math, statistics, fluid mechanics, hydraulics, hydrology and environmental.",
+   "note": "Written for the pre-2020 exam specification."
+  },
+  {
+   "title": "Lindeburg FE Civil Review Manual (2018), file 2 of 3",
+   "file": "2026-03-04_PE-FE-LINDEBURG-REVIEW-MANUAL-2-OF-3-2018.pdf",
+   "use": "Reading for geotechnical, statics, dynamics, mechanics of materials, materials and the start of structural design.",
+   "note": "Starts at chapter 17."
+  },
+  {
+   "title": "Lindeburg FE Civil Review Manual (2018), file 3 of 3",
+   "file": "2026-03-04_PE-FE-LINDEBURG-REVIEW-MANUAL-3-OF-3-2018.pdf",
+   "use": "Reading for structural steel, transportation, surveying, construction, economics and ethics.",
+   "note": "Starts at chapter 42. Its Computational Tools topic is no longer on the exam."
+  },
+  {
+   "title": "Lindeburg FE Civil Practice Problems (2018)",
+   "file": "2026-03-04_PE-FE-LINDEBURG-PRACTICE-PROBLEMS-2018.pdf",
+   "use": "Extra practice by topic once a topic's questions here run out.",
+   "note": "Pre-2020 specification."
+  },
+  {
+   "title": "GeniePrep FE Civil problems workbook (2025)",
+   "file": "2026-03-04_FE-FULL-GUIDE-GENIEPREP-2025.pdf",
+   "use": "Worked problems by topic with linked video solutions.",
+   "note": ""
+  },
+  {
+   "title": "GeniePrep FE cheat sheet (2025)",
+   "file": "2026-03-04_FE-CHEAT-SHEET-GENIEPREP-2025.pdf",
+   "use": "Quick formula review.",
+   "note": "Not allowed in the exam. Use the handbook for lookup practice."
+  }
+ ]
+}

@@ -1,0 +1,302 @@
+{
+ "topic": "structural",
+ "sections": [
+  {
+   "id": "structural-overview",
+   "subtopic": null,
+   "title": "Start here",
+   "body": "Structural questions ask two things: what forces and deflections does a structure experience, and is a given steel or concrete member strong enough?\n\nThe analysis half is statics and mechanics of materials applied to whole beams, trusses and frames. The design half adds load factors and the capacity formulas for steel and reinforced concrete.",
+   "formulas": [],
+   "pitfalls": [
+    "Comparing a factored load with a nominal strength without applying the strength reduction factor.",
+    "Using actual length instead of effective length for a column whose ends are not pinned."
+   ],
+   "read": [
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Civil Engineering, pages 259–309"
+    },
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Mechanics of Materials, pages 130–142"
+    },
+    {
+     "source": "Lindeburg review manual, file 2 of 3",
+     "where": "Topic XI, Structural Design, first chapters"
+    },
+    {
+     "source": "Lindeburg review manual, file 3 of 3",
+     "where": "Topic XI, Structural Design, from structural steel onward"
+    }
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "structural-a-lesson",
+   "subtopic": "structural-a",
+   "title": "Analysis of statically determinate beams, columns, trusses and frames",
+   "body": "A structure is statically determinate when the equations of equilibrium alone give every reaction and internal force. Analysis is statics applied in order: find the reactions, then cut the structure where you want the internal force and balance one of the pieces.\n\nFor beams the results are shear and moment at each section. For trusses they are axial forces in members, by joints or by sections. For frames, separate the members at their connections and remember that the force one member puts on another is equal and opposite.",
+   "formulas": [
+    {
+     "name": "Simple span, uniform load",
+     "expr": "reactions \\frac{wL}{2}, M_{max} = \\frac{wL^{2}}{8}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Simple span, point load at a from left",
+     "expr": "R_{left} = \\frac{P(L - a)}{L}, M_{max} = \\frac{Pa(L - a)}{L}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Cantilever, uniform load",
+     "expr": "M_{max} = \\frac{wL^{2}}{2}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Taking the maximum moment at midspan for an off-centre load."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A simply supported 5 m beam carries a 20 kN load 2 m from the left support. Find the maximum moment.",
+    "steps": "M_{max} = \\frac{20(2)(3)}{5} = 24 kN·m, under the load."
+   }
+  },
+  {
+   "id": "structural-b-lesson",
+   "subtopic": "structural-b",
+   "title": "Deflection of statically determinate beams, trusses and frames",
+   "body": "Deflection is how far a structure moves under load. Codes limit it so that floors do not bounce and finishes do not crack. Deflection grows with load and very quickly with span, and shrinks with stiffness EI.\n\nUse the tabulated beam cases in the handbook for standard loadings and add the results when several loads act together (superposition). For trusses and unusual cases, the unit load (virtual work) method applies a dummy unit load where the deflection is wanted.",
+   "formulas": [
+    {
+     "name": "Simple span, midspan point load",
+     "expr": "\\frac{PL^{3}}{48EI}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Simple span, uniform load",
+     "expr": "\\frac{5wL^{4}}{384EI}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Cantilever, end point load",
+     "expr": "\\frac{PL^{3}}{3EI}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Cantilever, uniform load",
+     "expr": "\\frac{wL^{4}}{8EI}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Truss by unit load",
+     "expr": "sum of \\frac{F f L}{AE}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Unit mix-ups: keep everything in kN and m, or N and mm.",
+    "Forgetting that span is raised to the third or fourth power."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A simply supported 8 m beam carries 6 kN/m. EI = 40,000 kN·m^{2}. Find the midspan deflection.",
+    "steps": "Deflection = \\frac{5(6)(8)^{4}}{384(40,000)} = 0.0080 m = 8.0 mm."
+   }
+  },
+  {
+   "id": "structural-c-lesson",
+   "subtopic": "structural-c",
+   "title": "Column analysis",
+   "body": "A short, stocky column fails when its material crushes. A long, slender column fails earlier by buckling: it suddenly bows sideways. Euler's formula gives the buckling load. It depends on stiffness EI and falls with the square of the effective length.\n\nHow the ends are held changes the effective length. Pinned at both ends, K is 1.0. Fixed at both ends, 0.5. Fixed at one end and pinned at the other, 0.7. Fixed at the base and free at the top, 2.0. A column buckles about its weaker axis unless bracing prevents it.",
+   "formulas": [
+    {
+     "name": "Euler buckling load",
+     "expr": "P_{cr} = \\frac{π^{2}EI}{(KL)^{2}}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Slenderness ratio",
+     "expr": "\\frac{KL}{r}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Critical stress",
+     "expr": "\\frac{π^{2}E}{(KL/r)^{2}}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Using the stronger-axis moment of inertia when the weak axis governs.",
+    "Forgetting the effective length factor."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A pinned-pinned column 3 m long has EI = 500 kN·m^{2}. Find its Euler load.",
+    "steps": "P_{cr} = \\frac{π^{2}(500)}{3^{2}} = 548 kN."
+   }
+  },
+  {
+   "id": "structural-d-lesson",
+   "subtopic": "structural-d",
+   "title": "Structural determinacy and stability",
+   "body": "Counting tells you whether statics alone can solve a structure. Compare the number of unknown forces with the number of equilibrium equations. Equal means determinate. More unknowns means indeterminate, by the difference. Fewer means unstable.\n\nFor a planar truss there are two equations per joint and the unknowns are the member forces plus the reactions. For a beam or frame there are three equations per free body, plus one for each internal hinge. Passing the count does not guarantee stability: reactions that are all parallel or all meet at one point leave the structure free to move.",
+   "formulas": [
+    {
+     "name": "Planar truss",
+     "expr": "m + r compared with 2j",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Beam",
+     "expr": "r compared with 3 + number of internal hinges",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Assuming a structure is stable just because the count balances."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A truss has 10 joints, 17 members and 3 reactions. Classify it.",
+    "steps": "m + r = 20 and 2j = 20, so it is statically determinate, if stable."
+   }
+  },
+  {
+   "id": "structural-e-lesson",
+   "subtopic": "structural-e",
+   "title": "Elementary statically indeterminate structures",
+   "body": "An indeterminate structure has more supports or members than statics can solve for. The extra equations come from how the structure deforms. The force method removes a redundant support, finds the deflection there, and then finds the force needed to push it back to zero.\n\nA few standard results are worth knowing. A propped cantilever under uniform load puts three eighths of the load on the prop. A beam fixed at both ends under uniform load has end moments of wL^{2}/12 and a midspan moment of wL^{2}/24. Stiffer parts attract more load.",
+   "formulas": [
+    {
+     "name": "Propped cantilever, uniform load",
+     "expr": "R_{prop} = \\frac{3wL}{8}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Fixed-fixed, uniform load",
+     "expr": "M_{end} = \\frac{wL^{2}}{12}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Fixed-fixed, midspan point load",
+     "expr": "M_{end} = \\frac{PL}{8}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Using simple-span formulas for a beam with fixed ends."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A fixed-fixed beam spans 4 m with 9 kN/m. Find the end moment.",
+    "steps": "M = \\frac{9(4)^{2}}{12} = 12 kN·m."
+   }
+  },
+  {
+   "id": "structural-f-lesson",
+   "subtopic": "structural-f",
+   "title": "Loads, load combinations and load paths",
+   "body": "Structures carry dead load (their own weight and fixed items), live load (people, furniture, vehicles), and environmental loads such as wind, snow and earthquake. A load path is the route a load takes to the ground: slab to beam to girder to column to footing. Each member carries the load from its tributary area.\n\nDesign codes combine loads with factors that reflect how uncertain each one is. In LRFD the common gravity combinations are 1.4D and 1.2D + 1.6L, and the largest result governs. An influence line shows how a force at one point changes as a unit load moves across the structure, and is used to place moving loads for the worst effect.",
+   "formulas": [
+    {
+     "name": "LRFD gravity combinations",
+     "expr": "1.4D and 1.2D + 1.6L",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Line load on a beam",
+     "expr": "pressure × tributary width",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Column load",
+     "expr": "pressure × tributary area",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Forgetting to check every combination and take the largest."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A column supports a tributary area of 36 m^{2} with D = 5 kPa and L = 3 kPa. Find the governing factored load.",
+    "steps": "1.4D = 1.4(5)(36) = 252 kN.\n\n1.2D + 1.6L = (6.0 + 4.8)(36) = 389 kN, which governs."
+   }
+  },
+  {
+   "id": "structural-g-lesson",
+   "subtopic": "structural-g",
+   "title": "Design of steel components",
+   "body": "Steel design compares a factored load with a design strength: the nominal strength times a resistance factor. Tension members are checked for yielding on the gross area and for fracture on the net area at the bolt holes.\n\nBeams that are compact and braced against sideways buckling can reach their full plastic moment, the yield stress times the plastic section modulus. Columns are governed by buckling, so their strength depends on the slenderness ratio. Connections are checked for bolt shear, bearing and weld strength.",
+   "formulas": [
+    {
+     "name": "Tension yielding",
+     "expr": "0.90 F_{y}A_{g}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Tension fracture",
+     "expr": "0.75 F_{u}A_{e}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Flexure, compact and braced",
+     "expr": "0.90 F_{y}Z_{x}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Compression",
+     "expr": "0.90 F_{cr}A_{g}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Using the elastic section modulus S where the plastic modulus Z is required.",
+    "Checking only yielding and skipping fracture on the net section."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A plate with a gross area of 1,500 mm^{2} has F_{y} = 250 MPa. Find the design tensile strength for yielding.",
+    "steps": "Design strength = 0.90(250)(1,500) = 337,500 N = 338 kN."
+   }
+  },
+  {
+   "id": "structural-h-lesson",
+   "subtopic": "structural-h",
+   "title": "Design of reinforced concrete components",
+   "body": "Concrete is strong in compression and weak in tension, so steel bars are placed where tension occurs. In a beam, the concrete near the top is squeezed and the steel near the bottom is stretched. The two forces are equal and form a couple that resists the moment.\n\nThe compressed concrete is modelled as a rectangular block at 0.85 of the concrete strength. Its depth comes from setting the concrete force equal to the steel force. The design strength is the nominal strength times a reduction factor: 0.90 for tension-controlled bending and 0.75 for shear. Shear is carried by the concrete and by stirrups.",
+   "formulas": [
+    {
+     "name": "Stress block depth",
+     "expr": "a = \\frac{A_{s}f_{y}}{0.85f'_{c}b}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Nominal moment",
+     "expr": "M_{n} = A_{s}f_{y}(d - \\frac{a}{2})",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Concrete shear (SI)",
+     "expr": "V_{c} = 0.17\\sqrt{f'_{c}}b d",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Short column",
+     "expr": "P_{0} = 0.85f'_{c}(A_{g} - A_{st}) + f_{y}A_{st}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Using the overall depth h instead of the effective depth d.",
+    "Forgetting the strength reduction factor when the question asks for design strength."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A beam has b = 300 mm, d = 450 mm, A_{s} = 1,000 mm^{2}, f_{y} = 420 MPa and f'_{c} = 30 MPa. Find M_{n}.",
+    "steps": "a = \\frac{1,000(420)}{0.85(30)(300)} = 54.9 mm.\n\nM_{n} = 1,000(420)(450 - 27.5) = 177.5 × 10^{6} N·mm = 177.5 kN·m."
+   }
+  }
+ ]
+}

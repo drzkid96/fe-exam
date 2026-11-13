@@ -1,0 +1,1026 @@
+[
+ {
+  "id": "water-0001",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A 12 acre parking area has a runoff coefficient of 0.60. The design rainfall intensity is 2.5 in/h. Using the rational method, what is the peak runoff?",
+  "options": [
+   {
+    "id": "a",
+    "text": "7.2 cfs"
+   },
+   {
+    "id": "b",
+    "text": "18 cfs"
+   },
+   {
+    "id": "c",
+    "text": "30 cfs"
+   },
+   {
+    "id": "d",
+    "text": "50 cfs"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Rain falls on the whole site, but only part of it runs off. The runoff coefficient is the share that does.",
+  "solution": "Q = CiA = 0.60(2.5)(12) = 18 cfs.\n\nWith intensity in inches per hour and area in acres, the answer comes out in cubic feet per second with no conversion factor.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "rational method",
+   "runoff"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0002",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangular concrete channel is 3 m wide and flows 1 m deep on a slope of 0.001. Manning's n is 0.015. What is the discharge?",
+  "answer": {
+   "value": 4.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/s"
+  },
+  "eli5": "Water in a channel is pulled downhill by the slope and held back by rubbing on the bed and walls. Manning's equation balances the two to give the speed.",
+  "solution": "Area A = 3(1) = 3 m^{2}. Wetted perimeter P = 3 + 2(1) = 5 m. Hydraulic radius R = \\frac{3}{5} = 0.6 m.\n\nV = \\frac{1}{n}R^{2/3}S^{1/2} = \\frac{1}{0.015}(0.6)^{2/3}(0.001)^{1/2} = 1.50 m/s.\n\nQ = VA = 1.50(3) = 4.50 m^{3}/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "manning",
+   "open channel"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0003",
+  "topic": "water",
+  "subtopic": "water-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A pump delivers 0.05 m^{3}/s of water against a total head of 30 m. The pump is 75% efficient. What power must be supplied to the pump? Use 9.81 kN/m^{3}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "11.0 kW"
+   },
+   {
+    "id": "b",
+    "text": "14.7 kW"
+   },
+   {
+    "id": "c",
+    "text": "19.6 kW"
+   },
+   {
+    "id": "d",
+    "text": "26.2 kW"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Lifting water takes energy. No pump is perfect, so you have to feed it more power than the water actually receives.",
+  "solution": "Power given to the water = specific weight × Q × H = 9.81(0.05)(30) = 14.7 kW.\n\nPower supplied = \\frac{14.7}{0.75} = 19.6 kW.\n\nDivide by efficiency, because the input must be larger than the output.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203"
+   },
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "pump power",
+   "efficiency"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0004",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sedimentation tank has a volume of 1,800 m^{3} and treats a flow of 7,200 m^{3}/day. What is the detention time?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.25 h"
+   },
+   {
+    "id": "b",
+    "text": "4 h"
+   },
+   {
+    "id": "c",
+    "text": "6 h"
+   },
+   {
+    "id": "d",
+    "text": "24 h"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Detention time is how long a drop of water spends in the tank. Divide how much the tank holds by how fast water moves through it.",
+  "solution": "Detention time = \\frac{V}{Q} = \\frac{1,800}{7,200} = 0.25 day.\n\n0.25 day × 24 h/day = 6 h.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [
+   "detention time",
+   "sedimentation"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0005",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An aquifer has a hydraulic conductivity of 15 m/day and a hydraulic gradient of 0.004. What is the flow through a cross-section of 2,000 m^{2}?",
+  "options": [
+   {
+    "id": "a",
+    "text": "30 m^{3}/day"
+   },
+   {
+    "id": "b",
+    "text": "60 m^{3}/day"
+   },
+   {
+    "id": "c",
+    "text": "120 m^{3}/day"
+   },
+   {
+    "id": "d",
+    "text": "7,500 m^{3}/day"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Groundwater seeps downhill through the soil. It moves faster through open soil and on steeper slopes, and more of it moves through a bigger opening.",
+  "solution": "Darcy's law: Q = KiA = 15(0.004)(2,000) = 120 m^{3}/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   }
+  ],
+  "tags": [
+   "darcy",
+   "groundwater"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0006",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "order",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Put the steps of conventional drinking water treatment in order, from first (top) to last (bottom).",
+  "items": [
+   {
+    "id": "filt",
+    "text": "Filtration"
+   },
+   {
+    "id": "coag",
+    "text": "Coagulation (rapid mix)"
+   },
+   {
+    "id": "disinf",
+    "text": "Disinfection"
+   },
+   {
+    "id": "sed",
+    "text": "Sedimentation"
+   },
+   {
+    "id": "floc",
+    "text": "Flocculation (slow mix)"
+   }
+  ],
+  "answer": [
+   "coag",
+   "floc",
+   "sed",
+   "filt",
+   "disinf"
+  ],
+  "eli5": "First make the tiny dirt particles sticky, then stir gently so they clump, let the clumps sink, strain out what is left, and finally kill the germs.",
+  "solution": "Coagulation adds a chemical and mixes fast so fine particles lose their charge. Flocculation mixes slowly so they collide and grow. Sedimentation lets the flocs settle. Filtration removes what did not settle. Disinfection comes last so it works on clear water.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [
+   "water treatment",
+   "coagulation",
+   "flocculation"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Conventional surface water treatment sequence; FE Reference Handbook 10.0.1, Environmental Engineering, water treatment"
+  }
+ },
+ {
+  "id": "water-0007",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A watershed with a curve number of 80 receives 4.0 in of rain. Using the NRCS (SCS) method, what is the depth of runoff?",
+  "answer": {
+   "value": 2.04,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "in"
+  },
+  "eli5": "The first part of a storm soaks in or is caught by plants and puddles. Only what is left after that runs off.",
+  "solution": "S = \\frac{1,000}{CN} - 10 = \\frac{1,000}{80} - 10 = 2.5 in.\n\nQ = \\frac{(P - 0.2S)^{2}}{P + 0.8S} = \\frac{(4.0 - 0.5)^{2}}{4.0 + 2.0} = 2.04 in.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0008",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangular channel carries a flow of 3.0 m^{3}/s per metre of width. What is the critical depth? Use g = 9.81 m/s^{2}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.31 m"
+   },
+   {
+    "id": "b",
+    "text": "0.46 m"
+   },
+   {
+    "id": "c",
+    "text": "0.97 m"
+   },
+   {
+    "id": "d",
+    "text": "1.21 m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Critical depth is the depth at which a given flow moves with the least energy. Shallower and it races, deeper and it drifts.",
+  "solution": "y_{c} = (\\frac{q^{2}}{g})^{1/3} = (\\frac{3.0^{2}}{9.81})^{1/3} = 0.97 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0009",
+  "topic": "water",
+  "subtopic": "water-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A pump delivers 100 L/s at 1,200 rpm. Using the affinity laws, what flow does it deliver at 1,500 rpm?",
+  "options": [
+   {
+    "id": "a",
+    "text": "80 L/s"
+   },
+   {
+    "id": "b",
+    "text": "125 L/s"
+   },
+   {
+    "id": "c",
+    "text": "156 L/s"
+   },
+   {
+    "id": "d",
+    "text": "195 L/s"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Spin a pump faster and it moves more water in direct proportion. The head goes up faster still, with the square of the speed.",
+  "solution": "Q_{2} = Q_{1}(\\frac{N_{2}}{N_{1}}) = 100(\\frac{1,500}{1,200}) = 125 L/s.\n\nHead would rise by the ratio squared, 1.56.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0010",
+  "topic": "water",
+  "subtopic": "water-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A town of 25,000 people uses an average of 400 L per person per day. The maximum-day peaking factor is 1.8. What is the maximum-day demand?",
+  "answer": {
+   "value": 18000,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/day"
+  },
+  "eli5": "Water systems are sized for the thirstiest day, not the average one.",
+  "solution": "Average demand = 25,000(400 L) = 10,000,000 L/day = 10,000 m^{3}/day.\n\nMaximum day = 1.8(10,000) = 18,000 m^{3}/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0011",
+  "topic": "water",
+  "subtopic": "water-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The water surface in an elevated tank is 40 m above a hydrant. With no flow in the system, what is the pressure at the hydrant? Use 9.81 kN/m^{3}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "40 kPa"
+   },
+   {
+    "id": "b",
+    "text": "196 kPa"
+   },
+   {
+    "id": "c",
+    "text": "392 kPa"
+   },
+   {
+    "id": "d",
+    "text": "4,000 kPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A water tower works by height alone. Every metre of water above you adds about 9.8 kPa.",
+  "solution": "p = specific weight × height = 9.81(40) = 392 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0012",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the probability that a 50-year flood is equalled or exceeded at least once in a 10-year period?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.020"
+   },
+   {
+    "id": "b",
+    "text": "0.183"
+   },
+   {
+    "id": "c",
+    "text": "0.200"
+   },
+   {
+    "id": "d",
+    "text": "0.817"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A 50-year flood has a 2% chance every year. Work out the chance of dodging it ten years in a row, and the rest is the chance of being hit.",
+  "solution": "Chance of no exceedance in one year = 1 - \\frac{1}{50} = 0.98.\n\nOver 10 years: 0.98^{10} = 0.817.\n\nChance of at least one = 1 - 0.817 = 0.183.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0013",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the annual exceedance probability of a 25-year flood?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.25%"
+   },
+   {
+    "id": "b",
+    "text": "2.5%"
+   },
+   {
+    "id": "c",
+    "text": "4%"
+   },
+   {
+    "id": "d",
+    "text": "25%"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A 25-year flood does not come every 25 years on schedule. It has a 1 in 25 chance of happening in any given year.",
+  "solution": "Annual probability = \\frac{1}{return period} = \\frac{1}{25} = 0.04 = 4%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0014",
+  "topic": "water",
+  "subtopic": "water-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Stormwater flows into a detention basin at 3.0 m^{3}/s and leaves at 1.0 m^{3}/s for 20 minutes. How much water is stored in the basin during that time?",
+  "answer": {
+   "value": 2400,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "A detention basin is a bathtub with a small drain. It fills by the difference between what comes in and what goes out.",
+  "solution": "Storage = (inflow - outflow) × time = (3.0 - 1.0)(20 × 60 s) = 2,400 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0015",
+  "topic": "water",
+  "subtopic": "water-f",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Development raises a site's runoff coefficient from 0.30 to 0.80. With the same rainfall intensity and area, by what factor does the rational-method peak flow increase?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.38"
+   },
+   {
+    "id": "b",
+    "text": "1.50"
+   },
+   {
+    "id": "c",
+    "text": "2.67"
+   },
+   {
+    "id": "d",
+    "text": "5.00"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Pavement and roofs shed almost all the rain that lands on them, where grass and soil soak much of it up.",
+  "solution": "Q = CiA, so with i and A unchanged the peak scales with C.\n\nFactor = \\frac{0.80}{0.30} = 2.67.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0016",
+  "topic": "water",
+  "subtopic": "water-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 300 mm diameter sewer flows full on a slope of 0.005 with Manning's n = 0.013. What is the flow velocity?",
+  "answer": {
+   "value": 0.967,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s"
+  },
+  "eli5": "A sewer is a channel with a lid. For a pipe flowing full, the hydraulic radius is a quarter of the diameter.",
+  "solution": "R = \\frac{D}{4} = 0.075 m.\n\nV = \\frac{1}{n}R^{2/3}S^{1/2} = \\frac{1}{0.013}(0.075)^{2/3}(0.005)^{1/2} = 0.967 m/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0017",
+  "topic": "water",
+  "subtopic": "water-g",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sewer serves 12,000 people who each generate 300 L of wastewater per day. With a peaking factor of 3.0, what is the peak flow?",
+  "options": [
+   {
+    "id": "a",
+    "text": "41.7 L/s"
+   },
+   {
+    "id": "b",
+    "text": "125 L/s"
+   },
+   {
+    "id": "c",
+    "text": "3,600 L/s"
+   },
+   {
+    "id": "d",
+    "text": "10,800 L/s"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Everyone showers and flushes at about the same time in the morning, so sewers are sized for the rush, not the average.",
+  "solution": "Average flow = \\frac{12,000(300)}{86,400 s} = 41.7 L/s.\n\nPeak = 3.0(41.7) = 125 L/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0018",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Groundwater moves through an aquifer with a hydraulic conductivity of 15 m/day, a hydraulic gradient of 0.004 and a porosity of 0.30. What is the average seepage velocity?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.018 m/day"
+   },
+   {
+    "id": "b",
+    "text": "0.06 m/day"
+   },
+   {
+    "id": "c",
+    "text": "0.20 m/day"
+   },
+   {
+    "id": "d",
+    "text": "0.60 m/day"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Water can only travel through the gaps between grains, not through the grains. Squeezing the flow into the gaps makes the water itself move faster.",
+  "solution": "Darcy velocity = Ki = 15(0.004) = 0.06 m/day.\n\nSeepage velocity = \\frac{0.06}{0.30} = 0.20 m/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0019",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 5 mL wastewater sample is diluted to 300 mL in a BOD bottle. The dissolved oxygen falls from 8.0 mg/L to 3.5 mg/L in five days. What is the BOD_{5}?",
+  "options": [
+   {
+    "id": "a",
+    "text": "4.5 mg/L"
+   },
+   {
+    "id": "b",
+    "text": "22.5 mg/L"
+   },
+   {
+    "id": "c",
+    "text": "270 mg/L"
+   },
+   {
+    "id": "d",
+    "text": "1,350 mg/L"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Bacteria use up oxygen as they eat the waste. The sample was watered down for the test, so scale the oxygen drop back up.",
+  "solution": "Dilution fraction P = \\frac{5}{300}.\n\nBOD_{5} = \\frac{DO_{initial} - DO_{final}}{P} = \\frac{8.0 - 3.5}{5/300} = 270 mg/L.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0020",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A water sample contains 80 mg/L of calcium and 24 mg/L of magnesium. What is the total hardness, expressed as mg/L of CaCO_{3}? Use equivalent weights of 20 for calcium, 12.2 for magnesium and 50 for CaCO_{3}.",
+  "answer": {
+   "value": 298,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mg/L as CaCO_{3}"
+  },
+  "eli5": "Hardness adds up the calcium and magnesium. They are converted to a common yardstick first so they can be added fairly.",
+  "solution": "Calcium: 80(\\frac{50}{20}) = 200 mg/L. Magnesium: 24(\\frac{50}{12.2}) = 98 mg/L.\n\nTotal hardness = 298 mg/L as CaCO_{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0021",
+  "topic": "water",
+  "subtopic": "water-j",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Two machines each produce a sound level of 80 dB at a receiver. What is the combined sound level when both run?",
+  "options": [
+   {
+    "id": "a",
+    "text": "80 dB"
+   },
+   {
+    "id": "b",
+    "text": "83 dB"
+   },
+   {
+    "id": "c",
+    "text": "86 dB"
+   },
+   {
+    "id": "d",
+    "text": "160 dB"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Decibels do not add like ordinary numbers. Doubling the sound energy only adds about 3 dB.",
+  "solution": "Combined level = 10 log(10^{8.0} + 10^{8.0}) = 10 log(2 × 10^{8}) = 83 dB.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0022",
+  "topic": "water",
+  "subtopic": "water-j",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Under the U.S. Safe Drinking Water Act, which term is the enforceable limit on a contaminant in public drinking water?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Maximum contaminant level goal (MCLG)"
+   },
+   {
+    "id": "b",
+    "text": "Maximum contaminant level (MCL)"
+   },
+   {
+    "id": "c",
+    "text": "Secondary standard"
+   },
+   {
+    "id": "d",
+    "text": "Reference dose"
+   }
+  ],
+  "answer": "b",
+  "eli5": "One number is the ideal with no known health risk. The other is the limit the law actually enforces, set as close to the ideal as treatment allows.",
+  "solution": "The MCL is the enforceable standard. The MCLG is a non-enforceable health goal. Secondary standards cover taste, odour and appearance and are guidelines.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "U.S. Safe Drinking Water Act definitions (40 CFR Part 141)"
+  }
+ },
+ {
+  "id": "water-0023",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A clarifier treats 7,200 m^{3}/day and has a surface area of 240 m^{2}. What is its surface overflow rate?",
+  "answer": {
+   "value": 30,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/day"
+  },
+  "eli5": "The overflow rate is how fast water rises through the tank. A particle settles out only if it sinks faster than the water rises.",
+  "solution": "Overflow rate = \\frac{Q}{A} = \\frac{7,200}{240} = 30 m/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ },
+ {
+  "id": "water-0024",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A plant treats 10,000 m^{3}/day and applies a chlorine dose of 2 mg/L. How much chlorine is used per day?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2 kg"
+   },
+   {
+    "id": "b",
+    "text": "20 kg"
+   },
+   {
+    "id": "c",
+    "text": "200 kg"
+   },
+   {
+    "id": "d",
+    "text": "5,000 kg"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A dose in mg/L is the same as grams per cubic metre. Multiply by how many cubic metres are treated.",
+  "solution": "2 mg/L = 2 g/m^{3}.\n\nMass = 2(10,000) = 20,000 g = 20 kg per day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309"
+   },
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354"
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  }
+ }
+]

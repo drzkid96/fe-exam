@@ -1,0 +1,183 @@
+{
+ "topic": "transport",
+ "sections": [
+  {
+   "id": "transport-overview",
+   "subtopic": null,
+   "title": "Start here",
+   "body": "Transportation questions cover the shape of a road, how traffic moves along it, the signs and signals that control it, the pavement underneath and how demand is forecast.\n\nGeometric design questions come down to what a driver can see and how quickly a vehicle can stop or turn at the design speed.",
+   "formulas": [],
+   "pitfalls": [
+    "Using mph in a formula that expects ft/s, or the reverse. The 1.47 factor converts mph to ft/s.",
+    "Entering grades as percentages where the formula expects decimals."
+   ],
+   "read": [
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Civil Engineering, pages 259–309"
+    },
+    {
+     "source": "Lindeburg review manual, file 3 of 3",
+     "where": "Topic XII, Transportation and Surveying"
+    }
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "transport-a-lesson",
+   "subtopic": "transport-a",
+   "title": "Geometric design",
+   "body": "Geometric design sets the shape of a road so drivers can see far enough and vehicles stay on it at the design speed. Stopping sight distance is the distance covered during perception and reaction plus the braking distance.\n\nHorizontal curves are arcs of circles. Their minimum radius depends on speed, superelevation (banking) and side friction. Vertical curves are parabolas joining two grades. Crest curves are sized so the hilltop does not hide the road ahead, and sag curves for headlight reach. The rate of vertical curvature K is the curve length per percent change in grade.",
+   "formulas": [
+    {
+     "name": "Stopping sight distance (USCS)",
+     "expr": "SSD = 1.47Vt + \\frac{V^{2}}{30(a/32.2 ± G)}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Minimum radius (USCS)",
+     "expr": "R = \\frac{V^{2}}{15(e + f)}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Curve length",
+     "expr": "L = R × deflection angle in radians",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Tangent length",
+     "expr": "T = R tan(\\frac{deflection angle}{2})",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Vertical curve",
+     "expr": "L = KA, high or low point at x = g_{1}L / (g_{1} - g_{2})",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Entering superelevation as a percent instead of a decimal.",
+    "Using a downgrade as positive: a downgrade lengthens the stopping distance."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Find the minimum radius for 40 mph with e = 0.04 and f = 0.16.",
+    "steps": "R = \\frac{40^{2}}{15(0.04 + 0.16)} = 533 ft."
+   }
+  },
+  {
+   "id": "transport-b-lesson",
+   "subtopic": "transport-b",
+   "title": "Pavement system design",
+   "body": "A pavement spreads wheel loads so the soil underneath is not overstressed. Flexible (asphalt) pavements do it with layers that get stronger toward the top. Rigid (concrete) pavements do it with a stiff slab.\n\nTraffic is counted in equivalent single axle loads (ESALs): every axle is converted to the number of standard 18,000 lb axles that would do the same damage. Heavy axles do far more damage than light ones. In the AASHTO method the structural number sums each layer's thickness times its strength coefficient. The subgrade is described by its resilient modulus or CBR. Drainage and timely rehabilitation extend pavement life.",
+   "formulas": [
+    {
+     "name": "Structural number",
+     "expr": "SN = a_{1}D_{1} + a_{2}D_{2}m_{2} + a_{3}D_{3}m_{3}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Design ESALs",
+     "expr": "daily ESALs × 365 × years (with a growth factor if traffic grows)",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Leaving out the drainage coefficients for unbound layers."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A pavement has 5 in of asphalt (a = 0.44) over 10 in of base (a = 0.14, m = 1.0). Find the structural number.",
+    "steps": "SN = 0.44(5) + 0.14(10)(1.0) = 2.2 + 1.4 = 3.6."
+   }
+  },
+  {
+   "id": "transport-c-lesson",
+   "subtopic": "transport-c",
+   "title": "Traffic capacity and flow theory",
+   "body": "Traffic is described by three linked quantities. Flow is vehicles per hour past a point. Density is vehicles per mile of road. Speed is how fast they move. Flow equals density times speed.\n\nAs a road fills, speed drops. Flow peaks at capacity, part-way between empty and jammed. In the Greenshields model that peak is at half the free-flow speed and half the jam density. At signals, capacity is the saturation flow times the share of the cycle that is green. The peak hour factor measures how uneven traffic is within the busiest hour.",
+   "formulas": [
+    {
+     "name": "Fundamental relation",
+     "expr": "q = kv",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Greenshields capacity",
+     "expr": "q_{max} = \\frac{v_{f}k_{j}}{4}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Signal capacity",
+     "expr": "c = s × \\frac{g}{C}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Peak hour factor",
+     "expr": "PHF = \\frac{hourly volume}{4 × peak 15-minute volume}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Confusing time mean speed with space mean speed. The flow relation uses space mean speed."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A lane with a saturation flow of 1,800 veh/h has 30 s of green in a 90 s cycle. Find its capacity.",
+    "steps": "c = 1,800 × \\frac{30}{90} = 600 veh/h."
+   }
+  },
+  {
+   "id": "transport-d-lesson",
+   "subtopic": "transport-d",
+   "title": "Traffic control devices",
+   "body": "Traffic control devices are the signs, signals and markings that regulate, warn and guide road users. The MUTCD sets national standards so they look and mean the same everywhere. Shape and colour carry meaning: red octagon for stop, yellow diamond for warning, white rectangle for regulation, green for guidance, orange for work zones.\n\nSignals assign right of way by time. The yellow change interval lets a driver who cannot stop safely clear the stop line, and an all-red interval clears the intersection. Signals are justified by warrants based on volumes, crashes and pedestrians.",
+   "formulas": [
+    {
+     "name": "Yellow change interval",
+     "expr": "y = t + \\frac{v}{2a ± 64.4G}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Entering speed in mph where the formula needs ft/s."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Find the yellow interval for an approach speed of 59 ft/s (40 mph) on level ground, with t = 1.0 s and a = 10 ft/s^{2}.",
+    "steps": "y = 1.0 + \\frac{59}{20} = 3.95 s, rounded up to 4.0 s in practice."
+   }
+  },
+  {
+   "id": "transport-e-lesson",
+   "subtopic": "transport-e",
+   "title": "Transportation planning",
+   "body": "Planning forecasts how much travel there will be and where. The classic four-step model asks four questions in order. Trip generation: how many trips start and end in each zone? Trip distribution: where do they go? Mode choice: by car, bus, bike or foot? Trip assignment: by which route?\n\nTrip generation uses rates per home or per unit of floor area. Distribution often uses a gravity model, in which nearer and larger destinations attract more trips. Mode choice often uses a logit model based on the utility of each mode. Safety analysis compares crash rates per million vehicles or vehicle-miles.",
+   "formulas": [
+    {
+     "name": "Trip generation",
+     "expr": "trips = rate × units",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Logit mode share",
+     "expr": "P_{i} = \\frac{e^{U_{i}}}{sum of e^{U}}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Intersection crash rate",
+     "expr": "\\frac{crashes × 10^{6}}{ADT × 365 × years}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Forgetting that rates are per 1,000 ft^{2}, not per ft^{2}."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "An office of 120,000 ft^{2} generates 11 trips per 1,000 ft^{2} per day. Find its daily trips.",
+    "steps": "Trips = 11 × 120 = 1,320 per day."
+   }
+  }
+ ]
+}

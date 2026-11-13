@@ -1,0 +1,188 @@
+{
+ "topic": "surveying",
+ "sections": [
+  {
+   "id": "surveying-overview",
+   "subtopic": null,
+   "title": "Start here",
+   "body": "Surveying turns measurements on the ground into positions, areas, volumes and elevations. Angles and distances give horizontal position. A level and a rod give height.\n\nMost questions are careful bookkeeping: add and subtract in the right order and keep track of direction.",
+   "formulas": [],
+   "pitfalls": [
+    "Swapping backsight and foresight. Backsight is added to the known elevation and foresight is subtracted.",
+    "Mixing bearings and azimuths without converting."
+   ],
+   "read": [
+    {
+     "source": "NCEES handbook 10.0.1",
+     "where": "Civil Engineering, pages 259–309"
+    },
+    {
+     "source": "Lindeburg review manual, file 3 of 3",
+     "where": "Topic XII, Transportation and Surveying"
+    }
+   ],
+   "updated": "2026-11-13"
+  },
+  {
+   "id": "surveying-a-lesson",
+   "subtopic": "surveying-a",
+   "title": "Angles, distances and trigonometry",
+   "body": "Surveying measures angles and distances and turns them into positions. Directions are written two ways. An azimuth is one angle from 0° to 360°, clockwise from north. A bearing is an angle up to 90° from north or south toward east or west, such as S 35° W.\n\nDistances measured along a slope must be reduced to horizontal. The interior angles of a closed traverse with n sides should add to (n - 2) × 180°; the shortfall or excess is the misclosure and is spread among the angles.",
+   "formulas": [
+    {
+     "name": "Horizontal distance",
+     "expr": "H = slope distance × cos(vertical angle)",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Interior angle sum",
+     "expr": "(n - 2) × 180°",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Law of sines",
+     "expr": "\\frac{a}{sin A} = \\frac{b}{sin B}",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Measuring a bearing from the east-west line. Bearings are always from north or south."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Convert an azimuth of 200° to a bearing.",
+    "steps": "200° is 20° past south, on the west side.\n\nBearing = S 20° W."
+   }
+  },
+  {
+   "id": "surveying-b-lesson",
+   "subtopic": "surveying-b",
+   "title": "Area computations",
+   "body": "Land area is computed from the coordinates of the corners or from measured offsets. The coordinate method cross-multiplies around the boundary and halves the result. For irregular boundaries, offsets measured at regular intervals are summed by the trapezoidal rule or Simpson's rule.\n\nA triangle's area follows from two sides and the included angle, or from all three sides. Areas are often wanted in hectares (10,000 m^{2}) or acres (43,560 ft^{2}).",
+   "formulas": [
+    {
+     "name": "Area by coordinates",
+     "expr": "A = \\frac{1}{2}|sum of (x_{i}y_{i+1} - x_{i+1}y_{i})|",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Triangle",
+     "expr": "A = \\frac{1}{2}ab sin C",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Trapezoidal rule",
+     "expr": "A = w(\\frac{h_{1} + h_{n}}{2} + h_{2} + ... + h_{n-1})",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Listing the corners out of order around the boundary.",
+    "Forgetting to halve the cross-multiplied sum."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Find the area of a triangle with corners at (0, 0), (40, 0) and (0, 30) metres.",
+    "steps": "A = \\frac{1}{2}(40)(30) = 600 m^{2}."
+   }
+  },
+  {
+   "id": "surveying-c-lesson",
+   "subtopic": "surveying-c",
+   "title": "Earthwork and volume computations",
+   "body": "Earthwork volume is found from cross-sections cut along the route. The average end area method multiplies the mean of two neighbouring cross-section areas by the distance between them. It slightly overestimates when the sections differ a lot. The prismoidal formula is more exact because it also uses the middle section.\n\nFor pits and building sites, a grid of cut depths gives volume as plan area times average depth. Soil swells when dug and shrinks when compacted, so bank, loose and compacted volumes differ.",
+   "formulas": [
+    {
+     "name": "Average end area",
+     "expr": "V = L\\frac{A_{1} + A_{2}}{2}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Prismoidal formula",
+     "expr": "V = \\frac{L}{6}(A_{1} + 4A_{m} + A_{2})",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Swell",
+     "expr": "loose volume = bank volume × (1 + swell)",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Adding cut and fill together. Keep them separate."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "Stations 30 m apart have fill areas of 18 m^{2} and 26 m^{2}. Find the fill volume.",
+    "steps": "V = 30 × \\frac{18 + 26}{2} = 660 m^{3}."
+   }
+  },
+  {
+   "id": "surveying-d-lesson",
+   "subtopic": "surveying-d",
+   "title": "Coordinate systems",
+   "body": "Positions are recorded as northings and eastings on a plane grid, such as a state plane system, or as latitude and longitude on the curved earth. State plane coordinates flatten a zone of the earth so that ordinary plane geometry works within small errors.\n\nEach traverse line has a latitude (its north-south part) and a departure (its east-west part). Add them to the coordinates of the starting point to get the next point. In a closed traverse the latitudes and the departures should each add to zero; what is left is the error of closure.",
+   "formulas": [
+    {
+     "name": "Latitude of a line",
+     "expr": "L cos(azimuth)",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Departure of a line",
+     "expr": "L sin(azimuth)",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Distance from coordinates",
+     "expr": "\\sqrt{(change in N)^{2} + (change in E)^{2}}",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Azimuth from coordinates",
+     "expr": "tan^{-1}(\\frac{change in E}{change in N})",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Swapping sine and cosine: with azimuths from north, cosine gives the north part."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "A line runs 150 m at an azimuth of 120°. Find its latitude and departure.",
+    "steps": "Latitude = 150 cos 120° = -75.0 m (south).\n\nDeparture = 150 sin 120° = 129.9 m (east)."
+   }
+  },
+  {
+   "id": "surveying-e-lesson",
+   "subtopic": "surveying-e",
+   "title": "Leveling",
+   "body": "Leveling finds elevations with a level and a graduated rod. The instrument gives a horizontal line of sight. A backsight on a point of known elevation gives the height of the instrument. A foresight on a new point is subtracted to give its elevation.\n\nCarry elevations forward through turning points and close on a known benchmark to check the work. Grade is rise over run, usually as a percent.",
+   "formulas": [
+    {
+     "name": "Height of instrument",
+     "expr": "HI = known elevation + backsight",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "New elevation",
+     "expr": "elevation = HI - foresight",
+     "handbook": "Civil Engineering, p. 259–309"
+    },
+    {
+     "name": "Percent grade",
+     "expr": "\\frac{rise}{run} × 100",
+     "handbook": "Civil Engineering, p. 259–309"
+    }
+   ],
+   "pitfalls": [
+    "Adding the foresight instead of subtracting it."
+   ],
+   "updated": "2026-11-13",
+   "example": {
+    "problem": "From a benchmark at 50.00 m, the backsight is 2.10 m and the foresight on point A is 0.85 m. Find the elevation of A.",
+    "steps": "HI = 50.00 + 2.10 = 52.10 m.\n\nElevation of A = 52.10 - 0.85 = 51.25 m."
+   }
+  }
+ ]
+}

@@ -3268,5 +3268,1061 @@
    "alt": "A crest vertical curve L = ? ft long joining a +4% grade to a -2% grade."
   },
   "lookup": true
+ },
+ {
+  "id": "transport-0019",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A horizontal curve has a radius of 800 ft and a deflection angle of 40°. The PI is at station 24+50. What is the station of the PC? Enter it in feet, so that station 12+50 is entered as 1,250.",
+  "answer": {
+   "value": 2158.82,
+   "tolerance": 0.001,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "The PC lies one tangent length back from the PI, and T = R tan(I / 2). Stations are 100 ft units, so work in feet and convert at the end.",
+  "solution": "T = R tan(I / 2) = 800 × tan(20°) = 291.18 ft.\n\nStation 24+50 is 2,450 ft. PC = PI - T = 2,450 - 291.18 = 2,158.82 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "horizontal curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0019",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 186",
+   "svg": "<path d='M70 110 A380 380 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='32' y1='124' x2='200' y2='63' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='368' y1='124' x2='200' y2='63' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='91' y2='166' stroke='#00242E'/><line x1='330' y1='110' x2='309' y2='166' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='55' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 800 ft, deflection angle 40°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
+   "alt": "A horizontal circular curve of radius 800 ft with a deflection angle of 40°, showing PC, PI and PT."
+  },
+  "lookup": true
+ },
+ {
+  "id": "transport-0019-b",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A horizontal curve has a radius of 1,200 ft and a deflection angle of 28°. The PI is at station 51+80. What is the station of the PC? Enter it in feet, so that station 12+50 is entered as 1,250.",
+  "answer": {
+   "value": 4880.81,
+   "tolerance": 0.001,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "The PC lies one tangent length back from the PI, and T = R tan(I / 2). Stations are 100 ft units, so work in feet and convert at the end.",
+  "solution": "T = R tan(I / 2) = 1,200 × tan(14°) = 299.19 ft.\n\nStation 51+80 is 5,180 ft. PC = PI - T = 5,180 - 299.19 = 4,880.81 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "horizontal curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0019",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 186",
+   "svg": "<path d='M70 110 A537 537 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='31' y1='120' x2='200' y2='78' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='369' y1='120' x2='200' y2='78' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='85' y2='168' stroke='#00242E'/><line x1='330' y1='110' x2='315' y2='168' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='70' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 1,200 ft, deflection angle 28°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
+   "alt": "A horizontal circular curve of radius 1,200 ft with a deflection angle of 28°, showing PC, PI and PT."
+  },
+  "lookup": true
+ },
+ {
+  "id": "transport-0019-c",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A horizontal curve has a radius of 600 ft and a deflection angle of 52°. The PI is at station 13+25. What is the station of the PC? Enter it in feet, so that station 12+50 is entered as 1,250.",
+  "answer": {
+   "value": 1032.36,
+   "tolerance": 0.001,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "The PC lies one tangent length back from the PI, and T = R tan(I / 2). Stations are 100 ft units, so work in feet and convert at the end.",
+  "solution": "T = R tan(I / 2) = 600 × tan(26°) = 292.64 ft.\n\nStation 13+25 is 1,325 ft. PC = PI - T = 1,325 - 292.64 = 1,032.36 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "horizontal curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0019",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 186",
+   "svg": "<path d='M70 110 A297 297 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='34' y1='128' x2='200' y2='47' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='366' y1='128' x2='200' y2='47' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='96' y2='164' stroke='#00242E'/><line x1='330' y1='110' x2='304' y2='164' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='39' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 600 ft, deflection angle 52°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
+   "alt": "A horizontal circular curve of radius 600 ft with a deflection angle of 52°, showing PC, PI and PT."
+  },
+  "lookup": true
+ },
+ {
+  "id": "transport-0019-d",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A horizontal curve has a radius of 1,500 ft and a deflection angle of 36°. The PI is at station 86+40. What is the station of the PC? Enter it in feet, so that station 12+50 is entered as 1,250.",
+  "answer": {
+   "value": 8152.62,
+   "tolerance": 0.001,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "The PC lies one tangent length back from the PI, and T = R tan(I / 2). Stations are 100 ft units, so work in feet and convert at the end.",
+  "solution": "T = R tan(I / 2) = 1,500 × tan(18°) = 487.38 ft.\n\nStation 86+40 is 8,640 ft. PC = PI - T = 8,640 - 487.38 = 8,152.62 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "horizontal curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0019",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 186",
+   "svg": "<path d='M70 110 A421 421 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='32' y1='122' x2='200' y2='68' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='368' y1='122' x2='200' y2='68' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='89' y2='167' stroke='#00242E'/><line x1='330' y1='110' x2='311' y2='167' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='60' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 1,500 ft, deflection angle 36°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
+   "alt": "A horizontal circular curve of radius 1,500 ft with a deflection angle of 36°, showing PC, PI and PT."
+  },
+  "lookup": true
+ },
+ {
+  "id": "transport-0020",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A vertical curve 600 ft long joins a 2.0% grade to a -3.0% grade. The PVC elevation is 450.00 ft. What is the PVT elevation?",
+  "answer": {
+   "value": 447.0,
+   "tolerance": 0.001,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "The PVI sits at half the curve length. From the PVC, follow the first grade for L / 2 to the PVI, then the second grade for L / 2 to the PVT. The curve itself is not needed for the end points.",
+  "solution": "PVI elevation = 450.00 + \\frac{2.0}{100}(300) = 456.00 ft.\n\nPVT elevation = 456.00 + \\frac{-3.0}{100}(300) = 447.00 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "vertical curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0020",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0020-b",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A vertical curve 400 ft long joins a -3.0% grade to a 1.0% grade. The PVC elevation is 612.50 ft. What is the PVT elevation?",
+  "answer": {
+   "value": 608.5,
+   "tolerance": 0.001,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "The PVI sits at half the curve length. From the PVC, follow the first grade for L / 2 to the PVI, then the second grade for L / 2 to the PVT. The curve itself is not needed for the end points.",
+  "solution": "PVI elevation = 612.50 + \\frac{-3.0}{100}(200) = 606.50 ft.\n\nPVT elevation = 606.50 + \\frac{1.0}{100}(200) = 608.50 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "vertical curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0020",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0020-c",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A vertical curve 800 ft long joins a 1.5% grade to a -2.5% grade. The PVC elevation is 300.00 ft. What is the PVT elevation?",
+  "answer": {
+   "value": 296.0,
+   "tolerance": 0.001,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "The PVI sits at half the curve length. From the PVC, follow the first grade for L / 2 to the PVI, then the second grade for L / 2 to the PVT. The curve itself is not needed for the end points.",
+  "solution": "PVI elevation = 300.00 + \\frac{1.5}{100}(400) = 306.00 ft.\n\nPVT elevation = 306.00 + \\frac{-2.5}{100}(400) = 296.00 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "vertical curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0020",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0020-d",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A vertical curve 500 ft long joins a 4.0% grade to a -1.0% grade. The PVC elevation is 128.40 ft. What is the PVT elevation?",
+  "answer": {
+   "value": 135.9,
+   "tolerance": 0.001,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "The PVI sits at half the curve length. From the PVC, follow the first grade for L / 2 to the PVI, then the second grade for L / 2 to the PVT. The curve itself is not needed for the end points.",
+  "solution": "PVI elevation = 128.40 + \\frac{4.0}{100}(250) = 138.40 ft.\n\nPVT elevation = 138.40 + \\frac{-1.0}{100}(250) = 135.90 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "vertical curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0020",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0021",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A crest vertical curve joins a +2.0% grade to a -1.5% grade. The required stopping sight distance is 730 ft. Assuming the sight distance is shorter than the curve, what minimum curve length is needed? Use L = A S^{2} / 2,158.",
+  "answer": {
+   "value": 864.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "On a crest, the hill itself blocks the driver's view. For a 3.5 ft eye height and a 2 ft object, with the sight distance shorter than the curve, L = A S^{2} / 2,158, where A is the algebraic difference in grades in percent. Check afterwards that S is less than L.",
+  "solution": "A = 2.0 + 1.5 = 3.5%.\n\nL = \\frac{3.5(730)^{2}}{2,158} = 864 ft. This is longer than 730 ft, so the assumption holds.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "vertical curves",
+     "sight distance"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0021",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+2%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-1.5%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
+   "alt": "A crest vertical curve L = ? ft long joining a +2% grade to a -1.5% grade."
+  },
+  "lookup": true
+ },
+ {
+  "id": "transport-0021-b",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A crest vertical curve joins a +3.0% grade to a -2.0% grade. The required stopping sight distance is 645 ft. Assuming the sight distance is shorter than the curve, what minimum curve length is needed? Use L = A S^{2} / 2,158.",
+  "answer": {
+   "value": 964.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "On a crest, the hill itself blocks the driver's view. For a 3.5 ft eye height and a 2 ft object, with the sight distance shorter than the curve, L = A S^{2} / 2,158, where A is the algebraic difference in grades in percent. Check afterwards that S is less than L.",
+  "solution": "A = 3.0 + 2.0 = 5.0%.\n\nL = \\frac{5.0(645)^{2}}{2,158} = 964 ft. This is longer than 645 ft, so the assumption holds.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "vertical curves",
+     "sight distance"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0021",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+3%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-2%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
+   "alt": "A crest vertical curve L = ? ft long joining a +3% grade to a -2% grade."
+  },
+  "lookup": true
+ },
+ {
+  "id": "transport-0021-c",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A crest vertical curve joins a +1.5% grade to a -2.5% grade. The required stopping sight distance is 570 ft. Assuming the sight distance is shorter than the curve, what minimum curve length is needed? Use L = A S^{2} / 2,158.",
+  "answer": {
+   "value": 602.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "On a crest, the hill itself blocks the driver's view. For a 3.5 ft eye height and a 2 ft object, with the sight distance shorter than the curve, L = A S^{2} / 2,158, where A is the algebraic difference in grades in percent. Check afterwards that S is less than L.",
+  "solution": "A = 1.5 + 2.5 = 4.0%.\n\nL = \\frac{4.0(570)^{2}}{2,158} = 602 ft. This is longer than 570 ft, so the assumption holds.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "vertical curves",
+     "sight distance"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0021",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+1.5%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-2.5%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
+   "alt": "A crest vertical curve L = ? ft long joining a +1.5% grade to a -2.5% grade."
+  },
+  "lookup": true
+ },
+ {
+  "id": "transport-0021-d",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A crest vertical curve joins a +2.5% grade to a -3.5% grade. The required stopping sight distance is 820 ft. Assuming the sight distance is shorter than the curve, what minimum curve length is needed? Use L = A S^{2} / 2,158.",
+  "answer": {
+   "value": 1870.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "On a crest, the hill itself blocks the driver's view. For a 3.5 ft eye height and a 2 ft object, with the sight distance shorter than the curve, L = A S^{2} / 2,158, where A is the algebraic difference in grades in percent. Check afterwards that S is less than L.",
+  "solution": "A = 2.5 + 3.5 = 6.0%.\n\nL = \\frac{6.0(820)^{2}}{2,158} = 1,870 ft. This is longer than 820 ft, so the assumption holds.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "vertical curves",
+     "sight distance"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0021",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+2.5%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-3.5%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
+   "alt": "A crest vertical curve L = ? ft long joining a +2.5% grade to a -3.5% grade."
+  },
+  "lookup": true
+ },
+ {
+  "id": "transport-0022",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A horizontal curve has a degree of curve of 4.0° by the arc definition. What is its radius?",
+  "answer": {
+   "value": 1432.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "By the arc definition, the degree of curve is the central angle subtended by 100 ft of arc. A full circle of 360° has a circumference of 2πR, which gives R = 5,729.58 / D.",
+  "solution": "R = \\frac{5,729.58}{4.0} = 1,432.4 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "horizontal curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0022",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0022-b",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A horizontal curve has a degree of curve of 2.5° by the arc definition. What is its radius?",
+  "answer": {
+   "value": 2291.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "By the arc definition, the degree of curve is the central angle subtended by 100 ft of arc. A full circle of 360° has a circumference of 2πR, which gives R = 5,729.58 / D.",
+  "solution": "R = \\frac{5,729.58}{2.5} = 2,291.8 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "horizontal curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0022",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0022-c",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A horizontal curve has a degree of curve of 6.0° by the arc definition. What is its radius?",
+  "answer": {
+   "value": 954.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "By the arc definition, the degree of curve is the central angle subtended by 100 ft of arc. A full circle of 360° has a circumference of 2πR, which gives R = 5,729.58 / D.",
+  "solution": "R = \\frac{5,729.58}{6.0} = 954.9 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "horizontal curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0022",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0022-d",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A horizontal curve has a degree of curve of 8.0° by the arc definition. What is its radius?",
+  "answer": {
+   "value": 716.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "By the arc definition, the degree of curve is the central angle subtended by 100 ft of arc. A full circle of 360° has a circumference of 2πR, which gives R = 5,729.58 / D.",
+  "solution": "R = \\frac{5,729.58}{8.0} = 716.2 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "horizontal curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0022",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0023",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A freeway carries 3,600 veh/h in one direction on 3 lanes, with a peak hour factor of 0.90 and 10% trucks (passenger car equivalent 2.0). The average speed is 65 mph. What is the density?",
+  "answer": {
+   "value": 22.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "pc/mi/ln"
+  },
+  "eli5": "Convert the volume to an equivalent passenger car flow rate per lane: divide by the peak hour factor, the number of lanes in that direction and the heavy vehicle factor, f_{HV} = 1 / (1 + P_{T}(E_{T} - 1)). Density is flow rate over speed.",
+  "solution": "f_{HV} = \\frac{1}{1 + 0.10(2.0 - 1)} = 0.9091.\n\nv_{p} = \\frac{3,600}{0.90(3)(0.9091)} = 1,467 pc/h/ln.\n\nDensity = \\frac{1,467}{65} = 22.6 pc/mi/ln.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "traffic flow relationships",
+     "level of service"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0023",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0023-b",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A freeway carries 4,200 veh/h in one direction on 3 lanes, with a peak hour factor of 0.92 and 5% trucks (passenger car equivalent 2.0). The average speed is 60 mph. What is the density?",
+  "answer": {
+   "value": 26.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "pc/mi/ln"
+  },
+  "eli5": "Convert the volume to an equivalent passenger car flow rate per lane: divide by the peak hour factor, the number of lanes in that direction and the heavy vehicle factor, f_{HV} = 1 / (1 + P_{T}(E_{T} - 1)). Density is flow rate over speed.",
+  "solution": "f_{HV} = \\frac{1}{1 + 0.05(2.0 - 1)} = 0.9524.\n\nv_{p} = \\frac{4,200}{0.92(3)(0.9524)} = 1,598 pc/h/ln.\n\nDensity = \\frac{1,598}{60} = 26.6 pc/mi/ln.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "traffic flow relationships",
+     "level of service"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0023",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0023-c",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A freeway carries 2,400 veh/h in one direction on 2 lanes, with a peak hour factor of 0.88 and 8% trucks (passenger car equivalent 2.0). The average speed is 62 mph. What is the density?",
+  "answer": {
+   "value": 23.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "pc/mi/ln"
+  },
+  "eli5": "Convert the volume to an equivalent passenger car flow rate per lane: divide by the peak hour factor, the number of lanes in that direction and the heavy vehicle factor, f_{HV} = 1 / (1 + P_{T}(E_{T} - 1)). Density is flow rate over speed.",
+  "solution": "f_{HV} = \\frac{1}{1 + 0.08(2.0 - 1)} = 0.9259.\n\nv_{p} = \\frac{2,400}{0.88(2)(0.9259)} = 1,473 pc/h/ln.\n\nDensity = \\frac{1,473}{62} = 23.8 pc/mi/ln.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "traffic flow relationships",
+     "level of service"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0023",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0023-d",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A freeway carries 5,400 veh/h in one direction on 4 lanes, with a peak hour factor of 0.95 and 12% trucks (passenger car equivalent 2.0). The average speed is 58 mph. What is the density?",
+  "answer": {
+   "value": 27.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "pc/mi/ln"
+  },
+  "eli5": "Convert the volume to an equivalent passenger car flow rate per lane: divide by the peak hour factor, the number of lanes in that direction and the heavy vehicle factor, f_{HV} = 1 / (1 + P_{T}(E_{T} - 1)). Density is flow rate over speed.",
+  "solution": "f_{HV} = \\frac{1}{1 + 0.12(2.0 - 1)} = 0.8929.\n\nv_{p} = \\frac{5,400}{0.95(4)(0.8929)} = 1,592 pc/h/ln.\n\nDensity = \\frac{1,592}{58} = 27.4 pc/mi/ln.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "traffic flow relationships",
+     "level of service"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0023",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0024",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A road carries 12,000 vehicles per day. Traffic grows at 2.0% per year. What daily volume is expected in 20 years?",
+  "answer": {
+   "value": 17831.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "veh/day"
+  },
+  "eli5": "Traffic growth compounds like interest: future volume = present volume × (1 + rate)^{years}. The factor is the single payment compound amount factor from engineering economics.",
+  "solution": "V = 12,000 × (1 + 0.020)^{20} = 12,000 × 1.4859 = 17,831 vehicles per day.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "single payment compound amount"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0024",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0024-b",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A road carries 8,500 vehicles per day. Traffic grows at 3.0% per year. What daily volume is expected in 15 years?",
+  "answer": {
+   "value": 13243.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "veh/day"
+  },
+  "eli5": "Traffic growth compounds like interest: future volume = present volume × (1 + rate)^{years}. The factor is the single payment compound amount factor from engineering economics.",
+  "solution": "V = 8,500 × (1 + 0.030)^{15} = 8,500 × 1.5580 = 13,243 vehicles per day.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "single payment compound amount"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0024",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0024-c",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A road carries 24,000 vehicles per day. Traffic grows at 1.5% per year. What daily volume is expected in 25 years?",
+  "answer": {
+   "value": 34823.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "veh/day"
+  },
+  "eli5": "Traffic growth compounds like interest: future volume = present volume × (1 + rate)^{years}. The factor is the single payment compound amount factor from engineering economics.",
+  "solution": "V = 24,000 × (1 + 0.015)^{25} = 24,000 × 1.4509 = 34,823 vehicles per day.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "single payment compound amount"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0024",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0024-d",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A road carries 5,200 vehicles per day. Traffic grows at 4.0% per year. What daily volume is expected in 10 years?",
+  "answer": {
+   "value": 7697.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "veh/day"
+  },
+  "eli5": "Traffic growth compounds like interest: future volume = present volume × (1 + rate)^{years}. The factor is the single payment compound amount factor from engineering economics.",
+  "solution": "V = 5,200 × (1 + 0.040)^{10} = 5,200 × 1.4802 = 7,697 vehicles per day.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "single payment compound amount"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0024",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0025",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A zone produces 1,000 trips. Three destination zones have attractions of 300, 500 and 200 and friction factors of 5, 2 and 10. Using the gravity model with K = 1, how many trips go to the first destination?",
+  "answer": {
+   "value": 333.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "trips"
+  },
+  "eli5": "The gravity model splits a zone's trip productions among destinations in proportion to each destination's attractions times its friction factor. The shares sum to 1.",
+  "solution": "A × F for each zone: 1,500, 1,000 and 2,000; sum = 4,500.\n\nTrips to the first = 1,000 × \\frac{1,500}{4,500} = 333.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "gravity model"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0025",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0025-b",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A zone produces 2,400 trips. Three destination zones have attractions of 500, 800 and 300 and friction factors of 2, 6 and 4. Using the gravity model with K = 1, how many trips go to the first destination?",
+  "answer": {
+   "value": 343.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "trips"
+  },
+  "eli5": "The gravity model splits a zone's trip productions among destinations in proportion to each destination's attractions times its friction factor. The shares sum to 1.",
+  "solution": "A × F for each zone: 1,000, 4,800 and 1,200; sum = 7,000.\n\nTrips to the first = 2,400 × \\frac{1,000}{7,000} = 343.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "gravity model"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0025",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0025-c",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A zone produces 600 trips. Three destination zones have attractions of 200, 400 and 100 and friction factors of 10, 5 and 2. Using the gravity model with K = 1, how many trips go to the first destination?",
+  "answer": {
+   "value": 286.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "trips"
+  },
+  "eli5": "The gravity model splits a zone's trip productions among destinations in proportion to each destination's attractions times its friction factor. The shares sum to 1.",
+  "solution": "A × F for each zone: 2,000, 2,000 and 200; sum = 4,200.\n\nTrips to the first = 600 × \\frac{2,000}{4,200} = 286.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "gravity model"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0025",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "transport-0025-d",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A zone produces 1,500 trips. Three destination zones have attractions of 400, 600 and 250 and friction factors of 4, 8 and 3. Using the gravity model with K = 1, how many trips go to the first destination?",
+  "answer": {
+   "value": 336.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "trips"
+  },
+  "eli5": "The gravity model splits a zone's trip productions among destinations in proportion to each destination's attractions times its friction factor. The shares sum to 1.",
+  "solution": "A × F for each zone: 1,600, 4,800 and 750; sum = 7,150.\n\nTrips to the first = 1,500 × \\frac{1,600}{7,150} = 336.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "gravity model"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0025",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  }
 ]

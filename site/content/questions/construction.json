@@ -2423,5 +2423,549 @@
   "version": 4,
   "versions": 4,
   "lookup": false
+ },
+ {
+  "id": "construction-0017",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A slab is 60 ft long, 30 ft wide and 6 in thick. How many cubic yards of concrete does it contain?",
+  "answer": {
+   "value": 33.33,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "yd^{3}"
+  },
+  "eli5": "Work in feet, then convert. A thickness in inches is divided by 12, and cubic feet are divided by 27 to give cubic yards.",
+  "solution": "Volume = 60 × 30 × \\frac{6}{12} = 900.0 ft^{3}.\n\n\\frac{900.0}{27} = 33.33 yd^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0017",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0017-b",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A slab is 40 ft long, 25 ft wide and 8 in thick. How many cubic yards of concrete does it contain?",
+  "answer": {
+   "value": 24.69,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "yd^{3}"
+  },
+  "eli5": "Work in feet, then convert. A thickness in inches is divided by 12, and cubic feet are divided by 27 to give cubic yards.",
+  "solution": "Volume = 40 × 25 × \\frac{8}{12} = 666.7 ft^{3}.\n\n\\frac{666.7}{27} = 24.69 yd^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0017",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0017-c",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A slab is 100 ft long, 50 ft wide and 5 in thick. How many cubic yards of concrete does it contain?",
+  "answer": {
+   "value": 77.16,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "yd^{3}"
+  },
+  "eli5": "Work in feet, then convert. A thickness in inches is divided by 12, and cubic feet are divided by 27 to give cubic yards.",
+  "solution": "Volume = 100 × 50 × \\frac{5}{12} = 2,083.3 ft^{3}.\n\n\\frac{2,083.3}{27} = 77.16 yd^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0017",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0017-d",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A slab is 24 ft long, 18 ft wide and 4 in thick. How many cubic yards of concrete does it contain?",
+  "answer": {
+   "value": 5.33,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "yd^{3}"
+  },
+  "eli5": "Work in feet, then convert. A thickness in inches is divided by 12, and cubic feet are divided by 27 to give cubic yards.",
+  "solution": "Volume = 24 × 18 × \\frac{4}{12} = 144.0 ft^{3}.\n\n\\frac{144.0}{27} = 5.33 yd^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0017",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0018",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A floor has 12 steel beams, each 30 ft long, of a shape that weighs 50 lb per foot. What is the total weight of the beams in tons?",
+  "answer": {
+   "value": 9.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "tons"
+  },
+  "eli5": "Steel is taken off by weight: weight per foot times length times the number of pieces. Divide pounds by 2,000 for short tons.",
+  "solution": "12 × 30 ft × 50 lb/ft = 18,000 lb.\n\n\\frac{18,000}{2,000} = 9.00 tons.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0018",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0018-b",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A floor has 8 steel beams, each 25 ft long, of a shape that weighs 84 lb per foot. What is the total weight of the beams in tons?",
+  "answer": {
+   "value": 8.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "tons"
+  },
+  "eli5": "Steel is taken off by weight: weight per foot times length times the number of pieces. Divide pounds by 2,000 for short tons.",
+  "solution": "8 × 25 ft × 84 lb/ft = 16,800 lb.\n\n\\frac{16,800}{2,000} = 8.40 tons.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0018",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0018-c",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A floor has 20 steel beams, each 40 ft long, of a shape that weighs 26 lb per foot. What is the total weight of the beams in tons?",
+  "answer": {
+   "value": 10.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "tons"
+  },
+  "eli5": "Steel is taken off by weight: weight per foot times length times the number of pieces. Divide pounds by 2,000 for short tons.",
+  "solution": "20 × 40 ft × 26 lb/ft = 20,800 lb.\n\n\\frac{20,800}{2,000} = 10.40 tons.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0018",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0018-d",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A floor has 15 steel beams, each 28 ft long, of a shape that weighs 35 lb per foot. What is the total weight of the beams in tons?",
+  "answer": {
+   "value": 7.35,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "tons"
+  },
+  "eli5": "Steel is taken off by weight: weight per foot times length times the number of pieces. Divide pounds by 2,000 for short tons.",
+  "solution": "15 × 28 ft × 35 lb/ft = 14,700 lb.\n\n\\frac{14,700}{2,000} = 7.35 tons.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0018",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0019",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "On a drawing at a scale of 3/4 in = 1 ft, a room measures 9.00 in by 6.00 in. What is the actual floor area?",
+  "answer": {
+   "value": 96.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft^{2}"
+  },
+  "eli5": "Convert each drawing dimension to its real length before multiplying. At 3/4 in to the foot, real feet = drawing inches / 0.75.",
+  "solution": "Length = \\frac{9.00}{0.75} = 12.00 ft. Width = \\frac{6.00}{0.75} = 8.00 ft.\n\nArea = 12.00 × 8.00 = 96.0 ft^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0019",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0019-b",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "On a drawing at a scale of 3/4 in = 1 ft, a room measures 12.00 in by 9.00 in. What is the actual floor area?",
+  "answer": {
+   "value": 192.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft^{2}"
+  },
+  "eli5": "Convert each drawing dimension to its real length before multiplying. At 3/4 in to the foot, real feet = drawing inches / 0.75.",
+  "solution": "Length = \\frac{12.00}{0.75} = 16.00 ft. Width = \\frac{9.00}{0.75} = 12.00 ft.\n\nArea = 16.00 × 12.00 = 192.0 ft^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0019",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0019-c",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "On a drawing at a scale of 3/4 in = 1 ft, a room measures 7.50 in by 6.00 in. What is the actual floor area?",
+  "answer": {
+   "value": 80.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft^{2}"
+  },
+  "eli5": "Convert each drawing dimension to its real length before multiplying. At 3/4 in to the foot, real feet = drawing inches / 0.75.",
+  "solution": "Length = \\frac{7.50}{0.75} = 10.00 ft. Width = \\frac{6.00}{0.75} = 8.00 ft.\n\nArea = 10.00 × 8.00 = 80.0 ft^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0019",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0019-d",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "On a drawing at a scale of 3/4 in = 1 ft, a room measures 15.00 in by 10.50 in. What is the actual floor area?",
+  "answer": {
+   "value": 280.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft^{2}"
+  },
+  "eli5": "Convert each drawing dimension to its real length before multiplying. At 3/4 in to the foot, real feet = drawing inches / 0.75.",
+  "solution": "Length = \\frac{15.00}{0.75} = 20.00 ft. Width = \\frac{10.50}{0.75} = 14.00 ft.\n\nArea = 20.00 × 14.00 = 280.0 ft^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0019",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0020",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Erecting steel takes 8.0 labour-hours per ton. A job has 45 tons, the average wage is $42 per hour and the labour burden is 35%. What is the labour cost?",
+  "answer": {
+   "value": 20412.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Labour-hours are productivity times quantity. Cost is hours times wage, increased by the labour burden that covers payroll taxes, insurance and benefits.",
+  "solution": "Labour-hours = 8.0 × 45 = 360.\n\nBase wages = 360 × 42 = $15,120.\n\nWith burden: 15,120 × 1.35 = $20,412.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0020",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0020-b",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Erecting steel takes 6.0 labour-hours per ton. A job has 120 tons, the average wage is $38 per hour and the labour burden is 40%. What is the labour cost?",
+  "answer": {
+   "value": 38304.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Labour-hours are productivity times quantity. Cost is hours times wage, increased by the labour burden that covers payroll taxes, insurance and benefits.",
+  "solution": "Labour-hours = 6.0 × 120 = 720.\n\nBase wages = 720 × 38 = $27,360.\n\nWith burden: 27,360 × 1.40 = $38,304.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0020",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0020-c",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Erecting steel takes 10.0 labour-hours per ton. A job has 30 tons, the average wage is $45 per hour and the labour burden is 30%. What is the labour cost?",
+  "answer": {
+   "value": 17550.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Labour-hours are productivity times quantity. Cost is hours times wage, increased by the labour burden that covers payroll taxes, insurance and benefits.",
+  "solution": "Labour-hours = 10.0 × 30 = 300.\n\nBase wages = 300 × 45 = $13,500.\n\nWith burden: 13,500 × 1.30 = $17,550.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0020",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0020-d",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Erecting steel takes 7.5 labour-hours per ton. A job has 80 tons, the average wage is $40 per hour and the labour burden is 25%. What is the labour cost?",
+  "answer": {
+   "value": 30000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Labour-hours are productivity times quantity. Cost is hours times wage, increased by the labour burden that covers payroll taxes, insurance and benefits.",
+  "solution": "Labour-hours = 7.5 × 80 = 600.\n\nBase wages = 600 × 40 = $24,000.\n\nWith burden: 24,000 × 1.25 = $30,000.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0020",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  }
 ]

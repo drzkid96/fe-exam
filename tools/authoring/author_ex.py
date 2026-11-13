@@ -3,6 +3,7 @@ question bank), and a handbook lookup. Reuses the checked question templates. Ru
 import json, os, re
 import author_v; author_v.DRY[0] = True
 import author_v1, author_v2, author_v3, author_v4, author_v6
+import author_f2
 from author_v import TEMPLATES, NAMES, render, nf, _load
 from author_common import ROOT
 from author_hb import FIND
@@ -57,6 +58,7 @@ for f in sorted(os.listdir(os.path.join(ROOT, 'questions'))):
             if h.get('find'): LOOK.setdefault(q['subtopic'], {}).setdefault((h['section'], h['page']), []).extend(x for x in h['find'] if x not in LOOK[q['subtopic']][(h['section'], h['page'])])
 try: from author_depth import MANUAL
 except ImportError: MANUAL = {}
+for _sp in author_f2.SPECS: E(_sp['base'], **_sp['ex'])
 n = ni = 0; thin = []
 for f in sorted(os.listdir(os.path.join(ROOT, 'guide'))):
     path = os.path.join(ROOT, 'guide', f); g = json.load(open(path))

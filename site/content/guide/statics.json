@@ -94,7 +94,8 @@
    ],
    "pitfalls": [
     "Using the full length of a member as the moment arm when the force is not perpendicular to it.",
-    "Measuring the angle from the wrong axis."
+    "Measuring the angle from the wrong axis.",
+    "Answering with one component when the question asks for the resultant, or the other way round."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -109,12 +110,20 @@
    },
    "ideas": [
     {
+     "title": "Slope triangles instead of angles",
+     "text": "When a direction is given as a slope, such as 3 vertical in 4 horizontal, the components are the force times the side ratios of that triangle: 3/5 and 4/5 of the force. No angle has to be found."
+    },
+    {
      "title": "Resultant",
      "text": "Concurrent forces add as vectors. Resolve each force into x and y components, add the components, then recombine with the Pythagorean theorem. The resultant is always less than the arithmetic sum unless the forces are parallel."
     },
     {
      "title": "Moments",
      "text": "Only the force component perpendicular to the lever arm produces moment: M = F L sin(angle between force and arm). The component along the arm passes through the pivot and contributes nothing."
+    },
+    {
+     "title": "Resolution of a force",
+     "text": "When a direction is given as a slope, the components are the force times the side ratios of the slope triangle. The hypotenuse is the square root of rise squared plus run squared."
     }
    ],
    "examples": [
@@ -143,6 +152,14 @@
       "svg": "<rect x='70' y='104' width='260' height='12' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='70' cy='110' r='9' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='285' y1='56' x2='330' y2='110' stroke='#00574A' stroke-width='3'/><circle cx='330' cy='110' r='5' fill='#00574A'/><text x='279' y='50' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>250 N</text><text x='296' y='100' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>50°</text><line x1='70' y1='138' x2='330' y2='138' stroke='#00242E'/><line x1='70' y1='132' x2='70' y2='144' stroke='#00242E'/><line x1='330' y1='132' x2='330' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>1.2 m</text><text x='56' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>Pivot</text>",
       "alt": "A 1.2 m lever with a 250 N force applied at its end, 50° from the lever axis."
      }
+    },
+    {
+     "family": "statics-0018",
+     "problem": "A 850 N force acts along a line that rises 8 units for every 15 units of horizontal run. What is its horizontal component?",
+     "idea": "When a direction is given as a slope, the components are the force times the side ratios of the slope triangle. The hypotenuse is the square root of rise squared plus run squared.",
+     "steps": "Hypotenuse = \\sqrt{8^{2} + 15^{2}} = 17.\n\nF_{x} = 850 × \\frac{15}{17} = 750.0 N. The vertical component is 850 × \\frac{8}{17} = 400.0 N.",
+     "answer": "750.0 N",
+     "value": 750.0
     }
    ],
    "lookup": [
@@ -164,7 +181,8 @@
     "Add the x components and the y components, keeping signs.",
     "Recombine: magnitude by the Pythagorean theorem, direction by the inverse tangent.",
     "Check the quadrant of the angle against the signs of the components."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "statics-b-lesson",
@@ -184,7 +202,8 @@
     }
    ],
    "pitfalls": [
-    "Changing the size or direction of the force when moving it. Only a couple is added."
+    "Changing the size or direction of the force when moving it. Only a couple is added.",
+    "Placing the resultant of a triangular load at mid-length."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -198,6 +217,14 @@
     "caption": "Only the component of the force perpendicular to the arm produces moment about the pivot."
    },
    "ideas": [
+    {
+     "title": "Distributed loads as single forces",
+     "text": "A uniform load w over a length L acts as w L at mid-length. A triangular load acts as half its peak intensity times its length, one third of the length from the tall end. Split a trapezoidal load into a rectangle and a triangle."
+    },
+    {
+     "title": "Locating the equivalent force",
+     "text": "The single force that replaces a set of loads sits where it gives the same moment: distance = sum of moments / sum of forces. A centroid is the same calculation with areas in place of forces."
+    },
     {
      "title": "Couple",
      "text": "A couple is two equal, opposite, parallel forces. Its moment is force × perpendicular distance between the lines of action, and it is the same about every point, so a couple is a free vector."
@@ -242,7 +269,8 @@
     "Sum the forces; that resultant acts at the chosen point.",
     "Sum the moments of all forces and couples about that point; that is the accompanying couple.",
     "To find a single equivalent force with no couple, place the resultant at a distance equal to the moment divided by the force."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "statics-c-lesson",
@@ -258,7 +286,9 @@
    ],
    "pitfalls": [
     "Leaving a reaction off the free body diagram.",
-    "Replacing a distributed load with a point load at the wrong place. It acts at the centroid of the load diagram."
+    "Replacing a distributed load with a point load at the wrong place. It acts at the centroid of the load diagram.",
+    "Sign slips when moving moment terms across the equals sign. Re-check the sense of each term.",
+    "Using a mass in kilograms as a force. Multiply by 9.81 for newtons and divide by 1,000 for kilonewtons."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -273,6 +303,10 @@
    },
    "ideas": [
     {
+     "title": "Where to take moments",
+     "text": "Take moments about the point that the most unknown forces pass through. Each of them drops out, and one equation often gives the answer directly."
+    },
+    {
      "title": "Equilibrium requirements",
      "text": "A beam in equilibrium satisfies two conditions: the moments about any point sum to zero and the vertical forces sum to zero. Taking moments about A removes A_{y} from the equation and gives B_{y} directly. The support nearer the load carries the larger share."
     },
@@ -283,6 +317,10 @@
     {
      "title": "Concurrent forces",
      "text": "At the joint the vertical components of the two cable tensions must carry the weight: 2 T sin(angle) = W. The flatter the cables, the larger the tension, and it grows without limit as the angle approaches zero."
+    },
+    {
+     "title": "Equilibrium requirements",
+     "text": "A triangular load acts as a single force equal to half its peak intensity times its length, placed one third of the length from the tall end. With the resultant known, take moments about A."
     }
    ],
    "examples": [
@@ -324,6 +362,14 @@
       "svg": "<line x1='40' y1='20' x2='360' y2='20' stroke='#00242E' stroke-width='4'/><line x1='110' y1='20' x2='200' y2='110' stroke='#1B795A' stroke-width='3'/><line x1='290' y1='20' x2='200' y2='110' stroke='#1B795A' stroke-width='3'/><line x1='200' y1='110' x2='200' y2='130' stroke='#00242E' stroke-width='2'/><rect x='176' y='130' width='48' height='30' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>1,500 N</text><text x='144' y='34' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>45°</text><text x='256' y='34' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>45°</text>",
       "alt": "A 1,500 N weight hanging from two cables that each make 45° with the horizontal."
      }
+    },
+    {
+     "family": "statics-0016",
+     "problem": "A simply supported beam spans 7.5 m. It carries a triangular distributed load that is zero at A and rises to 16 kN/m at B. What is the reaction at B?",
+     "idea": "A triangular load acts as a single force equal to half its peak intensity times its length, placed one third of the length from the tall end. With the resultant known, take moments about A.",
+     "steps": "Resultant = \\frac{1}{2}(16)(7.5) = 60 kN, acting 5.00 m from A.\n\nMoments about A: B_{y}(7.5) = 60(5.00), so B_{y} = 40.00 kN. A carries the other 20.00 kN.",
+     "answer": "40.00 kN",
+     "value": 40.0
     }
    ],
    "lookup": [
@@ -333,7 +379,8 @@
      "find": [
       "equilibrium requirements",
       "systems of forces",
-      "concurrent forces"
+      "concurrent forces",
+      "centroid"
      ]
     }
    ],
@@ -344,7 +391,8 @@
     "Take moments about a support to eliminate its reactions and solve for the other.",
     "Sum vertical and horizontal forces for the rest.",
     "Check by taking moments about a different point."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "statics-d-lesson",
@@ -365,7 +413,8 @@
    ],
    "pitfalls": [
     "Assuming the wrong sense and not correcting the sign: a negative answer means the opposite of what you assumed.",
-    "Cutting more than three unknown members in a section."
+    "Cutting more than three unknown members in a section.",
+    "Forgetting that a diagonal member carries horizontal force at a joint as well as vertical."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -379,6 +428,14 @@
     "caption": "A simple truss. Find the reactions first, then work joint by joint or cut a section."
    },
    "ideas": [
+    {
+     "title": "Force triangles match geometry triangles",
+     "text": "A cable or truss member carries force only along its own line, so the components of its force are in the same ratio as the member's rise, run and length. Use those ratios instead of solving for the angle."
+    },
+    {
+     "title": "Assume tension",
+     "text": "Draw every unknown member force pulling away from the joint. A positive answer is then tension and a negative one compression, with no guessing."
+    },
     {
      "title": "Method of joints",
      "text": "Use the method of joints at a support. Only the inclined member has a vertical component there, so its vertical component must equal the support reaction. The member force is the reaction divided by the sine of the member's angle."
@@ -434,7 +491,8 @@
     "For an interior member, cut through at most three members and take moments about the point where two of them meet.",
     "Assume unknown forces are tension; a negative answer means compression.",
     "Check with the remaining equilibrium equation."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "statics-e-lesson",
@@ -572,6 +630,10 @@
    },
    "ideas": [
     {
+     "title": "Parts that share the axis add directly",
+     "text": "When the parts of a section have their centroids on the axis in question, their moments of inertia add or subtract with no parallel-axis term; a channel about its mid-height is a large rectangle minus a smaller one. The A d^{2} term appears only for parts offset from the axis, and it often dominates."
+    },
+    {
      "title": "Moment of inertia",
      "text": "For a rectangle about its own centroidal axis, I = b h^{3} / 12, where h is the dimension perpendicular to the axis. Depth is cubed, so doubling the depth gives eight times the stiffness."
     },
@@ -625,7 +687,8 @@
     "Add A d^{2} for each part, with d measured from the part's centroid to the section's centroid.",
     "Sum the contributions; subtract those of holes.",
     "Check units of length to the fourth power."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "statics-g-lesson",
@@ -666,12 +729,24 @@
    },
    "ideas": [
     {
+     "title": "Each sliding surface has its own normal force",
+     "text": "With stacked blocks, friction acts on every face that slides. The upper face carries the weight above it; the lower face carries both blocks. Find each normal force separately."
+    },
+    {
+     "title": "A horizontal push on an incline",
+     "text": "A horizontal force on a block on a slope has a component into the surface, so it raises the normal force and with it the friction. Put the axes along and across the slope and solve the two equilibrium equations together."
+    },
+    {
      "title": "Friction",
      "text": "On an incline the weight component along the slope is W sin(angle) and the largest friction force available is (coefficient) × W cos(angle). Sliding is about to start when these are equal, which gives tan(angle) = coefficient of static friction. The weight cancels, so the angle does not depend on it."
     },
     {
      "title": "Friction",
      "text": "The upward component of the rope force reduces the normal force, which reduces the friction available. Write equilibrium in both directions at impending motion: horizontal pull = coefficient × (weight minus vertical pull)."
+    },
+    {
+     "title": "Friction",
+     "text": "Each sliding surface has its own normal force. The top face of the lower block carries the upper block's weight; its bottom face carries both. Friction on both faces opposes the pull."
     }
    ],
    "examples": [
@@ -695,6 +770,14 @@
      "steps": "Normal force: N = 1,000 - P sin 15°.\n\nImpending motion: P cos 15° = 0.30(1,000 - P sin 15°).\n\nP = \\frac{0.30(1,000)}{cos 15° + 0.30 sin 15°} = \\frac{300}{1.044} = 287.5 N.",
      "answer": "287.5 N",
      "value": 287.474302
+    },
+    {
+     "family": "statics-0017",
+     "problem": "A 250 N block rests on a 500 N block on a floor, and a cable holds the upper block in place. The coefficient of static friction is 0.35 between the blocks and 0.25 between the lower block and the floor. What horizontal force starts the lower block moving?",
+     "idea": "Each sliding surface has its own normal force. The top face of the lower block carries the upper block's weight; its bottom face carries both. Friction on both faces opposes the pull.",
+     "steps": "Friction on the top face = 0.35 × 250 = 87.5 N.\n\nFriction on the bottom face = 0.25 × (250 + 500) = 187.5 N.\n\nP = 87.5 + 187.5 = 275.0 N.",
+     "answer": "275.0 N",
+     "value": 275.0
     }
    ],
    "lookup": [
@@ -713,7 +796,8 @@
     "Compute the maximum friction, coefficient times normal force.",
     "Compare the force needed for equilibrium with that maximum, or set them equal if motion is impending.",
     "On an incline, resolve the weight along and perpendicular to the slope."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   }
  ]
 }

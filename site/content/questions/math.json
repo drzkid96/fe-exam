@@ -2838,5 +2838,293 @@
   "version": 4,
   "versions": 4,
   "lookup": true
+ },
+ {
+  "id": "math-0018",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the area enclosed between the line y = 3x and the parabola y = x^{2}?",
+  "answer": {
+   "value": 4.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "square units"
+  },
+  "eli5": "Set the functions equal to find where they cross; those x values are the limits. Integrate the upper function minus the lower one between them.",
+  "solution": "3x = x^{2} at x = 0 and x = 3. Between them the line is on top.\n\nArea = integral from 0 to 3 of (3x - x^{2}) dx = \\frac{3(3)^{2}}{2} - \\frac{(3)^{3}}{3} = 13.50 - 9.00 = 4.50 square units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "integral calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0018",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0018-b",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the area enclosed between the line y = 6x and the parabola y = x^{2}?",
+  "answer": {
+   "value": 36.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "square units"
+  },
+  "eli5": "Set the functions equal to find where they cross; those x values are the limits. Integrate the upper function minus the lower one between them.",
+  "solution": "6x = x^{2} at x = 0 and x = 6. Between them the line is on top.\n\nArea = integral from 0 to 6 of (6x - x^{2}) dx = \\frac{6(6)^{2}}{2} - \\frac{(6)^{3}}{3} = 108.00 - 72.00 = 36.00 square units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "integral calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0018",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0018-c",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the area enclosed between the line y = 2x and the parabola y = x^{2}?",
+  "answer": {
+   "value": 1.33,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "square units"
+  },
+  "eli5": "Set the functions equal to find where they cross; those x values are the limits. Integrate the upper function minus the lower one between them.",
+  "solution": "2x = x^{2} at x = 0 and x = 2. Between them the line is on top.\n\nArea = integral from 0 to 2 of (2x - x^{2}) dx = \\frac{2(2)^{2}}{2} - \\frac{(2)^{3}}{3} = 4.00 - 2.67 = 1.33 square units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "integral calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0018",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0018-d",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the area enclosed between the line y = 4.5x and the parabola y = x^{2}?",
+  "answer": {
+   "value": 15.19,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "square units"
+  },
+  "eli5": "Set the functions equal to find where they cross; those x values are the limits. Integrate the upper function minus the lower one between them.",
+  "solution": "4.5x = x^{2} at x = 0 and x = 4.5. Between them the line is on top.\n\nArea = integral from 0 to 4.5 of (4.5x - x^{2}) dx = \\frac{4.5(4.5)^{2}}{2} - \\frac{(4.5)^{3}}{3} = 45.56 - 30.38 = 15.19 square units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "integral calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0018",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0019",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Each trial of a process succeeds with probability 0.80, independently of the others. In 5 trials, what is the probability of at least 4 successes?",
+  "answer": {
+   "value": 0.7373,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Independent trials with two outcomes and a fixed probability are binomial. 'At least n - 1' means exactly n - 1 or exactly n, so add those two terms.",
+  "solution": "P(exactly 4) = 5 × (0.80)^{4} × (0.20) = 0.4096.\n\nP(exactly 5) = (0.80)^{5} = 0.3277.\n\nSum = 0.7373.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "binomial distribution"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0019",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0019-b",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Each trial of a process succeeds with probability 0.90, independently of the others. In 4 trials, what is the probability of at least 3 successes?",
+  "answer": {
+   "value": 0.9477,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Independent trials with two outcomes and a fixed probability are binomial. 'At least n - 1' means exactly n - 1 or exactly n, so add those two terms.",
+  "solution": "P(exactly 3) = 4 × (0.90)^{3} × (0.10) = 0.2916.\n\nP(exactly 4) = (0.90)^{4} = 0.6561.\n\nSum = 0.9477.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "binomial distribution"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0019",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0019-c",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Each trial of a process succeeds with probability 0.60, independently of the others. In 5 trials, what is the probability of at least 4 successes?",
+  "answer": {
+   "value": 0.337,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Independent trials with two outcomes and a fixed probability are binomial. 'At least n - 1' means exactly n - 1 or exactly n, so add those two terms.",
+  "solution": "P(exactly 4) = 5 × (0.60)^{4} × (0.40) = 0.2592.\n\nP(exactly 5) = (0.60)^{5} = 0.0778.\n\nSum = 0.3370.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "binomial distribution"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0019",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0019-d",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Each trial of a process succeeds with probability 0.70, independently of the others. In 6 trials, what is the probability of at least 5 successes?",
+  "answer": {
+   "value": 0.4202,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Independent trials with two outcomes and a fixed probability are binomial. 'At least n - 1' means exactly n - 1 or exactly n, so add those two terms.",
+  "solution": "P(exactly 5) = 6 × (0.70)^{5} × (0.30) = 0.3025.\n\nP(exactly 6) = (0.70)^{6} = 0.1176.\n\nSum = 0.4202.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "binomial distribution"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0019",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  }
 ]

@@ -84,7 +84,8 @@
     }
    ],
    "pitfalls": [
-    "Mixing up D_{10} and D_{60}: D_{10} is the finer size."
+    "Mixing up D_{10} and D_{60}: D_{10} is the finer size.",
+    "Taking the plastic limit for the plasticity index. PI is the liquid limit minus the plastic limit."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -92,6 +93,14 @@
     "steps": "C_{u} = \\frac{0.9}{0.1} = 9.\n\nC_{c} = \\frac{0.3^{2}}{0.1(0.9)} = 1.0."
    },
    "ideas": [
+    {
+     "title": "Dual symbols",
+     "text": "A coarse-grained soil with 5% to 12% fines gets a dual symbol, such as SW-SM, that reports both its grading and the plasticity of its fines."
+    },
+    {
+     "title": "Well graded or uniform",
+     "text": "A well-graded soil has many sizes, so small grains fill the gaps between large ones and its gradation curve is long and smooth. A uniform soil is mostly one size, like beach sand, and its curve is steep. The No. 200 sieve, 0.075 mm, separates sand from fines."
+    },
     {
      "title": "Plasticity index",
      "text": "The plasticity index is the range of water content over which the soil behaves plastically: PI = LL - PL. With the liquid limit it places a fine-grained soil on the plasticity chart for classification."
@@ -138,7 +147,8 @@
     "With under 5% fines, compute C_{u} and C_{c} to decide well or poorly graded.",
     "With over 12% fines, or for fine soils, use the liquid limit and plasticity index on the plasticity chart.",
     "Write the two-letter symbol."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "geotech-b-lesson",
@@ -177,6 +187,14 @@
     "steps": "With S = 1: e = wG_{s} = 0.30(2.70) = 0.81."
    },
    "ideas": [
+    {
+     "title": "Start with the phase diagram",
+     "text": "Sketch the three phases and fill in what is known, as you would a free-body diagram. Subtract to find the rest, and only then choose a formula. In a saturated soil there is no air, so the volume of voids equals the volume of water."
+    },
+    {
+     "title": "Density of water",
+     "text": "The handbook gives the unit weight of water. For mass-based problems use 1 g/cm^{3} = 1,000 kg/m^{3}."
+    },
     {
      "title": "Water content",
      "text": "Water content is the mass of water divided by the mass of dry solids, so the moist mass is the dry mass times (1 + w). Dividing the moist (bulk) density by (1 + w) therefore gives the dry density."
@@ -234,7 +252,8 @@
     "Fill in what is known, using S e = w G_{s} to connect phases.",
     "Read the wanted ratio from the completed diagram.",
     "Check that saturation is between 0 and 100%."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "geotech-c-lesson",
@@ -268,12 +287,24 @@
    },
    "ideas": [
     {
+     "title": "The compaction curve",
+     "text": "Too dry, and the grains lack the lubrication to pack together. Too wet, and water occupies space the grains could have filled. The peak between is the maximum dry density at the optimum water content, and more compactive effort moves the peak up and toward drier conditions."
+    },
+    {
+     "title": "Relative density is not relative compaction",
+     "text": "Relative compaction is field dry density over the laboratory maximum and is what specifications state. Relative density places a granular soil between its loosest and densest states. Field density is measured with a sand cone or a nuclear gauge."
+    },
+    {
      "title": "Relative compaction",
      "text": "Relative compaction compares the dry unit weight achieved in the field with the laboratory maximum from the Proctor test. Specifications usually require a minimum percentage, often 90% to 95%."
     },
     {
      "title": "Coefficient of permeability",
      "text": "Darcy's law: flow rate = k i A, where the hydraulic gradient i is head loss divided by flow length. In a constant-head test the flow rate is the collected volume divided by time, so k = Q L / (A h t)."
+    },
+    {
+     "title": "Relative density",
+     "text": "Relative density places a granular soil between its loosest and densest states. In terms of dry unit weights, D_{r} = ((field - minimum) / (maximum - minimum)) × (maximum / field). It is not the same as relative compaction, which is simply field over maximum."
     }
    ],
    "examples": [
@@ -292,6 +323,14 @@
      "steps": "Hydraulic gradient i = 45 / 18 = 2.50.\n\nFlow rate = 720 / 300 = 2.40 cm^{3}/s.\n\nk = \\frac{2.40}{2.50 × 40} = 0.024 cm/s.",
      "answer": "0.024 cm/s",
      "value": 0.024
+    },
+    {
+     "family": "geotech-0025",
+     "problem": "A sand has a field dry unit weight of 16.8 kN/m^{3}. Its maximum and minimum dry unit weights are 18.4 and 14.8 kN/m^{3}. What is its relative density?",
+     "idea": "Relative density places a granular soil between its loosest and densest states. In terms of dry unit weights, D_{r} = ((field - minimum) / (maximum - minimum)) × (maximum / field). It is not the same as relative compaction, which is simply field over maximum.",
+     "steps": "D_{r} = \\frac{16.8 - 14.8}{18.4 - 14.8} × \\frac{18.4}{16.8} × 100 = 0.5556 × 1.0952 × 100 = 60.8%.\n\nFor comparison, relative compaction = 16.8 / 18.4 = 91.3%.",
+     "answer": "60.8 %",
+     "value": 60.846561
     }
    ],
    "lookup": [
@@ -301,7 +340,8 @@
      "find": [
       "relative compaction",
       "coefficient of permeability",
-      "constant head"
+      "constant head",
+      "relative density"
      ]
     }
    ],
@@ -312,7 +352,8 @@
     "Convert moist density to dry density by dividing by (1 + water content).",
     "Compare field values with laboratory maxima for compaction control.",
     "Use consistent units for permeability results."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "geotech-d-lesson",
@@ -445,6 +486,10 @@
    },
    "ideas": [
     {
+     "title": "Soil as a fluid scaled by K",
+     "text": "Water presses sideways with its full vertical pressure, K = 1. Soil presses with a fraction of it: the active coefficient is well below 1 and the passive coefficient well above, which is why soil in front of an embedded toe resists strongly once the wall moves into it. The active coefficient can also be written (1 - sin(friction angle)) / (1 + sin(friction angle))."
+    },
+    {
      "title": "Rankine",
      "text": "The Rankine active coefficient is the ratio of horizontal to vertical effective stress when the soil has expanded enough to mobilise its full strength: K_{a} = tan^{2}(45° - friction angle / 2). A stronger soil pushes less on the wall. The passive coefficient is its reciprocal."
     },
@@ -494,7 +539,8 @@
     "Compute each resultant and its height above the base.",
     "Factor of safety against sliding: resisting forces over driving forces.",
     "Factor of safety against overturning: resisting moments over overturning moments about the toe."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "geotech-f-lesson",
@@ -523,12 +569,20 @@
    },
    "ideas": [
     {
+     "title": "Friction angle from one test on sand",
+     "text": "With no cohesion the failure envelope passes through the origin and touches the Mohr circle, so sin(friction angle) = radius / centre = (major - minor principal stress) / (major + minor principal stress)."
+    },
+    {
      "title": "Mohr-Coulomb",
      "text": "The Mohr-Coulomb criterion gives shear strength as a cohesion intercept plus a frictional part that grows with effective normal stress: strength = c' + (normal stress) tan(friction angle)."
     },
     {
      "title": "Unconfined",
      "text": "In an unconfined test the minor principal stress is zero and the major principal stress at failure is q_{u}. The Mohr circle therefore has a radius of q_{u} / 2, which is the undrained shear strength of a saturated clay (friction angle taken as zero)."
+    },
+    {
+     "title": "Mohr-Coulomb",
+     "text": "For a soil with no cohesion the failure envelope passes through the origin and is tangent to the Mohr circle at failure. The geometry gives sin(friction angle) = radius / centre = (major - minor) / (major + minor)."
     }
    ],
    "examples": [
@@ -547,6 +601,14 @@
      "steps": "s_{u} = \\frac{q_{u}}{2} = \\frac{96}{2} = 48 kPa.",
      "answer": "48 kPa",
      "value": 48.0
+    },
+    {
+     "family": "geotech-0026",
+     "problem": "A drained triaxial test on clean sand fails at a cell pressure of 120 kPa and a major principal stress of 400 kPa. What is the friction angle?",
+     "idea": "For a soil with no cohesion the failure envelope passes through the origin and is tangent to the Mohr circle at failure. The geometry gives sin(friction angle) = radius / centre = (major - minor) / (major + minor).",
+     "steps": "sin(friction angle) = \\frac{400 - 120}{400 + 120} = \\frac{280}{520} = 0.5385.\n\nFriction angle = 32.6°.",
+     "answer": "32.6 °",
+     "value": 32.57897
     }
    ],
    "lookup": [
@@ -567,7 +629,8 @@
     "Apply strength = c + normal stress × tan(friction angle).",
     "For unconfined compression, undrained strength is half the compressive strength.",
     "From triaxial data, draw the Mohr circles and read the envelope."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "geotech-g-lesson",
@@ -607,12 +670,20 @@
    },
    "ideas": [
     {
+     "title": "A footing with load and moment",
+     "text": "A moment M on a footing shifts the resultant by e = M / P. The pressure under the two edges is (P / A)(1 ± 6e / B). If e exceeds B / 6 the lighter edge would go into tension, which soil cannot take, so that edge lifts."
+    },
+    {
      "title": "Ultimate bearing capacity",
      "text": "Terzaghi's equation for a strip footing adds three resistances: cohesion (c N_{c}), surcharge from the soil beside the footing (unit weight × depth × N_{q}) and the weight of soil below (half × unit weight × B × N_{gamma}). For clay in undrained loading the third term is zero."
     },
     {
      "title": "Bearing capacity",
      "text": "Allowable bearing pressure is the ultimate capacity divided by the factor of safety. The required area is load divided by allowable pressure, and for a square footing the width is the square root of the area."
+    },
+    {
+     "title": "Bearing capacity",
+     "text": "A moment shifts the resultant by e = M / P. While e is within B / 6, the pressure under the footing is trapezoidal, with edge values (P / B)(1 ± 6e / B). The larger value is at the toe."
     }
    ],
    "examples": [
@@ -636,6 +707,14 @@
       "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>1,500 kN</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = ?</text>",
       "alt": "A footing below the ground surface carrying a column load."
      }
+    },
+    {
+     "family": "geotech-0027",
+     "problem": "A 2.4 m wide strip footing carries a vertical load of 420 kN per metre and a moment of 84 kN·m per metre. What is the maximum bearing pressure?",
+     "idea": "A moment shifts the resultant by e = M / P. While e is within B / 6, the pressure under the footing is trapezoidal, with edge values (P / B)(1 ± 6e / B). The larger value is at the toe.",
+     "steps": "e = \\frac{84}{420} = 0.200 m, which is less than B / 6 = 0.400 m.\n\nq_{max} = \\frac{420}{2.4}(1 + \\frac{6(0.200)}{2.4}) = 175.0 × 1.500 = 262.5 kPa.",
+     "answer": "262.5 kPa",
+     "value": 262.5
     }
    ],
    "lookup": [
@@ -644,7 +723,8 @@
      "page": "259–309",
      "find": [
       "ultimate bearing capacity",
-      "bearing capacity"
+      "bearing capacity",
+      "eccentricity"
      ]
     }
    ],
@@ -655,7 +735,8 @@
     "Apply shape factors for the footing type.",
     "Divide by the factor of safety for allowable pressure.",
     "Size the footing as load over allowable pressure."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "geotech-h-lesson",
@@ -743,12 +824,20 @@
    },
    "ideas": [
     {
+     "title": "Recompression, then virgin compression",
+     "text": "A clay that has carried a higher stress in the past recompresses along a flat slope, C_{r}, until the stress passes its preconsolidation pressure, then follows the steep virgin slope, C_{c}. Locate the starting and final stresses against the preconsolidation pressure to choose the one-term or two-term settlement formula. Common correlations: C_{c} is about 0.009(LL - 10) and C_{r} about C_{c} / 6."
+    },
+    {
      "title": "Compression index",
      "text": "For normally consolidated clay, void ratio falls linearly with the logarithm of effective stress, at slope C_{c}. Settlement is the change in void ratio converted to a change in layer thickness: S = C_{c} H / (1 + e_{0}) × log_{10}(final stress / initial stress)."
     },
     {
      "title": "Time factor",
      "text": "Consolidation time follows t = T_{v} H_{dr}^{2} / c_{v}, where H_{dr} is the longest path water must travel to drain. With drainage at both faces, H_{dr} is half the layer thickness, which makes consolidation four times faster than single drainage."
+    },
+    {
+     "title": "Compression index",
+     "text": "The compression index is the slope of the virgin compression line. For undisturbed clays of low to medium sensitivity it is often estimated from the liquid limit. The recompression index is commonly taken as about one sixth of it."
     }
    ],
    "examples": [
@@ -767,6 +856,14 @@
      "steps": "H_{dr} = 10 / 2 = 5 m.\n\nt = \\frac{T_{v} H_{dr}^{2}}{c_{v}} = \\frac{0.197(5)^{2}}{2.5} = 1.970 years.",
      "answer": "1.970 years",
      "value": 1.97
+    },
+    {
+     "family": "geotech-0028",
+     "problem": "Using the correlation C_{c} = 0.009(LL - 10), what is the compression index of a clay with a liquid limit of 52?",
+     "idea": "The compression index is the slope of the virgin compression line. For undisturbed clays of low to medium sensitivity it is often estimated from the liquid limit. The recompression index is commonly taken as about one sixth of it.",
+     "steps": "C_{c} = 0.009(52 - 10) = 0.378. The recompression index would be about 0.063.",
+     "answer": "0.378",
+     "value": 0.378
     }
    ],
    "lookup": [
@@ -788,7 +885,8 @@
     "Apply the settlement equation for normally or overconsolidated clay.",
     "For time, use t = T_{v} H_{dr}^{2} / c_{v}, with the drainage path halved for double drainage.",
     "Compare settlements at adjacent footings."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "geotech-j-lesson",
@@ -823,12 +921,20 @@
    },
    "ideas": [
     {
+     "title": "A planar slide is a block on an incline",
+     "text": "For a wedge sliding on a plane, the driving force is the weight component down the plane, W sin(angle). The resisting force is friction, W cos(angle) tan(friction angle), plus cohesion acting over the length of the plane like glue."
+    },
+    {
      "title": "Slope failure",
      "text": "For an infinite slope in dry cohesionless soil, the resisting and driving forces on a plane parallel to the surface both scale with the weight, so FS = tan(friction angle) / tan(slope angle). The slope is at the point of failure when it stands at the friction angle."
     },
     {
      "title": "Slope failure",
      "text": "For a circular slip in clay under undrained conditions, take moments about the centre of the circle. The resisting moment is the shear strength acting along the arc at radius R; the driving moment is the weight times its horizontal lever arm."
+    },
+    {
+     "title": "Slope failure",
+     "text": "A planar slide is a block on an incline. The weight component down the plane drives it. Friction from the normal component, plus cohesion acting over the length of the plane, resists it."
     }
    ],
    "examples": [
@@ -852,6 +958,19 @@
      "steps": "Resisting moment = s_{u} × arc length × R = 35(25)(18) = 15,750 kN·m per metre.\n\nDriving moment = W x = 1,800(5.5) = 9,900 kN·m per metre.\n\nFS = \\frac{15,750}{9,900} = 1.59.",
      "answer": "1.59",
      "value": 1.590909
+    },
+    {
+     "family": "geotech-0029",
+     "problem": "A wedge of soil weighing 1,000 kN per metre can slide on a plane 14.0 m long inclined at 28°. The soil has a cohesion of 12 kPa and a friction angle of 26°. What is the factor of safety against sliding?",
+     "idea": "A planar slide is a block on an incline. The weight component down the plane drives it. Friction from the normal component, plus cohesion acting over the length of the plane, resists it.",
+     "steps": "Driving = 1,000 sin 28° = 469.5 kN/m.\n\nResisting = 12(14.0) + 1,000 cos 28° tan 26° = 168.0 + 430.6 = 598.6 kN/m.\n\nFS = \\frac{598.6}{469.5} = 1.28.",
+     "answer": "1.28",
+     "value": 1.275141,
+     "figure": {
+      "viewBox": "0 0 400 180",
+      "svg": "<path d='M87 150 L313 150 L313 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(211 84) rotate(-28)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='131' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>28°</text>",
+      "alt": "A block on an incline at 28° to the horizontal."
+     }
     }
    ],
    "lookup": [
@@ -870,7 +989,8 @@
     "For an infinite slope, apply the ratio of tangents, adjusted for seepage if present.",
     "For a circular slip in clay, compute resisting moment (strength × arc length × radius) over driving moment (weight × lever arm).",
     "Compare the factor of safety with the required value, typically 1.3 to 1.5."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "geotech-k-lesson",

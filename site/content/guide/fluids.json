@@ -100,6 +100,18 @@
    },
    "ideas": [
     {
+     "title": "What a Pitot tube measures",
+     "text": "Water stalls at the mouth of the tube, so its velocity head turns into extra height in the column. The difference between the stagnation and static columns is v^{2} / 2g, and the handbook's Pitot formula is Bernoulli's equation already solved for v."
+    },
+    {
+     "title": "One reading is not the mean",
+     "text": "Flow is slower near the bed and walls, so a single velocity measured mid-stream overstates the mean. A correction factor, or several readings, is needed before multiplying by area."
+    },
+    {
+     "title": "Orifice coefficients",
+     "text": "The discharge coefficient combines contraction of the jet and friction. For a sharp-edged orifice it is about 0.61. The handbook table is listed under the orifice's description, such as sharp-edged or submerged."
+    },
+    {
      "title": "Pitot tube",
      "text": "At the tip of a Pitot tube the flow is brought to rest and its velocity head, V^{2} / 2g, is converted to pressure head. The difference between stagnation and static head is therefore the velocity head."
     },
@@ -148,7 +160,8 @@
     "Convert pressure differences to head of the flowing fluid.",
     "Apply the discharge coefficient.",
     "Check units, especially mm to m in areas."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "fluids-b-lesson",
@@ -186,6 +199,10 @@
     "steps": "Re = \\frac{0.8(0.05)}{4 × 10^{-5}} = 1,000.\n\nThat is below 2,100, so the flow is laminar."
    },
    "ideas": [
+    {
+     "title": "Numbers to know",
+     "text": "Water: 1,000 kg/m^{3}, 9,810 N/m^{3}, 62.4 lb/ft^{3}. Specific weight divided by density is g. A density in g/mL times 1,000 is in kg/m^{3}."
+    },
     {
      "title": "Specific gravity",
      "text": "Specific gravity is the ratio of a liquid's density (or specific weight) to that of water. Multiply by the specific weight of water to get the liquid's specific weight."
@@ -243,7 +260,8 @@
     "Use specific weight = density × g and specific gravity = density / density of water to convert.",
     "For viscosity conversions, divide dynamic by density to get kinematic.",
     "Keep to one unit system throughout."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "fluids-c-lesson",
@@ -274,7 +292,8 @@
    ],
    "pitfalls": [
     "Using the depth to the top of a surface instead of the depth to its centroid.",
-    "Mixing gauge and absolute pressures in one equation."
+    "Mixing gauge and absolute pressures in one equation.",
+    "In the centre of pressure formula, dividing I by y_{c} alone. It is divided by the product y_{c} A."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -288,6 +307,22 @@
     "caption": "Hydrostatic pressure on a vertical gate grows linearly with depth. The resultant acts at two thirds of the depth."
    },
    "ideas": [
+    {
+     "title": "Layered liquids",
+     "text": "Pressure at depth is the sum of density × g × thickness for each layer above. The pressure diagram for a lower layer starts at the pressure of the interface, not at zero."
+    },
+    {
+     "title": "Force on a wall from the pressure diagram",
+     "text": "The force on a vertical wall is the area of its pressure diagram times the wall's width. Split the diagram into rectangles and triangles; a triangle's resultant acts two thirds of the way down from its apex."
+    },
+    {
+     "title": "Centre of pressure on an inclined surface",
+     "text": "Measure along the slope: y_{cp} = y_{c} + I / (y_{c} A), with the moment of inertia taken for the dimension that runs down the slope. Convert between vertical depth and slant distance with the sine of the angle. The shift below the centroid is small for a small gate at depth."
+    },
+    {
+     "title": "Barometers and floating loads",
+     "text": "A barometer column balances atmospheric pressure: p = specific weight × height. A raft can carry a load equal to the weight of water it could displace minus its own weight."
+    },
     {
      "title": "Pressure field in a static liquid",
      "text": "In a fluid at rest, pressure increases linearly with depth: p = (specific weight) × h. Gauge pressure is measured relative to the atmosphere, so it is zero at the free surface."
@@ -303,6 +338,14 @@
     {
      "title": "Buoyancy",
      "text": "Archimedes' principle: a floating body displaces a weight of fluid equal to its own weight. In water, the submerged fraction of the volume equals the body's specific gravity."
+    },
+    {
+     "title": "Pressure field in a static liquid",
+     "text": "Pressure at depth is the sum of specific weight times thickness for each layer above. The lower layer starts from the pressure at the interface, not from zero."
+    },
+    {
+     "title": "Buoyancy",
+     "text": "At the limit the raft is fully submerged and displaces its whole volume of water. The buoyant force then equals the raft's weight plus the cargo, so the cargo is the weight of displaced water minus the weight of the raft."
     }
    ],
    "examples": [
@@ -347,6 +390,22 @@
      "steps": "Weight of block = weight of displaced water, so submerged volume = SG × total volume = 0.70 × 1.5 = 1.050 m^{3}.",
      "answer": "1.050 m^{3}",
      "value": 1.05
+    },
+    {
+     "family": "fluids-0015",
+     "problem": "A tank holds 1.2 m of oil (specific gravity 0.82) floating on 1.8 m of water. What is the gauge pressure on the floor of the tank? Use 9.81 kN/m^{3} for water.",
+     "idea": "Pressure at depth is the sum of specific weight times thickness for each layer above. The lower layer starts from the pressure at the interface, not from zero.",
+     "steps": "Pressure at the interface = 0.82(9.81)(1.2) = 9.65 kPa.\n\nAdd the water: 9.65 + 9.81(1.8) = 27.31 kPa.",
+     "answer": "27.31 kPa",
+     "value": 27.31104
+    },
+    {
+     "family": "fluids-0017",
+     "problem": "A timber raft has a volume of 2.8 m^{3} and a specific gravity of 0.62. What is the largest cargo weight it can carry in fresh water before it is fully submerged?",
+     "idea": "At the limit the raft is fully submerged and displaces its whole volume of water. The buoyant force then equals the raft's weight plus the cargo, so the cargo is the weight of displaced water minus the weight of the raft.",
+     "steps": "Buoyant force when submerged = 9.81(2.8) = 27.47 kN.\n\nRaft weight = 0.62(9.81)(2.8) = 17.03 kN.\n\nCargo = 27.47 - 17.03 = 10.44 kN.",
+     "answer": "10.44 kN",
+     "value": 10.43784
     }
    ],
    "lookup": [
@@ -370,7 +429,8 @@
     "Locate the centre of pressure with the handbook formula, or as the centroid of the pressure diagram.",
     "For buoyancy, equate the weight of the body to the weight of displaced fluid.",
     "State whether pressures are gauge or absolute."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "fluids-d-lesson",
@@ -401,7 +461,8 @@
    ],
    "pitfalls": [
     "Forgetting that halving the diameter quarters the area and quadruples the velocity.",
-    "Putting a head loss on the wrong side of the energy equation."
+    "Putting a head loss on the wrong side of the energy equation.",
+    "Using p / density where the pressure head p / specific weight is needed."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -415,6 +476,14 @@
     "caption": "Continuity: the flow rate A V is the same at both sections, so the narrower section has the higher velocity and the lower pressure."
    },
    "ideas": [
+    {
+     "title": "Use gauge pressure in the energy equation",
+     "text": "Atmospheric pressure appears on both sides and cancels, so work in gauge pressure. An outlet open to the air is at zero. Put the datum at the lower point so one elevation term vanishes."
+    },
+    {
+     "title": "Thrust on a pipe bend",
+     "text": "The pressure force p A acts along the pipe at each end of a bend. Because the two act in different directions they leave a resultant, 2 p A sin(angle / 2) when velocities are low, which a thrust block must resist. The block's bearing area is the thrust divided by the allowable soil pressure."
+    },
     {
      "title": "Continuity equation",
      "text": "Continuity for an incompressible fluid: the flow rate A V is the same at every section. Area scales with diameter squared, so velocity scales with the inverse square of the diameter ratio."
@@ -434,6 +503,10 @@
     {
      "title": "Impulse-momentum principle",
      "text": "The momentum equation gives the force on the fluid as mass flow rate times the change in velocity. In the jet's original direction the velocity changes from V to V cos(angle), so the vane feels (density)(Q)(V)(1 - cos(angle)). A flat plate is the 90° case, and a full reversal at 180° doubles it."
+    },
+    {
+     "title": "Pipe bends",
+     "text": "The pressure force p A acts along the pipe axis at each end of the bend. The two are equal in size but differ in direction, leaving a resultant of 2 p A sin(angle / 2) that a thrust block must resist."
     }
    ],
    "examples": [
@@ -481,6 +554,14 @@
      "steps": "Q = A V = 0.00332 × 16 = 0.0531 m^{3}/s.\n\nF_{x} = (density) Q V (1 - cos 75°) = 1,000(0.0531)(16)(1 - (0.259)) = 630 N.",
      "answer": "630 N",
      "value": 629.623329
+    },
+    {
+     "family": "fluids-0016",
+     "problem": "A horizontal 250 mm pipe bend turns the flow through 60.0°. The pressure is 450 kPa and velocities are low enough to ignore the momentum change. What is the resultant thrust on the bend?",
+     "idea": "The pressure force p A acts along the pipe axis at each end of the bend. The two are equal in size but differ in direction, leaving a resultant of 2 p A sin(angle / 2) that a thrust block must resist.",
+     "steps": "A = \\frac{π(0.250)^{2}}{4} = 0.04909 m^{2}, so p A = 22.09 kN.\n\nThrust = 2(22.09) sin(30.00°) = 22.09 kN.",
+     "answer": "22.09 kN",
+     "value": 22.089323
     }
    ],
    "lookup": [
@@ -494,7 +575,8 @@
       "impulse-momentum principle",
       "Darcy-Weisbach",
       "head loss",
-      "deflectors and blades"
+      "deflectors and blades",
+      "pipe bends"
      ]
     }
    ],
@@ -505,7 +587,8 @@
     "Write the energy equation between the sections, including pump head and losses.",
     "Solve for the unknown head, pressure or flow.",
     "For forces, apply the momentum equation to a control volume with pressures and velocities at its faces."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   }
  ]
 }

@@ -965,7 +965,7 @@ function guideSection(s) {
     exs.map((x, i) => exampleHTML(x, exs.length > 1 ? i + 1 : 0)).join('') +
     ((s.pitfalls || []).length ? '<div><h3>Common mistakes</h3><ul>' + s.pitfalls.map(p => '<li>' + Core.richInline(p) + '</li>').join('') + '</ul></div>' : '') +
     ((s.lookup || []).length ? '<div><h3>Check in the handbook</h3><ul>' + s.lookup.map(l => '<li>FE Reference Handbook' + (ed ? ' ' + esc(ed) : '') + ', <strong>' + esc(l.section) + '</strong>, pages ' + esc(l.page) + '. Search the handbook for ' + l.find.map(t => '<strong>' + esc(t) + '</strong>').join(', ') + '.</li>').join('') + '</ul>' + (hbLink() ? '<p>' + hbLink() + '</p>' : '') + '</div>' : '') +
-    ((s.read || []).length ? '<div><h3>Where to read</h3><ul>' + s.read.map(r => '<li><strong>' + esc(r.source) + ':</strong> ' + esc(r.where) + '</li>').join('') + '</ul></div>' : '') + askHTML('g:' + s.id) + '</div>';
+    ((s.read || []).length ? '<div><h3>Where to read</h3><ul>' + s.read.map(r => '<li><strong>' + esc(r.source) + ':</strong> ' + esc(r.where) + '</li>').join('') + '</ul></div>' : '') + (s.credit ? '<p class="hint">' + esc(s.credit) + '</p>' : '') + askHTML('g:' + s.id) + '</div>';
 }
 
 /* ---------- Explain further with Claude ----------

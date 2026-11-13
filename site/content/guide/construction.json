@@ -70,10 +70,28 @@
    "body": "Project administration is the paperwork and relationships that hold a job together. The delivery method sets who contracts with whom. In design-bid-build the owner hires a designer, then bids the finished design to contractors. In design-build one entity does both. With a construction manager at risk, a builder advises during design and then guarantees a price.\n\nThe contract documents are the agreement, the general and special conditions, the drawings and the specifications. Bonds protect the owner: a bid bond, a performance bond and a payment bond. Changes go through change orders, and payment follows measured progress with retainage held back until completion.",
    "formulas": [],
    "pitfalls": [
-    "Confusing a performance bond (the work gets finished) with a payment bond (subcontractors and suppliers get paid)."
+    "Confusing a performance bond (the work gets finished) with a payment bond (subcontractors and suppliers get paid).",
+    "On select-all items, judging the list as a whole. Decide each option on its own.",
+    "Reading indemnification as covering any claim at all. It is tied to loss caused by the other party's negligence."
    ],
    "updated": "2026-11-13",
    "ideas": [
+    {
+     "title": "Who contracts with whom",
+     "text": "In design-bid-build the owner holds separate contracts with the engineer, the contractor and usually the testing agency. The contractor holds the subcontracts and supply contracts. An inspector paid by the contractor would have a conflict of interest, which is why the owner hires the inspection."
+    },
+    {
+     "title": "Delivery method is not pricing",
+     "text": "How the work is delivered (design-bid-build, design-build, construction manager) is a separate choice from how it is paid for (lump sum, unit price, cost plus)."
+    },
+    {
+     "title": "Why design-build is faster",
+     "text": "Construction of early work such as foundations can start while later work is still being designed. The price of that speed is that there is no finished design to bid, so there is no true lowest bid."
+    },
+    {
+     "title": "Retainage and lien releases",
+     "text": "Retainage, commonly 5% to 10% of each payment, keeps the contractor engaged through the punch list. Lien releases are collected before final payment because an unpaid subcontractor can place a lien on the owner's property."
+    },
     {
      "title": "Delivery methods",
      "text": "Design-bid-build: the owner holds separate contracts with the designer and the contractor, in sequence. Design-build: one entity holds a single contract for both. Construction manager at risk: the manager commits to a guaranteed maximum price and holds the trade contracts. Agency construction management: the manager only advises."
@@ -103,7 +121,8 @@
     "Identify the document that governs the question.",
     "Match the risk to the bond or insurance that covers it.",
     "Place the event in the project sequence from bid to closeout."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "construction-b-lesson",
@@ -136,6 +155,18 @@
     "steps": "Trips per hour = \\frac{45}{6} = 7.5.\n\nProduction = 15(7.5) = 112.5 m^{3}/h."
    },
    "ideas": [
+    {
+     "title": "A loader and its trucks",
+     "text": "Time to fill a truck is its capacity divided by the loading rate. A truck's cycle is fill plus haul, dump and return. The fleet moves (number of trucks × capacity × 60) / cycle time in minutes per hour, and can never beat the loader's own rate."
+    },
+    {
+     "title": "Erosion and sediment control",
+     "text": "Silt fence, check dams, mulch, a stabilised entrance and a concrete washout keep sediment and wash water on the site during construction. They are temporary measures, distinct from the permanent stormwater system."
+    },
+    {
+     "title": "Trench safety",
+     "text": "OSHA requires a protective system (sloping, shoring or a shield) for trenches 5 ft deep or more unless they are in stable rock, and a competent person must inspect the excavation."
+    },
     {
      "title": "",
      "text": "Equipment production = volume per cycle × cycles per hour × efficiency. The efficiency factor (working minutes per 60) accounts for delays, operator breaks and repositioning."
@@ -191,7 +222,8 @@
     "Convert volumes between bank, loose and compacted with swell and shrinkage factors.",
     "Balance trucks to loader as truck cycle time over loading time.",
     "Divide the quantity by production for duration."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "construction-c-lesson",
@@ -221,7 +253,8 @@
     }
    ],
    "pitfalls": [
-    "Swapping PV and AC between the two indexes."
+    "Swapping PV and AC between the two indexes.",
+    "Counting an activity's whole budget as earned when it is only partly complete."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -235,6 +268,14 @@
     "caption": "An activity-on-node network. The longest path, A-C-D, is critical; B has float."
    },
    "ideas": [
+    {
+     "title": "The merge rule",
+     "text": "Where paths join on the forward pass, an activity's early start is the largest early finish among its predecessors. On the backward pass, an activity's late finish is the smallest late start among its successors."
+    },
+    {
+     "title": "Compute earned value first",
+     "text": "For each activity, earned value is percent complete times its budget. Both variances subtract from that total: schedule variance takes away the planned value and cost variance takes away the actual cost. An index below 1 is unfavourable."
+    },
     {
      "title": "CPM",
      "text": "In the critical path method the longest path through the network sets the project duration, and activities on it have zero float. Total float is the time an activity can slip without delaying the project: late start minus early start."
@@ -298,7 +339,8 @@
     "Backward pass: late start = late finish - duration; a predecessor's late finish is the smallest late start of its successors.",
     "Total float = late start - early start.",
     "For earned value, compute SV = EV - PV, CV = EV - AC, SPI = EV / PV, CPI = EV / AC."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "construction-d-lesson",
@@ -332,6 +374,14 @@
    },
    "ideas": [
     {
+     "title": "Takeoff habits",
+     "text": "Measure walls and wall footings along their centreline perimeter and slabs by their inside dimensions, and remember the isolated footings. Concrete in cubic feet divided by 27 gives cubic yards. Steel is weight per foot times length times the number of pieces, divided by 2,000 for tons."
+    },
+    {
+     "title": "Labour cost",
+     "text": "Man-hours are the productivity (hours per unit) times the quantity. Cost is man-hours times the wage, increased by the labour burden for taxes, insurance and benefits."
+    },
+    {
      "title": "",
      "text": "Quantity takeoff for concrete is the neat volume from the drawings, increased by a waste allowance for spillage, over-excavation and uneven subgrade. Convert the thickness to metres first."
     },
@@ -342,6 +392,18 @@
     {
      "title": "",
      "text": "Formwork is measured as contact area, the surface of concrete that touches the forms. A wall has two faces, so the contact area is 2 × length × height (ends ignored here)."
+    },
+    {
+     "title": "",
+     "text": "Work in feet, then convert. A thickness in inches is divided by 12, and cubic feet are divided by 27 to give cubic yards."
+    },
+    {
+     "title": "",
+     "text": "Steel is taken off by weight: weight per foot times length times the number of pieces. Divide pounds by 2,000 for short tons."
+    },
+    {
+     "title": "",
+     "text": "Labour-hours are productivity times quantity. Cost is hours times wage, increased by the labour burden that covers payroll taxes, insurance and benefits."
     }
    ],
    "examples": [
@@ -368,6 +430,30 @@
      "steps": "Contact area = 2 × 32 × 4.5 = 288 m^{2}.",
      "answer": "288 m^{2}",
      "value": 288.0
+    },
+    {
+     "family": "construction-0017",
+     "problem": "A slab is 80 ft long, 36 ft wide and 7 in thick. How many cubic yards of concrete does it contain?",
+     "idea": "Work in feet, then convert. A thickness in inches is divided by 12, and cubic feet are divided by 27 to give cubic yards.",
+     "steps": "Volume = 80 × 36 × \\frac{7}{12} = 1,680.0 ft^{3}.\n\n\\frac{1,680.0}{27} = 62.22 yd^{3}.",
+     "answer": "62.22 yd^{3}",
+     "value": 62.222222
+    },
+    {
+     "family": "construction-0018",
+     "problem": "A floor has 18 steel beams, each 32 ft long, of a shape that weighs 44 lb per foot. What is the total weight of the beams in tons?",
+     "idea": "Steel is taken off by weight: weight per foot times length times the number of pieces. Divide pounds by 2,000 for short tons.",
+     "steps": "18 × 32 ft × 44 lb/ft = 25,344 lb.\n\n\\frac{25,344}{2,000} = 12.67 tons.",
+     "answer": "12.67 tons",
+     "value": 12.672
+    },
+    {
+     "family": "construction-0020",
+     "problem": "Erecting steel takes 9.0 labour-hours per ton. A job has 60 tons, the average wage is $44 per hour and the labour burden is 32%. What is the labour cost?",
+     "idea": "Labour-hours are productivity times quantity. Cost is hours times wage, increased by the labour burden that covers payroll taxes, insurance and benefits.",
+     "steps": "Labour-hours = 9.0 × 60 = 540.\n\nBase wages = 540 × 44 = $23,760.\n\nWith burden: 23,760 × 1.32 = $31,363.",
+     "answer": "$31,363",
+     "value": 31363.2
     }
    ],
    "lookup": [],
@@ -378,7 +464,8 @@
     "Multiply by unit cost; build unit cost from crew rate over productivity when needed.",
     "Add overhead and profit as percentages.",
     "Adjust old costs with the ratio of cost indices."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "construction-e-lesson",
@@ -407,12 +494,24 @@
    },
    "ideas": [
     {
+     "title": "Areas from scaled drawings",
+     "text": "At 3/4 in = 1 ft, convert each measured dimension to its real length first, then multiply. Scaling the paper area directly needs the scale factor squared, which is where mistakes happen."
+    },
+    {
+     "title": "When documents disagree",
+     "text": "Contract documents state an order of precedence. Later, more specific documents such as addenda generally govern over earlier, more general ones. Only the professional who sealed a drawing may change it."
+    },
+    {
      "title": "",
      "text": "An engineer's scale states how many feet on the ground one inch on the drawing represents. Ground distance = drawing distance × scale."
     },
     {
      "title": "",
      "text": "A ratio scale of 1:n means one unit on the drawing is n of the same units in reality. Multiply by n, then convert millimetres to metres."
+    },
+    {
+     "title": "",
+     "text": "Convert each drawing dimension to its real length before multiplying. At 3/4 in to the foot, real feet = drawing inches / 0.75."
     }
    ],
    "examples": [
@@ -431,6 +530,14 @@
      "steps": "Real length = 47 mm × 200 = 9,400 mm = 9.4 m.",
      "answer": "9.4 m",
      "value": 9.4
+    },
+    {
+     "family": "construction-0019",
+     "problem": "On a drawing at a scale of 3/4 in = 1 ft, a room measures 13.50 in by 8.25 in. What is the actual floor area?",
+     "idea": "Convert each drawing dimension to its real length before multiplying. At 3/4 in to the foot, real feet = drawing inches / 0.75.",
+     "steps": "Length = \\frac{13.50}{0.75} = 18.00 ft. Width = \\frac{8.25}{0.75} = 11.00 ft.\n\nArea = 18.00 × 11.00 = 198.0 ft^{2}.",
+     "answer": "198.0 ft^{2}",
+     "value": 198.0
     }
    ],
    "lookup": [],
@@ -441,7 +548,8 @@
     "Read contours: the interval gives the elevation change, the spacing gives the slope.",
     "On profiles, read elevations and stations separately from their own scales.",
     "Cross-reference details and schedules for sizes."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   }
  ]
 }

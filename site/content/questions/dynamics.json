@@ -2210,5 +2210,593 @@
   "version": 4,
   "versions": 4,
   "lookup": true
+ },
+ {
+  "id": "dynamics-0013",
+  "topic": "dynamics",
+  "subtopic": "dynamics-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A car travelling at 25 m/s brakes on a 4% upgrade. Its brakes alone give a deceleration of 4.0 m/s^{2}. How long does it take to stop? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 5.69,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "s"
+  },
+  "eli5": "On a grade, gravity adds g times the grade to the deceleration when climbing, and takes it away when descending. With a constant total deceleration, stopping time is the speed divided by it.",
+  "solution": "Deceleration from the grade = 9.81 × 0.04 = 0.392 m/s^{2}.\n\nTotal = 4.0 + 0.392 = 4.392 m/s^{2}.\n\nt = \\frac{25}{4.392} = 5.69 s.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "constant acceleration",
+     "particle kinematics"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0013",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0013-b",
+  "topic": "dynamics",
+  "subtopic": "dynamics-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A car travelling at 30 m/s brakes on a 6% upgrade. Its brakes alone give a deceleration of 3.5 m/s^{2}. How long does it take to stop? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 7.34,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "s"
+  },
+  "eli5": "On a grade, gravity adds g times the grade to the deceleration when climbing, and takes it away when descending. With a constant total deceleration, stopping time is the speed divided by it.",
+  "solution": "Deceleration from the grade = 9.81 × 0.06 = 0.589 m/s^{2}.\n\nTotal = 3.5 + 0.589 = 4.089 m/s^{2}.\n\nt = \\frac{30}{4.089} = 7.34 s.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "constant acceleration",
+     "particle kinematics"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0013",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0013-c",
+  "topic": "dynamics",
+  "subtopic": "dynamics-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A car travelling at 20 m/s brakes on a 3% upgrade. Its brakes alone give a deceleration of 5.0 m/s^{2}. How long does it take to stop? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 3.78,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "s"
+  },
+  "eli5": "On a grade, gravity adds g times the grade to the deceleration when climbing, and takes it away when descending. With a constant total deceleration, stopping time is the speed divided by it.",
+  "solution": "Deceleration from the grade = 9.81 × 0.03 = 0.294 m/s^{2}.\n\nTotal = 5.0 + 0.294 = 5.294 m/s^{2}.\n\nt = \\frac{20}{5.294} = 3.78 s.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "constant acceleration",
+     "particle kinematics"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0013",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0013-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A car travelling at 15 m/s brakes on a 5% upgrade. Its brakes alone give a deceleration of 3.0 m/s^{2}. How long does it take to stop? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 4.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "s"
+  },
+  "eli5": "On a grade, gravity adds g times the grade to the deceleration when climbing, and takes it away when descending. With a constant total deceleration, stopping time is the speed divided by it.",
+  "solution": "Deceleration from the grade = 9.81 × 0.05 = 0.491 m/s^{2}.\n\nTotal = 3.0 + 0.491 = 3.490 m/s^{2}.\n\nt = \\frac{15}{3.490} = 4.30 s.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "constant acceleration",
+     "particle kinematics"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0013",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0014",
+  "topic": "dynamics",
+  "subtopic": "dynamics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A car travels at 20 m/s around a flat curve. The coefficient of friction between the tyres and the road is 0.50. What is the smallest radius it can follow without sliding? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 81.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "On a flat curve friction alone supplies the inward force m v^{2} / R, and friction cannot exceed the coefficient times the weight. Setting the two equal gives the smallest radius, and the mass cancels.",
+  "solution": "\\frac{m v^{2}}{R} = (coefficient) m g, so R = \\frac{v^{2}}{(coefficient) g} = \\frac{20^{2}}{0.50(9.81)} = 81.5 m.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "Newton's second law",
+     "normal and tangential components"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0014",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0014-b",
+  "topic": "dynamics",
+  "subtopic": "dynamics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A car travels at 25 m/s around a flat curve. The coefficient of friction between the tyres and the road is 0.35. What is the smallest radius it can follow without sliding? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 182.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "On a flat curve friction alone supplies the inward force m v^{2} / R, and friction cannot exceed the coefficient times the weight. Setting the two equal gives the smallest radius, and the mass cancels.",
+  "solution": "\\frac{m v^{2}}{R} = (coefficient) m g, so R = \\frac{v^{2}}{(coefficient) g} = \\frac{25^{2}}{0.35(9.81)} = 182.0 m.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "Newton's second law",
+     "normal and tangential components"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0014",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0014-c",
+  "topic": "dynamics",
+  "subtopic": "dynamics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A car travels at 15 m/s around a flat curve. The coefficient of friction between the tyres and the road is 0.60. What is the smallest radius it can follow without sliding? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 38.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "On a flat curve friction alone supplies the inward force m v^{2} / R, and friction cannot exceed the coefficient times the weight. Setting the two equal gives the smallest radius, and the mass cancels.",
+  "solution": "\\frac{m v^{2}}{R} = (coefficient) m g, so R = \\frac{v^{2}}{(coefficient) g} = \\frac{15^{2}}{0.60(9.81)} = 38.2 m.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "Newton's second law",
+     "normal and tangential components"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0014",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0014-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A car travels at 30 m/s around a flat curve. The coefficient of friction between the tyres and the road is 0.40. What is the smallest radius it can follow without sliding? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 229.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "On a flat curve friction alone supplies the inward force m v^{2} / R, and friction cannot exceed the coefficient times the weight. Setting the two equal gives the smallest radius, and the mass cancels.",
+  "solution": "\\frac{m v^{2}}{R} = (coefficient) m g, so R = \\frac{v^{2}}{(coefficient) g} = \\frac{30^{2}}{0.40(9.81)} = 229.4 m.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "Newton's second law",
+     "normal and tangential components"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0014",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0015",
+  "topic": "dynamics",
+  "subtopic": "dynamics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 6 kg block on a frictionless table is tied by a cord over a light, frictionless pulley to a hanging 4 kg block. What is the acceleration of the blocks? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 3.92,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s^{2}"
+  },
+  "eli5": "Bodies joined by a taut cord share one acceleration. Treat them as a single system along the cord: the only driving force is the weight of the hanging block, and it must accelerate the total mass. The tension is internal and cancels.",
+  "solution": "Driving force = 4(9.81) = 39.24 N. Total mass = 6 + 4 = 10 kg.\n\na = \\frac{39.24}{10} = 3.92 m/s^{2}, which is less than g as it must be.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "Newton's second law"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0015",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0015-b",
+  "topic": "dynamics",
+  "subtopic": "dynamics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 10 kg block on a frictionless table is tied by a cord over a light, frictionless pulley to a hanging 5 kg block. What is the acceleration of the blocks? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 3.27,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s^{2}"
+  },
+  "eli5": "Bodies joined by a taut cord share one acceleration. Treat them as a single system along the cord: the only driving force is the weight of the hanging block, and it must accelerate the total mass. The tension is internal and cancels.",
+  "solution": "Driving force = 5(9.81) = 49.05 N. Total mass = 10 + 5 = 15 kg.\n\na = \\frac{49.05}{15} = 3.27 m/s^{2}, which is less than g as it must be.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "Newton's second law"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0015",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0015-c",
+  "topic": "dynamics",
+  "subtopic": "dynamics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 4 kg block on a frictionless table is tied by a cord over a light, frictionless pulley to a hanging 6 kg block. What is the acceleration of the blocks? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 5.89,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s^{2}"
+  },
+  "eli5": "Bodies joined by a taut cord share one acceleration. Treat them as a single system along the cord: the only driving force is the weight of the hanging block, and it must accelerate the total mass. The tension is internal and cancels.",
+  "solution": "Driving force = 6(9.81) = 58.86 N. Total mass = 4 + 6 = 10 kg.\n\na = \\frac{58.86}{10} = 5.89 m/s^{2}, which is less than g as it must be.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "Newton's second law"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0015",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0015-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 15 kg block on a frictionless table is tied by a cord over a light, frictionless pulley to a hanging 5 kg block. What is the acceleration of the blocks? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 2.45,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s^{2}"
+  },
+  "eli5": "Bodies joined by a taut cord share one acceleration. Treat them as a single system along the cord: the only driving force is the weight of the hanging block, and it must accelerate the total mass. The tension is internal and cancels.",
+  "solution": "Driving force = 5(9.81) = 49.05 N. Total mass = 15 + 5 = 20 kg.\n\na = \\frac{49.05}{20} = 2.45 m/s^{2}, which is less than g as it must be.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "Newton's second law"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0015",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0016",
+  "topic": "dynamics",
+  "subtopic": "dynamics-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A uniform slender rod 1.2 m long is released from rest in a horizontal position and swings about a frictionless pin at one end. What is its angular speed as it passes through the vertical? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 4.95,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "rad/s"
+  },
+  "eli5": "Energy is conserved. The rod's centre of mass falls by L / 2, and that potential energy becomes rotational kinetic energy about the pin, where the rod's moment of inertia is m L^{2} / 3.",
+  "solution": "m g \\frac{L}{2} = \\frac{1}{2}(\\frac{m L^{2}}{3})(angular speed)^{2}, so angular speed = \\sqrt{\\frac{3 g}{L}} = \\sqrt{\\frac{3(9.81)}{1.2}} = 4.95 rad/s.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "work and energy",
+     "mass moment of inertia"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0016",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0016-b",
+  "topic": "dynamics",
+  "subtopic": "dynamics-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A uniform slender rod 2.0 m long is released from rest in a horizontal position and swings about a frictionless pin at one end. What is its angular speed as it passes through the vertical? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 3.84,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "rad/s"
+  },
+  "eli5": "Energy is conserved. The rod's centre of mass falls by L / 2, and that potential energy becomes rotational kinetic energy about the pin, where the rod's moment of inertia is m L^{2} / 3.",
+  "solution": "m g \\frac{L}{2} = \\frac{1}{2}(\\frac{m L^{2}}{3})(angular speed)^{2}, so angular speed = \\sqrt{\\frac{3 g}{L}} = \\sqrt{\\frac{3(9.81)}{2.0}} = 3.84 rad/s.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "work and energy",
+     "mass moment of inertia"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0016",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0016-c",
+  "topic": "dynamics",
+  "subtopic": "dynamics-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A uniform slender rod 0.8 m long is released from rest in a horizontal position and swings about a frictionless pin at one end. What is its angular speed as it passes through the vertical? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 6.07,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "rad/s"
+  },
+  "eli5": "Energy is conserved. The rod's centre of mass falls by L / 2, and that potential energy becomes rotational kinetic energy about the pin, where the rod's moment of inertia is m L^{2} / 3.",
+  "solution": "m g \\frac{L}{2} = \\frac{1}{2}(\\frac{m L^{2}}{3})(angular speed)^{2}, so angular speed = \\sqrt{\\frac{3 g}{L}} = \\sqrt{\\frac{3(9.81)}{0.8}} = 6.07 rad/s.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "work and energy",
+     "mass moment of inertia"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0016",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0016-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A uniform slender rod 1.5 m long is released from rest in a horizontal position and swings about a frictionless pin at one end. What is its angular speed as it passes through the vertical? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 4.43,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "rad/s"
+  },
+  "eli5": "Energy is conserved. The rod's centre of mass falls by L / 2, and that potential energy becomes rotational kinetic energy about the pin, where the rod's moment of inertia is m L^{2} / 3.",
+  "solution": "m g \\frac{L}{2} = \\frac{1}{2}(\\frac{m L^{2}}{3})(angular speed)^{2}, so angular speed = \\sqrt{\\frac{3 g}{L}} = \\sqrt{\\frac{3(9.81)}{1.5}} = 4.43 rad/s.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "work and energy",
+     "mass moment of inertia"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0016",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  }
 ]

@@ -73,6 +73,18 @@
    "updated": "2026-11-13",
    "ideas": [
     {
+     "title": "Report what you see, within your competence",
+     "text": "An engineer who notices a possible hazard outside the assignment should tell the client or employer. The duty is to report it, not to analyse something outside one's own field."
+    },
+    {
+     "title": "When told to do something improper",
+     "text": "If instructed to do something wrong, such as charging hours to the wrong client, do the work correctly, object, and take it up the chain. If that fails, document it; resigning and reporting are the last steps. Complying, staying silent and going to the press are not the answer."
+    },
+    {
+     "title": "A test for grey areas",
+     "text": "Ask whether you would be comfortable seeing the action reported publicly with your name on it. The exam applies the NCEES Model Rules, not the rules of any one state."
+    },
+    {
      "title": "Order of obligations",
      "text": "The NCEES Model Rules set three duties in this order: to the public, to the employer or client, and to other licensees. The first and foremost responsibility is the health, safety and welfare of the public. When two duties pull in different directions, the public comes first."
     },
@@ -116,7 +128,8 @@
     "Eliminate any option that hides information or leaves a safety hazard in place.",
     "Prefer the option that discloses to the client or employer first and escalates to an authority if the hazard remains.",
     "If two options both seem ethical, choose the one the Model Rules state explicitly."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "ethics-b-lesson",
@@ -130,6 +143,10 @@
    ],
    "updated": "2026-11-13",
    "ideas": [
+    {
+     "title": "Say what you did not check",
+     "text": "A partial review that others take for a complete one is how failures get through. State plainly the limits of what you reviewed."
+    },
     {
      "title": "Negligence",
      "text": "A negligence claim needs four elements: a duty owed, a breach of that duty, causation and actual damages. All four must be shown."
@@ -163,7 +180,8 @@
     "Compare the conduct with what a reasonably prudent engineer would have done, not with a perfect result.",
     "Match the type of loss to the policy that covers it.",
     "Separate contract claims (what was promised) from tort claims (the duty of care)."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "ethics-c-lesson",
@@ -177,6 +195,18 @@
    ],
    "updated": "2026-11-13",
    "ideas": [
+    {
+     "title": "What may be sealed",
+     "text": "You may seal your own work, work by staff that you directed and reviewed in detail, and the coordination of a whole project when each discipline seals its own part. A general look over someone else's design is not responsible charge."
+    },
+    {
+     "title": "Grounds for discipline",
+     "text": "Boards act on fraud, gross negligence, incompetence, misconduct and impairment such as habitual intoxication. Personal financial trouble, or giving an honest opinion founded on the facts, are not grounds."
+    },
+    {
+     "title": "What a licence means",
+     "text": "A licence certifies minimum competence to practise, not expertise in every field. Model experience requirements shorten with graduate degrees."
+    },
     {
      "title": "The path to a license",
      "text": "The usual route is an accredited engineering degree, the FE exam, about four years of progressive experience under a licensed engineer, then the PE exam. Each state or territory board sets its own requirements. Passing the FE leads to engineer intern status."
@@ -217,7 +247,8 @@
     "Ask whether the engineer had responsible charge of the work being sealed.",
     "Ask whether the work is within the engineer's area of competence.",
     "When in doubt, choose the option that involves the licensing board or obtaining the proper licence."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "ethics-d-lesson",

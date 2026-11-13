@@ -77,7 +77,8 @@
     }
    ],
    "pitfalls": [
-    "Using volume instead of mass for the water-cement ratio."
+    "Using volume instead of mass for the water-cement ratio.",
+    "Turning a percentage into the wrong factor: 0.5% absorption is a factor of 1.005, not 1.5."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -85,6 +86,22 @@
     "steps": "Cement = \\frac{200}{0.50} = 400 kg.\n\nVolume = \\frac{400}{3,150} = 0.127 m^{3}."
    },
    "ideas": [
+    {
+     "title": "Saturated surface-dry",
+     "text": "At the saturated surface-dry condition an aggregate's pores are full and its surface is dry, so it neither takes water from the mix nor adds any. Mix designs assume that state. Moisture beyond it is free water that raises the water-cement ratio, and drier aggregate soaks up mix water."
+    },
+    {
+     "title": "Correcting the batch water",
+     "text": "Oven-dry weight is the saturated surface-dry weight divided by (1 + absorption). Stockpile weight is the oven-dry weight times (1 + moisture content). The difference between the stockpile weight and the saturated surface-dry weight is the free water, which is taken off the design water."
+    },
+    {
+     "title": "Water added on site",
+     "text": "The most water a load may contain is the maximum water-cement ratio times the cement in the truck. Subtract what was batched to find what can still be added. To raise slump without raising the ratio, use a water-reducing admixture."
+    },
+    {
+     "title": "Asphalt aggregate is dried",
+     "text": "Aggregate for hot mix asphalt is heated until dry so that the binder bonds to it. Water is not a mix design variable for asphalt."
+    },
     {
      "title": "Water-cement ratio",
      "text": "The water-cement ratio is the mass of water divided by the mass of cement. It is the main control on concrete strength and durability: a lower ratio gives stronger, less permeable concrete but less workability."
@@ -96,6 +113,14 @@
     {
      "title": "",
      "text": "Asphalt content is normally expressed as binder mass over total mix mass, not over aggregate mass. The two bases give different numbers, so check which one a specification uses."
+    },
+    {
+     "title": "",
+     "text": "Mix designs assume saturated surface-dry aggregate. Moisture beyond the absorption is free water that would raise the water-cement ratio, so it is found and taken off the batch water."
+    },
+    {
+     "title": "Water-cement ratio",
+     "text": "The water-cement ratio is by mass. The most water the load may hold is the maximum ratio times the total cement in the truck; anything already batched counts against it."
     }
    ],
    "examples": [
@@ -122,6 +147,22 @@
      "steps": "P_{b} = \\frac{65}{1,250} × 100 = 5.20%. By mass of aggregate it would be \\frac{65}{1,185} × 100 = 5.49%.",
      "answer": "5.20%",
      "value": 5.2
+    },
+    {
+     "family": "materials-0012",
+     "problem": "A concrete batch calls for 760 kg of sand in the saturated surface-dry condition. The stockpiled sand has a total moisture content of 4.6% and an absorption of 1.1%. How much free water does that sand bring into the batch?",
+     "idea": "Mix designs assume saturated surface-dry aggregate. Moisture beyond the absorption is free water that would raise the water-cement ratio, so it is found and taken off the batch water.",
+     "steps": "Oven-dry mass = \\frac{760}{1 + 0.011} = 751.7 kg.\n\nStockpile mass = 751.7 × (1 + 0.046) = 786.3 kg.\n\nFree water = 786.3 - 760 = 26.3 kg.",
+     "answer": "26.3 kg",
+     "value": 26.310584
+    },
+    {
+     "family": "materials-0013",
+     "problem": "A truck carries 7.0 m^{3} of concrete with 360 kg of cement per cubic metre. The maximum water-cement ratio is 0.44, and 1,050 kg of water has been batched. How much more water may be added on site?",
+     "idea": "The water-cement ratio is by mass. The most water the load may hold is the maximum ratio times the total cement in the truck; anything already batched counts against it.",
+     "steps": "Cement in the truck = 360 × 7.0 = 2,520 kg.\n\nAllowable water = 0.44 × 2,520 = 1,108.8 kg.\n\nMay still be added: 1,108.8 - 1,050 = 58.8 kg.",
+     "answer": "58.8 kg",
+     "value": 58.8
     }
    ],
    "lookup": [
@@ -140,7 +181,8 @@
     "Subtract the known volumes, including air, from the unit volume to find the remaining aggregate volume.",
     "Convert that volume back to mass.",
     "Adjust batch water for aggregate moisture above or below the saturated-surface-dry condition."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "materials-b-lesson",
@@ -153,6 +195,10 @@
    ],
    "updated": "2026-11-13",
    "ideas": [
+    {
+     "title": "Why mixes are designed above the specified strength",
+     "text": "Test results scatter, so a mix whose average strength equalled the specified strength would fail half its tests. Mixes are proportioned for a mean well above the specified value so that only a small share of results falls below it."
+    },
     {
      "title": "Fresh and hardened concrete",
      "text": "Slump measures workability. Air content is measured by the pressure or volumetric method. Compressive strength comes from cylinders, normally at 28 days. The split-cylinder test gives tensile strength and a beam test gives the modulus of rupture."
@@ -202,7 +248,8 @@
     "Match it to its test.",
     "Note the conditions that affect the result, such as age for concrete or temperature for impact tests.",
     "Convert the test reading to the property with the correct area or gauge length."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "materials-c-lesson",
@@ -240,6 +287,22 @@
     "steps": "E = \\frac{300}{0.0015} = 200,000 MPa = 200 GPa."
    },
    "ideas": [
+    {
+     "title": "Reading a stress-strain curve",
+     "text": "The slope of the first straight part is the modulus of elasticity; take it between the origin and a point that sits cleanly on the grid. Yield is where the curve leaves that line, ultimate strength is the peak and rupture is the end of the curve."
+    },
+    {
+     "title": "Ductile and brittle",
+     "text": "A ductile material deforms a great deal before it breaks, which gives warning. A brittle one follows a nearly straight line and then snaps. Bending a paper clip shows yielding: a small bend springs back, a large one stays, and the bent spot has strain-hardened so it resists being bent straight again."
+    },
+    {
+     "title": "Concrete in compression",
+     "text": "Concrete's curve bends over because microcracks reduce its stiffness as load rises. It is close to linear up to about half its strength, peaks at a strain near 0.002 and crushes near 0.003. Reinforcement carries the tension once the concrete cracks; it does not stop the cracking."
+    },
+    {
+     "title": "Wood is orthotropic",
+     "text": "Wood's properties differ along three perpendicular directions, set by the grain. Steel is isotropic: the same in every direction."
+    },
     {
      "title": "Compressive strength",
      "text": "Compressive strength is the failure load divided by the loaded cross-sectional area of the cylinder. Newtons over square millimetres gives MPa."
@@ -326,7 +389,8 @@
     "Compute E as stress over strain within the straight portion only.",
     "Compute ductility as percent elongation or percent reduction in area.",
     "Use the 0.2% offset method when there is no distinct yield point."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   }
  ]
 }

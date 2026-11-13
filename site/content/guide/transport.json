@@ -98,7 +98,9 @@
    ],
    "pitfalls": [
     "Entering superelevation as a percent instead of a decimal.",
-    "Using a downgrade as positive: a downgrade lengthens the stopping distance."
+    "Using a downgrade as positive: a downgrade lengthens the stopping distance.",
+    "Putting mph into a formula that expects ft/s, or the reverse. Stopping sight distance takes mph; the yellow interval takes ft/s.",
+    "Entering grades as percentages where the formula expects decimals."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -112,6 +114,30 @@
     "caption": "A simple horizontal curve. T = R tan(Δ / 2) and L = R Δ π / 180."
    },
    "ideas": [
+    {
+     "title": "Chord, not arc",
+     "text": "A straight sight line from the PC to the PT is the long chord, 2 R sin(I / 2), not the curve length, even when the question never says chord."
+    },
+    {
+     "title": "Degree of curve",
+     "text": "By the arc definition, the degree of curve is the central angle subtended by 100 ft of arc, so R = 5,729.58 / D."
+    },
+    {
+     "title": "Stations are 100 ft units",
+     "text": "A station of 8+00 is 800 ft along the alignment. Convert to feet, do the arithmetic (PC = PI - T, PT = PC + L), then write the result back as a station."
+    },
+    {
+     "title": "Two straight lines to the end of a vertical curve",
+     "text": "The PVI sits at half the curve length. The PVT elevation is the PVC elevation plus the first grade over L / 2 plus the second grade over L / 2. Elevations on the curve itself need the parabola, and the high or low point is usually not at mid-curve."
+    },
+    {
+     "title": "What sets the length of a crest curve",
+     "text": "A driver's eye 3.5 ft above the road must see a 2 ft object over the crest at the stopping sight distance. Compute that distance for the downgrade, where gravity works against braking, then find the length from the sight distance and the grade change."
+    },
+    {
+     "title": "Where 1.47 comes from",
+     "text": "5,280 ft per mile over 3,600 s per hour is 1.47, which is why a speed in mph times a time in seconds, times 1.47, gives feet."
+    },
     {
      "title": "Stopping sight distance",
      "text": "Stopping sight distance has two parts: the distance covered at full speed during perception and reaction, 1.47 V t, and the braking distance, V^{2} / (30 (a/32.2 ± G)). With V in mph the constants give feet. On a level road the grade term G is zero."
@@ -135,6 +161,22 @@
     {
      "title": "Vertical curves",
      "text": "K is the horizontal length of curve needed for each 1% of grade change, chosen from the design speed to provide sight distance. Curve length = K × A, where A is the algebraic difference in grades in percent."
+    },
+    {
+     "title": "Horizontal curves",
+     "text": "The PC lies one tangent length back from the PI, and T = R tan(I / 2). Stations are 100 ft units, so work in feet and convert at the end."
+    },
+    {
+     "title": "Vertical curves",
+     "text": "The PVI sits at half the curve length. From the PVC, follow the first grade for L / 2 to the PVI, then the second grade for L / 2 to the PVT. The curve itself is not needed for the end points."
+    },
+    {
+     "title": "Vertical curves",
+     "text": "On a crest, the hill itself blocks the driver's view. For a 3.5 ft eye height and a 2 ft object, with the sight distance shorter than the curve, L = A S^{2} / 2,158, where A is the algebraic difference in grades in percent. Check afterwards that S is less than L."
+    },
+    {
+     "title": "Horizontal curves",
+     "text": "By the arc definition, the degree of curve is the central angle subtended by 100 ft of arc. A full circle of 360° has a circumference of 2πR, which gives R = 5,729.58 / D."
     }
    ],
    "examples": [
@@ -205,6 +247,48 @@
       "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+2.5%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-1.5%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
       "alt": "A crest vertical curve L = ? ft long joining a +2.5% grade to a -1.5% grade."
      }
+    },
+    {
+     "family": "transport-0019",
+     "problem": "A horizontal curve has a radius of 1,000 ft and a deflection angle of 44°. The PI is at station 36+75. What is the station of the PC? Enter it in feet, so that station 12+50 is entered as 1,250.",
+     "idea": "The PC lies one tangent length back from the PI, and T = R tan(I / 2). Stations are 100 ft units, so work in feet and convert at the end.",
+     "steps": "T = R tan(I / 2) = 1,000 × tan(22°) = 404.03 ft.\n\nStation 36+75 is 3,675 ft. PC = PI - T = 3,675 - 404.03 = 3,270.97 ft.",
+     "answer": "3,270.97 ft",
+     "value": 3270.973774,
+     "figure": {
+      "viewBox": "0 0 400 186",
+      "svg": "<path d='M70 110 A347 347 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='33' y1='125' x2='200' y2='57' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='367' y1='125' x2='200' y2='57' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='92' y2='166' stroke='#00242E'/><line x1='330' y1='110' x2='308' y2='166' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='49' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 1,000 ft, deflection angle 44°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
+      "alt": "A horizontal circular curve of radius 1,000 ft with a deflection angle of 44°, showing PC, PI and PT."
+     }
+    },
+    {
+     "family": "transport-0020",
+     "problem": "A vertical curve 700 ft long joins a 3.0% grade to a -2.0% grade. The PVC elevation is 215.50 ft. What is the PVT elevation?",
+     "idea": "The PVI sits at half the curve length. From the PVC, follow the first grade for L / 2 to the PVI, then the second grade for L / 2 to the PVT. The curve itself is not needed for the end points.",
+     "steps": "PVI elevation = 215.50 + \\frac{3.0}{100}(350) = 226.00 ft.\n\nPVT elevation = 226.00 + \\frac{-2.0}{100}(350) = 219.00 ft.",
+     "answer": "219.00 ft",
+     "value": 219.0
+    },
+    {
+     "family": "transport-0021",
+     "problem": "A crest vertical curve joins a +2.5% grade to a -2.0% grade. The required stopping sight distance is 700 ft. Assuming the sight distance is shorter than the curve, what minimum curve length is needed? Use L = A S^{2} / 2,158.",
+     "idea": "On a crest, the hill itself blocks the driver's view. For a 3.5 ft eye height and a 2 ft object, with the sight distance shorter than the curve, L = A S^{2} / 2,158, where A is the algebraic difference in grades in percent. Check afterwards that S is less than L.",
+     "steps": "A = 2.5 + 2.0 = 4.5%.\n\nL = \\frac{4.5(700)^{2}}{2,158} = 1,022 ft. This is longer than 700 ft, so the assumption holds.",
+     "answer": "1,022 ft",
+     "value": 1021.779425,
+     "figure": {
+      "viewBox": "0 0 400 170",
+      "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+2.5%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-2%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
+      "alt": "A crest vertical curve L = ? ft long joining a +2.5% grade to a -2% grade."
+     }
+    },
+    {
+     "family": "transport-0022",
+     "problem": "A horizontal curve has a degree of curve of 3.5° by the arc definition. What is its radius?",
+     "idea": "By the arc definition, the degree of curve is the central angle subtended by 100 ft of arc. A full circle of 360° has a circumference of 2πR, which gives R = 5,729.58 / D.",
+     "steps": "R = \\frac{5,729.58}{3.5} = 1,637.0 ft.",
+     "answer": "1,637.0 ft",
+     "value": 1637.022857
     }
    ],
    "lookup": [
@@ -227,7 +311,8 @@
     "For a horizontal curve, compute T, L and stationing of PC and PT from the PI.",
     "For a vertical curve, compute A, the rate of grade change, elevations along the curve and the turning point.",
     "Keep U.S. units straight: speeds in mph, lengths in ft, grades in percent or decimal as the formula requires."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "transport-b-lesson",
@@ -255,6 +340,14 @@
     "steps": "SN = 0.44(5) + 0.14(10)(1.0) = 2.2 + 1.4 = 3.6."
    },
    "ideas": [
+    {
+     "title": "ESALs from an axle table",
+     "text": "Each axle load has a load equivalency factor that expresses its damage relative to an 18-kip single axle. Multiply each axle's factor by its number of passes and add; single and tandem axles have separate tables."
+    },
+    {
+     "title": "Subgrade and subbase",
+     "text": "The subgrade is the soil already there, prepared and compacted. The subbase is a placed layer between it and the base. A structural number equation can also be solved backwards for the thickness of one layer."
+    },
     {
      "title": "Structural number",
      "text": "In the AASHTO flexible pavement method, each layer contributes its thickness times a layer coefficient that reflects its relative strength, and unbound layers are also multiplied by a drainage coefficient. The sum is the structural number, SN."
@@ -312,7 +405,8 @@
     "Choose layer thicknesses so that the sum of a × D × m meets it.",
     "Check each layer against the structural number required above the layer beneath.",
     "Round thicknesses up to practical values."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "transport-c-lesson",
@@ -342,7 +436,8 @@
     }
    ],
    "pitfalls": [
-    "Confusing time mean speed with space mean speed. The flow relation uses space mean speed."
+    "Confusing time mean speed with space mean speed. The flow relation uses space mean speed.",
+    "Using all lanes of a 'six-lane' freeway. N is the number of lanes in one direction, three in that case."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -356,6 +451,14 @@
     "caption": "The Greenshields speed-density line. Capacity occurs at half the jam density and half the free-flow speed."
    },
    "ideas": [
+    {
+     "title": "Finding the peak hour in 15-minute counts",
+     "text": "Add each run of four consecutive 15-minute counts. The largest total is the peak hour volume, and the peak hour factor uses the largest 15-minute count inside that hour."
+    },
+    {
+     "title": "Freeway level of service",
+     "text": "Convert the hourly volume to a flow rate per lane: v_{p} = V / (PHF × N × f_{HV}), with the heavy vehicle factor f_{HV} = 1 / (1 + P_{T}(E_{T} - 1)). Density is v_{p} divided by speed, and the level of service table is entered with density."
+    },
     {
      "title": "Traffic flow relationships",
      "text": "The fundamental relation of traffic flow: flow = density × space mean speed (q = k u). The units confirm it: veh/mi × mi/h = veh/h."
@@ -371,6 +474,10 @@
     {
      "title": "Traffic flow relationships",
      "text": "Greenshields assumes speed falls linearly with density. Flow = density × speed is then a parabola that peaks at half the jam density and half the free-flow speed, so capacity = u_{f} k_{j} / 4."
+    },
+    {
+     "title": "Traffic flow relationships",
+     "text": "Convert the volume to an equivalent passenger car flow rate per lane: divide by the peak hour factor, the number of lanes in that direction and the heavy vehicle factor, f_{HV} = 1 / (1 + P_{T}(E_{T} - 1)). Density is flow rate over speed."
     }
    ],
    "examples": [
@@ -410,6 +517,14 @@
       "svg": "<line x1='50' y1='20' x2='50' y2='140' stroke='#00242E'/><line x1='50' y1='140' x2='370' y2='140' stroke='#00242E'/><line x1='50' y1='36' x2='350' y2='140' stroke='#1B795A' stroke-width='3'/><circle cx='200' cy='88' r='5' fill='#00574A'/><text x='44' y='40' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>65</text><text x='350' y='156' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>140</text><text x='200' y='156' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>70</text><text x='44' y='92' text-anchor='end' font-size='12' font-weight='400' fill='#00574A'>32.5</text><text x='210' y='82' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>Capacity point</text><text x='210' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Density, veh/mi</text><text x='56' y='16' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Speed, mph</text><line x1='200' y1='88' x2='200' y2='140' stroke='#00574A' stroke-dasharray='4 4'/><line x1='50' y1='88' x2='200' y2='88' stroke='#00574A' stroke-dasharray='4 4'/>",
       "alt": "A straight speed-density line falling from 65 mph at zero density to zero speed at 140 veh/mi, with the capacity point at its middle."
      }
+    },
+    {
+     "family": "transport-0023",
+     "problem": "A freeway carries 4,800 veh/h in one direction on 4 lanes, with a peak hour factor of 0.94 and 6% trucks (passenger car equivalent 2.0). The average speed is 64 mph. What is the density?",
+     "idea": "Convert the volume to an equivalent passenger car flow rate per lane: divide by the peak hour factor, the number of lanes in that direction and the heavy vehicle factor, f_{HV} = 1 / (1 + P_{T}(E_{T} - 1)). Density is flow rate over speed.",
+     "steps": "f_{HV} = \\frac{1}{1 + 0.06(2.0 - 1)} = 0.9434.\n\nv_{p} = \\frac{4,800}{0.94(4)(0.9434)} = 1,353 pc/h/ln.\n\nDensity = \\frac{1,353}{64} = 21.1 pc/mi/ln.",
+     "answer": "21.1 pc/mi/ln",
+     "value": 21.143617
     }
    ],
    "lookup": [
@@ -421,7 +536,8 @@
       "peak hour factor",
       "saturation flow",
       "capacity",
-      "Greenshields"
+      "Greenshields",
+      "level of service"
      ]
     }
    ],
@@ -432,7 +548,8 @@
     "For capacity under Greenshields, use free-flow speed × jam density / 4.",
     "Convert volume to flow rate with the peak hour factor.",
     "For a signal, compute capacity as saturation flow × g / C and the v/c ratio."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "transport-d-lesson",
@@ -455,6 +572,10 @@
     "steps": "y = 1.0 + \\frac{59}{20} = 3.95 s, rounded up to 4.0 s in practice."
    },
    "ideas": [
+    {
+     "title": "Yellow and all-red",
+     "text": "The yellow interval covers the driver's reaction time plus the time to decelerate. The all-red interval that follows lets a vehicle that entered legally on yellow clear the intersection. Reaction time is taken as 1.0 s at signals, against 2.5 s for stopping sight distance."
+    },
     {
      "title": "Sign classes",
      "text": "The MUTCD sorts signs by function, with matching shapes and colours. Regulatory signs give laws and are mostly white rectangles, with the red octagonal STOP and triangular YIELD as exceptions. Warning signs are yellow diamonds. Guide signs are green. Temporary traffic control signs are orange."
@@ -503,7 +624,8 @@
     "For the yellow interval, use reaction time plus speed over twice the deceleration, adjusted for grade.",
     "For pedestrian clearance, divide crossing distance by walking speed.",
     "For installation questions, look for the engineering study and warrants."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "transport-e-lesson",
@@ -537,6 +659,14 @@
    },
    "ideas": [
     {
+     "title": "The gravity model as weighted shares",
+     "text": "Trips produced in a zone are split among the destination zones in proportion to each destination's attractions times its friction factor, and a socioeconomic factor where one is given. The shares add up to 1, so nearer and larger zones draw more."
+    },
+    {
+     "title": "Traffic growth",
+     "text": "Volumes grow like compound interest: future volume = present volume × (1 + rate)^{years}."
+    },
+    {
      "title": "Trip generation",
      "text": "Trip generation, the first step of the four-step planning model, estimates trip ends from land use. With an average rate, trips = rate × number of units."
     },
@@ -547,6 +677,14 @@
     {
      "title": "Logit",
      "text": "The multinomial logit model gives each mode a share proportional to e raised to its utility: P(mode) = e^{U} / (sum of e^{U} over all modes). Only differences in utility matter."
+    },
+    {
+     "title": "Single payment compound amount",
+     "text": "Traffic growth compounds like interest: future volume = present volume × (1 + rate)^{years}. The factor is the single payment compound amount factor from engineering economics."
+    },
+    {
+     "title": "Gravity model",
+     "text": "The gravity model splits a zone's trip productions among destinations in proportion to each destination's attractions times its friction factor. The shares sum to 1."
     }
    ],
    "examples": [
@@ -573,6 +711,22 @@
      "steps": "e^{-0.4} = 0.6703 and e^{-1.3} = 0.2725.\n\nP(bus) = \\frac{0.2725}{0.6703 + 0.2725} = 0.289, about 29%.",
      "answer": "0.289",
      "value": 0.28905
+    },
+    {
+     "family": "transport-0024",
+     "problem": "A road carries 15,500 vehicles per day. Traffic grows at 2.5% per year. What daily volume is expected in 20 years?",
+     "idea": "Traffic growth compounds like interest: future volume = present volume × (1 + rate)^{years}. The factor is the single payment compound amount factor from engineering economics.",
+     "steps": "V = 15,500 × (1 + 0.025)^{20} = 15,500 × 1.6386 = 25,399 vehicles per day.",
+     "answer": "25,399 veh/day",
+     "value": 25398.554825
+    },
+    {
+     "family": "transport-0025",
+     "problem": "A zone produces 1,800 trips. Three destination zones have attractions of 350, 450 and 200 and friction factors of 6, 3 and 8. Using the gravity model with K = 1, how many trips go to the first destination?",
+     "idea": "The gravity model splits a zone's trip productions among destinations in proportion to each destination's attractions times its friction factor. The shares sum to 1.",
+     "steps": "A × F for each zone: 2,100, 1,350 and 1,600; sum = 5,050.\n\nTrips to the first = 1,800 × \\frac{2,100}{5,050} = 749.",
+     "answer": "749 trips",
+     "value": 748.514851
     }
    ],
    "lookup": [
@@ -583,7 +737,15 @@
       "trip generation",
       "crash rate",
       "traffic safety equations",
-      "logit"
+      "logit",
+      "gravity model"
+     ]
+    },
+    {
+     "section": "Engineering Economics",
+     "page": "230–237",
+     "find": [
+      "single payment compound amount"
      ]
     }
    ],
@@ -594,7 +756,8 @@
     "For the gravity model, share trips in proportion to attractions and friction factors.",
     "For logit, compute e to the utility for each mode and divide by the sum.",
     "For crash rates, divide crashes by exposure and scale to the stated basis."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   }
  ]
 }

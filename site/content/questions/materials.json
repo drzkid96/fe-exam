@@ -1758,5 +1758,285 @@
   "version": 2,
   "versions": 2,
   "lookup": true
+ },
+ {
+  "id": "materials-0012",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete batch calls for 800 kg of sand in the saturated surface-dry condition. The stockpiled sand has a total moisture content of 5.0% and an absorption of 1.2%. How much free water does that sand bring into the batch?",
+  "answer": {
+   "value": 30.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg"
+  },
+  "eli5": "Mix designs assume saturated surface-dry aggregate. Moisture beyond the absorption is free water that would raise the water-cement ratio, so it is found and taken off the batch water.",
+  "solution": "Oven-dry mass = \\frac{800}{1 + 0.012} = 790.5 kg.\n\nStockpile mass = 790.5 × (1 + 0.050) = 830.0 kg.\n\nFree water = 830.0 - 800 = 30.0 kg.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0012",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "materials-0012-b",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete batch calls for 650 kg of sand in the saturated surface-dry condition. The stockpiled sand has a total moisture content of 4.2% and an absorption of 0.8%. How much free water does that sand bring into the batch?",
+  "answer": {
+   "value": 21.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg"
+  },
+  "eli5": "Mix designs assume saturated surface-dry aggregate. Moisture beyond the absorption is free water that would raise the water-cement ratio, so it is found and taken off the batch water.",
+  "solution": "Oven-dry mass = \\frac{650}{1 + 0.008} = 644.8 kg.\n\nStockpile mass = 644.8 × (1 + 0.042) = 671.9 kg.\n\nFree water = 671.9 - 650 = 21.9 kg.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0012",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "materials-0012-c",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete batch calls for 900 kg of sand in the saturated surface-dry condition. The stockpiled sand has a total moisture content of 6.5% and an absorption of 1.5%. How much free water does that sand bring into the batch?",
+  "answer": {
+   "value": 44.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg"
+  },
+  "eli5": "Mix designs assume saturated surface-dry aggregate. Moisture beyond the absorption is free water that would raise the water-cement ratio, so it is found and taken off the batch water.",
+  "solution": "Oven-dry mass = \\frac{900}{1 + 0.015} = 886.7 kg.\n\nStockpile mass = 886.7 × (1 + 0.065) = 944.3 kg.\n\nFree water = 944.3 - 900 = 44.3 kg.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0012",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "materials-0012-d",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete batch calls for 720 kg of sand in the saturated surface-dry condition. The stockpiled sand has a total moisture content of 3.8% and an absorption of 1.0%. How much free water does that sand bring into the batch?",
+  "answer": {
+   "value": 20.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg"
+  },
+  "eli5": "Mix designs assume saturated surface-dry aggregate. Moisture beyond the absorption is free water that would raise the water-cement ratio, so it is found and taken off the batch water.",
+  "solution": "Oven-dry mass = \\frac{720}{1 + 0.010} = 712.9 kg.\n\nStockpile mass = 712.9 × (1 + 0.038) = 740.0 kg.\n\nFree water = 740.0 - 720 = 20.0 kg.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0012",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "materials-0013",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A truck carries 8.0 m^{3} of concrete with 350 kg of cement per cubic metre. The maximum water-cement ratio is 0.45, and 1,200 kg of water has been batched. How much more water may be added on site?",
+  "answer": {
+   "value": 60.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg"
+  },
+  "eli5": "The water-cement ratio is by mass. The most water the load may hold is the maximum ratio times the total cement in the truck; anything already batched counts against it.",
+  "solution": "Cement in the truck = 350 × 8.0 = 2,800 kg.\n\nAllowable water = 0.45 × 2,800 = 1,260.0 kg.\n\nMay still be added: 1,260.0 - 1,200 = 60.0 kg.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "water-cement ratio"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0013",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0013-b",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A truck carries 6.0 m^{3} of concrete with 400 kg of cement per cubic metre. The maximum water-cement ratio is 0.40, and 885 kg of water has been batched. How much more water may be added on site?",
+  "answer": {
+   "value": 75.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg"
+  },
+  "eli5": "The water-cement ratio is by mass. The most water the load may hold is the maximum ratio times the total cement in the truck; anything already batched counts against it.",
+  "solution": "Cement in the truck = 400 × 6.0 = 2,400 kg.\n\nAllowable water = 0.40 × 2,400 = 960.0 kg.\n\nMay still be added: 960.0 - 885 = 75.0 kg.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "water-cement ratio"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0013",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0013-c",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A truck carries 7.5 m^{3} of concrete with 320 kg of cement per cubic metre. The maximum water-cement ratio is 0.50, and 1,150 kg of water has been batched. How much more water may be added on site?",
+  "answer": {
+   "value": 50.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg"
+  },
+  "eli5": "The water-cement ratio is by mass. The most water the load may hold is the maximum ratio times the total cement in the truck; anything already batched counts against it.",
+  "solution": "Cement in the truck = 320 × 7.5 = 2,400 kg.\n\nAllowable water = 0.50 × 2,400 = 1,200.0 kg.\n\nMay still be added: 1,200.0 - 1,150 = 50.0 kg.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "water-cement ratio"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0013",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0013-d",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A truck carries 9.0 m^{3} of concrete with 380 kg of cement per cubic metre. The maximum water-cement ratio is 0.42, and 1,400 kg of water has been batched. How much more water may be added on site?",
+  "answer": {
+   "value": 36.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg"
+  },
+  "eli5": "The water-cement ratio is by mass. The most water the load may hold is the maximum ratio times the total cement in the truck; anything already batched counts against it.",
+  "solution": "Cement in the truck = 380 × 9.0 = 3,420 kg.\n\nAllowable water = 0.42 × 3,420 = 1,436.4 kg.\n\nMay still be added: 1,436.4 - 1,400 = 36.4 kg.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "water-cement ratio"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0013",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  }
 ]

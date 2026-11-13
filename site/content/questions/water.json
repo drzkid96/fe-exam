@@ -4563,5 +4563,877 @@
    "alt": "A rectangular channel 3 m wide flowing 0.6 m deep."
   },
   "lookup": true
+ },
+ {
+  "id": "water-0027",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete gravity dam with a rectangular section is 4 m wide at the base and 6 m high. Water stands level with its top on one side. Concrete weighs 23.5 kN/m^{3}, the coefficient of friction on the base is 0.60 and uplift is ignored. What is the factor of safety against sliding?",
+  "answer": {
+   "value": 1.92,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Check a one-metre length of dam as a rigid block. The water thrust is the area of the triangular pressure diagram, half the unit weight of water times the depth squared. Friction can supply up to the coefficient times the dam's weight.",
+  "solution": "Weight = 23.5(4)(6) = 564.0 kN/m.\n\nWater thrust = \\frac{1}{2}(9.81)(6)^{2} = 176.6 kN/m.\n\nFS = \\frac{0.60(564.0)}{176.6} = 1.92.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "forces on submerged surfaces"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0027",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0027-b",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete gravity dam with a rectangular section is 6 m wide at the base and 9 m high. Water stands level with its top on one side. Concrete weighs 23.5 kN/m^{3}, the coefficient of friction on the base is 0.65 and uplift is ignored. What is the factor of safety against sliding?",
+  "answer": {
+   "value": 2.08,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Check a one-metre length of dam as a rigid block. The water thrust is the area of the triangular pressure diagram, half the unit weight of water times the depth squared. Friction can supply up to the coefficient times the dam's weight.",
+  "solution": "Weight = 23.5(6)(9) = 1,269.0 kN/m.\n\nWater thrust = \\frac{1}{2}(9.81)(9)^{2} = 397.3 kN/m.\n\nFS = \\frac{0.65(1,269.0)}{397.3} = 2.08.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "forces on submerged surfaces"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0027",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0027-c",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete gravity dam with a rectangular section is 3 m wide at the base and 5 m high. Water stands level with its top on one side. Concrete weighs 23.5 kN/m^{3}, the coefficient of friction on the base is 0.55 and uplift is ignored. What is the factor of safety against sliding?",
+  "answer": {
+   "value": 1.58,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Check a one-metre length of dam as a rigid block. The water thrust is the area of the triangular pressure diagram, half the unit weight of water times the depth squared. Friction can supply up to the coefficient times the dam's weight.",
+  "solution": "Weight = 23.5(3)(5) = 352.5 kN/m.\n\nWater thrust = \\frac{1}{2}(9.81)(5)^{2} = 122.6 kN/m.\n\nFS = \\frac{0.55(352.5)}{122.6} = 1.58.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "forces on submerged surfaces"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0027",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0027-d",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete gravity dam with a rectangular section is 8 m wide at the base and 10 m high. Water stands level with its top on one side. Concrete weighs 23.5 kN/m^{3}, the coefficient of friction on the base is 0.70 and uplift is ignored. What is the factor of safety against sliding?",
+  "answer": {
+   "value": 2.68,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Check a one-metre length of dam as a rigid block. The water thrust is the area of the triangular pressure diagram, half the unit weight of water times the depth squared. Friction can supply up to the coefficient times the dam's weight.",
+  "solution": "Weight = 23.5(8)(10) = 1,880.0 kN/m.\n\nWater thrust = \\frac{1}{2}(9.81)(10)^{2} = 490.5 kN/m.\n\nFS = \\frac{0.70(1,880.0)}{490.5} = 2.68.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "forces on submerged surfaces"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0027",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0028",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A catchment is 2.0 ha of pavement (curve number 98) and 6.0 ha of lawn (curve number 74). What is the composite curve number?",
+  "answer": {
+   "value": 80.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "For mixed land cover, use the area-weighted average curve number. Pavement is assigned 98 because surface pits hold a little water.",
+  "solution": "CN = \\frac{2.0(98) + 6.0(74)}{2.0 + 6.0} = \\frac{640.0}{8.0} = 80.0.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "NRCS",
+     "curve number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0028",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0028-b",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A catchment is 5.0 ha of pavement (curve number 98) and 5.0 ha of lawn (curve number 61). What is the composite curve number?",
+  "answer": {
+   "value": 79.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "For mixed land cover, use the area-weighted average curve number. Pavement is assigned 98 because surface pits hold a little water.",
+  "solution": "CN = \\frac{5.0(98) + 5.0(61)}{5.0 + 5.0} = \\frac{795.0}{10.0} = 79.5.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "NRCS",
+     "curve number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0028",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0028-c",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A catchment is 1.5 ha of pavement (curve number 98) and 8.5 ha of lawn (curve number 69). What is the composite curve number?",
+  "answer": {
+   "value": 73.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "For mixed land cover, use the area-weighted average curve number. Pavement is assigned 98 because surface pits hold a little water.",
+  "solution": "CN = \\frac{1.5(98) + 8.5(69)}{1.5 + 8.5} = \\frac{733.5}{10.0} = 73.3.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "NRCS",
+     "curve number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0028",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0028-d",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A catchment is 8.0 ha of pavement (curve number 98) and 4.0 ha of lawn (curve number 80). What is the composite curve number?",
+  "answer": {
+   "value": 92.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "For mixed land cover, use the area-weighted average curve number. Pavement is assigned 98 because surface pits hold a little water.",
+  "solution": "CN = \\frac{8.0(98) + 4.0(80)}{8.0 + 4.0} = \\frac{1,104.0}{12.0} = 92.0.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "NRCS",
+     "curve number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0028",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0029",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Water flows 0.30 m deep at 6.0 m/s in a rectangular channel just before a hydraulic jump. What is the depth after the jump? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 1.34,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "A hydraulic jump takes supercritical flow to subcritical. The depths on either side are conjugate: y_{2} = (y_{1} / 2)(square root of (1 + 8 Fr_{1}^{2}) - 1), with the Froude number taken upstream. It must exceed 1 for a jump to occur.",
+  "solution": "Fr_{1} = \\frac{6.0}{\\sqrt{9.81(0.30)}} = 3.50, greater than 1.\n\ny_{2} = \\frac{0.30}{2}(\\sqrt{1 + 8(3.50)^{2}} - 1) = 1.34 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "hydraulic jump"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0029",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0029-b",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Water flows 0.50 m deep at 7.0 m/s in a rectangular channel just before a hydraulic jump. What is the depth after the jump? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 2.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "A hydraulic jump takes supercritical flow to subcritical. The depths on either side are conjugate: y_{2} = (y_{1} / 2)(square root of (1 + 8 Fr_{1}^{2}) - 1), with the Froude number taken upstream. It must exceed 1 for a jump to occur.",
+  "solution": "Fr_{1} = \\frac{7.0}{\\sqrt{9.81(0.50)}} = 3.16, greater than 1.\n\ny_{2} = \\frac{0.50}{2}(\\sqrt{1 + 8(3.16)^{2}} - 1) = 2.00 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "hydraulic jump"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0029",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0029-c",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Water flows 0.25 m deep at 5.0 m/s in a rectangular channel just before a hydraulic jump. What is the depth after the jump? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 1.01,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "A hydraulic jump takes supercritical flow to subcritical. The depths on either side are conjugate: y_{2} = (y_{1} / 2)(square root of (1 + 8 Fr_{1}^{2}) - 1), with the Froude number taken upstream. It must exceed 1 for a jump to occur.",
+  "solution": "Fr_{1} = \\frac{5.0}{\\sqrt{9.81(0.25)}} = 3.19, greater than 1.\n\ny_{2} = \\frac{0.25}{2}(\\sqrt{1 + 8(3.19)^{2}} - 1) = 1.01 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "hydraulic jump"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0029",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0029-d",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Water flows 0.40 m deep at 8.0 m/s in a rectangular channel just before a hydraulic jump. What is the depth after the jump? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 2.09,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "A hydraulic jump takes supercritical flow to subcritical. The depths on either side are conjugate: y_{2} = (y_{1} / 2)(square root of (1 + 8 Fr_{1}^{2}) - 1), with the Froude number taken upstream. It must exceed 1 for a jump to occur.",
+  "solution": "Fr_{1} = \\frac{8.0}{\\sqrt{9.81(0.40)}} = 4.04, greater than 1.\n\ny_{2} = \\frac{0.40}{2}(\\sqrt{1 + 8(4.04)^{2}} - 1) = 2.09 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "hydraulic jump"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0029",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0030",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A suppressed rectangular weir is 2.0 m long, and the head over its crest is 0.30 m. Using Q = 1.84 L H^{3/2} in SI units, what is the discharge?",
+  "answer": {
+   "value": 0.605,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/s"
+  },
+  "eli5": "Flow over a sharp-crested rectangular weir varies with the head to the 3/2 power, so a small error in head matters. A suppressed weir spans the full channel width and has no end contractions.",
+  "solution": "Q = 1.84(2.0)(0.30)^{3/2} = 1.84 × 2.0 × 0.1643 = 0.605 m^{3}/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "weir"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0030",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0030-b",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A suppressed rectangular weir is 3.5 m long, and the head over its crest is 0.45 m. Using Q = 1.84 L H^{3/2} in SI units, what is the discharge?",
+  "answer": {
+   "value": 1.944,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/s"
+  },
+  "eli5": "Flow over a sharp-crested rectangular weir varies with the head to the 3/2 power, so a small error in head matters. A suppressed weir spans the full channel width and has no end contractions.",
+  "solution": "Q = 1.84(3.5)(0.45)^{3/2} = 1.84 × 3.5 × 0.3019 = 1.944 m^{3}/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "weir"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0030",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0030-c",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A suppressed rectangular weir is 1.2 m long, and the head over its crest is 0.20 m. Using Q = 1.84 L H^{3/2} in SI units, what is the discharge?",
+  "answer": {
+   "value": 0.197,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/s"
+  },
+  "eli5": "Flow over a sharp-crested rectangular weir varies with the head to the 3/2 power, so a small error in head matters. A suppressed weir spans the full channel width and has no end contractions.",
+  "solution": "Q = 1.84(1.2)(0.20)^{3/2} = 1.84 × 1.2 × 0.0894 = 0.197 m^{3}/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "weir"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0030",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0030-d",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A suppressed rectangular weir is 5.0 m long, and the head over its crest is 0.60 m. Using Q = 1.84 L H^{3/2} in SI units, what is the discharge?",
+  "answer": {
+   "value": 4.276,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/s"
+  },
+  "eli5": "Flow over a sharp-crested rectangular weir varies with the head to the 3/2 power, so a small error in head matters. A suppressed weir spans the full channel width and has no end contractions.",
+  "solution": "Q = 1.84(5.0)(0.60)^{3/2} = 1.84 × 5.0 × 0.4648 = 4.276 m^{3}/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "weir"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0030",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0031",
+  "topic": "water",
+  "subtopic": "water-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 200 mm sewer flowing full must keep a velocity of at least 0.6 m/s. With Manning's n = 0.013, what minimum slope is needed, as a percentage?",
+  "answer": {
+   "value": 0.33,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Set Manning's velocity equal to the self-cleansing minimum and solve for slope: S = (V n / R^{2/3})^{2}, with R = D / 4 for a full circular pipe. Larger pipes need flatter minimum slopes.",
+  "solution": "R = 0.200 / 4 = 0.0500 m, and R^{2/3} = 0.1357.\n\nS = (\\frac{0.6(0.013)}{0.1357})^{2} = 0.00330 = 0.330%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Manning's equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0031",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0031-b",
+  "topic": "water",
+  "subtopic": "water-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 300 mm sewer flowing full must keep a velocity of at least 0.6 m/s. With Manning's n = 0.013, what minimum slope is needed, as a percentage?",
+  "answer": {
+   "value": 0.192,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Set Manning's velocity equal to the self-cleansing minimum and solve for slope: S = (V n / R^{2/3})^{2}, with R = D / 4 for a full circular pipe. Larger pipes need flatter minimum slopes.",
+  "solution": "R = 0.300 / 4 = 0.0750 m, and R^{2/3} = 0.1778.\n\nS = (\\frac{0.6(0.013)}{0.1778})^{2} = 0.00192 = 0.192%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Manning's equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0031",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0031-c",
+  "topic": "water",
+  "subtopic": "water-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 450 mm sewer flowing full must keep a velocity of at least 0.6 m/s. With Manning's n = 0.013, what minimum slope is needed, as a percentage?",
+  "answer": {
+   "value": 0.112,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Set Manning's velocity equal to the self-cleansing minimum and solve for slope: S = (V n / R^{2/3})^{2}, with R = D / 4 for a full circular pipe. Larger pipes need flatter minimum slopes.",
+  "solution": "R = 0.450 / 4 = 0.1125 m, and R^{2/3} = 0.2330.\n\nS = (\\frac{0.6(0.013)}{0.2330})^{2} = 0.00112 = 0.112%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Manning's equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0031",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0031-d",
+  "topic": "water",
+  "subtopic": "water-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 600 mm sewer flowing full must keep a velocity of at least 0.6 m/s. With Manning's n = 0.013, what minimum slope is needed, as a percentage?",
+  "answer": {
+   "value": 0.076,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Set Manning's velocity equal to the self-cleansing minimum and solve for slope: S = (V n / R^{2/3})^{2}, with R = D / 4 for a full circular pipe. Larger pipes need flatter minimum slopes.",
+  "solution": "R = 0.600 / 4 = 0.1500 m, and R^{2/3} = 0.2823.\n\nS = (\\frac{0.6(0.013)}{0.2823})^{2} = 0.00076 = 0.076%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Manning's equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0031",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0032",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A well in an unconfined aquifer is pumped at 500 m^{3}/day. At steady state the saturated thickness is 18.0 m at 10 m from the well and 19.5 m at 50 m. What is the hydraulic conductivity?",
+  "answer": {
+   "value": 4.55,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/day"
+  },
+  "eli5": "For steady flow to a well in an unconfined aquifer, Q = π K (h_{2}^{2} - h_{1}^{2}) / ln(r_{2} / r_{1}), where each h is the saturated thickness at that radius. Rearrange for K.",
+  "solution": "K = \\frac{Q ln(r_{2} / r_{1})}{π(h_{2}^{2} - h_{1}^{2})} = \\frac{500 ln(50 / 10)}{π(19.5^{2} - 18.0^{2})} = \\frac{500(1.6094)}{π(56.25)} = 4.55 m/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Dupuit",
+     "unconfined aquifer"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0032",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0032-b",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A well in an unconfined aquifer is pumped at 1,200 m^{3}/day. At steady state the saturated thickness is 24.5 m at 15 m from the well and 26.0 m at 90 m. What is the hydraulic conductivity?",
+  "answer": {
+   "value": 9.04,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/day"
+  },
+  "eli5": "For steady flow to a well in an unconfined aquifer, Q = π K (h_{2}^{2} - h_{1}^{2}) / ln(r_{2} / r_{1}), where each h is the saturated thickness at that radius. Rearrange for K.",
+  "solution": "K = \\frac{Q ln(r_{2} / r_{1})}{π(h_{2}^{2} - h_{1}^{2})} = \\frac{1,200 ln(90 / 15)}{π(26.0^{2} - 24.5^{2})} = \\frac{1,200(1.7918)}{π(75.75)} = 9.04 m/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Dupuit",
+     "unconfined aquifer"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0032",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0032-c",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A well in an unconfined aquifer is pumped at 300 m^{3}/day. At steady state the saturated thickness is 11.0 m at 8 m from the well and 12.0 m at 40 m. What is the hydraulic conductivity?",
+  "answer": {
+   "value": 6.68,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/day"
+  },
+  "eli5": "For steady flow to a well in an unconfined aquifer, Q = π K (h_{2}^{2} - h_{1}^{2}) / ln(r_{2} / r_{1}), where each h is the saturated thickness at that radius. Rearrange for K.",
+  "solution": "K = \\frac{Q ln(r_{2} / r_{1})}{π(h_{2}^{2} - h_{1}^{2})} = \\frac{300 ln(40 / 8)}{π(12.0^{2} - 11.0^{2})} = \\frac{300(1.6094)}{π(23.00)} = 6.68 m/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Dupuit",
+     "unconfined aquifer"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0032",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0032-d",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A well in an unconfined aquifer is pumped at 2,000 m^{3}/day. At steady state the saturated thickness is 28.0 m at 20 m from the well and 29.6 m at 120 m. What is the hydraulic conductivity?",
+  "answer": {
+   "value": 12.38,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/day"
+  },
+  "eli5": "For steady flow to a well in an unconfined aquifer, Q = π K (h_{2}^{2} - h_{1}^{2}) / ln(r_{2} / r_{1}), where each h is the saturated thickness at that radius. Rearrange for K.",
+  "solution": "K = \\frac{Q ln(r_{2} / r_{1})}{π(h_{2}^{2} - h_{1}^{2})} = \\frac{2,000 ln(120 / 20)}{π(29.6^{2} - 28.0^{2})} = \\frac{2,000(1.7918)}{π(92.16)} = 12.38 m/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Dupuit",
+     "unconfined aquifer"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0032",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  }
 ]

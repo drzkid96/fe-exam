@@ -50,6 +50,8 @@ FIND = {
  'construction-0001': 'CPM; float', 'construction-0002': 'earned-value analysis', 'construction-0003': '-', 'construction-0004': '-', 'construction-0005': '-', 'construction-0006': '-', 'construction-0007': '-', 'construction-0008': '-', 'construction-0009': '-',
  'construction-0010': '-', 'construction-0011': 'Safety::incidence rate', 'construction-0012': '-', 'construction-0013': 'earned-value analysis; schedule variance', 'construction-0014': '-', 'construction-0015': '-', 'construction-0016': '-',
 }
+_F2 = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'find2.json')
+if os.path.exists(_F2): FIND.update(json.load(open(_F2)))
 def main():
   global n, miss, none
   n = miss = none = 0

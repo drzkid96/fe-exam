@@ -98,12 +98,36 @@
    },
    "ideas": [
     {
+     "title": "Reversing a bearing",
+     "text": "Travelling the other way along a line keeps the angle and swaps both letters: N 30° E becomes S 30° W."
+    },
+    {
+     "title": "Degrees, minutes and seconds",
+     "text": "Decimal degrees = degrees + minutes / 60 + seconds / 3,600."
+    },
+    {
+     "title": "The compass rule",
+     "text": "A closed traverse's latitudes and departures should each sum to zero. Share the misclosure among the legs in proportion to their lengths: correction = -(misclosure) × (leg length / perimeter), done separately for latitude and departure."
+    },
+    {
+     "title": "Deflection angle to the end of a curve",
+     "text": "Standing at the PC and sighting the PI, the angle turned to the PT is half the intersection angle."
+    },
+    {
      "title": "Trigonometry",
      "text": "A slope measurement is the hypotenuse of a right triangle. The horizontal distance is the slope distance times the cosine of the vertical angle, and the elevation difference is the slope distance times the sine."
     },
     {
      "title": "Regular polygon",
      "text": "The interior angles of any closed polygon with n sides sum to (n - 2) × 180°. Comparing the measured sum with this value gives the angular misclosure of a traverse."
+    },
+    {
+     "title": "Trigonometry",
+     "text": "A degree has 60 minutes and a minute has 60 seconds, so decimal degrees = degrees + minutes / 60 + seconds / 3,600."
+    },
+    {
+     "title": "Latitude",
+     "text": "The compass rule shares the misclosure among the legs in proportion to their lengths, with the opposite sign so that the corrected latitudes sum to zero."
     }
    ],
    "examples": [
@@ -122,6 +146,22 @@
      "steps": "Sum = (n - 2) × 180° = (7 - 2) × 180° = 900°.",
      "answer": "900°",
      "value": 900
+    },
+    {
+     "family": "surveying-0014",
+     "problem": "Convert 74° 12' 45\" to decimal degrees.",
+     "idea": "A degree has 60 minutes and a minute has 60 seconds, so decimal degrees = degrees + minutes / 60 + seconds / 3,600.",
+     "steps": "74 + \\frac{12}{60} + \\frac{45}{3,600} = 74 + 0.2000 + 0.0125 = 74.2125°.",
+     "answer": "74.2125 °",
+     "value": 74.2125
+    },
+    {
+     "family": "surveying-0016",
+     "problem": "A closed traverse has a perimeter of 960 m and a misclosure in latitude of 0.16 m. Using the compass rule, what correction is applied to the latitude of a 240.0 m leg?",
+     "idea": "The compass rule shares the misclosure among the legs in proportion to their lengths, with the opposite sign so that the corrected latitudes sum to zero.",
+     "steps": "Correction = -(misclosure) × \\frac{leg length}{perimeter} = -(0.16) × \\frac{240.0}{960} = -0.040 m.",
+     "answer": "-0.040 m",
+     "value": -0.04
     }
    ],
    "lookup": [
@@ -132,6 +172,14 @@
       "trigonometry",
       "regular polygon"
      ]
+    },
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "latitude",
+      "departure"
+     ]
     }
    ],
    "deep": "Surveying measurements are angles and distances, reduced with trigonometry. Directions are stated as azimuths, measured clockwise from north from 0° to 360°, or as bearings, an acute angle from north or south toward east or west. Each line of a traverse has a latitude, L cos(azimuth), and a departure, L sin(azimuth).\n\nIn a closed traverse the latitudes and departures should each sum to zero. What is left is the misclosure, and its length divided by the perimeter gives the precision. Slope distances are reduced to horizontal with the cosine of the vertical angle.",
@@ -141,7 +189,8 @@
     "Sum them; for a closed figure the sums are the misclosures.",
     "Compute the linear misclosure as the square root of the sum of squares, and precision as misclosure over perimeter.",
     "Reduce slope distances to horizontal before anything else."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "surveying-b-lesson",
@@ -167,7 +216,8 @@
    ],
    "pitfalls": [
     "Listing the corners out of order around the boundary.",
-    "Forgetting to halve the cross-multiplied sum."
+    "Forgetting to halve the cross-multiplied sum.",
+    "Leaving an area in square feet when acres are asked for. Divide by 43,560."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -181,6 +231,14 @@
     "caption": "Area by coordinates: list the corners in order and apply the cross-product sum."
    },
    "ideas": [
+    {
+     "title": "A way to remember the coordinate method",
+     "text": "List the corners in order with the first repeated at the end. Multiply each x by the next y and add; multiply each y by the next x and add; subtract and halve."
+    },
+    {
+     "title": "Simpson's 1/3 rule",
+     "text": "It needs an odd number of offsets, which is an even number of intervals. Area = (interval / 3) × (first + last + 4 × the even-numbered offsets + 2 × the odd-numbered interior ones)."
+    },
     {
      "title": "Area by coordinates",
      "text": "The area of a closed polygon from corner coordinates is half the absolute value of the sum of the cross products x_{i} y_{i+1} - x_{i+1} y_{i} taken around the boundary (the coordinate or shoelace method)."
@@ -255,7 +313,8 @@
     "Halve the absolute value.",
     "For offsets, apply the trapezoidal or Simpson's rule with the common interval.",
     "Convert units if asked: 1 acre = 43,560 ft^{2}; 1 hectare = 10,000 m^{2}."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "surveying-c-lesson",
@@ -280,7 +339,8 @@
     }
    ],
    "pitfalls": [
-    "Adding cut and fill together. Keep them separate."
+    "Adding cut and fill together. Keep them separate.",
+    "Reporting cubic feet when cubic yards are asked for. Divide by 27."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -289,12 +349,24 @@
    },
    "ideas": [
     {
+     "title": "The prismoidal formula",
+     "text": "V = L (A_{1} + 4 A_{m} + A_{2}) / 6, where A_{m} is the area of the section midway between the ends. It is a weighted average that counts the middle four times, and it is exact for a true prismoid. Average end area gives a slightly larger volume."
+    },
+    {
+     "title": "Borrow pits",
+     "text": "For each grid cell, volume is the plan area times the mean of its corner depths. Add the cells."
+    },
+    {
      "title": "Average end area",
      "text": "The average end area method treats the earthwork between two cross-sections as a prism whose cross-section is the mean of the two end areas: V = L (A_{1} + A_{2}) / 2. It slightly overestimates when the areas differ a lot."
     },
     {
      "title": "Earthwork formulas",
      "text": "Borrow pit volume is plan area times average depth of cut. On a grid, the average depth is found by weighting each corner depth by the number of grid squares it touches."
+    },
+    {
+     "title": "Prismoidal formula",
+     "text": "The prismoidal formula is a weighted average of three sections: each end once and the middle four times, divided by six. It is exact for a prismoid, and the average end area method gives a slightly larger volume."
     }
    ],
    "examples": [
@@ -313,6 +385,14 @@
      "steps": "V = 30 × 45 × 2.2 = 1,350 m^{2} × 2.2 m = 2,970 m^{3}.",
      "answer": "2,970 m^{3}",
      "value": 2970.0
+    },
+    {
+     "family": "surveying-0015",
+     "problem": "Two end sections of a cut are 50 m apart, with areas of 16 m^{2} and 30 m^{2}. The section midway between them has an area of 22 m^{2}. Using the prismoidal formula, what is the volume?",
+     "idea": "The prismoidal formula is a weighted average of three sections: each end once and the middle four times, divided by six. It is exact for a prismoid, and the average end area method gives a slightly larger volume.",
+     "steps": "V = \\frac{L(A_{1} + 4A_{m} + A_{2})}{6} = \\frac{50(16 + 4(22) + 30)}{6} = 1,117 m^{3}.\n\nAverage end area would give 1,150 m^{3}.",
+     "answer": "1,117 m^{3}",
+     "value": 1116.666667
     }
    ],
    "lookup": [
@@ -321,7 +401,8 @@
      "page": "259–309",
      "find": [
       "average end area",
-      "earthwork formulas"
+      "earthwork formulas",
+      "prismoidal formula"
      ]
     }
    ],
@@ -332,7 +413,8 @@
     "Keep cut and fill separate.",
     "Apply swell or shrinkage factors to convert between bank, loose and compacted volumes.",
     "Watch stationing: one full station is 100 ft or, in metric practice, commonly 1 km with decimals."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "surveying-d-lesson",
@@ -370,6 +452,10 @@
     "steps": "Latitude = 150 cos 120° = -75.0 m (south).\n\nDeparture = 150 sin 120° = 129.9 m (east)."
    },
    "ideas": [
+    {
+     "title": "State plane coordinates",
+     "text": "Each state is divided into zones, and each zone uses its own map projection to give northings and eastings on a flat grid. The projection introduces a small, known scale distortion, and a zone is not meant for mapping across states."
+    },
     {
      "title": "Latitude",
      "text": "Azimuth is measured clockwise from north. Latitude (the north-south component) is L cos(azimuth) and departure (the east-west component) is L sin(azimuth). East and north are positive."
@@ -436,7 +522,8 @@
     "Distance is the square root of the sum of squares.",
     "Azimuth is the inverse tangent of easting difference over northing difference, placed in the correct quadrant from the signs.",
     "To set out a point, reverse the steps with latitude and departure."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "surveying-e-lesson",
@@ -475,6 +562,10 @@
     "caption": "Differential leveling: height of instrument = benchmark + backsight; new elevation = height of instrument - foresight."
    },
    "ideas": [
+    {
+     "title": "Trigonometric leveling",
+     "text": "With a total station, the elevation difference is the slope distance times the sine of the vertical angle, or the cosine of the zenith angle. If the same prism height is used on both shots it cancels."
+    },
     {
      "title": "",
      "text": "Differential leveling: the height of instrument is the benchmark elevation plus the backsight. The elevation of the new point is the height of instrument minus the foresight. A larger foresight means lower ground."
@@ -515,7 +606,8 @@
     "Subtract the foresight to get the new elevation.",
     "Repeat through each turning point.",
     "Check: sum of backsights minus sum of foresights equals last elevation minus first."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   }
  ]
 }

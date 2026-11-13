@@ -3927,5 +3927,753 @@
   "version": 4,
   "versions": 4,
   "lookup": true
+ },
+ {
+  "id": "geotech-0025",
+  "topic": "geotech",
+  "subtopic": "geotech-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sand has a field dry unit weight of 16.5 kN/m^{3}. Its maximum and minimum dry unit weights are 18.0 and 14.5 kN/m^{3}. What is its relative density?",
+  "answer": {
+   "value": 62.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Relative density places a granular soil between its loosest and densest states. In terms of dry unit weights, D_{r} = ((field - minimum) / (maximum - minimum)) × (maximum / field). It is not the same as relative compaction, which is simply field over maximum.",
+  "solution": "D_{r} = \\frac{16.5 - 14.5}{18.0 - 14.5} × \\frac{18.0}{16.5} × 100 = 0.5714 × 1.0909 × 100 = 62.3%.\n\nFor comparison, relative compaction = 16.5 / 18.0 = 91.7%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "relative density"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0025",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0025-b",
+  "topic": "geotech",
+  "subtopic": "geotech-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sand has a field dry unit weight of 17.2 kN/m^{3}. Its maximum and minimum dry unit weights are 18.5 and 15.0 kN/m^{3}. What is its relative density?",
+  "answer": {
+   "value": 67.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Relative density places a granular soil between its loosest and densest states. In terms of dry unit weights, D_{r} = ((field - minimum) / (maximum - minimum)) × (maximum / field). It is not the same as relative compaction, which is simply field over maximum.",
+  "solution": "D_{r} = \\frac{17.2 - 15.0}{18.5 - 15.0} × \\frac{18.5}{17.2} × 100 = 0.6286 × 1.0756 × 100 = 67.6%.\n\nFor comparison, relative compaction = 17.2 / 18.5 = 93.0%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "relative density"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0025",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0025-c",
+  "topic": "geotech",
+  "subtopic": "geotech-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sand has a field dry unit weight of 15.4 kN/m^{3}. Its maximum and minimum dry unit weights are 17.0 and 14.0 kN/m^{3}. What is its relative density?",
+  "answer": {
+   "value": 51.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Relative density places a granular soil between its loosest and densest states. In terms of dry unit weights, D_{r} = ((field - minimum) / (maximum - minimum)) × (maximum / field). It is not the same as relative compaction, which is simply field over maximum.",
+  "solution": "D_{r} = \\frac{15.4 - 14.0}{17.0 - 14.0} × \\frac{17.0}{15.4} × 100 = 0.4667 × 1.1039 × 100 = 51.5%.\n\nFor comparison, relative compaction = 15.4 / 17.0 = 90.6%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "relative density"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0025",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0025-d",
+  "topic": "geotech",
+  "subtopic": "geotech-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sand has a field dry unit weight of 18.0 kN/m^{3}. Its maximum and minimum dry unit weights are 19.2 and 15.6 kN/m^{3}. What is its relative density?",
+  "answer": {
+   "value": 71.1,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Relative density places a granular soil between its loosest and densest states. In terms of dry unit weights, D_{r} = ((field - minimum) / (maximum - minimum)) × (maximum / field). It is not the same as relative compaction, which is simply field over maximum.",
+  "solution": "D_{r} = \\frac{18.0 - 15.6}{19.2 - 15.6} × \\frac{19.2}{18.0} × 100 = 0.6667 × 1.0667 × 100 = 71.1%.\n\nFor comparison, relative compaction = 18.0 / 19.2 = 93.8%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "relative density"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0025",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0026",
+  "topic": "geotech",
+  "subtopic": "geotech-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A drained triaxial test on clean sand fails at a cell pressure of 100 kPa and a major principal stress of 300 kPa. What is the friction angle?",
+  "answer": {
+   "value": 30.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "°"
+  },
+  "eli5": "For a soil with no cohesion the failure envelope passes through the origin and is tangent to the Mohr circle at failure. The geometry gives sin(friction angle) = radius / centre = (major - minor) / (major + minor).",
+  "solution": "sin(friction angle) = \\frac{300 - 100}{300 + 100} = \\frac{200}{400} = 0.5000.\n\nFriction angle = 30.0°.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Mohr-Coulomb"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0026",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0026-b",
+  "topic": "geotech",
+  "subtopic": "geotech-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A drained triaxial test on clean sand fails at a cell pressure of 150 kPa and a major principal stress of 520 kPa. What is the friction angle?",
+  "answer": {
+   "value": 33.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "°"
+  },
+  "eli5": "For a soil with no cohesion the failure envelope passes through the origin and is tangent to the Mohr circle at failure. The geometry gives sin(friction angle) = radius / centre = (major - minor) / (major + minor).",
+  "solution": "sin(friction angle) = \\frac{520 - 150}{520 + 150} = \\frac{370}{670} = 0.5522.\n\nFriction angle = 33.5°.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Mohr-Coulomb"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0026",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0026-c",
+  "topic": "geotech",
+  "subtopic": "geotech-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A drained triaxial test on clean sand fails at a cell pressure of 80 kPa and a major principal stress of 270 kPa. What is the friction angle?",
+  "answer": {
+   "value": 32.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "°"
+  },
+  "eli5": "For a soil with no cohesion the failure envelope passes through the origin and is tangent to the Mohr circle at failure. The geometry gives sin(friction angle) = radius / centre = (major - minor) / (major + minor).",
+  "solution": "sin(friction angle) = \\frac{270 - 80}{270 + 80} = \\frac{190}{350} = 0.5429.\n\nFriction angle = 32.9°.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Mohr-Coulomb"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0026",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0026-d",
+  "topic": "geotech",
+  "subtopic": "geotech-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A drained triaxial test on clean sand fails at a cell pressure of 200 kPa and a major principal stress of 680 kPa. What is the friction angle?",
+  "answer": {
+   "value": 33.1,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "°"
+  },
+  "eli5": "For a soil with no cohesion the failure envelope passes through the origin and is tangent to the Mohr circle at failure. The geometry gives sin(friction angle) = radius / centre = (major - minor) / (major + minor).",
+  "solution": "sin(friction angle) = \\frac{680 - 200}{680 + 200} = \\frac{480}{880} = 0.5455.\n\nFriction angle = 33.1°.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Mohr-Coulomb"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0026",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0027",
+  "topic": "geotech",
+  "subtopic": "geotech-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 2.0 m wide strip footing carries a vertical load of 300 kN per metre and a moment of 60 kN·m per metre. What is the maximum bearing pressure?",
+  "answer": {
+   "value": 240.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "A moment shifts the resultant by e = M / P. While e is within B / 6, the pressure under the footing is trapezoidal, with edge values (P / B)(1 ± 6e / B). The larger value is at the toe.",
+  "solution": "e = \\frac{60}{300} = 0.200 m, which is less than B / 6 = 0.333 m.\n\nq_{max} = \\frac{300}{2.0}(1 + \\frac{6(0.200)}{2.0}) = 150.0 × 1.600 = 240.0 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "bearing capacity",
+     "eccentricity"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0027",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0027-b",
+  "topic": "geotech",
+  "subtopic": "geotech-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 2.5 m wide strip footing carries a vertical load of 450 kN per metre and a moment of 90 kN·m per metre. What is the maximum bearing pressure?",
+  "answer": {
+   "value": 266.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "A moment shifts the resultant by e = M / P. While e is within B / 6, the pressure under the footing is trapezoidal, with edge values (P / B)(1 ± 6e / B). The larger value is at the toe.",
+  "solution": "e = \\frac{90}{450} = 0.200 m, which is less than B / 6 = 0.417 m.\n\nq_{max} = \\frac{450}{2.5}(1 + \\frac{6(0.200)}{2.5}) = 180.0 × 1.480 = 266.4 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "bearing capacity",
+     "eccentricity"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0027",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0027-c",
+  "topic": "geotech",
+  "subtopic": "geotech-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 1.5 m wide strip footing carries a vertical load of 180 kN per metre and a moment of 20 kN·m per metre. What is the maximum bearing pressure?",
+  "answer": {
+   "value": 173.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "A moment shifts the resultant by e = M / P. While e is within B / 6, the pressure under the footing is trapezoidal, with edge values (P / B)(1 ± 6e / B). The larger value is at the toe.",
+  "solution": "e = \\frac{20}{180} = 0.111 m, which is less than B / 6 = 0.250 m.\n\nq_{max} = \\frac{180}{1.5}(1 + \\frac{6(0.111)}{1.5}) = 120.0 × 1.444 = 173.3 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "bearing capacity",
+     "eccentricity"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0027",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0027-d",
+  "topic": "geotech",
+  "subtopic": "geotech-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 3.0 m wide strip footing carries a vertical load of 600 kN per metre and a moment of 150 kN·m per metre. What is the maximum bearing pressure?",
+  "answer": {
+   "value": 300.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "A moment shifts the resultant by e = M / P. While e is within B / 6, the pressure under the footing is trapezoidal, with edge values (P / B)(1 ± 6e / B). The larger value is at the toe.",
+  "solution": "e = \\frac{150}{600} = 0.250 m, which is less than B / 6 = 0.500 m.\n\nq_{max} = \\frac{600}{3.0}(1 + \\frac{6(0.250)}{3.0}) = 200.0 × 1.500 = 300.0 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "bearing capacity",
+     "eccentricity"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0027",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0028",
+  "topic": "geotech",
+  "subtopic": "geotech-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Using the correlation C_{c} = 0.009(LL - 10), what is the compression index of a clay with a liquid limit of 45?",
+  "answer": {
+   "value": 0.315,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The compression index is the slope of the virgin compression line. For undisturbed clays of low to medium sensitivity it is often estimated from the liquid limit. The recompression index is commonly taken as about one sixth of it.",
+  "solution": "C_{c} = 0.009(45 - 10) = 0.315. The recompression index would be about 0.052.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "compression index"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0028",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0028-b",
+  "topic": "geotech",
+  "subtopic": "geotech-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Using the correlation C_{c} = 0.009(LL - 10), what is the compression index of a clay with a liquid limit of 60?",
+  "answer": {
+   "value": 0.45,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The compression index is the slope of the virgin compression line. For undisturbed clays of low to medium sensitivity it is often estimated from the liquid limit. The recompression index is commonly taken as about one sixth of it.",
+  "solution": "C_{c} = 0.009(60 - 10) = 0.450. The recompression index would be about 0.075.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "compression index"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0028",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0028-c",
+  "topic": "geotech",
+  "subtopic": "geotech-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Using the correlation C_{c} = 0.009(LL - 10), what is the compression index of a clay with a liquid limit of 38?",
+  "answer": {
+   "value": 0.252,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The compression index is the slope of the virgin compression line. For undisturbed clays of low to medium sensitivity it is often estimated from the liquid limit. The recompression index is commonly taken as about one sixth of it.",
+  "solution": "C_{c} = 0.009(38 - 10) = 0.252. The recompression index would be about 0.042.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "compression index"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0028",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0028-d",
+  "topic": "geotech",
+  "subtopic": "geotech-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Using the correlation C_{c} = 0.009(LL - 10), what is the compression index of a clay with a liquid limit of 72?",
+  "answer": {
+   "value": 0.558,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The compression index is the slope of the virgin compression line. For undisturbed clays of low to medium sensitivity it is often estimated from the liquid limit. The recompression index is commonly taken as about one sixth of it.",
+  "solution": "C_{c} = 0.009(72 - 10) = 0.558. The recompression index would be about 0.093.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "compression index"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0028",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0029",
+  "topic": "geotech",
+  "subtopic": "geotech-j",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A wedge of soil weighing 800 kN per metre can slide on a plane 12.0 m long inclined at 30°. The soil has a cohesion of 10 kPa and a friction angle of 25°. What is the factor of safety against sliding?",
+  "answer": {
+   "value": 1.11,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "A planar slide is a block on an incline. The weight component down the plane drives it. Friction from the normal component, plus cohesion acting over the length of the plane, resists it.",
+  "solution": "Driving = 800 sin 30° = 400.0 kN/m.\n\nResisting = 10(12.0) + 800 cos 30° tan 25° = 120.0 + 323.1 = 443.1 kN/m.\n\nFS = \\frac{443.1}{400.0} = 1.11.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "slope failure",
+     "factor of safety"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0029",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M96 150 L304 150 L304 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(210 84) rotate(-30)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='140' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>30°</text>",
+   "alt": "A block on an incline at 30° to the horizontal."
+  },
+  "lookup": true
+ },
+ {
+  "id": "geotech-0029-b",
+  "topic": "geotech",
+  "subtopic": "geotech-j",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A wedge of soil weighing 1,200 kN per metre can slide on a plane 15.0 m long inclined at 25°. The soil has a cohesion of 15 kPa and a friction angle of 28°. What is the factor of safety against sliding?",
+  "answer": {
+   "value": 1.58,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "A planar slide is a block on an incline. The weight component down the plane drives it. Friction from the normal component, plus cohesion acting over the length of the plane, resists it.",
+  "solution": "Driving = 1,200 sin 25° = 507.1 kN/m.\n\nResisting = 15(15.0) + 1,200 cos 25° tan 28° = 225.0 + 578.3 = 803.3 kN/m.\n\nFS = \\frac{803.3}{507.1} = 1.58.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "slope failure",
+     "factor of safety"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0029",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M71 150 L329 150 L329 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(213 84) rotate(-25)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='115' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>25°</text>",
+   "alt": "A block on an incline at 25° to the horizontal."
+  },
+  "lookup": true
+ },
+ {
+  "id": "geotech-0029-c",
+  "topic": "geotech",
+  "subtopic": "geotech-j",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A wedge of soil weighing 500 kN per metre can slide on a plane 8.0 m long inclined at 28°. The soil has a cohesion of 8 kPa and a friction angle of 22°. What is the factor of safety against sliding?",
+  "answer": {
+   "value": 1.03,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "A planar slide is a block on an incline. The weight component down the plane drives it. Friction from the normal component, plus cohesion acting over the length of the plane, resists it.",
+  "solution": "Driving = 500 sin 28° = 234.7 kN/m.\n\nResisting = 8(8.0) + 500 cos 28° tan 22° = 64.0 + 178.4 = 242.4 kN/m.\n\nFS = \\frac{242.4}{234.7} = 1.03.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "slope failure",
+     "factor of safety"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0029",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M87 150 L313 150 L313 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(211 84) rotate(-28)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='131' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>28°</text>",
+   "alt": "A block on an incline at 28° to the horizontal."
+  },
+  "lookup": true
+ },
+ {
+  "id": "geotech-0029-d",
+  "topic": "geotech",
+  "subtopic": "geotech-j",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A wedge of soil weighing 1,500 kN per metre can slide on a plane 20.0 m long inclined at 20°. The soil has a cohesion of 12 kPa and a friction angle of 30°. What is the factor of safety against sliding?",
+  "answer": {
+   "value": 2.05,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "A planar slide is a block on an incline. The weight component down the plane drives it. Friction from the normal component, plus cohesion acting over the length of the plane, resists it.",
+  "solution": "Driving = 1,500 sin 20° = 513.0 kN/m.\n\nResisting = 12(20.0) + 1,500 cos 20° tan 30° = 240.0 + 813.8 = 1,053.8 kN/m.\n\nFS = \\frac{1,053.8}{513.0} = 2.05.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "slope failure",
+     "factor of safety"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0029",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M60 150 L340 150 L340 48 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(214 94) rotate(-20)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='104' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>20°</text>",
+   "alt": "A block on an incline at 20° to the horizontal."
+  },
+  "lookup": true
  }
 ]

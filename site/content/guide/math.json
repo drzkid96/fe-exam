@@ -104,7 +104,8 @@
    ],
    "pitfalls": [
     "Perpendicular lines have slopes that multiply to -1, not slopes that are equal.",
-    "In the circle equation the centre is (h, k), so (x + 4) means k or h is -4."
+    "In the circle equation the centre is (h, k), so (x + 4) means k or h is -4.",
+    "Reading the centre's signs backwards: (x - 3)^{2} puts the centre at x = +3."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -112,6 +113,14 @@
     "steps": "Slope = \\frac{10 - 4}{3 - 1} = 3.\n\nUsing (1, 4): 4 = 3(1) + b, so b = 1 and y = 3x + 1.\n\nAt x = 5, y = 16."
    },
    "ideas": [
+    {
+     "title": "Slope as a step",
+     "text": "A slope of m means y changes by m for each unit step in x. Walking from a known point in those steps is a quick way to test whether another point lies on the line."
+    },
+    {
+     "title": "The circle equation is the distance formula",
+     "text": "(x - h)^{2} + (y - k)^{2} = r^{2} says every point on the circle is a distance r from the centre. Given the centre and one point, the radius is the distance between them."
+    },
     {
      "title": "Straight line",
      "text": "A line is y = m x + b. Find the slope from the two points, m = (y_{2} - y_{1}) / (x_{2} - x_{1}), then solve for b by substituting either point."
@@ -188,7 +197,8 @@
     "For a conic, group the x terms and y terms and complete the square in each.",
     "For a triangle, list what is known and choose sines or cosines accordingly.",
     "Check the result against the sketch for size and sign."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "math-b-lesson",
@@ -228,6 +238,18 @@
    },
    "ideas": [
     {
+     "title": "A tangent with a given slope",
+     "text": "To find where a curve has a particular slope, set the derivative equal to that slope and solve. Finding a maximum or minimum is the special case where the slope is zero."
+    },
+    {
+     "title": "Read the derivative table backwards",
+     "text": "Integration undoes differentiation, so the derivative table doubles as an integral table: since the derivative of tan x is sec^{2} x, the integral of sec^{2} x is tan x."
+    },
+    {
+     "title": "Area between two curves",
+     "text": "Set the two functions equal to find where they cross; those are the limits. Then integrate the upper function minus the lower one."
+    },
+    {
      "title": "Integral calculus",
      "text": "The area under a curve is its definite integral. By the power rule the integral of a x^{2} is a x^{3} / 3; evaluate it at the limits and subtract."
     },
@@ -242,6 +264,10 @@
     {
      "title": "Integral calculus",
      "text": "Distance is the integral of speed over time, the area under the speed-time graph. For a straight-line speed function that area is a trapezoid."
+    },
+    {
+     "title": "Integral calculus",
+     "text": "Set the functions equal to find where they cross; those x values are the limits. Integrate the upper function minus the lower one between them."
     }
    ],
    "examples": [
@@ -276,6 +302,14 @@
      "steps": "s = \\frac{5 t^{2}}{2} + 3 t evaluated from 0 to 4 = \\frac{5(4)^{2}}{2} + 3(4) = 40 + 12 = 52 m.",
      "answer": "52 m",
      "value": 52.0
+    },
+    {
+     "family": "math-0018",
+     "problem": "What is the area enclosed between the line y = 5x and the parabola y = x^{2}?",
+     "idea": "Set the functions equal to find where they cross; those x values are the limits. Integrate the upper function minus the lower one between them.",
+     "steps": "5x = x^{2} at x = 0 and x = 5. Between them the line is on top.\n\nArea = integral from 0 to 5 of (5x - x^{2}) dx = \\frac{5(5)^{2}}{2} - \\frac{(5)^{3}}{3} = 62.50 - 41.67 = 20.83 square units.",
+     "answer": "20.83 square units",
+     "value": 20.833333
     }
    ],
    "lookup": [
@@ -298,7 +332,8 @@
     "For an extreme value, set the first derivative to zero, solve, then test the second derivative.",
     "For a definite integral, evaluate at the upper limit and subtract the value at the lower limit.",
     "Check units: a derivative divides by the x unit, an integral multiplies by it."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "math-c-lesson",
@@ -329,7 +364,8 @@
    ],
    "pitfalls": [
     "Mixing up the two products: dot gives a number, cross gives a vector.",
-    "Cross product order matters: A × B is the opposite of B × A."
+    "Cross product order matters: A × B is the opposite of B × A.",
+    "Giving the sum of two vectors when a unit vector is asked for. Divide by the magnitude."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -337,6 +373,10 @@
     "steps": "A · B = 6. |A| = 2.83 and |B| = 3.\n\ncos(angle) = \\frac{6}{2.83(3)} = 0.707, so the angle is 45°."
    },
    "ideas": [
+    {
+     "title": "Two zero tests",
+     "text": "A dot product of zero means the vectors are perpendicular. A cross product of zero means they are parallel."
+    },
     {
      "title": "Cross product",
      "text": "For vectors in the x-y plane the cross product points along z and its magnitude is |A_{x} B_{y} - A_{y} B_{x}|. It equals the area of the parallelogram formed by the two vectors, and |A||B| sin(angle between them)."
@@ -382,7 +422,8 @@
     "Compute a cross product with the determinant layout, watching the sign of the middle term.",
     "Find magnitudes with the square root of the sum of squares.",
     "Sanity check: parallel vectors have zero cross product, perpendicular vectors have zero dot product."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "math-d-lesson",
@@ -427,6 +468,14 @@
    },
    "ideas": [
     {
+     "title": "Spotting a binomial problem",
+     "text": "Repeated independent trials, each with the same two outcomes and the same probability, are binomial even when the word never appears. For 'at least k', take 1 minus the probability of at most k - 1."
+    },
+    {
+     "title": "What z measures",
+     "text": "z is the number of standard deviations between a value and the mean. A concrete mix is designed with its mean strength above the specified strength so that only a small tail of tests falls below it."
+    },
+    {
      "title": "Standard deviation",
      "text": "The sample standard deviation divides the sum of squared deviations from the mean by n - 1, not n, because the mean was estimated from the same data. Dividing by n gives the population standard deviation, which is always smaller."
     },
@@ -441,6 +490,10 @@
     {
      "title": "Binomial distribution",
      "text": "The binomial distribution gives the probability of exactly x successes in n independent trials: P(x) = C(n, x) p^{x} (1 - p)^{n - x}. The combination C(n, x) counts the ways to choose which trials are the successes."
+    },
+    {
+     "title": "Binomial distribution",
+     "text": "Independent trials with two outcomes and a fixed probability are binomial. 'At least n - 1' means exactly n - 1 or exactly n, so add those two terms."
     }
    ],
    "examples": [
@@ -475,6 +528,14 @@
      "steps": "C(7, 2) = 21.\n\nP(2) = 21 × (0.12)^{2} × (0.88)^{5} = 21 × 0.0144 × 0.5277 = 0.1596.",
      "answer": "0.1596",
      "value": 0.159586
+    },
+    {
+     "family": "math-0019",
+     "problem": "Each trial of a process succeeds with probability 0.75, independently of the others. In 4 trials, what is the probability of at least 3 successes?",
+     "idea": "Independent trials with two outcomes and a fixed probability are binomial. 'At least n - 1' means exactly n - 1 or exactly n, so add those two terms.",
+     "steps": "P(exactly 3) = 4 × (0.75)^{3} × (0.25) = 0.4219.\n\nP(exactly 4) = (0.75)^{4} = 0.3164.\n\nSum = 0.7383.",
+     "answer": "0.7383",
+     "value": 0.738281
     }
    ],
    "lookup": [
@@ -500,7 +561,8 @@
     "Read the table for the area it actually tabulates, then use symmetry or 1 minus the value.",
     "For 'at least one', compute 1 minus the probability of none.",
     "Check that every probability lies between 0 and 1."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   }
  ]
 }

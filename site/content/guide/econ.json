@@ -88,7 +88,8 @@
    ],
    "pitfalls": [
     "Using the F/P factor when the question needs P/F.",
-    "Using a nominal annual rate with monthly periods without dividing it by 12."
+    "Using a nominal annual rate with monthly periods without dividing it by 12.",
+    "Entering the interest rate as 8 instead of 0.08."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -102,6 +103,14 @@
     "caption": "A cash flow diagram: a loan received at time 0 and five equal end-of-year payments."
    },
    "ideas": [
+    {
+     "title": "Inflation as a second rate",
+     "text": "To have a given purchasing power in the future, first grow the target at the inflation rate, then solve the savings problem at the investment rate."
+    },
+    {
+     "title": "Costs that rise each year",
+     "text": "A cost that grows by a fixed amount each year is a uniform series plus a gradient series that is zero in year 1: P = A(P/A) + G(P/G)."
+    },
     {
      "title": "Single payment compound amount",
      "text": "Compound interest earns interest on interest. A single present amount P grows to F = P(1 + i)^{n}; the factor (1 + i)^{n} is the single payment compound amount factor, (F/P, i, n)."
@@ -117,6 +126,10 @@
     {
      "title": "Non-annual compounding",
      "text": "A nominal rate r compounded m times a year charges r/m each period. The effective annual rate is the single yearly rate that gives the same growth: i_{e} = (1 + r/m)^{m} - 1. It is always above the nominal rate when m is greater than 1."
+    },
+    {
+     "title": "Uniform series compound amount",
+     "text": "A uniform series of end-of-period deposits grows to F = A × ((1 + i)^{n} - 1) / i, the uniform series compound amount factor (F/A, i, n). The last deposit earns no interest."
     }
    ],
    "examples": [
@@ -166,6 +179,19 @@
      "steps": "Rate per period = 8% / 4 = 2.000%.\n\ni_{e} = (1 + 0.02000)^{4} - 1 = 0.08243 = 8.24%.",
      "answer": "8.24 %",
      "value": 8.243216
+    },
+    {
+     "family": "econ-0013",
+     "problem": "$4,000 is deposited at the end of each year into an account paying 7% per year. What is the balance after 20 years?",
+     "idea": "A uniform series of end-of-period deposits grows to F = A × ((1 + i)^{n} - 1) / i, the uniform series compound amount factor (F/A, i, n). The last deposit earns no interest.",
+     "steps": "(F/A, 7%, 20) = \\frac{(1 + 0.07)^{20} - 1}{0.07} = 40.995.\n\nF = 4,000 × 40.995 = $163,982.",
+     "answer": "$163,982",
+     "value": 163981.969285,
+     "figure": {
+      "viewBox": "0 0 400 160",
+      "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='56' y1='86' x2='56' y2='94' stroke='#00242E'/><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='88' y1='86' x2='88' y2='94' stroke='#00242E'/><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='120' y1='86' x2='120' y2='94' stroke='#00242E'/><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='152' y1='86' x2='152' y2='94' stroke='#00242E'/><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='184' y1='86' x2='184' y2='94' stroke='#00242E'/><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='216' y1='86' x2='216' y2='94' stroke='#00242E'/><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='248' y1='86' x2='248' y2='94' stroke='#00242E'/><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>14</text><line x1='280' y1='86' x2='280' y2='94' stroke='#00242E'/><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>16</text><line x1='312' y1='86' x2='312' y2='94' stroke='#00242E'/><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>18</text><line x1='344' y1='86' x2='344' y2='94' stroke='#00242E'/><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>20</text><line x1='56' y1='90' x2='56' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M56 56 L50 68 L62 68 Z' fill='#568CBB'/><line x1='72' y1='90' x2='72' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M72 56 L66 68 L78 68 Z' fill='#568CBB'/><line x1='88' y1='90' x2='88' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M88 56 L82 68 L94 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='120' y1='90' x2='120' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M120 56 L114 68 L126 68 Z' fill='#568CBB'/><line x1='136' y1='90' x2='136' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M136 56 L130 68 L142 68 Z' fill='#568CBB'/><line x1='152' y1='90' x2='152' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M152 56 L146 68 L158 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='184' y1='90' x2='184' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M184 56 L178 68 L190 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='216' y1='90' x2='216' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M216 56 L210 68 L222 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='248' y1='90' x2='248' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M248 56 L242 68 L254 68 Z' fill='#568CBB'/><line x1='264' y1='90' x2='264' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M264 56 L258 68 L270 68 Z' fill='#568CBB'/><line x1='280' y1='90' x2='280' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M280 56 L274 68 L286 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='312' y1='90' x2='312' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M312 56 L306 68 L318 68 Z' fill='#568CBB'/><line x1='328' y1='90' x2='328' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M328 56 L322 68 L334 68 Z' fill='#568CBB'/><line x1='344' y1='90' x2='344' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M344 56 L338 68 L350 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$4,000 each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+      "alt": "A cash flow diagram over 20 periods, $4,000 at the end of every period, F = ? at period 20."
+     }
     }
    ],
    "lookup": [
@@ -177,7 +203,8 @@
       "capital recovery",
       "single payment present worth",
       "non-annual compounding",
-      "effective annual interest"
+      "effective annual interest",
+      "uniform series compound amount"
      ]
     }
    ],
@@ -188,7 +215,8 @@
     "Pick the factor (wanted / given, i, n) and read it from the handbook's interest tables or compute it.",
     "Match the interest period to the payment period.",
     "Check direction: moving money forward in time must increase it."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "econ-b-lesson",
@@ -217,12 +245,24 @@
    },
    "ideas": [
     {
+     "title": "Depreciation",
+     "text": "Straight-line depreciation is (cost - salvage) / life each year, and book value is cost minus the depreciation taken so far. MACRS uses a table percentage of the full cost and ignores salvage; its first year is small because of the half-year convention, so five-year property has six entries."
+    },
+    {
+     "title": "Make or buy",
+     "text": "Put owning on an annual basis: first cost times (A/P), less salvage times (A/F), plus fixed annual cost, plus unit cost times quantity. Set that equal to the purchase price times quantity and solve for the break-even quantity."
+    },
+    {
      "title": "Break-even analysis",
      "text": "Average unit cost is total cost divided by output. Fixed cost is spread over more units as output rises, so average cost falls toward the variable cost per unit."
     },
     {
      "title": "",
      "text": "Cost estimates build up from direct costs (labor and materials) plus indirect costs. Here overhead is allocated as a percentage of direct labor cost, a common allocation base."
+    },
+    {
+     "title": "Depreciation",
+     "text": "Straight-line depreciation writes off the same amount every year: (cost - salvage) / life. Book value is the cost minus the depreciation taken so far."
     }
    ],
    "examples": [
@@ -241,6 +281,14 @@
      "steps": "Direct labor = 80 × 45 = $3,600.\n\nOverhead = 45% × 3,600 = $1,620.\n\nTotal = 3,600 + 1,620 + 1,800 = $7,020.",
      "answer": "$7,020",
      "value": 7020.0
+    },
+    {
+     "family": "econ-0012",
+     "problem": "Equipment costs $64,000, has a salvage value of $4,000 and a life of 8 years. Using straight-line depreciation, what is its book value after 3 years?",
+     "idea": "Straight-line depreciation writes off the same amount every year: (cost - salvage) / life. Book value is the cost minus the depreciation taken so far.",
+     "steps": "Annual depreciation = \\frac{64,000 - 4,000}{8} = $7,500.\n\nBook value = 64,000 - 3(7,500) = $41,500.",
+     "answer": "$41,500",
+     "value": 41500.0
     }
    ],
    "lookup": [
@@ -248,7 +296,9 @@
      "section": "Engineering Economics",
      "page": "230–237",
      "find": [
-      "break-even analysis"
+      "break-even analysis",
+      "depreciation",
+      "straight line"
      ]
     }
    ],
@@ -258,7 +308,8 @@
     "Write total cost as fixed cost plus unit cost times quantity.",
     "For break-even, set revenue equal to cost (or the two alternatives' costs equal) and solve for quantity.",
     "Ignore sunk costs; include opportunity costs."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "econ-c-lesson",
@@ -289,7 +340,8 @@
    ],
    "pitfalls": [
     "Comparing present worths of alternatives with different lives without using a common period.",
-    "Putting disbenefits or costs on the wrong side of a benefit-cost ratio."
+    "Putting disbenefits or costs on the wrong side of a benefit-cost ratio.",
+    "Adding salvage value to the costs. It is money received, so it is subtracted."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -297,6 +349,10 @@
     "steps": "(A/P, 8%, 10) = 0.1490.\n\nEUAC = 12,000(0.1490) + 800 = $2,588."
    },
    "ideas": [
+    {
+     "title": "Use the factor tables",
+     "text": "The interest tables at the back of the economics section are quicker and safer than keying the formulas."
+    },
     {
      "title": "Break-even analysis",
      "text": "At the break-even point total revenue equals total cost. Each unit sold contributes (price - variable cost) toward the fixed costs, so the break-even quantity is fixed cost divided by that contribution margin."
@@ -308,6 +364,10 @@
     {
      "title": "Capital recovery",
      "text": "Equivalent uniform annual cost spreads every cash flow evenly over the life: the first cost times (A/P), minus the salvage value times the sinking fund factor (A/F), plus the annual operating cost. It lets alternatives with different lives be compared."
+    },
+    {
+     "title": "Break-even analysis",
+     "text": "Put owning on an annual basis: the first cost times the capital recovery factor (A/P), plus the fixed annual cost, plus the unit cost times the quantity. Set that equal to the purchase price times the quantity and solve."
     }
    ],
    "examples": [
@@ -334,6 +394,14 @@
      "steps": "(A/P, 9%, 10) = 0.15582 and (A/F, 9%, 10) = 0.06582.\n\nEUAC = 60,000(0.15582) - 8,000(0.06582) + 4,000 = 9,349 - 527 + 4,000 = $12,823 per year.",
      "answer": "$12,823 per year",
      "value": 12822.644675
+    },
+    {
+     "family": "econ-0014",
+     "problem": "A machine costs $75,000 and $5,000 per year to run, plus $2.80 for each unit it makes. It lasts 10 years with no salvage value. Buying the part instead costs $6.50 per unit. At 9% interest, how many units per year make owning the machine break even?",
+     "idea": "Put owning on an annual basis: the first cost times the capital recovery factor (A/P), plus the fixed annual cost, plus the unit cost times the quantity. Set that equal to the purchase price times the quantity and solve.",
+     "steps": "(A/P, 9%, 10) = 0.15582, so the annual cost of owning before any units = 75,000(0.15582) + 5,000 = $16,687.\n\nEach unit made saves 6.50 - 2.80 = $3.70.\n\nBreak-even = \\frac{16,687}{3.70} = 4,510 units per year.",
+     "answer": "4,510 units per year",
+     "value": 4509.866687
     }
    ],
    "lookup": [
@@ -356,7 +424,8 @@
     "Treat costs as negative and salvage as positive, or work consistently in costs.",
     "Choose the highest worth or lowest equivalent cost; for benefit-cost, require a ratio of at least 1.",
     "With unequal lives use annual worth."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "econ-d-lesson",
@@ -380,6 +449,10 @@
     "steps": "EV = 0.25(60,000) - 5,000 = 15,000 - 5,000 = $10,000."
    },
    "ideas": [
+    {
+     "title": "Expected cost of a risky option",
+     "text": "Add to the first cost the probability of failure times the cost of failure, brought to the same time basis. Each option uses its own probability."
+    },
     {
      "title": "Decision trees",
      "text": "Draw decisions as squares and chance events as circles. Work from the right: at each chance node take the expected value of its branches, and at each decision node keep the best branch."
@@ -422,7 +495,8 @@
     "Multiply each outcome by its probability, with losses negative, and add.",
     "For a tree, work from the right: expected values at chance nodes, best branch at decision nodes.",
     "Compare options on expected value, then comment on risk if asked."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   }
  ]
 }

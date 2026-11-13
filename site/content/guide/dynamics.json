@@ -107,6 +107,22 @@
    },
    "ideas": [
     {
+     "title": "Braking on a grade",
+     "text": "On a slope, gravity adds or removes g × sin(angle) along the road. For road grades the sine is practically the grade itself, so the change in deceleration is g × G. This is the grade term in the transportation formulas."
+    },
+    {
+     "title": "The subscript 0 is any known instant",
+     "text": "The constant-acceleration equations work from any moment at which position and velocity are known, not only from t = 0."
+    },
+    {
+     "title": "Timing a projectile",
+     "text": "Vertical velocity reaching zero gives the time to the top. Returning to launch height takes twice that. Use the time in the horizontal equation."
+    },
+    {
+     "title": "Rotation uses the same equations",
+     "text": "Replace distance, velocity and acceleration with angle, angular velocity and angular acceleration. Arc length is radius times angle in radians."
+    },
+    {
      "title": "Constant acceleration",
      "text": "With constant acceleration, velocity rises linearly, so the average velocity is the mean of the start and end values. Distance = average velocity × time, which is the area under the velocity-time line."
     },
@@ -117,6 +133,10 @@
     {
      "title": "Normal and tangential components",
      "text": "Constant speed on a curve still means acceleration, because the direction of the velocity changes. The normal (centripetal) acceleration is v^{2} / r, directed toward the centre of curvature."
+    },
+    {
+     "title": "Constant acceleration",
+     "text": "On a grade, gravity adds g times the grade to the deceleration when climbing, and takes it away when descending. With a constant total deceleration, stopping time is the speed divided by it."
     }
    ],
    "examples": [
@@ -148,6 +168,14 @@
      "steps": "a_{n} = \\frac{v^{2}}{r} = \\frac{18^{2}}{90} = 3.60 m/s^{2}.",
      "answer": "3.60 m/s^{2}",
      "value": 3.6
+    },
+    {
+     "family": "dynamics-0013",
+     "problem": "A car travelling at 22 m/s brakes on a 5% upgrade. Its brakes alone give a deceleration of 4.5 m/s^{2}. How long does it take to stop? Use g = 9.81 m/s^{2}.",
+     "idea": "On a grade, gravity adds g times the grade to the deceleration when climbing, and takes it away when descending. With a constant total deceleration, stopping time is the speed divided by it.",
+     "steps": "Deceleration from the grade = 9.81 × 0.05 = 0.491 m/s^{2}.\n\nTotal = 4.5 + 0.491 = 4.990 m/s^{2}.\n\nt = \\frac{22}{4.990} = 4.41 s.",
+     "answer": "4.41 s",
+     "value": 4.408376
     }
    ],
    "lookup": [
@@ -169,7 +197,8 @@
     "For a projectile, write separate x and y equations and solve the one with a single unknown first, usually for time.",
     "For curved motion, compute the normal acceleration from v^{2} / r.",
     "Check signs and that times are positive."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "dynamics-b-lesson",
@@ -207,6 +236,10 @@
     "steps": "I = \\frac{4(1.5)^{2}}{3} = 3.0 kg·m^{2}."
    },
    "ideas": [
+    {
+     "title": "Like a composite area",
+     "text": "A composite mass moment of inertia is the sum of each part's own centroidal value plus m d^{2}, with d measured from the axis to that part's centre of mass. The transfer term usually dominates."
+    },
     {
      "title": "Mass moment of inertia",
      "text": "For a slender rod, I = m L^{2} / 12 about its centre. The parallel axis theorem moves it to the end: I = m L^{2} / 12 + m (L/2)^{2} = m L^{2} / 3. Moving the axis away from the centre of mass always increases I."
@@ -263,7 +296,8 @@
     "If the axis is elsewhere, add m d^{2}.",
     "For a composite body, add the parts about the same axis.",
     "Check units of mass times length squared."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "dynamics-c-lesson",
@@ -309,6 +343,14 @@
    },
    "ideas": [
     {
+     "title": "Bodies tied together share one acceleration",
+     "text": "Treat the connected bodies as one system along the line of the rope: net driving force = total mass × acceleration. The tension is internal and cancels. A block that drags another always accelerates at less than g."
+    },
+    {
+     "title": "A car on a flat curve",
+     "text": "Friction alone supplies the inward force, so m v^{2} / R cannot exceed the friction coefficient times m g. The smallest radius is v^{2} / (coefficient × g), and the mass cancels."
+    },
+    {
      "title": "Newton's second law",
      "text": "Newton's second law uses the net force. Kinetic friction equals the coefficient times the normal force, and on a level floor with a horizontal pull the normal force equals the weight."
     },
@@ -319,6 +361,14 @@
     {
      "title": "Kinetics of a rigid body",
      "text": "Rotation about a fixed axis follows the rotational form of Newton's second law: net torque = I × angular acceleration. It is the direct counterpart of F = m a."
+    },
+    {
+     "title": "Newton's second law",
+     "text": "On a flat curve friction alone supplies the inward force m v^{2} / R, and friction cannot exceed the coefficient times the weight. Setting the two equal gives the smallest radius, and the mass cancels."
+    },
+    {
+     "title": "Newton's second law",
+     "text": "Bodies joined by a taut cord share one acceleration. Treat them as a single system along the cord: the only driving force is the weight of the hanging block, and it must accelerate the total mass. The tension is internal and cancels."
     }
    ],
    "examples": [
@@ -350,6 +400,22 @@
      "steps": "Angular acceleration = \\frac{T}{I} = \\frac{60}{8} = 7.5 rad/s^{2}.",
      "answer": "7.5 rad/s^{2}",
      "value": 7.5
+    },
+    {
+     "family": "dynamics-0014",
+     "problem": "A car travels at 18 m/s around a flat curve. The coefficient of friction between the tyres and the road is 0.45. What is the smallest radius it can follow without sliding? Use g = 9.81 m/s^{2}.",
+     "idea": "On a flat curve friction alone supplies the inward force m v^{2} / R, and friction cannot exceed the coefficient times the weight. Setting the two equal gives the smallest radius, and the mass cancels.",
+     "steps": "\\frac{m v^{2}}{R} = (coefficient) m g, so R = \\frac{v^{2}}{(coefficient) g} = \\frac{18^{2}}{0.45(9.81)} = 73.4 m.",
+     "answer": "73.4 m",
+     "value": 73.394495
+    },
+    {
+     "family": "dynamics-0015",
+     "problem": "A 9 kg block on a frictionless table is tied by a cord over a light, frictionless pulley to a hanging 3 kg block. What is the acceleration of the blocks? Use g = 9.81 m/s^{2}.",
+     "idea": "Bodies joined by a taut cord share one acceleration. Treat them as a single system along the cord: the only driving force is the weight of the hanging block, and it must accelerate the total mass. The tension is internal and cancels.",
+     "steps": "Driving force = 3(9.81) = 29.43 N. Total mass = 9 + 3 = 12 kg.\n\na = \\frac{29.43}{12} = 2.45 m/s^{2}, which is less than g as it must be.",
+     "answer": "2.45 m/s^{2}",
+     "value": 2.4525
     }
    ],
    "lookup": [
@@ -360,7 +426,8 @@
       "Newton's second law",
       "friction",
       "kinetics of a rigid body",
-      "mass moment of inertia"
+      "mass moment of inertia",
+      "normal and tangential components"
      ]
     }
    ],
@@ -371,7 +438,8 @@
     "Find the normal force first when friction is involved.",
     "Solve for acceleration, then use kinematics for speed, distance or time.",
     "For rotation, write the sum of moments = I × angular acceleration about the fixed axis."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "dynamics-d-lesson",
@@ -407,7 +475,8 @@
    ],
    "pitfalls": [
     "Forgetting that speed is squared in kinetic energy: doubling speed quadruples the energy.",
-    "Using energy methods when the question asks for time."
+    "Using energy methods when the question asks for time.",
+    "Using the moment of inertia about the centre of mass in the kinetic energy of a body that rotates about a pin."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -415,6 +484,10 @@
     "steps": "KE = \\frac{1}{2}(1,000)(20)^{2} = 200,000 J = 200 kJ."
    },
    "ideas": [
+    {
+     "title": "Energy for a swinging body",
+     "text": "For a body rotating about a pin, the potential energy lost is m g times the drop of its centre of mass, and the kinetic energy gained is one half of the moment of inertia about the pin times the angular speed squared."
+    },
     {
      "title": "Conservation of energy",
      "text": "With no air resistance, mechanical energy is conserved: m g h of potential energy becomes (1/2) m v^{2} of kinetic energy. The mass cancels, so v = square root of 2 g h for any object."
@@ -426,6 +499,10 @@
     {
      "title": "Elastic potential energy",
      "text": "Energy is conserved: the elastic energy stored in the spring, (1/2) k x^{2}, becomes the kinetic energy of the block, (1/2) m v^{2}."
+    },
+    {
+     "title": "Work and energy",
+     "text": "Energy is conserved. The rod's centre of mass falls by L / 2, and that potential energy becomes rotational kinetic energy about the pin, where the rod's moment of inertia is m L^{2} / 3."
     }
    ],
    "examples": [
@@ -452,6 +529,14 @@
      "steps": "\\frac{1}{2}(3,000)(0.12)^{2} = 21.60 J of spring energy.\n\n\\frac{1}{2}(1.5) v^{2} = 21.60, so v = \\sqrt{\\frac{2(21.60)}{1.5}} = 5.37 m/s.",
      "answer": "5.37 m/s",
      "value": 5.366563
+    },
+    {
+     "family": "dynamics-0016",
+     "problem": "A uniform slender rod 1.8 m long is released from rest in a horizontal position and swings about a frictionless pin at one end. What is its angular speed as it passes through the vertical? Use g = 9.81 m/s^{2}.",
+     "idea": "Energy is conserved. The rod's centre of mass falls by L / 2, and that potential energy becomes rotational kinetic energy about the pin, where the rod's moment of inertia is m L^{2} / 3.",
+     "steps": "m g \\frac{L}{2} = \\frac{1}{2}(\\frac{m L^{2}}{3})(angular speed)^{2}, so angular speed = \\sqrt{\\frac{3 g}{L}} = \\sqrt{\\frac{3(9.81)}{1.8}} = 4.04 rad/s.",
+     "answer": "4.04 rad/s",
+     "value": 4.043513
     }
    ],
    "lookup": [
@@ -464,7 +549,8 @@
       "power and efficiency",
       "work",
       "elastic potential energy",
-      "work and energy"
+      "work and energy",
+      "mass moment of inertia"
      ]
     }
    ],
@@ -475,7 +561,8 @@
     "Add work done by non-conservative forces (friction is negative).",
     "Solve the energy balance for the unknown speed or distance.",
     "For impact, write conservation of momentum, then the restitution equation."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   }
  ]
 }

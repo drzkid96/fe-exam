@@ -99,7 +99,8 @@
     }
    ],
    "pitfalls": [
-    "Taking the maximum moment at midspan for an off-centre load."
+    "Taking the maximum moment at midspan for an off-centre load.",
+    "Stopping at a force component when the member force is asked for."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -113,6 +114,18 @@
     "caption": "A central point load on a simple span: reactions of P / 2 and a maximum moment of P L / 4 under the load."
    },
    "ideas": [
+    {
+     "title": "Slide a force along its line of action",
+     "text": "A force gives the same moment wherever it is placed along its own line. Move it to the point where one of its components passes through the moment centre, and that component drops out."
+    },
+    {
+     "title": "Sections through a truss",
+     "text": "With parallel chords, summing vertical forces on the cut piece gives the diagonal directly. With sloping chords, take moments about the point where the other two cut members meet."
+    },
+    {
+     "title": "Split a frame at its internal pins",
+     "text": "Pin forces show up only when the members are separated. They are equal and opposite on the two pieces, so solve the simpler piece first and carry its pin force, reversed, to the other."
+    },
     {
      "title": "Shearing force and bending moment",
      "text": "A cantilever resists load through shear and moment at its fixed end. For a tip load the moment grows linearly from zero at the free end to P L at the support."
@@ -184,7 +197,8 @@
     "For a truss, use joints or sections.",
     "For maximum effects, place loads where the influence line ordinates are largest.",
     "Check with a known standard case when one applies."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "structural-b-lesson",
@@ -220,7 +234,9 @@
    ],
    "pitfalls": [
     "Unit mix-ups: keep everything in kN and m, or N and mm.",
-    "Forgetting that span is raised to the third or fourth power."
+    "Forgetting that span is raised to the third or fourth power.",
+    "Using a beam table case that matches the loading but not the supports, or misreading how the table defines L.",
+    "Mixing feet and inches in w L^{4} / (E I). With w in kips per foot and L in feet, the result needs a factor of 12^{3} to come out in inches."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -234,6 +250,10 @@
     "caption": "A cantilever with a tip load deflects P L^{3} / (3 EI) at the free end."
    },
    "ideas": [
+    {
+     "title": "Unit load method for a truss",
+     "text": "A truss joint's displacement is the sum over the members of f F L / (A E), where F is the member force under the real loads and f is its force under a unit load at the joint in the direction wanted. Zero-force members drop out of the sum."
+    },
     {
      "title": "Simply supported beam slopes and deflections",
      "text": "For a simply supported beam with a central point load, the maximum deflection is P L^{3} / (48 EI), at midspan. Span is cubed, so deflection is very sensitive to length."
@@ -288,7 +308,8 @@
     "Substitute and compute the deflection.",
     "For several loads, compute each separately and add.",
     "For a truss joint, apply the unit load method."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "structural-c-lesson",
@@ -314,7 +335,8 @@
    ],
    "pitfalls": [
     "Using the stronger-axis moment of inertia when the weak axis governs.",
-    "Forgetting the effective length factor."
+    "Forgetting the effective length factor.",
+    "Checking only the weak axis when the two axes have different unbraced lengths."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -329,12 +351,20 @@
    },
    "ideas": [
     {
+     "title": "One load, two ways to buckle",
+     "text": "The same axial load could buckle the column about either axis, each with its own effective length and moment of inertia. Compute both critical loads; the smaller governs. Bracing the weak axis at mid-height quarters its slenderness effect, so the strong axis can end up governing."
+    },
+    {
      "title": "Euler's formula",
      "text": "A slender column fails by elastic buckling at the Euler load, P_{cr} = π^{2} E I / (K L)^{2}. Pinned ends give K = 1. Buckling happens about the axis with the smaller moment of inertia."
     },
     {
      "title": "Effective length",
      "text": "The effective length K L is the length of the equivalent pinned-pinned column, the distance between inflection points of the buckled shape. End restraint shortens it: K = 0.5 fixed-fixed, 0.7 fixed-pinned, 1.0 pinned-pinned, 2.0 fixed-free."
+    },
+    {
+     "title": "Euler's formula",
+     "text": "One axial load can buckle the column about either axis. Each axis has its own unbraced length and moment of inertia, and the smaller critical load governs. Bracing the weak axis at mid-height halves its length and quadruples its critical load."
     }
    ],
    "examples": [
@@ -363,6 +393,14 @@
       "svg": "<line x1='200' y1='24' x2='200' y2='150' stroke='#E7E8E8' stroke-width='10'/><path d='M200 24 Q230 87 200 150' fill='none' stroke='#1B795A' stroke-width='3' stroke-dasharray='7 4'/><line x1='160' y1='150' x2='240' y2='150' stroke='#00242E' stroke-width='3'/><line x1='160' y1='24' x2='240' y2='24' stroke='#00242E' stroke-width='3'/><line x1='200' y1='0' x2='200' y2='14' stroke='#00574A' stroke-width='3'/><path d='M200 22 L194 10 L206 10 Z' fill='#00574A'/><text x='250' y='28' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><text x='250' y='154' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Fixed</text><line x1='130' y1='24' x2='130' y2='150' stroke='#00242E'/><text x='122' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>7 m</text><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P</text>",
       "alt": "A column 7 m long under axial load, fixed at the base and pinned at the top, with its buckled shape dashed."
      }
+    },
+    {
+     "family": "structural-0022",
+     "problem": "A steel column 7 m long has pinned ends and is braced at mid-height against buckling about its weak axis only. E = 200 GPa, I_{x} = 60 × 10^{6} mm^{4} and I_{y} = 12 × 10^{6} mm^{4}. What is the governing Euler buckling load?",
+     "idea": "One axial load can buckle the column about either axis. Each axis has its own unbraced length and moment of inertia, and the smaller critical load governs. Bracing the weak axis at mid-height halves its length and quadruples its critical load.",
+     "steps": "Strong axis, full length: P = \\frac{π^{2}(200,000)(60 × 10^{6})}{(7,000)^{2}} = 2,417 kN.\n\nWeak axis, half length: P = \\frac{π^{2}(200,000)(12 × 10^{6})}{(3,500)^{2}} = 1,934 kN.\n\nThe smaller governs: 1,934 kN.",
+     "answer": "1,934 kN",
+     "value": 1933.636781
     }
    ],
    "lookup": [
@@ -383,7 +421,8 @@
     "Use the larger slenderness ratio.",
     "Apply Euler's formula for the critical load, or divide by area for critical stress.",
     "Check that the critical stress is below yield; otherwise Euler does not apply."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "structural-d-lesson",
@@ -411,6 +450,10 @@
     "steps": "m + r = 20 and 2j = 20, so it is statically determinate, if stable."
    },
    "ideas": [
+    {
+     "title": "Stability of a gravity dam",
+     "text": "A gravity dam is checked as a rigid block on a unit length. Against sliding, compare the friction available, coefficient times weight, with the water thrust, half the unit weight of water times depth squared. Against overturning, compare the moment of the weight about the toe with the moment of the water thrust, which acts at one third of the depth."
+    },
     {
      "title": "Beams and frames",
      "text": "A rigid body in a plane has three equilibrium equations. With r reaction components and n bodies: r = 3n is statically determinate, r greater than 3n is indeterminate to the degree r - 3n, and r less than 3n is unstable. Each internal hinge adds one condition equation."
@@ -446,7 +489,8 @@
     "For a truss compare m + r with 2j.",
     "State the degree of indeterminacy as the excess of unknowns.",
     "Look for parallel or concurrent reactions that make the structure unstable."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "structural-e-lesson",
@@ -471,7 +515,8 @@
     }
    ],
    "pitfalls": [
-    "Using simple-span formulas for a beam with fixed ends."
+    "Using simple-span formulas for a beam with fixed ends.",
+    "Sharing load to supports by tributary length on a continuous beam. On two equal spans under uniform load the middle support carries 1.25 w L, not w L."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -479,6 +524,10 @@
     "steps": "M = \\frac{9(4)^{2}}{12} = 12 kN·m."
    },
    "ideas": [
+    {
+     "title": "The redundant as a correcting force",
+     "text": "Remove the extra support and let the beam deflect there under the load. The redundant reaction is the force that pushes that point back to zero deflection. With constant E I the stiffness cancels out of the result."
+    },
     {
      "title": "Cantilevered beam slopes and deflections",
      "text": "A propped cantilever has one more reaction than statics can solve, so a compatibility condition is needed: the deflection at the roller is zero. Setting the downward deflection from the load, w L^{4} / (8 EI), equal to the upward deflection from the reaction, R L^{3} / (3 EI), gives R = 3 w L / 8."
@@ -490,6 +539,10 @@
     {
      "title": "Fixed-end moment",
      "text": "Fixed-end moments are the support moments of a beam held against rotation at both ends. For a point load they are P a b^{2} / L^{2} at the end a distance a from the load and P a^{2} b / L^{2} at the other end. The end nearer the load takes the larger moment, and for a central load both equal P L / 8."
+    },
+    {
+     "title": "Indeterminate",
+     "text": "A two-span continuous beam is indeterminate to the first degree. Removing the middle support and restoring zero deflection there gives a middle reaction of 1.25 w L, more than the w L that tributary length would suggest; each end support carries 0.375 w L."
     }
    ],
    "examples": [
@@ -516,6 +569,14 @@
      "steps": "b = 10 - 4 = 6 m.\n\nM_{left} = \\frac{P a b^{2}}{L^{2}} = \\frac{80(4)(6)^{2}}{10^{2}} = 115.20 kN·m.\n\nFor reference, M_{right} = \\frac{P a^{2} b}{L^{2}} = 76.80 kN·m.",
      "answer": "115.20 kN·m",
      "value": 115.2
+    },
+    {
+     "family": "structural-0023",
+     "problem": "A continuous beam has two equal spans of 7 m and carries a uniform load of 16 kN/m over its whole length. What is the reaction at the middle support?",
+     "idea": "A two-span continuous beam is indeterminate to the first degree. Removing the middle support and restoring zero deflection there gives a middle reaction of 1.25 w L, more than the w L that tributary length would suggest; each end support carries 0.375 w L.",
+     "steps": "R_{middle} = 1.25 w L = 1.25(16)(7) = 140.0 kN.\n\nEach end support carries 0.375(16)(7) = 42.00 kN. Check: 140.0 + 2(42.00) = 224.0 kN, the total load.",
+     "answer": "140.0 kN",
+     "value": 140.0
     }
    ],
    "lookup": [
@@ -530,7 +591,8 @@
      "section": "Civil Engineering",
      "page": "259–309",
      "find": [
-      "fixed-end moment"
+      "fixed-end moment",
+      "indeterminate"
      ]
     }
    ],
@@ -541,7 +603,8 @@
     "Compute the deflection there caused by a unit value of the redundant.",
     "Solve for the redundant that makes the total deflection zero.",
     "Finish with equilibrium for the remaining reactions."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "structural-f-lesson",
@@ -566,7 +629,8 @@
     }
    ],
    "pitfalls": [
-    "Forgetting to check every combination and take the largest."
+    "Forgetting to check every combination and take the largest.",
+    "Skipping the live load reduction when the tributary area is large enough for it to apply."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -575,12 +639,24 @@
    },
    "ideas": [
     {
+     "title": "Tributary area is a watershed",
+     "text": "A beam collects the floor load from halfway out to the neighbouring beam on each side, as a river collects rain from its watershed. Multiply the area load by that width to get the line load."
+    },
+    {
+     "title": "Live load reduction",
+     "text": "A large floor area is unlikely to carry its full live load everywhere at once, so the code allows the live load on members with a large tributary area to be reduced before the load combinations are applied. The handbook gives the formula and its limits."
+    },
+    {
      "title": "Load combinations",
      "text": "In strength design (LRFD) each load is multiplied by a load factor that reflects its uncertainty, and the largest combination governs. Live load has the larger factor because it is less predictable than dead load."
     },
     {
      "title": "",
      "text": "A beam collects floor load from its tributary width, half the spacing on each side. Line load = area load × tributary width."
+    },
+    {
+     "title": "Load combinations",
+     "text": "Follow the load path. Factor the area loads, multiply by the tributary width (the beam spacing for an interior beam) to get a line load, then use the simple-span moment w L^{2} / 8."
     }
    ],
    "examples": [
@@ -599,6 +675,14 @@
      "steps": "Tributary width of an interior beam = 3.5 m.\n\nw = 4.8 kPa × 3.5 m = 16.8 kN/m.",
      "answer": "16.8 kN/m",
      "value": 16.8
+    },
+    {
+     "family": "structural-0024",
+     "problem": "Floor beams span 9 m and are spaced 3.5 m apart. The floor carries a dead load of 4.2 kPa and a live load of 3.6 kPa. Using 1.2D + 1.6L, what is the factored bending moment in an interior beam?",
+     "idea": "Follow the load path. Factor the area loads, multiply by the tributary width (the beam spacing for an interior beam) to get a line load, then use the simple-span moment w L^{2} / 8.",
+     "steps": "Factored area load = 1.2(4.2) + 1.6(3.6) = 10.80 kPa.\n\nLine load = 10.80 × 3.5 = 37.80 kN/m.\n\nM_{u} = \\frac{37.80(9)^{2}}{8} = 382.7 kN·m.",
+     "answer": "382.7 kN·m",
+     "value": 382.725
     }
    ],
    "lookup": [
@@ -618,7 +702,8 @@
     "Evaluate each applicable load combination.",
     "Take the largest factored effect for design.",
     "Follow the reactions down to the next member in the load path."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "structural-g-lesson",
@@ -658,6 +743,18 @@
    },
    "ideas": [
     {
+     "title": "Two ways a tension member fails",
+     "text": "Yielding is checked on the gross area away from the holes, with a resistance factor of 0.90. Rupture is checked on the effective net area through the holes, with 0.75. Compare the two after applying the factors; the smaller governs. The hole deduction is the hole diameter plus 1/16 in for damage."
+    },
+    {
+     "title": "Columns with different lengths about each axis",
+     "text": "Compare K L / r for each axis and use the larger. The design tables are built on the weak axis, so a strong-axis length is converted to its weak-axis equivalent by dividing by r_{x} / r_{y}."
+    },
+    {
+     "title": "Beam strength falls with unbraced length",
+     "text": "A fully braced compact beam reaches its plastic moment. As the unbraced length grows past a first limit, the compression flange starts to buckle sideways and strength drops in a straight line; past a second limit the buckling is elastic and strength falls faster. A moment gradient factor raises the curve but never above the plastic moment."
+    },
+    {
      "title": "Tension members",
      "text": "Tension yielding is checked on the gross area: nominal strength P_{n} = F_{y} A_{g}, and design strength is the resistance factor times P_{n}. Rupture on the net section is a separate check with a factor of 0.75."
     },
@@ -668,6 +765,10 @@
     {
      "title": "Slenderness",
      "text": "The slenderness ratio K L / r measures how prone a column is to buckling; the larger it is, the lower the critical stress. Use the radius of gyration for the axis about which buckling occurs, with both lengths in the same units."
+    },
+    {
+     "title": "Tension members",
+     "text": "Rupture is checked on the net area through the holes. Each hole removes a width equal to the bolt diameter plus 1/8 in: 1/16 in for the standard hole and 1/16 in for damage. Design strength is 0.75 F_{u} A_{e}, with A_{e} = U A_{n}."
     }
    ],
    "examples": [
@@ -694,6 +795,14 @@
      "steps": "Slenderness ratio = \\frac{K L}{r} = \\frac{7,500 mm}{60 mm} = 125.",
      "answer": "125",
      "value": 125.0
+    },
+    {
+     "family": "structural-0025",
+     "problem": "A steel plate tension member is 9 in wide and 0.625 in thick. One cross-section has 2 holes for 0.875 in diameter bolts in standard holes. F_{u} = 58 ksi and U = 1. With a resistance factor of 0.75, what is the design strength for net-section rupture?",
+     "idea": "Rupture is checked on the net area through the holes. Each hole removes a width equal to the bolt diameter plus 1/8 in: 1/16 in for the standard hole and 1/16 in for damage. Design strength is 0.75 F_{u} A_{e}, with A_{e} = U A_{n}.",
+     "steps": "Net width = 9 - 2(0.875 + 0.125) = 7.000 in.\n\nA_{n} = 7.000 × 0.625 = 4.375 in^{2}.\n\nDesign strength = 0.75(58)(4.375) = 190.3 kips.",
+     "answer": "190.3 kips",
+     "value": 190.3125
     }
    ],
    "lookup": [
@@ -704,7 +813,8 @@
       "tension members",
       "yielding",
       "AISC",
-      "plastic section modulus"
+      "plastic section modulus",
+      "net area"
      ]
     },
     {
@@ -723,7 +833,8 @@
     "Multiply by the resistance factor: 0.90 for yielding, flexure and compression, 0.75 for rupture.",
     "Compare the smallest design strength with the factored demand.",
     "Check serviceability under unfactored loads."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "structural-h-lesson",
@@ -754,7 +865,8 @@
    ],
    "pitfalls": [
     "Using the overall depth h instead of the effective depth d.",
-    "Forgetting the strength reduction factor when the question asks for design strength."
+    "Forgetting the strength reduction factor when the question asks for design strength.",
+    "Leaving the moment in kip-inches, or forgetting the strength reduction factor, when the question asks for design strength in kip-feet."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -768,6 +880,18 @@
     "caption": "A singly reinforced section. The shaded block is the equivalent rectangular stress block of depth a."
    },
    "ideas": [
+    {
+     "title": "Why beams are under-reinforced",
+     "text": "With a modest amount of steel the bars yield before the concrete crushes, so the beam sags and cracks visibly before it fails. With too much steel the concrete crushes first, without warning, and the code penalises that with a lower strength reduction factor."
+    },
+    {
+     "title": "Stirrups",
+     "text": "Shear strength is the concrete's contribution plus the stirrups' contribution, A_{v} f_{y} d / s, where A_{v} counts both legs of the stirrup. Stirrups are needed once the factored shear exceeds half the reduced concrete strength, and their spacing is capped at d / 2 so that a diagonal crack cannot pass between them."
+    },
+    {
+     "title": "Design strength of a tied column",
+     "text": "For a short tied column, the design axial strength is 0.80 × 0.65 × (0.85 f'_{c} (A_{g} - A_{st}) + f_{y} A_{st}). The 0.65 is the reduction factor for compression and the 0.80 allows for accidental eccentricity."
+    },
     {
      "title": "ACI 318",
      "text": "At nominal strength the steel force T = A_{s} f_{y} is balanced by a rectangular concrete stress block of intensity 0.85 f'_{c} and depth a. The moment capacity is that force times the lever arm between them, d - a/2."
@@ -783,6 +907,10 @@
     {
      "title": "ACI 318",
      "text": "Under pure axial load the concrete and steel act together: the concrete carries 0.85 f'_{c} on the net concrete area and the steel carries its yield strength on its own area."
+    },
+    {
+     "title": "ACI 318",
+     "text": "A diagonal shear crack crosses about d / s stirrups, each carrying A_{v} f_{y}, so V_{s} = A_{v} f_{y} d / s. A_{v} counts every leg that crosses the crack, two for a U-stirrup."
     }
    ],
    "examples": [
@@ -822,6 +950,14 @@
      "steps": "Gross area A_{g} = 550^{2} = 302,500 mm^{2}.\n\nConcrete: 0.85(35)(302,500 - 6,000) = 8,820,875 N.\n\nSteel: 420(6,000) = 2,520,000 N.\n\nP_{0} = 8,820,875 + 2,520,000 = 11,340,875 N = 11,341 kN.",
      "answer": "11,341 kN",
      "value": 11340.875
+    },
+    {
+     "family": "structural-0026",
+     "problem": "A reinforced concrete beam has an effective depth of 520 mm and stirrups with a total leg area of 142 mm^{2} at 175 mm spacing. The stirrup yield strength is 420 MPa. What shear do the stirrups carry, V_{s}?",
+     "idea": "A diagonal shear crack crosses about d / s stirrups, each carrying A_{v} f_{y}, so V_{s} = A_{v} f_{y} d / s. A_{v} counts every leg that crosses the crack, two for a U-stirrup.",
+     "steps": "V_{s} = \\frac{A_{v} f_{y} d}{s} = \\frac{142(420)(520)}{175} = 177,216 N = 177.2 kN.",
+     "answer": "177.2 kN",
+     "value": 177.216
     }
    ],
    "lookup": [
@@ -844,7 +980,8 @@
     "Apply the strength reduction factor.",
     "Compare with the factored moment from the load combinations.",
     "For shear, compute the concrete contribution and add the stirrup contribution if needed."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   }
  ]
 }

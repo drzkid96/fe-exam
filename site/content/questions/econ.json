@@ -1956,5 +1956,465 @@
   "version": 2,
   "versions": 2,
   "lookup": true
+ },
+ {
+  "id": "econ-0012",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Equipment costs $50,000, has a salvage value of $5,000 and a life of 10 years. Using straight-line depreciation, what is its book value after 4 years?",
+  "answer": {
+   "value": 32000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Straight-line depreciation writes off the same amount every year: (cost - salvage) / life. Book value is the cost minus the depreciation taken so far.",
+  "solution": "Annual depreciation = \\frac{50,000 - 5,000}{10} = $4,500.\n\nBook value = 50,000 - 4(4,500) = $32,000.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "depreciation",
+     "straight line"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0012",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0012-b",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Equipment costs $120,000, has a salvage value of $20,000 and a life of 8 years. Using straight-line depreciation, what is its book value after 3 years?",
+  "answer": {
+   "value": 82500.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Straight-line depreciation writes off the same amount every year: (cost - salvage) / life. Book value is the cost minus the depreciation taken so far.",
+  "solution": "Annual depreciation = \\frac{120,000 - 20,000}{8} = $12,500.\n\nBook value = 120,000 - 3(12,500) = $82,500.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "depreciation",
+     "straight line"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0012",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0012-c",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Equipment costs $36,000, has a salvage value of $6,000 and a life of 5 years. Using straight-line depreciation, what is its book value after 2 years?",
+  "answer": {
+   "value": 24000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Straight-line depreciation writes off the same amount every year: (cost - salvage) / life. Book value is the cost minus the depreciation taken so far.",
+  "solution": "Annual depreciation = \\frac{36,000 - 6,000}{5} = $6,000.\n\nBook value = 36,000 - 2(6,000) = $24,000.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "depreciation",
+     "straight line"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0012",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0012-d",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Equipment costs $80,000, has a salvage value of $8,000 and a life of 12 years. Using straight-line depreciation, what is its book value after 5 years?",
+  "answer": {
+   "value": 50000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Straight-line depreciation writes off the same amount every year: (cost - salvage) / life. Book value is the cost minus the depreciation taken so far.",
+  "solution": "Annual depreciation = \\frac{80,000 - 8,000}{12} = $6,000.\n\nBook value = 80,000 - 5(6,000) = $50,000.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "depreciation",
+     "straight line"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0012",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0013",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "$5,000 is deposited at the end of each year into an account paying 10% per year. What is the balance after 30 years?",
+  "answer": {
+   "value": 822470.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "A uniform series of end-of-period deposits grows to F = A × ((1 + i)^{n} - 1) / i, the uniform series compound amount factor (F/A, i, n). The last deposit earns no interest.",
+  "solution": "(F/A, 10%, 30) = \\frac{(1 + 0.10)^{30} - 1}{0.10} = 164.494.\n\nF = 5,000 × 164.494 = $822,470.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "uniform series compound amount"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0013",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='51' y1='86' x2='51' y2='94' stroke='#00242E'/><line x1='61' y1='86' x2='61' y2='94' stroke='#00242E'/><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='83' y1='86' x2='83' y2='94' stroke='#00242E'/><line x1='93' y1='86' x2='93' y2='94' stroke='#00242E'/><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='115' y1='86' x2='115' y2='94' stroke='#00242E'/><line x1='125' y1='86' x2='125' y2='94' stroke='#00242E'/><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='147' y1='86' x2='147' y2='94' stroke='#00242E'/><line x1='157' y1='86' x2='157' y2='94' stroke='#00242E'/><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='179' y1='86' x2='179' y2='94' stroke='#00242E'/><line x1='189' y1='86' x2='189' y2='94' stroke='#00242E'/><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>15</text><line x1='211' y1='86' x2='211' y2='94' stroke='#00242E'/><line x1='221' y1='86' x2='221' y2='94' stroke='#00242E'/><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>18</text><line x1='243' y1='86' x2='243' y2='94' stroke='#00242E'/><line x1='253' y1='86' x2='253' y2='94' stroke='#00242E'/><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>21</text><line x1='275' y1='86' x2='275' y2='94' stroke='#00242E'/><line x1='285' y1='86' x2='285' y2='94' stroke='#00242E'/><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>24</text><line x1='307' y1='86' x2='307' y2='94' stroke='#00242E'/><line x1='317' y1='86' x2='317' y2='94' stroke='#00242E'/><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>27</text><line x1='339' y1='86' x2='339' y2='94' stroke='#00242E'/><line x1='349' y1='86' x2='349' y2='94' stroke='#00242E'/><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>30</text><line x1='51' y1='90' x2='51' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M51 56 L45 68 L57 68 Z' fill='#568CBB'/><line x1='61' y1='90' x2='61' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M61 56 L55 68 L67 68 Z' fill='#568CBB'/><line x1='72' y1='90' x2='72' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M72 56 L66 68 L78 68 Z' fill='#568CBB'/><line x1='83' y1='90' x2='83' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M83 56 L77 68 L89 68 Z' fill='#568CBB'/><line x1='93' y1='90' x2='93' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M93 56 L87 68 L99 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='115' y1='90' x2='115' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M115 56 L109 68 L121 68 Z' fill='#568CBB'/><line x1='125' y1='90' x2='125' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M125 56 L119 68 L131 68 Z' fill='#568CBB'/><line x1='136' y1='90' x2='136' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M136 56 L130 68 L142 68 Z' fill='#568CBB'/><line x1='147' y1='90' x2='147' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M147 56 L141 68 L153 68 Z' fill='#568CBB'/><line x1='157' y1='90' x2='157' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M157 56 L151 68 L163 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='179' y1='90' x2='179' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M179 56 L173 68 L185 68 Z' fill='#568CBB'/><line x1='189' y1='90' x2='189' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M189 56 L183 68 L195 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='211' y1='90' x2='211' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M211 56 L205 68 L217 68 Z' fill='#568CBB'/><line x1='221' y1='90' x2='221' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M221 56 L215 68 L227 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='243' y1='90' x2='243' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M243 56 L237 68 L249 68 Z' fill='#568CBB'/><line x1='253' y1='90' x2='253' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M253 56 L247 68 L259 68 Z' fill='#568CBB'/><line x1='264' y1='90' x2='264' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M264 56 L258 68 L270 68 Z' fill='#568CBB'/><line x1='275' y1='90' x2='275' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M275 56 L269 68 L281 68 Z' fill='#568CBB'/><line x1='285' y1='90' x2='285' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M285 56 L279 68 L291 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='307' y1='90' x2='307' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M307 56 L301 68 L313 68 Z' fill='#568CBB'/><line x1='317' y1='90' x2='317' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M317 56 L311 68 L323 68 Z' fill='#568CBB'/><line x1='328' y1='90' x2='328' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M328 56 L322 68 L334 68 Z' fill='#568CBB'/><line x1='339' y1='90' x2='339' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M339 56 L333 68 L345 68 Z' fill='#568CBB'/><line x1='349' y1='90' x2='349' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M349 56 L343 68 L355 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$5,000 each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 30 periods, $5,000 at the end of every period, F = ? at period 30."
+  },
+  "lookup": true
+ },
+ {
+  "id": "econ-0013-b",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "$2,000 is deposited at the end of each year into an account paying 6% per year. What is the balance after 20 years?",
+  "answer": {
+   "value": 73571.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "A uniform series of end-of-period deposits grows to F = A × ((1 + i)^{n} - 1) / i, the uniform series compound amount factor (F/A, i, n). The last deposit earns no interest.",
+  "solution": "(F/A, 6%, 20) = \\frac{(1 + 0.06)^{20} - 1}{0.06} = 36.786.\n\nF = 2,000 × 36.786 = $73,571.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "uniform series compound amount"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0013",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='56' y1='86' x2='56' y2='94' stroke='#00242E'/><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='88' y1='86' x2='88' y2='94' stroke='#00242E'/><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='120' y1='86' x2='120' y2='94' stroke='#00242E'/><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='152' y1='86' x2='152' y2='94' stroke='#00242E'/><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='184' y1='86' x2='184' y2='94' stroke='#00242E'/><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='216' y1='86' x2='216' y2='94' stroke='#00242E'/><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='248' y1='86' x2='248' y2='94' stroke='#00242E'/><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>14</text><line x1='280' y1='86' x2='280' y2='94' stroke='#00242E'/><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>16</text><line x1='312' y1='86' x2='312' y2='94' stroke='#00242E'/><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>18</text><line x1='344' y1='86' x2='344' y2='94' stroke='#00242E'/><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>20</text><line x1='56' y1='90' x2='56' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M56 56 L50 68 L62 68 Z' fill='#568CBB'/><line x1='72' y1='90' x2='72' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M72 56 L66 68 L78 68 Z' fill='#568CBB'/><line x1='88' y1='90' x2='88' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M88 56 L82 68 L94 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='120' y1='90' x2='120' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M120 56 L114 68 L126 68 Z' fill='#568CBB'/><line x1='136' y1='90' x2='136' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M136 56 L130 68 L142 68 Z' fill='#568CBB'/><line x1='152' y1='90' x2='152' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M152 56 L146 68 L158 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='184' y1='90' x2='184' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M184 56 L178 68 L190 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='216' y1='90' x2='216' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M216 56 L210 68 L222 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='248' y1='90' x2='248' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M248 56 L242 68 L254 68 Z' fill='#568CBB'/><line x1='264' y1='90' x2='264' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M264 56 L258 68 L270 68 Z' fill='#568CBB'/><line x1='280' y1='90' x2='280' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M280 56 L274 68 L286 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='312' y1='90' x2='312' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M312 56 L306 68 L318 68 Z' fill='#568CBB'/><line x1='328' y1='90' x2='328' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M328 56 L322 68 L334 68 Z' fill='#568CBB'/><line x1='344' y1='90' x2='344' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M344 56 L338 68 L350 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$2,000 each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 20 periods, $2,000 at the end of every period, F = ? at period 20."
+  },
+  "lookup": true
+ },
+ {
+  "id": "econ-0013-c",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "$10,000 is deposited at the end of each year into an account paying 8% per year. What is the balance after 15 years?",
+  "answer": {
+   "value": 271521.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "A uniform series of end-of-period deposits grows to F = A × ((1 + i)^{n} - 1) / i, the uniform series compound amount factor (F/A, i, n). The last deposit earns no interest.",
+  "solution": "(F/A, 8%, 15) = \\frac{(1 + 0.08)^{15} - 1}{0.08} = 27.152.\n\nF = 10,000 × 27.152 = $271,521.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "uniform series compound amount"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0013",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='61' y1='86' x2='61' y2='94' stroke='#00242E'/><text x='61' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='83' y1='86' x2='83' y2='94' stroke='#00242E'/><text x='83' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='125' y1='86' x2='125' y2='94' stroke='#00242E'/><text x='125' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='147' y1='86' x2='147' y2='94' stroke='#00242E'/><text x='147' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='189' y1='86' x2='189' y2='94' stroke='#00242E'/><text x='189' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='211' y1='86' x2='211' y2='94' stroke='#00242E'/><text x='211' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='253' y1='86' x2='253' y2='94' stroke='#00242E'/><text x='253' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='275' y1='86' x2='275' y2='94' stroke='#00242E'/><text x='275' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>11</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='317' y1='86' x2='317' y2='94' stroke='#00242E'/><text x='317' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>13</text><line x1='339' y1='86' x2='339' y2='94' stroke='#00242E'/><text x='339' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>14</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>15</text><line x1='61' y1='90' x2='61' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M61 56 L55 68 L67 68 Z' fill='#568CBB'/><line x1='83' y1='90' x2='83' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M83 56 L77 68 L89 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='125' y1='90' x2='125' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M125 56 L119 68 L131 68 Z' fill='#568CBB'/><line x1='147' y1='90' x2='147' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M147 56 L141 68 L153 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='189' y1='90' x2='189' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M189 56 L183 68 L195 68 Z' fill='#568CBB'/><line x1='211' y1='90' x2='211' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M211 56 L205 68 L217 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='253' y1='90' x2='253' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M253 56 L247 68 L259 68 Z' fill='#568CBB'/><line x1='275' y1='90' x2='275' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M275 56 L269 68 L281 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='317' y1='90' x2='317' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M317 56 L311 68 L323 68 Z' fill='#568CBB'/><line x1='339' y1='90' x2='339' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M339 56 L333 68 L345 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$10,000 each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 15 periods, $10,000 at the end of every period, F = ? at period 15."
+  },
+  "lookup": true
+ },
+ {
+  "id": "econ-0013-d",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "$3,600 is deposited at the end of each year into an account paying 5% per year. What is the balance after 25 years?",
+  "answer": {
+   "value": 171818.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "A uniform series of end-of-period deposits grows to F = A × ((1 + i)^{n} - 1) / i, the uniform series compound amount factor (F/A, i, n). The last deposit earns no interest.",
+  "solution": "(F/A, 5%, 25) = \\frac{(1 + 0.05)^{25} - 1}{0.05} = 47.727.\n\nF = 3,600 × 47.727 = $171,818.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "uniform series compound amount"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0013",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='53' y1='86' x2='53' y2='94' stroke='#00242E'/><line x1='66' y1='86' x2='66' y2='94' stroke='#00242E'/><text x='66' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='78' y1='86' x2='78' y2='94' stroke='#00242E'/><line x1='91' y1='86' x2='91' y2='94' stroke='#00242E'/><text x='91' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><line x1='117' y1='86' x2='117' y2='94' stroke='#00242E'/><text x='117' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='130' y1='86' x2='130' y2='94' stroke='#00242E'/><line x1='142' y1='86' x2='142' y2='94' stroke='#00242E'/><text x='142' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='155' y1='86' x2='155' y2='94' stroke='#00242E'/><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='181' y1='86' x2='181' y2='94' stroke='#00242E'/><line x1='194' y1='86' x2='194' y2='94' stroke='#00242E'/><text x='194' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='206' y1='86' x2='206' y2='94' stroke='#00242E'/><line x1='219' y1='86' x2='219' y2='94' stroke='#00242E'/><text x='219' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>14</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><line x1='245' y1='86' x2='245' y2='94' stroke='#00242E'/><text x='245' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>16</text><line x1='258' y1='86' x2='258' y2='94' stroke='#00242E'/><line x1='270' y1='86' x2='270' y2='94' stroke='#00242E'/><text x='270' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>18</text><line x1='283' y1='86' x2='283' y2='94' stroke='#00242E'/><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>20</text><line x1='309' y1='86' x2='309' y2='94' stroke='#00242E'/><line x1='322' y1='86' x2='322' y2='94' stroke='#00242E'/><text x='322' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>22</text><line x1='334' y1='86' x2='334' y2='94' stroke='#00242E'/><line x1='347' y1='86' x2='347' y2='94' stroke='#00242E'/><text x='347' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>24</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>25</text><line x1='53' y1='90' x2='53' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M53 56 L47 68 L59 68 Z' fill='#568CBB'/><line x1='66' y1='90' x2='66' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M66 56 L60 68 L72 68 Z' fill='#568CBB'/><line x1='78' y1='90' x2='78' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M78 56 L72 68 L84 68 Z' fill='#568CBB'/><line x1='91' y1='90' x2='91' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M91 56 L85 68 L97 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='117' y1='90' x2='117' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M117 56 L111 68 L123 68 Z' fill='#568CBB'/><line x1='130' y1='90' x2='130' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M130 56 L124 68 L136 68 Z' fill='#568CBB'/><line x1='142' y1='90' x2='142' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M142 56 L136 68 L148 68 Z' fill='#568CBB'/><line x1='155' y1='90' x2='155' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M155 56 L149 68 L161 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='181' y1='90' x2='181' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M181 56 L175 68 L187 68 Z' fill='#568CBB'/><line x1='194' y1='90' x2='194' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M194 56 L188 68 L200 68 Z' fill='#568CBB'/><line x1='206' y1='90' x2='206' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M206 56 L200 68 L212 68 Z' fill='#568CBB'/><line x1='219' y1='90' x2='219' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M219 56 L213 68 L225 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='245' y1='90' x2='245' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M245 56 L239 68 L251 68 Z' fill='#568CBB'/><line x1='258' y1='90' x2='258' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M258 56 L252 68 L264 68 Z' fill='#568CBB'/><line x1='270' y1='90' x2='270' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M270 56 L264 68 L276 68 Z' fill='#568CBB'/><line x1='283' y1='90' x2='283' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M283 56 L277 68 L289 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='309' y1='90' x2='309' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M309 56 L303 68 L315 68 Z' fill='#568CBB'/><line x1='322' y1='90' x2='322' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M322 56 L316 68 L328 68 Z' fill='#568CBB'/><line x1='334' y1='90' x2='334' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M334 56 L328 68 L340 68 Z' fill='#568CBB'/><line x1='347' y1='90' x2='347' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M347 56 L341 68 L353 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$3,600 each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 25 periods, $3,600 at the end of every period, F = ? at period 25."
+  },
+  "lookup": true
+ },
+ {
+  "id": "econ-0014",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A machine costs $60,000 and $4,000 per year to run, plus $2.50 for each unit it makes. It lasts 10 years with no salvage value. Buying the part instead costs $6.00 per unit. At 8% interest, how many units per year make owning the machine break even?",
+  "answer": {
+   "value": 3698.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "units per year"
+  },
+  "eli5": "Put owning on an annual basis: the first cost times the capital recovery factor (A/P), plus the fixed annual cost, plus the unit cost times the quantity. Set that equal to the purchase price times the quantity and solve.",
+  "solution": "(A/P, 8%, 10) = 0.14903, so the annual cost of owning before any units = 60,000(0.14903) + 4,000 = $12,942.\n\nEach unit made saves 6.00 - 2.50 = $3.50.\n\nBreak-even = \\frac{12,942}{3.50} = 3,698 units per year.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "break-even analysis",
+     "capital recovery"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0014",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0014-b",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A machine costs $150,000 and $10,000 per year to run, plus $4.00 for each unit it makes. It lasts 8 years with no salvage value. Buying the part instead costs $9.50 per unit. At 10% interest, how many units per year make owning the machine break even?",
+  "answer": {
+   "value": 6930.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "units per year"
+  },
+  "eli5": "Put owning on an annual basis: the first cost times the capital recovery factor (A/P), plus the fixed annual cost, plus the unit cost times the quantity. Set that equal to the purchase price times the quantity and solve.",
+  "solution": "(A/P, 10%, 8) = 0.18744, so the annual cost of owning before any units = 150,000(0.18744) + 10,000 = $38,117.\n\nEach unit made saves 9.50 - 4.00 = $5.50.\n\nBreak-even = \\frac{38,117}{5.50} = 6,930 units per year.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "break-even analysis",
+     "capital recovery"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0014",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0014-c",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A machine costs $25,000 and $1,500 per year to run, plus $1.20 for each unit it makes. It lasts 5 years with no salvage value. Buying the part instead costs $3.00 per unit. At 6% interest, how many units per year make owning the machine break even?",
+  "answer": {
+   "value": 4131.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "units per year"
+  },
+  "eli5": "Put owning on an annual basis: the first cost times the capital recovery factor (A/P), plus the fixed annual cost, plus the unit cost times the quantity. Set that equal to the purchase price times the quantity and solve.",
+  "solution": "(A/P, 6%, 5) = 0.23740, so the annual cost of owning before any units = 25,000(0.23740) + 1,500 = $7,435.\n\nEach unit made saves 3.00 - 1.20 = $1.80.\n\nBreak-even = \\frac{7,435}{1.80} = 4,131 units per year.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "break-even analysis",
+     "capital recovery"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0014",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0014-d",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A machine costs $90,000 and $6,000 per year to run, plus $3.00 for each unit it makes. It lasts 12 years with no salvage value. Buying the part instead costs $7.50 per unit. At 7% interest, how many units per year make owning the machine break even?",
+  "answer": {
+   "value": 3851.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "units per year"
+  },
+  "eli5": "Put owning on an annual basis: the first cost times the capital recovery factor (A/P), plus the fixed annual cost, plus the unit cost times the quantity. Set that equal to the purchase price times the quantity and solve.",
+  "solution": "(A/P, 7%, 12) = 0.12590, so the annual cost of owning before any units = 90,000(0.12590) + 6,000 = $17,331.\n\nEach unit made saves 7.50 - 3.00 = $4.50.\n\nBreak-even = \\frac{17,331}{4.50} = 3,851 units per year.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "break-even analysis",
+     "capital recovery"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0014",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  }
 ]

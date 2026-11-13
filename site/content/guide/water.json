@@ -103,12 +103,28 @@
    },
    "ideas": [
     {
+     "title": "Time of concentration",
+     "text": "It is the time for runoff from the farthest part of the catchment to reach the outlet, after which the whole area is contributing: overland flow time plus travel time in gutters and sewers. Rain starts everywhere at once, so with several sub-areas use the longest path, not the sum."
+    },
+    {
+     "title": "Composite curve number",
+     "text": "Where land covers are mixed, use the area-weighted average curve number. Pavement is assigned 98, not 100, because surface pits hold a little water."
+    },
+    {
+     "title": "Runoff is a depth",
+     "text": "The NRCS method gives runoff in inches over the catchment. Rainfall minus runoff is what the site kept. Initial abstraction is the loss before any runoff starts: interception, infiltration and surface storage."
+    },
+    {
      "title": "Rational formula",
      "text": "The rational method estimates peak runoff from a small catchment as Q = C i A. With intensity in in/h and area in acres, Q comes out in cfs with no conversion factor (the factor is 1.008). The intensity is the one for a storm lasting the time of concentration."
     },
     {
      "title": "NRCS",
      "text": "The NRCS curve number method converts rainfall to runoff depth. The potential retention is S = 1,000/CN - 10 (inches), the initial abstraction is taken as 0.2 S, and runoff is Q = (P - 0.2S)^{2} / (P + 0.8S) when P exceeds 0.2 S."
+    },
+    {
+     "title": "NRCS",
+     "text": "For mixed land cover, use the area-weighted average curve number. Pavement is assigned 98 because surface pits hold a little water."
     }
    ],
    "examples": [
@@ -127,6 +143,14 @@
      "steps": "S = \\frac{1,000}{75} - 10 = 3.33 in.\n\nQ = \\frac{(6.0 - 0.2 × 3.33)^{2}}{6.0 + 0.8 × 3.33} = \\frac{28.44}{8.67} = 3.28 in.",
      "answer": "3.28 in",
      "value": 3.282051
+    },
+    {
+     "family": "water-0028",
+     "problem": "A catchment is 3.0 ha of pavement (curve number 98) and 9.0 ha of lawn (curve number 70). What is the composite curve number?",
+     "idea": "For mixed land cover, use the area-weighted average curve number. Pavement is assigned 98 because surface pits hold a little water.",
+     "steps": "CN = \\frac{3.0(98) + 9.0(70)}{3.0 + 9.0} = \\frac{924.0}{12.0} = 77.0.",
+     "answer": "77.0",
+     "value": 77.0
     }
    ],
    "lookup": [
@@ -147,7 +171,8 @@
     "For the curve number method, compute S, then the runoff depth.",
     "For a unit hydrograph, multiply its ordinates by the runoff depth, and lag and add for successive periods.",
     "Keep units consistent: in/h and acres give cfs directly."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "water-b-lesson",
@@ -178,7 +203,9 @@
    ],
    "pitfalls": [
     "Including the free water surface in the wetted perimeter.",
-    "Using the USCS constant 1.49 with SI units."
+    "Using the USCS constant 1.49 with SI units.",
+    "Mixing units in Hazen-Williams. Check which units the handbook form expects for diameter and flow.",
+    "Converting psi to feet of water without the factor: multiply by 144 and divide by 62.4, about 2.31 ft per psi."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -193,6 +220,18 @@
    },
    "ideas": [
     {
+     "title": "The hydraulic jump",
+     "text": "Fast, shallow (supercritical) flow changes abruptly to slow, deep (subcritical) flow, as in the ring around the stream from a tap in a sink. The depth after the jump follows from the depth and Froude number before it: y_{2} = (y_{1} / 2)(\\sqrt{1 + 8 Fr_{1}^{2}} - 1). The upstream Froude number must be greater than 1, which is a useful check on the arithmetic."
+    },
+    {
+     "title": "Weirs",
+     "text": "Flow over a rectangular weir varies with the head to the 3/2 power: Q = C L H^{3/2}. A contracted weir, narrower than its channel, loses an effective 0.1 H of crest length for each end contraction."
+    },
+    {
+     "title": "Which friction formula",
+     "text": "A Hazen-Williams C in the problem means the Hazen-Williams equation. A friction factor f or a Moody diagram means Darcy-Weisbach."
+    },
+    {
      "title": "Manning's equation",
      "text": "Manning's equation for uniform open channel flow (SI): Q = (1/n) A R^{2/3} S^{1/2}. The hydraulic radius R is the flow area divided by the wetted perimeter, which counts only the bed and sides in contact with water."
     },
@@ -203,6 +242,14 @@
     {
      "title": "Froude number",
      "text": "The Froude number compares the flow velocity with the speed of a small surface wave, the square root of g times the depth. Below 1 the flow is subcritical: deep, slow and controlled from downstream. Above 1 it is supercritical: shallow, fast and controlled from upstream. At exactly 1 it is critical."
+    },
+    {
+     "title": "Hydraulic jump",
+     "text": "A hydraulic jump takes supercritical flow to subcritical. The depths on either side are conjugate: y_{2} = (y_{1} / 2)(square root of (1 + 8 Fr_{1}^{2}) - 1), with the Froude number taken upstream. It must exceed 1 for a jump to occur."
+    },
+    {
+     "title": "Weir",
+     "text": "Flow over a sharp-crested rectangular weir varies with the head to the 3/2 power, so a small error in head matters. A suppressed weir spans the full channel width and has no end contractions."
     }
    ],
    "examples": [
@@ -239,6 +286,22 @@
       "svg": "<path d='M100 20 L100 142 L300 142 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='62' width='196' height='80' fill='#568CBB' fill-opacity='.35'/><text x='200' y='158' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='308' y='102' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1.2 m deep</text>",
       "alt": "A rectangular channel 3 m wide flowing 1.2 m deep."
      }
+    },
+    {
+     "family": "water-0029",
+     "problem": "Water flows 0.35 m deep at 6.5 m/s in a rectangular channel just before a hydraulic jump. What is the depth after the jump? Use g = 9.81 m/s^{2}.",
+     "idea": "A hydraulic jump takes supercritical flow to subcritical. The depths on either side are conjugate: y_{2} = (y_{1} / 2)(square root of (1 + 8 Fr_{1}^{2}) - 1), with the Froude number taken upstream. It must exceed 1 for a jump to occur.",
+     "steps": "Fr_{1} = \\frac{6.5}{\\sqrt{9.81(0.35)}} = 3.51, greater than 1.\n\ny_{2} = \\frac{0.35}{2}(\\sqrt{1 + 8(3.51)^{2}} - 1) = 1.57 m.",
+     "answer": "1.57 m",
+     "value": 1.570109
+    },
+    {
+     "family": "water-0030",
+     "problem": "A suppressed rectangular weir is 2.5 m long, and the head over its crest is 0.35 m. Using Q = 1.84 L H^{3/2} in SI units, what is the discharge?",
+     "idea": "Flow over a sharp-crested rectangular weir varies with the head to the 3/2 power, so a small error in head matters. A suppressed weir spans the full channel width and has no end contractions.",
+     "steps": "Q = 1.84(2.5)(0.35)^{3/2} = 1.84 × 2.5 × 0.2071 = 0.952 m^{3}/s.",
+     "answer": "0.952 m^{3}/s",
+     "value": 0.952489
     }
    ],
    "lookup": [
@@ -248,7 +311,9 @@
      "find": [
       "Manning's equation",
       "hydraulic radius",
-      "critical depth"
+      "critical depth",
+      "hydraulic jump",
+      "weir"
      ]
     },
     {
@@ -266,7 +331,8 @@
     "For flow regime, compute the Froude number or compare depth with critical depth.",
     "For a jump, use the conjugate depth equation.",
     "For pipes, write the energy equation with the friction loss."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "water-c-lesson",
@@ -389,6 +455,10 @@
    },
    "ideas": [
     {
+     "title": "Hydrant flow tests",
+     "text": "A flow test measures the static pressure, then the residual pressure at a nearby hydrant while another is flowing. The flow available at a target residual, commonly 20 psi, scales with the ratio of the pressure drops raised to the 0.54 power."
+    },
+    {
      "title": "",
      "text": "Average day demand is population × per capita use. Treatment plants and sources are sized for the maximum day, found by applying a peaking factor to the average."
     },
@@ -436,7 +506,8 @@
     "With flow, subtract the friction losses from the available head.",
     "For parallel pipes, set head losses equal and flows adding to the total.",
     "Size storage for equalising, fire and emergency volumes."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "water-e-lesson",
@@ -470,12 +541,20 @@
    },
    "ideas": [
     {
+     "title": "Emergency spillways",
+     "text": "An earth dam that is overtopped erodes and can fail. The emergency spillway carries flows beyond what the principal spillway can pass, so the water never reaches the crest."
+    },
+    {
      "title": "",
      "text": "A T-year event has probability 1/T in any one year. The chance that it does not occur in n independent years is (1 - 1/T)^{n}, so the risk of at least one occurrence is 1 - (1 - 1/T)^{n}."
     },
     {
      "title": "",
      "text": "The return period is the average interval between events of a given size or larger. Its reciprocal is the probability of that event being equalled or exceeded in any single year."
+    },
+    {
+     "title": "Forces on submerged surfaces",
+     "text": "Check a one-metre length of dam as a rigid block. The water thrust is the area of the triangular pressure diagram, half the unit weight of water times the depth squared. Friction can supply up to the coefficient times the dam's weight."
     }
    ],
    "examples": [
@@ -494,16 +573,33 @@
      "steps": "Annual exceedance probability = \\frac{1}{T} = \\frac{1}{500} = 0.002 = 0.2%.",
      "answer": "0.2%",
      "value": 0.2
+    },
+    {
+     "family": "water-0027",
+     "problem": "A concrete gravity dam with a rectangular section is 5 m wide at the base and 7 m high. Water stands level with its top on one side. Concrete weighs 23.5 kN/m^{3}, the coefficient of friction on the base is 0.60 and uplift is ignored. What is the factor of safety against sliding?",
+     "idea": "Check a one-metre length of dam as a rigid block. The water thrust is the area of the triangular pressure diagram, half the unit weight of water times the depth squared. Friction can supply up to the coefficient times the dam's weight.",
+     "steps": "Weight = 23.5(5)(7) = 822.5 kN/m.\n\nWater thrust = \\frac{1}{2}(9.81)(7)^{2} = 240.3 kN/m.\n\nFS = \\frac{0.60(822.5)}{240.3} = 2.05.",
+     "answer": "2.05",
+     "value": 2.053298
     }
    ],
-   "lookup": [],
+   "lookup": [
+    {
+     "section": "Fluid Mechanics",
+     "page": "177–203",
+     "find": [
+      "forces on submerged surfaces"
+     ]
+    }
+   ],
    "deep": "Flood control starts with frequency. A T-year flood has a probability of 1/T of being equalled or exceeded in any one year, and the chance of at least one occurrence in n years is 1 - (1 - 1/T)^{n}. Design levels for structures follow from the acceptable risk over their life.\n\nControl measures either store water (reservoirs and detention basins, which lower and delay the peak), convey it (channels and levees) or keep people out of its way (floodplain management). Routing a flood through storage uses the continuity equation: inflow minus outflow equals the change in storage.",
    "method": [
     "Convert the return period to annual probability.",
     "For risk over a period, compute 1 minus the probability of no exceedance.",
     "For storage, apply inflow minus outflow times the time step.",
     "Compare the reduced peak outflow with the capacity downstream."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "water-f-lesson",
@@ -531,6 +627,10 @@
     "steps": "Storage = (2.5 - 0.5)(900 s) = 1,800 m^{3}."
    },
    "ideas": [
+    {
+     "title": "Quality control and quantity control",
+     "text": "Stormwater rules have two aims. Quality criteria treat the frequent small storms, for example a water quality volume or a target removal of suspended solids. Quantity criteria hold peak flows from large, rare storms to pre-development rates."
+    },
     {
      "title": "",
      "text": "Storage routing is a volume balance: the change in storage equals inflow minus outflow, multiplied by the time step. Convert the time to seconds to match flows in m^{3}/s."
@@ -573,7 +673,8 @@
     "Size pipes with Manning's equation for the design flow.",
     "Estimate the required detention volume from the difference between inflow and allowed outflow over the storm.",
     "Size the outlet with the orifice or weir equation for the allowed release."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "water-g-lesson",
@@ -607,12 +708,20 @@
    },
    "ideas": [
     {
+     "title": "Minimum slope for self-cleansing",
+     "text": "Set the Manning velocity equal to the minimum, 0.6 m/s (2 ft/s), with the hydraulic radius D / 4, and solve for the slope. A circular pipe has the same hydraulic radius flowing full or half full."
+    },
+    {
      "title": "Manning's equation",
      "text": "Manning's equation for velocity (SI): V = (1/n) R^{2/3} S^{1/2}. For a circular pipe flowing full the hydraulic radius is D / 4."
     },
     {
      "title": "",
      "text": "Sewers are sized for peak flow, the average flow multiplied by a peaking factor that is larger for small populations. Convert daily volume to L/s by dividing by 86,400 s per day."
+    },
+    {
+     "title": "Manning's equation",
+     "text": "Set Manning's velocity equal to the self-cleansing minimum and solve for slope: S = (V n / R^{2/3})^{2}, with R = D / 4 for a full circular pipe. Larger pipes need flatter minimum slopes."
     }
    ],
    "examples": [
@@ -631,6 +740,14 @@
      "steps": "Average flow = 20,000 × 320 = 6,400,000 L/day = \\frac{6,400,000}{86,400} = 74.1 L/s.\n\nPeak flow = 2.8 × 74.1 = 207.4 L/s.",
      "answer": "207.4 L/s",
      "value": 207.407407
+    },
+    {
+     "family": "water-0031",
+     "problem": "A 375 mm sewer flowing full must keep a velocity of at least 0.6 m/s. With Manning's n = 0.013, what minimum slope is needed, as a percentage?",
+     "idea": "Set Manning's velocity equal to the self-cleansing minimum and solve for slope: S = (V n / R^{2/3})^{2}, with R = D / 4 for a full circular pipe. Larger pipes need flatter minimum slopes.",
+     "steps": "R = 0.375 / 4 = 0.0938 m, and R^{2/3} = 0.2064.\n\nS = (\\frac{0.6(0.013)}{0.2064})^{2} = 0.00143 = 0.143%.",
+     "answer": "0.143 %",
+     "value": 0.142855
     }
    ],
    "lookup": [
@@ -649,7 +766,8 @@
     "Check that capacity exceeds the peak flow.",
     "Check the self-cleansing velocity at low flow.",
     "Use partial-flow relations if depth or velocity at a given flow is asked."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "water-h-lesson",
@@ -679,7 +797,8 @@
     }
    ],
    "pitfalls": [
-    "Confusing Darcy velocity with seepage velocity."
+    "Confusing Darcy velocity with seepage velocity.",
+    "In the unconfined well equation, using the drawdown as h. The h terms are the saturated thickness at each observation well: the original thickness minus the drawdown there."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -694,6 +813,10 @@
     {
      "title": "Darcy's law",
      "text": "Darcy velocity, K i, is flow per unit of total cross-section. Water only moves through the pores, so the actual average (seepage) velocity is larger: v = K i / n. Use seepage velocity for travel times of contaminants."
+    },
+    {
+     "title": "Dupuit",
+     "text": "For steady flow to a well in an unconfined aquifer, Q = π K (h_{2}^{2} - h_{1}^{2}) / ln(r_{2} / r_{1}), where each h is the saturated thickness at that radius. Rearrange for K."
     }
    ],
    "examples": [
@@ -712,6 +835,14 @@
      "steps": "Darcy velocity = 30 × 0.005 = 0.15 m/day.\n\nSeepage velocity = \\frac{0.15}{0.25} = 0.6 m/day.",
      "answer": "0.6 m/day",
      "value": 0.6
+    },
+    {
+     "family": "water-0032",
+     "problem": "A well in an unconfined aquifer is pumped at 800 m^{3}/day. At steady state the saturated thickness is 20.0 m at 12 m from the well and 21.4 m at 60 m. What is the hydraulic conductivity?",
+     "idea": "For steady flow to a well in an unconfined aquifer, Q = π K (h_{2}^{2} - h_{1}^{2}) / ln(r_{2} / r_{1}), where each h is the saturated thickness at that radius. Rearrange for K.",
+     "steps": "K = \\frac{Q ln(r_{2} / r_{1})}{π(h_{2}^{2} - h_{1}^{2})} = \\frac{800 ln(60 / 12)}{π(21.4^{2} - 20.0^{2})} = \\frac{800(1.6094)}{π(57.96)} = 7.07 m/day.",
+     "answer": "7.07 m/day",
+     "value": 7.071083
     }
    ],
    "lookup": [
@@ -720,7 +851,9 @@
      "page": "259–309",
      "find": [
       "Darcy's law",
-      "seepage velocity"
+      "seepage velocity",
+      "Dupuit",
+      "unconfined aquifer"
      ]
     }
    ],
@@ -731,7 +864,8 @@
     "Divide by porosity for travel velocity and time.",
     "For a well, choose the confined or unconfined equation and use two observation points.",
     "Transmissivity is hydraulic conductivity times the saturated thickness."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "water-i-lesson",
@@ -764,6 +898,10 @@
     "steps": "Dilution fraction = \\frac{10}{300}.\n\nBOD_{5} = \\frac{4.0}{10/300} = 120 mg/L."
    },
    "ideas": [
+    {
+     "title": "Eutrophication",
+     "text": "Nutrients, mainly nitrogen and phosphorus, feed algal growth. When the algae die and decay, oxygen is consumed. Low dissolved oxygen is the symptom; a high level is not."
+    },
     {
      "title": "BOD",
      "text": "BOD is the oxygen consumed by microorganisms while they break down organic matter. In a diluted test, the drop in dissolved oxygen is divided by the fraction of the bottle that is sample: BOD = (DO_{initial} - DO_{final}) / P, with P = sample volume / bottle volume."
@@ -821,7 +959,8 @@
     "For a diluted BOD test, divide the oxygen drop by the sample fraction.",
     "For mass loading, multiply flow by concentration and convert units.",
     "Convert ions to CaCO_{3} equivalents by multiplying by 50 over the ion's equivalent weight."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "water-j-lesson",
@@ -849,6 +988,10 @@
     "steps": "L = 10 log(3 × 10^{7}) = 74.8 dB."
    },
    "ideas": [
+    {
+     "title": "NPDES",
+     "text": "The National Pollutant Discharge Elimination System, under the Clean Water Act, regulates discharges from point sources such as treatment plant outfalls through permits."
+    },
     {
      "title": "Drinking water standards",
      "text": "Under the Safe Drinking Water Act a maximum contaminant level (MCL) is the enforceable limit. The maximum contaminant level goal is a health target that is not enforceable. Primary standards protect health; secondary standards cover taste, odour and appearance."
@@ -896,7 +1039,8 @@
     "Decide whether the limit is enforceable or a goal.",
     "Compute removal efficiency as (in - out) / in when a percentage is required.",
     "Compare the result with the limit on the same averaging basis."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   },
   {
    "id": "water-k-lesson",
@@ -935,6 +1079,10 @@
     "steps": "t = \\frac{600}{4,800} = 0.125 day = 3.0 h."
    },
    "ideas": [
+    {
+     "title": "Chemical dose from the reaction",
+     "text": "For softening, write the reaction, convert the hardness to be removed into moles, apply the mole ratio and the chemical's molecular weight, then divide by its purity."
+    },
     {
      "title": "Hydraulic residence time",
      "text": "Hydraulic detention time is the average time water spends in a tank: volume divided by flow rate. Watch the time units; a flow in m^{3}/day gives a time in days."
@@ -993,7 +1141,8 @@
     "Compute overflow rate as flow / surface area.",
     "Compute chemical mass as flow × dose, with 1 mg/L equal to 1 g/m^{3} or 8.34 lb per million gallons.",
     "Compare the result with typical design ranges if given."
-   ]
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
   }
  ]
 }

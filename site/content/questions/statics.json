@@ -2934,5 +2934,441 @@
    "alt": "A 1,200 N weight hanging from two cables that each make 35° with the horizontal."
   },
   "lookup": true
+ },
+ {
+  "id": "statics-0016",
+  "topic": "statics",
+  "subtopic": "statics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 6 m. It carries a triangular distributed load that is zero at A and rises to 12 kN/m at B. What is the reaction at B?",
+  "answer": {
+   "value": 24.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A triangular load acts as a single force equal to half its peak intensity times its length, placed one third of the length from the tall end. With the resultant known, take moments about A.",
+  "solution": "Resultant = \\frac{1}{2}(12)(6) = 36 kN, acting 4.00 m from A.\n\nMoments about A: B_{y}(6) = 36(4.00), so B_{y} = 24.00 kN. A carries the other 12.00 kN.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113",
+    "find": [
+     "equilibrium requirements",
+     "centroid"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "statics-0016",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "statics-0016-b",
+  "topic": "statics",
+  "subtopic": "statics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 9 m. It carries a triangular distributed load that is zero at A and rises to 14 kN/m at B. What is the reaction at B?",
+  "answer": {
+   "value": 42.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A triangular load acts as a single force equal to half its peak intensity times its length, placed one third of the length from the tall end. With the resultant known, take moments about A.",
+  "solution": "Resultant = \\frac{1}{2}(14)(9) = 63 kN, acting 6.00 m from A.\n\nMoments about A: B_{y}(9) = 63(6.00), so B_{y} = 42.00 kN. A carries the other 21.00 kN.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113",
+    "find": [
+     "equilibrium requirements",
+     "centroid"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "statics-0016",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "statics-0016-c",
+  "topic": "statics",
+  "subtopic": "statics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 4.5 m. It carries a triangular distributed load that is zero at A and rises to 20 kN/m at B. What is the reaction at B?",
+  "answer": {
+   "value": 30.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A triangular load acts as a single force equal to half its peak intensity times its length, placed one third of the length from the tall end. With the resultant known, take moments about A.",
+  "solution": "Resultant = \\frac{1}{2}(20)(4.5) = 45 kN, acting 3.00 m from A.\n\nMoments about A: B_{y}(4.5) = 45(3.00), so B_{y} = 30.00 kN. A carries the other 15.00 kN.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113",
+    "find": [
+     "equilibrium requirements",
+     "centroid"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "statics-0016",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "statics-0016-d",
+  "topic": "statics",
+  "subtopic": "statics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 12 m. It carries a triangular distributed load that is zero at A and rises to 5 kN/m at B. What is the reaction at B?",
+  "answer": {
+   "value": 20.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A triangular load acts as a single force equal to half its peak intensity times its length, placed one third of the length from the tall end. With the resultant known, take moments about A.",
+  "solution": "Resultant = \\frac{1}{2}(5)(12) = 30 kN, acting 8.00 m from A.\n\nMoments about A: B_{y}(12) = 30(8.00), so B_{y} = 20.00 kN. A carries the other 10.00 kN.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113",
+    "find": [
+     "equilibrium requirements",
+     "centroid"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "statics-0016",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "statics-0017",
+  "topic": "statics",
+  "subtopic": "statics-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 200 N block rests on a 300 N block on a floor, and a cable holds the upper block in place. The coefficient of static friction is 0.30 between the blocks and 0.40 between the lower block and the floor. What horizontal force starts the lower block moving?",
+  "answer": {
+   "value": 260.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "Each sliding surface has its own normal force. The top face of the lower block carries the upper block's weight; its bottom face carries both. Friction on both faces opposes the pull.",
+  "solution": "Friction on the top face = 0.30 × 200 = 60.0 N.\n\nFriction on the bottom face = 0.40 × (200 + 300) = 200.0 N.\n\nP = 60.0 + 200.0 = 260.0 N.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113",
+    "find": [
+     "friction"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "statics-0017",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "statics-0017-b",
+  "topic": "statics",
+  "subtopic": "statics-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 150 N block rests on a 450 N block on a floor, and a cable holds the upper block in place. The coefficient of static friction is 0.25 between the blocks and 0.30 between the lower block and the floor. What horizontal force starts the lower block moving?",
+  "answer": {
+   "value": 217.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "Each sliding surface has its own normal force. The top face of the lower block carries the upper block's weight; its bottom face carries both. Friction on both faces opposes the pull.",
+  "solution": "Friction on the top face = 0.25 × 150 = 37.5 N.\n\nFriction on the bottom face = 0.30 × (150 + 450) = 180.0 N.\n\nP = 37.5 + 180.0 = 217.5 N.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113",
+    "find": [
+     "friction"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "statics-0017",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "statics-0017-c",
+  "topic": "statics",
+  "subtopic": "statics-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 400 N block rests on a 600 N block on a floor, and a cable holds the upper block in place. The coefficient of static friction is 0.20 between the blocks and 0.35 between the lower block and the floor. What horizontal force starts the lower block moving?",
+  "answer": {
+   "value": 430.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "Each sliding surface has its own normal force. The top face of the lower block carries the upper block's weight; its bottom face carries both. Friction on both faces opposes the pull.",
+  "solution": "Friction on the top face = 0.20 × 400 = 80.0 N.\n\nFriction on the bottom face = 0.35 × (400 + 600) = 350.0 N.\n\nP = 80.0 + 350.0 = 430.0 N.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113",
+    "find": [
+     "friction"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "statics-0017",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "statics-0017-d",
+  "topic": "statics",
+  "subtopic": "statics-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 80 N block rests on a 120 N block on a floor, and a cable holds the upper block in place. The coefficient of static friction is 0.40 between the blocks and 0.50 between the lower block and the floor. What horizontal force starts the lower block moving?",
+  "answer": {
+   "value": 132.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "Each sliding surface has its own normal force. The top face of the lower block carries the upper block's weight; its bottom face carries both. Friction on both faces opposes the pull.",
+  "solution": "Friction on the top face = 0.40 × 80 = 32.0 N.\n\nFriction on the bottom face = 0.50 × (80 + 120) = 100.0 N.\n\nP = 32.0 + 100.0 = 132.0 N.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113",
+    "find": [
+     "friction"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "statics-0017",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "statics-0018",
+  "topic": "statics",
+  "subtopic": "statics-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 500 N force acts along a line that rises 3 units for every 4 units of horizontal run. What is its horizontal component?",
+  "answer": {
+   "value": 400.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "When a direction is given as a slope, the components are the force times the side ratios of the slope triangle. The hypotenuse is the square root of rise squared plus run squared.",
+  "solution": "Hypotenuse = \\sqrt{3^{2} + 4^{2}} = 5.\n\nF_{x} = 500 × \\frac{4}{5} = 400.0 N. The vertical component is 500 × \\frac{3}{5} = 300.0 N.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113",
+    "find": [
+     "resolution of a force"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "statics-0018",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "statics-0018-b",
+  "topic": "statics",
+  "subtopic": "statics-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 650 N force acts along a line that rises 5 units for every 12 units of horizontal run. What is its horizontal component?",
+  "answer": {
+   "value": 600.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "When a direction is given as a slope, the components are the force times the side ratios of the slope triangle. The hypotenuse is the square root of rise squared plus run squared.",
+  "solution": "Hypotenuse = \\sqrt{5^{2} + 12^{2}} = 13.\n\nF_{x} = 650 × \\frac{12}{13} = 600.0 N. The vertical component is 650 × \\frac{5}{13} = 250.0 N.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113",
+    "find": [
+     "resolution of a force"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "statics-0018",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "statics-0018-c",
+  "topic": "statics",
+  "subtopic": "statics-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 340 N force acts along a line that rises 8 units for every 15 units of horizontal run. What is its horizontal component?",
+  "answer": {
+   "value": 300.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "When a direction is given as a slope, the components are the force times the side ratios of the slope triangle. The hypotenuse is the square root of rise squared plus run squared.",
+  "solution": "Hypotenuse = \\sqrt{8^{2} + 15^{2}} = 17.\n\nF_{x} = 340 × \\frac{15}{17} = 300.0 N. The vertical component is 340 × \\frac{8}{17} = 160.0 N.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113",
+    "find": [
+     "resolution of a force"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "statics-0018",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "statics-0018-d",
+  "topic": "statics",
+  "subtopic": "statics-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 200 N force acts along a line that rises 7 units for every 24 units of horizontal run. What is its horizontal component?",
+  "answer": {
+   "value": 192.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "When a direction is given as a slope, the components are the force times the side ratios of the slope triangle. The hypotenuse is the square root of rise squared plus run squared.",
+  "solution": "Hypotenuse = \\sqrt{7^{2} + 24^{2}} = 25.\n\nF_{x} = 200 × \\frac{24}{25} = 192.0 N. The vertical component is 200 × \\frac{7}{25} = 56.0 N.",
+  "handbook": [
+   {
+    "section": "Statics",
+    "page": "107–113",
+    "find": [
+     "resolution of a force"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "statics-0018",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  }
 ]

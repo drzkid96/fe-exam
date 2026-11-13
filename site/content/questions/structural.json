@@ -3860,5 +3860,745 @@
   "version": 4,
   "versions": 4,
   "lookup": true
+ },
+ {
+  "id": "structural-0022",
+  "topic": "structural",
+  "subtopic": "structural-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel column 6 m long has pinned ends and is braced at mid-height against buckling about its weak axis only. E = 200 GPa, I_{x} = 40 × 10^{6} mm^{4} and I_{y} = 8 × 10^{6} mm^{4}. What is the governing Euler buckling load?",
+  "answer": {
+   "value": 1755.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "One axial load can buckle the column about either axis. Each axis has its own unbraced length and moment of inertia, and the smaller critical load governs. Bracing the weak axis at mid-height halves its length and quadruples its critical load.",
+  "solution": "Strong axis, full length: P = \\frac{π^{2}(200,000)(40 × 10^{6})}{(6,000)^{2}} = 2,193 kN.\n\nWeak axis, half length: P = \\frac{π^{2}(200,000)(8 × 10^{6})}{(3,000)^{2}} = 1,755 kN.\n\nThe smaller governs: 1,755 kN.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Euler's formula",
+     "columns"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0022",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0022-b",
+  "topic": "structural",
+  "subtopic": "structural-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel column 8 m long has pinned ends and is braced at mid-height against buckling about its weak axis only. E = 200 GPa, I_{x} = 90 × 10^{6} mm^{4} and I_{y} = 30 × 10^{6} mm^{4}. What is the governing Euler buckling load?",
+  "answer": {
+   "value": 2776.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "One axial load can buckle the column about either axis. Each axis has its own unbraced length and moment of inertia, and the smaller critical load governs. Bracing the weak axis at mid-height halves its length and quadruples its critical load.",
+  "solution": "Strong axis, full length: P = \\frac{π^{2}(200,000)(90 × 10^{6})}{(8,000)^{2}} = 2,776 kN.\n\nWeak axis, half length: P = \\frac{π^{2}(200,000)(30 × 10^{6})}{(4,000)^{2}} = 3,701 kN.\n\nThe smaller governs: 2,776 kN.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Euler's formula",
+     "columns"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0022",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0022-c",
+  "topic": "structural",
+  "subtopic": "structural-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel column 5 m long has pinned ends and is braced at mid-height against buckling about its weak axis only. E = 200 GPa, I_{x} = 30 × 10^{6} mm^{4} and I_{y} = 5 × 10^{6} mm^{4}. What is the governing Euler buckling load?",
+  "answer": {
+   "value": 1579.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "One axial load can buckle the column about either axis. Each axis has its own unbraced length and moment of inertia, and the smaller critical load governs. Bracing the weak axis at mid-height halves its length and quadruples its critical load.",
+  "solution": "Strong axis, full length: P = \\frac{π^{2}(200,000)(30 × 10^{6})}{(5,000)^{2}} = 2,369 kN.\n\nWeak axis, half length: P = \\frac{π^{2}(200,000)(5 × 10^{6})}{(2,500)^{2}} = 1,579 kN.\n\nThe smaller governs: 1,579 kN.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Euler's formula",
+     "columns"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0022",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0022-d",
+  "topic": "structural",
+  "subtopic": "structural-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel column 10 m long has pinned ends and is braced at mid-height against buckling about its weak axis only. E = 200 GPa, I_{x} = 200 × 10^{6} mm^{4} and I_{y} = 60 × 10^{6} mm^{4}. What is the governing Euler buckling load?",
+  "answer": {
+   "value": 3948.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "One axial load can buckle the column about either axis. Each axis has its own unbraced length and moment of inertia, and the smaller critical load governs. Bracing the weak axis at mid-height halves its length and quadruples its critical load.",
+  "solution": "Strong axis, full length: P = \\frac{π^{2}(200,000)(200 × 10^{6})}{(10,000)^{2}} = 3,948 kN.\n\nWeak axis, half length: P = \\frac{π^{2}(200,000)(60 × 10^{6})}{(5,000)^{2}} = 4,737 kN.\n\nThe smaller governs: 3,948 kN.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Euler's formula",
+     "columns"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0022",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0023",
+  "topic": "structural",
+  "subtopic": "structural-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A continuous beam has two equal spans of 6 m and carries a uniform load of 10 kN/m over its whole length. What is the reaction at the middle support?",
+  "answer": {
+   "value": 75.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A two-span continuous beam is indeterminate to the first degree. Removing the middle support and restoring zero deflection there gives a middle reaction of 1.25 w L, more than the w L that tributary length would suggest; each end support carries 0.375 w L.",
+  "solution": "R_{middle} = 1.25 w L = 1.25(10)(6) = 75.0 kN.\n\nEach end support carries 0.375(10)(6) = 22.50 kN. Check: 75.0 + 2(22.50) = 120.0 kN, the total load.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "indeterminate",
+     "fixed-end moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0023",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0023-b",
+  "topic": "structural",
+  "subtopic": "structural-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A continuous beam has two equal spans of 8 m and carries a uniform load of 12 kN/m over its whole length. What is the reaction at the middle support?",
+  "answer": {
+   "value": 120.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A two-span continuous beam is indeterminate to the first degree. Removing the middle support and restoring zero deflection there gives a middle reaction of 1.25 w L, more than the w L that tributary length would suggest; each end support carries 0.375 w L.",
+  "solution": "R_{middle} = 1.25 w L = 1.25(12)(8) = 120.0 kN.\n\nEach end support carries 0.375(12)(8) = 36.00 kN. Check: 120.0 + 2(36.00) = 192.0 kN, the total load.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "indeterminate",
+     "fixed-end moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0023",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0023-c",
+  "topic": "structural",
+  "subtopic": "structural-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A continuous beam has two equal spans of 5 m and carries a uniform load of 24 kN/m over its whole length. What is the reaction at the middle support?",
+  "answer": {
+   "value": 150.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A two-span continuous beam is indeterminate to the first degree. Removing the middle support and restoring zero deflection there gives a middle reaction of 1.25 w L, more than the w L that tributary length would suggest; each end support carries 0.375 w L.",
+  "solution": "R_{middle} = 1.25 w L = 1.25(24)(5) = 150.0 kN.\n\nEach end support carries 0.375(24)(5) = 45.00 kN. Check: 150.0 + 2(45.00) = 240.0 kN, the total load.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "indeterminate",
+     "fixed-end moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0023",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0023-d",
+  "topic": "structural",
+  "subtopic": "structural-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A continuous beam has two equal spans of 10 m and carries a uniform load of 7.5 kN/m over its whole length. What is the reaction at the middle support?",
+  "answer": {
+   "value": 93.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A two-span continuous beam is indeterminate to the first degree. Removing the middle support and restoring zero deflection there gives a middle reaction of 1.25 w L, more than the w L that tributary length would suggest; each end support carries 0.375 w L.",
+  "solution": "R_{middle} = 1.25 w L = 1.25(7.5)(10) = 93.8 kN.\n\nEach end support carries 0.375(7.5)(10) = 28.12 kN. Check: 93.8 + 2(28.12) = 150.0 kN, the total load.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "indeterminate",
+     "fixed-end moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0023",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0024",
+  "topic": "structural",
+  "subtopic": "structural-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Floor beams span 8 m and are spaced 3 m apart. The floor carries a dead load of 4.0 kPa and a live load of 3.0 kPa. Using 1.2D + 1.6L, what is the factored bending moment in an interior beam?",
+  "answer": {
+   "value": 230.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN·m"
+  },
+  "eli5": "Follow the load path. Factor the area loads, multiply by the tributary width (the beam spacing for an interior beam) to get a line load, then use the simple-span moment w L^{2} / 8.",
+  "solution": "Factored area load = 1.2(4.0) + 1.6(3.0) = 9.60 kPa.\n\nLine load = 9.60 × 3 = 28.80 kN/m.\n\nM_{u} = \\frac{28.80(8)^{2}}{8} = 230.4 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "load combinations",
+     "LRFD"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0024",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0024-b",
+  "topic": "structural",
+  "subtopic": "structural-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Floor beams span 6 m and are spaced 2.5 m apart. The floor carries a dead load of 3.5 kPa and a live load of 4.8 kPa. Using 1.2D + 1.6L, what is the factored bending moment in an interior beam?",
+  "answer": {
+   "value": 133.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN·m"
+  },
+  "eli5": "Follow the load path. Factor the area loads, multiply by the tributary width (the beam spacing for an interior beam) to get a line load, then use the simple-span moment w L^{2} / 8.",
+  "solution": "Factored area load = 1.2(3.5) + 1.6(4.8) = 11.88 kPa.\n\nLine load = 11.88 × 2.5 = 29.70 kN/m.\n\nM_{u} = \\frac{29.70(6)^{2}}{8} = 133.6 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "load combinations",
+     "LRFD"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0024",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0024-c",
+  "topic": "structural",
+  "subtopic": "structural-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Floor beams span 10 m and are spaced 4 m apart. The floor carries a dead load of 5.0 kPa and a live load of 2.4 kPa. Using 1.2D + 1.6L, what is the factored bending moment in an interior beam?",
+  "answer": {
+   "value": 492.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN·m"
+  },
+  "eli5": "Follow the load path. Factor the area loads, multiply by the tributary width (the beam spacing for an interior beam) to get a line load, then use the simple-span moment w L^{2} / 8.",
+  "solution": "Factored area load = 1.2(5.0) + 1.6(2.4) = 9.84 kPa.\n\nLine load = 9.84 × 4 = 39.36 kN/m.\n\nM_{u} = \\frac{39.36(10)^{2}}{8} = 492.0 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "load combinations",
+     "LRFD"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0024",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0024-d",
+  "topic": "structural",
+  "subtopic": "structural-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Floor beams span 7.5 m and are spaced 3 m apart. The floor carries a dead load of 4.5 kPa and a live load of 4.0 kPa. Using 1.2D + 1.6L, what is the factored bending moment in an interior beam?",
+  "answer": {
+   "value": 248.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN·m"
+  },
+  "eli5": "Follow the load path. Factor the area loads, multiply by the tributary width (the beam spacing for an interior beam) to get a line load, then use the simple-span moment w L^{2} / 8.",
+  "solution": "Factored area load = 1.2(4.5) + 1.6(4.0) = 11.80 kPa.\n\nLine load = 11.80 × 3 = 35.40 kN/m.\n\nM_{u} = \\frac{35.40(7.5)^{2}}{8} = 248.9 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "load combinations",
+     "LRFD"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0024",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0025",
+  "topic": "structural",
+  "subtopic": "structural-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A steel plate tension member is 8 in wide and 0.5 in thick. One cross-section has 2 holes for 0.75 in diameter bolts in standard holes. F_{u} = 58 ksi and U = 1. With a resistance factor of 0.75, what is the design strength for net-section rupture?",
+  "answer": {
+   "value": 135.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kips"
+  },
+  "eli5": "Rupture is checked on the net area through the holes. Each hole removes a width equal to the bolt diameter plus 1/8 in: 1/16 in for the standard hole and 1/16 in for damage. Design strength is 0.75 F_{u} A_{e}, with A_{e} = U A_{n}.",
+  "solution": "Net width = 8 - 2(0.75 + 0.125) = 6.250 in.\n\nA_{n} = 6.250 × 0.5 = 3.125 in^{2}.\n\nDesign strength = 0.75(58)(3.125) = 135.9 kips.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "tension members",
+     "net area"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0025",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0025-b",
+  "topic": "structural",
+  "subtopic": "structural-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A steel plate tension member is 10 in wide and 0.75 in thick. One cross-section has 3 holes for 0.875 in diameter bolts in standard holes. F_{u} = 58 ksi and U = 1. With a resistance factor of 0.75, what is the design strength for net-section rupture?",
+  "answer": {
+   "value": 228.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kips"
+  },
+  "eli5": "Rupture is checked on the net area through the holes. Each hole removes a width equal to the bolt diameter plus 1/8 in: 1/16 in for the standard hole and 1/16 in for damage. Design strength is 0.75 F_{u} A_{e}, with A_{e} = U A_{n}.",
+  "solution": "Net width = 10 - 3(0.875 + 0.125) = 7.000 in.\n\nA_{n} = 7.000 × 0.75 = 5.250 in^{2}.\n\nDesign strength = 0.75(58)(5.250) = 228.4 kips.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "tension members",
+     "net area"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0025",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0025-c",
+  "topic": "structural",
+  "subtopic": "structural-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A steel plate tension member is 6 in wide and 0.375 in thick. One cross-section has 1 holes for 0.75 in diameter bolts in standard holes. F_{u} = 58 ksi and U = 1. With a resistance factor of 0.75, what is the design strength for net-section rupture?",
+  "answer": {
+   "value": 83.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kips"
+  },
+  "eli5": "Rupture is checked on the net area through the holes. Each hole removes a width equal to the bolt diameter plus 1/8 in: 1/16 in for the standard hole and 1/16 in for damage. Design strength is 0.75 F_{u} A_{e}, with A_{e} = U A_{n}.",
+  "solution": "Net width = 6 - 1(0.75 + 0.125) = 5.125 in.\n\nA_{n} = 5.125 × 0.375 = 1.922 in^{2}.\n\nDesign strength = 0.75(58)(1.922) = 83.6 kips.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "tension members",
+     "net area"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0025",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0025-d",
+  "topic": "structural",
+  "subtopic": "structural-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A steel plate tension member is 12 in wide and 1 in thick. One cross-section has 3 holes for 0.875 in diameter bolts in standard holes. F_{u} = 58 ksi and U = 1. With a resistance factor of 0.75, what is the design strength for net-section rupture?",
+  "answer": {
+   "value": 391.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kips"
+  },
+  "eli5": "Rupture is checked on the net area through the holes. Each hole removes a width equal to the bolt diameter plus 1/8 in: 1/16 in for the standard hole and 1/16 in for damage. Design strength is 0.75 F_{u} A_{e}, with A_{e} = U A_{n}.",
+  "solution": "Net width = 12 - 3(0.875 + 0.125) = 9.000 in.\n\nA_{n} = 9.000 × 1 = 9.000 in^{2}.\n\nDesign strength = 0.75(58)(9.000) = 391.5 kips.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "tension members",
+     "net area"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0025",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0026",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A reinforced concrete beam has an effective depth of 500 mm and stirrups with a total leg area of 142 mm^{2} at 200 mm spacing. The stirrup yield strength is 420 MPa. What shear do the stirrups carry, V_{s}?",
+  "answer": {
+   "value": 149.1,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A diagonal shear crack crosses about d / s stirrups, each carrying A_{v} f_{y}, so V_{s} = A_{v} f_{y} d / s. A_{v} counts every leg that crosses the crack, two for a U-stirrup.",
+  "solution": "V_{s} = \\frac{A_{v} f_{y} d}{s} = \\frac{142(420)(500)}{200} = 149,100 N = 149.1 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "shear"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0026",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0026-b",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A reinforced concrete beam has an effective depth of 450 mm and stirrups with a total leg area of 142 mm^{2} at 150 mm spacing. The stirrup yield strength is 420 MPa. What shear do the stirrups carry, V_{s}?",
+  "answer": {
+   "value": 178.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A diagonal shear crack crosses about d / s stirrups, each carrying A_{v} f_{y}, so V_{s} = A_{v} f_{y} d / s. A_{v} counts every leg that crosses the crack, two for a U-stirrup.",
+  "solution": "V_{s} = \\frac{A_{v} f_{y} d}{s} = \\frac{142(420)(450)}{150} = 178,920 N = 178.9 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "shear"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0026",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0026-c",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A reinforced concrete beam has an effective depth of 600 mm and stirrups with a total leg area of 200 mm^{2} at 250 mm spacing. The stirrup yield strength is 420 MPa. What shear do the stirrups carry, V_{s}?",
+  "answer": {
+   "value": 201.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A diagonal shear crack crosses about d / s stirrups, each carrying A_{v} f_{y}, so V_{s} = A_{v} f_{y} d / s. A_{v} counts every leg that crosses the crack, two for a U-stirrup.",
+  "solution": "V_{s} = \\frac{A_{v} f_{y} d}{s} = \\frac{200(420)(600)}{250} = 201,600 N = 201.6 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "shear"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0026",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0026-d",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A reinforced concrete beam has an effective depth of 550 mm and stirrups with a total leg area of 157 mm^{2} at 125 mm spacing. The stirrup yield strength is 420 MPa. What shear do the stirrups carry, V_{s}?",
+  "answer": {
+   "value": 290.1,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A diagonal shear crack crosses about d / s stirrups, each carrying A_{v} f_{y}, so V_{s} = A_{v} f_{y} d / s. A_{v} counts every leg that crosses the crack, two for a U-stirrup.",
+  "solution": "V_{s} = \\frac{A_{v} f_{y} d}{s} = \\frac{157(420)(550)}{125} = 290,136 N = 290.1 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "shear"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0026",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  }
 ]

@@ -47,6 +47,18 @@
   "expr": "(lambda L, H: 2*L*H)(32, 4.5)",
   "value": 288.0
  },
+ "construction-d-lesson#construction-0017": {
+  "expr": "(lambda L, W, t: L*W*t/12/27)(80, 36, 7)",
+  "value": 62.222222
+ },
+ "construction-d-lesson#construction-0018": {
+  "expr": "(lambda n, L, wt: n*L*wt/2000)(18, 32, 44)",
+  "value": 12.672
+ },
+ "construction-d-lesson#construction-0020": {
+  "expr": "(lambda hr, tons, wage, bd: hr*tons*wage*(1+bd/100))(9, 60, 44, 32)",
+  "value": 31363.2
+ },
  "construction-e-lesson": {
   "expr": "2/25*100",
   "value": 8
@@ -58,6 +70,10 @@
  "construction-e-lesson#construction-0007": {
   "expr": "(lambda sc, mm: mm*sc/1000)(200, 47)",
   "value": 9.4
+ },
+ "construction-e-lesson#construction-0019": {
+  "expr": "(lambda a, b: (a/0.75)*(b/0.75))(13.5, 8.25)",
+  "value": 198.0
  },
  "dynamics-a-lesson": {
   "expr": "30**2/(2*6)",
@@ -74,6 +90,10 @@
  "dynamics-a-lesson#dynamics-0006": {
   "expr": "(lambda v, r: v**2/r)(18, 90)",
   "value": 3.6
+ },
+ "dynamics-a-lesson#dynamics-0013": {
+  "expr": "(lambda v, G, a: v/(a+g*G/100))(22, 5, 4.5)",
+  "value": 4.408376
  },
  "dynamics-b-lesson": {
   "expr": "4*1.5**2/3",
@@ -107,6 +127,14 @@
   "expr": "(lambda Tq, I: Tq/I)(60, 8)",
   "value": 7.5
  },
+ "dynamics-c-lesson#dynamics-0014": {
+  "expr": "(lambda v, mu: v*v/(mu*g))(18, 0.45)",
+  "value": 73.394495
+ },
+ "dynamics-c-lesson#dynamics-0015": {
+  "expr": "(lambda m1, m2: m2*g/(m1+m2))(9, 3)",
+  "value": 2.4525
+ },
  "dynamics-d-lesson": {
   "expr": "0.5*1000*20**2/1000",
   "value": 200
@@ -122,6 +150,10 @@
  "dynamics-d-lesson#dynamics-0011": {
   "expr": "(lambda k, x, m: x*sqrt(k/m))(3000, 0.12, 1.5)",
   "value": 5.366563
+ },
+ "dynamics-d-lesson#dynamics-0016": {
+  "expr": "(lambda L: sqrt(3*g/L))(1.8)",
+  "value": 4.043513
  },
  "econ-a-lesson": {
   "expr": "50000/1.07**15",
@@ -143,6 +175,10 @@
   "expr": "(lambda r, m, per: ((1+r/m/100)**m-1)*100)(8, 4, 'quarterly')",
   "value": 8.243216
  },
+ "econ-a-lesson#econ-0013": {
+  "expr": "(lambda A, i, n: A*((1+i/100)**n-1)/(i/100))(4000, 7, 20)",
+  "value": 163981.969285
+ },
  "econ-b-lesson": {
   "expr": "(8000+25*400)/400",
   "value": 45
@@ -154,6 +190,10 @@
  "econ-b-lesson#econ-0006": {
   "expr": "(lambda h, r, m, oh: h*r*(1+oh/100)+m)(80, 45, 1800, 45)",
   "value": 7020.0
+ },
+ "econ-b-lesson#econ-0012": {
+  "expr": "(lambda C, Sv, n, yr: C-(C-Sv)/n*yr)(64000, 4000, 8, 3)",
+  "value": 41500.0
  },
  "econ-c-lesson": {
   "expr": "12000*(0.08*1.08**10/(1.08**10-1)) + 800",
@@ -170,6 +210,10 @@
  "econ-c-lesson#econ-0010": {
   "expr": "(lambda P, Oc, Sv, n, i: P*i/100*(1+i/100)**n/((1+i/100)**n-1)-Sv*i/100/((1+i/100)**n-1)+Oc)(60000, 4000, 8000, 10, 9)",
   "value": 12822.644675
+ },
+ "econ-c-lesson#econ-0014": {
+  "expr": "(lambda Pm, fx, uc, pr, n, i: (Pm*(i/100*(1+i/100)**n/((1+i/100)**n-1))+fx)/(pr-uc))(75000, 5000, 2.8, 6.5, 10, 9)",
+  "value": 4509.866687
  },
  "econ-d-lesson": {
   "expr": "0.25*60000 - 5000",
@@ -227,6 +271,14 @@
   "expr": "(lambda Vb, SG: SG*Vb)(1.5, 0.7)",
   "value": 1.05
  },
+ "fluids-c-lesson#fluids-0015": {
+  "expr": "(lambda h1, sg, h2: 9.81*(sg*h1+h2))(1.2, 0.82, 1.8)",
+  "value": 27.31104
+ },
+ "fluids-c-lesson#fluids-0017": {
+  "expr": "(lambda Vr, sg: 9.81*Vr*(1-sg))(2.8, 0.62)",
+  "value": 10.43784
+ },
  "fluids-d-lesson": {
   "expr": "0.03/(pi*0.15**2/4)",
   "value": 1.7
@@ -250,6 +302,10 @@
  "fluids-d-lesson#fluids-0014": {
   "expr": "(lambda d, v, th: 1000*pi*(d/1000)**2/4*v*v*(1-cos(rad(th))))(65, 16, 75)",
   "value": 629.623329
+ },
+ "fluids-d-lesson#fluids-0016": {
+  "expr": "(lambda d, th, p: 2*p*pi*(d/1000)**2/4*sin(rad(th/2)))(250, 60, 450)",
+  "value": 22.089323
  },
  "geotech-a-lesson": {
   "expr": "0.9/0.1",
@@ -291,6 +347,10 @@
   "expr": "(lambda Q, t, L, A, h: Q*L/(A*h*t))(720, 300, 18, 40, 45)",
   "value": 0.024
  },
+ "geotech-c-lesson#geotech-0025": {
+  "expr": "(lambda gd, gmax, gmin: (gd-gmin)/(gmax-gmin)*gmax/gd*100)(16.8, 18.4, 14.8)",
+  "value": 60.846561
+ },
  "geotech-d-lesson": {
   "expr": "20*5 - gw*5",
   "value": 51
@@ -323,6 +383,10 @@
   "expr": "(lambda qu: qu/2)(96)",
   "value": 48.0
  },
+ "geotech-f-lesson#geotech-0026": {
+  "expr": "(lambda s3, s1: asin((s1-s3)/(s1+s3))*180/pi)(120, 400)",
+  "value": 32.57897
+ },
  "geotech-g-lesson": {
   "expr": "sqrt(900/200)",
   "value": 2.12
@@ -334,6 +398,10 @@
  "geotech-g-lesson#geotech-0015": {
   "expr": "(lambda P, qu, FS: sqrt(P*FS/qu))(1500, 480, 3)",
   "value": 3.061862
+ },
+ "geotech-g-lesson#geotech-0027": {
+  "expr": "(lambda B, P, M: P/B*(1+6*(M/P)/B))(2.4, 420, 84)",
+  "value": 262.5
  },
  "geotech-h-lesson": {
   "expr": "50*pi*0.4*12",
@@ -355,6 +423,10 @@
   "expr": "(lambda H, cv: 0.197*(H/2)**2/cv)(10, 2.5)",
   "value": 1.97
  },
+ "geotech-i-lesson#geotech-0028": {
+  "expr": "(lambda LL: 0.009*(LL-10))(52)",
+  "value": 0.378
+ },
  "geotech-j-lesson": {
   "expr": "tan(rad(33))/tan(rad(20))",
   "value": 1.78
@@ -366,6 +438,10 @@
  "geotech-j-lesson#geotech-0021": {
   "expr": "(lambda R, La, su, W, x: su*La*R/(W*x))(18, 25, 35, 1800, 5.5)",
   "value": 1.590909
+ },
+ "geotech-j-lesson#geotech-0029": {
+  "expr": "(lambda W, al, Lp, c, phi: (c*Lp+W*cos(rad(al))*tan(rad(phi)))/(W*sin(rad(al))))(1000, 28, 14, 12, 26)",
+  "value": 1.275141
  },
  "geotech-k-lesson": {
   "expr": "0.06*1700*500",
@@ -390,6 +466,14 @@
  "materials-a-lesson#materials-0006": {
   "expr": "(lambda tot, bn: bn/tot*100)(1250, 65)",
   "value": 5.2
+ },
+ "materials-a-lesson#materials-0012": {
+  "expr": "(lambda Ws, mc, ab: Ws/(1+ab/100)*(1+mc/100)-Ws)(760, 4.6, 1.1)",
+  "value": 26.310584
+ },
+ "materials-a-lesson#materials-0013": {
+  "expr": "(lambda vol, cem, wc, wb: wc*cem*vol-wb)(7, 360, 0.44, 1050)",
+  "value": 58.8
  },
  "materials-c-lesson": {
   "expr": "300/0.0015/1000",
@@ -451,6 +535,10 @@
   "expr": "(lambda a, b, tt: a*tt*tt/2+b*tt)(5, 3, 4)",
   "value": 52.0
  },
+ "math-b-lesson#math-0018": {
+  "expr": "(lambda k: k**3/6)(5)",
+  "value": 20.833333
+ },
  "math-c-lesson": {
   "expr": "atan(2/2)*180/pi",
   "value": 45
@@ -482,6 +570,10 @@
  "math-d-lesson#math-0017": {
   "expr": "(lambda p, n: comb(n,2)*p**2*(1-p)**(n-2))(0.12, 7)",
   "value": 0.159586
+ },
+ "math-d-lesson#math-0019": {
+  "expr": "(lambda p, n: n*p**(n-1)*(1-p)+p**n)(0.75, 4)",
+  "value": 0.738281
  },
  "mechmat-a-lesson": {
   "expr": "12*4**2/8",
@@ -559,6 +651,10 @@
   "expr": "(lambda Fa, L, th: Fa*L*sin(rad(th)))(250, 1.2, 50)",
   "value": 229.813333
  },
+ "statics-a-lesson#statics-0018": {
+  "expr": "(lambda Fm, r, s: Fm*s/hypot(r,s))(850, 8, 15)",
+  "value": 750.0
+ },
  "statics-b-lesson": {
   "expr": "400*0.5",
   "value": 200
@@ -586,6 +682,10 @@
  "statics-c-lesson#statics-0015": {
   "expr": "(lambda W, th: W/(2*sin(rad(th))))(1500, 45)",
   "value": 1060.660172
+ },
+ "statics-c-lesson#statics-0016": {
+  "expr": "(lambda L, w0: w0*L/3)(7.5, 16)",
+  "value": 40.0
  },
  "statics-d-lesson": {
   "expr": "15/(4/5)",
@@ -635,6 +735,10 @@
   "expr": "(lambda W, mu, th: mu*W/(cos(rad(th))+mu*sin(rad(th))))(1000, 0.3, 15)",
   "value": 287.474302
  },
+ "statics-g-lesson#statics-0017": {
+  "expr": "(lambda W1, W2, m1, m2: m1*W1+m2*(W1+W2))(250, 500, 0.35, 0.25)",
+  "value": 275.0
+ },
  "structural-a-lesson": {
   "expr": "20*2*3/5",
   "value": 24
@@ -675,6 +779,10 @@
   "expr": "(lambda L: 0.7*L)(7)",
   "value": 4.9
  },
+ "structural-c-lesson#structural-0022": {
+  "expr": "(lambda L, Ix, Iy: min(pi**2*200000*Ix*1e6/(L*1000)**2, pi**2*200000*Iy*1e6/(L*500)**2)/1000)(7, 60, 12)",
+  "value": 1933.636781
+ },
  "structural-d-lesson": {
   "expr": "17 + 3 - 2*10",
   "value": 0
@@ -695,6 +803,10 @@
   "expr": "(lambda L, P, a: P*a*(L-a)**2/L**2)(10, 80, 4)",
   "value": 115.2
  },
+ "structural-e-lesson#structural-0023": {
+  "expr": "(lambda L, w: 1.25*w*L)(7, 16)",
+  "value": 140.0
+ },
  "structural-f-lesson": {
   "expr": "max(1.4*5, 1.2*5+1.6*3)*36",
   "value": 389
@@ -706,6 +818,10 @@
  "structural-f-lesson#structural-0014": {
   "expr": "(lambda s, q: q*s)(3.5, 4.8)",
   "value": 16.8
+ },
+ "structural-f-lesson#structural-0024": {
+  "expr": "(lambda L, s, D, Lv: (1.2*D+1.6*Lv)*s*L*L/8)(9, 3.5, 4.2, 3.6)",
+  "value": 382.725
  },
  "structural-g-lesson": {
   "expr": "0.9*250*1500/1000",
@@ -722,6 +838,10 @@
  "structural-g-lesson#structural-0017": {
   "expr": "(lambda L, r: L*1000/r)(7.5, 60)",
   "value": 125.0
+ },
+ "structural-g-lesson#structural-0025": {
+  "expr": "(lambda wd, t, n, db: 0.75*58*(wd-n*(db+0.125))*t)(9, 0.625, 2, 0.875)",
+  "value": 190.3125
  },
  "structural-h-lesson": {
   "expr": "1000*420*(450 - 1000*420/(0.85*30*300)/2)/1e6",
@@ -743,6 +863,10 @@
   "expr": "(lambda sd0, Ast, fc: (0.85*fc*(sd0*sd0-Ast)+420*Ast)/1000)(550, 6000, 35)",
   "value": 11340.875
  },
+ "structural-h-lesson#structural-0026": {
+  "expr": "(lambda d, Av, s: Av*420*d/s/1000)(520, 142, 175)",
+  "value": 177.216
+ },
  "surveying-a-lesson": {
   "expr": "200 - 180",
   "value": 20
@@ -754,6 +878,14 @@
  "surveying-a-lesson#surveying-0007": {
   "expr": "(lambda n, name: (n-2)*180)(7, 'seven')",
   "value": 900
+ },
+ "surveying-a-lesson#surveying-0014": {
+  "expr": "(lambda dd, mi, ss: dd+mi/60+ss/3600)(74, 12, 45)",
+  "value": 74.2125
+ },
+ "surveying-a-lesson#surveying-0016": {
+  "expr": "(lambda per, ml, leg: -ml*leg/per)(960, 0.16, 240)",
+  "value": -0.04
  },
  "surveying-b-lesson": {
   "expr": "0.5*40*30",
@@ -782,6 +914,10 @@
  "surveying-c-lesson#surveying-0009": {
   "expr": "(lambda pa, pb, dc: pa*pb*dc)(30, 45, 2.2)",
   "value": 2970.0
+ },
+ "surveying-c-lesson#surveying-0015": {
+  "expr": "(lambda L, A1, Am, A2: L*(A1+4*Am+A2)/6)(50, 16, 22, 30)",
+  "value": 1116.666667
  },
  "surveying-d-lesson": {
   "expr": "150*sin(rad(120))",
@@ -839,6 +975,22 @@
   "expr": "(lambda g1, g2, K: K*(g1+g2))(2.5, 1.5, 114)",
   "value": 456.0
  },
+ "transport-a-lesson#transport-0019": {
+  "expr": "(lambda R, I, PIft, sta: PIft-R*tan(rad(I/2)))(1000, 44, 3675, '36+75')",
+  "value": 3270.973774
+ },
+ "transport-a-lesson#transport-0020": {
+  "expr": "(lambda L, g1, g2, e0: e0+g1/100*L/2+g2/100*L/2)(700, 3, -2, 215.5)",
+  "value": 219.0
+ },
+ "transport-a-lesson#transport-0021": {
+  "expr": "(lambda g1, g2, S: (g1+g2)*S*S/2158)(2.5, 2, 700)",
+  "value": 1021.779425
+ },
+ "transport-a-lesson#transport-0022": {
+  "expr": "(lambda Dc: 5729.58/Dc)(3.5)",
+  "value": 1637.022857
+ },
  "transport-b-lesson": {
   "expr": "0.44*5 + 0.14*10",
   "value": 3.6
@@ -875,6 +1027,10 @@
   "expr": "(lambda uf, kj: uf*kj/4)(65, 140)",
   "value": 2275.0
  },
+ "transport-c-lesson#transport-0023": {
+  "expr": "(lambda Vh, N, PHF, PT, S: Vh/(PHF*N)*(1+PT/100)/S)(4800, 4, 0.94, 6, 64)",
+  "value": 21.143617
+ },
  "transport-d-lesson": {
   "expr": "1.0 + 59/20",
   "value": 3.95
@@ -899,6 +1055,14 @@
   "expr": "(lambda Ua, Ub: exp(Ub)/(exp(Ua)+exp(Ub)))(-0.4, -1.3)",
   "value": 0.28905
  },
+ "transport-e-lesson#transport-0024": {
+  "expr": "(lambda V0, r, n: V0*(1+r/100)**n)(15500, 2.5, 20)",
+  "value": 25398.554825
+ },
+ "transport-e-lesson#transport-0025": {
+  "expr": "(lambda Pz, A1, A2, A3, F1, F2, F3: Pz*A1*F1/(A1*F1+A2*F2+A3*F3))(1800, 350, 450, 200, 6, 3, 8)",
+  "value": 748.514851
+ },
  "water-a-lesson": {
   "expr": "0.4*3*5",
   "value": 6
@@ -910,6 +1074,10 @@
  "water-a-lesson#water-0007": {
   "expr": "(lambda CN, P: (P-0.2*(1000/CN-10))**2/(P+0.8*(1000/CN-10)))(75, 6.0)",
   "value": 3.282051
+ },
+ "water-a-lesson#water-0028": {
+  "expr": "(lambda a1, a2, cn2: (a1*98+a2*cn2)/(a1+a2))(3, 9, 70)",
+  "value": 77.0
  },
  "water-b-lesson": {
   "expr": "(2*0.5)/(2 + 2*0.5)",
@@ -926,6 +1094,14 @@
  "water-b-lesson#water-0026": {
   "expr": "(lambda v, y, reg: v/sqrt(g*y))(1.8, 1.2, 'This is less than 1, so the flow is subcritical.')",
   "value": 0.524623
+ },
+ "water-b-lesson#water-0029": {
+  "expr": "(lambda y1, u: y1/2*(sqrt(1+8*u*u/(g*y1))-1))(0.35, 6.5)",
+  "value": 1.570109
+ },
+ "water-b-lesson#water-0030": {
+  "expr": "(lambda Lw, H: 1.84*Lw*H**1.5)(2.5, 0.35)",
+  "value": 0.952489
  },
  "water-c-lesson": {
   "expr": "gw*0.02*25/0.8",
@@ -963,6 +1139,10 @@
   "expr": "(lambda T: 100/T)(500)",
   "value": 0.2
  },
+ "water-e-lesson#water-0027": {
+  "expr": "(lambda b, h, mu: mu*23.5*b*h/(0.5*9.81*h*h))(5, 7, 0.6)",
+  "value": 2.053298
+ },
  "water-f-lesson": {
   "expr": "(2.5-0.5)*15*60",
   "value": 1800
@@ -987,6 +1167,10 @@
   "expr": "(lambda pop, lpcd, pf: pop*lpcd*pf/86400)(20000, 320, 2.8)",
   "value": 207.407407
  },
+ "water-g-lesson#water-0031": {
+  "expr": "(lambda D: (0.6*0.013/(D/4000)**(2/3))**2*100)(375)",
+  "value": 0.142855
+ },
  "water-h-lesson": {
   "expr": "20*2/500",
   "value": 0.08
@@ -998,6 +1182,10 @@
  "water-h-lesson#water-0018": {
   "expr": "(lambda K, i, n: K*i/n)(30, 0.005, 0.25)",
   "value": 0.6
+ },
+ "water-h-lesson#water-0032": {
+  "expr": "(lambda Q, h1, r1, h2, r2: Q*log(r2/r1)/(pi*(h2*h2-h1*h1)))(800, 20, 12, 21.4, 60)",
+  "value": 7.071083
  },
  "water-i-lesson": {
   "expr": "4.0/(10/300)",

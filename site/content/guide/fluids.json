@@ -48,7 +48,18 @@
      "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
      "note": "The official list of topics and question counts."
     }
-   ]
+   ],
+   "tips": {
+    "from": "Mark Mattson, FE Fluid Mechanics Review Session 2022",
+    "url": "https://www.youtube.com/watch?v=XqjfnpqGWS0",
+    "items": [
+     "Decide at the start whether the question wants gauge or absolute pressure.",
+     "Work through a manometer in one direction, adding pressure going down and subtracting going up, and do not change direction partway.",
+     "The force on a submerged surface can be checked with statics: draw the pressure diagram, split it into a rectangle and a triangle, and take their areas.",
+     "In the centre of pressure formula, the dimension that is cubed in the moment of inertia is the one measured down the surface.",
+     "For a jet turned by a vane, find the force components separately with the cosine and sine of the turning angle."
+    ]
+   }
   },
   {
    "id": "fluids-a-lesson",
@@ -419,6 +430,10 @@
     {
      "title": "Darcy-Weisbach",
      "text": "The Darcy-Weisbach equation gives friction head loss as the friction factor times the length-to-diameter ratio times the velocity head: h_{f} = f (L/D)(V^{2}/2g)."
+    },
+    {
+     "title": "Impulse-momentum principle",
+     "text": "The momentum equation gives the force on the fluid as mass flow rate times the change in velocity. In the jet's original direction the velocity changes from V to V cos(angle), so the vane feels (density)(Q)(V)(1 - cos(angle)). A flat plate is the 90° case, and a full reversal at 180° doubles it."
     }
    ],
    "examples": [
@@ -458,6 +473,14 @@
      "steps": "Velocity head = \\frac{1.8^{2}}{2(9.81)} = 0.165 m.\n\nh_{f} = 0.02 × \\frac{300}{0.250} × 0.165 = 3.96 m.",
      "answer": "3.963 m",
      "value": 3.963303
+    },
+    {
+     "family": "fluids-0014",
+     "problem": "A 65 mm diameter water jet moving at 16 m/s is turned through 75° by a fixed, smooth vane without changing speed. What is the horizontal force the jet exerts on the vane?",
+     "idea": "The momentum equation gives the force on the fluid as mass flow rate times the change in velocity. In the jet's original direction the velocity changes from V to V cos(angle), so the vane feels (density)(Q)(V)(1 - cos(angle)). A flat plate is the 90° case, and a full reversal at 180° doubles it.",
+     "steps": "Q = A V = 0.00332 × 16 = 0.0531 m^{3}/s.\n\nF_{x} = (density) Q V (1 - cos 75°) = 1,000(0.0531)(16)(1 - (0.259)) = 630 N.",
+     "answer": "630 N",
+     "value": 629.623329
     }
    ],
    "lookup": [
@@ -470,7 +493,8 @@
       "energy equation",
       "impulse-momentum principle",
       "Darcy-Weisbach",
-      "head loss"
+      "head loss",
+      "deflectors and blades"
      ]
     }
    ],

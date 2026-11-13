@@ -1195,6 +1195,70 @@
   "verify": {
    "method": "computed"
   },
+  "family": "mechmat-0006",
+  "version": 1,
+  "versions": 2,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0006-b",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "multi",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A cantilever beam carries a point load at its free end. Which changes increase its tip deflection? Select all that apply.",
+  "options": [
+   {
+    "id": "a",
+    "text": "Double the load"
+   },
+   {
+    "id": "b",
+    "text": "Double the length"
+   },
+   {
+    "id": "c",
+    "text": "Use a material with twice the modulus of elasticity"
+   },
+   {
+    "id": "d",
+    "text": "Use a section with twice the moment of inertia"
+   },
+   {
+    "id": "e",
+    "text": "Use a section with half the moment of inertia"
+   }
+  ],
+  "answer": [
+   "a",
+   "b",
+   "e"
+  ],
+  "eli5": "The tip deflection of a cantilever with an end load is P L^{3} / (3 E I). Anything in the numerator increases deflection and anything in the denominator reduces it, and length counts three times over because it is cubed.",
+  "solution": "Doubling the load doubles the deflection. Doubling the length multiplies it by 8. Halving the moment of inertia doubles it.\n\nDoubling E or doubling I halves the deflection.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "deflection of beams",
+     "beam slopes and deflections"
+    ]
+   }
+  ],
+  "tags": [
+   "deflection",
+   "stiffness"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0006",
+  "version": 2,
+  "versions": 2,
   "lookup": true
  },
  {
@@ -1269,6 +1333,77 @@
   "verify": {
    "method": "computed"
   },
+  "family": "mechmat-0007",
+  "version": 1,
+  "versions": 2,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0007-b",
+  "topic": "mechmat",
+  "subtopic": "mechmat-a",
+  "format": "hotspot",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A cantilever beam carries one point load at its free end. Click the place on the beam where the bending moment is largest.",
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='350' y1='14' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='324' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>12 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text>",
+   "alt": "A cantilever beam 3 m long, a 12 kN point load 3 m from the left end."
+  },
+  "regions": [
+   {
+    "id": "fixed",
+    "label": "At the fixed support",
+    "shape": "rect",
+    "x": 30,
+    "y": 46,
+    "w": 50,
+    "h": 78
+   },
+   {
+    "id": "mid",
+    "label": "At mid-length",
+    "shape": "rect",
+    "x": 175,
+    "y": 60,
+    "w": 50,
+    "h": 50
+   },
+   {
+    "id": "free",
+    "label": "At the free end",
+    "shape": "rect",
+    "x": 322,
+    "y": 46,
+    "w": 50,
+    "h": 78
+   }
+  ],
+  "answer": "fixed",
+  "eli5": "In a cantilever with a load at its free end, the bending moment at any section is the load times the distance from the load to that section. It is zero under the load and grows linearly to its maximum, P L, at the fixed support.",
+  "solution": "M(x) = P × (distance from the free end). That distance is largest at the fixed support, so the moment peaks there: 12 kN × 3 m = 36 kN·m. At the free end the moment is zero.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
+   }
+  ],
+  "tags": [
+   "moment diagram",
+   "point load"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0007",
+  "version": 2,
+  "versions": 2,
   "lookup": true
  },
  {
@@ -2367,6 +2502,154 @@
    "method": "computed"
   },
   "family": "mechmat-0013",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0014",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A solid steel shaft 50 mm in diameter and 2 m long carries a torque of 1.5 kN·m. The shear modulus is 80 GPa. What is the angle of twist, in degrees?",
+  "answer": {
+   "value": 3.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "°"
+  },
+  "eli5": "A shaft in torsion twists by T L / (G J), the rotational counterpart of P L / (A E). G is the shear modulus and J the polar moment of inertia, π d^{4} / 32 for a solid round shaft. The result is in radians; multiply by 180/π for degrees.",
+  "solution": "J = \\frac{π d^{4}}{32} = \\frac{π(50)^{4}}{32} = 613,592 mm^{4}.\n\nAngle = \\frac{T L}{G J} = \\frac{(1.5 × 10^{6})(2,000)}{(80,000)(613,592)} = 0.0611 rad = 3.50°.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "torsion",
+     "angle of twist"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0014",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0014-b",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A solid steel shaft 60 mm in diameter and 1.5 m long carries a torque of 3 kN·m. The shear modulus is 80 GPa. What is the angle of twist, in degrees?",
+  "answer": {
+   "value": 2.53,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "°"
+  },
+  "eli5": "A shaft in torsion twists by T L / (G J), the rotational counterpart of P L / (A E). G is the shear modulus and J the polar moment of inertia, π d^{4} / 32 for a solid round shaft. The result is in radians; multiply by 180/π for degrees.",
+  "solution": "J = \\frac{π d^{4}}{32} = \\frac{π(60)^{4}}{32} = 1,272,345 mm^{4}.\n\nAngle = \\frac{T L}{G J} = \\frac{(3 × 10^{6})(1,500)}{(80,000)(1,272,345)} = 0.0442 rad = 2.53°.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "torsion",
+     "angle of twist"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0014",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0014-c",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A solid steel shaft 40 mm in diameter and 1.2 m long carries a torque of 0.8 kN·m. The shear modulus is 80 GPa. What is the angle of twist, in degrees?",
+  "answer": {
+   "value": 2.74,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "°"
+  },
+  "eli5": "A shaft in torsion twists by T L / (G J), the rotational counterpart of P L / (A E). G is the shear modulus and J the polar moment of inertia, π d^{4} / 32 for a solid round shaft. The result is in radians; multiply by 180/π for degrees.",
+  "solution": "J = \\frac{π d^{4}}{32} = \\frac{π(40)^{4}}{32} = 251,327 mm^{4}.\n\nAngle = \\frac{T L}{G J} = \\frac{(0.8 × 10^{6})(1,200)}{(80,000)(251,327)} = 0.0477 rad = 2.74°.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "torsion",
+     "angle of twist"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0014",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0014-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A solid steel shaft 75 mm in diameter and 3 m long carries a torque of 6 kN·m. The shear modulus is 80 GPa. What is the angle of twist, in degrees?",
+  "answer": {
+   "value": 4.15,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "°"
+  },
+  "eli5": "A shaft in torsion twists by T L / (G J), the rotational counterpart of P L / (A E). G is the shear modulus and J the polar moment of inertia, π d^{4} / 32 for a solid round shaft. The result is in radians; multiply by 180/π for degrees.",
+  "solution": "J = \\frac{π d^{4}}{32} = \\frac{π(75)^{4}}{32} = 3,106,311 mm^{4}.\n\nAngle = \\frac{T L}{G J} = \\frac{(6 × 10^{6})(3,000)}{(80,000)(3,106,311)} = 0.0724 rad = 4.15°.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "torsion",
+     "angle of twist"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0014",
   "version": 4,
   "versions": 4,
   "lookup": true

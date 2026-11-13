@@ -24,6 +24,11 @@
    "updated": "2026-11-13",
    "links": [
     {
+     "label": "Mark Mattson, FE review session: Ethics and Economics (video)",
+     "url": "https://www.youtube.com/watch?v=lrT1Slz0aAg",
+     "note": "Ethics is covered in the first part."
+    },
+    {
      "label": "EngineerOnUp exam prep page",
      "url": "https://engineeronup.pages.dev/examprep.html",
      "note": "The problem sets that go with those sessions, one per topic."
@@ -43,7 +48,17 @@
      "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
      "note": "The official list of topics and question counts."
     }
-   ]
+   ],
+   "tips": {
+    "from": "Mark Mattson, FE Ethics and Economics Session 2022",
+    "url": "https://www.youtube.com/watch?v=lrT1Slz0aAg",
+    "items": [
+     "Read the Model Rules in the handbook before exam day so that you know what is there and where.",
+     "To sign and seal, you must be responsible for the design decisions and have reviewed the work in full. A general look-over is not enough.",
+     "If you did not check something, say so. Never state that a check was done when it was not.",
+     "Most questions yield to common sense plus the order of duties: public first."
+    ]
+   }
   },
   {
    "id": "ethics-a-lesson",

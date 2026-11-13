@@ -184,6 +184,10 @@
     {
      "title": "Void ratio",
      "text": "Dry density relates to void ratio through the phase diagram: dry density = G_{s} × (density of water) / (1 + e). Solving for e gives the volume of voids per unit volume of solids. Do not confuse it with porosity, n = e / (1 + e)."
+    },
+    {
+     "title": "Water content",
+     "text": "Water content is the mass of water divided by the mass of dry solids, not by the moist mass. That is why it can exceed 100% in very soft clays and organic soils."
     }
    ],
    "examples": [
@@ -202,6 +206,14 @@
      "steps": "e = \\frac{G_{s} × 1,000}{dry density} - 1 = \\frac{2.72(1,000)}{1,700} - 1 = 1.600 - 1 = 0.600.",
      "answer": "0.600",
      "value": 0.6
+    },
+    {
+     "family": "geotech-0024",
+     "problem": "A soil sample has a mass of 152.6 g when moist and 128.0 g after oven drying. What is its water content?",
+     "idea": "Water content is the mass of water divided by the mass of dry solids, not by the moist mass. That is why it can exceed 100% in very soft clays and organic soils.",
+     "steps": "Mass of water = 152.6 - 128.0 = 24.6 g.\n\nw = \\frac{24.6}{128.0} × 100 = 19.22%.",
+     "answer": "19.22 %",
+     "value": 19.21875
     }
    ],
    "lookup": [

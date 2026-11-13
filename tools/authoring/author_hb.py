@@ -45,6 +45,8 @@ FIND = {
  'water-0007': CE + '::NRCS; curve number', 'water-0008': CE + '::critical depth', 'water-0009': 'Fluid Mechanics::affinity laws; scaling laws', 'water-0010': '-', 'water-0011': 'Fluid Mechanics::pressure field in a static liquid', 'water-0012': '-', 'water-0013': '-',
  'water-0014': '-', 'water-0015': CE + '::rational formula', 'water-0016': CE + "::Manning's equation", 'water-0017': '-', 'water-0018': CE + "::Darcy's law; seepage velocity", 'water-0019': EN + '::BOD', 'water-0020': EN + '::hardness; equivalent weight',
  'water-0021': 'Safety::sound pressure level; noise', 'water-0022': '-', 'water-0023': EN + '::overflow rate; clarifier', 'water-0024': '-',
+ 'fluids-0014': 'impulse-momentum principle; deflectors and blades', 'surveying-0012': 'trapezoidal rule', 'surveying-0013': 'latitude; departure', 'water-0025': EN + '::BOD', 'water-0026': 'Fluid Mechanics::Froude number',
+ 'geotech-0024': 'water content', 'structural-0021': CE + '::fixed-end moment', 'dynamics-0012': 'mass moment of inertia; parallel axis', 'mechmat-0014': 'torsion; angle of twist',
  'construction-0001': 'CPM; float', 'construction-0002': 'earned-value analysis', 'construction-0003': '-', 'construction-0004': '-', 'construction-0005': '-', 'construction-0006': '-', 'construction-0007': '-', 'construction-0008': '-', 'construction-0009': '-',
  'construction-0010': '-', 'construction-0011': 'Safety::incidence rate', 'construction-0012': '-', 'construction-0013': 'earned-value analysis; schedule variance', 'construction-0014': '-', 'construction-0015': '-', 'construction-0016': '-',
 }

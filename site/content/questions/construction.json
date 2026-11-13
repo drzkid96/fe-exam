@@ -853,6 +853,71 @@
    "method": "reference",
    "basis": "Standard design-bid-build contract administration sequence"
   },
+  "family": "construction-0005",
+  "version": 1,
+  "versions": 2,
+  "lookup": false
+ },
+ {
+  "id": "construction-0005-b",
+  "topic": "construction",
+  "subtopic": "construction-a",
+  "format": "order",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Put these project closeout steps in order, from first (top) to last (bottom).",
+  "items": [
+   {
+    "id": "final",
+    "text": "Final payment and release of retainage"
+   },
+   {
+    "id": "punch",
+    "text": "Punch list issued"
+   },
+   {
+    "id": "insp",
+    "text": "Inspection for substantial completion"
+   },
+   {
+    "id": "fix",
+    "text": "Punch list work completed"
+   },
+   {
+    "id": "finsp",
+    "text": "Final inspection"
+   }
+  ],
+  "answer": [
+   "insp",
+   "punch",
+   "fix",
+   "finsp",
+   "final"
+  ],
+  "eli5": "Closeout follows a fixed sequence because each step triggers a contractual consequence: substantial completion starts warranties and ends liquidated damages, the punch list defines what is left, and final payment releases the retainage.",
+  "solution": "The work is first inspected for substantial completion. Remaining items go on a punch list, the contractor completes them, a final inspection confirms it, and only then is final payment made and retainage released.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [
+   "project delivery",
+   "bidding",
+   "contract administration"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard construction contract closeout sequence"
+  },
+  "family": "construction-0005",
+  "version": 2,
+  "versions": 2,
   "lookup": false
  },
  {

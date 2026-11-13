@@ -2386,5 +2386,153 @@
   "version": 4,
   "versions": 4,
   "lookup": true
+ },
+ {
+  "id": "fluids-0014",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 50 mm diameter water jet moving at 20 m/s is turned through 60° by a fixed, smooth vane without changing speed. What is the horizontal force the jet exerts on the vane?",
+  "answer": {
+   "value": 393.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "The momentum equation gives the force on the fluid as mass flow rate times the change in velocity. In the jet's original direction the velocity changes from V to V cos(angle), so the vane feels (density)(Q)(V)(1 - cos(angle)). A flat plate is the 90° case, and a full reversal at 180° doubles it.",
+  "solution": "Q = A V = 0.00196 × 20 = 0.0393 m^{3}/s.\n\nF_{x} = (density) Q V (1 - cos 60°) = 1,000(0.0393)(20)(1 - (0.500)) = 393 N.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "impulse-momentum principle",
+     "deflectors and blades"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0014",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0014-b",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 40 mm diameter water jet moving at 25 m/s is turned through 90° by a fixed, smooth vane without changing speed. What is the horizontal force the jet exerts on the vane?",
+  "answer": {
+   "value": 785.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "The momentum equation gives the force on the fluid as mass flow rate times the change in velocity. In the jet's original direction the velocity changes from V to V cos(angle), so the vane feels (density)(Q)(V)(1 - cos(angle)). A flat plate is the 90° case, and a full reversal at 180° doubles it.",
+  "solution": "Q = A V = 0.00126 × 25 = 0.0314 m^{3}/s.\n\nF_{x} = (density) Q V (1 - cos 90°) = 1,000(0.0314)(25)(1 - (0.000)) = 785 N.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "impulse-momentum principle",
+     "deflectors and blades"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0014",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0014-c",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 75 mm diameter water jet moving at 12 m/s is turned through 45° by a fixed, smooth vane without changing speed. What is the horizontal force the jet exerts on the vane?",
+  "answer": {
+   "value": 186.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "The momentum equation gives the force on the fluid as mass flow rate times the change in velocity. In the jet's original direction the velocity changes from V to V cos(angle), so the vane feels (density)(Q)(V)(1 - cos(angle)). A flat plate is the 90° case, and a full reversal at 180° doubles it.",
+  "solution": "Q = A V = 0.00442 × 12 = 0.0530 m^{3}/s.\n\nF_{x} = (density) Q V (1 - cos 45°) = 1,000(0.0530)(12)(1 - (0.707)) = 186 N.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "impulse-momentum principle",
+     "deflectors and blades"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0014",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0014-d",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 60 mm diameter water jet moving at 18 m/s is turned through 120° by a fixed, smooth vane without changing speed. What is the horizontal force the jet exerts on the vane?",
+  "answer": {
+   "value": 1374.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "The momentum equation gives the force on the fluid as mass flow rate times the change in velocity. In the jet's original direction the velocity changes from V to V cos(angle), so the vane feels (density)(Q)(V)(1 - cos(angle)). A flat plate is the 90° case, and a full reversal at 180° doubles it.",
+  "solution": "Q = A V = 0.00283 × 18 = 0.0509 m^{3}/s.\n\nF_{x} = (density) Q V (1 - cos 120°) = 1,000(0.0509)(18)(1 - (-0.500)) = 1,374 N.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "impulse-momentum principle",
+     "deflectors and blades"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0014",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  }
 ]

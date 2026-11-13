@@ -3716,5 +3716,149 @@
   "version": 4,
   "versions": 4,
   "lookup": true
+ },
+ {
+  "id": "structural-0021",
+  "topic": "structural",
+  "subtopic": "structural-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A beam fixed at both ends spans 6 m and carries a 60 kN point load 2 m from the left support. What is the fixed-end moment at the left support?",
+  "answer": {
+   "value": 53.33,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN·m"
+  },
+  "eli5": "Fixed-end moments are the support moments of a beam held against rotation at both ends. For a point load they are P a b^{2} / L^{2} at the end a distance a from the load and P a^{2} b / L^{2} at the other end. The end nearer the load takes the larger moment, and for a central load both equal P L / 8.",
+  "solution": "b = 6 - 2 = 4 m.\n\nM_{left} = \\frac{P a b^{2}}{L^{2}} = \\frac{60(2)(4)^{2}}{6^{2}} = 53.33 kN·m.\n\nFor reference, M_{right} = \\frac{P a^{2} b}{L^{2}} = 26.67 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "fixed-end moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0021",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0021-b",
+  "topic": "structural",
+  "subtopic": "structural-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A beam fixed at both ends spans 8 m and carries a 40 kN point load 3 m from the left support. What is the fixed-end moment at the left support?",
+  "answer": {
+   "value": 46.88,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN·m"
+  },
+  "eli5": "Fixed-end moments are the support moments of a beam held against rotation at both ends. For a point load they are P a b^{2} / L^{2} at the end a distance a from the load and P a^{2} b / L^{2} at the other end. The end nearer the load takes the larger moment, and for a central load both equal P L / 8.",
+  "solution": "b = 8 - 3 = 5 m.\n\nM_{left} = \\frac{P a b^{2}}{L^{2}} = \\frac{40(3)(5)^{2}}{8^{2}} = 46.88 kN·m.\n\nFor reference, M_{right} = \\frac{P a^{2} b}{L^{2}} = 28.12 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "fixed-end moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0021",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0021-c",
+  "topic": "structural",
+  "subtopic": "structural-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A beam fixed at both ends spans 5 m and carries a 90 kN point load 2 m from the left support. What is the fixed-end moment at the left support?",
+  "answer": {
+   "value": 64.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN·m"
+  },
+  "eli5": "Fixed-end moments are the support moments of a beam held against rotation at both ends. For a point load they are P a b^{2} / L^{2} at the end a distance a from the load and P a^{2} b / L^{2} at the other end. The end nearer the load takes the larger moment, and for a central load both equal P L / 8.",
+  "solution": "b = 5 - 2 = 3 m.\n\nM_{left} = \\frac{P a b^{2}}{L^{2}} = \\frac{90(2)(3)^{2}}{5^{2}} = 64.80 kN·m.\n\nFor reference, M_{right} = \\frac{P a^{2} b}{L^{2}} = 43.20 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "fixed-end moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0021",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0021-d",
+  "topic": "structural",
+  "subtopic": "structural-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A beam fixed at both ends spans 9 m and carries a 54 kN point load 6 m from the left support. What is the fixed-end moment at the left support?",
+  "answer": {
+   "value": 36.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN·m"
+  },
+  "eli5": "Fixed-end moments are the support moments of a beam held against rotation at both ends. For a point load they are P a b^{2} / L^{2} at the end a distance a from the load and P a^{2} b / L^{2} at the other end. The end nearer the load takes the larger moment, and for a central load both equal P L / 8.",
+  "solution": "b = 9 - 6 = 3 m.\n\nM_{left} = \\frac{P a b^{2}}{L^{2}} = \\frac{54(6)(3)^{2}}{9^{2}} = 36.00 kN·m.\n\nFor reference, M_{right} = \\frac{P a^{2} b}{L^{2}} = 72.00 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "fixed-end moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0021",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  }
 ]

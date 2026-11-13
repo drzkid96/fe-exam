@@ -342,6 +342,10 @@
     {
      "title": "Thermal deformations",
      "text": "Free thermal expansion: change in length = coefficient × temperature change × original length. No stress develops because nothing resists the movement."
+    },
+    {
+     "title": "Torsion",
+     "text": "A shaft in torsion twists by T L / (G J), the rotational counterpart of P L / (A E). G is the shear modulus and J the polar moment of inertia, π d^{4} / 32 for a solid round shaft. The result is in radians; multiply by 180/π for degrees."
     }
    ],
    "examples": [
@@ -365,6 +369,14 @@
      "steps": "Change in length = (12 × 10^{-6})(45)(30,000 mm) = 16.20 mm.",
      "answer": "16.20 mm",
      "value": 16.2
+    },
+    {
+     "family": "mechmat-0014",
+     "problem": "A solid steel shaft 65 mm in diameter and 2.5 m long carries a torque of 4 kN·m. The shear modulus is 80 GPa. What is the angle of twist, in degrees?",
+     "idea": "A shaft in torsion twists by T L / (G J), the rotational counterpart of P L / (A E). G is the shear modulus and J the polar moment of inertia, π d^{4} / 32 for a solid round shaft. The result is in radians; multiply by 180/π for degrees.",
+     "steps": "J = \\frac{π d^{4}}{32} = \\frac{π(65)^{4}}{32} = 1,752,481 mm^{4}.\n\nAngle = \\frac{T L}{G J} = \\frac{(4 × 10^{6})(2,500)}{(80,000)(1,752,481)} = 0.0713 rad = 4.09°.",
+     "answer": "4.09 °",
+     "value": 4.086762
     }
    ],
    "lookup": [
@@ -375,7 +387,9 @@
       "uniaxial loading and deformation",
       "deflection of beams",
       "beam slopes and deflections",
-      "thermal deformations"
+      "thermal deformations",
+      "torsion",
+      "angle of twist"
      ]
     }
    ],

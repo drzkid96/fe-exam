@@ -1015,6 +1015,70 @@
    "method": "reference",
    "basis": "MUTCD Part 2: Chapter 2B regulatory signs (STOP R1-1, YIELD R1-2, Speed Limit R2-1), Chapter 2C warning signs, Chapter 2D guide signs"
   },
+  "family": "transport-0006",
+  "version": 1,
+  "versions": 2,
+  "lookup": false
+ },
+ {
+  "id": "transport-0006-b",
+  "topic": "transport",
+  "subtopic": "transport-d",
+  "format": "multi",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Which of these are warning signs under the MUTCD? Select the three that apply.",
+  "selectCount": 3,
+  "options": [
+   {
+    "id": "a",
+    "text": "Curve sign"
+   },
+   {
+    "id": "b",
+    "text": "Signal Ahead sign"
+   },
+   {
+    "id": "c",
+    "text": "Speed Limit sign"
+   },
+   {
+    "id": "d",
+    "text": "Pedestrian Crossing sign"
+   },
+   {
+    "id": "e",
+    "text": "Do Not Enter sign"
+   }
+  ],
+  "answer": [
+   "a",
+   "b",
+   "d"
+  ],
+  "eli5": "The MUTCD sorts signs by function. Warning signs alert drivers to conditions ahead and are mostly yellow diamonds with black legends; pedestrian and school warnings may be fluorescent yellow-green. Regulatory signs state laws and are mostly white rectangles. Guide signs give directions.",
+  "solution": "The Curve sign, the Signal Ahead sign and the Pedestrian Crossing sign are all warning signs.\n\nSpeed Limit and Do Not Enter are regulatory signs.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [
+   "mutcd",
+   "regulatory signs",
+   "traffic control devices"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "MUTCD Part 2, Chapter 2C warning signs (Curve W1-2, Signal Ahead W3-3, Pedestrian Crossing W11-2); Chapter 2B regulatory signs (Speed Limit R2-1, Do Not Enter R5-1)"
+  },
+  "family": "transport-0006",
+  "version": 2,
+  "versions": 2,
   "lookup": false
  },
  {

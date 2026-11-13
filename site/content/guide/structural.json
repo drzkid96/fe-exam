@@ -69,7 +69,10 @@
      "At a pin joining two members, the forces on the two members are equal and opposite.",
      "Do not forget the moment. A fixed support and a cut through a beam both carry a moment as well as forces.",
      "Fixed-end moments for standard loads are in the handbook; for a point load they are P a b^{2} / L^{2} and P a^{2} b / L^{2}.",
-     "If an answer is off by a factor of 1,000 or 12, the units are the first thing to check."
+     "If an answer is off by a factor of 1,000 or 12, the units are the first thing to check.",
+     "Concrete beams are designed to be tension-controlled: the steel strain reaches at least 0.005 so that failure is ductile, which is what allows the 0.90 strength reduction factor.",
+     "In U.S. units the concrete formulas that take a square root of the strength expect it in psi, not ksi.",
+     "For shear, add the concrete and stirrup contributions, apply the reduction factor and compare with the factored shear."
     ]
    }
   },
@@ -483,6 +486,10 @@
     {
      "title": "Fixed-end moment",
      "text": "Fixed ends prevent rotation, which attracts negative moment to the supports. For a full uniform load the fixed-end moment is w L^{2} / 12 and the midspan moment drops to w L^{2} / 24; together they still add to the simple-span value w L^{2} / 8."
+    },
+    {
+     "title": "Fixed-end moment",
+     "text": "Fixed-end moments are the support moments of a beam held against rotation at both ends. For a point load they are P a b^{2} / L^{2} at the end a distance a from the load and P a^{2} b / L^{2} at the other end. The end nearer the load takes the larger moment, and for a central load both equal P L / 8."
     }
    ],
    "examples": [
@@ -501,6 +508,14 @@
      "steps": "Fixed-end moment = \\frac{w L^{2}}{12} = \\frac{16(9)^{2}}{12} = 108 kN·m. Midspan moment = 54 kN·m.",
      "answer": "108 kN·m",
      "value": 108.0
+    },
+    {
+     "family": "structural-0021",
+     "problem": "A beam fixed at both ends spans 10 m and carries a 80 kN point load 4 m from the left support. What is the fixed-end moment at the left support?",
+     "idea": "Fixed-end moments are the support moments of a beam held against rotation at both ends. For a point load they are P a b^{2} / L^{2} at the end a distance a from the load and P a^{2} b / L^{2} at the other end. The end nearer the load takes the larger moment, and for a central load both equal P L / 8.",
+     "steps": "b = 10 - 4 = 6 m.\n\nM_{left} = \\frac{P a b^{2}}{L^{2}} = \\frac{80(4)(6)^{2}}{10^{2}} = 115.20 kN·m.\n\nFor reference, M_{right} = \\frac{P a^{2} b}{L^{2}} = 76.80 kN·m.",
+     "answer": "115.20 kN·m",
+     "value": 115.2
     }
    ],
    "lookup": [
@@ -822,7 +837,7 @@
      ]
     }
    ],
-   "deep": "Reinforced concrete combines concrete, strong in compression, with steel that carries the tension. At nominal flexural strength the concrete compression is modelled as a rectangular stress block of intensity 0.85 f'_{c} and depth a. Setting the compression equal to the steel tension A_{s} f_{y} gives a, and the moment strength is the tension force times the lever arm d - a/2.\n\nDesign strength is the strength reduction factor times nominal strength: 0.90 for tension-controlled flexure and 0.75 for shear. Shear is carried by the concrete and by stirrups. Columns are checked with axial load and moment together on an interaction diagram.",
+   "deep": "Reinforced concrete combines concrete, strong in compression, with steel that carries the tension. At nominal flexural strength the concrete compression is modelled as a rectangular stress block of intensity 0.85 f'_{c} and depth a. Setting the compression equal to the steel tension A_{s} f_{y} gives a, and the moment strength is the tension force times the lever arm d - a/2.\n\nDesign strength is the strength reduction factor times nominal strength: 0.90 for tension-controlled flexure and 0.75 for shear. A section is tension-controlled when the steel strain at nominal strength is at least 0.005, which makes the failure ductile and gives warning. Shear is carried by the concrete and by stirrups. Columns are checked with axial load and moment together on an interaction diagram.",
    "method": [
     "Compute a = A_{s} f_{y} / (0.85 f'_{c} b).",
     "Compute M_{n} = A_{s} f_{y} (d - a/2).",

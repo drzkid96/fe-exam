@@ -1072,6 +1072,76 @@
    "method": "reference",
    "basis": "Conventional surface water treatment sequence; FE Reference Handbook 10.0.1, Environmental Engineering, water treatment"
   },
+  "family": "water-0006",
+  "version": 1,
+  "versions": 2,
+  "lookup": false
+ },
+ {
+  "id": "water-0006-b",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "order",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Put the steps of conventional activated sludge wastewater treatment in order, from first (top) to last (bottom).",
+  "items": [
+   {
+    "id": "aer",
+    "text": "Aeration basin"
+   },
+   {
+    "id": "screen",
+    "text": "Screening"
+   },
+   {
+    "id": "dis",
+    "text": "Disinfection"
+   },
+   {
+    "id": "prim",
+    "text": "Primary clarifier"
+   },
+   {
+    "id": "grit",
+    "text": "Grit removal"
+   },
+   {
+    "id": "sec",
+    "text": "Secondary clarifier"
+   }
+  ],
+  "answer": [
+   "screen",
+   "grit",
+   "prim",
+   "aer",
+   "sec",
+   "dis"
+  ],
+  "eli5": "Wastewater treatment removes contaminants from coarsest to finest: large objects and grit first to protect equipment, then settleable solids, then dissolved and fine organic matter by biological treatment, then the biological solids, and finally pathogens.",
+  "solution": "Screening and grit removal are preliminary treatment. Primary clarification settles solids. The aeration basin provides biological (secondary) treatment, the secondary clarifier settles the biological solids, and disinfection comes last so that solids do not shield organisms.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": []
+   }
+  ],
+  "tags": [
+   "water treatment",
+   "coagulation",
+   "flocculation"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Conventional activated sludge wastewater treatment sequence"
+  },
+  "family": "water-0006",
+  "version": 2,
+  "versions": 2,
   "lookup": false
  },
  {
@@ -4185,5 +4255,313 @@
   "version": 4,
   "versions": 4,
   "lookup": false
+ },
+ {
+  "id": "water-0025",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A wastewater has a 5-day BOD of 180 mg/L and a BOD rate constant of 0.23 per day (base e). What is its ultimate BOD?",
+  "answer": {
+   "value": 263.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mg/L"
+  },
+  "eli5": "BOD is exerted as a first-order reaction: the oxygen used by time t is the ultimate BOD times (1 - e^{-k t}). A five-day test captures only part of the total, so the ultimate value is the five-day value divided by that fraction. Check whether k is given to base e or base 10.",
+  "solution": "BOD_{t} = L_{0}(1 - e^{-k t}), so L_{0} = \\frac{180}{1 - e^{-0.23(5)}} = \\frac{180}{1 - 0.3166} = \\frac{180}{0.6834} = 263 mg/L.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "BOD"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0025",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0025-b",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A wastewater has a 5-day BOD of 220 mg/L and a BOD rate constant of 0.30 per day (base e). What is its ultimate BOD?",
+  "answer": {
+   "value": 283.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mg/L"
+  },
+  "eli5": "BOD is exerted as a first-order reaction: the oxygen used by time t is the ultimate BOD times (1 - e^{-k t}). A five-day test captures only part of the total, so the ultimate value is the five-day value divided by that fraction. Check whether k is given to base e or base 10.",
+  "solution": "BOD_{t} = L_{0}(1 - e^{-k t}), so L_{0} = \\frac{220}{1 - e^{-0.30(5)}} = \\frac{220}{1 - 0.2231} = \\frac{220}{0.7769} = 283 mg/L.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "BOD"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0025",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0025-c",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A wastewater has a 5-day BOD of 150 mg/L and a BOD rate constant of 0.20 per day (base e). What is its ultimate BOD?",
+  "answer": {
+   "value": 237.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mg/L"
+  },
+  "eli5": "BOD is exerted as a first-order reaction: the oxygen used by time t is the ultimate BOD times (1 - e^{-k t}). A five-day test captures only part of the total, so the ultimate value is the five-day value divided by that fraction. Check whether k is given to base e or base 10.",
+  "solution": "BOD_{t} = L_{0}(1 - e^{-k t}), so L_{0} = \\frac{150}{1 - e^{-0.20(5)}} = \\frac{150}{1 - 0.3679} = \\frac{150}{0.6321} = 237 mg/L.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "BOD"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0025",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0025-d",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A wastewater has a 5-day BOD of 300 mg/L and a BOD rate constant of 0.35 per day (base e). What is its ultimate BOD?",
+  "answer": {
+   "value": 363.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mg/L"
+  },
+  "eli5": "BOD is exerted as a first-order reaction: the oxygen used by time t is the ultimate BOD times (1 - e^{-k t}). A five-day test captures only part of the total, so the ultimate value is the five-day value divided by that fraction. Check whether k is given to base e or base 10.",
+  "solution": "BOD_{t} = L_{0}(1 - e^{-k t}), so L_{0} = \\frac{300}{1 - e^{-0.35(5)}} = \\frac{300}{1 - 0.1738} = \\frac{300}{0.8262} = 363 mg/L.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "BOD"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0025",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0026",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Water flows at 2.5 m/s and 0.80 m deep in a wide rectangular channel. What is the Froude number? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 0.892,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The Froude number compares the flow velocity with the speed of a small surface wave, the square root of g times the depth. Below 1 the flow is subcritical: deep, slow and controlled from downstream. Above 1 it is supercritical: shallow, fast and controlled from upstream. At exactly 1 it is critical.",
+  "solution": "Fr = \\frac{V}{\\sqrt{g y}} = \\frac{2.5}{\\sqrt{9.81(0.80)}} = \\frac{2.5}{2.801} = 0.892.\n\nThis is less than 1, so the flow is subcritical.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "Froude number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0026",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 131",
+   "svg": "<path d='M100 20 L100 105 L300 105 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='51' width='196' height='53' fill='#568CBB' fill-opacity='.35'/><text x='200' y='121' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='308' y='78' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>0.8 m deep</text>",
+   "alt": "A rectangular channel 3 m wide flowing 0.8 m deep."
+  },
+  "lookup": true
+ },
+ {
+  "id": "water-0026-b",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Water flows at 1.2 m/s and 1.50 m deep in a wide rectangular channel. What is the Froude number? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 0.313,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The Froude number compares the flow velocity with the speed of a small surface wave, the square root of g times the depth. Below 1 the flow is subcritical: deep, slow and controlled from downstream. Above 1 it is supercritical: shallow, fast and controlled from upstream. At exactly 1 it is critical.",
+  "solution": "Fr = \\frac{V}{\\sqrt{g y}} = \\frac{1.2}{\\sqrt{9.81(1.50)}} = \\frac{1.2}{3.836} = 0.313.\n\nThis is less than 1, so the flow is subcritical.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "Froude number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0026",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 196",
+   "svg": "<path d='M100 20 L100 170 L300 170 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='70' width='196' height='100' fill='#568CBB' fill-opacity='.35'/><text x='200' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='308' y='120' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1.5 m deep</text>",
+   "alt": "A rectangular channel 3 m wide flowing 1.5 m deep."
+  },
+  "lookup": true
+ },
+ {
+  "id": "water-0026-c",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Water flows at 4.0 m/s and 0.40 m deep in a wide rectangular channel. What is the Froude number? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 2.019,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The Froude number compares the flow velocity with the speed of a small surface wave, the square root of g times the depth. Below 1 the flow is subcritical: deep, slow and controlled from downstream. Above 1 it is supercritical: shallow, fast and controlled from upstream. At exactly 1 it is critical.",
+  "solution": "Fr = \\frac{V}{\\sqrt{g y}} = \\frac{4.0}{\\sqrt{9.81(0.40)}} = \\frac{4.0}{1.981} = 2.019.\n\nThis is greater than 1, so the flow is supercritical.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "Froude number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0026",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 93",
+   "svg": "<path d='M100 20 L100 67 L300 67 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='41' width='196' height='27' fill='#568CBB' fill-opacity='.35'/><text x='200' y='83' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='308' y='54' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>0.4 m deep</text>",
+   "alt": "A rectangular channel 3 m wide flowing 0.4 m deep."
+  },
+  "lookup": true
+ },
+ {
+  "id": "water-0026-d",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Water flows at 3.6 m/s and 0.60 m deep in a wide rectangular channel. What is the Froude number? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 1.484,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The Froude number compares the flow velocity with the speed of a small surface wave, the square root of g times the depth. Below 1 the flow is subcritical: deep, slow and controlled from downstream. Above 1 it is supercritical: shallow, fast and controlled from upstream. At exactly 1 it is critical.",
+  "solution": "Fr = \\frac{V}{\\sqrt{g y}} = \\frac{3.6}{\\sqrt{9.81(0.60)}} = \\frac{3.6}{2.426} = 1.484.\n\nThis is greater than 1, so the flow is supercritical.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "Froude number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0026",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 112",
+   "svg": "<path d='M100 20 L100 86 L300 86 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='46' width='196' height='40' fill='#568CBB' fill-opacity='.35'/><text x='200' y='102' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='308' y='66' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>0.6 m deep</text>",
+   "alt": "A rectangular channel 3 m wide flowing 0.6 m deep."
+  },
+  "lookup": true
  }
 ]

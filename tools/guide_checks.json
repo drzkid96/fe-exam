@@ -87,6 +87,10 @@
   "expr": "(lambda m, r: m*r**2/2)(30, 0.25)",
   "value": 0.9375
  },
+ "dynamics-b-lesson#dynamics-0012": {
+  "expr": "(lambda m, L, M: m*L**2/3+M*L**2)(9, 2, 3)",
+  "value": 24.0
+ },
  "dynamics-c-lesson": {
   "expr": "40/10",
   "value": 4
@@ -243,6 +247,10 @@
   "expr": "(lambda v, L, d, f: f*L/(d/1000)*v*v/(2*g))(1.8, 300, 250, 0.02)",
   "value": 3.963303
  },
+ "fluids-d-lesson#fluids-0014": {
+  "expr": "(lambda d, v, th: 1000*pi*(d/1000)**2/4*v*v*(1-cos(rad(th))))(65, 16, 75)",
+  "value": 629.623329
+ },
  "geotech-a-lesson": {
   "expr": "0.9/0.1",
   "value": 9
@@ -266,6 +274,10 @@
  "geotech-b-lesson#geotech-0002": {
   "expr": "(lambda rd, Gs: Gs*1000/rd-1)(1700, 2.72)",
   "value": 0.6
+ },
+ "geotech-b-lesson#geotech-0024": {
+  "expr": "(lambda mw, md: (mw-md)/md*100)(152.6, 128)",
+  "value": 19.21875
  },
  "geotech-c-lesson": {
   "expr": "1750/1850*100",
@@ -515,6 +527,10 @@
   "expr": "(lambda L, dT, al: al*1e-6*dT*L*1000)(30, 45, 12)",
   "value": 16.2
  },
+ "mechmat-c-lesson#mechmat-0014": {
+  "expr": "(lambda d, L, Tq: Tq*1e6*L*1000/(80000*pi*d**4/32)*180/pi)(65, 2.5, 4)",
+  "value": 4.086762
+ },
  "mechmat-d-lesson": {
   "expr": "30 + hypot(30,40)",
   "value": 80
@@ -675,6 +691,10 @@
   "expr": "(lambda L, w: w*L**2/12)(9, 16)",
   "value": 108.0
  },
+ "structural-e-lesson#structural-0021": {
+  "expr": "(lambda L, P, a: P*a*(L-a)**2/L**2)(10, 80, 4)",
+  "value": 115.2
+ },
  "structural-f-lesson": {
   "expr": "max(1.4*5, 1.2*5+1.6*3)*36",
   "value": 389
@@ -747,6 +767,10 @@
   "expr": "(lambda sa, sb, C: 0.5*sa*sb*sin(rad(C)))(150, 95, 64)",
   "value": 6403.90758
  },
+ "surveying-b-lesson#surveying-0012": {
+  "expr": "(lambda dx, o0, o1, o2, o3, o4: dx*((o0+o4)/2+o1+o2+o3))(12, 2.4, 3.8, 4.6, 3.9, 2.0)",
+  "value": 174.0
+ },
  "surveying-c-lesson": {
   "expr": "30*(18+26)/2",
   "value": 660
@@ -770,6 +794,10 @@
  "surveying-d-lesson#surveying-0011": {
   "expr": "(lambda N0, L, br: N0-L*cos(rad(br)))(3200, 145, 35)",
   "value": 3081.222954
+ },
+ "surveying-d-lesson#surveying-0013": {
+  "expr": "(lambda NA, EA, NB, EB: atan((EB-EA)/(NB-NA))*180/pi)(800, 600, 1150, 1500)",
+  "value": 68.749494
  },
  "surveying-e-lesson": {
   "expr": "50 + 2.10 - 0.85",
@@ -895,6 +923,10 @@
   "expr": "(lambda q: (q*q/g)**(1/3))(2.5)",
   "value": 0.860473
  },
+ "water-b-lesson#water-0026": {
+  "expr": "(lambda v, y, reg: v/sqrt(g*y))(1.8, 1.2, 'This is less than 1, so the flow is subcritical.')",
+  "value": 0.524623
+ },
  "water-c-lesson": {
   "expr": "gw*0.02*25/0.8",
   "value": 6.13
@@ -978,6 +1010,10 @@
  "water-i-lesson#water-0020": {
   "expr": "(lambda Ca, Mg: Ca*50/20+Mg*50/12.2)(70, 20)",
   "value": 256.967213
+ },
+ "water-i-lesson#water-0025": {
+  "expr": "(lambda B5, k: B5/(1-exp(-k*5)))(200, 0.25)",
+  "value": 280.310224
  },
  "water-j-lesson": {
   "expr": "10*log10(3*10**7)",

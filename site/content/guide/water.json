@@ -199,6 +199,10 @@
     {
      "title": "Critical depth",
      "text": "Critical depth is the depth of minimum specific energy for a given flow, where the Froude number equals 1. For a rectangular channel y_{c} = (q^{2} / g)^{1/3}, with q the flow per unit width. The minimum specific energy is 1.5 y_{c}."
+    },
+    {
+     "title": "Froude number",
+     "text": "The Froude number compares the flow velocity with the speed of a small surface wave, the square root of g times the depth. Below 1 the flow is subcritical: deep, slow and controlled from downstream. Above 1 it is supercritical: shallow, fast and controlled from upstream. At exactly 1 it is critical."
     }
    ],
    "examples": [
@@ -222,6 +226,19 @@
      "steps": "y_{c} = (\\frac{q^{2}}{g})^{1/3} = (\\frac{2.5^{2}}{9.81})^{1/3} = (0.637)^{1/3} = 0.860 m.",
      "answer": "0.860 m",
      "value": 0.860473
+    },
+    {
+     "family": "water-0026",
+     "problem": "Water flows at 1.8 m/s and 1.20 m deep in a wide rectangular channel. What is the Froude number? Use g = 9.81 m/s^{2}.",
+     "idea": "The Froude number compares the flow velocity with the speed of a small surface wave, the square root of g times the depth. Below 1 the flow is subcritical: deep, slow and controlled from downstream. Above 1 it is supercritical: shallow, fast and controlled from upstream. At exactly 1 it is critical.",
+     "steps": "Fr = \\frac{V}{\\sqrt{g y}} = \\frac{1.8}{\\sqrt{9.81(1.20)}} = \\frac{1.8}{3.431} = 0.525.\n\nThis is less than 1, so the flow is subcritical.",
+     "answer": "0.525",
+     "value": 0.524623,
+     "figure": {
+      "viewBox": "0 0 400 168",
+      "svg": "<path d='M100 20 L100 142 L300 142 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='62' width='196' height='80' fill='#568CBB' fill-opacity='.35'/><text x='200' y='158' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='308' y='102' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1.2 m deep</text>",
+      "alt": "A rectangular channel 3 m wide flowing 1.2 m deep."
+     }
     }
    ],
    "lookup": [
@@ -232,6 +249,13 @@
       "Manning's equation",
       "hydraulic radius",
       "critical depth"
+     ]
+    },
+    {
+     "section": "Fluid Mechanics",
+     "page": "177–203",
+     "find": [
+      "Froude number"
      ]
     }
    ],
@@ -747,6 +771,10 @@
     {
      "title": "Hardness",
      "text": "Hardness is the sum of the multivalent cations, mainly calcium and magnesium, each converted to its CaCO_{3} equivalent: concentration × (50 / equivalent weight of the ion)."
+    },
+    {
+     "title": "BOD",
+     "text": "BOD is exerted as a first-order reaction: the oxygen used by time t is the ultimate BOD times (1 - e^{-k t}). A five-day test captures only part of the total, so the ultimate value is the five-day value divided by that fraction. Check whether k is given to base e or base 10."
     }
    ],
    "examples": [
@@ -765,6 +793,14 @@
      "steps": "Calcium: 70 × \\frac{50}{20} = 175.0 mg/L as CaCO_{3}.\n\nMagnesium: 20 × \\frac{50}{12.2} = 82.0 mg/L as CaCO_{3}.\n\nTotal hardness = 175.0 + 82.0 = 257.0 mg/L as CaCO_{3}.",
      "answer": "257.0 mg/L as CaCO_{3}",
      "value": 256.967213
+    },
+    {
+     "family": "water-0025",
+     "problem": "A wastewater has a 5-day BOD of 200 mg/L and a BOD rate constant of 0.25 per day (base e). What is its ultimate BOD?",
+     "idea": "BOD is exerted as a first-order reaction: the oxygen used by time t is the ultimate BOD times (1 - e^{-k t}). A five-day test captures only part of the total, so the ultimate value is the five-day value divided by that fraction. Check whether k is given to base e or base 10.",
+     "steps": "BOD_{t} = L_{0}(1 - e^{-k t}), so L_{0} = \\frac{200}{1 - e^{-0.25(5)}} = \\frac{200}{1 - 0.2865} = \\frac{200}{0.7135} = 280 mg/L.",
+     "answer": "280 mg/L",
+     "value": 280.310224
     }
    ],
    "lookup": [

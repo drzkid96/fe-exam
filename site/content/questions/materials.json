@@ -489,6 +489,88 @@
    "method": "reference",
    "basis": "Standard test methods: ASTM C143 (slump), ASTM D6927 (Marshall stability and flow), ASTM E23 (Charpy impact), ASTM C131 (Los Angeles abrasion)"
   },
+  "family": "materials-0003",
+  "version": 1,
+  "versions": 2,
+  "lookup": true
+ },
+ {
+  "id": "materials-0003-b",
+  "topic": "materials",
+  "subtopic": "materials-b",
+  "format": "match",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Place each test on the property it measures.",
+  "tokens": [
+   {
+    "id": "proctor",
+    "text": "Proctor test"
+   },
+   {
+    "id": "split",
+    "text": "Split-cylinder test"
+   },
+   {
+    "id": "sieve",
+    "text": "Sieve analysis"
+   },
+   {
+    "id": "atter",
+    "text": "Atterberg limits"
+   }
+  ],
+  "targets": [
+   {
+    "id": "grad",
+    "label": "Particle size distribution"
+   },
+   {
+    "id": "tens",
+    "label": "Tensile strength of concrete"
+   },
+   {
+    "id": "comp",
+    "label": "Maximum dry density and optimum water content"
+   },
+   {
+    "id": "plast",
+    "label": "Plasticity of fine-grained soil"
+   }
+  ],
+  "answer": {
+   "proctor": "comp",
+   "split": "tens",
+   "sieve": "grad",
+   "atter": "plast"
+  },
+  "eli5": "Each standard test targets one property. Soil and aggregate tests describe grading, plasticity and compaction behaviour; concrete tests describe strength in a particular mode of loading.",
+  "solution": "A sieve analysis gives the particle size distribution. The Proctor test gives maximum dry density and optimum water content. Atterberg limits give the plasticity of fine-grained soil. The split-cylinder test gives the tensile strength of concrete.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": [
+     "hardness",
+     "impact test"
+    ]
+   }
+  ],
+  "tags": [
+   "test methods",
+   "slump",
+   "marshall",
+   "charpy"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard test methods: ASTM C136 / D6913 (sieve analysis), ASTM D698 (standard Proctor), ASTM D4318 (Atterberg limits), ASTM C496 (splitting tensile strength)"
+  },
+  "family": "materials-0003",
+  "version": 2,
+  "versions": 2,
   "lookup": true
  },
  {

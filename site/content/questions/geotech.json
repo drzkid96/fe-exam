@@ -1242,6 +1242,78 @@
   "verify": {
    "method": "computed"
   },
+  "family": "geotech-0007",
+  "version": 1,
+  "versions": 2,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0007-b",
+  "topic": "geotech",
+  "subtopic": "geotech-d",
+  "format": "hotspot",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Click the layer in which the pore water pressure is greatest. Ignore capillary rise.",
+  "figure": {
+   "viewBox": "0 0 400 200",
+   "alt": "A soil profile with three layers: sand above the water table, sand below the water table, and clay at the bottom.",
+   "svg": "<rect x='20' y='30' width='360' height='50' fill='#EEEDE8'/><rect x='20' y='80' width='360' height='60' fill='#D9F1D6'/><rect x='20' y='140' width='360' height='50' fill='#E7E8E8'/><line x1='20' y1='30' x2='380' y2='30' stroke='#00242E' stroke-width='3'/><line x1='20' y1='80' x2='380' y2='80' stroke='#568CBB' stroke-width='2' stroke-dasharray='8 4'/><line x1='20' y1='140' x2='380' y2='140' stroke='#00242E' stroke-width='1'/><path d='M340 80 L332 66 L348 66 Z' fill='#568CBB'/><text x='30' y='22' font-size='12' fill='#00242E'>Ground surface</text><text x='326' y='60' text-anchor='end' font-size='12' fill='#568CBB'>Water table</text><text x='30' y='60' font-size='13' font-weight='600' fill='#00242E'>Sand</text><text x='30' y='115' font-size='13' font-weight='600' fill='#00242E'>Sand</text><text x='30' y='170' font-size='13' font-weight='600' fill='#00242E'>Clay</text>"
+  },
+  "regions": [
+   {
+    "id": "dry",
+    "label": "Sand above the water table",
+    "shape": "rect",
+    "x": 20,
+    "y": 31,
+    "w": 360,
+    "h": 48
+   },
+   {
+    "id": "satsand",
+    "label": "Sand below the water table",
+    "shape": "rect",
+    "x": 20,
+    "y": 81,
+    "w": 360,
+    "h": 58
+   },
+   {
+    "id": "clay",
+    "label": "Clay",
+    "shape": "rect",
+    "x": 20,
+    "y": 141,
+    "w": 360,
+    "h": 49
+   }
+  ],
+  "answer": "clay",
+  "eli5": "Hydrostatic pore water pressure is zero at the water table and increases linearly with depth below it, at 9.81 kPa per metre. Above the water table, ignoring capillary rise, it is zero.",
+  "solution": "Pore pressure depends only on depth below the water table. The clay is the deepest layer, so it has the greatest pore pressure. The sand above the water table has none.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "effective stress"
+    ]
+   }
+  ],
+  "tags": [
+   "effective stress",
+   "water table"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Hydrostatic pore pressure increases with depth below the water table"
+  },
+  "family": "geotech-0007",
+  "version": 2,
+  "versions": 2,
   "lookup": true
  },
  {
@@ -3711,5 +3783,149 @@
   "version": 4,
   "versions": 4,
   "lookup": false
+ },
+ {
+  "id": "geotech-0024",
+  "topic": "geotech",
+  "subtopic": "geotech-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil sample has a mass of 245.0 g when moist and 210.0 g after oven drying. What is its water content?",
+  "answer": {
+   "value": 16.67,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Water content is the mass of water divided by the mass of dry solids, not by the moist mass. That is why it can exceed 100% in very soft clays and organic soils.",
+  "solution": "Mass of water = 245.0 - 210.0 = 35.0 g.\n\nw = \\frac{35.0}{210.0} × 100 = 16.67%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "water content"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0024",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0024-b",
+  "topic": "geotech",
+  "subtopic": "geotech-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil sample has a mass of 318.5 g when moist and 260.0 g after oven drying. What is its water content?",
+  "answer": {
+   "value": 22.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Water content is the mass of water divided by the mass of dry solids, not by the moist mass. That is why it can exceed 100% in very soft clays and organic soils.",
+  "solution": "Mass of water = 318.5 - 260.0 = 58.5 g.\n\nw = \\frac{58.5}{260.0} × 100 = 22.50%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "water content"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0024",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0024-c",
+  "topic": "geotech",
+  "subtopic": "geotech-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil sample has a mass of 182.0 g when moist and 160.0 g after oven drying. What is its water content?",
+  "answer": {
+   "value": 13.75,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Water content is the mass of water divided by the mass of dry solids, not by the moist mass. That is why it can exceed 100% in very soft clays and organic soils.",
+  "solution": "Mass of water = 182.0 - 160.0 = 22.0 g.\n\nw = \\frac{22.0}{160.0} × 100 = 13.75%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "water content"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0024",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0024-d",
+  "topic": "geotech",
+  "subtopic": "geotech-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil sample has a mass of 96.4 g when moist and 80.0 g after oven drying. What is its water content?",
+  "answer": {
+   "value": 20.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Water content is the mass of water divided by the mass of dry solids, not by the moist mass. That is why it can exceed 100% in very soft clays and organic soils.",
+  "solution": "Mass of water = 96.4 - 80.0 = 16.4 g.\n\nw = \\frac{16.4}{80.0} × 100 = 20.50%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "water content"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0024",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  }
 ]

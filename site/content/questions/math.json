@@ -743,6 +743,70 @@
    "method": "reference",
    "basis": "FE Reference Handbook 10.0.1, Engineering Probability and Statistics, normal distribution. The 68% figure is also recomputed from the normal curve."
   },
+  "family": "math-0005",
+  "version": 1,
+  "versions": 2,
+  "lookup": true
+ },
+ {
+  "id": "math-0005-b",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "multi",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Which statements about the sample standard deviation are true? Select the two that apply.",
+  "selectCount": 2,
+  "options": [
+   {
+    "id": "a",
+    "text": "It divides the sum of squared deviations by n - 1"
+   },
+   {
+    "id": "b",
+    "text": "It has the same units as the data"
+   },
+   {
+    "id": "c",
+    "text": "It can be negative"
+   },
+   {
+    "id": "d",
+    "text": "It equals the variance squared"
+   },
+   {
+    "id": "e",
+    "text": "It is unaffected by outliers"
+   }
+  ],
+  "answer": [
+   "a",
+   "b"
+  ],
+  "eli5": "The sample standard deviation is the square root of the sample variance, which divides the sum of squared deviations from the mean by n - 1. It has the same units as the data, is never negative, and is pulled upward by extreme values because deviations are squared.",
+  "solution": "Dividing by n - 1 and sharing the data's units are both true.\n\nIt cannot be negative, because it is a square root. It is the square root of the variance, not its square. Outliers increase it strongly.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "normal distribution"
+    ]
+   }
+  ],
+  "tags": [
+   "normal distribution",
+   "bell curve"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "FE Reference Handbook 10.0.1, Engineering Probability and Statistics, dispersion: sample standard deviation"
+  },
+  "family": "math-0005",
+  "version": 2,
+  "versions": 2,
   "lookup": true
  },
  {

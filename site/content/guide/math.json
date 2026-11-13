@@ -56,7 +56,19 @@
      "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
      "note": "The official list of topics and question counts."
     }
-   ]
+   ],
+   "tips": {
+    "from": "Mark Mattson, FE Math Review Session 2022",
+    "url": "https://www.youtube.com/watch?v=hnXVcDEmUbs",
+    "items": [
+     "Check an equation of a line by substituting a known point; if it does not satisfy the equation, the slope or intercept is wrong.",
+     "A problem will not always look like the textbook form. Rearrange it into a form you recognise before reaching for a formula.",
+     "For identity questions, substitute a convenient number into each answer choice and compare.",
+     "Know whether the calculator is in degrees or radians before any trigonometric step. Calculus formulas assume radians.",
+     "Learn the calculator's vector and statistics functions, and re-check what was typed in before trusting the result.",
+     "Answer what is asked: a correct intermediate value is often one of the wrong choices."
+    ]
+   }
   },
   {
    "id": "math-a-lesson",

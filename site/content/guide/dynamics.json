@@ -48,7 +48,15 @@
      "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
      "note": "The official list of topics and question counts."
     }
-   ]
+   ],
+   "tips": {
+    "from": "Mark Mattson, FE Dynamics Review Session 2022",
+    "url": "https://www.youtube.com/watch?v=A6HT9FGays8",
+    "items": [
+     "For a projectile, solve the vertical motion for time first, then use that time horizontally.",
+     "In a composite mass moment of inertia, the parallel axis distance runs from the axis to the centre of mass of each part, not to its far end."
+    ]
+   }
   },
   {
    "id": "dynamics-a-lesson",
@@ -206,6 +214,10 @@
     {
      "title": "Mass moment of inertia",
      "text": "For a solid disk or cylinder about its axis, I = m r^{2} / 2. A thin ring with the same mass and radius has I = m r^{2}, twice as much, because all its mass sits at the full radius."
+    },
+    {
+     "title": "Mass moment of inertia",
+     "text": "Moments of inertia about the same axis add. Take each part about the pivot: use the tabulated value where the axis matches, and the parallel axis theorem, or m d^{2} for a small mass, where it does not. The distance d runs from the axis to that part's own centre of mass."
     }
    ],
    "examples": [
@@ -224,6 +236,14 @@
      "steps": "I = \\frac{1}{2} m r^{2} = \\frac{1}{2}(30)(0.25)^{2} = 0.938 kg·m^{2}.",
      "answer": "0.938 kg·m^{2}",
      "value": 0.9375
+    },
+    {
+     "family": "dynamics-0012",
+     "problem": "A slender rod of mass 9 kg and length 2 m is pivoted at one end. A small 3 kg mass is fixed to its free end. What is the mass moment of inertia of the assembly about the pivot?",
+     "idea": "Moments of inertia about the same axis add. Take each part about the pivot: use the tabulated value where the axis matches, and the parallel axis theorem, or m d^{2} for a small mass, where it does not. The distance d runs from the axis to that part's own centre of mass.",
+     "steps": "Rod about its end: \\frac{9(2)^{2}}{3} = 12.00 kg·m^{2}.\n\nTip mass, treated as a particle 2 m from the pivot: 3(2)^{2} = 12.00 kg·m^{2}.\n\nTotal = 12.00 + 12.00 = 24.00 kg·m^{2}.",
+     "answer": "24.00 kg·m^{2}",
+     "value": 24.0
     }
    ],
    "lookup": [

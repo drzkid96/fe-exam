@@ -128,7 +128,7 @@ d('structural-f', "Loads are classified by source: dead, live, roof live, snow, 
   "List the service loads acting on the member.", "Find tributary width or area and convert area loads to line or point loads.", "Evaluate each applicable load combination.", "Take the largest factored effect for design.", "Follow the reactions down to the next member in the load path.")
 d('structural-g', "Steel design checks each limit state: a design strength, the resistance factor times nominal strength, must be at least the factored load effect. Tension members are checked for yielding on the gross area and rupture on the effective net area. Compression members are governed by buckling, through the slenderness ratio. Beams that are compact and braced reach the plastic moment F_{y} Z; without adequate bracing, lateral-torsional buckling reduces the strength. || Shear, deflection and connections are separate checks. Allowable strength design divides nominal strength by a safety factor instead and uses unfactored load combinations.",
   "Identify the member type and the limit states that apply.", "Compute the nominal strength for each limit state.", "Multiply by the resistance factor: 0.90 for yielding, flexure and compression, 0.75 for rupture.", "Compare the smallest design strength with the factored demand.", "Check serviceability under unfactored loads.")
-d('structural-h', "Reinforced concrete combines concrete, strong in compression, with steel that carries the tension. At nominal flexural strength the concrete compression is modelled as a rectangular stress block of intensity 0.85 f'_{c} and depth a. Setting the compression equal to the steel tension A_{s} f_{y} gives a, and the moment strength is the tension force times the lever arm d - a/2. || Design strength is the strength reduction factor times nominal strength: 0.90 for tension-controlled flexure and 0.75 for shear. Shear is carried by the concrete and by stirrups. Columns are checked with axial load and moment together on an interaction diagram.",
+d('structural-h', "Reinforced concrete combines concrete, strong in compression, with steel that carries the tension. At nominal flexural strength the concrete compression is modelled as a rectangular stress block of intensity 0.85 f'_{c} and depth a. Setting the compression equal to the steel tension A_{s} f_{y} gives a, and the moment strength is the tension force times the lever arm d - a/2. || Design strength is the strength reduction factor times nominal strength: 0.90 for tension-controlled flexure and 0.75 for shear. A section is tension-controlled when the steel strain at nominal strength is at least 0.005, which makes the failure ductile and gives warning. Shear is carried by the concrete and by stirrups. Columns are checked with axial load and moment together on an interaction diagram.",
   "Compute a = A_{s} f_{y} / (0.85 f'_{c} b).", "Compute M_{n} = A_{s} f_{y} (d - a/2).", "Apply the strength reduction factor.", "Compare with the factored moment from the load combinations.", "For shear, compute the concrete contribution and add the stirrup contribution if needed.")
 # ---------------- Geotechnical ----------------
 d('geotech-a', "Index properties classify a soil so that its behaviour can be anticipated. Grain size distribution separates gravel, sand and fines; the coefficients of uniformity and curvature describe the grading. For fine-grained soils the Atterberg limits mark the water contents at which behaviour changes, and the plasticity index is the range over which the soil is plastic. || The Unified Soil Classification System uses these results: first coarse or fine by the percentage passing the No. 200 sieve, then gravel or sand, then well or poorly graded for clean coarse soils, and the plasticity chart for fines. AASHTO classification serves highway subgrades.",
@@ -210,7 +210,10 @@ TIPS = {
   "At a pin joining two members, the forces on the two members are equal and opposite.",
   "Do not forget the moment. A fixed support and a cut through a beam both carry a moment as well as forces.",
   "Fixed-end moments for standard loads are in the handbook; for a point load they are P a b^{2} / L^{2} and P a^{2} b / L^{2}.",
-  "If an answer is off by a factor of 1,000 or 12, the units are the first thing to check."]),
+  "If an answer is off by a factor of 1,000 or 12, the units are the first thing to check.",
+  "Concrete beams are designed to be tension-controlled: the steel strain reaches at least 0.005 so that failure is ductile, which is what allows the 0.90 strength reduction factor.",
+  "In U.S. units the concrete formulas that take a square root of the strength expect it in psi, not ksi.",
+  "For shear, add the concrete and stirrup contributions, apply the reduction factor and compare with the factored shear."]),
  'mechmat': ('FF7-VOutTwM', 'FE Mechanics of Materials Review Session 2022', [
   "Draw a shear diagram by following the loads from left to right.",
   "For a symmetric section the neutral axis is at mid-depth. For any other section find the centroid first.",
@@ -218,6 +221,40 @@ TIPS = {
   "N against kN and mm against m cause most wrong answers; an answer off by orders of magnitude is a units slip.",
   "On Mohr's circle an angle is twice the angle on the element.",
   "The tension side of a beam is where reinforcement goes in concrete, so know which face is in tension."]),
+ 'math': ('hnXVcDEmUbs', 'FE Math Review Session 2022', [
+  "Check an equation of a line by substituting a known point; if it does not satisfy the equation, the slope or intercept is wrong.",
+  "A problem will not always look like the textbook form. Rearrange it into a form you recognise before reaching for a formula.",
+  "For identity questions, substitute a convenient number into each answer choice and compare.",
+  "Know whether the calculator is in degrees or radians before any trigonometric step. Calculus formulas assume radians.",
+  "Learn the calculator's vector and statistics functions, and re-check what was typed in before trusting the result.",
+  "Answer what is asked: a correct intermediate value is often one of the wrong choices."]),
+ 'econ': ('lrT1Slz0aAg', 'FE Ethics and Economics Session 2022', [
+  "Keep the signs straight: costs go one way and benefits, including salvage value, go the other.",
+  "With monthly compounding use the rate as a decimal per period, 0.08 / 12, not 8 / 12.",
+  "Draw the cash flow diagram first; it shows which factor is needed and how many periods apply."]),
+ 'ethics': ('lrT1Slz0aAg', 'FE Ethics and Economics Session 2022', [
+  "Read the Model Rules in the handbook before exam day so that you know what is there and where.",
+  "To sign and seal, you must be responsible for the design decisions and have reviewed the work in full. A general look-over is not enough.",
+  "If you did not check something, say so. Never state that a check was done when it was not.",
+  "Most questions yield to common sense plus the order of duties: public first."]),
+ 'dynamics': ('A6HT9FGays8', 'FE Dynamics Review Session 2022', [
+  "For a projectile, solve the vertical motion for time first, then use that time horizontally.",
+  "In a composite mass moment of inertia, the parallel axis distance runs from the axis to the centre of mass of each part, not to its far end."]),
+ 'fluids': ('XqjfnpqGWS0', 'FE Fluid Mechanics Review Session 2022', [
+  "Decide at the start whether the question wants gauge or absolute pressure.",
+  "Work through a manometer in one direction, adding pressure going down and subtracting going up, and do not change direction partway.",
+  "The force on a submerged surface can be checked with statics: draw the pressure diagram, split it into a rectangle and a triangle, and take their areas.",
+  "In the centre of pressure formula, the dimension that is cubed in the moment of inertia is the one measured down the surface.",
+  "For a jet turned by a vane, find the force components separately with the cosine and sine of the turning angle."]),
+ 'surveying': ('mgSf9HYJFvg', 'FE Surveying Review Session 2022', [
+  "A direction between two points is the inverse tangent of the change in easting over the change in northing; then fix the quadrant.",
+  "In the coordinate method for area, close the figure by returning to the first point.",
+  "The trapezoidal rule and Simpson's rule give slightly different areas from the same offsets; use the one the question names.",
+  "Average end area is the three-dimensional version of the trapezoid: mean of the two end areas times the distance between them."]),
+ 'transport': ('3-SE8gA69WI', 'FE Transportation Engineering Review Session 2022, problems 3 to 14', [
+  "The transportation formulas mix units: speeds in mph, distances in feet, grades as decimals. Check what each formula expects before substituting.",
+  "Related formulas sit together in the handbook, so knowing roughly where the transportation pages are saves search time.",
+  "When traffic grows over the design period, adjust the volumes before applying the design formula."]),
  'construction': ('2Q_UvBAJxIs', 'FE Construction Engineering Review Session 2022', [
   "Indemnification means one party agrees to cover another's losses from claims, usually including legal fees.",
   "The pre-construction conference comes after award. A meeting before award is a different thing.",
@@ -237,6 +274,8 @@ def main():
             if not sub:
                 vid, name = LINKS[topic]; L = []
                 if vid: L.append({'label': 'Mark Mattson, FE review session: ' + name + ' (video)', 'url': 'https://www.youtube.com/watch?v=' + vid, 'note': 'A full problem-solving session on this topic.'})
+                if topic == 'transport': L.append({'label': 'Mark Mattson, FE review session: Transportation Engineering, problems 3 to 14 (video)', 'url': 'https://www.youtube.com/watch?v=3-SE8gA69WI', 'note': 'The rest of the transportation session.'})
+                if topic == 'ethics': L.append({'label': 'Mark Mattson, FE review session: Ethics and Economics (video)', 'url': 'https://www.youtube.com/watch?v=lrT1Slz0aAg', 'note': 'Ethics is covered in the first part.'})
                 if topic == 'structural': L.append({'label': 'Mark Mattson, FE review session: Structural Design (video)', 'url': 'https://www.youtube.com/watch?v=Bjwobp7J_ew', 'note': 'Steel and reinforced concrete design problems.'})
                 L += [{'label': 'EngineerOnUp exam prep page', 'url': 'https://engineeronup.pages.dev/examprep.html', 'note': 'The problem sets that go with those sessions, one per topic.'},
                       {'label': 'Marshall University FE review lectures (playlist)', 'url': 'https://www.youtube.com/playlist?list=PLCV9OyAY5K-V-bki_dxxq_uVpyIoyIJ8P', 'note': 'Recorded review classes covering each civil topic.'},

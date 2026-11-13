@@ -48,7 +48,17 @@
      "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
      "note": "The official list of topics and question counts."
     }
-   ]
+   ],
+   "tips": {
+    "from": "Mark Mattson, FE Surveying Review Session 2022",
+    "url": "https://www.youtube.com/watch?v=mgSf9HYJFvg",
+    "items": [
+     "A direction between two points is the inverse tangent of the change in easting over the change in northing; then fix the quadrant.",
+     "In the coordinate method for area, close the figure by returning to the first point.",
+     "The trapezoidal rule and Simpson's rule give slightly different areas from the same offsets; use the one the question names.",
+     "Average end area is the three-dimensional version of the trapezoid: mean of the two end areas times the distance between them."
+    ]
+   }
   },
   {
    "id": "surveying-a-lesson",
@@ -178,6 +188,10 @@
     {
      "title": "Trigonometry",
      "text": "When two sides and the included angle are known, area = (1/2) a b sin(C). The term b sin(C) is the height of the triangle measured from side a."
+    },
+    {
+     "title": "Trapezoidal rule",
+     "text": "The trapezoidal rule treats each strip between adjacent offsets as a trapezoid. Summed, the area is the common interval times (half the first and last offsets plus all the offsets in between). Simpson's 1/3 rule fits parabolas instead and needs an even number of intervals."
     }
    ],
    "examples": [
@@ -206,6 +220,14 @@
       "svg": "<path d='M70 150 L281 150 L129 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='175' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>150 m</text><text x='91' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>95 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>64°</text>",
       "alt": "A triangle with sides of 150 m and 95 m meeting at 64°."
      }
+    },
+    {
+     "family": "surveying-0012",
+     "problem": "Offsets from a straight baseline to a curved boundary, measured every 12 m, are 2.4, 3.8, 4.6, 3.9 and 2.0 m. Using the trapezoidal rule, what is the area between the baseline and the boundary?",
+     "idea": "The trapezoidal rule treats each strip between adjacent offsets as a trapezoid. Summed, the area is the common interval times (half the first and last offsets plus all the offsets in between). Simpson's 1/3 rule fits parabolas instead and needs an even number of intervals.",
+     "steps": "A = d × ((first + last) / 2 + the others) = 12 × ((2.4 + 2.0) / 2 + 3.8 + 4.6 + 3.9) = 12 × 14.50 = 174.0 m^{2}.",
+     "answer": "174.0 m^{2}",
+     "value": 174.0
     }
    ],
    "lookup": [
@@ -213,7 +235,8 @@
      "section": "Civil Engineering",
      "page": "259–309",
      "find": [
-      "area by coordinates"
+      "area by coordinates",
+      "trapezoidal rule"
      ]
     },
     {
@@ -354,6 +377,10 @@
     {
      "title": "Latitude",
      "text": "A bearing of S (angle) E points south and east, so the line's latitude is negative and its departure is positive. The new northing is the old northing plus the latitude, where latitude = -L cos(bearing angle)."
+    },
+    {
+     "title": "Latitude",
+     "text": "The direction between two coordinated points comes from the differences in easting and northing: tan(azimuth) = change in easting / change in northing. The signs of the two differences fix the quadrant, so add 180° or 360° to the calculator result when the line does not run north-east."
     }
    ],
    "examples": [
@@ -377,6 +404,19 @@
      "steps": "Latitude = -145.00 × cos 35° = -118.78 m.\n\nNorthing of B = 3,200.00 - 118.78 = 3,081.22 m.\n\nFor reference, easting of B = 500.00 + 145.00 sin 35° = 583.17 m.",
      "answer": "3,081.22 m",
      "value": 3081.222954
+    },
+    {
+     "family": "surveying-0013",
+     "problem": "Point A has coordinates N 800.00, E 600.00 and point B has coordinates N 1,150.00, E 1,500.00, in metres. What is the azimuth of the line from A to B?",
+     "idea": "The direction between two coordinated points comes from the differences in easting and northing: tan(azimuth) = change in easting / change in northing. The signs of the two differences fix the quadrant, so add 180° or 360° to the calculator result when the line does not run north-east.",
+     "steps": "Change in northing = 1,150.00 - 800.00 = 350.00 m. Change in easting = 1,500.00 - 600.00 = 900.00 m. Both are positive, so the line runs north-east.\n\nAzimuth = arctan(\\frac{900.00}{350.00}) = 68.75°.\n\nLength = \\sqrt{350.00^{2} + 900.00^{2}} = 965.66 m.",
+     "answer": "68.75 °",
+     "value": 68.749494,
+     "figure": {
+      "viewBox": "0 0 400 200",
+      "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='293' y2='71' stroke='#00574A' stroke-width='3'/><circle cx='293' cy='71' r='5' fill='#00574A'/><text x='303' y='65' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>azimuth 68.7°</text>",
+      "alt": "A line drawn from the origin at an azimuth of 68.7° clockwise from north."
+     }
     }
    ],
    "lookup": [

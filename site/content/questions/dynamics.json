@@ -2062,5 +2062,153 @@
   "version": 4,
   "versions": 4,
   "lookup": true
+ },
+ {
+  "id": "dynamics-0012",
+  "topic": "dynamics",
+  "subtopic": "dynamics-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A slender rod of mass 6 kg and length 2 m is pivoted at one end. A small 4 kg mass is fixed to its free end. What is the mass moment of inertia of the assembly about the pivot?",
+  "answer": {
+   "value": 24.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg·m^{2}"
+  },
+  "eli5": "Moments of inertia about the same axis add. Take each part about the pivot: use the tabulated value where the axis matches, and the parallel axis theorem, or m d^{2} for a small mass, where it does not. The distance d runs from the axis to that part's own centre of mass.",
+  "solution": "Rod about its end: \\frac{6(2)^{2}}{3} = 8.00 kg·m^{2}.\n\nTip mass, treated as a particle 2 m from the pivot: 4(2)^{2} = 16.00 kg·m^{2}.\n\nTotal = 8.00 + 16.00 = 24.00 kg·m^{2}.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "mass moment of inertia",
+     "parallel axis"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0012",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0012-b",
+  "topic": "dynamics",
+  "subtopic": "dynamics-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A slender rod of mass 3 kg and length 1.5 m is pivoted at one end. A small 2 kg mass is fixed to its free end. What is the mass moment of inertia of the assembly about the pivot?",
+  "answer": {
+   "value": 6.75,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg·m^{2}"
+  },
+  "eli5": "Moments of inertia about the same axis add. Take each part about the pivot: use the tabulated value where the axis matches, and the parallel axis theorem, or m d^{2} for a small mass, where it does not. The distance d runs from the axis to that part's own centre of mass.",
+  "solution": "Rod about its end: \\frac{3(1.5)^{2}}{3} = 2.25 kg·m^{2}.\n\nTip mass, treated as a particle 1.5 m from the pivot: 2(1.5)^{2} = 4.50 kg·m^{2}.\n\nTotal = 2.25 + 4.50 = 6.75 kg·m^{2}.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "mass moment of inertia",
+     "parallel axis"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0012",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0012-c",
+  "topic": "dynamics",
+  "subtopic": "dynamics-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A slender rod of mass 12 kg and length 1 m is pivoted at one end. A small 5 kg mass is fixed to its free end. What is the mass moment of inertia of the assembly about the pivot?",
+  "answer": {
+   "value": 9.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg·m^{2}"
+  },
+  "eli5": "Moments of inertia about the same axis add. Take each part about the pivot: use the tabulated value where the axis matches, and the parallel axis theorem, or m d^{2} for a small mass, where it does not. The distance d runs from the axis to that part's own centre of mass.",
+  "solution": "Rod about its end: \\frac{12(1)^{2}}{3} = 4.00 kg·m^{2}.\n\nTip mass, treated as a particle 1 m from the pivot: 5(1)^{2} = 5.00 kg·m^{2}.\n\nTotal = 4.00 + 5.00 = 9.00 kg·m^{2}.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "mass moment of inertia",
+     "parallel axis"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0012",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "dynamics-0012-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A slender rod of mass 4.5 kg and length 2 m is pivoted at one end. A small 1.5 kg mass is fixed to its free end. What is the mass moment of inertia of the assembly about the pivot?",
+  "answer": {
+   "value": 12.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg·m^{2}"
+  },
+  "eli5": "Moments of inertia about the same axis add. Take each part about the pivot: use the tabulated value where the axis matches, and the parallel axis theorem, or m d^{2} for a small mass, where it does not. The distance d runs from the axis to that part's own centre of mass.",
+  "solution": "Rod about its end: \\frac{4.5(2)^{2}}{3} = 6.00 kg·m^{2}.\n\nTip mass, treated as a particle 2 m from the pivot: 1.5(2)^{2} = 6.00 kg·m^{2}.\n\nTotal = 6.00 + 6.00 = 12.00 kg·m^{2}.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "mass moment of inertia",
+     "parallel axis"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0012",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  }
 ]

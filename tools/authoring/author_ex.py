@@ -2,7 +2,7 @@
 question bank), and a handbook lookup. Reuses the checked question templates. Run after author_fig.py."""
 import json, os, re
 import author_v; author_v.DRY[0] = True
-import author_v1, author_v2, author_v3, author_v4
+import author_v1, author_v2, author_v3, author_v4, author_v6
 from author_v import TEMPLATES, NAMES, render, nf, _load
 from author_common import ROOT
 from author_hb import FIND
@@ -40,6 +40,9 @@ E(MT+'0001', W=175, C=390); E(MT+'0002', d=150, P=710); E(MT+'0004', st=150, eps
 E(MA+'0001', x1=4, y1=7, x2=10, y2=4); E(MA+'0002', a=9, b=2); E(MA+'0004', data=[4, 7, 9, 12, 18]); E(MA+'0006', D=-10, E=24, tx='- 10x', ty='+ 24y'); E(MA+'0007', x1=-2, y1=1, x2=10, y2=6); E(MA+'0008', sa=12, sb=15, C=50); E(MA+'0009', k=5, x0=4); E(MA+'0010', a=4, b=24, c=-6, cs='- 6')
 E(MA+'0011', a=5, b=3, tt=4); E(MA+'0012', a1=6, a2=-1, b1=2, b2=5); E(MA+'0013', a1=2, a2=3, a3=-6); E(MA+'0015', mu=35, sv=5, x=42.5); E(MA+'0016', y1=4, y2=5, y3=9); E(MA+'0017', p=0.12, n=7)
 E(C+'0001', dA=4, dB=5, dC=12, dD=3); E(C+'0002', PV=600000, EV=540000, AC=580000); E(C+'0003', L=40, W=25, t=175, ws=7); E(C+'0004', bk=2.5, ct=36, mn=50); E(C+'0006', sc=30, ms=4.75); E(C+'0007', sc=200, mm=47); E(C+'0011', nr=5, hrs=310000); E(C+'0012', tl=5, tc=35); E(C+'0014', rt=45, ar=1620, cw=3); E(C+'0015', qy=1600, uc=11.5, mk=16); E(C+'0016', L=32, H=4.5)
+
+E(FL+'0014', d=65, v=16, th=75); E(SV+'0012', dx=12, o0=2.4, o1=3.8, o2=4.6, o3=3.9, o4=2.0); E(SV+'0013', NA=800, EA=600, NB=1150, EB=1500); E(W+'0025', B5=200, k=0.25)
+E(W+'0026', v=1.8, y=1.2, reg='This is less than 1, so the flow is subcritical.'); E(G+'0024', mw=152.6, md=128); E(ST+'0021', L=10, P=80, a=4); E(D+'0012', m=9, L=2, M=3); E(MM+'0014', d=65, L=2.5, Tq=4)
 
 # key ideas: the concept note of every question type in the subtopic, titled by its handbook search word
 IDEAS, LOOK = {}, {}

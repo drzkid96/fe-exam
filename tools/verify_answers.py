@@ -124,7 +124,7 @@ CALC = {
 }
 # Further calculations are kept as plain expressions in tools/calc_expr.json, one per question id.
 NAMES = {k: getattr(math, k) for k in ("sqrt", "pi", "sin", "cos", "tan", "atan", "asin", "acos", "log10", "log", "exp", "erf", "hypot", "comb")}
-NAMES.update(sd=statistics.stdev, psd=statistics.pstdev)
+NAMES.update(sd=statistics.stdev, psd=statistics.pstdev, sorted=sorted)
 NAMES.update(rad=math.radians, g=g, gw=gw, simpson=simpson, abs=abs, max=max, min=min, sum=sum, range=range, format=format, int=int)
 _expr_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "calc_expr.json")
 if os.path.exists(_expr_path):

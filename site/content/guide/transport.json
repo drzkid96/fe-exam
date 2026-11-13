@@ -29,6 +29,11 @@
      "note": "A full problem-solving session on this topic."
     },
     {
+     "label": "Mark Mattson, FE review session: Transportation Engineering, problems 3 to 14 (video)",
+     "url": "https://www.youtube.com/watch?v=3-SE8gA69WI",
+     "note": "The rest of the transportation session."
+    },
+    {
      "label": "EngineerOnUp exam prep page",
      "url": "https://engineeronup.pages.dev/examprep.html",
      "note": "The problem sets that go with those sessions, one per topic."
@@ -48,7 +53,16 @@
      "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
      "note": "The official list of topics and question counts."
     }
-   ]
+   ],
+   "tips": {
+    "from": "Mark Mattson, FE Transportation Engineering Review Session 2022, problems 3 to 14",
+    "url": "https://www.youtube.com/watch?v=3-SE8gA69WI",
+    "items": [
+     "The transportation formulas mix units: speeds in mph, distances in feet, grades as decimals. Check what each formula expects before substituting.",
+     "Related formulas sit together in the handbook, so knowing roughly where the transportation pages are saves search time.",
+     "When traffic grows over the design period, adjust the volumes before applying the design formula."
+    ]
+   }
   },
   {
    "id": "transport-a-lesson",

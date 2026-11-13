@@ -29,7 +29,34 @@
      "where": "Math pages at the front"
     }
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-13",
+   "links": [
+    {
+     "label": "Mark Mattson, FE review session: Math (video)",
+     "url": "https://www.youtube.com/watch?v=hnXVcDEmUbs",
+     "note": "A full problem-solving session on this topic."
+    },
+    {
+     "label": "EngineerOnUp exam prep page",
+     "url": "https://engineeronup.pages.dev/examprep.html",
+     "note": "The problem sets that go with those sessions, one per topic."
+    },
+    {
+     "label": "Marshall University FE review lectures (playlist)",
+     "url": "https://www.youtube.com/playlist?list=PLCV9OyAY5K-V-bki_dxxq_uVpyIoyIJ8P",
+     "note": "Recorded review classes covering each civil topic."
+    },
+    {
+     "label": "Texas A&M FE review material",
+     "url": "https://fereview.engr.tamu.edu/",
+     "note": "Review notes and links, including the NCEES examinee videos."
+    },
+    {
+     "label": "NCEES FE Civil exam specifications",
+     "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
+     "note": "The official list of topics and question counts."
+    }
+   ]
   },
   {
    "id": "math-a-lesson",
@@ -94,6 +121,7 @@
     {
      "family": "math-0001",
      "problem": "A straight line passes through the points (4, 7) and (10, 4). What is its y-intercept?",
+     "idea": "A line is y = m x + b. Find the slope from the two points, m = (y_{2} - y_{1}) / (x_{2} - x_{1}), then solve for b by substituting either point.",
      "steps": "m = \\frac{4 - 7}{10 - 4} = -0.5.\n\nb = y_{1} - m x_{1} = 7 - (-0.5)(4) = 9.",
      "answer": "9",
      "value": 9.0
@@ -101,6 +129,7 @@
     {
      "family": "math-0006",
      "problem": "A circle has the equation x^{2} + y^{2} - 10x + 24y = 0. What is its radius?",
+     "idea": "Complete the square in x and in y to reach the standard form (x - h)^{2} + (y - k)^{2} = r^{2}. For x^{2} + y^{2} + Dx + Ey = 0 the centre is (-D/2, -E/2) and r^{2} = (D/2)^{2} + (E/2)^{2}.",
      "steps": "Centre = (5, -12).\n\nr^{2} = (-5)^{2} + (12)^{2} = 169, so r = 13.",
      "answer": "13",
      "value": 13.0
@@ -108,6 +137,7 @@
     {
      "family": "math-0007",
      "problem": "What is the straight-line distance between the points (-2, 1) and (10, 6)?",
+     "idea": "The distance formula is the Pythagorean theorem applied to the differences in x and y: d = square root of ((x_{2} - x_{1})^{2} + (y_{2} - y_{1})^{2}).",
      "steps": "d = \\sqrt{(10 - (-2))^{2} + (6 - (1))^{2}} = \\sqrt{144 + 25} = 13 units.",
      "answer": "13 units",
      "value": 13.0
@@ -115,6 +145,7 @@
     {
      "family": "math-0008",
      "problem": "Two sides of a triangle are 12 m and 15 m long and meet at an angle of 50°. How long is the third side?",
+     "idea": "The law of cosines extends the Pythagorean theorem to any triangle: c^{2} = a^{2} + b^{2} - 2 a b cos(C), where C is the angle between sides a and b. For C = 90° the last term vanishes.",
      "steps": "c^{2} = 12^{2} + 15^{2} - 2(12)(15) cos 50° = 369 - (231.40) = 137.60.\n\nc = 11.73 m.",
      "answer": "11.73 m",
      "value": 11.730152,
@@ -137,6 +168,14 @@
       "law of cosines"
      ]
     }
+   ],
+   "deep": "Analytic geometry turns shapes into equations so that geometry questions become algebra. A straight line is fixed by a point and a slope; perpendicular lines have slopes that multiply to -1. Every conic section is a second-degree equation, and the signs of the squared terms tell you which one: equal coefficients give a circle, same sign but unequal an ellipse, opposite signs a hyperbola, and one squared term missing a parabola.\n\nCompleting the square is the one skill that unlocks all of them. It rewrites x^{2} + Dx as (x + D/2)^{2} - (D/2)^{2}, which exposes the centre or vertex. For triangles, the law of sines handles a known side-angle pair and the law of cosines handles two sides with the included angle or three sides.",
+   "method": [
+    "Sketch the points or curve first; most wrong answers are sign errors a sketch would catch.",
+    "For a line, find the slope, then substitute one point to get the intercept.",
+    "For a conic, group the x terms and y terms and complete the square in each.",
+    "For a triangle, list what is known and choose sines or cosines accordingly.",
+    "Check the result against the sketch for size and sign."
    ]
   },
   {
@@ -197,6 +236,7 @@
     {
      "family": "math-0002",
      "problem": "Find the area between the curve y = 9x^{2} and the x-axis from x = 0 to x = 2.",
+     "idea": "The area under a curve is its definite integral. By the power rule the integral of a x^{2} is a x^{3} / 3; evaluate it at the limits and subtract.",
      "steps": "Area = \\frac{9 x^{3}}{3} evaluated from 0 to 2 = \\frac{9(2)^{3}}{3} - 0 = 24 square units.",
      "answer": "24 square units",
      "value": 24.0
@@ -204,6 +244,7 @@
     {
      "family": "math-0009",
      "problem": "What is the slope of the curve y = x^{3} - 5x at x = 4?",
+     "idea": "The slope of a curve at a point is the value of its derivative there. By the power rule, d/dx of x^{3} is 3x^{2} and d/dx of k x is k.",
      "steps": "dy/dx = 3x^{2} - 5.\n\nAt x = 4: 3(4)^{2} - 5 = 48 - 5 = 43.",
      "answer": "43",
      "value": 43
@@ -211,6 +252,7 @@
     {
      "family": "math-0010",
      "problem": "What is the maximum value of f(x) = -4x^{2} + 24x - 6?",
+     "idea": "A maximum or minimum occurs where the first derivative is zero. The second derivative tells which: negative means a maximum. Substitute the critical x back into the function to get the value.",
      "steps": "f'(x) = -8x + 24 = 0, so x = \\frac{24}{8} = 3.\n\nf''(x) = -8, negative, so this is a maximum.\n\nf(3) = -4(3)^{2} + 24(3) - 6 = 30.",
      "answer": "30",
      "value": 30.0
@@ -218,6 +260,7 @@
     {
      "family": "math-0011",
      "problem": "A vehicle's speed is v(t) = 5t + 3, in m/s. How far does it travel between t = 0 and t = 4 s?",
+     "idea": "Distance is the integral of speed over time, the area under the speed-time graph. For a straight-line speed function that area is a trapezoid.",
      "steps": "s = \\frac{5 t^{2}}{2} + 3 t evaluated from 0 to 4 = \\frac{5(4)^{2}}{2} + 3(4) = 40 + 12 = 52 m.",
      "answer": "52 m",
      "value": 52.0
@@ -235,6 +278,14 @@
       "test for a maximum"
      ]
     }
+   ],
+   "deep": "A derivative is a rate of change: the slope of the curve at a point. An integral is an accumulation: the area under the curve between two limits. They undo each other, which is why the area under a velocity graph is distance and the slope of a distance graph is velocity.\n\nMaxima and minima occur where the first derivative is zero; the second derivative says which, negative for a maximum and positive for a minimum. A zero second derivative with a sign change marks an inflection point. On the exam nearly every calculus item is one of four moves: differentiate with the power, product or chain rule, find an extreme value, integrate a polynomial between limits, or apply L'Hopital's rule to a 0/0 limit.",
+   "method": [
+    "Decide whether the question asks for a rate (differentiate) or a total (integrate).",
+    "Differentiate or integrate term by term with the power rule; use the handbook's tables for trigonometric and exponential forms.",
+    "For an extreme value, set the first derivative to zero, solve, then test the second derivative.",
+    "For a definite integral, evaluate at the upper limit and subtract the value at the lower limit.",
+    "Check units: a derivative divides by the x unit, an integral multiplies by it."
    ]
   },
   {
@@ -287,6 +338,7 @@
     {
      "family": "math-0012",
      "problem": "For the plane vectors **A** = (6, -1) and **B** = (2, 5), what is the magnitude of the cross product **A** × **B**?",
+     "idea": "For vectors in the x-y plane the cross product points along z and its magnitude is |A_{x} B_{y} - A_{y} B_{x}|. It equals the area of the parallelogram formed by the two vectors, and |A||B| sin(angle between them).",
      "steps": "A_{x} B_{y} - A_{y} B_{x} = (6)(5) - (-1)(2) = 30 - (-2) = 32.\n\nMagnitude = 32.",
      "answer": "32",
      "value": 32
@@ -294,6 +346,7 @@
     {
      "family": "math-0013",
      "problem": "What is the magnitude of the vector with components (2, 3, -6)?",
+     "idea": "The magnitude of a vector is the square root of the sum of the squares of its components, the three-dimensional form of the Pythagorean theorem. Signs do not matter because each component is squared.",
      "steps": "Magnitude = \\sqrt{(2)^{2} + (3)^{2} + (-6)^{2}} = \\sqrt{4 + 9 + 36} = \\sqrt{49} = 7.",
      "answer": "7",
      "value": 7.0
@@ -309,6 +362,14 @@
       "vectors"
      ]
     }
+   ],
+   "deep": "A vector has magnitude and direction; work with its components. The dot product multiplies matching components and adds them, giving a number equal to |A||B| cos(angle). Use it to find the angle between vectors, to test for perpendicularity (dot product zero) and to project one vector onto another.\n\nThe cross product gives a vector perpendicular to both, with magnitude |A||B| sin(angle), which is the area of the parallelogram they form. Use it for moments (r × F) and for normals to a plane. The order matters: B × A is the negative of A × B. A unit vector is the vector divided by its magnitude.",
+   "method": [
+    "Write each vector in components.",
+    "For an angle or a projection use the dot product; for a moment, area or normal use the cross product.",
+    "Compute a cross product with the determinant layout, watching the sign of the middle term.",
+    "Find magnitudes with the square root of the sum of squares.",
+    "Sanity check: parallel vectors have zero cross product, perpendicular vectors have zero dot product."
    ]
   },
   {
@@ -374,6 +435,7 @@
     {
      "family": "math-0004",
      "problem": "A sample of five measurements is 4, 7, 9, 12 and 18. What is the sample standard deviation?",
+     "idea": "The sample standard deviation divides the sum of squared deviations from the mean by n - 1, not n, because the mean was estimated from the same data. Dividing by n gives the population standard deviation, which is always smaller.",
      "steps": "Mean = 10.\n\nSum of squared deviations = 114.0.\n\ns = \\sqrt{\\frac{114.0}{5 - 1}} = \\sqrt{28.50} = 5.34.",
      "answer": "5.34",
      "value": 5.338539
@@ -381,6 +443,7 @@
     {
      "family": "math-0015",
      "problem": "Concrete strength is normally distributed with a mean of 35 MPa and a standard deviation of 5 MPa. What fraction of tests fall below 42.5 MPa?",
+     "idea": "Convert the value to a standard normal variable, z = (x - mean) / standard deviation, then read the cumulative probability from the unit normal table in the handbook. By symmetry, the area below -z equals the area above +z.",
      "steps": "z = \\frac{42.5 - 35}{5} = 1.50.\n\nFrom the unit normal table, F(1.50) = 0.9332.",
      "answer": "0.9332",
      "value": 0.933193
@@ -388,6 +451,7 @@
     {
      "family": "math-0016",
      "problem": "A least-squares line is fitted to the points (1, 4), (2, 5) and (3, 9). What is its slope?",
+     "idea": "The least-squares line minimises the sum of squared vertical errors. Its slope is S_{xy} / S_{xx}, where S_{xy} is the sum of (x - x-bar)(y - y-bar) and S_{xx} is the sum of (x - x-bar)^{2}.",
      "steps": "x-bar = 2 and y-bar = 6.000.\n\nS_{xy} = (-1)(4 - 6.000) + 0 + (1)(9 - 6.000) = 5.\n\nS_{xx} = 1 + 0 + 1 = 2.\n\nSlope = \\frac{5}{2} = 2.5.",
      "answer": "2.5",
      "value": 2.5
@@ -395,6 +459,7 @@
     {
      "family": "math-0017",
      "problem": "Each item from a process has a 12% chance of being defective. In a sample of 7 items, what is the probability that exactly 2 are defective?",
+     "idea": "The binomial distribution gives the probability of exactly x successes in n independent trials: P(x) = C(n, x) p^{x} (1 - p)^{n - x}. The combination C(n, x) counts the ways to choose which trials are the successes.",
      "steps": "C(7, 2) = 21.\n\nP(2) = 21 × (0.12)^{2} × (0.88)^{5} = 21 × 0.0144 × 0.5277 = 0.1596.",
      "answer": "0.1596",
      "value": 0.159586
@@ -415,6 +480,14 @@
       "binomial distribution"
      ]
     }
+   ],
+   "deep": "Statistics on the exam is about three things: describing data, computing probabilities and judging estimates. The mean locates a data set and the standard deviation measures its spread; the sample form divides by n - 1. Probabilities of independent events multiply, and probabilities of mutually exclusive events add.\n\nFor counts of successes in a fixed number of trials use the binomial distribution. For measured quantities use the normal distribution: convert to z = (x - mean) / standard deviation and read the unit normal table, remembering that the curve is symmetric and the total area is 1. A confidence interval is the sample mean plus or minus a table value times the standard error, and a least-squares line minimises the sum of squared vertical errors.",
+   "method": [
+    "Identify the type: descriptive, counting and probability, a named distribution, or regression.",
+    "For a normal problem, compute z and sketch the bell curve with the wanted area shaded.",
+    "Read the table for the area it actually tabulates, then use symmetry or 1 minus the value.",
+    "For 'at least one', compute 1 minus the probability of none.",
+    "Check that every probability lies between 0 and 1."
    ]
   }
  ]

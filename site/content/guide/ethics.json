@@ -21,7 +21,29 @@
      "where": "Topic XVI, Ethics and Professional Practice"
     }
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-13",
+   "links": [
+    {
+     "label": "EngineerOnUp exam prep page",
+     "url": "https://engineeronup.pages.dev/examprep.html",
+     "note": "The problem sets that go with those sessions, one per topic."
+    },
+    {
+     "label": "Marshall University FE review lectures (playlist)",
+     "url": "https://www.youtube.com/playlist?list=PLCV9OyAY5K-V-bki_dxxq_uVpyIoyIJ8P",
+     "note": "Recorded review classes covering each civil topic."
+    },
+    {
+     "label": "Texas A&M FE review material",
+     "url": "https://fereview.engr.tamu.edu/",
+     "note": "Review notes and links, including the NCEES examinee videos."
+    },
+    {
+     "label": "NCEES FE Civil exam specifications",
+     "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
+     "note": "The official list of topics and question counts."
+    }
+   ]
   },
   {
    "id": "ethics-a-lesson",
@@ -72,6 +94,13 @@
       "gratuities"
      ]
     }
+   ],
+   "deep": "Codes of ethics rank an engineer's duties so that conflicts have an answer. The NCEES Model Rules, printed in the handbook, are the version the exam uses. Read each scenario by asking whose interest is at stake: the public, the employer or client, or other licensees, in that order.\n\nThe rules are mostly about honesty and independence: tell the truth in reports and testimony, stay within your competence, disclose anything that could bias your judgement, keep client information confidential and never trade favours for work.",
+   "method": [
+    "Identify who could be harmed and which duty applies.",
+    "Eliminate any option that hides information or leaves a safety hazard in place.",
+    "Prefer the option that discloses to the client or employer first and escalates to an authority if the hazard remains.",
+    "If two options both seem ethical, choose the one the Model Rules state explicitly."
    ]
   },
   {
@@ -112,7 +141,14 @@
     }
    ],
    "examples": [],
-   "lookup": []
+   "lookup": [],
+   "deep": "Professional liability is the legal side of ethics. An engineer who agrees to do work owes a duty of care to the client and to anyone who could foreseeably be harmed. Falling below the standard of care, and so causing damage, is negligence.\n\nContracts allocate that risk. Indemnification clauses shift it, limitation-of-liability clauses cap it and insurance pays for it. Good practice reduces it: a clear scope, documented decisions, checking and staying within one's competence.",
+   "method": [
+    "Check the four elements of negligence: duty, breach, causation, damages.",
+    "Compare the conduct with what a reasonably prudent engineer would have done, not with a perfect result.",
+    "Match the type of loss to the policy that covers it.",
+    "Separate contract claims (what was promised) from tort claims (the duty of care)."
+   ]
   },
   {
    "id": "ethics-c-lesson",
@@ -159,6 +195,13 @@
       "model law"
      ]
     }
+   ],
+   "deep": "Licensure protects the public by restricting the practice of engineering to people who have shown competence. The Model Law in the handbook defines the terms: practice of engineering, responsible charge, engineer intern and the board's powers.\n\nEach jurisdiction issues its own licence, so the questions usually turn on three ideas: you need a licence where the project is, you seal only what you supervised and are competent in, and the board can discipline violations including practising without a licence.",
+   "method": [
+    "Find where the work is located; that jurisdiction's law applies.",
+    "Ask whether the engineer had responsible charge of the work being sealed.",
+    "Ask whether the work is within the engineer's area of competence.",
+    "When in doubt, choose the option that involves the licensing board or obtaining the proper licence."
    ]
   },
   {
@@ -195,7 +238,14 @@
     }
    ],
    "examples": [],
-   "lookup": []
+   "lookup": [],
+   "deep": "A contract is a set of promises the law will enforce. Engineering questions focus on formation (was there a valid contract?), performance (who has to do what, and who carries which risk?) and breach (what happens when a party does not perform?).\n\nRead the payment terms to see who carries cost risk, and the documents to see what was actually promised. Changes after signing need a written change order. Only parties to a contract can enforce it, which is why a contractor's claim normally runs to the owner and not to the owner's engineer.",
+   "method": [
+    "Check the elements: offer, acceptance, consideration, competent parties, lawful purpose.",
+    "Identify the contract type from how payment is set.",
+    "Decide who carries the risk that actually occurred.",
+    "For a dispute, ask what the written documents say and whether a change order exists."
+   ]
   }
  ]
 }

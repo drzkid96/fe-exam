@@ -25,7 +25,34 @@
      "where": "Topic X, Materials"
     }
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-13",
+   "links": [
+    {
+     "label": "Mark Mattson, FE review session: Materials (video)",
+     "url": "https://www.youtube.com/watch?v=4gRGZjoxe0w",
+     "note": "A full problem-solving session on this topic."
+    },
+    {
+     "label": "EngineerOnUp exam prep page",
+     "url": "https://engineeronup.pages.dev/examprep.html",
+     "note": "The problem sets that go with those sessions, one per topic."
+    },
+    {
+     "label": "Marshall University FE review lectures (playlist)",
+     "url": "https://www.youtube.com/playlist?list=PLCV9OyAY5K-V-bki_dxxq_uVpyIoyIJ8P",
+     "note": "Recorded review classes covering each civil topic."
+    },
+    {
+     "label": "Texas A&M FE review material",
+     "url": "https://fereview.engr.tamu.edu/",
+     "note": "Review notes and links, including the NCEES examinee videos."
+    },
+    {
+     "label": "NCEES FE Civil exam specifications",
+     "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
+     "note": "The official list of topics and question counts."
+    }
+   ]
   },
   {
    "id": "materials-a-lesson",
@@ -75,6 +102,7 @@
     {
      "family": "materials-0001",
      "problem": "A concrete mix uses 175 kg of water and 390 kg of cement per cubic metre. What is the water-cement ratio?",
+     "idea": "The water-cement ratio is the mass of water divided by the mass of cement. It is the main control on concrete strength and durability: a lower ratio gives stronger, less permeable concrete but less workability.",
      "steps": "w/c = \\frac{175}{390} = 0.449.",
      "answer": "0.449",
      "value": 0.448718
@@ -82,6 +110,7 @@
     {
      "family": "materials-0005",
      "problem": "A concrete mix contains 380 kg of cement per cubic metre. The specific gravity of cement is 3.15. What volume does the cement occupy?",
+     "idea": "In the absolute volume method each ingredient's volume is its mass divided by (specific gravity × density of water). The absolute volumes of cement, water, aggregates and air must add up to one cubic metre.",
      "steps": "V = \\frac{mass}{SG × 1,000} = \\frac{380}{3.15 × 1,000} = 0.121 m^{3}.",
      "answer": "0.121 m^{3}",
      "value": 0.120635
@@ -89,6 +118,7 @@
     {
      "family": "materials-0006",
      "problem": "An asphalt mix sample has a total mass of 1,250 g, of which 65 g is asphalt binder. What is the asphalt content by total mass of mix?",
+     "idea": "Asphalt content is normally expressed as binder mass over total mix mass, not over aggregate mass. The two bases give different numbers, so check which one a specification uses.",
      "steps": "P_{b} = \\frac{65}{1,250} × 100 = 5.20%. By mass of aggregate it would be \\frac{65}{1,185} × 100 = 5.49%.",
      "answer": "5.20%",
      "value": 5.2
@@ -102,6 +132,14 @@
       "water-cement ratio"
      ]
     }
+   ],
+   "deep": "Concrete mix design proportions cement, water, aggregate and air to reach a target strength, workability and durability. The water-cement ratio is the governing variable: lower means stronger and less permeable. The absolute volume method sets the amounts so that the solid volumes of all ingredients add up to one unit volume of concrete, using each material's specific gravity.\n\nAggregate moisture matters because aggregates wetter than saturated-surface-dry add water to the mix and drier ones absorb it. Asphalt mix design selects the binder content that gives the target air voids, with checks on voids in the mineral aggregate and voids filled with asphalt.",
+   "method": [
+    "Start from the required water-cement ratio and water content to get the cement content.",
+    "Convert each mass to absolute volume: mass / (specific gravity × density of water).",
+    "Subtract the known volumes, including air, from the unit volume to find the remaining aggregate volume.",
+    "Convert that volume back to mass.",
+    "Adjust batch water for aggregate moisture above or below the saturated-surface-dry condition."
    ]
   },
   {
@@ -157,6 +195,13 @@
       "reinforcement bar"
      ]
     }
+   ],
+   "deep": "Standard tests exist so that a material property means the same thing on every project. Each test targets one property under fixed conditions: specimen size, loading rate, temperature and age. Knowing which test gives which property is what the exam asks.\n\nSpecifications then state the required result, such as a 28-day compressive strength or a minimum yield strength. Acceptance is statistical: individual results scatter, so specifications are written around averages and allowable low results.",
+   "method": [
+    "Identify the property in question: strength, stiffness, hardness, toughness, workability or gradation.",
+    "Match it to its test.",
+    "Note the conditions that affect the result, such as age for concrete or temperature for impact tests.",
+    "Convert the test reading to the property with the correct area or gauge length."
    ]
   },
   {
@@ -216,6 +261,7 @@
     {
      "family": "materials-0002",
      "problem": "A 150 mm diameter concrete cylinder fails at a load of 710 kN in a compression test. What is the compressive strength?",
+     "idea": "Compressive strength is the failure load divided by the loaded cross-sectional area of the cylinder. Newtons over square millimetres gives MPa.",
      "steps": "A = \\frac{π(150)^{2}}{4} = 17,671 mm^{2}.\n\nf'_{c} = \\frac{710,000 N}{17,671 mm^{2}} = 40.2 MPa.",
      "answer": "40.2 MPa",
      "value": 40.177781
@@ -223,6 +269,7 @@
     {
      "family": "materials-0004",
      "problem": "In a tension test, a metal bar reaches a stress of 150 MPa at a strain of 0.0008, still on the straight-line part of the curve. What is the modulus of elasticity?",
+     "idea": "On the linear part of the stress-strain curve Hooke's law applies: stress = E × strain. The modulus of elasticity is the slope of that line and measures stiffness, not strength.",
      "steps": "E = \\frac{stress}{strain} = \\frac{150}{0.0008} = 200,000 MPa = 200 GPa.",
      "answer": "200 GPa",
      "value": 200.0
@@ -230,6 +277,7 @@
     {
      "family": "materials-0009",
      "problem": "Using E_{c} = 4,700 × the square root of f'_{c} (both in MPa), what is the modulus of elasticity of concrete with a compressive strength of 40 MPa?",
+     "idea": "The stiffness of normal-weight concrete rises with the square root of its compressive strength, so doubling the strength raises the modulus by only about 41%.",
      "steps": "E_{c} = 4,700 \\sqrt{40} = 4,700 × 6.325 = 29,725 MPa.",
      "answer": "29,725 MPa",
      "value": 29725.410006
@@ -237,6 +285,7 @@
     {
      "family": "materials-0010",
      "problem": "A tension specimen has a gauge length of 50 mm. After fracture the gauge length measures 61.0 mm. What is the percent elongation?",
+     "idea": "Percent elongation is the permanent increase in gauge length at fracture divided by the original gauge length. It is a measure of ductility, along with reduction of area.",
      "steps": "Elongation = \\frac{61.0 - 50}{50} × 100 = \\frac{11.0}{50} × 100 = 22.0%.",
      "answer": "22.0 %",
      "value": 22.0
@@ -270,6 +319,13 @@
       "stress-strain"
      ]
     }
+   ],
+   "deep": "The stress-strain curve summarises a material's mechanical behaviour. The initial straight line is elastic, with slope E. The yield strength marks the start of permanent deformation, the ultimate strength is the peak, and the strain at fracture measures ductility. The area under the curve is energy per unit volume: resilience up to yield, toughness up to fracture.\n\nSteel is ductile with a clear yield; concrete and cast iron are brittle and far weaker in tension than compression. Other time-dependent behaviours matter in design: creep under sustained load, fatigue under repeated load and, for concrete, shrinkage.",
+   "method": [
+    "Read the quantity asked for from the right part of the curve.",
+    "Compute E as stress over strain within the straight portion only.",
+    "Compute ductility as percent elongation or percent reduction in area.",
+    "Use the 0.2% offset method when there is no distinct yield point."
    ]
   }
  ]

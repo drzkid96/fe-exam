@@ -62,6 +62,16 @@ A review session looks at:
 
 Then it acts in content: write questions for weak subtopics, add a guide section or a "common mistakes" entry aimed at the observed error, and tell the owner in a few lines what changed and why. Never edit or delete attempts.
 
+## Resets
+
+Progress can be reset for everything (Setup), for one topic (the topic page) or for one question type (the question page). A reset writes a time to `meta/settings.resets` (`all`, `topics[id]`, `families[id]`, plus a `log` of the last 50 resets) and answers logged before that time stop counting toward mastery, due dates and the missed list. Nothing is deleted, in keeping with the append-only log, and Setup has an undo that clears the marks. When reading the log, apply the same marks before judging weak areas.
+
+## Outside sources
+
+Each topic overview links to free outside material: Mark Mattson's 2022 FE review sessions (video and problem set per topic), the Marshall University FE review lectures, Texas A&M's FE review page and the NCEES specification. These are links only. The lesson text is original and nothing from those sources is copied. The video links were taken from the EngineerOnUp exam prep page and have not been opened to confirm them; YouTube pages and transcripts could not be read from the build session.
+
+In the exam the handbook is searched with the search box beside the reference, not with Ctrl+F, so the site says "search the handbook for".
+
 ## Explain further with Claude
 
 After an answer is checked, and under every lesson, the site shows an *Explain further with Claude* panel: preset requests (step by step, why my answer is wrong, which handbook formula, a similar problem; for lessons: simpler, another example, quiz me, how the exam tests this) and a box for a typed question.
@@ -82,7 +92,7 @@ After an answer is checked, and under every lesson, the site shows an *Explain f
 
 The owner's goal: the site replaces his reading material and his practice exams. Every subtopic gets a fully built-out lesson and many questions.
 
-- **Content, version 0.5.0:** 771 questions in 212 question types. 178 types have four numeric versions each, generated from one template whose formula is checked against the independently written calculation for version 1. 25 rule-and-judgement types have two written versions. 728 answers are recomputed by code and 43 are checked against a stated reference. 210 questions carry a drawn figure and 24 also have a figure in the solution. 93 guide sections: one overview per topic and one lesson per subtopic. Each lesson now has an explanation, a formula table, key ideas (235 in all, 57 of them hand-written for the subtopics that are about rules and judgement), worked examples (251 in all, every final number recomputed, 52 with a figure), common mistakes and a handbook lookup; 33 lessons open with a figure.
+- **Content, version 0.6.0:** 771 questions in 212 question types. 178 types have four numeric versions each, generated from one template whose formula is checked against the independently written calculation for version 1. 25 rule-and-judgement types have two written versions. 728 answers are recomputed by code and 43 are checked against a stated reference. 210 questions carry a drawn figure and 24 also have a figure in the solution. 93 guide sections: one overview per topic and one lesson per subtopic. Each lesson now has an explanation, an in-depth section on why the method works, a numbered solving method, a formula table, key ideas (235 in all, 57 of them hand-written for the subtopics that are about rules and judgement), worked examples (251 in all, every final number recomputed, 52 with a figure), common mistakes and a handbook lookup; 33 lessons open with a figure.
 - **Explanations:** every answer shows a *Concept* note (the principle, stated technically) and a *Solution with the numbers* (each step with the question's own values and units). A *Check in the handbook* line follows: the handbook chapter, its page range in edition 10.0.1 and the words to search for in the PDF. 655 questions have one; the other 116 are marked as not a handbook lookup and point to the lesson. Search terms for the chapters after Engineering Probability and Statistics were written from knowledge of the handbook and have not been checked against the PDF, because only the first 84 pages could be read through Drive.
 - **Coverage:** all 79 subtopics have a lesson and questions. A full 110-question simulation can be drawn without repeats.
 - **Still open.** The lesson examples come from the same templates as the questions, with fresh numbers, so they teach the same methods the bank tests; methods the bank does not test yet are covered only by the lesson text. Nine question types still have a single version: the two ordering, two hotspot, two matching and three multi-select items.

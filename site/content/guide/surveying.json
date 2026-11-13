@@ -21,7 +21,34 @@
      "where": "Topic XII, Transportation and Surveying"
     }
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-13",
+   "links": [
+    {
+     "label": "Mark Mattson, FE review session: Surveying (video)",
+     "url": "https://www.youtube.com/watch?v=mgSf9HYJFvg",
+     "note": "A full problem-solving session on this topic."
+    },
+    {
+     "label": "EngineerOnUp exam prep page",
+     "url": "https://engineeronup.pages.dev/examprep.html",
+     "note": "The problem sets that go with those sessions, one per topic."
+    },
+    {
+     "label": "Marshall University FE review lectures (playlist)",
+     "url": "https://www.youtube.com/playlist?list=PLCV9OyAY5K-V-bki_dxxq_uVpyIoyIJ8P",
+     "note": "Recorded review classes covering each civil topic."
+    },
+    {
+     "label": "Texas A&M FE review material",
+     "url": "https://fereview.engr.tamu.edu/",
+     "note": "Review notes and links, including the NCEES examinee videos."
+    },
+    {
+     "label": "NCEES FE Civil exam specifications",
+     "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
+     "note": "The official list of topics and question counts."
+    }
+   ]
   },
   {
    "id": "surveying-a-lesson",
@@ -73,6 +100,7 @@
     {
      "family": "surveying-0006",
      "problem": "A slope distance of 412.60 m is measured at a vertical angle of 9° above horizontal. What is the horizontal distance?",
+     "idea": "A slope measurement is the hypotenuse of a right triangle. The horizontal distance is the slope distance times the cosine of the vertical angle, and the elevation difference is the slope distance times the sine.",
      "steps": "H = S cos(angle) = 412.60 × cos 9° = 412.60 × 0.9877 = 407.52 m. The rise is 412.60 × sin 9° = 64.54 m.",
      "answer": "407.52 m",
      "value": 407.520209
@@ -80,6 +108,7 @@
     {
      "family": "surveying-0007",
      "problem": "What should the interior angles of a closed seven-sided traverse add up to?",
+     "idea": "The interior angles of any closed polygon with n sides sum to (n - 2) × 180°. Comparing the measured sum with this value gives the angular misclosure of a traverse.",
      "steps": "Sum = (n - 2) × 180° = (7 - 2) × 180° = 900°.",
      "answer": "900°",
      "value": 900
@@ -94,6 +123,14 @@
       "regular polygon"
      ]
     }
+   ],
+   "deep": "Surveying measurements are angles and distances, reduced with trigonometry. Directions are stated as azimuths, measured clockwise from north from 0° to 360°, or as bearings, an acute angle from north or south toward east or west. Each line of a traverse has a latitude, L cos(azimuth), and a departure, L sin(azimuth).\n\nIn a closed traverse the latitudes and departures should each sum to zero. What is left is the misclosure, and its length divided by the perimeter gives the precision. Slope distances are reduced to horizontal with the cosine of the vertical angle.",
+   "method": [
+    "Convert every bearing to an azimuth or keep careful track of signs.",
+    "Compute latitude and departure for each line.",
+    "Sum them; for a closed figure the sums are the misclosures.",
+    "Compute the linear misclosure as the square root of the sum of squares, and precision as misclosure over perimeter.",
+    "Reduce slope distances to horizontal before anything else."
    ]
   },
   {
@@ -147,6 +184,7 @@
     {
      "family": "surveying-0002",
      "problem": "A four-sided parcel has corners, in order, at (0, 0), (70, 0), (100, 60) and (20, 80), with coordinates in metres. What is its area?",
+     "idea": "The area of a closed polygon from corner coordinates is half the absolute value of the sum of the cross products x_{i} y_{i+1} - x_{i+1} y_{i} taken around the boundary (the coordinate or shoelace method).",
      "steps": "Cross products in order: 0(0) - 70(0) = 0; 70(60) - 100(0) = 4,200; 100(80) - 20(60) = 6,800; 20(0) - 0(80) = 0.\n\nSum = 11,000.\n\nArea = \\frac{11,000}{2} = 5,500 m^{2}.",
      "answer": "5,500 m^{2}",
      "value": 5500.0,
@@ -159,6 +197,7 @@
     {
      "family": "surveying-0008",
      "problem": "Two sides of a triangular parcel are 150 m and 95 m long and meet at an angle of 64°. What is the area of the parcel?",
+     "idea": "When two sides and the included angle are known, area = (1/2) a b sin(C). The term b sin(C) is the height of the triangle measured from side a.",
      "steps": "Area = \\frac{1}{2} a b sin C = \\frac{1}{2}(150)(95) sin 64° = 7,125 × 0.8988 = 6,403.9 m^{2}.",
      "answer": "6,403.9 m^{2}",
      "value": 6403.90758,
@@ -185,6 +224,14 @@
       "law of sines"
      ]
     }
+   ],
+   "deep": "Areas of land parcels are found from coordinates or from offsets. The coordinate method works for any closed polygon: half the absolute value of the sum of cross products of successive corners. For a boundary that curves, offsets measured at regular intervals from a baseline are combined with the trapezoidal rule or, for an even number of intervals, Simpson's 1/3 rule, which is more accurate.\n\nSimple figures use geometry directly: half the base times the height, or half the product of two sides and the sine of the included angle.",
+   "method": [
+    "List the corners in order around the figure and repeat the first at the end.",
+    "Compute each x_{i} y_{i+1} - x_{i+1} y_{i} and add them.",
+    "Halve the absolute value.",
+    "For offsets, apply the trapezoidal or Simpson's rule with the common interval.",
+    "Convert units if asked: 1 acre = 43,560 ft^{2}; 1 hectare = 10,000 m^{2}."
    ]
   },
   {
@@ -231,6 +278,7 @@
     {
      "family": "surveying-0003",
      "problem": "Two road cross-sections 30 m apart have cut areas of 28 m^{2} and 44 m^{2}. Using the average end area method, what is the volume of cut between them?",
+     "idea": "The average end area method treats the earthwork between two cross-sections as a prism whose cross-section is the mean of the two end areas: V = L (A_{1} + A_{2}) / 2. It slightly overestimates when the areas differ a lot.",
      "steps": "V = L × \\frac{A_{1} + A_{2}}{2} = 30 × \\frac{28 + 44}{2} = 30 × 36 = 1,080 m^{3}.",
      "answer": "1,080 m^{3}",
      "value": 1080.0
@@ -238,6 +286,7 @@
     {
      "family": "surveying-0009",
      "problem": "A borrow pit measures 30 m by 45 m in plan. Its average depth of cut is 2.2 m. What volume is excavated?",
+     "idea": "Borrow pit volume is plan area times average depth of cut. On a grid, the average depth is found by weighting each corner depth by the number of grid squares it touches.",
      "steps": "V = 30 × 45 × 2.2 = 1,350 m^{2} × 2.2 m = 2,970 m^{3}.",
      "answer": "2,970 m^{3}",
      "value": 2970.0
@@ -252,6 +301,14 @@
       "earthwork formulas"
      ]
     }
+   ],
+   "deep": "Earthwork volumes come from cross-sections taken at stations along the alignment. The average end area method multiplies the mean of two adjacent areas by the distance between them. The prismoidal formula adds the middle area with a weight of four and is more exact.\n\nBorrow pits are computed from a grid of cut depths, weighting each corner by the number of squares it touches. Soil changes volume when moved: it swells when excavated and shrinks when compacted, so bank, loose and compacted volumes differ. A mass diagram plots cumulative cut minus fill to plan hauling.",
+   "method": [
+    "Compute or read the end areas at each station.",
+    "Apply average end area between each pair and sum along the alignment.",
+    "Keep cut and fill separate.",
+    "Apply swell or shrinkage factors to convert between bank, loose and compacted volumes.",
+    "Watch stationing: one full station is 100 ft or, in metric practice, commonly 1 km with decimals."
    ]
   },
   {
@@ -303,6 +360,7 @@
     {
      "family": "surveying-0010",
      "problem": "A traverse line is 264.50 m long with an azimuth of 48°. What is its departure (east-west component)?",
+     "idea": "Azimuth is measured clockwise from north. Latitude (the north-south component) is L cos(azimuth) and departure (the east-west component) is L sin(azimuth). East and north are positive.",
      "steps": "Departure = L sin(azimuth) = 264.50 × sin 48° = 196.6 m (east).\n\nLatitude = 264.50 × cos 48° = 177.0 m (north).",
      "answer": "196.6 m",
      "value": 196.561806,
@@ -315,6 +373,7 @@
     {
      "family": "surveying-0011",
      "problem": "Point A has a northing of 3,200.00 m and an easting of 500.00 m. Point B is 145.00 m from A on a bearing of S 35° E. What is the northing of B?",
+     "idea": "A bearing of S (angle) E points south and east, so the line's latitude is negative and its departure is positive. The new northing is the old northing plus the latitude, where latitude = -L cos(bearing angle).",
      "steps": "Latitude = -145.00 × cos 35° = -118.78 m.\n\nNorthing of B = 3,200.00 - 118.78 = 3,081.22 m.\n\nFor reference, easting of B = 500.00 + 145.00 sin 35° = 583.17 m.",
      "answer": "3,081.22 m",
      "value": 3081.222954
@@ -329,6 +388,14 @@
       "departure"
      ]
     }
+   ],
+   "deep": "A coordinate system fixes every point by a northing and an easting. Moving from a known point along a line adds the line's latitude to the northing and its departure to the easting. Going the other way, the differences in coordinates between two points give the distance by the Pythagorean theorem and the direction by the inverse tangent of the easting difference over the northing difference.\n\nState plane coordinates extend this idea over a whole region with a map projection. Stationing measures distance along an alignment, written as full stations plus a remainder.",
+   "method": [
+    "Sketch the two points and the north arrow.",
+    "Compute the differences in northing and easting.",
+    "Distance is the square root of the sum of squares.",
+    "Azimuth is the inverse tangent of easting difference over northing difference, placed in the correct quadrant from the signs.",
+    "To set out a point, reverse the steps with latitude and departure."
    ]
   },
   {
@@ -381,6 +448,7 @@
     {
      "family": "surveying-0001",
      "problem": "A level is set up between a benchmark at elevation 75.50 m and a new point. The backsight reading on the benchmark is 1.84 m and the foresight reading on the new point is 2.96 m. What is the elevation of the new point?",
+     "idea": "Differential leveling: the height of instrument is the benchmark elevation plus the backsight. The elevation of the new point is the height of instrument minus the foresight. A larger foresight means lower ground.",
      "steps": "Height of instrument = 75.50 + 1.84 = 77.34 m.\n\nElevation = 77.34 - 2.96 = 74.38 m.",
      "answer": "74.38 m",
      "value": 74.38,
@@ -393,12 +461,21 @@
     {
      "family": "surveying-0005",
      "problem": "A road rises from elevation 150.0 m to elevation 162.6 m over a horizontal distance of 360 m. What is the grade?",
+     "idea": "Grade is rise over horizontal run, expressed as a percentage. It is positive going uphill in the direction of stationing.",
      "steps": "Rise = 162.6 - 150.0 = 12.6 m.\n\nGrade = \\frac{12.6}{360} × 100 = 3.50%.",
      "answer": "3.50 %",
      "value": 3.5
     }
    ],
-   "lookup": []
+   "lookup": [],
+   "deep": "Differential leveling carries elevation from a benchmark to new points with a level and a rod. The backsight on a point of known elevation gives the height of the instrument; subtracting the foresight on the new point gives its elevation. Turning points link successive setups.\n\nA level circuit that returns to its start, or ends on another benchmark, shows its error as the misclosure, which is distributed in proportion to the number of setups or the distance. Over long sights the curvature of the earth and refraction matter; balancing backsight and foresight distances cancels them.",
+   "method": [
+    "Start with the benchmark elevation.",
+    "Add the backsight to get the height of instrument.",
+    "Subtract the foresight to get the new elevation.",
+    "Repeat through each turning point.",
+    "Check: sum of backsights minus sum of foresights equals last elevation minus first."
+   ]
   }
  ]
 }

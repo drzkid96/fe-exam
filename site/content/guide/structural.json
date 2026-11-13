@@ -29,7 +29,39 @@
      "where": "Topic XI, Structural Design, from structural steel onward"
     }
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-13",
+   "links": [
+    {
+     "label": "Mark Mattson, FE review session: Structural Analysis (video)",
+     "url": "https://www.youtube.com/watch?v=a0b8GrswZIM",
+     "note": "A full problem-solving session on this topic."
+    },
+    {
+     "label": "Mark Mattson, FE review session: Structural Design (video)",
+     "url": "https://www.youtube.com/watch?v=Bjwobp7J_ew",
+     "note": "Steel and reinforced concrete design problems."
+    },
+    {
+     "label": "EngineerOnUp exam prep page",
+     "url": "https://engineeronup.pages.dev/examprep.html",
+     "note": "The problem sets that go with those sessions, one per topic."
+    },
+    {
+     "label": "Marshall University FE review lectures (playlist)",
+     "url": "https://www.youtube.com/playlist?list=PLCV9OyAY5K-V-bki_dxxq_uVpyIoyIJ8P",
+     "note": "Recorded review classes covering each civil topic."
+    },
+    {
+     "label": "Texas A&M FE review material",
+     "url": "https://fereview.engr.tamu.edu/",
+     "note": "Review notes and links, including the NCEES examinee videos."
+    },
+    {
+     "label": "NCEES FE Civil exam specifications",
+     "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
+     "note": "The official list of topics and question counts."
+    }
+   ]
   },
   {
    "id": "structural-a-lesson",
@@ -85,6 +117,7 @@
     {
      "family": "structural-0006",
      "problem": "A cantilever beam is 3.5 m long and carries a 24 kN point load at its free end. What is the magnitude of the bending moment at the fixed support?",
+     "idea": "A cantilever resists load through shear and moment at its fixed end. For a tip load the moment grows linearly from zero at the free end to P L at the support.",
      "steps": "M = P L = 24 × 3.5 = 84 kN·m at the fixed support (tension on the top face).",
      "answer": "84 kN·m",
      "value": 84.0,
@@ -97,6 +130,7 @@
     {
      "family": "structural-0007",
      "problem": "A simply supported beam spans 12 m. It carries a uniform load of 3 kN/m over the full span and a 30 kN point load 4 m from the left support. What is the left reaction?",
+     "idea": "Reactions from several loads can be found one load at a time and added (superposition). The uniform load splits equally; the point load splits in inverse proportion to its distance from each support.",
      "steps": "From the uniform load: 3(12) / 2 = 18 kN.\n\nFrom the point load: 30 × \\frac{12 - 4}{12} = 20.00 kN.\n\nLeft reaction = 18 + 20.00 = 38.0 kN.",
      "answer": "38.0 kN",
      "value": 38.0,
@@ -109,6 +143,7 @@
     {
      "family": "structural-0008",
      "problem": "A simply supported beam spans 12 m and carries a 50 kN point load at midspan. What is the maximum bending moment?",
+     "idea": "With a central point load each reaction is P/2, and the moment under the load is the reaction times half the span: M_{max} = P L / 4.",
      "steps": "Reaction = 50 / 2 = 25 kN.\n\nM_{max} = 25 × 6 = \\frac{P L}{4} = 150 kN·m, under the load.",
      "answer": "150 kN·m",
      "value": 150.0,
@@ -128,6 +163,14 @@
       "cantilever"
      ]
     }
+   ],
+   "deep": "Analysing a determinate structure means finding reactions and then internal forces, with equilibrium alone. Beams carry load by shear and bending, trusses by axial force in their members and frames by a combination. The standard cases are worth knowing by heart: a simple span with a central load has a maximum moment of P L / 4, with a uniform load w L^{2} / 8, and a cantilever P L or w L^{2} / 2 at the support.\n\nMoving loads are handled with influence lines, which show how a reaction, shear or moment at one location varies as a unit load crosses the structure.",
+   "method": [
+    "Draw the free-body diagram and find reactions.",
+    "Cut the structure where the internal force is wanted and apply equilibrium to one side.",
+    "For a truss, use joints or sections.",
+    "For maximum effects, place loads where the influence line ordinates are largest.",
+    "Check with a known standard case when one applies."
    ]
   },
   {
@@ -191,6 +234,7 @@
     {
      "family": "structural-0003",
      "problem": "A simply supported beam spans 10 m and carries a 50 kN point load at midspan. Its flexural stiffness EI is 80,000 kN·m^{2}. What is the midspan deflection?",
+     "idea": "For a simply supported beam with a central point load, the maximum deflection is P L^{3} / (48 EI), at midspan. Span is cubed, so deflection is very sensitive to length.",
      "steps": "Deflection = \\frac{P L^{3}}{48 EI} = \\frac{50(10)^{3}}{48(80,000)} = 0.01302 m = 13.02 mm.",
      "answer": "13.02 mm",
      "value": 13.020833,
@@ -203,6 +247,7 @@
     {
      "family": "structural-0009",
      "problem": "A cantilever beam 3.5 m long carries a 12 kN point load at its free end. EI = 30,000 kN·m^{2}. What is the deflection at the free end?",
+     "idea": "For a cantilever with a tip load, the free-end deflection is P L^{3} / (3 EI). It is 16 times the midspan deflection of a simply supported beam of the same span and central load.",
      "steps": "Deflection = \\frac{P L^{3}}{3 EI} = \\frac{12(3.5)^{3}}{3(30,000)} = 0.00572 m = 5.717 mm.",
      "answer": "5.717 mm",
      "value": 5.716667,
@@ -222,6 +267,14 @@
       "cantilevered beam slopes and deflections"
      ]
     }
+   ],
+   "deep": "Deflection depends on load, span, stiffness EI and support conditions. Span has by far the largest effect: deflection varies with the cube of span for a point load and the fourth power for a uniform load. The handbook tabulates slopes and deflections for standard cases, and superposition lets you add cases for combined loads.\n\nOther methods derive the same results: double integration of M / EI, the moment-area theorems, and the unit load (virtual work) method, which also handles trusses by summing F f L / (A E) over the members.",
+   "method": [
+    "Match the beam and load to a table case.",
+    "Convert units so that EI and the loads are consistent.",
+    "Substitute and compute the deflection.",
+    "For several loads, compute each separately and add.",
+    "For a truss joint, apply the unit load method."
    ]
   },
   {
@@ -275,6 +328,7 @@
     {
      "family": "structural-0002",
      "problem": "A steel column is 8 m long with pinned ends. E = 200 GPa and the moment of inertia about the weak axis is 50.0 × 10^{6} mm^{4}. What is the Euler buckling load?",
+     "idea": "A slender column fails by elastic buckling at the Euler load, P_{cr} = π^{2} E I / (K L)^{2}. Pinned ends give K = 1. Buckling happens about the axis with the smaller moment of inertia.",
      "steps": "P_{cr} = \\frac{π^{2} E I}{(K L)^{2}} = \\frac{π^{2}(200,000)(50.0 × 10^{6})}{(8,000)^{2}} = 1,542,126 N = 1,542 kN.",
      "answer": "1,542 kN",
      "value": 1542.125688,
@@ -287,6 +341,7 @@
     {
      "family": "structural-0010",
      "problem": "A column 7 m long is fixed at its base and pinned at its top. Using the theoretical effective length factor K = 0.7, what is its effective length?",
+     "idea": "The effective length K L is the length of the equivalent pinned-pinned column, the distance between inflection points of the buckled shape. End restraint shortens it: K = 0.5 fixed-fixed, 0.7 fixed-pinned, 1.0 pinned-pinned, 2.0 fixed-free.",
      "steps": "Effective length = K L = 0.7 × 7 = 4.9 m.",
      "answer": "4.9 m",
      "value": 4.9,
@@ -307,6 +362,14 @@
       "effective length"
      ]
     }
+   ],
+   "deep": "Columns fail either by crushing or by buckling, depending on slenderness. Euler's formula gives the elastic buckling load of a slender column as pi^{2} E I / (K L)^{2}. The effective length K L accounts for end conditions: restraint against rotation shortens it and freedom to sway lengthens it.\n\nBuckling happens about the axis with the larger slenderness ratio K L / r, usually the weak axis unless bracing changes the unbraced lengths. Short columns are governed by material strength, and design specifications blend the two regimes.",
+   "method": [
+    "Identify the end conditions and the effective length factor K.",
+    "Compute K L / r for each axis with its own unbraced length.",
+    "Use the larger slenderness ratio.",
+    "Apply Euler's formula for the critical load, or divide by area for critical stress.",
+    "Check that the critical stress is below yield; otherwise Euler does not apply."
    ]
   },
   {
@@ -362,6 +425,14 @@
       "classification of structures"
      ]
     }
+   ],
+   "deep": "Before analysing a structure, establish whether equilibrium alone can solve it. Count the unknowns and the equations. If they match and the supports are properly arranged, it is statically determinate. Extra unknowns make it indeterminate, and too few supports make it unstable.\n\nStability is also a matter of geometry. Three reactions that are parallel or that meet at one point cannot hold a body, whatever the count says.",
+   "method": [
+    "Count reaction components: roller 1, pin 2, fixed 3.",
+    "For a beam or frame compare with 3 equations per rigid part, adding one per internal hinge.",
+    "For a truss compare m + r with 2j.",
+    "State the degree of indeterminacy as the excess of unknowns.",
+    "Look for parallel or concurrent reactions that make the structure unstable."
    ]
   },
   {
@@ -408,6 +479,7 @@
     {
      "family": "structural-0012",
      "problem": "A beam 10 m long is fixed at one end and supported by a roller at the other. It carries a uniform load of 12 kN/m. What is the reaction at the roller?",
+     "idea": "A propped cantilever has one more reaction than statics can solve, so a compatibility condition is needed: the deflection at the roller is zero. Setting the downward deflection from the load, w L^{4} / (8 EI), equal to the upward deflection from the reaction, R L^{3} / (3 EI), gives R = 3 w L / 8.",
      "steps": "\\frac{R L^{3}}{3 EI} = \\frac{w L^{4}}{8 EI}, so R = \\frac{3 w L}{8} = \\frac{3(12)(10)}{8} = 45 kN. The fixed end carries the other 75 kN.",
      "answer": "45 kN",
      "value": 45.0
@@ -415,6 +487,7 @@
     {
      "family": "structural-0013",
      "problem": "A beam fixed at both ends spans 9 m and carries a uniform load of 16 kN/m. What is the magnitude of the moment at each support?",
+     "idea": "Fixed ends prevent rotation, which attracts negative moment to the supports. For a full uniform load the fixed-end moment is w L^{2} / 12 and the midspan moment drops to w L^{2} / 24; together they still add to the simple-span value w L^{2} / 8.",
      "steps": "Fixed-end moment = \\frac{w L^{2}}{12} = \\frac{16(9)^{2}}{12} = 108 kN·m. Midspan moment = 54 kN·m.",
      "answer": "108 kN·m",
      "value": 108.0
@@ -435,6 +508,14 @@
       "fixed-end moment"
      ]
     }
+   ],
+   "deep": "An indeterminate structure has more supports or members than equilibrium needs, so deformations must be brought in. The force method removes a redundant support, computes the deflection there, then finds the redundant force that restores zero deflection. Fixed-end moments and standard cases in the handbook give the results for common beams directly.\n\nStiffness attracts load: when members share a load, the stiffer one takes more. That principle explains moment distribution and why fixed ends reduce midspan moment while adding support moment.",
+   "method": [
+    "Identify the redundant reaction.",
+    "Remove it and compute the deflection at that point from the applied loads.",
+    "Compute the deflection there caused by a unit value of the redundant.",
+    "Solve for the redundant that makes the total deflection zero.",
+    "Finish with equilibrium for the remaining reactions."
    ]
   },
   {
@@ -481,6 +562,7 @@
     {
      "family": "structural-0004",
      "problem": "A floor beam carries a dead load of 25 kN/m and a live load of 35 kN/m. Checking the load combinations 1.4D and 1.2D + 1.6L, what factored load governs?",
+     "idea": "In strength design (LRFD) each load is multiplied by a load factor that reflects its uncertainty, and the largest combination governs. Live load has the larger factor because it is less predictable than dead load.",
      "steps": "1.4D = 1.4(25) = 35 kN/m.\n\n1.2D + 1.6L = 1.2(25) + 1.6(35) = 86 kN/m.\n\nThe larger value governs: 86 kN/m.",
      "answer": "86 kN/m",
      "value": 86.0
@@ -488,6 +570,7 @@
     {
      "family": "structural-0014",
      "problem": "Floor beams are spaced 3.5 m apart and support a floor load of 4.8 kPa. What line load does an interior beam carry?",
+     "idea": "A beam collects floor load from its tributary width, half the spacing on each side. Line load = area load × tributary width.",
      "steps": "Tributary width of an interior beam = 3.5 m.\n\nw = 4.8 kPa × 3.5 m = 16.8 kN/m.",
      "answer": "16.8 kN/m",
      "value": 16.8
@@ -502,6 +585,14 @@
       "LRFD"
      ]
     }
+   ],
+   "deep": "Loads are classified by source: dead, live, roof live, snow, wind, earthquake and others. Design combines them with load factors that reflect how uncertain each is and how unlikely it is that several peak together. In strength design the common gravity combinations are 1.4D and 1.2D + 1.6L, and the largest governs.\n\nThe load path is the route by which load travels to the ground: slab to beam to girder to column to footing. Each member collects load from its tributary area, and following the path is how line loads and column loads are found.",
+   "method": [
+    "List the service loads acting on the member.",
+    "Find tributary width or area and convert area loads to line or point loads.",
+    "Evaluate each applicable load combination.",
+    "Take the largest factored effect for design.",
+    "Follow the reactions down to the next member in the load path."
    ]
   },
   {
@@ -558,6 +649,7 @@
     {
      "family": "structural-0015",
      "problem": "A steel tension member has a gross area of 2,800 mm^{2} and a yield strength of 345 MPa. Using LRFD with a resistance factor of 0.90, what is its design strength for yielding on the gross section?",
+     "idea": "Tension yielding is checked on the gross area: nominal strength P_{n} = F_{y} A_{g}, and design strength is the resistance factor times P_{n}. Rupture on the net section is a separate check with a factor of 0.75.",
      "steps": "P_{n} = F_{y} A_{g} = 345 × 2,800 = 966,000 N = 966 kN.\n\nDesign strength = 0.90 × 966 = 869.4 kN.",
      "answer": "869.4 kN",
      "value": 869.4
@@ -565,6 +657,7 @@
     {
      "family": "structural-0016",
      "problem": "A compact, fully braced steel beam has a plastic section modulus of 1.8 × 10^{6} mm^{3} and a yield strength of 345 MPa. With a resistance factor of 0.90, what is its design flexural strength?",
+     "idea": "A compact, laterally braced beam can reach its full plastic moment, M_{p} = F_{y} Z, where every fibre has yielded. The design strength is the resistance factor times M_{p}.",
      "steps": "M_{p} = F_{y} Z = 345 × 1.8 × 10^{6} N·mm = 621.0 kN·m.\n\nDesign strength = 0.90 × 621.0 = 558.9 kN·m.",
      "answer": "558.9 kN·m",
      "value": 558.9
@@ -572,6 +665,7 @@
     {
      "family": "structural-0017",
      "problem": "A steel column has an effective length of 7.5 m and a radius of gyration of 60 mm about the axis of buckling. What is its slenderness ratio?",
+     "idea": "The slenderness ratio K L / r measures how prone a column is to buckling; the larger it is, the lower the critical stress. Use the radius of gyration for the axis about which buckling occurs, with both lengths in the same units.",
      "steps": "Slenderness ratio = \\frac{K L}{r} = \\frac{7,500 mm}{60 mm} = 125.",
      "answer": "125",
      "value": 125.0
@@ -596,6 +690,14 @@
       "radius of gyration"
      ]
     }
+   ],
+   "deep": "Steel design checks each limit state: a design strength, the resistance factor times nominal strength, must be at least the factored load effect. Tension members are checked for yielding on the gross area and rupture on the effective net area. Compression members are governed by buckling, through the slenderness ratio. Beams that are compact and braced reach the plastic moment F_{y} Z; without adequate bracing, lateral-torsional buckling reduces the strength.\n\nShear, deflection and connections are separate checks. Allowable strength design divides nominal strength by a safety factor instead and uses unfactored load combinations.",
+   "method": [
+    "Identify the member type and the limit states that apply.",
+    "Compute the nominal strength for each limit state.",
+    "Multiply by the resistance factor: 0.90 for yielding, flexure and compression, 0.75 for rupture.",
+    "Compare the smallest design strength with the factored demand.",
+    "Check serviceability under unfactored loads."
    ]
   },
   {
@@ -662,6 +764,7 @@
     {
      "family": "structural-0005",
      "problem": "A singly reinforced concrete beam is 320 mm wide with an effective depth of 560 mm. It has 1,800 mm^{2} of tension steel with a yield strength of 420 MPa, and the concrete strength is 30 MPa. Assuming the steel yields, what is the nominal moment capacity?",
+     "idea": "At nominal strength the steel force T = A_{s} f_{y} is balanced by a rectangular concrete stress block of intensity 0.85 f'_{c} and depth a. The moment capacity is that force times the lever arm between them, d - a/2.",
      "steps": "a = \\frac{A_{s} f_{y}}{0.85 f'_{c} b} = \\frac{1,800(420)}{0.85(30)(320)} = 92.6 mm.\n\nM_{n} = A_{s} f_{y}(d - \\frac{a}{2}) = 1,800(420)(560 - 46.3) = 388 × 10^{6} N·mm = 388 kN·m.",
      "answer": "388 kN·m",
      "value": 388.339412,
@@ -674,6 +777,7 @@
     {
      "family": "structural-0018",
      "problem": "A reinforced concrete beam is 320 mm wide with 1,800 mm^{2} of tension steel. The steel yield strength is 420 MPa and the concrete strength is 30 MPa. What is the depth of the equivalent rectangular stress block?",
+     "idea": "Horizontal equilibrium of the section sets the stress block depth: the concrete compression 0.85 f'_{c} a b equals the steel tension A_{s} f_{y}.",
      "steps": "0.85 f'_{c} a b = A_{s} f_{y}.\n\na = \\frac{1,800(420)}{0.85(30)(320)} = \\frac{756,000}{8,160} = 92.6 mm.",
      "answer": "92.6 mm",
      "value": 92.647059
@@ -681,6 +785,7 @@
     {
      "family": "structural-0019",
      "problem": "Using V_{c} = 0.17 × the square root of f'_{c} × b × d (MPa and mm), what shear does the concrete carry in a beam 320 mm wide with an effective depth of 560 mm and a concrete strength of 30 MPa?",
+     "idea": "The concrete contribution to shear strength depends on the square root of the compressive strength, because shear failure is governed by diagonal tension, and on the web area b d.",
      "steps": "V_{c} = 0.17 \\sqrt{30}(320)(560) = 0.17(5.48)(179,200) = 166,858 N = 166.9 kN.",
      "answer": "166.9 kN",
      "value": 166.8582
@@ -688,6 +793,7 @@
     {
      "family": "structural-0020",
      "problem": "A 550 mm square tied column has 6,000 mm^{2} of longitudinal steel with a yield strength of 420 MPa. The concrete strength is 35 MPa. What is the nominal axial strength at zero eccentricity, P_{0}?",
+     "idea": "Under pure axial load the concrete and steel act together: the concrete carries 0.85 f'_{c} on the net concrete area and the steel carries its yield strength on its own area.",
      "steps": "Gross area A_{g} = 550^{2} = 302,500 mm^{2}.\n\nConcrete: 0.85(35)(302,500 - 6,000) = 8,820,875 N.\n\nSteel: 420(6,000) = 2,520,000 N.\n\nP_{0} = 8,820,875 + 2,520,000 = 11,340,875 N = 11,341 kN.",
      "answer": "11,341 kN",
      "value": 11340.875
@@ -705,6 +811,14 @@
       "short columns"
      ]
     }
+   ],
+   "deep": "Reinforced concrete combines concrete, strong in compression, with steel that carries the tension. At nominal flexural strength the concrete compression is modelled as a rectangular stress block of intensity 0.85 f'_{c} and depth a. Setting the compression equal to the steel tension A_{s} f_{y} gives a, and the moment strength is the tension force times the lever arm d - a/2.\n\nDesign strength is the strength reduction factor times nominal strength: 0.90 for tension-controlled flexure and 0.75 for shear. Shear is carried by the concrete and by stirrups. Columns are checked with axial load and moment together on an interaction diagram.",
+   "method": [
+    "Compute a = A_{s} f_{y} / (0.85 f'_{c} b).",
+    "Compute M_{n} = A_{s} f_{y} (d - a/2).",
+    "Apply the strength reduction factor.",
+    "Compare with the factored moment from the load combinations.",
+    "For shear, compute the concrete contribution and add the stirrup contribution if needed."
    ]
   }
  ]

@@ -21,7 +21,34 @@
      "where": "Topic XIII, Construction"
     }
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-13",
+   "links": [
+    {
+     "label": "Mark Mattson, FE review session: Construction (video)",
+     "url": "https://www.youtube.com/watch?v=2Q_UvBAJxIs",
+     "note": "A full problem-solving session on this topic."
+    },
+    {
+     "label": "EngineerOnUp exam prep page",
+     "url": "https://engineeronup.pages.dev/examprep.html",
+     "note": "The problem sets that go with those sessions, one per topic."
+    },
+    {
+     "label": "Marshall University FE review lectures (playlist)",
+     "url": "https://www.youtube.com/playlist?list=PLCV9OyAY5K-V-bki_dxxq_uVpyIoyIJ8P",
+     "note": "Recorded review classes covering each civil topic."
+    },
+    {
+     "label": "Texas A&M FE review material",
+     "url": "https://fereview.engr.tamu.edu/",
+     "note": "Review notes and links, including the NCEES examinee videos."
+    },
+    {
+     "label": "NCEES FE Civil exam specifications",
+     "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
+     "note": "The official list of topics and question counts."
+    }
+   ]
   },
   {
    "id": "construction-a-lesson",
@@ -56,7 +83,14 @@
     }
    ],
    "examples": [],
-   "lookup": []
+   "lookup": [],
+   "deep": "Project administration is how a design becomes a built project under a contract. The delivery method decides who holds which contract and when the builder joins. The contract documents define the work, and a hierarchy of bonds, insurance and payment procedures manages the risk that a party fails to perform.\n\nDuring construction the engineer's role is usually to interpret the documents, review submittals, observe the work and certify payment. Changes are made only through the contract's change procedure.",
+   "method": [
+    "Identify the delivery method from who contracts with whom.",
+    "Identify the document that governs the question.",
+    "Match the risk to the bond or insurance that covers it.",
+    "Place the event in the project sequence from bid to closeout."
+   ]
   },
   {
    "id": "construction-b-lesson",
@@ -106,6 +140,7 @@
     {
      "family": "construction-0004",
      "problem": "An excavator has a 2.5 m^{3} bucket and a cycle time of 36 s. It works 50 minutes of each hour. What is its hourly production?",
+     "idea": "Equipment production = volume per cycle × cycles per hour × efficiency. The efficiency factor (working minutes per 60) accounts for delays, operator breaks and repositioning.",
      "steps": "Cycles per hour = 3,600 / 36 = 100.\n\nIdeal production = 2.5 × 100 = 250 m^{3}/h.\n\nEfficiency = 50 / 60 = 0.833.\n\nProduction = 250 × 0.833 = 208 m^{3}/h.",
      "answer": "208 m^{3}/h",
      "value": 208.333333
@@ -113,6 +148,7 @@
     {
      "family": "construction-0011",
      "problem": "A contractor has 5 recordable injuries in a year in which employees worked 310,000 hours. What is the incidence rate per 200,000 hours?",
+     "idea": "The OSHA incidence rate normalises injury counts to 200,000 hours, the hours worked by 100 full-time employees in a year (100 × 40 h × 50 weeks), so that firms of different sizes can be compared.",
      "steps": "Incidence rate = \\frac{5 × 200,000}{310,000} = 3.23.",
      "answer": "3.23",
      "value": 3.225806
@@ -120,6 +156,7 @@
     {
      "family": "construction-0012",
      "problem": "A loader takes 5 minutes to fill a truck. Each truck needs 35 minutes for a full cycle including loading. How many trucks keep the loader working without waiting?",
+     "idea": "A balanced fleet has just enough trucks that one arrives as the loader finishes the previous one. The number is the truck cycle time divided by the loading time. Fewer trucks leave the loader idle; more leave trucks queuing.",
      "steps": "Trucks = \\frac{truck cycle time}{loading time} = \\frac{35}{5} = 7.",
      "answer": "7",
      "value": 7.0
@@ -133,6 +170,14 @@
       "incidence rate"
      ]
     }
+   ],
+   "deep": "Construction operations are planned around the productivity of crews and equipment. Production is the volume moved per cycle times the cycles per hour times an efficiency factor. Fleets are balanced so that the loading unit and the hauling units keep each other busy.\n\nEarthmoving must track the state of the soil, because a cubic metre in the bank swells when loosened and shrinks when compacted. Other common items are crane selection from load charts, formwork pressure, temporary structures and site safety.",
+   "method": [
+    "Compute the cycle time and cycles per hour.",
+    "Multiply by capacity per cycle and the efficiency factor.",
+    "Convert volumes between bank, loose and compacted with swell and shrinkage factors.",
+    "Balance trucks to loader as truck cycle time over loading time.",
+    "Divide the quantity by production for duration."
    ]
   },
   {
@@ -194,6 +239,7 @@
     {
      "family": "construction-0001",
      "problem": "A project has four activities. A takes 4 days and starts the job. B takes 5 days and C takes 12 days; both follow A. D takes 3 days and follows both B and C. What is the total float of activity B?",
+     "idea": "In the critical path method the longest path through the network sets the project duration, and activities on it have zero float. Total float is the time an activity can slip without delaying the project: late start minus early start.",
      "steps": "Path A-B-D = 4 + 5 + 3 = 12 days. Path A-C-D = 4 + 12 + 3 = 19 days, which is critical.\n\nB and C run in parallel between the same events, so B can slip by the difference: total float of B = 12 - 5 = 7 days.",
      "answer": "7 days",
      "value": 7,
@@ -206,6 +252,7 @@
     {
      "family": "construction-0002",
      "problem": "At a status date a project has a planned value of $600,000, an earned value of $540,000 and an actual cost of $580,000. What is the cost performance index?",
+     "idea": "Earned value management compares the budgeted value of work done (EV) with what it cost (AC) and with what was scheduled (PV). CPI = EV / AC; below 1.0 means over budget. SPI = EV / PV; below 1.0 means behind schedule.",
      "steps": "CPI = \\frac{EV}{AC} = \\frac{540,000}{580,000} = 0.931. For reference, SPI = \\frac{540,000}{600,000} = 0.900.",
      "answer": "0.931",
      "value": 0.931034
@@ -213,6 +260,7 @@
     {
      "family": "construction-0014",
      "problem": "A crew places 45 m^{2} of formwork per day. There are 1,620 m^{2} to place and 3 crews working. How many working days are needed?",
+     "idea": "Activity duration = quantity of work / (crew productivity × number of crews). Durations found this way feed the schedule network.",
      "steps": "Daily output = 3 × 45 = 135 m^{2}/day.\n\nDuration = \\frac{1,620}{135} = 12 working days.",
      "answer": "12 days",
      "value": 12.0
@@ -229,6 +277,14 @@
       "schedule variance"
      ]
     }
+   ],
+   "deep": "Project controls measure whether the job is on time and on budget. The critical path method builds a network of activities, makes a forward pass for early dates and a backward pass for late dates, and reports float as the difference. The longest path is critical and has zero float.\n\nEarned value analysis puts progress in dollars. Planned value is what should have been done by now, earned value is the budget for what has been done and actual cost is what it cost. Their differences and ratios give schedule and cost variances and indices, and the indices forecast the cost at completion.",
+   "method": [
+    "Draw the network with durations.",
+    "Forward pass: early finish = early start + duration; a successor's early start is the largest early finish of its predecessors.",
+    "Backward pass: late start = late finish - duration; a predecessor's late finish is the smallest late start of its successors.",
+    "Total float = late start - early start.",
+    "For earned value, compute SV = EV - PV, CV = EV - AC, SPI = EV / PV, CPI = EV / AC."
    ]
   },
   {
@@ -279,6 +335,7 @@
     {
      "family": "construction-0003",
      "problem": "A slab on grade is 40 m long, 25 m wide and 175 mm thick. Allowing 7% for waste, how much concrete should be ordered?",
+     "idea": "Quantity takeoff for concrete is the neat volume from the drawings, increased by a waste allowance for spillage, over-excavation and uneven subgrade. Convert the thickness to metres first.",
      "steps": "Neat volume = 40 × 25 × 0.175 = 175.00 m^{3}.\n\nWith 7% waste: 175.00 × 1.07 = 187.25 m^{3}.",
      "answer": "187.25 m^{3}",
      "value": 187.25
@@ -286,6 +343,7 @@
     {
      "family": "construction-0015",
      "problem": "A job needs 1,600 m^{3} of excavation at a direct cost of $11.5 per m^{3}. Overhead and profit add 16%. What is the bid price for this item?",
+     "idea": "A bid item price is its direct cost (quantity × unit cost) plus a markup that covers overhead and profit.",
      "steps": "Direct cost = 1,600 × 11.5 = $18,400.\n\nBid price = 18,400 × 1.16 = $21,344.",
      "answer": "$21,344",
      "value": 21344.0
@@ -293,12 +351,21 @@
     {
      "family": "construction-0016",
      "problem": "A concrete wall is 32 m long and 4.5 m high. What area of formwork is needed to form both faces?",
+     "idea": "Formwork is measured as contact area, the surface of concrete that touches the forms. A wall has two faces, so the contact area is 2 × length × height (ends ignored here).",
      "steps": "Contact area = 2 × 32 × 4.5 = 288 m^{2}.",
      "answer": "288 m^{2}",
      "value": 288.0
     }
    ],
-   "lookup": []
+   "lookup": [],
+   "deep": "An estimate prices the work from quantities. The quantity takeoff measures each item from the drawings: volumes of concrete and earth, areas of formwork and paving, weights of steel. Unit costs for labour, material and equipment are applied, and indirect costs, overhead, contingency and profit are added to reach the bid.\n\nEstimates become more accurate as design progresses, from order-of-magnitude figures based on cost per unit of capacity to detailed estimates from complete drawings. Cost indices adjust historical costs for time and location.",
+   "method": [
+    "Measure the quantity in the unit the cost is quoted in.",
+    "Add waste, laps or swell allowances.",
+    "Multiply by unit cost; build unit cost from crew rate over productivity when needed.",
+    "Add overhead and profit as percentages.",
+    "Adjust old costs with the ratio of cost indices."
+   ]
   },
   {
    "id": "construction-e-lesson",
@@ -339,6 +406,7 @@
     {
      "family": "construction-0006",
      "problem": "On a plan drawn at a scale of 1 in = 30 ft, a property line measures 4.75 in. How long is the line on the ground?",
+     "idea": "An engineer's scale states how many feet on the ground one inch on the drawing represents. Ground distance = drawing distance × scale.",
      "steps": "Ground length = 4.75 in × 30 ft/in = 142.5 ft.",
      "answer": "142.5 ft",
      "value": 142.5
@@ -346,12 +414,21 @@
     {
      "family": "construction-0007",
      "problem": "A drawing is at a scale of 1:200. A wall measures 47 mm on the drawing. How long is the wall?",
+     "idea": "A ratio scale of 1:n means one unit on the drawing is n of the same units in reality. Multiply by n, then convert millimetres to metres.",
      "steps": "Real length = 47 mm × 200 = 9,400 mm = 9.4 m.",
      "answer": "9.4 m",
      "value": 9.4
     }
    ],
-   "lookup": []
+   "lookup": [],
+   "deep": "Engineering drawings are a language with fixed conventions. Plans look down, elevations look sideways and sections cut through. Scales relate drawing length to real length. Contours show the shape of the ground, and profiles show elevations along an alignment with the vertical scale exaggerated.\n\nReading drawings for the exam means extracting quantities and relationships: lengths from scales, slopes from contours, cut and fill from a profile, member sizes and reinforcement from details and schedules.",
+   "method": [
+    "Find the scale and north arrow.",
+    "Convert drawing measurements to real lengths with the scale.",
+    "Read contours: the interval gives the elevation change, the spacing gives the slope.",
+    "On profiles, read elevations and stations separately from their own scales.",
+    "Cross-reference details and schedules for sizes."
+   ]
   }
  ]
 }

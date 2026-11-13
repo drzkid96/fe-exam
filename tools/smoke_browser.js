@@ -143,12 +143,24 @@ const fakeDb = () => {
     await p2.evaluate(() => { location.hash = 'topic-statics'; }); await new Promise(r => setTimeout(r, 200));
     const ask5 = await p2.evaluate(() => ({lessons: document.querySelectorAll('details.ask').length, figs: document.querySelectorAll('.gsec > figure svg').length}));
     ok(ask5.lessons >= 7 && ask5.figs >= 5, 'lessons carry figures and a Claude panel');
-    const les = await p2.evaluate(() => { const t = document.querySelector('#view').textContent; return {ideas: document.querySelectorAll('.idea').length, exs: document.querySelectorAll('.sol.ex').length, exfigs: document.querySelectorAll('.sol.ex svg').length, look: /Check in the handbook/i.test(t) && /Search the PDF for/.test(t), num: /Worked example 3/i.test(t)}; });
+    const les = await p2.evaluate(() => { const t = document.querySelector('#view').textContent; return {ideas: document.querySelectorAll('.idea').length, exs: document.querySelectorAll('.sol.ex').length, exfigs: document.querySelectorAll('.sol.ex svg').length, look: /Check in the handbook/i.test(t) && /Search the handbook for/.test(t), deep: document.querySelectorAll('.deep').length, method: document.querySelectorAll('ol.method li').length, why: document.querySelectorAll('.sol.ex .why').length, links: [...document.querySelectorAll('.gsec a')].filter(a => /youtube\.com|engineeronup|ncees\.org/.test(a.href)).length, num: /Worked example 3/i.test(t)}; });
     ok(les.ideas >= 15 && les.exs >= 20 && les.exfigs >= 8 && les.look && les.num, 'lessons are built out: key ideas, several worked examples with figures, handbook lookup');
+    ok(les.deep >= 7 && les.method >= 28 && les.why >= 15 && les.links >= 4, 'lessons have an in-depth explanation, a solving method, example reasoning and outside links');
     await p2.evaluate(() => { location.hash = 'setup'; }); await new Promise(r => setTimeout(r, 200));
     await p2.evaluate(() => { const i = document.querySelector('#set-hb'); i.value = 'https://example.org/handbook.pdf'; i.dispatchEvent(new Event('change', {bubbles: true})); }); await new Promise(r => setTimeout(r, 200));
     await p2.evaluate(() => { location.hash = 'topic-statics'; }); await new Promise(r => setTimeout(r, 200));
     ok(await p2.evaluate(() => [...document.querySelectorAll('.gsec a')].some(a => a.textContent === 'Open my handbook' && a.href === 'https://example.org/handbook.pdf')), 'the saved handbook link shows beside the lookups');
+    // resets: answers stop counting but stay in the log, and undo brings them back
+    const r0 = await p2.evaluate(() => ({n: S.model.totals.n, raw: S.sessions.reduce((k, s) => k + (s.attempts || []).length, 0)}));
+    await p2.evaluate(() => { location.hash = 'topic-statics'; }); await new Promise(r => setTimeout(r, 200));
+    await p2.evaluate(() => { document.querySelector('[data-act="askReset"][data-kind="topic"]').click(); }); await p2.evaluate(() => { document.querySelector('#modal-ok').click(); }); await new Promise(r => setTimeout(r, 200));
+    const r1 = await p2.evaluate(() => ({n: S.model.totals.n, raw: S.sessions.reduce((k, s) => k + (s.attempts || []).length, 0), mark: !!(S.settings.resets.topics || {}).statics, saved: !!((JSON.parse(localStorage.getItem('__fakedb'))['meta/settings'] || {}).resets || {}).topics.statics}));
+    ok(r0.n >= 1 && r1.n === 0 && r1.raw === r0.raw && r1.mark && r1.saved, 'a topic reset clears progress without deleting answers');
+    await p2.evaluate(() => { location.hash = 'setup'; }); await new Promise(r => setTimeout(r, 200));
+    await p2.evaluate(() => { document.querySelector('[data-act="askUndoReset"]').click(); }); await p2.evaluate(() => { document.querySelector('#modal-ok').click(); }); await new Promise(r => setTimeout(r, 200));
+    ok(await p2.evaluate(n => S.model.totals.n === n, r0.n), 'undoing resets brings the answers back');
+    await p2.evaluate(() => { document.querySelector('[data-act="askReset"][data-kind="all"]').click(); }); await p2.evaluate(() => { document.querySelector('#modal-ok').click(); }); await new Promise(r => setTimeout(r, 200));
+    ok(await p2.evaluate(() => S.model.totals.n === 0 && !!S.settings.resets.all), 'resetting everything gives a clean start');
     ok(res.n > 0 && res.real && res.samples === 0, 'real content is loaded and no samples remain');
     console.log('real content checked:', res.n, 'questions');
     if (shots) {

@@ -21,7 +21,34 @@
      "where": "Topic III, Fluid Mechanics"
     }
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-13",
+   "links": [
+    {
+     "label": "Mark Mattson, FE review session: Fluid Mechanics (video)",
+     "url": "https://www.youtube.com/watch?v=XqjfnpqGWS0",
+     "note": "A full problem-solving session on this topic."
+    },
+    {
+     "label": "EngineerOnUp exam prep page",
+     "url": "https://engineeronup.pages.dev/examprep.html",
+     "note": "The problem sets that go with those sessions, one per topic."
+    },
+    {
+     "label": "Marshall University FE review lectures (playlist)",
+     "url": "https://www.youtube.com/playlist?list=PLCV9OyAY5K-V-bki_dxxq_uVpyIoyIJ8P",
+     "note": "Recorded review classes covering each civil topic."
+    },
+    {
+     "label": "Texas A&M FE review material",
+     "url": "https://fereview.engr.tamu.edu/",
+     "note": "Review notes and links, including the NCEES examinee videos."
+    },
+    {
+     "label": "NCEES FE Civil exam specifications",
+     "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
+     "note": "The official list of topics and question counts."
+    }
+   ]
   },
   {
    "id": "fluids-a-lesson",
@@ -74,6 +101,7 @@
     {
      "family": "fluids-0004",
      "problem": "A Pitot tube in a water stream shows a stagnation head 0.60 m higher than the static head. What is the flow velocity? Use g = 9.81 m/s^{2}.",
+     "idea": "At the tip of a Pitot tube the flow is brought to rest and its velocity head, V^{2} / 2g, is converted to pressure head. The difference between stagnation and static head is therefore the velocity head.",
      "steps": "\\frac{V^{2}}{2g} = 0.60 m, so V = \\sqrt{2(9.81)(0.60)} = 3.43 m/s.",
      "answer": "3.43 m/s",
      "value": 3.431035
@@ -81,6 +109,7 @@
     {
      "family": "fluids-0006",
      "problem": "Water discharges through a 60 mm diameter orifice under a head of 4 m. The discharge coefficient is 0.61. What is the flow rate? Use g = 9.81 m/s^{2}.",
+     "idea": "Torricelli's result gives the ideal jet velocity as the square root of 2 g h. Real flow is smaller because of jet contraction and friction, which the discharge coefficient accounts for: Q = C_{d} A × square root of (2 g h).",
      "steps": "A = \\frac{π(0.060)^{2}}{4} = 0.00283 m^{2}.\n\nIdeal velocity = \\sqrt{2(9.81)(4)} = 8.86 m/s.\n\nQ = 0.61 × 0.00283 × 8.86 = 0.01528 m^{3}/s = 15.28 L/s.",
      "answer": "15.28 L/s",
      "value": 15.279239,
@@ -100,6 +129,14 @@
       "orifice"
      ]
     }
+   ],
+   "deep": "Flow is measured by making the fluid change speed and reading the pressure change that results, which is Bernoulli's equation put to work. A Pitot tube brings the flow to rest and reads the velocity head. Venturi meters, nozzles and orifice plates contract the flow and read the pressure drop, with a coefficient that corrects for losses and contraction.\n\nIn open channels, weirs relate the head over the crest to discharge: a rectangular weir's flow varies with head to the 3/2 power and a V-notch weir's with head to the 5/2 power. A free orifice discharges at the coefficient times area times the square root of 2 g h.",
+   "method": [
+    "Identify the device and find its equation in the handbook.",
+    "Compute the area of the throat, orifice or crest.",
+    "Convert pressure differences to head of the flowing fluid.",
+    "Apply the discharge coefficient.",
+    "Check units, especially mm to m in areas."
    ]
   },
   {
@@ -155,6 +192,7 @@
     {
      "family": "fluids-0002",
      "problem": "A liquid has a specific gravity of 0.88. What is its specific weight? Use 9.81 kN/m^{3} for water.",
+     "idea": "Specific gravity is the ratio of a liquid's density (or specific weight) to that of water. Multiply by the specific weight of water to get the liquid's specific weight.",
      "steps": "Specific weight = SG × 9.81 = 0.88 × 9.81 = 8.63 kN/m^{3}.",
      "answer": "8.63 kN/m^{3}",
      "value": 8.6328
@@ -162,6 +200,7 @@
     {
      "family": "fluids-0007",
      "problem": "Water flows at 2.5 m/s in a 200 mm diameter pipe. Its kinematic viscosity is 1.0 × 10^{-6} m^{2}/s. What is the Reynolds number?",
+     "idea": "The Reynolds number is the ratio of inertial to viscous forces: Re = V D / (kinematic viscosity). In pipes, flow is laminar below about 2,100 and turbulent above about 4,000, which decides how the friction factor is found.",
      "steps": "Re = \\frac{V D}{kinematic viscosity} = \\frac{2.5(0.200)}{1.0 × 10^{-6}} = 500,000, which is turbulent.",
      "answer": "500,000",
      "value": 500000.0
@@ -169,6 +208,7 @@
     {
      "family": "fluids-0008",
      "problem": "A liquid has a dynamic viscosity of 0.0018 Pa·s and a density of 900 kg/m^{3}. What is its kinematic viscosity? Give the answer in units of 10^{-6} m^{2}/s.",
+     "idea": "Kinematic viscosity is dynamic viscosity divided by density. It is the form that appears in the Reynolds number.",
      "steps": "Kinematic viscosity = \\frac{0.0018}{900} = 2.00 × 10^{-6} m^{2}/s.",
      "answer": "2.00 × 10^{-6} m^{2}/s",
      "value": 2.0
@@ -185,6 +225,13 @@
       "kinematic viscosity"
      ]
     }
+   ],
+   "deep": "Fluid properties describe how a fluid responds to forces. Density is mass per volume, specific weight is weight per volume (density times g) and specific gravity is the ratio to water. Viscosity is resistance to shearing: dynamic viscosity relates shear stress to velocity gradient, and kinematic viscosity is dynamic viscosity divided by density.\n\nOther properties appear less often: surface tension causes capillary rise, vapour pressure sets the onset of cavitation and bulk modulus measures compressibility. Water is treated as incompressible in nearly all exam problems.",
+   "method": [
+    "Write down which property is given and which is wanted.",
+    "Use specific weight = density × g and specific gravity = density / density of water to convert.",
+    "For viscosity conversions, divide dynamic by density to get kinematic.",
+    "Keep to one unit system throughout."
    ]
   },
   {
@@ -251,6 +298,7 @@
     {
      "family": "fluids-0001",
      "problem": "What is the gauge pressure 15 m below the surface of a freshwater reservoir? Use a specific weight of 9.81 kN/m^{3}.",
+     "idea": "In a fluid at rest, pressure increases linearly with depth: p = (specific weight) × h. Gauge pressure is measured relative to the atmosphere, so it is zero at the free surface.",
      "steps": "p = (specific weight)(h) = 9.81 × 15 = 147.2 kPa gauge.",
      "answer": "147.2 kPa",
      "value": 147.15
@@ -258,6 +306,7 @@
     {
      "family": "fluids-0005",
      "problem": "A vertical rectangular gate is 2.5 m wide and 3.6 m tall. Its top edge is at the water surface. What is the total hydrostatic force on the gate? Use 9.81 kN/m^{3}.",
+     "idea": "The resultant force on a submerged plane surface is the pressure at the centroid of the area times the area. For a gate that reaches the surface the pressure diagram is a triangle, and the force acts at two thirds of the depth.",
      "steps": "Depth to centroid = 3.6 / 2 = 1.8 m, so pressure there = 9.81 × 1.8 = 17.66 kPa.\n\nArea = 2.5 × 3.6 = 9 m^{2}.\n\nF = 17.66 × 9 = 158.9 kN, acting 2.40 m below the surface.",
      "answer": "158.9 kN",
      "value": 158.922,
@@ -270,6 +319,7 @@
     {
      "family": "fluids-0009",
      "problem": "A mercury manometer (specific gravity 13.6) connects two water pipes at the same elevation and shows a deflection of 0.25 m. What is the pressure difference between the pipes? Use 9.81 kN/m^{3} for water.",
+     "idea": "Work around the manometer from one pipe to the other, adding pressure going down and subtracting going up. The water columns on the two sides cancel except over the deflection, leaving (SG of mercury - 1) × specific weight of water × deflection.",
      "steps": "Pressure difference = (13.6 - 1)(9.81)(0.25) = 12.6 × 9.81 × 0.25 = 30.90 kPa.",
      "answer": "30.902 kPa",
      "value": 30.9015,
@@ -282,6 +332,7 @@
     {
      "family": "fluids-0010",
      "problem": "A 1.5 m^{3} block with a specific gravity of 0.70 floats in water. What volume of the block is below the water surface?",
+     "idea": "Archimedes' principle: a floating body displaces a weight of fluid equal to its own weight. In water, the submerged fraction of the volume equals the body's specific gravity.",
      "steps": "Weight of block = weight of displaced water, so submerged volume = SG × total volume = 0.70 × 1.5 = 1.050 m^{3}.",
      "answer": "1.050 m^{3}",
      "value": 1.05
@@ -300,6 +351,14 @@
       "Archimedes"
      ]
     }
+   ],
+   "deep": "In a fluid at rest, pressure depends only on depth: it rises by the specific weight for every unit of depth and is the same at any two points on the same level in the same connected fluid. That one rule solves manometers.\n\nThe force on a submerged plane surface is the pressure at the centroid of the area times the area. It acts below the centroid, at the centre of pressure, because pressure is larger lower down. Buoyancy is the net upward pressure force and equals the weight of the displaced fluid.",
+   "method": [
+    "For a manometer, start at one end and move through the fluid: add specific weight × height going down, subtract going up.",
+    "For a plane surface, find the depth of the centroid and multiply the pressure there by the area.",
+    "Locate the centre of pressure with the handbook formula, or as the centroid of the pressure diagram.",
+    "For buoyancy, equate the weight of the body to the weight of displaced fluid.",
+    "State whether pressures are gauge or absolute."
    ]
   },
   {
@@ -366,6 +425,7 @@
     {
      "family": "fluids-0003",
      "problem": "Water flows at 2.4 m/s in a 250 mm diameter pipe. The pipe narrows to 125 mm. What is the velocity in the narrow section?",
+     "idea": "Continuity for an incompressible fluid: the flow rate A V is the same at every section. Area scales with diameter squared, so velocity scales with the inverse square of the diameter ratio.",
      "steps": "A_{1} V_{1} = A_{2} V_{2}.\n\nV_{2} = V_{1}(\\frac{d_{1}}{d_{2}})^{2} = 2.4(\\frac{250}{125})^{2} = 2.4 × 4.00 = 9.60 m/s.",
      "answer": "9.60 m/s",
      "value": 9.6,
@@ -378,6 +438,7 @@
     {
      "family": "fluids-0011",
      "problem": "Water flows in a horizontal pipe. At section 1 the velocity is 2.5 m/s and the pressure is 220 kPa. At section 2 the pipe is narrower and the velocity is 7.5 m/s. Ignoring losses, what is the pressure at section 2?",
+     "idea": "Bernoulli's equation says pressure head + velocity head + elevation head stays constant along a streamline when there are no losses. In a horizontal pipe, a gain in velocity is paid for by a drop in pressure.",
      "steps": "p_{2} = p_{1} - \\frac{density}{2}(V_{2}^{2} - V_{1}^{2}) = 220 - \\frac{1,000}{2}(7.5^{2} - 2.5^{2}) Pa = 220 - 25.00 = 195.0 kPa.",
      "answer": "195 kPa",
      "value": 195.0
@@ -385,6 +446,7 @@
     {
      "family": "fluids-0012",
      "problem": "A 80 mm diameter water jet moving at 18 m/s strikes a flat plate at right angles. What force does the jet exert on the plate?",
+     "idea": "The impulse-momentum principle: force equals the rate of change of momentum. The plate destroys all of the jet's momentum in the original direction, so F = (density)(Q)(V) = (density)(A)(V^{2}).",
      "steps": "A = \\frac{π(0.080)^{2}}{4} = 0.00503 m^{2}.\n\nF = (density) A V^{2} = 1,000(0.00503)(18)^{2} = 1,629 N.",
      "answer": "1,629 N",
      "value": 1628.601632
@@ -392,6 +454,7 @@
     {
      "family": "fluids-0013",
      "problem": "Water flows at 1.8 m/s through 300 m of 250 mm diameter pipe with a friction factor of 0.02. What is the head loss? Use g = 9.81 m/s^{2}.",
+     "idea": "The Darcy-Weisbach equation gives friction head loss as the friction factor times the length-to-diameter ratio times the velocity head: h_{f} = f (L/D)(V^{2}/2g).",
      "steps": "Velocity head = \\frac{1.8^{2}}{2(9.81)} = 0.165 m.\n\nh_{f} = 0.02 × \\frac{300}{0.250} × 0.165 = 3.96 m.",
      "answer": "3.963 m",
      "value": 3.963303
@@ -410,6 +473,14 @@
       "head loss"
      ]
     }
+   ],
+   "deep": "Three conservation laws solve flowing-fluid problems. Continuity conserves mass: flow rate Q = A V is constant along a pipe. The energy equation conserves energy: pressure head, velocity head and elevation head at one section, plus pump head, equal those at another plus turbine head and losses. The momentum equation relates forces to changes in the fluid's momentum and gives the forces on bends, nozzles and plates.\n\nFriction loss in pipes follows the Darcy-Weisbach equation, with the friction factor from the Moody diagram, depending on Reynolds number and relative roughness. Minor losses are a coefficient times the velocity head.",
+   "method": [
+    "Choose two sections where the most is known; a free surface has zero gauge pressure and negligible velocity.",
+    "Use continuity to relate the velocities.",
+    "Write the energy equation between the sections, including pump head and losses.",
+    "Solve for the unknown head, pressure or flow.",
+    "For forces, apply the momentum equation to a control volume with pressures and velocities at its faces."
    ]
   }
  ]

@@ -21,7 +21,34 @@
      "where": "Topic XV, Engineering Economics"
     }
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-13",
+   "links": [
+    {
+     "label": "Mark Mattson, FE review session: Engineering Economics (video)",
+     "url": "https://www.youtube.com/watch?v=lrT1Slz0aAg",
+     "note": "A full problem-solving session on this topic."
+    },
+    {
+     "label": "EngineerOnUp exam prep page",
+     "url": "https://engineeronup.pages.dev/examprep.html",
+     "note": "The problem sets that go with those sessions, one per topic."
+    },
+    {
+     "label": "Marshall University FE review lectures (playlist)",
+     "url": "https://www.youtube.com/playlist?list=PLCV9OyAY5K-V-bki_dxxq_uVpyIoyIJ8P",
+     "note": "Recorded review classes covering each civil topic."
+    },
+    {
+     "label": "Texas A&M FE review material",
+     "url": "https://fereview.engr.tamu.edu/",
+     "note": "Review notes and links, including the NCEES examinee videos."
+    },
+    {
+     "label": "NCEES FE Civil exam specifications",
+     "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
+     "note": "The official list of topics and question counts."
+    }
+   ]
   },
   {
    "id": "econ-a-lesson",
@@ -87,6 +114,7 @@
     {
      "family": "econ-0001",
      "problem": "$15,000 is deposited in an account that pays 4% interest compounded annually. What is the balance after 8 years?",
+     "idea": "Compound interest earns interest on interest. A single present amount P grows to F = P(1 + i)^{n}; the factor (1 + i)^{n} is the single payment compound amount factor, (F/P, i, n).",
      "steps": "F = P(1 + i)^{n} = 15,000(1 + 0.04)^{8} = 15,000 × 1.3686 = $20,529.",
      "answer": "$20,529",
      "value": 20528.535756,
@@ -99,6 +127,7 @@
     {
      "family": "econ-0002",
      "problem": "A $80,000 loan is repaid in eight equal end-of-year payments at 7% annual interest. What is each payment?",
+     "idea": "A uniform series that repays a present amount is found with the capital recovery factor: A = P × i(1 + i)^{n} / ((1 + i)^{n} - 1), written (A/P, i, n). Each payment covers that year's interest plus some principal.",
      "steps": "(A/P, 7%, 8) = \\frac{0.07(1 + 0.07)^{8}}{(1 + 0.07)^{8} - 1} = 0.16747.\n\nA = 80,000 × 0.16747 = $13,397 per year.",
      "answer": "$13,397 per year",
      "value": 13397.420999,
@@ -111,6 +140,7 @@
     {
      "family": "econ-0007",
      "problem": "What is the present worth of $40,000 received 8 years from now at an interest rate of 7% per year?",
+     "idea": "Discounting is compounding in reverse. A future amount F is worth P = F / (1 + i)^{n} today; the factor 1 / (1 + i)^{n} is (P/F, i, n).",
      "steps": "P = \\frac{F}{(1 + i)^{n}} = \\frac{40,000}{(1 + 0.07)^{8}} = \\frac{40,000}{1.7182} = $23,280.",
      "answer": "$23,280",
      "value": 23280.364183,
@@ -123,6 +153,7 @@
     {
      "family": "econ-0008",
      "problem": "A loan charges a nominal rate of 8% per year, compounded quarterly. What is the effective annual interest rate?",
+     "idea": "A nominal rate r compounded m times a year charges r/m each period. The effective annual rate is the single yearly rate that gives the same growth: i_{e} = (1 + r/m)^{m} - 1. It is always above the nominal rate when m is greater than 1.",
      "steps": "Rate per period = 8% / 4 = 2.000%.\n\ni_{e} = (1 + 0.02000)^{4} - 1 = 0.08243 = 8.24%.",
      "answer": "8.24 %",
      "value": 8.243216
@@ -140,6 +171,14 @@
       "effective annual interest"
      ]
     }
+   ],
+   "deep": "Money has time value: a dollar now can earn interest, so it is worth more than a dollar later. Every problem is a matter of moving cash flows along the time line with interest factors until they sit at the same point and can be added. The six standard factors convert between a present amount P, a future amount F and a uniform series A.\n\nDraw the cash flow diagram first. The factors assume end-of-period payments, with the first A one period after P and the last A at the same time as F. If a problem breaks that pattern, shift it. When interest compounds more often than once a year, use the rate per period and the number of periods, or convert to an effective annual rate.",
+   "method": [
+    "Draw the cash flow diagram with arrows up for receipts and down for payments.",
+    "Name what is given and what is wanted in P, F, A notation.",
+    "Pick the factor (wanted / given, i, n) and read it from the handbook's interest tables or compute it.",
+    "Match the interest period to the payment period.",
+    "Check direction: moving money forward in time must increase it."
    ]
   },
   {
@@ -181,6 +220,7 @@
     {
      "family": "econ-0005",
      "problem": "A machine has fixed costs of $75,000 per year and variable costs of $14 per unit. What is the average cost per unit at 15,000 units per year?",
+     "idea": "Average unit cost is total cost divided by output. Fixed cost is spread over more units as output rises, so average cost falls toward the variable cost per unit.",
      "steps": "Total cost = 75,000 + 14(15,000) = $285,000.\n\nAverage cost = \\frac{285,000}{15,000} = $19 per unit.",
      "answer": "$19",
      "value": 19.0
@@ -188,6 +228,7 @@
     {
      "family": "econ-0006",
      "problem": "A task needs 80 hours of direct labor at $45 per hour and $1,800 of materials. Overhead is charged at 45% of direct labor. What is the total cost?",
+     "idea": "Cost estimates build up from direct costs (labor and materials) plus indirect costs. Here overhead is allocated as a percentage of direct labor cost, a common allocation base.",
      "steps": "Direct labor = 80 × 45 = $3,600.\n\nOverhead = 45% × 3,600 = $1,620.\n\nTotal = 3,600 + 1,620 + 1,800 = $7,020.",
      "answer": "$7,020",
      "value": 7020.0
@@ -201,6 +242,13 @@
       "break-even analysis"
      ]
     }
+   ],
+   "deep": "Cost questions sort costs into kinds because each kind behaves differently. Fixed costs do not change with output; variable costs rise with each unit. Total cost is their sum, average cost is total cost over output, and incremental cost is the extra cost of one more unit. Sunk costs are already spent and must be ignored in decisions.\n\nBreak-even analysis finds the output at which revenue equals total cost, or at which two alternatives cost the same. Life-cycle cost adds first cost, operating cost and salvage on a present-worth or annual basis.",
+   "method": [
+    "Label each cost as fixed, variable, sunk or opportunity.",
+    "Write total cost as fixed cost plus unit cost times quantity.",
+    "For break-even, set revenue equal to cost (or the two alternatives' costs equal) and solve for quantity.",
+    "Ignore sunk costs; include opportunity costs."
    ]
   },
   {
@@ -257,6 +305,7 @@
     {
      "family": "econ-0003",
      "problem": "A plant has fixed costs of $200,000 per year. Each unit costs $45 to make and sells for $70. How many units per year must be sold to break even?",
+     "idea": "At the break-even point total revenue equals total cost. Each unit sold contributes (price - variable cost) toward the fixed costs, so the break-even quantity is fixed cost divided by that contribution margin.",
      "steps": "Contribution per unit = 70 - 45 = $25.\n\nBreak-even quantity = \\frac{200,000}{25} = 8,000 units per year.",
      "answer": "8,000",
      "value": 8000.0
@@ -264,6 +313,7 @@
     {
      "family": "econ-0009",
      "problem": "A flood wall costs $750,000 to build and $25,000 per year to maintain. It prevents $110,000 of damage per year. Over 30 years at 6%, what is the benefit-cost ratio?",
+     "idea": "Benefit-cost analysis compares benefits and costs on the same time basis. Convert the annual amounts to present worth with (P/A, i, n) = ((1 + i)^{n} - 1) / (i(1 + i)^{n}), then divide present worth of benefits by present worth of costs. A ratio above 1 means the project is justified.",
      "steps": "(P/A, 6%, 30) = 13.765.\n\nPW of benefits = 110,000 × 13.765 = $1,514,131.\n\nPW of costs = 750,000 + 25,000 × 13.765 = $1,094,121.\n\nB/C = 1.38.",
      "answer": "1.38",
      "value": 1.38388
@@ -271,6 +321,7 @@
     {
      "family": "econ-0010",
      "problem": "A machine costs $60,000, costs $4,000 per year to run, and has a salvage value of $8,000 after 10 years. At 9% interest, what is its equivalent uniform annual cost?",
+     "idea": "Equivalent uniform annual cost spreads every cash flow evenly over the life: the first cost times (A/P), minus the salvage value times the sinking fund factor (A/F), plus the annual operating cost. It lets alternatives with different lives be compared.",
      "steps": "(A/P, 9%, 10) = 0.15582 and (A/F, 9%, 10) = 0.06582.\n\nEUAC = 60,000(0.15582) - 8,000(0.06582) + 4,000 = 9,349 - 527 + 4,000 = $12,823 per year.",
      "answer": "$12,823 per year",
      "value": 12822.644675
@@ -288,6 +339,14 @@
       "sinking fund"
      ]
     }
+   ],
+   "deep": "Economic analysis compares alternatives on one common measure. Present worth brings everything to today, annual worth spreads everything evenly over the life, and rate of return finds the interest rate at which present worth is zero. Present worth and annual worth always rank alternatives the same way; annual worth is easier when lives differ.\n\nFor public projects the benefit-cost ratio divides the present worth of benefits by that of costs, and a ratio above 1 justifies the project. Compare mutually exclusive options incrementally: the extra investment must earn its own keep.",
+   "method": [
+    "Set a common basis: present worth, annual worth or equal study period.",
+    "Convert every cash flow of each alternative to that basis with the factors.",
+    "Treat costs as negative and salvage as positive, or work consistently in costs.",
+    "Choose the highest worth or lowest equivalent cost; for benefit-cost, require a ratio of at least 1.",
+    "With unequal lives use annual worth."
    ]
   },
   {
@@ -333,6 +392,7 @@
     {
      "family": "econ-0004",
      "problem": "A project has a 15% chance of losing $60,000, a 55% chance of earning $35,000 and a 30% chance of earning $110,000. What is its expected value?",
+     "idea": "Expected value is the probability-weighted average of all outcomes: the sum of each outcome times its probability. Losses enter as negative values, and the probabilities must sum to 1.",
      "steps": "EV = 0.15(-60,000) + 0.55(35,000) + 0.30(110,000) = -9,000 + 19,250 + 33,000 = $43,250.",
      "answer": "$43,250",
      "value": 43250.0
@@ -346,6 +406,13 @@
       "expected value"
      ]
     }
+   ],
+   "deep": "Uncertainty means a decision's outcome is not known in advance. Expected value weights each possible outcome by its probability and is the long-run average if the decision were repeated many times. It is the right measure when stakes are small relative to resources; when a bad outcome would be ruinous, the spread of outcomes matters too.\n\nDecision trees organise sequences of choices and chance events. Sensitivity analysis asks which input assumptions actually change the decision.",
+   "method": [
+    "List every outcome with its probability and check the probabilities sum to 1.",
+    "Multiply each outcome by its probability, with losses negative, and add.",
+    "For a tree, work from the right: expected values at chance nodes, best branch at decision nodes.",
+    "Compare options on expected value, then comment on risk if asked."
    ]
   }
  ]

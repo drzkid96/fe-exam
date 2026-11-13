@@ -21,7 +21,34 @@
      "where": "Topic XII, Transportation and Surveying"
     }
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-13",
+   "links": [
+    {
+     "label": "Mark Mattson, FE review session: Transportation Engineering (video)",
+     "url": "https://www.youtube.com/watch?v=zi7JXmrDmIs",
+     "note": "A full problem-solving session on this topic."
+    },
+    {
+     "label": "EngineerOnUp exam prep page",
+     "url": "https://engineeronup.pages.dev/examprep.html",
+     "note": "The problem sets that go with those sessions, one per topic."
+    },
+    {
+     "label": "Marshall University FE review lectures (playlist)",
+     "url": "https://www.youtube.com/playlist?list=PLCV9OyAY5K-V-bki_dxxq_uVpyIoyIJ8P",
+     "note": "Recorded review classes covering each civil topic."
+    },
+    {
+     "label": "Texas A&M FE review material",
+     "url": "https://fereview.engr.tamu.edu/",
+     "note": "Review notes and links, including the NCEES examinee videos."
+    },
+    {
+     "label": "NCEES FE Civil exam specifications",
+     "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
+     "note": "The official list of topics and question counts."
+    }
+   ]
   },
   {
    "id": "transport-a-lesson",
@@ -100,6 +127,7 @@
     {
      "family": "transport-0001",
      "problem": "A vehicle travels at 55 mph on a level road. Using a perception-reaction time of 2.5 s and a deceleration rate of 11.2 ft/s^{2}, what is the stopping sight distance?",
+     "idea": "Stopping sight distance has two parts: the distance covered at full speed during perception and reaction, 1.47 V t, and the braking distance, V^{2} / (30 (a/32.2 ± G)). With V in mph the constants give feet. On a level road the grade term G is zero.",
      "steps": "Reaction distance = 1.47(55)(2.5) = 202.1 ft.\n\nBraking distance = \\frac{55^{2}}{30(11.2 / 32.2)} = \\frac{3,025}{10.43} = 289.9 ft.\n\nSSD = 202.1 + 289.9 = 492 ft.",
      "answer": "492 ft",
      "value": 492.020833
@@ -107,6 +135,7 @@
     {
      "family": "transport-0002",
      "problem": "What is the minimum radius of a horizontal curve for a design speed of 65 mph, with a superelevation of 6% and a side friction factor of 0.11?",
+     "idea": "On a horizontal curve the centripetal force is supplied by superelevation and side friction together. Balancing them gives the minimum radius R = V^{2} / (15 (e + f)), with V in mph, R in feet and e as a decimal.",
      "steps": "R_{min} = \\frac{V^{2}}{15(e + f)} = \\frac{65^{2}}{15(0.06 + 0.11)} = \\frac{4,225}{2.55} = 1,657 ft.",
      "answer": "1,657 ft",
      "value": 1656.862745
@@ -114,6 +143,7 @@
     {
      "family": "transport-0005",
      "problem": "A crest vertical curve connects a +2.5% grade to a -3.5% grade and is 720 ft long. How far from the start of the curve (PVC) is the high point?",
+     "idea": "A vertical curve is a parabola, so its grade changes at a constant rate r = (g_{2} - g_{1}) / L. The high or low point is where the grade reaches zero: x = -g_{1} / r = g_{1} L / (g_{1} - g_{2}).",
      "steps": "x = \\frac{g_{1} L}{g_{1} - g_{2}} = \\frac{2.5(720)}{2.5 - (-3.5)} = \\frac{1,800}{6} = 300 ft from the PVC.",
      "answer": "300 ft",
      "value": 300.0,
@@ -126,6 +156,7 @@
     {
      "family": "transport-0016",
      "problem": "A horizontal curve has a radius of 1,200 ft and a deflection angle of 36°. What is the length of the curve?",
+     "idea": "The length of a circular curve is the arc subtended by the deflection (central) angle: L = R × angle in radians = R × Δ × π / 180.",
      "steps": "L = R Δ \\frac{π}{180} = 1,200 × 36 × \\frac{π}{180} = 754.0 ft.",
      "answer": "754.0 ft",
      "value": 753.982237,
@@ -138,6 +169,7 @@
     {
      "family": "transport-0017",
      "problem": "A horizontal curve has a radius of 1,200 ft and a deflection angle of 36°. What is the tangent length from the PC to the PI?",
+     "idea": "The two tangents meet at the PI. Each tangent, from PC to PI or PI to PT, has length T = R tan(Δ / 2), from the right triangle formed by the radius, the tangent and the line from the centre to the PI.",
      "steps": "T = R tan(Δ / 2) = 1,200 × tan(18°) = 1,200 × 0.3249 = 389.9 ft.",
      "answer": "389.9 ft",
      "value": 389.903635,
@@ -150,6 +182,7 @@
     {
      "family": "transport-0018",
      "problem": "A crest vertical curve joins grades of +2.5% and -1.5%. The design requires a rate of vertical curvature K of 114. What minimum curve length is needed?",
+     "idea": "K is the horizontal length of curve needed for each 1% of grade change, chosen from the design speed to provide sight distance. Curve length = K × A, where A is the algebraic difference in grades in percent.",
      "steps": "A = |-1.5 - 2.5| = 4%.\n\nL = K A = 114 × 4 = 456 ft.",
      "answer": "456 ft",
      "value": 456.0,
@@ -172,6 +205,14 @@
       "sight distance"
      ]
     }
+   ],
+   "deep": "Geometric design fits the road to what drivers and vehicles can do at the design speed. Sight distance comes first: a driver must be able to see far enough to stop. Stopping sight distance is the distance travelled during perception and reaction plus the braking distance.\n\nHorizontal curves balance centripetal force with superelevation and side friction, which sets the minimum radius. Curve geometry follows from the radius and deflection angle: tangent length, curve length, external and middle ordinate. Vertical curves are parabolas joining two grades; their length is set by sight distance through the K value, and the high or low point is where the grade is zero.",
+   "method": [
+    "Identify the element: sight distance, horizontal curve or vertical curve.",
+    "For sight distance, add the reaction and braking terms, with grade in the braking term.",
+    "For a horizontal curve, compute T, L and stationing of PC and PT from the PI.",
+    "For a vertical curve, compute A, the rate of grade change, elevations along the curve and the turning point.",
+    "Keep U.S. units straight: speeds in mph, lengths in ft, grades in percent or decimal as the formula requires."
    ]
   },
   {
@@ -217,6 +258,7 @@
     {
      "family": "transport-0007",
      "problem": "A flexible pavement has 5 in of asphalt (layer coefficient 0.44), 10 in of base (0.14) and 8 in of subbase (0.11). Drainage coefficients are 1.0. What is the structural number?",
+     "idea": "In the AASHTO flexible pavement method, each layer contributes its thickness times a layer coefficient that reflects its relative strength, and unbound layers are also multiplied by a drainage coefficient. The sum is the structural number, SN.",
      "steps": "SN = a_{1}D_{1} + a_{2}D_{2}m_{2} + a_{3}D_{3}m_{3} = 0.44(5) + 0.14(10)(1.0) + 0.11(8)(1.0) = 2.20 + 1.40 + 0.88 = 4.48.",
      "answer": "4.48",
      "value": 4.48
@@ -224,6 +266,7 @@
     {
      "family": "transport-0008",
      "problem": "Using the correlation M_{R} = 1,500 × CBR (psi), what is the resilient modulus of a subgrade with a CBR of 7?",
+     "idea": "The resilient modulus describes subgrade stiffness under repeated wheel loads and is the subgrade input to pavement design. For fine-grained soils with low CBR it is often estimated from the correlation M_{R} = 1,500 × CBR, in psi.",
      "steps": "M_{R} = 1,500 × 7 = 10,500 psi.",
      "answer": "10,500 psi",
      "value": 10500
@@ -231,6 +274,7 @@
     {
      "family": "transport-0009",
      "problem": "A highway lane carries 950 equivalent single axle loads (ESALs) per day with no growth. How many ESALs does it carry over a 20-year design life?",
+     "idea": "Pavement design uses the total number of 18-kip equivalent single axle loads over the design life. With no growth it is the daily ESALs × 365 × years.",
      "steps": "Design ESALs = 950 × 365 × 20 = 6,935,000 = 6.93 million.",
      "answer": "6.93 million",
      "value": 6.935
@@ -246,6 +290,14 @@
       "load equivalency"
      ]
     }
+   ],
+   "deep": "A pavement spreads wheel loads so that the subgrade is not overstressed. Flexible pavements do it with layers of decreasing quality; rigid pavements with the bending stiffness of a concrete slab. Traffic is expressed as the number of 18-kip equivalent single axle loads over the design life, because damage rises steeply with axle weight.\n\nThe AASHTO method for flexible pavements finds the structural number required for the traffic, subgrade resilient modulus and reliability, then provides it with layer thicknesses times layer and drainage coefficients.",
+   "method": [
+    "Convert traffic to design ESALs.",
+    "Find the required structural number from the design chart or equation.",
+    "Choose layer thicknesses so that the sum of a × D × m meets it.",
+    "Check each layer against the structural number required above the layer beneath.",
+    "Round thicknesses up to practical values."
    ]
   },
   {
@@ -311,6 +363,7 @@
     {
      "family": "transport-0003",
      "problem": "Traffic in a freeway lane has a density of 48 veh/mi and a space mean speed of 42 mph. What is the flow rate?",
+     "idea": "The fundamental relation of traffic flow: flow = density × space mean speed (q = k u). The units confirm it: veh/mi × mi/h = veh/h.",
      "steps": "q = k u = 48 × 42 = 2,016 veh/h.",
      "answer": "2,016 veh/h",
      "value": 2016
@@ -318,6 +371,7 @@
     {
      "family": "transport-0004",
      "problem": "An intersection approach carries 1,500 vehicles in the peak hour. The busiest 15 minutes of that hour carries 420 vehicles. What is the peak hour factor?",
+     "idea": "The peak hour factor compares the hourly volume with the flow rate of the busiest 15 minutes: PHF = V / (4 × V_{15}). A value of 1.0 means perfectly even flow; lower values mean sharper peaking. Dividing a volume by the PHF gives the design flow rate.",
      "steps": "PHF = \\frac{V}{4 × V_{15}} = \\frac{1,500}{4(420)} = \\frac{1,500}{1,680} = 0.89.",
      "answer": "0.89",
      "value": 0.892857
@@ -325,6 +379,7 @@
     {
      "family": "transport-0010",
      "problem": "A signalized approach has 3 lanes, each with a saturation flow rate of 1,850 veh/h. The approach gets 45 s of effective green in a 110 s cycle. What is its capacity?",
+     "idea": "A signalized lane group can only discharge during its effective green. Capacity is the saturation flow rate times the share of the cycle that is green: c = N s (g / C).",
      "steps": "c = N s \\frac{g}{C} = 3(1,850) × \\frac{45}{110} = 5,550 × 0.409 = 2,270 veh/h.",
      "answer": "2,270 veh/h",
      "value": 2270.454545
@@ -332,6 +387,7 @@
     {
      "family": "transport-0011",
      "problem": "A road follows the Greenshields model with a free-flow speed of 65 mph and a jam density of 140 veh/mi. What is its capacity?",
+     "idea": "Greenshields assumes speed falls linearly with density. Flow = density × speed is then a parabola that peaks at half the jam density and half the free-flow speed, so capacity = u_{f} k_{j} / 4.",
      "steps": "At capacity: k = 140 / 2 = 70 veh/mi and u = 65 / 2 = 32.5 mph.\n\nq_{max} = 70 × 32.5 = \\frac{65(140)}{4} = 2,275 veh/h.",
      "answer": "2,275 veh/h",
      "value": 2275.0,
@@ -354,6 +410,14 @@
       "Greenshields"
      ]
     }
+   ],
+   "deep": "Traffic flow is described by three linked quantities: flow (vehicles per hour), speed and density (vehicles per mile), with flow = speed × density. As density rises, speed falls. Under the Greenshields model the fall is linear, so flow peaks at half the jam density and half the free-flow speed; that peak is capacity.\n\nCapacity analysis compares demand with capacity as a volume-to-capacity ratio and reports level of service from A to F. The peak hour factor converts an hourly volume to the flow rate of its busiest 15 minutes. At signals, a lane group's capacity is its saturation flow times the share of the cycle that is effectively green.",
+   "method": [
+    "Write down which of flow, speed and density are known.",
+    "Use flow = speed × density, and the speed-density relation if given.",
+    "For capacity under Greenshields, use free-flow speed × jam density / 4.",
+    "Convert volume to flow rate with the peak hour factor.",
+    "For a signal, compute capacity as saturation flow × g / C and the v/c ratio."
    ]
   },
   {
@@ -402,6 +466,7 @@
     {
      "family": "transport-0012",
      "problem": "A signal approach has a speed of 52.5 mph (77 ft/s) on level ground. Using a perception-reaction time of 1.0 s and a deceleration rate of 10 ft/s^{2}, what yellow change interval is needed?",
+     "idea": "The yellow interval must cover the driver's reaction time plus the time to decelerate to a stop, so that a driver too close to stop can enter legally: y = t + v / (2a + 2 g G), with v in ft/s. On level ground the grade term is zero.",
      "steps": "y = t + \\frac{v}{2a} = 1.0 + \\frac{77}{2(10)} = 1.0 + 3.85 = 4.85 s.",
      "answer": "4.85 s",
      "value": 4.85
@@ -416,6 +481,14 @@
       "yellow"
      ]
     }
+   ],
+   "deep": "Traffic control devices tell road users what to do, what to watch for and where to go. The MUTCD standardises them so that the same message always looks the same. Signs, markings and signals each have rules for colour, shape and placement.\n\nSignal timing balances competing movements. The yellow change interval covers reaction time plus deceleration, an all-red interval clears the intersection, and pedestrian intervals are set from crossing distance and walking speed. A signal is justified by warrants examined in an engineering study.",
+   "method": [
+    "Classify the device: regulatory, warning or guide.",
+    "Recall its standard colour and shape.",
+    "For the yellow interval, use reaction time plus speed over twice the deceleration, adjusted for grade.",
+    "For pedestrian clearance, divide crossing distance by walking speed.",
+    "For installation questions, look for the engineering study and warrants."
    ]
   },
   {
@@ -466,6 +539,7 @@
     {
      "family": "transport-0013",
      "problem": "A subdivision has 320 dwelling units. The trip generation rate is 8.5 trips per dwelling unit per day. How many daily trips does it generate?",
+     "idea": "Trip generation, the first step of the four-step planning model, estimates trip ends from land use. With an average rate, trips = rate × number of units.",
      "steps": "Trips = 8.5 × 320 = 2,720 trips per day.",
      "answer": "2,720",
      "value": 2720.0
@@ -473,6 +547,7 @@
     {
      "family": "transport-0014",
      "problem": "An intersection has 15 crashes in one year. Its entering volume is 27,500 vehicles per day. What is the crash rate per million entering vehicles?",
+     "idea": "Crash rates normalise crash counts by exposure so that sites with different volumes can be compared. For intersections: rate = crashes × 1,000,000 / (ADT × 365 × years).",
      "steps": "Entering vehicles in one year = 27,500 × 365 = 10,037,500.\n\nRate = \\frac{15 × 1,000,000}{10,037,500} = 1.49 crashes per million entering vehicles.",
      "answer": "1.49 per MEV",
      "value": 1.494396
@@ -480,6 +555,7 @@
     {
      "family": "transport-0015",
      "problem": "A logit mode choice model gives a utility of -0.4 for auto and -1.3 for bus. What share of travellers choose the bus?",
+     "idea": "The multinomial logit model gives each mode a share proportional to e raised to its utility: P(mode) = e^{U} / (sum of e^{U} over all modes). Only differences in utility matter.",
      "steps": "e^{-0.4} = 0.6703 and e^{-1.3} = 0.2725.\n\nP(bus) = \\frac{0.2725}{0.6703 + 0.2725} = 0.289, about 29%.",
      "answer": "0.289",
      "value": 0.28905
@@ -496,6 +572,14 @@
       "logit"
      ]
     }
+   ],
+   "deep": "Transportation planning forecasts travel so that facilities can be sized. The four-step model asks, in order: how many trips are made (trip generation), where they go (trip distribution, often with a gravity model), by which mode (mode choice, often a logit model) and by which route (traffic assignment).\n\nSafety analysis is the other planning tool on the exam: crash rates normalise counts by exposure, per million entering vehicles at intersections and per hundred million vehicle-miles on segments, and crash reduction factors estimate the benefit of a countermeasure.",
+   "method": [
+    "Identify which of the four steps the question concerns.",
+    "For generation, multiply the rate by the number of units.",
+    "For the gravity model, share trips in proportion to attractions and friction factors.",
+    "For logit, compute e to the utility for each mode and divide by the sum.",
+    "For crash rates, divide crashes by exposure and scale to the stated basis."
    ]
   }
  ]

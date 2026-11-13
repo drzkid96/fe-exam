@@ -29,7 +29,34 @@
      "where": "Topic IV, Hydraulics and Hydrologic Systems, and Topic V, Environmental Engineering"
     }
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-13",
+   "links": [
+    {
+     "label": "Mark Mattson, FE review session: Water Resources (video)",
+     "url": "https://www.youtube.com/watch?v=-M2hNo1RC98",
+     "note": "A full problem-solving session on this topic."
+    },
+    {
+     "label": "EngineerOnUp exam prep page",
+     "url": "https://engineeronup.pages.dev/examprep.html",
+     "note": "The problem sets that go with those sessions, one per topic."
+    },
+    {
+     "label": "Marshall University FE review lectures (playlist)",
+     "url": "https://www.youtube.com/playlist?list=PLCV9OyAY5K-V-bki_dxxq_uVpyIoyIJ8P",
+     "note": "Recorded review classes covering each civil topic."
+    },
+    {
+     "label": "Texas A&M FE review material",
+     "url": "https://fereview.engr.tamu.edu/",
+     "note": "Review notes and links, including the NCEES examinee videos."
+    },
+    {
+     "label": "NCEES FE Civil exam specifications",
+     "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
+     "note": "The official list of topics and question counts."
+    }
+   ]
   },
   {
    "id": "water-a-lesson",
@@ -75,6 +102,7 @@
     {
      "family": "water-0001",
      "problem": "A 18 acre parking area has a runoff coefficient of 0.70. The design rainfall intensity is 2.8 in/h. Using the rational method, what is the peak runoff?",
+     "idea": "The rational method estimates peak runoff from a small catchment as Q = C i A. With intensity in in/h and area in acres, Q comes out in cfs with no conversion factor (the factor is 1.008). The intensity is the one for a storm lasting the time of concentration.",
      "steps": "Q = C i A = 0.70 × 2.8 × 18 = 35.3 cfs.",
      "answer": "35.3 cfs",
      "value": 35.28
@@ -82,6 +110,7 @@
     {
      "family": "water-0007",
      "problem": "A watershed with a curve number of 75 receives 6.0 in of rain. Using the NRCS (SCS) method, what is the depth of runoff?",
+     "idea": "The NRCS curve number method converts rainfall to runoff depth. The potential retention is S = 1,000/CN - 10 (inches), the initial abstraction is taken as 0.2 S, and runoff is Q = (P - 0.2S)^{2} / (P + 0.8S) when P exceeds 0.2 S.",
      "steps": "S = \\frac{1,000}{75} - 10 = 3.33 in.\n\nQ = \\frac{(6.0 - 0.2 × 3.33)^{2}}{6.0 + 0.8 × 3.33} = \\frac{28.44}{8.67} = 3.28 in.",
      "answer": "3.28 in",
      "value": 3.282051
@@ -97,6 +126,14 @@
       "curve number"
      ]
     }
+   ],
+   "deep": "Hydrology follows water from rainfall to runoff. Part of the rain is lost to interception, storage in depressions and infiltration; the rest runs off. The rational method estimates the peak flow from a small catchment as Q = C i A, using the rainfall intensity for a storm lasting the time of concentration. The NRCS curve number method estimates the depth of runoff from a storm depth and a number that reflects soil and land cover.\n\nA hydrograph shows flow against time. A unit hydrograph is the response to one unit of runoff and scales linearly, so storms of other sizes and durations are built by scaling and adding. Design storms are chosen by return period.",
+   "method": [
+    "Decide what is wanted: a peak flow, a runoff depth or a hydrograph.",
+    "For the rational method, find the time of concentration, read the intensity for that duration and return period, and use an area-weighted C.",
+    "For the curve number method, compute S, then the runoff depth.",
+    "For a unit hydrograph, multiply its ordinates by the runoff depth, and lag and add for successive periods.",
+    "Keep units consistent: in/h and acres give cfs directly."
    ]
   },
   {
@@ -155,6 +192,7 @@
     {
      "family": "water-0002",
      "problem": "A rectangular concrete channel is 3.5 m wide and flows 1.2 m deep on a slope of 0.0012. Manning's n is 0.014. What is the discharge?",
+     "idea": "Manning's equation for uniform open channel flow (SI): Q = (1/n) A R^{2/3} S^{1/2}. The hydraulic radius R is the flow area divided by the wetted perimeter, which counts only the bed and sides in contact with water.",
      "steps": "A = 3.5 × 1.2 = 4.20 m^{2}.\n\nWetted perimeter = 3.5 + 2(1.2) = 5.90 m, so R = 4.20 / 5.90 = 0.712 m.\n\nQ = \\frac{1}{0.014}(4.20)(0.712)^{2/3}(0.0012)^{1/2} = 8.29 m^{3}/s.",
      "answer": "8.29 m^{3}/s",
      "value": 8.285335,
@@ -167,6 +205,7 @@
     {
      "family": "water-0008",
      "problem": "A rectangular channel carries a flow of 2.5 m^{3}/s per metre of width. What is the critical depth? Use g = 9.81 m/s^{2}.",
+     "idea": "Critical depth is the depth of minimum specific energy for a given flow, where the Froude number equals 1. For a rectangular channel y_{c} = (q^{2} / g)^{1/3}, with q the flow per unit width. The minimum specific energy is 1.5 y_{c}.",
      "steps": "y_{c} = (\\frac{q^{2}}{g})^{1/3} = (\\frac{2.5^{2}}{9.81})^{1/3} = (0.637)^{1/3} = 0.860 m.",
      "answer": "0.860 m",
      "value": 0.860473
@@ -182,6 +221,14 @@
       "critical depth"
      ]
     }
+   ],
+   "deep": "Open channel flow has a free surface and is driven by gravity. In uniform flow the depth is constant and Manning's equation relates velocity to the hydraulic radius, slope and roughness. Specific energy, depth plus velocity head, is smallest at critical depth, where the Froude number is 1. Flow shallower and faster than critical is supercritical; deeper and slower is subcritical.\n\nA hydraulic jump is the abrupt change from supercritical to subcritical flow, with a loss of energy. Pressure pipe flow uses the energy equation with Darcy-Weisbach or Hazen-Williams friction losses.",
+   "method": [
+    "Compute the flow area and wetted perimeter, then the hydraulic radius.",
+    "Apply Manning's equation, with the 1.486 factor in U.S. units.",
+    "For flow regime, compute the Froude number or compare depth with critical depth.",
+    "For a jump, use the conjugate depth equation.",
+    "For pipes, write the energy equation with the friction loss."
    ]
   },
   {
@@ -228,6 +275,7 @@
     {
      "family": "water-0003",
      "problem": "A pump delivers 0.10 m^{3}/s of water against a total head of 36 m. The pump is 78% efficient. What power must be supplied to the pump?  Use 9.81 kN/m^{3}.",
+     "idea": "The power added to the water is (specific weight) × Q × H. The pump must be supplied more than that because of its losses: brake power = water power / efficiency.",
      "steps": "Water power = 9.81 × 0.10 × 36 = 35.32 kW.\n\nBrake power = \\frac{35.32}{0.78} = 45.3 kW.",
      "answer": "45.3 kW",
      "value": 45.276923
@@ -235,6 +283,7 @@
     {
      "family": "water-0009",
      "problem": "A pump delivers 150 L/s at 1,150 rpm. Using the affinity laws, what flow does it deliver at 1,750 rpm?",
+     "idea": "The pump affinity laws relate performance at two speeds for the same impeller: flow varies with speed, head with speed squared and power with speed cubed.",
      "steps": "Q_{2} = Q_{1} × \\frac{N_{2}}{N_{1}} = 150 × \\frac{1,750}{1,150} = 228.3 L/s. The head would change by a factor of (1,750 / 1,150)^{2} = 2.32.",
      "answer": "228.3 L/s",
      "value": 228.26087
@@ -250,6 +299,14 @@
       "scaling laws"
      ]
     }
+   ],
+   "deep": "A pump adds energy to water, measured as head. The total dynamic head it must supply is the static lift plus friction and minor losses plus any pressure difference. Water power is specific weight × flow × head; the shaft must supply that divided by the pump efficiency.\n\nThe pump curve shows the head a pump delivers at each flow, and the system curve shows the head the piping needs. They cross at the operating point. Pumps in series add heads at the same flow; pumps in parallel add flows at the same head. The affinity laws scale flow, head and power with speed. Net positive suction head available must exceed that required, or the pump cavitates.",
+   "method": [
+    "Compute the total dynamic head from the energy equation between the two reservoirs.",
+    "Compute water power, then divide by efficiency for shaft power.",
+    "For two pumps, build the combined curve: add heads (series) or flows (parallel).",
+    "Find the operating point where pump and system curves meet.",
+    "For a speed change, apply the affinity laws."
    ]
   },
   {
@@ -307,6 +364,7 @@
     {
      "family": "water-0010",
      "problem": "A town of 60,000 people uses an average of 380 L per person per day. The maximum-day peaking factor is 1.7. What is the maximum-day demand?",
+     "idea": "Average day demand is population × per capita use. Treatment plants and sources are sized for the maximum day, found by applying a peaking factor to the average.",
      "steps": "Average day = 60,000 × 380 L = 22,800 m^{3}/day.\n\nMaximum day = 1.7 × 22,800 = 38,760 m^{3}/day.",
      "answer": "38,760 m^{3}/day",
      "value": 38760.0
@@ -314,6 +372,7 @@
     {
      "family": "water-0011",
      "problem": "The water surface in an elevated tank is 46 m above a hydrant. With no flow in the system, what is the pressure at the hydrant? Use 9.81 kN/m^{3}.",
+     "idea": "With no flow there are no friction losses, so the pressure anywhere in the system is hydrostatic: specific weight × the height of the water surface above that point.",
      "steps": "p = 9.81 × 46 = 451.3 kPa.",
      "answer": "451.3 kPa",
      "value": 451.26,
@@ -332,6 +391,14 @@
       "pressure field in a static liquid"
      ]
     }
+   ],
+   "deep": "A distribution system delivers water at adequate pressure for peak and fire demands. Demand varies through the day, so average, maximum-day and peak-hour demands are related by peaking factors, and storage evens out the difference between supply and use.\n\nIn a network, flow splits between parallel pipes so that the head loss is the same along each path, and flow is conserved at every junction. The hydraulic grade line shows pressure head plus elevation along the system; pressure at any point is the height of the grade line above the pipe times the specific weight.",
+   "method": [
+    "Compute demands from population, per capita use and peaking factors.",
+    "For static pressure, multiply the specific weight by the height of the water surface above the point.",
+    "With flow, subtract the friction losses from the available head.",
+    "For parallel pipes, set head losses equal and flows adding to the total.",
+    "Size storage for equalising, fire and emergency volumes."
    ]
   },
   {
@@ -378,6 +445,7 @@
     {
      "family": "water-0012",
      "problem": "What is the probability that a 100-year flood is equalled or exceeded at least once in a 50-year period?",
+     "idea": "A T-year event has probability 1/T in any one year. The chance that it does not occur in n independent years is (1 - 1/T)^{n}, so the risk of at least one occurrence is 1 - (1 - 1/T)^{n}.",
      "steps": "p = 1 / 100 = 0.010 per year.\n\nRisk = 1 - (1 - 0.010)^{50} = 1 - 0.6050 = 0.395.",
      "answer": "0.395",
      "value": 0.394994
@@ -385,12 +453,20 @@
     {
      "family": "water-0013",
      "problem": "What is the annual exceedance probability of a 500-year flood?",
+     "idea": "The return period is the average interval between events of a given size or larger. Its reciprocal is the probability of that event being equalled or exceeded in any single year.",
      "steps": "Annual exceedance probability = \\frac{1}{T} = \\frac{1}{500} = 0.002 = 0.2%.",
      "answer": "0.2%",
      "value": 0.2
     }
    ],
-   "lookup": []
+   "lookup": [],
+   "deep": "Flood control starts with frequency. A T-year flood has a probability of 1/T of being equalled or exceeded in any one year, and the chance of at least one occurrence in n years is 1 - (1 - 1/T)^{n}. Design levels for structures follow from the acceptable risk over their life.\n\nControl measures either store water (reservoirs and detention basins, which lower and delay the peak), convey it (channels and levees) or keep people out of its way (floodplain management). Routing a flood through storage uses the continuity equation: inflow minus outflow equals the change in storage.",
+   "method": [
+    "Convert the return period to annual probability.",
+    "For risk over a period, compute 1 minus the probability of no exceedance.",
+    "For storage, apply inflow minus outflow times the time step.",
+    "Compare the reduced peak outflow with the capacity downstream."
+   ]
   },
   {
    "id": "water-f-lesson",
@@ -431,6 +507,7 @@
     {
      "family": "water-0014",
      "problem": "Stormwater flows into a detention basin at 4.2 m^{3}/s and leaves at 1.6 m^{3}/s for 25 minutes. How much water is stored in the basin during that time?",
+     "idea": "Storage routing is a volume balance: the change in storage equals inflow minus outflow, multiplied by the time step. Convert the time to seconds to match flows in m^{3}/s.",
      "steps": "Change in storage = (inflow - outflow) × time = (4.2 - 1.6) × (25 × 60) = 2.6 × 1,500 = 3,900 m^{3}.",
      "answer": "3,900 m^{3}",
      "value": 3900.0
@@ -438,6 +515,7 @@
     {
      "family": "water-0015",
      "problem": "Development raises a site's runoff coefficient from 0.35 to 0.75. With the same rainfall intensity and area, by what factor does the rational-method peak flow increase?",
+     "idea": "In Q = C i A, peak flow is directly proportional to the runoff coefficient when intensity and area are unchanged. The ratio of the coefficients is the ratio of the peak flows.",
      "steps": "\\frac{Q_{after}}{Q_{before}} = \\frac{C_{2}}{C_{1}} = \\frac{0.75}{0.35} = 2.14.",
      "answer": "2.14",
      "value": 2.142857
@@ -451,6 +529,13 @@
       "rational formula"
      ]
     }
+   ],
+   "deep": "Stormwater design keeps runoff from development from damaging what lies downstream. Paving raises the runoff coefficient and shortens the time of concentration, so peaks rise sharply. Collection systems, the inlets, gutters and storm sewers, are sized for the peak flow from the rational method.\n\nDetention basins hold the difference between the developed and pre-development hydrographs and release it at a controlled rate through an outlet such as an orifice or weir. Retention basins and infiltration practices also treat water quality.",
+   "method": [
+    "Compute pre- and post-development peak flows.",
+    "Size pipes with Manning's equation for the design flow.",
+    "Estimate the required detention volume from the difference between inflow and allowed outflow over the storm.",
+    "Size the outlet with the orifice or weir equation for the allowed release."
    ]
   },
   {
@@ -497,6 +582,7 @@
     {
      "family": "water-0016",
      "problem": "A 375 mm diameter sewer flows full on a slope of 0.004 with Manning's n = 0.013. What is the flow velocity?",
+     "idea": "Manning's equation for velocity (SI): V = (1/n) R^{2/3} S^{1/2}. For a circular pipe flowing full the hydraulic radius is D / 4.",
      "steps": "R = D / 4 = 0.375 / 4 = 0.0938 m.\n\nV = \\frac{1}{0.013}(0.0938)^{2/3}(0.004)^{1/2} = 1.004 m/s.",
      "answer": "1.004 m/s",
      "value": 1.004001
@@ -504,6 +590,7 @@
     {
      "family": "water-0017",
      "problem": "A sewer serves 20,000 people who each generate 320 L of wastewater per day. With a peaking factor of 2.8, what is the peak flow?",
+     "idea": "Sewers are sized for peak flow, the average flow multiplied by a peaking factor that is larger for small populations. Convert daily volume to L/s by dividing by 86,400 s per day.",
      "steps": "Average flow = 20,000 × 320 = 6,400,000 L/day = \\frac{6,400,000}{86,400} = 74.1 L/s.\n\nPeak flow = 2.8 × 74.1 = 207.4 L/s.",
      "answer": "207.4 L/s",
      "value": 207.407407
@@ -517,6 +604,14 @@
       "Manning's equation"
      ]
     }
+   ],
+   "deep": "Wastewater collection systems are mostly gravity sewers flowing partly full. They are sized for peak flow, the average flow times a peaking factor, plus infiltration and inflow, and are laid at slopes that keep velocity high enough to move solids, commonly at least 0.6 m/s (2 ft/s).\n\nManning's equation governs. A circular pipe carries its greatest flow at about 93% of full depth, and its velocity when half full equals that when full. Lift stations and force mains are used where gravity flow is not possible.",
+   "method": [
+    "Compute average flow from population and per capita flow, then apply the peaking factor.",
+    "Choose a diameter and slope and compute full-pipe capacity with Manning's equation.",
+    "Check that capacity exceeds the peak flow.",
+    "Check the self-cleansing velocity at low flow.",
+    "Use partial-flow relations if depth or velocity at a given flow is asked."
    ]
   },
   {
@@ -568,6 +663,7 @@
     {
      "family": "water-0005",
      "problem": "An aquifer has a hydraulic conductivity of 20 m/day and a hydraulic gradient of 0.006. What is the flow through a cross-section of 1,200 m^{2}?",
+     "idea": "Darcy's law for groundwater: Q = K i A. The hydraulic gradient i is the drop in head per unit distance along the flow path and has no units.",
      "steps": "Q = K i A = 20 × 0.006 × 1,200 = 144 m^{3}/day.",
      "answer": "144 m^{3}/day",
      "value": 144.0
@@ -575,6 +671,7 @@
     {
      "family": "water-0018",
      "problem": "Groundwater moves through an aquifer with a hydraulic conductivity of 30 m/day, a hydraulic gradient of 0.005 and a porosity of 0.25. What is the average seepage velocity?",
+     "idea": "Darcy velocity, K i, is flow per unit of total cross-section. Water only moves through the pores, so the actual average (seepage) velocity is larger: v = K i / n. Use seepage velocity for travel times of contaminants.",
      "steps": "Darcy velocity = 30 × 0.005 = 0.15 m/day.\n\nSeepage velocity = \\frac{0.15}{0.25} = 0.6 m/day.",
      "answer": "0.6 m/day",
      "value": 0.6
@@ -589,6 +686,14 @@
       "seepage velocity"
      ]
     }
+   ],
+   "deep": "Groundwater moves through the pores of soil and rock under a hydraulic gradient, following Darcy's law, Q = K i A. An unconfined aquifer has a water table free to rise and fall; a confined aquifer is under pressure between less permeable layers.\n\nDarcy velocity is flow over the total area; the actual seepage velocity is higher, Darcy velocity divided by effective porosity, because water moves only through the pores. Pumping a well draws down the water surface around it in a cone, and the steady-state well equations relate the pumping rate to drawdowns at two radii.",
+   "method": [
+    "Compute the hydraulic gradient: head difference over flow length.",
+    "Apply Darcy's law for flow.",
+    "Divide by porosity for travel velocity and time.",
+    "For a well, choose the confined or unconfined equation and use two observation points.",
+    "Transmissivity is hydraulic conductivity times the saturated thickness."
    ]
   },
   {
@@ -635,6 +740,7 @@
     {
      "family": "water-0019",
      "problem": "A 8 mL wastewater sample is diluted to 300 mL in a BOD bottle. The dissolved oxygen falls from 8.4 mg/L to 3.2 mg/L in five days. What is the BOD_{5}?",
+     "idea": "BOD is the oxygen consumed by microorganisms while they break down organic matter. In a diluted test, the drop in dissolved oxygen is divided by the fraction of the bottle that is sample: BOD = (DO_{initial} - DO_{final}) / P, with P = sample volume / bottle volume.",
      "steps": "Dilution fraction P = 8 / 300 = 0.0267.\n\nBOD_{5} = \\frac{8.4 - 3.2}{0.0267} = 5.2 × 37.5 = 195 mg/L.",
      "answer": "195 mg/L",
      "value": 195.0
@@ -642,6 +748,7 @@
     {
      "family": "water-0020",
      "problem": "A water sample contains 70 mg/L of calcium and 20 mg/L of magnesium. What is the total hardness, expressed as mg/L of CaCO_{3}? Use equivalent weights of 20 for calcium, 12.2 for magnesium and 50 for CaCO_{3}.",
+     "idea": "Hardness is the sum of the multivalent cations, mainly calcium and magnesium, each converted to its CaCO_{3} equivalent: concentration × (50 / equivalent weight of the ion).",
      "steps": "Calcium: 70 × \\frac{50}{20} = 175.0 mg/L as CaCO_{3}.\n\nMagnesium: 20 × \\frac{50}{12.2} = 82.0 mg/L as CaCO_{3}.\n\nTotal hardness = 175.0 + 82.0 = 257.0 mg/L as CaCO_{3}.",
      "answer": "257.0 mg/L as CaCO_{3}",
      "value": 256.967213
@@ -657,6 +764,14 @@
       "equivalent weight"
      ]
     }
+   ],
+   "deep": "Water quality is described by what is dissolved or suspended in the water. Dissolved oxygen supports aquatic life and is used up as microorganisms break down organic matter, which is what BOD measures. BOD is exerted as a first-order reaction, approaching an ultimate value. Oxygen in a stream below a discharge falls and then recovers, the oxygen sag.\n\nConcentrations are stated in mg/L, and mass loadings follow from flow times concentration. When two streams mix, the combined concentration is the flow-weighted average. Hardness and alkalinity are expressed as CaCO_{3} equivalents using equivalent weights.",
+   "method": [
+    "For mixing, compute (Q_{1}C_{1} + Q_{2}C_{2}) / (Q_{1} + Q_{2}).",
+    "For BOD at time t, use the first-order expression with the rate constant given.",
+    "For a diluted BOD test, divide the oxygen drop by the sample fraction.",
+    "For mass loading, multiply flow by concentration and convert units.",
+    "Convert ions to CaCO_{3} equivalents by multiplying by 50 over the ion's equivalent weight."
    ]
   },
   {
@@ -710,6 +825,7 @@
     {
      "family": "water-0021",
      "problem": "Five machines each produce a sound level of 85 dB at a receiver. What is the combined sound level when all of them run?",
+     "idea": "Decibels are logarithmic, so sound levels cannot be added directly. For n equal sources the combined level is L + 10 log_{10}(n): two equal sources add 3 dB, ten add 10 dB.",
      "steps": "Combined level = 85 + 10 log_{10}(5) = 85 + 7.0 = 92 dB.",
      "answer": "92 dB",
      "value": 91.9897
@@ -724,6 +840,13 @@
       "noise"
      ]
     }
+   ],
+   "deep": "Testing and standards tie water quality to law. Drinking water must meet maximum contaminant levels; wastewater discharges must meet permit limits. Each parameter has a standard test, and results are compared with the limit as an average or a maximum over a stated period.\n\nSampling matters as much as analysis: where, when and how the sample is taken decides what it represents. Indicator organisms stand in for pathogens because they are easier to detect.",
+   "method": [
+    "Identify the parameter and the standard that governs it.",
+    "Decide whether the limit is enforceable or a goal.",
+    "Compute removal efficiency as (in - out) / in when a percentage is required.",
+    "Compare the result with the limit on the same averaging basis."
    ]
   },
   {
@@ -780,6 +903,7 @@
     {
      "family": "water-0004",
      "problem": "A sedimentation tank has a volume of 2,700 m^{3} and treats a flow of 14,400 m^{3}/day. What is the detention time?",
+     "idea": "Hydraulic detention time is the average time water spends in a tank: volume divided by flow rate. Watch the time units; a flow in m^{3}/day gives a time in days.",
      "steps": "t = \\frac{V}{Q} = \\frac{2,700}{14,400} = 0.188 days = 0.188 × 24 = 4.5 h.",
      "answer": "4.5 h",
      "value": 4.5
@@ -787,6 +911,7 @@
     {
      "family": "water-0023",
      "problem": "A clarifier treats 15,000 m^{3}/day and has a surface area of 420 m^{2}. What is its surface overflow rate?",
+     "idea": "The surface overflow rate, Q / A, is the upward velocity of water in a clarifier. A particle is removed if its settling velocity is at least the overflow rate, so the rate is the key design parameter and depth does not appear.",
      "steps": "Overflow rate = \\frac{Q}{A} = \\frac{15,000}{420} = 35.7 m^{3}/m^{2}·day, or 35.7 m/day.",
      "answer": "35.7 m/day",
      "value": 35.714286
@@ -794,6 +919,7 @@
     {
      "family": "water-0024",
      "problem": "A plant treats 36,000 m^{3}/day and applies a chlorine dose of 2.5 mg/L. How much chlorine is used per day?",
+     "idea": "Mass feed rate = flow × concentration. A dose of 1 mg/L is 1 g/m^{3}, so m^{3}/day × mg/L gives g/day; divide by 1,000 for kg/day.",
      "steps": "Chlorine = 36,000 m^{3}/day × 2.5 g/m^{3} = 90,000 g/day = 90.0 kg/day.",
      "answer": "90 kg",
      "value": 90.0
@@ -810,6 +936,14 @@
       "clarifier"
      ]
     }
+   ],
+   "deep": "Treatment is a chain of unit processes, each removing a class of contaminants. Conventional drinking water treatment is coagulation, flocculation, sedimentation, filtration and disinfection. Wastewater treatment is preliminary screening and grit removal, primary settling, biological secondary treatment such as activated sludge, secondary settling and disinfection.\n\nTanks are sized by a few simple ratios: detention time is volume over flow, overflow rate is flow over surface area and weir loading is flow over weir length. Chemical feed is flow times dose. Activated sludge adds the food-to-microorganism ratio and solids retention time. Disinfection is judged by concentration times contact time.",
+   "method": [
+    "Identify the process and its design parameter.",
+    "Compute detention time as volume / flow in consistent time units.",
+    "Compute overflow rate as flow / surface area.",
+    "Compute chemical mass as flow × dose, with 1 mg/L equal to 1 g/m^{3} or 8.34 lb per million gallons.",
+    "Compare the result with typical design ranges if given."
    ]
   }
  ]

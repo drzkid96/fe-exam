@@ -21,7 +21,34 @@
      "where": "Topic IX, Mechanics of Materials"
     }
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-13",
+   "links": [
+    {
+     "label": "Mark Mattson, FE review session: Mechanics of Materials (video)",
+     "url": "https://www.youtube.com/watch?v=FF7-VOutTwM",
+     "note": "A full problem-solving session on this topic."
+    },
+    {
+     "label": "EngineerOnUp exam prep page",
+     "url": "https://engineeronup.pages.dev/examprep.html",
+     "note": "The problem sets that go with those sessions, one per topic."
+    },
+    {
+     "label": "Marshall University FE review lectures (playlist)",
+     "url": "https://www.youtube.com/playlist?list=PLCV9OyAY5K-V-bki_dxxq_uVpyIoyIJ8P",
+     "note": "Recorded review classes covering each civil topic."
+    },
+    {
+     "label": "Texas A&M FE review material",
+     "url": "https://fereview.engr.tamu.edu/",
+     "note": "Review notes and links, including the NCEES examinee videos."
+    },
+    {
+     "label": "NCEES FE Civil exam specifications",
+     "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
+     "note": "The official list of topics and question counts."
+    }
+   ]
   },
   {
    "id": "mechmat-a-lesson",
@@ -78,6 +105,7 @@
     {
      "family": "mechmat-0003",
      "problem": "A simply supported beam spans 12 m and carries a uniform load of 15 kN/m over its full length. What is the maximum bending moment?",
+     "idea": "For a simply supported beam under full uniform load, shear is zero at midspan, so the moment peaks there: M_{max} = w L^{2} / 8. It equals the area under the shear diagram from the support to midspan.",
      "steps": "Reaction = 15(12) / 2 = 90 kN.\n\nM_{max} = \\frac{w L^{2}}{8} = \\frac{15(12)^{2}}{8} = 270 kN·m, at midspan.",
      "answer": "270 kN·m",
      "value": 270.0,
@@ -90,6 +118,7 @@
     {
      "family": "mechmat-0008",
      "problem": "A simply supported beam spans 12 m and carries a uniform load of 15 kN/m. What is the maximum shear force?",
+     "idea": "Shear is largest where the beam meets its supports and equals the reaction there. For a full uniform load each reaction is w L / 2, and shear falls linearly to zero at midspan.",
      "steps": "V_{max} = \\frac{w L}{2} = \\frac{15(12)}{2} = 90 kN, at each support.",
      "answer": "90 kN",
      "value": 90.0,
@@ -109,6 +138,14 @@
       "simply supported beam"
      ]
     }
+   ],
+   "deep": "Shear and moment diagrams show the internal forces along a beam. They are linked by calculus: the slope of the shear diagram is the negative of the load intensity, and the slope of the moment diagram is the shear. So shear is constant where there is no load and linear under a uniform load, while moment is linear where shear is constant and parabolic where shear is linear.\n\nThe maximum moment occurs where shear is zero or changes sign. A point load makes shear jump; a couple makes moment jump. The change in moment between two points equals the area under the shear diagram between them.",
+   "method": [
+    "Find the reactions.",
+    "Start at the left end and track shear: jump at point loads, slope under distributed loads.",
+    "Locate where shear crosses zero.",
+    "Compute the moment there as the area under the shear diagram up to that point.",
+    "Check that shear and moment return to zero at free or simply supported ends."
    ]
   },
   {
@@ -180,6 +217,7 @@
     {
      "family": "mechmat-0001",
      "problem": "A 32 mm diameter steel rod carries a 150 kN tensile load. What is the axial stress?",
+     "idea": "Average normal stress is force divided by the cross-sectional area perpendicular to the force. With newtons and square millimetres the result is in MPa.",
      "steps": "A = \\frac{π(32)^{2}}{4} = 804.2 mm^{2}.\n\nStress = \\frac{P}{A} = \\frac{150,000 N}{804.2 mm^{2}} = 186.5 MPa.",
      "answer": "186.5 MPa",
      "value": 186.509699,
@@ -192,6 +230,7 @@
     {
      "family": "mechmat-0005",
      "problem": "A rectangular beam is 250 mm wide and 500 mm deep. It carries a bending moment of 250 kN·m about its strong axis. What is the maximum bending stress?",
+     "idea": "Bending stress varies linearly from zero at the neutral axis to a maximum at the extreme fibre: stress = M c / I = M / S. For a rectangle the section modulus is S = b h^{2} / 6.",
      "steps": "S = \\frac{b h^{2}}{6} = \\frac{250(500)^{2}}{6} = 10,416,667 mm^{3}.\n\nStress = \\frac{M}{S} = \\frac{250 × 10^{6} N·mm}{10,416,667 mm^{3}} = 24.0 MPa.",
      "answer": "24.0 MPa",
      "value": 24.0,
@@ -204,6 +243,7 @@
     {
      "family": "mechmat-0009",
      "problem": "A solid circular shaft 75 mm in diameter carries a torque of 6 kN·m. What is the maximum shear stress?",
+     "idea": "Torsional shear stress in a circular shaft grows linearly with radius: stress = T r / J. For a solid shaft J = π d^{4} / 32, so the maximum, at the surface, is 16 T / (π d^{3}).",
      "steps": "Maximum shear stress = \\frac{16 T}{π d^{3}} = \\frac{16(6 × 10^{6})}{π(75)^{3}} = 72.4 MPa.",
      "answer": "72.4 MPa",
      "value": 72.433183
@@ -211,6 +251,7 @@
     {
      "family": "mechmat-0010",
      "problem": "A metal bar is held rigidly between two walls and heated by 75 °C. Its coefficient of thermal expansion is 12 × 10^{-6} per °C and E = 200 GPa. What compressive stress develops?",
+     "idea": "A free bar would lengthen by (coefficient × temperature change × L). The walls prevent that, which is the same as compressing the bar by the same strain. Stress = E × coefficient × temperature change, independent of length and area.",
      "steps": "Restrained strain = 12 × 10^{-6} × 75 = 900 × 10^{-6}.\n\nStress = E × strain = (200,000 MPa)(900 × 10^{-6}) = 180.0 MPa (compression).",
      "answer": "180.0 MPa",
      "value": 180.0
@@ -230,6 +271,14 @@
       "thermal deformations"
      ]
     }
+   ],
+   "deep": "Stress is force per unit area and strain is deformation per unit length. Normal stress acts perpendicular to a surface and shear stress acts along it. In the elastic range they are proportional: normal stress = E × strain, shear stress = G × shear strain, with G = E / (2(1 + Poisson's ratio)).\n\nEach loading has its own formula: P / A for axial load, M c / I for bending, T r / J for torsion of round shafts, V Q / (I b) for transverse shear, p r / t for thin pressure vessels. Recognising the loading is most of the work.",
+   "method": [
+    "Identify the loading: axial, bending, torsion, shear or pressure.",
+    "Compute the section property the formula needs: A, I, J or Q.",
+    "Work in N, mm and MPa, or lb, in and psi.",
+    "Find the location of maximum stress: extreme fibre for bending, outer surface for torsion, neutral axis for shear.",
+    "Compare with the allowable stress if asked, using the factor of safety."
    ]
   },
   {
@@ -287,6 +336,7 @@
     {
      "family": "mechmat-0002",
      "problem": "A rod is 32 mm in diameter and 5 m long. It carries a 150 kN tensile load. The modulus of elasticity is 200 GPa. How much does the rod stretch?",
+     "idea": "In the elastic range, stress = E × strain. Combining stress = P/A and strain = elongation/L gives elongation = P L / (A E). Keep units consistent: N, mm and MPa.",
      "steps": "A = \\frac{π(32)^{2}}{4} = 804.2 mm^{2}.\n\nElongation = \\frac{P L}{A E} = \\frac{(150,000)(5,000)}{(804.2)(200,000)} = 4.66 mm.",
      "answer": "4.66 mm",
      "value": 4.662742,
@@ -299,6 +349,7 @@
     {
      "family": "mechmat-0011",
      "problem": "A steel rail 30 m long warms by 45 °C. Its coefficient of thermal expansion is 12 × 10^{-6} per °C. How much longer does it get if it is free to expand?",
+     "idea": "Free thermal expansion: change in length = coefficient × temperature change × original length. No stress develops because nothing resists the movement.",
      "steps": "Change in length = (12 × 10^{-6})(45)(30,000 mm) = 16.20 mm.",
      "answer": "16.20 mm",
      "value": 16.2
@@ -315,6 +366,14 @@
       "thermal deformations"
      ]
     }
+   ],
+   "deep": "Deformation follows from stress through the material's stiffness. An axial member changes length by P L / (A E), a shaft twists by T L / (G J) and a temperature change causes a strain of the expansion coefficient times the temperature change. Members in series add their deformations; members in parallel share load in proportion to their stiffness.\n\nWhen a structure is restrained so that it cannot deform freely, the problem is statically indeterminate and needs a compatibility equation: the deformations must fit the supports. Beam deflections come from the handbook's table and can be superposed.",
+   "method": [
+    "Write the deformation formula for each segment.",
+    "For members in series, add the segment deformations.",
+    "For a restrained system, write the free deformation, then the deformation caused by the unknown restraining force, and set their sum to the allowed movement.",
+    "Solve for the force, then the stress.",
+    "Check units, keeping E in MPa with N and mm."
    ]
   },
   {
@@ -377,6 +436,7 @@
     {
      "family": "mechmat-0004",
      "problem": "At a point in a plate, the normal stresses on two perpendicular faces are 60 MPa and -60 MPa (tension positive). The shear stress on those faces is 80 MPa. What is the maximum principal stress?",
+     "idea": "Principal stresses are the largest and smallest normal stresses at a point, found on the planes where shear is zero. On Mohr's circle the centre is the average normal stress and the radius is the square root of ((difference/2)^{2} + shear^{2}); the maximum principal stress is centre + radius.",
      "steps": "Centre = \\frac{60 + (-60)}{2} = 0 MPa.\n\nRadius = \\sqrt{(\\frac{60 - (-60)}{2})^{2} + 80^{2}} = 100 MPa.\n\nMaximum principal stress = 0 + 100 = 100 MPa.",
      "answer": "100 MPa",
      "value": 100.0,
@@ -389,6 +449,7 @@
     {
      "family": "mechmat-0012",
      "problem": "The principal stresses at a point are 140 MPa in tension and 80 MPa in compression. What is the maximum in-plane shear stress?",
+     "idea": "The maximum in-plane shear stress is the radius of Mohr's circle, half the difference between the principal stresses. Compression is negative, so a tension and a compression add when you take the difference.",
      "steps": "Maximum shear = \\frac{140 - (-80)}{2} = \\frac{220}{2} = 110 MPa.",
      "answer": "110 MPa",
      "value": 110.0
@@ -396,6 +457,7 @@
     {
      "family": "mechmat-0013",
      "problem": "A thin-walled cylindrical tank has a radius of 900 mm and a wall thickness of 18 mm. The internal pressure is 1.6 MPa. What is the hoop stress in the wall?",
+     "idea": "In a thin-walled cylinder the circumferential (hoop) stress is p r / t and the longitudinal stress is p r / (2 t). The hoop stress is twice the longitudinal stress, which is why such vessels split along their length.",
      "steps": "Hoop stress = \\frac{p r}{t} = \\frac{1.6(900)}{18} = 80 MPa. The longitudinal stress is half of that, 40 MPa.",
      "answer": "80 MPa",
      "value": 80.0
@@ -412,6 +474,14 @@
       "cylindrical pressure vessel"
      ]
     }
+   ],
+   "deep": "Stress at a point depends on the orientation of the plane you look at. Rotating the element changes the normal and shear stresses, and Mohr's circle maps every orientation onto a circle. Its centre is the average normal stress and its radius is the maximum in-plane shear stress. The principal stresses are the largest and smallest normal stresses, where shear is zero, and sit at the ends of the horizontal diameter.\n\nAn angle on the element is doubled on the circle, so principal planes are 45° from maximum-shear planes. Combined loading problems simply add the stresses from each loading at the point before building the circle.",
+   "method": [
+    "Find the stresses on the x and y faces at the point, adding the contributions of each loading.",
+    "Compute the centre: the average of the two normal stresses.",
+    "Compute the radius: square root of (half the difference)^{2} plus the shear stress squared.",
+    "Principal stresses are centre plus and minus radius; maximum in-plane shear is the radius.",
+    "Check: the two principal stresses must add up to the sum of the original normal stresses."
    ]
   }
  ]

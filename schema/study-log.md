@@ -8,7 +8,7 @@ The study log lives in the site's own database, not in this repository. The site
 |---|---|---|
 | `sessions/<id>` | After every checked answer, and again when the session ends | One study session with its attempts |
 | `meta/flags` | A question is flagged or unflagged | `{items: {questionId: {at}}}` |
-| `meta/settings` | A setting changes | `{examDate, dailyGoal, sessionLength, handbookUrl}` |
+| `meta/settings` | A setting changes | `{examDate, dailyGoal, sessionLength, handbookUrl, resets: {all, topics, families, log}}`. A reset is a time mark; answers logged before it stop counting but stay in the log. |
 | `asks/<id>` | *Explain further with Claude* is used | `{id, at, kind, prompt, on: "question" or "lesson", qid, family, topic, subtopic, correct}` or `{..., lesson}`. `kind` is the preset (`steps`, `wrong`, `formula`, `similar`, `simpler`, `example`, `quiz`, `exam`) or `own` for a typed question. Claude's reply is not stored. |
 
 Only the site owner can read or write these documents.

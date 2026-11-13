@@ -21,7 +21,34 @@
      "where": "Topic VIII, Dynamics"
     }
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-13",
+   "links": [
+    {
+     "label": "Mark Mattson, FE review session: Dynamics (video)",
+     "url": "https://www.youtube.com/watch?v=A6HT9FGays8",
+     "note": "A full problem-solving session on this topic."
+    },
+    {
+     "label": "EngineerOnUp exam prep page",
+     "url": "https://engineeronup.pages.dev/examprep.html",
+     "note": "The problem sets that go with those sessions, one per topic."
+    },
+    {
+     "label": "Marshall University FE review lectures (playlist)",
+     "url": "https://www.youtube.com/playlist?list=PLCV9OyAY5K-V-bki_dxxq_uVpyIoyIJ8P",
+     "note": "Recorded review classes covering each civil topic."
+    },
+    {
+     "label": "Texas A&M FE review material",
+     "url": "https://fereview.engr.tamu.edu/",
+     "note": "Review notes and links, including the NCEES examinee videos."
+    },
+    {
+     "label": "NCEES FE Civil exam specifications",
+     "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
+     "note": "The official list of topics and question counts."
+    }
+   ]
   },
   {
    "id": "dynamics-a-lesson",
@@ -88,6 +115,7 @@
     {
      "family": "dynamics-0001",
      "problem": "A car starts from rest and accelerates uniformly to 36 m/s in 10 s. How far does it travel in that time?",
+     "idea": "With constant acceleration, velocity rises linearly, so the average velocity is the mean of the start and end values. Distance = average velocity × time, which is the area under the velocity-time line.",
      "steps": "Acceleration a = 36 / 10 = 3.60 m/s^{2}.\n\ns = \\frac{1}{2} a t^{2} = \\frac{1}{2}(3.60)(10)^{2} = 180.0 m.\n\nCheck: average speed 18 m/s × 10 s = 180.0 m.",
      "answer": "180.0 m",
      "value": 180.0
@@ -95,6 +123,7 @@
     {
      "family": "dynamics-0005",
      "problem": "A ball is launched from level ground at 40 m/s, at 45° above the horizontal. Ignoring air resistance, how far away does it land? Use g = 9.81 m/s^{2}.",
+     "idea": "Projectile motion is constant horizontal velocity combined with constant downward acceleration. On level ground the time of flight is 2 v sin(angle) / g, and the range is R = v^{2} sin(2 × angle) / g.",
      "steps": "Time of flight = \\frac{2(40) sin 45°}{9.81} = 5.77 s.\n\nHorizontal speed = 40 cos 45° = 28.28 m/s.\n\nRange = 28.28 × 5.77 = 163.1 m.",
      "answer": "163.1 m",
      "value": 163.098879,
@@ -107,6 +136,7 @@
     {
      "family": "dynamics-0006",
      "problem": "A car travels at a constant 18 m/s around a curve of radius 90 m. What is its acceleration toward the centre of the curve?",
+     "idea": "Constant speed on a curve still means acceleration, because the direction of the velocity changes. The normal (centripetal) acceleration is v^{2} / r, directed toward the centre of curvature.",
      "steps": "a_{n} = \\frac{v^{2}}{r} = \\frac{18^{2}}{90} = 3.60 m/s^{2}.",
      "answer": "3.60 m/s^{2}",
      "value": 3.6
@@ -123,6 +153,14 @@
       "normal and tangential components"
      ]
     }
+   ],
+   "deep": "Kinematics describes motion without asking what causes it. Position, velocity and acceleration are linked by differentiation and integration. With constant acceleration three equations cover everything: v = v_{0} + a t, s = s_{0} + v_{0} t + a t^{2}/2 and v^{2} = v_{0}^{2} + 2 a (s - s_{0}).\n\nProjectile motion is two independent motions: constant velocity horizontally and constant acceleration g vertically, linked only by time. On a curved path acceleration has a tangential part (change in speed) and a normal part v^{2} / r (change in direction).",
+   "method": [
+    "List the knowns and the unknown and choose a positive direction.",
+    "Pick the constant-acceleration equation that contains exactly those quantities.",
+    "For a projectile, write separate x and y equations and solve the one with a single unknown first, usually for time.",
+    "For curved motion, compute the normal acceleration from v^{2} / r.",
+    "Check signs and that times are positive."
    ]
   },
   {
@@ -174,6 +212,7 @@
     {
      "family": "dynamics-0004",
      "problem": "A thin uniform rod has a mass of 15 kg and a length of 3 m. What is its mass moment of inertia about an axis through one end, perpendicular to the rod?",
+     "idea": "For a slender rod, I = m L^{2} / 12 about its centre. The parallel axis theorem moves it to the end: I = m L^{2} / 12 + m (L/2)^{2} = m L^{2} / 3. Moving the axis away from the centre of mass always increases I.",
      "steps": "I_{end} = \\frac{m L^{2}}{3} = \\frac{15(3)^{2}}{3} = 45 kg·m^{2}.",
      "answer": "45 kg·m^{2}",
      "value": 45.0
@@ -181,6 +220,7 @@
     {
      "family": "dynamics-0007",
      "problem": "A solid uniform disk has a mass of 30 kg and a radius of 0.25 m. What is its mass moment of inertia about its central axis?",
+     "idea": "For a solid disk or cylinder about its axis, I = m r^{2} / 2. A thin ring with the same mass and radius has I = m r^{2}, twice as much, because all its mass sits at the full radius.",
      "steps": "I = \\frac{1}{2} m r^{2} = \\frac{1}{2}(30)(0.25)^{2} = 0.938 kg·m^{2}.",
      "answer": "0.938 kg·m^{2}",
      "value": 0.9375
@@ -195,6 +235,14 @@
       "parallel axis"
      ]
     }
+   ],
+   "deep": "The mass moment of inertia is a body's resistance to angular acceleration, the rotational counterpart of mass. It depends on how far the mass sits from the axis, with distance squared, so a ring has twice the inertia of a solid disk of the same mass and radius.\n\nThe handbook tabulates it for common bodies about their centres of mass. The parallel axis theorem, I = I about the centre of mass + m d^{2}, moves it to any parallel axis. Do not confuse it with the area moment of inertia used in bending; the units differ (kg·m^{2} against m^{4}).",
+   "method": [
+    "Identify the body's shape and the axis of rotation.",
+    "Read the formula for the axis through the centre of mass.",
+    "If the axis is elsewhere, add m d^{2}.",
+    "For a composite body, add the parts about the same axis.",
+    "Check units of mass times length squared."
    ]
   },
   {
@@ -257,6 +305,7 @@
     {
      "family": "dynamics-0002",
      "problem": "A 120 kg crate is pulled along a level floor by a 700 N horizontal force. The coefficient of kinetic friction is 0.35. What is the acceleration of the crate? Use g = 9.81 m/s^{2}.",
+     "idea": "Newton's second law uses the net force. Kinetic friction equals the coefficient times the normal force, and on a level floor with a horizontal pull the normal force equals the weight.",
      "steps": "N = m g = 120(9.81) = 1,177.2 N.\n\nFriction = 0.35 × 1,177.2 = 412.0 N.\n\na = \\frac{700 - 412.0}{120} = 2.40 m/s^{2}.",
      "answer": "2.40 m/s^{2}",
      "value": 2.399833
@@ -264,6 +313,7 @@
     {
      "family": "dynamics-0008",
      "problem": "A block slides down a frictionless incline at 35° to the horizontal. What is its acceleration? Use g = 9.81 m/s^{2}.",
+     "idea": "Resolve the weight along and perpendicular to the slope. Only the component along the slope, m g sin(angle), accelerates the block; the perpendicular component is balanced by the normal force. The mass cancels.",
      "steps": "a = g sin 35° = 9.81 × 0.574 = 5.63 m/s^{2}.",
      "answer": "5.63 m/s^{2}",
      "value": 5.626785,
@@ -276,6 +326,7 @@
     {
      "family": "dynamics-0009",
      "problem": "A net torque of 60 N·m acts on a flywheel with a mass moment of inertia of 8 kg·m^{2}. What is its angular acceleration?",
+     "idea": "Rotation about a fixed axis follows the rotational form of Newton's second law: net torque = I × angular acceleration. It is the direct counterpart of F = m a.",
      "steps": "Angular acceleration = \\frac{T}{I} = \\frac{60}{8} = 7.5 rad/s^{2}.",
      "answer": "7.5 rad/s^{2}",
      "value": 7.5
@@ -292,6 +343,14 @@
       "mass moment of inertia"
      ]
     }
+   ],
+   "deep": "Newton's second law links forces to motion: the net force equals mass times acceleration, in each direction separately. For rotation about a fixed axis the net moment equals the mass moment of inertia times the angular acceleration.\n\nThe free-body diagram is as essential here as in statics; the difference is that the forces no longer sum to zero. Friction uses the kinetic coefficient once the body is moving. In U.S. customary units, mass is weight divided by g.",
+   "method": [
+    "Draw the free-body diagram and choose axes along and across the direction of motion.",
+    "Write the sum of forces = m a along the motion and the sum of forces = 0 across it.",
+    "Find the normal force first when friction is involved.",
+    "Solve for acceleration, then use kinematics for speed, distance or time.",
+    "For rotation, write the sum of moments = I × angular acceleration about the fixed axis."
    ]
   },
   {
@@ -353,6 +412,7 @@
     {
      "family": "dynamics-0003",
      "problem": "A 4 kg ball is dropped from rest from a height of 30 m. Ignoring air resistance, how fast is it moving just before it lands? Use g = 9.81 m/s^{2}.",
+     "idea": "With no air resistance, mechanical energy is conserved: m g h of potential energy becomes (1/2) m v^{2} of kinetic energy. The mass cancels, so v = square root of 2 g h for any object.",
      "steps": "m g h = \\frac{1}{2} m v^{2}, so v = \\sqrt{2 g h} = \\sqrt{2(9.81)(30)} = 24.3 m/s. The 4 kg mass is not needed.",
      "answer": "24.3 m/s",
      "value": 24.26108
@@ -360,6 +420,7 @@
     {
      "family": "dynamics-0010",
      "problem": "A hoist lifts a 2,000 kg load at a constant 1.2 m/s. What power is delivered to the load? Use g = 9.81 m/s^{2}.",
+     "idea": "Power is force times velocity in the direction of the force. At constant speed the hoist force equals the weight, so P = m g v.",
      "steps": "Force = m g = 2,000(9.81) = 19,620 N.\n\nP = F v = 19,620 × 1.2 = 23,544 W = 23.54 kW.",
      "answer": "23.54 kW",
      "value": 23.544
@@ -367,6 +428,7 @@
     {
      "family": "dynamics-0011",
      "problem": "A spring with a stiffness of 3,000 N/m is compressed 0.12 m and released against a 1.5 kg block on a frictionless surface. What speed does the block reach?",
+     "idea": "Energy is conserved: the elastic energy stored in the spring, (1/2) k x^{2}, becomes the kinetic energy of the block, (1/2) m v^{2}.",
      "steps": "\\frac{1}{2}(3,000)(0.12)^{2} = 21.60 J of spring energy.\n\n\\frac{1}{2}(1.5) v^{2} = 21.60, so v = \\sqrt{\\frac{2(21.60)}{1.5}} = 5.37 m/s.",
      "answer": "5.37 m/s",
      "value": 5.366563
@@ -385,6 +447,14 @@
       "work and energy"
      ]
     }
+   ],
+   "deep": "Energy methods relate speeds to positions without solving for acceleration or time. The work done on a body equals its change in kinetic energy. When only gravity and springs act, mechanical energy is conserved: kinetic plus gravitational potential plus elastic potential is constant. Friction removes energy equal to the friction force times the sliding distance.\n\nPower is the rate of doing work, force times velocity. Efficiency is output power over input power. Impulse and momentum handle forces acting over time and collisions, where momentum is conserved and the coefficient of restitution sets the rebound.",
+   "method": [
+    "Choose the two states to compare and a datum for height.",
+    "Write kinetic, gravitational and spring energy at each state.",
+    "Add work done by non-conservative forces (friction is negative).",
+    "Solve the energy balance for the unknown speed or distance.",
+    "For impact, write conservation of momentum, then the restitution equation."
    ]
   }
  ]

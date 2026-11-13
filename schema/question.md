@@ -45,7 +45,7 @@ Plain text plus: `**bold**`, `*italic*`, `` `code` ``, `x_{sub}`, `x^{sup}`, `\f
 
 ## Guide sections
 
-`site/content/guide/<topic>.json` holds `{topic, sections: [...]}`. Each section: `{id, subtopic, title, body, figure, formulas: [{name, expr, handbook}], ideas: [{title, text}], example: {problem, steps}, examples: [{family, problem, steps, answer, value, figure}], pitfalls: [string], lookup: [{section, page, find}], read: [{source, where}], updated}`. `examples` are generated from question templates with numbers that no question uses, and `tools/verify_answers.py` recomputes each one. `body`, `expr` and pitfalls are rich text. A section with `subtopic: null` is the topic overview and shows at the top of the topic page. `read` points into the study materials by name, never by link.
+`site/content/guide/<topic>.json` holds `{topic, sections: [...]}`. Each section: `{id, subtopic, title, body, figure, deep, method: [string], links: [{label, url, note}], formulas: [{name, expr, handbook}], ideas: [{title, text}], example: {problem, steps}, examples: [{family, problem, steps, answer, value, figure}], pitfalls: [string], lookup: [{section, page, find}], read: [{source, where}], updated}`. `examples` are generated from question templates with numbers that no question uses, and `tools/verify_answers.py` recomputes each one. `body`, `expr` and pitfalls are rich text. A section with `subtopic: null` is the topic overview and shows at the top of the topic page. `read` points into the study materials by name, never by link.
 
 ## Handbook map
 

@@ -219,6 +219,10 @@ body.has-claude .ask{display:block}
 .ideas{display:grid;gap:10px}
 .idea{border-left:3px solid var(--pale);padding-left:12px}
 .idea>strong{display:block;color:var(--emerald)}
+.deep{display:grid;gap:8px}
+.method{margin:0;padding-left:22px;display:grid;gap:4px}
+.why{border-left:3px solid var(--pale);padding-left:10px;margin:8px 0;display:grid;gap:4px}
+.who{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
 .palette{display:grid;grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:6px}
 .palette button{height:36px;border:1px solid var(--rule);border-radius:var(--r);background:var(--surface);cursor:pointer;font-weight:600;font-variant-numeric:tabular-nums;position:relative}
 .palette button.done{background:var(--pale);border-color:var(--pale)}
@@ -534,7 +538,7 @@ const Core = (() => {
       add({type: 'question', id: q.id, topic: q.topic, subtopic: q.subtopic, format: q.format, title: plain(q.stem), body: plain(parts.join(' ')), href: 'q-' + q.id});
     }
     for (const tid of Object.keys(guide || {})) for (const s of (guide[tid].sections || []))
-      add({type: 'guide', id: s.id, topic: tid, subtopic: s.subtopic, title: s.title, body: plain([s.body].concat((s.formulas || []).map(f => f.name + ' ' + f.expr), s.pitfalls || [], s.example ? [s.example.problem, s.example.steps] : [], (s.ideas || []).map(i => i.title + ' ' + i.text), (s.examples || []).map(e => e.problem), (s.lookup || []).reduce((a, l) => a.concat(l.find), []), (s.read || []).map(r => r.source + ' ' + r.where)).join(' ')), href: 'topic-' + tid, open: s.subtopic || ''});
+      add({type: 'guide', id: s.id, topic: tid, subtopic: s.subtopic, title: s.title, body: plain([s.body].concat((s.formulas || []).map(f => f.name + ' ' + f.expr), s.pitfalls || [], s.example ? [s.example.problem, s.example.steps] : [], [s.deep || ''], s.method || [], (s.ideas || []).map(i => i.title + ' ' + i.text), (s.examples || []).map(e => e.problem), (s.lookup || []).reduce((a, l) => a.concat(l.find), []), (s.read || []).map(r => r.source + ' ' + r.where)).join(' ')), href: 'topic-' + tid, open: s.subtopic || ''});
     for (const s of (reference && reference.sections) || [])
       add({type: 'reference', id: s.id, topic: (s.topics || [])[0] || '', title: s.title, body: plain([s.notes, s.pages].join(' ')), href: 'reference'});
     return docs;
@@ -572,7 +576,7 @@ const S = {
   model: null, index: [], session: null,
   store: {mode: 'loading', pending: 0, error: ''},
   clock: {slot: null, since: null},
-  sample: null, ask: {}, askCtx: {}, asks: [],
+  sample: null, ask: {}, askCtx: {}, asks: [], live: null,
   ui: {search: {q: '', type: '', topic: '', format: '', status: ''}, practice: {mode: 'adaptive', topics: [], formats: [], count: 0, examLen: 'full'},
        reviewTab: 'missed', held: null, dragI: null, solo: null, resultId: null, open: null}
 };
@@ -707,7 +711,24 @@ async function loadContent() {
   for (const g of gs) if (g && g.topic) S.guide[g.topic] = g;
   S.index = Core.buildIndex(S.exam, S.questions, S.guide, S.reference);
 }
-function recompute() { S.model = Core.buildModel(S.exam, S.questions, S.sessions, Date.now()); }
+/* Resets never delete anything. A reset stores a time in settings.resets (for everything, one topic or one question type) and
+   answers logged before that time stop counting. Clearing the mark brings them back. */
+function liveSessions() {
+  const r = S.settings.resets || {}, all = r.all || '', tp = r.topics || {}, fm = r.families || {};
+  if (!all && !Object.keys(tp).length && !Object.keys(fm).length) return S.sessions;
+  const keep = a => { const at = a.at || ''; return at > all && at > (tp[a.topic] || '') && at > (fm[a.family || a.qid] || ''); };
+  return S.sessions.map(x => Object.assign({}, x, {attempts: (x.attempts || []).filter(keep)}));
+}
+function recompute() { S.live = liveSessions(); S.model = Core.buildModel(S.exam, S.questions, S.live, Date.now()); }
+function resetCount(kind, id) { return S.sessions.reduce((n, x) => n + (x.attempts || []).filter(a => kind === 'all' || (kind === 'topic' ? a.topic === id : (a.family || a.qid) === id)).length, 0); }
+function doReset(kind, id) {
+  const r = S.settings.resets = Object.assign({all: '', topics: {}, families: {}}, S.settings.resets || {}), now = new Date().toISOString();
+  if (kind === 'all') { r.all = now; r.topics = {}; r.families = {}; } else if (kind === 'topic') r.topics[id] = now; else r.families[id] = now;
+  r.log = (r.log || []).concat([{kind, id: id || '', at: now}]).slice(-50);
+  Store.saveSettings(); recompute(); render();
+}
+function undoResets() { const r = S.settings.resets || {}; S.settings.resets = {all: '', topics: {}, families: {}, log: (r.log || []).concat([{kind: 'undo', id: '', at: new Date().toISOString()}]).slice(-50)}; Store.saveSettings(); recompute(); render(); }
+function hasResets() { const r = S.settings.resets || {}; return !!(r.all || Object.keys(r.topics || {}).length || Object.keys(r.families || {}).length); }
 const topicOf = id => S.exam.topics.find(t => t.id === id);
 const topicName = id => (topicOf(id) || {name: id}).name;
 function subOf(id) { for (const t of S.exam.topics) for (const s of t.subtopics) if (s.id === id) return s; return null; }
@@ -819,7 +840,7 @@ function handbookHTML(q) {
   if (q.lookup === false) return '<div class="sol"><h3>Check in the handbook</h3><p>Not a handbook lookup. This rests on a rule or on arithmetic the handbook does not spell out. The lesson for this subtopic covers it: <a href="#topic-' + esc(q.topic) + '">open the lesson</a>.</p></div>';
   const ed = (S.reference.handbook || {}).edition, terms = hb.find || [];
   return '<div class="sol"><h3>Check in the handbook</h3><p>FE Reference Handbook' + (ed ? ' ' + esc(ed) : '') + ', <strong>' + esc(hb.section || '') + '</strong>' + (hb.page ? ', pages ' + esc(hb.page) : '') + '.' +
-    (terms.length ? ' Search the PDF (Ctrl+F) for ' + terms.map(t => '<strong>' + esc(t) + '</strong>').join(' or ') + '.' : '') + hbLink() + '</p></div>';
+    (terms.length ? ' Search the handbook for ' + terms.map(t => '<strong>' + esc(t) + '</strong>').join(' or ') + '.' : '') + hbLink() + '</p></div>';
 }
 function feedbackHTML(q, slot) {
   const ok = slot.result && slot.result.correct, skipped = slot.result && slot.result.skipped;
@@ -922,7 +943,7 @@ views.home = () => {
     '<div class="tile"><span class="k">Pace</span><span class="v">' + dur(T.avgMs) + '</span><span class="d">Average per question, exam pace ' + dur(targetMs()) + '</span></div></section>' +
     '<section class="card"><div class="card-h"><h2>Topics by exam weight</h2><a class="btn sm ghost" href="#topics">All topics</a></div><div class="tw"><table class="t"><thead><tr><th></th><th>Topic</th><th class="num">Exam questions</th><th class="num">Question types</th><th class="num">Seen</th><th>Mastery</th><th class="num">Due</th></tr></thead><tbody>' +
     e.topics.map(t => { const x = m.byTopic[t.id]; return '<tr><td class="n">' + t.n + '</td><td><a href="#topic-' + t.id + '">' + esc(t.name) + '</a></td><td class="num">' + t.min + '–' + t.max + '</td><td class="num">' + x.total + '</td><td class="num">' + x.seen + '</td><td>' + (x.mastery == null ? '<span class="sub">No questions yet</span>' : '<div style="display:flex;gap:8px;align-items:center">' + bar(x.mastery) + '<span>' + secureText(x) + '</span></div>') + '</td><td class="num">' + x.due + '</td></tr>'; }).join('') +
-    '</tbody></table></div></section><section class="card"><div class="card-h"><h2>Recent sessions</h2><a class="btn sm ghost" href="#review">Review</a></div>' + sessionRows(S.sessions.filter(s => (s.attempts || []).length).slice(0, 5)) + '</section></div>';
+    '</tbody></table></div></section><section class="card"><div class="card-h"><h2>Recent sessions</h2><a class="btn sm ghost" href="#review">Review</a></div>' + sessionRows((S.live || S.sessions).filter(s => (s.attempts || []).length).slice(0, 5)) + '</section></div>';
 };
 views.topics = () => '<div class="wrap"><header class="head"><div><p class="eyebrow">' + esc(S.exam.spec) + '</p><h1>Topics</h1><p class="sub">The 14 knowledge areas of the exam, in specification order, with the number of exam questions each one carries.</p></div></header><div class="topic-grid">' +
   S.exam.topics.map(t => { const x = S.model.byTopic[t.id], g = ((S.guide[t.id] || {}).sections || []).length;
@@ -930,16 +951,19 @@ views.topics = () => '<div class="wrap"><header class="head"><div><p class="eyeb
       '<div class="row"><span>' + (x.mastery == null ? 'No questions yet' : 'Mastery ' + pct(x.mastery) + ', ' + secureText(x)) + '</span><span>' + x.total + ' types, ' + x.versions + ' versions</span></div></a>'; }).join('') + '</div></div>';
 function hbLink() { const u = (S.settings.handbookUrl || '').trim(); return /^https:\/\//i.test(u) ? ' <a href="' + esc(u) + '" target="_blank" rel="noopener">Open my handbook</a>' : ''; }
 function exampleHTML(x, n) {
-  return '<div class="sol ex"><h3>Worked example' + (n ? ' ' + n : '') + '</h3><p><strong>' + Core.richInline(x.problem) + '</strong></p>' + figureHTML(x.figure) + Core.rich(x.steps) + (x.answer ? '<p><strong>Answer:</strong> ' + Core.richInline(x.answer) + '</p>' : '') + '</div>';
+  return '<div class="sol ex"><h3>Worked example' + (n ? ' ' + n : '') + '</h3><p><strong>' + Core.richInline(x.problem) + '</strong></p>' + figureHTML(x.figure) + (x.idea ? '<div class="why"><span class="who">Why this works</span>' + Core.rich(x.idea) + '</div><p class="who">Steps</p>' : '') + Core.rich(x.steps) + (x.answer ? '<p><strong>Answer:</strong> ' + Core.richInline(x.answer) + '</p>' : '') + '</div>';
 }
 function guideSection(s) {
   const exs = (s.example ? [s.example] : []).concat(s.examples || []), ed = (S.reference.handbook || {}).edition;
   return '<div class="gsec" id="g-' + esc(s.id) + '"><h3>' + esc(s.title) + '</h3>' + Core.rich(s.body) + figureHTML(s.figure) +
+    (s.deep ? '<div class="deep"><h3>In depth</h3>' + Core.rich(s.deep) + '</div>' : '') +
+    ((s.method || []).length ? '<div><h3>How to solve these</h3><ol class="method">' + s.method.map(m => '<li>' + Core.richInline(m) + '</li>').join('') + '</ol></div>' : '') +
+    ((s.links || []).length ? '<div><h3>Watch and practise elsewhere</h3><ul>' + s.links.map(l => '<li><a href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.label) + '</a>' + (l.note ? '. ' + esc(l.note) : '') + '</li>').join('') + '</ul><p class="hint">These open other people\'s free material in a new tab. Nothing from them is copied here.</p></div>' : '') +
     ((s.formulas || []).length ? '<div class="tw"><table class="t"><thead><tr><th>Formula</th><th>Expression</th><th>Handbook</th></tr></thead><tbody>' + s.formulas.map(f => '<tr><td>' + esc(f.name) + '</td><td>' + Core.richInline(f.expr) + '</td><td>' + esc(f.handbook || '') + '</td></tr>').join('') + '</tbody></table></div>' : '') +
     ((s.ideas || []).length ? '<div class="ideas"><h3>Key ideas</h3>' + s.ideas.map(i => '<div class="idea">' + (i.title ? '<strong>' + esc(i.title) + '</strong>' : '') + Core.rich(i.text) + '</div>').join('') + '</div>' : '') +
     exs.map((x, i) => exampleHTML(x, exs.length > 1 ? i + 1 : 0)).join('') +
     ((s.pitfalls || []).length ? '<div><h3>Common mistakes</h3><ul>' + s.pitfalls.map(p => '<li>' + Core.richInline(p) + '</li>').join('') + '</ul></div>' : '') +
-    ((s.lookup || []).length ? '<div><h3>Check in the handbook</h3><ul>' + s.lookup.map(l => '<li>FE Reference Handbook' + (ed ? ' ' + esc(ed) : '') + ', <strong>' + esc(l.section) + '</strong>, pages ' + esc(l.page) + '. Search the PDF for ' + l.find.map(t => '<strong>' + esc(t) + '</strong>').join(', ') + '.</li>').join('') + '</ul>' + (hbLink() ? '<p>' + hbLink() + '</p>' : '') + '</div>' : '') +
+    ((s.lookup || []).length ? '<div><h3>Check in the handbook</h3><ul>' + s.lookup.map(l => '<li>FE Reference Handbook' + (ed ? ' ' + esc(ed) : '') + ', <strong>' + esc(l.section) + '</strong>, pages ' + esc(l.page) + '. Search the handbook for ' + l.find.map(t => '<strong>' + esc(t) + '</strong>').join(', ') + '.</li>').join('') + '</ul>' + (hbLink() ? '<p>' + hbLink() + '</p>' : '') + '</div>' : '') +
     ((s.read || []).length ? '<div><h3>Where to read</h3><ul>' + s.read.map(r => '<li><strong>' + esc(r.source) + ':</strong> ' + esc(r.where) + '</li>').join('') + '</ul></div>' : '') + askHTML('g:' + s.id) + '</div>';
 }
 
@@ -986,7 +1010,7 @@ function askContext(key) {
   const x = l.sec;
   return rules + 'LESSON: ' + x.title + ' (' + tname(l.topic) + ')\n' + (x.body || '') + '\n' +
     ((x.formulas || []).length ? 'Formulas:\n' + x.formulas.map(f => f.name + ': ' + f.expr).join('\n') + '\n' : '') +
-    ((x.ideas || []).length ? 'Key ideas:\n' + x.ideas.map(i => (i.title ? i.title + ': ' : '') + i.text).join('\n') + '\n' : '') +
+    (x.deep ? 'In depth: ' + x.deep + '\n' : '') + ((x.method || []).length ? 'Method: ' + x.method.join(' ') + '\n' : '') + ((x.ideas || []).length ? 'Key ideas:\n' + x.ideas.map(i => (i.title ? i.title + ': ' : '') + i.text).join('\n') + '\n' : '') +
     (x.example ? 'Worked example: ' + x.example.problem + '\n' + x.example.steps + '\n' : '') + (x.examples || []).slice(0, 3).map(e => 'Worked example: ' + e.problem + '\n' + e.steps + '\n').join('') +
     ((x.pitfalls || []).length ? 'Common mistakes: ' + x.pitfalls.join(' ') + '\n' : '') + '\n';
 }
@@ -1054,7 +1078,7 @@ views.topic = id => {
   const t = topicOf(id); if (!t) return emptyCard('Topic not found', 'That topic is not in the exam specification.', 'topics', 'All topics');
   const x = S.model.byTopic[t.id], secs = (S.guide[t.id] || {}).sections || [];
   return '<div class="wrap"><header class="head"><div><p class="eyebrow">Topic ' + t.n + ' of ' + S.exam.topics.length + '</p><h1>' + esc(t.name) + '</h1><p class="sub">' + t.min + '–' + t.max + ' of ' + S.exam.questionCount + ' exam questions. ' + x.total + ' question types in ' + x.versions + ' versions. ' + x.seen + ' seen, ' + x.due + ' due, ' + x.secure + ' secure.' + (x.mastery != null ? ' Mastery ' + pct(x.mastery) + '.' : '') + '</p></div>' +
-    '<div class="head-actions"><button class="btn primary" data-act="quick" data-mode="topic" data-topic="' + t.id + '"' + (x.total ? '' : ' disabled') + '>Practice this topic</button><a class="btn" href="#topics">All topics</a></div></header>' +
+    '<div class="head-actions"><button class="btn primary" data-act="quick" data-mode="topic" data-topic="' + t.id + '"' + (x.total ? '' : ' disabled') + '>Practice this topic</button><a class="btn" href="#topics">All topics</a><button class="btn ghost" data-act="askReset" data-kind="topic" data-id="' + t.id + '">Reset this topic</button></div></header>' +
     (secs.filter(g => !g.subtopic).length ? '<section class="card">' + secs.filter(g => !g.subtopic).map(guideSection).join('') + '</section>' : '') +
     t.subtopics.map(s => { const sx = S.model.bySub[s.id], gs = secs.filter(g => g.subtopic === s.id), qs = famList(f => f.subtopic === s.id).map(nextOf);
       return '<details class="sub-d"' + (S.ui.open === s.id ? ' open' : '') + '><summary><span class="code">' + s.code + '</span><span class="nm">' + esc(s.name) + '</span><span class="chip plain">' + qs.length + (qs.length === 1 ? ' question type' : ' question types') + ', ' + sx.versions + ' versions</span>' + (sx.total ? '<span class="chip ' + (sx.mastery >= 0.8 ? 'strong' : sx.seen ? 'learning' : 'new') + '">' + secureText(sx) + '</span>' : '') + '</summary><div class="sub-body">' +
@@ -1100,7 +1124,7 @@ views.q = id => {
   const q = S.qById.get(id); if (!q) return emptyCard('Question not found', 'It may have been removed from the bank.', 'search', 'Search');
   if (!S.ui.solo || S.ui.solo.qid !== id) S.ui.solo = {qid: id, slot: newSlot(q)};
   const slot = S.ui.solo.slot, locked = !!slot.result, flagged = !!S.flags[id], hist = S.model.attempts.filter(a => a.family === Core.famOf(q)).reverse();
-  return '<div class="wrap"><div class="qbar"><div><p class="eyebrow">Single question</p><strong>' + esc(id) + '</strong></div><div class="qbar-r"><span class="clock" id="clock"></span>' + statusChip(q) + '<button class="btn sm' + (flagged ? ' on' : '') + '" data-act="flag" data-id="' + esc(id) + '" aria-pressed="' + flagged + '">' + (flagged ? 'Flagged' : 'Flag') + '</button><a class="btn sm ghost" href="#topic-' + q.topic + '">Open topic</a></div></div>' +
+  return '<div class="wrap"><div class="qbar"><div><p class="eyebrow">Single question</p><strong>' + esc(id) + '</strong></div><div class="qbar-r"><span class="clock" id="clock"></span>' + statusChip(q) + '<button class="btn sm' + (flagged ? ' on' : '') + '" data-act="flag" data-id="' + esc(id) + '" aria-pressed="' + flagged + '">' + (flagged ? 'Flagged' : 'Flag') + '</button><a class="btn sm ghost" href="#topic-' + q.topic + '">Open topic</a><button class="btn sm ghost" data-act="askReset" data-kind="family" data-id="' + esc(Core.famOf(q)) + '">Reset</button></div></div>' +
     '<article class="card qcard">' + questionHTML(q, slot, {locked, reveal: locked}) + '</article>' +
     (locked ? '<div class="qfoot"><span></span><button class="btn primary" id="primary" data-act="soloAgain">' + (q.versions > 1 ? 'Try another version' : 'Try again') + '</button></div>'
       : '<div class="qfoot"><div class="conf"><span id="conf-l">How sure are you?</span><div class="seg" role="group" aria-labelledby="conf-l">' + [[1, 'Guessing'], [2, 'Unsure'], [3, 'Sure']].map(c => '<button type="button" data-act="conf" data-v="' + c[0] + '" aria-pressed="' + (slot.conf === c[0]) + '">' + c[1] + '</button>').join('') + '</div></div><button class="btn primary" id="primary" data-act="check">Check answer</button></div>') +
@@ -1128,7 +1152,7 @@ views.search = () => {
 views.review = () => {
   const now = Date.now(), tab = S.ui.reviewTab, live = famList().map(nextOf), st = q => S.model.byQ.get(q.id);
   const sets = {missed: live.filter(q => st(q) && !st(q).last.correct), due: live.filter(q => st(q) && st(q).dueAt <= now), flagged: live.filter(q => S.flags[q.id])};
-  const hist = S.sessions.filter(s => (s.attempts || []).length), tabs = [['missed', 'Missed', sets.missed.length], ['due', 'Due', sets.due.length], ['flagged', 'Flagged', sets.flagged.length], ['history', 'Sessions', hist.length]];
+  const hist = (S.live || S.sessions).filter(s => (s.attempts || []).length), tabs = [['missed', 'Missed', sets.missed.length], ['due', 'Due', sets.due.length], ['flagged', 'Flagged', sets.flagged.length], ['history', 'Sessions', hist.length]];
   const emptyMsg = {missed: 'Nothing missed. Questions whose latest answer was wrong are listed here.', due: 'Nothing due. Answered questions come back here on a spaced schedule.', flagged: 'Nothing flagged. Use Flag on any question to collect it here.'};
   let body;
   if (tab === 'history') body = sessionRows(hist);
@@ -1157,6 +1181,7 @@ views.setup = () => {
   const st = S.store, pending = Object.keys(Store.outbox()).length, modeTxt = {cloud: 'Saved to your study log in the cloud', local: 'This browser only. Storage is not available in this view', offline: 'Storage unreachable. Answers are kept on this device until it answers', loading: 'Connecting'}[st.mode];
   return '<div class="wrap"><header class="head"><div><p class="eyebrow">Setup</p><h1>Study settings</h1></div></header>' +
     '<section class="card"><h2>Your plan</h2><div class="fields"><div class="field"><label for="set-date">Exam date</label><input id="set-date" type="date" value="' + esc(S.settings.examDate || '') + '" data-change="setDate"></div><div class="field"><label for="set-goal">Daily goal, questions</label><input id="set-goal" type="number" min="1" max="300" value="' + (S.settings.dailyGoal || 20) + '" data-change="setGoal"></div><div class="field"><label for="set-len">Default session length</label><input id="set-len" type="number" min="1" max="200" value="' + (S.settings.sessionLength || 10) + '" data-change="setLen"></div><div class="field"><label for="set-hb">Link to your handbook PDF</label><input id="set-hb" type="url" placeholder="https://drive.google.com/..." value="' + esc(S.settings.handbookUrl || '') + '" data-change="setHb"><span class="hint">Optional. Paste the link to your own copy of the FE Reference Handbook. It then opens from every handbook lookup. The link is kept in your private study log, not in the site.</span></div></div></section>' +
+    '<section class="card"><h2>Reset progress</h2><p class="sub">A reset gives you a clean start: mastery, due dates and missed lists go back to zero for what you reset. Nothing is deleted. Your earlier answers stay in the study log and stop counting, and you can bring them back.</p><div class="head-actions"><button class="btn" data-act="askReset" data-kind="all">Reset all progress</button>' + (hasResets() ? '<button class="btn ghost" data-act="askUndoReset">Undo all resets</button>' : '') + '</div><p class="hint">To reset one topic, open it under Topics. To reset one question type, open the question.</p></section>' +
     '<section class="card"><h2>Study log</h2><dl class="kv"><dt>Storage</dt><dd>' + esc(modeTxt) + '</dd><dt>Waiting to send</dt><dd>' + pending + '</dd><dt>Sessions</dt><dd>' + S.sessions.length + '</dd><dt>Answers</dt><dd>' + S.sessions.reduce((n, s) => n + (s.attempts || []).length, 0) + '</dd></dl><div class="head-actions"><button class="btn" data-act="copyLog">Copy study log as JSON</button>' + (st.mode !== 'cloud' || pending ? '<button class="btn" data-act="retry">Retry storage</button>' : '') + '</div></section>' +
     '<section class="card"><h2>Content</h2><dl class="kv"><dt>Exam</dt><dd>' + esc(S.exam.name) + '</dd><dt>Specification</dt><dd>' + esc(S.exam.spec) + '</dd><dt>Content version</dt><dd>' + esc(S.manifest.version) + ', updated ' + esc(S.manifest.updated || '') + '</dd><dt>Questions</dt><dd>' + S.questions.filter(q => !q.sample).length + ' in the bank, ' + S.questions.filter(q => q.sample).length + ' format samples</dd><dt>Guide sections</dt><dd>' + Object.values(S.guide).reduce((n, g) => n + (g.sections || []).length, 0) + '</dd></dl>' + (S.warnings.length ? '<div class="note"><strong>Content warnings</strong><ul>' + S.warnings.map(w => '<li>' + esc(w) + '</li>').join('') + '</ul></div>' : '') + '</section></div>';
 };
@@ -1198,6 +1223,9 @@ function tick() {
 /* ---------- Actions ---------- */
 function moveOrder(from, to) { const c = cur(); if (!c || c.locked || c.q.format !== 'order' || from === to || to < 0 || to >= c.slot.r.length) return; const a = c.slot.r.slice(), x = a.splice(from, 1)[0]; a.splice(to, 0, x); c.slot.r = a; changed(); }
 const A = {
+  askReset(el) { const kind = el.dataset.kind, id = el.dataset.id || '', n = resetCount(kind, id), what = kind === 'all' ? 'all progress' : kind === 'topic' ? topicName(id) : 'this question type';
+    modal({title: 'Reset ' + what + '?', body: n + ' logged answer' + (n === 1 ? '' : 's') + ' will stop counting toward mastery, due dates and the missed list. Nothing is deleted, and Setup has an undo.', ok: 'Reset', cancel: 'Cancel', onOk: () => doReset(kind, id)}); },
+  askUndoReset() { modal({title: 'Undo all resets?', body: 'Every answer in your study log will count again.', ok: 'Undo resets', cancel: 'Cancel', onOk: undoResets}); },
   ask(el) { const box = el.closest('.ask'); if (!box) return; const key = box.dataset.key, c = ASK[key[0] === 'g' ? 'g' : 'q'].find(x => x[0] === el.dataset.kind); if (c) askClaude(key, c[0], c[2], c[1]); },
   askSend(el) { const box = el.closest('.ask'); if (!box) return; const inp = box.querySelector('.ask-in'), v = inp.value.trim(); if (!v) { inp.focus(); return; } inp.value = ''; askClaude(box.dataset.key, 'own', v); },
   askStop(el) { const box = el.closest('.ask'), t = box && S.ask[box.dataset.key]; if (t && t.ctrl) t.ctrl.abort(); },

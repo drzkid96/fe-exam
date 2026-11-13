@@ -197,6 +197,23 @@ details.sub-d[open]>summary{border-bottom:1px solid var(--rule)}
 .fb-h span{margin-left:auto;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
 .sol{background:var(--surface);border-radius:var(--r);padding:12px 14px}
 .sol h3{margin-bottom:6px;text-transform:uppercase;font-size:12px;letter-spacing:.05em;color:var(--muted)}
+.sol .figure{margin-top:10px!important}
+.gsec>.figure{margin:4px 0!important}
+.ask{display:none;border:1px solid var(--rule);border-left:3px solid var(--emerald);border-radius:var(--r);padding:12px 14px;background:var(--white)}
+body.has-claude .ask{display:block}
+.ask>h3,.ask>summary{font-size:13px;font-weight:600;color:var(--emerald)}
+.ask>summary{cursor:pointer}
+.ask-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.ask-chips .btn{white-space:normal;text-align:left}
+.ask-thread{display:grid;gap:10px;margin-top:10px}
+.ask-thread:empty{display:none}
+.ask-m{border-left:3px solid var(--pale);padding-left:10px;display:grid;gap:6px}
+.ask-m.me{border-left-color:var(--blue)}
+.ask-m .who{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.ask-form{display:flex;gap:8px;margin-top:10px}
+.ask-form input{flex:1;min-width:0;padding:7px 10px;border:1px solid var(--rule);border-radius:var(--r);background:var(--white)}
+.ask-err{color:var(--orange);font-weight:600}
+.ask .hint{margin-top:8px}
 .palette{display:grid;grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:6px}
 .palette button{height:36px;border:1px solid var(--rule);border-radius:var(--r);background:var(--surface);cursor:pointer;font-weight:600;font-variant-numeric:tabular-nums;position:relative}
 .palette button.done{background:var(--pale);border-color:var(--pale)}
@@ -508,7 +525,7 @@ const Core = (() => {
     for (const q of livePool(questions)) {
       if (indexed.has(famOf(q))) continue;                     // one search entry per family of versions
       indexed.add(famOf(q));
-      const parts = [q.eli5, q.solution].concat((q.options || []).map(o => o.text), (q.tokens || []).map(o => o.text), (q.targets || []).map(o => o.label), (q.items || []).map(o => o.text), q.tags || [], [tn[q.topic]]);
+      const parts = [q.eli5, q.solution].concat((q.options || []).map(o => o.text), (q.tokens || []).map(o => o.text), (q.targets || []).map(o => o.label), (q.items || []).map(o => o.text), q.tags || [], (q.handbook || []).reduce((a, h) => a.concat(h.find || []), []), [tn[q.topic]]);
       add({type: 'question', id: q.id, topic: q.topic, subtopic: q.subtopic, format: q.format, title: plain(q.stem), body: plain(parts.join(' ')), href: 'q-' + q.id});
     }
     for (const tid of Object.keys(guide || {})) for (const s of (guide[tid].sections || []))
@@ -550,6 +567,7 @@ const S = {
   model: null, index: [], session: null,
   store: {mode: 'loading', pending: 0, error: ''},
   clock: {slot: null, since: null},
+  sample: null, ask: {}, askCtx: {}, asks: [],
   ui: {search: {q: '', type: '', topic: '', format: '', status: ''}, practice: {mode: 'adaptive', topics: [], formats: [], count: 0, examLen: 'full'},
        reviewTab: 'missed', held: null, dragI: null, solo: null, resultId: null, open: null}
 };
@@ -791,11 +809,19 @@ function answerText(q) {
   }
   return '';
 }
+function handbookHTML(q) {
+  const hb = (q.handbook || [])[0]; if (!hb) return '';
+  if (q.lookup === false) return '<div class="sol"><h3>Check in the handbook</h3><p>Not a handbook lookup. This rests on a rule or on arithmetic the handbook does not spell out. The lesson for this subtopic covers it: <a href="#topic-' + esc(q.topic) + '">open the lesson</a>.</p></div>';
+  const ed = (S.reference.handbook || {}).edition, terms = hb.find || [];
+  return '<div class="sol"><h3>Check in the handbook</h3><p>FE Reference Handbook' + (ed ? ' ' + esc(ed) : '') + ', <strong>' + esc(hb.section || '') + '</strong>' + (hb.page ? ', pages ' + esc(hb.page) : '') + '.' +
+    (terms.length ? ' Search the PDF (Ctrl+F) for ' + terms.map(t => '<strong>' + esc(t) + '</strong>').join(' or ') + '.' : '') + '</p></div>';
+}
 function feedbackHTML(q, slot) {
   const ok = slot.result && slot.result.correct, skipped = slot.result && slot.result.skipped;
+  S.askCtx['q:' + q.id] = {q, slot};
   return '<div class="fb ' + (ok ? 'ok' : 'no') + '"><div class="fb-h">' + (ok ? IC.check : IC.cross) + '<strong>' + (ok ? 'Correct' : skipped ? 'Not answered' : 'Not correct') + '</strong><span>' + dur(slot.ms) + ' on this question, exam pace is ' + dur(targetMs()) + '</span></div>' +
-    '<p><strong>Answer:</strong> ' + Core.richInline(answerText(q)) + '</p>' + (q.eli5 ? '<div class="sol"><h3>In plain words</h3>' + Core.rich(q.eli5) + '</div>' : '') + (q.solution ? '<div class="sol"><h3>Worked solution</h3>' + Core.rich(q.solution) + '</div>' : '') +
-    '<div class="chips">' + (q.handbook || []).map(hb => '<span class="chip plain">Handbook: ' + esc(hb.section || '') + (hb.page ? ', p. ' + esc(hb.page) : '') + '</span>').join('') + (q.verify ? '<span class="chip strong" title="' + esc(q.verify.basis || 'The answer key is recomputed by tools/verify_answers.py') + '">' + (q.verify.method === 'computed' ? 'Answer recomputed by code' : 'Answer checked against a reference') + '</span>' : '') + '</div></div>';
+    '<p><strong>Answer:</strong> ' + Core.richInline(answerText(q)) + '</p>' + (q.eli5 ? '<div class="sol"><h3>Concept</h3>' + Core.rich(q.eli5) + '</div>' : '') + (q.solution ? '<div class="sol"><h3>Solution with the numbers</h3>' + Core.rich(q.solution) + figureHTML(q.solutionFigure) + '</div>' : '') +
+    handbookHTML(q) + '<div class="chips">' + (q.verify ? '<span class="chip strong" title="' + esc(q.verify.basis || 'The answer key is recomputed by tools/verify_answers.py') + '">' + (q.verify.method === 'computed' ? 'Answer recomputed by code' : 'Answer checked against a reference') + '</span>' : '') + '</div>' + askHTML('q:' + q.id, !ok && !skipped) + '</div>';
 }
 
 /* ---------- Sessions ---------- */
@@ -898,11 +924,117 @@ views.topics = () => '<div class="wrap"><header class="head"><div><p class="eyeb
     return '<a class="tcard" href="#topic-' + t.id + '"><span class="tn">TOPIC ' + t.n + '</span><strong>' + esc(t.name) + '</strong><div class="row"><span>' + t.min + '–' + t.max + ' exam questions</span><span>' + t.subtopics.length + ' subtopics</span></div>' + bar(x.mastery || 0) +
       '<div class="row"><span>' + (x.mastery == null ? 'No questions yet' : 'Mastery ' + pct(x.mastery) + ', ' + secureText(x)) + '</span><span>' + x.total + ' types, ' + x.versions + ' versions</span></div></a>'; }).join('') + '</div></div>';
 function guideSection(s) {
-  return '<div class="gsec" id="g-' + esc(s.id) + '"><h3>' + esc(s.title) + '</h3>' + Core.rich(s.body) +
+  return '<div class="gsec" id="g-' + esc(s.id) + '"><h3>' + esc(s.title) + '</h3>' + Core.rich(s.body) + figureHTML(s.figure) +
     ((s.formulas || []).length ? '<div class="tw"><table class="t"><thead><tr><th>Formula</th><th>Expression</th><th>Handbook</th></tr></thead><tbody>' + s.formulas.map(f => '<tr><td>' + esc(f.name) + '</td><td>' + Core.richInline(f.expr) + '</td><td>' + esc(f.handbook || '') + '</td></tr>').join('') + '</tbody></table></div>' : '') +
-    (s.example ? '<div class="sol" style="background:var(--band)"><h3>Worked example</h3><p><strong>' + Core.richInline(s.example.problem) + '</strong></p>' + Core.rich(s.example.steps) + '</div>' : '') +
+    (s.example ? '<div class="sol" style="background:var(--band)"><h3>Worked example</h3><p><strong>' + Core.richInline(s.example.problem) + '</strong></p>' + Core.rich(s.example.steps) + figureHTML(s.example.figure) + '</div>' : '') +
     ((s.pitfalls || []).length ? '<div><h3>Common mistakes</h3><ul>' + s.pitfalls.map(p => '<li>' + Core.richInline(p) + '</li>').join('') + '</ul></div>' : '') +
-    ((s.read || []).length ? '<div><h3>Where to read</h3><ul>' + s.read.map(r => '<li><strong>' + esc(r.source) + ':</strong> ' + esc(r.where) + '</li>').join('') + '</ul></div>' : '') + '</div>';
+    ((s.read || []).length ? '<div><h3>Where to read</h3><ul>' + s.read.map(r => '<li><strong>' + esc(r.source) + ':</strong> ' + esc(r.where) + '</li>').join('') + '</ul></div>' : '') + askHTML('g:' + s.id) + '</div>';
+}
+
+/* ---------- Explain further with Claude ----------
+   Uses the artifact's "sample" capability. Claude has no memory between calls, so every call carries the question or lesson,
+   the stored solution and the thread so far. Each request is also written to asks/<id> in the study log, so the weak spots
+   it reveals can be read back later. Replies are live tutoring and are not part of the verified answer key. */
+const ASK = {
+  q: [['steps', 'Walk me through it step by step', 'Walk me through the solution step by step, with the numbers and units at every step, and say why each step is taken.'],
+      ['wrong', 'Why is my answer wrong?', 'My answer was marked not correct. Work out the most likely mistake that leads to my answer, show where it goes wrong, and say how to avoid it.'],
+      ['formula', 'Which handbook formula, and when?', 'Which FE Reference Handbook formula applies here, what does each symbol mean, and how do I recognise when to use it?'],
+      ['similar', 'Give me a similar problem', 'Write one new problem of the same type with different numbers. Give the problem first, then a line that says Answer, then the worked solution.']],
+  g: [['simpler', 'Explain this more simply', 'Explain the main idea of this lesson again in simpler terms, then tie it back to the formulas.'],
+      ['example', 'Another worked example', 'Give one more worked example for this lesson with different numbers, showing every step with units.'],
+      ['quiz', 'Quiz me on this', 'Write three short exam-style questions on this lesson, then give the answers with one line of working each.'],
+      ['exam', 'How does the exam test this?', 'How does the FE exam usually test this, and which traps should I watch for?']]
+};
+function findLesson(id) { for (const t of Object.keys(S.guide)) { const sec = ((S.guide[t] || {}).sections || []).find(x => x.id === id); if (sec) return {topic: t, sec}; } return null; }
+function respText(q, slot) {
+  const r = slot && slot.r, letter = id => { const i = (q.options || []).findIndex(o => o.id === id); return i < 0 ? String(id) : String.fromCharCode(65 + i) + '. ' + q.options[i].text; };
+  if (r == null || r === '' || (Array.isArray(r) && !r.length)) return 'No answer given';
+  if (q.format === 'mcq') return letter(r);
+  if (q.format === 'multi') return r.map(letter).join('; ');
+  if (q.format === 'numeric') return String(r) + (q.answer && q.answer.unit ? ' ' + q.answer.unit : '');
+  return JSON.stringify(r);
+}
+function askContext(key) {
+  const rules = 'You are tutoring a civil engineer who is studying for the NCEES FE Civil exam, a computer-based exam where the FE Reference Handbook is the only reference allowed. Be accurate and specific. Show calculations with the actual numbers and units. Name the handbook section a formula comes from, but never invent page numbers. If the stored solution below looks wrong, say so plainly. Write original material only and do not reproduce published exam or textbook questions. Keep the reply under about 250 words unless the student asks for more.\n' +
+    'Format: short paragraphs separated by blank lines; lines starting with "- " for lists; **bold** for key terms; subscripts as _{x}, superscripts as ^{2}, fractions as \\frac{a}{b}, square roots as \\sqrt{x}. Do not use headings, tables, code fences or dollar-sign maths.\n\n';
+  const tname = id => { const t = S.exam.topics.find(x => x.id === id); return t ? t.name : id; };
+  const sname = id => { for (const t of S.exam.topics) { const u = t.subtopics.find(x => x.id === id); if (u) return u.name; } return ''; };
+  if (key[0] === 'q') {
+    const c = S.askCtx[key]; if (!c) return null;
+    const q = c.q, slot = c.slot || {}, res = slot.result || {};
+    return rules + 'QUESTION ' + q.id + ' (' + tname(q.topic) + (sname(q.subtopic) ? ', ' + sname(q.subtopic) : '') + ', format ' + q.format + ')\n' + q.stem + '\n' +
+      (q.figure && q.figure.alt ? 'Figure: ' + q.figure.alt + '\n' : '') +
+      ((q.options || []).length ? 'Options:\n' + q.options.map((o, i) => String.fromCharCode(65 + i) + '. ' + o.text).join('\n') + '\n' : '') +
+      'Correct answer: ' + answerText(q) + '\n' +
+      'Student answer: ' + respText(q, slot) + ' (' + (res.correct ? 'correct' : res.skipped ? 'not answered' : 'not correct') + (slot.ms ? ', took ' + Math.round(slot.ms / 1000) + ' s' : '') + ')\n' +
+      (q.eli5 ? 'Concept note: ' + q.eli5 + '\n' : '') + (q.solution ? 'Stored solution: ' + q.solution + '\n' : '') +
+      ((q.handbook || []).length ? 'Handbook reference: ' + q.handbook.map(h => h.section + (h.page ? ' p. ' + h.page : '') + ((h.find || []).length ? ' (search terms: ' + h.find.join(', ') + ')' : '')).join('; ') + '\n' : '') + '\n';
+  }
+  const l = findLesson(key.slice(2)); if (!l) return null;
+  const x = l.sec;
+  return rules + 'LESSON: ' + x.title + ' (' + tname(l.topic) + ')\n' + (x.body || '') + '\n' +
+    ((x.formulas || []).length ? 'Formulas:\n' + x.formulas.map(f => f.name + ': ' + f.expr).join('\n') + '\n' : '') +
+    (x.example ? 'Worked example: ' + x.example.problem + '\n' + x.example.steps + '\n' : '') +
+    ((x.pitfalls || []).length ? 'Common mistakes: ' + x.pitfalls.join(' ') + '\n' : '') + '\n';
+}
+function askThread(key) {
+  const t = S.ask[key] || {msgs: []};
+  let h = t.msgs.map(m => m.role === 'user' ? '<div class="ask-m me"><span class="who">You</span><p>' + esc(m.label || m.content) + '</p></div>'
+    : '<div class="ask-m"><span class="who">Claude</span>' + Core.rich(m.content) + (m.truncated ? '<p class="hint">The reply was cut short. Ask it to continue.</p>' : '') + '</div>').join('');
+  if (t.busy) h += '<div class="ask-m"><span class="who">Claude</span>' + (t.live ? Core.rich(t.live) : '<p class="hint">Thinking...</p>') + '</div>';
+  if (t.error) h += '<p class="ask-err">' + esc(t.error) + '</p>';
+  return h;
+}
+function askHTML(key, wrong) {
+  const lesson = key[0] === 'g', t = S.ask[key] || {msgs: []};
+  const chips = ASK[lesson ? 'g' : 'q'].filter(c => c[0] !== 'wrong' || wrong).map(c => '<button type="button" class="btn sm" data-act="ask" data-kind="' + c[0] + '"' + (t.busy ? ' disabled' : '') + '>' + esc(c[1]) + '</button>').join('');
+  const body = '<div class="ask-chips">' + chips + '</div><div class="ask-thread" aria-live="polite">' + askThread(key) + '</div>' +
+    '<div class="ask-form"><input type="text" class="ask-in" maxlength="500" placeholder="Or type your own question" aria-label="Ask Claude your own question"' + (t.busy ? ' disabled' : '') + '><button type="button" class="btn sm primary" data-act="askSend"' + (t.busy ? ' disabled' : '') + '>Ask</button><button type="button" class="btn sm" data-act="askStop"' + (t.busy ? '' : ' hidden') + '>Stop</button></div>' +
+    '<p class="hint">Claude is sent this ' + (lesson ? 'lesson' : 'question, the stored solution and your answer') + '. Its reply is live tutoring, not part of the checked answer key.</p>';
+  return lesson ? '<details class="ask" data-key="' + esc(key) + '"' + (t.msgs.length || t.busy ? ' open' : '') + '><summary>Explain further with Claude</summary>' + body + '</details>'
+    : '<div class="ask" data-key="' + esc(key) + '"><h3>Explain further with Claude</h3>' + body + '</div>';
+}
+function paintAsk(key) {
+  document.querySelectorAll('.ask').forEach(el => {
+    if (el.dataset.key !== key) return;
+    const t = S.ask[key] || {};
+    el.querySelector('.ask-thread').innerHTML = askThread(key);
+    el.querySelectorAll('button,input').forEach(b => { if (b.dataset.act === 'askStop') b.hidden = !t.busy; else b.disabled = !!t.busy; });
+  });
+}
+function logAsk(key, kind, prompt) {
+  const id = 'a' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), d = {id, at: new Date().toISOString(), kind, prompt: String(prompt).slice(0, 500)};
+  if (key[0] === 'q') { const c = S.askCtx[key]; if (c) Object.assign(d, {on: 'question', qid: c.q.id, family: Core.famOf(c.q), topic: c.q.topic, subtopic: c.q.subtopic || null, correct: !!(c.slot && c.slot.result && c.slot.result.correct)}); }
+  else { const l = findLesson(key.slice(2)); if (l) Object.assign(d, {on: 'lesson', lesson: l.sec.id, topic: l.topic, subtopic: l.sec.subtopic || null}); }
+  S.asks.push(d); Store.put('asks/' + id, d);
+}
+async function askClaude(key, kind, prompt, label) {
+  const t = S.ask[key] || (S.ask[key] = {msgs: []});
+  prompt = String(prompt || '').trim();
+  if (!S.sample || t.busy || !prompt) return;
+  const ctx = askContext(key); if (!ctx) return;
+  while (t.msgs.length > 10) t.msgs.splice(0, 2);
+  t.msgs.push({role: 'user', content: prompt, label: label || ''}); t.busy = true; t.live = ''; t.error = ''; t.ctrl = new AbortController(); paintAsk(key);
+  try { logAsk(key, kind, prompt); } catch (e) { /* logging must never block the answer */ }
+  let failed = null, res = null;
+  try { res = await S.sample(t.msgs.map((m, i) => ({role: m.role, content: i === 0 ? ctx + 'Student: ' + m.content : m.content})), {signal: t.ctrl.signal, cache: false, onText: o => { t.live = (o && o.text) || ''; paintAsk(key); }}); }
+  catch (e) { failed = e || {}; }
+  const text = (res && res.text) || (failed && failed.text) || t.live || '';
+  if (text && text !== 'Thinking...') t.msgs.push({role: 'assistant', content: text, truncated: !!(failed || (res && res.truncated))});
+  else t.msgs.pop();
+  if (failed && failed.name !== 'AbortError' && failed.code !== 'aborted') {
+    if (failed.code === 'not_granted') { S.sample = null; document.body.classList.remove('has-claude'); }
+    t.error = failed.code === 'rate_limited' ? 'Claude is busy right now. Wait a minute, then ask again.' : failed.code === 'not_granted' ? 'Claude was not allowed on this page, so this feature is off until the page is reloaded.' : 'Claude did not answer' + (failed.message ? ': ' + failed.message : '') + '. Try again.';
+  }
+  t.busy = false; t.live = ''; t.ctrl = null; paintAsk(key);
+}
+async function initAsk() {
+  try {
+    for (let i = 0; i < 40 && !(window.claude && typeof window.claude.use === 'function'); i++) await sleep(100);
+    if (!(window.claude && typeof window.claude.use === 'function')) return;
+    const f = await withTimeout(window.claude.use('sample'), 12000);
+    if (typeof f === 'function') { S.sample = f; document.body.classList.add('has-claude'); }
+  } catch (e) { S.sample = null; }
 }
 function qRow(q) { return '<a class="qrow" href="#q-' + esc(q.id) + '"><span class="qt">' + esc(Core.plain(q.stem)) + '</span><span class="meta">' + esc(fmtLabel(q.format)) + (q.versions > 1 ? ', ' + q.versions + ' versions' : '') + '</span>' + statusChip(q) + '</a>'; }
 views.topic = id => {
@@ -1053,6 +1185,9 @@ function tick() {
 /* ---------- Actions ---------- */
 function moveOrder(from, to) { const c = cur(); if (!c || c.locked || c.q.format !== 'order' || from === to || to < 0 || to >= c.slot.r.length) return; const a = c.slot.r.slice(), x = a.splice(from, 1)[0]; a.splice(to, 0, x); c.slot.r = a; changed(); }
 const A = {
+  ask(el) { const box = el.closest('.ask'); if (!box) return; const key = box.dataset.key, c = ASK[key[0] === 'g' ? 'g' : 'q'].find(x => x[0] === el.dataset.kind); if (c) askClaude(key, c[0], c[2], c[1]); },
+  askSend(el) { const box = el.closest('.ask'); if (!box) return; const inp = box.querySelector('.ask-in'), v = inp.value.trim(); if (!v) { inp.focus(); return; } inp.value = ''; askClaude(box.dataset.key, 'own', v); },
+  askStop(el) { const box = el.closest('.ask'), t = box && S.ask[box.dataset.key]; if (t && t.ctrl) t.ctrl.abort(); },
   quick(el) { startSession({mode: el.dataset.mode, topics: el.dataset.topic ? [el.dataset.topic] : [], subtopics: el.dataset.sub ? [el.dataset.sub] : [], formats: [], count: +el.dataset.count || S.settings.sessionLength || 10}); },
   setMode(el) { S.ui.practice.mode = el.dataset.mode; render(); },
   start() { const p = S.ui.practice, e = S.exam, n = p.mode === 'exam' ? {full: e.questionCount, half: Math.round(e.questionCount / 2), quarter: Math.round(e.questionCount / 4)}[p.examLen] : (p.count || S.settings.sessionLength || 10);
@@ -1122,6 +1257,7 @@ document.addEventListener('submit', ev => { ev.preventDefault(); if (ev.target.i
 document.addEventListener('keydown', ev => {
   if (!$('#modal').hidden) { if (ev.key === 'Escape') A.modalClose(); return; }
   const tag = (ev.target.tagName || '').toLowerCase(), typing = tag === 'input' || tag === 'textarea' || tag === 'select';
+  if (ev.key === 'Enter' && ev.target.classList && ev.target.classList.contains('ask-in')) { ev.preventDefault(); A.askSend(ev.target); return; }
   if (ev.key === '/' && !typing) { ev.preventDefault(); $('#gsearch').focus(); return; }
   const c = cur(); if (!c) return;
   if (ev.key === 'Enter' && (!typing || ev.target.id === 'num-in') && tag !== 'button' && tag !== 'a') { const b = $('#primary'); if (b) { ev.preventDefault(); b.click(); } return; }
@@ -1149,6 +1285,7 @@ setInterval(tick, 1000);
   try { await loadContent(); }
   catch (e) { $('#view').innerHTML = '<div class="wrap"><div class="card"><h2>The site content did not load</h2><p class="sub">' + esc(e.message) + '. Reload the page. If it keeps happening, the content files need republishing.</p></div></div>'; return; }
   recompute(); restoreActive(); R = parseRoute(); render(true);     // usable straight away, before storage answers
+  initAsk();
   await Store.init();
   recompute(); if (R.name !== 'quiz' || !S.session) render(); else paintStatus();
 })();

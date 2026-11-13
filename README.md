@@ -34,6 +34,6 @@ snapshots/           optional dated exports of the study log
 
 ## Status
 
-Version 0.3.0. All 79 subtopics of the exam specification have a lesson (plain-words explanation, key formulas, worked example, common mistakes) and questions. The bank holds 212 original questions, each with a verified answer, a plain-words explanation and a worked solution. `PROTOCOL.md` has the plan for deepening both.
+Version 0.4.0. All 79 subtopics of the exam specification have a lesson (explanation, key formulas, worked example, common mistakes; 33 with a figure) and questions. The bank holds 746 original questions in 212 question types; most types come in four numeric versions, and a type counts as secure only after three correct answers on separate, spaced days. Each question has a verified answer, a concept note and a solution worked with its own numbers, and 210 have a drawn figure. On the published artifact, an *Explain further with Claude* panel under each answer and lesson asks Claude for more, with the question and solution as context. `PROTOCOL.md` has the plan for deepening the content.
 
 No text, problems or figures from NCEES or commercial prep books are included. The site points to them by section and page only.

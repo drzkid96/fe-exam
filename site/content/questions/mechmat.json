@@ -15,24 +15,28 @@
    },
    {
     "id": "b",
-    "text": "125 MPa"
+    "text": "125.0 MPa"
    },
    {
     "id": "c",
-    "text": "159 MPa"
+    "text": "159.2 MPa"
    },
    {
     "id": "d",
-    "text": "318 MPa"
+    "text": "318.3 MPa"
    }
   ],
   "answer": "c",
-  "eli5": "Stress is how hard each bit of the material is being pulled. Spread the load over the cut area, the same way pressure spreads a force over a surface.",
-  "solution": "Area = \\frac{π(20)^{2}}{4} = 314.2 mm^{2}.\n\nStress = \\frac{P}{A} = \\frac{50,000 N}{314.2 mm^{2}} = 159 MPa.",
+  "eli5": "Average normal stress is force divided by the cross-sectional area perpendicular to the force. With newtons and square millimetres the result is in MPa.",
+  "solution": "A = \\frac{π(20)^{2}}{4} = 314.2 mm^{2}.\n\nStress = \\frac{P}{A} = \\frac{50,000 N}{314.2 mm^{2}} = 159.2 MPa.",
   "handbook": [
    {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "uniaxial loading",
+     "stress"
+    ]
    }
   ],
   "tags": [
@@ -41,7 +45,187 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "mechmat-0001",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 420 130",
+   "svg": "<rect x='40' y='30' width='14' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='54' y='60' width='240' height='20' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='294' y1='70' x2='342' y2='70' stroke='#00574A' stroke-width='3'/><path d='M350 70 L338 64 L338 76 Z' fill='#00574A'/><text x='356' y='74' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>50 kN</text><text x='174' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>20 mm diameter</text>",
+   "alt": "A 20 mm diameter rod fixed at one end and pulled with 50 kN at the other."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0001-b",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 25 mm diameter steel rod carries a 80 kN tensile load. What is the axial stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "81.5 MPa"
+   },
+   {
+    "id": "b",
+    "text": "128.0 MPa"
+   },
+   {
+    "id": "c",
+    "text": "163.0 MPa"
+   },
+   {
+    "id": "d",
+    "text": "325.9 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Average normal stress is force divided by the cross-sectional area perpendicular to the force. With newtons and square millimetres the result is in MPa.",
+  "solution": "A = \\frac{π(25)^{2}}{4} = 490.9 mm^{2}.\n\nStress = \\frac{P}{A} = \\frac{80,000 N}{490.9 mm^{2}} = 163.0 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "uniaxial loading",
+     "stress"
+    ]
+   }
+  ],
+  "tags": [
+   "axial stress"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0001",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 420 130",
+   "svg": "<rect x='40' y='30' width='14' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='54' y='60' width='240' height='20' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='294' y1='70' x2='342' y2='70' stroke='#00574A' stroke-width='3'/><path d='M350 70 L338 64 L338 76 Z' fill='#00574A'/><text x='356' y='74' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>80 kN</text><text x='174' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>25 mm diameter</text>",
+   "alt": "A 25 mm diameter rod fixed at one end and pulled with 80 kN at the other."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0001-c",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 16 mm diameter steel rod carries a 40 kN tensile load. What is the axial stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "99.5 MPa"
+   },
+   {
+    "id": "b",
+    "text": "156.2 MPa"
+   },
+   {
+    "id": "c",
+    "text": "198.9 MPa"
+   },
+   {
+    "id": "d",
+    "text": "397.9 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Average normal stress is force divided by the cross-sectional area perpendicular to the force. With newtons and square millimetres the result is in MPa.",
+  "solution": "A = \\frac{π(16)^{2}}{4} = 201.1 mm^{2}.\n\nStress = \\frac{P}{A} = \\frac{40,000 N}{201.1 mm^{2}} = 198.9 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "uniaxial loading",
+     "stress"
+    ]
+   }
+  ],
+  "tags": [
+   "axial stress"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0001",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 420 130",
+   "svg": "<rect x='40' y='30' width='14' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='54' y='60' width='240' height='20' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='294' y1='70' x2='342' y2='70' stroke='#00574A' stroke-width='3'/><path d='M350 70 L338 64 L338 76 Z' fill='#00574A'/><text x='356' y='74' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>40 kN</text><text x='174' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>16 mm diameter</text>",
+   "alt": "A 16 mm diameter rod fixed at one end and pulled with 40 kN at the other."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0001-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 30 mm diameter steel rod carries a 120 kN tensile load. What is the axial stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "84.9 MPa"
+   },
+   {
+    "id": "b",
+    "text": "133.3 MPa"
+   },
+   {
+    "id": "c",
+    "text": "169.8 MPa"
+   },
+   {
+    "id": "d",
+    "text": "339.5 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Average normal stress is force divided by the cross-sectional area perpendicular to the force. With newtons and square millimetres the result is in MPa.",
+  "solution": "A = \\frac{π(30)^{2}}{4} = 706.9 mm^{2}.\n\nStress = \\frac{P}{A} = \\frac{120,000 N}{706.9 mm^{2}} = 169.8 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "uniaxial loading",
+     "stress"
+    ]
+   }
+  ],
+  "tags": [
+   "axial stress"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0001",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 420 130",
+   "svg": "<rect x='40' y='30' width='14' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='54' y='60' width='240' height='20' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='294' y1='70' x2='342' y2='70' stroke='#00574A' stroke-width='3'/><path d='M350 70 L338 64 L338 76 Z' fill='#00574A'/><text x='356' y='74' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>120 kN</text><text x='174' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>30 mm diameter</text>",
+   "alt": "A 30 mm diameter rod fixed at one end and pulled with 120 kN at the other."
+  },
+  "lookup": true
  },
  {
   "id": "mechmat-0002",
@@ -51,19 +235,22 @@
   "status": "live",
   "difficulty": 2,
   "units": "SI",
-  "stem": "A steel rod is 20 mm in diameter and 2 m long. It carries a 50 kN tensile load. The modulus of elasticity is 200 GPa. How much does the rod stretch?",
+  "stem": "A rod is 20 mm in diameter and 2 m long. It carries a 50 kN tensile load. The modulus of elasticity is 200 GPa. How much does the rod stretch?",
   "answer": {
    "value": 1.59,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "mm"
   },
-  "eli5": "A rod is a very stiff spring. It stretches more if you pull harder or if it is longer, and less if it is thicker or made of stiffer material.",
-  "solution": "Area = 314.2 mm^{2}.\n\nStretch = \\frac{PL}{AE} = \\frac{50,000(2,000)}{314.2(200,000)} = 1.59 mm.\n\nUnits: N, mm and MPa work together.",
+  "eli5": "In the elastic range, stress = E × strain. Combining stress = P/A and strain = elongation/L gives elongation = P L / (A E). Keep units consistent: N, mm and MPa.",
+  "solution": "A = \\frac{π(20)^{2}}{4} = 314.2 mm^{2}.\n\nElongation = \\frac{P L}{A E} = \\frac{(50,000)(2,000)}{(314.2)(200,000)} = 1.59 mm.",
   "handbook": [
    {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "uniaxial loading and deformation"
+    ]
    }
   ],
   "tags": [
@@ -73,7 +260,148 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "mechmat-0002",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 420 130",
+   "svg": "<rect x='40' y='30' width='14' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='54' y='60' width='240' height='20' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='294' y1='70' x2='342' y2='70' stroke='#00574A' stroke-width='3'/><path d='M350 70 L338 64 L338 76 Z' fill='#00574A'/><text x='356' y='74' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>50 kN</text><line x1='54' y1='104' x2='294' y2='104' stroke='#00242E'/><line x1='54' y1='98' x2='54' y2='110' stroke='#00242E'/><line x1='294' y1='98' x2='294' y2='110' stroke='#00242E'/><text x='174' y='120' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text><text x='174' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>20 mm diameter</text>",
+   "alt": "A 20 mm diameter rod fixed at one end and pulled with 50 kN at the other."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0002-b",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rod is 25 mm in diameter and 3 m long. It carries a 80 kN tensile load. The modulus of elasticity is 200 GPa. How much does the rod stretch?",
+  "answer": {
+   "value": 2.44,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "In the elastic range, stress = E × strain. Combining stress = P/A and strain = elongation/L gives elongation = P L / (A E). Keep units consistent: N, mm and MPa.",
+  "solution": "A = \\frac{π(25)^{2}}{4} = 490.9 mm^{2}.\n\nElongation = \\frac{P L}{A E} = \\frac{(80,000)(3,000)}{(490.9)(200,000)} = 2.44 mm.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "uniaxial loading and deformation"
+    ]
+   }
+  ],
+  "tags": [
+   "axial deformation",
+   "elongation"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0002",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 420 130",
+   "svg": "<rect x='40' y='30' width='14' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='54' y='60' width='240' height='20' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='294' y1='70' x2='342' y2='70' stroke='#00574A' stroke-width='3'/><path d='M350 70 L338 64 L338 76 Z' fill='#00574A'/><text x='356' y='74' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>80 kN</text><line x1='54' y1='104' x2='294' y2='104' stroke='#00242E'/><line x1='54' y1='98' x2='54' y2='110' stroke='#00242E'/><line x1='294' y1='98' x2='294' y2='110' stroke='#00242E'/><text x='174' y='120' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='174' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>25 mm diameter</text>",
+   "alt": "A 25 mm diameter rod fixed at one end and pulled with 80 kN at the other."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0002-c",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rod is 16 mm in diameter and 1.5 m long. It carries a 40 kN tensile load. The modulus of elasticity is 200 GPa. How much does the rod stretch?",
+  "answer": {
+   "value": 1.49,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "In the elastic range, stress = E × strain. Combining stress = P/A and strain = elongation/L gives elongation = P L / (A E). Keep units consistent: N, mm and MPa.",
+  "solution": "A = \\frac{π(16)^{2}}{4} = 201.1 mm^{2}.\n\nElongation = \\frac{P L}{A E} = \\frac{(40,000)(1,500)}{(201.1)(200,000)} = 1.49 mm.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "uniaxial loading and deformation"
+    ]
+   }
+  ],
+  "tags": [
+   "axial deformation",
+   "elongation"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0002",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 420 130",
+   "svg": "<rect x='40' y='30' width='14' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='54' y='60' width='240' height='20' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='294' y1='70' x2='342' y2='70' stroke='#00574A' stroke-width='3'/><path d='M350 70 L338 64 L338 76 Z' fill='#00574A'/><text x='356' y='74' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>40 kN</text><line x1='54' y1='104' x2='294' y2='104' stroke='#00242E'/><line x1='54' y1='98' x2='54' y2='110' stroke='#00242E'/><line x1='294' y1='98' x2='294' y2='110' stroke='#00242E'/><text x='174' y='120' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>1.5 m</text><text x='174' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>16 mm diameter</text>",
+   "alt": "A 16 mm diameter rod fixed at one end and pulled with 40 kN at the other."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0002-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rod is 30 mm in diameter and 4 m long. It carries a 120 kN tensile load. The modulus of elasticity is 70 GPa. How much does the rod stretch?",
+  "answer": {
+   "value": 9.7,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "In the elastic range, stress = E × strain. Combining stress = P/A and strain = elongation/L gives elongation = P L / (A E). Keep units consistent: N, mm and MPa.",
+  "solution": "A = \\frac{π(30)^{2}}{4} = 706.9 mm^{2}.\n\nElongation = \\frac{P L}{A E} = \\frac{(120,000)(4,000)}{(706.9)(70,000)} = 9.70 mm.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "uniaxial loading and deformation"
+    ]
+   }
+  ],
+  "tags": [
+   "axial deformation",
+   "elongation"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0002",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 420 130",
+   "svg": "<rect x='40' y='30' width='14' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='54' y='60' width='240' height='20' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='294' y1='70' x2='342' y2='70' stroke='#00574A' stroke-width='3'/><path d='M350 70 L338 64 L338 76 Z' fill='#00574A'/><text x='356' y='74' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>120 kN</text><line x1='54' y1='104' x2='294' y2='104' stroke='#00242E'/><line x1='54' y1='98' x2='54' y2='110' stroke='#00242E'/><line x1='294' y1='98' x2='294' y2='110' stroke='#00242E'/><text x='174' y='120' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><text x='174' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>30 mm diameter</text>",
+   "alt": "A 30 mm diameter rod fixed at one end and pulled with 120 kN at the other."
+  },
+  "lookup": true
  },
  {
   "id": "mechmat-0003",
@@ -103,12 +431,16 @@
    }
   ],
   "answer": "b",
-  "eli5": "A loaded beam bends most in the middle, like a plank sagging between two chairs. That is where the bending moment peaks.",
-  "solution": "For a uniform load on a simple span, the largest moment is at midspan.\n\nM_{max} = \\frac{wL^{2}}{8} = \\frac{10(8)^{2}}{8} = 80 kN·m.",
+  "eli5": "For a simply supported beam under full uniform load, shear is zero at midspan, so the moment peaks there: M_{max} = w L^{2} / 8. It equals the area under the shear diagram from the support to midspan.",
+  "solution": "Reaction = 10(8) / 2 = 40 kN.\n\nM_{max} = \\frac{w L^{2}}{8} = \\frac{10(8)^{2}}{8} = 80 kN·m, at midspan.",
   "handbook": [
    {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment",
+     "simply supported beam"
+    ]
    }
   ],
   "tags": [
@@ -118,7 +450,210 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "mechmat-0003",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>10 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>8 m</text>",
+   "alt": "A simply supported beam 8 m long with a uniform load of 10 kN/m."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 205",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>10 kN/m</text><line x1='50' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='200' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>8 m</text><line x1='50' y1='162' x2='50' y2='130' stroke='#568CBB' stroke-width='3'/><path d='M50 122 L44 134 L56 134 Z' fill='#568CBB'/><text x='62' y='158' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>40 kN</text><line x1='350' y1='162' x2='350' y2='126' stroke='#568CBB' stroke-width='3'/><path d='M350 118 L344 130 L356 130 Z' fill='#568CBB'/><text x='338' y='158' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>40 kN</text>",
+   "alt": "A simply supported beam 8 m long with a uniform load of 10 kN/m."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0003-b",
+  "topic": "mechmat",
+  "subtopic": "mechmat-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 6 m and carries a uniform load of 12 kN/m over its full length. What is the maximum bending moment?",
+  "options": [
+   {
+    "id": "a",
+    "text": "27 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "54 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "108 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "216 kN·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "For a simply supported beam under full uniform load, shear is zero at midspan, so the moment peaks there: M_{max} = w L^{2} / 8. It equals the area under the shear diagram from the support to midspan.",
+  "solution": "Reaction = 12(6) / 2 = 36 kN.\n\nM_{max} = \\frac{w L^{2}}{8} = \\frac{12(6)^{2}}{8} = 54 kN·m, at midspan.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment",
+     "simply supported beam"
+    ]
+   }
+  ],
+  "tags": [
+   "bending moment",
+   "uniform load"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0003",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>12 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6 m</text>",
+   "alt": "A simply supported beam 6 m long with a uniform load of 12 kN/m."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 205",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>12 kN/m</text><line x1='50' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='200' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6 m</text><line x1='50' y1='162' x2='50' y2='130' stroke='#568CBB' stroke-width='3'/><path d='M50 122 L44 134 L56 134 Z' fill='#568CBB'/><text x='62' y='158' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>36 kN</text><line x1='350' y1='162' x2='350' y2='126' stroke='#568CBB' stroke-width='3'/><path d='M350 118 L344 130 L356 130 Z' fill='#568CBB'/><text x='338' y='158' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>36 kN</text>",
+   "alt": "A simply supported beam 6 m long with a uniform load of 12 kN/m."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0003-c",
+  "topic": "mechmat",
+  "subtopic": "mechmat-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 10 m and carries a uniform load of 8 kN/m over its full length. What is the maximum bending moment?",
+  "options": [
+   {
+    "id": "a",
+    "text": "50 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "100 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "200 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "400 kN·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "For a simply supported beam under full uniform load, shear is zero at midspan, so the moment peaks there: M_{max} = w L^{2} / 8. It equals the area under the shear diagram from the support to midspan.",
+  "solution": "Reaction = 8(10) / 2 = 40 kN.\n\nM_{max} = \\frac{w L^{2}}{8} = \\frac{8(10)^{2}}{8} = 100 kN·m, at midspan.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment",
+     "simply supported beam"
+    ]
+   }
+  ],
+  "tags": [
+   "bending moment",
+   "uniform load"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0003",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>8 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>10 m</text>",
+   "alt": "A simply supported beam 10 m long with a uniform load of 8 kN/m."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 205",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>8 kN/m</text><line x1='50' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='200' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>10 m</text><line x1='50' y1='162' x2='50' y2='130' stroke='#568CBB' stroke-width='3'/><path d='M50 122 L44 134 L56 134 Z' fill='#568CBB'/><text x='62' y='158' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>40 kN</text><line x1='350' y1='162' x2='350' y2='126' stroke='#568CBB' stroke-width='3'/><path d='M350 118 L344 130 L356 130 Z' fill='#568CBB'/><text x='338' y='158' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>40 kN</text>",
+   "alt": "A simply supported beam 10 m long with a uniform load of 8 kN/m."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0003-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 4 m and carries a uniform load of 25 kN/m over its full length. What is the maximum bending moment?",
+  "options": [
+   {
+    "id": "a",
+    "text": "25 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "50 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "100 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "200 kN·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "For a simply supported beam under full uniform load, shear is zero at midspan, so the moment peaks there: M_{max} = w L^{2} / 8. It equals the area under the shear diagram from the support to midspan.",
+  "solution": "Reaction = 25(4) / 2 = 50 kN.\n\nM_{max} = \\frac{w L^{2}}{8} = \\frac{25(4)^{2}}{8} = 50 kN·m, at midspan.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment",
+     "simply supported beam"
+    ]
+   }
+  ],
+  "tags": [
+   "bending moment",
+   "uniform load"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0003",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>25 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text>",
+   "alt": "A simply supported beam 4 m long with a uniform load of 25 kN/m."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 205",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>25 kN/m</text><line x1='50' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='200' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='50' y1='162' x2='50' y2='130' stroke='#568CBB' stroke-width='3'/><path d='M50 122 L44 134 L56 134 Z' fill='#568CBB'/><text x='62' y='158' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>50 kN</text><line x1='350' y1='162' x2='350' y2='126' stroke='#568CBB' stroke-width='3'/><path d='M350 118 L344 130 L356 130 Z' fill='#568CBB'/><text x='338' y='158' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>50 kN</text>",
+   "alt": "A simply supported beam 4 m long with a uniform load of 25 kN/m."
+  },
+  "lookup": true
  },
  {
   "id": "mechmat-0004",
@@ -128,7 +663,7 @@
   "status": "live",
   "difficulty": 2,
   "units": "SI",
-  "stem": "At a point in a plate, the normal stresses on two perpendicular faces are 80 MPa and 20 MPa, both tension. The shear stress on those faces is 40 MPa. What is the maximum principal stress?",
+  "stem": "At a point in a plate, the normal stresses on two perpendicular faces are 80 MPa and 20 MPa (tension positive). The shear stress on those faces is 40 MPa. What is the maximum principal stress?",
   "options": [
    {
     "id": "a",
@@ -148,12 +683,16 @@
    }
   ],
   "answer": "c",
-  "eli5": "Turn the little square of material and the stresses on its faces change. At one special angle the pull is as large as it can get and the shear vanishes. That largest pull is the maximum principal stress.",
-  "solution": "Mohr's circle centre = \\frac{80 + 20}{2} = 50 MPa.\n\nRadius = \\sqrt{(\\frac{80 - 20}{2})^{2} + 40^{2}} = \\sqrt{30^{2} + 40^{2}} = 50 MPa.\n\nMaximum principal stress = centre + radius = 100 MPa.",
+  "eli5": "Principal stresses are the largest and smallest normal stresses at a point, found on the planes where shear is zero. On Mohr's circle the centre is the average normal stress and the radius is the square root of ((difference/2)^{2} + shear^{2}); the maximum principal stress is centre + radius.",
+  "solution": "Centre = \\frac{80 + (20)}{2} = 50 MPa.\n\nRadius = \\sqrt{(\\frac{80 - (20)}{2})^{2} + 40^{2}} = 50 MPa.\n\nMaximum principal stress = 50 + 50 = 100 MPa.",
   "handbook": [
    {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "Mohr's circle",
+     "principal stresses"
+    ]
    }
   ],
   "tags": [
@@ -163,7 +702,210 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "mechmat-0004",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 420 185",
+   "svg": "<rect x='150' y='40' width='100' height='100' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='250' y1='90' x2='302' y2='90' stroke='#00574A' stroke-width='3'/><path d='M310 90 L298 84 L298 96 Z' fill='#00574A'/><line x1='150' y1='90' x2='98' y2='90' stroke='#00574A' stroke-width='3'/><path d='M90 90 L102 84 L102 96 Z' fill='#00574A'/><line x1='200' y1='40' x2='200' y2='12' stroke='#00574A' stroke-width='3'/><path d='M200 4 L194 16 L206 16 Z' fill='#00574A'/><line x1='200' y1='140' x2='200' y2='168' stroke='#00574A' stroke-width='3'/><path d='M200 176 L194 164 L206 164 Z' fill='#00574A'/><text x='316' y='94' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>80 MPa</text><text x='212' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>20 MPa</text><line x1='160' y1='30' x2='232' y2='30' stroke='#568CBB' stroke-width='2'/><path d='M240 30 L228 24 L228 36 Z' fill='#568CBB'/><line x1='240' y1='150' x2='168' y2='150' stroke='#568CBB' stroke-width='2'/><path d='M160 150 L172 144 L172 156 Z' fill='#568CBB'/><text x='250' y='30' text-anchor='start' font-size='12' font-weight='400' fill='#568CBB'>40 MPa shear</text>",
+   "alt": "A stress element with normal stresses of 80 MPa and 20 MPa and a shear stress of 40 MPa."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 202",
+   "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='140' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='188' y1='166' x2='92' y2='38' stroke='#568CBB' stroke-width='2'/><circle cx='188' cy='166' r='4' fill='#568CBB'/><circle cx='92' cy='38' r='4' fill='#568CBB'/><circle cx='140' cy='102.0' r='3' fill='#00242E'/><text x='140' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 50</text><text x='194' y='180' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(80, 40)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+   "alt": "Mohr's circle for normal stresses 80 and 20 MPa with shear stress 40 MPa."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0004-b",
+  "topic": "mechmat",
+  "subtopic": "mechmat-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "At a point in a plate, the normal stresses on two perpendicular faces are 100 MPa and 40 MPa (tension positive). The shear stress on those faces is 40 MPa. What is the maximum principal stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "70 MPa"
+   },
+   {
+    "id": "b",
+    "text": "110 MPa"
+   },
+   {
+    "id": "c",
+    "text": "120 MPa"
+   },
+   {
+    "id": "d",
+    "text": "180 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Principal stresses are the largest and smallest normal stresses at a point, found on the planes where shear is zero. On Mohr's circle the centre is the average normal stress and the radius is the square root of ((difference/2)^{2} + shear^{2}); the maximum principal stress is centre + radius.",
+  "solution": "Centre = \\frac{100 + (40)}{2} = 70 MPa.\n\nRadius = \\sqrt{(\\frac{100 - (40)}{2})^{2} + 40^{2}} = 50 MPa.\n\nMaximum principal stress = 70 + 50 = 120 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Mohr's circle",
+     "principal stresses"
+    ]
+   }
+  ],
+  "tags": [
+   "principal stress",
+   "mohr circle"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0004",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 420 185",
+   "svg": "<rect x='150' y='40' width='100' height='100' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='250' y1='90' x2='302' y2='90' stroke='#00574A' stroke-width='3'/><path d='M310 90 L298 84 L298 96 Z' fill='#00574A'/><line x1='150' y1='90' x2='98' y2='90' stroke='#00574A' stroke-width='3'/><path d='M90 90 L102 84 L102 96 Z' fill='#00574A'/><line x1='200' y1='40' x2='200' y2='12' stroke='#00574A' stroke-width='3'/><path d='M200 4 L194 16 L206 16 Z' fill='#00574A'/><line x1='200' y1='140' x2='200' y2='168' stroke='#00574A' stroke-width='3'/><path d='M200 176 L194 164 L206 164 Z' fill='#00574A'/><text x='316' y='94' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>100 MPa</text><text x='212' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>40 MPa</text><line x1='160' y1='30' x2='232' y2='30' stroke='#568CBB' stroke-width='2'/><path d='M240 30 L228 24 L228 36 Z' fill='#568CBB'/><line x1='240' y1='150' x2='168' y2='150' stroke='#568CBB' stroke-width='2'/><path d='M160 150 L172 144 L172 156 Z' fill='#568CBB'/><text x='250' y='30' text-anchor='start' font-size='12' font-weight='400' fill='#568CBB'>40 MPa shear</text>",
+   "alt": "A stress element with normal stresses of 100 MPa and 40 MPa and a shear stress of 40 MPa."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 202",
+   "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='172' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='220' y1='166' x2='124' y2='38' stroke='#568CBB' stroke-width='2'/><circle cx='220' cy='166' r='4' fill='#568CBB'/><circle cx='124' cy='38' r='4' fill='#568CBB'/><circle cx='172' cy='102.0' r='3' fill='#00242E'/><text x='172' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 70</text><text x='226' y='180' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(100, 40)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+   "alt": "Mohr's circle for normal stresses 100 and 40 MPa with shear stress 40 MPa."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0004-c",
+  "topic": "mechmat",
+  "subtopic": "mechmat-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "At a point in a plate, the normal stresses on two perpendicular faces are 90 MPa and -30 MPa (tension positive). The shear stress on those faces is 80 MPa. What is the maximum principal stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "30 MPa"
+   },
+   {
+    "id": "b",
+    "text": "110 MPa"
+   },
+   {
+    "id": "c",
+    "text": "130 MPa"
+   },
+   {
+    "id": "d",
+    "text": "200 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Principal stresses are the largest and smallest normal stresses at a point, found on the planes where shear is zero. On Mohr's circle the centre is the average normal stress and the radius is the square root of ((difference/2)^{2} + shear^{2}); the maximum principal stress is centre + radius.",
+  "solution": "Centre = \\frac{90 + (-30)}{2} = 30 MPa.\n\nRadius = \\sqrt{(\\frac{90 - (-30)}{2})^{2} + 80^{2}} = 100 MPa.\n\nMaximum principal stress = 30 + 100 = 130 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Mohr's circle",
+     "principal stresses"
+    ]
+   }
+  ],
+  "tags": [
+   "principal stress",
+   "mohr circle"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0004",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 420 185",
+   "svg": "<rect x='150' y='40' width='100' height='100' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='250' y1='90' x2='302' y2='90' stroke='#00574A' stroke-width='3'/><path d='M310 90 L298 84 L298 96 Z' fill='#00574A'/><line x1='150' y1='90' x2='98' y2='90' stroke='#00574A' stroke-width='3'/><path d='M90 90 L102 84 L102 96 Z' fill='#00574A'/><line x1='200' y1='40' x2='200' y2='12' stroke='#00574A' stroke-width='3'/><path d='M200 4 L194 16 L206 16 Z' fill='#00574A'/><line x1='200' y1='140' x2='200' y2='168' stroke='#00574A' stroke-width='3'/><path d='M200 176 L194 164 L206 164 Z' fill='#00574A'/><text x='316' y='94' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>90 MPa</text><text x='212' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>-30 MPa</text><line x1='160' y1='30' x2='232' y2='30' stroke='#568CBB' stroke-width='2'/><path d='M240 30 L228 24 L228 36 Z' fill='#568CBB'/><line x1='240' y1='150' x2='168' y2='150' stroke='#568CBB' stroke-width='2'/><path d='M160 150 L172 144 L172 156 Z' fill='#568CBB'/><text x='250' y='30' text-anchor='start' font-size='12' font-weight='400' fill='#568CBB'>80 MPa shear</text>",
+   "alt": "A stress element with normal stresses of 90 MPa and -30 MPa and a shear stress of 80 MPa."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 202",
+   "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='116' y1='10' x2='116' y2='194' stroke='#00242E'/><circle cx='140' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='188' y1='166' x2='92' y2='38' stroke='#568CBB' stroke-width='2'/><circle cx='188' cy='166' r='4' fill='#568CBB'/><circle cx='92' cy='38' r='4' fill='#568CBB'/><circle cx='140' cy='102.0' r='3' fill='#00242E'/><text x='140' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 30</text><text x='194' y='180' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(90, 80)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='120' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+   "alt": "Mohr's circle for normal stresses 90 and -30 MPa with shear stress 80 MPa."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0004-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "At a point in a plate, the normal stresses on two perpendicular faces are 120 MPa and 60 MPa (tension positive). The shear stress on those faces is 40 MPa. What is the maximum principal stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "90 MPa"
+   },
+   {
+    "id": "b",
+    "text": "130 MPa"
+   },
+   {
+    "id": "c",
+    "text": "140 MPa"
+   },
+   {
+    "id": "d",
+    "text": "220 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Principal stresses are the largest and smallest normal stresses at a point, found on the planes where shear is zero. On Mohr's circle the centre is the average normal stress and the radius is the square root of ((difference/2)^{2} + shear^{2}); the maximum principal stress is centre + radius.",
+  "solution": "Centre = \\frac{120 + (60)}{2} = 90 MPa.\n\nRadius = \\sqrt{(\\frac{120 - (60)}{2})^{2} + 40^{2}} = 50 MPa.\n\nMaximum principal stress = 90 + 50 = 140 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Mohr's circle",
+     "principal stresses"
+    ]
+   }
+  ],
+  "tags": [
+   "principal stress",
+   "mohr circle"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0004",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 420 185",
+   "svg": "<rect x='150' y='40' width='100' height='100' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='250' y1='90' x2='302' y2='90' stroke='#00574A' stroke-width='3'/><path d='M310 90 L298 84 L298 96 Z' fill='#00574A'/><line x1='150' y1='90' x2='98' y2='90' stroke='#00574A' stroke-width='3'/><path d='M90 90 L102 84 L102 96 Z' fill='#00574A'/><line x1='200' y1='40' x2='200' y2='12' stroke='#00574A' stroke-width='3'/><path d='M200 4 L194 16 L206 16 Z' fill='#00574A'/><line x1='200' y1='140' x2='200' y2='168' stroke='#00574A' stroke-width='3'/><path d='M200 176 L194 164 L206 164 Z' fill='#00574A'/><text x='316' y='94' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>120 MPa</text><text x='212' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>60 MPa</text><line x1='160' y1='30' x2='232' y2='30' stroke='#568CBB' stroke-width='2'/><path d='M240 30 L228 24 L228 36 Z' fill='#568CBB'/><line x1='240' y1='150' x2='168' y2='150' stroke='#568CBB' stroke-width='2'/><path d='M160 150 L172 144 L172 156 Z' fill='#568CBB'/><text x='250' y='30' text-anchor='start' font-size='12' font-weight='400' fill='#568CBB'>40 MPa shear</text>",
+   "alt": "A stress element with normal stresses of 120 MPa and 60 MPa and a shear stress of 40 MPa."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 202",
+   "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='204' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='252' y1='166' x2='156' y2='38' stroke='#568CBB' stroke-width='2'/><circle cx='252' cy='166' r='4' fill='#568CBB'/><circle cx='156' cy='38' r='4' fill='#568CBB'/><circle cx='204' cy='102.0' r='3' fill='#00242E'/><text x='204' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 90</text><text x='258' y='180' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(120, 40)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+   "alt": "Mohr's circle for normal stresses 120 and 60 MPa with shear stress 40 MPa."
+  },
+  "lookup": true
  },
  {
   "id": "mechmat-0005",
@@ -177,28 +919,32 @@
   "options": [
    {
     "id": "a",
-    "text": "15 MPa"
+    "text": "15.0 MPa"
    },
    {
     "id": "b",
-    "text": "30 MPa"
+    "text": "30.0 MPa"
    },
    {
     "id": "c",
-    "text": "60 MPa"
+    "text": "60.0 MPa"
    },
    {
     "id": "d",
-    "text": "120 MPa"
+    "text": "120.0 MPa"
    }
   ],
   "answer": "b",
-  "eli5": "When a beam bends, the top is squeezed and the bottom is stretched. The stress is biggest at the outer edges, farthest from the middle.",
-  "solution": "I = \\frac{100(200)^{3}}{12} = 66.67 × 10^{6} mm^{4}, and the outer edge is c = 100 mm from the centre.\n\nStress = \\frac{Mc}{I} = \\frac{20 × 10^{6}(100)}{66.67 × 10^{6}} = 30 MPa.",
+  "eli5": "Bending stress varies linearly from zero at the neutral axis to a maximum at the extreme fibre: stress = M c / I = M / S. For a rectangle the section modulus is S = b h^{2} / 6.",
+  "solution": "S = \\frac{b h^{2}}{6} = \\frac{100(200)^{2}}{6} = 666,667 mm^{3}.\n\nStress = \\frac{M}{S} = \\frac{20 × 10^{6} N·mm}{666,667 mm^{3}} = 30.0 MPa.",
   "handbook": [
    {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "stresses in beams",
+     "section modulus"
+    ]
    }
   ],
   "tags": [
@@ -208,7 +954,190 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "mechmat-0005",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<rect x='168' y='20' width='65' height='130' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='148' y1='85' x2='252' y2='85' stroke='#568CBB' stroke-dasharray='6 4'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>100 mm</text><text x='160' y='52' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>200 mm</text>",
+   "alt": "A rectangular section 100 mm wide and 200 mm deep with its horizontal centroidal axis."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0005-b",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangular beam is 150 mm wide and 300 mm deep. It carries a bending moment of 90 kN·m about its strong axis. What is the maximum bending stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "20.0 MPa"
+   },
+   {
+    "id": "b",
+    "text": "40.0 MPa"
+   },
+   {
+    "id": "c",
+    "text": "80.0 MPa"
+   },
+   {
+    "id": "d",
+    "text": "160.0 MPa"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Bending stress varies linearly from zero at the neutral axis to a maximum at the extreme fibre: stress = M c / I = M / S. For a rectangle the section modulus is S = b h^{2} / 6.",
+  "solution": "S = \\frac{b h^{2}}{6} = \\frac{150(300)^{2}}{6} = 2,250,000 mm^{3}.\n\nStress = \\frac{M}{S} = \\frac{90 × 10^{6} N·mm}{2,250,000 mm^{3}} = 40.0 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "stresses in beams",
+     "section modulus"
+    ]
+   }
+  ],
+  "tags": [
+   "bending stress",
+   "flexure"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0005",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<rect x='168' y='20' width='65' height='130' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='148' y1='85' x2='252' y2='85' stroke='#568CBB' stroke-dasharray='6 4'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>150 mm</text><text x='160' y='52' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>300 mm</text>",
+   "alt": "A rectangular section 150 mm wide and 300 mm deep with its horizontal centroidal axis."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0005-c",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangular beam is 200 mm wide and 400 mm deep. It carries a bending moment of 160 kN·m about its strong axis. What is the maximum bending stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "15.0 MPa"
+   },
+   {
+    "id": "b",
+    "text": "30.0 MPa"
+   },
+   {
+    "id": "c",
+    "text": "60.0 MPa"
+   },
+   {
+    "id": "d",
+    "text": "120.0 MPa"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Bending stress varies linearly from zero at the neutral axis to a maximum at the extreme fibre: stress = M c / I = M / S. For a rectangle the section modulus is S = b h^{2} / 6.",
+  "solution": "S = \\frac{b h^{2}}{6} = \\frac{200(400)^{2}}{6} = 5,333,333 mm^{3}.\n\nStress = \\frac{M}{S} = \\frac{160 × 10^{6} N·mm}{5,333,333 mm^{3}} = 30.0 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "stresses in beams",
+     "section modulus"
+    ]
+   }
+  ],
+  "tags": [
+   "bending stress",
+   "flexure"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0005",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<rect x='168' y='20' width='65' height='130' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='148' y1='85' x2='252' y2='85' stroke='#568CBB' stroke-dasharray='6 4'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>200 mm</text><text x='160' y='52' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>400 mm</text>",
+   "alt": "A rectangular section 200 mm wide and 400 mm deep with its horizontal centroidal axis."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0005-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangular beam is 120 mm wide and 240 mm deep. It carries a bending moment of 50 kN·m about its strong axis. What is the maximum bending stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "21.7 MPa"
+   },
+   {
+    "id": "b",
+    "text": "43.4 MPa"
+   },
+   {
+    "id": "c",
+    "text": "86.8 MPa"
+   },
+   {
+    "id": "d",
+    "text": "173.6 MPa"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Bending stress varies linearly from zero at the neutral axis to a maximum at the extreme fibre: stress = M c / I = M / S. For a rectangle the section modulus is S = b h^{2} / 6.",
+  "solution": "S = \\frac{b h^{2}}{6} = \\frac{120(240)^{2}}{6} = 1,152,000 mm^{3}.\n\nStress = \\frac{M}{S} = \\frac{50 × 10^{6} N·mm}{1,152,000 mm^{3}} = 43.4 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "stresses in beams",
+     "section modulus"
+    ]
+   }
+  ],
+  "tags": [
+   "bending stress",
+   "flexure"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0005",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<rect x='168' y='20' width='65' height='130' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='148' y1='85' x2='252' y2='85' stroke='#568CBB' stroke-dasharray='6 4'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>120 mm</text><text x='160' y='52' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>240 mm</text>",
+   "alt": "A rectangular section 120 mm wide and 240 mm deep with its horizontal centroidal axis."
+  },
+  "lookup": true
  },
  {
   "id": "mechmat-0006",
@@ -251,7 +1180,11 @@
   "handbook": [
    {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "deflection of beams",
+     "beam slopes and deflections"
+    ]
    }
   ],
   "tags": [
@@ -261,7 +1194,8 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "lookup": true
  },
  {
   "id": "mechmat-0007",
@@ -321,7 +1255,10 @@
   "handbook": [
    {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
    }
   ],
   "tags": [
@@ -331,7 +1268,8 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "lookup": true
  },
  {
   "id": "mechmat-0008",
@@ -361,19 +1299,193 @@
    }
   ],
   "answer": "b",
-  "eli5": "Shear is biggest right next to a support, where the beam hands its whole share of the load to that support.",
-  "solution": "Each reaction = \\frac{wL}{2} = \\frac{10(8)}{2} = 40 kN, and the largest shear equals the reaction.",
+  "eli5": "Shear is largest where the beam meets its supports and equals the reaction there. For a full uniform load each reaction is w L / 2, and shear falls linearly to zero at midspan.",
+  "solution": "V_{max} = \\frac{w L}{2} = \\frac{10(8)}{2} = 40 kN, at each support.",
   "handbook": [
    {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "mechmat-0008",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>10 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>8 m</text>",
+   "alt": "A simply supported beam 8 m long with a uniform load of 10 kN/m."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0008-b",
+  "topic": "mechmat",
+  "subtopic": "mechmat-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 6 m and carries a uniform load of 15 kN/m. What is the maximum shear force?",
+  "options": [
+   {
+    "id": "a",
+    "text": "22.5 kN"
+   },
+   {
+    "id": "b",
+    "text": "45 kN"
+   },
+   {
+    "id": "c",
+    "text": "90 kN"
+   },
+   {
+    "id": "d",
+    "text": "180 kN"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Shear is largest where the beam meets its supports and equals the reaction there. For a full uniform load each reaction is w L / 2, and shear falls linearly to zero at midspan.",
+  "solution": "V_{max} = \\frac{w L}{2} = \\frac{15(6)}{2} = 45 kN, at each support.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0008",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>15 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6 m</text>",
+   "alt": "A simply supported beam 6 m long with a uniform load of 15 kN/m."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0008-c",
+  "topic": "mechmat",
+  "subtopic": "mechmat-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 10 m and carries a uniform load of 12 kN/m. What is the maximum shear force?",
+  "options": [
+   {
+    "id": "a",
+    "text": "30 kN"
+   },
+   {
+    "id": "b",
+    "text": "60 kN"
+   },
+   {
+    "id": "c",
+    "text": "120 kN"
+   },
+   {
+    "id": "d",
+    "text": "240 kN"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Shear is largest where the beam meets its supports and equals the reaction there. For a full uniform load each reaction is w L / 2, and shear falls linearly to zero at midspan.",
+  "solution": "V_{max} = \\frac{w L}{2} = \\frac{12(10)}{2} = 60 kN, at each support.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0008",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>12 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>10 m</text>",
+   "alt": "A simply supported beam 10 m long with a uniform load of 12 kN/m."
+  },
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0008-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 5 m and carries a uniform load of 24 kN/m. What is the maximum shear force?",
+  "options": [
+   {
+    "id": "a",
+    "text": "30 kN"
+   },
+   {
+    "id": "b",
+    "text": "60 kN"
+   },
+   {
+    "id": "c",
+    "text": "120 kN"
+   },
+   {
+    "id": "d",
+    "text": "240 kN"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Shear is largest where the beam meets its supports and equals the reaction there. For a full uniform load each reaction is w L / 2, and shear falls linearly to zero at midspan.",
+  "solution": "V_{max} = \\frac{w L}{2} = \\frac{24(5)}{2} = 60 kN, at each support.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0008",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>24 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text>",
+   "alt": "A simply supported beam 5 m long with a uniform load of 24 kN/m."
+  },
+  "lookup": true
  },
  {
   "id": "mechmat-0009",
@@ -399,23 +1511,181 @@
    },
    {
     "id": "d",
-    "text": "163 MPa"
+    "text": "163.0 MPa"
    }
   ],
   "answer": "c",
-  "eli5": "Twisting a shaft shears it. The outside surface works hardest because it is farthest from the centre.",
-  "solution": "Shear stress = \\frac{Tc}{J} = \\frac{16T}{π d^{3}} = \\frac{16(2 × 10^{6})}{π(50)^{3}} = 81.5 MPa.",
+  "eli5": "Torsional shear stress in a circular shaft grows linearly with radius: stress = T r / J. For a solid shaft J = π d^{4} / 32, so the maximum, at the surface, is 16 T / (π d^{3}).",
+  "solution": "Maximum shear stress = \\frac{16 T}{π d^{3}} = \\frac{16(2 × 10^{6})}{π(50)^{3}} = 81.5 MPa.",
   "handbook": [
    {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "torsion",
+     "polar moment of inertia"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "mechmat-0009",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0009-b",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A solid circular shaft 60 mm in diameter carries a torque of 4 kN·m. What is the maximum shear stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "23.6 MPa"
+   },
+   {
+    "id": "b",
+    "text": "47.2 MPa"
+   },
+   {
+    "id": "c",
+    "text": "94.3 MPa"
+   },
+   {
+    "id": "d",
+    "text": "188.6 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Torsional shear stress in a circular shaft grows linearly with radius: stress = T r / J. For a solid shaft J = π d^{4} / 32, so the maximum, at the surface, is 16 T / (π d^{3}).",
+  "solution": "Maximum shear stress = \\frac{16 T}{π d^{3}} = \\frac{16(4 × 10^{6})}{π(60)^{3}} = 94.3 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "torsion",
+     "polar moment of inertia"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0009",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0009-c",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A solid circular shaft 40 mm in diameter carries a torque of 1.2 kN·m. What is the maximum shear stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "23.9 MPa"
+   },
+   {
+    "id": "b",
+    "text": "47.7 MPa"
+   },
+   {
+    "id": "c",
+    "text": "95.5 MPa"
+   },
+   {
+    "id": "d",
+    "text": "191.0 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Torsional shear stress in a circular shaft grows linearly with radius: stress = T r / J. For a solid shaft J = π d^{4} / 32, so the maximum, at the surface, is 16 T / (π d^{3}).",
+  "solution": "Maximum shear stress = \\frac{16 T}{π d^{3}} = \\frac{16(1.2 × 10^{6})}{π(40)^{3}} = 95.5 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "torsion",
+     "polar moment of inertia"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0009",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0009-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A solid circular shaft 80 mm in diameter carries a torque of 10 kN·m. What is the maximum shear stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "24.9 MPa"
+   },
+   {
+    "id": "b",
+    "text": "49.7 MPa"
+   },
+   {
+    "id": "c",
+    "text": "99.5 MPa"
+   },
+   {
+    "id": "d",
+    "text": "198.9 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Torsional shear stress in a circular shaft grows linearly with radius: stress = T r / J. For a solid shaft J = π d^{4} / 32, so the maximum, at the surface, is 16 T / (π d^{3}).",
+  "solution": "Maximum shear stress = \\frac{16 T}{π d^{3}} = \\frac{16(10 × 10^{6})}{π(80)^{3}} = 99.5 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "torsion",
+     "polar moment of inertia"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0009",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "mechmat-0010",
@@ -425,26 +1695,141 @@
   "status": "live",
   "difficulty": 2,
   "units": "SI",
-  "stem": "A steel bar is held rigidly between two walls and heated by 40 °C. Its coefficient of thermal expansion is 12 × 10^{-6} per °C and E = 200 GPa. What compressive stress develops?",
+  "stem": "A metal bar is held rigidly between two walls and heated by 40 °C. Its coefficient of thermal expansion is 12 × 10^{-6} per °C and E = 200 GPa. What compressive stress develops?",
   "answer": {
-   "value": 96,
+   "value": 96.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "MPa"
   },
-  "eli5": "A heated bar wants to grow. If the walls will not let it, the bar pushes on them, and that push is stress.",
-  "solution": "Stress = E × expansion coefficient × temperature change = 200,000(12 × 10^{-6})(40) = 96 MPa.",
+  "eli5": "A free bar would lengthen by (coefficient × temperature change × L). The walls prevent that, which is the same as compressing the bar by the same strain. Stress = E × coefficient × temperature change, independent of length and area.",
+  "solution": "Restrained strain = 12 × 10^{-6} × 40 = 480 × 10^{-6}.\n\nStress = E × strain = (200,000 MPa)(480 × 10^{-6}) = 96.0 MPa (compression).",
   "handbook": [
    {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "thermal deformations"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "mechmat-0010",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0010-b",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A metal bar is held rigidly between two walls and heated by 60 °C. Its coefficient of thermal expansion is 12 × 10^{-6} per °C and E = 200 GPa. What compressive stress develops?",
+  "answer": {
+   "value": 144.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "MPa"
+  },
+  "eli5": "A free bar would lengthen by (coefficient × temperature change × L). The walls prevent that, which is the same as compressing the bar by the same strain. Stress = E × coefficient × temperature change, independent of length and area.",
+  "solution": "Restrained strain = 12 × 10^{-6} × 60 = 720 × 10^{-6}.\n\nStress = E × strain = (200,000 MPa)(720 × 10^{-6}) = 144.0 MPa (compression).",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "thermal deformations"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0010",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0010-c",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A metal bar is held rigidly between two walls and heated by 30 °C. Its coefficient of thermal expansion is 23 × 10^{-6} per °C and E = 70 GPa. What compressive stress develops?",
+  "answer": {
+   "value": 48.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "MPa"
+  },
+  "eli5": "A free bar would lengthen by (coefficient × temperature change × L). The walls prevent that, which is the same as compressing the bar by the same strain. Stress = E × coefficient × temperature change, independent of length and area.",
+  "solution": "Restrained strain = 23 × 10^{-6} × 30 = 690 × 10^{-6}.\n\nStress = E × strain = (70,000 MPa)(690 × 10^{-6}) = 48.3 MPa (compression).",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "thermal deformations"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0010",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0010-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A metal bar is held rigidly between two walls and heated by 50 °C. Its coefficient of thermal expansion is 17 × 10^{-6} per °C and E = 110 GPa. What compressive stress develops?",
+  "answer": {
+   "value": 93.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "MPa"
+  },
+  "eli5": "A free bar would lengthen by (coefficient × temperature change × L). The walls prevent that, which is the same as compressing the bar by the same strain. Stress = E × coefficient × temperature change, independent of length and area.",
+  "solution": "Restrained strain = 17 × 10^{-6} × 50 = 850 × 10^{-6}.\n\nStress = E × strain = (110,000 MPa)(850 × 10^{-6}) = 93.5 MPa (compression).",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "thermal deformations"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0010",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "mechmat-0011",
@@ -461,19 +1846,134 @@
    "toleranceType": "rel",
    "unit": "mm"
   },
-  "eli5": "Almost everything grows a little when it warms up. Longer pieces and bigger temperature swings mean more growth.",
-  "solution": "Change in length = expansion coefficient × length × temperature change = 12 × 10^{-6}(10,000 mm)(30) = 3.6 mm.",
+  "eli5": "Free thermal expansion: change in length = coefficient × temperature change × original length. No stress develops because nothing resists the movement.",
+  "solution": "Change in length = (12 × 10^{-6})(30)(10,000 mm) = 3.60 mm.",
   "handbook": [
    {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "thermal deformations"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "mechmat-0011",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0011-b",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel rail 25 m long warms by 40 °C. Its coefficient of thermal expansion is 12 × 10^{-6} per °C. How much longer does it get if it is free to expand?",
+  "answer": {
+   "value": 12.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "Free thermal expansion: change in length = coefficient × temperature change × original length. No stress develops because nothing resists the movement.",
+  "solution": "Change in length = (12 × 10^{-6})(40)(25,000 mm) = 12.00 mm.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "thermal deformations"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0011",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0011-c",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel rail 12 m long warms by 50 °C. Its coefficient of thermal expansion is 12 × 10^{-6} per °C. How much longer does it get if it is free to expand?",
+  "answer": {
+   "value": 7.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "Free thermal expansion: change in length = coefficient × temperature change × original length. No stress develops because nothing resists the movement.",
+  "solution": "Change in length = (12 × 10^{-6})(50)(12,000 mm) = 7.20 mm.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "thermal deformations"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0011",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0011-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel rail 40 m long warms by 25 °C. Its coefficient of thermal expansion is 12 × 10^{-6} per °C. How much longer does it get if it is free to expand?",
+  "answer": {
+   "value": 12.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "Free thermal expansion: change in length = coefficient × temperature change × original length. No stress develops because nothing resists the movement.",
+  "solution": "Change in length = (12 × 10^{-6})(25)(40,000 mm) = 12.00 mm.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "thermal deformations"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0011",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "mechmat-0012",
@@ -503,19 +2003,177 @@
    }
   ],
   "answer": "b",
-  "eli5": "The biggest shear is half the gap between the largest pull and the largest push.",
-  "solution": "Maximum shear = \\frac{120 - (-40)}{2} = 80 MPa.\n\nIt is the radius of Mohr's circle.",
+  "eli5": "The maximum in-plane shear stress is the radius of Mohr's circle, half the difference between the principal stresses. Compression is negative, so a tension and a compression add when you take the difference.",
+  "solution": "Maximum shear = \\frac{120 - (-40)}{2} = \\frac{160}{2} = 80 MPa.",
   "handbook": [
    {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "Mohr's circle",
+     "maximum in-plane shear"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "mechmat-0012",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0012-b",
+  "topic": "mechmat",
+  "subtopic": "mechmat-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The principal stresses at a point are 100 MPa in tension and 60 MPa in compression. What is the maximum in-plane shear stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "20 MPa"
+   },
+   {
+    "id": "b",
+    "text": "80 MPa"
+   },
+   {
+    "id": "c",
+    "text": "100 MPa"
+   },
+   {
+    "id": "d",
+    "text": "160 MPa"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The maximum in-plane shear stress is the radius of Mohr's circle, half the difference between the principal stresses. Compression is negative, so a tension and a compression add when you take the difference.",
+  "solution": "Maximum shear = \\frac{100 - (-60)}{2} = \\frac{160}{2} = 80 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Mohr's circle",
+     "maximum in-plane shear"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0012",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0012-c",
+  "topic": "mechmat",
+  "subtopic": "mechmat-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The principal stresses at a point are 150 MPa in tension and 50 MPa in compression. What is the maximum in-plane shear stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "50 MPa"
+   },
+   {
+    "id": "b",
+    "text": "100 MPa"
+   },
+   {
+    "id": "c",
+    "text": "150 MPa"
+   },
+   {
+    "id": "d",
+    "text": "200 MPa"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The maximum in-plane shear stress is the radius of Mohr's circle, half the difference between the principal stresses. Compression is negative, so a tension and a compression add when you take the difference.",
+  "solution": "Maximum shear = \\frac{150 - (-50)}{2} = \\frac{200}{2} = 100 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Mohr's circle",
+     "maximum in-plane shear"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0012",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0012-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The principal stresses at a point are 90 MPa in tension and 30 MPa in compression. What is the maximum in-plane shear stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "30 MPa"
+   },
+   {
+    "id": "b",
+    "text": "60 MPa"
+   },
+   {
+    "id": "c",
+    "text": "90 MPa"
+   },
+   {
+    "id": "d",
+    "text": "120 MPa"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The maximum in-plane shear stress is the radius of Mohr's circle, half the difference between the principal stresses. Compression is negative, so a tension and a compression add when you take the difference.",
+  "solution": "Maximum shear = \\frac{90 - (-30)}{2} = \\frac{120}{2} = 60 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Mohr's circle",
+     "maximum in-plane shear"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0012",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "mechmat-0013",
@@ -545,18 +2203,172 @@
    }
   ],
   "answer": "c",
-  "eli5": "Pressure tries to split the tank along its length, like a sausage splitting when it is cooked. The stress around the tank is twice the stress along it.",
-  "solution": "Hoop stress = \\frac{pr}{t} = \\frac{2(500)}{10} = 100 MPa.\n\nThe axial stress is half that, 50 MPa.",
+  "eli5": "In a thin-walled cylinder the circumferential (hoop) stress is p r / t and the longitudinal stress is p r / (2 t). The hoop stress is twice the longitudinal stress, which is why such vessels split along their length.",
+  "solution": "Hoop stress = \\frac{p r}{t} = \\frac{2(500)}{10} = 100 MPa. The longitudinal stress is half of that, 50 MPa.",
   "handbook": [
    {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "cylindrical pressure vessel"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "mechmat-0013",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0013-b",
+  "topic": "mechmat",
+  "subtopic": "mechmat-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A thin-walled cylindrical tank has a radius of 400 mm and a wall thickness of 8 mm. The internal pressure is 1.5 MPa. What is the hoop stress in the wall?",
+  "options": [
+   {
+    "id": "a",
+    "text": "18.75 MPa"
+   },
+   {
+    "id": "b",
+    "text": "37.5 MPa"
+   },
+   {
+    "id": "c",
+    "text": "75 MPa"
+   },
+   {
+    "id": "d",
+    "text": "150 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "In a thin-walled cylinder the circumferential (hoop) stress is p r / t and the longitudinal stress is p r / (2 t). The hoop stress is twice the longitudinal stress, which is why such vessels split along their length.",
+  "solution": "Hoop stress = \\frac{p r}{t} = \\frac{1.5(400)}{8} = 75 MPa. The longitudinal stress is half of that, 37.5 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "cylindrical pressure vessel"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0013",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0013-c",
+  "topic": "mechmat",
+  "subtopic": "mechmat-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A thin-walled cylindrical tank has a radius of 600 mm and a wall thickness of 12 mm. The internal pressure is 1.2 MPa. What is the hoop stress in the wall?",
+  "options": [
+   {
+    "id": "a",
+    "text": "15 MPa"
+   },
+   {
+    "id": "b",
+    "text": "30 MPa"
+   },
+   {
+    "id": "c",
+    "text": "60 MPa"
+   },
+   {
+    "id": "d",
+    "text": "120 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "In a thin-walled cylinder the circumferential (hoop) stress is p r / t and the longitudinal stress is p r / (2 t). The hoop stress is twice the longitudinal stress, which is why such vessels split along their length.",
+  "solution": "Hoop stress = \\frac{p r}{t} = \\frac{1.2(600)}{12} = 60 MPa. The longitudinal stress is half of that, 30 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "cylindrical pressure vessel"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0013",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "mechmat-0013-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A thin-walled cylindrical tank has a radius of 750 mm and a wall thickness of 15 mm. The internal pressure is 3 MPa. What is the hoop stress in the wall?",
+  "options": [
+   {
+    "id": "a",
+    "text": "37.5 MPa"
+   },
+   {
+    "id": "b",
+    "text": "75 MPa"
+   },
+   {
+    "id": "c",
+    "text": "150 MPa"
+   },
+   {
+    "id": "d",
+    "text": "300 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "In a thin-walled cylinder the circumferential (hoop) stress is p r / t and the longitudinal stress is p r / (2 t). The hoop stress is twice the longitudinal stress, which is why such vessels split along their length.",
+  "solution": "Hoop stress = \\frac{p r}{t} = \\frac{3(750)}{15} = 150 MPa. The longitudinal stress is half of that, 75 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "cylindrical pressure vessel"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0013",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  }
 ]

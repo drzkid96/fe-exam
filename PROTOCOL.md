@@ -62,6 +62,15 @@ A review session looks at:
 
 Then it acts in content: write questions for weak subtopics, add a guide section or a "common mistakes" entry aimed at the observed error, and tell the owner in a few lines what changed and why. Never edit or delete attempts.
 
+## Explain further with Claude
+
+After an answer is checked, and under every lesson, the site shows an *Explain further with Claude* panel: preset requests (step by step, why my answer is wrong, which handbook formula, a similar problem; for lessons: simpler, another example, quiz me, how the exam tests this) and a box for a typed question.
+
+- It uses the artifact's `sample` capability. Claude has no memory between calls, so each call carries the question or lesson, the stored solution, the answer given and the thread so far. The instructions tell it to use the question's numbers, name handbook sections without inventing page numbers, flag a stored solution that looks wrong, and write original material only.
+- Replies are live tutoring. They are not part of the checked answer key, and the panel says so.
+- Every request is written to `asks/<id>` in the study log (what was asked, on which question or lesson, whether the answer had been correct). Claude reads these with the session log: a cluster of requests on one subtopic is a signal to rewrite that lesson or add questions there.
+- The panel is hidden when the capability is absent, for example on a GitHub Pages copy.
+
 ## Publishing to GitHub
 
 - The repository holds only original work and public facts (the exam specification's topic names, handbook section names and page ranges). It is safe to make public, but private is the better default while the bank is small.
@@ -73,9 +82,10 @@ Then it acts in content: write questions for weak subtopics, add a guide section
 
 The owner's goal: the site replaces his reading material and his practice exams. Every subtopic gets a fully built-out lesson and many questions.
 
-- **Content, version 0.3.0:** 212 questions (188 computed, 24 reference). 93 guide sections: one overview per topic and one lesson per subtopic, 73 with a worked example that `tools/verify_answers.py` recomputes.
-- **Coverage:** all 79 subtopics have a lesson and 2 to 6 questions. A full 110-question simulation can be drawn without repeats.
-- **Not yet at the goal.** Lessons are one screen each: explanation, key formulas, one example, common mistakes. Questions per subtopic are few.
+- **Content, version 0.4.0:** 746 questions in 212 question types. 178 types have four numeric versions each, generated from one template whose formula is checked against the independently written calculation for version 1; 722 answers are recomputed by code and 24 are checked against a stated reference. 210 questions carry a drawn figure and 24 also have a figure in the solution. 93 guide sections: one overview per topic and one lesson per subtopic, 73 with a recomputed worked example and 33 with a figure.
+- **Explanations:** every answer shows a *Concept* note (the principle, stated technically) and a *Solution with the numbers* (each step with the question's own values and units). A *Check in the handbook* line follows: the handbook chapter, its page range in edition 10.0.1 and the words to search for in the PDF. 640 questions have one; the other 106 are marked as not a handbook lookup and point to the lesson. Search terms for the chapters after Engineering Probability and Statistics were written from knowledge of the handbook and have not been checked against the PDF, because only the first 84 pages could be read through Drive.
+- **Coverage:** all 79 subtopics have a lesson and questions. A full 110-question simulation can be drawn without repeats.
+- **Not yet at the goal.** Lessons are one screen each: explanation, key formulas, one example, common mistakes. The 34 question types without versions are the conceptual ones and the multi-select, hotspot, matching and ordering items; they need written variants, not number changes.
 
 ## Build plan to reach the goal
 

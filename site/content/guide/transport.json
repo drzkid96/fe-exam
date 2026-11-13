@@ -63,6 +63,12 @@
    "example": {
     "problem": "Find the minimum radius for 40 mph with e = 0.04 and f = 0.16.",
     "steps": "R = \\frac{40^{2}}{15(0.04 + 0.16)} = 533 ft."
+   },
+   "figure": {
+    "viewBox": "0 0 400 186",
+    "svg": "<path d='M70 110 A502 502 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='31' y1='120' x2='200' y2='75' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='369' y1='120' x2='200' y2='75' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='86' y2='168' stroke='#00242E'/><line x1='330' y1='110' x2='314' y2='168' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='67' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 1,000 ft, deflection angle 30°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
+    "alt": "A horizontal circular curve of radius 1,000 ft with a deflection angle of 30°, showing PC, PI and PT.",
+    "caption": "A simple horizontal curve. T = R tan(Δ / 2) and L = R Δ π / 180."
    }
   },
   {
@@ -125,6 +131,12 @@
    "example": {
     "problem": "A lane with a saturation flow of 1,800 veh/h has 30 s of green in a 90 s cycle. Find its capacity.",
     "steps": "c = 1,800 × \\frac{30}{90} = 600 veh/h."
+   },
+   "figure": {
+    "viewBox": "0 0 400 180",
+    "svg": "<line x1='50' y1='20' x2='50' y2='140' stroke='#00242E'/><line x1='50' y1='140' x2='370' y2='140' stroke='#00242E'/><line x1='50' y1='36' x2='350' y2='140' stroke='#1B795A' stroke-width='3'/><circle cx='200' cy='88' r='5' fill='#00574A'/><text x='44' y='40' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>60</text><text x='350' y='156' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>120</text><text x='200' y='156' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>60</text><text x='44' y='92' text-anchor='end' font-size='12' font-weight='400' fill='#00574A'>30</text><text x='210' y='82' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>Capacity point</text><text x='210' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Density, veh/mi</text><text x='56' y='16' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Speed, mph</text><line x1='200' y1='88' x2='200' y2='140' stroke='#00574A' stroke-dasharray='4 4'/><line x1='50' y1='88' x2='200' y2='88' stroke='#00574A' stroke-dasharray='4 4'/>",
+    "alt": "A straight speed-density line falling from 60 mph at zero density to zero speed at 120 veh/mi, with the capacity point at its middle.",
+    "caption": "The Greenshields speed-density line. Capacity occurs at half the jam density and half the free-flow speed."
    }
   },
   {

@@ -11,28 +11,31 @@
   "options": [
    {
     "id": "a",
-    "text": "0.31"
+    "text": "0.310"
    },
    {
     "id": "b",
-    "text": "0.45"
+    "text": "0.450"
    },
    {
     "id": "c",
-    "text": "0.55"
+    "text": "0.550"
    },
    {
     "id": "d",
-    "text": "2.22"
+    "text": "2.222"
    }
   ],
   "answer": "b",
-  "eli5": "The water-cement ratio is how soupy the cement paste is. Less water for the same cement makes stronger, less porous concrete.",
-  "solution": "w/c = \\frac{180}{400} = 0.45.\n\nThe ratio is water divided by cement, by mass.",
+  "eli5": "The water-cement ratio is the mass of water divided by the mass of cement. It is the main control on concrete strength and durability: a lower ratio gives stronger, less permeable concrete but less workability.",
+  "solution": "w/c = \\frac{180}{400} = 0.450.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": [
+     "water-cement ratio"
+    ]
    }
   ],
   "tags": [
@@ -42,7 +45,167 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "materials-0001",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0001-b",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete mix uses 168 kg of water and 350 kg of cement per cubic metre. What is the water-cement ratio?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.324"
+   },
+   {
+    "id": "b",
+    "text": "0.480"
+   },
+   {
+    "id": "c",
+    "text": "0.520"
+   },
+   {
+    "id": "d",
+    "text": "2.083"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The water-cement ratio is the mass of water divided by the mass of cement. It is the main control on concrete strength and durability: a lower ratio gives stronger, less permeable concrete but less workability.",
+  "solution": "w/c = \\frac{168}{350} = 0.480.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "water-cement ratio"
+    ]
+   }
+  ],
+  "tags": [
+   "concrete",
+   "mix design"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0001",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0001-c",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete mix uses 195 kg of water and 450 kg of cement per cubic metre. What is the water-cement ratio?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.302"
+   },
+   {
+    "id": "b",
+    "text": "0.433"
+   },
+   {
+    "id": "c",
+    "text": "0.567"
+   },
+   {
+    "id": "d",
+    "text": "2.308"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The water-cement ratio is the mass of water divided by the mass of cement. It is the main control on concrete strength and durability: a lower ratio gives stronger, less permeable concrete but less workability.",
+  "solution": "w/c = \\frac{195}{450} = 0.433.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "water-cement ratio"
+    ]
+   }
+  ],
+  "tags": [
+   "concrete",
+   "mix design"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0001",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0001-d",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete mix uses 150 kg of water and 375 kg of cement per cubic metre. What is the water-cement ratio?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.286"
+   },
+   {
+    "id": "b",
+    "text": "0.400"
+   },
+   {
+    "id": "c",
+    "text": "0.600"
+   },
+   {
+    "id": "d",
+    "text": "2.500"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The water-cement ratio is the mass of water divided by the mass of cement. It is the main control on concrete strength and durability: a lower ratio gives stronger, less permeable concrete but less workability.",
+  "solution": "w/c = \\frac{150}{375} = 0.400.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "water-cement ratio"
+    ]
+   }
+  ],
+  "tags": [
+   "concrete",
+   "mix design"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0001",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "materials-0002",
@@ -72,12 +235,15 @@
    }
   ],
   "answer": "c",
-  "eli5": "Strength is the load the cylinder took at failure, spread over the flat circle it was pressed on.",
-  "solution": "Area = \\frac{π(150)^{2}}{4} = 17,671 mm^{2}.\n\nStrength = \\frac{530,000 N}{17,671 mm^{2}} = 30.0 MPa.",
+  "eli5": "Compressive strength is the failure load divided by the loaded cross-sectional area of the cylinder. Newtons over square millimetres gives MPa.",
+  "solution": "A = \\frac{π(150)^{2}}{4} = 17,671 mm^{2}.\n\nf'_{c} = \\frac{530,000 N}{17,671 mm^{2}} = 30.0 MPa.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": [
+     "compressive strength"
+    ]
    }
   ],
   "tags": [
@@ -87,7 +253,167 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "materials-0002",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0002-b",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 100 mm diameter concrete cylinder fails at a load of 275 kN in a compression test. What is the compressive strength?",
+  "options": [
+   {
+    "id": "a",
+    "text": "8.8 MPa"
+   },
+   {
+    "id": "b",
+    "text": "27.5 MPa"
+   },
+   {
+    "id": "c",
+    "text": "35.0 MPa"
+   },
+   {
+    "id": "d",
+    "text": "52.5 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Compressive strength is the failure load divided by the loaded cross-sectional area of the cylinder. Newtons over square millimetres gives MPa.",
+  "solution": "A = \\frac{π(100)^{2}}{4} = 7,854 mm^{2}.\n\nf'_{c} = \\frac{275,000 N}{7,854 mm^{2}} = 35.0 MPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "compressive strength"
+    ]
+   }
+  ],
+  "tags": [
+   "concrete",
+   "compressive strength"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0002",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0002-c",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 150 mm diameter concrete cylinder fails at a load of 620 kN in a compression test. What is the compressive strength?",
+  "options": [
+   {
+    "id": "a",
+    "text": "8.8 MPa"
+   },
+   {
+    "id": "b",
+    "text": "27.6 MPa"
+   },
+   {
+    "id": "c",
+    "text": "35.1 MPa"
+   },
+   {
+    "id": "d",
+    "text": "52.6 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Compressive strength is the failure load divided by the loaded cross-sectional area of the cylinder. Newtons over square millimetres gives MPa.",
+  "solution": "A = \\frac{π(150)^{2}}{4} = 17,671 mm^{2}.\n\nf'_{c} = \\frac{620,000 N}{17,671 mm^{2}} = 35.1 MPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "compressive strength"
+    ]
+   }
+  ],
+  "tags": [
+   "concrete",
+   "compressive strength"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0002",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0002-d",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 100 mm diameter concrete cylinder fails at a load of 196 kN in a compression test. What is the compressive strength?",
+  "options": [
+   {
+    "id": "a",
+    "text": "6.2 MPa"
+   },
+   {
+    "id": "b",
+    "text": "19.6 MPa"
+   },
+   {
+    "id": "c",
+    "text": "25.0 MPa"
+   },
+   {
+    "id": "d",
+    "text": "37.4 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Compressive strength is the failure load divided by the loaded cross-sectional area of the cylinder. Newtons over square millimetres gives MPa.",
+  "solution": "A = \\frac{π(100)^{2}}{4} = 7,854 mm^{2}.\n\nf'_{c} = \\frac{196,000 N}{7,854 mm^{2}} = 25.0 MPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "compressive strength"
+    ]
+   }
+  ],
+  "tags": [
+   "concrete",
+   "compressive strength"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0002",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "materials-0003",
@@ -144,12 +470,12 @@
   "solution": "The slump test measures the workability of fresh concrete. The Marshall test measures the stability and flow of an asphalt mix. The Charpy test measures the energy a notched metal bar absorbs under impact. The Los Angeles abrasion test measures how well aggregate resists wear.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
     "section": "Materials Science/Structure of Matter",
-    "page": "94–106"
+    "page": "94–106",
+    "find": [
+     "hardness",
+     "impact test"
+    ]
    }
   ],
   "tags": [
@@ -162,7 +488,8 @@
   "verify": {
    "method": "reference",
    "basis": "Standard test methods: ASTM C143 (slump), ASTM D6927 (Marshall stability and flow), ASTM E23 (Charpy impact), ASTM C131 (Los Angeles abrasion)"
-  }
+  },
+  "lookup": true
  },
  {
   "id": "materials-0004",
@@ -172,23 +499,23 @@
   "status": "live",
   "difficulty": 2,
   "units": "SI",
-  "stem": "In a tension test, a steel bar reaches a stress of 140 MPa at a strain of 0.0007, still on the straight-line part of the curve. What is the modulus of elasticity?",
+  "stem": "In a tension test, a metal bar reaches a stress of 140 MPa at a strain of 0.0007, still on the straight-line part of the curve. What is the modulus of elasticity?",
   "answer": {
-   "value": 200,
+   "value": 200.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "GPa"
   },
-  "eli5": "The modulus of elasticity is the stiffness of the material: how much stress it takes to produce a given stretch. It is the slope of the straight part of the stress-strain curve.",
-  "solution": "E = \\frac{stress}{strain} = \\frac{140 MPa}{0.0007} = 200,000 MPa = 200 GPa.",
+  "eli5": "On the linear part of the stress-strain curve Hooke's law applies: stress = E × strain. The modulus of elasticity is the slope of that line and measures stiffness, not strength.",
+  "solution": "E = \\frac{stress}{strain} = \\frac{140}{0.0007} = 200,000 MPa = 200 GPa.",
   "handbook": [
    {
     "section": "Mechanics of Materials",
-    "page": "130–142"
-   },
-   {
-    "section": "Materials Science/Structure of Matter",
-    "page": "94–106"
+    "page": "130–142",
+    "find": [
+     "Hooke's law",
+     "modulus of elasticity"
+    ]
    }
   ],
   "tags": [
@@ -198,7 +525,131 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "materials-0004",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0004-b",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In a tension test, a metal bar reaches a stress of 105 MPa at a strain of 0.0015, still on the straight-line part of the curve. What is the modulus of elasticity?",
+  "answer": {
+   "value": 70.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "GPa"
+  },
+  "eli5": "On the linear part of the stress-strain curve Hooke's law applies: stress = E × strain. The modulus of elasticity is the slope of that line and measures stiffness, not strength.",
+  "solution": "E = \\frac{stress}{strain} = \\frac{105}{0.0015} = 70,000 MPa = 70 GPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Hooke's law",
+     "modulus of elasticity"
+    ]
+   }
+  ],
+  "tags": [
+   "modulus of elasticity",
+   "stress-strain"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0004",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0004-c",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In a tension test, a metal bar reaches a stress of 84 MPa at a strain of 0.0004, still on the straight-line part of the curve. What is the modulus of elasticity?",
+  "answer": {
+   "value": 210.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "GPa"
+  },
+  "eli5": "On the linear part of the stress-strain curve Hooke's law applies: stress = E × strain. The modulus of elasticity is the slope of that line and measures stiffness, not strength.",
+  "solution": "E = \\frac{stress}{strain} = \\frac{84}{0.0004} = 210,000 MPa = 210 GPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Hooke's law",
+     "modulus of elasticity"
+    ]
+   }
+  ],
+  "tags": [
+   "modulus of elasticity",
+   "stress-strain"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0004",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0004-d",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In a tension test, a metal bar reaches a stress of 160 MPa at a strain of 0.0008, still on the straight-line part of the curve. What is the modulus of elasticity?",
+  "answer": {
+   "value": 200.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "GPa"
+  },
+  "eli5": "On the linear part of the stress-strain curve Hooke's law applies: stress = E × strain. The modulus of elasticity is the slope of that line and measures stiffness, not strength.",
+  "solution": "E = \\frac{stress}{strain} = \\frac{160}{0.0008} = 200,000 MPa = 200 GPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Hooke's law",
+     "modulus of elasticity"
+    ]
+   }
+  ],
+  "tags": [
+   "modulus of elasticity",
+   "stress-strain"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0004",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "materials-0005",
@@ -224,27 +675,169 @@
    },
    {
     "id": "d",
-    "text": "1.10 m^{3}"
+    "text": "1.103 m^{3}"
    }
   ],
   "answer": "b",
-  "eli5": "Mix design is like filling a one cubic metre box. Each ingredient takes up space according to how heavy and how dense it is.",
-  "solution": "Volume = \\frac{mass}{specific gravity × density of water} = \\frac{350}{3.15(1,000)} = 0.111 m^{3}.",
+  "eli5": "In the absolute volume method each ingredient's volume is its mass divided by (specific gravity × density of water). The absolute volumes of cement, water, aggregates and air must add up to one cubic metre.",
+  "solution": "V = \\frac{mass}{SG × 1,000} = \\frac{350}{3.15 × 1,000} = 0.111 m^{3}.",
   "handbook": [
    {
     "section": "Materials Science/Structure of Matter",
-    "page": "94–106"
-   },
-   {
-    "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "94–106",
+    "find": []
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "materials-0005",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "materials-0005-b",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete mix contains 400 kg of cement per cubic metre. The specific gravity of cement is 3.15. What volume does the cement occupy?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.040 m^{3}"
+   },
+   {
+    "id": "b",
+    "text": "0.127 m^{3}"
+   },
+   {
+    "id": "c",
+    "text": "0.400 m^{3}"
+   },
+   {
+    "id": "d",
+    "text": "1.260 m^{3}"
+   }
+  ],
+  "answer": "b",
+  "eli5": "In the absolute volume method each ingredient's volume is its mass divided by (specific gravity × density of water). The absolute volumes of cement, water, aggregates and air must add up to one cubic metre.",
+  "solution": "V = \\frac{mass}{SG × 1,000} = \\frac{400}{3.15 × 1,000} = 0.127 m^{3}.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0005",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "materials-0005-c",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete mix contains 300 kg of cement per cubic metre. The specific gravity of cement is 3.15. What volume does the cement occupy?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.030 m^{3}"
+   },
+   {
+    "id": "b",
+    "text": "0.095 m^{3}"
+   },
+   {
+    "id": "c",
+    "text": "0.300 m^{3}"
+   },
+   {
+    "id": "d",
+    "text": "0.945 m^{3}"
+   }
+  ],
+  "answer": "b",
+  "eli5": "In the absolute volume method each ingredient's volume is its mass divided by (specific gravity × density of water). The absolute volumes of cement, water, aggregates and air must add up to one cubic metre.",
+  "solution": "V = \\frac{mass}{SG × 1,000} = \\frac{300}{3.15 × 1,000} = 0.095 m^{3}.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0005",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "materials-0005-d",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete mix contains 450 kg of cement per cubic metre. The specific gravity of cement is 3.15. What volume does the cement occupy?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.045 m^{3}"
+   },
+   {
+    "id": "b",
+    "text": "0.143 m^{3}"
+   },
+   {
+    "id": "c",
+    "text": "0.450 m^{3}"
+   },
+   {
+    "id": "d",
+    "text": "1.417 m^{3}"
+   }
+  ],
+  "answer": "b",
+  "eli5": "In the absolute volume method each ingredient's volume is its mass divided by (specific gravity × density of water). The absolute volumes of cement, water, aggregates and air must add up to one cubic metre.",
+  "solution": "V = \\frac{mass}{SG × 1,000} = \\frac{450}{3.15 × 1,000} = 0.143 m^{3}.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0005",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  },
  {
   "id": "materials-0006",
@@ -258,39 +851,181 @@
   "options": [
    {
     "id": "a",
-    "text": "4.8%"
+    "text": "4.76%"
    },
    {
     "id": "b",
-    "text": "5.0%"
+    "text": "5.00%"
    },
    {
     "id": "c",
-    "text": "5.3%"
+    "text": "5.26%"
    },
    {
     "id": "d",
-    "text": "20%"
+    "text": "20.00%"
    }
   ],
   "answer": "b",
-  "eli5": "Asphalt content is the share of the whole mix that is binder. Be clear whether the share is of the whole mix or of the stone alone.",
-  "solution": "Asphalt content = \\frac{60}{1,200} × 100 = 5.0%.\n\nDividing by the aggregate mass (1,140 g) instead gives 5.3%, which is a different measure.",
+  "eli5": "Asphalt content is normally expressed as binder mass over total mix mass, not over aggregate mass. The two bases give different numbers, so check which one a specification uses.",
+  "solution": "P_{b} = \\frac{60}{1,200} × 100 = 5.00%. By mass of aggregate it would be \\frac{60}{1,140} × 100 = 5.26%.",
   "handbook": [
    {
     "section": "Materials Science/Structure of Matter",
-    "page": "94–106"
-   },
-   {
-    "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "94–106",
+    "find": []
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "materials-0006",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "materials-0006-b",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "An asphalt mix sample has a total mass of 1,500 g, of which 84 g is asphalt binder. What is the asphalt content by total mass of mix?",
+  "options": [
+   {
+    "id": "a",
+    "text": "5.30%"
+   },
+   {
+    "id": "b",
+    "text": "5.60%"
+   },
+   {
+    "id": "c",
+    "text": "5.93%"
+   },
+   {
+    "id": "d",
+    "text": "17.86%"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Asphalt content is normally expressed as binder mass over total mix mass, not over aggregate mass. The two bases give different numbers, so check which one a specification uses.",
+  "solution": "P_{b} = \\frac{84}{1,500} × 100 = 5.60%. By mass of aggregate it would be \\frac{84}{1,416} × 100 = 5.93%.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0006",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "materials-0006-c",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "An asphalt mix sample has a total mass of 1,150 g, of which 46 g is asphalt binder. What is the asphalt content by total mass of mix?",
+  "options": [
+   {
+    "id": "a",
+    "text": "3.85%"
+   },
+   {
+    "id": "b",
+    "text": "4.00%"
+   },
+   {
+    "id": "c",
+    "text": "4.17%"
+   },
+   {
+    "id": "d",
+    "text": "25.00%"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Asphalt content is normally expressed as binder mass over total mix mass, not over aggregate mass. The two bases give different numbers, so check which one a specification uses.",
+  "solution": "P_{b} = \\frac{46}{1,150} × 100 = 4.00%. By mass of aggregate it would be \\frac{46}{1,104} × 100 = 4.17%.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0006",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "materials-0006-d",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "An asphalt mix sample has a total mass of 2,000 g, of which 130 g is asphalt binder. What is the asphalt content by total mass of mix?",
+  "options": [
+   {
+    "id": "a",
+    "text": "6.10%"
+   },
+   {
+    "id": "b",
+    "text": "6.50%"
+   },
+   {
+    "id": "c",
+    "text": "6.95%"
+   },
+   {
+    "id": "d",
+    "text": "15.38%"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Asphalt content is normally expressed as binder mass over total mix mass, not over aggregate mass. The two bases give different numbers, so check which one a specification uses.",
+  "solution": "P_{b} = \\frac{130}{2,000} × 100 = 6.50%. By mass of aggregate it would be \\frac{130}{1,870} × 100 = 6.95%.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0006",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  },
  {
   "id": "materials-0007",
@@ -325,11 +1060,10 @@
   "handbook": [
    {
     "section": "Materials Science/Structure of Matter",
-    "page": "94–106"
-   },
-   {
-    "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "94–106",
+    "find": [
+     "hardness"
+    ]
    }
   ],
   "tags": [],
@@ -337,7 +1071,8 @@
   "verify": {
    "method": "reference",
    "basis": "ASTM E18, Rockwell hardness of metallic materials"
-  }
+  },
+  "lookup": true
  },
  {
   "id": "materials-0008",
@@ -371,12 +1106,11 @@
   "solution": "Grade 60 bars have a minimum yield strength of 60 ksi, about 420 MPa.\n\n36 ksi is the yield strength of A36 structural steel.",
   "handbook": [
    {
-    "section": "Materials Science/Structure of Matter",
-    "page": "94–106"
-   },
-   {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": [
+     "reinforcement bar"
+    ]
    }
   ],
   "tags": [],
@@ -384,7 +1118,8 @@
   "verify": {
    "method": "reference",
    "basis": "ASTM A615, deformed carbon-steel bars for concrete reinforcement"
-  }
+  },
+  "lookup": true
  },
  {
   "id": "materials-0009",
@@ -414,23 +1149,177 @@
    }
   ],
   "answer": "c",
-  "eli5": "Stronger concrete is also stiffer, but stiffness grows more slowly than strength.",
-  "solution": "E_{c} = 4,700\\sqrt{25} = 4,700(5) = 23,500 MPa.",
+  "eli5": "The stiffness of normal-weight concrete rises with the square root of its compressive strength, so doubling the strength raises the modulus by only about 41%.",
+  "solution": "E_{c} = 4,700 \\sqrt{25} = 4,700 × 5.000 = 23,500 MPa.",
   "handbook": [
    {
-    "section": "Materials Science/Structure of Matter",
-    "page": "94–106"
-   },
-   {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": [
+     "modulus of elasticity",
+     "ACI 318"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "materials-0009",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0009-b",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Using E_{c} = 4,700 × the square root of f'_{c} (both in MPa), what is the modulus of elasticity of concrete with a compressive strength of 36 MPa?",
+  "options": [
+   {
+    "id": "a",
+    "text": "4,700 MPa"
+   },
+   {
+    "id": "b",
+    "text": "14,100 MPa"
+   },
+   {
+    "id": "c",
+    "text": "28,200 MPa"
+   },
+   {
+    "id": "d",
+    "text": "169,200 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The stiffness of normal-weight concrete rises with the square root of its compressive strength, so doubling the strength raises the modulus by only about 41%.",
+  "solution": "E_{c} = 4,700 \\sqrt{36} = 4,700 × 6.000 = 28,200 MPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "modulus of elasticity",
+     "ACI 318"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0009",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0009-c",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Using E_{c} = 4,700 × the square root of f'_{c} (both in MPa), what is the modulus of elasticity of concrete with a compressive strength of 30 MPa?",
+  "options": [
+   {
+    "id": "a",
+    "text": "4,700 MPa"
+   },
+   {
+    "id": "b",
+    "text": "12,871 MPa"
+   },
+   {
+    "id": "c",
+    "text": "25,743 MPa"
+   },
+   {
+    "id": "d",
+    "text": "141,000 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The stiffness of normal-weight concrete rises with the square root of its compressive strength, so doubling the strength raises the modulus by only about 41%.",
+  "solution": "E_{c} = 4,700 \\sqrt{30} = 4,700 × 5.477 = 25,743 MPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "modulus of elasticity",
+     "ACI 318"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0009",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0009-d",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Using E_{c} = 4,700 × the square root of f'_{c} (both in MPa), what is the modulus of elasticity of concrete with a compressive strength of 49 MPa?",
+  "options": [
+   {
+    "id": "a",
+    "text": "4,700 MPa"
+   },
+   {
+    "id": "b",
+    "text": "16,450 MPa"
+   },
+   {
+    "id": "c",
+    "text": "32,900 MPa"
+   },
+   {
+    "id": "d",
+    "text": "230,300 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The stiffness of normal-weight concrete rises with the square root of its compressive strength, so doubling the strength raises the modulus by only about 41%.",
+  "solution": "E_{c} = 4,700 \\sqrt{49} = 4,700 × 7.000 = 32,900 MPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "modulus of elasticity",
+     "ACI 318"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0009",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "materials-0010",
@@ -440,30 +1329,145 @@
   "status": "live",
   "difficulty": 2,
   "units": null,
-  "stem": "A tension specimen has a gauge length of 50 mm. After fracture the gauge length measures 62 mm. What is the percent elongation?",
+  "stem": "A tension specimen has a gauge length of 50 mm. After fracture the gauge length measures 62.0 mm. What is the percent elongation?",
   "answer": {
-   "value": 24,
+   "value": 24.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "%"
   },
-  "eli5": "Percent elongation tells you how far a material stretches before it breaks. A high number means a ductile material.",
-  "solution": "Elongation = \\frac{62 - 50}{50} × 100 = 24%.",
+  "eli5": "Percent elongation is the permanent increase in gauge length at fracture divided by the original gauge length. It is a measure of ductility, along with reduction of area.",
+  "solution": "Elongation = \\frac{62.0 - 50}{50} × 100 = \\frac{12.0}{50} × 100 = 24.0%.",
   "handbook": [
    {
     "section": "Materials Science/Structure of Matter",
-    "page": "94–106"
-   },
-   {
-    "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "94–106",
+    "find": [
+     "percent elongation",
+     "ductility"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "materials-0010",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0010-b",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A tension specimen has a gauge length of 50 mm. After fracture the gauge length measures 58.5 mm. What is the percent elongation?",
+  "answer": {
+   "value": 17.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Percent elongation is the permanent increase in gauge length at fracture divided by the original gauge length. It is a measure of ductility, along with reduction of area.",
+  "solution": "Elongation = \\frac{58.5 - 50}{50} × 100 = \\frac{8.5}{50} × 100 = 17.0%.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": [
+     "percent elongation",
+     "ductility"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0010",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0010-c",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A tension specimen has a gauge length of 200 mm. After fracture the gauge length measures 236.0 mm. What is the percent elongation?",
+  "answer": {
+   "value": 18.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Percent elongation is the permanent increase in gauge length at fracture divided by the original gauge length. It is a measure of ductility, along with reduction of area.",
+  "solution": "Elongation = \\frac{236.0 - 200}{200} × 100 = \\frac{36.0}{200} × 100 = 18.0%.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": [
+     "percent elongation",
+     "ductility"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0010",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "materials-0010-d",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A tension specimen has a gauge length of 25 mm. After fracture the gauge length measures 31.5 mm. What is the percent elongation?",
+  "answer": {
+   "value": 26.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Percent elongation is the permanent increase in gauge length at fracture divided by the original gauge length. It is a measure of ductility, along with reduction of area.",
+  "solution": "Elongation = \\frac{31.5 - 25}{25} × 100 = \\frac{6.5}{25} × 100 = 26.0%.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": [
+     "percent elongation",
+     "ductility"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0010",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "materials-0011",
@@ -498,11 +1502,11 @@
   "handbook": [
    {
     "section": "Materials Science/Structure of Matter",
-    "page": "94–106"
-   },
-   {
-    "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "94–106",
+    "find": [
+     "toughness",
+     "stress-strain"
+    ]
    }
   ],
   "tags": [],
@@ -510,6 +1514,7 @@
   "verify": {
    "method": "reference",
    "basis": "Standard definition of toughness (modulus of toughness)"
-  }
+  },
+  "lookup": true
  }
 ]

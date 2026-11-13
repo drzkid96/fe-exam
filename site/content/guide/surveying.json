@@ -52,6 +52,12 @@
    "example": {
     "problem": "Convert an azimuth of 200° to a bearing.",
     "steps": "200° is 20° past south, on the west side.\n\nBearing = S 20° W."
+   },
+   "figure": {
+    "viewBox": "0 0 400 200",
+    "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='287' y2='60' stroke='#00574A' stroke-width='3'/><circle cx='287' cy='60' r='5' fill='#00574A'/><text x='297' y='54' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>200.00 m, azimuth 60°</text>",
+    "alt": "A line drawn from the origin at an azimuth of 60° clockwise from north.",
+    "caption": "Latitude is L cos(azimuth) and departure is L sin(azimuth)."
    }
   },
   {
@@ -84,6 +90,12 @@
    "example": {
     "problem": "Find the area of a triangle with corners at (0, 0), (40, 0) and (0, 30) metres.",
     "steps": "A = \\frac{1}{2}(40)(30) = 600 m^{2}."
+   },
+   "figure": {
+    "viewBox": "0 0 400 185",
+    "svg": "<path d='M50 160 L206 160 L258 56 L102 30 Z' fill='#D9F1D6' fill-opacity='.6' stroke='#00242E' stroke-width='2'/><circle cx='50' cy='160' r='4' fill='#00242E'/><text x='50' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(0, 0)</text><circle cx='206' cy='160' r='4' fill='#00242E'/><text x='206' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(60, 0)</text><circle cx='258' cy='56' r='4' fill='#00242E'/><text x='258' y='48' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(80, 40)</text><circle cx='102' cy='30' r='4' fill='#00242E'/><text x='102' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(20, 50)</text>",
+    "alt": "A parcel with corners at (0, 0), (60, 0), (80, 40), (20, 50) m.",
+    "caption": "Area by coordinates: list the corners in order and apply the cross-product sum."
    }
   },
   {
@@ -182,6 +194,12 @@
    "example": {
     "problem": "From a benchmark at 50.00 m, the backsight is 2.10 m and the foresight on point A is 0.85 m. Find the elevation of A.",
     "steps": "HI = 50.00 + 2.10 = 52.10 m.\n\nElevation of A = 52.10 - 0.85 = 51.25 m."
+   },
+   "figure": {
+    "viewBox": "0 0 400 185",
+    "svg": "<path d='M20 150 L120 140 L200 132 L290 150 L380 158' fill='none' stroke='#00242E' stroke-width='2'/><line x1='70' y1='50' x2='330' y2='50' stroke='#568CBB' stroke-dasharray='6 4'/><rect x='66' y='38' width='8' height='107' fill='#EEEDE8' stroke='#00242E'/><rect x='326' y='38' width='8' height='116' fill='#EEEDE8' stroke='#00242E'/><rect x='186' y='43' width='28' height='14' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><path d='M200 57 L186 132 M200 57 L214 132' stroke='#00242E' stroke-width='2'/><text x='70' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Benchmark</text><text x='330' y='176' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>New point</text><text x='84' y='96' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>BS 1.52 m</text><text x='316' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>FS 2.31 m</text><text x='200' y='36' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Line of sight</text>",
+    "alt": "A level set up between a benchmark and a new point, with a backsight of 1.52 m and a foresight of 2.31 m.",
+    "caption": "Differential leveling: height of instrument = benchmark + backsight; new elevation = height of instrument - foresight."
    }
   }
  ]

@@ -53,6 +53,12 @@
    "example": {
     "problem": "A tank drains through a 20 mm hole 2 m below the water surface with a discharge coefficient of 0.62. Find the flow in L/s.",
     "steps": "A = 0.000314 m^{2}.\n\nQ = 0.62(0.000314)\\sqrt{2(9.81)(2)} = 0.00122 m^{3}/s = 1.22 L/s."
+   },
+   "figure": {
+    "viewBox": "0 0 420 175",
+    "svg": "<path d='M60 20 L60 150 L220 150 L220 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='62' y='40' width='156' height='108' fill='#568CBB' fill-opacity='.3'/><path d='M220 126 Q280 128 320 168' fill='none' stroke='#568CBB' stroke-width='5'/><line x1='250' y1='40' x2='250' y2='126' stroke='#00242E'/><line x1='220' y1='40' x2='260' y2='40' stroke='#00242E' stroke-dasharray='4 4'/><text x='258' y='86' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='300' y='122' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>50 mm orifice</text>",
+    "alt": "A tank discharging through a 50 mm orifice 3 m below the water surface.",
+    "caption": "Orifice flow: the ideal jet velocity is the square root of 2 g h, reduced by the discharge coefficient."
    }
   },
   {
@@ -126,6 +132,12 @@
    "example": {
     "problem": "Find the gauge pressure at the bottom of a 5 m deep tank of oil with a specific gravity of 0.9.",
     "steps": "p = 0.9(9.81)(5) = 44.1 kPa."
+   },
+   "figure": {
+    "viewBox": "0 0 400 165",
+    "svg": "<rect x='40' y='30' width='150' height='120' fill='#568CBB' fill-opacity='.25'/><line x1='20' y1='30' x2='190' y2='30' stroke='#568CBB' stroke-width='2'/><rect x='190' y='30' width='12' height='120' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='20' y1='150' x2='260' y2='150' stroke='#00242E' stroke-width='2'/><path d='M190 30 L190 150 L110 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='120' y1='110' x2='180' y2='110' stroke='#00574A' stroke-width='3'/><path d='M188 110 L176 104 L176 116 Z' fill='#00574A'/><text x='100' y='24' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Water surface</text><line x1='222' y1='30' x2='222' y2='150' stroke='#00242E'/><text x='230' y='94' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>3 m tall, 2 m wide</text><text x='112' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>F</text>",
+    "alt": "A vertical gate 3 m tall and 2 m wide with its top at the water surface and a triangular pressure diagram.",
+    "caption": "Hydrostatic pressure on a vertical gate grows linearly with depth. The resultant acts at two thirds of the depth."
    }
   },
   {
@@ -163,6 +175,12 @@
    "example": {
     "problem": "Water flows at 0.03 m^{3}/s through a 150 mm pipe. Find the velocity and the velocity head.",
     "steps": "A = 0.01767 m^{2}, so V = \\frac{0.03}{0.01767} = 1.70 m/s.\n\nVelocity head = \\frac{1.70^{2}}{2(9.81)} = 0.147 m."
+   },
+   "figure": {
+    "viewBox": "0 0 400 140",
+    "svg": "<path d='M30 40 L170 40 L230 58 L370 58 L370 92 L230 92 L170 110 L30 110 Z' fill='#568CBB' fill-opacity='.25' stroke='#00242E' stroke-width='2'/><line x1='60' y1='75' x2='110' y2='75' stroke='#00574A' stroke-width='3'/><path d='M118 75 L104 69 L104 81 Z' fill='#00574A'/><text x='100' y='30' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>200 mm</text><text x='300' y='48' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>100 mm</text><text x='100' y='130' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 1</text><text x='300' y='112' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 2</text>",
+    "alt": "A pipe narrowing from 200 mm to 100 mm in the direction of flow.",
+    "caption": "Continuity: the flow rate A V is the same at both sections, so the narrower section has the higher velocity and the lower pressure."
    }
   }
  ]

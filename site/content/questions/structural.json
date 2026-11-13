@@ -32,7 +32,11 @@
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": [
+     "determinacy",
+     "classification of structures"
+    ]
    }
   ],
   "tags": [
@@ -42,7 +46,8 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "lookup": true
  },
  {
   "id": "structural-0002",
@@ -54,21 +59,21 @@
   "units": "SI",
   "stem": "A steel column is 4 m long with pinned ends. E = 200 GPa and the moment of inertia about the weak axis is 8.0 × 10^{6} mm^{4}. What is the Euler buckling load?",
   "answer": {
-   "value": 987,
+   "value": 987.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "kN"
   },
-  "eli5": "Push down on a long thin ruler and it suddenly bows sideways. The buckling load is the push at which that happens. Longer columns buckle far more easily.",
-  "solution": "P_{cr} = \\frac{π^{2}EI}{L^{2}} = \\frac{π^{2}(200,000)(8.0 × 10^{6})}{(4,000)^{2}} = 987,000 N = 987 kN.\n\nFor pinned ends the effective length equals the actual length.",
+  "eli5": "A slender column fails by elastic buckling at the Euler load, P_{cr} = π^{2} E I / (K L)^{2}. Pinned ends give K = 1. Buckling happens about the axis with the smaller moment of inertia.",
+  "solution": "P_{cr} = \\frac{π^{2} E I}{(K L)^{2}} = \\frac{π^{2}(200,000)(8.0 × 10^{6})}{(4,000)^{2}} = 986,960 N = 987 kN.",
   "handbook": [
    {
     "section": "Mechanics of Materials",
-    "page": "130–142"
-   },
-   {
-    "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "130–142",
+    "find": [
+     "Euler's formula",
+     "columns"
+    ]
    }
   ],
   "tags": [
@@ -78,7 +83,151 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0002",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<line x1='200' y1='24' x2='200' y2='150' stroke='#E7E8E8' stroke-width='10'/><path d='M200 24 Q246 87 200 150' fill='none' stroke='#1B795A' stroke-width='3' stroke-dasharray='7 4'/><line x1='160' y1='150' x2='240' y2='150' stroke='#00242E' stroke-width='3'/><line x1='160' y1='24' x2='240' y2='24' stroke='#00242E' stroke-width='3'/><line x1='200' y1='0' x2='200' y2='14' stroke='#00574A' stroke-width='3'/><path d='M200 22 L194 10 L206 10 Z' fill='#00574A'/><text x='250' y='28' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><text x='250' y='154' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><line x1='130' y1='24' x2='130' y2='150' stroke='#00242E'/><text x='122' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>4 m</text><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P</text>",
+   "alt": "A column 4 m long under axial load, pinned at the base and pinned at the top, with its buckled shape dashed."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0002-b",
+  "topic": "structural",
+  "subtopic": "structural-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel column is 3 m long with pinned ends. E = 200 GPa and the moment of inertia about the weak axis is 4.5 × 10^{6} mm^{4}. What is the Euler buckling load?",
+  "answer": {
+   "value": 987.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A slender column fails by elastic buckling at the Euler load, P_{cr} = π^{2} E I / (K L)^{2}. Pinned ends give K = 1. Buckling happens about the axis with the smaller moment of inertia.",
+  "solution": "P_{cr} = \\frac{π^{2} E I}{(K L)^{2}} = \\frac{π^{2}(200,000)(4.5 × 10^{6})}{(3,000)^{2}} = 986,960 N = 987 kN.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Euler's formula",
+     "columns"
+    ]
+   }
+  ],
+  "tags": [
+   "euler buckling",
+   "column"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0002",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<line x1='200' y1='24' x2='200' y2='150' stroke='#E7E8E8' stroke-width='10'/><path d='M200 24 Q246 87 200 150' fill='none' stroke='#1B795A' stroke-width='3' stroke-dasharray='7 4'/><line x1='160' y1='150' x2='240' y2='150' stroke='#00242E' stroke-width='3'/><line x1='160' y1='24' x2='240' y2='24' stroke='#00242E' stroke-width='3'/><line x1='200' y1='0' x2='200' y2='14' stroke='#00574A' stroke-width='3'/><path d='M200 22 L194 10 L206 10 Z' fill='#00574A'/><text x='250' y='28' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><text x='250' y='154' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><line x1='130' y1='24' x2='130' y2='150' stroke='#00242E'/><text x='122' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P</text>",
+   "alt": "A column 3 m long under axial load, pinned at the base and pinned at the top, with its buckled shape dashed."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0002-c",
+  "topic": "structural",
+  "subtopic": "structural-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel column is 5 m long with pinned ends. E = 200 GPa and the moment of inertia about the weak axis is 20.0 × 10^{6} mm^{4}. What is the Euler buckling load?",
+  "answer": {
+   "value": 1579.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A slender column fails by elastic buckling at the Euler load, P_{cr} = π^{2} E I / (K L)^{2}. Pinned ends give K = 1. Buckling happens about the axis with the smaller moment of inertia.",
+  "solution": "P_{cr} = \\frac{π^{2} E I}{(K L)^{2}} = \\frac{π^{2}(200,000)(20.0 × 10^{6})}{(5,000)^{2}} = 1,579,137 N = 1,579 kN.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Euler's formula",
+     "columns"
+    ]
+   }
+  ],
+  "tags": [
+   "euler buckling",
+   "column"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0002",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<line x1='200' y1='24' x2='200' y2='150' stroke='#E7E8E8' stroke-width='10'/><path d='M200 24 Q246 87 200 150' fill='none' stroke='#1B795A' stroke-width='3' stroke-dasharray='7 4'/><line x1='160' y1='150' x2='240' y2='150' stroke='#00242E' stroke-width='3'/><line x1='160' y1='24' x2='240' y2='24' stroke='#00242E' stroke-width='3'/><line x1='200' y1='0' x2='200' y2='14' stroke='#00574A' stroke-width='3'/><path d='M200 22 L194 10 L206 10 Z' fill='#00574A'/><text x='250' y='28' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><text x='250' y='154' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><line x1='130' y1='24' x2='130' y2='150' stroke='#00242E'/><text x='122' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>5 m</text><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P</text>",
+   "alt": "A column 5 m long under axial load, pinned at the base and pinned at the top, with its buckled shape dashed."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0002-d",
+  "topic": "structural",
+  "subtopic": "structural-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel column is 6 m long with pinned ends. E = 200 GPa and the moment of inertia about the weak axis is 36.0 × 10^{6} mm^{4}. What is the Euler buckling load?",
+  "answer": {
+   "value": 1974.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A slender column fails by elastic buckling at the Euler load, P_{cr} = π^{2} E I / (K L)^{2}. Pinned ends give K = 1. Buckling happens about the axis with the smaller moment of inertia.",
+  "solution": "P_{cr} = \\frac{π^{2} E I}{(K L)^{2}} = \\frac{π^{2}(200,000)(36.0 × 10^{6})}{(6,000)^{2}} = 1,973,921 N = 1,974 kN.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Euler's formula",
+     "columns"
+    ]
+   }
+  ],
+  "tags": [
+   "euler buckling",
+   "column"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0002",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<line x1='200' y1='24' x2='200' y2='150' stroke='#E7E8E8' stroke-width='10'/><path d='M200 24 Q246 87 200 150' fill='none' stroke='#1B795A' stroke-width='3' stroke-dasharray='7 4'/><line x1='160' y1='150' x2='240' y2='150' stroke='#00242E' stroke-width='3'/><line x1='160' y1='24' x2='240' y2='24' stroke='#00242E' stroke-width='3'/><line x1='200' y1='0' x2='200' y2='14' stroke='#00574A' stroke-width='3'/><path d='M200 22 L194 10 L206 10 Z' fill='#00574A'/><text x='250' y='28' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><text x='250' y='154' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><line x1='130' y1='24' x2='130' y2='150' stroke='#00242E'/><text x='122' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>6 m</text><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P</text>",
+   "alt": "A column 6 m long under axial load, pinned at the base and pinned at the top, with its buckled shape dashed."
+  },
+  "lookup": true
  },
  {
   "id": "structural-0003",
@@ -92,32 +241,31 @@
   "options": [
    {
     "id": "a",
-    "text": "1.5 mm"
+    "text": "1.50 mm"
    },
    {
     "id": "b",
-    "text": "3.0 mm"
+    "text": "3.00 mm"
    },
    {
     "id": "c",
-    "text": "6.0 mm"
+    "text": "6.00 mm"
    },
    {
     "id": "d",
-    "text": "9.4 mm"
+    "text": "12.00 mm"
    }
   ],
   "answer": "b",
-  "eli5": "A beam sags under a load the way a diving board does. A stiffer beam sags less and a longer one sags much more.",
-  "solution": "Deflection = \\frac{PL^{3}}{48EI} = \\frac{20(6)^{3}}{48(30,000)} = 0.003 m = 3.0 mm.",
+  "eli5": "For a simply supported beam with a central point load, the maximum deflection is P L^{3} / (48 EI), at midspan. Span is cubed, so deflection is very sensitive to length.",
+  "solution": "Deflection = \\frac{P L^{3}}{48 EI} = \\frac{20(6)^{3}}{48(30,000)} = 0.00300 m = 3.00 mm.",
   "handbook": [
    {
     "section": "Mechanics of Materials",
-    "page": "130–142"
-   },
-   {
-    "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "130–142",
+    "find": [
+     "simply supported beam slopes and deflections"
+    ]
    }
   ],
   "tags": [
@@ -127,7 +275,187 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0003",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='200' y1='14' x2='200' y2='69' stroke='#00574A' stroke-width='3'/><path d='M200 77 L194 65 L206 65 Z' fill='#00574A'/><text x='226' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>20 kN</text><line x1='50' y1='136' x2='200' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><text x='125' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><line x1='200' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='275' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text>",
+   "alt": "A simply supported beam 6 m long, a 20 kN point load 3 m from the left end."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0003-b",
+  "topic": "structural",
+  "subtopic": "structural-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 8 m and carries a 30 kN point load at midspan. Its flexural stiffness EI is 40,000 kN·m^{2}. What is the midspan deflection?",
+  "options": [
+   {
+    "id": "a",
+    "text": "4.00 mm"
+   },
+   {
+    "id": "b",
+    "text": "8.00 mm"
+   },
+   {
+    "id": "c",
+    "text": "16.00 mm"
+   },
+   {
+    "id": "d",
+    "text": "32.00 mm"
+   }
+  ],
+  "answer": "b",
+  "eli5": "For a simply supported beam with a central point load, the maximum deflection is P L^{3} / (48 EI), at midspan. Span is cubed, so deflection is very sensitive to length.",
+  "solution": "Deflection = \\frac{P L^{3}}{48 EI} = \\frac{30(8)^{3}}{48(40,000)} = 0.00800 m = 8.00 mm.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "simply supported beam slopes and deflections"
+    ]
+   }
+  ],
+  "tags": [
+   "deflection",
+   "point load"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0003",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='200' y1='14' x2='200' y2='69' stroke='#00574A' stroke-width='3'/><path d='M200 77 L194 65 L206 65 Z' fill='#00574A'/><text x='226' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>30 kN</text><line x1='50' y1='136' x2='200' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><text x='125' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='200' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='275' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text>",
+   "alt": "A simply supported beam 8 m long, a 30 kN point load 4 m from the left end."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0003-c",
+  "topic": "structural",
+  "subtopic": "structural-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 5 m and carries a 48 kN point load at midspan. Its flexural stiffness EI is 50,000 kN·m^{2}. What is the midspan deflection?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1.25 mm"
+   },
+   {
+    "id": "b",
+    "text": "2.50 mm"
+   },
+   {
+    "id": "c",
+    "text": "5.00 mm"
+   },
+   {
+    "id": "d",
+    "text": "10.00 mm"
+   }
+  ],
+  "answer": "b",
+  "eli5": "For a simply supported beam with a central point load, the maximum deflection is P L^{3} / (48 EI), at midspan. Span is cubed, so deflection is very sensitive to length.",
+  "solution": "Deflection = \\frac{P L^{3}}{48 EI} = \\frac{48(5)^{3}}{48(50,000)} = 0.00250 m = 2.50 mm.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "simply supported beam slopes and deflections"
+    ]
+   }
+  ],
+  "tags": [
+   "deflection",
+   "point load"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0003",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='200' y1='14' x2='200' y2='69' stroke='#00574A' stroke-width='3'/><path d='M200 77 L194 65 L206 65 Z' fill='#00574A'/><text x='226' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>48 kN</text><line x1='50' y1='136' x2='200' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><text x='125' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text><line x1='200' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='275' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text>",
+   "alt": "A simply supported beam 5 m long, a 48 kN point load 2.5 m from the left end."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0003-d",
+  "topic": "structural",
+  "subtopic": "structural-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 4 m and carries a 60 kN point load at midspan. Its flexural stiffness EI is 20,000 kN·m^{2}. What is the midspan deflection?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2.00 mm"
+   },
+   {
+    "id": "b",
+    "text": "4.00 mm"
+   },
+   {
+    "id": "c",
+    "text": "8.00 mm"
+   },
+   {
+    "id": "d",
+    "text": "16.00 mm"
+   }
+  ],
+  "answer": "b",
+  "eli5": "For a simply supported beam with a central point load, the maximum deflection is P L^{3} / (48 EI), at midspan. Span is cubed, so deflection is very sensitive to length.",
+  "solution": "Deflection = \\frac{P L^{3}}{48 EI} = \\frac{60(4)^{3}}{48(20,000)} = 0.00400 m = 4.00 mm.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "simply supported beam slopes and deflections"
+    ]
+   }
+  ],
+  "tags": [
+   "deflection",
+   "point load"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0003",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='200' y1='14' x2='200' y2='69' stroke='#00574A' stroke-width='3'/><path d='M200 77 L194 65 L206 65 Z' fill='#00574A'/><text x='226' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>60 kN</text><line x1='50' y1='136' x2='200' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><text x='125' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text><line x1='200' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='275' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text>",
+   "alt": "A simply supported beam 4 m long, a 60 kN point load 2 m from the left end."
+  },
+  "lookup": true
  },
  {
   "id": "structural-0004",
@@ -157,12 +485,16 @@
    }
   ],
   "answer": "c",
-  "eli5": "Design loads are padded with safety factors. Live load gets the bigger factor because it is less predictable than the weight of the structure itself.",
-  "solution": "1.4D = 1.4(20) = 28 kN/m.\n\n1.2D + 1.6L = 1.2(20) + 1.6(30) = 24 + 48 = 72 kN/m.\n\nThe larger value governs: 72 kN/m.",
+  "eli5": "In strength design (LRFD) each load is multiplied by a load factor that reflects its uncertainty, and the largest combination governs. Live load has the larger factor because it is less predictable than dead load.",
+  "solution": "1.4D = 1.4(20) = 28 kN/m.\n\n1.2D + 1.6L = 1.2(20) + 1.6(30) = 72 kN/m.\n\nThe larger value governs: 72 kN/m.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": [
+     "load combinations",
+     "LRFD"
+    ]
    }
   ],
   "tags": [
@@ -172,7 +504,170 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0004",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0004-b",
+  "topic": "structural",
+  "subtopic": "structural-f",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A floor beam carries a dead load of 15 kN/m and a live load of 25 kN/m. Checking the load combinations 1.4D and 1.2D + 1.6L, what factored load governs?",
+  "options": [
+   {
+    "id": "a",
+    "text": "21 kN/m"
+   },
+   {
+    "id": "b",
+    "text": "40 kN/m"
+   },
+   {
+    "id": "c",
+    "text": "58 kN/m"
+   },
+   {
+    "id": "d",
+    "text": "64 kN/m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "In strength design (LRFD) each load is multiplied by a load factor that reflects its uncertainty, and the largest combination governs. Live load has the larger factor because it is less predictable than dead load.",
+  "solution": "1.4D = 1.4(15) = 21 kN/m.\n\n1.2D + 1.6L = 1.2(15) + 1.6(25) = 58 kN/m.\n\nThe larger value governs: 58 kN/m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "load combinations",
+     "LRFD"
+    ]
+   }
+  ],
+  "tags": [
+   "load combinations",
+   "lrfd"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0004",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0004-c",
+  "topic": "structural",
+  "subtopic": "structural-f",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A floor beam carries a dead load of 30 kN/m and a live load of 20 kN/m. Checking the load combinations 1.4D and 1.2D + 1.6L, what factored load governs?",
+  "options": [
+   {
+    "id": "a",
+    "text": "42 kN/m"
+   },
+   {
+    "id": "b",
+    "text": "50 kN/m"
+   },
+   {
+    "id": "c",
+    "text": "68 kN/m"
+   },
+   {
+    "id": "d",
+    "text": "80 kN/m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "In strength design (LRFD) each load is multiplied by a load factor that reflects its uncertainty, and the largest combination governs. Live load has the larger factor because it is less predictable than dead load.",
+  "solution": "1.4D = 1.4(30) = 42 kN/m.\n\n1.2D + 1.6L = 1.2(30) + 1.6(20) = 68 kN/m.\n\nThe larger value governs: 68 kN/m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "load combinations",
+     "LRFD"
+    ]
+   }
+  ],
+  "tags": [
+   "load combinations",
+   "lrfd"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0004",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0004-d",
+  "topic": "structural",
+  "subtopic": "structural-f",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A floor beam carries a dead load of 12 kN/m and a live load of 40 kN/m. Checking the load combinations 1.4D and 1.2D + 1.6L, what factored load governs?",
+  "options": [
+   {
+    "id": "a",
+    "text": "16.8 kN/m"
+   },
+   {
+    "id": "b",
+    "text": "52 kN/m"
+   },
+   {
+    "id": "c",
+    "text": "78.4 kN/m"
+   },
+   {
+    "id": "d",
+    "text": "83.2 kN/m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "In strength design (LRFD) each load is multiplied by a load factor that reflects its uncertainty, and the largest combination governs. Live load has the larger factor because it is less predictable than dead load.",
+  "solution": "1.4D = 1.4(12) = 16.8 kN/m.\n\n1.2D + 1.6L = 1.2(12) + 1.6(40) = 78.4 kN/m.\n\nThe larger value governs: 78.4 kN/m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "load combinations",
+     "LRFD"
+    ]
+   }
+  ],
+  "tags": [
+   "load combinations",
+   "lrfd"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0004",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "structural-0005",
@@ -186,7 +681,7 @@
   "options": [
    {
     "id": "a",
-    "text": "258 kN·m"
+    "text": "259 kN·m"
    },
    {
     "id": "b",
@@ -202,12 +697,16 @@
    }
   ],
   "answer": "b",
-  "eli5": "In a concrete beam, steel at the bottom pulls and a block of concrete at the top pushes. The moment the beam can resist is that pull times the distance between the two.",
-  "solution": "Depth of the compression block: a = \\frac{A_{s}f_{y}}{0.85f'_{c}b} = \\frac{1,500(420)}{0.85(28)(300)} = 88.2 mm.\n\nM_{n} = A_{s}f_{y}(d - \\frac{a}{2}) = 1,500(420)(500 - 44.1) = 287 × 10^{6} N·mm = 287 kN·m.\n\nMultiplying by 0.9 would give the design strength, which is a different quantity.",
+  "eli5": "At nominal strength the steel force T = A_{s} f_{y} is balanced by a rectangular concrete stress block of intensity 0.85 f'_{c} and depth a. The moment capacity is that force times the lever arm between them, d - a/2.",
+  "solution": "a = \\frac{A_{s} f_{y}}{0.85 f'_{c} b} = \\frac{1,500(420)}{0.85(28)(300)} = 88.2 mm.\n\nM_{n} = A_{s} f_{y}(d - \\frac{a}{2}) = 1,500(420)(500 - 44.1) = 287 × 10^{6} N·mm = 287 kN·m.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "singly-reinforced"
+    ]
    }
   ],
   "tags": [
@@ -217,7 +716,210 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0005",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 196",
+   "svg": "<rect x='110' y='16' width='78' height='152' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='130' cy='146' r='6' fill='#00242E'/><circle cx='149' cy='146' r='6' fill='#00242E'/><circle cx='168' cy='146' r='6' fill='#00242E'/><text x='149' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>300 mm</text><line x1='94' y1='16' x2='94' y2='146' stroke='#00242E'/><text x='88' y='81' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>d = 500 mm</text><text x='198' y='150' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1,500 mm² steel</text>",
+   "alt": "A reinforced concrete beam section 300 mm wide with an effective depth of 500 mm and 1,500 mm^2 of tension steel."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 196",
+   "svg": "<rect x='110' y='16' width='78' height='152' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='130' cy='146' r='6' fill='#00242E'/><circle cx='149' cy='146' r='6' fill='#00242E'/><circle cx='168' cy='146' r='6' fill='#00242E'/><text x='149' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>300 mm</text><line x1='94' y1='16' x2='94' y2='146' stroke='#00242E'/><text x='88' y='81' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>d = 500 mm</text><text x='198' y='150' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1,500 mm² steel</text><rect x='110' y='16' width='78' height='23' fill='#1B795A' fill-opacity='.35'/><text x='198' y='31' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>a = 88.2 mm</text>",
+   "alt": "A reinforced concrete beam section 300 mm wide with an effective depth of 500 mm and 1,500 mm^2 of tension steel."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0005-b",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A singly reinforced concrete beam is 350 mm wide with an effective depth of 550 mm. It has 2,000 mm^{2} of tension steel with a yield strength of 420 MPa, and the concrete strength is 28 MPa. Assuming the steel yields, what is the nominal moment capacity?",
+  "options": [
+   {
+    "id": "a",
+    "text": "377 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "420 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "462 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "504 kN·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "At nominal strength the steel force T = A_{s} f_{y} is balanced by a rectangular concrete stress block of intensity 0.85 f'_{c} and depth a. The moment capacity is that force times the lever arm between them, d - a/2.",
+  "solution": "a = \\frac{A_{s} f_{y}}{0.85 f'_{c} b} = \\frac{2,000(420)}{0.85(28)(350)} = 100.8 mm.\n\nM_{n} = A_{s} f_{y}(d - \\frac{a}{2}) = 2,000(420)(550 - 50.4) = 420 × 10^{6} N·mm = 420 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "singly-reinforced"
+    ]
+   }
+  ],
+  "tags": [
+   "reinforced concrete",
+   "nominal moment"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0005",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 196",
+   "svg": "<rect x='110' y='16' width='83' height='152' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='131' cy='146' r='6' fill='#00242E'/><circle cx='151' cy='146' r='6' fill='#00242E'/><circle cx='172' cy='146' r='6' fill='#00242E'/><text x='151' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>350 mm</text><line x1='94' y1='16' x2='94' y2='146' stroke='#00242E'/><text x='88' y='81' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>d = 550 mm</text><text x='203' y='150' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>2,000 mm² steel</text>",
+   "alt": "A reinforced concrete beam section 350 mm wide with an effective depth of 550 mm and 2,000 mm^2 of tension steel."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 196",
+   "svg": "<rect x='110' y='16' width='83' height='152' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='131' cy='146' r='6' fill='#00242E'/><circle cx='151' cy='146' r='6' fill='#00242E'/><circle cx='172' cy='146' r='6' fill='#00242E'/><text x='151' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>350 mm</text><line x1='94' y1='16' x2='94' y2='146' stroke='#00242E'/><text x='88' y='81' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>d = 550 mm</text><text x='203' y='150' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>2,000 mm² steel</text><rect x='110' y='16' width='83' height='24' fill='#1B795A' fill-opacity='.35'/><text x='203' y='32' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>a = 100.8 mm</text>",
+   "alt": "A reinforced concrete beam section 350 mm wide with an effective depth of 550 mm and 2,000 mm^2 of tension steel."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0005-c",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A singly reinforced concrete beam is 250 mm wide with an effective depth of 450 mm. It has 1,200 mm^{2} of tension steel with a yield strength of 420 MPa, and the concrete strength is 35 MPa. Assuming the steel yields, what is the nominal moment capacity?",
+  "options": [
+   {
+    "id": "a",
+    "text": "193 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "210 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "227 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "244 kN·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "At nominal strength the steel force T = A_{s} f_{y} is balanced by a rectangular concrete stress block of intensity 0.85 f'_{c} and depth a. The moment capacity is that force times the lever arm between them, d - a/2.",
+  "solution": "a = \\frac{A_{s} f_{y}}{0.85 f'_{c} b} = \\frac{1,200(420)}{0.85(35)(250)} = 67.8 mm.\n\nM_{n} = A_{s} f_{y}(d - \\frac{a}{2}) = 1,200(420)(450 - 33.9) = 210 × 10^{6} N·mm = 210 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "singly-reinforced"
+    ]
+   }
+  ],
+  "tags": [
+   "reinforced concrete",
+   "nominal moment"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0005",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 196",
+   "svg": "<rect x='110' y='16' width='72' height='152' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='128' cy='146' r='6' fill='#00242E'/><circle cx='146' cy='146' r='6' fill='#00242E'/><circle cx='164' cy='146' r='6' fill='#00242E'/><text x='146' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>250 mm</text><line x1='94' y1='16' x2='94' y2='146' stroke='#00242E'/><text x='88' y='81' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>d = 450 mm</text><text x='192' y='150' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1,200 mm² steel</text>",
+   "alt": "A reinforced concrete beam section 250 mm wide with an effective depth of 450 mm and 1,200 mm^2 of tension steel."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 196",
+   "svg": "<rect x='110' y='16' width='72' height='152' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='128' cy='146' r='6' fill='#00242E'/><circle cx='146' cy='146' r='6' fill='#00242E'/><circle cx='164' cy='146' r='6' fill='#00242E'/><text x='146' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>250 mm</text><line x1='94' y1='16' x2='94' y2='146' stroke='#00242E'/><text x='88' y='81' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>d = 450 mm</text><text x='192' y='150' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1,200 mm² steel</text><rect x='110' y='16' width='72' height='20' fill='#1B795A' fill-opacity='.35'/><text x='192' y='30' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>a = 67.8 mm</text>",
+   "alt": "A reinforced concrete beam section 250 mm wide with an effective depth of 450 mm and 1,200 mm^2 of tension steel."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0005-d",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A singly reinforced concrete beam is 400 mm wide with an effective depth of 600 mm. It has 2,400 mm^{2} of tension steel with a yield strength of 420 MPa, and the concrete strength is 21 MPa. Assuming the steel yields, what is the nominal moment capacity?",
+  "options": [
+   {
+    "id": "a",
+    "text": "462 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "534 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "605 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "676 kN·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "At nominal strength the steel force T = A_{s} f_{y} is balanced by a rectangular concrete stress block of intensity 0.85 f'_{c} and depth a. The moment capacity is that force times the lever arm between them, d - a/2.",
+  "solution": "a = \\frac{A_{s} f_{y}}{0.85 f'_{c} b} = \\frac{2,400(420)}{0.85(21)(400)} = 141.2 mm.\n\nM_{n} = A_{s} f_{y}(d - \\frac{a}{2}) = 2,400(420)(600 - 70.6) = 534 × 10^{6} N·mm = 534 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "singly-reinforced"
+    ]
+   }
+  ],
+  "tags": [
+   "reinforced concrete",
+   "nominal moment"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0005",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 196",
+   "svg": "<rect x='110' y='16' width='87' height='152' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='132' cy='146' r='6' fill='#00242E'/><circle cx='153' cy='146' r='6' fill='#00242E'/><circle cx='175' cy='146' r='6' fill='#00242E'/><text x='153' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>400 mm</text><line x1='94' y1='16' x2='94' y2='146' stroke='#00242E'/><text x='88' y='81' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>d = 600 mm</text><text x='207' y='150' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>2,400 mm² steel</text>",
+   "alt": "A reinforced concrete beam section 400 mm wide with an effective depth of 600 mm and 2,400 mm^2 of tension steel."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 196",
+   "svg": "<rect x='110' y='16' width='87' height='152' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='132' cy='146' r='6' fill='#00242E'/><circle cx='153' cy='146' r='6' fill='#00242E'/><circle cx='175' cy='146' r='6' fill='#00242E'/><text x='153' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>400 mm</text><line x1='94' y1='16' x2='94' y2='146' stroke='#00242E'/><text x='88' y='81' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>d = 600 mm</text><text x='207' y='150' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>2,400 mm² steel</text><rect x='110' y='16' width='87' height='31' fill='#1B795A' fill-opacity='.35'/><text x='207' y='35' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>a = 141.2 mm</text>",
+   "alt": "A reinforced concrete beam section 400 mm wide with an effective depth of 600 mm and 2,400 mm^2 of tension steel."
+  },
+  "lookup": true
  },
  {
   "id": "structural-0006",
@@ -247,16 +949,16 @@
    }
   ],
   "answer": "c",
-  "eli5": "A cantilever is like holding a weight at arm's length. The farther out the weight, the harder your shoulder has to work.",
-  "solution": "M = P × L = 12(3) = 36 kN·m at the fixed end, where the lever arm is longest.",
+  "eli5": "A cantilever resists load through shear and moment at its fixed end. For a tip load the moment grows linearly from zero at the free end to P L at the support.",
+  "solution": "M = P L = 12 × 3 = 36 kN·m at the fixed support (tension on the top face).",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment",
+     "cantilever"
+    ]
    }
   ],
   "tags": [
@@ -266,7 +968,190 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0006",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='350' y1='14' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='324' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>12 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text>",
+   "alt": "A cantilever beam 3 m long, a 12 kN point load 3 m from the left end."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0006-b",
+  "topic": "structural",
+  "subtopic": "structural-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A cantilever beam is 2.5 m long and carries a 20 kN point load at its free end. What is the magnitude of the bending moment at the fixed support?",
+  "options": [
+   {
+    "id": "a",
+    "text": "20 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "25 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "50 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "75 kN·m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A cantilever resists load through shear and moment at its fixed end. For a tip load the moment grows linearly from zero at the free end to P L at the support.",
+  "solution": "M = P L = 20 × 2.5 = 50 kN·m at the fixed support (tension on the top face).",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment",
+     "cantilever"
+    ]
+   }
+  ],
+  "tags": [
+   "cantilever",
+   "bending moment"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0006",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='350' y1='14' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='324' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>20 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text>",
+   "alt": "A cantilever beam 2.5 m long, a 20 kN point load 2.5 m from the left end."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0006-c",
+  "topic": "structural",
+  "subtopic": "structural-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A cantilever beam is 4 m long and carries a 15 kN point load at its free end. What is the magnitude of the bending moment at the fixed support?",
+  "options": [
+   {
+    "id": "a",
+    "text": "15 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "30 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "60 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "90 kN·m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A cantilever resists load through shear and moment at its fixed end. For a tip load the moment grows linearly from zero at the free end to P L at the support.",
+  "solution": "M = P L = 15 × 4 = 60 kN·m at the fixed support (tension on the top face).",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment",
+     "cantilever"
+    ]
+   }
+  ],
+  "tags": [
+   "cantilever",
+   "bending moment"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0006",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='350' y1='14' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='324' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>15 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text>",
+   "alt": "A cantilever beam 4 m long, a 15 kN point load 4 m from the left end."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0006-d",
+  "topic": "structural",
+  "subtopic": "structural-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A cantilever beam is 5 m long and carries a 18 kN point load at its free end. What is the magnitude of the bending moment at the fixed support?",
+  "options": [
+   {
+    "id": "a",
+    "text": "18 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "45 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "90 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "135 kN·m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A cantilever resists load through shear and moment at its fixed end. For a tip load the moment grows linearly from zero at the free end to P L at the support.",
+  "solution": "M = P L = 18 × 5 = 90 kN·m at the fixed support (tension on the top face).",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment",
+     "cantilever"
+    ]
+   }
+  ],
+  "tags": [
+   "cantilever",
+   "bending moment"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0006",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='350' y1='14' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='324' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>18 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text>",
+   "alt": "A cantilever beam 5 m long, a 18 kN point load 5 m from the left end."
+  },
+  "lookup": true
  },
  {
   "id": "structural-0007",
@@ -283,23 +1168,154 @@
    "toleranceType": "rel",
    "unit": "kN"
   },
-  "eli5": "The uniform load is shared equally. The point load is shared unequally, with more going to the nearer support.",
-  "solution": "From the uniform load: \\frac{5(6)}{2} = 15 kN. From the point load: 10(\\frac{4}{6}) = 6.67 kN.\n\nLeft reaction = 21.7 kN.",
+  "eli5": "Reactions from several loads can be found one load at a time and added (superposition). The uniform load splits equally; the point load splits in inverse proportion to its distance from each support.",
+  "solution": "From the uniform load: 5(6) / 2 = 15 kN.\n\nFrom the point load: 10 × \\frac{6 - 2}{6} = 6.67 kN.\n\nLeft reaction = 15 + 6.67 = 21.7 kN.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0007",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>5 kN/m</text><line x1='150' y1='6' x2='150' y2='34' stroke='#00574A' stroke-width='3'/><path d='M150 42 L144 30 L156 30 Z' fill='#00574A'/><text x='176' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>10 kN</text><line x1='50' y1='136' x2='150' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='150' y1='130' x2='150' y2='142' stroke='#00242E'/><text x='100' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text><line x1='150' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='150' y1='130' x2='150' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='250' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text>",
+   "alt": "A simply supported beam 6 m long with a uniform load of 5 kN/m, a 10 kN point load 2 m from the left end."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0007-b",
+  "topic": "structural",
+  "subtopic": "structural-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 8 m. It carries a uniform load of 4 kN/m over the full span and a 24 kN point load 2 m from the left support. What is the left reaction?",
+  "answer": {
+   "value": 34.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "Reactions from several loads can be found one load at a time and added (superposition). The uniform load splits equally; the point load splits in inverse proportion to its distance from each support.",
+  "solution": "From the uniform load: 4(8) / 2 = 16 kN.\n\nFrom the point load: 24 × \\frac{8 - 2}{8} = 18.00 kN.\n\nLeft reaction = 16 + 18.00 = 34.0 kN.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0007",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>4 kN/m</text><line x1='125' y1='6' x2='125' y2='34' stroke='#00574A' stroke-width='3'/><path d='M125 42 L119 30 L131 30 Z' fill='#00574A'/><text x='151' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>24 kN</text><line x1='50' y1='136' x2='125' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='125' y1='130' x2='125' y2='142' stroke='#00242E'/><text x='88' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text><line x1='125' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='125' y1='130' x2='125' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='238' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6 m</text>",
+   "alt": "A simply supported beam 8 m long with a uniform load of 4 kN/m, a 24 kN point load 2 m from the left end."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0007-c",
+  "topic": "structural",
+  "subtopic": "structural-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 10 m. It carries a uniform load of 6 kN/m over the full span and a 15 kN point load 4 m from the left support. What is the left reaction?",
+  "answer": {
+   "value": 39.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "Reactions from several loads can be found one load at a time and added (superposition). The uniform load splits equally; the point load splits in inverse proportion to its distance from each support.",
+  "solution": "From the uniform load: 6(10) / 2 = 30 kN.\n\nFrom the point load: 15 × \\frac{10 - 4}{10} = 9.00 kN.\n\nLeft reaction = 30 + 9.00 = 39.0 kN.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0007",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>6 kN/m</text><line x1='170' y1='6' x2='170' y2='34' stroke='#00574A' stroke-width='3'/><path d='M170 42 L164 30 L176 30 Z' fill='#00574A'/><text x='196' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>15 kN</text><line x1='50' y1='136' x2='170' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='170' y1='130' x2='170' y2='142' stroke='#00242E'/><text x='110' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='170' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='170' y1='130' x2='170' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='260' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6 m</text>",
+   "alt": "A simply supported beam 10 m long with a uniform load of 6 kN/m, a 15 kN point load 4 m from the left end."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0007-d",
+  "topic": "structural",
+  "subtopic": "structural-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 5 m. It carries a uniform load of 8 kN/m over the full span and a 20 kN point load 3 m from the left support. What is the left reaction?",
+  "answer": {
+   "value": 28.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "Reactions from several loads can be found one load at a time and added (superposition). The uniform load splits equally; the point load splits in inverse proportion to its distance from each support.",
+  "solution": "From the uniform load: 8(5) / 2 = 20 kN.\n\nFrom the point load: 20 × \\frac{5 - 3}{5} = 8.00 kN.\n\nLeft reaction = 20 + 8.00 = 28.0 kN.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0007",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>8 kN/m</text><line x1='230' y1='6' x2='230' y2='34' stroke='#00574A' stroke-width='3'/><path d='M230 42 L224 30 L236 30 Z' fill='#00574A'/><text x='256' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>20 kN</text><line x1='50' y1='136' x2='230' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='230' y1='130' x2='230' y2='142' stroke='#00242E'/><text x='140' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><line x1='230' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='230' y1='130' x2='230' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='290' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text>",
+   "alt": "A simply supported beam 5 m long with a uniform load of 8 kN/m, a 20 kN point load 3 m from the left end."
+  },
+  "lookup": true
  },
  {
   "id": "structural-0008",
@@ -329,23 +1345,213 @@
    }
   ],
   "answer": "b",
-  "eli5": "Each support pushes up with half the load. The bending in the middle is that push times its distance from the middle.",
-  "solution": "M_{max} = \\frac{PL}{4} = \\frac{40(6)}{4} = 60 kN·m.",
+  "eli5": "With a central point load each reaction is P/2, and the moment under the load is the reaction times half the span: M_{max} = P L / 4.",
+  "solution": "Reaction = 40 / 2 = 20 kN.\n\nM_{max} = 20 × 3 = \\frac{P L}{4} = 60 kN·m, under the load.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0008",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='200' y1='14' x2='200' y2='69' stroke='#00574A' stroke-width='3'/><path d='M200 77 L194 65 L206 65 Z' fill='#00574A'/><text x='226' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>40 kN</text><line x1='50' y1='136' x2='200' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><text x='125' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><line x1='200' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='275' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text>",
+   "alt": "A simply supported beam 6 m long, a 40 kN point load 3 m from the left end."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 205",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='200' y1='14' x2='200' y2='69' stroke='#00574A' stroke-width='3'/><path d='M200 77 L194 65 L206 65 Z' fill='#00574A'/><text x='226' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>40 kN</text><line x1='50' y1='176' x2='200' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='200' y1='170' x2='200' y2='182' stroke='#00242E'/><text x='125' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><line x1='200' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='200' y1='170' x2='200' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='275' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><line x1='50' y1='162' x2='50' y2='130' stroke='#568CBB' stroke-width='3'/><path d='M50 122 L44 134 L56 134 Z' fill='#568CBB'/><text x='62' y='158' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>20 kN</text><line x1='350' y1='162' x2='350' y2='126' stroke='#568CBB' stroke-width='3'/><path d='M350 118 L344 130 L356 130 Z' fill='#568CBB'/><text x='338' y='158' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>20 kN</text>",
+   "alt": "A simply supported beam 6 m long, a 40 kN point load 3 m from the left end."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0008-b",
+  "topic": "structural",
+  "subtopic": "structural-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 8 m and carries a 30 kN point load at midspan. What is the maximum bending moment?",
+  "options": [
+   {
+    "id": "a",
+    "text": "30 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "60 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "120 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "240 kN·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "With a central point load each reaction is P/2, and the moment under the load is the reaction times half the span: M_{max} = P L / 4.",
+  "solution": "Reaction = 30 / 2 = 15 kN.\n\nM_{max} = 15 × 4 = \\frac{P L}{4} = 60 kN·m, under the load.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0008",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='200' y1='14' x2='200' y2='69' stroke='#00574A' stroke-width='3'/><path d='M200 77 L194 65 L206 65 Z' fill='#00574A'/><text x='226' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>30 kN</text><line x1='50' y1='136' x2='200' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><text x='125' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='200' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='275' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text>",
+   "alt": "A simply supported beam 8 m long, a 30 kN point load 4 m from the left end."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 205",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='200' y1='14' x2='200' y2='69' stroke='#00574A' stroke-width='3'/><path d='M200 77 L194 65 L206 65 Z' fill='#00574A'/><text x='226' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>30 kN</text><line x1='50' y1='176' x2='200' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='200' y1='170' x2='200' y2='182' stroke='#00242E'/><text x='125' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='200' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='200' y1='170' x2='200' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='275' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='50' y1='162' x2='50' y2='130' stroke='#568CBB' stroke-width='3'/><path d='M50 122 L44 134 L56 134 Z' fill='#568CBB'/><text x='62' y='158' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>15 kN</text><line x1='350' y1='162' x2='350' y2='126' stroke='#568CBB' stroke-width='3'/><path d='M350 118 L344 130 L356 130 Z' fill='#568CBB'/><text x='338' y='158' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>15 kN</text>",
+   "alt": "A simply supported beam 8 m long, a 30 kN point load 4 m from the left end."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0008-c",
+  "topic": "structural",
+  "subtopic": "structural-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 5 m and carries a 64 kN point load at midspan. What is the maximum bending moment?",
+  "options": [
+   {
+    "id": "a",
+    "text": "40 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "80 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "160 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "320 kN·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "With a central point load each reaction is P/2, and the moment under the load is the reaction times half the span: M_{max} = P L / 4.",
+  "solution": "Reaction = 64 / 2 = 32 kN.\n\nM_{max} = 32 × 2.5 = \\frac{P L}{4} = 80 kN·m, under the load.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0008",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='200' y1='14' x2='200' y2='69' stroke='#00574A' stroke-width='3'/><path d='M200 77 L194 65 L206 65 Z' fill='#00574A'/><text x='226' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>64 kN</text><line x1='50' y1='136' x2='200' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><text x='125' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text><line x1='200' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='275' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text>",
+   "alt": "A simply supported beam 5 m long, a 64 kN point load 2.5 m from the left end."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 205",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='200' y1='14' x2='200' y2='69' stroke='#00574A' stroke-width='3'/><path d='M200 77 L194 65 L206 65 Z' fill='#00574A'/><text x='226' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>64 kN</text><line x1='50' y1='176' x2='200' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='200' y1='170' x2='200' y2='182' stroke='#00242E'/><text x='125' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text><line x1='200' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='200' y1='170' x2='200' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='275' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text><line x1='50' y1='162' x2='50' y2='130' stroke='#568CBB' stroke-width='3'/><path d='M50 122 L44 134 L56 134 Z' fill='#568CBB'/><text x='62' y='158' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>32 kN</text><line x1='350' y1='162' x2='350' y2='126' stroke='#568CBB' stroke-width='3'/><path d='M350 118 L344 130 L356 130 Z' fill='#568CBB'/><text x='338' y='158' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>32 kN</text>",
+   "alt": "A simply supported beam 5 m long, a 64 kN point load 2.5 m from the left end."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0008-d",
+  "topic": "structural",
+  "subtopic": "structural-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 10 m and carries a 18 kN point load at midspan. What is the maximum bending moment?",
+  "options": [
+   {
+    "id": "a",
+    "text": "22.5 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "45 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "90 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "180 kN·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "With a central point load each reaction is P/2, and the moment under the load is the reaction times half the span: M_{max} = P L / 4.",
+  "solution": "Reaction = 18 / 2 = 9 kN.\n\nM_{max} = 9 × 5 = \\frac{P L}{4} = 45 kN·m, under the load.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0008",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='200' y1='14' x2='200' y2='69' stroke='#00574A' stroke-width='3'/><path d='M200 77 L194 65 L206 65 Z' fill='#00574A'/><text x='226' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>18 kN</text><line x1='50' y1='136' x2='200' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><text x='125' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text><line x1='200' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='275' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text>",
+   "alt": "A simply supported beam 10 m long, a 18 kN point load 5 m from the left end."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 205",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='200' y1='14' x2='200' y2='69' stroke='#00574A' stroke-width='3'/><path d='M200 77 L194 65 L206 65 Z' fill='#00574A'/><text x='226' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>18 kN</text><line x1='50' y1='176' x2='200' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='200' y1='170' x2='200' y2='182' stroke='#00242E'/><text x='125' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text><line x1='200' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='200' y1='170' x2='200' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='275' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text><line x1='50' y1='162' x2='50' y2='130' stroke='#568CBB' stroke-width='3'/><path d='M50 122 L44 134 L56 134 Z' fill='#568CBB'/><text x='62' y='158' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>9 kN</text><line x1='350' y1='162' x2='350' y2='126' stroke='#568CBB' stroke-width='3'/><path d='M350 118 L344 130 L356 130 Z' fill='#568CBB'/><text x='338' y='158' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>9 kN</text>",
+   "alt": "A simply supported beam 10 m long, a 18 kN point load 5 m from the left end."
+  },
+  "lookup": true
  },
  {
   "id": "structural-0009",
@@ -359,39 +1565,209 @@
   "options": [
    {
     "id": "a",
-    "text": "0.33 mm"
+    "text": "0.333 mm"
    },
    {
     "id": "b",
-    "text": "0.50 mm"
+    "text": "0.500 mm"
    },
    {
     "id": "c",
-    "text": "1.33 mm"
+    "text": "1.333 mm"
    },
    {
     "id": "d",
-    "text": "4.00 mm"
+    "text": "4.000 mm"
    }
   ],
   "answer": "c",
-  "eli5": "The tip of a diving board drops more with a heavier diver or a longer board, and less with a stiffer board.",
-  "solution": "Deflection = \\frac{PL^{3}}{3EI} = \\frac{5(2)^{3}}{3(10,000)} = 0.00133 m = 1.33 mm.",
+  "eli5": "For a cantilever with a tip load, the free-end deflection is P L^{3} / (3 EI). It is 16 times the midspan deflection of a simply supported beam of the same span and central load.",
+  "solution": "Deflection = \\frac{P L^{3}}{3 EI} = \\frac{5(2)^{3}}{3(10,000)} = 0.00133 m = 1.333 mm.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "cantilevered beam slopes and deflections"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0009",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='350' y1='14' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='324' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>5 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text>",
+   "alt": "A cantilever beam 2 m long, a 5 kN point load 2 m from the left end."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0009-b",
+  "topic": "structural",
+  "subtopic": "structural-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A cantilever beam 3 m long carries a 10 kN point load at its free end. EI = 20,000 kN·m^{2}. What is the deflection at the free end?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1.125 mm"
+   },
+   {
+    "id": "b",
+    "text": "1.688 mm"
+   },
+   {
+    "id": "c",
+    "text": "4.500 mm"
+   },
+   {
+    "id": "d",
+    "text": "13.500 mm"
+   }
+  ],
+  "answer": "c",
+  "eli5": "For a cantilever with a tip load, the free-end deflection is P L^{3} / (3 EI). It is 16 times the midspan deflection of a simply supported beam of the same span and central load.",
+  "solution": "Deflection = \\frac{P L^{3}}{3 EI} = \\frac{10(3)^{3}}{3(20,000)} = 0.00450 m = 4.500 mm.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "cantilevered beam slopes and deflections"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0009",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='350' y1='14' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='324' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>10 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text>",
+   "alt": "A cantilever beam 3 m long, a 10 kN point load 3 m from the left end."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0009-c",
+  "topic": "structural",
+  "subtopic": "structural-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A cantilever beam 2.5 m long carries a 8 kN point load at its free end. EI = 12,500 kN·m^{2}. What is the deflection at the free end?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.833 mm"
+   },
+   {
+    "id": "b",
+    "text": "1.250 mm"
+   },
+   {
+    "id": "c",
+    "text": "3.333 mm"
+   },
+   {
+    "id": "d",
+    "text": "10.000 mm"
+   }
+  ],
+  "answer": "c",
+  "eli5": "For a cantilever with a tip load, the free-end deflection is P L^{3} / (3 EI). It is 16 times the midspan deflection of a simply supported beam of the same span and central load.",
+  "solution": "Deflection = \\frac{P L^{3}}{3 EI} = \\frac{8(2.5)^{3}}{3(12,500)} = 0.00333 m = 3.333 mm.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "cantilevered beam slopes and deflections"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0009",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='350' y1='14' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='324' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>8 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text>",
+   "alt": "A cantilever beam 2.5 m long, a 8 kN point load 2.5 m from the left end."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0009-d",
+  "topic": "structural",
+  "subtopic": "structural-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A cantilever beam 4 m long carries a 6 kN point load at its free end. EI = 40,000 kN·m^{2}. What is the deflection at the free end?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.800 mm"
+   },
+   {
+    "id": "b",
+    "text": "1.200 mm"
+   },
+   {
+    "id": "c",
+    "text": "3.200 mm"
+   },
+   {
+    "id": "d",
+    "text": "9.600 mm"
+   }
+  ],
+  "answer": "c",
+  "eli5": "For a cantilever with a tip load, the free-end deflection is P L^{3} / (3 EI). It is 16 times the midspan deflection of a simply supported beam of the same span and central load.",
+  "solution": "Deflection = \\frac{P L^{3}}{3 EI} = \\frac{6(4)^{3}}{3(40,000)} = 0.00320 m = 3.200 mm.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "cantilevered beam slopes and deflections"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0009",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='350' y1='14' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='324' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>6 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text>",
+   "alt": "A cantilever beam 4 m long, a 6 kN point load 4 m from the left end."
+  },
+  "lookup": true
  },
  {
   "id": "structural-0010",
@@ -421,23 +1797,197 @@
    }
   ],
   "answer": "b",
-  "eli5": "Holding the end of a column stops it bowing as freely, so it behaves like a shorter column.",
-  "solution": "Effective length = KL = 0.7(5) = 3.5 m.\n\nPinned-pinned is K = 1.0, fixed-fixed is 0.5 and fixed-free is 2.0.",
+  "eli5": "The effective length K L is the length of the equivalent pinned-pinned column, the distance between inflection points of the buckled shape. End restraint shortens it: K = 0.5 fixed-fixed, 0.7 fixed-pinned, 1.0 pinned-pinned, 2.0 fixed-free.",
+  "solution": "Effective length = K L = 0.7 × 5 = 3.5 m.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "effective length",
+     "columns"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0010",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<line x1='200' y1='24' x2='200' y2='150' stroke='#E7E8E8' stroke-width='10'/><path d='M200 24 Q230 87 200 150' fill='none' stroke='#1B795A' stroke-width='3' stroke-dasharray='7 4'/><line x1='160' y1='150' x2='240' y2='150' stroke='#00242E' stroke-width='3'/><line x1='160' y1='24' x2='240' y2='24' stroke='#00242E' stroke-width='3'/><line x1='200' y1='0' x2='200' y2='14' stroke='#00574A' stroke-width='3'/><path d='M200 22 L194 10 L206 10 Z' fill='#00574A'/><text x='250' y='28' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><text x='250' y='154' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Fixed</text><line x1='130' y1='24' x2='130' y2='150' stroke='#00242E'/><text x='122' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>5 m</text><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P</text>",
+   "alt": "A column 5 m long under axial load, fixed at the base and pinned at the top, with its buckled shape dashed."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0010-b",
+  "topic": "structural",
+  "subtopic": "structural-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A column 4 m long is fixed at its base and pinned at its top. Using the theoretical effective length factor K = 0.7, what is its effective length?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2.0 m"
+   },
+   {
+    "id": "b",
+    "text": "2.8 m"
+   },
+   {
+    "id": "c",
+    "text": "4.0 m"
+   },
+   {
+    "id": "d",
+    "text": "8.0 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The effective length K L is the length of the equivalent pinned-pinned column, the distance between inflection points of the buckled shape. End restraint shortens it: K = 0.5 fixed-fixed, 0.7 fixed-pinned, 1.0 pinned-pinned, 2.0 fixed-free.",
+  "solution": "Effective length = K L = 0.7 × 4 = 2.8 m.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "effective length",
+     "columns"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0010",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<line x1='200' y1='24' x2='200' y2='150' stroke='#E7E8E8' stroke-width='10'/><path d='M200 24 Q230 87 200 150' fill='none' stroke='#1B795A' stroke-width='3' stroke-dasharray='7 4'/><line x1='160' y1='150' x2='240' y2='150' stroke='#00242E' stroke-width='3'/><line x1='160' y1='24' x2='240' y2='24' stroke='#00242E' stroke-width='3'/><line x1='200' y1='0' x2='200' y2='14' stroke='#00574A' stroke-width='3'/><path d='M200 22 L194 10 L206 10 Z' fill='#00574A'/><text x='250' y='28' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><text x='250' y='154' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Fixed</text><line x1='130' y1='24' x2='130' y2='150' stroke='#00242E'/><text x='122' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>4 m</text><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P</text>",
+   "alt": "A column 4 m long under axial load, fixed at the base and pinned at the top, with its buckled shape dashed."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0010-c",
+  "topic": "structural",
+  "subtopic": "structural-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A column 6 m long is fixed at its base and pinned at its top. Using the theoretical effective length factor K = 0.7, what is its effective length?",
+  "options": [
+   {
+    "id": "a",
+    "text": "3.0 m"
+   },
+   {
+    "id": "b",
+    "text": "4.2 m"
+   },
+   {
+    "id": "c",
+    "text": "6.0 m"
+   },
+   {
+    "id": "d",
+    "text": "12.0 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The effective length K L is the length of the equivalent pinned-pinned column, the distance between inflection points of the buckled shape. End restraint shortens it: K = 0.5 fixed-fixed, 0.7 fixed-pinned, 1.0 pinned-pinned, 2.0 fixed-free.",
+  "solution": "Effective length = K L = 0.7 × 6 = 4.2 m.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "effective length",
+     "columns"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0010",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<line x1='200' y1='24' x2='200' y2='150' stroke='#E7E8E8' stroke-width='10'/><path d='M200 24 Q230 87 200 150' fill='none' stroke='#1B795A' stroke-width='3' stroke-dasharray='7 4'/><line x1='160' y1='150' x2='240' y2='150' stroke='#00242E' stroke-width='3'/><line x1='160' y1='24' x2='240' y2='24' stroke='#00242E' stroke-width='3'/><line x1='200' y1='0' x2='200' y2='14' stroke='#00574A' stroke-width='3'/><path d='M200 22 L194 10 L206 10 Z' fill='#00574A'/><text x='250' y='28' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><text x='250' y='154' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Fixed</text><line x1='130' y1='24' x2='130' y2='150' stroke='#00242E'/><text x='122' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>6 m</text><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P</text>",
+   "alt": "A column 6 m long under axial load, fixed at the base and pinned at the top, with its buckled shape dashed."
+  },
+  "lookup": true
+ },
+ {
+  "id": "structural-0010-d",
+  "topic": "structural",
+  "subtopic": "structural-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A column 3 m long is fixed at its base and pinned at its top. Using the theoretical effective length factor K = 0.7, what is its effective length?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1.5 m"
+   },
+   {
+    "id": "b",
+    "text": "2.1 m"
+   },
+   {
+    "id": "c",
+    "text": "3.0 m"
+   },
+   {
+    "id": "d",
+    "text": "6.0 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The effective length K L is the length of the equivalent pinned-pinned column, the distance between inflection points of the buckled shape. End restraint shortens it: K = 0.5 fixed-fixed, 0.7 fixed-pinned, 1.0 pinned-pinned, 2.0 fixed-free.",
+  "solution": "Effective length = K L = 0.7 × 3 = 2.1 m.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "effective length",
+     "columns"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0010",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<line x1='200' y1='24' x2='200' y2='150' stroke='#E7E8E8' stroke-width='10'/><path d='M200 24 Q230 87 200 150' fill='none' stroke='#1B795A' stroke-width='3' stroke-dasharray='7 4'/><line x1='160' y1='150' x2='240' y2='150' stroke='#00242E' stroke-width='3'/><line x1='160' y1='24' x2='240' y2='24' stroke='#00242E' stroke-width='3'/><line x1='200' y1='0' x2='200' y2='14' stroke='#00574A' stroke-width='3'/><path d='M200 22 L194 10 L206 10 Z' fill='#00574A'/><text x='250' y='28' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><text x='250' y='154' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Fixed</text><line x1='130' y1='24' x2='130' y2='150' stroke='#00242E'/><text x='122' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P</text>",
+   "alt": "A column 3 m long under axial load, fixed at the base and pinned at the top, with its buckled shape dashed."
+  },
+  "lookup": true
  },
  {
   "id": "structural-0011",
@@ -472,18 +2022,19 @@
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "259–309",
+    "find": [
+     "determinacy",
+     "classification of structures"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "lookup": true
  },
  {
   "id": "structural-0012",
@@ -495,28 +2046,139 @@
   "units": "SI",
   "stem": "A beam 4 m long is fixed at one end and supported by a roller at the other. It carries a uniform load of 8 kN/m. What is the reaction at the roller?",
   "answer": {
-   "value": 12,
+   "value": 12.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "kN"
   },
-  "eli5": "The fixed end is stiffer, so it attracts more than half of the load. The roller end gets the smaller share.",
-  "solution": "For a propped cantilever under uniform load, the roller reaction is \\frac{3wL}{8} = \\frac{3(8)(4)}{8} = 12 kN.\n\nThe fixed end carries the other \\frac{5wL}{8} = 20 kN.",
+  "eli5": "A propped cantilever has one more reaction than statics can solve, so a compatibility condition is needed: the deflection at the roller is zero. Setting the downward deflection from the load, w L^{4} / (8 EI), equal to the upward deflection from the reaction, R L^{3} / (3 EI), gives R = 3 w L / 8.",
+  "solution": "\\frac{R L^{3}}{3 EI} = \\frac{w L^{4}}{8 EI}, so R = \\frac{3 w L}{8} = \\frac{3(8)(4)}{8} = 12 kN. The fixed end carries the other 20 kN.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "cantilevered beam slopes and deflections"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0012",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0012-b",
+  "topic": "structural",
+  "subtopic": "structural-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A beam 6 m long is fixed at one end and supported by a roller at the other. It carries a uniform load of 10 kN/m. What is the reaction at the roller?",
+  "answer": {
+   "value": 22.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A propped cantilever has one more reaction than statics can solve, so a compatibility condition is needed: the deflection at the roller is zero. Setting the downward deflection from the load, w L^{4} / (8 EI), equal to the upward deflection from the reaction, R L^{3} / (3 EI), gives R = 3 w L / 8.",
+  "solution": "\\frac{R L^{3}}{3 EI} = \\frac{w L^{4}}{8 EI}, so R = \\frac{3 w L}{8} = \\frac{3(10)(6)}{8} = 22.5 kN. The fixed end carries the other 37.5 kN.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "cantilevered beam slopes and deflections"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0012",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0012-c",
+  "topic": "structural",
+  "subtopic": "structural-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A beam 5 m long is fixed at one end and supported by a roller at the other. It carries a uniform load of 16 kN/m. What is the reaction at the roller?",
+  "answer": {
+   "value": 30.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A propped cantilever has one more reaction than statics can solve, so a compatibility condition is needed: the deflection at the roller is zero. Setting the downward deflection from the load, w L^{4} / (8 EI), equal to the upward deflection from the reaction, R L^{3} / (3 EI), gives R = 3 w L / 8.",
+  "solution": "\\frac{R L^{3}}{3 EI} = \\frac{w L^{4}}{8 EI}, so R = \\frac{3 w L}{8} = \\frac{3(16)(5)}{8} = 30 kN. The fixed end carries the other 50 kN.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "cantilevered beam slopes and deflections"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0012",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0012-d",
+  "topic": "structural",
+  "subtopic": "structural-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A beam 8 m long is fixed at one end and supported by a roller at the other. It carries a uniform load of 6 kN/m. What is the reaction at the roller?",
+  "answer": {
+   "value": 18.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A propped cantilever has one more reaction than statics can solve, so a compatibility condition is needed: the deflection at the roller is zero. Setting the downward deflection from the load, w L^{4} / (8 EI), equal to the upward deflection from the reaction, R L^{3} / (3 EI), gives R = 3 w L / 8.",
+  "solution": "\\frac{R L^{3}}{3 EI} = \\frac{w L^{4}}{8 EI}, so R = \\frac{3 w L}{8} = \\frac{3(6)(8)}{8} = 18 kN. The fixed end carries the other 30 kN.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "cantilevered beam slopes and deflections"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0012",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "structural-0013",
@@ -546,23 +2208,173 @@
    }
   ],
   "answer": "c",
-  "eli5": "Clamping both ends shares the bending between the supports and the middle, so the middle bends less than it would on simple supports.",
-  "solution": "Fixed-end moment = \\frac{wL^{2}}{12} = \\frac{12(6)^{2}}{12} = 36 kN·m.\n\nThe midspan moment is \\frac{wL^{2}}{24} = 18 kN·m.",
+  "eli5": "Fixed ends prevent rotation, which attracts negative moment to the supports. For a full uniform load the fixed-end moment is w L^{2} / 12 and the midspan moment drops to w L^{2} / 24; together they still add to the simple-span value w L^{2} / 8.",
+  "solution": "Fixed-end moment = \\frac{w L^{2}}{12} = \\frac{12(6)^{2}}{12} = 36 kN·m. Midspan moment = 18 kN·m.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "259–309",
+    "find": [
+     "fixed-end moment"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0013",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0013-b",
+  "topic": "structural",
+  "subtopic": "structural-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A beam fixed at both ends spans 4 m and carries a uniform load of 18 kN/m. What is the magnitude of the moment at each support?",
+  "options": [
+   {
+    "id": "a",
+    "text": "12 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "18 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "24 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "36 kN·m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Fixed ends prevent rotation, which attracts negative moment to the supports. For a full uniform load the fixed-end moment is w L^{2} / 12 and the midspan moment drops to w L^{2} / 24; together they still add to the simple-span value w L^{2} / 8.",
+  "solution": "Fixed-end moment = \\frac{w L^{2}}{12} = \\frac{18(4)^{2}}{12} = 24 kN·m. Midspan moment = 12 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "fixed-end moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0013",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0013-c",
+  "topic": "structural",
+  "subtopic": "structural-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A beam fixed at both ends spans 8 m and carries a uniform load of 9 kN/m. What is the magnitude of the moment at each support?",
+  "options": [
+   {
+    "id": "a",
+    "text": "24 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "36 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "48 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "72 kN·m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Fixed ends prevent rotation, which attracts negative moment to the supports. For a full uniform load the fixed-end moment is w L^{2} / 12 and the midspan moment drops to w L^{2} / 24; together they still add to the simple-span value w L^{2} / 8.",
+  "solution": "Fixed-end moment = \\frac{w L^{2}}{12} = \\frac{9(8)^{2}}{12} = 48 kN·m. Midspan moment = 24 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "fixed-end moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0013",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0013-d",
+  "topic": "structural",
+  "subtopic": "structural-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A beam fixed at both ends spans 5 m and carries a uniform load of 24 kN/m. What is the magnitude of the moment at each support?",
+  "options": [
+   {
+    "id": "a",
+    "text": "25 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "37.5 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "50 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "75 kN·m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Fixed ends prevent rotation, which attracts negative moment to the supports. For a full uniform load the fixed-end moment is w L^{2} / 12 and the midspan moment drops to w L^{2} / 24; together they still add to the simple-span value w L^{2} / 8.",
+  "solution": "Fixed-end moment = \\frac{w L^{2}}{12} = \\frac{24(5)^{2}}{12} = 50 kN·m. Midspan moment = 25 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "fixed-end moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0013",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "structural-0014",
@@ -592,23 +2404,165 @@
    }
   ],
   "answer": "c",
-  "eli5": "Each beam looks after the strip of floor that is closer to it than to its neighbours.",
-  "solution": "Tributary width = 3 m (half the spacing on each side).\n\nLine load = 4 kPa × 3 m = 12 kN/m.",
+  "eli5": "A beam collects floor load from its tributary width, half the spacing on each side. Line load = area load × tributary width.",
+  "solution": "Tributary width of an interior beam = 3 m.\n\nw = 4 kPa × 3 m = 12 kN/m.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0014",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "structural-0014-b",
+  "topic": "structural",
+  "subtopic": "structural-f",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Floor beams are spaced 2.5 m apart and support a floor load of 6 kPa. What line load does an interior beam carry?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2.4 kN/m"
+   },
+   {
+    "id": "b",
+    "text": "8.5 kN/m"
+   },
+   {
+    "id": "c",
+    "text": "15 kN/m"
+   },
+   {
+    "id": "d",
+    "text": "37.5 kN/m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A beam collects floor load from its tributary width, half the spacing on each side. Line load = area load × tributary width.",
+  "solution": "Tributary width of an interior beam = 2.5 m.\n\nw = 6 kPa × 2.5 m = 15 kN/m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0014",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "structural-0014-c",
+  "topic": "structural",
+  "subtopic": "structural-f",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Floor beams are spaced 4 m apart and support a floor load of 3.5 kPa. What line load does an interior beam carry?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.875 kN/m"
+   },
+   {
+    "id": "b",
+    "text": "7.5 kN/m"
+   },
+   {
+    "id": "c",
+    "text": "14 kN/m"
+   },
+   {
+    "id": "d",
+    "text": "56 kN/m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A beam collects floor load from its tributary width, half the spacing on each side. Line load = area load × tributary width.",
+  "solution": "Tributary width of an interior beam = 4 m.\n\nw = 3.5 kPa × 4 m = 14 kN/m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0014",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "structural-0014-d",
+  "topic": "structural",
+  "subtopic": "structural-f",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Floor beams are spaced 2 m apart and support a floor load of 5 kPa. What line load does an interior beam carry?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2.5 kN/m"
+   },
+   {
+    "id": "b",
+    "text": "7 kN/m"
+   },
+   {
+    "id": "c",
+    "text": "10 kN/m"
+   },
+   {
+    "id": "d",
+    "text": "20 kN/m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A beam collects floor load from its tributary width, half the spacing on each side. Line load = area load × tributary width.",
+  "solution": "Tributary width of an interior beam = 2 m.\n\nw = 5 kPa × 2 m = 10 kN/m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0014",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  },
  {
   "id": "structural-0015",
@@ -620,28 +2574,143 @@
   "units": "SI",
   "stem": "A steel tension member has a gross area of 2,000 mm^{2} and a yield strength of 345 MPa. Using LRFD with a resistance factor of 0.90, what is its design strength for yielding on the gross section?",
   "answer": {
-   "value": 621,
+   "value": 621.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "kN"
   },
-  "eli5": "A tension member is ruined once the whole bar starts to stretch permanently. The design strength is that load, trimmed by a safety factor.",
-  "solution": "Design strength = 0.90 F_{y}A_{g} = 0.90(345)(2,000) = 621,000 N = 621 kN.",
+  "eli5": "Tension yielding is checked on the gross area: nominal strength P_{n} = F_{y} A_{g}, and design strength is the resistance factor times P_{n}. Rupture on the net section is a separate check with a factor of 0.75.",
+  "solution": "P_{n} = F_{y} A_{g} = 345 × 2,000 = 690,000 N = 690 kN.\n\nDesign strength = 0.90 × 690 = 621.0 kN.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "259–309",
+    "find": [
+     "tension members",
+     "yielding"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0015",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0015-b",
+  "topic": "structural",
+  "subtopic": "structural-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel tension member has a gross area of 3,200 mm^{2} and a yield strength of 345 MPa. Using LRFD with a resistance factor of 0.90, what is its design strength for yielding on the gross section?",
+  "answer": {
+   "value": 993.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "Tension yielding is checked on the gross area: nominal strength P_{n} = F_{y} A_{g}, and design strength is the resistance factor times P_{n}. Rupture on the net section is a separate check with a factor of 0.75.",
+  "solution": "P_{n} = F_{y} A_{g} = 345 × 3,200 = 1,104,000 N = 1,104 kN.\n\nDesign strength = 0.90 × 1,104 = 993.6 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "tension members",
+     "yielding"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0015",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0015-c",
+  "topic": "structural",
+  "subtopic": "structural-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel tension member has a gross area of 1,500 mm^{2} and a yield strength of 250 MPa. Using LRFD with a resistance factor of 0.90, what is its design strength for yielding on the gross section?",
+  "answer": {
+   "value": 337.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "Tension yielding is checked on the gross area: nominal strength P_{n} = F_{y} A_{g}, and design strength is the resistance factor times P_{n}. Rupture on the net section is a separate check with a factor of 0.75.",
+  "solution": "P_{n} = F_{y} A_{g} = 250 × 1,500 = 375,000 N = 375 kN.\n\nDesign strength = 0.90 × 375 = 337.5 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "tension members",
+     "yielding"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0015",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0015-d",
+  "topic": "structural",
+  "subtopic": "structural-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel tension member has a gross area of 4,500 mm^{2} and a yield strength of 345 MPa. Using LRFD with a resistance factor of 0.90, what is its design strength for yielding on the gross section?",
+  "answer": {
+   "value": 1397.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "Tension yielding is checked on the gross area: nominal strength P_{n} = F_{y} A_{g}, and design strength is the resistance factor times P_{n}. Rupture on the net section is a separate check with a factor of 0.75.",
+  "solution": "P_{n} = F_{y} A_{g} = 345 × 4,500 = 1,552,500 N = 1,552 kN.\n\nDesign strength = 0.90 × 1,552 = 1,397.2 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "tension members",
+     "yielding"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0015",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "structural-0016",
@@ -655,39 +2724,193 @@
   "options": [
    {
     "id": "a",
-    "text": "311 kN·m"
+    "text": "310.5 kN·m"
    },
    {
     "id": "b",
-    "text": "373 kN·m"
+    "text": "372.6 kN·m"
    },
    {
     "id": "c",
-    "text": "414 kN·m"
+    "text": "414.0 kN·m"
    },
    {
     "id": "d",
-    "text": "460 kN·m"
+    "text": "460.0 kN·m"
    }
   ],
   "answer": "b",
-  "eli5": "A well-braced steel beam can bend until its whole cross-section has yielded. The plastic modulus measures that full capacity.",
-  "solution": "Design strength = 0.90 F_{y}Z_{x} = 0.90(345)(1.2 × 10^{6}) = 372.6 × 10^{6} N·mm = 373 kN·m.\n\nWithout the 0.90 factor the nominal strength is 414 kN·m.",
+  "eli5": "A compact, laterally braced beam can reach its full plastic moment, M_{p} = F_{y} Z, where every fibre has yielded. The design strength is the resistance factor times M_{p}.",
+  "solution": "M_{p} = F_{y} Z = 345 × 1.2 × 10^{6} N·mm = 414.0 kN·m.\n\nDesign strength = 0.90 × 414.0 = 372.6 kN·m.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "259–309",
+    "find": [
+     "AISC",
+     "plastic section modulus"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0016",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0016-b",
+  "topic": "structural",
+  "subtopic": "structural-g",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A compact, fully braced steel beam has a plastic section modulus of 0.8 × 10^{6} mm^{3} and a yield strength of 345 MPa. With a resistance factor of 0.90, what is its design flexural strength?",
+  "options": [
+   {
+    "id": "a",
+    "text": "207.0 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "248.4 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "276.0 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "306.7 kN·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A compact, laterally braced beam can reach its full plastic moment, M_{p} = F_{y} Z, where every fibre has yielded. The design strength is the resistance factor times M_{p}.",
+  "solution": "M_{p} = F_{y} Z = 345 × 0.8 × 10^{6} N·mm = 276.0 kN·m.\n\nDesign strength = 0.90 × 276.0 = 248.4 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "AISC",
+     "plastic section modulus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0016",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0016-c",
+  "topic": "structural",
+  "subtopic": "structural-g",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A compact, fully braced steel beam has a plastic section modulus of 2.0 × 10^{6} mm^{3} and a yield strength of 250 MPa. With a resistance factor of 0.90, what is its design flexural strength?",
+  "options": [
+   {
+    "id": "a",
+    "text": "375.0 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "450.0 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "500.0 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "555.6 kN·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A compact, laterally braced beam can reach its full plastic moment, M_{p} = F_{y} Z, where every fibre has yielded. The design strength is the resistance factor times M_{p}.",
+  "solution": "M_{p} = F_{y} Z = 250 × 2.0 × 10^{6} N·mm = 500.0 kN·m.\n\nDesign strength = 0.90 × 500.0 = 450.0 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "AISC",
+     "plastic section modulus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0016",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0016-d",
+  "topic": "structural",
+  "subtopic": "structural-g",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A compact, fully braced steel beam has a plastic section modulus of 1.5 × 10^{6} mm^{3} and a yield strength of 345 MPa. With a resistance factor of 0.90, what is its design flexural strength?",
+  "options": [
+   {
+    "id": "a",
+    "text": "388.1 kN·m"
+   },
+   {
+    "id": "b",
+    "text": "465.8 kN·m"
+   },
+   {
+    "id": "c",
+    "text": "517.5 kN·m"
+   },
+   {
+    "id": "d",
+    "text": "575.0 kN·m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A compact, laterally braced beam can reach its full plastic moment, M_{p} = F_{y} Z, where every fibre has yielded. The design strength is the resistance factor times M_{p}.",
+  "solution": "M_{p} = F_{y} Z = 345 × 1.5 × 10^{6} N·mm = 517.5 kN·m.\n\nDesign strength = 0.90 × 517.5 = 465.8 kN·m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "AISC",
+     "plastic section modulus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0016",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "structural-0017",
@@ -717,23 +2940,177 @@
    }
   ],
   "answer": "c",
-  "eli5": "Slenderness compares how long a column is with how spread out its cross-section is. Skinny columns buckle sooner.",
-  "solution": "Slenderness = \\frac{KL}{r} = \\frac{4,000}{50} = 80.",
+  "eli5": "The slenderness ratio K L / r measures how prone a column is to buckling; the larger it is, the lower the critical stress. Use the radius of gyration for the axis about which buckling occurs, with both lengths in the same units.",
+  "solution": "Slenderness ratio = \\frac{K L}{r} = \\frac{4,000 mm}{50 mm} = 80.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
     "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "130–142",
+    "find": [
+     "slenderness",
+     "radius of gyration"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0017",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0017-b",
+  "topic": "structural",
+  "subtopic": "structural-g",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A steel column has an effective length of 6 m and a radius of gyration of 75 mm about the axis of buckling. What is its slenderness ratio?",
+  "options": [
+   {
+    "id": "a",
+    "text": "8"
+   },
+   {
+    "id": "b",
+    "text": "40"
+   },
+   {
+    "id": "c",
+    "text": "80"
+   },
+   {
+    "id": "d",
+    "text": "200"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The slenderness ratio K L / r measures how prone a column is to buckling; the larger it is, the lower the critical stress. Use the radius of gyration for the axis about which buckling occurs, with both lengths in the same units.",
+  "solution": "Slenderness ratio = \\frac{K L}{r} = \\frac{6,000 mm}{75 mm} = 80.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "slenderness",
+     "radius of gyration"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0017",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0017-c",
+  "topic": "structural",
+  "subtopic": "structural-g",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A steel column has an effective length of 3 m and a radius of gyration of 40 mm about the axis of buckling. What is its slenderness ratio?",
+  "options": [
+   {
+    "id": "a",
+    "text": "7.5"
+   },
+   {
+    "id": "b",
+    "text": "37.5"
+   },
+   {
+    "id": "c",
+    "text": "75"
+   },
+   {
+    "id": "d",
+    "text": "187.5"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The slenderness ratio K L / r measures how prone a column is to buckling; the larger it is, the lower the critical stress. Use the radius of gyration for the axis about which buckling occurs, with both lengths in the same units.",
+  "solution": "Slenderness ratio = \\frac{K L}{r} = \\frac{3,000 mm}{40 mm} = 75.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "slenderness",
+     "radius of gyration"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0017",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0017-d",
+  "topic": "structural",
+  "subtopic": "structural-g",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A steel column has an effective length of 5 m and a radius of gyration of 100 mm about the axis of buckling. What is its slenderness ratio?",
+  "options": [
+   {
+    "id": "a",
+    "text": "5"
+   },
+   {
+    "id": "b",
+    "text": "25"
+   },
+   {
+    "id": "c",
+    "text": "50"
+   },
+   {
+    "id": "d",
+    "text": "125"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The slenderness ratio K L / r measures how prone a column is to buckling; the larger it is, the lower the critical stress. Use the radius of gyration for the axis about which buckling occurs, with both lengths in the same units.",
+  "solution": "Slenderness ratio = \\frac{K L}{r} = \\frac{5,000 mm}{100 mm} = 50.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "slenderness",
+     "radius of gyration"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0017",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "structural-0018",
@@ -750,23 +3127,138 @@
    "toleranceType": "rel",
    "unit": "mm"
   },
-  "eli5": "The squeezed concrete at the top of the beam has to push exactly as hard as the steel at the bottom pulls. That balance sets how deep the squeezed zone is.",
-  "solution": "a = \\frac{A_{s}f_{y}}{0.85f'_{c}b} = \\frac{1,200(420)}{0.85(30)(250)} = 79.1 mm.",
+  "eli5": "Horizontal equilibrium of the section sets the stress block depth: the concrete compression 0.85 f'_{c} a b equals the steel tension A_{s} f_{y}.",
+  "solution": "0.85 f'_{c} a b = A_{s} f_{y}.\n\na = \\frac{1,200(420)}{0.85(30)(250)} = \\frac{504,000}{6,375} = 79.1 mm.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "stress block"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0018",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0018-b",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A reinforced concrete beam is 300 mm wide with 1,500 mm^{2} of tension steel. The steel yield strength is 420 MPa and the concrete strength is 28 MPa. What is the depth of the equivalent rectangular stress block?",
+  "answer": {
+   "value": 88.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "Horizontal equilibrium of the section sets the stress block depth: the concrete compression 0.85 f'_{c} a b equals the steel tension A_{s} f_{y}.",
+  "solution": "0.85 f'_{c} a b = A_{s} f_{y}.\n\na = \\frac{1,500(420)}{0.85(28)(300)} = \\frac{630,000}{7,140} = 88.2 mm.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "stress block"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0018",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0018-c",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A reinforced concrete beam is 350 mm wide with 2,000 mm^{2} of tension steel. The steel yield strength is 420 MPa and the concrete strength is 35 MPa. What is the depth of the equivalent rectangular stress block?",
+  "answer": {
+   "value": 80.7,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "Horizontal equilibrium of the section sets the stress block depth: the concrete compression 0.85 f'_{c} a b equals the steel tension A_{s} f_{y}.",
+  "solution": "0.85 f'_{c} a b = A_{s} f_{y}.\n\na = \\frac{2,000(420)}{0.85(35)(350)} = \\frac{840,000}{10,412} = 80.7 mm.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "stress block"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0018",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0018-d",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A reinforced concrete beam is 400 mm wide with 2,500 mm^{2} of tension steel. The steel yield strength is 420 MPa and the concrete strength is 25 MPa. What is the depth of the equivalent rectangular stress block?",
+  "answer": {
+   "value": 123.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "Horizontal equilibrium of the section sets the stress block depth: the concrete compression 0.85 f'_{c} a b equals the steel tension A_{s} f_{y}.",
+  "solution": "0.85 f'_{c} a b = A_{s} f_{y}.\n\na = \\frac{2,500(420)}{0.85(25)(400)} = \\frac{1,050,000}{8,500} = 123.5 mm.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "stress block"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0018",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "structural-0019",
@@ -788,31 +3280,185 @@
    },
    {
     "id": "c",
-    "text": "255 kN"
+    "text": "255.0 kN"
    },
    {
     "id": "d",
-    "text": "750 kN"
+    "text": "750.0 kN"
    }
   ],
   "answer": "b",
-  "eli5": "Concrete can carry some shear by itself before stirrups are needed. Bigger sections and stronger concrete carry more.",
-  "solution": "V_{c} = 0.17\\sqrt{25}(300)(500) = 0.17(5)(150,000) = 127,500 N = 127.5 kN.",
+  "eli5": "The concrete contribution to shear strength depends on the square root of the compressive strength, because shear failure is governed by diagonal tension, and on the web area b d.",
+  "solution": "V_{c} = 0.17 \\sqrt{25}(300)(500) = 0.17(5.00)(150,000) = 127,500 N = 127.5 kN.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "shear"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0019",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0019-b",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Using V_{c} = 0.17 × the square root of f'_{c} × b × d (MPa and mm), what shear does the concrete carry in a beam 350 mm wide with an effective depth of 600 mm and a concrete strength of 36 MPa?",
+  "options": [
+   {
+    "id": "a",
+    "text": "107.1 kN"
+   },
+   {
+    "id": "b",
+    "text": "214.2 kN"
+   },
+   {
+    "id": "c",
+    "text": "428.4 kN"
+   },
+   {
+    "id": "d",
+    "text": "1,512.0 kN"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The concrete contribution to shear strength depends on the square root of the compressive strength, because shear failure is governed by diagonal tension, and on the web area b d.",
+  "solution": "V_{c} = 0.17 \\sqrt{36}(350)(600) = 0.17(6.00)(210,000) = 214,200 N = 214.2 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "shear"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0019",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0019-c",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Using V_{c} = 0.17 × the square root of f'_{c} × b × d (MPa and mm), what shear does the concrete carry in a beam 250 mm wide with an effective depth of 450 mm and a concrete strength of 30 MPa?",
+  "options": [
+   {
+    "id": "a",
+    "text": "52.4 kN"
+   },
+   {
+    "id": "b",
+    "text": "104.8 kN"
+   },
+   {
+    "id": "c",
+    "text": "209.5 kN"
+   },
+   {
+    "id": "d",
+    "text": "675.0 kN"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The concrete contribution to shear strength depends on the square root of the compressive strength, because shear failure is governed by diagonal tension, and on the web area b d.",
+  "solution": "V_{c} = 0.17 \\sqrt{30}(250)(450) = 0.17(5.48)(112,500) = 104,752 N = 104.8 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "shear"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0019",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0019-d",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Using V_{c} = 0.17 × the square root of f'_{c} × b × d (MPa and mm), what shear does the concrete carry in a beam 400 mm wide with an effective depth of 550 mm and a concrete strength of 28 MPa?",
+  "options": [
+   {
+    "id": "a",
+    "text": "99.0 kN"
+   },
+   {
+    "id": "b",
+    "text": "197.9 kN"
+   },
+   {
+    "id": "c",
+    "text": "395.8 kN"
+   },
+   {
+    "id": "d",
+    "text": "1,232.0 kN"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The concrete contribution to shear strength depends on the square root of the compressive strength, because shear failure is governed by diagonal tension, and on the web area b d.",
+  "solution": "V_{c} = 0.17 \\sqrt{28}(400)(550) = 0.17(5.29)(220,000) = 197,902 N = 197.9 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "shear"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0019",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "structural-0020",
@@ -824,27 +3470,142 @@
   "units": "SI",
   "stem": "A 400 mm square tied column has 3,200 mm^{2} of longitudinal steel with a yield strength of 420 MPa. The concrete strength is 28 MPa. What is the nominal axial strength at zero eccentricity, P_{0}?",
   "answer": {
-   "value": 5076,
+   "value": 5076.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "kN"
   },
-  "eli5": "A short concrete column carries load on its concrete and on its steel bars. Add the two strengths together.",
-  "solution": "P_{0} = 0.85f'_{c}(A_{g} - A_{st}) + f_{y}A_{st} = 0.85(28)(160,000 - 3,200) + 420(3,200) = 3,732,000 + 1,344,000 = 5,076,000 N = 5,076 kN.",
+  "eli5": "Under pure axial load the concrete and steel act together: the concrete carries 0.85 f'_{c} on the net concrete area and the steel carries its yield strength on its own area.",
+  "solution": "Gross area A_{g} = 400^{2} = 160,000 mm^{2}.\n\nConcrete: 0.85(28)(160,000 - 3,200) = 3,731,840 N.\n\nSteel: 420(3,200) = 1,344,000 N.\n\nP_{0} = 3,731,840 + 1,344,000 = 5,075,840 N = 5,076 kN.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Mechanics of Materials",
-    "page": "130–142"
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "short columns"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "structural-0020",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0020-b",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 450 mm square tied column has 4,000 mm^{2} of longitudinal steel with a yield strength of 420 MPa. The concrete strength is 35 MPa. What is the nominal axial strength at zero eccentricity, P_{0}?",
+  "answer": {
+   "value": 7585.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "Under pure axial load the concrete and steel act together: the concrete carries 0.85 f'_{c} on the net concrete area and the steel carries its yield strength on its own area.",
+  "solution": "Gross area A_{g} = 450^{2} = 202,500 mm^{2}.\n\nConcrete: 0.85(35)(202,500 - 4,000) = 5,905,375 N.\n\nSteel: 420(4,000) = 1,680,000 N.\n\nP_{0} = 5,905,375 + 1,680,000 = 7,585,375 N = 7,585 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "short columns"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0020",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0020-c",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 500 mm square tied column has 4,900 mm^{2} of longitudinal steel with a yield strength of 420 MPa. The concrete strength is 28 MPa. What is the nominal axial strength at zero eccentricity, P_{0}?",
+  "answer": {
+   "value": 7891.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "Under pure axial load the concrete and steel act together: the concrete carries 0.85 f'_{c} on the net concrete area and the steel carries its yield strength on its own area.",
+  "solution": "Gross area A_{g} = 500^{2} = 250,000 mm^{2}.\n\nConcrete: 0.85(28)(250,000 - 4,900) = 5,833,380 N.\n\nSteel: 420(4,900) = 2,058,000 N.\n\nP_{0} = 5,833,380 + 2,058,000 = 7,891,380 N = 7,891 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "short columns"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0020",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "structural-0020-d",
+  "topic": "structural",
+  "subtopic": "structural-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 350 mm square tied column has 2,500 mm^{2} of longitudinal steel with a yield strength of 420 MPa. The concrete strength is 21 MPa. What is the nominal axial strength at zero eccentricity, P_{0}?",
+  "answer": {
+   "value": 3192.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "Under pure axial load the concrete and steel act together: the concrete carries 0.85 f'_{c} on the net concrete area and the steel carries its yield strength on its own area.",
+  "solution": "Gross area A_{g} = 350^{2} = 122,500 mm^{2}.\n\nConcrete: 0.85(21)(122,500 - 2,500) = 2,142,000 N.\n\nSteel: 420(2,500) = 1,050,000 N.\n\nP_{0} = 2,142,000 + 1,050,000 = 3,192,000 N = 3,192 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ACI 318",
+     "short columns"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0020",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  }
 ]

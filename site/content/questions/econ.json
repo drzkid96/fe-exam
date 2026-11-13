@@ -23,16 +23,19 @@
    },
    {
     "id": "d",
-    "text": "$10,600"
+    "text": "$9,491"
    }
   ],
   "answer": "b",
-  "eli5": "Each year you earn interest on last year's interest too, so the pile grows a little faster every year.",
-  "solution": "F = P(1 + i)^{n} = 5,000(1.06)^{10} = 5,000 × 1.7908 = $8,954.\n\n$8,000 is what simple interest would give.",
+  "eli5": "Compound interest earns interest on interest. A single present amount P grows to F = P(1 + i)^{n}; the factor (1 + i)^{n} is the single payment compound amount factor, (F/P, i, n).",
+  "solution": "F = P(1 + i)^{n} = 5,000(1 + 0.06)^{10} = 5,000 × 1.7908 = $8,954.",
   "handbook": [
    {
     "section": "Engineering Economics",
-    "page": "230–237"
+    "page": "230–237",
+    "find": [
+     "single payment compound amount"
+    ]
    }
   ],
   "tags": [
@@ -42,7 +45,187 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "econ-0001",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$5,000</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 10 periods, $5,000 at time 0, F = ? at period 10."
+  },
+  "lookup": true
+ },
+ {
+  "id": "econ-0001-b",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "$12,000 is deposited in an account that pays 5% interest compounded annually. What is the balance after 15 years?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$21,000"
+   },
+   {
+    "id": "b",
+    "text": "$24,947"
+   },
+   {
+    "id": "c",
+    "text": "$25,364"
+   },
+   {
+    "id": "d",
+    "text": "$26,194"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Compound interest earns interest on interest. A single present amount P grows to F = P(1 + i)^{n}; the factor (1 + i)^{n} is the single payment compound amount factor, (F/P, i, n).",
+  "solution": "F = P(1 + i)^{n} = 12,000(1 + 0.05)^{15} = 12,000 × 2.0789 = $24,947.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "single payment compound amount"
+    ]
+   }
+  ],
+  "tags": [
+   "future worth",
+   "compound interest"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0001",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='61' y1='86' x2='61' y2='94' stroke='#00242E'/><text x='61' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='83' y1='86' x2='83' y2='94' stroke='#00242E'/><text x='83' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='125' y1='86' x2='125' y2='94' stroke='#00242E'/><text x='125' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='147' y1='86' x2='147' y2='94' stroke='#00242E'/><text x='147' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='189' y1='86' x2='189' y2='94' stroke='#00242E'/><text x='189' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='211' y1='86' x2='211' y2='94' stroke='#00242E'/><text x='211' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='253' y1='86' x2='253' y2='94' stroke='#00242E'/><text x='253' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='275' y1='86' x2='275' y2='94' stroke='#00242E'/><text x='275' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>11</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='317' y1='86' x2='317' y2='94' stroke='#00242E'/><text x='317' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>13</text><line x1='339' y1='86' x2='339' y2='94' stroke='#00242E'/><text x='339' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>14</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>15</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$12,000</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 15 periods, $12,000 at time 0, F = ? at period 15."
+  },
+  "lookup": true
+ },
+ {
+  "id": "econ-0001-c",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "$2,500 is deposited in an account that pays 8% interest compounded annually. What is the balance after 6 years?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$3,700"
+   },
+   {
+    "id": "b",
+    "text": "$3,967"
+   },
+   {
+    "id": "c",
+    "text": "$4,034"
+   },
+   {
+    "id": "d",
+    "text": "$4,285"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Compound interest earns interest on interest. A single present amount P grows to F = P(1 + i)^{n}; the factor (1 + i)^{n} is the single payment compound amount factor, (F/P, i, n).",
+  "solution": "F = P(1 + i)^{n} = 2,500(1 + 0.08)^{6} = 2,500 × 1.5869 = $3,967.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "single payment compound amount"
+    ]
+   }
+  ],
+  "tags": [
+   "future worth",
+   "compound interest"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0001",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='93' y1='86' x2='93' y2='94' stroke='#00242E'/><text x='93' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='147' y1='86' x2='147' y2='94' stroke='#00242E'/><text x='147' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='253' y1='86' x2='253' y2='94' stroke='#00242E'/><text x='253' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='307' y1='86' x2='307' y2='94' stroke='#00242E'/><text x='307' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$2,500</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 6 periods, $2,500 at time 0, F = ? at period 6."
+  },
+  "lookup": true
+ },
+ {
+  "id": "econ-0001-d",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "$8,000 is deposited in an account that pays 7% interest compounded annually. What is the balance after 12 years?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$14,720"
+   },
+   {
+    "id": "b",
+    "text": "$18,018"
+   },
+   {
+    "id": "c",
+    "text": "$18,486"
+   },
+   {
+    "id": "d",
+    "text": "$19,279"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Compound interest earns interest on interest. A single present amount P grows to F = P(1 + i)^{n}; the factor (1 + i)^{n} is the single payment compound amount factor, (F/P, i, n).",
+  "solution": "F = P(1 + i)^{n} = 8,000(1 + 0.07)^{12} = 8,000 × 2.2522 = $18,018.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "single payment compound amount"
+    ]
+   }
+  ],
+  "tags": [
+   "future worth",
+   "compound interest"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0001",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='67' y1='86' x2='67' y2='94' stroke='#00242E'/><text x='67' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='93' y1='86' x2='93' y2='94' stroke='#00242E'/><text x='93' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='120' y1='86' x2='120' y2='94' stroke='#00242E'/><text x='120' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='147' y1='86' x2='147' y2='94' stroke='#00242E'/><text x='147' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='173' y1='86' x2='173' y2='94' stroke='#00242E'/><text x='173' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='227' y1='86' x2='227' y2='94' stroke='#00242E'/><text x='227' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='253' y1='86' x2='253' y2='94' stroke='#00242E'/><text x='253' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='280' y1='86' x2='280' y2='94' stroke='#00242E'/><text x='280' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='307' y1='86' x2='307' y2='94' stroke='#00242E'/><text x='307' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='333' y1='86' x2='333' y2='94' stroke='#00242E'/><text x='333' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>11</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$8,000</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 12 periods, $8,000 at time 0, F = ? at period 12."
+  },
+  "lookup": true
  },
  {
   "id": "econ-0002",
@@ -54,17 +237,20 @@
   "units": null,
   "stem": "A $20,000 loan is repaid in five equal end-of-year payments at 8% annual interest. What is each payment?",
   "answer": {
-   "value": 5009,
+   "value": 5009.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "$ per year"
   },
-  "eli5": "Each payment covers that year's interest plus a slice of the loan. The capital recovery factor spreads the loan evenly so the last payment clears it exactly.",
-  "solution": "A = P × \\frac{i(1 + i)^{n}}{(1 + i)^{n} - 1} = 20,000 × \\frac{0.08(1.08)^{5}}{(1.08)^{5} - 1} = 20,000 × 0.2505 = $5,009.",
+  "eli5": "A uniform series that repays a present amount is found with the capital recovery factor: A = P × i(1 + i)^{n} / ((1 + i)^{n} - 1), written (A/P, i, n). Each payment covers that year's interest plus some principal.",
+  "solution": "(A/P, 8%, 5) = \\frac{0.08(1 + 0.08)^{5}}{(1 + 0.08)^{5} - 1} = 0.25046.\n\nA = 20,000 × 0.25046 = $5,009 per year.",
   "handbook": [
    {
     "section": "Engineering Economics",
-    "page": "230–237"
+    "page": "230–237",
+    "find": [
+     "capital recovery"
+    ]
    }
   ],
   "tags": [
@@ -74,7 +260,148 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "econ-0002",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$20,000</text><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>A = ? each period</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 5 periods, $20,000 at time 0, A = ? at the end of every period."
+  },
+  "lookup": true
+ },
+ {
+  "id": "econ-0002-b",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A $50,000 loan is repaid in ten equal end-of-year payments at 6% annual interest. What is each payment?",
+  "answer": {
+   "value": 6793.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$ per year"
+  },
+  "eli5": "A uniform series that repays a present amount is found with the capital recovery factor: A = P × i(1 + i)^{n} / ((1 + i)^{n} - 1), written (A/P, i, n). Each payment covers that year's interest plus some principal.",
+  "solution": "(A/P, 6%, 10) = \\frac{0.06(1 + 0.06)^{10}}{(1 + 0.06)^{10} - 1} = 0.13587.\n\nA = 50,000 × 0.13587 = $6,793 per year.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "capital recovery"
+    ]
+   }
+  ],
+  "tags": [
+   "capital recovery",
+   "loan payment"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0002",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$50,000</text><line x1='72' y1='90' x2='72' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M72 56 L66 68 L78 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='136' y1='90' x2='136' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M136 56 L130 68 L142 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='264' y1='90' x2='264' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M264 56 L258 68 L270 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='328' y1='90' x2='328' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M328 56 L322 68 L334 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>A = ? each period</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 10 periods, $50,000 at time 0, A = ? at the end of every period."
+  },
+  "lookup": true
+ },
+ {
+  "id": "econ-0002-c",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A $12,000 loan is repaid in four equal end-of-year payments at 10% annual interest. What is each payment?",
+  "answer": {
+   "value": 3786.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$ per year"
+  },
+  "eli5": "A uniform series that repays a present amount is found with the capital recovery factor: A = P × i(1 + i)^{n} / ((1 + i)^{n} - 1), written (A/P, i, n). Each payment covers that year's interest plus some principal.",
+  "solution": "(A/P, 10%, 4) = \\frac{0.10(1 + 0.10)^{4}}{(1 + 0.10)^{4} - 1} = 0.31547.\n\nA = 12,000 × 0.31547 = $3,786 per year.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "capital recovery"
+    ]
+   }
+  ],
+  "tags": [
+   "capital recovery",
+   "loan payment"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0002",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='120' y1='86' x2='120' y2='94' stroke='#00242E'/><text x='120' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='280' y1='86' x2='280' y2='94' stroke='#00242E'/><text x='280' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$12,000</text><line x1='120' y1='90' x2='120' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M120 56 L114 68 L126 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='280' y1='90' x2='280' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M280 56 L274 68 L286 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>A = ? each period</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 4 periods, $12,000 at time 0, A = ? at the end of every period."
+  },
+  "lookup": true
+ },
+ {
+  "id": "econ-0002-d",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A $150,000 loan is repaid in twenty equal end-of-year payments at 5% annual interest. What is each payment?",
+  "answer": {
+   "value": 12036.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$ per year"
+  },
+  "eli5": "A uniform series that repays a present amount is found with the capital recovery factor: A = P × i(1 + i)^{n} / ((1 + i)^{n} - 1), written (A/P, i, n). Each payment covers that year's interest plus some principal.",
+  "solution": "(A/P, 5%, 20) = \\frac{0.05(1 + 0.05)^{20}}{(1 + 0.05)^{20} - 1} = 0.08024.\n\nA = 150,000 × 0.08024 = $12,036 per year.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "capital recovery"
+    ]
+   }
+  ],
+  "tags": [
+   "capital recovery",
+   "loan payment"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0002",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='56' y1='86' x2='56' y2='94' stroke='#00242E'/><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='88' y1='86' x2='88' y2='94' stroke='#00242E'/><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='120' y1='86' x2='120' y2='94' stroke='#00242E'/><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='152' y1='86' x2='152' y2='94' stroke='#00242E'/><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='184' y1='86' x2='184' y2='94' stroke='#00242E'/><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='216' y1='86' x2='216' y2='94' stroke='#00242E'/><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='248' y1='86' x2='248' y2='94' stroke='#00242E'/><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>14</text><line x1='280' y1='86' x2='280' y2='94' stroke='#00242E'/><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>16</text><line x1='312' y1='86' x2='312' y2='94' stroke='#00242E'/><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>18</text><line x1='344' y1='86' x2='344' y2='94' stroke='#00242E'/><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>20</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$150,000</text><line x1='56' y1='90' x2='56' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M56 56 L50 68 L62 68 Z' fill='#568CBB'/><line x1='72' y1='90' x2='72' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M72 56 L66 68 L78 68 Z' fill='#568CBB'/><line x1='88' y1='90' x2='88' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M88 56 L82 68 L94 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='120' y1='90' x2='120' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M120 56 L114 68 L126 68 Z' fill='#568CBB'/><line x1='136' y1='90' x2='136' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M136 56 L130 68 L142 68 Z' fill='#568CBB'/><line x1='152' y1='90' x2='152' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M152 56 L146 68 L158 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='184' y1='90' x2='184' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M184 56 L178 68 L190 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='216' y1='90' x2='216' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M216 56 L210 68 L222 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='248' y1='90' x2='248' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M248 56 L242 68 L254 68 Z' fill='#568CBB'/><line x1='264' y1='90' x2='264' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M264 56 L258 68 L270 68 Z' fill='#568CBB'/><line x1='280' y1='90' x2='280' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M280 56 L274 68 L286 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='312' y1='90' x2='312' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M312 56 L306 68 L318 68 Z' fill='#568CBB'/><line x1='328' y1='90' x2='328' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M328 56 L322 68 L334 68 Z' fill='#568CBB'/><line x1='344' y1='90' x2='344' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M344 56 L338 68 L350 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>A = ? each period</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 20 periods, $150,000 at time 0, A = ? at the end of every period."
+  },
+  "lookup": true
  },
  {
   "id": "econ-0003",
@@ -100,16 +427,19 @@
    },
    {
     "id": "d",
-    "text": "12,000"
+    "text": "2,500"
    }
   ],
   "answer": "c",
-  "eli5": "Every unit sold leaves a little money after paying for itself. Break-even is the number of units whose leftovers add up to the bills you pay no matter what.",
-  "solution": "Each unit contributes 30 - 18 = $12 toward fixed costs.\n\nBreak-even quantity = \\frac{120,000}{12} = 10,000 units.",
+  "eli5": "At the break-even point total revenue equals total cost. Each unit sold contributes (price - variable cost) toward the fixed costs, so the break-even quantity is fixed cost divided by that contribution margin.",
+  "solution": "Contribution per unit = 30 - 18 = $12.\n\nBreak-even quantity = \\frac{120,000}{12} = 10,000 units per year.",
   "handbook": [
    {
     "section": "Engineering Economics",
-    "page": "230–237"
+    "page": "230–237",
+    "find": [
+     "break-even analysis"
+    ]
    }
   ],
   "tags": [
@@ -118,7 +448,164 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "econ-0003",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0003-b",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A plant has fixed costs of $84,000 per year. Each unit costs $22 to make and sells for $36. How many units per year must be sold to break even?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2,333"
+   },
+   {
+    "id": "b",
+    "text": "3,818"
+   },
+   {
+    "id": "c",
+    "text": "6,000"
+   },
+   {
+    "id": "d",
+    "text": "1,448"
+   }
+  ],
+  "answer": "c",
+  "eli5": "At the break-even point total revenue equals total cost. Each unit sold contributes (price - variable cost) toward the fixed costs, so the break-even quantity is fixed cost divided by that contribution margin.",
+  "solution": "Contribution per unit = 36 - 22 = $14.\n\nBreak-even quantity = \\frac{84,000}{14} = 6,000 units per year.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "break-even analysis"
+    ]
+   }
+  ],
+  "tags": [
+   "break-even"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0003",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0003-c",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A plant has fixed costs of $250,000 per year. Each unit costs $40 to make and sells for $65. How many units per year must be sold to break even?",
+  "options": [
+   {
+    "id": "a",
+    "text": "3,846"
+   },
+   {
+    "id": "b",
+    "text": "6,250"
+   },
+   {
+    "id": "c",
+    "text": "10,000"
+   },
+   {
+    "id": "d",
+    "text": "2,381"
+   }
+  ],
+  "answer": "c",
+  "eli5": "At the break-even point total revenue equals total cost. Each unit sold contributes (price - variable cost) toward the fixed costs, so the break-even quantity is fixed cost divided by that contribution margin.",
+  "solution": "Contribution per unit = 65 - 40 = $25.\n\nBreak-even quantity = \\frac{250,000}{25} = 10,000 units per year.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "break-even analysis"
+    ]
+   }
+  ],
+  "tags": [
+   "break-even"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0003",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0003-d",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A plant has fixed costs of $45,000 per year. Each unit costs $6 to make and sells for $15. How many units per year must be sold to break even?",
+  "options": [
+   {
+    "id": "a",
+    "text": "3,000"
+   },
+   {
+    "id": "b",
+    "text": "7,500"
+   },
+   {
+    "id": "c",
+    "text": "5,000"
+   },
+   {
+    "id": "d",
+    "text": "2,143"
+   }
+  ],
+  "answer": "c",
+  "eli5": "At the break-even point total revenue equals total cost. Each unit sold contributes (price - variable cost) toward the fixed costs, so the break-even quantity is fixed cost divided by that contribution margin.",
+  "solution": "Contribution per unit = 15 - 6 = $9.\n\nBreak-even quantity = \\frac{45,000}{9} = 5,000 units per year.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "break-even analysis"
+    ]
+   }
+  ],
+  "tags": [
+   "break-even"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0003",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "econ-0004",
@@ -140,7 +627,7 @@
    },
    {
     "id": "c",
-    "text": "$45,000"
+    "text": "$50,000"
    },
    {
     "id": "d",
@@ -148,12 +635,15 @@
    }
   ],
   "answer": "b",
-  "eli5": "Expected value is the average result if you could run the project many times. Weight each outcome by how often it happens and add them up.",
+  "eli5": "Expected value is the probability-weighted average of all outcomes: the sum of each outcome times its probability. Losses enter as negative values, and the probabilities must sum to 1.",
   "solution": "EV = 0.20(-50,000) + 0.50(40,000) + 0.30(100,000) = -10,000 + 20,000 + 30,000 = $40,000.",
   "handbook": [
    {
-    "section": "Engineering Economics",
-    "page": "230–237"
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "expected value"
+    ]
    }
   ],
   "tags": [
@@ -163,7 +653,167 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "econ-0004",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0004-b",
+  "topic": "econ",
+  "subtopic": "econ-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A project has a 10% chance of losing $80,000, a 60% chance of earning $30,000 and a 30% chance of earning $120,000. What is its expected value?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$23,333"
+   },
+   {
+    "id": "b",
+    "text": "$46,000"
+   },
+   {
+    "id": "c",
+    "text": "$54,000"
+   },
+   {
+    "id": "d",
+    "text": "$70,000"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Expected value is the probability-weighted average of all outcomes: the sum of each outcome times its probability. Losses enter as negative values, and the probabilities must sum to 1.",
+  "solution": "EV = 0.10(-80,000) + 0.60(30,000) + 0.30(120,000) = -8,000 + 18,000 + 36,000 = $46,000.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "expected value"
+    ]
+   }
+  ],
+  "tags": [
+   "expected value",
+   "risk"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0004",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0004-c",
+  "topic": "econ",
+  "subtopic": "econ-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A project has a 25% chance of losing $20,000, a 45% chance of earning $60,000 and a 30% chance of earning $90,000. What is its expected value?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$43,333"
+   },
+   {
+    "id": "b",
+    "text": "$49,000"
+   },
+   {
+    "id": "c",
+    "text": "$54,000"
+   },
+   {
+    "id": "d",
+    "text": "$130,000"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Expected value is the probability-weighted average of all outcomes: the sum of each outcome times its probability. Losses enter as negative values, and the probabilities must sum to 1.",
+  "solution": "EV = 0.25(-20,000) + 0.45(60,000) + 0.30(90,000) = -5,000 + 27,000 + 27,000 = $49,000.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "expected value"
+    ]
+   }
+  ],
+  "tags": [
+   "expected value",
+   "risk"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0004",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0004-d",
+  "topic": "econ",
+  "subtopic": "econ-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A project has a 30% chance of losing $40,000, a 30% chance of earning $50,000 and a 40% chance of earning $150,000. What is its expected value?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$53,333"
+   },
+   {
+    "id": "b",
+    "text": "$63,000"
+   },
+   {
+    "id": "c",
+    "text": "$75,000"
+   },
+   {
+    "id": "d",
+    "text": "$160,000"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Expected value is the probability-weighted average of all outcomes: the sum of each outcome times its probability. Losses enter as negative values, and the probabilities must sum to 1.",
+  "solution": "EV = 0.30(-40,000) + 0.30(50,000) + 0.40(150,000) = -12,000 + 15,000 + 60,000 = $63,000.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "expected value"
+    ]
+   }
+  ],
+  "tags": [
+   "expected value",
+   "risk"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0004",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "econ-0005",
@@ -193,19 +843,173 @@
    }
   ],
   "answer": "c",
-  "eli5": "Fixed costs are shared out over everything you make. The more you make, the smaller each unit's share.",
+  "eli5": "Average unit cost is total cost divided by output. Fixed cost is spread over more units as output rises, so average cost falls toward the variable cost per unit.",
   "solution": "Total cost = 50,000 + 12(10,000) = $170,000.\n\nAverage cost = \\frac{170,000}{10,000} = $17 per unit.",
   "handbook": [
    {
     "section": "Engineering Economics",
-    "page": "230–237"
+    "page": "230–237",
+    "find": [
+     "break-even analysis"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "econ-0005",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0005-b",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A machine has fixed costs of $36,000 per year and variable costs of $8 per unit. What is the average cost per unit at 4,000 units per year?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$9"
+   },
+   {
+    "id": "b",
+    "text": "$8"
+   },
+   {
+    "id": "c",
+    "text": "$17"
+   },
+   {
+    "id": "d",
+    "text": "$44"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Average unit cost is total cost divided by output. Fixed cost is spread over more units as output rises, so average cost falls toward the variable cost per unit.",
+  "solution": "Total cost = 36,000 + 8(4,000) = $68,000.\n\nAverage cost = \\frac{68,000}{4,000} = $17 per unit.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "break-even analysis"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0005",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0005-c",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A machine has fixed costs of $120,000 per year and variable costs of $25 per unit. What is the average cost per unit at 8,000 units per year?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$15"
+   },
+   {
+    "id": "b",
+    "text": "$25"
+   },
+   {
+    "id": "c",
+    "text": "$40"
+   },
+   {
+    "id": "d",
+    "text": "$145"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Average unit cost is total cost divided by output. Fixed cost is spread over more units as output rises, so average cost falls toward the variable cost per unit.",
+  "solution": "Total cost = 120,000 + 25(8,000) = $320,000.\n\nAverage cost = \\frac{320,000}{8,000} = $40 per unit.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "break-even analysis"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0005",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0005-d",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A machine has fixed costs of $100,000 per year and variable costs of $7 per unit. What is the average cost per unit at 20,000 units per year?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$5"
+   },
+   {
+    "id": "b",
+    "text": "$7"
+   },
+   {
+    "id": "c",
+    "text": "$12"
+   },
+   {
+    "id": "d",
+    "text": "$107"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Average unit cost is total cost divided by output. Fixed cost is spread over more units as output rises, so average cost falls toward the variable cost per unit.",
+  "solution": "Total cost = 100,000 + 7(20,000) = $240,000.\n\nAverage cost = \\frac{240,000}{20,000} = $12 per unit.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "break-even analysis"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0005",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "econ-0006",
@@ -217,24 +1021,131 @@
   "units": null,
   "stem": "A task needs 40 hours of direct labor at $35 per hour and $600 of materials. Overhead is charged at 50% of direct labor. What is the total cost?",
   "answer": {
-   "value": 2700,
+   "value": 2700.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "$"
   },
-  "eli5": "Direct costs are the hands and the materials on the job. Overhead is everything in the background, added as a share of the direct cost.",
-  "solution": "Direct labor = 40(35) = $1,400. Overhead = 0.50(1,400) = $700.\n\nTotal = 1,400 + 600 + 700 = $2,700.",
+  "eli5": "Cost estimates build up from direct costs (labor and materials) plus indirect costs. Here overhead is allocated as a percentage of direct labor cost, a common allocation base.",
+  "solution": "Direct labor = 40 × 35 = $1,400.\n\nOverhead = 50% × 1,400 = $700.\n\nTotal = 1,400 + 700 + 600 = $2,700.",
   "handbook": [
    {
     "section": "Engineering Economics",
-    "page": "230–237"
+    "page": "230–237",
+    "find": []
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "econ-0006",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "econ-0006-b",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A task needs 60 hours of direct labor at $42 per hour and $1,500 of materials. Overhead is charged at 40% of direct labor. What is the total cost?",
+  "answer": {
+   "value": 5028.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Cost estimates build up from direct costs (labor and materials) plus indirect costs. Here overhead is allocated as a percentage of direct labor cost, a common allocation base.",
+  "solution": "Direct labor = 60 × 42 = $2,520.\n\nOverhead = 40% × 2,520 = $1,008.\n\nTotal = 2,520 + 1,008 + 1,500 = $5,028.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0006",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "econ-0006-c",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A task needs 25 hours of direct labor at $50 per hour and $400 of materials. Overhead is charged at 60% of direct labor. What is the total cost?",
+  "answer": {
+   "value": 2400.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Cost estimates build up from direct costs (labor and materials) plus indirect costs. Here overhead is allocated as a percentage of direct labor cost, a common allocation base.",
+  "solution": "Direct labor = 25 × 50 = $1,250.\n\nOverhead = 60% × 1,250 = $750.\n\nTotal = 1,250 + 750 + 400 = $2,400.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0006",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "econ-0006-d",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A task needs 120 hours of direct labor at $38 per hour and $2,200 of materials. Overhead is charged at 35% of direct labor. What is the total cost?",
+  "answer": {
+   "value": 8356.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Cost estimates build up from direct costs (labor and materials) plus indirect costs. Here overhead is allocated as a percentage of direct labor cost, a common allocation base.",
+  "solution": "Direct labor = 120 × 38 = $4,560.\n\nOverhead = 35% × 4,560 = $1,596.\n\nTotal = 4,560 + 1,596 + 2,200 = $8,356.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0006",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  },
  {
   "id": "econ-0007",
@@ -264,19 +1175,193 @@
    }
   ],
   "answer": "a",
-  "eli5": "Money you have to wait for is worth less today, because today's money could have been earning interest the whole time.",
-  "solution": "P = \\frac{F}{(1 + i)^{n}} = \\frac{10,000}{(1.05)^{6}} = $7,462.",
+  "eli5": "Discounting is compounding in reverse. A future amount F is worth P = F / (1 + i)^{n} today; the factor 1 / (1 + i)^{n} is (P/F, i, n).",
+  "solution": "P = \\frac{F}{(1 + i)^{n}} = \\frac{10,000}{(1 + 0.05)^{6}} = \\frac{10,000}{1.3401} = $7,462.",
   "handbook": [
    {
     "section": "Engineering Economics",
-    "page": "230–237"
+    "page": "230–237",
+    "find": [
+     "single payment present worth"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "econ-0007",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='93' y1='86' x2='93' y2='94' stroke='#00242E'/><text x='93' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='147' y1='86' x2='147' y2='94' stroke='#00242E'/><text x='147' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='253' y1='86' x2='253' y2='94' stroke='#00242E'/><text x='253' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='307' y1='86' x2='307' y2='94' stroke='#00242E'/><text x='307' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P = ?</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>$10,000</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 6 periods, P = ? at time 0, $10,000 at period 6."
+  },
+  "lookup": true
+ },
+ {
+  "id": "econ-0007-b",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the present worth of $25,000 received 10 years from now at an interest rate of 8% per year?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$11,580"
+   },
+   {
+    "id": "b",
+    "text": "$13,889"
+   },
+   {
+    "id": "c",
+    "text": "$12,506"
+   },
+   {
+    "id": "d",
+    "text": "$53,973"
+   }
+  ],
+  "answer": "a",
+  "eli5": "Discounting is compounding in reverse. A future amount F is worth P = F / (1 + i)^{n} today; the factor 1 / (1 + i)^{n} is (P/F, i, n).",
+  "solution": "P = \\frac{F}{(1 + i)^{n}} = \\frac{25,000}{(1 + 0.08)^{10}} = \\frac{25,000}{2.1589} = $11,580.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "single payment present worth"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0007",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P = ?</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>$25,000</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 10 periods, P = ? at time 0, $25,000 at period 10."
+  },
+  "lookup": true
+ },
+ {
+  "id": "econ-0007-c",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the present worth of $4,000 received 4 years from now at an interest rate of 6% per year?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$3,168"
+   },
+   {
+    "id": "b",
+    "text": "$3,226"
+   },
+   {
+    "id": "c",
+    "text": "$3,358"
+   },
+   {
+    "id": "d",
+    "text": "$5,050"
+   }
+  ],
+  "answer": "a",
+  "eli5": "Discounting is compounding in reverse. A future amount F is worth P = F / (1 + i)^{n} today; the factor 1 / (1 + i)^{n} is (P/F, i, n).",
+  "solution": "P = \\frac{F}{(1 + i)^{n}} = \\frac{4,000}{(1 + 0.06)^{4}} = \\frac{4,000}{1.2625} = $3,168.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "single payment present worth"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0007",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='120' y1='86' x2='120' y2='94' stroke='#00242E'/><text x='120' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='280' y1='86' x2='280' y2='94' stroke='#00242E'/><text x='280' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P = ?</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>$4,000</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 4 periods, P = ? at time 0, $4,000 at period 4."
+  },
+  "lookup": true
+ },
+ {
+  "id": "econ-0007-d",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the present worth of $60,000 received 15 years from now at an interest rate of 4% per year?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$33,316"
+   },
+   {
+    "id": "b",
+    "text": "$37,500"
+   },
+   {
+    "id": "c",
+    "text": "$34,649"
+   },
+   {
+    "id": "d",
+    "text": "$108,057"
+   }
+  ],
+  "answer": "a",
+  "eli5": "Discounting is compounding in reverse. A future amount F is worth P = F / (1 + i)^{n} today; the factor 1 / (1 + i)^{n} is (P/F, i, n).",
+  "solution": "P = \\frac{F}{(1 + i)^{n}} = \\frac{60,000}{(1 + 0.04)^{15}} = \\frac{60,000}{1.8009} = $33,316.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "single payment present worth"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0007",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='61' y1='86' x2='61' y2='94' stroke='#00242E'/><text x='61' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='83' y1='86' x2='83' y2='94' stroke='#00242E'/><text x='83' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='125' y1='86' x2='125' y2='94' stroke='#00242E'/><text x='125' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='147' y1='86' x2='147' y2='94' stroke='#00242E'/><text x='147' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='189' y1='86' x2='189' y2='94' stroke='#00242E'/><text x='189' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='211' y1='86' x2='211' y2='94' stroke='#00242E'/><text x='211' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='253' y1='86' x2='253' y2='94' stroke='#00242E'/><text x='253' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='275' y1='86' x2='275' y2='94' stroke='#00242E'/><text x='275' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>11</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='317' y1='86' x2='317' y2='94' stroke='#00242E'/><text x='317' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>13</text><line x1='339' y1='86' x2='339' y2='94' stroke='#00242E'/><text x='339' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>14</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>15</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P = ?</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>$60,000</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 15 periods, P = ? at time 0, $60,000 at period 15."
+  },
+  "lookup": true
  },
  {
   "id": "econ-0008",
@@ -293,19 +1378,138 @@
    "toleranceType": "rel",
    "unit": "%"
   },
-  "eli5": "Charging 1% twelve times is slightly more than charging 12% once, because each month's interest earns interest too.",
-  "solution": "i_{e} = (1 + \\frac{0.12}{12})^{12} - 1 = (1.01)^{12} - 1 = 0.1268 = 12.68%.",
+  "eli5": "A nominal rate r compounded m times a year charges r/m each period. The effective annual rate is the single yearly rate that gives the same growth: i_{e} = (1 + r/m)^{m} - 1. It is always above the nominal rate when m is greater than 1.",
+  "solution": "Rate per period = 12% / 12 = 1.000%.\n\ni_{e} = (1 + 0.01000)^{12} - 1 = 0.12683 = 12.68%.",
   "handbook": [
    {
     "section": "Engineering Economics",
-    "page": "230–237"
+    "page": "230–237",
+    "find": [
+     "non-annual compounding",
+     "effective annual interest"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "econ-0008",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0008-b",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A loan charges a nominal rate of 9% per year, compounded quarterly. What is the effective annual interest rate?",
+  "answer": {
+   "value": 9.31,
+   "tolerance": 0.005,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "A nominal rate r compounded m times a year charges r/m each period. The effective annual rate is the single yearly rate that gives the same growth: i_{e} = (1 + r/m)^{m} - 1. It is always above the nominal rate when m is greater than 1.",
+  "solution": "Rate per period = 9% / 4 = 2.250%.\n\ni_{e} = (1 + 0.02250)^{4} - 1 = 0.09308 = 9.31%.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "non-annual compounding",
+     "effective annual interest"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0008",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0008-c",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A loan charges a nominal rate of 18% per year, compounded monthly. What is the effective annual interest rate?",
+  "answer": {
+   "value": 19.56,
+   "tolerance": 0.005,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "A nominal rate r compounded m times a year charges r/m each period. The effective annual rate is the single yearly rate that gives the same growth: i_{e} = (1 + r/m)^{m} - 1. It is always above the nominal rate when m is greater than 1.",
+  "solution": "Rate per period = 18% / 12 = 1.500%.\n\ni_{e} = (1 + 0.01500)^{12} - 1 = 0.19562 = 19.56%.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "non-annual compounding",
+     "effective annual interest"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0008",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0008-d",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A loan charges a nominal rate of 6% per year, compounded semiannually. What is the effective annual interest rate?",
+  "answer": {
+   "value": 6.09,
+   "tolerance": 0.005,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "A nominal rate r compounded m times a year charges r/m each period. The effective annual rate is the single yearly rate that gives the same growth: i_{e} = (1 + r/m)^{m} - 1. It is always above the nominal rate when m is greater than 1.",
+  "solution": "Rate per period = 6% / 2 = 3.000%.\n\ni_{e} = (1 + 0.03000)^{2} - 1 = 0.06090 = 6.09%.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "non-annual compounding",
+     "effective annual interest"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0008",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "econ-0009",
@@ -323,7 +1527,7 @@
    },
    {
     "id": "b",
-    "text": "1.20"
+    "text": "2.00"
    },
    {
     "id": "c",
@@ -335,19 +1539,177 @@
    }
   ],
   "answer": "c",
-  "eli5": "Put all the good the project does and all it costs into today's dollars, then see how many dollars of good you get per dollar spent.",
-  "solution": "(P/A, 6%, 20) = 11.47.\n\nBenefits = 60,000(11.47) = $688,200. Costs = 300,000 + 15,000(11.47) = $472,000.\n\nB/C = \\frac{688,200}{472,000} = 1.46.",
+  "eli5": "Benefit-cost analysis compares benefits and costs on the same time basis. Convert the annual amounts to present worth with (P/A, i, n) = ((1 + i)^{n} - 1) / (i(1 + i)^{n}), then divide present worth of benefits by present worth of costs. A ratio above 1 means the project is justified.",
+  "solution": "(P/A, 6%, 20) = 11.470.\n\nPW of benefits = 60,000 × 11.470 = $688,195.\n\nPW of costs = 300,000 + 15,000 × 11.470 = $472,049.\n\nB/C = 1.46.",
   "handbook": [
    {
     "section": "Engineering Economics",
-    "page": "230–237"
+    "page": "230–237",
+    "find": [
+     "benefit-cost analysis",
+     "uniform series present worth"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "econ-0009",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0009-b",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A flood wall costs $500,000 to build and $20,000 per year to maintain. It prevents $85,000 of damage per year. Over 25 years at 5%, what is the benefit-cost ratio?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.65"
+   },
+   {
+    "id": "b",
+    "text": "2.12"
+   },
+   {
+    "id": "c",
+    "text": "1.53"
+   },
+   {
+    "id": "d",
+    "text": "2.40"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Benefit-cost analysis compares benefits and costs on the same time basis. Convert the annual amounts to present worth with (P/A, i, n) = ((1 + i)^{n} - 1) / (i(1 + i)^{n}), then divide present worth of benefits by present worth of costs. A ratio above 1 means the project is justified.",
+  "solution": "(P/A, 5%, 25) = 14.094.\n\nPW of benefits = 85,000 × 14.094 = $1,197,985.\n\nPW of costs = 500,000 + 20,000 × 14.094 = $781,879.\n\nB/C = 1.53.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "benefit-cost analysis",
+     "uniform series present worth"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0009",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0009-c",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A flood wall costs $180,000 to build and $8,000 per year to maintain. It prevents $30,000 of damage per year. Over 15 years at 8%, what is the benefit-cost ratio?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.97"
+   },
+   {
+    "id": "b",
+    "text": "1.50"
+   },
+   {
+    "id": "c",
+    "text": "1.03"
+   },
+   {
+    "id": "d",
+    "text": "1.43"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Benefit-cost analysis compares benefits and costs on the same time basis. Convert the annual amounts to present worth with (P/A, i, n) = ((1 + i)^{n} - 1) / (i(1 + i)^{n}), then divide present worth of benefits by present worth of costs. A ratio above 1 means the project is justified.",
+  "solution": "(P/A, 8%, 15) = 8.559.\n\nPW of benefits = 30,000 × 8.559 = $256,784.\n\nPW of costs = 180,000 + 8,000 × 8.559 = $248,476.\n\nB/C = 1.03.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "benefit-cost analysis",
+     "uniform series present worth"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0009",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0009-d",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A flood wall costs $1,200,000 to build and $40,000 per year to maintain. It prevents $150,000 of damage per year. Over 30 years at 4%, what is the benefit-cost ratio?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.73"
+   },
+   {
+    "id": "b",
+    "text": "1.88"
+   },
+   {
+    "id": "c",
+    "text": "1.37"
+   },
+   {
+    "id": "d",
+    "text": "2.16"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Benefit-cost analysis compares benefits and costs on the same time basis. Convert the annual amounts to present worth with (P/A, i, n) = ((1 + i)^{n} - 1) / (i(1 + i)^{n}), then divide present worth of benefits by present worth of costs. A ratio above 1 means the project is justified.",
+  "solution": "(P/A, 4%, 30) = 17.292.\n\nPW of benefits = 150,000 × 17.292 = $2,593,805.\n\nPW of costs = 1,200,000 + 40,000 × 17.292 = $1,891,681.\n\nB/C = 1.37.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "benefit-cost analysis",
+     "uniform series present worth"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0009",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "econ-0010",
@@ -359,24 +1721,143 @@
   "units": null,
   "stem": "A machine costs $40,000, costs $3,000 per year to run, and has a salvage value of $5,000 after 8 years. At 10% interest, what is its equivalent uniform annual cost?",
   "answer": {
-   "value": 10060,
+   "value": 10061.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "$ per year"
   },
-  "eli5": "Spread the purchase price over the years like a loan payment, add the yearly running cost, and take off the yearly value of what you get back at the end.",
-  "solution": "EUAC = 40,000(A/P, 10%, 8) + 3,000 - 5,000(A/F, 10%, 8) = 40,000(0.1874) + 3,000 - 5,000(0.0874) = $10,060.",
+  "eli5": "Equivalent uniform annual cost spreads every cash flow evenly over the life: the first cost times (A/P), minus the salvage value times the sinking fund factor (A/F), plus the annual operating cost. It lets alternatives with different lives be compared.",
+  "solution": "(A/P, 10%, 8) = 0.18744 and (A/F, 10%, 8) = 0.08744.\n\nEUAC = 40,000(0.18744) - 5,000(0.08744) + 3,000 = 7,498 - 437 + 3,000 = $10,061 per year.",
   "handbook": [
    {
     "section": "Engineering Economics",
-    "page": "230–237"
+    "page": "230–237",
+    "find": [
+     "capital recovery",
+     "sinking fund"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "econ-0010",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0010-b",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A machine costs $75,000, costs $5,500 per year to run, and has a salvage value of $10,000 after 10 years. At 8% interest, what is its equivalent uniform annual cost?",
+  "answer": {
+   "value": 15987.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$ per year"
+  },
+  "eli5": "Equivalent uniform annual cost spreads every cash flow evenly over the life: the first cost times (A/P), minus the salvage value times the sinking fund factor (A/F), plus the annual operating cost. It lets alternatives with different lives be compared.",
+  "solution": "(A/P, 8%, 10) = 0.14903 and (A/F, 8%, 10) = 0.06903.\n\nEUAC = 75,000(0.14903) - 10,000(0.06903) + 5,500 = 11,177 - 690 + 5,500 = $15,987 per year.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "capital recovery",
+     "sinking fund"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0010",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0010-c",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A machine costs $18,000, costs $1,200 per year to run, and has a salvage value of $2,000 after 5 years. At 12% interest, what is its equivalent uniform annual cost?",
+  "answer": {
+   "value": 5879.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$ per year"
+  },
+  "eli5": "Equivalent uniform annual cost spreads every cash flow evenly over the life: the first cost times (A/P), minus the salvage value times the sinking fund factor (A/F), plus the annual operating cost. It lets alternatives with different lives be compared.",
+  "solution": "(A/P, 12%, 5) = 0.27741 and (A/F, 12%, 5) = 0.15741.\n\nEUAC = 18,000(0.27741) - 2,000(0.15741) + 1,200 = 4,993 - 315 + 1,200 = $5,879 per year.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "capital recovery",
+     "sinking fund"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0010",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "econ-0010-d",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A machine costs $120,000, costs $9,000 per year to run, and has a salvage value of $15,000 after 12 years. At 6% interest, what is its equivalent uniform annual cost?",
+  "answer": {
+   "value": 22424.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$ per year"
+  },
+  "eli5": "Equivalent uniform annual cost spreads every cash flow evenly over the life: the first cost times (A/P), minus the salvage value times the sinking fund factor (A/F), plus the annual operating cost. It lets alternatives with different lives be compared.",
+  "solution": "(A/P, 6%, 12) = 0.11928 and (A/F, 6%, 12) = 0.05928.\n\nEUAC = 120,000(0.11928) - 15,000(0.05928) + 9,000 = 14,313 - 889 + 9,000 = $22,424 per year.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "capital recovery",
+     "sinking fund"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0010",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "econ-0011",
@@ -410,14 +1891,18 @@
   "solution": "EV of B = 0.60(60,000) + 0.40(-10,000) = 36,000 - 4,000 = $32,000.\n\nThat is $2,000 more than the certain $30,000.",
   "handbook": [
    {
-    "section": "Engineering Economics",
-    "page": "230–237"
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "expected value"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "lookup": true
  }
 ]

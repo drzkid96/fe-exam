@@ -27,12 +27,16 @@
    }
   ],
   "answer": "b",
-  "eli5": "Float is how long a task can slip before it delays the whole job. A short task running alongside a longer one has spare time equal to the difference.",
-  "solution": "The longest path is A, C, D = 3 + 6 + 2 = 11 days, so that path is critical.\n\nB can start on day 3 and finish on day 7, but D cannot start until C finishes on day 9.\n\nTotal float of B = 9 - 7 = 2 days.",
+  "eli5": "In the critical path method the longest path through the network sets the project duration, and activities on it have zero float. Total float is the time an activity can slip without delaying the project: late start minus early start.",
+  "solution": "Path A-B-D = 3 + 4 + 2 = 9 days. Path A-C-D = 3 + 6 + 2 = 11 days, which is critical.\n\nB and C run in parallel between the same events, so B can slip by the difference: total float of B = 6 - 4 = 2 days.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": [
+     "CPM",
+     "float"
+    ]
    }
   ],
   "tags": [
@@ -43,7 +47,193 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "construction-0001",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<rect x='20' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='55' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='55' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3 days</text><rect x='165' y='12' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='30' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><text x='200' y='45' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4 days</text><rect x='165' y='108' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='126' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>C</text><text x='200' y='141' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6 days</text><rect x='310' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='345' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>D</text><text x='345' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2 days</text><line x1='90' y1='72' x2='159' y2='33' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='35' r='4' fill='#00574A'/><line x1='90' y1='88' x2='159' y2='127' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='125' r='4' fill='#00574A'/><line x1='235' y1='36' x2='304' y2='75' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='73' r='4' fill='#00574A'/><line x1='235' y1='124' x2='304' y2='85' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='87' r='4' fill='#00574A'/>",
+   "alt": "An activity network: A (3 days) is followed by B (4 days) and C (6 days), which are both followed by D (2 days)."
+  },
+  "lookup": true
+ },
+ {
+  "id": "construction-0001-b",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A project has four activities. A takes 2 days and starts the job. B takes 3 days and C takes 8 days; both follow A. D takes 4 days and follows both B and C. What is the total float of activity B?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0 days"
+   },
+   {
+    "id": "b",
+    "text": "5 days"
+   },
+   {
+    "id": "c",
+    "text": "3 days"
+   },
+   {
+    "id": "d",
+    "text": "8 days"
+   }
+  ],
+  "answer": "b",
+  "eli5": "In the critical path method the longest path through the network sets the project duration, and activities on it have zero float. Total float is the time an activity can slip without delaying the project: late start minus early start.",
+  "solution": "Path A-B-D = 2 + 3 + 4 = 9 days. Path A-C-D = 2 + 8 + 4 = 14 days, which is critical.\n\nB and C run in parallel between the same events, so B can slip by the difference: total float of B = 8 - 3 = 5 days.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "CPM",
+     "float"
+    ]
+   }
+  ],
+  "tags": [
+   "critical path",
+   "float",
+   "scheduling"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0001",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<rect x='20' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='55' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='55' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2 days</text><rect x='165' y='12' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='30' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><text x='200' y='45' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3 days</text><rect x='165' y='108' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='126' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>C</text><text x='200' y='141' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8 days</text><rect x='310' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='345' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>D</text><text x='345' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4 days</text><line x1='90' y1='72' x2='159' y2='33' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='35' r='4' fill='#00574A'/><line x1='90' y1='88' x2='159' y2='127' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='125' r='4' fill='#00574A'/><line x1='235' y1='36' x2='304' y2='75' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='73' r='4' fill='#00574A'/><line x1='235' y1='124' x2='304' y2='85' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='87' r='4' fill='#00574A'/>",
+   "alt": "An activity network: A (2 days) is followed by B (3 days) and C (8 days), which are both followed by D (4 days)."
+  },
+  "lookup": true
+ },
+ {
+  "id": "construction-0001-c",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A project has four activities. A takes 5 days and starts the job. B takes 6 days and C takes 10 days; both follow A. D takes 3 days and follows both B and C. What is the total float of activity B?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0 days"
+   },
+   {
+    "id": "b",
+    "text": "4 days"
+   },
+   {
+    "id": "c",
+    "text": "6 days"
+   },
+   {
+    "id": "d",
+    "text": "10 days"
+   }
+  ],
+  "answer": "b",
+  "eli5": "In the critical path method the longest path through the network sets the project duration, and activities on it have zero float. Total float is the time an activity can slip without delaying the project: late start minus early start.",
+  "solution": "Path A-B-D = 5 + 6 + 3 = 14 days. Path A-C-D = 5 + 10 + 3 = 18 days, which is critical.\n\nB and C run in parallel between the same events, so B can slip by the difference: total float of B = 10 - 6 = 4 days.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "CPM",
+     "float"
+    ]
+   }
+  ],
+  "tags": [
+   "critical path",
+   "float",
+   "scheduling"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0001",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<rect x='20' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='55' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='55' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5 days</text><rect x='165' y='12' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='30' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><text x='200' y='45' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6 days</text><rect x='165' y='108' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='126' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>C</text><text x='200' y='141' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10 days</text><rect x='310' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='345' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>D</text><text x='345' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3 days</text><line x1='90' y1='72' x2='159' y2='33' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='35' r='4' fill='#00574A'/><line x1='90' y1='88' x2='159' y2='127' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='125' r='4' fill='#00574A'/><line x1='235' y1='36' x2='304' y2='75' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='73' r='4' fill='#00574A'/><line x1='235' y1='124' x2='304' y2='85' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='87' r='4' fill='#00574A'/>",
+   "alt": "An activity network: A (5 days) is followed by B (6 days) and C (10 days), which are both followed by D (3 days)."
+  },
+  "lookup": true
+ },
+ {
+  "id": "construction-0001-d",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A project has four activities. A takes 4 days and starts the job. B takes 5 days and C takes 9 days; both follow A. D takes 2 days and follows both B and C. What is the total float of activity B?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0 days"
+   },
+   {
+    "id": "b",
+    "text": "4 days"
+   },
+   {
+    "id": "c",
+    "text": "5 days"
+   },
+   {
+    "id": "d",
+    "text": "9 days"
+   }
+  ],
+  "answer": "b",
+  "eli5": "In the critical path method the longest path through the network sets the project duration, and activities on it have zero float. Total float is the time an activity can slip without delaying the project: late start minus early start.",
+  "solution": "Path A-B-D = 4 + 5 + 2 = 11 days. Path A-C-D = 4 + 9 + 2 = 15 days, which is critical.\n\nB and C run in parallel between the same events, so B can slip by the difference: total float of B = 9 - 5 = 4 days.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "CPM",
+     "float"
+    ]
+   }
+  ],
+  "tags": [
+   "critical path",
+   "float",
+   "scheduling"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0001",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<rect x='20' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='55' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='55' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4 days</text><rect x='165' y='12' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='30' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><text x='200' y='45' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5 days</text><rect x='165' y='108' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='126' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>C</text><text x='200' y='141' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9 days</text><rect x='310' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='345' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>D</text><text x='345' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2 days</text><line x1='90' y1='72' x2='159' y2='33' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='35' r='4' fill='#00574A'/><line x1='90' y1='88' x2='159' y2='127' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='125' r='4' fill='#00574A'/><line x1='235' y1='36' x2='304' y2='75' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='73' r='4' fill='#00574A'/><line x1='235' y1='124' x2='304' y2='85' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='87' r='4' fill='#00574A'/>",
+   "alt": "An activity network: A (4 days) is followed by B (5 days) and C (9 days), which are both followed by D (2 days)."
+  },
+  "lookup": true
  },
  {
   "id": "construction-0002",
@@ -57,28 +247,31 @@
   "options": [
    {
     "id": "a",
-    "text": "0.90"
+    "text": "0.900"
    },
    {
     "id": "b",
-    "text": "0.95"
+    "text": "0.947"
    },
    {
     "id": "c",
-    "text": "1.06"
+    "text": "1.056"
    },
    {
     "id": "d",
-    "text": "1.11"
+    "text": "1.111"
    }
   ],
   "answer": "b",
-  "eli5": "The cost performance index asks: for every dollar spent, how many dollars of work got done? Below 1.0 means you are over budget.",
-  "solution": "CPI = \\frac{earned value}{actual cost} = \\frac{90,000}{95,000} = 0.95.\n\nThe schedule index uses planned value instead: \\frac{90,000}{100,000} = 0.90.",
+  "eli5": "Earned value management compares the budgeted value of work done (EV) with what it cost (AC) and with what was scheduled (PV). CPI = EV / AC; below 1.0 means over budget. SPI = EV / PV; below 1.0 means behind schedule.",
+  "solution": "CPI = \\frac{EV}{AC} = \\frac{90,000}{95,000} = 0.947. For reference, SPI = \\frac{90,000}{100,000} = 0.900.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": [
+     "earned-value analysis"
+    ]
    }
   ],
   "tags": [
@@ -88,7 +281,167 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "construction-0002",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "construction-0002-b",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "At a status date a project has a planned value of $250,000, an earned value of $260,000 and an actual cost of $240,000. What is the cost performance index?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1.040"
+   },
+   {
+    "id": "b",
+    "text": "1.083"
+   },
+   {
+    "id": "c",
+    "text": "0.923"
+   },
+   {
+    "id": "d",
+    "text": "0.962"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Earned value management compares the budgeted value of work done (EV) with what it cost (AC) and with what was scheduled (PV). CPI = EV / AC; below 1.0 means over budget. SPI = EV / PV; below 1.0 means behind schedule.",
+  "solution": "CPI = \\frac{EV}{AC} = \\frac{260,000}{240,000} = 1.083. For reference, SPI = \\frac{260,000}{250,000} = 1.040.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "earned-value analysis"
+    ]
+   }
+  ],
+  "tags": [
+   "earned value",
+   "cpi"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0002",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "construction-0002-c",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "At a status date a project has a planned value of $80,000, an earned value of $60,000 and an actual cost of $72,000. What is the cost performance index?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.750"
+   },
+   {
+    "id": "b",
+    "text": "0.833"
+   },
+   {
+    "id": "c",
+    "text": "1.200"
+   },
+   {
+    "id": "d",
+    "text": "1.333"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Earned value management compares the budgeted value of work done (EV) with what it cost (AC) and with what was scheduled (PV). CPI = EV / AC; below 1.0 means over budget. SPI = EV / PV; below 1.0 means behind schedule.",
+  "solution": "CPI = \\frac{EV}{AC} = \\frac{60,000}{72,000} = 0.833. For reference, SPI = \\frac{60,000}{80,000} = 0.750.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "earned-value analysis"
+    ]
+   }
+  ],
+  "tags": [
+   "earned value",
+   "cpi"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0002",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "construction-0002-d",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "At a status date a project has a planned value of $400,000, an earned value of $380,000 and an actual cost of $410,000. What is the cost performance index?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.950"
+   },
+   {
+    "id": "b",
+    "text": "0.927"
+   },
+   {
+    "id": "c",
+    "text": "1.079"
+   },
+   {
+    "id": "d",
+    "text": "1.053"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Earned value management compares the budgeted value of work done (EV) with what it cost (AC) and with what was scheduled (PV). CPI = EV / AC; below 1.0 means over budget. SPI = EV / PV; below 1.0 means behind schedule.",
+  "solution": "CPI = \\frac{EV}{AC} = \\frac{380,000}{410,000} = 0.927. For reference, SPI = \\frac{380,000}{400,000} = 0.950.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "earned-value analysis"
+    ]
+   }
+  ],
+  "tags": [
+   "earned value",
+   "cpi"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0002",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "construction-0003",
@@ -105,12 +458,13 @@
    "toleranceType": "rel",
    "unit": "m^{3}"
   },
-  "eli5": "Work out the size of the box the slab fills, then order a little extra because some concrete is always spilled or left in the truck.",
-  "solution": "Volume = 30(20)(0.15) = 90 m^{3}.\n\nWith 5% waste: 90(1.05) = 94.5 m^{3}.\n\nConvert the thickness to metres first.",
+  "eli5": "Quantity takeoff for concrete is the neat volume from the drawings, increased by a waste allowance for spillage, over-excavation and uneven subgrade. Convert the thickness to metres first.",
+  "solution": "Neat volume = 30 × 20 × 0.150 = 90.00 m^{3}.\n\nWith 5% waste: 90.00 × 1.05 = 94.50 m^{3}.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [
@@ -120,7 +474,122 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "construction-0003",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0003-b",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A slab on grade is 24 m long, 12 m wide and 200 mm thick. Allowing 8% for waste, how much concrete should be ordered?",
+  "answer": {
+   "value": 62.21,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "Quantity takeoff for concrete is the neat volume from the drawings, increased by a waste allowance for spillage, over-excavation and uneven subgrade. Convert the thickness to metres first.",
+  "solution": "Neat volume = 24 × 12 × 0.200 = 57.60 m^{3}.\n\nWith 8% waste: 57.60 × 1.08 = 62.21 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [
+   "estimating",
+   "quantity takeoff"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0003",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0003-c",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A slab on grade is 45 m long, 15 m wide and 125 mm thick. Allowing 5% for waste, how much concrete should be ordered?",
+  "answer": {
+   "value": 88.59,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "Quantity takeoff for concrete is the neat volume from the drawings, increased by a waste allowance for spillage, over-excavation and uneven subgrade. Convert the thickness to metres first.",
+  "solution": "Neat volume = 45 × 15 × 0.125 = 84.38 m^{3}.\n\nWith 5% waste: 84.38 × 1.05 = 88.59 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [
+   "estimating",
+   "quantity takeoff"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0003",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0003-d",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A slab on grade is 18 m long, 9 m wide and 100 mm thick. Allowing 10% for waste, how much concrete should be ordered?",
+  "answer": {
+   "value": 17.82,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "Quantity takeoff for concrete is the neat volume from the drawings, increased by a waste allowance for spillage, over-excavation and uneven subgrade. Convert the thickness to metres first.",
+  "solution": "Neat volume = 18 × 9 × 0.100 = 16.20 m^{3}.\n\nWith 10% waste: 16.20 × 1.10 = 17.82 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [
+   "estimating",
+   "quantity takeoff"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0003",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  },
  {
   "id": "construction-0004",
@@ -134,7 +603,7 @@
   "options": [
    {
     "id": "a",
-    "text": "90 m^{3}/h"
+    "text": "125 m^{3}/h"
    },
    {
     "id": "b",
@@ -150,12 +619,13 @@
    }
   ],
   "answer": "b",
-  "eli5": "Count how many scoops fit into the minutes the machine is really working, then multiply by the size of the scoop.",
-  "solution": "Working time = 50 min = 3,000 s, so cycles per hour = \\frac{3,000}{30} = 100.\n\nProduction = 100(1.5) = 150 m^{3}/h.\n\nUsing a full 60 minutes would overstate it at 180 m^{3}/h.",
+  "eli5": "Equipment production = volume per cycle × cycles per hour × efficiency. The efficiency factor (working minutes per 60) accounts for delays, operator breaks and repositioning.",
+  "solution": "Cycles per hour = 3,600 / 30 = 120.\n\nIdeal production = 1.5 × 120 = 180 m^{3}/h.\n\nEfficiency = 50 / 60 = 0.833.\n\nProduction = 180 × 0.833 = 150 m^{3}/h.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [
@@ -165,7 +635,161 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "construction-0004",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0004-b",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An excavator has a 2.0 m^{3} bucket and a cycle time of 40 s. It works 45 minutes of each hour. What is its hourly production?",
+  "options": [
+   {
+    "id": "a",
+    "text": "101 m^{3}/h"
+   },
+   {
+    "id": "b",
+    "text": "135 m^{3}/h"
+   },
+   {
+    "id": "c",
+    "text": "180 m^{3}/h"
+   },
+   {
+    "id": "d",
+    "text": "240 m^{3}/h"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Equipment production = volume per cycle × cycles per hour × efficiency. The efficiency factor (working minutes per 60) accounts for delays, operator breaks and repositioning.",
+  "solution": "Cycles per hour = 3,600 / 40 = 90.\n\nIdeal production = 2.0 × 90 = 180 m^{3}/h.\n\nEfficiency = 45 / 60 = 0.750.\n\nProduction = 180 × 0.750 = 135 m^{3}/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [
+   "productivity",
+   "equipment"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0004",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0004-c",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An excavator has a 1.0 m^{3} bucket and a cycle time of 20 s. It works 48 minutes of each hour. What is its hourly production?",
+  "options": [
+   {
+    "id": "a",
+    "text": "115 m^{3}/h"
+   },
+   {
+    "id": "b",
+    "text": "144 m^{3}/h"
+   },
+   {
+    "id": "c",
+    "text": "180 m^{3}/h"
+   },
+   {
+    "id": "d",
+    "text": "225 m^{3}/h"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Equipment production = volume per cycle × cycles per hour × efficiency. The efficiency factor (working minutes per 60) accounts for delays, operator breaks and repositioning.",
+  "solution": "Cycles per hour = 3,600 / 20 = 180.\n\nIdeal production = 1.0 × 180 = 180 m^{3}/h.\n\nEfficiency = 48 / 60 = 0.800.\n\nProduction = 180 × 0.800 = 144 m^{3}/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [
+   "productivity",
+   "equipment"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0004",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0004-d",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An excavator has a 3.0 m^{3} bucket and a cycle time of 45 s. It works 55 minutes of each hour. What is its hourly production?",
+  "options": [
+   {
+    "id": "a",
+    "text": "202 m^{3}/h"
+   },
+   {
+    "id": "b",
+    "text": "220 m^{3}/h"
+   },
+   {
+    "id": "c",
+    "text": "240 m^{3}/h"
+   },
+   {
+    "id": "d",
+    "text": "262 m^{3}/h"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Equipment production = volume per cycle × cycles per hour × efficiency. The efficiency factor (working minutes per 60) accounts for delays, operator breaks and repositioning.",
+  "solution": "Cycles per hour = 3,600 / 45 = 80.\n\nIdeal production = 3.0 × 80 = 240 m^{3}/h.\n\nEfficiency = 55 / 60 = 0.917.\n\nProduction = 240 × 0.917 = 220 m^{3}/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [
+   "productivity",
+   "equipment"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0004",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  },
  {
   "id": "construction-0005",
@@ -215,7 +839,8 @@
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [
@@ -227,7 +852,8 @@
   "verify": {
    "method": "reference",
    "basis": "Standard design-bid-build contract administration sequence"
-  }
+  },
+  "lookup": false
  },
  {
   "id": "construction-0006",
@@ -239,24 +865,131 @@
   "units": "USCS",
   "stem": "On a plan drawn at a scale of 1 in = 40 ft, a property line measures 3.25 in. How long is the line on the ground?",
   "answer": {
-   "value": 130,
+   "value": 130.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "ft"
   },
-  "eli5": "A scale is a fixed exchange rate between paper and ground.",
-  "solution": "Ground length = 3.25 in × 40 ft/in = 130 ft.",
+  "eli5": "An engineer's scale states how many feet on the ground one inch on the drawing represents. Ground distance = drawing distance × scale.",
+  "solution": "Ground length = 3.25 in × 40 ft/in = 130.0 ft.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "construction-0006",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0006-b",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "On a plan drawn at a scale of 1 in = 20 ft, a property line measures 6.5 in. How long is the line on the ground?",
+  "answer": {
+   "value": 130.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "An engineer's scale states how many feet on the ground one inch on the drawing represents. Ground distance = drawing distance × scale.",
+  "solution": "Ground length = 6.5 in × 20 ft/in = 130.0 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0006",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0006-c",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "On a plan drawn at a scale of 1 in = 50 ft, a property line measures 2.4 in. How long is the line on the ground?",
+  "answer": {
+   "value": 120.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "An engineer's scale states how many feet on the ground one inch on the drawing represents. Ground distance = drawing distance × scale.",
+  "solution": "Ground length = 2.4 in × 50 ft/in = 120.0 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0006",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0006-d",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "On a plan drawn at a scale of 1 in = 100 ft, a property line measures 1.85 in. How long is the line on the ground?",
+  "answer": {
+   "value": 185.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "An engineer's scale states how many feet on the ground one inch on the drawing represents. Ground distance = drawing distance × scale.",
+  "solution": "Ground length = 1.85 in × 100 ft/in = 185.0 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0006",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  },
  {
   "id": "construction-0007",
@@ -278,7 +1011,7 @@
    },
    {
     "id": "c",
-    "text": "20.8 m"
+    "text": "20.83 m"
    },
    {
     "id": "d",
@@ -286,19 +1019,165 @@
    }
   ],
   "answer": "b",
-  "eli5": "At 1:500, everything on the ground is 500 times bigger than on the paper.",
-  "solution": "Length = 24 mm × 500 = 12,000 mm = 12 m.",
+  "eli5": "A ratio scale of 1:n means one unit on the drawing is n of the same units in reality. Multiply by n, then convert millimetres to metres.",
+  "solution": "Real length = 24 mm × 500 = 12,000 mm = 12 m.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "construction-0007",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0007-b",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A drawing is at a scale of 1:200. A wall measures 65 mm on the drawing. How long is the wall?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1.3 m"
+   },
+   {
+    "id": "b",
+    "text": "13 m"
+   },
+   {
+    "id": "c",
+    "text": "3.08 m"
+   },
+   {
+    "id": "d",
+    "text": "130 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A ratio scale of 1:n means one unit on the drawing is n of the same units in reality. Multiply by n, then convert millimetres to metres.",
+  "solution": "Real length = 65 mm × 200 = 13,000 mm = 13 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0007",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0007-c",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A drawing is at a scale of 1:100. A wall measures 38 mm on the drawing. How long is the wall?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.38 m"
+   },
+   {
+    "id": "b",
+    "text": "3.8 m"
+   },
+   {
+    "id": "c",
+    "text": "2.63 m"
+   },
+   {
+    "id": "d",
+    "text": "38 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A ratio scale of 1:n means one unit on the drawing is n of the same units in reality. Multiply by n, then convert millimetres to metres.",
+  "solution": "Real length = 38 mm × 100 = 3,800 mm = 3.8 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0007",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0007-d",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A drawing is at a scale of 1:250. A wall measures 84 mm on the drawing. How long is the wall?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2.1 m"
+   },
+   {
+    "id": "b",
+    "text": "21 m"
+   },
+   {
+    "id": "c",
+    "text": "2.98 m"
+   },
+   {
+    "id": "d",
+    "text": "210 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A ratio scale of 1:n means one unit on the drawing is n of the same units in reality. Multiply by n, then convert millimetres to metres.",
+  "solution": "Real length = 84 mm × 250 = 21,000 mm = 21 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0007",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  },
  {
   "id": "construction-0008",
@@ -333,7 +1212,8 @@
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [],
@@ -341,7 +1221,8 @@
   "verify": {
    "method": "reference",
    "basis": "Standard topographic drawing convention"
-  }
+  },
+  "lookup": false
  },
  {
   "id": "construction-0009",
@@ -376,7 +1257,8 @@
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [],
@@ -384,7 +1266,8 @@
   "verify": {
    "method": "reference",
    "basis": "Standard project delivery method definitions"
-  }
+  },
+  "lookup": false
  },
  {
   "id": "construction-0010",
@@ -419,7 +1302,8 @@
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [],
@@ -427,7 +1311,8 @@
   "verify": {
    "method": "reference",
    "basis": "Standard construction surety bond definitions"
-  }
+  },
+  "lookup": false
  },
  {
   "id": "construction-0011",
@@ -444,19 +1329,134 @@
    "toleranceType": "rel",
    "unit": ""
   },
-  "eli5": "The rate scales injuries to what 100 full-time workers would have in a year, so big and small firms can be compared.",
-  "solution": "Incidence rate = \\frac{injuries × 200,000}{hours worked} = \\frac{6(200,000)}{400,000} = 3.0.",
+  "eli5": "The OSHA incidence rate normalises injury counts to 200,000 hours, the hours worked by 100 full-time employees in a year (100 × 40 h × 50 weeks), so that firms of different sizes can be compared.",
+  "solution": "Incidence rate = \\frac{6 × 200,000}{400,000} = 3.00.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309"
+    "section": "Safety",
+    "page": "13–33",
+    "find": [
+     "incidence rate"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "construction-0011",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "construction-0011-b",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A contractor has 4 recordable injuries in a year in which employees worked 250,000 hours. What is the incidence rate per 200,000 hours?",
+  "answer": {
+   "value": 3.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The OSHA incidence rate normalises injury counts to 200,000 hours, the hours worked by 100 full-time employees in a year (100 × 40 h × 50 weeks), so that firms of different sizes can be compared.",
+  "solution": "Incidence rate = \\frac{4 × 200,000}{250,000} = 3.20.",
+  "handbook": [
+   {
+    "section": "Safety",
+    "page": "13–33",
+    "find": [
+     "incidence rate"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0011",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "construction-0011-c",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A contractor has 9 recordable injuries in a year in which employees worked 600,000 hours. What is the incidence rate per 200,000 hours?",
+  "answer": {
+   "value": 3.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The OSHA incidence rate normalises injury counts to 200,000 hours, the hours worked by 100 full-time employees in a year (100 × 40 h × 50 weeks), so that firms of different sizes can be compared.",
+  "solution": "Incidence rate = \\frac{9 × 200,000}{600,000} = 3.00.",
+  "handbook": [
+   {
+    "section": "Safety",
+    "page": "13–33",
+    "find": [
+     "incidence rate"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0011",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "construction-0011-d",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A contractor has 3 recordable injuries in a year in which employees worked 120,000 hours. What is the incidence rate per 200,000 hours?",
+  "answer": {
+   "value": 5.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The OSHA incidence rate normalises injury counts to 200,000 hours, the hours worked by 100 full-time employees in a year (100 × 40 h × 50 weeks), so that firms of different sizes can be compared.",
+  "solution": "Incidence rate = \\frac{3 × 200,000}{120,000} = 5.00.",
+  "handbook": [
+   {
+    "section": "Safety",
+    "page": "13–33",
+    "find": [
+     "incidence rate"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0011",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "construction-0012",
@@ -470,7 +1470,7 @@
   "options": [
    {
     "id": "a",
-    "text": "4"
+    "text": "5"
    },
    {
     "id": "b",
@@ -486,19 +1486,165 @@
    }
   ],
   "answer": "b",
-  "eli5": "While one truck is away, the loader should be filling others. Match the fleet so a truck returns just as the loader is free.",
+  "eli5": "A balanced fleet has just enough trucks that one arrives as the loader finishes the previous one. The number is the truck cycle time divided by the loading time. Fewer trucks leave the loader idle; more leave trucks queuing.",
   "solution": "Trucks = \\frac{truck cycle time}{loading time} = \\frac{24}{4} = 6.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "construction-0012",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0012-b",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A loader takes 5 minutes to fill a truck. Each truck needs 40 minutes for a full cycle including loading. How many trucks keep the loader working without waiting?",
+  "options": [
+   {
+    "id": "a",
+    "text": "7"
+   },
+   {
+    "id": "b",
+    "text": "8"
+   },
+   {
+    "id": "c",
+    "text": "10"
+   },
+   {
+    "id": "d",
+    "text": "35"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A balanced fleet has just enough trucks that one arrives as the loader finishes the previous one. The number is the truck cycle time divided by the loading time. Fewer trucks leave the loader idle; more leave trucks queuing.",
+  "solution": "Trucks = \\frac{truck cycle time}{loading time} = \\frac{40}{5} = 8.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0012",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0012-c",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A loader takes 3 minutes to fill a truck. Each truck needs 27 minutes for a full cycle including loading. How many trucks keep the loader working without waiting?",
+  "options": [
+   {
+    "id": "a",
+    "text": "8"
+   },
+   {
+    "id": "b",
+    "text": "9"
+   },
+   {
+    "id": "c",
+    "text": "11"
+   },
+   {
+    "id": "d",
+    "text": "24"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A balanced fleet has just enough trucks that one arrives as the loader finishes the previous one. The number is the truck cycle time divided by the loading time. Fewer trucks leave the loader idle; more leave trucks queuing.",
+  "solution": "Trucks = \\frac{truck cycle time}{loading time} = \\frac{27}{3} = 9.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0012",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0012-d",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A loader takes 6 minutes to fill a truck. Each truck needs 30 minutes for a full cycle including loading. How many trucks keep the loader working without waiting?",
+  "options": [
+   {
+    "id": "a",
+    "text": "4"
+   },
+   {
+    "id": "b",
+    "text": "5"
+   },
+   {
+    "id": "c",
+    "text": "7"
+   },
+   {
+    "id": "d",
+    "text": "24"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A balanced fleet has just enough trucks that one arrives as the loader finishes the previous one. The number is the truck cycle time divided by the loading time. Fewer trucks leave the loader idle; more leave trucks queuing.",
+  "solution": "Trucks = \\frac{truck cycle time}{loading time} = \\frac{30}{6} = 5.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0012",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  },
  {
   "id": "construction-0013",
@@ -533,14 +1679,19 @@
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": [
+     "earned-value analysis",
+     "schedule variance"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "lookup": true
  },
  {
   "id": "construction-0014",
@@ -550,26 +1701,133 @@
   "status": "live",
   "difficulty": 2,
   "units": null,
-  "stem": "A crew places 40 m^{2} of formwork per day. There are 1,200 m^{2} to place and two crews working. How many working days are needed?",
+  "stem": "A crew places 40 m^{2} of formwork per day. There are 1,200 m^{2} to place and 2 crews working. How many working days are needed?",
   "answer": {
-   "value": 15,
+   "value": 15.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "days"
   },
-  "eli5": "Duration is the amount of work divided by how fast it gets done. Two crews do it twice as fast.",
-  "solution": "Duration = \\frac{1,200}{2(40)} = 15 days.",
+  "eli5": "Activity duration = quantity of work / (crew productivity × number of crews). Durations found this way feed the schedule network.",
+  "solution": "Daily output = 2 × 40 = 80 m^{2}/day.\n\nDuration = \\frac{1,200}{80} = 15 working days.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "construction-0014",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0014-b",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A crew places 55 m^{2} of formwork per day. There are 3,300 m^{2} to place and 3 crews working. How many working days are needed?",
+  "answer": {
+   "value": 20.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "days"
+  },
+  "eli5": "Activity duration = quantity of work / (crew productivity × number of crews). Durations found this way feed the schedule network.",
+  "solution": "Daily output = 3 × 55 = 165 m^{2}/day.\n\nDuration = \\frac{3,300}{165} = 20 working days.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0014",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0014-c",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A crew places 30 m^{2} of formwork per day. There are 900 m^{2} to place and 2 crews working. How many working days are needed?",
+  "answer": {
+   "value": 15.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "days"
+  },
+  "eli5": "Activity duration = quantity of work / (crew productivity × number of crews). Durations found this way feed the schedule network.",
+  "solution": "Daily output = 2 × 30 = 60 m^{2}/day.\n\nDuration = \\frac{900}{60} = 15 working days.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0014",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0014-d",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A crew places 80 m^{2} of formwork per day. There are 2,400 m^{2} to place and 4 crews working. How many working days are needed?",
+  "answer": {
+   "value": 7.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "days"
+  },
+  "eli5": "Activity duration = quantity of work / (crew productivity × number of crews). Durations found this way feed the schedule network.",
+  "solution": "Daily output = 4 × 80 = 320 m^{2}/day.\n\nDuration = \\frac{2,400}{320} = 7.5 working days.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0014",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  },
  {
   "id": "construction-0015",
@@ -581,24 +1839,131 @@
   "units": null,
   "stem": "A job needs 850 m^{3} of excavation at a direct cost of $12 per m^{3}. Overhead and profit add 15%. What is the bid price for this item?",
   "answer": {
-   "value": 11730,
+   "value": 11730.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "$"
   },
-  "eli5": "Start with what the work costs to do, then add the contractor's share for running the business and making a profit.",
-  "solution": "Direct cost = 850(12) = $10,200.\n\nBid price = 10,200(1.15) = $11,730.",
+  "eli5": "A bid item price is its direct cost (quantity × unit cost) plus a markup that covers overhead and profit.",
+  "solution": "Direct cost = 850 × 12 = $10,200.\n\nBid price = 10,200 × 1.15 = $11,730.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "construction-0015",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0015-b",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A job needs 1,200 m^{3} of excavation at a direct cost of $9.5 per m^{3}. Overhead and profit add 12%. What is the bid price for this item?",
+  "answer": {
+   "value": 12768.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "A bid item price is its direct cost (quantity × unit cost) plus a markup that covers overhead and profit.",
+  "solution": "Direct cost = 1,200 × 9.5 = $11,400.\n\nBid price = 11,400 × 1.12 = $12,768.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0015",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0015-c",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A job needs 430 m^{3} of excavation at a direct cost of $28 per m^{3}. Overhead and profit add 20%. What is the bid price for this item?",
+  "answer": {
+   "value": 14448.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "A bid item price is its direct cost (quantity × unit cost) plus a markup that covers overhead and profit.",
+  "solution": "Direct cost = 430 × 28 = $12,040.\n\nBid price = 12,040 × 1.20 = $14,448.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0015",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0015-d",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A job needs 2,500 m^{3} of excavation at a direct cost of $6.4 per m^{3}. Overhead and profit add 18%. What is the bid price for this item?",
+  "answer": {
+   "value": 18880.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "A bid item price is its direct cost (quantity × unit cost) plus a markup that covers overhead and profit.",
+  "solution": "Direct cost = 2,500 × 6.4 = $16,000.\n\nBid price = 16,000 × 1.18 = $18,880.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0015",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  },
  {
   "id": "construction-0016",
@@ -628,18 +1993,164 @@
    }
   ],
   "answer": "b",
-  "eli5": "Forms are the mould for wet concrete. A wall needs a mould on both sides.",
-  "solution": "Area per face = 10(3) = 30 m^{2}.\n\nBoth faces = 60 m^{2}.",
+  "eli5": "Formwork is measured as contact area, the surface of concrete that touches the forms. A wall has two faces, so the contact area is 2 × length × height (ends ignored here).",
+  "solution": "Contact area = 2 × 10 × 3 = 60 m^{2}.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "construction-0016",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0016-b",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete wall is 18 m long and 2.4 m high. What area of formwork is needed to form both faces?",
+  "options": [
+   {
+    "id": "a",
+    "text": "43.2 m^{2}"
+   },
+   {
+    "id": "b",
+    "text": "86.4 m^{2}"
+   },
+   {
+    "id": "c",
+    "text": "129.6 m^{2}"
+   },
+   {
+    "id": "d",
+    "text": "172.8 m^{2}"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Formwork is measured as contact area, the surface of concrete that touches the forms. A wall has two faces, so the contact area is 2 × length × height (ends ignored here).",
+  "solution": "Contact area = 2 × 18 × 2.4 = 86.4 m^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0016",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0016-c",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete wall is 7.5 m long and 4 m high. What area of formwork is needed to form both faces?",
+  "options": [
+   {
+    "id": "a",
+    "text": "30 m^{2}"
+   },
+   {
+    "id": "b",
+    "text": "60 m^{2}"
+   },
+   {
+    "id": "c",
+    "text": "90 m^{2}"
+   },
+   {
+    "id": "d",
+    "text": "120 m^{2}"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Formwork is measured as contact area, the surface of concrete that touches the forms. A wall has two faces, so the contact area is 2 × length × height (ends ignored here).",
+  "solution": "Contact area = 2 × 7.5 × 4 = 60 m^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0016",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "construction-0016-d",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete wall is 24 m long and 3.6 m high. What area of formwork is needed to form both faces?",
+  "options": [
+   {
+    "id": "a",
+    "text": "86.4 m^{2}"
+   },
+   {
+    "id": "b",
+    "text": "172.8 m^{2}"
+   },
+   {
+    "id": "c",
+    "text": "259.2 m^{2}"
+   },
+   {
+    "id": "d",
+    "text": "345.6 m^{2}"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Formwork is measured as contact area, the surface of concrete that touches the forms. A wall has two faces, so the contact area is 2 × length × height (ends ignored here).",
+  "solution": "Contact area = 2 × 24 × 3.6 = 172.8 m^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0016",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  }
 ]

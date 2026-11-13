@@ -16,10 +16,13 @@ One JSON object per question, stored in `site/content/questions/<topic>.json` (a
 | `stem` | rich text | The question. |
 | `figure` | object or null | `{viewBox, svg, alt, caption}` for an inline drawing, or `{src, alt, caption}` for a file under `content/figures/`. |
 | `answer` | varies | See each format. |
-| `eli5` | rich text | The idea in plain words, one or two sentences, with an everyday comparison. Shown before the worked solution. Required. |
+| `eli5` | rich text | The concept: the governing principle and formula, stated plainly and technically in a few sentences. Shown under *Concept*, before the solution. Required. (The field keeps its old name.) |
+| `family`, `version`, `versions` | string, number, number | Optional. Versions of one question type share `family` (the id of version 1) and differ in their numbers. Ids are `<family>`, `<family>-b`, `-c`, `-d`. Mastery is tracked per family. |
+| `solutionFigure` | object | Optional. Same shape as `figure`; shown under the solution (for example a free-body diagram with the reactions filled in). |
 | `solution` | rich text | Worked solution shown after answering. Required. |
 | `verify` | object | `{method: "computed"}` when `tools/verify_answers.py` recomputes the key from the numbers in the stem. `{method: "reference", basis: "..."}` when the answer is a definition or a rule; `basis` names the source. Required. |
-| `handbook` | array | `[{section, page}]`: where the needed formula sits in the reference handbook. |
+| `handbook` | array | `[{section, page, find}]`: where to check in the reference handbook. `section` and `page` give the chapter and its page range; `find` lists the words to search for in the handbook PDF. Shown under *Check in the handbook*. |
+| `lookup` | boolean | `false` when the question is not a handbook lookup (a rule to know, or plain arithmetic); the site then points to the lesson instead. |
 | `tags` | array of strings | Searchable keywords. |
 | `source` | string | `original`. Questions are written for this site, never copied. |
 

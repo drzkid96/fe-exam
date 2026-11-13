@@ -9,7 +9,9 @@ const fakeDb = () => {
     doc: p => ({id: p.split('/').pop(), path: p, get: async () => snap(p.split('/').pop(), load()[p]), set: async d => { if (window.__failWrites) throw {code: 'unavailable', message: 'forced failure'}; const s = load(); s[p] = JSON.parse(JSON.stringify(d)); save(s); }}),
     collection: p => { const q = {orderBy: () => q, limit: () => q, where: () => q, get: async () => { const s = load(); const docs = Object.keys(s).filter(k => k.startsWith(p + '/') && k.split('/').length === p.split('/').length + 1).map(k => snap(k.split('/').pop(), s[k])); return {docs, size: docs.length, empty: !docs.length}; }}; return q; }
   };
-  window.claude = {use: async n => n === 'db' ? db : null};
+  // stand-in for the "sample" capability: streams one partial, then answers; records what it was sent
+  const sample = async (input, opts) => { window.__asked = input; if (opts && opts.onText) opts.onText({text: 'Partial', delta: 'Partial'}); await new Promise(r => setTimeout(r, 30)); if (window.__askFail) throw {code: 'rate_limited', message: 'slow down'}; return {text: 'Stub **reply** with \\frac{1}{2}.', truncated: false}; };
+  window.claude = {use: async n => n === 'db' ? db : n === 'sample' ? sample : null};
 };
 (async () => {
   const browser = await puppeteer.launch({executablePath: '/usr/bin/google-chrome', headless: 'new', args: ['--no-sandbox']});
@@ -119,6 +121,28 @@ const fakeDb = () => {
       return {bad, n: S.questions.length, real: S.model.real, samples: S.questions.filter(q => q.sample).length};
     });
     ok(res.bad.length === 0, 'real content: ' + res.bad.join(' | '));
+    // Explain further with Claude: answer one question, ask, and check the reply, the context sent and the log entry
+    await p2.evaluate(() => { location.hash = 'q-statics-0002'; }); await new Promise(r => setTimeout(r, 200));
+    await p2.evaluate(() => { document.querySelector('[data-act="opt"]').click(); }); await p2.evaluate(() => { document.querySelector('[data-act="check"]').click(); });
+    await new Promise(r => setTimeout(r, 150));
+    const ask1 = await p2.evaluate(() => ({on: document.body.classList.contains('has-claude'), box: !!document.querySelector('.ask'), chips: document.querySelectorAll('.ask [data-act="ask"]').length, sfig: !!document.querySelector('.fb .sol svg'), heads: [...document.querySelectorAll('.fb .sol h3')].map(e => e.textContent)}));
+    ok(ask1.on && ask1.box && ask1.chips >= 3, 'the Claude panel shows after an answer');
+    ok(ask1.sfig && ask1.heads.join('|') === 'Concept|Solution with the numbers|Check in the handbook', 'feedback shows the concept, the calculation and a solution figure');
+    ok(await p2.evaluate(() => /Statics<\/strong>, pages 107.113/.test(document.querySelector('.fb').innerHTML) && /equilibrium requirements/.test(document.querySelector('.fb').innerHTML)), 'feedback says where to look in the handbook');
+    await p2.evaluate(() => { document.querySelector('.ask [data-act="ask"][data-kind="steps"]').click(); }); await new Promise(r => setTimeout(r, 300));
+    const ask2 = await p2.evaluate(() => ({thread: document.querySelector('.ask .ask-thread').innerHTML, sent: window.__asked, logged: Object.keys(JSON.parse(localStorage.getItem('__fakedb') || '{}')).filter(k => k.startsWith('asks/')).length, entry: Object.entries(JSON.parse(localStorage.getItem('__fakedb') || '{}')).filter(e => e[0].startsWith('asks/')).map(e => e[1])[0]}));
+    ok(/<strong>reply<\/strong>/.test(ask2.thread) && /frac/.test(ask2.thread) && !/Thinking/.test(ask2.thread), 'the reply is rendered in the thread');
+    ok(Array.isArray(ask2.sent) && ask2.sent.length === 1 && /QUESTION statics-0002/.test(ask2.sent[0].content) && /Stored solution/.test(ask2.sent[0].content) && /Student answer/.test(ask2.sent[0].content), 'Claude is sent the question, the solution and the answer given');
+    ok(ask2.logged === 1 && ask2.entry.qid === 'statics-0002' && ask2.entry.kind === 'steps' && ask2.entry.on === 'question', 'the request is written to the study log');
+    await p2.evaluate(() => { const i = document.querySelector('.ask .ask-in'); i.value = 'Why moments about A?'; document.querySelector('.ask [data-act="askSend"]').click(); }); await new Promise(r => setTimeout(r, 300));
+    const ask3 = await p2.evaluate(() => ({n: window.__asked.length, last: window.__asked[window.__asked.length - 1], msgs: document.querySelectorAll('.ask .ask-m').length}));
+    ok(ask3.n === 3 && ask3.last.role === 'user' && ask3.last.content === 'Why moments about A?' && ask3.msgs === 4, 'a typed follow-up carries the thread');
+    await p2.evaluate(() => { window.__askFail = true; document.querySelector('.ask [data-act="ask"][data-kind="formula"]').click(); }); await new Promise(r => setTimeout(r, 300));
+    const ask4 = await p2.evaluate(() => { window.__askFail = false; return {err: (document.querySelector('.ask .ask-err') || {}).textContent || '', busy: document.querySelector('.ask [data-act="askSend"]').disabled}; });
+    ok(/busy/.test(ask4.err) && !ask4.busy, 'a refused call shows a message and frees the panel');
+    await p2.evaluate(() => { location.hash = 'topic-statics'; }); await new Promise(r => setTimeout(r, 200));
+    const ask5 = await p2.evaluate(() => ({lessons: document.querySelectorAll('details.ask').length, figs: document.querySelectorAll('.gsec > figure svg').length}));
+    ok(ask5.lessons >= 7 && ask5.figs >= 5, 'lessons carry figures and a Claude panel');
     ok(res.n > 0 && res.real && res.samples === 0, 'real content is loaded and no samples remain');
     console.log('real content checked:', res.n, 'questions');
     if (shots) {

@@ -32,7 +32,10 @@
   "handbook": [
    {
     "section": "Ethics and Professional Practice",
-    "page": "4–12"
+    "page": "4–12",
+    "find": [
+     "obligation to the public"
+    ]
    }
   ],
   "tags": [
@@ -43,7 +46,8 @@
   "verify": {
    "method": "reference",
    "basis": "FE Reference Handbook 10.0.1, Ethics and Professional Practice, Model Rules of Professional Conduct: obligation to the public"
-  }
+  },
+  "lookup": true
  },
  {
   "id": "ethics-0002",
@@ -78,7 +82,11 @@
   "handbook": [
    {
     "section": "Ethics and Professional Practice",
-    "page": "4–12"
+    "page": "4–12",
+    "find": [
+     "responsible charge",
+     "sign and seal"
+    ]
    }
   ],
   "tags": [
@@ -90,7 +98,8 @@
   "verify": {
    "method": "reference",
    "basis": "FE Reference Handbook 10.0.1, Ethics and Professional Practice, Model Rules of Professional Conduct: signing and sealing; Model Law definition of responsible charge"
-  }
+  },
+  "lookup": true
  },
  {
   "id": "ethics-0003",
@@ -125,7 +134,11 @@
   "handbook": [
    {
     "section": "Ethics and Professional Practice",
-    "page": "4–12"
+    "page": "4–12",
+    "find": [
+     "conflicts of interest",
+     "obligation to employer"
+    ]
    }
   ],
   "tags": [
@@ -136,7 +149,8 @@
   "verify": {
    "method": "reference",
    "basis": "FE Reference Handbook 10.0.1, Ethics and Professional Practice, Model Rules of Professional Conduct: obligation to employers and clients"
-  }
+  },
+  "lookup": true
  },
  {
   "id": "ethics-0004",
@@ -171,7 +185,11 @@
   "handbook": [
    {
     "section": "Ethics and Professional Practice",
-    "page": "4–12"
+    "page": "4–12",
+    "find": [
+     "licensure",
+     "model law"
+    ]
    }
   ],
   "tags": [
@@ -182,7 +200,8 @@
   "verify": {
    "method": "reference",
    "basis": "FE Reference Handbook 10.0.1, Ethics and Professional Practice, Model Law: licensure by comity"
-  }
+  },
+  "lookup": true
  },
  {
   "id": "ethics-0005",
@@ -217,7 +236,8 @@
   "handbook": [
    {
     "section": "Ethics and Professional Practice",
-    "page": "4–12"
+    "page": "4–12",
+    "find": []
    }
   ],
   "tags": [],
@@ -225,7 +245,8 @@
   "verify": {
    "method": "reference",
    "basis": "Common-law principle of professional negligence (standard of care for design professionals)"
-  }
+  },
+  "lookup": false
  },
  {
   "id": "ethics-0006",
@@ -260,7 +281,8 @@
   "handbook": [
    {
     "section": "Ethics and Professional Practice",
-    "page": "4–12"
+    "page": "4–12",
+    "find": []
    }
   ],
   "tags": [],
@@ -268,7 +290,8 @@
   "verify": {
    "method": "reference",
    "basis": "Standard insurance definitions used in construction and design contracts"
-  }
+  },
+  "lookup": false
  },
  {
   "id": "ethics-0007",
@@ -303,7 +326,8 @@
   "handbook": [
    {
     "section": "Ethics and Professional Practice",
-    "page": "4–12"
+    "page": "4–12",
+    "find": []
    }
   ],
   "tags": [],
@@ -311,7 +335,8 @@
   "verify": {
    "method": "reference",
    "basis": "Common-law elements of a valid contract"
-  }
+  },
+  "lookup": false
  },
  {
   "id": "ethics-0008",
@@ -346,7 +371,8 @@
   "handbook": [
    {
     "section": "Ethics and Professional Practice",
-    "page": "4–12"
+    "page": "4–12",
+    "find": []
    }
   ],
   "tags": [],
@@ -354,7 +380,8 @@
   "verify": {
    "method": "reference",
    "basis": "Standard construction contract types"
-  }
+  },
+  "lookup": false
  },
  {
   "id": "ethics-0009",
@@ -389,7 +416,11 @@
   "handbook": [
    {
     "section": "Ethics and Professional Practice",
-    "page": "4–12"
+    "page": "4–12",
+    "find": [
+     "gratuities",
+     "obligation to employer"
+    ]
    }
   ],
   "tags": [],
@@ -397,6 +428,7 @@
   "verify": {
    "method": "reference",
    "basis": "FE Reference Handbook 10.0.1, Ethics and Professional Practice, Model Rules of Professional Conduct: obligation to employers and clients"
-  }
+  },
+  "lookup": true
  }
 ]

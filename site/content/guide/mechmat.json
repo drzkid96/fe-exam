@@ -57,6 +57,12 @@
    "example": {
     "problem": "A simply supported beam spans 4 m with 12 kN/m. Find the maximum shear and moment.",
     "steps": "V_{max} = \\frac{12(4)}{2} = 24 kN at the supports.\n\nM_{max} = \\frac{12(4)^{2}}{8} = 24 kN·m at midspan."
+   },
+   "figure": {
+    "viewBox": "0 0 400 205",
+    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>10 kN/m</text><line x1='50' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='200' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>8 m</text><line x1='50' y1='162' x2='50' y2='130' stroke='#568CBB' stroke-width='3'/><path d='M50 122 L44 134 L56 134 Z' fill='#568CBB'/><text x='62' y='158' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>40 kN</text><line x1='350' y1='162' x2='350' y2='126' stroke='#568CBB' stroke-width='3'/><path d='M350 118 L344 130 L356 130 Z' fill='#568CBB'/><text x='338' y='158' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>40 kN</text>",
+    "alt": "A simply supported beam 8 m long with a uniform load of 10 kN/m.",
+    "caption": "A uniformly loaded simple beam. Shear is largest at the supports; moment is largest at midspan, where shear is zero."
    }
   },
   {
@@ -99,6 +105,12 @@
    "example": {
     "problem": "A 25 mm square bar carries 40 kN in tension. Find the stress.",
     "steps": "A = 625 mm^{2}.\n\nStress = \\frac{40,000}{625} = 64 MPa."
+   },
+   "figure": {
+    "viewBox": "0 0 420 130",
+    "svg": "<rect x='40' y='30' width='14' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='54' y='60' width='240' height='20' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='294' y1='70' x2='342' y2='70' stroke='#00574A' stroke-width='3'/><path d='M350 70 L338 64 L338 76 Z' fill='#00574A'/><text x='356' y='74' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>50 kN</text><text x='174' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>20 mm diameter</text>",
+    "alt": "A 20 mm diameter rod fixed at one end and pulled with 50 kN at the other.",
+    "caption": "Axial stress is force over the cross-sectional area perpendicular to the force."
    }
   },
   {
@@ -135,6 +147,12 @@
    "example": {
     "problem": "A 3 m aluminium bar (E = 70 GPa) with a 200 mm^{2} cross-section carries 14 kN. How much does it stretch?",
     "steps": "Change in length = \\frac{14,000(3,000)}{200(70,000)} = 3.0 mm."
+   },
+   "figure": {
+    "viewBox": "0 0 420 130",
+    "svg": "<rect x='40' y='30' width='14' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='54' y='60' width='240' height='20' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='294' y1='70' x2='342' y2='70' stroke='#00574A' stroke-width='3'/><path d='M350 70 L338 64 L338 76 Z' fill='#00574A'/><text x='356' y='74' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>50 kN</text><line x1='54' y1='104' x2='294' y2='104' stroke='#00242E'/><line x1='54' y1='98' x2='54' y2='110' stroke='#00242E'/><line x1='294' y1='98' x2='294' y2='110' stroke='#00242E'/><text x='174' y='120' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text><text x='174' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>20 mm diameter</text>",
+    "alt": "A 20 mm diameter rod fixed at one end and pulled with 50 kN at the other.",
+    "caption": "Axial deformation of a prismatic bar: P L / (A E)."
    }
   },
   {
@@ -172,6 +190,12 @@
    "example": {
     "problem": "A point has stresses of 60 MPa and 0 MPa on perpendicular faces with 40 MPa shear. Find the principal stresses.",
     "steps": "C = 30 MPa. R = \\sqrt{30^{2} + 40^{2}} = 50 MPa.\n\nPrincipal stresses: 80 MPa and -20 MPa."
+   },
+   "figure": {
+    "viewBox": "0 0 400 202",
+    "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='140' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='188' y1='166' x2='92' y2='38' stroke='#568CBB' stroke-width='2'/><circle cx='188' cy='166' r='4' fill='#568CBB'/><circle cx='92' cy='38' r='4' fill='#568CBB'/><circle cx='140' cy='102.0' r='3' fill='#00242E'/><text x='140' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 50</text><text x='194' y='180' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(80, 40)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+    "alt": "Mohr's circle for normal stresses 80 and 20 MPa with shear stress 40 MPa.",
+    "caption": "Mohr's circle. The centre is the average normal stress, the radius is the maximum in-plane shear stress, and the circle crosses the horizontal axis at the principal stresses."
    }
   }
  ]

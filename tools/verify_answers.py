@@ -123,13 +123,14 @@ CALC = {
     "construction-0004": lambda: 1.5 * (50 * 60 / 30),
 }
 # Further calculations are kept as plain expressions in tools/calc_expr.json, one per question id.
-NAMES = {k: getattr(math, k) for k in ("sqrt", "pi", "sin", "cos", "tan", "atan", "log10", "log", "exp", "erf", "hypot", "comb")}
+NAMES = {k: getattr(math, k) for k in ("sqrt", "pi", "sin", "cos", "tan", "atan", "asin", "acos", "log10", "log", "exp", "erf", "hypot", "comb")}
+NAMES.update(sd=statistics.stdev, psd=statistics.pstdev)
 NAMES.update(rad=math.radians, g=g, gw=gw, simpson=simpson, abs=abs, max=max, min=min, sum=sum, range=range, format=format, int=int)
 _expr_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "calc_expr.json")
 if os.path.exists(_expr_path):
     for _id, _expr in json.load(open(_expr_path)).items():
         assert _id not in CALC, _id
-        CALC[_id] = (lambda e: lambda: eval(e, {"__builtins__": {}}, dict(NAMES)))(_expr)
+        CALC[_id] = (lambda e: lambda: eval(e, dict(NAMES, __builtins__={})))(_expr)   # names go in globals so the version lambdas can see them
 # Spot checks that back up reference-verified items where a number is involved.
 assert abs(math.erf(1 / math.sqrt(2)) - 0.6827) < 1e-4          # math-0005: share within one standard deviation
 

@@ -27,12 +27,15 @@
    }
   ],
   "answer": "b",
-  "eli5": "Slope is how much the line climbs for each step to the right. Find the slope, then walk the line back to x = 0 and see where it lands.",
-  "solution": "Slope m = \\frac{11 - 3}{6 - 2} = 2.\n\nUse y = mx + b at the point (2, 3): 3 = 2(2) + b, so b = -1.",
+  "eli5": "A line is y = m x + b. Find the slope from the two points, m = (y_{2} - y_{1}) / (x_{2} - x_{1}), then solve for b by substituting either point.",
+  "solution": "m = \\frac{11 - 3}{6 - 2} = 2.\n\nb = y_{1} - m x_{1} = 3 - (2)(2) = -1.",
   "handbook": [
    {
     "section": "Mathematics",
-    "page": "34–62"
+    "page": "34–62",
+    "find": [
+     "straight line"
+    ]
    }
   ],
   "tags": [
@@ -43,7 +46,170 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "math-0001",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0001-b",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A straight line passes through the points (1, 5) and (4, 14). What is its y-intercept?",
+  "options": [
+   {
+    "id": "a",
+    "text": "-5"
+   },
+   {
+    "id": "b",
+    "text": "2"
+   },
+   {
+    "id": "c",
+    "text": "4"
+   },
+   {
+    "id": "d",
+    "text": "3"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A line is y = m x + b. Find the slope from the two points, m = (y_{2} - y_{1}) / (x_{2} - x_{1}), then solve for b by substituting either point.",
+  "solution": "m = \\frac{14 - 5}{4 - 1} = 3.\n\nb = y_{1} - m x_{1} = 5 - (3)(1) = 2.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "straight line"
+    ]
+   }
+  ],
+  "tags": [
+   "line",
+   "slope",
+   "intercept"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0001",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0001-c",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A straight line passes through the points (2, 10) and (6, 2). What is its y-intercept?",
+  "options": [
+   {
+    "id": "a",
+    "text": "-10"
+   },
+   {
+    "id": "b",
+    "text": "14"
+   },
+   {
+    "id": "c",
+    "text": "8"
+   },
+   {
+    "id": "d",
+    "text": "-2"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A line is y = m x + b. Find the slope from the two points, m = (y_{2} - y_{1}) / (x_{2} - x_{1}), then solve for b by substituting either point.",
+  "solution": "m = \\frac{2 - 10}{6 - 2} = -2.\n\nb = y_{1} - m x_{1} = 10 - (-2)(2) = 14.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "straight line"
+    ]
+   }
+  ],
+  "tags": [
+   "line",
+   "slope",
+   "intercept"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0001",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0001-d",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A straight line passes through the points (3, 1) and (9, 4). What is its y-intercept?",
+  "options": [
+   {
+    "id": "a",
+    "text": "-1"
+   },
+   {
+    "id": "b",
+    "text": "-0.5"
+   },
+   {
+    "id": "c",
+    "text": "-2"
+   },
+   {
+    "id": "d",
+    "text": "0.5"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A line is y = m x + b. Find the slope from the two points, m = (y_{2} - y_{1}) / (x_{2} - x_{1}), then solve for b by substituting either point.",
+  "solution": "m = \\frac{4 - 1}{9 - 3} = 0.5.\n\nb = y_{1} - m x_{1} = 1 - (0.5)(3) = -0.5.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "straight line"
+    ]
+   }
+  ],
+  "tags": [
+   "line",
+   "slope",
+   "intercept"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0001",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "math-0002",
@@ -55,17 +221,21 @@
   "units": null,
   "stem": "Find the area between the curve y = 3x^{2} and the x-axis from x = 0 to x = 2.",
   "answer": {
-   "value": 8,
+   "value": 8.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "square units"
   },
-  "eli5": "Integration adds up thin vertical strips under the curve. The antiderivative is the running total, so you read it at the end and subtract what it was at the start.",
-  "solution": "The antiderivative of 3x^{2} is x^{3}.\n\nArea = 2^{3} - 0^{3} = 8.",
+  "eli5": "The area under a curve is its definite integral. By the power rule the integral of a x^{2} is a x^{3} / 3; evaluate it at the limits and subtract.",
+  "solution": "Area = \\frac{3 x^{3}}{3} evaluated from 0 to 2 = \\frac{3(2)^{3}}{3} - 0 = 8 square units.",
   "handbook": [
    {
     "section": "Mathematics",
-    "page": "34–62"
+    "page": "34–62",
+    "find": [
+     "integral calculus",
+     "indefinite integrals"
+    ]
    }
   ],
   "tags": [
@@ -75,7 +245,131 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "math-0002",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0002-b",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Find the area between the curve y = 6x^{2} and the x-axis from x = 0 to x = 3.",
+  "answer": {
+   "value": 54.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "square units"
+  },
+  "eli5": "The area under a curve is its definite integral. By the power rule the integral of a x^{2} is a x^{3} / 3; evaluate it at the limits and subtract.",
+  "solution": "Area = \\frac{6 x^{3}}{3} evaluated from 0 to 3 = \\frac{6(3)^{3}}{3} - 0 = 54 square units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "integral calculus",
+     "indefinite integrals"
+    ]
+   }
+  ],
+  "tags": [
+   "integral",
+   "area"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0002",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0002-c",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Find the area between the curve y = 1.5x^{2} and the x-axis from x = 0 to x = 4.",
+  "answer": {
+   "value": 32.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "square units"
+  },
+  "eli5": "The area under a curve is its definite integral. By the power rule the integral of a x^{2} is a x^{3} / 3; evaluate it at the limits and subtract.",
+  "solution": "Area = \\frac{1.5 x^{3}}{3} evaluated from 0 to 4 = \\frac{1.5(4)^{3}}{3} - 0 = 32 square units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "integral calculus",
+     "indefinite integrals"
+    ]
+   }
+  ],
+  "tags": [
+   "integral",
+   "area"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0002",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0002-d",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Find the area between the curve y = 12x^{2} and the x-axis from x = 0 to x = 1.",
+  "answer": {
+   "value": 4.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "square units"
+  },
+  "eli5": "The area under a curve is its definite integral. By the power rule the integral of a x^{2} is a x^{3} / 3; evaluate it at the limits and subtract.",
+  "solution": "Area = \\frac{12 x^{3}}{3} evaluated from 0 to 1 = \\frac{12(1)^{3}}{3} - 0 = 4 square units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "integral calculus",
+     "indefinite integrals"
+    ]
+   }
+  ],
+  "tags": [
+   "integral",
+   "area"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0002",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "math-0003",
@@ -110,7 +404,10 @@
   "handbook": [
    {
     "section": "Mathematics",
-    "page": "34–62"
+    "page": "34–62",
+    "find": [
+     "dot product"
+    ]
    }
   ],
   "tags": [
@@ -120,7 +417,8 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "lookup": true
  },
  {
   "id": "math-0004",
@@ -150,12 +448,16 @@
    }
   ],
   "answer": "b",
-  "eli5": "Standard deviation is the typical distance of each value from the average. For a sample you divide by one less than the count, because a small sample tends to understate the spread.",
-  "solution": "Mean = \\frac{2 + 4 + 4 + 6 + 9}{5} = 5.\n\nSquared distances from the mean: 9, 1, 1, 1 and 16, which add to 28.\n\ns = \\sqrt{\\frac{28}{5 - 1}} = \\sqrt{7} = 2.65.\n\nDividing by 5 instead of 4 gives 2.37, which is the population value.",
+  "eli5": "The sample standard deviation divides the sum of squared deviations from the mean by n - 1, not n, because the mean was estimated from the same data. Dividing by n gives the population standard deviation, which is always smaller.",
+  "solution": "Mean = 5.\n\nSum of squared deviations = 28.0.\n\ns = \\sqrt{\\frac{28.0}{5 - 1}} = \\sqrt{7.00} = 2.65.",
   "handbook": [
    {
     "section": "Engineering Probability and Statistics",
-    "page": "63–84"
+    "page": "63–84",
+    "find": [
+     "standard deviation",
+     "dispersion"
+    ]
    }
   ],
   "tags": [
@@ -165,7 +467,170 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "math-0004",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0004-b",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A sample of five measurements is 3, 5, 8, 10 and 14. What is the sample standard deviation?",
+  "options": [
+   {
+    "id": "a",
+    "text": "3.85"
+   },
+   {
+    "id": "b",
+    "text": "4.30"
+   },
+   {
+    "id": "c",
+    "text": "14.80"
+   },
+   {
+    "id": "d",
+    "text": "18.50"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The sample standard deviation divides the sum of squared deviations from the mean by n - 1, not n, because the mean was estimated from the same data. Dividing by n gives the population standard deviation, which is always smaller.",
+  "solution": "Mean = 8.\n\nSum of squared deviations = 74.0.\n\ns = \\sqrt{\\frac{74.0}{5 - 1}} = \\sqrt{18.50} = 4.30.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "standard deviation",
+     "dispersion"
+    ]
+   }
+  ],
+  "tags": [
+   "standard deviation",
+   "statistics"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0004",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0004-c",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A sample of five measurements is 10, 12, 15, 18 and 25. What is the sample standard deviation?",
+  "options": [
+   {
+    "id": "a",
+    "text": "5.25"
+   },
+   {
+    "id": "b",
+    "text": "5.87"
+   },
+   {
+    "id": "c",
+    "text": "27.60"
+   },
+   {
+    "id": "d",
+    "text": "34.50"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The sample standard deviation divides the sum of squared deviations from the mean by n - 1, not n, because the mean was estimated from the same data. Dividing by n gives the population standard deviation, which is always smaller.",
+  "solution": "Mean = 16.\n\nSum of squared deviations = 138.0.\n\ns = \\sqrt{\\frac{138.0}{5 - 1}} = \\sqrt{34.50} = 5.87.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "standard deviation",
+     "dispersion"
+    ]
+   }
+  ],
+  "tags": [
+   "standard deviation",
+   "statistics"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0004",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0004-d",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A sample of five measurements is 1, 2, 6, 7 and 9. What is the sample standard deviation?",
+  "options": [
+   {
+    "id": "a",
+    "text": "3.03"
+   },
+   {
+    "id": "b",
+    "text": "3.39"
+   },
+   {
+    "id": "c",
+    "text": "9.20"
+   },
+   {
+    "id": "d",
+    "text": "11.50"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The sample standard deviation divides the sum of squared deviations from the mean by n - 1, not n, because the mean was estimated from the same data. Dividing by n gives the population standard deviation, which is always smaller.",
+  "solution": "Mean = 5.\n\nSum of squared deviations = 46.0.\n\ns = \\sqrt{\\frac{46.0}{5 - 1}} = \\sqrt{11.50} = 3.39.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "standard deviation",
+     "dispersion"
+    ]
+   }
+  ],
+  "tags": [
+   "standard deviation",
+   "statistics"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0004",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "math-0005",
@@ -208,7 +673,10 @@
   "handbook": [
    {
     "section": "Engineering Probability and Statistics",
-    "page": "63–84"
+    "page": "63–84",
+    "find": [
+     "normal distribution"
+    ]
    }
   ],
   "tags": [
@@ -219,7 +687,8 @@
   "verify": {
    "method": "reference",
    "basis": "FE Reference Handbook 10.0.1, Engineering Probability and Statistics, normal distribution. The 68% figure is also recomputed from the normal curve."
-  }
+  },
+  "lookup": true
  },
  {
   "id": "math-0006",
@@ -249,23 +718,177 @@
    }
   ],
   "answer": "c",
-  "eli5": "Rearranging the equation shows where the centre is. The leftover number on the other side is the radius squared.",
-  "solution": "Complete the square: (x - 3)^{2} + (y + 4)^{2} = 9 + 16 = 25.\n\nRadius = \\sqrt{25} = 5.",
+  "eli5": "Complete the square in x and in y to reach the standard form (x - h)^{2} + (y - k)^{2} = r^{2}. For x^{2} + y^{2} + Dx + Ey = 0 the centre is (-D/2, -E/2) and r^{2} = (D/2)^{2} + (E/2)^{2}.",
+  "solution": "Centre = (3, -4).\n\nr^{2} = (-3)^{2} + (4)^{2} = 25, so r = 5.",
   "handbook": [
    {
     "section": "Mathematics",
-    "page": "34–62"
-   },
-   {
-    "section": "Engineering Probability and Statistics",
-    "page": "63–84"
+    "page": "34–62",
+    "find": [
+     "conic sections",
+     "circle"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "math-0006",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0006-b",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A circle has the equation x^{2} + y^{2} + 10x - 24y = 0. What is its radius?",
+  "options": [
+   {
+    "id": "a",
+    "text": "5"
+   },
+   {
+    "id": "b",
+    "text": "12"
+   },
+   {
+    "id": "c",
+    "text": "13"
+   },
+   {
+    "id": "d",
+    "text": "169"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Complete the square in x and in y to reach the standard form (x - h)^{2} + (y - k)^{2} = r^{2}. For x^{2} + y^{2} + Dx + Ey = 0 the centre is (-D/2, -E/2) and r^{2} = (D/2)^{2} + (E/2)^{2}.",
+  "solution": "Centre = (-5, 12).\n\nr^{2} = (5)^{2} + (-12)^{2} = 169, so r = 13.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "conic sections",
+     "circle"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0006",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0006-c",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A circle has the equation x^{2} + y^{2} - 16x + 12y = 0. What is its radius?",
+  "options": [
+   {
+    "id": "a",
+    "text": "8"
+   },
+   {
+    "id": "b",
+    "text": "6"
+   },
+   {
+    "id": "c",
+    "text": "10"
+   },
+   {
+    "id": "d",
+    "text": "100"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Complete the square in x and in y to reach the standard form (x - h)^{2} + (y - k)^{2} = r^{2}. For x^{2} + y^{2} + Dx + Ey = 0 the centre is (-D/2, -E/2) and r^{2} = (D/2)^{2} + (E/2)^{2}.",
+  "solution": "Centre = (8, -6).\n\nr^{2} = (-8)^{2} + (6)^{2} = 100, so r = 10.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "conic sections",
+     "circle"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0006",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0006-d",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A circle has the equation x^{2} + y^{2} - 8x - 6y = 0. What is its radius?",
+  "options": [
+   {
+    "id": "a",
+    "text": "4"
+   },
+   {
+    "id": "b",
+    "text": "3"
+   },
+   {
+    "id": "c",
+    "text": "5"
+   },
+   {
+    "id": "d",
+    "text": "25"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Complete the square in x and in y to reach the standard form (x - h)^{2} + (y - k)^{2} = r^{2}. For x^{2} + y^{2} + Dx + Ey = 0 the centre is (-D/2, -E/2) and r^{2} = (D/2)^{2} + (E/2)^{2}.",
+  "solution": "Centre = (4, 3).\n\nr^{2} = (-4)^{2} + (-3)^{2} = 25, so r = 5.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "conic sections",
+     "circle"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0006",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "math-0007",
@@ -277,28 +900,139 @@
   "units": null,
   "stem": "What is the straight-line distance between the points (1, 2) and (7, 10)?",
   "answer": {
-   "value": 10,
+   "value": 10.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "units"
   },
-  "eli5": "Draw a right triangle between the two points. The distance is its long side.",
-  "solution": "d = \\sqrt{(7 - 1)^{2} + (10 - 2)^{2}} = \\sqrt{36 + 64} = 10.",
+  "eli5": "The distance formula is the Pythagorean theorem applied to the differences in x and y: d = square root of ((x_{2} - x_{1})^{2} + (y_{2} - y_{1})^{2}).",
+  "solution": "d = \\sqrt{(7 - (1))^{2} + (10 - (2))^{2}} = \\sqrt{36 + 64} = 10 units.",
   "handbook": [
    {
     "section": "Mathematics",
-    "page": "34–62"
-   },
-   {
-    "section": "Engineering Probability and Statistics",
-    "page": "63–84"
+    "page": "34–62",
+    "find": [
+     "distance between two points"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "math-0007",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0007-b",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the straight-line distance between the points (2, -1) and (7, 11)?",
+  "answer": {
+   "value": 13.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "units"
+  },
+  "eli5": "The distance formula is the Pythagorean theorem applied to the differences in x and y: d = square root of ((x_{2} - x_{1})^{2} + (y_{2} - y_{1})^{2}).",
+  "solution": "d = \\sqrt{(7 - (2))^{2} + (11 - (-1))^{2}} = \\sqrt{25 + 144} = 13 units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "distance between two points"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0007",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0007-c",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the straight-line distance between the points (-3, 4) and (5, -2)?",
+  "answer": {
+   "value": 10.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "units"
+  },
+  "eli5": "The distance formula is the Pythagorean theorem applied to the differences in x and y: d = square root of ((x_{2} - x_{1})^{2} + (y_{2} - y_{1})^{2}).",
+  "solution": "d = \\sqrt{(5 - (-3))^{2} + (-2 - (4))^{2}} = \\sqrt{64 + 36} = 10 units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "distance between two points"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0007",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0007-d",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the straight-line distance between the points (0, 3) and (8, 18)?",
+  "answer": {
+   "value": 17.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "units"
+  },
+  "eli5": "The distance formula is the Pythagorean theorem applied to the differences in x and y: d = square root of ((x_{2} - x_{1})^{2} + (y_{2} - y_{1})^{2}).",
+  "solution": "d = \\sqrt{(8 - (0))^{2} + (18 - (3))^{2}} = \\sqrt{64 + 225} = 17 units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "distance between two points"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0007",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "math-0008",
@@ -312,7 +1046,7 @@
   "options": [
    {
     "id": "a",
-    "text": "4.36 m"
+    "text": "3.66 m"
    },
    {
     "id": "b",
@@ -328,23 +1062,193 @@
    }
   ],
   "answer": "b",
-  "eli5": "The law of cosines is the right-triangle rule with a correction for triangles that are not right-angled.",
-  "solution": "c^{2} = 5^{2} + 7^{2} - 2(5)(7) cos 60° = 25 + 49 - 35 = 39.\n\nc = \\sqrt{39} = 6.24 m.",
+  "eli5": "The law of cosines extends the Pythagorean theorem to any triangle: c^{2} = a^{2} + b^{2} - 2 a b cos(C), where C is the angle between sides a and b. For C = 90° the last term vanishes.",
+  "solution": "c^{2} = 5^{2} + 7^{2} - 2(5)(7) cos 60° = 74 - (35.00) = 39.00.\n\nc = 6.24 m.",
   "handbook": [
    {
     "section": "Mathematics",
-    "page": "34–62"
-   },
-   {
-    "section": "Engineering Probability and Statistics",
-    "page": "63–84"
+    "page": "34–62",
+    "find": [
+     "law of cosines"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "math-0008",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M70 150 L264 150 L139 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='167' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>7 m</text><text x='97' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>5 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>60°</text>",
+   "alt": "A triangle with sides of 7 m and 5 m meeting at 60°."
+  },
+  "lookup": true
+ },
+ {
+  "id": "math-0008-b",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Two sides of a triangle are 8 m and 11 m long and meet at an angle of 40°. How long is the third side?",
+  "options": [
+   {
+    "id": "a",
+    "text": "8.48 m"
+   },
+   {
+    "id": "b",
+    "text": "7.08 m"
+   },
+   {
+    "id": "c",
+    "text": "13.60 m"
+   },
+   {
+    "id": "d",
+    "text": "17.88 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The law of cosines extends the Pythagorean theorem to any triangle: c^{2} = a^{2} + b^{2} - 2 a b cos(C), where C is the angle between sides a and b. For C = 90° the last term vanishes.",
+  "solution": "c^{2} = 8^{2} + 11^{2} - 2(8)(11) cos 40° = 185 - (134.82) = 50.18.\n\nc = 7.08 m.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "law of cosines"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0008",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M70 150 L327 150 L213 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='198' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>11 m</text><text x='134' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>8 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>40°</text>",
+   "alt": "A triangle with sides of 11 m and 8 m meeting at 40°."
+  },
+  "lookup": true
+ },
+ {
+  "id": "math-0008-c",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Two sides of a triangle are 6 m and 9 m long and meet at an angle of 75°. How long is the third side?",
+  "options": [
+   {
+    "id": "a",
+    "text": "3.56 m"
+   },
+   {
+    "id": "b",
+    "text": "9.44 m"
+   },
+   {
+    "id": "c",
+    "text": "10.82 m"
+   },
+   {
+    "id": "d",
+    "text": "12.04 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The law of cosines extends the Pythagorean theorem to any triangle: c^{2} = a^{2} + b^{2} - 2 a b cos(C), where C is the angle between sides a and b. For C = 90° the last term vanishes.",
+  "solution": "c^{2} = 6^{2} + 9^{2} - 2(6)(9) cos 75° = 117 - (27.95) = 89.05.\n\nc = 9.44 m.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "law of cosines"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0008",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M70 150 L256 150 L102 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='163' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>9 m</text><text x='78' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>6 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>75°</text>",
+   "alt": "A triangle with sides of 9 m and 6 m meeting at 75°."
+  },
+  "lookup": true
+ },
+ {
+  "id": "math-0008-d",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Two sides of a triangle are 10 m and 14 m long and meet at an angle of 110°. How long is the third side?",
+  "options": [
+   {
+    "id": "a",
+    "text": "5.73 m"
+   },
+   {
+    "id": "b",
+    "text": "19.79 m"
+   },
+   {
+    "id": "c",
+    "text": "17.20 m"
+   },
+   {
+    "id": "d",
+    "text": "14.15 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The law of cosines extends the Pythagorean theorem to any triangle: c^{2} = a^{2} + b^{2} - 2 a b cos(C), where C is the angle between sides a and b. For C = 90° the last term vanishes.",
+  "solution": "c^{2} = 10^{2} + 14^{2} - 2(10)(14) cos 110° = 296 - (-95.77) = 391.77.\n\nc = 19.79 m.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "law of cosines"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0008",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M70 150 L249 150 L26 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='159' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>14 m</text><text x='40' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>10 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>110°</text>",
+   "alt": "A triangle with sides of 14 m and 10 m meeting at 110°."
+  },
+  "lookup": true
  },
  {
   "id": "math-0009",
@@ -374,23 +1278,177 @@
    }
   ],
   "answer": "b",
-  "eli5": "The derivative tells you how steep the curve is at one spot, like the grade of a road at one station.",
-  "solution": "\\frac{dy}{dx} = 3x^{2} - 6. At x = 2: 3(4) - 6 = 6.\n\nThe value -4 is the height of the curve there, not its slope.",
+  "eli5": "The slope of a curve at a point is the value of its derivative there. By the power rule, d/dx of x^{3} is 3x^{2} and d/dx of k x is k.",
+  "solution": "dy/dx = 3x^{2} - 6.\n\nAt x = 2: 3(2)^{2} - 6 = 12 - 6 = 6.",
   "handbook": [
    {
     "section": "Mathematics",
-    "page": "34–62"
-   },
-   {
-    "section": "Engineering Probability and Statistics",
-    "page": "63–84"
+    "page": "34–62",
+    "find": [
+     "differential calculus",
+     "derivative"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "math-0009",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0009-b",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the slope of the curve y = x^{3} - 4x at x = 3?",
+  "options": [
+   {
+    "id": "a",
+    "text": "15"
+   },
+   {
+    "id": "b",
+    "text": "23"
+   },
+   {
+    "id": "c",
+    "text": "27"
+   },
+   {
+    "id": "d",
+    "text": "31"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The slope of a curve at a point is the value of its derivative there. By the power rule, d/dx of x^{3} is 3x^{2} and d/dx of k x is k.",
+  "solution": "dy/dx = 3x^{2} - 4.\n\nAt x = 3: 3(3)^{2} - 4 = 27 - 4 = 23.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "differential calculus",
+     "derivative"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0009",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0009-c",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the slope of the curve y = x^{3} - 10x at x = 2?",
+  "options": [
+   {
+    "id": "a",
+    "text": "-12"
+   },
+   {
+    "id": "b",
+    "text": "2"
+   },
+   {
+    "id": "c",
+    "text": "12"
+   },
+   {
+    "id": "d",
+    "text": "22"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The slope of a curve at a point is the value of its derivative there. By the power rule, d/dx of x^{3} is 3x^{2} and d/dx of k x is k.",
+  "solution": "dy/dx = 3x^{2} - 10.\n\nAt x = 2: 3(2)^{2} - 10 = 12 - 10 = 2.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "differential calculus",
+     "derivative"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0009",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0009-d",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the slope of the curve y = x^{3} - 2x at x = 1?",
+  "options": [
+   {
+    "id": "a",
+    "text": "-1"
+   },
+   {
+    "id": "b",
+    "text": "1"
+   },
+   {
+    "id": "c",
+    "text": "3"
+   },
+   {
+    "id": "d",
+    "text": "5"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The slope of a curve at a point is the value of its derivative there. By the power rule, d/dx of x^{3} is 3x^{2} and d/dx of k x is k.",
+  "solution": "dy/dx = 3x^{2} - 2.\n\nAt x = 1: 3(1)^{2} - 2 = 3 - 2 = 1.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "differential calculus",
+     "derivative"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0009",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "math-0010",
@@ -402,28 +1460,139 @@
   "units": null,
   "stem": "What is the maximum value of f(x) = -2x^{2} + 12x + 5?",
   "answer": {
-   "value": 23,
+   "value": 23.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": ""
   },
-  "eli5": "At the very top of a hill the ground is flat. Find where the slope is zero, then read the height there.",
-  "solution": "f'(x) = -4x + 12 = 0 gives x = 3.\n\nf(3) = -2(9) + 12(3) + 5 = 23.",
+  "eli5": "A maximum or minimum occurs where the first derivative is zero. The second derivative tells which: negative means a maximum. Substitute the critical x back into the function to get the value.",
+  "solution": "f'(x) = -4x + 12 = 0, so x = \\frac{12}{4} = 3.\n\nf''(x) = -4, negative, so this is a maximum.\n\nf(3) = -2(3)^{2} + 12(3) + 5 = 23.",
   "handbook": [
    {
     "section": "Mathematics",
-    "page": "34–62"
-   },
-   {
-    "section": "Engineering Probability and Statistics",
-    "page": "63–84"
+    "page": "34–62",
+    "find": [
+     "test for a maximum"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "math-0010",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0010-b",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the maximum value of f(x) = -1x^{2} + 8x - 3?",
+  "answer": {
+   "value": 13.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "A maximum or minimum occurs where the first derivative is zero. The second derivative tells which: negative means a maximum. Substitute the critical x back into the function to get the value.",
+  "solution": "f'(x) = -2x + 8 = 0, so x = \\frac{8}{2} = 4.\n\nf''(x) = -2, negative, so this is a maximum.\n\nf(4) = -1(4)^{2} + 8(4) - 3 = 13.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "test for a maximum"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0010",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0010-c",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the maximum value of f(x) = -3x^{2} + 18x + 10?",
+  "answer": {
+   "value": 37.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "A maximum or minimum occurs where the first derivative is zero. The second derivative tells which: negative means a maximum. Substitute the critical x back into the function to get the value.",
+  "solution": "f'(x) = -6x + 18 = 0, so x = \\frac{18}{6} = 3.\n\nf''(x) = -6, negative, so this is a maximum.\n\nf(3) = -3(3)^{2} + 18(3) + 10 = 37.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "test for a maximum"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0010",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0010-d",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the maximum value of f(x) = -0.5x^{2} + 6x + 2?",
+  "answer": {
+   "value": 20.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "A maximum or minimum occurs where the first derivative is zero. The second derivative tells which: negative means a maximum. Substitute the critical x back into the function to get the value.",
+  "solution": "f'(x) = -1x + 6 = 0, so x = \\frac{6}{1} = 6.\n\nf''(x) = -1, negative, so this is a maximum.\n\nf(6) = -0.5(6)^{2} + 6(6) + 2 = 20.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "test for a maximum"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0010",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "math-0011",
@@ -435,28 +1604,139 @@
   "units": "SI",
   "stem": "A vehicle's speed is v(t) = 4t + 2, in m/s. How far does it travel between t = 0 and t = 3 s?",
   "answer": {
-   "value": 24,
+   "value": 24.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "m"
   },
-  "eli5": "Distance is speed added up over time, which is the area under the speed graph.",
-  "solution": "Distance = integral of (4t + 2) dt = 2t^{2} + 2t, from 0 to 3 = 18 + 6 = 24 m.",
+  "eli5": "Distance is the integral of speed over time, the area under the speed-time graph. For a straight-line speed function that area is a trapezoid.",
+  "solution": "s = \\frac{4 t^{2}}{2} + 2 t evaluated from 0 to 3 = \\frac{4(3)^{2}}{2} + 2(3) = 18 + 6 = 24 m.",
   "handbook": [
    {
     "section": "Mathematics",
-    "page": "34–62"
-   },
-   {
-    "section": "Engineering Probability and Statistics",
-    "page": "63–84"
+    "page": "34–62",
+    "find": [
+     "integral calculus"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "math-0011",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0011-b",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A vehicle's speed is v(t) = 3t + 5, in m/s. How far does it travel between t = 0 and t = 4 s?",
+  "answer": {
+   "value": 44.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Distance is the integral of speed over time, the area under the speed-time graph. For a straight-line speed function that area is a trapezoid.",
+  "solution": "s = \\frac{3 t^{2}}{2} + 5 t evaluated from 0 to 4 = \\frac{3(4)^{2}}{2} + 5(4) = 24 + 20 = 44 m.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "integral calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0011",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0011-c",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A vehicle's speed is v(t) = 6t + 1, in m/s. How far does it travel between t = 0 and t = 2 s?",
+  "answer": {
+   "value": 14.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Distance is the integral of speed over time, the area under the speed-time graph. For a straight-line speed function that area is a trapezoid.",
+  "solution": "s = \\frac{6 t^{2}}{2} + 1 t evaluated from 0 to 2 = \\frac{6(2)^{2}}{2} + 1(2) = 12 + 2 = 14 m.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "integral calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0011",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0011-d",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A vehicle's speed is v(t) = 2.5t + 4, in m/s. How far does it travel between t = 0 and t = 6 s?",
+  "answer": {
+   "value": 69.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Distance is the integral of speed over time, the area under the speed-time graph. For a straight-line speed function that area is a trapezoid.",
+  "solution": "s = \\frac{2.5 t^{2}}{2} + 4 t evaluated from 0 to 6 = \\frac{2.5(6)^{2}}{2} + 4(6) = 45 + 24 = 69 m.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "integral calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0011",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "math-0012",
@@ -466,7 +1746,7 @@
   "status": "live",
   "difficulty": 2,
   "units": null,
-  "stem": "For **A** = 2**i** + 3**j** and **B** = 4**i** - **j**, what is the magnitude of the cross product **A** × **B**?",
+  "stem": "For the plane vectors **A** = (2, 3) and **B** = (4, -1), what is the magnitude of the cross product **A** × **B**?",
   "options": [
    {
     "id": "a",
@@ -482,27 +1762,177 @@
    },
    {
     "id": "d",
-    "text": "20"
+    "text": "11"
    }
   ],
   "answer": "c",
-  "eli5": "The cross product measures how much two arrows are not lined up. Its size is the area of the parallelogram they form.",
-  "solution": "For vectors in a plane, |A × B| = |A_{x}B_{y} - A_{y}B_{x}| = |2(-1) - 3(4)| = 14.\n\nThe value 5 is the dot product.",
+  "eli5": "For vectors in the x-y plane the cross product points along z and its magnitude is |A_{x} B_{y} - A_{y} B_{x}|. It equals the area of the parallelogram formed by the two vectors, and |A||B| sin(angle between them).",
+  "solution": "A_{x} B_{y} - A_{y} B_{x} = (2)(-1) - (3)(4) = -2 - (12) = -14.\n\nMagnitude = 14.",
   "handbook": [
    {
     "section": "Mathematics",
-    "page": "34–62"
-   },
-   {
-    "section": "Engineering Probability and Statistics",
-    "page": "63–84"
+    "page": "34–62",
+    "find": [
+     "cross product"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "math-0012",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0012-b",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "For the plane vectors **A** = (3, 1) and **B** = (2, 5), what is the magnitude of the cross product **A** × **B**?",
+  "options": [
+   {
+    "id": "a",
+    "text": "11"
+   },
+   {
+    "id": "b",
+    "text": "17"
+   },
+   {
+    "id": "c",
+    "text": "13"
+   },
+   {
+    "id": "d",
+    "text": "1"
+   }
+  ],
+  "answer": "c",
+  "eli5": "For vectors in the x-y plane the cross product points along z and its magnitude is |A_{x} B_{y} - A_{y} B_{x}|. It equals the area of the parallelogram formed by the two vectors, and |A||B| sin(angle between them).",
+  "solution": "A_{x} B_{y} - A_{y} B_{x} = (3)(5) - (1)(2) = 15 - (2) = 13.\n\nMagnitude = 13.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "cross product"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0012",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0012-c",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "For the plane vectors **A** = (5, 2) and **B** = (1, 4), what is the magnitude of the cross product **A** × **B**?",
+  "options": [
+   {
+    "id": "a",
+    "text": "13"
+   },
+   {
+    "id": "b",
+    "text": "22"
+   },
+   {
+    "id": "c",
+    "text": "18"
+   },
+   {
+    "id": "d",
+    "text": "3"
+   }
+  ],
+  "answer": "c",
+  "eli5": "For vectors in the x-y plane the cross product points along z and its magnitude is |A_{x} B_{y} - A_{y} B_{x}|. It equals the area of the parallelogram formed by the two vectors, and |A||B| sin(angle between them).",
+  "solution": "A_{x} B_{y} - A_{y} B_{x} = (5)(4) - (2)(1) = 20 - (2) = 18.\n\nMagnitude = 18.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "cross product"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0012",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0012-d",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "For the plane vectors **A** = (1, 6) and **B** = (3, 2), what is the magnitude of the cross product **A** × **B**?",
+  "options": [
+   {
+    "id": "a",
+    "text": "15"
+   },
+   {
+    "id": "b",
+    "text": "20"
+   },
+   {
+    "id": "c",
+    "text": "16"
+   },
+   {
+    "id": "d",
+    "text": "9"
+   }
+  ],
+  "answer": "c",
+  "eli5": "For vectors in the x-y plane the cross product points along z and its magnitude is |A_{x} B_{y} - A_{y} B_{x}|. It equals the area of the parallelogram formed by the two vectors, and |A||B| sin(angle between them).",
+  "solution": "A_{x} B_{y} - A_{y} B_{x} = (1)(2) - (6)(3) = 2 - (18) = -16.\n\nMagnitude = 16.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "cross product"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0012",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "math-0013",
@@ -512,30 +1942,141 @@
   "status": "live",
   "difficulty": 2,
   "units": null,
-  "stem": "What is the magnitude of the vector 3**i** - 4**j** + 12**k**?",
+  "stem": "What is the magnitude of the vector with components (3, -4, 12)?",
   "answer": {
-   "value": 13,
+   "value": 13.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": ""
   },
-  "eli5": "The length of an arrow in three dimensions is the right-triangle rule used twice.",
-  "solution": "|V| = \\sqrt{3^{2} + 4^{2} + 12^{2}} = \\sqrt{169} = 13.",
+  "eli5": "The magnitude of a vector is the square root of the sum of the squares of its components, the three-dimensional form of the Pythagorean theorem. Signs do not matter because each component is squared.",
+  "solution": "Magnitude = \\sqrt{(3)^{2} + (-4)^{2} + (12)^{2}} = \\sqrt{9 + 16 + 144} = \\sqrt{169} = 13.",
   "handbook": [
    {
     "section": "Mathematics",
-    "page": "34–62"
-   },
-   {
-    "section": "Engineering Probability and Statistics",
-    "page": "63–84"
+    "page": "34–62",
+    "find": [
+     "vectors"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "math-0013",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0013-b",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the magnitude of the vector with components (2, -6, 9)?",
+  "answer": {
+   "value": 11.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The magnitude of a vector is the square root of the sum of the squares of its components, the three-dimensional form of the Pythagorean theorem. Signs do not matter because each component is squared.",
+  "solution": "Magnitude = \\sqrt{(2)^{2} + (-6)^{2} + (9)^{2}} = \\sqrt{4 + 36 + 81} = \\sqrt{121} = 11.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "vectors"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0013",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0013-c",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the magnitude of the vector with components (4, 4, -7)?",
+  "answer": {
+   "value": 9.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The magnitude of a vector is the square root of the sum of the squares of its components, the three-dimensional form of the Pythagorean theorem. Signs do not matter because each component is squared.",
+  "solution": "Magnitude = \\sqrt{(4)^{2} + (4)^{2} + (-7)^{2}} = \\sqrt{16 + 16 + 49} = \\sqrt{81} = 9.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "vectors"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0013",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0013-d",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the magnitude of the vector with components (6, -2, 3)?",
+  "answer": {
+   "value": 7.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The magnitude of a vector is the square root of the sum of the squares of its components, the three-dimensional form of the Pythagorean theorem. Signs do not matter because each component is squared.",
+  "solution": "Magnitude = \\sqrt{(6)^{2} + (-2)^{2} + (3)^{2}} = \\sqrt{36 + 4 + 9} = \\sqrt{49} = 7.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "vectors"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0013",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "math-0014",
@@ -569,19 +2110,19 @@
   "solution": "There are 36 equally likely outcomes. Six of them total 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1).\n\nP = \\frac{6}{36} = 0.167.",
   "handbook": [
    {
-    "section": "Mathematics",
-    "page": "34–62"
-   },
-   {
     "section": "Engineering Probability and Statistics",
-    "page": "63–84"
+    "page": "63–84",
+    "find": [
+     "probability"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "lookup": true
  },
  {
   "id": "math-0015",
@@ -595,7 +2136,7 @@
   "options": [
    {
     "id": "a",
-    "text": "0.0228"
+    "text": "0.3085"
    },
    {
     "id": "b",
@@ -611,23 +2152,177 @@
    }
   ],
   "answer": "b",
-  "eli5": "Turn the value into a count of standard deviations from the average, then look that count up in the normal table.",
-  "solution": "z = \\frac{26 - 30}{4} = -1.\n\nFrom the unit normal table, the area below z = -1 is 0.1587.",
+  "eli5": "Convert the value to a standard normal variable, z = (x - mean) / standard deviation, then read the cumulative probability from the unit normal table in the handbook. By symmetry, the area below -z equals the area above +z.",
+  "solution": "z = \\frac{26 - 30}{4} = -1.00.\n\nFrom the unit normal table, F(-1.00) = 0.1587.",
   "handbook": [
    {
-    "section": "Mathematics",
-    "page": "34–62"
-   },
-   {
     "section": "Engineering Probability and Statistics",
-    "page": "63–84"
+    "page": "63–84",
+    "find": [
+     "unit normal",
+     "normal distribution"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "math-0015",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0015-b",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Concrete strength is normally distributed with a mean of 40 MPa and a standard deviation of 5 MPa. What fraction of tests fall below 32.5 MPa?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.2266"
+   },
+   {
+    "id": "b",
+    "text": "0.0668"
+   },
+   {
+    "id": "c",
+    "text": "0.4332"
+   },
+   {
+    "id": "d",
+    "text": "0.9332"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Convert the value to a standard normal variable, z = (x - mean) / standard deviation, then read the cumulative probability from the unit normal table in the handbook. By symmetry, the area below -z equals the area above +z.",
+  "solution": "z = \\frac{32.5 - 40}{5} = -1.50.\n\nFrom the unit normal table, F(-1.50) = 0.0668.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "unit normal",
+     "normal distribution"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0015",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0015-c",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Concrete strength is normally distributed with a mean of 25 MPa and a standard deviation of 3 MPa. What fraction of tests fall below 28 MPa?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.6915"
+   },
+   {
+    "id": "b",
+    "text": "0.8413"
+   },
+   {
+    "id": "c",
+    "text": "0.3413"
+   },
+   {
+    "id": "d",
+    "text": "0.1587"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Convert the value to a standard normal variable, z = (x - mean) / standard deviation, then read the cumulative probability from the unit normal table in the handbook. By symmetry, the area below -z equals the area above +z.",
+  "solution": "z = \\frac{28 - 25}{3} = 1.00.\n\nFrom the unit normal table, F(1.00) = 0.8413.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "unit normal",
+     "normal distribution"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0015",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0015-d",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Concrete strength is normally distributed with a mean of 50 MPa and a standard deviation of 8 MPa. What fraction of tests fall below 34 MPa?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.1587"
+   },
+   {
+    "id": "b",
+    "text": "0.0228"
+   },
+   {
+    "id": "c",
+    "text": "0.4772"
+   },
+   {
+    "id": "d",
+    "text": "0.9772"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Convert the value to a standard normal variable, z = (x - mean) / standard deviation, then read the cumulative probability from the unit normal table in the handbook. By symmetry, the area below -z equals the area above +z.",
+  "solution": "z = \\frac{34 - 50}{8} = -2.00.\n\nFrom the unit normal table, F(-2.00) = 0.0228.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "unit normal",
+     "normal distribution"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0015",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "math-0016",
@@ -644,23 +2339,138 @@
    "toleranceType": "rel",
    "unit": ""
   },
-  "eli5": "The best-fit line is the one that leaves the smallest total squared miss. Its slope compares how y moves with x to how x moves by itself.",
-  "solution": "Means: x = 2, y = 3.67.\n\nS_{xy} = (-1)(-1.67) + 0 + (1)(1.33) = 3.0 and S_{xx} = 1 + 0 + 1 = 2.\n\nSlope = \\frac{3.0}{2} = 1.5.",
+  "eli5": "The least-squares line minimises the sum of squared vertical errors. Its slope is S_{xy} / S_{xx}, where S_{xy} is the sum of (x - x-bar)(y - y-bar) and S_{xx} is the sum of (x - x-bar)^{2}.",
+  "solution": "x-bar = 2 and y-bar = 3.667.\n\nS_{xy} = (-1)(2 - 3.667) + 0 + (1)(5 - 3.667) = 3.\n\nS_{xx} = 1 + 0 + 1 = 2.\n\nSlope = \\frac{3}{2} = 1.5.",
   "handbook": [
    {
-    "section": "Mathematics",
-    "page": "34–62"
-   },
-   {
     "section": "Engineering Probability and Statistics",
-    "page": "63–84"
+    "page": "63–84",
+    "find": [
+     "least squares",
+     "linear regression"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "math-0016",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0016-b",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A least-squares line is fitted to the points (1, 1), (2, 4) and (3, 6). What is its slope?",
+  "answer": {
+   "value": 2.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The least-squares line minimises the sum of squared vertical errors. Its slope is S_{xy} / S_{xx}, where S_{xy} is the sum of (x - x-bar)(y - y-bar) and S_{xx} is the sum of (x - x-bar)^{2}.",
+  "solution": "x-bar = 2 and y-bar = 3.667.\n\nS_{xy} = (-1)(1 - 3.667) + 0 + (1)(6 - 3.667) = 5.\n\nS_{xx} = 1 + 0 + 1 = 2.\n\nSlope = \\frac{5}{2} = 2.5.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "least squares",
+     "linear regression"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0016",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0016-c",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A least-squares line is fitted to the points (1, 3), (2, 4) and (3, 9). What is its slope?",
+  "answer": {
+   "value": 3.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The least-squares line minimises the sum of squared vertical errors. Its slope is S_{xy} / S_{xx}, where S_{xy} is the sum of (x - x-bar)(y - y-bar) and S_{xx} is the sum of (x - x-bar)^{2}.",
+  "solution": "x-bar = 2 and y-bar = 5.333.\n\nS_{xy} = (-1)(3 - 5.333) + 0 + (1)(9 - 5.333) = 6.\n\nS_{xx} = 1 + 0 + 1 = 2.\n\nSlope = \\frac{6}{2} = 3.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "least squares",
+     "linear regression"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0016",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0016-d",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A least-squares line is fitted to the points (1, 5), (2, 4) and (3, 2). What is its slope?",
+  "answer": {
+   "value": -1.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The least-squares line minimises the sum of squared vertical errors. Its slope is S_{xy} / S_{xx}, where S_{xy} is the sum of (x - x-bar)(y - y-bar) and S_{xx} is the sum of (x - x-bar)^{2}.",
+  "solution": "x-bar = 2 and y-bar = 3.667.\n\nS_{xy} = (-1)(5 - 3.667) + 0 + (1)(2 - 3.667) = -3.\n\nS_{xx} = 1 + 0 + 1 = 2.\n\nSlope = \\frac{-3}{2} = -1.5.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "least squares",
+     "linear regression"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0016",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "math-0017",
@@ -674,7 +2484,7 @@
   "options": [
    {
     "id": "a",
-    "text": "0.0081"
+    "text": "0.0073"
    },
    {
     "id": "b",
@@ -690,22 +2500,172 @@
    }
   ],
   "answer": "b",
-  "eli5": "Work out the chance of one particular pattern of two bad and three good, then multiply by how many such patterns exist.",
-  "solution": "P = C(5, 2)(0.1)^{2}(0.9)^{3} = 10(0.01)(0.729) = 0.0729.",
+  "eli5": "The binomial distribution gives the probability of exactly x successes in n independent trials: P(x) = C(n, x) p^{x} (1 - p)^{n - x}. The combination C(n, x) counts the ways to choose which trials are the successes.",
+  "solution": "C(5, 2) = 10.\n\nP(2) = 10 × (0.10)^{2} × (0.90)^{3} = 10 × 0.0100 × 0.7290 = 0.0729.",
   "handbook": [
    {
-    "section": "Mathematics",
-    "page": "34–62"
-   },
-   {
     "section": "Engineering Probability and Statistics",
-    "page": "63–84"
+    "page": "63–84",
+    "find": [
+     "binomial distribution"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "math-0017",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0017-b",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Each item from a process has a 20% chance of being defective. In a sample of 6 items, what is the probability that exactly 2 are defective?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.0164"
+   },
+   {
+    "id": "b",
+    "text": "0.2458"
+   },
+   {
+    "id": "c",
+    "text": "0.3932"
+   },
+   {
+    "id": "d",
+    "text": "0.2621"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The binomial distribution gives the probability of exactly x successes in n independent trials: P(x) = C(n, x) p^{x} (1 - p)^{n - x}. The combination C(n, x) counts the ways to choose which trials are the successes.",
+  "solution": "C(6, 2) = 15.\n\nP(2) = 15 × (0.20)^{2} × (0.80)^{4} = 15 × 0.0400 × 0.4096 = 0.2458.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "binomial distribution"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0017",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0017-c",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Each item from a process has a 15% chance of being defective. In a sample of 8 items, what is the probability that exactly 2 are defective?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.0085"
+   },
+   {
+    "id": "b",
+    "text": "0.2376"
+   },
+   {
+    "id": "c",
+    "text": "0.3847"
+   },
+   {
+    "id": "d",
+    "text": "0.2725"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The binomial distribution gives the probability of exactly x successes in n independent trials: P(x) = C(n, x) p^{x} (1 - p)^{n - x}. The combination C(n, x) counts the ways to choose which trials are the successes.",
+  "solution": "C(8, 2) = 28.\n\nP(2) = 28 × (0.15)^{2} × (0.85)^{6} = 28 × 0.0225 × 0.3771 = 0.2376.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "binomial distribution"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0017",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "math-0017-d",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Each item from a process has a 25% chance of being defective. In a sample of 4 items, what is the probability that exactly 2 are defective?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.0352"
+   },
+   {
+    "id": "b",
+    "text": "0.2109"
+   },
+   {
+    "id": "c",
+    "text": "0.4219"
+   },
+   {
+    "id": "d",
+    "text": "0.3164"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The binomial distribution gives the probability of exactly x successes in n independent trials: P(x) = C(n, x) p^{x} (1 - p)^{n - x}. The combination C(n, x) counts the ways to choose which trials are the successes.",
+  "solution": "C(4, 2) = 6.\n\nP(2) = 6 × (0.25)^{2} × (0.75)^{2} = 6 × 0.0625 × 0.5625 = 0.2109.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "binomial distribution"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0017",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  }
 ]

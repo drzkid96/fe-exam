@@ -58,6 +58,12 @@
    "example": {
     "problem": "How much must be invested today at 7% to have $50,000 in 15 years?",
     "steps": "P = \\frac{50,000}{(1.07)^{15}} = \\frac{50,000}{2.759} = $18,122."
+   },
+   "figure": {
+    "viewBox": "0 0 400 160",
+    "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$20,000</text><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>A each period</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+    "alt": "A cash flow diagram over 5 periods, $20,000 at time 0, A at the end of every period.",
+    "caption": "A cash flow diagram: a loan received at time 0 and five equal end-of-year payments."
    }
   },
   {

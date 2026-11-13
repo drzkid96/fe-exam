@@ -60,6 +60,12 @@
    "example": {
     "problem": "A simply supported 5 m beam carries a 20 kN load 2 m from the left support. Find the maximum moment.",
     "steps": "M_{max} = \\frac{20(2)(3)}{5} = 24 kN·m, under the load."
+   },
+   "figure": {
+    "viewBox": "0 0 400 205",
+    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='200' y1='14' x2='200' y2='69' stroke='#00574A' stroke-width='3'/><path d='M200 77 L194 65 L206 65 Z' fill='#00574A'/><text x='226' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>40 kN</text><line x1='50' y1='176' x2='200' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='200' y1='170' x2='200' y2='182' stroke='#00242E'/><text x='125' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><line x1='200' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='200' y1='170' x2='200' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='275' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><line x1='50' y1='162' x2='50' y2='130' stroke='#568CBB' stroke-width='3'/><path d='M50 122 L44 134 L56 134 Z' fill='#568CBB'/><text x='62' y='158' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>20 kN</text><line x1='350' y1='162' x2='350' y2='126' stroke='#568CBB' stroke-width='3'/><path d='M350 118 L344 130 L356 130 Z' fill='#568CBB'/><text x='338' y='158' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>20 kN</text>",
+    "alt": "A simply supported beam 6 m long, a 40 kN point load 3 m from the left end.",
+    "caption": "A central point load on a simple span: reactions of P / 2 and a maximum moment of P L / 4 under the load."
    }
   },
   {
@@ -102,6 +108,12 @@
    "example": {
     "problem": "A simply supported 8 m beam carries 6 kN/m. EI = 40,000 kN·m^{2}. Find the midspan deflection.",
     "steps": "Deflection = \\frac{5(6)(8)^{4}}{384(40,000)} = 0.0080 m = 8.0 mm."
+   },
+   "figure": {
+    "viewBox": "0 0 400 165",
+    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='350' y1='14' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='324' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>12 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text>",
+    "alt": "A cantilever beam 3 m long, a 12 kN point load 3 m from the left end.",
+    "caption": "A cantilever with a tip load deflects P L^{3} / (3 EI) at the free end."
    }
   },
   {
@@ -134,6 +146,12 @@
    "example": {
     "problem": "A pinned-pinned column 3 m long has EI = 500 kN·m^{2}. Find its Euler load.",
     "steps": "P_{cr} = \\frac{π^{2}(500)}{3^{2}} = 548 kN."
+   },
+   "figure": {
+    "viewBox": "0 0 400 170",
+    "svg": "<line x1='200' y1='24' x2='200' y2='150' stroke='#E7E8E8' stroke-width='10'/><path d='M200 24 Q246 87 200 150' fill='none' stroke='#1B795A' stroke-width='3' stroke-dasharray='7 4'/><line x1='160' y1='150' x2='240' y2='150' stroke='#00242E' stroke-width='3'/><line x1='160' y1='24' x2='240' y2='24' stroke='#00242E' stroke-width='3'/><line x1='200' y1='0' x2='200' y2='14' stroke='#00574A' stroke-width='3'/><path d='M200 22 L194 10 L206 10 Z' fill='#00574A'/><text x='250' y='28' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><text x='250' y='154' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><line x1='130' y1='24' x2='130' y2='150' stroke='#00242E'/><text x='122' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>4 m</text><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P</text>",
+    "alt": "A column 4 m long under axial load, pinned at the base and pinned at the top, with its buckled shape dashed.",
+    "caption": "A pinned-pinned column buckles in a single half-wave, so K = 1."
    }
   },
   {
@@ -296,6 +314,12 @@
    "example": {
     "problem": "A beam has b = 300 mm, d = 450 mm, A_{s} = 1,000 mm^{2}, f_{y} = 420 MPa and f'_{c} = 30 MPa. Find M_{n}.",
     "steps": "a = \\frac{1,000(420)}{0.85(30)(300)} = 54.9 mm.\n\nM_{n} = 1,000(420)(450 - 27.5) = 177.5 × 10^{6} N·mm = 177.5 kN·m."
+   },
+   "figure": {
+    "viewBox": "0 0 400 196",
+    "svg": "<rect x='110' y='16' width='78' height='152' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='130' cy='146' r='6' fill='#00242E'/><circle cx='149' cy='146' r='6' fill='#00242E'/><circle cx='168' cy='146' r='6' fill='#00242E'/><text x='149' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>300 mm</text><line x1='94' y1='16' x2='94' y2='146' stroke='#00242E'/><text x='88' y='81' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>d = 500 mm</text><text x='198' y='150' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1,500 mm² steel</text><rect x='110' y='16' width='78' height='23' fill='#1B795A' fill-opacity='.35'/><text x='198' y='31' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>a = 88.2 mm</text>",
+    "alt": "A reinforced concrete beam section 300 mm wide with an effective depth of 500 mm and 1,500 mm^2 of tension steel.",
+    "caption": "A singly reinforced section. The shaded block is the equivalent rectangular stress block of depth a."
    }
   }
  ]

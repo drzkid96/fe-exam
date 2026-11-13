@@ -63,6 +63,12 @@
    "example": {
     "problem": "A car brakes from 30 m/s at 6 m/s^{2}. How far does it travel before stopping?",
     "steps": "0 = 30^{2} - 2(6)s, so s = \\frac{900}{12} = 75 m."
+   },
+   "figure": {
+    "viewBox": "0 0 400 180",
+    "svg": "<line x1='30' y1='140' x2='380' y2='140' stroke='#00242E' stroke-width='2'/><path d='M50 140 Q200 53 350 140' fill='none' stroke='#1B795A' stroke-width='2' stroke-dasharray='7 4'/><line x1='50' y1='140' x2='111' y2='105' stroke='#00574A' stroke-width='3'/><circle cx='111' cy='105' r='5' fill='#00574A'/><text x='99' y='95' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>20 m/s</text><text x='96' y='134' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>30°</text><line x1='50' y1='156' x2='350' y2='156' stroke='#00242E'/><line x1='50' y1='150' x2='50' y2='162' stroke='#00242E'/><line x1='350' y1='150' x2='350' y2='162' stroke='#00242E'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Range</text>",
+    "alt": "The path of a projectile launched from level ground at 20 m/s and 30° above the horizontal.",
+    "caption": "Projectile motion: constant horizontal velocity and constant downward acceleration."
    }
   },
   {
@@ -136,6 +142,12 @@
    "example": {
     "problem": "A 10 kg block is pushed along a smooth floor by a 40 N force. Find its acceleration.",
     "steps": "a = \\frac{F}{m} = \\frac{40}{10} = 4 m/s^{2}."
+   },
+   "figure": {
+    "viewBox": "0 0 400 180",
+    "svg": "<path d='M96 150 L304 150 L304 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(210 84) rotate(-30)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='140' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>30°</text>",
+    "alt": "A block on an incline at 30° to the horizontal.",
+    "caption": "On a frictionless incline only the weight component along the slope, m g sin(angle), accelerates the block."
    }
   },
   {

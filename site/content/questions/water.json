@@ -15,24 +15,27 @@
    },
    {
     "id": "b",
-    "text": "18 cfs"
+    "text": "18.0 cfs"
    },
    {
     "id": "c",
-    "text": "30 cfs"
+    "text": "30.0 cfs"
    },
    {
     "id": "d",
-    "text": "50 cfs"
+    "text": "50.0 cfs"
    }
   ],
   "answer": "b",
-  "eli5": "Rain falls on the whole site, but only part of it runs off. The runoff coefficient is the share that does.",
-  "solution": "Q = CiA = 0.60(2.5)(12) = 18 cfs.\n\nWith intensity in inches per hour and area in acres, the answer comes out in cubic feet per second with no conversion factor.",
+  "eli5": "The rational method estimates peak runoff from a small catchment as Q = C i A. With intensity in in/h and area in acres, Q comes out in cfs with no conversion factor (the factor is 1.008). The intensity is the one for a storm lasting the time of concentration.",
+  "solution": "Q = C i A = 0.60 × 2.5 × 12 = 18.0 cfs.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": [
+     "rational formula"
+    ]
    }
   ],
   "tags": [
@@ -42,7 +45,167 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0001",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0001-b",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A 20 acre parking area has a runoff coefficient of 0.45. The design rainfall intensity is 3.2 in/h. Using the rational method, what is the peak runoff?",
+  "options": [
+   {
+    "id": "a",
+    "text": "9.0 cfs"
+   },
+   {
+    "id": "b",
+    "text": "28.8 cfs"
+   },
+   {
+    "id": "c",
+    "text": "64.0 cfs"
+   },
+   {
+    "id": "d",
+    "text": "142.2 cfs"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The rational method estimates peak runoff from a small catchment as Q = C i A. With intensity in in/h and area in acres, Q comes out in cfs with no conversion factor (the factor is 1.008). The intensity is the one for a storm lasting the time of concentration.",
+  "solution": "Q = C i A = 0.45 × 3.2 × 20 = 28.8 cfs.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "rational formula"
+    ]
+   }
+  ],
+  "tags": [
+   "rational method",
+   "runoff"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0001",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0001-c",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A 8 acre parking area has a runoff coefficient of 0.85. The design rainfall intensity is 1.8 in/h. Using the rational method, what is the peak runoff?",
+  "options": [
+   {
+    "id": "a",
+    "text": "6.8 cfs"
+   },
+   {
+    "id": "b",
+    "text": "12.2 cfs"
+   },
+   {
+    "id": "c",
+    "text": "14.4 cfs"
+   },
+   {
+    "id": "d",
+    "text": "16.9 cfs"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The rational method estimates peak runoff from a small catchment as Q = C i A. With intensity in in/h and area in acres, Q comes out in cfs with no conversion factor (the factor is 1.008). The intensity is the one for a storm lasting the time of concentration.",
+  "solution": "Q = C i A = 0.85 × 1.8 × 8 = 12.2 cfs.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "rational formula"
+    ]
+   }
+  ],
+  "tags": [
+   "rational method",
+   "runoff"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0001",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0001-d",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A 35 acre parking area has a runoff coefficient of 0.30. The design rainfall intensity is 4.0 in/h. Using the rational method, what is the peak runoff?",
+  "options": [
+   {
+    "id": "a",
+    "text": "10.5 cfs"
+   },
+   {
+    "id": "b",
+    "text": "42.0 cfs"
+   },
+   {
+    "id": "c",
+    "text": "140.0 cfs"
+   },
+   {
+    "id": "d",
+    "text": "466.7 cfs"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The rational method estimates peak runoff from a small catchment as Q = C i A. With intensity in in/h and area in acres, Q comes out in cfs with no conversion factor (the factor is 1.008). The intensity is the one for a storm lasting the time of concentration.",
+  "solution": "Q = C i A = 0.30 × 4.0 × 35 = 42.0 cfs.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "rational formula"
+    ]
+   }
+  ],
+  "tags": [
+   "rational method",
+   "runoff"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0001",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "water-0002",
@@ -59,12 +222,16 @@
    "toleranceType": "rel",
    "unit": "m^{3}/s"
   },
-  "eli5": "Water in a channel is pulled downhill by the slope and held back by rubbing on the bed and walls. Manning's equation balances the two to give the speed.",
-  "solution": "Area A = 3(1) = 3 m^{2}. Wetted perimeter P = 3 + 2(1) = 5 m. Hydraulic radius R = \\frac{3}{5} = 0.6 m.\n\nV = \\frac{1}{n}R^{2/3}S^{1/2} = \\frac{1}{0.015}(0.6)^{2/3}(0.001)^{1/2} = 1.50 m/s.\n\nQ = VA = 1.50(3) = 4.50 m^{3}/s.",
+  "eli5": "Manning's equation for uniform open channel flow (SI): Q = (1/n) A R^{2/3} S^{1/2}. The hydraulic radius R is the flow area divided by the wetted perimeter, which counts only the bed and sides in contact with water.",
+  "solution": "A = 3 × 1 = 3.00 m^{2}.\n\nWetted perimeter = 3 + 2(1) = 5.00 m, so R = 3.00 / 5.00 = 0.600 m.\n\nQ = \\frac{1}{0.015}(3.00)(0.600)^{2/3}(0.001)^{1/2} = 4.50 m^{3}/s.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": [
+     "Manning's equation",
+     "hydraulic radius"
+    ]
    }
   ],
   "tags": [
@@ -74,7 +241,151 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0002",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 149",
+   "svg": "<path d='M100 20 L100 123 L300 123 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='57' width='196' height='67' fill='#568CBB' fill-opacity='.35'/><text x='200' y='139' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='308' y='90' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1 m deep</text>",
+   "alt": "A rectangular channel 3 m wide flowing 1 m deep."
+  },
+  "lookup": true
+ },
+ {
+  "id": "water-0002-b",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangular concrete channel is 4 m wide and flows 1.5 m deep on a slope of 0.002. Manning's n is 0.013. What is the discharge?",
+  "answer": {
+   "value": 18.62,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/s"
+  },
+  "eli5": "Manning's equation for uniform open channel flow (SI): Q = (1/n) A R^{2/3} S^{1/2}. The hydraulic radius R is the flow area divided by the wetted perimeter, which counts only the bed and sides in contact with water.",
+  "solution": "A = 4 × 1.5 = 6.00 m^{2}.\n\nWetted perimeter = 4 + 2(1.5) = 7.00 m, so R = 6.00 / 7.00 = 0.857 m.\n\nQ = \\frac{1}{0.013}(6.00)(0.857)^{2/3}(0.002)^{1/2} = 18.62 m^{3}/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Manning's equation",
+     "hydraulic radius"
+    ]
+   }
+  ],
+  "tags": [
+   "manning",
+   "open channel"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0002",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 161",
+   "svg": "<path d='M100 20 L100 135 L300 135 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='60' width='196' height='75' fill='#568CBB' fill-opacity='.35'/><text x='200' y='151' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><text x='308' y='98' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1.5 m deep</text>",
+   "alt": "A rectangular channel 4 m wide flowing 1.5 m deep."
+  },
+  "lookup": true
+ },
+ {
+  "id": "water-0002-c",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangular concrete channel is 2 m wide and flows 0.8 m deep on a slope of 0.0015. Manning's n is 0.015. What is the discharge?",
+  "answer": {
+   "value": 2.41,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/s"
+  },
+  "eli5": "Manning's equation for uniform open channel flow (SI): Q = (1/n) A R^{2/3} S^{1/2}. The hydraulic radius R is the flow area divided by the wetted perimeter, which counts only the bed and sides in contact with water.",
+  "solution": "A = 2 × 0.8 = 1.60 m^{2}.\n\nWetted perimeter = 2 + 2(0.8) = 3.60 m, so R = 1.60 / 3.60 = 0.444 m.\n\nQ = \\frac{1}{0.015}(1.60)(0.444)^{2/3}(0.0015)^{1/2} = 2.41 m^{3}/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Manning's equation",
+     "hydraulic radius"
+    ]
+   }
+  ],
+  "tags": [
+   "manning",
+   "open channel"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0002",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 168",
+   "svg": "<path d='M100 20 L100 142 L300 142 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='62' width='196' height='80' fill='#568CBB' fill-opacity='.35'/><text x='200' y='158' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text><text x='308' y='102' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>0.8 m deep</text>",
+   "alt": "A rectangular channel 2 m wide flowing 0.8 m deep."
+  },
+  "lookup": true
+ },
+ {
+  "id": "water-0002-d",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangular concrete channel is 5 m wide and flows 2 m deep on a slope of 0.0005. Manning's n is 0.020. What is the discharge?",
+  "answer": {
+   "value": 11.99,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/s"
+  },
+  "eli5": "Manning's equation for uniform open channel flow (SI): Q = (1/n) A R^{2/3} S^{1/2}. The hydraulic radius R is the flow area divided by the wetted perimeter, which counts only the bed and sides in contact with water.",
+  "solution": "A = 5 × 2 = 10.00 m^{2}.\n\nWetted perimeter = 5 + 2(2) = 9.00 m, so R = 10.00 / 9.00 = 1.111 m.\n\nQ = \\frac{1}{0.020}(10.00)(1.111)^{2/3}(0.0005)^{1/2} = 11.99 m^{3}/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Manning's equation",
+     "hydraulic radius"
+    ]
+   }
+  ],
+  "tags": [
+   "manning",
+   "open channel"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0002",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 168",
+   "svg": "<path d='M100 20 L100 142 L300 142 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='62' width='196' height='80' fill='#568CBB' fill-opacity='.35'/><text x='200' y='158' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text><text x='308' y='102' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>2 m deep</text>",
+   "alt": "A rectangular channel 5 m wide flowing 2 m deep."
+  },
+  "lookup": true
  },
  {
   "id": "water-0003",
@@ -84,7 +395,7 @@
   "status": "live",
   "difficulty": 2,
   "units": "SI",
-  "stem": "A pump delivers 0.05 m^{3}/s of water against a total head of 30 m. The pump is 75% efficient. What power must be supplied to the pump? Use 9.81 kN/m^{3}.",
+  "stem": "A pump delivers 0.05 m^{3}/s of water against a total head of 30 m. The pump is 75% efficient. What power must be supplied to the pump?  Use 9.81 kN/m^{3}.",
   "options": [
    {
     "id": "a",
@@ -104,16 +415,15 @@
    }
   ],
   "answer": "c",
-  "eli5": "Lifting water takes energy. No pump is perfect, so you have to feed it more power than the water actually receives.",
-  "solution": "Power given to the water = specific weight × Q × H = 9.81(0.05)(30) = 14.7 kW.\n\nPower supplied = \\frac{14.7}{0.75} = 19.6 kW.\n\nDivide by efficiency, because the input must be larger than the output.",
+  "eli5": "The power added to the water is (specific weight) × Q × H. The pump must be supplied more than that because of its losses: brake power = water power / efficiency.",
+  "solution": "Water power = 9.81 × 0.05 × 30 = 14.72 kW.\n\nBrake power = \\frac{14.72}{0.75} = 19.6 kW.",
   "handbook": [
    {
     "section": "Fluid Mechanics",
-    "page": "177–203"
-   },
-   {
-    "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "177–203",
+    "find": [
+     "pump power equation"
+    ]
    }
   ],
   "tags": [
@@ -123,7 +433,167 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0003",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0003-b",
+  "topic": "water",
+  "subtopic": "water-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A pump delivers 0.08 m^{3}/s of water against a total head of 45 m. The pump is 80% efficient. What power must be supplied to the pump?  Use 9.81 kN/m^{3}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "28.3 kW"
+   },
+   {
+    "id": "b",
+    "text": "35.3 kW"
+   },
+   {
+    "id": "c",
+    "text": "44.1 kW"
+   },
+   {
+    "id": "d",
+    "text": "55.2 kW"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The power added to the water is (specific weight) × Q × H. The pump must be supplied more than that because of its losses: brake power = water power / efficiency.",
+  "solution": "Water power = 9.81 × 0.08 × 45 = 35.32 kW.\n\nBrake power = \\frac{35.32}{0.80} = 44.1 kW.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pump power equation"
+    ]
+   }
+  ],
+  "tags": [
+   "pump power",
+   "efficiency"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0003",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0003-c",
+  "topic": "water",
+  "subtopic": "water-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A pump delivers 0.12 m^{3}/s of water against a total head of 20 m. The pump is 70% efficient. What power must be supplied to the pump?  Use 9.81 kN/m^{3}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "16.5 kW"
+   },
+   {
+    "id": "b",
+    "text": "23.5 kW"
+   },
+   {
+    "id": "c",
+    "text": "33.6 kW"
+   },
+   {
+    "id": "d",
+    "text": "48.0 kW"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The power added to the water is (specific weight) × Q × H. The pump must be supplied more than that because of its losses: brake power = water power / efficiency.",
+  "solution": "Water power = 9.81 × 0.12 × 20 = 23.54 kW.\n\nBrake power = \\frac{23.54}{0.70} = 33.6 kW.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pump power equation"
+    ]
+   }
+  ],
+  "tags": [
+   "pump power",
+   "efficiency"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0003",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0003-d",
+  "topic": "water",
+  "subtopic": "water-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A pump delivers 0.03 m^{3}/s of water against a total head of 60 m. The pump is 65% efficient. What power must be supplied to the pump?  Use 9.81 kN/m^{3}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "11.5 kW"
+   },
+   {
+    "id": "b",
+    "text": "17.7 kW"
+   },
+   {
+    "id": "c",
+    "text": "27.2 kW"
+   },
+   {
+    "id": "d",
+    "text": "41.8 kW"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The power added to the water is (specific weight) × Q × H. The pump must be supplied more than that because of its losses: brake power = water power / efficiency.",
+  "solution": "Water power = 9.81 × 0.03 × 60 = 17.66 kW.\n\nBrake power = \\frac{17.66}{0.65} = 27.2 kW.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pump power equation"
+    ]
+   }
+  ],
+  "tags": [
+   "pump power",
+   "efficiency"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0003",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "water-0004",
@@ -141,7 +611,7 @@
    },
    {
     "id": "b",
-    "text": "4 h"
+    "text": "3 h"
    },
    {
     "id": "c",
@@ -149,16 +619,20 @@
    },
    {
     "id": "d",
-    "text": "24 h"
+    "text": "12 h"
    }
   ],
   "answer": "c",
-  "eli5": "Detention time is how long a drop of water spends in the tank. Divide how much the tank holds by how fast water moves through it.",
-  "solution": "Detention time = \\frac{V}{Q} = \\frac{1,800}{7,200} = 0.25 day.\n\n0.25 day × 24 h/day = 6 h.",
+  "eli5": "Hydraulic detention time is the average time water spends in a tank: volume divided by flow rate. Watch the time units; a flow in m^{3}/day gives a time in days.",
+  "solution": "t = \\frac{V}{Q} = \\frac{1,800}{7,200} = 0.250 days = 0.250 × 24 = 6 h.",
   "handbook": [
    {
     "section": "Environmental Engineering",
-    "page": "310–354"
+    "page": "310–354",
+    "find": [
+     "hydraulic residence time",
+     "sedimentation"
+    ]
    }
   ],
   "tags": [
@@ -168,7 +642,170 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0004",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0004-b",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sedimentation tank has a volume of 2,400 m^{3} and treats a flow of 19,200 m^{3}/day. What is the detention time?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.125 h"
+   },
+   {
+    "id": "b",
+    "text": "1.5 h"
+   },
+   {
+    "id": "c",
+    "text": "3 h"
+   },
+   {
+    "id": "d",
+    "text": "6 h"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Hydraulic detention time is the average time water spends in a tank: volume divided by flow rate. Watch the time units; a flow in m^{3}/day gives a time in days.",
+  "solution": "t = \\frac{V}{Q} = \\frac{2,400}{19,200} = 0.125 days = 0.125 × 24 = 3 h.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "hydraulic residence time",
+     "sedimentation"
+    ]
+   }
+  ],
+  "tags": [
+   "detention time",
+   "sedimentation"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0004",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0004-c",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sedimentation tank has a volume of 900 m^{3} and treats a flow of 3,600 m^{3}/day. What is the detention time?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.25 h"
+   },
+   {
+    "id": "b",
+    "text": "3 h"
+   },
+   {
+    "id": "c",
+    "text": "6 h"
+   },
+   {
+    "id": "d",
+    "text": "12 h"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Hydraulic detention time is the average time water spends in a tank: volume divided by flow rate. Watch the time units; a flow in m^{3}/day gives a time in days.",
+  "solution": "t = \\frac{V}{Q} = \\frac{900}{3,600} = 0.250 days = 0.250 × 24 = 6 h.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "hydraulic residence time",
+     "sedimentation"
+    ]
+   }
+  ],
+  "tags": [
+   "detention time",
+   "sedimentation"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0004",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0004-d",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sedimentation tank has a volume of 3,600 m^{3} and treats a flow of 43,200 m^{3}/day. What is the detention time?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.083 h"
+   },
+   {
+    "id": "b",
+    "text": "1 h"
+   },
+   {
+    "id": "c",
+    "text": "2 h"
+   },
+   {
+    "id": "d",
+    "text": "4 h"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Hydraulic detention time is the average time water spends in a tank: volume divided by flow rate. Watch the time units; a flow in m^{3}/day gives a time in days.",
+  "solution": "t = \\frac{V}{Q} = \\frac{3,600}{43,200} = 0.083 days = 0.083 × 24 = 2 h.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "hydraulic residence time",
+     "sedimentation"
+    ]
+   }
+  ],
+  "tags": [
+   "detention time",
+   "sedimentation"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0004",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "water-0005",
@@ -182,7 +819,7 @@
   "options": [
    {
     "id": "a",
-    "text": "30 m^{3}/day"
+    "text": "8 m^{3}/day"
    },
    {
     "id": "b",
@@ -194,16 +831,19 @@
    },
    {
     "id": "d",
-    "text": "7,500 m^{3}/day"
+    "text": "30,000 m^{3}/day"
    }
   ],
   "answer": "c",
-  "eli5": "Groundwater seeps downhill through the soil. It moves faster through open soil and on steeper slopes, and more of it moves through a bigger opening.",
-  "solution": "Darcy's law: Q = KiA = 15(0.004)(2,000) = 120 m^{3}/day.",
+  "eli5": "Darcy's law for groundwater: Q = K i A. The hydraulic gradient i is the drop in head per unit distance along the flow path and has no units.",
+  "solution": "Q = K i A = 15 × 0.004 × 2,000 = 120 m^{3}/day.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
+    "page": "259–309",
+    "find": [
+     "Darcy's law"
+    ]
    }
   ],
   "tags": [
@@ -213,7 +853,167 @@
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0005",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0005-b",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An aquifer has a hydraulic conductivity of 8 m/day and a hydraulic gradient of 0.01. What is the flow through a cross-section of 1,500 m^{2}?",
+  "options": [
+   {
+    "id": "a",
+    "text": "15 m^{3}/day"
+   },
+   {
+    "id": "b",
+    "text": "60 m^{3}/day"
+   },
+   {
+    "id": "c",
+    "text": "120 m^{3}/day"
+   },
+   {
+    "id": "d",
+    "text": "12,000 m^{3}/day"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Darcy's law for groundwater: Q = K i A. The hydraulic gradient i is the drop in head per unit distance along the flow path and has no units.",
+  "solution": "Q = K i A = 8 × 0.01 × 1,500 = 120 m^{3}/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Darcy's law"
+    ]
+   }
+  ],
+  "tags": [
+   "darcy",
+   "groundwater"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0005",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0005-c",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An aquifer has a hydraulic conductivity of 25 m/day and a hydraulic gradient of 0.002. What is the flow through a cross-section of 3,000 m^{2}?",
+  "options": [
+   {
+    "id": "a",
+    "text": "6 m^{3}/day"
+   },
+   {
+    "id": "b",
+    "text": "75 m^{3}/day"
+   },
+   {
+    "id": "c",
+    "text": "150 m^{3}/day"
+   },
+   {
+    "id": "d",
+    "text": "75,000 m^{3}/day"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Darcy's law for groundwater: Q = K i A. The hydraulic gradient i is the drop in head per unit distance along the flow path and has no units.",
+  "solution": "Q = K i A = 25 × 0.002 × 3,000 = 150 m^{3}/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Darcy's law"
+    ]
+   }
+  ],
+  "tags": [
+   "darcy",
+   "groundwater"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0005",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0005-d",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An aquifer has a hydraulic conductivity of 12 m/day and a hydraulic gradient of 0.005. What is the flow through a cross-section of 800 m^{2}?",
+  "options": [
+   {
+    "id": "a",
+    "text": "4 m^{3}/day"
+   },
+   {
+    "id": "b",
+    "text": "24 m^{3}/day"
+   },
+   {
+    "id": "c",
+    "text": "48 m^{3}/day"
+   },
+   {
+    "id": "d",
+    "text": "9,600 m^{3}/day"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Darcy's law for groundwater: Q = K i A. The hydraulic gradient i is the drop in head per unit distance along the flow path and has no units.",
+  "solution": "Q = K i A = 12 × 0.005 × 800 = 48 m^{3}/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Darcy's law"
+    ]
+   }
+  ],
+  "tags": [
+   "darcy",
+   "groundwater"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0005",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "water-0006",
@@ -258,7 +1058,8 @@
   "handbook": [
    {
     "section": "Environmental Engineering",
-    "page": "310–354"
+    "page": "310–354",
+    "find": []
    }
   ],
   "tags": [
@@ -270,7 +1071,8 @@
   "verify": {
    "method": "reference",
    "basis": "Conventional surface water treatment sequence; FE Reference Handbook 10.0.1, Environmental Engineering, water treatment"
-  }
+  },
+  "lookup": false
  },
  {
   "id": "water-0007",
@@ -287,23 +1089,138 @@
    "toleranceType": "rel",
    "unit": "in"
   },
-  "eli5": "The first part of a storm soaks in or is caught by plants and puddles. Only what is left after that runs off.",
-  "solution": "S = \\frac{1,000}{CN} - 10 = \\frac{1,000}{80} - 10 = 2.5 in.\n\nQ = \\frac{(P - 0.2S)^{2}}{P + 0.8S} = \\frac{(4.0 - 0.5)^{2}}{4.0 + 2.0} = 2.04 in.",
+  "eli5": "The NRCS curve number method converts rainfall to runoff depth. The potential retention is S = 1,000/CN - 10 (inches), the initial abstraction is taken as 0.2 S, and runoff is Q = (P - 0.2S)^{2} / (P + 0.8S) when P exceeds 0.2 S.",
+  "solution": "S = \\frac{1,000}{80} - 10 = 2.50 in.\n\nQ = \\frac{(4.0 - 0.2 × 2.50)^{2}}{4.0 + 0.8 × 2.50} = \\frac{12.25}{6.00} = 2.04 in.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Environmental Engineering",
-    "page": "310–354"
+    "page": "259–309",
+    "find": [
+     "NRCS",
+     "curve number"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0007",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0007-b",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A watershed with a curve number of 70 receives 5.0 in of rain. Using the NRCS (SCS) method, what is the depth of runoff?",
+  "answer": {
+   "value": 2.04,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "in"
+  },
+  "eli5": "The NRCS curve number method converts rainfall to runoff depth. The potential retention is S = 1,000/CN - 10 (inches), the initial abstraction is taken as 0.2 S, and runoff is Q = (P - 0.2S)^{2} / (P + 0.8S) when P exceeds 0.2 S.",
+  "solution": "S = \\frac{1,000}{70} - 10 = 4.29 in.\n\nQ = \\frac{(5.0 - 0.2 × 4.29)^{2}}{5.0 + 0.8 × 4.29} = \\frac{17.16}{8.43} = 2.04 in.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "NRCS",
+     "curve number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0007",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0007-c",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A watershed with a curve number of 85 receives 3.0 in of rain. Using the NRCS (SCS) method, what is the depth of runoff?",
+  "answer": {
+   "value": 1.59,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "in"
+  },
+  "eli5": "The NRCS curve number method converts rainfall to runoff depth. The potential retention is S = 1,000/CN - 10 (inches), the initial abstraction is taken as 0.2 S, and runoff is Q = (P - 0.2S)^{2} / (P + 0.8S) when P exceeds 0.2 S.",
+  "solution": "S = \\frac{1,000}{85} - 10 = 1.76 in.\n\nQ = \\frac{(3.0 - 0.2 × 1.76)^{2}}{3.0 + 0.8 × 1.76} = \\frac{7.01}{4.41} = 1.59 in.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "NRCS",
+     "curve number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0007",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0007-d",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A watershed with a curve number of 90 receives 2.5 in of rain. Using the NRCS (SCS) method, what is the depth of runoff?",
+  "answer": {
+   "value": 1.53,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "in"
+  },
+  "eli5": "The NRCS curve number method converts rainfall to runoff depth. The potential retention is S = 1,000/CN - 10 (inches), the initial abstraction is taken as 0.2 S, and runoff is Q = (P - 0.2S)^{2} / (P + 0.8S) when P exceeds 0.2 S.",
+  "solution": "S = \\frac{1,000}{90} - 10 = 1.11 in.\n\nQ = \\frac{(2.5 - 0.2 × 1.11)^{2}}{2.5 + 0.8 × 1.11} = \\frac{5.19}{3.39} = 1.53 in.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "NRCS",
+     "curve number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0007",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "water-0008",
@@ -317,39 +1234,189 @@
   "options": [
    {
     "id": "a",
-    "text": "0.31 m"
+    "text": "0.306 m"
    },
    {
     "id": "b",
-    "text": "0.46 m"
+    "text": "0.553 m"
    },
    {
     "id": "c",
-    "text": "0.97 m"
+    "text": "0.972 m"
    },
    {
     "id": "d",
-    "text": "1.21 m"
+    "text": "1.458 m"
    }
   ],
   "answer": "c",
-  "eli5": "Critical depth is the depth at which a given flow moves with the least energy. Shallower and it races, deeper and it drifts.",
-  "solution": "y_{c} = (\\frac{q^{2}}{g})^{1/3} = (\\frac{3.0^{2}}{9.81})^{1/3} = 0.97 m.",
+  "eli5": "Critical depth is the depth of minimum specific energy for a given flow, where the Froude number equals 1. For a rectangular channel y_{c} = (q^{2} / g)^{1/3}, with q the flow per unit width. The minimum specific energy is 1.5 y_{c}.",
+  "solution": "y_{c} = (\\frac{q^{2}}{g})^{1/3} = (\\frac{3.0^{2}}{9.81})^{1/3} = (0.917)^{1/3} = 0.972 m.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Environmental Engineering",
-    "page": "310–354"
+    "page": "259–309",
+    "find": [
+     "critical depth"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0008",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0008-b",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangular channel carries a flow of 2.0 m^{3}/s per metre of width. What is the critical depth? Use g = 9.81 m/s^{2}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.204 m"
+   },
+   {
+    "id": "b",
+    "text": "0.452 m"
+   },
+   {
+    "id": "c",
+    "text": "0.742 m"
+   },
+   {
+    "id": "d",
+    "text": "1.112 m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Critical depth is the depth of minimum specific energy for a given flow, where the Froude number equals 1. For a rectangular channel y_{c} = (q^{2} / g)^{1/3}, with q the flow per unit width. The minimum specific energy is 1.5 y_{c}.",
+  "solution": "y_{c} = (\\frac{q^{2}}{g})^{1/3} = (\\frac{2.0^{2}}{9.81})^{1/3} = (0.408)^{1/3} = 0.742 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "critical depth"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0008",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0008-c",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangular channel carries a flow of 4.5 m^{3}/s per metre of width. What is the critical depth? Use g = 9.81 m/s^{2}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.459 m"
+   },
+   {
+    "id": "b",
+    "text": "0.677 m"
+   },
+   {
+    "id": "c",
+    "text": "1.273 m"
+   },
+   {
+    "id": "d",
+    "text": "1.910 m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Critical depth is the depth of minimum specific energy for a given flow, where the Froude number equals 1. For a rectangular channel y_{c} = (q^{2} / g)^{1/3}, with q the flow per unit width. The minimum specific energy is 1.5 y_{c}.",
+  "solution": "y_{c} = (\\frac{q^{2}}{g})^{1/3} = (\\frac{4.5^{2}}{9.81})^{1/3} = (2.064)^{1/3} = 1.273 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "critical depth"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0008",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0008-d",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangular channel carries a flow of 1.2 m^{3}/s per metre of width. What is the critical depth? Use g = 9.81 m/s^{2}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.122 m"
+   },
+   {
+    "id": "b",
+    "text": "0.350 m"
+   },
+   {
+    "id": "c",
+    "text": "0.528 m"
+   },
+   {
+    "id": "d",
+    "text": "0.791 m"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Critical depth is the depth of minimum specific energy for a given flow, where the Froude number equals 1. For a rectangular channel y_{c} = (q^{2} / g)^{1/3}, with q the flow per unit width. The minimum specific energy is 1.5 y_{c}.",
+  "solution": "y_{c} = (\\frac{q^{2}}{g})^{1/3} = (\\frac{1.2^{2}}{9.81})^{1/3} = (0.147)^{1/3} = 0.528 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "critical depth"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0008",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "water-0009",
@@ -363,39 +1430,193 @@
   "options": [
    {
     "id": "a",
-    "text": "80 L/s"
+    "text": "80.0 L/s"
    },
    {
     "id": "b",
-    "text": "125 L/s"
+    "text": "125.0 L/s"
    },
    {
     "id": "c",
-    "text": "156 L/s"
+    "text": "156.2 L/s"
    },
    {
     "id": "d",
-    "text": "195 L/s"
+    "text": "195.3 L/s"
    }
   ],
   "answer": "b",
-  "eli5": "Spin a pump faster and it moves more water in direct proportion. The head goes up faster still, with the square of the speed.",
-  "solution": "Q_{2} = Q_{1}(\\frac{N_{2}}{N_{1}}) = 100(\\frac{1,500}{1,200}) = 125 L/s.\n\nHead would rise by the ratio squared, 1.56.",
+  "eli5": "The pump affinity laws relate performance at two speeds for the same impeller: flow varies with speed, head with speed squared and power with speed cubed.",
+  "solution": "Q_{2} = Q_{1} × \\frac{N_{2}}{N_{1}} = 100 × \\frac{1,500}{1,200} = 125.0 L/s. The head would change by a factor of (1,500 / 1,200)^{2} = 1.56.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Environmental Engineering",
-    "page": "310–354"
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "affinity laws",
+     "scaling laws"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0009",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0009-b",
+  "topic": "water",
+  "subtopic": "water-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A pump delivers 60 L/s at 1,750 rpm. Using the affinity laws, what flow does it deliver at 1,450 rpm?",
+  "options": [
+   {
+    "id": "a",
+    "text": "72.4 L/s"
+   },
+   {
+    "id": "b",
+    "text": "49.7 L/s"
+   },
+   {
+    "id": "c",
+    "text": "41.2 L/s"
+   },
+   {
+    "id": "d",
+    "text": "34.1 L/s"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The pump affinity laws relate performance at two speeds for the same impeller: flow varies with speed, head with speed squared and power with speed cubed.",
+  "solution": "Q_{2} = Q_{1} × \\frac{N_{2}}{N_{1}} = 60 × \\frac{1,450}{1,750} = 49.7 L/s. The head would change by a factor of (1,450 / 1,750)^{2} = 0.69.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "affinity laws",
+     "scaling laws"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0009",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0009-c",
+  "topic": "water",
+  "subtopic": "water-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A pump delivers 250 L/s at 900 rpm. Using the affinity laws, what flow does it deliver at 1,200 rpm?",
+  "options": [
+   {
+    "id": "a",
+    "text": "187.5 L/s"
+   },
+   {
+    "id": "b",
+    "text": "333.3 L/s"
+   },
+   {
+    "id": "c",
+    "text": "444.4 L/s"
+   },
+   {
+    "id": "d",
+    "text": "592.6 L/s"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The pump affinity laws relate performance at two speeds for the same impeller: flow varies with speed, head with speed squared and power with speed cubed.",
+  "solution": "Q_{2} = Q_{1} × \\frac{N_{2}}{N_{1}} = 250 × \\frac{1,200}{900} = 333.3 L/s. The head would change by a factor of (1,200 / 900)^{2} = 1.78.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "affinity laws",
+     "scaling laws"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0009",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0009-d",
+  "topic": "water",
+  "subtopic": "water-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A pump delivers 40 L/s at 1,450 rpm. Using the affinity laws, what flow does it deliver at 1,750 rpm?",
+  "options": [
+   {
+    "id": "a",
+    "text": "33.1 L/s"
+   },
+   {
+    "id": "b",
+    "text": "48.3 L/s"
+   },
+   {
+    "id": "c",
+    "text": "58.3 L/s"
+   },
+   {
+    "id": "d",
+    "text": "70.3 L/s"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The pump affinity laws relate performance at two speeds for the same impeller: flow varies with speed, head with speed squared and power with speed cubed.",
+  "solution": "Q_{2} = Q_{1} × \\frac{N_{2}}{N_{1}} = 40 × \\frac{1,750}{1,450} = 48.3 L/s. The head would change by a factor of (1,750 / 1,450)^{2} = 1.46.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "affinity laws",
+     "scaling laws"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0009",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "water-0010",
@@ -407,28 +1628,131 @@
   "units": "SI",
   "stem": "A town of 25,000 people uses an average of 400 L per person per day. The maximum-day peaking factor is 1.8. What is the maximum-day demand?",
   "answer": {
-   "value": 18000,
+   "value": 18000.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "m^{3}/day"
   },
-  "eli5": "Water systems are sized for the thirstiest day, not the average one.",
-  "solution": "Average demand = 25,000(400 L) = 10,000,000 L/day = 10,000 m^{3}/day.\n\nMaximum day = 1.8(10,000) = 18,000 m^{3}/day.",
+  "eli5": "Average day demand is population × per capita use. Treatment plants and sources are sized for the maximum day, found by applying a peaking factor to the average.",
+  "solution": "Average day = 25,000 × 400 L = 10,000 m^{3}/day.\n\nMaximum day = 1.8 × 10,000 = 18,000 m^{3}/day.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Environmental Engineering",
-    "page": "310–354"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0010",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0010-b",
+  "topic": "water",
+  "subtopic": "water-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A town of 40,000 people uses an average of 350 L per person per day. The maximum-day peaking factor is 1.5. What is the maximum-day demand?",
+  "answer": {
+   "value": 21000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/day"
+  },
+  "eli5": "Average day demand is population × per capita use. Treatment plants and sources are sized for the maximum day, found by applying a peaking factor to the average.",
+  "solution": "Average day = 40,000 × 350 L = 14,000 m^{3}/day.\n\nMaximum day = 1.5 × 14,000 = 21,000 m^{3}/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0010",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0010-c",
+  "topic": "water",
+  "subtopic": "water-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A town of 12,000 people uses an average of 450 L per person per day. The maximum-day peaking factor is 2.0. What is the maximum-day demand?",
+  "answer": {
+   "value": 10800.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/day"
+  },
+  "eli5": "Average day demand is population × per capita use. Treatment plants and sources are sized for the maximum day, found by applying a peaking factor to the average.",
+  "solution": "Average day = 12,000 × 450 L = 5,400 m^{3}/day.\n\nMaximum day = 2.0 × 5,400 = 10,800 m^{3}/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0010",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0010-d",
+  "topic": "water",
+  "subtopic": "water-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A town of 85,000 people uses an average of 300 L per person per day. The maximum-day peaking factor is 1.6. What is the maximum-day demand?",
+  "answer": {
+   "value": 40800.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/day"
+  },
+  "eli5": "Average day demand is population × per capita use. Treatment plants and sources are sized for the maximum day, found by applying a peaking factor to the average.",
+  "solution": "Average day = 85,000 × 300 L = 25,500 m^{3}/day.\n\nMaximum day = 1.6 × 25,500 = 40,800 m^{3}/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0010",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  },
  {
   "id": "water-0011",
@@ -442,39 +1766,209 @@
   "options": [
    {
     "id": "a",
-    "text": "40 kPa"
+    "text": "40.0 kPa"
    },
    {
     "id": "b",
-    "text": "196 kPa"
+    "text": "196.2 kPa"
    },
    {
     "id": "c",
-    "text": "392 kPa"
+    "text": "392.4 kPa"
    },
    {
     "id": "d",
-    "text": "4,000 kPa"
+    "text": "4,000.0 kPa"
    }
   ],
   "answer": "c",
-  "eli5": "A water tower works by height alone. Every metre of water above you adds about 9.8 kPa.",
-  "solution": "p = specific weight × height = 9.81(40) = 392 kPa.",
+  "eli5": "With no flow there are no friction losses, so the pressure anywhere in the system is hydrostatic: specific weight × the height of the water surface above that point.",
+  "solution": "p = 9.81 × 40 = 392.4 kPa.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Environmental Engineering",
-    "page": "310–354"
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pressure field in a static liquid"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0011",
+  "version": 1,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 172",
+   "svg": "<rect x='40' y='20' width='90' height='46' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><line x1='85' y1='66' x2='85' y2='150' stroke='#00242E' stroke-width='4'/><line x1='85' y1='150' x2='330' y2='150' stroke='#00242E' stroke-width='4'/><rect x='322' y='128' width='16' height='22' fill='#1B795A'/><line x1='20' y1='158' x2='380' y2='158' stroke='#00242E'/><line x1='200' y1='24' x2='200' y2='150' stroke='#00242E'/><line x1='130' y1='24' x2='210' y2='24' stroke='#00242E' stroke-dasharray='4 4'/><text x='208' y='92' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>40 m</text><text x='85' y='14' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Water surface</text><text x='330' y='122' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Hydrant</text>",
+   "alt": "An elevated tank whose water surface is 40 m above a hydrant."
+  },
+  "lookup": true
+ },
+ {
+  "id": "water-0011-b",
+  "topic": "water",
+  "subtopic": "water-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The water surface in an elevated tank is 25 m above a hydrant. With no flow in the system, what is the pressure at the hydrant? Use 9.81 kN/m^{3}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "25.0 kPa"
+   },
+   {
+    "id": "b",
+    "text": "122.6 kPa"
+   },
+   {
+    "id": "c",
+    "text": "245.2 kPa"
+   },
+   {
+    "id": "d",
+    "text": "2,500.0 kPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "With no flow there are no friction losses, so the pressure anywhere in the system is hydrostatic: specific weight × the height of the water surface above that point.",
+  "solution": "p = 9.81 × 25 = 245.2 kPa.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pressure field in a static liquid"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0011",
+  "version": 2,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 172",
+   "svg": "<rect x='40' y='20' width='90' height='46' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><line x1='85' y1='66' x2='85' y2='150' stroke='#00242E' stroke-width='4'/><line x1='85' y1='150' x2='330' y2='150' stroke='#00242E' stroke-width='4'/><rect x='322' y='128' width='16' height='22' fill='#1B795A'/><line x1='20' y1='158' x2='380' y2='158' stroke='#00242E'/><line x1='200' y1='24' x2='200' y2='150' stroke='#00242E'/><line x1='130' y1='24' x2='210' y2='24' stroke='#00242E' stroke-dasharray='4 4'/><text x='208' y='92' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>25 m</text><text x='85' y='14' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Water surface</text><text x='330' y='122' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Hydrant</text>",
+   "alt": "An elevated tank whose water surface is 25 m above a hydrant."
+  },
+  "lookup": true
+ },
+ {
+  "id": "water-0011-c",
+  "topic": "water",
+  "subtopic": "water-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The water surface in an elevated tank is 55 m above a hydrant. With no flow in the system, what is the pressure at the hydrant? Use 9.81 kN/m^{3}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "55.0 kPa"
+   },
+   {
+    "id": "b",
+    "text": "269.8 kPa"
+   },
+   {
+    "id": "c",
+    "text": "539.6 kPa"
+   },
+   {
+    "id": "d",
+    "text": "5,500.0 kPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "With no flow there are no friction losses, so the pressure anywhere in the system is hydrostatic: specific weight × the height of the water surface above that point.",
+  "solution": "p = 9.81 × 55 = 539.6 kPa.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pressure field in a static liquid"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0011",
+  "version": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 172",
+   "svg": "<rect x='40' y='20' width='90' height='46' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><line x1='85' y1='66' x2='85' y2='150' stroke='#00242E' stroke-width='4'/><line x1='85' y1='150' x2='330' y2='150' stroke='#00242E' stroke-width='4'/><rect x='322' y='128' width='16' height='22' fill='#1B795A'/><line x1='20' y1='158' x2='380' y2='158' stroke='#00242E'/><line x1='200' y1='24' x2='200' y2='150' stroke='#00242E'/><line x1='130' y1='24' x2='210' y2='24' stroke='#00242E' stroke-dasharray='4 4'/><text x='208' y='92' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>55 m</text><text x='85' y='14' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Water surface</text><text x='330' y='122' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Hydrant</text>",
+   "alt": "An elevated tank whose water surface is 55 m above a hydrant."
+  },
+  "lookup": true
+ },
+ {
+  "id": "water-0011-d",
+  "topic": "water",
+  "subtopic": "water-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The water surface in an elevated tank is 32 m above a hydrant. With no flow in the system, what is the pressure at the hydrant? Use 9.81 kN/m^{3}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "32.0 kPa"
+   },
+   {
+    "id": "b",
+    "text": "157.0 kPa"
+   },
+   {
+    "id": "c",
+    "text": "313.9 kPa"
+   },
+   {
+    "id": "d",
+    "text": "3,200.0 kPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "With no flow there are no friction losses, so the pressure anywhere in the system is hydrostatic: specific weight × the height of the water surface above that point.",
+  "solution": "p = 9.81 × 32 = 313.9 kPa.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pressure field in a static liquid"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0011",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 172",
+   "svg": "<rect x='40' y='20' width='90' height='46' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><line x1='85' y1='66' x2='85' y2='150' stroke='#00242E' stroke-width='4'/><line x1='85' y1='150' x2='330' y2='150' stroke='#00242E' stroke-width='4'/><rect x='322' y='128' width='16' height='22' fill='#1B795A'/><line x1='20' y1='158' x2='380' y2='158' stroke='#00242E'/><line x1='200' y1='24' x2='200' y2='150' stroke='#00242E'/><line x1='130' y1='24' x2='210' y2='24' stroke='#00242E' stroke-dasharray='4 4'/><text x='208' y='92' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>32 m</text><text x='85' y='14' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Water surface</text><text x='330' y='122' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Hydrant</text>",
+   "alt": "An elevated tank whose water surface is 32 m above a hydrant."
+  },
+  "lookup": true
  },
  {
   "id": "water-0012",
@@ -504,23 +1998,165 @@
    }
   ],
   "answer": "b",
-  "eli5": "A 50-year flood has a 2% chance every year. Work out the chance of dodging it ten years in a row, and the rest is the chance of being hit.",
-  "solution": "Chance of no exceedance in one year = 1 - \\frac{1}{50} = 0.98.\n\nOver 10 years: 0.98^{10} = 0.817.\n\nChance of at least one = 1 - 0.817 = 0.183.",
+  "eli5": "A T-year event has probability 1/T in any one year. The chance that it does not occur in n independent years is (1 - 1/T)^{n}, so the risk of at least one occurrence is 1 - (1 - 1/T)^{n}.",
+  "solution": "p = 1 / 50 = 0.020 per year.\n\nRisk = 1 - (1 - 0.020)^{10} = 1 - 0.8171 = 0.183.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Environmental Engineering",
-    "page": "310–354"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0012",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0012-b",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the probability that a 100-year flood is equalled or exceeded at least once in a 30-year period?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.010"
+   },
+   {
+    "id": "b",
+    "text": "0.260"
+   },
+   {
+    "id": "c",
+    "text": "0.300"
+   },
+   {
+    "id": "d",
+    "text": "0.740"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A T-year event has probability 1/T in any one year. The chance that it does not occur in n independent years is (1 - 1/T)^{n}, so the risk of at least one occurrence is 1 - (1 - 1/T)^{n}.",
+  "solution": "p = 1 / 100 = 0.010 per year.\n\nRisk = 1 - (1 - 0.010)^{30} = 1 - 0.7397 = 0.260.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0012",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0012-c",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the probability that a 25-year flood is equalled or exceeded at least once in a 5-year period?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.040"
+   },
+   {
+    "id": "b",
+    "text": "0.185"
+   },
+   {
+    "id": "c",
+    "text": "0.200"
+   },
+   {
+    "id": "d",
+    "text": "0.815"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A T-year event has probability 1/T in any one year. The chance that it does not occur in n independent years is (1 - 1/T)^{n}, so the risk of at least one occurrence is 1 - (1 - 1/T)^{n}.",
+  "solution": "p = 1 / 25 = 0.040 per year.\n\nRisk = 1 - (1 - 0.040)^{5} = 1 - 0.8154 = 0.185.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0012",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0012-d",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the probability that a 10-year flood is equalled or exceeded at least once in a 3-year period?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.100"
+   },
+   {
+    "id": "b",
+    "text": "0.271"
+   },
+   {
+    "id": "c",
+    "text": "0.300"
+   },
+   {
+    "id": "d",
+    "text": "0.729"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A T-year event has probability 1/T in any one year. The chance that it does not occur in n independent years is (1 - 1/T)^{n}, so the risk of at least one occurrence is 1 - (1 - 1/T)^{n}.",
+  "solution": "p = 1 / 10 = 0.100 per year.\n\nRisk = 1 - (1 - 0.100)^{3} = 1 - 0.7290 = 0.271.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0012",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  },
  {
   "id": "water-0013",
@@ -550,23 +2186,165 @@
    }
   ],
   "answer": "c",
-  "eli5": "A 25-year flood does not come every 25 years on schedule. It has a 1 in 25 chance of happening in any given year.",
-  "solution": "Annual probability = \\frac{1}{return period} = \\frac{1}{25} = 0.04 = 4%.",
+  "eli5": "The return period is the average interval between events of a given size or larger. Its reciprocal is the probability of that event being equalled or exceeded in any single year.",
+  "solution": "Annual exceedance probability = \\frac{1}{T} = \\frac{1}{25} = 0.040 = 4%.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Environmental Engineering",
-    "page": "310–354"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0013",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0013-b",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the annual exceedance probability of a 50-year flood?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.5%"
+   },
+   {
+    "id": "b",
+    "text": "5%"
+   },
+   {
+    "id": "c",
+    "text": "2%"
+   },
+   {
+    "id": "d",
+    "text": "50%"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The return period is the average interval between events of a given size or larger. Its reciprocal is the probability of that event being equalled or exceeded in any single year.",
+  "solution": "Annual exceedance probability = \\frac{1}{T} = \\frac{1}{50} = 0.020 = 2%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0013",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0013-c",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the annual exceedance probability of a 20-year flood?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.2%"
+   },
+   {
+    "id": "b",
+    "text": "2%"
+   },
+   {
+    "id": "c",
+    "text": "5%"
+   },
+   {
+    "id": "d",
+    "text": "20%"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The return period is the average interval between events of a given size or larger. Its reciprocal is the probability of that event being equalled or exceeded in any single year.",
+  "solution": "Annual exceedance probability = \\frac{1}{T} = \\frac{1}{20} = 0.050 = 5%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0013",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0013-d",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What is the annual exceedance probability of a 200-year flood?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2%"
+   },
+   {
+    "id": "b",
+    "text": "20%"
+   },
+   {
+    "id": "c",
+    "text": "0.5%"
+   },
+   {
+    "id": "d",
+    "text": "200%"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The return period is the average interval between events of a given size or larger. Its reciprocal is the probability of that event being equalled or exceeded in any single year.",
+  "solution": "Annual exceedance probability = \\frac{1}{T} = \\frac{1}{200} = 0.005 = 0.5%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0013",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  },
  {
   "id": "water-0014",
@@ -578,28 +2356,131 @@
   "units": "SI",
   "stem": "Stormwater flows into a detention basin at 3.0 m^{3}/s and leaves at 1.0 m^{3}/s for 20 minutes. How much water is stored in the basin during that time?",
   "answer": {
-   "value": 2400,
+   "value": 2400.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "m^{3}"
   },
-  "eli5": "A detention basin is a bathtub with a small drain. It fills by the difference between what comes in and what goes out.",
-  "solution": "Storage = (inflow - outflow) × time = (3.0 - 1.0)(20 × 60 s) = 2,400 m^{3}.",
+  "eli5": "Storage routing is a volume balance: the change in storage equals inflow minus outflow, multiplied by the time step. Convert the time to seconds to match flows in m^{3}/s.",
+  "solution": "Change in storage = (inflow - outflow) × time = (3.0 - 1.0) × (20 × 60) = 2.0 × 1,200 = 2,400 m^{3}.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Environmental Engineering",
-    "page": "310–354"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0014",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0014-b",
+  "topic": "water",
+  "subtopic": "water-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Stormwater flows into a detention basin at 5.5 m^{3}/s and leaves at 2.0 m^{3}/s for 45 minutes. How much water is stored in the basin during that time?",
+  "answer": {
+   "value": 9450.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "Storage routing is a volume balance: the change in storage equals inflow minus outflow, multiplied by the time step. Convert the time to seconds to match flows in m^{3}/s.",
+  "solution": "Change in storage = (inflow - outflow) × time = (5.5 - 2.0) × (45 × 60) = 3.5 × 2,700 = 9,450 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0014",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0014-c",
+  "topic": "water",
+  "subtopic": "water-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Stormwater flows into a detention basin at 2.4 m^{3}/s and leaves at 0.9 m^{3}/s for 30 minutes. How much water is stored in the basin during that time?",
+  "answer": {
+   "value": 2700.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "Storage routing is a volume balance: the change in storage equals inflow minus outflow, multiplied by the time step. Convert the time to seconds to match flows in m^{3}/s.",
+  "solution": "Change in storage = (inflow - outflow) × time = (2.4 - 0.9) × (30 × 60) = 1.5 × 1,800 = 2,700 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0014",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0014-d",
+  "topic": "water",
+  "subtopic": "water-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Stormwater flows into a detention basin at 8.0 m^{3}/s and leaves at 3.5 m^{3}/s for 15 minutes. How much water is stored in the basin during that time?",
+  "answer": {
+   "value": 4050.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "Storage routing is a volume balance: the change in storage equals inflow minus outflow, multiplied by the time step. Convert the time to seconds to match flows in m^{3}/s.",
+  "solution": "Change in storage = (inflow - outflow) × time = (8.0 - 3.5) × (15 × 60) = 4.5 × 900 = 4,050 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0014",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  },
  {
   "id": "water-0015",
@@ -613,7 +2494,7 @@
   "options": [
    {
     "id": "a",
-    "text": "0.38"
+    "text": "0.37"
    },
    {
     "id": "b",
@@ -625,27 +2506,177 @@
    },
    {
     "id": "d",
-    "text": "5.00"
+    "text": "7.11"
    }
   ],
   "answer": "c",
-  "eli5": "Pavement and roofs shed almost all the rain that lands on them, where grass and soil soak much of it up.",
-  "solution": "Q = CiA, so with i and A unchanged the peak scales with C.\n\nFactor = \\frac{0.80}{0.30} = 2.67.",
+  "eli5": "In Q = C i A, peak flow is directly proportional to the runoff coefficient when intensity and area are unchanged. The ratio of the coefficients is the ratio of the peak flows.",
+  "solution": "\\frac{Q_{after}}{Q_{before}} = \\frac{C_{2}}{C_{1}} = \\frac{0.80}{0.30} = 2.67.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Environmental Engineering",
-    "page": "310–354"
+    "page": "259–309",
+    "find": [
+     "rational formula"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0015",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0015-b",
+  "topic": "water",
+  "subtopic": "water-f",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Development raises a site's runoff coefficient from 0.25 to 0.70. With the same rainfall intensity and area, by what factor does the rational-method peak flow increase?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.36"
+   },
+   {
+    "id": "b",
+    "text": "1.45"
+   },
+   {
+    "id": "c",
+    "text": "2.80"
+   },
+   {
+    "id": "d",
+    "text": "7.84"
+   }
+  ],
+  "answer": "c",
+  "eli5": "In Q = C i A, peak flow is directly proportional to the runoff coefficient when intensity and area are unchanged. The ratio of the coefficients is the ratio of the peak flows.",
+  "solution": "\\frac{Q_{after}}{Q_{before}} = \\frac{C_{2}}{C_{1}} = \\frac{0.70}{0.25} = 2.80.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "rational formula"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0015",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0015-c",
+  "topic": "water",
+  "subtopic": "water-f",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Development raises a site's runoff coefficient from 0.40 to 0.90. With the same rainfall intensity and area, by what factor does the rational-method peak flow increase?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.44"
+   },
+   {
+    "id": "b",
+    "text": "1.50"
+   },
+   {
+    "id": "c",
+    "text": "2.25"
+   },
+   {
+    "id": "d",
+    "text": "5.06"
+   }
+  ],
+  "answer": "c",
+  "eli5": "In Q = C i A, peak flow is directly proportional to the runoff coefficient when intensity and area are unchanged. The ratio of the coefficients is the ratio of the peak flows.",
+  "solution": "\\frac{Q_{after}}{Q_{before}} = \\frac{C_{2}}{C_{1}} = \\frac{0.90}{0.40} = 2.25.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "rational formula"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0015",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0015-d",
+  "topic": "water",
+  "subtopic": "water-f",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Development raises a site's runoff coefficient from 0.20 to 0.85. With the same rainfall intensity and area, by what factor does the rational-method peak flow increase?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.24"
+   },
+   {
+    "id": "b",
+    "text": "1.65"
+   },
+   {
+    "id": "c",
+    "text": "4.25"
+   },
+   {
+    "id": "d",
+    "text": "18.06"
+   }
+  ],
+  "answer": "c",
+  "eli5": "In Q = C i A, peak flow is directly proportional to the runoff coefficient when intensity and area are unchanged. The ratio of the coefficients is the ratio of the peak flows.",
+  "solution": "\\frac{Q_{after}}{Q_{before}} = \\frac{C_{2}}{C_{1}} = \\frac{0.85}{0.20} = 4.25.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "rational formula"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0015",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "water-0016",
@@ -662,23 +2693,134 @@
    "toleranceType": "rel",
    "unit": "m/s"
   },
-  "eli5": "A sewer is a channel with a lid. For a pipe flowing full, the hydraulic radius is a quarter of the diameter.",
-  "solution": "R = \\frac{D}{4} = 0.075 m.\n\nV = \\frac{1}{n}R^{2/3}S^{1/2} = \\frac{1}{0.013}(0.075)^{2/3}(0.005)^{1/2} = 0.967 m/s.",
+  "eli5": "Manning's equation for velocity (SI): V = (1/n) R^{2/3} S^{1/2}. For a circular pipe flowing full the hydraulic radius is D / 4.",
+  "solution": "R = D / 4 = 0.300 / 4 = 0.0750 m.\n\nV = \\frac{1}{0.013}(0.0750)^{2/3}(0.005)^{1/2} = 0.967 m/s.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Environmental Engineering",
-    "page": "310–354"
+    "page": "259–309",
+    "find": [
+     "Manning's equation"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0016",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0016-b",
+  "topic": "water",
+  "subtopic": "water-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 450 mm diameter sewer flows full on a slope of 0.003 with Manning's n = 0.013. What is the flow velocity?",
+  "answer": {
+   "value": 0.982,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s"
+  },
+  "eli5": "Manning's equation for velocity (SI): V = (1/n) R^{2/3} S^{1/2}. For a circular pipe flowing full the hydraulic radius is D / 4.",
+  "solution": "R = D / 4 = 0.450 / 4 = 0.1125 m.\n\nV = \\frac{1}{0.013}(0.1125)^{2/3}(0.003)^{1/2} = 0.982 m/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Manning's equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0016",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0016-c",
+  "topic": "water",
+  "subtopic": "water-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 600 mm diameter sewer flows full on a slope of 0.002 with Manning's n = 0.013. What is the flow velocity?",
+  "answer": {
+   "value": 0.971,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s"
+  },
+  "eli5": "Manning's equation for velocity (SI): V = (1/n) R^{2/3} S^{1/2}. For a circular pipe flowing full the hydraulic radius is D / 4.",
+  "solution": "R = D / 4 = 0.600 / 4 = 0.1500 m.\n\nV = \\frac{1}{0.013}(0.1500)^{2/3}(0.002)^{1/2} = 0.971 m/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Manning's equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0016",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0016-d",
+  "topic": "water",
+  "subtopic": "water-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 200 mm diameter sewer flows full on a slope of 0.01 with Manning's n = 0.013. What is the flow velocity?",
+  "answer": {
+   "value": 1.044,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s"
+  },
+  "eli5": "Manning's equation for velocity (SI): V = (1/n) R^{2/3} S^{1/2}. For a circular pipe flowing full the hydraulic radius is D / 4.",
+  "solution": "R = D / 4 = 0.200 / 4 = 0.0500 m.\n\nV = \\frac{1}{0.013}(0.0500)^{2/3}(0.01)^{1/2} = 1.044 m/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Manning's equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0016",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "water-0017",
@@ -696,35 +2838,177 @@
    },
    {
     "id": "b",
-    "text": "125 L/s"
+    "text": "125.0 L/s"
    },
    {
     "id": "c",
-    "text": "3,600 L/s"
+    "text": "3,600.0 L/s"
    },
    {
     "id": "d",
-    "text": "10,800 L/s"
+    "text": "10,800.0 L/s"
    }
   ],
   "answer": "b",
-  "eli5": "Everyone showers and flushes at about the same time in the morning, so sewers are sized for the rush, not the average.",
-  "solution": "Average flow = \\frac{12,000(300)}{86,400 s} = 41.7 L/s.\n\nPeak = 3.0(41.7) = 125 L/s.",
+  "eli5": "Sewers are sized for peak flow, the average flow multiplied by a peaking factor that is larger for small populations. Convert daily volume to L/s by dividing by 86,400 s per day.",
+  "solution": "Average flow = 12,000 × 300 = 3,600,000 L/day = \\frac{3,600,000}{86,400} = 41.7 L/s.\n\nPeak flow = 3.0 × 41.7 = 125.0 L/s.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Environmental Engineering",
-    "page": "310–354"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0017",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0017-b",
+  "topic": "water",
+  "subtopic": "water-g",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sewer serves 30,000 people who each generate 250 L of wastewater per day. With a peaking factor of 2.5, what is the peak flow?",
+  "options": [
+   {
+    "id": "a",
+    "text": "86.8 L/s"
+   },
+   {
+    "id": "b",
+    "text": "217.0 L/s"
+   },
+   {
+    "id": "c",
+    "text": "7,500.0 L/s"
+   },
+   {
+    "id": "d",
+    "text": "18,750.0 L/s"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Sewers are sized for peak flow, the average flow multiplied by a peaking factor that is larger for small populations. Convert daily volume to L/s by dividing by 86,400 s per day.",
+  "solution": "Average flow = 30,000 × 250 = 7,500,000 L/day = \\frac{7,500,000}{86,400} = 86.8 L/s.\n\nPeak flow = 2.5 × 86.8 = 217.0 L/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0017",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0017-c",
+  "topic": "water",
+  "subtopic": "water-g",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sewer serves 8,000 people who each generate 350 L of wastewater per day. With a peaking factor of 3.5, what is the peak flow?",
+  "options": [
+   {
+    "id": "a",
+    "text": "32.4 L/s"
+   },
+   {
+    "id": "b",
+    "text": "113.4 L/s"
+   },
+   {
+    "id": "c",
+    "text": "2,800.0 L/s"
+   },
+   {
+    "id": "d",
+    "text": "9,800.0 L/s"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Sewers are sized for peak flow, the average flow multiplied by a peaking factor that is larger for small populations. Convert daily volume to L/s by dividing by 86,400 s per day.",
+  "solution": "Average flow = 8,000 × 350 = 2,800,000 L/day = \\frac{2,800,000}{86,400} = 32.4 L/s.\n\nPeak flow = 3.5 × 32.4 = 113.4 L/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0017",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0017-d",
+  "topic": "water",
+  "subtopic": "water-g",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sewer serves 50,000 people who each generate 280 L of wastewater per day. With a peaking factor of 2.2, what is the peak flow?",
+  "options": [
+   {
+    "id": "a",
+    "text": "162.0 L/s"
+   },
+   {
+    "id": "b",
+    "text": "356.5 L/s"
+   },
+   {
+    "id": "c",
+    "text": "14,000.0 L/s"
+   },
+   {
+    "id": "d",
+    "text": "30,800.0 L/s"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Sewers are sized for peak flow, the average flow multiplied by a peaking factor that is larger for small populations. Convert daily volume to L/s by dividing by 86,400 s per day.",
+  "solution": "Average flow = 50,000 × 280 = 14,000,000 L/day = \\frac{14,000,000}{86,400} = 162.0 L/s.\n\nPeak flow = 2.2 × 162.0 = 356.5 L/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0017",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  },
  {
   "id": "water-0018",
@@ -746,31 +3030,185 @@
    },
    {
     "id": "c",
-    "text": "0.20 m/day"
+    "text": "0.2 m/day"
    },
    {
     "id": "d",
-    "text": "0.60 m/day"
+    "text": "0.667 m/day"
    }
   ],
   "answer": "c",
-  "eli5": "Water can only travel through the gaps between grains, not through the grains. Squeezing the flow into the gaps makes the water itself move faster.",
-  "solution": "Darcy velocity = Ki = 15(0.004) = 0.06 m/day.\n\nSeepage velocity = \\frac{0.06}{0.30} = 0.20 m/day.",
+  "eli5": "Darcy velocity, K i, is flow per unit of total cross-section. Water only moves through the pores, so the actual average (seepage) velocity is larger: v = K i / n. Use seepage velocity for travel times of contaminants.",
+  "solution": "Darcy velocity = 15 × 0.004 = 0.06 m/day.\n\nSeepage velocity = \\frac{0.06}{0.30} = 0.2 m/day.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Environmental Engineering",
-    "page": "310–354"
+    "page": "259–309",
+    "find": [
+     "Darcy's law",
+     "seepage velocity"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0018",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0018-b",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Groundwater moves through an aquifer with a hydraulic conductivity of 8 m/day, a hydraulic gradient of 0.01 and a porosity of 0.25. What is the average seepage velocity?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.02 m/day"
+   },
+   {
+    "id": "b",
+    "text": "0.08 m/day"
+   },
+   {
+    "id": "c",
+    "text": "0.32 m/day"
+   },
+   {
+    "id": "d",
+    "text": "1.28 m/day"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Darcy velocity, K i, is flow per unit of total cross-section. Water only moves through the pores, so the actual average (seepage) velocity is larger: v = K i / n. Use seepage velocity for travel times of contaminants.",
+  "solution": "Darcy velocity = 8 × 0.01 = 0.08 m/day.\n\nSeepage velocity = \\frac{0.08}{0.25} = 0.32 m/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Darcy's law",
+     "seepage velocity"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0018",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0018-c",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Groundwater moves through an aquifer with a hydraulic conductivity of 25 m/day, a hydraulic gradient of 0.002 and a porosity of 0.40. What is the average seepage velocity?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.02 m/day"
+   },
+   {
+    "id": "b",
+    "text": "0.05 m/day"
+   },
+   {
+    "id": "c",
+    "text": "0.125 m/day"
+   },
+   {
+    "id": "d",
+    "text": "0.312 m/day"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Darcy velocity, K i, is flow per unit of total cross-section. Water only moves through the pores, so the actual average (seepage) velocity is larger: v = K i / n. Use seepage velocity for travel times of contaminants.",
+  "solution": "Darcy velocity = 25 × 0.002 = 0.05 m/day.\n\nSeepage velocity = \\frac{0.05}{0.40} = 0.125 m/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Darcy's law",
+     "seepage velocity"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0018",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0018-d",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Groundwater moves through an aquifer with a hydraulic conductivity of 40 m/day, a hydraulic gradient of 0.003 and a porosity of 0.20. What is the average seepage velocity?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.024 m/day"
+   },
+   {
+    "id": "b",
+    "text": "0.12 m/day"
+   },
+   {
+    "id": "c",
+    "text": "0.6 m/day"
+   },
+   {
+    "id": "d",
+    "text": "3 m/day"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Darcy velocity, K i, is flow per unit of total cross-section. Water only moves through the pores, so the actual average (seepage) velocity is larger: v = K i / n. Use seepage velocity for travel times of contaminants.",
+  "solution": "Darcy velocity = 40 × 0.003 = 0.12 m/day.\n\nSeepage velocity = \\frac{0.12}{0.20} = 0.6 m/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Darcy's law",
+     "seepage velocity"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0018",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "water-0019",
@@ -800,23 +3238,173 @@
    }
   ],
   "answer": "c",
-  "eli5": "Bacteria use up oxygen as they eat the waste. The sample was watered down for the test, so scale the oxygen drop back up.",
-  "solution": "Dilution fraction P = \\frac{5}{300}.\n\nBOD_{5} = \\frac{DO_{initial} - DO_{final}}{P} = \\frac{8.0 - 3.5}{5/300} = 270 mg/L.",
+  "eli5": "BOD is the oxygen consumed by microorganisms while they break down organic matter. In a diluted test, the drop in dissolved oxygen is divided by the fraction of the bottle that is sample: BOD = (DO_{initial} - DO_{final}) / P, with P = sample volume / bottle volume.",
+  "solution": "Dilution fraction P = 5 / 300 = 0.0167.\n\nBOD_{5} = \\frac{8.0 - 3.5}{0.0167} = 4.5 × 60.0 = 270 mg/L.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
     "section": "Environmental Engineering",
-    "page": "310–354"
+    "page": "310–354",
+    "find": [
+     "BOD"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0019",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0019-b",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 10 mL wastewater sample is diluted to 300 mL in a BOD bottle. The dissolved oxygen falls from 8.5 mg/L to 4.0 mg/L in five days. What is the BOD_{5}?",
+  "options": [
+   {
+    "id": "a",
+    "text": "4.5 mg/L"
+   },
+   {
+    "id": "b",
+    "text": "22.5 mg/L"
+   },
+   {
+    "id": "c",
+    "text": "135 mg/L"
+   },
+   {
+    "id": "d",
+    "text": "675 mg/L"
+   }
+  ],
+  "answer": "c",
+  "eli5": "BOD is the oxygen consumed by microorganisms while they break down organic matter. In a diluted test, the drop in dissolved oxygen is divided by the fraction of the bottle that is sample: BOD = (DO_{initial} - DO_{final}) / P, with P = sample volume / bottle volume.",
+  "solution": "Dilution fraction P = 10 / 300 = 0.0333.\n\nBOD_{5} = \\frac{8.5 - 4.0}{0.0333} = 4.5 × 30.0 = 135 mg/L.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "BOD"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0019",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0019-c",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 6 mL wastewater sample is diluted to 300 mL in a BOD bottle. The dissolved oxygen falls from 7.8 mg/L to 2.4 mg/L in five days. What is the BOD_{5}?",
+  "options": [
+   {
+    "id": "a",
+    "text": "5.4 mg/L"
+   },
+   {
+    "id": "b",
+    "text": "27 mg/L"
+   },
+   {
+    "id": "c",
+    "text": "270 mg/L"
+   },
+   {
+    "id": "d",
+    "text": "1,350 mg/L"
+   }
+  ],
+  "answer": "c",
+  "eli5": "BOD is the oxygen consumed by microorganisms while they break down organic matter. In a diluted test, the drop in dissolved oxygen is divided by the fraction of the bottle that is sample: BOD = (DO_{initial} - DO_{final}) / P, with P = sample volume / bottle volume.",
+  "solution": "Dilution fraction P = 6 / 300 = 0.0200.\n\nBOD_{5} = \\frac{7.8 - 2.4}{0.0200} = 5.4 × 50.0 = 270 mg/L.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "BOD"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0019",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0019-d",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 15 mL wastewater sample is diluted to 300 mL in a BOD bottle. The dissolved oxygen falls from 9.0 mg/L to 5.5 mg/L in five days. What is the BOD_{5}?",
+  "options": [
+   {
+    "id": "a",
+    "text": "3.5 mg/L"
+   },
+   {
+    "id": "b",
+    "text": "17.5 mg/L"
+   },
+   {
+    "id": "c",
+    "text": "70 mg/L"
+   },
+   {
+    "id": "d",
+    "text": "350 mg/L"
+   }
+  ],
+  "answer": "c",
+  "eli5": "BOD is the oxygen consumed by microorganisms while they break down organic matter. In a diluted test, the drop in dissolved oxygen is divided by the fraction of the bottle that is sample: BOD = (DO_{initial} - DO_{final}) / P, with P = sample volume / bottle volume.",
+  "solution": "Dilution fraction P = 15 / 300 = 0.0500.\n\nBOD_{5} = \\frac{9.0 - 5.5}{0.0500} = 3.5 × 20.0 = 70 mg/L.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "BOD"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0019",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "water-0020",
@@ -828,28 +3416,143 @@
   "units": "SI",
   "stem": "A water sample contains 80 mg/L of calcium and 24 mg/L of magnesium. What is the total hardness, expressed as mg/L of CaCO_{3}? Use equivalent weights of 20 for calcium, 12.2 for magnesium and 50 for CaCO_{3}.",
   "answer": {
-   "value": 298,
+   "value": 298.4,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "mg/L as CaCO_{3}"
   },
-  "eli5": "Hardness adds up the calcium and magnesium. They are converted to a common yardstick first so they can be added fairly.",
-  "solution": "Calcium: 80(\\frac{50}{20}) = 200 mg/L. Magnesium: 24(\\frac{50}{12.2}) = 98 mg/L.\n\nTotal hardness = 298 mg/L as CaCO_{3}.",
+  "eli5": "Hardness is the sum of the multivalent cations, mainly calcium and magnesium, each converted to its CaCO_{3} equivalent: concentration × (50 / equivalent weight of the ion).",
+  "solution": "Calcium: 80 × \\frac{50}{20} = 200.0 mg/L as CaCO_{3}.\n\nMagnesium: 24 × \\frac{50}{12.2} = 98.4 mg/L as CaCO_{3}.\n\nTotal hardness = 200.0 + 98.4 = 298.4 mg/L as CaCO_{3}.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
     "section": "Environmental Engineering",
-    "page": "310–354"
+    "page": "310–354",
+    "find": [
+     "hardness",
+     "equivalent weight"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0020",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0020-b",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A water sample contains 60 mg/L of calcium and 18 mg/L of magnesium. What is the total hardness, expressed as mg/L of CaCO_{3}? Use equivalent weights of 20 for calcium, 12.2 for magnesium and 50 for CaCO_{3}.",
+  "answer": {
+   "value": 223.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mg/L as CaCO_{3}"
+  },
+  "eli5": "Hardness is the sum of the multivalent cations, mainly calcium and magnesium, each converted to its CaCO_{3} equivalent: concentration × (50 / equivalent weight of the ion).",
+  "solution": "Calcium: 60 × \\frac{50}{20} = 150.0 mg/L as CaCO_{3}.\n\nMagnesium: 18 × \\frac{50}{12.2} = 73.8 mg/L as CaCO_{3}.\n\nTotal hardness = 150.0 + 73.8 = 223.8 mg/L as CaCO_{3}.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "hardness",
+     "equivalent weight"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0020",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0020-c",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A water sample contains 100 mg/L of calcium and 30 mg/L of magnesium. What is the total hardness, expressed as mg/L of CaCO_{3}? Use equivalent weights of 20 for calcium, 12.2 for magnesium and 50 for CaCO_{3}.",
+  "answer": {
+   "value": 373.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mg/L as CaCO_{3}"
+  },
+  "eli5": "Hardness is the sum of the multivalent cations, mainly calcium and magnesium, each converted to its CaCO_{3} equivalent: concentration × (50 / equivalent weight of the ion).",
+  "solution": "Calcium: 100 × \\frac{50}{20} = 250.0 mg/L as CaCO_{3}.\n\nMagnesium: 30 × \\frac{50}{12.2} = 123.0 mg/L as CaCO_{3}.\n\nTotal hardness = 250.0 + 123.0 = 373.0 mg/L as CaCO_{3}.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "hardness",
+     "equivalent weight"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0020",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0020-d",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A water sample contains 45 mg/L of calcium and 12 mg/L of magnesium. What is the total hardness, expressed as mg/L of CaCO_{3}? Use equivalent weights of 20 for calcium, 12.2 for magnesium and 50 for CaCO_{3}.",
+  "answer": {
+   "value": 161.7,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mg/L as CaCO_{3}"
+  },
+  "eli5": "Hardness is the sum of the multivalent cations, mainly calcium and magnesium, each converted to its CaCO_{3} equivalent: concentration × (50 / equivalent weight of the ion).",
+  "solution": "Calcium: 45 × \\frac{50}{20} = 112.5 mg/L as CaCO_{3}.\n\nMagnesium: 12 × \\frac{50}{12.2} = 49.2 mg/L as CaCO_{3}.\n\nTotal hardness = 112.5 + 49.2 = 161.7 mg/L as CaCO_{3}.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "hardness",
+     "equivalent weight"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0020",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "water-0021",
@@ -859,7 +3562,7 @@
   "status": "live",
   "difficulty": 2,
   "units": null,
-  "stem": "Two machines each produce a sound level of 80 dB at a receiver. What is the combined sound level when both run?",
+  "stem": "Two machines each produce a sound level of 80 dB at a receiver. What is the combined sound level when all of them run?",
   "options": [
    {
     "id": "a",
@@ -879,23 +3582,177 @@
    }
   ],
   "answer": "b",
-  "eli5": "Decibels do not add like ordinary numbers. Doubling the sound energy only adds about 3 dB.",
-  "solution": "Combined level = 10 log(10^{8.0} + 10^{8.0}) = 10 log(2 × 10^{8}) = 83 dB.",
+  "eli5": "Decibels are logarithmic, so sound levels cannot be added directly. For n equal sources the combined level is L + 10 log_{10}(n): two equal sources add 3 dB, ten add 10 dB.",
+  "solution": "Combined level = 80 + 10 log_{10}(2) = 80 + 3.0 = 83 dB.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Environmental Engineering",
-    "page": "310–354"
+    "section": "Safety",
+    "page": "13–33",
+    "find": [
+     "sound pressure level",
+     "noise"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0021",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0021-b",
+  "topic": "water",
+  "subtopic": "water-j",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Four machines each produce a sound level of 75 dB at a receiver. What is the combined sound level when all of them run?",
+  "options": [
+   {
+    "id": "a",
+    "text": "75 dB"
+   },
+   {
+    "id": "b",
+    "text": "81 dB"
+   },
+   {
+    "id": "c",
+    "text": "87 dB"
+   },
+   {
+    "id": "d",
+    "text": "300 dB"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Decibels are logarithmic, so sound levels cannot be added directly. For n equal sources the combined level is L + 10 log_{10}(n): two equal sources add 3 dB, ten add 10 dB.",
+  "solution": "Combined level = 75 + 10 log_{10}(4) = 75 + 6.0 = 81 dB.",
+  "handbook": [
+   {
+    "section": "Safety",
+    "page": "13–33",
+    "find": [
+     "sound pressure level",
+     "noise"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0021",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0021-c",
+  "topic": "water",
+  "subtopic": "water-j",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Two machines each produce a sound level of 92 dB at a receiver. What is the combined sound level when all of them run?",
+  "options": [
+   {
+    "id": "a",
+    "text": "92 dB"
+   },
+   {
+    "id": "b",
+    "text": "95 dB"
+   },
+   {
+    "id": "c",
+    "text": "98 dB"
+   },
+   {
+    "id": "d",
+    "text": "184 dB"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Decibels are logarithmic, so sound levels cannot be added directly. For n equal sources the combined level is L + 10 log_{10}(n): two equal sources add 3 dB, ten add 10 dB.",
+  "solution": "Combined level = 92 + 10 log_{10}(2) = 92 + 3.0 = 95 dB.",
+  "handbook": [
+   {
+    "section": "Safety",
+    "page": "13–33",
+    "find": [
+     "sound pressure level",
+     "noise"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0021",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0021-d",
+  "topic": "water",
+  "subtopic": "water-j",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Ten machines each produce a sound level of 68 dB at a receiver. What is the combined sound level when all of them run?",
+  "options": [
+   {
+    "id": "a",
+    "text": "68 dB"
+   },
+   {
+    "id": "b",
+    "text": "78 dB"
+   },
+   {
+    "id": "c",
+    "text": "88 dB"
+   },
+   {
+    "id": "d",
+    "text": "680 dB"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Decibels are logarithmic, so sound levels cannot be added directly. For n equal sources the combined level is L + 10 log_{10}(n): two equal sources add 3 dB, ten add 10 dB.",
+  "solution": "Combined level = 68 + 10 log_{10}(10) = 68 + 10.0 = 78 dB.",
+  "handbook": [
+   {
+    "section": "Safety",
+    "page": "13–33",
+    "find": [
+     "sound pressure level",
+     "noise"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0021",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "water-0022",
@@ -930,11 +3787,8 @@
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Environmental Engineering",
-    "page": "310–354"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [],
@@ -942,7 +3796,8 @@
   "verify": {
    "method": "reference",
    "basis": "U.S. Safe Drinking Water Act definitions (40 CFR Part 141)"
-  }
+  },
+  "lookup": false
  },
  {
   "id": "water-0023",
@@ -954,28 +3809,143 @@
   "units": "SI",
   "stem": "A clarifier treats 7,200 m^{3}/day and has a surface area of 240 m^{2}. What is its surface overflow rate?",
   "answer": {
-   "value": 30,
+   "value": 30.0,
    "tolerance": 0.01,
    "toleranceType": "rel",
    "unit": "m/day"
   },
-  "eli5": "The overflow rate is how fast water rises through the tank. A particle settles out only if it sinks faster than the water rises.",
-  "solution": "Overflow rate = \\frac{Q}{A} = \\frac{7,200}{240} = 30 m/day.",
+  "eli5": "The surface overflow rate, Q / A, is the upward velocity of water in a clarifier. A particle is removed if its settling velocity is at least the overflow rate, so the rate is the key design parameter and depth does not appear.",
+  "solution": "Overflow rate = \\frac{Q}{A} = \\frac{7,200}{240} = 30.0 m^{3}/m^{2}·day, or 30.0 m/day.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
     "section": "Environmental Engineering",
-    "page": "310–354"
+    "page": "310–354",
+    "find": [
+     "overflow rate",
+     "clarifier"
+    ]
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0023",
+  "version": 1,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0023-b",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A clarifier treats 12,000 m^{3}/day and has a surface area of 300 m^{2}. What is its surface overflow rate?",
+  "answer": {
+   "value": 40.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/day"
+  },
+  "eli5": "The surface overflow rate, Q / A, is the upward velocity of water in a clarifier. A particle is removed if its settling velocity is at least the overflow rate, so the rate is the key design parameter and depth does not appear.",
+  "solution": "Overflow rate = \\frac{Q}{A} = \\frac{12,000}{300} = 40.0 m^{3}/m^{2}·day, or 40.0 m/day.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "overflow rate",
+     "clarifier"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0023",
+  "version": 2,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0023-c",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A clarifier treats 5,400 m^{3}/day and has a surface area of 150 m^{2}. What is its surface overflow rate?",
+  "answer": {
+   "value": 36.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/day"
+  },
+  "eli5": "The surface overflow rate, Q / A, is the upward velocity of water in a clarifier. A particle is removed if its settling velocity is at least the overflow rate, so the rate is the key design parameter and depth does not appear.",
+  "solution": "Overflow rate = \\frac{Q}{A} = \\frac{5,400}{150} = 36.0 m^{3}/m^{2}·day, or 36.0 m/day.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "overflow rate",
+     "clarifier"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0023",
+  "version": 3,
+  "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "water-0023-d",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A clarifier treats 20,000 m^{3}/day and has a surface area of 625 m^{2}. What is its surface overflow rate?",
+  "answer": {
+   "value": 32.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/day"
+  },
+  "eli5": "The surface overflow rate, Q / A, is the upward velocity of water in a clarifier. A particle is removed if its settling velocity is at least the overflow rate, so the rate is the key design parameter and depth does not appear.",
+  "solution": "Overflow rate = \\frac{Q}{A} = \\frac{20,000}{625} = 32.0 m^{3}/m^{2}·day, or 32.0 m/day.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "overflow rate",
+     "clarifier"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0023",
+  "version": 4,
+  "versions": 4,
+  "lookup": true
  },
  {
   "id": "water-0024",
@@ -985,7 +3955,7 @@
   "status": "live",
   "difficulty": 2,
   "units": "SI",
-  "stem": "A plant treats 10,000 m^{3}/day and applies a chlorine dose of 2 mg/L. How much chlorine is used per day?",
+  "stem": "A plant treats 10,000 m^{3}/day and applies a chlorine dose of 2.0 mg/L. How much chlorine is used per day?",
   "options": [
    {
     "id": "a",
@@ -1005,22 +3975,164 @@
    }
   ],
   "answer": "b",
-  "eli5": "A dose in mg/L is the same as grams per cubic metre. Multiply by how many cubic metres are treated.",
-  "solution": "2 mg/L = 2 g/m^{3}.\n\nMass = 2(10,000) = 20,000 g = 20 kg per day.",
+  "eli5": "Mass feed rate = flow × concentration. A dose of 1 mg/L is 1 g/m^{3}, so m^{3}/day × mg/L gives g/day; divide by 1,000 for kg/day.",
+  "solution": "Chlorine = 10,000 m^{3}/day × 2.0 g/m^{3} = 20,000 g/day = 20.0 kg/day.",
   "handbook": [
    {
     "section": "Civil Engineering",
-    "page": "259–309"
-   },
-   {
-    "section": "Environmental Engineering",
-    "page": "310–354"
+    "page": "259–309",
+    "find": []
    }
   ],
   "tags": [],
   "source": "original",
   "verify": {
    "method": "computed"
-  }
+  },
+  "family": "water-0024",
+  "version": 1,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0024-b",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A plant treats 25,000 m^{3}/day and applies a chlorine dose of 3.5 mg/L. How much chlorine is used per day?",
+  "options": [
+   {
+    "id": "a",
+    "text": "8.75 kg"
+   },
+   {
+    "id": "b",
+    "text": "87.5 kg"
+   },
+   {
+    "id": "c",
+    "text": "875 kg"
+   },
+   {
+    "id": "d",
+    "text": "7,143 kg"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Mass feed rate = flow × concentration. A dose of 1 mg/L is 1 g/m^{3}, so m^{3}/day × mg/L gives g/day; divide by 1,000 for kg/day.",
+  "solution": "Chlorine = 25,000 m^{3}/day × 3.5 g/m^{3} = 87,500 g/day = 87.5 kg/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0024",
+  "version": 2,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0024-c",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A plant treats 4,000 m^{3}/day and applies a chlorine dose of 5.0 mg/L. How much chlorine is used per day?",
+  "options": [
+   {
+    "id": "a",
+    "text": "2 kg"
+   },
+   {
+    "id": "b",
+    "text": "20 kg"
+   },
+   {
+    "id": "c",
+    "text": "200 kg"
+   },
+   {
+    "id": "d",
+    "text": "800 kg"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Mass feed rate = flow × concentration. A dose of 1 mg/L is 1 g/m^{3}, so m^{3}/day × mg/L gives g/day; divide by 1,000 for kg/day.",
+  "solution": "Chlorine = 4,000 m^{3}/day × 5.0 g/m^{3} = 20,000 g/day = 20.0 kg/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0024",
+  "version": 3,
+  "versions": 4,
+  "lookup": false
+ },
+ {
+  "id": "water-0024-d",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A plant treats 60,000 m^{3}/day and applies a chlorine dose of 1.2 mg/L. How much chlorine is used per day?",
+  "options": [
+   {
+    "id": "a",
+    "text": "7.2 kg"
+   },
+   {
+    "id": "b",
+    "text": "72 kg"
+   },
+   {
+    "id": "c",
+    "text": "720 kg"
+   },
+   {
+    "id": "d",
+    "text": "50,000 kg"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Mass feed rate = flow × concentration. A dose of 1 mg/L is 1 g/m^{3}, so m^{3}/day × mg/L gives g/day; divide by 1,000 for kg/day.",
+  "solution": "Chlorine = 60,000 m^{3}/day × 1.2 g/m^{3} = 72,000 g/day = 72.0 kg/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0024",
+  "version": 4,
+  "versions": 4,
+  "lookup": false
  }
 ]

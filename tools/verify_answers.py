@@ -209,6 +209,14 @@ def main():
     checks = json.load(open(gpath)) if os.path.exists(gpath) else {}
     lessons = {s_["id"]: s_ for rel in m["guide"] for s_ in json.load(open(os.path.join(ROOT, rel)))["sections"]}
     for sid, c in checks.items():
+        if "#" in sid:                                   # an added worked example, built from a question family's template
+            lid, fam = sid.split("#"); ex = next((x for x in lessons.get(lid, {}).get("examples", []) if x.get("family") == fam), None)
+            if ex is None: errors.append(f"{sid}: example check exists but the lesson example is missing"); continue
+            got = eval(c["expr"], dict(NAMES, __builtins__={}))
+            shown = float(re.sub(r"[^0-9.\-]", "", re.match(r"^\$?-?[\d,]*\.?\d+", ex["answer"]).group().replace(",", "")))
+            if abs(got - ex["value"]) > 1e-6 * max(abs(got), 1) or abs(shown - got) > 0.01 * max(abs(got), 1e-9):
+                errors.append(f"{sid}: example computes to {got:.6g}, lesson shows {ex['answer']}")
+            continue
         if sid not in lessons or "example" not in lessons[sid]:
             errors.append(f"{sid}: example check exists but the lesson or its example is missing")
             continue

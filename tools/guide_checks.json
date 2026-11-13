@@ -3,189 +3,661 @@
   "expr": "15*45/6",
   "value": 112.5
  },
+ "construction-b-lesson#construction-0004": {
+  "expr": "(lambda bk, ct, mn: bk*3600/ct*mn/60)(2.5, 36, 50)",
+  "value": 208.333333
+ },
+ "construction-b-lesson#construction-0011": {
+  "expr": "(lambda nr, hrs: nr*200000/hrs)(5, 310000)",
+  "value": 3.225806
+ },
+ "construction-b-lesson#construction-0012": {
+  "expr": "(lambda tl, tc: tc/tl)(5, 35)",
+  "value": 7.0
+ },
  "construction-c-lesson": {
   "expr": "500000/(180000/200000)",
   "value": 555556
+ },
+ "construction-c-lesson#construction-0001": {
+  "expr": "(lambda dA, dB, dC, dD: max(dC-dB,0))(4, 5, 12, 3)",
+  "value": 7
+ },
+ "construction-c-lesson#construction-0002": {
+  "expr": "(lambda PV, EV, AC: EV/AC)(600000, 540000, 580000)",
+  "value": 0.931034
+ },
+ "construction-c-lesson#construction-0014": {
+  "expr": "(lambda rt, ar, cw: ar/(rt*cw))(45, 1620, 3)",
+  "value": 12.0
  },
  "construction-d-lesson": {
   "expr": "2*2*0.5*12*1.04",
   "value": 24.96
  },
+ "construction-d-lesson#construction-0003": {
+  "expr": "(lambda L, W, t, ws: L*W*t/1000*(1+ws/100))(40, 25, 175, 7)",
+  "value": 187.25
+ },
+ "construction-d-lesson#construction-0015": {
+  "expr": "(lambda qy, uc, mk: qy*uc*(1+mk/100))(1600, 11.5, 16)",
+  "value": 21344.0
+ },
+ "construction-d-lesson#construction-0016": {
+  "expr": "(lambda L, H: 2*L*H)(32, 4.5)",
+  "value": 288.0
+ },
  "construction-e-lesson": {
   "expr": "2/25*100",
   "value": 8
+ },
+ "construction-e-lesson#construction-0006": {
+  "expr": "(lambda sc, ms: sc*ms)(30, 4.75)",
+  "value": 142.5
+ },
+ "construction-e-lesson#construction-0007": {
+  "expr": "(lambda sc, mm: mm*sc/1000)(200, 47)",
+  "value": 9.4
  },
  "dynamics-a-lesson": {
   "expr": "30**2/(2*6)",
   "value": 75
  },
+ "dynamics-a-lesson#dynamics-0001": {
+  "expr": "(lambda v, t: v*t/2)(36, 10)",
+  "value": 180.0
+ },
+ "dynamics-a-lesson#dynamics-0005": {
+  "expr": "(lambda v, th: v**2*sin(rad(2*th))/g)(40, 45)",
+  "value": 163.098879
+ },
+ "dynamics-a-lesson#dynamics-0006": {
+  "expr": "(lambda v, r: v**2/r)(18, 90)",
+  "value": 3.6
+ },
  "dynamics-b-lesson": {
   "expr": "4*1.5**2/3",
   "value": 3.0
+ },
+ "dynamics-b-lesson#dynamics-0004": {
+  "expr": "(lambda m, L: m*L**2/3)(15, 3)",
+  "value": 45.0
+ },
+ "dynamics-b-lesson#dynamics-0007": {
+  "expr": "(lambda m, r: m*r**2/2)(30, 0.25)",
+  "value": 0.9375
  },
  "dynamics-c-lesson": {
   "expr": "40/10",
   "value": 4
  },
+ "dynamics-c-lesson#dynamics-0002": {
+  "expr": "(lambda m, Fp, mu: (Fp-mu*m*g)/m)(120, 700, 0.35)",
+  "value": 2.399833
+ },
+ "dynamics-c-lesson#dynamics-0008": {
+  "expr": "(lambda th: g*sin(rad(th)))(35)",
+  "value": 5.626785
+ },
+ "dynamics-c-lesson#dynamics-0009": {
+  "expr": "(lambda Tq, I: Tq/I)(60, 8)",
+  "value": 7.5
+ },
  "dynamics-d-lesson": {
   "expr": "0.5*1000*20**2/1000",
   "value": 200
+ },
+ "dynamics-d-lesson#dynamics-0003": {
+  "expr": "(lambda m, h: sqrt(2*g*h))(4, 30)",
+  "value": 24.26108
+ },
+ "dynamics-d-lesson#dynamics-0010": {
+  "expr": "(lambda m, v: m*g*v/1000)(2000, 1.2)",
+  "value": 23.544
+ },
+ "dynamics-d-lesson#dynamics-0011": {
+  "expr": "(lambda k, x, m: x*sqrt(k/m))(3000, 0.12, 1.5)",
+  "value": 5.366563
  },
  "econ-a-lesson": {
   "expr": "50000/1.07**15",
   "value": 18122
  },
+ "econ-a-lesson#econ-0001": {
+  "expr": "(lambda P, i, n: P*(1+i/100)**n)(15000, 4, 8)",
+  "value": 20528.535756
+ },
+ "econ-a-lesson#econ-0002": {
+  "expr": "(lambda P, i, n, nw: P*i/100*(1+i/100)**n/((1+i/100)**n-1))(80000, 7, 8, 'eight')",
+  "value": 13397.420999
+ },
+ "econ-a-lesson#econ-0007": {
+  "expr": "(lambda Fv, i, n: Fv/(1+i/100)**n)(40000, 7, 8)",
+  "value": 23280.364183
+ },
+ "econ-a-lesson#econ-0008": {
+  "expr": "(lambda r, m, per: ((1+r/m/100)**m-1)*100)(8, 4, 'quarterly')",
+  "value": 8.243216
+ },
  "econ-b-lesson": {
   "expr": "(8000+25*400)/400",
   "value": 45
+ },
+ "econ-b-lesson#econ-0005": {
+  "expr": "(lambda FC, vc, n: FC/n+vc)(75000, 14, 15000)",
+  "value": 19.0
+ },
+ "econ-b-lesson#econ-0006": {
+  "expr": "(lambda h, r, m, oh: h*r*(1+oh/100)+m)(80, 45, 1800, 45)",
+  "value": 7020.0
  },
  "econ-c-lesson": {
   "expr": "12000*(0.08*1.08**10/(1.08**10-1)) + 800",
   "value": 2588
  },
+ "econ-c-lesson#econ-0003": {
+  "expr": "(lambda FC, vc, pr: FC/(pr-vc))(200000, 45, 70)",
+  "value": 8000.0
+ },
+ "econ-c-lesson#econ-0009": {
+  "expr": "(lambda C0, Mc, B, i, n: B*((1+i/100)**n-1)/(i/100*(1+i/100)**n)/(C0+Mc*((1+i/100)**n-1)/(i/100*(1+i/100)**n)))(750000, 25000, 110000, 6, 30)",
+  "value": 1.38388
+ },
+ "econ-c-lesson#econ-0010": {
+  "expr": "(lambda P, Oc, Sv, n, i: P*i/100*(1+i/100)**n/((1+i/100)**n-1)-Sv*i/100/((1+i/100)**n-1)+Oc)(60000, 4000, 8000, 10, 9)",
+  "value": 12822.644675
+ },
  "econ-d-lesson": {
   "expr": "0.25*60000 - 5000",
   "value": 10000
+ },
+ "econ-d-lesson#econ-0004": {
+  "expr": "(lambda p1, Ls, p2, G1, G2: -p1/100*Ls+p2/100*G1+(100-p1-p2)/100*G2)(15, 60000, 55, 35000, 110000)",
+  "value": 43250.0
  },
  "fluids-a-lesson": {
   "expr": "0.62*(pi*0.02**2/4)*sqrt(2*g*2)*1000",
   "value": 1.22
  },
+ "fluids-a-lesson#fluids-0004": {
+  "expr": "(lambda h: sqrt(2*g*h))(0.6)",
+  "value": 3.431035
+ },
+ "fluids-a-lesson#fluids-0006": {
+  "expr": "(lambda d, h, Cd: Cd*pi*(d/1000)**2/4*sqrt(2*g*h)*1000)(60, 4, 0.61)",
+  "value": 15.279239
+ },
  "fluids-b-lesson": {
   "expr": "0.8*0.05/4e-5",
   "value": 1000
+ },
+ "fluids-b-lesson#fluids-0002": {
+  "expr": "(lambda SG: SG*9.81)(0.88)",
+  "value": 8.6328
+ },
+ "fluids-b-lesson#fluids-0007": {
+  "expr": "(lambda v, d, nu: v*d/1000/(nu*1e-6))(2.5, 200, 1.0)",
+  "value": 500000.0
+ },
+ "fluids-b-lesson#fluids-0008": {
+  "expr": "(lambda mu, rho: mu/rho*1e6)(0.0018, 900)",
+  "value": 2.0
  },
  "fluids-c-lesson": {
   "expr": "0.9*gw*5",
   "value": 44.1
  },
+ "fluids-c-lesson#fluids-0001": {
+  "expr": "(lambda h: 9.81*h)(15)",
+  "value": 147.15
+ },
+ "fluids-c-lesson#fluids-0005": {
+  "expr": "(lambda b, h: 9.81*h/2*b*h)(2.5, 3.6)",
+  "value": 158.922
+ },
+ "fluids-c-lesson#fluids-0009": {
+  "expr": "(lambda h: (13.6-1)*9.81*h)(0.25)",
+  "value": 30.9015
+ },
+ "fluids-c-lesson#fluids-0010": {
+  "expr": "(lambda Vb, SG: SG*Vb)(1.5, 0.7)",
+  "value": 1.05
+ },
  "fluids-d-lesson": {
   "expr": "0.03/(pi*0.15**2/4)",
   "value": 1.7
+ },
+ "fluids-d-lesson#fluids-0003": {
+  "expr": "(lambda v, d1, d2: v*(d1/d2)**2)(2.4, 250, 125)",
+  "value": 9.6
+ },
+ "fluids-d-lesson#fluids-0011": {
+  "expr": "(lambda u1, u2, p1: p1-0.5*(u2*u2-u1*u1))(2.5, 7.5, 220)",
+  "value": 195.0
+ },
+ "fluids-d-lesson#fluids-0012": {
+  "expr": "(lambda d, v: 1000*pi*(d/1000)**2/4*v*v)(80, 18)",
+  "value": 1628.601632
+ },
+ "fluids-d-lesson#fluids-0013": {
+  "expr": "(lambda v, L, d, f: f*L/(d/1000)*v*v/(2*g))(1.8, 300, 250, 0.02)",
+  "value": 3.963303
  },
  "geotech-a-lesson": {
   "expr": "0.9/0.1",
   "value": 9
  },
+ "geotech-a-lesson#geotech-0006": {
+  "expr": "(lambda LL, PL: LL-PL)(48, 21)",
+  "value": 27
+ },
+ "geotech-a-lesson#geotech-0009": {
+  "expr": "(lambda D60, D30, D10: D60/D10)(1.8, 0.6, 0.15)",
+  "value": 12.0
+ },
  "geotech-b-lesson": {
   "expr": "0.30*2.70",
   "value": 0.81
+ },
+ "geotech-b-lesson#geotech-0001": {
+  "expr": "(lambda M, wc: M/0.001/(1+wc/100))(2.1, 15)",
+  "value": 1826.086957
+ },
+ "geotech-b-lesson#geotech-0002": {
+  "expr": "(lambda rd, Gs: Gs*1000/rd-1)(1700, 2.72)",
+  "value": 0.6
  },
  "geotech-c-lesson": {
   "expr": "1750/1850*100",
   "value": 94.6
  },
+ "geotech-c-lesson#geotech-0010": {
+  "expr": "(lambda fd, mx: fd/mx*100)(17.9, 18.6)",
+  "value": 96.236559
+ },
+ "geotech-c-lesson#geotech-0011": {
+  "expr": "(lambda Q, t, L, A, h: Q*L/(A*h*t))(720, 300, 18, 40, 45)",
+  "value": 0.024
+ },
  "geotech-d-lesson": {
   "expr": "20*5 - gw*5",
   "value": 51
+ },
+ "geotech-d-lesson#geotech-0003": {
+  "expr": "(lambda g1, g2, zw, z: g1*zw+(g2-9.81)*(z-zw))(18.5, 20, 2.5, 7)",
+  "value": 92.105
  },
  "geotech-e-lesson": {
   "expr": "0.5*(1/3)*17*3**2",
   "value": 25.5
  },
+ "geotech-e-lesson#geotech-0004": {
+  "expr": "(lambda phi: tan(rad(45-phi/2))**2)(32)",
+  "value": 0.307259
+ },
+ "geotech-e-lesson#geotech-0012": {
+  "expr": "(lambda H, gam, Ka: 0.5*Ka*gam*H*H)(7, 18.5, 0.307)",
+  "value": 139.14775
+ },
  "geotech-f-lesson": {
   "expr": "150*tan(rad(32))",
   "value": 93.7
+ },
+ "geotech-f-lesson#geotech-0005": {
+  "expr": "(lambda c, sn, phi: c+sn*tan(rad(phi)))(20, 120, 25)",
+  "value": 75.956919
+ },
+ "geotech-f-lesson#geotech-0013": {
+  "expr": "(lambda qu: qu/2)(96)",
+  "value": 48.0
  },
  "geotech-g-lesson": {
   "expr": "sqrt(900/200)",
   "value": 2.12
  },
+ "geotech-g-lesson#geotech-0014": {
+  "expr": "(lambda c, D, gam: c*5.7+gam*D)(60, 1.8, 18.5)",
+  "value": 375.3
+ },
+ "geotech-g-lesson#geotech-0015": {
+  "expr": "(lambda P, qu, FS: sqrt(P*FS/qu))(1500, 480, 3)",
+  "value": 3.061862
+ },
  "geotech-h-lesson": {
   "expr": "50*pi*0.4*12",
   "value": 754
+ },
+ "geotech-h-lesson#geotech-0016": {
+  "expr": "(lambda s, L, fs, qp: fs*4*s*L+qp*s*s)(0.5, 20, 45, 2200)",
+  "value": 2350.0
  },
  "geotech-i-lesson": {
   "expr": "0.25*2000/1.9*log10(2)",
   "value": 79
  },
+ "geotech-i-lesson#geotech-0018": {
+  "expr": "(lambda H, Cc, e0, p1, p2: Cc*H/(1+e0)*log10(p2/p1)*1000)(8, 0.32, 0.9, 140, 280)",
+  "value": 405.59831
+ },
+ "geotech-i-lesson#geotech-0019": {
+  "expr": "(lambda H, cv: 0.197*(H/2)**2/cv)(10, 2.5)",
+  "value": 1.97
+ },
  "geotech-j-lesson": {
   "expr": "tan(rad(33))/tan(rad(20))",
   "value": 1.78
+ },
+ "geotech-j-lesson#geotech-0020": {
+  "expr": "(lambda b, phi: tan(rad(phi))/tan(rad(b)))(22, 34)",
+  "value": 1.669467
+ },
+ "geotech-j-lesson#geotech-0021": {
+  "expr": "(lambda R, La, su, W, x: su*La*R/(W*x))(18, 25, 35, 1800, 5.5)",
+  "value": 1.590909
  },
  "geotech-k-lesson": {
   "expr": "0.06*1700*500",
   "value": 51000
  },
+ "geotech-k-lesson#geotech-0023": {
+  "expr": "(lambda pct, rd, Vol: pct/100*rd*Vol)(4.5, 1750, 600)",
+  "value": 47250.0
+ },
  "materials-a-lesson": {
   "expr": "200/0.5/3150",
   "value": 0.127
+ },
+ "materials-a-lesson#materials-0001": {
+  "expr": "(lambda W, C: W/C)(175, 390)",
+  "value": 0.448718
+ },
+ "materials-a-lesson#materials-0005": {
+  "expr": "(lambda m: m/3150)(380)",
+  "value": 0.120635
+ },
+ "materials-a-lesson#materials-0006": {
+  "expr": "(lambda tot, bn: bn/tot*100)(1250, 65)",
+  "value": 5.2
  },
  "materials-c-lesson": {
   "expr": "300/0.0015/1000",
   "value": 200
  },
+ "materials-c-lesson#materials-0002": {
+  "expr": "(lambda d, P: P*1000/(pi*d*d/4))(150, 710)",
+  "value": 40.177781
+ },
+ "materials-c-lesson#materials-0004": {
+  "expr": "(lambda st, eps: st/eps/1000)(150, 0.00075)",
+  "value": 200.0
+ },
+ "materials-c-lesson#materials-0009": {
+  "expr": "(lambda fc: 4700*sqrt(fc))(40)",
+  "value": 29725.410006
+ },
+ "materials-c-lesson#materials-0010": {
+  "expr": "(lambda L0, Lf: (Lf-L0)/L0*100)(50, 61)",
+  "value": 22.0
+ },
  "math-a-lesson": {
   "expr": "(10-4)/(3-1)*5 + (4 - (10-4)/(3-1)*1)",
   "value": 16
+ },
+ "math-a-lesson#math-0001": {
+  "expr": "(lambda x1, y1, x2, y2: y1-(y2-y1)/(x2-x1)*x1)(4, 7, 10, 4)",
+  "value": 9.0
+ },
+ "math-a-lesson#math-0006": {
+  "expr": "(lambda D, E, tx, ty: sqrt(D*D/4+E*E/4))(-10, 24, '- 10x', '+ 24y')",
+  "value": 13.0
+ },
+ "math-a-lesson#math-0007": {
+  "expr": "(lambda x1, y1, x2, y2: hypot(x2-x1,y2-y1))(-2, 1, 10, 6)",
+  "value": 13.0
+ },
+ "math-a-lesson#math-0008": {
+  "expr": "(lambda sa, sb, C: sqrt(sa*sa+sb*sb-2*sa*sb*cos(rad(C))))(12, 15, 50)",
+  "value": 11.730152
  },
  "math-b-lesson": {
   "expr": "2**3 - 12*2",
   "value": -16
  },
+ "math-b-lesson#math-0002": {
+  "expr": "(lambda a, b: a*b**3/3)(9, 2)",
+  "value": 24.0
+ },
+ "math-b-lesson#math-0009": {
+  "expr": "(lambda k, x0: 3*x0*x0-k)(5, 4)",
+  "value": 43
+ },
+ "math-b-lesson#math-0010": {
+  "expr": "(lambda a, b, c, cs: c+b*b/(4*a))(4, 24, -6, '- 6')",
+  "value": 30.0
+ },
+ "math-b-lesson#math-0011": {
+  "expr": "(lambda a, b, tt: a*tt*tt/2+b*tt)(5, 3, 4)",
+  "value": 52.0
+ },
  "math-c-lesson": {
   "expr": "atan(2/2)*180/pi",
   "value": 45
+ },
+ "math-c-lesson#math-0012": {
+  "expr": "(lambda a1, a2, b1, b2: abs(a1*b2-a2*b1))(6, -1, 2, 5)",
+  "value": 32
+ },
+ "math-c-lesson#math-0013": {
+  "expr": "(lambda a1, a2, a3: sqrt(a1*a1+a2*a2+a3*a3))(2, 3, -6)",
+  "value": 7.0
  },
  "math-d-lesson": {
   "expr": "(60-50)/5",
   "value": 2.0
  },
+ "math-d-lesson#math-0004": {
+  "expr": "(lambda data: sd(data))([4, 7, 9, 12, 18])",
+  "value": 5.338539
+ },
+ "math-d-lesson#math-0015": {
+  "expr": "(lambda mu, sv, x: 0.5*(1+erf((x-mu)/sv/sqrt(2))))(35, 5, 42.5)",
+  "value": 0.933193
+ },
+ "math-d-lesson#math-0016": {
+  "expr": "(lambda y1, y2, y3: (y3-y1)/2)(4, 5, 9)",
+  "value": 2.5
+ },
+ "math-d-lesson#math-0017": {
+  "expr": "(lambda p, n: comb(n,2)*p**2*(1-p)**(n-2))(0.12, 7)",
+  "value": 0.159586
+ },
  "mechmat-a-lesson": {
   "expr": "12*4**2/8",
   "value": 24
+ },
+ "mechmat-a-lesson#mechmat-0003": {
+  "expr": "(lambda L, w: w*L**2/8)(12, 15)",
+  "value": 270.0
+ },
+ "mechmat-a-lesson#mechmat-0008": {
+  "expr": "(lambda L, w: w*L/2)(12, 15)",
+  "value": 90.0
  },
  "mechmat-b-lesson": {
   "expr": "40000/625",
   "value": 64
  },
+ "mechmat-b-lesson#mechmat-0001": {
+  "expr": "(lambda d, P: P*1000/(pi*d*d/4))(32, 150)",
+  "value": 186.509699
+ },
+ "mechmat-b-lesson#mechmat-0005": {
+  "expr": "(lambda b, h, M: M*1e6*6/(b*h*h))(250, 500, 250)",
+  "value": 24.0
+ },
+ "mechmat-b-lesson#mechmat-0009": {
+  "expr": "(lambda d, Tq: 16*Tq*1e6/(pi*d**3))(75, 6)",
+  "value": 72.433183
+ },
+ "mechmat-b-lesson#mechmat-0010": {
+  "expr": "(lambda al, dT, E: al*1e-6*dT*E*1000)(12, 75, 200)",
+  "value": 180.0
+ },
  "mechmat-c-lesson": {
   "expr": "14000*3000/(200*70000)",
   "value": 3.0
+ },
+ "mechmat-c-lesson#mechmat-0002": {
+  "expr": "(lambda d, L, P, E: P*1000*L*1000/(pi*d*d/4*E*1000))(32, 5, 150, 200)",
+  "value": 4.662742
+ },
+ "mechmat-c-lesson#mechmat-0011": {
+  "expr": "(lambda L, dT, al: al*1e-6*dT*L*1000)(30, 45, 12)",
+  "value": 16.2
  },
  "mechmat-d-lesson": {
   "expr": "30 + hypot(30,40)",
   "value": 80
  },
+ "mechmat-d-lesson#mechmat-0004": {
+  "expr": "(lambda sx, sy, txy: (sx+sy)/2+hypot((sx-sy)/2,txy))(60, -60, 80)",
+  "value": 100.0
+ },
+ "mechmat-d-lesson#mechmat-0012": {
+  "expr": "(lambda s1, s2: (s1+s2)/2)(140, 80)",
+  "value": 110.0
+ },
+ "mechmat-d-lesson#mechmat-0013": {
+  "expr": "(lambda r, t, p: p*r/t)(900, 18, 1.6)",
+  "value": 80.0
+ },
  "statics-a-lesson": {
   "expr": "hypot(60,80)",
   "value": 100
+ },
+ "statics-a-lesson#statics-0001": {
+  "expr": "(lambda F1, F2, th: sqrt(F1**2+F2**2+2*F1*F2*cos(rad(th))))(140, 75, 50)",
+  "value": 196.782976
+ },
+ "statics-a-lesson#statics-0010": {
+  "expr": "(lambda Fa, L, th: Fa*L*sin(rad(th)))(250, 1.2, 50)",
+  "value": 229.813333
  },
  "statics-b-lesson": {
   "expr": "400*0.5",
   "value": 200
  },
+ "statics-b-lesson#statics-0006": {
+  "expr": "(lambda Fc, d: Fc*d)(150, 0.3)",
+  "value": 45.0
+ },
+ "statics-b-lesson#statics-0007": {
+  "expr": "(lambda Fc, d: Fc*d)(320, 0.45)",
+  "value": 144.0
+ },
  "statics-c-lesson": {
   "expr": "18 - 18*3/9",
   "value": 12
+ },
+ "statics-c-lesson#statics-0002": {
+  "expr": "(lambda L, P, a: P - P*a/L)(12, 48, 3)",
+  "value": 36.0
+ },
+ "statics-c-lesson#statics-0011": {
+  "expr": "(lambda L, w, P: (w*L+P)/2)(9, 8, 36)",
+  "value": 54.0
+ },
+ "statics-c-lesson#statics-0015": {
+  "expr": "(lambda W, th: W/(2*sin(rad(th))))(1500, 45)",
+  "value": 1060.660172
  },
  "statics-d-lesson": {
   "expr": "15/(4/5)",
   "value": 18.75
  },
+ "statics-d-lesson#statics-0008": {
+  "expr": "(lambda span, h, P: P/2*hypot(span/2,h)/h)(16, 6, 60)",
+  "value": 50.0
+ },
+ "statics-d-lesson#statics-0009": {
+  "expr": "(lambda span, h, P: P/2*(span/2)/h)(16, 6, 60)",
+  "value": 40.0
+ },
  "statics-e-lesson": {
   "expr": "(1200*30+1200*70)/2400",
   "value": 50
+ },
+ "statics-e-lesson#statics-0003": {
+  "expr": "(lambda bf, tf, tw, hw: (tw*hw*hw/2 + bf*tf*(hw+tf/2))/(tw*hw+bf*tf))(160, 25, 25, 150)",
+  "value": 120.16129
+ },
+ "statics-e-lesson#statics-0012": {
+  "expr": "(lambda t, H, B: (t*H*t/2 + B*t*(t+B/2))/(t*H+B*t))(25, 120, 75)",
+  "value": 31.730769
  },
  "statics-f-lesson": {
   "expr": "50*120**3/12/1e6",
   "value": 7.2
  },
+ "statics-f-lesson#statics-0005": {
+  "expr": "(lambda b, h: b*h**3/12/1e6)(180, 360)",
+  "value": 699.84
+ },
+ "statics-f-lesson#statics-0013": {
+  "expr": "(lambda b, h: b*h**3/3/1e6)(90, 180)",
+  "value": 174.96
+ },
  "statics-g-lesson": {
   "expr": "min(90, 0.4*300)",
   "value": 90
+ },
+ "statics-g-lesson#statics-0004": {
+  "expr": "(lambda mu: atan(mu)*180/pi)(0.45)",
+  "value": 24.227745
+ },
+ "statics-g-lesson#statics-0014": {
+  "expr": "(lambda W, mu, th: mu*W/(cos(rad(th))+mu*sin(rad(th))))(1000, 0.3, 15)",
+  "value": 287.474302
  },
  "structural-a-lesson": {
   "expr": "20*2*3/5",
   "value": 24
  },
+ "structural-a-lesson#structural-0006": {
+  "expr": "(lambda L, P: P*L)(3.5, 24)",
+  "value": 84.0
+ },
+ "structural-a-lesson#structural-0007": {
+  "expr": "(lambda L, w, P, a: w*L/2+P*(L-a)/L)(12, 3, 30, 4)",
+  "value": 38.0
+ },
+ "structural-a-lesson#structural-0008": {
+  "expr": "(lambda L, P: P*L/4)(12, 50)",
+  "value": 150.0
+ },
  "structural-b-lesson": {
   "expr": "5*6*8**4/(384*40000)*1000",
   "value": 8.0
  },
+ "structural-b-lesson#structural-0003": {
+  "expr": "(lambda L, P, EI: P*L**3/(48*EI)*1000)(10, 50, 80000)",
+  "value": 13.020833
+ },
+ "structural-b-lesson#structural-0009": {
+  "expr": "(lambda L, P, EI: P*L**3/(3*EI)*1000)(3.5, 12, 30000)",
+  "value": 5.716667
+ },
  "structural-c-lesson": {
   "expr": "pi**2*500/3**2",
   "value": 548
+ },
+ "structural-c-lesson#structural-0002": {
+  "expr": "(lambda L, I: pi**2*200000*I*1e6/(L*1000)**2/1000)(8, 50)",
+  "value": 1542.125688
+ },
+ "structural-c-lesson#structural-0010": {
+  "expr": "(lambda L: 0.7*L)(7)",
+  "value": 4.9
  },
  "structural-d-lesson": {
   "expr": "17 + 3 - 2*10",
@@ -195,100 +667,340 @@
   "expr": "9*4**2/12",
   "value": 12
  },
+ "structural-e-lesson#structural-0012": {
+  "expr": "(lambda L, w: 3*w*L/8)(10, 12)",
+  "value": 45.0
+ },
+ "structural-e-lesson#structural-0013": {
+  "expr": "(lambda L, w: w*L**2/12)(9, 16)",
+  "value": 108.0
+ },
  "structural-f-lesson": {
   "expr": "max(1.4*5, 1.2*5+1.6*3)*36",
   "value": 389
+ },
+ "structural-f-lesson#structural-0004": {
+  "expr": "(lambda D, Lv: max(1.4*D, 1.2*D+1.6*Lv))(25, 35)",
+  "value": 86.0
+ },
+ "structural-f-lesson#structural-0014": {
+  "expr": "(lambda s, q: q*s)(3.5, 4.8)",
+  "value": 16.8
  },
  "structural-g-lesson": {
   "expr": "0.9*250*1500/1000",
   "value": 337.5
  },
+ "structural-g-lesson#structural-0015": {
+  "expr": "(lambda Ag, Fy: 0.9*Fy*Ag/1000)(2800, 345)",
+  "value": 869.4
+ },
+ "structural-g-lesson#structural-0016": {
+  "expr": "(lambda Z, Fy: 0.9*Fy*Z)(1.8, 345)",
+  "value": 558.9
+ },
+ "structural-g-lesson#structural-0017": {
+  "expr": "(lambda L, r: L*1000/r)(7.5, 60)",
+  "value": 125.0
+ },
  "structural-h-lesson": {
   "expr": "1000*420*(450 - 1000*420/(0.85*30*300)/2)/1e6",
   "value": 177.5
+ },
+ "structural-h-lesson#structural-0005": {
+  "expr": "(lambda b, d, As, fc: As*420*(d-As*420/(1.7*fc*b))/1e6)(320, 560, 1800, 30)",
+  "value": 388.339412
+ },
+ "structural-h-lesson#structural-0018": {
+  "expr": "(lambda b, As, fc: As*420/(0.85*fc*b))(320, 1800, 30)",
+  "value": 92.647059
+ },
+ "structural-h-lesson#structural-0019": {
+  "expr": "(lambda b, d, fc: 0.17*sqrt(fc)*b*d/1000)(320, 560, 30)",
+  "value": 166.8582
+ },
+ "structural-h-lesson#structural-0020": {
+  "expr": "(lambda sd0, Ast, fc: (0.85*fc*(sd0*sd0-Ast)+420*Ast)/1000)(550, 6000, 35)",
+  "value": 11340.875
  },
  "surveying-a-lesson": {
   "expr": "200 - 180",
   "value": 20
  },
+ "surveying-a-lesson#surveying-0006": {
+  "expr": "(lambda S, va: S*cos(rad(va)))(412.6, 9)",
+  "value": 407.520209
+ },
+ "surveying-a-lesson#surveying-0007": {
+  "expr": "(lambda n, name: (n-2)*180)(7, 'seven')",
+  "value": 900
+ },
  "surveying-b-lesson": {
   "expr": "0.5*40*30",
   "value": 600
+ },
+ "surveying-b-lesson#surveying-0002": {
+  "expr": "(lambda bx, cx, cy, dx, dy: abs(bx*cy+cx*dy-dx*cy)/2)(70, 100, 60, 20, 80)",
+  "value": 5500.0
+ },
+ "surveying-b-lesson#surveying-0008": {
+  "expr": "(lambda sa, sb, C: 0.5*sa*sb*sin(rad(C)))(150, 95, 64)",
+  "value": 6403.90758
  },
  "surveying-c-lesson": {
   "expr": "30*(18+26)/2",
   "value": 660
  },
+ "surveying-c-lesson#surveying-0003": {
+  "expr": "(lambda L, A1, A2: L*(A1+A2)/2)(30, 28, 44)",
+  "value": 1080.0
+ },
+ "surveying-c-lesson#surveying-0009": {
+  "expr": "(lambda pa, pb, dc: pa*pb*dc)(30, 45, 2.2)",
+  "value": 2970.0
+ },
  "surveying-d-lesson": {
   "expr": "150*sin(rad(120))",
   "value": 129.9
+ },
+ "surveying-d-lesson#surveying-0010": {
+  "expr": "(lambda L, az: L*sin(rad(az)))(264.5, 48)",
+  "value": 196.561806
+ },
+ "surveying-d-lesson#surveying-0011": {
+  "expr": "(lambda N0, L, br: N0-L*cos(rad(br)))(3200, 145, 35)",
+  "value": 3081.222954
  },
  "surveying-e-lesson": {
   "expr": "50 + 2.10 - 0.85",
   "value": 51.25
  },
+ "surveying-e-lesson#surveying-0001": {
+  "expr": "(lambda BM, bs, fs: BM+bs-fs)(75.5, 1.84, 2.96)",
+  "value": 74.38
+ },
+ "surveying-e-lesson#surveying-0005": {
+  "expr": "(lambda e1, e2, d: (e2-e1)/d*100)(150.0, 162.6, 360)",
+  "value": 3.5
+ },
  "transport-a-lesson": {
   "expr": "40**2/(15*0.20)",
   "value": 533
+ },
+ "transport-a-lesson#transport-0001": {
+  "expr": "(lambda V: 1.47*V*2.5+V*V/(30*11.2/32.2))(55)",
+  "value": 492.020833
+ },
+ "transport-a-lesson#transport-0002": {
+  "expr": "(lambda V, e, f: V*V/(15*(e/100+f)))(65, 6, 0.11)",
+  "value": 1656.862745
+ },
+ "transport-a-lesson#transport-0005": {
+  "expr": "(lambda g1, g2, L: g1*L/(g1+g2))(2.5, 3.5, 720)",
+  "value": 300.0
+ },
+ "transport-a-lesson#transport-0016": {
+  "expr": "(lambda R, D: R*D*pi/180)(1200, 36)",
+  "value": 753.982237
+ },
+ "transport-a-lesson#transport-0017": {
+  "expr": "(lambda R, D: R*tan(rad(D/2)))(1200, 36)",
+  "value": 389.903635
+ },
+ "transport-a-lesson#transport-0018": {
+  "expr": "(lambda g1, g2, K: K*(g1+g2))(2.5, 1.5, 114)",
+  "value": 456.0
  },
  "transport-b-lesson": {
   "expr": "0.44*5 + 0.14*10",
   "value": 3.6
  },
+ "transport-b-lesson#transport-0007": {
+  "expr": "(lambda D1, D2, D3: 0.44*D1+0.14*D2+0.11*D3)(5, 10, 8)",
+  "value": 4.48
+ },
+ "transport-b-lesson#transport-0008": {
+  "expr": "(lambda CBR: 1500*CBR)(7)",
+  "value": 10500
+ },
+ "transport-b-lesson#transport-0009": {
+  "expr": "(lambda dly, n: dly*365*n/1e6)(950, 20)",
+  "value": 6.935
+ },
  "transport-c-lesson": {
   "expr": "1800*30/90",
   "value": 600
+ },
+ "transport-c-lesson#transport-0003": {
+  "expr": "(lambda k, u: k*u)(48, 42)",
+  "value": 2016
+ },
+ "transport-c-lesson#transport-0004": {
+  "expr": "(lambda Vh, V15: Vh/(4*V15))(1500, 420)",
+  "value": 0.892857
+ },
+ "transport-c-lesson#transport-0010": {
+  "expr": "(lambda N, s, gr, C: N*s*gr/C)(3, 1850, 45, 110)",
+  "value": 2270.454545
+ },
+ "transport-c-lesson#transport-0011": {
+  "expr": "(lambda uf, kj: uf*kj/4)(65, 140)",
+  "value": 2275.0
  },
  "transport-d-lesson": {
   "expr": "1.0 + 59/20",
   "value": 3.95
  },
+ "transport-d-lesson#transport-0012": {
+  "expr": "(lambda mph, fps: 1.0+fps/20)(52.5, 77)",
+  "value": 4.85
+ },
  "transport-e-lesson": {
   "expr": "11*120",
   "value": 1320
+ },
+ "transport-e-lesson#transport-0013": {
+  "expr": "(lambda n, rate: n*rate)(320, 8.5)",
+  "value": 2720.0
+ },
+ "transport-e-lesson#transport-0014": {
+  "expr": "(lambda cr, adt: cr*1e6/(adt*365))(15, 27500)",
+  "value": 1.494396
+ },
+ "transport-e-lesson#transport-0015": {
+  "expr": "(lambda Ua, Ub: exp(Ub)/(exp(Ua)+exp(Ub)))(-0.4, -1.3)",
+  "value": 0.28905
  },
  "water-a-lesson": {
   "expr": "0.4*3*5",
   "value": 6
  },
+ "water-a-lesson#water-0001": {
+  "expr": "(lambda A, C, i: C*i*A)(18, 0.7, 2.8)",
+  "value": 35.28
+ },
+ "water-a-lesson#water-0007": {
+  "expr": "(lambda CN, P: (P-0.2*(1000/CN-10))**2/(P+0.8*(1000/CN-10)))(75, 6.0)",
+  "value": 3.282051
+ },
  "water-b-lesson": {
   "expr": "(2*0.5)/(2 + 2*0.5)",
   "value": 0.333
+ },
+ "water-b-lesson#water-0002": {
+  "expr": "(lambda b, y, S, n: 1/n*b*y*(b*y/(b+2*y))**(2/3)*S**0.5)(3.5, 1.2, 0.0012, 0.014)",
+  "value": 8.285335
+ },
+ "water-b-lesson#water-0008": {
+  "expr": "(lambda q: (q*q/g)**(1/3))(2.5)",
+  "value": 0.860473
  },
  "water-c-lesson": {
   "expr": "gw*0.02*25/0.8",
   "value": 6.13
  },
+ "water-c-lesson#water-0003": {
+  "expr": "(lambda Q, H, eff: 9.81*Q*H/(eff/100))(0.1, 36, 78)",
+  "value": 45.276923
+ },
+ "water-c-lesson#water-0009": {
+  "expr": "(lambda Q1, N1, N2: Q1*N2/N1)(150, 1150, 1750)",
+  "value": 228.26087
+ },
  "water-d-lesson": {
   "expr": "gw*30",
   "value": 294
+ },
+ "water-d-lesson#water-0010": {
+  "expr": "(lambda pop, lpcd, pf: pop*lpcd*pf/1000)(60000, 380, 1.7)",
+  "value": 38760.0
+ },
+ "water-d-lesson#water-0011": {
+  "expr": "(lambda h: 9.81*h)(46)",
+  "value": 451.26
  },
  "water-e-lesson": {
   "expr": "1 - 0.99**30",
   "value": 0.26
  },
+ "water-e-lesson#water-0012": {
+  "expr": "(lambda T, n: 1-(1-1/T)**n)(100, 50)",
+  "value": 0.394994
+ },
+ "water-e-lesson#water-0013": {
+  "expr": "(lambda T: 100/T)(500)",
+  "value": 0.2
+ },
  "water-f-lesson": {
   "expr": "(2.5-0.5)*15*60",
   "value": 1800
+ },
+ "water-f-lesson#water-0014": {
+  "expr": "(lambda qi, qo, t: (qi-qo)*t*60)(4.2, 1.6, 25)",
+  "value": 3900.0
+ },
+ "water-f-lesson#water-0015": {
+  "expr": "(lambda C1, C2: C2/C1)(0.35, 0.75)",
+  "value": 2.142857
  },
  "water-g-lesson": {
   "expr": "5000*250/86400*3.5",
   "value": 50.6
  },
+ "water-g-lesson#water-0016": {
+  "expr": "(lambda D, S: 1/0.013*(D/4000)**(2/3)*S**0.5)(375, 0.004)",
+  "value": 1.004001
+ },
+ "water-g-lesson#water-0017": {
+  "expr": "(lambda pop, lpcd, pf: pop*lpcd*pf/86400)(20000, 320, 2.8)",
+  "value": 207.407407
+ },
  "water-h-lesson": {
   "expr": "20*2/500",
   "value": 0.08
+ },
+ "water-h-lesson#water-0005": {
+  "expr": "(lambda K, i, A: K*i*A)(20, 0.006, 1200)",
+  "value": 144.0
+ },
+ "water-h-lesson#water-0018": {
+  "expr": "(lambda K, i, n: K*i/n)(30, 0.005, 0.25)",
+  "value": 0.6
  },
  "water-i-lesson": {
   "expr": "4.0/(10/300)",
   "value": 120
  },
+ "water-i-lesson#water-0019": {
+  "expr": "(lambda Vs, DOi, DOf: (DOi-DOf)*300/Vs)(8, 8.4, 3.2)",
+  "value": 195.0
+ },
+ "water-i-lesson#water-0020": {
+  "expr": "(lambda Ca, Mg: Ca*50/20+Mg*50/12.2)(70, 20)",
+  "value": 256.967213
+ },
  "water-j-lesson": {
   "expr": "10*log10(3*10**7)",
   "value": 74.8
  },
+ "water-j-lesson#water-0021": {
+  "expr": "(lambda n, nw, Ls: Ls+10*log10(n))(5, 'Five', 85)",
+  "value": 91.9897
+ },
  "water-k-lesson": {
   "expr": "600/4800*24",
   "value": 3.0
+ },
+ "water-k-lesson#water-0004": {
+  "expr": "(lambda Vt, Q: Vt/Q*24)(2700, 14400)",
+  "value": 4.5
+ },
+ "water-k-lesson#water-0023": {
+  "expr": "(lambda Q, A: Q/A)(15000, 420)",
+  "value": 35.714286
+ },
+ "water-k-lesson#water-0024": {
+  "expr": "(lambda Q, dose: Q*dose/1000)(36000, 2.5)",
+  "value": 90.0
  }
 }

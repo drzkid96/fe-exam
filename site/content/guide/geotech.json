@@ -52,7 +52,45 @@
    "example": {
     "problem": "A soil has D_{10} = 0.1 mm, D_{30} = 0.3 mm and D_{60} = 0.9 mm. Find C_{u} and C_{c}.",
     "steps": "C_{u} = \\frac{0.9}{0.1} = 9.\n\nC_{c} = \\frac{0.3^{2}}{0.1(0.9)} = 1.0."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Plasticity index",
+     "text": "The plasticity index is the range of water content over which the soil behaves plastically: PI = LL - PL. With the liquid limit it places a fine-grained soil on the plasticity chart for classification."
+    },
+    {
+     "title": "Coefficient of uniformity",
+     "text": "The coefficient of uniformity, C_{u} = D_{60} / D_{10}, measures the spread of particle sizes. The coefficient of curvature, C_{c} = D_{30}^{2} / (D_{60} × D_{10}), measures the shape of the curve. Both are needed to call a sand or gravel well graded."
+    }
+   ],
+   "examples": [
+    {
+     "family": "geotech-0006",
+     "problem": "A clay has a liquid limit of 48 and a plastic limit of 21. What is its plasticity index?",
+     "steps": "PI = LL - PL = 48 - 21 = 27.",
+     "answer": "27",
+     "value": 27
+    },
+    {
+     "family": "geotech-0009",
+     "problem": "A grain size curve gives D_{60} = 1.8 mm, D_{30} = 0.6 mm and D_{10} = 0.15 mm. What is the coefficient of uniformity?",
+     "steps": "C_{u} = \\frac{D_{60}}{D_{10}} = \\frac{1.8}{0.15} = 12.00. For reference, C_{c} = \\frac{0.6^{2}}{1.8 × 0.15} = 1.33.",
+     "answer": "12.00",
+     "value": 12.0
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "plasticity index",
+      "Unified Soil Classification",
+      "coefficient of uniformity",
+      "coefficient of curvature"
+     ]
+    }
+   ]
   },
   {
    "id": "geotech-b-lesson",
@@ -89,7 +127,44 @@
    "example": {
     "problem": "A saturated clay has a water content of 30% and G_{s} = 2.70. Find its void ratio.",
     "steps": "With S = 1: e = wG_{s} = 0.30(2.70) = 0.81."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Water content",
+     "text": "Water content is the mass of water divided by the mass of dry solids, so the moist mass is the dry mass times (1 + w). Dividing the moist (bulk) density by (1 + w) therefore gives the dry density."
+    },
+    {
+     "title": "Void ratio",
+     "text": "Dry density relates to void ratio through the phase diagram: dry density = G_{s} × (density of water) / (1 + e). Solving for e gives the volume of voids per unit volume of solids. Do not confuse it with porosity, n = e / (1 + e)."
+    }
+   ],
+   "examples": [
+    {
+     "family": "geotech-0001",
+     "problem": "A moist soil sample has a mass of 2.10 kg and a volume of 0.001 m^{3}. Its water content is 15%. What is the dry density?",
+     "steps": "Bulk density = \\frac{2.10}{0.001} = 2,100 kg/m^{3}.\n\nDry density = \\frac{2,100}{1 + 0.150} = 1,826 kg/m^{3}.",
+     "answer": "1,826 kg/m^{3}",
+     "value": 1826.086957
+    },
+    {
+     "family": "geotech-0002",
+     "problem": "A soil has a dry density of 1,700 kg/m^{3}. The specific gravity of its solids is 2.72. What is its void ratio?",
+     "steps": "e = \\frac{G_{s} × 1,000}{dry density} - 1 = \\frac{2.72(1,000)}{1,700} - 1 = 1.600 - 1 = 0.600.",
+     "answer": "0.600",
+     "value": 0.6
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "water content",
+      "dry unit weight",
+      "void ratio"
+     ]
+    }
+   ]
   },
   {
    "id": "geotech-c-lesson",
@@ -120,7 +195,44 @@
    "example": {
     "problem": "Compacted fill has a dry density of 1,750 kg/m^{3}. The Proctor maximum is 1,850 kg/m^{3}. Does it meet a 95% specification?",
     "steps": "Relative compaction = \\frac{1,750}{1,850} × 100 = 94.6%, just short of 95%."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Relative compaction",
+     "text": "Relative compaction compares the dry unit weight achieved in the field with the laboratory maximum from the Proctor test. Specifications usually require a minimum percentage, often 90% to 95%."
+    },
+    {
+     "title": "Coefficient of permeability",
+     "text": "Darcy's law: flow rate = k i A, where the hydraulic gradient i is head loss divided by flow length. In a constant-head test the flow rate is the collected volume divided by time, so k = Q L / (A h t)."
+    }
+   ],
+   "examples": [
+    {
+     "family": "geotech-0010",
+     "problem": "A field density test gives a dry unit weight of 17.9 kN/m^{3}. The maximum dry unit weight from the Proctor test is 18.6 kN/m^{3}. What is the relative compaction?",
+     "steps": "Relative compaction = \\frac{17.9}{18.6} × 100 = 96.2%.",
+     "answer": "96.2 %",
+     "value": 96.236559
+    },
+    {
+     "family": "geotech-0011",
+     "problem": "In a constant-head permeability test, 720 cm^{3} of water passes through a sample in 300 s. The sample is 18 cm long with a cross-section of 40 cm^{2}, and the head difference is 45 cm. What is the coefficient of permeability?",
+     "steps": "Hydraulic gradient i = 45 / 18 = 2.50.\n\nFlow rate = 720 / 300 = 2.40 cm^{3}/s.\n\nk = \\frac{2.40}{2.50 × 40} = 0.024 cm/s.",
+     "answer": "0.024 cm/s",
+     "value": 0.024
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "relative compaction",
+      "coefficient of permeability",
+      "constant head"
+     ]
+    }
+   ]
   },
   {
    "id": "geotech-d-lesson",
@@ -157,7 +269,48 @@
     "svg": "<rect x='30' y='24' width='300' height='50' fill='#EEEDE8'/><rect x='30' y='74' width='300' height='100' fill='#D9F1D6'/><line x1='30' y1='24' x2='330' y2='24' stroke='#00242E' stroke-width='3'/><line x1='30' y1='74' x2='330' y2='74' stroke='#568CBB' stroke-width='2' stroke-dasharray='8 4'/><text x='40' y='53' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>17 kN/m³</text><text x='40' y='128' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>19 kN/m³ saturated</text><text x='322' y='69' text-anchor='end' font-size='12' font-weight='400' fill='#568CBB'>Water table</text><circle cx='300' cy='174' r='5' fill='#00574A'/><line x1='350' y1='24' x2='350' y2='174' stroke='#00242E'/><text x='358' y='99' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>6 m</text><text x='358' y='49' text-anchor='start' font-size='12' font-weight='400' fill='#568CBB'>2 m</text>",
     "alt": "A soil profile with the water table 2 m below the surface and a point at 6 m depth.",
     "caption": "A soil profile with a water table. Effective stress is total stress minus pore water pressure."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Working down a layered profile",
+     "text": "Add the total stress layer by layer: unit weight times thickness, using the saturated unit weight below the water table. Pore pressure is zero above the water table and rises at 9.81 kPa per metre below it. Subtract at the depth of interest."
+    },
+    {
+     "title": "A moving water table",
+     "text": "Lowering the water table raises effective stress in the soil below it, because pore pressure falls while total stress barely changes. That increase can cause settlement of compressible layers."
+    },
+    {
+     "title": "Seepage and the quick condition",
+     "text": "Upward seepage reduces effective stress. At the critical hydraulic gradient, (saturated unit weight - unit weight of water) / unit weight of water, which is close to 1 for most soils, effective stress reaches zero and the soil loses its strength."
+    },
+    {
+     "title": "Effective stress",
+     "text": "Effective stress is total stress minus pore water pressure. Total stress is the weight of everything above the point; pore pressure is the unit weight of water times the depth below the water table. Effective stress, not total stress, controls strength and settlement."
+    }
+   ],
+   "examples": [
+    {
+     "family": "geotech-0003",
+     "problem": "A sand deposit has a unit weight of 18.5 kN/m^{3} above the water table and a saturated unit weight of 20 kN/m^{3} below it. The water table is 2.5 m below the ground surface. What is the vertical effective stress at a depth of 7 m? Use 9.81 kN/m^{3} for water.",
+     "steps": "Total stress = 18.5(2.5) + 20(7 - 2.5) = 136.2 kPa.\n\nPore pressure = 9.81(7 - 2.5) = 44.1 kPa.\n\nEffective stress = 136.2 - 44.1 = 92.1 kPa.",
+     "answer": "92.1 kPa",
+     "value": 92.105,
+     "figure": {
+      "viewBox": "0 0 420 190",
+      "svg": "<rect x='30' y='24' width='300' height='54' fill='#EEEDE8'/><rect x='30' y='78' width='300' height='96' fill='#D9F1D6'/><line x1='30' y1='24' x2='330' y2='24' stroke='#00242E' stroke-width='3'/><line x1='30' y1='78' x2='330' y2='78' stroke='#568CBB' stroke-width='2' stroke-dasharray='8 4'/><text x='40' y='55' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>18.5 kN/m³</text><text x='40' y='130' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>20 kN/m³ saturated</text><text x='322' y='73' text-anchor='end' font-size='12' font-weight='400' fill='#568CBB'>Water table</text><circle cx='300' cy='174' r='5' fill='#00574A'/><line x1='350' y1='24' x2='350' y2='174' stroke='#00242E'/><text x='358' y='99' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>7 m</text><text x='358' y='51' text-anchor='start' font-size='12' font-weight='400' fill='#568CBB'>2.5 m</text>",
+      "alt": "A soil profile with the water table 2.5 m below the surface and a point at 7 m depth."
+     }
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "effective stress"
+     ]
+    }
+   ]
   },
   {
    "id": "geotech-e-lesson",
@@ -200,7 +353,49 @@
     "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='250' y1='107' x2='184' y2='107' stroke='#00574A' stroke-width='3'/><path d='M176 107 L190 101 L190 113 Z' fill='#00574A'/><text x='300' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>48.0 kN/m</text><text x='300' y='120' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>at H / 3</text>",
     "alt": "A retaining wall 4 m high with a triangular active pressure diagram behind it.",
     "caption": "Rankine active pressure on a wall: a triangular diagram whose resultant acts at one third of the height."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Rankine",
+     "text": "The Rankine active coefficient is the ratio of horizontal to vertical effective stress when the soil has expanded enough to mobilise its full strength: K_{a} = tan^{2}(45° - friction angle / 2). A stronger soil pushes less on the wall. The passive coefficient is its reciprocal."
+    },
+    {
+     "title": "Rankine",
+     "text": "Active pressure grows linearly with depth, from zero at the top to K_{a} × unit weight × H at the base. The resultant is the area of that triangle, (1/2) K_{a} (unit weight) H^{2}, and it acts at one third of the height above the base."
+    }
+   ],
+   "examples": [
+    {
+     "family": "geotech-0004",
+     "problem": "A retaining wall holds back dry sand with a friction angle of 32° and a level surface. What is the Rankine active earth pressure coefficient?",
+     "steps": "K_{a} = tan^{2}(45° - 32° / 2) = tan^{2}(29°) = 0.307.",
+     "answer": "0.307",
+     "value": 0.307259
+    },
+    {
+     "family": "geotech-0012",
+     "problem": "A 7 m high wall retains dry sand with a unit weight of 18.5 kN/m^{3}. The Rankine active coefficient is 0.307. What is the total active force per metre of wall?",
+     "steps": "Pressure at the base = 0.307(18.5)(7) = 39.8 kPa.\n\nP_{a} = \\frac{1}{2}(39.8)(7) = 139.1 kN per metre of wall, acting 2.33 m above the base.",
+     "answer": "139.1 kN/m",
+     "value": 139.14775,
+     "figure": {
+      "viewBox": "0 0 400 170",
+      "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>7 m</text><line x1='250' y1='107' x2='184' y2='107' stroke='#00574A' stroke-width='3'/><path d='M176 107 L190 101 L190 113 Z' fill='#00574A'/><text x='300' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>139.1 kN/m</text><text x='300' y='120' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>at H / 3</text>",
+      "alt": "A retaining wall 7 m high with a triangular active pressure diagram behind it."
+     }
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "Rankine",
+      "active",
+      "active force"
+     ]
+    }
+   ]
   },
   {
    "id": "geotech-f-lesson",
@@ -226,7 +421,44 @@
    "example": {
     "problem": "A dry sand with a friction angle of 32° has an effective normal stress of 150 kPa on a plane. Find its shear strength.",
     "steps": "Strength = 150 tan 32° = 93.7 kPa."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Mohr-Coulomb",
+     "text": "The Mohr-Coulomb criterion gives shear strength as a cohesion intercept plus a frictional part that grows with effective normal stress: strength = c' + (normal stress) tan(friction angle)."
+    },
+    {
+     "title": "Unconfined",
+     "text": "In an unconfined test the minor principal stress is zero and the major principal stress at failure is q_{u}. The Mohr circle therefore has a radius of q_{u} / 2, which is the undrained shear strength of a saturated clay (friction angle taken as zero)."
+    }
+   ],
+   "examples": [
+    {
+     "family": "geotech-0005",
+     "problem": "A soil has an effective cohesion of 20 kPa and an effective friction angle of 25°. What is its shear strength on a plane where the effective normal stress is 120 kPa?",
+     "steps": "Shear strength = 20 + 120 tan 25° = 20 + 56.0 = 76.0 kPa.",
+     "answer": "76.0 kPa",
+     "value": 75.956919
+    },
+    {
+     "family": "geotech-0013",
+     "problem": "An unconfined compression test on a clay gives a compressive strength of 96 kPa. What is the undrained shear strength?",
+     "steps": "s_{u} = \\frac{q_{u}}{2} = \\frac{96}{2} = 48 kPa.",
+     "answer": "48 kPa",
+     "value": 48.0
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "Mohr-Coulomb",
+      "unconfined",
+      "undrained shear strength"
+     ]
+    }
+   ]
   },
   {
    "id": "geotech-g-lesson",
@@ -263,7 +495,48 @@
     "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>600 kN</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = 2 m</text><line x1='320' y1='60' x2='320' y2='126' stroke='#00242E'/><text x='328' y='98' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1 m</text>",
     "alt": "A footing below the ground surface carrying a column load.",
     "caption": "A shallow footing. Bearing capacity depends on cohesion, the surcharge of soil beside the footing and the footing width."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Ultimate bearing capacity",
+     "text": "Terzaghi's equation for a strip footing adds three resistances: cohesion (c N_{c}), surcharge from the soil beside the footing (unit weight × depth × N_{q}) and the weight of soil below (half × unit weight × B × N_{gamma}). For clay in undrained loading the third term is zero."
+    },
+    {
+     "title": "Bearing capacity",
+     "text": "Allowable bearing pressure is the ultimate capacity divided by the factor of safety. The required area is load divided by allowable pressure, and for a square footing the width is the square root of the area."
+    }
+   ],
+   "examples": [
+    {
+     "family": "geotech-0014",
+     "problem": "A strip footing bears 1.8 m below the surface of a clay with a cohesion of 60 kPa and a unit weight of 18.5 kN/m^{3}. Using bearing capacity factors N_{c} = 5.7, N_{q} = 1.0 and a zero third factor, what is the ultimate bearing capacity?",
+     "steps": "q_{ult} = c N_{c} + (unit weight)(D) N_{q} = 60(5.7) + 18.5(1.8)(1.0) = 342.0 + 33.3 = 375.3 kPa.",
+     "answer": "375.3 kPa",
+     "value": 375.3
+    },
+    {
+     "family": "geotech-0015",
+     "problem": "A square footing must carry a 1,500 kN column load. The ultimate bearing capacity is 480 kPa and the factor of safety is 3. What footing width is required?",
+     "steps": "q_{allow} = 480 / 3 = 160.0 kPa.\n\nArea = \\frac{1,500}{160.0} = 9.38 m^{2}.\n\nB = \\sqrt{9.38} = 3.06 m.",
+     "answer": "3.06 m",
+     "value": 3.061862,
+     "figure": {
+      "viewBox": "0 0 400 170",
+      "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>1,500 kN</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = ?</text>",
+      "alt": "A footing below the ground surface carrying a column load."
+     }
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "ultimate bearing capacity",
+      "bearing capacity"
+     ]
+    }
+   ]
   },
   {
    "id": "geotech-h-lesson",
@@ -284,7 +557,35 @@
    "example": {
     "problem": "A 0.4 m diameter drilled shaft is 12 m long with a skin friction of 50 kPa and no end bearing. Find its capacity.",
     "steps": "Side area = π(0.4)(12) = 15.1 m^{2}.\n\nQ = 50(15.1) = 754 kN."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Shallow foundations",
+     "text": "Spread footings carry single columns, combined footings carry two or more, strip footings carry walls and a mat (raft) is one thick slab under the whole structure. They suit sites where competent soil lies near the surface."
+    },
+    {
+     "title": "Deep foundations",
+     "text": "Driven piles and drilled shafts carry load down to stronger material or shed it through skin friction. Use them where the upper soils are weak or compressible, loads are heavy, or uplift, lateral load or scour governs."
+    },
+    {
+     "title": "Choosing",
+     "text": "A mat is chosen when individual footings would cover more than about half the plan area or when differential settlement must be limited. End-bearing piles rely on a firm stratum at the tip; friction piles rely on the shaft."
+    },
+    {
+     "title": "",
+     "text": "A pile carries load two ways: skin friction acting on the surface area of the shaft (perimeter × length) and end bearing acting on the tip area. The ultimate capacity is the sum."
+    }
+   ],
+   "examples": [
+    {
+     "family": "geotech-0016",
+     "problem": "A 0.5 m square pile is 20 m long. The average skin friction is 45 kPa and the end bearing resistance is 2,200 kPa. What is the ultimate capacity of the pile?",
+     "steps": "Shaft: 45 × (4 × 0.5) × 20 = 1,800 kN.\n\nTip: 2,200 × 0.5^{2} = 550 kN.\n\nQ_{ult} = 1,800 + 550 = 2,350 kN.",
+     "answer": "2,350 kN",
+     "value": 2350.0
+    }
+   ],
+   "lookup": []
   },
   {
    "id": "geotech-i-lesson",
@@ -311,7 +612,45 @@
    "example": {
     "problem": "A 2 m clay layer has C_{c} = 0.25 and e_{0} = 0.9. Effective stress rises from 80 to 160 kPa. Find the settlement.",
     "steps": "S = \\frac{0.25(2,000)}{1.9} log(2) = 263(0.301) = 79 mm."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Compression index",
+     "text": "For normally consolidated clay, void ratio falls linearly with the logarithm of effective stress, at slope C_{c}. Settlement is the change in void ratio converted to a change in layer thickness: S = C_{c} H / (1 + e_{0}) × log_{10}(final stress / initial stress)."
+    },
+    {
+     "title": "Time factor",
+     "text": "Consolidation time follows t = T_{v} H_{dr}^{2} / c_{v}, where H_{dr} is the longest path water must travel to drain. With drainage at both faces, H_{dr} is half the layer thickness, which makes consolidation four times faster than single drainage."
+    }
+   ],
+   "examples": [
+    {
+     "family": "geotech-0018",
+     "problem": "A 8 m thick normally consolidated clay layer has a compression index of 0.32 and an initial void ratio of 0.9. The effective stress at mid-layer rises from 140 kPa to 280 kPa. What is the primary consolidation settlement?",
+     "steps": "S = \\frac{C_{c} H}{1 + e_{0}} log_{10}(\\frac{p_{2}}{p_{1}}) = \\frac{0.32(8)}{1 + 0.9} log_{10}(\\frac{280}{140}) = 1.347 × 0.301 = 0.406 m = 406 mm.",
+     "answer": "406 mm",
+     "value": 405.59831
+    },
+    {
+     "family": "geotech-0019",
+     "problem": "A 10 m thick clay layer drains from both its top and bottom. Its coefficient of consolidation is 2.5 m^{2}/year. Using a time factor of 0.197 for 50% consolidation, how long does 50% consolidation take?",
+     "steps": "H_{dr} = 10 / 2 = 5 m.\n\nt = \\frac{T_{v} H_{dr}^{2}}{c_{v}} = \\frac{0.197(5)^{2}}{2.5} = 1.970 years.",
+     "answer": "1.970 years",
+     "value": 1.97
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "compression index",
+      "normally consolidated",
+      "time factor",
+      "coefficient of consolidation"
+     ]
+    }
+   ]
   },
   {
    "id": "geotech-j-lesson",
@@ -343,7 +682,48 @@
     "svg": "<path d='M71 150 L329 150 L329 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(213 84) rotate(-25)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='115' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>25°</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Factor of safety = tan(friction angle) / tan(slope angle) for dry sand</text>",
     "alt": "A block on an incline at 25° to the horizontal.",
     "caption": "An infinite slope in cohesionless soil."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Slope failure",
+     "text": "For an infinite slope in dry cohesionless soil, the resisting and driving forces on a plane parallel to the surface both scale with the weight, so FS = tan(friction angle) / tan(slope angle). The slope is at the point of failure when it stands at the friction angle."
+    },
+    {
+     "title": "Slope failure",
+     "text": "For a circular slip in clay under undrained conditions, take moments about the centre of the circle. The resisting moment is the shear strength acting along the arc at radius R; the driving moment is the weight times its horizontal lever arm."
+    }
+   ],
+   "examples": [
+    {
+     "family": "geotech-0020",
+     "problem": "A long slope of dry sand stands at 22° to the horizontal. The friction angle of the sand is 34°. What is the factor of safety against sliding?",
+     "steps": "FS = \\frac{tan 34°}{tan 22°} = \\frac{0.675}{0.404} = 1.67.",
+     "answer": "1.669",
+     "value": 1.669467,
+     "figure": {
+      "viewBox": "0 0 400 180",
+      "svg": "<path d='M60 150 L340 150 L340 37 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(214 88) rotate(-22)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='104' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>22°</text>",
+      "alt": "A block on an incline at 22° to the horizontal."
+     }
+    },
+    {
+     "family": "geotech-0021",
+     "problem": "A circular slip surface in clay has a radius of 18 m and an arc length of 25 m. The undrained shear strength is 35 kPa. The sliding mass weighs 1,800 kN per metre and its centroid is 5.5 m horizontally from the centre of the circle. What is the factor of safety?",
+     "steps": "Resisting moment = s_{u} × arc length × R = 35(25)(18) = 15,750 kN·m per metre.\n\nDriving moment = W x = 1,800(5.5) = 9,900 kN·m per metre.\n\nFS = \\frac{15,750}{9,900} = 1.59.",
+     "answer": "1.59",
+     "value": 1.590909
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "slope failure",
+      "factor of safety"
+     ]
+    }
+   ]
   },
   {
    "id": "geotech-k-lesson",
@@ -364,7 +744,35 @@
    "example": {
     "problem": "Cement at 6% by dry mass is mixed into 500 m^{3} of soil with a dry density of 1,700 kg/m^{3}. How much cement is needed?",
     "steps": "Dry mass = 1,700(500) = 850,000 kg.\n\nCement = 0.06(850,000) = 51,000 kg."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Mechanical improvement",
+     "text": "Compaction raises density and strength and is controlled against the Proctor maximum. Preloading with a surcharge, often with wick drains, consolidates soft clay before construction. Vibroflotation and dynamic compaction densify loose sands."
+    },
+    {
+     "title": "Chemical stabilisation",
+     "text": "Lime suits plastic clays: it lowers the plasticity index and swell potential and raises strength. Portland cement suits granular and low-plasticity soils. Fly ash and bitumen are also used."
+    },
+    {
+     "title": "Geosynthetics",
+     "text": "A geotextile can separate a soft subgrade from an aggregate base, filter, drain or reinforce. Geogrids reinforce. Geomembranes are barriers to water."
+    },
+    {
+     "title": "",
+     "text": "Stabiliser quantities are specified as a percentage of the dry mass of soil. Find the dry mass from dry density × volume, then take the percentage."
+    }
+   ],
+   "examples": [
+    {
+     "family": "geotech-0023",
+     "problem": "A clay subgrade is to be treated with 4.5% lime by dry mass. The soil has a dry density of 1,750 kg/m^{3} and 600 m^{3} is to be treated. How much lime is needed?",
+     "steps": "Dry mass of soil = 1,750 × 600 = 1,050,000 kg.\n\nLime = 4.5% × 1,050,000 = 47,250 kg.",
+     "answer": "47,250 kg",
+     "value": 47250.0
+    }
+   ],
+   "lookup": []
   }
  ]
 }

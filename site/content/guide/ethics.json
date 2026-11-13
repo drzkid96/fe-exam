@@ -33,7 +33,46 @@
     "Choosing loyalty to the client over a real risk to the public.",
     "Treating disclosure as optional: a conflict that is known and agreed to in writing is allowed, a hidden one is not."
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-13",
+   "ideas": [
+    {
+     "title": "Order of obligations",
+     "text": "The NCEES Model Rules set three duties in this order: to the public, to the employer or client, and to other licensees. The first and foremost responsibility is the health, safety and welfare of the public. When two duties pull in different directions, the public comes first."
+    },
+    {
+     "title": "When you are overruled",
+     "text": "If your professional judgement is overruled and public safety is endangered, you must notify your employer or client and whatever other authority is appropriate. Staying quiet, or resigning without telling anyone, does not meet the duty."
+    },
+    {
+     "title": "Conflicts of interest",
+     "text": "Disclose every known or potential conflict of interest to your employer or client. You may be paid by more than one party for the same project only if the circumstances are fully disclosed and all parties agree in writing."
+    },
+    {
+     "title": "Gifts and payments",
+     "text": "Do not solicit or accept gratuities from contractors, their agents or other parties in connection with work for an employer or client, and do not give anything of value to secure work. The test is whether it could influence, or appear to influence, your judgement."
+    },
+    {
+     "title": "Competence and truthfulness",
+     "text": "Take on only the work you are qualified for by education or experience. Professional statements must be objective and truthful, and a public opinion must rest on adequate knowledge of the facts."
+    },
+    {
+     "title": "How the exam asks this",
+     "text": "Expect a short scenario with four possible actions. The right answer protects the public, discloses rather than conceals, and stays within the engineer's competence and authority. Doing nothing and quietly complying are almost never correct."
+    }
+   ],
+   "examples": [],
+   "lookup": [
+    {
+     "section": "Ethics and Professional Practice",
+     "page": "4–12",
+     "find": [
+      "obligation to the public",
+      "conflicts of interest",
+      "obligation to employer",
+      "gratuities"
+     ]
+    }
+   ]
   },
   {
    "id": "ethics-b-lesson",
@@ -45,7 +84,35 @@
     "Assuming any defect means negligence. The question is whether the standard of care was met.",
     "Confusing professional liability insurance with general liability insurance."
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-13",
+   "ideas": [
+    {
+     "title": "Negligence",
+     "text": "A negligence claim needs four elements: a duty owed, a breach of that duty, causation and actual damages. All four must be shown."
+    },
+    {
+     "title": "Standard of care",
+     "text": "An engineer is judged against the care and skill ordinarily used by reasonably prudent engineers doing similar work in similar circumstances. The standard is competence, not perfection, so a bad outcome alone does not prove negligence."
+    },
+    {
+     "title": "Kinds of liability",
+     "text": "Liability can arise in tort (negligence), in contract (failing to do what was agreed) or, for product makers, as strict liability, where fault need not be proved."
+    },
+    {
+     "title": "Insurance",
+     "text": "Professional liability insurance, also called errors and omissions, covers claims that design errors caused loss. General liability covers bodily injury and property damage from operations. Workers' compensation covers a firm's own employees."
+    },
+    {
+     "title": "Time limits",
+     "text": "A statute of limitations starts when the damage is discovered. A statute of repose starts at a fixed event such as substantial completion and sets an outer limit however late the defect appears."
+    },
+    {
+     "title": "Reducing exposure",
+     "text": "Use a written scope, keep records of decisions, have work checked, stay within your competence and state clearly what was and was not relied upon."
+    }
+   ],
+   "examples": [],
+   "lookup": []
   },
   {
    "id": "ethics-c-lesson",
@@ -57,7 +124,42 @@
     "Sealing work you only reviewed briefly, or work outside your competence.",
     "Assuming a license from one state allows practice in another."
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-13",
+   "ideas": [
+    {
+     "title": "The path to a license",
+     "text": "The usual route is an accredited engineering degree, the FE exam, about four years of progressive experience under a licensed engineer, then the PE exam. Each state or territory board sets its own requirements. Passing the FE leads to engineer intern status."
+    },
+    {
+     "title": "One jurisdiction at a time",
+     "text": "A license is valid only where it was issued. To practise or offer services in another state you need that state's license, normally obtained through comity, where the second board accepts your existing credentials instead of re-examining you."
+    },
+    {
+     "title": "Responsible charge and the seal",
+     "text": "Sign and seal only documents prepared under your responsible charge, meaning your direct control and personal supervision, and only in areas where you are competent. Sealing work you did not supervise is a violation even if the work is correct."
+    },
+    {
+     "title": "Discipline",
+     "text": "Boards can reprimand, fine, suspend or revoke a license for fraud, gross negligence, incompetence or misconduct. Licensees who know of a violation are expected to report it to the board and cooperate with it."
+    },
+    {
+     "title": "Keeping the license",
+     "text": "Renewal usually requires continuing education, and a licensee must follow the laws and rules of every jurisdiction in which they practise."
+    }
+   ],
+   "examples": [],
+   "lookup": [
+    {
+     "section": "Ethics and Professional Practice",
+     "page": "4–12",
+     "find": [
+      "responsible charge",
+      "sign and seal",
+      "licensure",
+      "model law"
+     ]
+    }
+   ]
   },
   {
    "id": "ethics-d-lesson",
@@ -69,7 +171,31 @@
     "Thinking a contract must be written to be valid. Many oral contracts are enforceable, though hard to prove.",
     "Mixing up lump sum (fixed total) with unit price (fixed rate per quantity)."
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-13",
+   "ideas": [
+    {
+     "title": "What makes a contract",
+     "text": "An enforceable contract needs an offer, acceptance, consideration (something of value exchanged), competent parties and a lawful purpose. A missing element makes the agreement void or voidable."
+    },
+    {
+     "title": "Payment types and who carries the risk",
+     "text": "Lump sum or fixed price: the contractor carries the cost risk. Unit price: payment follows measured quantities, so the owner carries quantity risk. Cost plus a fee: the owner carries the cost risk. A guaranteed maximum price caps the owner's exposure."
+    },
+    {
+     "title": "Breach and remedies",
+     "text": "A material breach excuses the other party from performing and allows a claim for damages. Compensatory damages put the injured party where performance would have. Liquidated damages are a sum agreed in advance, typically per day of late completion."
+    },
+    {
+     "title": "Changes",
+     "text": "A change order is a written amendment to scope, price or time, signed by the parties after award. Work done on an oral instruction is a common source of disputes."
+    },
+    {
+     "title": "Privity and agency",
+     "text": "Only the parties to a contract can enforce it; that relationship is privity. An engineer administering a construction contract usually acts as the owner's agent and has no contract with the contractor."
+    }
+   ],
+   "examples": [],
+   "lookup": []
   }
  ]
 }

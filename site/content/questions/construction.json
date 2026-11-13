@@ -1207,7 +1207,7 @@
    }
   ],
   "answer": "b",
-  "eli5": "Each contour line is one step up or down. If the steps are crowded together, you climb a lot in a short distance.",
+  "eli5": "Contour lines join points of equal elevation. Close spacing means steep ground and wide spacing means flat ground. Closed loops normally mark a hill; hachures on the downhill side mark a depression. Contours bend upstream where they cross a valley.",
   "solution": "Contours join points of equal elevation at a fixed vertical interval.\n\nThe closer they are in plan, the less horizontal distance per interval, so the steeper the slope.",
   "handbook": [
    {
@@ -1222,6 +1222,57 @@
    "method": "reference",
    "basis": "Standard topographic drawing convention"
   },
+  "family": "construction-0008",
+  "version": 1,
+  "versions": 2,
+  "lookup": false
+ },
+ {
+  "id": "construction-0008-b",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "On a topographic map, a set of closed contour lines carries short tick marks (hachures) pointing inward. What does this show?",
+  "options": [
+   {
+    "id": "a",
+    "text": "A hill or summit"
+   },
+   {
+    "id": "b",
+    "text": "A depression"
+   },
+   {
+    "id": "c",
+    "text": "A ridge line"
+   },
+   {
+    "id": "d",
+    "text": "A uniform slope"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Contour lines join points of equal elevation. Close spacing means steep ground and wide spacing means flat ground. Closed loops normally mark a hill; hachures on the downhill side mark a depression. Contours bend upstream where they cross a valley.",
+  "solution": "Closed contours with inward hachures mean the ground falls toward the centre, which is a depression. Without hachures the same loops would be a hill.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard topographic drawing convention"
+  },
+  "family": "construction-0008",
+  "version": 2,
+  "versions": 2,
   "lookup": false
  },
  {
@@ -1252,7 +1303,7 @@
    }
   ],
   "answer": "b",
-  "eli5": "One team, one contract, one point of responsibility for both the drawings and the building.",
+  "eli5": "Delivery methods differ in who holds which contract. Design-bid-build: separate, sequential contracts for design and construction. Design-build: one contract for both. Construction manager at risk: a manager joins during design and guarantees a maximum price.",
   "solution": "In design-build the owner contracts with one entity that designs and builds.\n\nIn design-bid-build the owner holds separate contracts with a designer and a contractor.",
   "handbook": [
    {
@@ -1267,6 +1318,57 @@
    "method": "reference",
    "basis": "Standard project delivery method definitions"
   },
+  "family": "construction-0009",
+  "version": 1,
+  "versions": 2,
+  "lookup": false
+ },
+ {
+  "id": "construction-0009-b",
+  "topic": "construction",
+  "subtopic": "construction-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "An owner hires a designer under one contract and, once the design is complete, awards a separate construction contract to the lowest responsive bidder. Which delivery method is this?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Design-build"
+   },
+   {
+    "id": "b",
+    "text": "Construction manager at risk"
+   },
+   {
+    "id": "c",
+    "text": "Design-bid-build"
+   },
+   {
+    "id": "d",
+    "text": "Integrated project delivery"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Delivery methods differ in who holds which contract. Design-bid-build: separate, sequential contracts for design and construction. Design-build: one contract for both. Construction manager at risk: a manager joins during design and guarantees a maximum price.",
+  "solution": "Two separate contracts, with construction bid after the design is finished, is design-bid-build, the traditional method.\n\nDesign-build would put design and construction under a single contract.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard project delivery method definitions"
+  },
+  "family": "construction-0009",
+  "version": 2,
+  "versions": 2,
   "lookup": false
  },
  {
@@ -1297,7 +1399,7 @@
    }
   ],
   "answer": "c",
-  "eli5": "Each bond is a promise backed by a surety. One covers the bid, one covers finishing the job, and one covers paying the people who helped.",
+  "eli5": "A surety bond is a three-party guarantee from a surety to the owner. A bid bond guarantees that the bidder will sign the contract at its bid price. A performance bond guarantees completion of the work. A payment bond guarantees that subcontractors and suppliers are paid.",
   "solution": "A payment bond protects subcontractors and suppliers.\n\nA bid bond guarantees the bidder will sign the contract, and a performance bond guarantees the work will be completed.",
   "handbook": [
    {
@@ -1312,6 +1414,57 @@
    "method": "reference",
    "basis": "Standard construction surety bond definitions"
   },
+  "family": "construction-0010",
+  "version": 1,
+  "versions": 2,
+  "lookup": false
+ },
+ {
+  "id": "construction-0010-b",
+  "topic": "construction",
+  "subtopic": "construction-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Which bond guarantees that the contractor will complete the work in accordance with the contract?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Bid bond"
+   },
+   {
+    "id": "b",
+    "text": "Payment bond"
+   },
+   {
+    "id": "c",
+    "text": "Maintenance bond"
+   },
+   {
+    "id": "d",
+    "text": "Performance bond"
+   }
+  ],
+  "answer": "d",
+  "eli5": "A surety bond is a three-party guarantee from a surety to the owner. A bid bond guarantees that the bidder will sign the contract at its bid price. A performance bond guarantees completion of the work. A payment bond guarantees that subcontractors and suppliers are paid.",
+  "solution": "Completion of the work is what a performance bond guarantees. If the contractor defaults, the surety arranges or pays for completion up to the bond amount.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard construction surety bond definitions"
+  },
+  "family": "construction-0010",
+  "version": 2,
+  "versions": 2,
   "lookup": false
  },
  {
@@ -1674,7 +1827,7 @@
    }
   ],
   "answer": "a",
-  "eli5": "Schedule variance is the value of work done minus the value of work that should have been done by now. Negative means behind.",
+  "eli5": "Earned value analysis measures progress in budget terms. Schedule variance is SV = EV - PV and cost variance is CV = EV - AC. A positive variance is favourable: ahead of schedule or under budget.",
   "solution": "SV = EV - PV = 90,000 - 100,000 = -$10,000, so the project is behind schedule.",
   "handbook": [
    {
@@ -1691,6 +1844,59 @@
   "verify": {
    "method": "computed"
   },
+  "family": "construction-0013",
+  "version": 1,
+  "versions": 2,
+  "lookup": true
+ },
+ {
+  "id": "construction-0013-b",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A project has a planned value of $150,000, an earned value of $180,000 and an actual cost of $170,000 at the status date. What is the schedule variance?",
+  "options": [
+   {
+    "id": "a",
+    "text": "-$30,000"
+   },
+   {
+    "id": "b",
+    "text": "$10,000"
+   },
+   {
+    "id": "c",
+    "text": "$20,000"
+   },
+   {
+    "id": "d",
+    "text": "$30,000"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Earned value analysis measures progress in budget terms. Schedule variance is SV = EV - PV and cost variance is CV = EV - AC. A positive variance is favourable: ahead of schedule or under budget.",
+  "solution": "SV = EV - PV = 180,000 - 150,000 = $30,000. The project has earned more than was planned by this date, so it is ahead of schedule.\n\nFor reference, CV = EV - AC = 180,000 - 170,000 = $10,000, under budget.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "earned-value analysis",
+     "schedule variance"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0013",
+  "version": 2,
+  "versions": 2,
   "lookup": true
  },
  {

@@ -64,7 +64,55 @@
     "svg": "<line x1='120' y1='150' x2='320' y2='150' stroke='#00574A' stroke-width='3'/><path d='M330 150 L316 144 L316 156 Z' fill='#00574A'/><line x1='120' y1='150' x2='195' y2='20' stroke='#1B795A' stroke-width='3'/><circle cx='195' cy='20' r='5' fill='#1B795A'/><circle cx='120' cy='150' r='4' fill='#00242E'/><text x='300' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>100 N</text><text x='229' y='24' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>80 N</text><text x='168' y='142' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>60°</text>",
     "alt": "Two forces at a point: 100 N along the x-axis and 80 N at 60° above it.",
     "caption": "Two concurrent forces. Resolve each into x and y components, add, then recombine."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Resultant",
+     "text": "Concurrent forces add as vectors. Resolve each force into x and y components, add the components, then recombine with the Pythagorean theorem. The resultant is always less than the arithmetic sum unless the forces are parallel."
+    },
+    {
+     "title": "Moments",
+     "text": "Only the force component perpendicular to the lever arm produces moment: M = F L sin(angle between force and arm). The component along the arm passes through the pivot and contributes nothing."
+    }
+   ],
+   "examples": [
+    {
+     "family": "statics-0001",
+     "problem": "A 140 N force acts along the positive x-axis. A 75 N force acts at the same point, 50° above the positive x-axis. What is the magnitude of the resultant?",
+     "steps": "R_{x} = 140 + 75 cos 50° = 188.2 N.\n\nR_{y} = 75 sin 50° = 57.5 N.\n\nR = \\sqrt{188.2^{2} + 57.5^{2}} = 196.8 N.",
+     "answer": "196.8 N",
+     "value": 196.782976,
+     "figure": {
+      "viewBox": "0 0 400 185",
+      "svg": "<line x1='120' y1='150' x2='320' y2='150' stroke='#00574A' stroke-width='3'/><path d='M330 150 L316 144 L316 156 Z' fill='#00574A'/><line x1='120' y1='150' x2='216' y2='35' stroke='#1B795A' stroke-width='3'/><circle cx='216' cy='35' r='5' fill='#1B795A'/><circle cx='120' cy='150' r='4' fill='#00242E'/><text x='300' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>140 N</text><text x='250' y='39' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>75 N</text><text x='168' y='142' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>50°</text>",
+      "alt": "Two forces at a point: 140 N along the x-axis and 75 N at 50° above it."
+     }
+    },
+    {
+     "family": "statics-0010",
+     "problem": "A 250 N force is applied to the end of a 1.2 m lever, at 50° to the lever's axis. What is the moment about the pivot?",
+     "steps": "Perpendicular component = 250 sin 50° = 191.5 N.\n\nM = 191.5 × 1.2 = 229.8 N·m.",
+     "answer": "229.8 N·m",
+     "value": 229.813333,
+     "figure": {
+      "viewBox": "0 0 400 165",
+      "svg": "<rect x='70' y='104' width='260' height='12' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='70' cy='110' r='9' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='285' y1='56' x2='330' y2='110' stroke='#00574A' stroke-width='3'/><circle cx='330' cy='110' r='5' fill='#00574A'/><text x='279' y='50' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>250 N</text><text x='296' y='100' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>50°</text><line x1='70' y1='138' x2='330' y2='138' stroke='#00242E'/><line x1='70' y1='132' x2='70' y2='144' stroke='#00242E'/><line x1='330' y1='132' x2='330' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>1.2 m</text><text x='56' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>Pivot</text>",
+      "alt": "A 1.2 m lever with a 250 N force applied at its end, 50° from the lever axis."
+     }
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Statics",
+     "page": "107–113",
+     "find": [
+      "resultant",
+      "resolution of a force",
+      "moments",
+      "cross product"
+     ]
+    }
+   ]
   },
   {
    "id": "statics-b-lesson",
@@ -96,7 +144,44 @@
     "svg": "<rect x='70' y='104' width='260' height='12' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='70' cy='110' r='9' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='269' y1='75' x2='330' y2='110' stroke='#00574A' stroke-width='3'/><circle cx='330' cy='110' r='5' fill='#00574A'/><text x='263' y='69' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>150 N</text><text x='296' y='100' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>30°</text><line x1='70' y1='138' x2='330' y2='138' stroke='#00242E'/><line x1='70' y1='132' x2='70' y2='144' stroke='#00242E'/><line x1='330' y1='132' x2='330' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text><text x='56' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>Pivot</text>",
     "alt": "A 2 m lever with a 150 N force applied at its end, 30° from the lever axis.",
     "caption": "Only the component of the force perpendicular to the arm produces moment about the pivot."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Couple",
+     "text": "A couple is two equal, opposite, parallel forces. Its moment is force × perpendicular distance between the lines of action, and it is the same about every point, so a couple is a free vector."
+    },
+    {
+     "title": "Couple",
+     "text": "A force can be moved to a parallel line of action if a couple is added equal to the moment of the original force about the new point. The force keeps its magnitude and direction; the couple is M = F d."
+    }
+   ],
+   "examples": [
+    {
+     "family": "statics-0006",
+     "problem": "Two parallel 150 N forces act in opposite directions, 0.3 m apart. What is the moment of this couple?",
+     "steps": "M = F d = 150 × 0.3 = 45 N·m.",
+     "answer": "45 N·m",
+     "value": 45.0
+    },
+    {
+     "family": "statics-0007",
+     "problem": "A 320 N downward force acts 0.45 m to the right of point O. It is replaced by a force at O plus a couple. What is the magnitude of the couple?",
+     "steps": "The equivalent system at O is a 320 N downward force plus a couple M = F d = 320 × 0.45 = 144 N·m (clockwise).",
+     "answer": "144 N·m",
+     "value": 144.0
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Statics",
+     "page": "107–113",
+     "find": [
+      "couple",
+      "moments",
+      "systems of forces"
+     ]
+    }
+   ]
   },
   {
    "id": "statics-c-lesson",
@@ -124,7 +209,70 @@
     "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='150' y1='14' x2='150' y2='69' stroke='#00574A' stroke-width='3'/><path d='M150 77 L144 65 L156 65 Z' fill='#00574A'/><text x='176' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>30 kN</text><line x1='50' y1='176' x2='150' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='150' y1='170' x2='150' y2='182' stroke='#00242E'/><text x='100' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text><line x1='150' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='150' y1='170' x2='150' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='250' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='50' y1='162' x2='50' y2='130' stroke='#568CBB' stroke-width='3'/><path d='M50 122 L44 134 L56 134 Z' fill='#568CBB'/><text x='62' y='158' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>20 kN</text><line x1='350' y1='162' x2='350' y2='126' stroke='#568CBB' stroke-width='3'/><path d='M350 118 L344 130 L356 130 Z' fill='#568CBB'/><text x='338' y='158' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>10 kN</text>",
     "alt": "A simply supported beam 6 m long, a 30 kN point load 2 m from the left end.",
     "caption": "Free-body diagram of a simply supported beam. Moments about A give the reaction at B; vertical equilibrium gives A."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Equilibrium requirements",
+     "text": "A beam in equilibrium satisfies two conditions: the moments about any point sum to zero and the vertical forces sum to zero. Taking moments about A removes A_{y} from the equation and gives B_{y} directly. The support nearer the load carries the larger share."
+    },
+    {
+     "title": "Equilibrium requirements",
+     "text": "Replace the uniform load by its resultant, w L, acting at midspan. With every load centred, the loading is symmetric and each support carries half of the total."
+    },
+    {
+     "title": "Concurrent forces",
+     "text": "At the joint the vertical components of the two cable tensions must carry the weight: 2 T sin(angle) = W. The flatter the cables, the larger the tension, and it grows without limit as the angle approaches zero."
+    }
+   ],
+   "examples": [
+    {
+     "family": "statics-0002",
+     "problem": "A simply supported beam spans 12 m between a pin at A and a roller at B. A single 48 kN load acts 3 m from A. What is the vertical reaction at A?",
+     "steps": "Moments about A: B_{y}(12) = 48(3), so B_{y} = 12 kN.\n\nVertical forces: A_{y} = 48 - 12 = 36 kN.\n\nCheck with the lever rule: A_{y} = 48 × (12 - 3) / 12 = 36 kN.",
+     "answer": "36 kN",
+     "value": 36.0,
+     "figure": {
+      "viewBox": "0 0 400 205",
+      "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='125' y1='14' x2='125' y2='69' stroke='#00574A' stroke-width='3'/><path d='M125 77 L119 65 L131 65 Z' fill='#00574A'/><text x='151' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>48 kN</text><line x1='50' y1='176' x2='125' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='125' y1='170' x2='125' y2='182' stroke='#00242E'/><text x='88' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><line x1='125' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='125' y1='170' x2='125' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='238' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>9 m</text><line x1='50' y1='162' x2='50' y2='130' stroke='#568CBB' stroke-width='3'/><path d='M50 122 L44 134 L56 134 Z' fill='#568CBB'/><text x='62' y='158' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>36 kN</text><line x1='350' y1='162' x2='350' y2='126' stroke='#568CBB' stroke-width='3'/><path d='M350 118 L344 130 L356 130 Z' fill='#568CBB'/><text x='338' y='158' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>12 kN</text>",
+      "alt": "A simply supported beam 12 m long, a 48 kN point load 3 m from the left end."
+     }
+    },
+    {
+     "family": "statics-0011",
+     "problem": "A simply supported beam spans 9 m. It carries a uniform load of 8 kN/m over its full length and a 36 kN point load at midspan. What is each support reaction?",
+     "steps": "Total load = 8(9) + 36 = 108 kN.\n\nBy symmetry each reaction = 108 / 2 = 54 kN.",
+     "answer": "54 kN",
+     "value": 54.0,
+     "figure": {
+      "viewBox": "0 0 400 165",
+      "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>8 kN/m</text><line x1='200' y1='6' x2='200' y2='34' stroke='#00574A' stroke-width='3'/><path d='M200 42 L194 30 L206 30 Z' fill='#00574A'/><text x='226' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>36 kN</text><line x1='50' y1='136' x2='200' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><text x='125' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4.5 m</text><line x1='200' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='200' y1='130' x2='200' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='275' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4.5 m</text>",
+      "alt": "A simply supported beam 9 m long with a uniform load of 8 kN/m, a 36 kN point load 4.5 m from the left end."
+     }
+    },
+    {
+     "family": "statics-0015",
+     "problem": "A 1,500 N weight hangs from two cables. Each cable makes an angle of 45° with the horizontal. What is the tension in each cable?",
+     "steps": "Vertical forces at the joint: 2 T sin 45° = 1,500.\n\nT = \\frac{1,500}{2 sin 45°} = \\frac{1,500}{1.414} = 1,061 N.",
+     "answer": "1,061 N",
+     "value": 1060.660172,
+     "figure": {
+      "viewBox": "0 0 400 174",
+      "svg": "<line x1='40' y1='20' x2='360' y2='20' stroke='#00242E' stroke-width='4'/><line x1='110' y1='20' x2='200' y2='110' stroke='#1B795A' stroke-width='3'/><line x1='290' y1='20' x2='200' y2='110' stroke='#1B795A' stroke-width='3'/><line x1='200' y1='110' x2='200' y2='130' stroke='#00242E' stroke-width='2'/><rect x='176' y='130' width='48' height='30' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>1,500 N</text><text x='144' y='34' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>45°</text><text x='256' y='34' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>45°</text>",
+      "alt": "A 1,500 N weight hanging from two cables that each make 45° with the horizontal."
+     }
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Statics",
+     "page": "107–113",
+     "find": [
+      "equilibrium requirements",
+      "systems of forces",
+      "concurrent forces"
+     ]
+    }
+   ]
   },
   {
    "id": "statics-d-lesson",
@@ -157,7 +305,54 @@
     "svg": "<path d='M60 130 L340 130 L200 30 Z' fill='none' stroke='#00242E' stroke-width='4'/><path d='M60 130 L46 154 L74 154 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='340' cy='142' r='9' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='20' stroke='#00574A' stroke-width='3'/><path d='M200 28 L194 16 L206 16 Z' fill='#00574A'/><text x='236' y='12' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>24 kN</text><line x1='60' y1='170' x2='340' y2='170' stroke='#00242E'/><line x1='60' y1='164' x2='60' y2='176' stroke='#00242E'/><line x1='340' y1='164' x2='340' y2='176' stroke='#00242E'/><text x='200' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>8 m</text><line x1='372' y1='30' x2='372' y2='130' stroke='#00242E'/><text x='386' y='84' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>3 m</text>",
     "alt": "A symmetric triangular truss with a span of 8 m and a height of 3 m, loaded with 24 kN at the apex.",
     "caption": "A simple truss. Find the reactions first, then work joint by joint or cut a section."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Method of joints",
+     "text": "Use the method of joints at a support. Only the inclined member has a vertical component there, so its vertical component must equal the support reaction. The member force is the reaction divided by the sine of the member's angle."
+    },
+    {
+     "title": "Method of joints",
+     "text": "At a support joint the horizontal component of the inclined member must be balanced by the bottom member. The inclined member is in compression, so the bottom chord is in tension and acts as a tie."
+    }
+   ],
+   "examples": [
+    {
+     "family": "statics-0008",
+     "problem": "A symmetric triangular truss spans 16 m and is 6 m high. A 60 kN load acts at the apex. What is the force in each inclined member?",
+     "steps": "By symmetry each reaction is 60 / 2 = 30 kN.\n\nInclined member length = \\sqrt{8^{2} + 6^{2}} = 10 m, so sin(angle) = 6 / 10.\n\nJoint at the support, vertical forces: F × \\frac{6}{10} = 30, so F = 50 kN (compression).",
+     "answer": "50 kN",
+     "value": 50.0,
+     "figure": {
+      "viewBox": "0 0 430 195",
+      "svg": "<path d='M60 130 L340 130 L200 30 Z' fill='none' stroke='#00242E' stroke-width='4'/><path d='M60 130 L46 154 L74 154 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='340' cy='142' r='9' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='20' stroke='#00574A' stroke-width='3'/><path d='M200 28 L194 16 L206 16 Z' fill='#00574A'/><text x='236' y='12' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>60 kN</text><line x1='60' y1='170' x2='340' y2='170' stroke='#00242E'/><line x1='60' y1='164' x2='60' y2='176' stroke='#00242E'/><line x1='340' y1='164' x2='340' y2='176' stroke='#00242E'/><text x='200' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>16 m</text><line x1='372' y1='30' x2='372' y2='130' stroke='#00242E'/><text x='386' y='84' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>6 m</text>",
+      "alt": "A symmetric triangular truss with a span of 16 m and a height of 6 m, loaded with 60 kN at the apex."
+     }
+    },
+    {
+     "family": "statics-0009",
+     "problem": "A symmetric triangular truss spans 16 m and is 6 m high. A 60 kN load acts at the apex. What is the force in the horizontal bottom member?",
+     "steps": "Each reaction is 30 kN. The inclined member carries a vertical component of 30 kN, so its horizontal component is 30 × \\frac{8}{6} = 40 kN.\n\nHorizontal forces at the support joint: bottom member force = 40 kN (tension).",
+     "answer": "40.00 kN",
+     "value": 40.0,
+     "figure": {
+      "viewBox": "0 0 430 195",
+      "svg": "<path d='M60 130 L340 130 L200 30 Z' fill='none' stroke='#00242E' stroke-width='4'/><path d='M60 130 L46 154 L74 154 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='340' cy='142' r='9' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='20' stroke='#00574A' stroke-width='3'/><path d='M200 28 L194 16 L206 16 Z' fill='#00574A'/><text x='236' y='12' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>60 kN</text><line x1='60' y1='170' x2='340' y2='170' stroke='#00242E'/><line x1='60' y1='164' x2='60' y2='176' stroke='#00242E'/><line x1='340' y1='164' x2='340' y2='176' stroke='#00242E'/><text x='200' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>16 m</text><line x1='372' y1='30' x2='372' y2='130' stroke='#00242E'/><text x='386' y='84' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>6 m</text>",
+      "alt": "A symmetric triangular truss with a span of 16 m and a height of 6 m, loaded with 60 kN at the apex."
+     }
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Statics",
+     "page": "107–113",
+     "find": [
+      "method of joints",
+      "truss",
+      "method of sections"
+     ]
+    }
+   ]
   },
   {
    "id": "statics-e-lesson",
@@ -194,7 +389,52 @@
     "svg": "<rect x='125' y='20' width='150' height='30' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='185' y='50' width='30' height='120' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='14' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>100 mm</text><text x='117' y='39' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>20 mm</text><text x='223' y='110' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>80 mm</text><text x='200' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>20 mm</text>",
     "alt": "A T-shaped section: flange 100 by 20 mm on a web 20 by 80 mm.",
     "caption": "A composite section split into two rectangles for the centroid calculation."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Centroid",
+     "text": "The centroid of a composite area is the area-weighted average of the centroids of its parts: y-bar = (sum of A × y) / (sum of A). Measure every y from the same datum, here the bottom of the web."
+    },
+    {
+     "title": "Centroid",
+     "text": "Split the shape into rectangles, then take the area-weighted average of their centroid distances from the left edge: x-bar = (sum of A × x) / (sum of A)."
+    }
+   ],
+   "examples": [
+    {
+     "family": "statics-0003",
+     "problem": "A T-shaped section has a flange 160 mm wide and 25 mm thick on top of a web 25 mm wide and 150 mm tall. How far is the centroid above the bottom of the web?",
+     "steps": "Web: A = 25 × 150 = 3,750 mm^{2}, centre 75 mm above the bottom.\n\nFlange: A = 160 × 25 = 4,000 mm^{2}, centre 150 + 12.5 = 162.5 mm above the bottom.\n\ny-bar = \\frac{3,750(75) + 4,000(162.5)}{3,750 + 4,000} = \\frac{931,250}{7,750} = 120.2 mm.",
+     "answer": "120.2 mm",
+     "value": 120.16129,
+     "figure": {
+      "viewBox": "0 0 400 196",
+      "svg": "<rect x='131' y='20' width='137' height='21' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='189' y='41' width='21' height='129' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='14' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>160 mm</text><text x='123' y='35' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>25 mm</text><text x='219' y='106' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>150 mm</text><text x='200' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>25 mm</text>",
+      "alt": "A T-shaped section: flange 160 by 25 mm on a web 25 by 150 mm."
+     }
+    },
+    {
+     "family": "statics-0012",
+     "problem": "An L-shaped area is made of a vertical leg 25 mm wide and 120 mm tall, with a horizontal leg 75 mm wide and 25 mm tall attached to the bottom of its right side. How far is the centroid from the left edge?",
+     "steps": "Vertical leg: A = 3,000 mm^{2}, x = 12.5 mm.\n\nHorizontal leg: A = 1,875 mm^{2}, x = 25 + 37.5 = 62.5 mm.\n\nx-bar = \\frac{3,000(12.5) + 1,875(62.5)}{3,000 + 1,875} = 31.7 mm.",
+     "answer": "31.7 mm",
+     "value": 31.730769,
+     "figure": {
+      "viewBox": "0 0 400 176",
+      "svg": "<path d='M120 20 L147 20 L147 123 L228 123 L228 150 L120 150 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='112' y='85' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>120 mm</text><text x='134' y='14' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>25 mm</text><text x='188' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>75 mm</text><text x='236' y='140' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>25 mm</text>",
+      "alt": "An L-shaped area: a vertical leg 25 mm wide and 120 mm tall with a horizontal leg 75 mm wide and 25 mm tall at the bottom right."
+     }
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Statics",
+     "page": "107–113",
+     "find": [
+      "centroid"
+     ]
+    }
+   ]
   },
   {
    "id": "statics-f-lesson",
@@ -237,7 +477,53 @@
     "svg": "<rect x='168' y='20' width='65' height='130' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='148' y1='85' x2='252' y2='85' stroke='#568CBB' stroke-dasharray='6 4'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>100 mm</text><text x='160' y='52' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>200 mm</text>",
     "alt": "A rectangular section 100 mm wide and 200 mm deep with its horizontal centroidal axis.",
     "caption": "The centroidal axis of a rectangle. I about this axis is b h^{3} / 12."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Moment of inertia",
+     "text": "For a rectangle about its own centroidal axis, I = b h^{3} / 12, where h is the dimension perpendicular to the axis. Depth is cubed, so doubling the depth gives eight times the stiffness."
+    },
+    {
+     "title": "Parallel axis",
+     "text": "The parallel axis theorem moves a moment of inertia from the centroidal axis to a parallel axis: I = I_{c} + A d^{2}. For a rectangle about its base, d = h/2, which gives I = b h^{3} / 3, four times the centroidal value."
+    }
+   ],
+   "examples": [
+    {
+     "family": "statics-0005",
+     "problem": "A rectangular section is 180 mm wide and 360 mm deep. What is its moment of inertia about the horizontal axis through its centroid? Give the answer in units of 10^{6} mm^{4}.",
+     "steps": "I = \\frac{b h^{3}}{12} = \\frac{180(360)^{3}}{12} = 699.84 × 10^{6} mm^{4}.",
+     "answer": "699.84 × 10^{6} mm^{4}",
+     "value": 699.84,
+     "figure": {
+      "viewBox": "0 0 400 176",
+      "svg": "<rect x='168' y='20' width='65' height='130' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='148' y1='85' x2='252' y2='85' stroke='#568CBB' stroke-dasharray='6 4'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>180 mm</text><text x='160' y='52' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>360 mm</text>",
+      "alt": "A rectangular section 180 mm wide and 360 mm deep with its horizontal centroidal axis."
+     }
+    },
+    {
+     "family": "statics-0013",
+     "problem": "A rectangle is 90 mm wide and 180 mm tall. What is its moment of inertia about its base? Give the answer in units of 10^{6} mm^{4}.",
+     "steps": "I_{c} = \\frac{90(180)^{3}}{12} = 43.74 × 10^{6} mm^{4}.\n\nA d^{2} = (90 × 180)(90)^{2} = 131.22 × 10^{6} mm^{4}.\n\nI_{base} = 43.74 + 131.22 = 175.0 × 10^{6} mm^{4}, the same as b h^{3} / 3.",
+     "answer": "175.0 × 10^{6} mm^{4}",
+     "value": 174.96,
+     "figure": {
+      "viewBox": "0 0 400 176",
+      "svg": "<rect x='168' y='20' width='65' height='130' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='148' y1='85' x2='252' y2='85' stroke='#568CBB' stroke-dasharray='6 4'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>90 mm</text><text x='160' y='52' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>180 mm</text>",
+      "alt": "A rectangular section 90 mm wide and 180 mm deep with its horizontal centroidal axis."
+     }
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Statics",
+     "page": "107–113",
+     "find": [
+      "moment of inertia",
+      "parallel axis"
+     ]
+    }
+   ]
   },
   {
    "id": "statics-g-lesson",
@@ -275,7 +561,47 @@
     "svg": "<path d='M71 150 L329 150 L329 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(213 84) rotate(-25)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='115' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>angle ?</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Sliding starts when tan(angle) equals the coefficient of static friction</text>",
     "alt": "A block on an incline at an unknown angle to the horizontal.",
     "caption": "A block on an incline at the point of sliding."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Friction",
+     "text": "On an incline the weight component along the slope is W sin(angle) and the largest friction force available is (coefficient) × W cos(angle). Sliding is about to start when these are equal, which gives tan(angle) = coefficient of static friction. The weight cancels, so the angle does not depend on it."
+    },
+    {
+     "title": "Friction",
+     "text": "The upward component of the rope force reduces the normal force, which reduces the friction available. Write equilibrium in both directions at impending motion: horizontal pull = coefficient × (weight minus vertical pull)."
+    }
+   ],
+   "examples": [
+    {
+     "family": "statics-0004",
+     "problem": "A crate rests on a ramp. The coefficient of static friction between the crate and the ramp is 0.45. What is the steepest ramp angle at which the crate stays put?",
+     "steps": "At impending motion: W sin(angle) = 0.45 × W cos(angle).\n\ntan(angle) = 0.45, so angle = arctan(0.45) = 24.2°.",
+     "answer": "24.2°",
+     "value": 24.227745,
+     "figure": {
+      "viewBox": "0 0 400 180",
+      "svg": "<path d='M71 150 L329 150 L329 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(213 84) rotate(-25)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='115' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>angle ?</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Coefficient of static friction 0.45</text>",
+      "alt": "A block on an incline at an unknown angle to the horizontal."
+     }
+    },
+    {
+     "family": "statics-0014",
+     "problem": "A 1,000 N crate sits on a level floor with a static friction coefficient of 0.30. A rope pulls on it at 15° above the horizontal. What rope force starts the crate moving?",
+     "steps": "Normal force: N = 1,000 - P sin 15°.\n\nImpending motion: P cos 15° = 0.30(1,000 - P sin 15°).\n\nP = \\frac{0.30(1,000)}{cos 15° + 0.30 sin 15°} = \\frac{300}{1.044} = 287.5 N.",
+     "answer": "287.5 N",
+     "value": 287.474302
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Statics",
+     "page": "107–113",
+     "find": [
+      "friction"
+     ]
+    }
+   ]
   }
  ]
 }

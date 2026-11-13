@@ -69,7 +69,61 @@
     "svg": "<line x1='30' y1='140' x2='380' y2='140' stroke='#00242E' stroke-width='2'/><path d='M50 140 Q200 53 350 140' fill='none' stroke='#1B795A' stroke-width='2' stroke-dasharray='7 4'/><line x1='50' y1='140' x2='111' y2='105' stroke='#00574A' stroke-width='3'/><circle cx='111' cy='105' r='5' fill='#00574A'/><text x='99' y='95' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>20 m/s</text><text x='96' y='134' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>30°</text><line x1='50' y1='156' x2='350' y2='156' stroke='#00242E'/><line x1='50' y1='150' x2='50' y2='162' stroke='#00242E'/><line x1='350' y1='150' x2='350' y2='162' stroke='#00242E'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Range</text>",
     "alt": "The path of a projectile launched from level ground at 20 m/s and 30° above the horizontal.",
     "caption": "Projectile motion: constant horizontal velocity and constant downward acceleration."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Constant acceleration",
+     "text": "With constant acceleration, velocity rises linearly, so the average velocity is the mean of the start and end values. Distance = average velocity × time, which is the area under the velocity-time line."
+    },
+    {
+     "title": "Projectile motion",
+     "text": "Projectile motion is constant horizontal velocity combined with constant downward acceleration. On level ground the time of flight is 2 v sin(angle) / g, and the range is R = v^{2} sin(2 × angle) / g."
+    },
+    {
+     "title": "Normal and tangential components",
+     "text": "Constant speed on a curve still means acceleration, because the direction of the velocity changes. The normal (centripetal) acceleration is v^{2} / r, directed toward the centre of curvature."
+    }
+   ],
+   "examples": [
+    {
+     "family": "dynamics-0001",
+     "problem": "A car starts from rest and accelerates uniformly to 36 m/s in 10 s. How far does it travel in that time?",
+     "steps": "Acceleration a = 36 / 10 = 3.60 m/s^{2}.\n\ns = \\frac{1}{2} a t^{2} = \\frac{1}{2}(3.60)(10)^{2} = 180.0 m.\n\nCheck: average speed 18 m/s × 10 s = 180.0 m.",
+     "answer": "180.0 m",
+     "value": 180.0
+    },
+    {
+     "family": "dynamics-0005",
+     "problem": "A ball is launched from level ground at 40 m/s, at 45° above the horizontal. Ignoring air resistance, how far away does it land? Use g = 9.81 m/s^{2}.",
+     "steps": "Time of flight = \\frac{2(40) sin 45°}{9.81} = 5.77 s.\n\nHorizontal speed = 40 cos 45° = 28.28 m/s.\n\nRange = 28.28 × 5.77 = 163.1 m.",
+     "answer": "163.1 m",
+     "value": 163.098879,
+     "figure": {
+      "viewBox": "0 0 400 180",
+      "svg": "<line x1='30' y1='140' x2='380' y2='140' stroke='#00242E' stroke-width='2'/><path d='M50 140 Q200 -10 350 140' fill='none' stroke='#1B795A' stroke-width='2' stroke-dasharray='7 4'/><line x1='50' y1='140' x2='99' y2='91' stroke='#00574A' stroke-width='3'/><circle cx='99' cy='91' r='5' fill='#00574A'/><text x='87' y='81' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>40 m/s</text><text x='96' y='134' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>45°</text><line x1='50' y1='156' x2='350' y2='156' stroke='#00242E'/><line x1='50' y1='150' x2='50' y2='162' stroke='#00242E'/><line x1='350' y1='150' x2='350' y2='162' stroke='#00242E'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Range</text>",
+      "alt": "The path of a projectile launched from level ground at 40 m/s and 45° above the horizontal."
+     }
+    },
+    {
+     "family": "dynamics-0006",
+     "problem": "A car travels at a constant 18 m/s around a curve of radius 90 m. What is its acceleration toward the centre of the curve?",
+     "steps": "a_{n} = \\frac{v^{2}}{r} = \\frac{18^{2}}{90} = 3.60 m/s^{2}.",
+     "answer": "3.60 m/s^{2}",
+     "value": 3.6
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Dynamics",
+     "page": "114–129",
+     "find": [
+      "constant acceleration",
+      "particle kinematics",
+      "projectile motion",
+      "normal and tangential components"
+     ]
+    }
+   ]
   },
   {
    "id": "dynamics-b-lesson",
@@ -105,7 +159,43 @@
    "example": {
     "problem": "A 4 kg rod is 1.5 m long. Find its moment of inertia about one end.",
     "steps": "I = \\frac{4(1.5)^{2}}{3} = 3.0 kg·m^{2}."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Mass moment of inertia",
+     "text": "For a slender rod, I = m L^{2} / 12 about its centre. The parallel axis theorem moves it to the end: I = m L^{2} / 12 + m (L/2)^{2} = m L^{2} / 3. Moving the axis away from the centre of mass always increases I."
+    },
+    {
+     "title": "Mass moment of inertia",
+     "text": "For a solid disk or cylinder about its axis, I = m r^{2} / 2. A thin ring with the same mass and radius has I = m r^{2}, twice as much, because all its mass sits at the full radius."
+    }
+   ],
+   "examples": [
+    {
+     "family": "dynamics-0004",
+     "problem": "A thin uniform rod has a mass of 15 kg and a length of 3 m. What is its mass moment of inertia about an axis through one end, perpendicular to the rod?",
+     "steps": "I_{end} = \\frac{m L^{2}}{3} = \\frac{15(3)^{2}}{3} = 45 kg·m^{2}.",
+     "answer": "45 kg·m^{2}",
+     "value": 45.0
+    },
+    {
+     "family": "dynamics-0007",
+     "problem": "A solid uniform disk has a mass of 30 kg and a radius of 0.25 m. What is its mass moment of inertia about its central axis?",
+     "steps": "I = \\frac{1}{2} m r^{2} = \\frac{1}{2}(30)(0.25)^{2} = 0.938 kg·m^{2}.",
+     "answer": "0.938 kg·m^{2}",
+     "value": 0.9375
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Dynamics",
+     "page": "114–129",
+     "find": [
+      "mass moment of inertia",
+      "parallel axis"
+     ]
+    }
+   ]
   },
   {
    "id": "dynamics-c-lesson",
@@ -148,7 +238,61 @@
     "svg": "<path d='M96 150 L304 150 L304 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(210 84) rotate(-30)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='140' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>30°</text>",
     "alt": "A block on an incline at 30° to the horizontal.",
     "caption": "On a frictionless incline only the weight component along the slope, m g sin(angle), accelerates the block."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Newton's second law",
+     "text": "Newton's second law uses the net force. Kinetic friction equals the coefficient times the normal force, and on a level floor with a horizontal pull the normal force equals the weight."
+    },
+    {
+     "title": "Newton's second law",
+     "text": "Resolve the weight along and perpendicular to the slope. Only the component along the slope, m g sin(angle), accelerates the block; the perpendicular component is balanced by the normal force. The mass cancels."
+    },
+    {
+     "title": "Kinetics of a rigid body",
+     "text": "Rotation about a fixed axis follows the rotational form of Newton's second law: net torque = I × angular acceleration. It is the direct counterpart of F = m a."
+    }
+   ],
+   "examples": [
+    {
+     "family": "dynamics-0002",
+     "problem": "A 120 kg crate is pulled along a level floor by a 700 N horizontal force. The coefficient of kinetic friction is 0.35. What is the acceleration of the crate? Use g = 9.81 m/s^{2}.",
+     "steps": "N = m g = 120(9.81) = 1,177.2 N.\n\nFriction = 0.35 × 1,177.2 = 412.0 N.\n\na = \\frac{700 - 412.0}{120} = 2.40 m/s^{2}.",
+     "answer": "2.40 m/s^{2}",
+     "value": 2.399833
+    },
+    {
+     "family": "dynamics-0008",
+     "problem": "A block slides down a frictionless incline at 35° to the horizontal. What is its acceleration? Use g = 9.81 m/s^{2}.",
+     "steps": "a = g sin 35° = 9.81 × 0.574 = 5.63 m/s^{2}.",
+     "answer": "5.63 m/s^{2}",
+     "value": 5.626785,
+     "figure": {
+      "viewBox": "0 0 400 180",
+      "svg": "<path d='M114 150 L286 150 L286 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(209 84) rotate(-35)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='158' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>35°</text>",
+      "alt": "A block on an incline at 35° to the horizontal."
+     }
+    },
+    {
+     "family": "dynamics-0009",
+     "problem": "A net torque of 60 N·m acts on a flywheel with a mass moment of inertia of 8 kg·m^{2}. What is its angular acceleration?",
+     "steps": "Angular acceleration = \\frac{T}{I} = \\frac{60}{8} = 7.5 rad/s^{2}.",
+     "answer": "7.5 rad/s^{2}",
+     "value": 7.5
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Dynamics",
+     "page": "114–129",
+     "find": [
+      "Newton's second law",
+      "friction",
+      "kinetics of a rigid body",
+      "mass moment of inertia"
+     ]
+    }
+   ]
   },
   {
    "id": "dynamics-d-lesson",
@@ -190,7 +334,58 @@
    "example": {
     "problem": "A 1,000 kg car moving at 20 m/s brakes to a stop. How much energy do the brakes absorb?",
     "steps": "KE = \\frac{1}{2}(1,000)(20)^{2} = 200,000 J = 200 kJ."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Conservation of energy",
+     "text": "With no air resistance, mechanical energy is conserved: m g h of potential energy becomes (1/2) m v^{2} of kinetic energy. The mass cancels, so v = square root of 2 g h for any object."
+    },
+    {
+     "title": "Power and efficiency",
+     "text": "Power is force times velocity in the direction of the force. At constant speed the hoist force equals the weight, so P = m g v."
+    },
+    {
+     "title": "Elastic potential energy",
+     "text": "Energy is conserved: the elastic energy stored in the spring, (1/2) k x^{2}, becomes the kinetic energy of the block, (1/2) m v^{2}."
+    }
+   ],
+   "examples": [
+    {
+     "family": "dynamics-0003",
+     "problem": "A 4 kg ball is dropped from rest from a height of 30 m. Ignoring air resistance, how fast is it moving just before it lands? Use g = 9.81 m/s^{2}.",
+     "steps": "m g h = \\frac{1}{2} m v^{2}, so v = \\sqrt{2 g h} = \\sqrt{2(9.81)(30)} = 24.3 m/s. The 4 kg mass is not needed.",
+     "answer": "24.3 m/s",
+     "value": 24.26108
+    },
+    {
+     "family": "dynamics-0010",
+     "problem": "A hoist lifts a 2,000 kg load at a constant 1.2 m/s. What power is delivered to the load? Use g = 9.81 m/s^{2}.",
+     "steps": "Force = m g = 2,000(9.81) = 19,620 N.\n\nP = F v = 19,620 × 1.2 = 23,544 W = 23.54 kW.",
+     "answer": "23.54 kW",
+     "value": 23.544
+    },
+    {
+     "family": "dynamics-0011",
+     "problem": "A spring with a stiffness of 3,000 N/m is compressed 0.12 m and released against a 1.5 kg block on a frictionless surface. What speed does the block reach?",
+     "steps": "\\frac{1}{2}(3,000)(0.12)^{2} = 21.60 J of spring energy.\n\n\\frac{1}{2}(1.5) v^{2} = 21.60, so v = \\sqrt{\\frac{2(21.60)}{1.5}} = 5.37 m/s.",
+     "answer": "5.37 m/s",
+     "value": 5.366563
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Dynamics",
+     "page": "114–129",
+     "find": [
+      "conservation of energy",
+      "potential energy",
+      "power and efficiency",
+      "work",
+      "elastic potential energy",
+      "work and energy"
+     ]
+    }
+   ]
   }
  ]
 }

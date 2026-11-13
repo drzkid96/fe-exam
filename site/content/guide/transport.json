@@ -69,7 +69,110 @@
     "svg": "<path d='M70 110 A502 502 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='31' y1='120' x2='200' y2='75' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='369' y1='120' x2='200' y2='75' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='86' y2='168' stroke='#00242E'/><line x1='330' y1='110' x2='314' y2='168' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='67' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 1,000 ft, deflection angle 30°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
     "alt": "A horizontal circular curve of radius 1,000 ft with a deflection angle of 30°, showing PC, PI and PT.",
     "caption": "A simple horizontal curve. T = R tan(Δ / 2) and L = R Δ π / 180."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Stopping sight distance",
+     "text": "Stopping sight distance has two parts: the distance covered at full speed during perception and reaction, 1.47 V t, and the braking distance, V^{2} / (30 (a/32.2 ± G)). With V in mph the constants give feet. On a level road the grade term G is zero."
+    },
+    {
+     "title": "Horizontal curves",
+     "text": "On a horizontal curve the centripetal force is supplied by superelevation and side friction together. Balancing them gives the minimum radius R = V^{2} / (15 (e + f)), with V in mph, R in feet and e as a decimal."
+    },
+    {
+     "title": "Vertical curves",
+     "text": "A vertical curve is a parabola, so its grade changes at a constant rate r = (g_{2} - g_{1}) / L. The high or low point is where the grade reaches zero: x = -g_{1} / r = g_{1} L / (g_{1} - g_{2})."
+    },
+    {
+     "title": "Horizontal curves",
+     "text": "The length of a circular curve is the arc subtended by the deflection (central) angle: L = R × angle in radians = R × Δ × π / 180."
+    },
+    {
+     "title": "Horizontal curves",
+     "text": "The two tangents meet at the PI. Each tangent, from PC to PI or PI to PT, has length T = R tan(Δ / 2), from the right triangle formed by the radius, the tangent and the line from the centre to the PI."
+    },
+    {
+     "title": "Vertical curves",
+     "text": "K is the horizontal length of curve needed for each 1% of grade change, chosen from the design speed to provide sight distance. Curve length = K × A, where A is the algebraic difference in grades in percent."
+    }
+   ],
+   "examples": [
+    {
+     "family": "transport-0001",
+     "problem": "A vehicle travels at 55 mph on a level road. Using a perception-reaction time of 2.5 s and a deceleration rate of 11.2 ft/s^{2}, what is the stopping sight distance?",
+     "steps": "Reaction distance = 1.47(55)(2.5) = 202.1 ft.\n\nBraking distance = \\frac{55^{2}}{30(11.2 / 32.2)} = \\frac{3,025}{10.43} = 289.9 ft.\n\nSSD = 202.1 + 289.9 = 492 ft.",
+     "answer": "492 ft",
+     "value": 492.020833
+    },
+    {
+     "family": "transport-0002",
+     "problem": "What is the minimum radius of a horizontal curve for a design speed of 65 mph, with a superelevation of 6% and a side friction factor of 0.11?",
+     "steps": "R_{min} = \\frac{V^{2}}{15(e + f)} = \\frac{65^{2}}{15(0.06 + 0.11)} = \\frac{4,225}{2.55} = 1,657 ft.",
+     "answer": "1,657 ft",
+     "value": 1656.862745
+    },
+    {
+     "family": "transport-0005",
+     "problem": "A crest vertical curve connects a +2.5% grade to a -3.5% grade and is 720 ft long. How far from the start of the curve (PVC) is the high point?",
+     "steps": "x = \\frac{g_{1} L}{g_{1} - g_{2}} = \\frac{2.5(720)}{2.5 - (-3.5)} = \\frac{1,800}{6} = 300 ft from the PVC.",
+     "answer": "300 ft",
+     "value": 300.0,
+     "figure": {
+      "viewBox": "0 0 400 170",
+      "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+2.5%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-3.5%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>720 ft</text>",
+      "alt": "A crest vertical curve 720 ft long joining a +2.5% grade to a -3.5% grade."
+     }
+    },
+    {
+     "family": "transport-0016",
+     "problem": "A horizontal curve has a radius of 1,200 ft and a deflection angle of 36°. What is the length of the curve?",
+     "steps": "L = R Δ \\frac{π}{180} = 1,200 × 36 × \\frac{π}{180} = 754.0 ft.",
+     "answer": "754.0 ft",
+     "value": 753.982237,
+     "figure": {
+      "viewBox": "0 0 400 186",
+      "svg": "<path d='M70 110 A421 421 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='32' y1='122' x2='200' y2='68' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='368' y1='122' x2='200' y2='68' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='89' y2='167' stroke='#00242E'/><line x1='330' y1='110' x2='311' y2='167' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='60' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 1,200 ft, deflection angle 36°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
+      "alt": "A horizontal circular curve of radius 1,200 ft with a deflection angle of 36°, showing PC, PI and PT."
+     }
+    },
+    {
+     "family": "transport-0017",
+     "problem": "A horizontal curve has a radius of 1,200 ft and a deflection angle of 36°. What is the tangent length from the PC to the PI?",
+     "steps": "T = R tan(Δ / 2) = 1,200 × tan(18°) = 1,200 × 0.3249 = 389.9 ft.",
+     "answer": "389.9 ft",
+     "value": 389.903635,
+     "figure": {
+      "viewBox": "0 0 400 186",
+      "svg": "<path d='M70 110 A421 421 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='32' y1='122' x2='200' y2='68' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='368' y1='122' x2='200' y2='68' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='89' y2='167' stroke='#00242E'/><line x1='330' y1='110' x2='311' y2='167' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='60' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 1,200 ft, deflection angle 36°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
+      "alt": "A horizontal circular curve of radius 1,200 ft with a deflection angle of 36°, showing PC, PI and PT."
+     }
+    },
+    {
+     "family": "transport-0018",
+     "problem": "A crest vertical curve joins grades of +2.5% and -1.5%. The design requires a rate of vertical curvature K of 114. What minimum curve length is needed?",
+     "steps": "A = |-1.5 - 2.5| = 4%.\n\nL = K A = 114 × 4 = 456 ft.",
+     "answer": "456 ft",
+     "value": 456.0,
+     "figure": {
+      "viewBox": "0 0 400 170",
+      "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+2.5%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-1.5%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
+      "alt": "A crest vertical curve L = ? ft long joining a +2.5% grade to a -1.5% grade."
+     }
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "stopping sight distance",
+      "horizontal curves",
+      "superelevation",
+      "vertical curves",
+      "sight distance"
+     ]
+    }
+   ]
   },
   {
    "id": "transport-b-lesson",
@@ -95,7 +198,55 @@
    "example": {
     "problem": "A pavement has 5 in of asphalt (a = 0.44) over 10 in of base (a = 0.14, m = 1.0). Find the structural number.",
     "steps": "SN = 0.44(5) + 0.14(10)(1.0) = 2.2 + 1.4 = 3.6."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Structural number",
+     "text": "In the AASHTO flexible pavement method, each layer contributes its thickness times a layer coefficient that reflects its relative strength, and unbound layers are also multiplied by a drainage coefficient. The sum is the structural number, SN."
+    },
+    {
+     "title": "",
+     "text": "The resilient modulus describes subgrade stiffness under repeated wheel loads and is the subgrade input to pavement design. For fine-grained soils with low CBR it is often estimated from the correlation M_{R} = 1,500 × CBR, in psi."
+    },
+    {
+     "title": "ESAL",
+     "text": "Pavement design uses the total number of 18-kip equivalent single axle loads over the design life. With no growth it is the daily ESALs × 365 × years."
+    }
+   ],
+   "examples": [
+    {
+     "family": "transport-0007",
+     "problem": "A flexible pavement has 5 in of asphalt (layer coefficient 0.44), 10 in of base (0.14) and 8 in of subbase (0.11). Drainage coefficients are 1.0. What is the structural number?",
+     "steps": "SN = a_{1}D_{1} + a_{2}D_{2}m_{2} + a_{3}D_{3}m_{3} = 0.44(5) + 0.14(10)(1.0) + 0.11(8)(1.0) = 2.20 + 1.40 + 0.88 = 4.48.",
+     "answer": "4.48",
+     "value": 4.48
+    },
+    {
+     "family": "transport-0008",
+     "problem": "Using the correlation M_{R} = 1,500 × CBR (psi), what is the resilient modulus of a subgrade with a CBR of 7?",
+     "steps": "M_{R} = 1,500 × 7 = 10,500 psi.",
+     "answer": "10,500 psi",
+     "value": 10500
+    },
+    {
+     "family": "transport-0009",
+     "problem": "A highway lane carries 950 equivalent single axle loads (ESALs) per day with no growth. How many ESALs does it carry over a 20-year design life?",
+     "steps": "Design ESALs = 950 × 365 × 20 = 6,935,000 = 6.93 million.",
+     "answer": "6.93 million",
+     "value": 6.935
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "structural number",
+      "ESAL",
+      "load equivalency"
+     ]
+    }
+   ]
   },
   {
    "id": "transport-c-lesson",
@@ -137,7 +288,73 @@
     "svg": "<line x1='50' y1='20' x2='50' y2='140' stroke='#00242E'/><line x1='50' y1='140' x2='370' y2='140' stroke='#00242E'/><line x1='50' y1='36' x2='350' y2='140' stroke='#1B795A' stroke-width='3'/><circle cx='200' cy='88' r='5' fill='#00574A'/><text x='44' y='40' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>60</text><text x='350' y='156' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>120</text><text x='200' y='156' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>60</text><text x='44' y='92' text-anchor='end' font-size='12' font-weight='400' fill='#00574A'>30</text><text x='210' y='82' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>Capacity point</text><text x='210' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Density, veh/mi</text><text x='56' y='16' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Speed, mph</text><line x1='200' y1='88' x2='200' y2='140' stroke='#00574A' stroke-dasharray='4 4'/><line x1='50' y1='88' x2='200' y2='88' stroke='#00574A' stroke-dasharray='4 4'/>",
     "alt": "A straight speed-density line falling from 60 mph at zero density to zero speed at 120 veh/mi, with the capacity point at its middle.",
     "caption": "The Greenshields speed-density line. Capacity occurs at half the jam density and half the free-flow speed."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Traffic flow relationships",
+     "text": "The fundamental relation of traffic flow: flow = density × space mean speed (q = k u). The units confirm it: veh/mi × mi/h = veh/h."
+    },
+    {
+     "title": "Peak hour factor",
+     "text": "The peak hour factor compares the hourly volume with the flow rate of the busiest 15 minutes: PHF = V / (4 × V_{15}). A value of 1.0 means perfectly even flow; lower values mean sharper peaking. Dividing a volume by the PHF gives the design flow rate."
+    },
+    {
+     "title": "Saturation flow",
+     "text": "A signalized lane group can only discharge during its effective green. Capacity is the saturation flow rate times the share of the cycle that is green: c = N s (g / C)."
+    },
+    {
+     "title": "Traffic flow relationships",
+     "text": "Greenshields assumes speed falls linearly with density. Flow = density × speed is then a parabola that peaks at half the jam density and half the free-flow speed, so capacity = u_{f} k_{j} / 4."
+    }
+   ],
+   "examples": [
+    {
+     "family": "transport-0003",
+     "problem": "Traffic in a freeway lane has a density of 48 veh/mi and a space mean speed of 42 mph. What is the flow rate?",
+     "steps": "q = k u = 48 × 42 = 2,016 veh/h.",
+     "answer": "2,016 veh/h",
+     "value": 2016
+    },
+    {
+     "family": "transport-0004",
+     "problem": "An intersection approach carries 1,500 vehicles in the peak hour. The busiest 15 minutes of that hour carries 420 vehicles. What is the peak hour factor?",
+     "steps": "PHF = \\frac{V}{4 × V_{15}} = \\frac{1,500}{4(420)} = \\frac{1,500}{1,680} = 0.89.",
+     "answer": "0.89",
+     "value": 0.892857
+    },
+    {
+     "family": "transport-0010",
+     "problem": "A signalized approach has 3 lanes, each with a saturation flow rate of 1,850 veh/h. The approach gets 45 s of effective green in a 110 s cycle. What is its capacity?",
+     "steps": "c = N s \\frac{g}{C} = 3(1,850) × \\frac{45}{110} = 5,550 × 0.409 = 2,270 veh/h.",
+     "answer": "2,270 veh/h",
+     "value": 2270.454545
+    },
+    {
+     "family": "transport-0011",
+     "problem": "A road follows the Greenshields model with a free-flow speed of 65 mph and a jam density of 140 veh/mi. What is its capacity?",
+     "steps": "At capacity: k = 140 / 2 = 70 veh/mi and u = 65 / 2 = 32.5 mph.\n\nq_{max} = 70 × 32.5 = \\frac{65(140)}{4} = 2,275 veh/h.",
+     "answer": "2,275 veh/h",
+     "value": 2275.0,
+     "figure": {
+      "viewBox": "0 0 400 180",
+      "svg": "<line x1='50' y1='20' x2='50' y2='140' stroke='#00242E'/><line x1='50' y1='140' x2='370' y2='140' stroke='#00242E'/><line x1='50' y1='36' x2='350' y2='140' stroke='#1B795A' stroke-width='3'/><circle cx='200' cy='88' r='5' fill='#00574A'/><text x='44' y='40' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>65</text><text x='350' y='156' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>140</text><text x='200' y='156' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>70</text><text x='44' y='92' text-anchor='end' font-size='12' font-weight='400' fill='#00574A'>32.5</text><text x='210' y='82' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>Capacity point</text><text x='210' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Density, veh/mi</text><text x='56' y='16' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Speed, mph</text><line x1='200' y1='88' x2='200' y2='140' stroke='#00574A' stroke-dasharray='4 4'/><line x1='50' y1='88' x2='200' y2='88' stroke='#00574A' stroke-dasharray='4 4'/>",
+      "alt": "A straight speed-density line falling from 65 mph at zero density to zero speed at 140 veh/mi, with the capacity point at its middle."
+     }
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "traffic flow relationships",
+      "peak hour factor",
+      "saturation flow",
+      "capacity",
+      "Greenshields"
+     ]
+    }
+   ]
   },
   {
    "id": "transport-d-lesson",
@@ -158,7 +375,48 @@
    "example": {
     "problem": "Find the yellow interval for an approach speed of 59 ft/s (40 mph) on level ground, with t = 1.0 s and a = 10 ft/s^{2}.",
     "steps": "y = 1.0 + \\frac{59}{20} = 3.95 s, rounded up to 4.0 s in practice."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Sign classes",
+     "text": "The MUTCD sorts signs by function, with matching shapes and colours. Regulatory signs give laws and are mostly white rectangles, with the red octagonal STOP and triangular YIELD as exceptions. Warning signs are yellow diamonds. Guide signs are green. Temporary traffic control signs are orange."
+    },
+    {
+     "title": "Pavement markings",
+     "text": "Yellow lines separate traffic moving in opposite directions and mark the left edge of divided roads. White lines separate traffic moving the same way and mark the right edge. A broken line may be crossed, a solid line discourages crossing and a double solid line prohibits it."
+    },
+    {
+     "title": "Signals",
+     "text": "A signal is installed only when an engineering study shows that at least one warrant is met, such as vehicle volume, pedestrian volume or crash experience. Meeting a warrant allows a signal; it does not require one."
+    },
+    {
+     "title": "What every device must do",
+     "text": "Fulfil a need, command attention, convey a clear and simple meaning, command respect from road users and give adequate time for a proper response."
+    },
+    {
+     "title": "Vehicle signal change interval",
+     "text": "The yellow interval must cover the driver's reaction time plus the time to decelerate to a stop, so that a driver too close to stop can enter legally: y = t + v / (2a + 2 g G), with v in ft/s. On level ground the grade term is zero."
+    }
+   ],
+   "examples": [
+    {
+     "family": "transport-0012",
+     "problem": "A signal approach has a speed of 52.5 mph (77 ft/s) on level ground. Using a perception-reaction time of 1.0 s and a deceleration rate of 10 ft/s^{2}, what yellow change interval is needed?",
+     "steps": "y = t + \\frac{v}{2a} = 1.0 + \\frac{77}{2(10)} = 1.0 + 3.85 = 4.85 s.",
+     "answer": "4.85 s",
+     "value": 4.85
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "vehicle signal change interval",
+      "yellow"
+     ]
+    }
+   ]
   },
   {
    "id": "transport-e-lesson",
@@ -189,7 +447,56 @@
    "example": {
     "problem": "An office of 120,000 ft^{2} generates 11 trips per 1,000 ft^{2} per day. Find its daily trips.",
     "steps": "Trips = 11 × 120 = 1,320 per day."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Trip generation",
+     "text": "Trip generation, the first step of the four-step planning model, estimates trip ends from land use. With an average rate, trips = rate × number of units."
+    },
+    {
+     "title": "Crash rate",
+     "text": "Crash rates normalise crash counts by exposure so that sites with different volumes can be compared. For intersections: rate = crashes × 1,000,000 / (ADT × 365 × years)."
+    },
+    {
+     "title": "Logit",
+     "text": "The multinomial logit model gives each mode a share proportional to e raised to its utility: P(mode) = e^{U} / (sum of e^{U} over all modes). Only differences in utility matter."
+    }
+   ],
+   "examples": [
+    {
+     "family": "transport-0013",
+     "problem": "A subdivision has 320 dwelling units. The trip generation rate is 8.5 trips per dwelling unit per day. How many daily trips does it generate?",
+     "steps": "Trips = 8.5 × 320 = 2,720 trips per day.",
+     "answer": "2,720",
+     "value": 2720.0
+    },
+    {
+     "family": "transport-0014",
+     "problem": "An intersection has 15 crashes in one year. Its entering volume is 27,500 vehicles per day. What is the crash rate per million entering vehicles?",
+     "steps": "Entering vehicles in one year = 27,500 × 365 = 10,037,500.\n\nRate = \\frac{15 × 1,000,000}{10,037,500} = 1.49 crashes per million entering vehicles.",
+     "answer": "1.49 per MEV",
+     "value": 1.494396
+    },
+    {
+     "family": "transport-0015",
+     "problem": "A logit mode choice model gives a utility of -0.4 for auto and -1.3 for bus. What share of travellers choose the bus?",
+     "steps": "e^{-0.4} = 0.6703 and e^{-1.3} = 0.2725.\n\nP(bus) = \\frac{0.2725}{0.6703 + 0.2725} = 0.289, about 29%.",
+     "answer": "0.289",
+     "value": 0.28905
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "trip generation",
+      "crash rate",
+      "traffic safety equations",
+      "logit"
+     ]
+    }
+   ]
   }
  ]
 }

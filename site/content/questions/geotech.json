@@ -1272,7 +1272,7 @@
    }
   ],
   "answer": "b",
-  "eli5": "A well-graded sand has a good mix of grain sizes, so small grains fill the gaps between big ones.",
+  "eli5": "In the Unified Soil Classification System a sand with less than 5% fines is classified on gradation alone. It is well graded, SW, only if the coefficient of uniformity is at least 6 and the coefficient of curvature is between 1 and 3. Otherwise it is poorly graded, SP.",
   "solution": "With less than 5% fines the sand is clean, so it is SW or SP.\n\nA sand is well graded when C_{u} is at least 6 and C_{c} is between 1 and 3. Both hold, so the symbol is SW.",
   "handbook": [
    {
@@ -1289,6 +1289,59 @@
    "method": "reference",
    "basis": "Unified Soil Classification System, ASTM D2487"
   },
+  "family": "geotech-0008",
+  "version": 1,
+  "versions": 2,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0008-b",
+  "topic": "geotech",
+  "subtopic": "geotech-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A sand has 2% fines, a coefficient of uniformity of 4 and a coefficient of curvature of 1.2. What is its Unified Soil Classification symbol?",
+  "options": [
+   {
+    "id": "a",
+    "text": "SW"
+   },
+   {
+    "id": "b",
+    "text": "SP"
+   },
+   {
+    "id": "c",
+    "text": "SM"
+   },
+   {
+    "id": "d",
+    "text": "SC"
+   }
+  ],
+  "answer": "b",
+  "eli5": "In the Unified Soil Classification System a sand with less than 5% fines is classified on gradation alone. It is well graded, SW, only if the coefficient of uniformity is at least 6 and the coefficient of curvature is between 1 and 3. Otherwise it is poorly graded, SP.",
+  "solution": "Fines are 2%, below 5%, so the choice is between SW and SP.\n\nC_{u} = 4 is less than 6, so the sand fails the well-graded test even though C_{c} = 1.2 is in range. The symbol is SP.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Unified Soil Classification"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Unified Soil Classification System: clean sands are SW when Cu >= 6 and 1 <= Cc <= 3, otherwise SP"
+  },
+  "family": "geotech-0008",
+  "version": 2,
+  "versions": 2,
   "lookup": true
  },
  {
@@ -2643,7 +2696,7 @@
    }
   ],
   "answer": "b",
-  "eli5": "When separate footings would be so big that they nearly touch, it is simpler to pour one slab under the whole building.",
+  "eli5": "Shallow foundations (spread, strip and mat) bear on soil near the surface. Deep foundations (driven piles and drilled shafts) carry load to stronger material at depth or shed it through skin friction along their length.",
   "solution": "A mat, or raft, foundation spreads the building load over the whole footprint.\n\nSpread footings carry single columns, strip footings carry walls, and drilled shafts are deep foundations.",
   "handbook": [
    {
@@ -2658,6 +2711,57 @@
    "method": "reference",
    "basis": "Standard foundation type definitions"
   },
+  "family": "geotech-0017",
+  "version": 1,
+  "versions": 2,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0017-b",
+  "topic": "geotech",
+  "subtopic": "geotech-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Which foundation type carries load down to a deep stratum through a large-diameter, cast-in-place concrete element?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Mat foundation"
+   },
+   {
+    "id": "b",
+    "text": "Strip footing"
+   },
+   {
+    "id": "c",
+    "text": "Drilled shaft"
+   },
+   {
+    "id": "d",
+    "text": "Spread footing"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Shallow foundations (spread, strip and mat) bear on soil near the surface. Deep foundations (driven piles and drilled shafts) carry load to stronger material at depth or shed it through skin friction along their length.",
+  "solution": "A drilled shaft, also called a drilled pier or caisson, is made by drilling a hole and filling it with reinforced concrete.\n\nMats, strips and spread footings are all shallow foundations.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard foundation type definitions"
+  },
+  "family": "geotech-0017",
+  "version": 2,
+  "versions": 2,
   "lookup": false
  },
  {
@@ -3404,7 +3508,7 @@
    }
   ],
   "answer": "a",
-  "eli5": "The fabric is a divider. It stops the stone being pushed down into the mud and the mud pumping up into the stone.",
+  "eli5": "Geosynthetics are chosen by function. Geotextiles separate, filter, drain or reinforce. Geogrids, with their open apertures, interlock with aggregate and reinforce. Geomembranes are barriers.",
   "solution": "In this position a geotextile mainly provides separation, keeping the two materials from mixing so the base keeps its thickness and strength.\n\nGeosynthetics can also filter, drain and reinforce, depending on type and placement.",
   "handbook": [
    {
@@ -3419,6 +3523,57 @@
    "method": "reference",
    "basis": "Standard geosynthetic functions: separation, filtration, drainage, reinforcement"
   },
+  "family": "geotech-0022",
+  "version": 1,
+  "versions": 2,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0022-b",
+  "topic": "geotech",
+  "subtopic": "geotech-k",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A geogrid is placed within the aggregate base of a road built on a soft subgrade. What is its primary function?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Filtration"
+   },
+   {
+    "id": "b",
+    "text": "Reinforcement"
+   },
+   {
+    "id": "c",
+    "text": "Barrier to water"
+   },
+   {
+    "id": "d",
+    "text": "Drainage"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Geosynthetics are chosen by function. Geotextiles separate, filter, drain or reinforce. Geogrids, with their open apertures, interlock with aggregate and reinforce. Geomembranes are barriers.",
+  "solution": "A geogrid interlocks with the aggregate and takes tension, which spreads wheel loads and limits rutting. That is reinforcement.\n\nIts open grid cannot filter or act as a barrier.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard geosynthetic functions: separation, filtration, drainage, reinforcement"
+  },
+  "family": "geotech-0022",
+  "version": 2,
+  "versions": 2,
   "lookup": false
  },
  {

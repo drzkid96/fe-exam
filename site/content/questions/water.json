@@ -3782,7 +3782,7 @@
    }
   ],
   "answer": "b",
-  "eli5": "One number is the ideal with no known health risk. The other is the limit the law actually enforces, set as close to the ideal as treatment allows.",
+  "eli5": "The Safe Drinking Water Act uses paired terms. The maximum contaminant level goal (MCLG) is a health target and is not enforceable. The maximum contaminant level (MCL) is the enforceable limit, set as close to the goal as is feasible. Secondary standards cover taste, odour and appearance.",
   "solution": "The MCL is the enforceable standard. The MCLG is a non-enforceable health goal. Secondary standards cover taste, odour and appearance and are guidelines.",
   "handbook": [
    {
@@ -3797,6 +3797,57 @@
    "method": "reference",
    "basis": "U.S. Safe Drinking Water Act definitions (40 CFR Part 141)"
   },
+  "family": "water-0022",
+  "version": 1,
+  "versions": 2,
+  "lookup": false
+ },
+ {
+  "id": "water-0022-b",
+  "topic": "water",
+  "subtopic": "water-j",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Under the U.S. Safe Drinking Water Act, which term is a health goal that is not enforceable, set at the level with no known or expected risk?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Maximum contaminant level (MCL)"
+   },
+   {
+    "id": "b",
+    "text": "Maximum contaminant level goal (MCLG)"
+   },
+   {
+    "id": "c",
+    "text": "Secondary maximum contaminant level"
+   },
+   {
+    "id": "d",
+    "text": "Treatment technique"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The Safe Drinking Water Act uses paired terms. The maximum contaminant level goal (MCLG) is a health target and is not enforceable. The maximum contaminant level (MCL) is the enforceable limit, set as close to the goal as is feasible. Secondary standards cover taste, odour and appearance.",
+  "solution": "A non-enforceable health goal is the MCLG.\n\nThe MCL is the enforceable limit, and secondary standards are guidelines for aesthetic qualities.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "U.S. Safe Drinking Water Act definitions (40 CFR Part 141)"
+  },
+  "family": "water-0022",
+  "version": 2,
+  "versions": 2,
   "lookup": false
  },
  {

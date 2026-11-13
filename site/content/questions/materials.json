@@ -1055,7 +1055,7 @@
    }
   ],
   "answer": "a",
-  "eli5": "A Rockwell tester presses a small point into the metal and measures how deep the dent goes.",
+  "eli5": "Mechanical tests each target one property. Hardness tests (Brinell, Rockwell) measure resistance to indentation. The Charpy test breaks a notched bar with a pendulum and measures the energy absorbed, which is impact toughness. Fatigue tests apply cyclic load; creep tests apply sustained load at temperature.",
   "solution": "The Rockwell test measures hardness: resistance to permanent indentation.\n\nImpact toughness is measured by Charpy, fatigue by repeated load cycles, and creep by long-term loading.",
   "handbook": [
    {
@@ -1072,6 +1072,59 @@
    "method": "reference",
    "basis": "ASTM E18, Rockwell hardness of metallic materials"
   },
+  "family": "materials-0007",
+  "version": 1,
+  "versions": 2,
+  "lookup": true
+ },
+ {
+  "id": "materials-0007-b",
+  "topic": "materials",
+  "subtopic": "materials-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Which property does a Charpy test measure?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Hardness"
+   },
+   {
+    "id": "b",
+    "text": "Fatigue life"
+   },
+   {
+    "id": "c",
+    "text": "Creep rate"
+   },
+   {
+    "id": "d",
+    "text": "Impact toughness"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Mechanical tests each target one property. Hardness tests (Brinell, Rockwell) measure resistance to indentation. The Charpy test breaks a notched bar with a pendulum and measures the energy absorbed, which is impact toughness. Fatigue tests apply cyclic load; creep tests apply sustained load at temperature.",
+  "solution": "The Charpy test reports the energy absorbed in fracturing a notched specimen, a measure of impact toughness. Run at several temperatures, it locates the ductile-to-brittle transition.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": [
+     "hardness"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "ASTM E18, Rockwell hardness of metallic materials"
+  },
+  "family": "materials-0007",
+  "version": 2,
+  "versions": 2,
   "lookup": true
  },
  {
@@ -1102,7 +1155,7 @@
    }
   ],
   "answer": "c",
-  "eli5": "The grade number of rebar is its yield strength in thousands of pounds per square inch.",
+  "eli5": "Steel grades are named or specified by minimum yield strength. A36 has 250 MPa (36 ksi). A992, used for wide-flange shapes, has 345 MPa (50 ksi). Grade 60 reinforcing bar has 420 MPa (60 ksi).",
   "solution": "Grade 60 bars have a minimum yield strength of 60 ksi, about 420 MPa.\n\n36 ksi is the yield strength of A36 structural steel.",
   "handbook": [
    {
@@ -1119,6 +1172,59 @@
    "method": "reference",
    "basis": "ASTM A615, deformed carbon-steel bars for concrete reinforcement"
   },
+  "family": "materials-0008",
+  "version": 1,
+  "versions": 2,
+  "lookup": true
+ },
+ {
+  "id": "materials-0008-b",
+  "topic": "materials",
+  "subtopic": "materials-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "What is the minimum yield strength of ASTM A992 steel, the usual grade for wide-flange beams?",
+  "options": [
+   {
+    "id": "a",
+    "text": "250 MPa (36 ksi)"
+   },
+   {
+    "id": "b",
+    "text": "345 MPa (50 ksi)"
+   },
+   {
+    "id": "c",
+    "text": "420 MPa (60 ksi)"
+   },
+   {
+    "id": "d",
+    "text": "450 MPa (65 ksi)"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Steel grades are named or specified by minimum yield strength. A36 has 250 MPa (36 ksi). A992, used for wide-flange shapes, has 345 MPa (50 ksi). Grade 60 reinforcing bar has 420 MPa (60 ksi).",
+  "solution": "A992 has a minimum yield strength of 345 MPa (50 ksi).\n\n250 MPa is A36 and 420 MPa is Grade 60 reinforcing bar.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "reinforcement bar"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "ASTM A992: minimum yield strength 50 ksi (345 MPa)"
+  },
+  "family": "materials-0008",
+  "version": 2,
+  "versions": 2,
   "lookup": true
  },
  {
@@ -1497,7 +1603,7 @@
    }
   ],
   "answer": "c",
-  "eli5": "A tough material soaks up a lot of energy before it breaks. That takes both strength and stretch.",
+  "eli5": "The area under a stress-strain curve is energy per unit volume. Up to the yield point it is the modulus of resilience, the energy the material can absorb and fully recover. Up to fracture it is the toughness.",
   "solution": "Toughness is the energy absorbed per unit volume up to fracture, which is the area under the whole curve.\n\nStiffness is the slope of the straight portion.",
   "handbook": [
    {
@@ -1515,6 +1621,60 @@
    "method": "reference",
    "basis": "Standard definition of toughness (modulus of toughness)"
   },
+  "family": "materials-0011",
+  "version": 1,
+  "versions": 2,
+  "lookup": true
+ },
+ {
+  "id": "materials-0011-b",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What does the area under a material's stress-strain curve, up to the yield point only, represent?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Toughness"
+   },
+   {
+    "id": "b",
+    "text": "Ductility"
+   },
+   {
+    "id": "c",
+    "text": "Modulus of resilience"
+   },
+   {
+    "id": "d",
+    "text": "Hardness"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The area under a stress-strain curve is energy per unit volume. Up to the yield point it is the modulus of resilience, the energy the material can absorb and fully recover. Up to fracture it is the toughness.",
+  "solution": "Stopping at the yield point gives the modulus of resilience, which for a linear material equals (yield stress)^{2} / (2E).\n\nThe whole area to fracture would be toughness.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": [
+     "toughness",
+     "stress-strain"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard definition of toughness (modulus of toughness)"
+  },
+  "family": "materials-0011",
+  "version": 2,
+  "versions": 2,
   "lookup": true
  }
 ]

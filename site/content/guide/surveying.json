@@ -58,7 +58,43 @@
     "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='287' y2='60' stroke='#00574A' stroke-width='3'/><circle cx='287' cy='60' r='5' fill='#00574A'/><text x='297' y='54' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>200.00 m, azimuth 60°</text>",
     "alt": "A line drawn from the origin at an azimuth of 60° clockwise from north.",
     "caption": "Latitude is L cos(azimuth) and departure is L sin(azimuth)."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Trigonometry",
+     "text": "A slope measurement is the hypotenuse of a right triangle. The horizontal distance is the slope distance times the cosine of the vertical angle, and the elevation difference is the slope distance times the sine."
+    },
+    {
+     "title": "Regular polygon",
+     "text": "The interior angles of any closed polygon with n sides sum to (n - 2) × 180°. Comparing the measured sum with this value gives the angular misclosure of a traverse."
+    }
+   ],
+   "examples": [
+    {
+     "family": "surveying-0006",
+     "problem": "A slope distance of 412.60 m is measured at a vertical angle of 9° above horizontal. What is the horizontal distance?",
+     "steps": "H = S cos(angle) = 412.60 × cos 9° = 412.60 × 0.9877 = 407.52 m. The rise is 412.60 × sin 9° = 64.54 m.",
+     "answer": "407.52 m",
+     "value": 407.520209
+    },
+    {
+     "family": "surveying-0007",
+     "problem": "What should the interior angles of a closed seven-sided traverse add up to?",
+     "steps": "Sum = (n - 2) × 180° = (7 - 2) × 180° = 900°.",
+     "answer": "900°",
+     "value": 900
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Mathematics",
+     "page": "34–62",
+     "find": [
+      "trigonometry",
+      "regular polygon"
+     ]
+    }
+   ]
   },
   {
    "id": "surveying-b-lesson",
@@ -96,7 +132,60 @@
     "svg": "<path d='M50 160 L206 160 L258 56 L102 30 Z' fill='#D9F1D6' fill-opacity='.6' stroke='#00242E' stroke-width='2'/><circle cx='50' cy='160' r='4' fill='#00242E'/><text x='50' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(0, 0)</text><circle cx='206' cy='160' r='4' fill='#00242E'/><text x='206' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(60, 0)</text><circle cx='258' cy='56' r='4' fill='#00242E'/><text x='258' y='48' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(80, 40)</text><circle cx='102' cy='30' r='4' fill='#00242E'/><text x='102' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(20, 50)</text>",
     "alt": "A parcel with corners at (0, 0), (60, 0), (80, 40), (20, 50) m.",
     "caption": "Area by coordinates: list the corners in order and apply the cross-product sum."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Area by coordinates",
+     "text": "The area of a closed polygon from corner coordinates is half the absolute value of the sum of the cross products x_{i} y_{i+1} - x_{i+1} y_{i} taken around the boundary (the coordinate or shoelace method)."
+    },
+    {
+     "title": "Trigonometry",
+     "text": "When two sides and the included angle are known, area = (1/2) a b sin(C). The term b sin(C) is the height of the triangle measured from side a."
+    }
+   ],
+   "examples": [
+    {
+     "family": "surveying-0002",
+     "problem": "A four-sided parcel has corners, in order, at (0, 0), (70, 0), (100, 60) and (20, 80), with coordinates in metres. What is its area?",
+     "steps": "Cross products in order: 0(0) - 70(0) = 0; 70(60) - 100(0) = 4,200; 100(80) - 20(60) = 6,800; 20(0) - 0(80) = 0.\n\nSum = 11,000.\n\nArea = \\frac{11,000}{2} = 5,500 m^{2}.",
+     "answer": "5,500 m^{2}",
+     "value": 5500.0,
+     "figure": {
+      "viewBox": "0 0 400 185",
+      "svg": "<path d='M50 160 L164 160 L212 62 L82 30 Z' fill='#D9F1D6' fill-opacity='.6' stroke='#00242E' stroke-width='2'/><circle cx='50' cy='160' r='4' fill='#00242E'/><text x='50' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(0, 0)</text><circle cx='164' cy='160' r='4' fill='#00242E'/><text x='164' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(70, 0)</text><circle cx='212' cy='62' r='4' fill='#00242E'/><text x='212' y='54' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(100, 60)</text><circle cx='82' cy='30' r='4' fill='#00242E'/><text x='82' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(20, 80)</text>",
+      "alt": "A parcel with corners at (0, 0), (70, 0), (100, 60), (20, 80) m."
+     }
+    },
+    {
+     "family": "surveying-0008",
+     "problem": "Two sides of a triangular parcel are 150 m and 95 m long and meet at an angle of 64°. What is the area of the parcel?",
+     "steps": "Area = \\frac{1}{2} a b sin C = \\frac{1}{2}(150)(95) sin 64° = 7,125 × 0.8988 = 6,403.9 m^{2}.",
+     "answer": "6,403.9 m^{2}",
+     "value": 6403.90758,
+     "figure": {
+      "viewBox": "0 0 400 180",
+      "svg": "<path d='M70 150 L281 150 L129 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='175' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>150 m</text><text x='91' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>95 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>64°</text>",
+      "alt": "A triangle with sides of 150 m and 95 m meeting at 64°."
+     }
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "area by coordinates"
+     ]
+    },
+    {
+     "section": "Mathematics",
+     "page": "34–62",
+     "find": [
+      "trigonometry",
+      "law of sines"
+     ]
+    }
+   ]
   },
   {
    "id": "surveying-c-lesson",
@@ -127,7 +216,43 @@
    "example": {
     "problem": "Stations 30 m apart have fill areas of 18 m^{2} and 26 m^{2}. Find the fill volume.",
     "steps": "V = 30 × \\frac{18 + 26}{2} = 660 m^{3}."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Average end area",
+     "text": "The average end area method treats the earthwork between two cross-sections as a prism whose cross-section is the mean of the two end areas: V = L (A_{1} + A_{2}) / 2. It slightly overestimates when the areas differ a lot."
+    },
+    {
+     "title": "Earthwork formulas",
+     "text": "Borrow pit volume is plan area times average depth of cut. On a grid, the average depth is found by weighting each corner depth by the number of grid squares it touches."
+    }
+   ],
+   "examples": [
+    {
+     "family": "surveying-0003",
+     "problem": "Two road cross-sections 30 m apart have cut areas of 28 m^{2} and 44 m^{2}. Using the average end area method, what is the volume of cut between them?",
+     "steps": "V = L × \\frac{A_{1} + A_{2}}{2} = 30 × \\frac{28 + 44}{2} = 30 × 36 = 1,080 m^{3}.",
+     "answer": "1,080 m^{3}",
+     "value": 1080.0
+    },
+    {
+     "family": "surveying-0009",
+     "problem": "A borrow pit measures 30 m by 45 m in plan. Its average depth of cut is 2.2 m. What volume is excavated?",
+     "steps": "V = 30 × 45 × 2.2 = 1,350 m^{2} × 2.2 m = 2,970 m^{3}.",
+     "answer": "2,970 m^{3}",
+     "value": 2970.0
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "average end area",
+      "earthwork formulas"
+     ]
+    }
+   ]
   },
   {
    "id": "surveying-d-lesson",
@@ -163,7 +288,48 @@
    "example": {
     "problem": "A line runs 150 m at an azimuth of 120°. Find its latitude and departure.",
     "steps": "Latitude = 150 cos 120° = -75.0 m (south).\n\nDeparture = 150 sin 120° = 129.9 m (east)."
-   }
+   },
+   "ideas": [
+    {
+     "title": "Latitude",
+     "text": "Azimuth is measured clockwise from north. Latitude (the north-south component) is L cos(azimuth) and departure (the east-west component) is L sin(azimuth). East and north are positive."
+    },
+    {
+     "title": "Latitude",
+     "text": "A bearing of S (angle) E points south and east, so the line's latitude is negative and its departure is positive. The new northing is the old northing plus the latitude, where latitude = -L cos(bearing angle)."
+    }
+   ],
+   "examples": [
+    {
+     "family": "surveying-0010",
+     "problem": "A traverse line is 264.50 m long with an azimuth of 48°. What is its departure (east-west component)?",
+     "steps": "Departure = L sin(azimuth) = 264.50 × sin 48° = 196.6 m (east).\n\nLatitude = 264.50 × cos 48° = 177.0 m (north).",
+     "answer": "196.6 m",
+     "value": 196.561806,
+     "figure": {
+      "viewBox": "0 0 400 200",
+      "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='274' y2='46' stroke='#00574A' stroke-width='3'/><circle cx='274' cy='46' r='5' fill='#00574A'/><text x='284' y='40' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>264.50 m, azimuth 48°</text>",
+      "alt": "A line drawn from the origin at an azimuth of 48° clockwise from north."
+     }
+    },
+    {
+     "family": "surveying-0011",
+     "problem": "Point A has a northing of 3,200.00 m and an easting of 500.00 m. Point B is 145.00 m from A on a bearing of S 35° E. What is the northing of B?",
+     "steps": "Latitude = -145.00 × cos 35° = -118.78 m.\n\nNorthing of B = 3,200.00 - 118.78 = 3,081.22 m.\n\nFor reference, easting of B = 500.00 + 145.00 sin 35° = 583.17 m.",
+     "answer": "3,081.22 m",
+     "value": 3081.222954
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "latitude",
+      "departure"
+     ]
+    }
+   ]
   },
   {
    "id": "surveying-e-lesson",
@@ -200,7 +366,39 @@
     "svg": "<path d='M20 150 L120 140 L200 132 L290 150 L380 158' fill='none' stroke='#00242E' stroke-width='2'/><line x1='70' y1='50' x2='330' y2='50' stroke='#568CBB' stroke-dasharray='6 4'/><rect x='66' y='38' width='8' height='107' fill='#EEEDE8' stroke='#00242E'/><rect x='326' y='38' width='8' height='116' fill='#EEEDE8' stroke='#00242E'/><rect x='186' y='43' width='28' height='14' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><path d='M200 57 L186 132 M200 57 L214 132' stroke='#00242E' stroke-width='2'/><text x='70' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Benchmark</text><text x='330' y='176' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>New point</text><text x='84' y='96' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>BS 1.52 m</text><text x='316' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>FS 2.31 m</text><text x='200' y='36' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Line of sight</text>",
     "alt": "A level set up between a benchmark and a new point, with a backsight of 1.52 m and a foresight of 2.31 m.",
     "caption": "Differential leveling: height of instrument = benchmark + backsight; new elevation = height of instrument - foresight."
-   }
+   },
+   "ideas": [
+    {
+     "title": "",
+     "text": "Differential leveling: the height of instrument is the benchmark elevation plus the backsight. The elevation of the new point is the height of instrument minus the foresight. A larger foresight means lower ground."
+    },
+    {
+     "title": "",
+     "text": "Grade is rise over horizontal run, expressed as a percentage. It is positive going uphill in the direction of stationing."
+    }
+   ],
+   "examples": [
+    {
+     "family": "surveying-0001",
+     "problem": "A level is set up between a benchmark at elevation 75.50 m and a new point. The backsight reading on the benchmark is 1.84 m and the foresight reading on the new point is 2.96 m. What is the elevation of the new point?",
+     "steps": "Height of instrument = 75.50 + 1.84 = 77.34 m.\n\nElevation = 77.34 - 2.96 = 74.38 m.",
+     "answer": "74.38 m",
+     "value": 74.38,
+     "figure": {
+      "viewBox": "0 0 400 185",
+      "svg": "<path d='M20 150 L120 140 L200 132 L290 150 L380 158' fill='none' stroke='#00242E' stroke-width='2'/><line x1='70' y1='50' x2='330' y2='50' stroke='#568CBB' stroke-dasharray='6 4'/><rect x='66' y='38' width='8' height='107' fill='#EEEDE8' stroke='#00242E'/><rect x='326' y='38' width='8' height='116' fill='#EEEDE8' stroke='#00242E'/><rect x='186' y='43' width='28' height='14' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><path d='M200 57 L186 132 M200 57 L214 132' stroke='#00242E' stroke-width='2'/><text x='70' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Benchmark</text><text x='330' y='176' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>New point</text><text x='84' y='96' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>BS 1.84 m</text><text x='316' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>FS 2.96 m</text><text x='200' y='36' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Line of sight</text>",
+      "alt": "A level set up between a benchmark and a new point, with a backsight of 1.84 m and a foresight of 2.96 m."
+     }
+    },
+    {
+     "family": "surveying-0005",
+     "problem": "A road rises from elevation 150.0 m to elevation 162.6 m over a horizontal distance of 360 m. What is the grade?",
+     "steps": "Rise = 162.6 - 150.0 = 12.6 m.\n\nGrade = \\frac{12.6}{360} × 100 = 3.50%.",
+     "answer": "3.50 %",
+     "value": 3.5
+    }
+   ],
+   "lookup": []
   }
  ]
 }

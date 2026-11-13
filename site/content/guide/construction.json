@@ -32,7 +32,31 @@
    "pitfalls": [
     "Confusing a performance bond (the work gets finished) with a payment bond (subcontractors and suppliers get paid)."
    ],
-   "updated": "2026-11-13"
+   "updated": "2026-11-13",
+   "ideas": [
+    {
+     "title": "Delivery methods",
+     "text": "Design-bid-build: the owner holds separate contracts with the designer and the contractor, in sequence. Design-build: one entity holds a single contract for both. Construction manager at risk: the manager commits to a guaranteed maximum price and holds the trade contracts. Agency construction management: the manager only advises."
+    },
+    {
+     "title": "Contract documents",
+     "text": "The set is the agreement, the general and supplementary conditions, the specifications, the drawings and any addenda. Addenda change the documents before bids are opened; change orders change them after award."
+    },
+    {
+     "title": "Bonds",
+     "text": "A bid bond guarantees the low bidder will sign the contract at the bid price. A performance bond guarantees the work will be completed. A payment bond guarantees subcontractors and suppliers will be paid."
+    },
+    {
+     "title": "Sequence of a job",
+     "text": "Advertise, receive bids, award, notice to proceed, construction, substantial completion, punch list, final completion and final payment. Retainage is a share of each payment held back until the work is accepted."
+    },
+    {
+     "title": "Paper flow during construction",
+     "text": "A request for information asks the designer to clarify the documents. A submittal or shop drawing shows how the contractor intends to meet them and is reviewed for conformance with the design intent, not for means and methods."
+    }
+   ],
+   "examples": [],
+   "lookup": []
   },
   {
    "id": "construction-b-lesson",
@@ -63,7 +87,53 @@
    "example": {
     "problem": "A scraper carries 15 m^{3} per trip and makes a trip every 6 minutes, working 45 minutes per hour. Find its hourly production.",
     "steps": "Trips per hour = \\frac{45}{6} = 7.5.\n\nProduction = 15(7.5) = 112.5 m^{3}/h."
-   }
+   },
+   "ideas": [
+    {
+     "title": "",
+     "text": "Equipment production = volume per cycle × cycles per hour × efficiency. The efficiency factor (working minutes per 60) accounts for delays, operator breaks and repositioning."
+    },
+    {
+     "title": "Incidence rate",
+     "text": "The OSHA incidence rate normalises injury counts to 200,000 hours, the hours worked by 100 full-time employees in a year (100 × 40 h × 50 weeks), so that firms of different sizes can be compared."
+    },
+    {
+     "title": "",
+     "text": "A balanced fleet has just enough trucks that one arrives as the loader finishes the previous one. The number is the truck cycle time divided by the loading time. Fewer trucks leave the loader idle; more leave trucks queuing."
+    }
+   ],
+   "examples": [
+    {
+     "family": "construction-0004",
+     "problem": "An excavator has a 2.5 m^{3} bucket and a cycle time of 36 s. It works 50 minutes of each hour. What is its hourly production?",
+     "steps": "Cycles per hour = 3,600 / 36 = 100.\n\nIdeal production = 2.5 × 100 = 250 m^{3}/h.\n\nEfficiency = 50 / 60 = 0.833.\n\nProduction = 250 × 0.833 = 208 m^{3}/h.",
+     "answer": "208 m^{3}/h",
+     "value": 208.333333
+    },
+    {
+     "family": "construction-0011",
+     "problem": "A contractor has 5 recordable injuries in a year in which employees worked 310,000 hours. What is the incidence rate per 200,000 hours?",
+     "steps": "Incidence rate = \\frac{5 × 200,000}{310,000} = 3.23.",
+     "answer": "3.23",
+     "value": 3.225806
+    },
+    {
+     "family": "construction-0012",
+     "problem": "A loader takes 5 minutes to fill a truck. Each truck needs 35 minutes for a full cycle including loading. How many trucks keep the loader working without waiting?",
+     "steps": "Trucks = \\frac{truck cycle time}{loading time} = \\frac{35}{5} = 7.",
+     "answer": "7",
+     "value": 7.0
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Safety",
+     "page": "13–33",
+     "find": [
+      "incidence rate"
+     ]
+    }
+   ]
   },
   {
    "id": "construction-c-lesson",
@@ -105,7 +175,61 @@
     "svg": "<rect x='20' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='55' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='55' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3 days</text><rect x='165' y='12' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='30' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><text x='200' y='45' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4 days</text><rect x='165' y='108' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='126' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>C</text><text x='200' y='141' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6 days</text><rect x='310' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='345' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>D</text><text x='345' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2 days</text><line x1='90' y1='72' x2='159' y2='33' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='35' r='4' fill='#00574A'/><line x1='90' y1='88' x2='159' y2='127' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='125' r='4' fill='#00574A'/><line x1='235' y1='36' x2='304' y2='75' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='73' r='4' fill='#00574A'/><line x1='235' y1='124' x2='304' y2='85' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='87' r='4' fill='#00574A'/>",
     "alt": "An activity network: A (3 days) is followed by B (4 days) and C (6 days), which are both followed by D (2 days).",
     "caption": "An activity-on-node network. The longest path, A-C-D, is critical; B has float."
-   }
+   },
+   "ideas": [
+    {
+     "title": "CPM",
+     "text": "In the critical path method the longest path through the network sets the project duration, and activities on it have zero float. Total float is the time an activity can slip without delaying the project: late start minus early start."
+    },
+    {
+     "title": "Earned-value analysis",
+     "text": "Earned value management compares the budgeted value of work done (EV) with what it cost (AC) and with what was scheduled (PV). CPI = EV / AC; below 1.0 means over budget. SPI = EV / PV; below 1.0 means behind schedule."
+    },
+    {
+     "title": "",
+     "text": "Activity duration = quantity of work / (crew productivity × number of crews). Durations found this way feed the schedule network."
+    }
+   ],
+   "examples": [
+    {
+     "family": "construction-0001",
+     "problem": "A project has four activities. A takes 4 days and starts the job. B takes 5 days and C takes 12 days; both follow A. D takes 3 days and follows both B and C. What is the total float of activity B?",
+     "steps": "Path A-B-D = 4 + 5 + 3 = 12 days. Path A-C-D = 4 + 12 + 3 = 19 days, which is critical.\n\nB and C run in parallel between the same events, so B can slip by the difference: total float of B = 12 - 5 = 7 days.",
+     "answer": "7 days",
+     "value": 7,
+     "figure": {
+      "viewBox": "0 0 400 160",
+      "svg": "<rect x='20' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='55' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='55' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4 days</text><rect x='165' y='12' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='30' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><text x='200' y='45' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5 days</text><rect x='165' y='108' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='126' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>C</text><text x='200' y='141' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12 days</text><rect x='310' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='345' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>D</text><text x='345' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3 days</text><line x1='90' y1='72' x2='159' y2='33' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='35' r='4' fill='#00574A'/><line x1='90' y1='88' x2='159' y2='127' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='125' r='4' fill='#00574A'/><line x1='235' y1='36' x2='304' y2='75' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='73' r='4' fill='#00574A'/><line x1='235' y1='124' x2='304' y2='85' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='87' r='4' fill='#00574A'/>",
+      "alt": "An activity network: A (4 days) is followed by B (5 days) and C (12 days), which are both followed by D (3 days)."
+     }
+    },
+    {
+     "family": "construction-0002",
+     "problem": "At a status date a project has a planned value of $600,000, an earned value of $540,000 and an actual cost of $580,000. What is the cost performance index?",
+     "steps": "CPI = \\frac{EV}{AC} = \\frac{540,000}{580,000} = 0.931. For reference, SPI = \\frac{540,000}{600,000} = 0.900.",
+     "answer": "0.931",
+     "value": 0.931034
+    },
+    {
+     "family": "construction-0014",
+     "problem": "A crew places 45 m^{2} of formwork per day. There are 1,620 m^{2} to place and 3 crews working. How many working days are needed?",
+     "steps": "Daily output = 3 × 45 = 135 m^{2}/day.\n\nDuration = \\frac{1,620}{135} = 12 working days.",
+     "answer": "12 days",
+     "value": 12.0
+    }
+   ],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "CPM",
+      "float",
+      "earned-value analysis",
+      "schedule variance"
+     ]
+    }
+   ]
   },
   {
    "id": "construction-d-lesson",
@@ -136,7 +260,45 @@
    "example": {
     "problem": "A footing 2 m by 2 m by 0.5 m is poured 12 times. With 4% waste, how much concrete is ordered?",
     "steps": "Net volume = 2(2)(0.5)(12) = 24 m^{3}.\n\nOrder = 24(1.04) = 24.96 m^{3}, about 25 m^{3}."
-   }
+   },
+   "ideas": [
+    {
+     "title": "",
+     "text": "Quantity takeoff for concrete is the neat volume from the drawings, increased by a waste allowance for spillage, over-excavation and uneven subgrade. Convert the thickness to metres first."
+    },
+    {
+     "title": "",
+     "text": "A bid item price is its direct cost (quantity × unit cost) plus a markup that covers overhead and profit."
+    },
+    {
+     "title": "",
+     "text": "Formwork is measured as contact area, the surface of concrete that touches the forms. A wall has two faces, so the contact area is 2 × length × height (ends ignored here)."
+    }
+   ],
+   "examples": [
+    {
+     "family": "construction-0003",
+     "problem": "A slab on grade is 40 m long, 25 m wide and 175 mm thick. Allowing 7% for waste, how much concrete should be ordered?",
+     "steps": "Neat volume = 40 × 25 × 0.175 = 175.00 m^{3}.\n\nWith 7% waste: 175.00 × 1.07 = 187.25 m^{3}.",
+     "answer": "187.25 m^{3}",
+     "value": 187.25
+    },
+    {
+     "family": "construction-0015",
+     "problem": "A job needs 1,600 m^{3} of excavation at a direct cost of $11.5 per m^{3}. Overhead and profit add 16%. What is the bid price for this item?",
+     "steps": "Direct cost = 1,600 × 11.5 = $18,400.\n\nBid price = 18,400 × 1.16 = $21,344.",
+     "answer": "$21,344",
+     "value": 21344.0
+    },
+    {
+     "family": "construction-0016",
+     "problem": "A concrete wall is 32 m long and 4.5 m high. What area of formwork is needed to form both faces?",
+     "steps": "Contact area = 2 × 32 × 4.5 = 288 m^{2}.",
+     "answer": "288 m^{2}",
+     "value": 288.0
+    }
+   ],
+   "lookup": []
   },
   {
    "id": "construction-e-lesson",
@@ -162,7 +324,34 @@
    "example": {
     "problem": "Contours at a 2 m interval are 25 m apart in plan. Find the slope.",
     "steps": "Slope = \\frac{2}{25} = 0.08 = 8%."
-   }
+   },
+   "ideas": [
+    {
+     "title": "",
+     "text": "An engineer's scale states how many feet on the ground one inch on the drawing represents. Ground distance = drawing distance × scale."
+    },
+    {
+     "title": "",
+     "text": "A ratio scale of 1:n means one unit on the drawing is n of the same units in reality. Multiply by n, then convert millimetres to metres."
+    }
+   ],
+   "examples": [
+    {
+     "family": "construction-0006",
+     "problem": "On a plan drawn at a scale of 1 in = 30 ft, a property line measures 4.75 in. How long is the line on the ground?",
+     "steps": "Ground length = 4.75 in × 30 ft/in = 142.5 ft.",
+     "answer": "142.5 ft",
+     "value": 142.5
+    },
+    {
+     "family": "construction-0007",
+     "problem": "A drawing is at a scale of 1:200. A wall measures 47 mm on the drawing. How long is the wall?",
+     "steps": "Real length = 47 mm × 200 = 9,400 mm = 9.4 m.",
+     "answer": "9.4 m",
+     "value": 9.4
+    }
+   ],
+   "lookup": []
   }
  ]
 }

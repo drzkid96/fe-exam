@@ -214,6 +214,11 @@ body.has-claude .ask{display:block}
 .ask-form input{flex:1;min-width:0;padding:7px 10px;border:1px solid var(--rule);border-radius:var(--r);background:var(--white)}
 .ask-err{color:var(--orange);font-weight:600}
 .ask .hint{margin-top:8px}
+.sol.ex{background:var(--band)}
+.sol.ex .figure{margin:8px 0!important}
+.ideas{display:grid;gap:10px}
+.idea{border-left:3px solid var(--pale);padding-left:12px}
+.idea>strong{display:block;color:var(--emerald)}
 .palette{display:grid;grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:6px}
 .palette button{height:36px;border:1px solid var(--rule);border-radius:var(--r);background:var(--surface);cursor:pointer;font-weight:600;font-variant-numeric:tabular-nums;position:relative}
 .palette button.done{background:var(--pale);border-color:var(--pale)}
@@ -529,7 +534,7 @@ const Core = (() => {
       add({type: 'question', id: q.id, topic: q.topic, subtopic: q.subtopic, format: q.format, title: plain(q.stem), body: plain(parts.join(' ')), href: 'q-' + q.id});
     }
     for (const tid of Object.keys(guide || {})) for (const s of (guide[tid].sections || []))
-      add({type: 'guide', id: s.id, topic: tid, subtopic: s.subtopic, title: s.title, body: plain([s.body].concat((s.formulas || []).map(f => f.name + ' ' + f.expr), s.pitfalls || [], s.example ? [s.example.problem, s.example.steps] : [], (s.read || []).map(r => r.source + ' ' + r.where)).join(' ')), href: 'topic-' + tid, open: s.subtopic || ''});
+      add({type: 'guide', id: s.id, topic: tid, subtopic: s.subtopic, title: s.title, body: plain([s.body].concat((s.formulas || []).map(f => f.name + ' ' + f.expr), s.pitfalls || [], s.example ? [s.example.problem, s.example.steps] : [], (s.ideas || []).map(i => i.title + ' ' + i.text), (s.examples || []).map(e => e.problem), (s.lookup || []).reduce((a, l) => a.concat(l.find), []), (s.read || []).map(r => r.source + ' ' + r.where)).join(' ')), href: 'topic-' + tid, open: s.subtopic || ''});
     for (const s of (reference && reference.sections) || [])
       add({type: 'reference', id: s.id, topic: (s.topics || [])[0] || '', title: s.title, body: plain([s.notes, s.pages].join(' ')), href: 'reference'});
     return docs;
@@ -814,7 +819,7 @@ function handbookHTML(q) {
   if (q.lookup === false) return '<div class="sol"><h3>Check in the handbook</h3><p>Not a handbook lookup. This rests on a rule or on arithmetic the handbook does not spell out. The lesson for this subtopic covers it: <a href="#topic-' + esc(q.topic) + '">open the lesson</a>.</p></div>';
   const ed = (S.reference.handbook || {}).edition, terms = hb.find || [];
   return '<div class="sol"><h3>Check in the handbook</h3><p>FE Reference Handbook' + (ed ? ' ' + esc(ed) : '') + ', <strong>' + esc(hb.section || '') + '</strong>' + (hb.page ? ', pages ' + esc(hb.page) : '') + '.' +
-    (terms.length ? ' Search the PDF (Ctrl+F) for ' + terms.map(t => '<strong>' + esc(t) + '</strong>').join(' or ') + '.' : '') + '</p></div>';
+    (terms.length ? ' Search the PDF (Ctrl+F) for ' + terms.map(t => '<strong>' + esc(t) + '</strong>').join(' or ') + '.' : '') + hbLink() + '</p></div>';
 }
 function feedbackHTML(q, slot) {
   const ok = slot.result && slot.result.correct, skipped = slot.result && slot.result.skipped;
@@ -923,11 +928,18 @@ views.topics = () => '<div class="wrap"><header class="head"><div><p class="eyeb
   S.exam.topics.map(t => { const x = S.model.byTopic[t.id], g = ((S.guide[t.id] || {}).sections || []).length;
     return '<a class="tcard" href="#topic-' + t.id + '"><span class="tn">TOPIC ' + t.n + '</span><strong>' + esc(t.name) + '</strong><div class="row"><span>' + t.min + '–' + t.max + ' exam questions</span><span>' + t.subtopics.length + ' subtopics</span></div>' + bar(x.mastery || 0) +
       '<div class="row"><span>' + (x.mastery == null ? 'No questions yet' : 'Mastery ' + pct(x.mastery) + ', ' + secureText(x)) + '</span><span>' + x.total + ' types, ' + x.versions + ' versions</span></div></a>'; }).join('') + '</div></div>';
+function hbLink() { const u = (S.settings.handbookUrl || '').trim(); return /^https:\/\//i.test(u) ? ' <a href="' + esc(u) + '" target="_blank" rel="noopener">Open my handbook</a>' : ''; }
+function exampleHTML(x, n) {
+  return '<div class="sol ex"><h3>Worked example' + (n ? ' ' + n : '') + '</h3><p><strong>' + Core.richInline(x.problem) + '</strong></p>' + figureHTML(x.figure) + Core.rich(x.steps) + (x.answer ? '<p><strong>Answer:</strong> ' + Core.richInline(x.answer) + '</p>' : '') + '</div>';
+}
 function guideSection(s) {
+  const exs = (s.example ? [s.example] : []).concat(s.examples || []), ed = (S.reference.handbook || {}).edition;
   return '<div class="gsec" id="g-' + esc(s.id) + '"><h3>' + esc(s.title) + '</h3>' + Core.rich(s.body) + figureHTML(s.figure) +
     ((s.formulas || []).length ? '<div class="tw"><table class="t"><thead><tr><th>Formula</th><th>Expression</th><th>Handbook</th></tr></thead><tbody>' + s.formulas.map(f => '<tr><td>' + esc(f.name) + '</td><td>' + Core.richInline(f.expr) + '</td><td>' + esc(f.handbook || '') + '</td></tr>').join('') + '</tbody></table></div>' : '') +
-    (s.example ? '<div class="sol" style="background:var(--band)"><h3>Worked example</h3><p><strong>' + Core.richInline(s.example.problem) + '</strong></p>' + Core.rich(s.example.steps) + figureHTML(s.example.figure) + '</div>' : '') +
+    ((s.ideas || []).length ? '<div class="ideas"><h3>Key ideas</h3>' + s.ideas.map(i => '<div class="idea">' + (i.title ? '<strong>' + esc(i.title) + '</strong>' : '') + Core.rich(i.text) + '</div>').join('') + '</div>' : '') +
+    exs.map((x, i) => exampleHTML(x, exs.length > 1 ? i + 1 : 0)).join('') +
     ((s.pitfalls || []).length ? '<div><h3>Common mistakes</h3><ul>' + s.pitfalls.map(p => '<li>' + Core.richInline(p) + '</li>').join('') + '</ul></div>' : '') +
+    ((s.lookup || []).length ? '<div><h3>Check in the handbook</h3><ul>' + s.lookup.map(l => '<li>FE Reference Handbook' + (ed ? ' ' + esc(ed) : '') + ', <strong>' + esc(l.section) + '</strong>, pages ' + esc(l.page) + '. Search the PDF for ' + l.find.map(t => '<strong>' + esc(t) + '</strong>').join(', ') + '.</li>').join('') + '</ul>' + (hbLink() ? '<p>' + hbLink() + '</p>' : '') + '</div>' : '') +
     ((s.read || []).length ? '<div><h3>Where to read</h3><ul>' + s.read.map(r => '<li><strong>' + esc(r.source) + ':</strong> ' + esc(r.where) + '</li>').join('') + '</ul></div>' : '') + askHTML('g:' + s.id) + '</div>';
 }
 
@@ -974,7 +986,8 @@ function askContext(key) {
   const x = l.sec;
   return rules + 'LESSON: ' + x.title + ' (' + tname(l.topic) + ')\n' + (x.body || '') + '\n' +
     ((x.formulas || []).length ? 'Formulas:\n' + x.formulas.map(f => f.name + ': ' + f.expr).join('\n') + '\n' : '') +
-    (x.example ? 'Worked example: ' + x.example.problem + '\n' + x.example.steps + '\n' : '') +
+    ((x.ideas || []).length ? 'Key ideas:\n' + x.ideas.map(i => (i.title ? i.title + ': ' : '') + i.text).join('\n') + '\n' : '') +
+    (x.example ? 'Worked example: ' + x.example.problem + '\n' + x.example.steps + '\n' : '') + (x.examples || []).slice(0, 3).map(e => 'Worked example: ' + e.problem + '\n' + e.steps + '\n').join('') +
     ((x.pitfalls || []).length ? 'Common mistakes: ' + x.pitfalls.join(' ') + '\n' : '') + '\n';
 }
 function askThread(key) {
@@ -1143,7 +1156,7 @@ views.reference = () => {
 views.setup = () => {
   const st = S.store, pending = Object.keys(Store.outbox()).length, modeTxt = {cloud: 'Saved to your study log in the cloud', local: 'This browser only. Storage is not available in this view', offline: 'Storage unreachable. Answers are kept on this device until it answers', loading: 'Connecting'}[st.mode];
   return '<div class="wrap"><header class="head"><div><p class="eyebrow">Setup</p><h1>Study settings</h1></div></header>' +
-    '<section class="card"><h2>Your plan</h2><div class="fields"><div class="field"><label for="set-date">Exam date</label><input id="set-date" type="date" value="' + esc(S.settings.examDate || '') + '" data-change="setDate"></div><div class="field"><label for="set-goal">Daily goal, questions</label><input id="set-goal" type="number" min="1" max="300" value="' + (S.settings.dailyGoal || 20) + '" data-change="setGoal"></div><div class="field"><label for="set-len">Default session length</label><input id="set-len" type="number" min="1" max="200" value="' + (S.settings.sessionLength || 10) + '" data-change="setLen"></div></div></section>' +
+    '<section class="card"><h2>Your plan</h2><div class="fields"><div class="field"><label for="set-date">Exam date</label><input id="set-date" type="date" value="' + esc(S.settings.examDate || '') + '" data-change="setDate"></div><div class="field"><label for="set-goal">Daily goal, questions</label><input id="set-goal" type="number" min="1" max="300" value="' + (S.settings.dailyGoal || 20) + '" data-change="setGoal"></div><div class="field"><label for="set-len">Default session length</label><input id="set-len" type="number" min="1" max="200" value="' + (S.settings.sessionLength || 10) + '" data-change="setLen"></div><div class="field"><label for="set-hb">Link to your handbook PDF</label><input id="set-hb" type="url" placeholder="https://drive.google.com/..." value="' + esc(S.settings.handbookUrl || '') + '" data-change="setHb"><span class="hint">Optional. Paste the link to your own copy of the FE Reference Handbook. It then opens from every handbook lookup. The link is kept in your private study log, not in the site.</span></div></div></section>' +
     '<section class="card"><h2>Study log</h2><dl class="kv"><dt>Storage</dt><dd>' + esc(modeTxt) + '</dd><dt>Waiting to send</dt><dd>' + pending + '</dd><dt>Sessions</dt><dd>' + S.sessions.length + '</dd><dt>Answers</dt><dd>' + S.sessions.reduce((n, s) => n + (s.attempts || []).length, 0) + '</dd></dl><div class="head-actions"><button class="btn" data-act="copyLog">Copy study log as JSON</button>' + (st.mode !== 'cloud' || pending ? '<button class="btn" data-act="retry">Retry storage</button>' : '') + '</div></section>' +
     '<section class="card"><h2>Content</h2><dl class="kv"><dt>Exam</dt><dd>' + esc(S.exam.name) + '</dd><dt>Specification</dt><dd>' + esc(S.exam.spec) + '</dd><dt>Content version</dt><dd>' + esc(S.manifest.version) + ', updated ' + esc(S.manifest.updated || '') + '</dd><dt>Questions</dt><dd>' + S.questions.filter(q => !q.sample).length + ' in the bank, ' + S.questions.filter(q => q.sample).length + ' format samples</dd><dt>Guide sections</dt><dd>' + Object.values(S.guide).reduce((n, g) => n + (g.sections || []).length, 0) + '</dd></dl>' + (S.warnings.length ? '<div class="note"><strong>Content warnings</strong><ul>' + S.warnings.map(w => '<li>' + esc(w) + '</li>').join('') + '</ul></div>' : '') + '</section></div>';
 };
@@ -1240,7 +1253,8 @@ const C = {
   sStatus(el) { S.ui.search.status = el.value; $('#s-res').innerHTML = searchResults(); },
   setDate(el) { S.settings.examDate = el.value; Store.saveSettings(); },
   setGoal(el) { S.settings.dailyGoal = Math.max(1, Math.min(300, +el.value || 20)); Store.saveSettings(); },
-  setLen(el) { S.settings.sessionLength = Math.max(1, Math.min(200, +el.value || 10)); Store.saveSettings(); }
+  setLen(el) { S.settings.sessionLength = Math.max(1, Math.min(200, +el.value || 10)); Store.saveSettings(); },
+  setHb(el) { const v = el.value.trim(); S.settings.handbookUrl = /^https:\/\//i.test(v) ? v.slice(0, 500) : ''; Store.saveSettings(); }
 };
 document.addEventListener('click', ev => {
   const res = ev.target.closest && ev.target.closest('a.res'); if (res && res.dataset.open) S.ui.open = res.dataset.open;

@@ -27,7 +27,7 @@
    }
   ],
   "answer": "b",
-  "eli5": "Each joint gives you two equations. Count the unknown forces. If you have more unknowns than equations, statics alone cannot solve it.",
+  "eli5": "Each joint of a plane truss gives two equilibrium equations, so there are 2j equations for m member forces and r reactions. If m + r = 2j the truss is determinate; if m + r is larger, the excess is the degree of indeterminacy; if smaller, the truss is unstable.",
   "solution": "Unknowns = members + reactions = 14 + 3 = 17.\n\nEquations = 2 × joints = 2(8) = 16.\n\n17 - 16 = 1 extra unknown, so the truss is statically indeterminate to the first degree.",
   "handbook": [
    {
@@ -47,6 +47,62 @@
   "verify": {
    "method": "computed"
   },
+  "family": "structural-0001",
+  "version": 1,
+  "versions": 2,
+  "lookup": true
+ },
+ {
+  "id": "structural-0001-b",
+  "topic": "structural",
+  "subtopic": "structural-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A planar truss has 6 joints, 9 members and 3 support reactions. Assuming it is stable, how is it classified?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Statically determinate"
+   },
+   {
+    "id": "b",
+    "text": "Statically indeterminate to the first degree"
+   },
+   {
+    "id": "c",
+    "text": "Statically indeterminate to the second degree"
+   },
+   {
+    "id": "d",
+    "text": "Statically indeterminate to the third degree"
+   }
+  ],
+  "answer": "a",
+  "eli5": "Each joint of a plane truss gives two equilibrium equations, so there are 2j equations for m member forces and r reactions. If m + r = 2j the truss is determinate; if m + r is larger, the excess is the degree of indeterminacy; if smaller, the truss is unstable.",
+  "solution": "Unknowns: m + r = 9 + 3 = 12.\n\nEquations: 2j = 2(6) = 12.\n\nThey are equal, so the truss is statically determinate.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "determinacy",
+     "classification of structures"
+    ]
+   }
+  ],
+  "tags": [
+   "determinacy",
+   "truss"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0001",
+  "version": 2,
+  "versions": 2,
   "lookup": true
  },
  {
@@ -2017,7 +2073,7 @@
    }
   ],
   "answer": "c",
-  "eli5": "A flat beam gives you three balance equations. Count the support forces. Any extras are more than statics alone can find.",
+  "eli5": "A single rigid body in a plane has three equilibrium equations. Count the reaction components: a fixed support gives three, a pin two and a roller one. Reactions beyond three are redundants, and their number is the degree of indeterminacy.",
   "solution": "A fixed support gives three reactions and a roller gives one, for four unknowns.\n\nThere are three equations of equilibrium, so 4 - 3 = 1 degree of indeterminacy.",
   "handbook": [
    {
@@ -2034,6 +2090,59 @@
   "verify": {
    "method": "computed"
   },
+  "family": "structural-0011",
+  "version": 1,
+  "versions": 2,
+  "lookup": true
+ },
+ {
+  "id": "structural-0011-b",
+  "topic": "structural",
+  "subtopic": "structural-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A beam is fixed at both ends. Counting vertical, horizontal and moment reactions, how is it classified?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Statically determinate"
+   },
+   {
+    "id": "b",
+    "text": "Statically indeterminate to the first degree"
+   },
+   {
+    "id": "c",
+    "text": "Statically indeterminate to the second degree"
+   },
+   {
+    "id": "d",
+    "text": "Statically indeterminate to the third degree"
+   }
+  ],
+  "answer": "d",
+  "eli5": "A single rigid body in a plane has three equilibrium equations. Count the reaction components: a fixed support gives three, a pin two and a roller one. Reactions beyond three are redundants, and their number is the degree of indeterminacy.",
+  "solution": "Each fixed end supplies a vertical force, a horizontal force and a moment, so there are 3 + 3 = 6 reactions.\n\n6 - 3 = 3, so the beam is statically indeterminate to the third degree.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "determinacy",
+     "classification of structures"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0011",
+  "version": 2,
+  "versions": 2,
   "lookup": true
  },
  {

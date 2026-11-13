@@ -399,7 +399,7 @@
    }
   ],
   "answer": "d",
-  "eli5": "The dot product measures how much two arrows point the same way. A dot product of zero means they share no direction at all: they meet at a right angle.",
+  "eli5": "The dot product links two vectors to the angle between them: A · B = |A||B| cos(angle). Compute the dot product from components, divide by the product of the magnitudes and take the inverse cosine. A zero dot product means the vectors are perpendicular.",
   "solution": "**A** · **B** = (3)(4) + (4)(-3) = 0.\n\ncos(angle) = \\frac{A · B}{|A||B|} = 0, so the angle is 90°.",
   "handbook": [
    {
@@ -418,6 +418,61 @@
   "verify": {
    "method": "computed"
   },
+  "family": "math-0003",
+  "version": 1,
+  "versions": 2,
+  "lookup": true
+ },
+ {
+  "id": "math-0003-b",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Vectors **A** = 2**i** + 2**j** and **B** = 3**i** lie in the same plane. What is the angle between them?",
+  "options": [
+   {
+    "id": "a",
+    "text": "30°"
+   },
+   {
+    "id": "b",
+    "text": "45°"
+   },
+   {
+    "id": "c",
+    "text": "60°"
+   },
+   {
+    "id": "d",
+    "text": "90°"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The dot product links two vectors to the angle between them: A · B = |A||B| cos(angle). Compute the dot product from components, divide by the product of the magnitudes and take the inverse cosine. A zero dot product means the vectors are perpendicular.",
+  "solution": "A · B = 2(3) + 2(0) = 6.\n\n|A| = \\sqrt{2^{2} + 2^{2}} = 2.828 and |B| = 3.\n\ncos(angle) = \\frac{6}{2.828 × 3} = 0.7071, so the angle is 45°.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "dot product"
+    ]
+   }
+  ],
+  "tags": [
+   "dot product",
+   "vectors"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0003",
+  "version": 2,
+  "versions": 2,
   "lookup": true
  },
  {
@@ -2106,7 +2161,7 @@
    }
   ],
   "answer": "c",
-  "eli5": "Count the ways to win and divide by all the ways the dice can land.",
+  "eli5": "When all outcomes are equally likely, probability is the number of favourable outcomes divided by the total number. Two dice give 6 × 6 = 36 ordered outcomes, so count the ordered pairs that produce the total.",
   "solution": "There are 36 equally likely outcomes. Six of them total 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1).\n\nP = \\frac{6}{36} = 0.167.",
   "handbook": [
    {
@@ -2122,6 +2177,58 @@
   "verify": {
    "method": "computed"
   },
+  "family": "math-0014",
+  "version": 1,
+  "versions": 2,
+  "lookup": true
+ },
+ {
+  "id": "math-0014-b",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Two fair dice are rolled. What is the probability that the total is 9?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.083"
+   },
+   {
+    "id": "b",
+    "text": "0.111"
+   },
+   {
+    "id": "c",
+    "text": "0.139"
+   },
+   {
+    "id": "d",
+    "text": "0.167"
+   }
+  ],
+  "answer": "b",
+  "eli5": "When all outcomes are equally likely, probability is the number of favourable outcomes divided by the total number. Two dice give 6 × 6 = 36 ordered outcomes, so count the ordered pairs that produce the total.",
+  "solution": "Pairs that total 9: (3, 6), (4, 5), (5, 4), (6, 3), which is 4 of 36.\n\nP = \\frac{4}{36} = 0.111.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "probability"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0014",
+  "version": 2,
+  "versions": 2,
   "lookup": true
  },
  {

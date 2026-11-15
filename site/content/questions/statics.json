@@ -39,7 +39,7 @@
   "versions": 4,
   "figure": {
    "viewBox": "0 0 400 185",
-   "svg": "<line x1='120' y1='150' x2='320' y2='150' stroke='#00574A' stroke-width='3'/><path d='M330 150 L316 144 L316 156 Z' fill='#00574A'/><line x1='120' y1='150' x2='195' y2='20' stroke='#1B795A' stroke-width='3'/><circle cx='195' cy='20' r='5' fill='#1B795A'/><circle cx='120' cy='150' r='4' fill='#00242E'/><text x='300' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>100 N</text><text x='229' y='24' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>80 N</text><text x='168' y='142' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>60°</text>",
+   "svg": "<line x1='120' y1='150' x2='318' y2='150' stroke='#00574A' stroke-width='3'/><path d='M330 150 L318 144 L318 156 Z' fill='#00574A'/><line x1='120' y1='150' x2='189' y2='30' stroke='#1B795A' stroke-width='3'/><path d='M195 20 L184 27 L194 33 Z' fill='#1B795A'/><circle cx='120' cy='150' r='4' fill='#00242E'/><text x='300' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>100 N</text><text x='229' y='24' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>80 N</text><text x='168' y='142' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>60°</text>",
    "alt": "Two forces at a point: 100 N along the x-axis and 80 N at 60° above it."
   },
   "solutionFigure": {
@@ -121,7 +121,7 @@
   "versions": 4,
   "figure": {
    "viewBox": "0 0 400 185",
-   "svg": "<line x1='120' y1='150' x2='320' y2='150' stroke='#00574A' stroke-width='3'/><path d='M330 150 L316 144 L316 156 Z' fill='#00574A'/><line x1='120' y1='150' x2='235' y2='54' stroke='#1B795A' stroke-width='3'/><circle cx='235' cy='54' r='5' fill='#1B795A'/><circle cx='120' cy='150' r='4' fill='#00242E'/><text x='300' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>120 N</text><text x='269' y='58' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>50 N</text><text x='168' y='142' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>40°</text>",
+   "svg": "<line x1='120' y1='150' x2='318' y2='150' stroke='#00574A' stroke-width='3'/><path d='M330 150 L318 144 L318 156 Z' fill='#00574A'/><line x1='120' y1='150' x2='226' y2='61' stroke='#1B795A' stroke-width='3'/><path d='M235 54 L222 57 L230 66 Z' fill='#1B795A'/><circle cx='120' cy='150' r='4' fill='#00242E'/><text x='300' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>120 N</text><text x='269' y='58' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>50 N</text><text x='168' y='142' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>40°</text>",
    "alt": "Two forces at a point: 120 N along the x-axis and 50 N at 40° above it."
   },
   "solutionFigure": {
@@ -203,7 +203,7 @@
   "versions": 4,
   "figure": {
    "viewBox": "0 0 400 185",
-   "svg": "<line x1='120' y1='150' x2='320' y2='150' stroke='#00574A' stroke-width='3'/><path d='M330 150 L316 144 L316 156 Z' fill='#00574A'/><line x1='120' y1='150' x2='250' y2='75' stroke='#1B795A' stroke-width='3'/><circle cx='250' cy='75' r='5' fill='#1B795A'/><circle cx='120' cy='150' r='4' fill='#00242E'/><text x='300' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>90 N</text><text x='284' y='79' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>60 N</text><text x='168' y='142' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>30°</text>",
+   "svg": "<line x1='120' y1='150' x2='318' y2='150' stroke='#00574A' stroke-width='3'/><path d='M330 150 L318 144 L318 156 Z' fill='#00574A'/><line x1='120' y1='150' x2='240' y2='81' stroke='#1B795A' stroke-width='3'/><path d='M250 75 L237 76 L243 86 Z' fill='#1B795A'/><circle cx='120' cy='150' r='4' fill='#00242E'/><text x='300' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>90 N</text><text x='284' y='79' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>60 N</text><text x='168' y='142' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>30°</text>",
    "alt": "Two forces at a point: 90 N along the x-axis and 60 N at 30° above it."
   },
   "solutionFigure": {
@@ -285,7 +285,7 @@
   "versions": 4,
   "figure": {
    "viewBox": "0 0 400 185",
-   "svg": "<line x1='120' y1='150' x2='320' y2='150' stroke='#00574A' stroke-width='3'/><path d='M330 150 L316 144 L316 156 Z' fill='#00574A'/><line x1='120' y1='150' x2='171' y2='9' stroke='#1B795A' stroke-width='3'/><circle cx='171' cy='9' r='5' fill='#1B795A'/><circle cx='120' cy='150' r='4' fill='#00242E'/><text x='300' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>150 N</text><text x='205' y='13' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>100 N</text><text x='168' y='142' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>70°</text>",
+   "svg": "<line x1='120' y1='150' x2='318' y2='150' stroke='#00574A' stroke-width='3'/><path d='M330 150 L318 144 L318 156 Z' fill='#00574A'/><line x1='120' y1='150' x2='167' y2='20' stroke='#1B795A' stroke-width='3'/><path d='M171 9 L162 18 L173 22 Z' fill='#1B795A'/><circle cx='120' cy='150' r='4' fill='#00242E'/><text x='300' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>150 N</text><text x='205' y='13' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>100 N</text><text x='168' y='142' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>70°</text>",
    "alt": "Two forces at a point: 150 N along the x-axis and 100 N at 70° above it."
   },
   "solutionFigure": {
@@ -2949,7 +2949,7 @@
   "versions": 4,
   "figure": {
    "viewBox": "0 0 400 165",
-   "svg": "<rect x='70' y='104' width='260' height='12' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='70' cy='110' r='9' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='269' y1='75' x2='330' y2='110' stroke='#00574A' stroke-width='3'/><circle cx='330' cy='110' r='5' fill='#00574A'/><text x='263' y='69' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>150 N</text><text x='296' y='100' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>30°</text><line x1='70' y1='138' x2='330' y2='138' stroke='#00242E'/><line x1='70' y1='132' x2='70' y2='144' stroke='#00242E'/><line x1='330' y1='132' x2='330' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text><text x='56' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>Pivot</text>",
+   "svg": "<rect x='70' y='104' width='260' height='12' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='70' cy='110' r='9' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='269' y1='75' x2='320' y2='104' stroke='#00574A' stroke-width='3'/><path d='M330 110 L323 99 L317 109 Z' fill='#00574A'/><text x='263' y='69' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>150 N</text><text x='296' y='100' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>30°</text><line x1='70' y1='138' x2='330' y2='138' stroke='#00242E'/><line x1='70' y1='132' x2='70' y2='144' stroke='#00242E'/><line x1='330' y1='132' x2='330' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text><text x='56' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>Pivot</text>",
    "alt": "A 2 m lever with a 150 N force applied at its end, 30° from the lever axis."
   },
   "lookup": true,
@@ -3036,7 +3036,7 @@
   "versions": 4,
   "figure": {
    "viewBox": "0 0 400 165",
-   "svg": "<rect x='70' y='104' width='260' height='12' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='70' cy='110' r='9' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='276' y1='65' x2='330' y2='110' stroke='#00574A' stroke-width='3'/><circle cx='330' cy='110' r='5' fill='#00574A'/><text x='270' y='59' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>200 N</text><text x='296' y='100' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>40°</text><line x1='70' y1='138' x2='330' y2='138' stroke='#00242E'/><line x1='70' y1='132' x2='70' y2='144' stroke='#00242E'/><line x1='330' y1='132' x2='330' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>1.5 m</text><text x='56' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>Pivot</text>",
+   "svg": "<rect x='70' y='104' width='260' height='12' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='70' cy='110' r='9' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='276' y1='65' x2='321' y2='102' stroke='#00574A' stroke-width='3'/><path d='M330 110 L325 98 L317 107 Z' fill='#00574A'/><text x='270' y='59' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>200 N</text><text x='296' y='100' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>40°</text><line x1='70' y1='138' x2='330' y2='138' stroke='#00242E'/><line x1='70' y1='132' x2='70' y2='144' stroke='#00242E'/><line x1='330' y1='132' x2='330' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>1.5 m</text><text x='56' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>Pivot</text>",
    "alt": "A 1.5 m lever with a 200 N force applied at its end, 40° from the lever axis."
   },
   "lookup": true,
@@ -3123,7 +3123,7 @@
   "versions": 4,
   "figure": {
    "viewBox": "0 0 400 165",
-   "svg": "<rect x='70' y='104' width='260' height='12' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='70' cy='110' r='9' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='295' y1='49' x2='330' y2='110' stroke='#00574A' stroke-width='3'/><circle cx='330' cy='110' r='5' fill='#00574A'/><text x='289' y='43' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>120 N</text><text x='296' y='100' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>60°</text><line x1='70' y1='138' x2='330' y2='138' stroke='#00242E'/><line x1='70' y1='132' x2='70' y2='144' stroke='#00242E'/><line x1='330' y1='132' x2='330' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text><text x='56' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>Pivot</text>",
+   "svg": "<rect x='70' y='104' width='260' height='12' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='70' cy='110' r='9' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='295' y1='49' x2='324' y2='100' stroke='#00574A' stroke-width='3'/><path d='M330 110 L329 97 L319 103 Z' fill='#00574A'/><text x='289' y='43' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>120 N</text><text x='296' y='100' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>60°</text><line x1='70' y1='138' x2='330' y2='138' stroke='#00242E'/><line x1='70' y1='132' x2='70' y2='144' stroke='#00242E'/><line x1='330' y1='132' x2='330' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text><text x='56' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>Pivot</text>",
    "alt": "A 2.5 m lever with a 120 N force applied at its end, 60° from the lever axis."
   },
   "lookup": true,
@@ -3210,7 +3210,7 @@
   "versions": 4,
   "figure": {
    "viewBox": "0 0 400 165",
-   "svg": "<rect x='70' y='104' width='260' height='12' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='70' cy='110' r='9' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='267' y1='80' x2='330' y2='110' stroke='#00574A' stroke-width='3'/><circle cx='330' cy='110' r='5' fill='#00574A'/><text x='261' y='74' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>80 N</text><text x='296' y='100' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>25°</text><line x1='70' y1='138' x2='330' y2='138' stroke='#00242E'/><line x1='70' y1='132' x2='70' y2='144' stroke='#00242E'/><line x1='330' y1='132' x2='330' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='56' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>Pivot</text>",
+   "svg": "<rect x='70' y='104' width='260' height='12' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='70' cy='110' r='9' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='267' y1='80' x2='319' y2='105' stroke='#00574A' stroke-width='3'/><path d='M330 110 L322 99 L317 110 Z' fill='#00574A'/><text x='261' y='74' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>80 N</text><text x='296' y='100' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>25°</text><line x1='70' y1='138' x2='330' y2='138' stroke='#00242E'/><line x1='70' y1='132' x2='70' y2='144' stroke='#00242E'/><line x1='330' y1='132' x2='330' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='56' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>Pivot</text>",
    "alt": "A 3 m lever with a 80 N force applied at its end, 25° from the lever axis."
   },
   "lookup": true,

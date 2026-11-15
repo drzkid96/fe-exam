@@ -2359,7 +2359,7 @@
   "versions": 4,
   "figure": {
    "viewBox": "0 0 400 200",
-   "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='287' y2='60' stroke='#00574A' stroke-width='3'/><circle cx='287' cy='60' r='5' fill='#00574A'/><text x='297' y='54' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>200.00 m, azimuth 60°</text>",
+   "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='276' y2='65' stroke='#00574A' stroke-width='3'/><path d='M287 60 L273 60 L278 70 Z' fill='#00574A'/><circle cx='200' cy='100' r='4' fill='#00242E'/><text x='297' y='54' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>200.00 m, azimuth 60°</text>",
    "alt": "A line drawn from the origin at an azimuth of 60° clockwise from north."
   },
   "lookup": true,
@@ -2441,7 +2441,7 @@
   "versions": 4,
   "figure": {
    "viewBox": "0 0 400 200",
-   "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='257' y2='34' stroke='#00574A' stroke-width='3'/><circle cx='257' cy='34' r='5' fill='#00574A'/><text x='267' y='28' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>150.00 m, azimuth 35°</text>",
+   "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='249' y2='43' stroke='#00574A' stroke-width='3'/><path d='M257 34 L245 40 L254 47 Z' fill='#00574A'/><circle cx='200' cy='100' r='4' fill='#00242E'/><text x='267' y='28' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>150.00 m, azimuth 35°</text>",
    "alt": "A line drawn from the origin at an azimuth of 35° clockwise from north."
   },
   "lookup": true,
@@ -2523,7 +2523,7 @@
   "versions": 4,
   "figure": {
    "viewBox": "0 0 400 200",
-   "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='295' y2='75' stroke='#00574A' stroke-width='3'/><circle cx='295' cy='75' r='5' fill='#00574A'/><text x='305' y='69' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>320.00 m, azimuth 72°</text>",
+   "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='283' y2='78' stroke='#00574A' stroke-width='3'/><path d='M295 75 L282 72 L285 84 Z' fill='#00574A'/><circle cx='200' cy='100' r='4' fill='#00242E'/><text x='305' y='69' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>320.00 m, azimuth 72°</text>",
    "alt": "A line drawn from the origin at an azimuth of 72° clockwise from north."
   },
   "lookup": true,
@@ -2605,7 +2605,7 @@
   "versions": 4,
   "figure": {
    "viewBox": "0 0 400 200",
-   "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='242' y2='27' stroke='#00574A' stroke-width='3'/><circle cx='242' cy='27' r='5' fill='#00574A'/><text x='252' y='21' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>85.50 m, azimuth 25°</text>",
+   "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='236' y2='38' stroke='#00574A' stroke-width='3'/><path d='M242 27 L231 35 L241 41 Z' fill='#00574A'/><circle cx='200' cy='100' r='4' fill='#00242E'/><text x='252' y='21' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>85.50 m, azimuth 25°</text>",
    "alt": "A line drawn from the origin at an azimuth of 25° clockwise from north."
   },
   "lookup": true,
@@ -3162,7 +3162,7 @@
   "versions": 4,
   "figure": {
    "viewBox": "0 0 400 200",
-   "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='260' y2='36' stroke='#00574A' stroke-width='3'/><circle cx='260' cy='36' r='5' fill='#00574A'/><text x='270' y='30' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>azimuth 36.9°</text>",
+   "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='252' y2='45' stroke='#00574A' stroke-width='3'/><path d='M260 36 L247 41 L256 49 Z' fill='#00574A'/><circle cx='200' cy='100' r='4' fill='#00242E'/><text x='270' y='30' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>azimuth 36.9°</text>",
    "alt": "A line drawn from the origin at an azimuth of 36.9° clockwise from north."
   },
   "solutionFigure": {
@@ -3222,7 +3222,7 @@
   "versions": 4,
   "figure": {
    "viewBox": "0 0 400 200",
-   "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='297' y2='79' stroke='#00574A' stroke-width='3'/><circle cx='297' cy='79' r='5' fill='#00574A'/><text x='307' y='73' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>azimuth 75.1°</text>",
+   "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='285' y2='82' stroke='#00574A' stroke-width='3'/><path d='M297 79 L284 76 L286 88 Z' fill='#00574A'/><circle cx='200' cy='100' r='4' fill='#00242E'/><text x='307' y='73' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>azimuth 75.1°</text>",
    "alt": "A line drawn from the origin at an azimuth of 75.1° clockwise from north."
   },
   "solutionFigure": {
@@ -3282,7 +3282,7 @@
   "versions": 4,
   "figure": {
    "viewBox": "0 0 400 200",
-   "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='294' y2='73' stroke='#00574A' stroke-width='3'/><circle cx='294' cy='73' r='5' fill='#00574A'/><text x='304' y='67' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>azimuth 70.3°</text>",
+   "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='283' y2='76' stroke='#00574A' stroke-width='3'/><path d='M294 73 L281 71 L284 82 Z' fill='#00574A'/><circle cx='200' cy='100' r='4' fill='#00242E'/><text x='304' y='67' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>azimuth 70.3°</text>",
    "alt": "A line drawn from the origin at an azimuth of 70.3° clockwise from north."
   },
   "solutionFigure": {
@@ -3342,7 +3342,7 @@
   "versions": 4,
   "figure": {
    "viewBox": "0 0 400 200",
-   "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='255' y2='33' stroke='#00574A' stroke-width='3'/><circle cx='255' cy='33' r='5' fill='#00574A'/><text x='265' y='27' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>azimuth 33.7°</text>",
+   "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='248' y2='43' stroke='#00574A' stroke-width='3'/><path d='M255 33 L243 39 L252 47 Z' fill='#00574A'/><circle cx='200' cy='100' r='4' fill='#00242E'/><text x='265' y='27' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>azimuth 33.7°</text>",
    "alt": "A line drawn from the origin at an azimuth of 33.7° clockwise from north."
   },
   "solutionFigure": {

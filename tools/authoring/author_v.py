@@ -74,9 +74,12 @@ def pipe(d1, d2):
 def vcurve(g1, g2, L):
     s = f"<path d='M40 110 Q200 10 360 96' fill='none' stroke='{SL}' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='{BL}' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='{BL}' stroke-dasharray='6 4'/>" + T(40, 128, 'PVC') + T(360, 114, 'PVT') + T(200, 8, 'PVI') + T(96, 52, f"+{nf(g1)}%", c=BL) + T(304, 44, f"{nf(g2)}%", c=BL) + dim(40, 360, 146, f"{nf(L)} ft")
     return {'viewBox': '0 0 400 170', 'svg': s, 'alt': f"A crest vertical curve {nf(L)} ft long joining a +{nf(g1)}% grade to a {nf(g2)}% grade."}
+def _arr(x1, y1, x2, y2, c=EM, wd=3):          # arrow at any angle, with its head at (x2, y2)
+    a = math.atan2(y2 - y1, x2 - x1); bx, by = x2 - 12 * math.cos(a), y2 - 12 * math.sin(a); px, py = 6 * math.sin(a), -6 * math.cos(a)
+    return f"<line x1='{x1:.0f}' y1='{y1:.0f}' x2='{bx:.0f}' y2='{by:.0f}' stroke='{c}' stroke-width='{wd}'/><path d='M{x2:.0f} {y2:.0f} L{bx+px:.0f} {by+py:.0f} L{bx-px:.0f} {by-py:.0f} Z' fill='{c}'/>"
 def forces(F1, F2, th):
     a = math.radians(th); x2, y2 = 120 + 150 * math.cos(a), 150 - 150 * math.sin(a)
-    s = f"<line x1='120' y1='150' x2='320' y2='150' stroke='{EM}' stroke-width='3'/><path d='M330 150 L316 144 L316 156 Z' fill='{EM}'/><line x1='120' y1='150' x2='{x2:.0f}' y2='{y2:.0f}' stroke='{JD}' stroke-width='3'/><circle cx='{x2:.0f}' cy='{y2:.0f}' r='5' fill='{JD}'/><circle cx='120' cy='150' r='4' fill='{SL}'/>" + T(300, 170, f"{nf(F1)} N", c=EM, w='600') + T(x2 + 34, y2 + 4, f"{nf(F2)} N", c=JD, w='600') + T(168, 142, f"{nf(th)}°")
+    s = _arr(120, 150, 330, 150) + _arr(120, 150, x2, y2, JD) + f"<circle cx='120' cy='150' r='4' fill='{SL}'/>" + T(300, 170, f"{nf(F1)} N", c=EM, w='600') + T(x2 + 34, y2 + 4, f"{nf(F2)} N", c=JD, w='600') + T(168, 142, f"{nf(th)}°")
     return {'viewBox': '0 0 400 185', 'svg': s, 'alt': f"Two forces at a point: {nf(F1)} N along the x-axis and {nf(F2)} N at {nf(th)}° above it."}
 def incline(th, label=''):
     t = math.tan(math.radians(th or 25)); base = min(280, 120 / t); h = base * t; x0 = 200 - base / 2
@@ -146,7 +149,7 @@ def manometer(h, sg=13.6):
     return {'viewBox': '0 0 420 180', 'svg': s, 'alt': f"A U-tube manometer between two water pipes at the same elevation, with a gauge liquid deflection of {nf(h)} m."}
 def projectile(v, th):
     a = math.radians(th); 
-    s = f"<line x1='30' y1='140' x2='380' y2='140' stroke='{SL}' stroke-width='2'/><path d='M50 140 Q200 {140 - 240*math.tan(a)/1.6:.0f} 350 140' fill='none' stroke='{JD}' stroke-width='2' stroke-dasharray='7 4'/><line x1='50' y1='140' x2='{50+70*math.cos(a):.0f}' y2='{140-70*math.sin(a):.0f}' stroke='{EM}' stroke-width='3'/><circle cx='{50+70*math.cos(a):.0f}' cy='{140-70*math.sin(a):.0f}' r='5' fill='{EM}'/>"
+    s = f"<line x1='30' y1='140' x2='380' y2='140' stroke='{SL}' stroke-width='2'/><path d='M50 140 Q200 {140 - 240*math.tan(a)/1.6:.0f} 350 140' fill='none' stroke='{JD}' stroke-width='2' stroke-dasharray='7 4'/>" + _arr(50, 140, 50 + 70 * math.cos(a), 140 - 70 * math.sin(a))
     s += T(50 + 70 * math.cos(a) - 12, 140 - 70 * math.sin(a) - 10, f"{nf(v)} m/s", a='end' if th > 40 else 'middle', c=EM, w='600') + T(96, 134, f"{nf(th)}°") + dim(50, 350, 156, 'Range')
     return {'viewBox': '0 0 400 180', 'svg': s, 'alt': f"The path of a projectile launched from level ground at {nf(v)} m/s and {nf(th)}° above the horizontal."}
 def tank(h, label='Hydrant'):
@@ -162,7 +165,7 @@ def bar(d, L, P, lu='m'):
     return {'viewBox': '0 0 420 130', 'svg': s, 'alt': f"A {nf(d)} mm diameter rod fixed at one end and pulled with {nf(P)} kN at the other."}
 def azimuth(az, L=None, unit='m'):
     a = math.radians(az); x, y = 200 + 100 * math.sin(a), 100 - 100 * math.cos(a) * 0.8
-    s = f"<line x1='200' y1='10' x2='200' y2='190' stroke='{SL}'/><line x1='80' y1='100' x2='320' y2='100' stroke='{SL}'/>" + T(200, 8, 'N', w='600', z=11) + T(328, 104, 'E', a='start', w='600', z=11) + f"<line x1='200' y1='100' x2='{x:.0f}' y2='{y:.0f}' stroke='{EM}' stroke-width='3'/><circle cx='{x:.0f}' cy='{y:.0f}' r='5' fill='{EM}'/>"
+    s = f"<line x1='200' y1='10' x2='200' y2='190' stroke='{SL}'/><line x1='80' y1='100' x2='320' y2='100' stroke='{SL}'/>" + T(200, 8, 'N', w='600', z=11) + T(328, 104, 'E', a='start', w='600', z=11) + _arr(200, 100, x, y) + f"<circle cx='200' cy='100' r='4' fill='{SL}'/>"
     s += T(x + 10, y - 6 if y < 100 else y + 16, (f"{nf(L, 2)} {unit}, " if L else '') + f"azimuth {nf(az)}°", a='start' if x < 260 else 'end', c=EM, w='600')
     return {'viewBox': '0 0 400 200', 'svg': s, 'alt': f"A line drawn from the origin at an azimuth of {nf(az)}° clockwise from north."}
 def parcel(pts, unit='m'):
@@ -184,7 +187,7 @@ def cables(W, th):
     return {'viewBox': f"0 0 400 {84 + dy:.0f}", 'svg': s, 'alt': f"A {nf(W)} N weight hanging from two cables that each make {nf(th)}° with the horizontal."}
 def lever(L, F, th):
     a = math.radians(th); x, y = 330 + 70 * math.cos(math.pi - a), 110 - 70 * math.sin(a)
-    s = f"<rect x='70' y='104' width='260' height='12' fill='{CR}' stroke='{SL}' stroke-width='2'/><circle cx='70' cy='110' r='9' fill='#FFFFFF' stroke='{SL}' stroke-width='2'/><line x1='{x:.0f}' y1='{y:.0f}' x2='330' y2='110' stroke='{EM}' stroke-width='3'/><circle cx='330' cy='110' r='5' fill='{EM}'/>" + T(x - 6, y - 6, f"{nf(F)} N", c=EM, w='600') + T(296, 100, f"{nf(th)}°", a='end') + dim(70, 330, 138, f"{nf(L)} m") + T(56, 96, 'Pivot', a='end')
+    s = f"<rect x='70' y='104' width='260' height='12' fill='{CR}' stroke='{SL}' stroke-width='2'/><circle cx='70' cy='110' r='9' fill='#FFFFFF' stroke='{SL}' stroke-width='2'/>" + _arr(x, y, 330, 110) + T(x - 6, y - 6, f"{nf(F)} N", c=EM, w='600') + T(296, 100, f"{nf(th)}°", a='end') + dim(70, 330, 138, f"{nf(L)} m") + T(56, 96, 'Pivot', a='end')
     return {'viewBox': '0 0 400 165', 'svg': s, 'alt': f"A {nf(L)} m lever with a {nf(F)} N force applied at its end, {nf(th)}° from the lever axis."}
 def stressblock(sx, sy, txy):
     s = f"<rect x='150' y='40' width='100' height='100' fill='{CR}' stroke='{SL}' stroke-width='2'/>" + harrow(250, 310, 90) + harrow(150, 90, 90) + arrow(200, 40, 4) + arrow(200, 140, 176) + T(316, 94, f"{nf(sx)} MPa", a='start', c=EM, w='600') + T(212, 12, f"{nf(sy)} MPa", a='start', c=EM, w='600')

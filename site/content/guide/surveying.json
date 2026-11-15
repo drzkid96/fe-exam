@@ -103,7 +103,7 @@
    },
    "figure": {
     "viewBox": "0 0 400 200",
-    "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='287' y2='60' stroke='#00574A' stroke-width='3'/><circle cx='287' cy='60' r='5' fill='#00574A'/><text x='297' y='54' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>200.00 m, azimuth 60°</text>",
+    "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='276' y2='65' stroke='#00574A' stroke-width='3'/><path d='M287 60 L273 60 L278 70 Z' fill='#00574A'/><circle cx='200' cy='100' r='4' fill='#00242E'/><text x='297' y='54' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>200.00 m, azimuth 60°</text>",
     "alt": "A line drawn from the origin at an azimuth of 60° clockwise from north.",
     "caption": "Latitude is L cos(azimuth) and departure is L sin(azimuth)."
    },
@@ -753,7 +753,7 @@
      "value": 196.561806,
      "figure": {
       "viewBox": "0 0 400 200",
-      "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='274' y2='46' stroke='#00574A' stroke-width='3'/><circle cx='274' cy='46' r='5' fill='#00574A'/><text x='284' y='40' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>264.50 m, azimuth 48°</text>",
+      "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='265' y2='53' stroke='#00574A' stroke-width='3'/><path d='M274 46 L261 49 L268 58 Z' fill='#00574A'/><circle cx='200' cy='100' r='4' fill='#00242E'/><text x='284' y='40' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>264.50 m, azimuth 48°</text>",
       "alt": "A line drawn from the origin at an azimuth of 48° clockwise from north."
      }
     },

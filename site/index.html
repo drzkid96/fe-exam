@@ -199,6 +199,10 @@ details.sub-d[open]>summary{border-bottom:1px solid var(--rule)}
 .sol h3{margin-bottom:6px;text-transform:uppercase;font-size:12px;letter-spacing:.05em;color:var(--muted)}
 .sol .figure{margin-top:10px!important}
 .gsec>.figure{margin:4px 0!important}
+.sol.fast{background:var(--pale);border-left:3px solid var(--emerald);border-radius:var(--r);padding:10px 14px}
+.play{background:var(--pale);border-left:3px solid var(--emerald);border-radius:var(--r);padding:12px 16px;display:flex;flex-direction:column;gap:10px} .play h3{margin:0} .play table td:first-child{width:42%} .play summary{cursor:pointer}
+.bg{border:1px solid var(--rule);border-radius:var(--r);padding:10px 14px} .bg>summary{cursor:pointer} .bgin{display:flex;flex-direction:column;gap:12px;margin-top:10px}
+.see{display:flex;flex-direction:column;gap:12px;border-left:3px solid var(--blue,#568CBB);padding:4px 0 4px 16px} .see h3{margin:0} .see .figure svg{width:620px}
 .ask{display:none;border:1px solid var(--rule);border-left:3px solid var(--emerald);border-radius:var(--r);padding:12px 14px;background:var(--white)}
 body.has-claude .ask{display:block}
 .ask>h3,.ask>summary{font-size:13px;font-weight:600;color:var(--emerald)}
@@ -876,23 +880,24 @@ function answerText(q) {
 }
 function handbookHTML(q) {
   const hb = (q.handbook || [])[0]; if (!hb) return '';
-  if (q.lookup === false) return '<div class="sol"><h3>Check in the handbook</h3><p>Not a handbook lookup. This rests on a rule or on arithmetic the handbook does not spell out. The lesson for this subtopic covers it: <a href="#topic-' + esc(q.topic) + '">open the lesson</a>.</p></div>';
+  const play = 'The <a href="#topic-' + esc(q.topic) + '" data-open="' + esc(q.subtopic) + '">exam playbook for this lesson</a> lists the fast move for each question type.';
+  if (q.lookup === false) return '<div class="sol fast"><h3>Fast route</h3><p>No handbook entry: this rests on a rule or plain arithmetic, so answer from the lesson. ' + play + '</p></div>';
   const ed = (S.reference.handbook || {}).edition, terms = hb.find || [];
-  return '<div class="sol"><h3>Check in the handbook</h3><p>FE Reference Handbook' + (ed ? ' ' + esc(ed) : '') + ', <strong>' + esc(hb.section || '') + '</strong>' + (hb.page ? ', pages ' + esc(hb.page) : '') + '.' +
-    (terms.length ? ' Search the handbook for ' + hbTerms(terms, hb.page) + '.' : '') + hbLink() + '</p></div>';
+  return '<div class="sol fast"><h3>Fast route</h3><p>Open the FE Reference Handbook' + (ed ? ' ' + esc(ed) : '') + ' at <strong>' + esc(hb.section || '') + '</strong>' + (hb.page ? ', pages ' + esc(hb.page) : '') + '.' +
+    (terms.length ? ' Search for ' + hbTerms(terms, hb.page) + ', copy the formula, then follow the numbers below.' : '') + hbLink() + '</p><p>' + play + '</p></div>';
 }
 function symsHTML(list) { return (list || []).length ? '<div class="sol"><h3>Symbols used</h3><dl class="syms">' + list.map(x => '<dt>' + Core.richInline(x[0]) + '</dt><dd>' + Core.richInline(x[1]) + '</dd>').join('') + '</dl></div>' : ''; }
 function termsHTML(list) { return (list || []).length ? '<div class="sol"><h3>Terms in plain words</h3><dl class="syms">' + list.map(x => '<dt>' + esc(x[0]) + '</dt><dd>' + Core.richInline(x[1]) + '</dd>').join('') + '</dl></div>' : ''; }
 function lessonLink(q) {
   const t = S.exam.topics.find(x => x.id === q.topic), u = t && t.subtopics.find(x => x.id === q.subtopic); if (!t || !u) return '';
-  return '<div class="sol"><h3>Go to the lesson</h3><p><a href="#topic-' + esc(t.id) + '" data-open="' + esc(u.id) + '">' + esc(t.name) + ': ' + esc(u.code + '. ' + u.name.replace(/ \(.*$/, '')) + '</a>, with the idea from zero, the method, formulas and worked examples for this question type. <a href="#topic-' + esc(t.id) + '">Topic overview</a>.</p>' + ((q.needs || []).length ? '<p><strong>If this was hard to follow, go back one step:</strong> ' + q.needs.map(x => '<a href="#topic-' + esc(x[1]) + '" data-open="' + esc(x[0]) + '">' + esc(x[2]) + '</a>').join('; ') + '.</p>' : '') + '</div>';
+  return '<div class="sol"><h3>Go to the lesson</h3><p><a href="#topic-' + esc(t.id) + '" data-open="' + esc(u.id) + '">' + esc(t.name) + ': ' + esc(u.code + '. ' + u.name.replace(/ \(.*$/, '')) + '</a>, with the exam playbook, fast method, formulas and worked examples for this question type. <a href="#topic-' + esc(t.id) + '">Topic overview</a>.</p>' + ((q.needs || []).length ? '<p><strong>If this was hard to follow, go back one step:</strong> ' + q.needs.map(x => '<a href="#topic-' + esc(x[1]) + '" data-open="' + esc(x[0]) + '">' + esc(x[2]) + '</a>').join('; ') + '.</p>' : '') + '</div>';
 }
 function feedbackHTML(q, slot) {
   const ok = slot.result && slot.result.correct, skipped = slot.result && slot.result.skipped;
   S.askCtx['q:' + q.id] = {q, slot};
   return '<div class="fb ' + (ok ? 'ok' : 'no') + '"><div class="fb-h">' + (ok ? IC.check : IC.cross) + '<strong>' + (ok ? 'Correct' : skipped ? 'Not answered' : 'Not correct') + '</strong><span>' + dur(slot.ms) + ' on this question, exam pace is ' + dur(targetMs()) + '</span></div>' +
-    '<p><strong>Answer:</strong> ' + Core.richInline(answerText(q)) + '</p>' + (q.eli5 ? '<div class="sol"><h3>Concept</h3>' + Core.rich(q.eli5) + '</div>' : '') + (q.solution ? '<div class="sol"><h3>Solution with the numbers</h3>' + Core.rich(q.solution) + figureHTML(q.solutionFigure) + '</div>' : '') + termsHTML(q.terms) + symsHTML(q.symbols) + lessonLink(q) +
-    handbookHTML(q) + '<div class="chips">' + (q.verify ? '<span class="chip strong" title="' + esc(q.verify.basis || 'The answer key is recomputed by tools/verify_answers.py') + '">' + (q.verify.method === 'computed' ? 'Answer recomputed by code' : 'Answer checked against a reference') + '</span>' : '') + '</div>' + askHTML('q:' + q.id, !ok && !skipped) + '</div>';
+    '<p><strong>Answer:</strong> ' + Core.richInline(answerText(q)) + '</p>' + handbookHTML(q) + (q.solution ? '<div class="sol"><h3>Solution with the numbers</h3>' + Core.rich(q.solution) + figureHTML(q.solutionFigure) + '</div>' : '') + (q.eli5 ? '<div class="sol"><h3>Why it works</h3>' + Core.rich(q.eli5) + '</div>' : '') + termsHTML(q.terms) + symsHTML(q.symbols) + lessonLink(q) +
+    '<div class="chips">' + (q.verify ? '<span class="chip strong" title="' + esc(q.verify.basis || 'The answer key is recomputed by tools/verify_answers.py') + '">' + (q.verify.method === 'computed' ? 'Answer recomputed by code' : 'Answer checked against a reference') + '</span>' : '') + '</div>' + askHTML('q:' + q.id, !ok && !skipped) + '</div>';
 }
 
 /* ---------- Sessions ---------- */
@@ -1115,23 +1120,35 @@ function hbContext(key) {
 function exampleHTML(x, n) {
   return '<div class="sol ex"><h3>Worked example' + (n ? ' ' + n : '') + '</h3><p><strong>' + Core.richInline(x.problem) + '</strong></p>' + figureHTML(x.figure) + (x.idea ? '<div class="why"><span class="who">Why this works</span>' + Core.rich(x.idea) + '</div><p class="who">Steps</p>' : '') + Core.rich(x.steps) + (x.answer ? '<p><strong>Answer:</strong> ' + Core.richInline(x.answer) + '</p>' : '') + '</div>';
 }
+function playHTML(s) {
+  const p = s.play; if (!p) return '';
+  const rows = (p.rows || []).map(r => '<tr><td>' + Core.richInline(r[0]) + '</td><td>' + Core.richInline(r[1]) + '</td></tr>').join('');
+  const types = (p.types || []).map(t => '<tr><td><a href="#q-' + esc(t.id) + '">' + esc(t.ask) + '</a></td><td>' + (t.page ? esc(t.section) + ', p. ' + esc(t.page) + (t.find && t.find.length ? ' ' + hbTerms(t.find, t.page) : '') : '<span class="hint">no handbook entry: from the lesson</span>') + '</td><td>' + esc(t.time) + '</td></tr>').join('');
+  return '<div class="play"><h3>Exam playbook</h3>' + (p.intro ? '<p>' + Core.richInline(p.intro) + '</p>' : '') +
+    (rows ? '<div class="tw"><table class="t"><thead><tr><th>If the question</th><th>Fast move</th></tr></thead><tbody>' + rows + '</tbody></table></div>' : '') +
+    (types ? '<details open><summary><strong>Every question type in this lesson (' + p.types.length + ')</strong>: the exact ask, the page to open and a target time. Click one to try it.</summary><div class="tw"><table class="t"><thead><tr><th>The question asks</th><th>Handbook</th><th>Target</th></tr></thead><tbody>' + types + '</tbody></table></div></details>' : '') + '</div>';
+}
 function guideSection(s) {
   const exs = (s.example ? [s.example] : []).concat(s.examples || []), ed = (S.reference.handbook || {}).edition;
   const br = s.bridge, bridge = br ? '<div class="bridge"><h3>Starting from zero</h3>' + (br.plain ? '<p>' + Core.richInline(br.plain) + '</p>' : '') + ((br.core || []).length ? '<div><strong>The few ideas everything else hangs on:</strong><ul>' + br.core.map(x => '<li>' + Core.richInline(x) + '</li>').join('') + '</ul></div>' : '') +
-    (br.links ? '<p><strong>How it connects to the other topics:</strong> ' + Core.richInline(br.links) + '</p>' : '') + (br.exam ? '<p><strong>On the exam:</strong> ' + Core.richInline(br.exam) + '</p>' : '') + '</div>' : '';
+    (br.links ? '<p><strong>How it connects to the other topics:</strong> ' + Core.richInline(br.links) + '</p>' : '') + '</div>' : '';
   const lk = l => l.map(x => '<a href="#topic-' + esc(x[1]) + '" data-open="' + esc(x[0]) + '">' + esc(x[2]) + '</a>').join('; ');
   const primer = s.primer ? '<div class="bridge"><h3>The idea, from zero</h3><p>' + Core.richInline(s.primer) + '</p>' + ((s.needs || []).length ? '<p><strong>This builds on:</strong> ' + lk(s.needs) + '. If any of that is unfamiliar, read it first.</p>' : '<p><strong>This builds on:</strong> nothing earlier. You can start here.</p>') + ((s.leads || []).length ? '<p><strong>You will use it again in:</strong> ' + lk(s.leads) + '.</p>' : '') + '</div>' : '';
-  return '<div class="gsec" id="g-' + esc(s.id) + '"><h3>' + esc(s.title) + '</h3>' + bridge + primer + Core.rich(s.body) + (s.work ? '<p class="note"><strong>Where you have met this at work:</strong> ' + Core.richInline(s.work) + '</p>' : '') + figureHTML(s.figure) +
+  const see = (s.figures || []).length ? '<div class="see"><h3>' + (s.id.endsWith('-overview') ? 'How the parts connect' : 'Picture it') + '</h3>' + s.figures.map(figureHTML).join('') + '</div>' : '';
+  const method = (s.method || []).length ? '<div><h3>Fast method</h3><ol class="method">' + s.method.map(m => '<li>' + Core.richInline(m) + '</li>').join('') + '</ol></div>' : '';
+  const formulas = (s.formulas || []).length ? '<div><h3>Formulas and where they are</h3><div class="tw"><table class="t"><thead><tr><th>Formula</th><th>Expression</th><th>Handbook</th></tr></thead><tbody>' + s.formulas.map(f => '<tr><td>' + esc(f.name) + '</td><td>' + Core.richInline(f.expr) + '</td><td>' + esc(f.handbook || '') + '</td></tr>').join('') + '</tbody></table></div></div>' : '';
+  const examples = exs.map((x, i) => exampleHTML(x, exs.length > 1 ? i + 1 : 0)).join('');
+  const traps = (s.pitfalls || []).length ? '<div><h3>Traps the wrong answers are built from</h3><ul>' + s.pitfalls.map(p => '<li>' + Core.richInline(p) + '</li>').join('') + '</ul></div>' : '';
+  const lookup = (s.lookup || []).length ? '<div><h3>Open the handbook at</h3><ul>' + s.lookup.map(l => '<li>FE Reference Handbook' + (ed ? ' ' + esc(ed) : '') + ', <strong>' + esc(l.section) + '</strong>, pages ' + esc(l.page) + '. Search for ' + hbTerms(l.find, l.page, ', ') + '.</li>').join('') + '</ul>' + (hbLink() ? '<p>' + hbLink() + '</p>' : '') + '</div>' : '';
+  const background = bridge + primer + Core.rich(s.body) + (s.work ? '<p class="note"><strong>Where you have met this at work:</strong> ' + Core.richInline(s.work) + '</p>' : '') + figureHTML(s.figure) +
     (s.deep ? '<div class="deep"><h3>In depth</h3>' + Core.rich(s.deep) + '</div>' : '') +
-    ((s.method || []).length ? '<div><h3>How to solve these</h3><ol class="method">' + s.method.map(m => '<li>' + Core.richInline(m) + '</li>').join('') + '</ol></div>' : '') +
+    ((s.ideas || []).length ? '<div class="ideas"><h3>Key ideas</h3>' + s.ideas.map(i => '<div class="idea">' + (i.title ? '<strong>' + esc(i.title) + '</strong>' : '') + Core.rich(i.text) + '</div>').join('') + '</div>' : '') +
     (s.tips ? '<div><h3>What a review instructor stresses</h3><ul>' + s.tips.items.map(t => '<li>' + Core.richInline(t) + '</li>').join('') + '</ul><p class="hint">Restated in this site\'s words from <a href="' + esc(s.tips.url) + '" target="_blank" rel="noopener">' + esc(s.tips.from) + '</a>.</p></div>' : '') +
     ((s.links || []).length ? '<div><h3>Watch and practise elsewhere</h3><ul>' + s.links.map(l => '<li><a href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.label) + '</a>' + (l.note ? '. ' + esc(l.note) : '') + '</li>').join('') + '</ul><p class="hint">These open other people\'s free material in a new tab. Nothing from them is copied here.</p></div>' : '') +
-    ((s.formulas || []).length ? '<div class="tw"><table class="t"><thead><tr><th>Formula</th><th>Expression</th><th>Handbook</th></tr></thead><tbody>' + s.formulas.map(f => '<tr><td>' + esc(f.name) + '</td><td>' + Core.richInline(f.expr) + '</td><td>' + esc(f.handbook || '') + '</td></tr>').join('') + '</tbody></table></div>' : '') +
-    ((s.ideas || []).length ? '<div class="ideas"><h3>Key ideas</h3>' + s.ideas.map(i => '<div class="idea">' + (i.title ? '<strong>' + esc(i.title) + '</strong>' : '') + Core.rich(i.text) + '</div>').join('') + '</div>' : '') +
-    exs.map((x, i) => exampleHTML(x, exs.length > 1 ? i + 1 : 0)).join('') +
-    ((s.pitfalls || []).length ? '<div><h3>Common mistakes</h3><ul>' + s.pitfalls.map(p => '<li>' + Core.richInline(p) + '</li>').join('') + '</ul></div>' : '') +
-    ((s.lookup || []).length ? '<div><h3>Check in the handbook</h3><ul>' + s.lookup.map(l => '<li>FE Reference Handbook' + (ed ? ' ' + esc(ed) : '') + ', <strong>' + esc(l.section) + '</strong>, pages ' + esc(l.page) + '. Search the handbook for ' + hbTerms(l.find, l.page, ', ') + '.</li>').join('') + '</ul>' + (hbLink() ? '<p>' + hbLink() + '</p>' : '') + '</div>' : '') +
-    termsHTML(s.terms).replace('class="sol"', '') + symsHTML(s.symbols).replace('class="sol"', '') + ((s.read || []).length ? '<div><h3>Where to read</h3><ul>' + s.read.map(r => '<li><strong>' + esc(r.source) + ':</strong> ' + esc(r.where) + '</li>').join('') + '</ul></div>' : '') + (s.credit ? '<p class="hint">' + esc(s.credit) + '</p>' : '') + askHTML('g:' + s.id) + '</div>';
+    termsHTML(s.terms).replace('class="sol"', '') + symsHTML(s.symbols).replace('class="sol"', '') + ((s.read || []).length ? '<div><h3>Where to read</h3><ul>' + s.read.map(r => '<li><strong>' + esc(r.source) + ':</strong> ' + esc(r.where) + '</li>').join('') + '</ul></div>' : '');
+  const bg = background.replace(/<[^>]+>/g, '').trim() ? '<details class="bg"><summary><strong>Background, if a step above does not make sense</strong> (plain-words explanation, how it connects, terms and symbols)</summary><div class="bgin">' + background + '</div></details>' : '';
+  return '<div class="gsec" id="g-' + esc(s.id) + '"><h3>' + esc(s.title) + '</h3>' + playHTML(s) + method + formulas + examples + traps + lookup + see + bg +
+    (s.credit ? '<p class="hint">' + esc(s.credit) + '</p>' : '') + askHTML('g:' + s.id) + '</div>';
 }
 
 /* ---------- Explain further with Claude ----------
@@ -1139,11 +1156,13 @@ function guideSection(s) {
    the stored solution and the thread so far. Each request is also written to asks/<id> in the study log, so the weak spots
    it reveals can be read back later. Replies are live tutoring and are not part of the verified answer key. */
 const ASK = {
-  q: [['steps', 'Walk me through it step by step', 'Walk me through the solution step by step, with the numbers and units at every step, and say why each step is taken.'],
+  q: [['fast', 'Fastest way to the answer', 'Give me the fastest exam route to this answer: how to recognise the type, the handbook formula to copy, the calculator steps with numbers, and any way to eliminate choices or check by estimating.'],
+      ['steps', 'Walk me through it step by step', 'Walk me through the solution step by step, with the numbers and units at every step, and say why each step is taken.'],
       ['wrong', 'Why is my answer wrong?', 'My answer was marked not correct. Work out the most likely mistake that leads to my answer, show where it goes wrong, and say how to avoid it.'],
       ['formula', 'Which handbook formula, and when?', 'Which FE Reference Handbook formula applies here, what does each symbol mean, and how do I recognise when to use it?'],
       ['similar', 'Give me a similar problem', 'Write one new problem of the same type with different numbers. Give the problem first, then a line that says Answer, then the worked solution.']],
-  g: [['simpler', 'Explain this more simply', 'Explain the main idea of this lesson again in simpler terms, then tie it back to the formulas.'],
+  g: [['fast', 'Fastest exam method', 'For this lesson, list the question types the FE exam asks and the fastest way to answer each: the cue in the wording, the handbook formula, the calculator steps and the trap.'],
+      ['simpler', 'Explain this more simply', 'Explain the main idea of this lesson again in simpler terms, then tie it back to the formulas.'],
       ['example', 'Another worked example', 'Give one more worked example for this lesson with different numbers, showing every step with units.'],
       ['quiz', 'Quiz me on this', 'Write three short exam-style questions on this lesson, then give the answers with one line of working each.'],
       ['exam', 'How does the exam test this?', 'How does the FE exam usually test this, and which traps should I watch for?']]
@@ -1159,7 +1178,7 @@ function respText(q, slot) {
 }
 function askContext(key) { const base = askContext0(key); return base ? base + hbContext(key) : base; }
 function askContext0(key) {
-  const rules = 'You are tutoring someone who finished a civil engineering degree about six years ago, has worked since then in transportation engineering and planning, and has kept very little of the other subjects: statics, mechanics of materials, structures, fluids, water resources, geotechnics and the rest. They are re-learning for the NCEES FE Civil exam, a computer-based exam where the FE Reference Handbook is the only reference allowed. Assume nothing is remembered. Start each explanation from the underlying idea in plain words before any formula, say what each quantity physically is, and never write "recall that" or "as you know". Define every technical term and every variable, with units, the first time it appears. Say which earlier topic an idea comes from (for example, that a beam reaction is found with statics) so the connections between topics are explicit. Show every algebra step and every unit conversion. Use a street or traffic example only where it truly makes the idea clearer. In transportation topics, answer the handbook way and note where it differs from agency practice. Be accurate and specific. Show calculations with the actual numbers and units. Name the handbook section a formula comes from. Give a handbook page number only when one is supplied below; never invent one. If the stored solution below looks wrong, say so plainly. Write original material only and do not reproduce published exam or textbook questions. Keep the reply under about 250 words unless the student asks for more.\n' +
+  const rules = 'You are tutoring someone who finished a civil engineering degree about six years ago, has worked since then in transportation engineering and planning, and has kept very little of the other subjects: statics, mechanics of materials, structures, fluids, water resources, geotechnics and the rest. They are preparing for the NCEES FE Civil exam, a computer-based exam (110 questions in about 5 hours 20 minutes, under 3 minutes each) where the FE Reference Handbook is the only reference allowed. Their goal is to pass, not to master the theory. Lead with the fastest exam route: how to recognise the question type from its wording, the handbook formula to copy, then the calculator steps with the actual numbers and units, then the trap the wrong answer choices are built from. Mention time-savers when they work: eliminating choices, checking units, plugging choices back in, estimating. Explain the idea only as far as needed to apply it, in plain words, and assume nothing is remembered; never write "recall that" or "as you know". Define every technical term and every variable, with units, the first time it appears. Say which earlier topic an idea comes from (for example, that a beam reaction is found with statics) so the connections between topics are explicit. Show every algebra step and every unit conversion. Use a street or traffic example only where it truly makes the idea clearer. In transportation topics, answer the handbook way and note where it differs from agency practice. Be accurate and specific. Show calculations with the actual numbers and units. Name the handbook section a formula comes from. Give a handbook page number only when one is supplied below; never invent one. If the stored solution below looks wrong, say so plainly. Write original material only and do not reproduce published exam or textbook questions. Keep the reply under about 250 words unless the student asks for more.\n' +
     'Format: short paragraphs separated by blank lines; lines starting with "- " for lists; **bold** for key terms; subscripts as _{x}, superscripts as ^{2}, fractions as \\frac{a}{b}, square roots as \\sqrt{x}. Do not use headings, tables, code fences or dollar-sign maths.\n\n';
   const tname = id => { const t = S.exam.topics.find(x => x.id === id); return t ? t.name : id; };
   const sname = id => { for (const t of S.exam.topics) { const u = t.subtopics.find(x => x.id === id); if (u) return u.name; } return ''; };

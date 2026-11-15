@@ -30,6 +30,13 @@ def vec3(a, b, c, lab='vector'):
     s += ''.join(f"<line x1='{u[0]:.0f}' y1='{u[1]:.0f}' x2='{v[0]:.0f}' y2='{v[1]:.0f}' stroke='{BL}' stroke-dasharray='5 4'/>" for u, v in ((O, p1), (p1, p2), (p2, p3)))
     s += arr(O[0], O[1], p3[0], p3[1]) + T((O[0] + p1[0]) / 2, p1[1] + 14, nf(a), c=BL, z=11) + T(p2[0] - 8, (p1[1] + p2[1]) / 2 + 12, nf(c), a='end', c=BL, z=11) + T(p3[0] + 8, (p2[1] + p3[1]) / 2, nf(b), a='start', c=BL, z=11) + T(p3[0] + 6, p3[1] - 8, lab, a='start', c=EM, w='600')
     return {'viewBox': '0 0 400 200', 'svg': s, 'alt': f"A three-dimensional sketch of the {lab} with components {nf(a)}, {nf(b)} and {nf(c)} along x, y and z."}
+def wrap(text, n):
+    """Split text into lines of at most about n characters, at spaces."""
+    out, cur = [], ''
+    for w in text.split():
+        if cur and len(cur) + 1 + len(w) > n: out.append(cur); cur = w
+        else: cur = (cur + ' ' + w).strip()
+    return out + ([cur] if cur else [])
 def fbd(forces, tilt=0, note=''):
     """Free-body diagram of a block. forces: (label, direction in degrees counterclockwise from +x, colour)."""
     cx, cy = 200, 100
@@ -37,8 +44,10 @@ def fbd(forces, tilt=0, note=''):
     alt = []
     for lab, ang, col in forces:
         a = rad(ang); x1, y1 = cx + 24 * cos(a), cy - 24 * sin(a); x2, y2 = cx + 84 * cos(a), cy - 84 * sin(a)
-        s += arr(x1, y1, x2, y2, col or EM) + T(x2 + 12 * cos(a) + (0 if abs(cos(a)) > 0.3 else 8), y2 - 12 * sin(a) + 4, lab, a='start' if cos(a) > 0.3 else 'end' if cos(a) < -0.3 else 'start', c=col or EM, w='600', z=11); alt.append(lab)
-    return {'viewBox': '0 0 400 224', 'svg': s + (T(200, 218, note, z=11) if note else ''), 'alt': 'Free-body diagram' + (f" on a surface inclined at {nf(tilt)}°" if tilt else '') + ' showing ' + ', '.join(alt) + '.'}
+        ls = wrap(lab, 18) if len(lab) > 18 else [lab]; ty = (y2 + 4) if sin(a) > 0.7 and len(ls) > 1 else (y2 - 13 * (len(ls) - 1) - 2) if sin(a) < -0.7 and len(ls) > 1 else (y2 - 12 * sin(a) + 4 - (len(ls) - 1) * 13) if sin(a) > 0.3 and len(ls) > 1 else y2 - 12 * sin(a) + 4 - (len(ls) - 1) * 6.5
+        s += arr(x1, y1, x2, y2, col or EM) + ''.join(T(x2 + 12 * cos(a) + (0 if abs(cos(a)) > 0.3 else 8), ty + 13 * i, t, a='start' if cos(a) > 0.3 else 'end' if cos(a) < -0.3 else 'start', c=col or EM, w='600', z=11) for i, t in enumerate(ls)); alt.append(lab)
+    nl = wrap(note, 62) if note else []
+    return {'viewBox': f"0 0 400 {204 + 15 * max(len(nl), 1)}", 'svg': s + ''.join(T(200, 214 + 15 * i, t, z=11) for i, t in enumerate(nl)), 'alt': 'Free-body diagram' + (f" on a surface inclined at {nf(tilt)}°" if tilt else '') + ' showing ' + ', '.join(alt) + '.'}
 def gbeam(total, sup=(), pts=(), udl=None, tri=None, R=None, fix=(0, 0), mom=None, unit='m', fu='kN'):
     """A beam of length `total`. sup: (x, 'pin'|'roller'); pts: (x, load); udl: (x0, x1, w); tri: (x0, x1, peak at x1); R: (x, value) reactions."""
     x0, x1, yb = 50, 350, 78; X = lambda a: x0 + (x1 - x0) * a / total
@@ -220,7 +229,7 @@ BY_STEM.update({
  'A hollow circular shaft has an outside diameter': (L(0, lambda e: ring(e.do, e.di)), None), 'A hollow shaft with an outside diameter': (L(0, lambda e: ring(e.do, e.di)), None),
  'A rope passes over a fixed drum': (L(0, lambda e: drum(e.wrap, e.T2)), L(0, lambda e: drum(e.wrap, e.T2, e.ans))),
  'A rectangular beam [b] mm wide and [h] mm deep carries a shear': (L(0, lambda e: rect(e.b, e.h)), None),
- 'A square column [b] mm on a side carries a compressive load': (L(0, lambda e: shape(RECT(e.b, e.b), mark=(min(e.b / 2 + e.ec, e.b * 1.6), e.b / 2, f"load, {nf(e.ec)} mm from the centroid"), labels=[(e.b / 2, -e.b * 0.12, f"{nf(e.b)} mm square", 'middle')], alt='A square column section with the load point offset from the centroid along one axis.')), None),
+ 'A square column [b] mm on a side carries a compressive load': (L(0, lambda e: shape(RECT(e.b, e.b), mark=(min(e.b / 2 + e.ec, e.b * 1.6), e.b / 2, f"load {nf(e.ec)} mm off centre"), labels=[(e.b / 2, -e.b * 0.12, f"{nf(e.b)} mm square", 'middle')], alt='A square column section with the load point offset from the centroid along one axis.')), None),
  'A bar carries a uniaxial tensile stress': (None, L(0, lambda e: mohr(e.s, 0, 0))),
  'A simply supported beam spans [L] m and carries a uniform load of [w] kN/m. Its flexural rigidity': (L(0, lambda e: gbeam(e.L, [(0, 'pin'), (e.L, 'roller')], udl=(0, e.L, e.w))), None),
  'A simply supported steel beam (E = 200 GPa) spans': (L(0, lambda e: gbeam(e.L, [(0, 'pin'), (e.L, 'roller')], udl=(0, e.L, e.w))), None),
@@ -299,7 +308,7 @@ def bar(segs, forces=(), walls=(True, False), note=''):
     for k, w in enumerate(walls):
         if w: s += f"<rect x='{(x0 - 14) if k == 0 else x1}' y='{y-36}' width='14' height='72' fill='{RU}' stroke='{SL}' stroke-width='2'/>"
     for n, (xf, lab, d, col) in enumerate(forces):
-        yy = y - 24 - 16 * (n % 3); s += harrow(X(xf), X(xf) + 44 * d, yy, col or EM) + T(X(xf) + 50 * d, yy + 4, lab, a='start' if d > 0 else 'end', c=col or EM, w='600', z=11)
+        yy = y - 24 - 16 * (n % 3); s += harrow(X(xf), X(xf) + 44 * d, yy, col or EM) + T(X(xf) + 22 * d, yy - 7, lab, c=col or EM, w='600', z=11)
     return {'viewBox': '0 0 400 150', 'svg': s + (T(200, 142, note, z=11) if note else ''), 'alt': 'A bar' + (' held between rigid supports' if all(walls) else '') + ' with ' + '; '.join(f[1] for f in forces) + '.' + (' ' + note + '.' if note else '')}
 def dshear(P, tau=None, u='kN'):
     s = f"<rect x='60' y='46' width='190' height='16' fill='{CR}' stroke='{SL}' stroke-width='2'/><rect x='60' y='98' width='190' height='16' fill='{CR}' stroke='{SL}' stroke-width='2'/><rect x='170' y='70' width='180' height='20' fill='{LG}' stroke='{SL}' stroke-width='2'/><rect x='200' y='34' width='18' height='92' fill='{JD}' stroke='{SL}' stroke-width='2'/>"

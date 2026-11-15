@@ -73,6 +73,19 @@
     ],
     "links": "Sight distance and curves come from dynamics; alignment geometry from mathematics and surveying; pavement from materials and geotechnics; traffic data from statistics.",
     "exam": "Use the handbook's equations and constants, which follow national references, even where daily practice uses a state manual or a newer edition."
+   },
+   "figures": [
+    {
+     "viewBox": "0 0 540 186",
+     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Transport</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Comes back in</text><text x='182' y='55' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Math A: Lines and curves</text><line x1='186.0' y1='51.0' x2='198.0' y2='51.0' stroke='#568CBB' stroke-width='1'/><text x='182' y='83' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Dynamics A: Kinematics</text><line x1='186.0' y1='79.0' x2='198.0' y2='51.0' stroke='#568CBB' stroke-width='1'/><line x1='186.0' y1='79.0' x2='198.0' y2='131.4' stroke='#568CBB' stroke-width='1'/><text x='182' y='111' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Geotech A: Classification</text><line x1='186.0' y1='107.0' x2='198.0' y2='77.8' stroke='#568CBB' stroke-width='1'/><text x='182' y='139' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Materials A: Mix design</text><line x1='186.0' y1='135.0' x2='198.0' y2='77.8' stroke='#568CBB' stroke-width='1'/><text x='182' y='167' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Math D: Statistics</text><line x1='186.0' y1='163.0' x2='198.0' y2='104.6' stroke='#568CBB' stroke-width='1'/><line x1='186.0' y1='163.0' x2='198.0' y2='158.2' stroke='#568CBB' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>1. Geometric design (A)</text><rect x='198.0' y='66.8' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='81' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>2. Pavements (B)</text><rect x='198.0' y='93.6' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='108' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>3. Traffic flow (C)</text><rect x='198.0' y='120.4' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='135' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>4. Signals, devices (D)</text><rect x='198.0' y='147.2' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='162' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>5. Planning (E)</text>",
+     "alt": "How Transportation Engineering connects: the subtopics in a suggested study order, the earlier topics to refresh first, and the later topics that use this one.",
+     "caption": "How this topic connects. The middle column is a suggested study order; the left column lists earlier lessons to refresh first; the right column shows where this topic is used again."
+    }
+   ],
+   "play": {
+    "intro": "Transportation Engineering: 9 to 14 of the 110 exam questions. At about 2.9 minutes a question, that is roughly 26 to 41 minutes of the exam. Use the handbook's equations and constants, which follow national references, even where daily practice uses a state manual or a newer edition. Work the lessons below in the order of the map; open each lesson's playbook first.",
+    "rows": [],
+    "types": []
    }
   },
   {
@@ -221,7 +234,7 @@
      "value": 300.0,
      "figure": {
       "viewBox": "0 0 400 170",
-      "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+2.5%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-3.5%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>720 ft</text>",
+      "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='10.6' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+2.5%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-3.5%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>720 ft</text>",
       "alt": "A crest vertical curve 720 ft long joining a +2.5% grade to a -3.5% grade."
      }
     },
@@ -260,7 +273,7 @@
      "value": 456.0,
      "figure": {
       "viewBox": "0 0 400 170",
-      "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+2.5%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-1.5%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
+      "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='10.6' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+2.5%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-1.5%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
       "alt": "A crest vertical curve L = ? ft long joining a +2.5% grade to a -1.5% grade."
      }
     },
@@ -286,7 +299,7 @@
      "value": 219.0,
      "figure": {
       "viewBox": "0 0 400 170",
-      "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+3%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-2%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>700 ft</text>",
+      "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='10.6' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+3%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-2%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>700 ft</text>",
       "alt": "A crest vertical curve 700 ft long joining a +3% grade to a -2% grade."
      }
     },
@@ -299,7 +312,7 @@
      "value": 1021.779425,
      "figure": {
       "viewBox": "0 0 400 170",
-      "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+2.5%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-2%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
+      "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='10.6' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+2.5%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-2%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
       "alt": "A crest vertical curve L = ? ft long joining a +2.5% grade to a -2% grade."
      }
     },
@@ -371,6 +384,195 @@
      "point of vertical curvature, where a vertical curve begins; the PVI is where the two grades would meet and the PVT is where the curve ends"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 246",
+     "svg": "<line x1='60.0' y1='150.0' x2='200.0' y2='60.0' stroke='#00242E' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='200.0' y1='60.0' x2='340.0' y2='130.0' stroke='#00242E' stroke-width='1.5' stroke-dasharray='6 4'/><path d='M60 150 Q200 60 340 130' fill='none' stroke='#00574A' stroke-width='3'/><circle cx='60.0' cy='150.0' r='4' fill='#00242E'/><text x='60' y='168' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>PVC</text><circle cx='200.0' cy='60.0' r='4' fill='#00242E'/><text x='200' y='50' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>PVI</text><circle cx='340.0' cy='130.0' r='4' fill='#00242E'/><text x='340' y='148' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>PVT</text><line x1='200.0' y1='60.0' x2='200.0' y2='100.0' stroke='#568CBB' stroke-width='1.5'/><text x='194' y='86' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>E</text><circle cx='217.5' cy='99.4' r='4' fill='#568CBB'/><text x='222' y='126' text-anchor='start' font-size='10' font-weight='400' fill='#568CBB'>high point</text><text x='110' y='98' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>G1 (+)</text><text x='292' y='92' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>G2 (-)</text><line x1='60.0' y1='172.0' x2='340.0' y2='172.0' stroke='#00242E' stroke-width='1'/><line x1='60.0' y1='167.0' x2='60.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='340.0' y1='167.0' x2='340.0' y2='177.0' stroke='#00242E' stroke-width='1'/><text x='200' y='186' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>L (horizontal length)</text><line x1='80.0' y1='128.0' x2='330.0' y2='112.0' stroke='#00242E' stroke-width='1' stroke-dasharray='2 4'/><text x='10' y='204' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>A = |G2 - G1| in percent; K = L / A; middle ordinate E = A L / 800.</text><text x='10' y='217' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Dotted: the driver's sight line. A longer curve (bigger K) lets the driver</text><text x='10' y='230' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>see farther: L is chosen so sight distance covers stopping sight distance.</text>",
+     "alt": "A crest vertical curve: a parabola joins grade G1 to grade G2 between PVC and PVT; its length controls how far a driver can see over the crest.",
+     "caption": "A crest vertical curve: a parabola joins grade G1 to grade G2 between PVC and PVT; its length controls how far a driver can see over the crest."
+    }
+   ],
+   "play": {
+    "intro": "Transportation Engineering is 9 to 14 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Horizontal curve geometry",
+      "T = R tan(Δ/2); L = π R Δ / 180; E and M from the handbook."
+     ],
+     [
+      "Superelevation or minimum radius",
+      "R = V² / (15 (e + f)) with V in mph."
+     ],
+     [
+      "Stopping sight distance",
+      "SSD = 1.47 V t + V² / (30 (a/32.2 ± G)) in ft (use the handbook form)."
+     ],
+     [
+      "Vertical curve: elevation or high point",
+      "y = PVC elevation + (g1/100) x + ((g2 - g1)/(200 L)) x², grades in %, x and L in ft from the PVC; high point at x = g1 L / (g1 - g2)."
+     ],
+     [
+      "Vertical curve length for sight distance",
+      "Copy the crest or sag formula for S < L or S > L, then check which case holds."
+     ]
+    ],
+    "types": [
+     {
+      "id": "transport-0001",
+      "ask": "Using a perception-reaction time of 2.5 s and a deceleration rate of 11.2 ft/s^{2}, what is the stopping sight distance?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "stopping sight distance"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0002",
+      "ask": "What is the minimum radius of a horizontal curve for a design speed of 50 mph, with a superelevation of 6% and a side friction factor of...",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "horizontal curves"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0005",
+      "ask": "How far from the start of the curve (PVC) is the high point?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "vertical curves"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0016",
+      "ask": "What is the length of the curve?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "horizontal curves"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0017",
+      "ask": "What is the tangent length from the PC to the PI?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "horizontal curves"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0018",
+      "ask": "What minimum curve length is needed?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "vertical curves"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0019",
+      "ask": "What is the station of the PC?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "horizontal curves"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0020",
+      "ask": "What is the PVT elevation?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "vertical curves"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0021",
+      "ask": "Assuming the sight distance is shorter than the curve, what minimum curve length is needed?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "vertical curves"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0022",
+      "ask": "What is its radius?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "horizontal curves"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0026",
+      "ask": "What is its middle ordinate?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "horizontal curves"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0027",
+      "ask": "What is the elevation of the low point?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "vertical curves"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0028",
+      "ask": "Using 0.01e + f = V^{2} / (15R), what superelevation rate is required?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "superelevation"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0029",
+      "ask": "Using a 2.5 s perception-reaction time and a deceleration of 11.2 ft/s^{2}, what is the stopping sight distance?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "stopping sight distance"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "g_{1}",
@@ -582,6 +784,97 @@
      "an index of the total strength of a flexible pavement, built up from each layer's thickness and quality"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 236",
+     "svg": "<rect x='15.0' y='50.0' width='175.0' height='14.0' fill='#00242E' stroke='#00242E' stroke-width='1'/><text x='185' y='61' text-anchor='end' font-size='10' font-weight='400' fill='#FFFFFF'>Asphalt surface</text><rect x='15.0' y='64.0' width='175.0' height='26.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1'/><text x='185' y='81' text-anchor='end' font-size='10' font-weight='400' fill='#00242E'>Base</text><rect x='15.0' y='90.0' width='175.0' height='26.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1'/><text x='185' y='107' text-anchor='end' font-size='10' font-weight='400' fill='#00242E'>Subbase</text><rect x='15.0' y='116.0' width='175.0' height='60.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1'/><text x='185' y='150' text-anchor='end' font-size='10' font-weight='400' fill='#00242E'>Subgrade (soil)</text><circle cx='75.0' cy='36.0' r='13.0' fill='#00242E' stroke='#00242E' stroke-width='1.5'/><line x1='75.0' y1='50.0' x2='75.0' y2='50.0' stroke='#00574A' stroke-width='2'/><path d='M75.0 56.0 L78.0 50.0 L72.0 50.0 Z' fill='#00574A'/><line x1='71.0' y1='56.0' x2='35.0' y2='176.0' stroke='#00574A' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='79.0' y1='56.0' x2='115.0' y2='176.0' stroke='#00574A' stroke-width='1.5' stroke-dasharray='6 4'/><text x='103' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Flexible pavement</text><rect x='210.0' y='50.0' width='175.0' height='32.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1'/><text x='380' y='70' text-anchor='end' font-size='10' font-weight='400' fill='#00242E'>Concrete slab</text><rect x='210.0' y='82.0' width='175.0' height='22.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1'/><text x='380' y='97' text-anchor='end' font-size='10' font-weight='400' fill='#00242E'>Base</text><rect x='210.0' y='104.0' width='175.0' height='72.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1'/><text x='380' y='144' text-anchor='end' font-size='10' font-weight='400' fill='#00242E'>Subgrade (soil)</text><circle cx='270.0' cy='36.0' r='13.0' fill='#00242E' stroke='#00242E' stroke-width='1.5'/><line x1='270.0' y1='50.0' x2='270.0' y2='50.0' stroke='#00574A' stroke-width='2'/><path d='M270.0 56.0 L273.0 50.0 L267.0 50.0 Z' fill='#00574A'/><line x1='266.0' y1='56.0' x2='212.0' y2='176.0' stroke='#00574A' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='274.0' y1='56.0' x2='328.0' y2='176.0' stroke='#00574A' stroke-width='1.5' stroke-dasharray='6 4'/><text x='298' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Rigid pavement</text><text x='15' y='196' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Flexible: layers of better material spread the wheel load down</text><text x='15' y='209' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>until the subgrade can carry it. Rigid: the stiff slab bends as a</text><text x='15' y='222' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>plate and spreads the load over a wide area.</text>",
+     "alt": "Flexible and rigid pavement sections: in a flexible pavement successive layers spread the wheel load down to the subgrade; a rigid slab spreads it over a much wider area by bending.",
+     "caption": "Flexible and rigid pavement sections: in a flexible pavement successive layers spread the wheel load down to the subgrade; a rigid slab spreads it over a much wider area by bending."
+    }
+   ],
+   "play": {
+    "intro": "Transportation Engineering is 9 to 14 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Flexible pavement structural number",
+      "SN = a1 D1 + a2 D2 m2 + a3 D3 m3."
+     ],
+     [
+      "ESALs",
+      "Sum (trucks × load equivalency factor) over the design life with growth."
+     ],
+     [
+      "Layer names and order",
+      "Surface, base, subbase, subgrade."
+     ]
+    ],
+    "types": [
+     {
+      "id": "transport-0007",
+      "ask": "What is the structural number?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "structural number"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0008",
+      "ask": "Using the correlation M_{R} = 1,500 × CBR (psi), what is the resilient modulus of a subgrade with a CBR of 6?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0009",
+      "ask": "How many ESALs does it carry over a 20-year design life?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "load equivalency"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0030",
+      "ask": "How thick must the base be?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "structural number"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0031",
+      "ask": "How many ESALs does the design lane receive in one year?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "load equivalency"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0032",
+      "ask": "Using the fourth-power rule, how many passes of an 18-kip single axle do the same pavement damage as one pass of a 24 kip single axle?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "load equivalency"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "a_{1}",
@@ -793,6 +1086,134 @@
      "the hourly volume divided by four times the busiest 15-minute volume; it shows how peaked the traffic is"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 256",
+     "svg": "<line x1='55.0' y1='200.0' x2='377.0' y2='200.0' stroke='#00242E' stroke-width='1.5'/><path d='M385.0 200.0 L377.0 196.0 L377.0 204.0 Z' fill='#00242E'/><line x1='55.0' y1='200.0' x2='55.0' y2='28.0' stroke='#00242E' stroke-width='1.5'/><path d='M55.0 20.0 L51.0 28.0 L59.0 28.0 Z' fill='#00242E'/><text x='385' y='216' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>k</text><text x='61' y='24' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>flow q</text><path d='M55.0 200.0 L60.2 192.6 L65.3 185.5 L70.5 178.6 L75.7 172.0 L80.8 165.6 L86.0 159.5 L91.2 153.6 L96.3 148.0 L101.5 142.6 L106.7 137.5 L111.8 132.6 L117.0 128.0 L122.2 123.6 L127.3 119.5 L132.5 115.6 L137.7 112.0 L142.8 108.6 L148.0 105.5 L153.2 102.6 L158.3 100.0 L163.5 97.6 L168.7 95.5 L173.8 93.6 L179.0 92.0 L184.2 90.6 L189.3 89.5 L194.5 88.6 L199.7 88.0 L204.8 87.6 L210.0 87.5 L215.2 87.6 L220.3 88.0 L225.5 88.6 L230.7 89.5 L235.8 90.6 L241.0 92.0 L246.2 93.6 L251.3 95.5 L256.5 97.6 L261.7 100.0 L266.8 102.6 L272.0 105.5 L277.2 108.6 L282.3 112.0 L287.5 115.6 L292.7 119.5 L297.8 123.6 L303.0 128.0 L308.2 132.6 L313.3 137.5 L318.5 142.6 L323.7 148.0 L328.8 153.6 L334.0 159.5 L339.2 165.6 L344.3 172.0 L349.5 178.6 L354.7 185.5 L359.8 192.6 L365.0 200.0' fill='none' stroke='#00574A' stroke-width='2.5'/><circle cx='210.0' cy='87.5' r='5' fill='#00242E'/><line x1='210.0' y1='87.5' x2='210.0' y2='200.0' stroke='#00242E' stroke-width='1' stroke-dasharray='6 4'/><text x='210' y='214' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>kj / 2</text><text x='218' y='78' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>capacity qmax = vf kj / 4</text><text x='132' y='162' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>uncongested</text><text x='297' y='162' text-anchor='middle' font-size='11' font-weight='600' fill='#FF6622'>congested</text><text x='365' y='214' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>kj</text><line x1='55.0' y1='200.0' x2='132.5' y2='87.5' stroke='#568CBB' stroke-width='1.5' stroke-dasharray='6 4'/><text x='129' y='80' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>slope = vf</text><text x='385' y='30' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>q = k v</text><text x='10' y='234' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>k: density (veh/mi/lane); kj: jam density; vf: free-flow speed.</text><text x='10' y='247' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Speed at any point = q / k, the slope of a line from the origin.</text>",
+     "alt": "The flow-density curve (Greenshields): flow rises with density to capacity at half the jam density, then falls as traffic becomes congested; the slope of a line from the origin is the speed.",
+     "caption": "The flow-density curve (Greenshields): flow rises with density to capacity at half the jam density, then falls as traffic becomes congested; the slope of a line from the origin is the speed."
+    }
+   ],
+   "play": {
+    "intro": "Transportation Engineering is 9 to 14 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Flow, speed, density",
+      "q = k v. Capacity = vf kj / 4 at k = kj / 2 (Greenshields)."
+     ],
+     [
+      "Peak hour factor",
+      "PHF = hourly volume / (4 × peak 15-min volume)."
+     ],
+     [
+      "Level of service of a freeway",
+      "Density = flow per lane / speed, then read the LOS table."
+     ],
+     [
+      "Space-mean versus time-mean speed",
+      "Space-mean is the harmonic mean of spot speeds; time-mean is the arithmetic mean."
+     ]
+    ],
+    "types": [
+     {
+      "id": "transport-0003",
+      "ask": "What is the flow rate?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "traffic flow relationships"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0004",
+      "ask": "What is the peak hour factor?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "peak hour factor"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0010",
+      "ask": "What is its capacity?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "capacity"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0011",
+      "ask": "What is its capacity?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "traffic flow relationships"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0023",
+      "ask": "What is the density?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "traffic flow relationships"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0033",
+      "ask": "What is the space mean speed?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "traffic flow relationships"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0034",
+      "ask": "What is the flow rate?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "traffic flow relationships"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0035",
+      "ask": "What is its volume-to-capacity ratio?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0036",
+      "ask": "How fast does the back of the queue move upstream?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "traffic flow relationships"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "q_{max}",
@@ -984,6 +1405,88 @@
      "the distance a driver needs to see ahead in order to react and brake to a stop"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 228",
+     "svg": "<text x='64' y='75' text-anchor='end' font-size='11' font-weight='600' fill='#00242E'>Phase 1</text><rect x='70.0' y='60.0' width='128.0' height='22.0' fill='#1B795A' stroke='#00242E' stroke-width='0.8'/><text x='134' y='75' text-anchor='middle' font-size='10' font-weight='600' fill='#FFFFFF'>Green</text><rect x='198.0' y='60.0' width='12.8' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='0.8'/><text x='204' y='75' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Y</text><rect x='210.8' y='60.0' width='6.4' height='22.0' fill='#E7E8E8' stroke='#00242E' stroke-width='0.8'/><rect x='217.2' y='60.0' width='172.8' height='22.0' fill='#00242E' stroke='#00242E' stroke-width='0.8'/><text x='304' y='75' text-anchor='middle' font-size='10' font-weight='600' fill='#FFFFFF'>Red</text><text x='64' y='125' text-anchor='end' font-size='11' font-weight='600' fill='#00242E'>Phase 2</text><rect x='70.0' y='110.0' width='147.2' height='22.0' fill='#00242E' stroke='#00242E' stroke-width='0.8'/><text x='144' y='125' text-anchor='middle' font-size='10' font-weight='600' fill='#FFFFFF'>Red</text><rect x='217.2' y='110.0' width='128.0' height='22.0' fill='#1B795A' stroke='#00242E' stroke-width='0.8'/><text x='281' y='125' text-anchor='middle' font-size='10' font-weight='600' fill='#FFFFFF'>Green</text><rect x='345.2' y='110.0' width='12.8' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='0.8'/><text x='352' y='125' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Y</text><rect x='358.0' y='110.0' width='6.4' height='22.0' fill='#E7E8E8' stroke='#00242E' stroke-width='0.8'/><rect x='364.4' y='110.0' width='25.6' height='22.0' fill='#00242E' stroke='#00242E' stroke-width='0.8'/><text x='377' y='125' text-anchor='middle' font-size='10' font-weight='600' fill='#FFFFFF'>Red</text><line x1='70.0' y1='150.0' x2='390.0' y2='150.0' stroke='#00242E' stroke-width='1'/><line x1='70.0' y1='145.0' x2='70.0' y2='155.0' stroke='#00242E' stroke-width='1'/><line x1='390.0' y1='145.0' x2='390.0' y2='155.0' stroke='#00242E' stroke-width='1'/><text x='230' y='164' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>cycle length C (here 100 s)</text><text x='204' y='50' text-anchor='middle' font-size='9' font-weight='400' fill='#00242E'>change interval</text><text x='10' y='186' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Effective green g = green + yellow + all-red - lost time.</text><text x='10' y='199' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Lane group capacity = s × g / C (s: saturation flow, veh/h of green).</text><text x='10' y='212' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Longer cycles lose less time per hour but make drivers wait longer.</text>",
+     "alt": "A two-phase signal cycle on a timeline: each phase gets green, yellow and all-red, then red while the other phase runs; capacity depends on the share of the cycle that is effective green.",
+     "caption": "A two-phase signal cycle on a timeline: each phase gets green, yellow and all-red, then red while the other phase runs; capacity depends on the share of the cycle that is effective green."
+    }
+   ],
+   "play": {
+    "intro": "Transportation Engineering is 9 to 14 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Cycle length",
+      "Webster: C = (1.5 L + 5) / (1 - ΣY), L = total lost time, Y = flow ratios."
+     ],
+     [
+      "Yellow and all-red intervals",
+      "Copy the ITE change-interval formula; V in ft/s."
+     ],
+     [
+      "Lane group capacity",
+      "c = s × g / C."
+     ],
+     [
+      "Sign or marking meaning",
+      "MUTCD shapes and colours: regulatory, warning (yellow diamond), guide (green)."
+     ]
+    ],
+    "types": [
+     {
+      "id": "transport-0006",
+      "ask": "Which of these are regulatory signs under the MUTCD?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 1 min",
+      "n": 3
+     },
+     {
+      "id": "transport-0012",
+      "ask": "Using a perception-reaction time of 1.0 s and a deceleration rate of 10 ft/s^{2}, what yellow change interval is needed?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "yellow interval"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0037",
+      "ask": "Using r = (W + L) / v, what all-red clearance interval is needed?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "yellow interval"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0038",
+      "ask": "Using Webster's formula C = (1.5L + 5) / (1 - Y), what is the optimum cycle length?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0039",
+      "ask": "Using a walking speed of 3.5 ft/s, what pedestrian clearance time is needed?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "pedestrian"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "t",
@@ -1161,6 +1664,121 @@
    ],
    "leads": [],
    "terms": [],
+   "figures": [
+    {
+     "viewBox": "0 0 400 176",
+     "svg": "<rect x='10.0' y='30.0' width='86.0' height='40.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='53' y='48' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>1.</text><text x='53' y='60' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Trip generation</text><text x='53' y='92' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>How many trips start</text><text x='54' y='105' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>and end in each zone?</text><line x1='96.0' y1='50.0' x2='102.0' y2='50.0' stroke='#00242E' stroke-width='1.5'/><path d='M108.0 50.0 L102.0 47.0 L102.0 53.0 Z' fill='#00242E'/><rect x='108.0' y='30.0' width='86.0' height='40.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='151' y='48' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>2.</text><text x='151' y='60' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Trip distribution</text><text x='151' y='92' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>Which zone do they</text><text x='151' y='105' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>go to?</text><line x1='194.0' y1='50.0' x2='200.0' y2='50.0' stroke='#00242E' stroke-width='1.5'/><path d='M206.0 50.0 L200.0 47.0 L200.0 53.0 Z' fill='#00242E'/><rect x='206.0' y='30.0' width='86.0' height='40.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='249' y='48' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>3.</text><text x='249' y='60' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Mode choice</text><text x='249' y='92' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>Car, transit, walk</text><text x='249' y='105' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>or bike?</text><line x1='292.0' y1='50.0' x2='298.0' y2='50.0' stroke='#00242E' stroke-width='1.5'/><path d='M304.0 50.0 L298.0 47.0 L298.0 53.0 Z' fill='#00242E'/><rect x='304.0' y='30.0' width='86.0' height='40.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='347' y='48' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>4.</text><text x='347' y='60' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Route assignment</text><text x='347' y='92' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>Which roads or</text><text x='347' y='105' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>lines do they use?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>The four-step travel demand model: each step feeds the next.</text><text x='200' y='166' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>Outputs: volumes on each link, used to size roads, transit and signals.</text>",
+     "alt": "The four-step travel demand model: trip generation, trip distribution, mode choice and route assignment, each answering one question and feeding the next.",
+     "caption": "The four-step travel demand model: trip generation, trip distribution, mode choice and route assignment, each answering one question and feeding the next."
+    }
+   ],
+   "play": {
+    "intro": "Transportation Engineering is 9 to 14 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Trip generation",
+      "Trips = rate × units (from the regression or rate given)."
+     ],
+     [
+      "Trip distribution (gravity model)",
+      "Tij = Pi × (Aj Fij) / Σ(Aj Fij)."
+     ],
+     [
+      "Mode choice (logit)",
+      "P(mode) = e^U / Σ e^U."
+     ],
+     [
+      "Crash rate",
+      "Per million entering vehicles: crashes × 10⁶ / (ADT × 365 × years)."
+     ]
+    ],
+    "types": [
+     {
+      "id": "transport-0013",
+      "ask": "How many daily trips does it generate?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0014",
+      "ask": "What is the crash rate per million entering vehicles?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "crash rate"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0015",
+      "ask": "What share of travellers choose the bus?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "logit"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0024",
+      "ask": "What daily volume is expected in 20 years?",
+      "section": "Engineering Economics",
+      "page": "230–237",
+      "find": [
+       "compound amount"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0025",
+      "ask": "Using the gravity model with K = 1, how many trips go to the first destination?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "gravity model"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0040",
+      "ask": "How many crashes are expected to be prevented?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "crash reduction"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0041",
+      "ask": "What is its crash rate per hundred million vehicle-miles?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "crash rates"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "transport-0042",
+      "ask": "What is the directional design-hour volume?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "P_{i}",

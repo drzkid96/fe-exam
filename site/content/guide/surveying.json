@@ -69,6 +69,19 @@
     ],
     "links": "It is applied trigonometry. Road geometry in transportation and quantities in construction use its results.",
     "exam": "The exam expects the hand method: set out a small table and fill it in."
+   },
+   "figures": [
+    {
+     "viewBox": "0 0 540 186",
+     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Surveying</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Comes back in</text><text x='182' y='111' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Math A: Lines and curves</text><line x1='186.0' y1='107.0' x2='198.0' y2='51.0' stroke='#568CBB' stroke-width='1'/><text x='360' y='111' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Construction E: Drawings</text><line x1='338.0' y1='158.2' x2='356.0' y2='107.0' stroke='#00574A' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>1. Angles, distances (A)</text><rect x='198.0' y='66.8' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='81' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>2. Areas (B)</text><rect x='198.0' y='93.6' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='108' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>3. Earthwork volumes (C)</text><rect x='198.0' y='120.4' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='135' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>4. Coordinates (D)</text><rect x='198.0' y='147.2' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='162' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>5. Leveling (E)</text>",
+     "alt": "How Surveying connects: the subtopics in a suggested study order, the earlier topics to refresh first, and the later topics that use this one.",
+     "caption": "How this topic connects. The middle column is a suggested study order; the left column lists earlier lessons to refresh first; the right column shows where this topic is used again."
+    }
+   ],
+   "play": {
+    "intro": "Surveying: 6 to 9 of the 110 exam questions. At about 2.9 minutes a question, that is roughly 17 to 26 minutes of the exam. The exam expects the hand method: set out a small table and fill it in. Work the lessons below in the order of the map; open each lesson's playbook first.",
+    "rows": [],
+    "types": []
    }
   },
   {
@@ -103,7 +116,7 @@
    },
    "figure": {
     "viewBox": "0 0 400 200",
-    "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='276' y2='65' stroke='#00574A' stroke-width='3'/><path d='M287 60 L273 60 L278 70 Z' fill='#00574A'/><circle cx='200' cy='100' r='4' fill='#00242E'/><text x='297' y='54' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>200.00 m, azimuth 60°</text>",
+    "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='9.8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='276' y2='65' stroke='#00574A' stroke-width='3'/><path d='M287 60 L273 60 L278 70 Z' fill='#00574A'/><circle cx='200' cy='100' r='4' fill='#00242E'/><text x='297' y='54' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>200.00 m, azimuth 60°</text>",
     "alt": "A line drawn from the origin at an azimuth of 60° clockwise from north.",
     "caption": "Latitude is L cos(azimuth) and departure is L sin(azimuth)."
    },
@@ -244,6 +257,113 @@
      "the east-west component of a survey line"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 258",
+     "svg": "<line x1='200.0' y1='210.0' x2='200.0' y2='30.0' stroke='#00242E' stroke-width='1.2'/><path d='M200.0 22.0 L196.0 30.0 L204.0 30.0 Z' fill='#00242E'/><line x1='104.0' y1='118.0' x2='296.0' y2='118.0' stroke='#00242E' stroke-width='1.2'/><text x='200' y='18' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>N</text><text x='200' y='224' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>S</text><text x='302' y='122' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>E</text><text x='98' y='122' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>W</text><line x1='200.0' y1='118.0' x2='262.4' y2='82.0' stroke='#00574A' stroke-width='2.5'/><path d='M271.0 77.0 L259.9 77.7 L264.9 86.3 Z' fill='#00574A'/><text x='277' y='71' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Az 60° = N 60° E</text><line x1='200.0' y1='118.0' x2='236.0' y2='180.4' stroke='#568CBB' stroke-width='2.5'/><path d='M241.0 189.0 L240.3 177.9 L231.7 182.9 Z' fill='#568CBB'/><text x='247' y='205' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Az 150° = S 30° E</text><line x1='200.0' y1='118.0' x2='164.0' y2='180.4' stroke='#1B795A' stroke-width='2.5'/><path d='M159.0 189.0 L168.3 182.9 L159.7 177.9 Z' fill='#1B795A'/><text x='153' y='205' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>Az 210° = S 30° W</text><line x1='200.0' y1='118.0' x2='137.6' y2='82.0' stroke='#00242E' stroke-width='2.5'/><path d='M129.0 77.0 L135.1 86.3 L140.1 77.7 Z' fill='#00242E'/><text x='123' y='71' text-anchor='end' font-size='11' font-weight='600' fill='#00242E'>Az 300° = N 60° W</text><path d='M200.0 88.0 A30 30 0 0 1 226.0 103.0' fill='none' stroke='#00574A' stroke-width='1.5'/><line x1='222.0' y1='96.1' x2='223.0' y2='97.8' stroke='#00574A' stroke-width='1.5'/><path d='M227.0 104.7 L226.4 95.8 L219.5 99.8 Z' fill='#00574A'/><path d='M200.0 142.0 A24 24 0 0 0 212.0 138.8' fill='none' stroke='#568CBB' stroke-width='1.5'/><text x='10' y='236' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Azimuth: clockwise from north, 0° to 360°.</text><text x='10' y='251' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Bearing: from north or south toward east or west, 0° to 90°.</text>",
+     "alt": "Azimuths and bearings: an azimuth is measured clockwise from north through 360°; a bearing is measured from north or south toward east or west, never more than 90°.",
+     "caption": "Azimuths and bearings: an azimuth is measured clockwise from north through 360°; a bearing is measured from north or south toward east or west, never more than 90°."
+    }
+   ],
+   "play": {
+    "intro": "Surveying is 6 to 9 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Azimuth or bearing conversion",
+      "Sketch the quadrant. NE: same; SE: 180 - az; SW: az - 180; NW: 360 - az."
+     ],
+     [
+      "Horizontal distance from a slope distance",
+      "H = S cos(vertical angle) or √(S² - Δh²)."
+     ],
+     [
+      "Angle closure of a traverse",
+      "Interior angles sum to (n - 2) × 180°; distribute the error equally."
+     ]
+    ],
+    "types": [
+     {
+      "id": "surveying-0004",
+      "ask": "Place each azimuth, measured clockwise from north, on its bearing.",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 3
+     },
+     {
+      "id": "surveying-0006",
+      "ask": "What is the horizontal distance?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "trigonometry"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0007",
+      "ask": "What should the interior angles of a closed five-sided traverse add up to?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "regular polygon"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0014",
+      "ask": "Convert 38° 27' 36\" to decimal degrees.",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "trigonometry"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0016",
+      "ask": "Using the compass rule, what correction is applied to the latitude of a 300.0 m leg?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "latitude"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0017",
+      "ask": "What correction should be applied to the measured length?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0018",
+      "ask": "If the error is shared equally, what correction is applied to each angle?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0019",
+      "ask": "What is its back azimuth?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "A",
@@ -454,6 +574,99 @@
     ]
    ],
    "terms": [],
+   "figures": [
+    {
+     "viewBox": "0 0 400 214",
+     "svg": "<line x1='30.0' y1='180.0' x2='370.0' y2='180.0' stroke='#00242E' stroke-width='2'/><text x='370' y='196' text-anchor='end' font-size='10' font-weight='400' fill='#00242E'>baseline</text><path d='M50.0 180.0 L50.0 120.0 L125.0 85.0 L125.0 180.0 Z' fill='#D9F1D6' stroke='none' stroke-width='0'/><path d='M125.0 180.0 L125.0 85.0 L200.0 100.0 L200.0 180.0 Z' fill='#EEEDE8' stroke='none' stroke-width='0'/><path d='M200.0 180.0 L200.0 100.0 L275.0 65.0 L275.0 180.0 Z' fill='#D9F1D6' stroke='none' stroke-width='0'/><path d='M275.0 180.0 L275.0 65.0 L350.0 110.0 L350.0 180.0 Z' fill='#EEEDE8' stroke='none' stroke-width='0'/><path d='M50 120 Q70 70 125 85 Q160 98 200 100 Q240 98 275 65 Q310 40 350 110' fill='none' stroke='#00242E' stroke-width='2'/><text x='200' y='80' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>boundary</text><line x1='50.0' y1='180.0' x2='50.0' y2='120.0' stroke='#568CBB' stroke-width='2'/><text x='54' y='148' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>h1</text><line x1='125.0' y1='180.0' x2='125.0' y2='85.0' stroke='#568CBB' stroke-width='2'/><text x='129' y='130' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>h2</text><line x1='200.0' y1='180.0' x2='200.0' y2='100.0' stroke='#568CBB' stroke-width='2'/><text x='204' y='138' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>h3</text><line x1='275.0' y1='180.0' x2='275.0' y2='65.0' stroke='#568CBB' stroke-width='2'/><text x='279' y='120' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>h4</text><line x1='350.0' y1='180.0' x2='350.0' y2='110.0' stroke='#568CBB' stroke-width='2'/><text x='354' y='143' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>h5</text><line x1='50.0' y1='194.0' x2='125.0' y2='194.0' stroke='#00242E' stroke-width='1'/><line x1='50.0' y1='189.0' x2='50.0' y2='199.0' stroke='#00242E' stroke-width='1'/><line x1='125.0' y1='189.0' x2='125.0' y2='199.0' stroke='#00242E' stroke-width='1'/><text x='88' y='208' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>d</text><text x='200' y='22' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Trapezoidal rule: Area ≈ d (h1/2 + h2 + h3 + h4 + h5/2)</text><text x='200' y='38' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>each strip is a trapezoid; equal spacing d</text>",
+     "alt": "Area of an irregular boundary by offsets: perpendicular offsets h at equal spacing d from a baseline split the area into trapezoids, which are summed.",
+     "caption": "Area of an irregular boundary by offsets: perpendicular offsets h at equal spacing d from a baseline split the area into trapezoids, which are summed."
+    }
+   ],
+   "play": {
+    "intro": "Surveying is 6 to 9 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Area from coordinates",
+      "Cross-multiply (shoelace): Area = ½ |Σ (xi yi+1 - xi+1 yi)|."
+     ],
+     [
+      "Irregular boundary with offsets",
+      "Trapezoidal rule or Simpson's rule (odd number of offsets)."
+     ],
+     [
+      "Unit conversion",
+      "1 acre = 43,560 ft²; 1 ha = 10,000 m²."
+     ]
+    ],
+    "types": [
+     {
+      "id": "surveying-0002",
+      "ask": "What is its area?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "area by coordinates"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0008",
+      "ask": "What is the area of the parcel?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "trigonometry"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0012",
+      "ask": "Using the trapezoidal rule, what is the area between the baseline and the boundary?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "trapezoidal rule"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0020",
+      "ask": "Using Simpson's 1/3 rule, what is the area between the baseline and the boundary?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "Simpson's 1/3 rule"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0021",
+      "ask": "What is its area?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "area formulas"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0022",
+      "ask": "What is its area in acres?",
+      "section": "Units and Conversion Factors",
+      "page": "1–3",
+      "find": [
+       "acre"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "x_{i}",
@@ -663,6 +876,101 @@
    "leads": [],
    "work": "Cut and fill quantities on a road project come from end areas at each cross-section.",
    "terms": [],
+   "figures": [
+    {
+     "viewBox": "0 0 400 206",
+     "svg": "<line x1='40.0' y1='190.0' x2='190.0' y2='130.0' stroke='#E7E8E8' stroke-width='1.2' stroke-dasharray='6 4'/><line x1='170.0' y1='190.0' x2='350.0' y2='130.0' stroke='#E7E8E8' stroke-width='1.2' stroke-dasharray='6 4'/><line x1='145.0' y1='135.0' x2='315.0' y2='60.0' stroke='#E7E8E8' stroke-width='1.2' stroke-dasharray='6 4'/><line x1='65.0' y1='135.0' x2='220.0' y2='60.0' stroke='#E7E8E8' stroke-width='1.2' stroke-dasharray='6 4'/><path d='M190.0 130.0 L350.0 130.0 L315.0 60.0 L220.0 60.0 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><path d='M40.0 190.0 L170.0 190.0 L145.0 135.0 L65.0 135.0 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='105' y='172' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>A1</text><text x='285' y='102' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>A2</text><line x1='170.0' y1='190.0' x2='360.0' y2='130.0' stroke='#00242E' stroke-width='1'/><text x='250' y='186' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>L: distance between stations</text><text x='30' y='30' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>Average end area:</text><text x='30' y='46' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>V = L (A1 + A2) / 2</text><text x='30' y='62' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>cubic feet ÷ 27 = cubic yards</text><text x='30' y='80' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Slightly high; the prismoidal</text><text x='30' y='92' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>formula is more exact.</text>",
+     "alt": "The average end area method: the earthwork volume between two stations is the distance between them times the average of the two cross-section areas.",
+     "caption": "The average end area method: the earthwork volume between two stations is the distance between them times the average of the two cross-section areas."
+    }
+   ],
+   "play": {
+    "intro": "Surveying is 6 to 9 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Volume between two sections",
+      "Average end area: L (A1 + A2)/2. Divide ft³ by 27 for yd³."
+     ],
+     [
+      "More exact volume",
+      "Prismoidal: L (A1 + 4 Am + A2)/6."
+     ],
+     [
+      "Swell or shrinkage",
+      "Loose = bank × (1 + swell); compacted = bank × (1 - shrinkage)."
+     ],
+     [
+      "Mass diagram",
+      "Rising: cut; falling: fill; a horizontal line gives balanced haul."
+     ]
+    ],
+    "types": [
+     {
+      "id": "surveying-0003",
+      "ask": "Using the average end area method, what is the volume of cut between them?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "average end area"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0009",
+      "ask": "What volume is excavated?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "earthwork formulas"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0015",
+      "ask": "Using the prismoidal formula, what is the volume?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "prismoidal formula"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0023",
+      "ask": "What bank volume must be excavated from the borrow pit?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0024",
+      "ask": "What is the cross-sectional area of the cut?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "earthwork formulas"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0025",
+      "ask": "What is its volume?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "right circular cone"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "A_{1}",
@@ -753,7 +1061,7 @@
      "value": 196.561806,
      "figure": {
       "viewBox": "0 0 400 200",
-      "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='265' y2='53' stroke='#00574A' stroke-width='3'/><path d='M274 46 L261 49 L268 58 Z' fill='#00574A'/><circle cx='200' cy='100' r='4' fill='#00242E'/><text x='284' y='40' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>264.50 m, azimuth 48°</text>",
+      "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='9.8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='265' y2='53' stroke='#00574A' stroke-width='3'/><path d='M274 46 L261 49 L268 58 Z' fill='#00574A'/><circle cx='200' cy='100' r='4' fill='#00242E'/><text x='284' y='40' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>264.50 m, azimuth 48°</text>",
       "alt": "A line drawn from the origin at an azimuth of 48° clockwise from north."
      }
     },
@@ -850,6 +1158,97 @@
      "a direction given as an angle measured clockwise from north, from 0° to 360°"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 256",
+     "svg": "<line x1='80.0' y1='170.0' x2='290.0' y2='179.5' stroke='#00574A' stroke-width='2.5'/><path d='M300.0 180.0 L290.2 174.6 L289.8 184.5 Z' fill='#00574A'/><line x1='300.0' y1='180.0' x2='345.9' y2='79.1' stroke='#00574A' stroke-width='2.5'/><path d='M350.0 70.0 L341.3 77.0 L350.4 81.2 Z' fill='#00574A'/><line x1='350.0' y1='70.0' x2='159.9' y2='41.5' stroke='#00574A' stroke-width='2.5'/><path d='M150.0 40.0 L159.1 46.4 L160.6 36.5 Z' fill='#00574A'/><line x1='150.0' y1='40.0' x2='94.5' y2='149.1' stroke='#00574A' stroke-width='2.5'/><path d='M90.0 158.0 L99.0 151.4 L90.1 146.8 Z' fill='#00574A'/><circle cx='80.0' cy='170.0' r='4' fill='#00242E'/><circle cx='300.0' cy='180.0' r='4' fill='#00242E'/><circle cx='350.0' cy='70.0' r='4' fill='#00242E'/><circle cx='150.0' cy='40.0' r='4' fill='#00242E'/><text x='72' y='184' text-anchor='end' font-size='11' font-weight='600' fill='#00242E'>A (start)</text><text x='292' y='196' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>B</text><text x='360' y='66' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>C</text><text x='146' y='32' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>D</text><line x1='300.0' y1='180.0' x2='350.0' y2='180.0' stroke='#568CBB' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='350.0' y1='180.0' x2='350.0' y2='70.0' stroke='#568CBB' stroke-width='1.5' stroke-dasharray='6 4'/><text x='326' y='196' text-anchor='middle' font-size='10' font-weight='400' fill='#568CBB'>departure</text><text x='356' y='128' text-anchor='start' font-size='10' font-weight='400' fill='#568CBB'>latitude</text><line x1='90.0' y1='158.0' x2='84.5' y2='164.6' stroke='#FF6622' stroke-width='2'/><path d='M80.0 170.0 L87.2 166.9 L81.8 162.4 Z' fill='#FF6622'/><text x='98' y='150' text-anchor='start' font-size='11' font-weight='600' fill='#FF6622'>misclosure</text><text x='10' y='222' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Latitude = L cos(azimuth)</text><text x='10' y='235' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Departure = L sin(azimuth)</text><text x='10' y='248' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Closed loop: ΣLat = ΣDep = 0</text><text x='210' y='222' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Misclosure = √(ΣLat² + ΣDep²)</text><text x='210' y='235' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Precision = misclosure / perimeter</text>",
+     "alt": "A closed traverse whose measured legs do not quite return to the start: each leg splits into a latitude and a departure, and the leftover sums give the linear misclosure.",
+     "caption": "A closed traverse whose measured legs do not quite return to the start: each leg splits into a latitude and a departure, and the leftover sums give the linear misclosure."
+    }
+   ],
+   "play": {
+    "intro": "Surveying is 6 to 9 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Coordinates of the next point",
+      "Latitude = L cos(az), departure = L sin(az); add to the previous N and E."
+     ],
+     [
+      "Traverse misclosure and precision",
+      "Misclosure = √(ΣLat² + ΣDep²); precision = 1 : (perimeter / misclosure)."
+     ],
+     [
+      "Adjusting a traverse (compass rule)",
+      "Correction to each leg = -(total error) × (leg length / perimeter)."
+     ]
+    ],
+    "types": [
+     {
+      "id": "surveying-0010",
+      "ask": "What is its departure (east-west component)?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "latitude"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0011",
+      "ask": "What is the northing of B?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "latitude"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0013",
+      "ask": "What is the azimuth of the line from A to B?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "latitude"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0026",
+      "ask": "What is the horizontal distance from A to B?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "latitude"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0027",
+      "ask": "What is N?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "latitude"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0028",
+      "ask": "What is the grid distance?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "L",
@@ -1012,6 +1411,89 @@
      "a level-rod reading taken on a point whose elevation is wanted"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 206",
+     "svg": "<path d='M10 190 L120 180 L240 140 L390 110' fill='none' stroke='#00242E' stroke-width='2'/><rect x='30.0' y='120.0' width='6.0' height='66.0' fill='#FFFFFF' stroke='#00242E' stroke-width='1'/><text x='33' y='112' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>BM</text><rect x='180.0' y='90.0' width='6.0' height='72.0' fill='#FFFFFF' stroke='#00242E' stroke-width='1'/><text x='183' y='82' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>TP</text><rect x='340.0' y='54.0' width='6.0' height='64.0' fill='#FFFFFF' stroke='#00242E' stroke-width='1'/><text x='343' y='46' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>B</text><line x1='95.0' y1='180.0' x2='105.0' y2='120.0' stroke='#00242E' stroke-width='1.5'/><line x1='115.0' y1='180.0' x2='105.0' y2='120.0' stroke='#00242E' stroke-width='1.5'/><rect x='95.0' y='110.0' width='20.0' height='10.0' fill='#00242E' stroke='#00242E' stroke-width='1'/><line x1='36.0' y1='115.0' x2='95.0' y2='115.0' stroke='#568CBB' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='115.0' y1='115.0' x2='180.0' y2='115.0' stroke='#00574A' stroke-width='1.5' stroke-dasharray='6 4'/><text x='69' y='110' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>BS</text><text x='144' y='110' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>FS</text><line x1='255.0' y1='144.0' x2='265.0' y2='84.0' stroke='#00242E' stroke-width='1.5'/><line x1='275.0' y1='144.0' x2='265.0' y2='84.0' stroke='#00242E' stroke-width='1.5'/><rect x='255.0' y='74.0' width='20.0' height='10.0' fill='#00242E' stroke='#00242E' stroke-width='1'/><line x1='186.0' y1='79.0' x2='255.0' y2='79.0' stroke='#568CBB' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='275.0' y1='79.0' x2='340.0' y2='79.0' stroke='#00574A' stroke-width='1.5' stroke-dasharray='6 4'/><text x='224' y='74' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>BS</text><text x='304' y='74' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>FS</text><text x='10' y='30' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Height of instrument HI = elevation + backsight (BS)</text><text x='10' y='45' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>New elevation = HI - foresight (FS)</text><text x='10' y='60' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Elev B = Elev BM + ΣBS - ΣFS</text>",
+     "alt": "Differential leveling through a turning point: each setup adds the backsight to get the height of instrument and subtracts the foresight; overall, elevation of B = BM + sum of backsights - sum of foresights.",
+     "caption": "Differential leveling through a turning point: each setup adds the backsight to get the height of instrument and subtracts the foresight; overall, elevation of B = BM + sum of backsights - sum of foresights."
+    }
+   ],
+   "play": {
+    "intro": "Surveying is 6 to 9 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Elevation from rod readings",
+      "Elev = BM + ΣBS - ΣFS. Make a BS / HI / FS / Elev table."
+     ],
+     [
+      "Curvature and refraction",
+      "Copy the handbook formula; distance in thousands of feet or km."
+     ],
+     [
+      "Trigonometric leveling",
+      "Δh = S sin(vertical angle) + HI - rod reading."
+     ]
+    ],
+    "types": [
+     {
+      "id": "surveying-0001",
+      "ask": "What is the elevation of the new point?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0005",
+      "ask": "What is the grade?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0029",
+      "ask": "What is the new point's elevation?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0030",
+      "ask": "Using c = 0.0675 K^{2}, with c in metres and K in kilometres, what is the combined correction for earth curvature and refraction on a...",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0031",
+      "ask": "What is its elevation 350 m farther along?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "surveying-0032",
+      "ask": "How much higher is the ground at the rod than the ground at the instrument?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "trigonometry"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "c",

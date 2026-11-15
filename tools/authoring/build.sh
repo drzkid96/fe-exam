@@ -19,5 +19,8 @@ python3 author_ex.py
 python3 author_deep.py
 python3 author_rev.py
 python3 author_me.py
+python3 author_concept.py
+python3 author_play.py
 python3 author_sym.py | head -3
+python3 author_fitfig.py
 cd "$REPO" && python3 tools/verify_answers.py | tail -3 && python3 tools/validate.py | tail -1

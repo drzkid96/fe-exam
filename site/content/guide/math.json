@@ -79,6 +79,19 @@
     ],
     "links": "Statics uses trigonometry and vectors for forces. Beam diagrams and centroids use areas. Surveying is trigonometry. Traffic and hydrology use statistics.",
     "exam": "The handbook lists the formulas. The skill tested is choosing one and using the calculator well."
+   },
+   "figures": [
+    {
+     "viewBox": "0 0 540 180",
+     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Math</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Comes back in</text><text x='360' y='55' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Statics A: Resultants</text><line x1='338.0' y1='51.0' x2='356.0' y2='51.0' stroke='#00574A' stroke-width='1'/><line x1='338.0' y1='115.0' x2='356.0' y2='51.0' stroke='#00574A' stroke-width='1'/><text x='360' y='70' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Statics E: Centroids</text><line x1='338.0' y1='83.0' x2='356.0' y2='66.1' stroke='#00574A' stroke-width='1'/><text x='360' y='85' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Dynamics A: Kinematics</text><line x1='338.0' y1='83.0' x2='356.0' y2='81.3' stroke='#00574A' stroke-width='1'/><text x='360' y='100' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Surveying A: Angles, distances</text><line x1='338.0' y1='51.0' x2='356.0' y2='96.4' stroke='#00574A' stroke-width='1'/><text x='360' y='116' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Transport A: Geometric design</text><line x1='338.0' y1='51.0' x2='356.0' y2='111.6' stroke='#00574A' stroke-width='1'/><text x='360' y='131' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Transport C: Traffic flow</text><line x1='338.0' y1='147.0' x2='356.0' y2='126.7' stroke='#00574A' stroke-width='1'/><text x='360' y='146' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Transport E: Planning</text><line x1='338.0' y1='147.0' x2='356.0' y2='141.9' stroke='#00574A' stroke-width='1'/><text x='360' y='161' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Econ D: Uncertainty</text><line x1='338.0' y1='147.0' x2='356.0' y2='157.0' stroke='#00574A' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>1. Lines and curves (A)</text><rect x='198.0' y='72.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='86' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>2. Calculus (B)</text><rect x='198.0' y='104.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='118' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>3. Vectors (C)</text><rect x='198.0' y='136.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='150' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>4. Statistics (D)</text>",
+     "alt": "How Mathematics and Statistics connects: the subtopics in a suggested study order, the earlier topics to refresh first, and the later topics that use this one.",
+     "caption": "How this topic connects. The middle column is a suggested study order; the left column lists earlier lessons to refresh first; the right column shows where this topic is used again."
+    }
+   ],
+   "play": {
+    "intro": "Mathematics and Statistics: 8 to 12 of the 110 exam questions. At about 2.9 minutes a question, that is roughly 23 to 35 minutes of the exam. The handbook lists the formulas. The skill tested is choosing one and using the calculator well. Work the lessons below in the order of the map; open each lesson's playbook first.",
+    "rows": [],
+    "types": []
    }
   },
   {
@@ -263,6 +276,125 @@
     ]
    ],
    "terms": [],
+   "figures": [
+    {
+     "viewBox": "0 0 400 215",
+     "svg": "<line x1='50.0' y1='190.0' x2='372.0' y2='190.0' stroke='#00242E' stroke-width='1.5'/><path d='M380.0 190.0 L372.0 186.0 L372.0 194.0 Z' fill='#00242E'/><line x1='50.0' y1='190.0' x2='50.0' y2='26.0' stroke='#00242E' stroke-width='1.5'/><path d='M50.0 18.0 L46.0 26.0 L54.0 26.0 Z' fill='#00242E'/><text x='380' y='206' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='56' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='50.0' y1='160.0' x2='320.0' y2='25.0' stroke='#00574A' stroke-width='2.5'/><circle cx='50.0' cy='160.0' r='4' fill='#00574A'/><text x='58' y='174' text-anchor='start' font-size='11' font-weight='400' fill='#00574A'>b, where the line crosses the y-axis</text><line x1='110.0' y1='130.0' x2='230.0' y2='130.0' stroke='#00242E' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='230.0' y1='130.0' x2='230.0' y2='70.0' stroke='#00242E' stroke-width='1.5' stroke-dasharray='6 4'/><text x='170' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>run = 4</text><text x='224' y='104' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>rise = 2</text><text x='86' y='43' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>y = m x + b</text><text x='86' y='58' text-anchor='start' font-size='11' font-weight='400' fill='#00574A'>m = rise / run = 2 / 4 = 0.5</text><line x1='207.5' y1='25.0' x2='290.0' y2='190.0' stroke='#568CBB' stroke-width='2.5'/><text x='293' y='172' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>perpendicular line:</text><text x='293' y='186' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>slope = -1 / m = -2</text><path d='M238.0 66.0 L242.1 74.0 L234.0 78.0' fill='none' stroke='#00242E' stroke-width='1'/>",
+     "alt": "A straight line y = m x + b: the slope m is rise over run, b is where it crosses the y-axis, and a perpendicular line has slope -1 / m.",
+     "caption": "A straight line y = m x + b: the slope m is rise over run, b is where it crosses the y-axis, and a perpendicular line has slope -1 / m."
+    }
+   ],
+   "play": {
+    "intro": "Mathematics and Statistics is 8 to 12 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Gives two points and asks for a slope, distance or midpoint",
+      "Slope = Δy/Δx; distance = √(Δx² + Δy²); midpoint = averages. No handbook needed."
+     ],
+     [
+      "Asks for a line perpendicular or parallel to another",
+      "Parallel: same slope. Perpendicular: slope = -1/m. Plug one point into y - y1 = m (x - x1)."
+     ],
+     [
+      "Gives an equation like x² + y² + Dx + Ey + F = 0",
+      "Complete the square to get the centre and radius; or check the answer choices by substituting."
+     ],
+     [
+      "Asks for an area or volume of a standard shape",
+      "Open the Mensuration of Areas and Volumes pages and copy the formula. Do not derive."
+     ]
+    ],
+    "types": [
+     {
+      "id": "math-0001",
+      "ask": "What is its y-intercept?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "straight line"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0006",
+      "ask": "What is its radius?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "conic sections"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0007",
+      "ask": "What is the straight-line distance between the points (1, 2) and (7, 10)?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "distance between two points"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0008",
+      "ask": "How long is the third side?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "law of cosines"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0020",
+      "ask": "What is the slope of a line perpendicular to it?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "straight line"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0021",
+      "ask": "What is the length of the side opposite a 45° angle?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "law of sines"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0022",
+      "ask": "What is the perpendicular distance from the point (2, 6) to the line 3x + 4y + (-10) = 0?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "straight line"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0023",
+      "ask": "What is the arc length?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "circular sector"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "y_{2}",
@@ -520,6 +652,147 @@
     ]
    ],
    "terms": [],
+   "figures": [
+    {
+     "viewBox": "0 0 400 200",
+     "svg": "<line x1='30.0' y1='175.0' x2='187.0' y2='175.0' stroke='#00242E' stroke-width='1.5'/><path d='M195.0 175.0 L187.0 171.0 L187.0 179.0 Z' fill='#00242E'/><line x1='30.0' y1='175.0' x2='30.0' y2='28.0' stroke='#00242E' stroke-width='1.5'/><path d='M30.0 20.0 L26.0 28.0 L34.0 28.0 Z' fill='#00242E'/><text x='195' y='191' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='36' y='24' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='215.0' y1='175.0' x2='382.0' y2='175.0' stroke='#00242E' stroke-width='1.5'/><path d='M390.0 175.0 L382.0 171.0 L382.0 179.0 Z' fill='#00242E'/><line x1='215.0' y1='175.0' x2='215.0' y2='28.0' stroke='#00242E' stroke-width='1.5'/><path d='M215.0 20.0 L211.0 28.0 L219.0 28.0 Z' fill='#00242E'/><text x='390' y='191' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='221' y='24' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><path d='M40.0 168.0 L42.4 160.1 L44.8 152.5 L47.2 145.2 L49.7 138.1 L52.1 131.3 L54.5 124.8 L56.9 118.5 L59.3 112.5 L61.8 106.8 L64.2 101.3 L66.6 96.1 L69.0 91.2 L71.4 86.5 L73.8 82.1 L76.2 78.0 L78.7 74.1 L81.1 70.5 L83.5 67.2 L85.9 64.1 L88.3 61.3 L90.8 58.8 L93.2 56.5 L95.6 54.5 L98.0 52.8 L100.4 51.3 L102.8 50.1 L105.2 49.2 L107.7 48.5 L110.1 48.1 L112.5 48.0 L114.9 48.1 L117.3 48.5 L119.8 49.2 L122.2 50.1 L124.6 51.3 L127.0 52.8 L129.4 54.5 L131.8 56.5 L134.2 58.8 L136.7 61.3 L139.1 64.1 L141.5 67.2 L143.9 70.5 L146.3 74.1 L148.8 78.0 L151.2 82.1 L153.6 86.5 L156.0 91.2 L158.4 96.1 L160.8 101.3 L163.2 106.8 L165.7 112.5 L168.1 118.5 L170.5 124.8 L172.9 131.3 L175.3 138.1 L177.8 145.2 L180.2 152.5 L182.6 160.1 L185.0 168.0' fill='none' stroke='#1B795A' stroke-width='2.5'/><line x1='47.0' y1='134.9' x2='87.0' y2='55.4' stroke='#00574A' stroke-width='2'/><circle cx='69.0' cy='91.2' r='4' fill='#00574A'/><text x='115' y='140' text-anchor='middle' font-size='11' font-weight='400' fill='#00574A'>slope of the tangent</text><text x='115' y='154' text-anchor='middle' font-size='11' font-weight='400' fill='#00574A'>= derivative dy/dx</text><line x1='78.5' y1='48.0' x2='146.5' y2='48.0' stroke='#00574A' stroke-width='2' stroke-dasharray='6 4'/><circle cx='112.5' cy='48.0' r='4' fill='#00574A'/><text x='112' y='38' text-anchor='middle' font-size='11' font-weight='400' fill='#00574A'>peak: dy/dx = 0</text><path d='M263.8 168.0 L263.8 118.9 L266.6 117.7 L269.4 116.6 L272.3 115.6 L275.1 114.5 L278.0 113.6 L280.8 112.6 L283.6 111.7 L286.5 110.8 L289.3 110.0 L292.2 109.1 L295.0 108.4 L297.9 107.6 L300.7 106.9 L303.5 106.3 L306.4 105.6 L309.2 105.0 L312.1 104.5 L314.9 104.0 L317.7 103.5 L320.6 103.0 L323.4 102.6 L326.3 102.2 L329.1 101.9 L331.9 101.6 L334.8 101.3 L337.6 101.1 L340.5 100.9 L343.3 100.8 L346.2 100.6 L349.0 100.6 L349.0 168.0 Z' fill='#D9F1D6' stroke='none' stroke-width='0'/><path d='M225.0 138.0 L227.6 136.5 L230.2 135.1 L232.8 133.6 L235.3 132.2 L237.9 130.9 L240.5 129.5 L243.1 128.2 L245.7 127.0 L248.2 125.7 L250.8 124.5 L253.4 123.3 L256.0 122.2 L258.6 121.0 L261.2 119.9 L263.8 118.9 L266.3 117.8 L268.9 116.8 L271.5 115.9 L274.1 114.9 L276.7 114.0 L279.2 113.1 L281.8 112.3 L284.4 111.4 L287.0 110.6 L289.6 109.9 L292.2 109.1 L294.8 108.4 L297.3 107.8 L299.9 107.1 L302.5 106.5 L305.1 105.9 L307.7 105.4 L310.2 104.8 L312.8 104.3 L315.4 103.9 L318.0 103.4 L320.6 103.0 L323.2 102.7 L325.8 102.3 L328.3 102.0 L330.9 101.7 L333.5 101.5 L336.1 101.2 L338.7 101.0 L341.2 100.9 L343.8 100.7 L346.4 100.6 L349.0 100.6 L351.6 100.5 L354.2 100.5 L356.8 100.5 L359.3 100.6 L361.9 100.6 L364.5 100.7 L367.1 100.9 L369.7 101.0 L372.2 101.2 L374.8 101.5 L377.4 101.7 L380.0 102.0' fill='none' stroke='#1B795A' stroke-width='2.5'/><text x='264' y='190' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>a</text><text x='349' y='190' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>b</text><text x='306' y='142' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>area under the curve</text><text x='306' y='156' text-anchor='middle' font-size='11' font-weight='400' fill='#00574A'>= integral from a to b</text>",
+     "alt": "Left: the derivative is the slope of the tangent, and it is zero at a peak. Right: the integral from a to b is the area under the curve.",
+     "caption": "Left: the derivative is the slope of the tangent, and it is zero at a peak. Right: the integral from a to b is the area under the curve."
+    }
+   ],
+   "play": {
+    "intro": "Mathematics and Statistics is 8 to 12 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Asks for a slope, rate or \"derivative at x =\"",
+      "Differentiate term by term, then plug in. Check by evaluating f at x ± 0.001 on the calculator if unsure."
+     ],
+     [
+      "Asks for a maximum or minimum",
+      "Set f′(x) = 0 and solve. If the choices are numbers, plug each into f and pick the largest or smallest."
+     ],
+     [
+      "Asks for an area under a curve or a definite integral",
+      "Integrate and subtract limits, or use the calculator's numeric integral if it has one (TI-36X Pro does)."
+     ],
+     [
+      "Asks for a limit giving 0/0",
+      "L'Hôpital: differentiate top and bottom separately, then plug in. Or plug in a number very close to the limit."
+     ]
+    ],
+    "types": [
+     {
+      "id": "math-0002",
+      "ask": "Find the area between the curve y = 3x^{2} and the x-axis from x = 0 to x = 2.",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "integral calculus"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0009",
+      "ask": "What is the slope of the curve y = x^{3} - 6x at x = 2?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "differential calculus"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0010",
+      "ask": "What is the maximum value of f(x) = -2x^{2} + 12x + 5?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "test for a maximum"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0011",
+      "ask": "How far does it travel between t = 0 and t = 3 s?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "integral calculus"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0018",
+      "ask": "What is the area enclosed between the line y = 3x and the parabola y = x^{2}?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "integral calculus"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0024",
+      "ask": "What is the average value of f(x) = 3x^{2} + 2 over the interval from x = 0 to x = 4?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "integral calculus"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0025",
+      "ask": "At what value of x does f(x) = x^{3} - 6x^{2} + 5x have its inflection point?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "differential calculus"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0026",
+      "ask": "What is its acceleration at t = 3 s?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "differential calculus"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0027",
+      "ask": "What fraction of it remains after 12 years?",
+      "section": "Environmental Engineering",
+      "page": "310–354",
+      "find": [
+       "half-life"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0028",
+      "ask": "For f(x, y) = 3x^{2}y + 1y^{3}, what is the partial derivative of f with respect to x at the point (3, 5)?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "differential calculus"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "x",
@@ -690,6 +963,103 @@
     ]
    ],
    "terms": [],
+   "figures": [
+    {
+     "viewBox": "0 0 400 205",
+     "svg": "<line x1='20.0' y1='170.0' x2='205.0' y2='170.0' stroke='#E7E8E8' stroke-width='1'/><line x1='40.0' y1='170.0' x2='130.7' y2='133.7' stroke='#00574A' stroke-width='2.5'/><path d='M140.0 130.0 L128.9 129.1 L132.6 138.4 Z' fill='#00574A'/><line x1='140.0' y1='130.0' x2='175.5' y2='58.9' stroke='#1B795A' stroke-width='2.5'/><path d='M180.0 50.0 L171.1 56.7 L180.0 61.2 Z' fill='#1B795A'/><line x1='40.0' y1='170.0' x2='172.4' y2='56.5' stroke='#568CBB' stroke-width='3'/><path d='M180.0 50.0 L169.2 52.7 L175.7 60.3 Z' fill='#568CBB'/><line x1='40.0' y1='170.0' x2='140.0' y2='170.0' stroke='#00242E' stroke-width='1.2' stroke-dasharray='6 4'/><line x1='140.0' y1='170.0' x2='140.0' y2='130.0' stroke='#00242E' stroke-width='1.2' stroke-dasharray='6 4'/><text x='90' y='186' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Ax</text><text x='146' y='158' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Ay</text><text x='86' y='142' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>A</text><text x='170' y='94' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><text x='100' y='106' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>A + B</text><text x='12' y='18' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Tip to tail: add x parts, then y parts</text><line x1='240.0' y1='170.0' x2='363.1' y2='148.3' stroke='#00574A' stroke-width='2.5'/><path d='M372.9 146.6 L362.2 143.4 L364.0 153.2 Z' fill='#00574A'/><line x1='240.0' y1='170.0' x2='291.6' y2='96.3' stroke='#1B795A' stroke-width='2.5'/><path d='M297.4 88.1 L287.5 93.4 L295.7 99.1 Z' fill='#1B795A'/><line x1='297.4' y1='88.1' x2='309.6' y2='157.7' stroke='#00242E' stroke-width='1.2' stroke-dasharray='6 4'/><line x1='240.0' y1='176.0' x2='309.6' y2='163.7' stroke='#568CBB' stroke-width='3'/><path d='M273.5 164.1 A34 34 0 0 0 259.5 142.1' fill='none' stroke='#00242E' stroke-width='1.5'/><text x='280' y='152' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>θ</text><text x='373' y='163' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>A</text><text x='293' y='82' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>B</text><text x='275' y='184' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>|B| cos θ</text><text x='315' y='18' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>A · B = |A| |B| cos θ</text>",
+     "alt": "Left: vectors add tip to tail, component by component. Right: the dot product is |A| times the part of B that lies along A, |B| cos θ.",
+     "caption": "Left: vectors add tip to tail, component by component. Right: the dot product is |A| times the part of B that lies along A, |B| cos θ."
+    }
+   ],
+   "play": {
+    "intro": "Mathematics and Statistics is 8 to 12 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Asks for a resultant or magnitude",
+      "Add components; magnitude = √(x² + y² + z²)."
+     ],
+     [
+      "Asks for the angle between two vectors",
+      "cos θ = A·B / (|A||B|). Dot product = Ax Bx + Ay By + Az Bz."
+     ],
+     [
+      "Asks for a cross product, moment vector or area of a parallelogram",
+      "Use the 3×3 determinant (i j k / A / B). The calculator's vector mode does it in seconds."
+     ],
+     [
+      "Asks for a unit vector or a component along a direction",
+      "Unit vector = A / |A|. Component of F along u = F·u."
+     ]
+    ],
+    "types": [
+     {
+      "id": "math-0003",
+      "ask": "What is the angle between them?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "dot product"
+      ],
+      "time": "about 3 min",
+      "n": 3
+     },
+     {
+      "id": "math-0012",
+      "ask": "For the plane vectors A = (2, 3) and B = (4, -1), what is the magnitude of the cross product A × B?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "cross product"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0013",
+      "ask": "What is the magnitude of the vector with components (3, -4, 12)?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "vectors"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0029",
+      "ask": "What is its area?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "cross product"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0030",
+      "ask": "What is the x-component of the unit vector in the direction of (2, -3, 6)?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "unit vector"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0031",
+      "ask": "What is the scalar projection of A = (6, 8) onto B = (3, 4)?",
+      "section": "Mathematics",
+      "page": "34–62",
+      "find": [
+       "dot product"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "A_{x}",
@@ -899,6 +1269,162 @@
     ]
    ],
    "terms": [],
+   "figures": [
+    {
+     "viewBox": "0 0 400 205",
+     "svg": "<path d='M96.0 175.0 L96.0 157.4 L101.2 153.6 L106.4 149.3 L111.6 144.4 L116.8 138.9 L122.0 132.8 L127.2 126.2 L132.4 119.2 L137.6 111.7 L142.8 104.0 L148.0 96.2 L153.2 88.3 L158.4 80.6 L163.6 73.2 L168.8 66.4 L174.0 60.3 L179.2 55.0 L184.4 50.7 L189.6 47.6 L194.8 45.6 L200.0 45.0 L205.2 45.6 L210.4 47.6 L215.6 50.7 L220.8 55.0 L226.0 60.3 L231.2 66.4 L236.4 73.2 L241.6 80.6 L246.8 88.3 L252.0 96.2 L257.2 104.0 L262.4 111.7 L267.6 119.2 L272.8 126.2 L278.0 132.8 L283.2 138.9 L288.4 144.4 L293.6 149.3 L298.8 153.6 L304.0 157.4 L304.0 175.0 Z' fill='#EEEDE8' stroke='none' stroke-width='0'/><path d='M148.0 175.0 L148.0 96.2 L150.6 92.2 L153.2 88.3 L155.8 84.4 L158.4 80.6 L161.0 76.9 L163.6 73.2 L166.2 69.8 L168.8 66.4 L171.4 63.2 L174.0 60.3 L176.6 57.5 L179.2 55.0 L181.8 52.7 L184.4 50.7 L187.0 49.0 L189.6 47.6 L192.2 46.5 L194.8 45.6 L197.4 45.2 L200.0 45.0 L202.6 45.2 L205.2 45.6 L207.8 46.5 L210.4 47.6 L213.0 49.0 L215.6 50.7 L218.2 52.7 L220.8 55.0 L223.4 57.5 L226.0 60.3 L228.6 63.2 L231.2 66.4 L233.8 69.8 L236.4 73.2 L239.0 76.9 L241.6 80.6 L244.2 84.4 L246.8 88.3 L249.4 92.2 L252.0 96.2 L252.0 175.0 Z' fill='#D9F1D6' stroke='none' stroke-width='0'/><path d='M23.2 174.6 L27.6 174.5 L32.0 174.3 L36.5 174.1 L40.9 173.8 L45.3 173.4 L49.7 173.0 L54.1 172.5 L58.6 171.8 L63.0 171.0 L67.4 170.0 L71.8 168.8 L76.2 167.3 L80.7 165.7 L85.1 163.7 L89.5 161.4 L93.9 158.8 L98.3 155.8 L102.8 152.4 L107.2 148.6 L111.6 144.4 L116.0 139.7 L120.4 134.7 L124.9 129.2 L129.3 123.4 L133.7 117.3 L138.1 111.0 L142.5 104.4 L147.0 97.7 L151.4 91.0 L155.8 84.4 L160.2 78.0 L164.6 71.8 L169.1 66.1 L173.5 60.9 L177.9 56.2 L182.3 52.3 L186.7 49.2 L191.2 46.9 L195.6 45.5 L200.0 45.0 L204.4 45.5 L208.8 46.9 L213.3 49.2 L217.7 52.3 L222.1 56.2 L226.5 60.9 L230.9 66.1 L235.4 71.8 L239.8 78.0 L244.2 84.4 L248.6 91.0 L253.0 97.7 L257.5 104.4 L261.9 111.0 L266.3 117.3 L270.7 123.4 L275.1 129.2 L279.6 134.7 L284.0 139.7 L288.4 144.4 L292.8 148.6 L297.2 152.4 L301.7 155.8 L306.1 158.8 L310.5 161.4 L314.9 163.7 L319.3 165.7 L323.8 167.3 L328.2 168.8 L332.6 170.0 L337.0 171.0 L341.4 171.8 L345.9 172.5 L350.3 173.0 L354.7 173.4 L359.1 173.8 L363.5 174.1 L368.0 174.3 L372.4 174.5 L376.8 174.6' fill='none' stroke='#1B795A' stroke-width='2.5'/><line x1='20.0' y1='175.0' x2='380.0' y2='175.0' stroke='#00242E' stroke-width='1.5'/><rect x='14.0' y='22.0' width='14.0' height='10.0' fill='#D9F1D6' stroke='#00242E' stroke-width='0.8'/><text x='32' y='31' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>about 68% within one σ</text><rect x='14.0' y='40.0' width='14.0' height='10.0' fill='#EEEDE8' stroke='#00242E' stroke-width='0.8'/><text x='32' y='49' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>about 95% within two σ</text><line x1='96.0' y1='175.0' x2='96.0' y2='181.0' stroke='#00242E' stroke-width='1.5'/><text x='96' y='195' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>μ - 2σ</text><line x1='148.0' y1='175.0' x2='148.0' y2='181.0' stroke='#00242E' stroke-width='1.5'/><text x='148' y='195' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>μ - σ</text><line x1='200.0' y1='175.0' x2='200.0' y2='181.0' stroke='#00242E' stroke-width='1.5'/><text x='200' y='195' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>μ</text><line x1='252.0' y1='175.0' x2='252.0' y2='181.0' stroke='#00242E' stroke-width='1.5'/><text x='252' y='195' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>μ + σ</text><line x1='304.0' y1='175.0' x2='304.0' y2='181.0' stroke='#00242E' stroke-width='1.5'/><text x='304' y='195' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>μ + 2σ</text><text x='390' y='30' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>μ = mean (centre)</text><text x='390' y='45' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>σ = standard deviation (spread)</text><text x='390' y='60' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>z = (x - μ) / σ</text>",
+     "alt": "A normal distribution: centred on the mean μ, with about 68% of values within one standard deviation σ of it and about 95% within two.",
+     "caption": "A normal distribution: centred on the mean μ, with about 68% of values within one standard deviation σ of it and about 95% within two."
+    }
+   ],
+   "play": {
+    "intro": "Mathematics and Statistics is 8 to 12 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Gives a short data set and asks for mean, median, mode or standard deviation",
+      "Use the calculator's 1-variable statistics. Check whether they want sample (n - 1) or population (n)."
+     ],
+     [
+      "Asks for a probability from a normal distribution",
+      "z = (x - μ)/σ, then read the unit normal table in the handbook. Sketch the bell to see which tail."
+     ],
+     [
+      "Asks for a confidence interval",
+      "mean ± z σ/√n (σ known) or ± t s/√n with n - 1 degrees of freedom. Find z or t in the handbook tables."
+     ],
+     [
+      "Asks for the best-fit line or correlation",
+      "Calculator 2-variable statistics gives slope, intercept and r directly."
+     ],
+     [
+      "Asks a counting or \"exactly k of n\" question",
+      "Combinations nCr for choices; binomial P = nCk p^k (1 - p)^(n - k)."
+     ]
+    ],
+    "types": [
+     {
+      "id": "math-0004",
+      "ask": "What is the sample standard deviation?",
+      "section": "Engineering Probability and Statistics",
+      "page": "63–84",
+      "find": [
+       "standard deviation"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0005",
+      "ask": "Which statements about a normal distribution are true?",
+      "section": "Engineering Probability and Statistics",
+      "page": "63–84",
+      "find": [
+       "normal distribution"
+      ],
+      "time": "about 1 min",
+      "n": 3
+     },
+     {
+      "id": "math-0014",
+      "ask": "What is the probability that the total is 7?",
+      "section": "Engineering Probability and Statistics",
+      "page": "63–84",
+      "find": [
+       "probability"
+      ],
+      "time": "about 3 min",
+      "n": 3
+     },
+     {
+      "id": "math-0015",
+      "ask": "What fraction of tests fall below 26 MPa?",
+      "section": "Engineering Probability and Statistics",
+      "page": "63–84",
+      "find": [
+       "unit normal"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0016",
+      "ask": "What is its slope?",
+      "section": "Engineering Probability and Statistics",
+      "page": "63–84",
+      "find": [
+       "least squares"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0017",
+      "ask": "In a sample of 5 items, what is the probability that exactly 2 are defective?",
+      "section": "Engineering Probability and Statistics",
+      "page": "63–84",
+      "find": [
+       "binomial distribution"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0019",
+      "ask": "In 5 trials, what is the probability of at least 4 successes?",
+      "section": "Engineering Probability and Statistics",
+      "page": "63–84",
+      "find": [
+       "binomial distribution"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0032",
+      "ask": "What is the half-width of the 95% confidence interval for the mean?",
+      "section": "Engineering Probability and Statistics",
+      "page": "63–84",
+      "find": [
+       "confidence interval"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0033",
+      "ask": "What is its coefficient of variation, using the sample standard deviation?",
+      "section": "Engineering Probability and Statistics",
+      "page": "63–84",
+      "find": [
+       "coefficient of variation"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0034",
+      "ask": "What is the probability that both are red?",
+      "section": "Engineering Probability and Statistics",
+      "page": "63–84",
+      "find": [
+       "joint probability"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "math-0035",
+      "ask": "In how many different ways can a team of 3 be chosen from 8 people, if the order of selection does not matter?",
+      "section": "Engineering Probability and Statistics",
+      "page": "63–84",
+      "find": [
+       "combinations"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "S_{xy}",

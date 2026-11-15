@@ -85,6 +85,19 @@
     ],
     "links": "It applies statics (reactions, trusses) and mechanics of materials (stress, deflection, buckling), and uses material strengths. Foundations hand the loads to geotechnics.",
     "exam": "Design questions follow the steel and concrete code extracts printed in the handbook."
+   },
+   "figures": [
+    {
+     "viewBox": "0 0 540 270",
+     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Structural</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Comes back in</text><text x='182' y='55' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Statics C: Equilibrium</text><line x1='186.0' y1='51.0' x2='198.0' y2='51.0' stroke='#568CBB' stroke-width='1'/><text x='182' y='88' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Mechanics A: Shear and moment</text><line x1='186.0' y1='83.7' x2='198.0' y2='51.0' stroke='#568CBB' stroke-width='1'/><text x='182' y='120' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Mechanics C: Deformations</text><line x1='186.0' y1='116.3' x2='198.0' y2='78.2' stroke='#568CBB' stroke-width='1'/><text x='182' y='153' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Mechanics B: Stress and strain</text><line x1='186.0' y1='149.0' x2='198.0' y2='105.5' stroke='#568CBB' stroke-width='1'/><line x1='186.0' y1='149.0' x2='198.0' y2='214.5' stroke='#568CBB' stroke-width='1'/><line x1='186.0' y1='149.0' x2='198.0' y2='241.8' stroke='#568CBB' stroke-width='1'/><text x='182' y='186' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Statics F: Moment of inertia</text><line x1='186.0' y1='181.7' x2='198.0' y2='105.5' stroke='#568CBB' stroke-width='1'/><text x='182' y='218' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Statics D: Trusses, frames</text><line x1='186.0' y1='214.3' x2='198.0' y2='132.8' stroke='#568CBB' stroke-width='1'/><text x='182' y='251' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Materials C: Material properties</text><line x1='186.0' y1='247.0' x2='198.0' y2='241.8' stroke='#568CBB' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>1. Determinate analysis (A)</text><rect x='198.0' y='67.2' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='82' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>2. Deflection (B)</text><rect x='198.0' y='94.5' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='109' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>3. Columns (C)</text><rect x='198.0' y='121.8' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='136' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>4. Determinacy (D)</text><rect x='198.0' y='149.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='164' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>5. Indeterminate (E)</text><rect x='198.0' y='176.2' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='191' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>6. Loads, load paths (F)</text><rect x='198.0' y='203.5' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='218' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>7. Steel design (G)</text><rect x='198.0' y='230.8' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='245' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>8. Concrete design (H)</text>",
+     "alt": "How Structural Engineering connects: the subtopics in a suggested study order, the earlier topics to refresh first, and the later topics that use this one.",
+     "caption": "How this topic connects. The middle column is a suggested study order; the left column lists earlier lessons to refresh first; the right column shows where this topic is used again."
+    }
+   ],
+   "play": {
+    "intro": "Structural Engineering: 10 to 15 of the 110 exam questions. At about 2.9 minutes a question, that is roughly 29 to 44 minutes of the exam. Design questions follow the steel and concrete code extracts printed in the handbook. Work the lessons below in the order of the map; open each lesson's playbook first.",
+    "rows": [],
+    "types": []
    }
   },
   {
@@ -302,6 +315,92 @@
      "a graph of how one effect, such as a reaction, changes as a unit load moves across the structure"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 222",
+     "svg": "<line x1='60.0' y1='50.0' x2='340.0' y2='50.0' stroke='#E7E8E8' stroke-width='1' stroke-dasharray='6 4'/><path d='M60 50 L50 66 L70 66 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><line x1='46.0' y1='66.0' x2='74.0' y2='66.0' stroke='#00242E' stroke-width='2'/><line x1='52.0' y1='66.0' x2='46.0' y2='73.0' stroke='#00242E' stroke-width='1'/><line x1='60.0' y1='66.0' x2='54.0' y2='73.0' stroke='#00242E' stroke-width='1'/><line x1='68.0' y1='66.0' x2='62.0' y2='73.0' stroke='#00242E' stroke-width='1'/><path d='M340 50 L330 64 L350 64 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><circle cx='335.0' cy='68.0' r='3.5' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><circle cx='345.0' cy='68.0' r='3.5' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><line x1='326.0' y1='72.0' x2='354.0' y2='72.0' stroke='#00242E' stroke-width='2'/><path d='M60.0 50.0 L64.7 51.4 L69.3 52.7 L74.0 54.1 L78.7 55.4 L83.3 56.7 L88.0 58.0 L92.7 59.3 L97.3 60.6 L102.0 61.8 L106.7 63.0 L111.3 64.2 L116.0 65.3 L120.7 66.4 L125.3 67.4 L130.0 68.4 L134.7 69.3 L139.3 70.2 L144.0 71.0 L148.7 71.8 L153.3 72.5 L158.0 73.2 L162.7 73.8 L167.3 74.3 L172.0 74.7 L176.7 75.1 L181.3 75.4 L186.0 75.7 L190.7 75.9 L195.3 76.0 L200.0 76.0 L204.7 76.0 L209.3 75.9 L214.0 75.7 L218.7 75.4 L223.3 75.1 L228.0 74.7 L232.7 74.3 L237.3 73.8 L242.0 73.2 L246.7 72.5 L251.3 71.8 L256.0 71.0 L260.7 70.2 L265.3 69.3 L270.0 68.4 L274.7 67.4 L279.3 66.4 L284.0 65.3 L288.7 64.2 L293.3 63.0 L298.0 61.8 L302.7 60.6 L307.3 59.3 L312.0 58.0 L316.7 56.7 L321.3 55.4 L326.0 54.1 L330.7 52.7 L335.3 51.4 L340.0 50.0' fill='none' stroke='#00242E' stroke-width='4'/><path d='M60.0 56.0 L64.7 57.4 L69.3 58.7 L74.0 60.1 L78.7 61.4 L83.3 62.7 L88.0 64.0 L92.7 65.3 L97.3 66.6 L102.0 67.8 L106.7 69.0 L111.3 70.2 L116.0 71.3 L120.7 72.4 L125.3 73.4 L130.0 74.4 L134.7 75.3 L139.3 76.2 L144.0 77.0 L148.7 77.8 L153.3 78.5 L158.0 79.2 L162.7 79.8 L167.3 80.3 L172.0 80.7 L176.7 81.1 L181.3 81.4 L186.0 81.7 L190.7 81.9 L195.3 82.0 L200.0 82.0 L204.7 82.0 L209.3 81.9 L214.0 81.7 L218.7 81.4 L223.3 81.1 L228.0 80.7 L232.7 80.3 L237.3 79.8 L242.0 79.2 L246.7 78.5 L251.3 77.8 L256.0 77.0 L260.7 76.2 L265.3 75.3 L270.0 74.4 L274.7 73.4 L279.3 72.4 L284.0 71.3 L288.7 70.2 L293.3 69.0 L298.0 67.8 L302.7 66.6 L307.3 65.3 L312.0 64.0 L316.7 62.7 L321.3 61.4 L326.0 60.1 L330.7 58.7 L335.3 57.4 L340.0 56.0' fill='none' stroke='#00574A' stroke-width='2.5'/><line x1='200.0' y1='20.0' x2='200.0' y2='60.0' stroke='#568CBB' stroke-width='2.5'/><path d='M200.0 70.0 L205.0 60.0 L195.0 60.0 Z' fill='#568CBB'/><text x='206' y='28' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>P</text><text x='200' y='98' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>sags: tension along the bottom (positive moment)</text><rect x='48.0' y='110.0' width='12.0' height='60.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><line x1='60.0' y1='140.0' x2='340.0' y2='140.0' stroke='#E7E8E8' stroke-width='1' stroke-dasharray='6 4'/><path d='M60.0 140.0 L64.7 140.0 L69.3 140.1 L74.0 140.1 L78.7 140.2 L83.3 140.4 L88.0 140.5 L92.7 140.7 L97.3 140.9 L102.0 141.2 L106.7 141.4 L111.3 141.7 L116.0 142.0 L120.7 142.4 L125.3 142.7 L130.0 143.1 L134.7 143.5 L139.3 143.9 L144.0 144.4 L148.7 144.8 L153.3 145.3 L158.0 145.8 L162.7 146.4 L167.3 146.9 L172.0 147.5 L176.7 148.1 L181.3 148.7 L186.0 149.3 L190.7 149.9 L195.3 150.6 L200.0 151.2 L204.7 151.9 L209.3 152.6 L214.0 153.3 L218.7 154.1 L223.3 154.8 L228.0 155.6 L232.7 156.3 L237.3 157.1 L242.0 157.9 L246.7 158.7 L251.3 159.5 L256.0 160.3 L260.7 161.1 L265.3 161.9 L270.0 162.8 L274.7 163.6 L279.3 164.5 L284.0 165.3 L288.7 166.2 L293.3 167.1 L298.0 168.0 L302.7 168.8 L307.3 169.7 L312.0 170.6 L316.7 171.5 L321.3 172.4 L326.0 173.3 L330.7 174.2 L335.3 175.1 L340.0 176.0' fill='none' stroke='#00242E' stroke-width='4'/><path d='M60.0 134.0 L64.7 134.0 L69.3 134.1 L74.0 134.1 L78.7 134.2 L83.3 134.4 L88.0 134.5 L92.7 134.7 L97.3 134.9 L102.0 135.2 L106.7 135.4 L111.3 135.7 L116.0 136.0 L120.7 136.4 L125.3 136.7 L130.0 137.1 L134.7 137.5 L139.3 137.9 L144.0 138.4 L148.7 138.8 L153.3 139.3 L158.0 139.8 L162.7 140.4 L167.3 140.9 L172.0 141.5 L176.7 142.1 L181.3 142.7 L186.0 143.3 L190.7 143.9 L195.3 144.6 L200.0 145.2 L204.7 145.9 L209.3 146.6 L214.0 147.3 L218.7 148.1 L223.3 148.8 L228.0 149.6 L232.7 150.3 L237.3 151.1 L242.0 151.9 L246.7 152.7 L251.3 153.5 L256.0 154.3 L260.7 155.1 L265.3 155.9 L270.0 156.8 L274.7 157.6 L279.3 158.5 L284.0 159.3 L288.7 160.2 L293.3 161.1 L298.0 162.0 L302.7 162.8 L307.3 163.7 L312.0 164.6 L316.7 165.5 L321.3 166.4 L326.0 167.3 L330.7 168.2 L335.3 169.1 L340.0 170.0' fill='none' stroke='#00574A' stroke-width='2.5'/><line x1='340.0' y1='120.0' x2='340.0' y2='162.0' stroke='#568CBB' stroke-width='2.5'/><path d='M340.0 172.0 L345.0 162.0 L335.0 162.0 Z' fill='#568CBB'/><text x='332' y='126' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>P</text><text x='200' y='196' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>cantilever: tension along the top (negative moment)</text><text x='390' y='214' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>Green line = tension face. Concrete needs its steel on that face.</text>",
+     "alt": "Deflected shapes: a simply supported beam sags, with tension along the bottom; a cantilever bends down from its support, with tension along the top. Reinforcing steel goes on the tension face.",
+     "caption": "Deflected shapes: a simply supported beam sags, with tension along the bottom; a cantilever bends down from its support, with tension along the top. Reinforcing steel goes on the tension face."
+    }
+   ],
+   "play": {
+    "intro": "Structural Engineering is 10 to 15 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Reactions or internal forces of a determinate beam or frame",
+      "Statics: moments about a support first."
+     ],
+     [
+      "Maximum moment for a standard case",
+      "Handbook beam tables: simple UDL w L²/8; cantilever UDL w L²/2; point P L/4 or P L."
+     ],
+     [
+      "Truss member force",
+      "Method of sections for one member."
+     ],
+     [
+      "Influence line or moving load",
+      "Place the load at the ordinate peak; for a simple beam the maximum moment is at midspan."
+     ]
+    ],
+    "types": [
+     {
+      "id": "structural-0006",
+      "ask": "What is the magnitude of the bending moment at the fixed support?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "shearing force and bending moment"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0007",
+      "ask": "What is the left reaction?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "shearing force and bending moment"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0008",
+      "ask": "What is the maximum bending moment?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "shearing force and bending moment"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0027",
+      "ask": "What is the magnitude of each support reaction?",
+      "section": "Statics",
+      "page": "107–113",
+      "find": [
+       "moments"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0028",
+      "ask": "What is the maximum bending moment?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "shearing force and bending moment"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "M_{max}",
@@ -499,6 +598,77 @@
      "a beam held rigidly at one end and free at the other, like a diving board or a signal mast arm"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 214",
+     "svg": "<rect x='48.0' y='30.0' width='12.0' height='110.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><line x1='60.0' y1='50.0' x2='370.0' y2='50.0' stroke='#E7E8E8' stroke-width='1' stroke-dasharray='6 4'/><path d='M60.0 50.0 L62.3 50.0 L64.7 50.0 L67.0 50.0 L69.3 50.1 L71.7 50.1 L74.0 50.1 L76.3 50.2 L78.7 50.2 L81.0 50.3 L83.3 50.4 L85.7 50.4 L88.0 50.5 L90.3 50.6 L92.7 50.7 L95.0 50.8 L97.3 50.9 L99.7 51.0 L102.0 51.1 L104.3 51.2 L106.7 51.3 L109.0 51.5 L111.3 51.6 L113.7 51.7 L116.0 51.9 L118.3 52.0 L120.7 52.2 L123.0 52.3 L125.3 52.5 L127.7 52.6 L130.0 52.8 L132.3 53.0 L134.7 53.2 L137.0 53.3 L139.3 53.5 L141.7 53.7 L144.0 53.9 L146.3 54.1 L148.7 54.3 L151.0 54.5 L153.3 54.7 L155.7 54.9 L158.0 55.1 L160.3 55.3 L162.7 55.5 L165.0 55.7 L167.3 55.9 L169.7 56.1 L172.0 56.3 L174.3 56.6 L176.7 56.8 L179.0 57.0 L181.3 57.2 L183.7 57.4 L186.0 57.7 L188.3 57.9 L190.7 58.1 L193.0 58.3 L195.3 58.6 L197.7 58.8 L200.0 59.0' fill='none' stroke='#00574A' stroke-width='3.5'/><line x1='200.0' y1='28.0' x2='200.0' y2='47.0' stroke='#00574A' stroke-width='2'/><path d='M200.0 57.0 L205.0 47.0 L195.0 47.0 Z' fill='#00574A'/><text x='206' y='34' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>P</text><path d='M60.0 50.0 L64.7 50.0 L69.3 50.1 L74.0 50.3 L78.7 50.5 L83.3 50.7 L88.0 51.0 L92.7 51.4 L97.3 51.8 L102.0 52.3 L106.7 52.8 L111.3 53.4 L116.0 54.0 L120.7 54.7 L125.3 55.4 L130.0 56.2 L134.7 57.0 L139.3 57.9 L144.0 58.7 L148.7 59.7 L153.3 60.7 L158.0 61.7 L162.7 62.7 L167.3 63.8 L172.0 65.0 L176.7 66.1 L181.3 67.4 L186.0 68.6 L190.7 69.9 L195.3 71.2 L200.0 72.5 L204.7 73.9 L209.3 75.3 L214.0 76.7 L218.7 78.1 L223.3 79.6 L228.0 81.1 L232.7 82.6 L237.3 84.2 L242.0 85.7 L246.7 87.3 L251.3 88.9 L256.0 90.6 L260.7 92.2 L265.3 93.9 L270.0 95.6 L274.7 97.3 L279.3 99.0 L284.0 100.7 L288.7 102.4 L293.3 104.2 L298.0 105.9 L302.7 107.7 L307.3 109.5 L312.0 111.2 L316.7 113.0 L321.3 114.8 L326.0 116.6 L330.7 118.4 L335.3 120.2 L340.0 122.0' fill='none' stroke='#568CBB' stroke-width='3.5'/><line x1='340.0' y1='90.0' x2='340.0' y2='110.0' stroke='#568CBB' stroke-width='2'/><path d='M340.0 120.0 L345.0 110.0 L335.0 110.0 Z' fill='#568CBB'/><text x='346' y='98' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>P</text><line x1='214.0' y1='50.0' x2='214.0' y2='59.0' stroke='#00574A' stroke-width='1'/><line x1='209.0' y1='50.0' x2='219.0' y2='50.0' stroke='#00574A' stroke-width='1'/><line x1='209.0' y1='59.0' x2='219.0' y2='59.0' stroke='#00574A' stroke-width='1'/><text x='222' y='58' text-anchor='start' font-size='11' font-weight='400' fill='#00574A'>δ</text><line x1='356.0' y1='50.0' x2='356.0' y2='122.0' stroke='#568CBB' stroke-width='1'/><line x1='351.0' y1='50.0' x2='361.0' y2='50.0' stroke='#568CBB' stroke-width='1'/><line x1='351.0' y1='122.0' x2='361.0' y2='122.0' stroke='#568CBB' stroke-width='1'/><text x='364' y='90' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>8 δ</text><text x='130' y='76' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>span L</text><text x='270' y='136' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>span 2L</text><text x='20' y='168' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Tip deflection δ = P L³ / (3 E I).</text><text x='5' y='183' text-anchor='start' font-size='10.5263' font-weight='400' fill='#00242E'>Double the span: 2³ = 8 times the deflection. Double E (stiffer material) or</text><text x='20' y='198' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>I (deeper section): half the deflection.</text>",
+     "alt": "Two cantilevers with the same tip load: doubling the span multiplies the tip deflection by eight, because deflection grows with L cubed and falls with E I.",
+     "caption": "Two cantilevers with the same tip load: doubling the span multiplies the tip deflection by eight, because deflection grows with L cubed and falls with E I."
+    }
+   ],
+   "play": {
+    "intro": "Structural Engineering is 10 to 15 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Deflection of a standard beam",
+      "Handbook table: simple UDL 5 w L⁴/(384 E I); cantilever tip load P L³/(3 E I)."
+     ],
+     [
+      "Two loads",
+      "Superpose the table cases."
+     ],
+     [
+      "Units trap",
+      "Keep consistent units: kip and in with E in ksi and I in in⁴, or N and mm."
+     ]
+    ],
+    "types": [
+     {
+      "id": "structural-0003",
+      "ask": "What is the midspan deflection?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "simply supported beam slopes and deflections"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0009",
+      "ask": "What is the deflection at the free end?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "cantilevered beam slopes and deflections"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0029",
+      "ask": "What is the deflection at the free end?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "deflection of beams"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0030",
+      "ask": "What moment of inertia is required?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "deflection of beams"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "L",
@@ -666,6 +836,88 @@
      "a measure of how far an area's material is spread from an axis; the larger it is, the stiffer the shape in bending about that axis"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 278",
+     "svg": "<line x1='55.0' y1='176.0' x2='55.0' y2='46.0' stroke='#E7E8E8' stroke-width='1' stroke-dasharray='6 4'/><path d='M55.0 176.0 L55.9 173.8 L56.9 171.7 L57.8 169.5 L58.7 167.3 L59.7 165.2 L60.6 163.0 L61.5 160.8 L62.3 158.7 L63.2 156.5 L64.0 154.3 L64.8 152.2 L65.6 150.0 L66.3 147.8 L67.0 145.7 L67.7 143.5 L68.4 141.3 L69.0 139.2 L69.6 137.0 L70.1 134.8 L70.6 132.7 L71.0 130.5 L71.4 128.3 L71.8 126.2 L72.1 124.0 L72.4 121.8 L72.6 119.7 L72.8 117.5 L72.9 115.3 L73.0 113.2 L73.0 111.0 L73.0 108.8 L72.9 106.7 L72.8 104.5 L72.6 102.3 L72.4 100.2 L72.1 98.0 L71.8 95.8 L71.4 93.7 L71.0 91.5 L70.6 89.3 L70.1 87.2 L69.6 85.0 L69.0 82.8 L68.4 80.7 L67.7 78.5 L67.0 76.3 L66.3 74.2 L65.6 72.0 L64.8 69.8 L64.0 67.7 L63.2 65.5 L62.3 63.3 L61.5 61.2 L60.6 59.0 L59.7 56.8 L58.7 54.7 L57.8 52.5 L56.9 50.3 L55.9 48.2 L55.0 46.0' fill='none' stroke='#00574A' stroke-width='3'/><path d='M55 176 L45 192 L65 192 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><line x1='41.0' y1='192.0' x2='69.0' y2='192.0' stroke='#00242E' stroke-width='2'/><line x1='47.0' y1='192.0' x2='41.0' y2='199.0' stroke='#00242E' stroke-width='1'/><line x1='55.0' y1='192.0' x2='49.0' y2='199.0' stroke='#00242E' stroke-width='1'/><line x1='63.0' y1='192.0' x2='57.0' y2='199.0' stroke='#00242E' stroke-width='1'/><path d='M55 46 L46 33 L64 33 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><line x1='55.0' y1='10.0' x2='55.0' y2='22.0' stroke='#568CBB' stroke-width='2'/><path d='M55.0 32.0 L60.0 22.0 L50.0 22.0 Z' fill='#568CBB'/><text x='55' y='218' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Pinned-pinned</text><text x='55' y='234' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>K = 1.0</text><line x1='150.0' y1='176.0' x2='150.0' y2='46.0' stroke='#E7E8E8' stroke-width='1' stroke-dasharray='6 4'/><path d='M150.0 176.0 L150.0 173.8 L150.0 171.7 L150.1 169.5 L150.2 167.3 L150.3 165.2 L150.4 163.0 L150.5 160.8 L150.7 158.7 L150.8 156.5 L151.0 154.3 L151.2 152.2 L151.5 150.0 L151.7 147.8 L152.0 145.7 L152.3 143.5 L152.6 141.3 L152.9 139.2 L153.3 137.0 L153.6 134.8 L154.0 132.7 L154.4 130.5 L154.8 128.3 L155.3 126.2 L155.7 124.0 L156.2 121.8 L156.7 119.7 L157.2 117.5 L157.7 115.3 L158.2 113.2 L158.8 111.0 L159.3 108.8 L159.9 106.7 L160.5 104.5 L161.1 102.3 L161.7 100.2 L162.4 98.0 L163.0 95.8 L163.7 93.7 L164.3 91.5 L165.0 89.3 L165.7 87.2 L166.4 85.0 L167.1 82.8 L167.8 80.7 L168.5 78.5 L169.2 76.3 L170.0 74.2 L170.7 72.0 L171.5 69.8 L172.2 67.7 L173.0 65.5 L173.8 63.3 L174.5 61.2 L175.3 59.0 L176.1 56.8 L176.9 54.7 L177.6 52.5 L178.4 50.3 L179.2 48.2 L180.0 46.0' fill='none' stroke='#00574A' stroke-width='3'/><rect x='134.0' y='176.0' width='32.0' height='10.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><line x1='180.0' y1='10.0' x2='180.0' y2='34.0' stroke='#568CBB' stroke-width='2'/><path d='M180.0 44.0 L185.0 34.0 L175.0 34.0 Z' fill='#568CBB'/><text x='150' y='218' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Fixed-free</text><text x='150' y='234' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>K = 2.0</text><line x1='245.0' y1='176.0' x2='245.0' y2='46.0' stroke='#E7E8E8' stroke-width='1' stroke-dasharray='6 4'/><path d='M245.0 176.0 L245.0 173.8 L245.1 171.7 L245.3 169.5 L245.5 167.3 L245.8 165.2 L246.1 163.0 L246.5 160.8 L246.9 158.7 L247.3 156.5 L247.8 154.3 L248.3 152.2 L248.9 150.0 L249.5 147.8 L250.1 145.7 L250.7 143.5 L251.3 141.3 L252.0 139.2 L252.7 137.0 L253.3 134.8 L254.0 132.7 L254.7 130.5 L255.3 128.3 L256.0 126.2 L256.7 124.0 L257.3 121.8 L257.9 119.7 L258.5 117.5 L259.1 115.3 L259.7 113.2 L260.2 111.0 L260.7 108.8 L261.1 106.7 L261.5 104.5 L261.9 102.3 L262.2 100.2 L262.5 98.0 L262.7 95.8 L262.9 93.7 L263.0 91.5 L263.0 89.3 L263.0 87.2 L262.9 85.0 L262.7 82.8 L262.4 80.7 L262.1 78.5 L261.7 76.3 L261.2 74.2 L260.6 72.0 L259.9 69.8 L259.1 67.7 L258.2 65.5 L257.2 63.3 L256.1 61.2 L254.8 59.0 L253.5 56.8 L252.1 54.7 L250.5 52.5 L248.8 50.3 L247.0 48.2 L245.0 46.0' fill='none' stroke='#00574A' stroke-width='3'/><rect x='229.0' y='176.0' width='32.0' height='10.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><path d='M245 46 L236 33 L254 33 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><line x1='245.0' y1='10.0' x2='245.0' y2='22.0' stroke='#568CBB' stroke-width='2'/><path d='M245.0 32.0 L250.0 22.0 L240.0 22.0 Z' fill='#568CBB'/><text x='245' y='218' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Fixed-pinned</text><text x='245' y='234' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>K = 0.7</text><line x1='340.0' y1='176.0' x2='340.0' y2='46.0' stroke='#E7E8E8' stroke-width='1' stroke-dasharray='6 4'/><path d='M340.0 176.0 L340.0 173.8 L340.2 171.7 L340.4 169.5 L340.8 167.3 L341.2 165.2 L341.7 163.0 L342.3 160.8 L343.0 158.7 L343.7 156.5 L344.5 154.3 L345.3 152.2 L346.2 150.0 L347.1 147.8 L348.1 145.7 L349.0 143.5 L349.9 141.3 L350.9 139.2 L351.8 137.0 L352.7 134.8 L353.5 132.7 L354.3 130.5 L355.0 128.3 L355.7 126.2 L356.3 124.0 L356.8 121.8 L357.2 119.7 L357.6 117.5 L357.8 115.3 L358.0 113.2 L358.0 111.0 L358.0 108.8 L357.8 106.7 L357.6 104.5 L357.2 102.3 L356.8 100.2 L356.3 98.0 L355.7 95.8 L355.0 93.7 L354.3 91.5 L353.5 89.3 L352.7 87.2 L351.8 85.0 L350.9 82.8 L349.9 80.7 L349.0 78.5 L348.1 76.3 L347.1 74.2 L346.2 72.0 L345.3 69.8 L344.5 67.7 L343.7 65.5 L343.0 63.3 L342.3 61.2 L341.7 59.0 L341.2 56.8 L340.8 54.7 L340.4 52.5 L340.2 50.3 L340.0 48.2 L340.0 46.0' fill='none' stroke='#00574A' stroke-width='3'/><rect x='324.0' y='176.0' width='32.0' height='10.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><rect x='324.0' y='36.0' width='32.0' height='10.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><line x1='340.0' y1='10.0' x2='340.0' y2='22.0' stroke='#568CBB' stroke-width='2'/><path d='M340.0 32.0 L345.0 22.0 L335.0 22.0 Z' fill='#568CBB'/><text x='340' y='218' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Fixed-fixed</text><text x='340' y='234' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>K = 0.5</text><text x='200' y='256' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Effective length = K L; buckling load P = π² E I / (K L)².</text><text x='200' y='270' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>More end restraint: shorter K L, higher buckling load.</text>",
+     "alt": "Buckled shapes of columns with different end supports and their effective length factors: pinned both ends K = 1.0, fixed-free K = 2.0, fixed-pinned K = 0.7, fixed both ends K = 0.5.",
+     "caption": "Buckled shapes of columns with different end supports and their effective length factors: pinned both ends K = 1.0, fixed-free K = 2.0, fixed-pinned K = 0.7, fixed both ends K = 0.5."
+    }
+   ],
+   "play": {
+    "intro": "Structural Engineering is 10 to 15 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Euler buckling load",
+      "P = π² E I / (K L)²; use the weak-axis I."
+     ],
+     [
+      "Effective length factor",
+      "Pinned-pinned 1.0, fixed-free 2.0, fixed-pinned 0.7, fixed-fixed 0.5 (theoretical)."
+     ],
+     [
+      "Slenderness",
+      "K L / r with r = √(I/A); larger means more likely to buckle."
+     ]
+    ],
+    "types": [
+     {
+      "id": "structural-0002",
+      "ask": "What is the Euler buckling load?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "Euler's formula"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0010",
+      "ask": "Using the theoretical effective length factor K = 0.7, what is its effective length?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "effective length"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0022",
+      "ask": "What is the governing Euler buckling load?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "Euler's formula"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0031",
+      "ask": "What is its Euler critical stress?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "Euler's formula"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0032",
+      "ask": "What is its Euler buckling load?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "Euler's formula"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "P_{cr}",
@@ -796,6 +1048,77 @@
      "the turning effect of a force about a point: the force times its perpendicular distance from that point"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 244",
+     "svg": "<rect x='40.0' y='45.0' width='180.0' height='8.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><path d='M40 53 L30 69 L50 69 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><line x1='26.0' y1='69.0' x2='54.0' y2='69.0' stroke='#00242E' stroke-width='2'/><line x1='32.0' y1='69.0' x2='26.0' y2='76.0' stroke='#00242E' stroke-width='1'/><line x1='40.0' y1='69.0' x2='34.0' y2='76.0' stroke='#00242E' stroke-width='1'/><line x1='48.0' y1='69.0' x2='42.0' y2='76.0' stroke='#00242E' stroke-width='1'/><path d='M220 53 L210 67 L230 67 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><circle cx='215.0' cy='71.0' r='3.5' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><circle cx='225.0' cy='71.0' r='3.5' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><line x1='206.0' y1='75.0' x2='234.0' y2='75.0' stroke='#00242E' stroke-width='2'/><text x='240' y='47' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Pin + roller: 3 reactions</text><text x='240' y='61' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>= 3 equations: determinate</text><rect x='40.0' y='115.0' width='180.0' height='8.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><rect x='28.0' y='95.0' width='12.0' height='50.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><path d='M220 123 L210 137 L230 137 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><circle cx='215.0' cy='141.0' r='3.5' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><circle cx='225.0' cy='141.0' r='3.5' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><line x1='206.0' y1='145.0' x2='234.0' y2='145.0' stroke='#00242E' stroke-width='2'/><text x='240' y='117' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Fixed + roller: 4 reactions</text><text x='240' y='131' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>one extra: indeterminate</text><rect x='40.0' y='185.0' width='180.0' height='8.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><path d='M40 193 L30 207 L50 207 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><circle cx='35.0' cy='211.0' r='3.5' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><circle cx='45.0' cy='211.0' r='3.5' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><line x1='26.0' y1='215.0' x2='54.0' y2='215.0' stroke='#00242E' stroke-width='2'/><path d='M220 193 L210 207 L230 207 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><circle cx='215.0' cy='211.0' r='3.5' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><circle cx='225.0' cy='211.0' r='3.5' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><line x1='206.0' y1='215.0' x2='234.0' y2='215.0' stroke='#00242E' stroke-width='2'/><text x='240' y='187' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Two rollers: nothing</text><text x='240' y='201' text-anchor='start' font-size='11' font-weight='600' fill='#FF6622'>resists sliding: unstable</text><line x1='4.0' y1='207.0' x2='16.0' y2='207.0' stroke='#FF6622' stroke-width='2'/><path d='M26.0 207.0 L16.0 202.0 L16.0 212.0 Z' fill='#FF6622'/><text x='200' y='236' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Degree of indeterminacy of a beam = reactions - 3 (if stable).</text>",
+     "alt": "Three beams: a pin and a roller give three reactions and are determinate; a fixed end and a roller give four and are indeterminate to the first degree; two rollers cannot resist sideways load and are unstable.",
+     "caption": "Three beams: a pin and a roller give three reactions and are determinate; a fixed end and a roller give four and are indeterminate to the first degree; two rollers cannot resist sideways load and are unstable."
+    }
+   ],
+   "play": {
+    "intro": "Structural Engineering is 10 to 15 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Is the beam or frame determinate?",
+      "Count reactions (r) against 3; for frames also count internal releases."
+     ],
+     [
+      "Truss determinacy",
+      "m + r = 2j determinate; more is indeterminate; fewer is unstable."
+     ],
+     [
+      "Unstable cases",
+      "All reactions parallel or all meeting at one point: unstable even if the count looks fine."
+     ]
+    ],
+    "types": [
+     {
+      "id": "structural-0001",
+      "ask": "Assuming it is stable, how is it classified?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "determinacy"
+      ],
+      "time": "about 3 min",
+      "n": 3
+     },
+     {
+      "id": "structural-0011",
+      "ask": "How is it classified?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "determinacy"
+      ],
+      "time": "about 3 min",
+      "n": 3
+     },
+     {
+      "id": "structural-0033",
+      "ask": "What is its degree of static indeterminacy?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "determinacy"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0034",
+      "ask": "What is its degree of static indeterminacy?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "determinacy"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "r",
@@ -1007,6 +1330,108 @@
      "the share of a floor or surface whose load is carried by one particular beam or column"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 244",
+     "svg": "<rect x='28.0' y='20.0' width='12.0' height='44.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><rect x='40.0' y='38.0' width='200.0' height='8.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><line x1='40.0' y1='22.0' x2='240.0' y2='22.0' stroke='#00574A' stroke-width='1.5'/><line x1='40.0' y1='22.0' x2='40.0' y2='31.0' stroke='#00574A' stroke-width='1.5'/><path d='M40.0 37.0 L43.0 31.0 L37.0 31.0 Z' fill='#00574A'/><line x1='65.0' y1='22.0' x2='65.0' y2='31.0' stroke='#00574A' stroke-width='1.5'/><path d='M65.0 37.0 L68.0 31.0 L62.0 31.0 Z' fill='#00574A'/><line x1='90.0' y1='22.0' x2='90.0' y2='31.0' stroke='#00574A' stroke-width='1.5'/><path d='M90.0 37.0 L93.0 31.0 L87.0 31.0 Z' fill='#00574A'/><line x1='115.0' y1='22.0' x2='115.0' y2='31.0' stroke='#00574A' stroke-width='1.5'/><path d='M115.0 37.0 L118.0 31.0 L112.0 31.0 Z' fill='#00574A'/><line x1='140.0' y1='22.0' x2='140.0' y2='31.0' stroke='#00574A' stroke-width='1.5'/><path d='M140.0 37.0 L143.0 31.0 L137.0 31.0 Z' fill='#00574A'/><line x1='165.0' y1='22.0' x2='165.0' y2='31.0' stroke='#00574A' stroke-width='1.5'/><path d='M165.0 37.0 L168.0 31.0 L162.0 31.0 Z' fill='#00574A'/><line x1='190.0' y1='22.0' x2='190.0' y2='31.0' stroke='#00574A' stroke-width='1.5'/><path d='M190.0 37.0 L193.0 31.0 L187.0 31.0 Z' fill='#00574A'/><line x1='215.0' y1='22.0' x2='215.0' y2='31.0' stroke='#00574A' stroke-width='1.5'/><path d='M215.0 37.0 L218.0 31.0 L212.0 31.0 Z' fill='#00574A'/><line x1='240.0' y1='22.0' x2='240.0' y2='31.0' stroke='#00574A' stroke-width='1.5'/><path d='M240.0 37.0 L243.0 31.0 L237.0 31.0 Z' fill='#00574A'/><path d='M240 46 L230 60 L250 60 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><circle cx='235.0' cy='64.0' r='3.5' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><circle cx='245.0' cy='64.0' r='3.5' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><line x1='226.0' y1='68.0' x2='254.0' y2='68.0' stroke='#00242E' stroke-width='2'/><text x='140' y='14' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Actual beam: fixed end and a prop</text><text x='140' y='84' text-anchor='middle' font-size='18' font-weight='600' fill='#00242E'>=</text><rect x='28.0' y='98.0' width='12.0' height='44.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><line x1='40.0' y1='116.0' x2='240.0' y2='116.0' stroke='#E7E8E8' stroke-width='1' stroke-dasharray='6 4'/><line x1='40.0' y1='100.0' x2='240.0' y2='100.0' stroke='#00574A' stroke-width='1.5'/><line x1='40.0' y1='100.0' x2='40.0' y2='109.0' stroke='#00574A' stroke-width='1.5'/><path d='M40.0 115.0 L43.0 109.0 L37.0 109.0 Z' fill='#00574A'/><line x1='65.0' y1='100.0' x2='65.0' y2='109.0' stroke='#00574A' stroke-width='1.5'/><path d='M65.0 115.0 L68.0 109.0 L62.0 109.0 Z' fill='#00574A'/><line x1='90.0' y1='100.0' x2='90.0' y2='109.0' stroke='#00574A' stroke-width='1.5'/><path d='M90.0 115.0 L93.0 109.0 L87.0 109.0 Z' fill='#00574A'/><line x1='115.0' y1='100.0' x2='115.0' y2='109.0' stroke='#00574A' stroke-width='1.5'/><path d='M115.0 115.0 L118.0 109.0 L112.0 109.0 Z' fill='#00574A'/><line x1='140.0' y1='100.0' x2='140.0' y2='109.0' stroke='#00574A' stroke-width='1.5'/><path d='M140.0 115.0 L143.0 109.0 L137.0 109.0 Z' fill='#00574A'/><line x1='165.0' y1='100.0' x2='165.0' y2='109.0' stroke='#00574A' stroke-width='1.5'/><path d='M165.0 115.0 L168.0 109.0 L162.0 109.0 Z' fill='#00574A'/><line x1='190.0' y1='100.0' x2='190.0' y2='109.0' stroke='#00574A' stroke-width='1.5'/><path d='M190.0 115.0 L193.0 109.0 L187.0 109.0 Z' fill='#00574A'/><line x1='215.0' y1='100.0' x2='215.0' y2='109.0' stroke='#00574A' stroke-width='1.5'/><path d='M215.0 115.0 L218.0 109.0 L212.0 109.0 Z' fill='#00574A'/><line x1='240.0' y1='100.0' x2='240.0' y2='109.0' stroke='#00574A' stroke-width='1.5'/><path d='M240.0 115.0 L243.0 109.0 L237.0 109.0 Z' fill='#00574A'/><path d='M40.0 116.0 L43.3 116.0 L46.7 116.0 L50.0 116.1 L53.3 116.2 L56.7 116.3 L60.0 116.4 L63.3 116.6 L66.7 116.8 L70.0 117.0 L73.3 117.2 L76.7 117.4 L80.0 117.7 L83.3 118.0 L86.7 118.3 L90.0 118.6 L93.3 118.9 L96.7 119.3 L100.0 119.6 L103.3 120.0 L106.7 120.4 L110.0 120.9 L113.3 121.3 L116.7 121.8 L120.0 122.2 L123.3 122.7 L126.7 123.2 L130.0 123.7 L133.3 124.3 L136.7 124.8 L140.0 125.4 L143.3 125.9 L146.7 126.5 L150.0 127.1 L153.3 127.7 L156.7 128.3 L160.0 129.0 L163.3 129.6 L166.7 130.2 L170.0 130.9 L173.3 131.6 L176.7 132.2 L180.0 132.9 L183.3 133.6 L186.7 134.3 L190.0 135.0 L193.3 135.7 L196.7 136.4 L200.0 137.1 L203.3 137.8 L206.7 138.6 L210.0 139.3 L213.3 140.0 L216.7 140.8 L220.0 141.5 L223.3 142.3 L226.7 143.0 L230.0 143.8 L233.3 144.5 L236.7 145.3 L240.0 146.0' fill='none' stroke='#00242E' stroke-width='4'/><line x1='256.0' y1='116.0' x2='256.0' y2='146.0' stroke='#00574A' stroke-width='1'/><line x1='251.0' y1='116.0' x2='261.0' y2='116.0' stroke='#00574A' stroke-width='1'/><line x1='251.0' y1='146.0' x2='261.0' y2='146.0' stroke='#00574A' stroke-width='1'/><text x='264' y='135' text-anchor='start' font-size='11' font-weight='400' fill='#00574A'>Δ</text><text x='140' y='166' text-anchor='middle' font-size='18' font-weight='600' fill='#00242E'>+</text><rect x='28.0' y='176.0' width='12.0' height='44.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><line x1='40.0' y1='202.0' x2='240.0' y2='202.0' stroke='#E7E8E8' stroke-width='1' stroke-dasharray='6 4'/><path d='M40.0 202.0 L43.3 202.0 L46.7 202.0 L50.0 201.9 L53.3 201.8 L56.7 201.7 L60.0 201.6 L63.3 201.4 L66.7 201.2 L70.0 201.0 L73.3 200.8 L76.7 200.6 L80.0 200.3 L83.3 200.0 L86.7 199.7 L90.0 199.4 L93.3 199.1 L96.7 198.7 L100.0 198.4 L103.3 198.0 L106.7 197.6 L110.0 197.1 L113.3 196.7 L116.7 196.2 L120.0 195.8 L123.3 195.3 L126.7 194.8 L130.0 194.3 L133.3 193.7 L136.7 193.2 L140.0 192.6 L143.3 192.1 L146.7 191.5 L150.0 190.9 L153.3 190.3 L156.7 189.7 L160.0 189.0 L163.3 188.4 L166.7 187.8 L170.0 187.1 L173.3 186.4 L176.7 185.8 L180.0 185.1 L183.3 184.4 L186.7 183.7 L190.0 183.0 L193.3 182.3 L196.7 181.6 L200.0 180.9 L203.3 180.2 L206.7 179.4 L210.0 178.7 L213.3 178.0 L216.7 177.2 L220.0 176.5 L223.3 175.7 L226.7 175.0 L230.0 174.2 L233.3 173.5 L236.7 172.7 L240.0 172.0' fill='none' stroke='#00242E' stroke-width='4'/><line x1='240.0' y1='236.0' x2='240.0' y2='186.0' stroke='#568CBB' stroke-width='2.5'/><path d='M240.0 176.0 L235.0 186.0 L245.0 186.0 Z' fill='#568CBB'/><text x='248' y='232' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>R</text><text x='282' y='60' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Take away the</text><text x='282' y='75' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>extra support.</text><text x='282' y='90' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Find how far the</text><text x='282' y='105' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>beam moves there (Δ).</text><text x='282' y='120' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Find the force R</text><text x='282' y='135' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>that pushes it</text><text x='282' y='150' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>back by Δ.</text><text x='282' y='165' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Total movement</text><text x='282' y='180' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>at the prop = 0.</text>",
+     "alt": "A propped cantilever solved by superposition: remove the prop, find the deflection Δ there, then find the prop force R that pushes the beam back by the same amount.",
+     "caption": "A propped cantilever solved by superposition: remove the prop, find the deflection Δ there, then find the prop force R that pushes the beam back by the same amount."
+    }
+   ],
+   "play": {
+    "intro": "Structural Engineering is 10 to 15 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Propped cantilever or fixed beam reactions",
+      "Use the handbook table: propped cantilever with UDL, prop reaction 3 w L/8; fixed-end moments w L²/12."
+     ],
+     [
+      "Continuous beam (two equal spans, UDL)",
+      "Middle support reaction 5 w L/4 (1.25 w L)."
+     ],
+     [
+      "Superposition by compatibility",
+      "Remove the redundant, find the deflection there, apply the force that cancels it."
+     ]
+    ],
+    "types": [
+     {
+      "id": "structural-0012",
+      "ask": "What is the reaction at the roller?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "cantilevered beam slopes and deflections"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0013",
+      "ask": "What is the magnitude of the moment at each support?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "fixed-end moment"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0021",
+      "ask": "What is the fixed-end moment at the left support?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "fixed-end moment"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0023",
+      "ask": "What is the reaction at the middle support?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "indeterminate"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0035",
+      "ask": "What is the magnitude of the moment at the fixed end?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "fixed-end"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0036",
+      "ask": "In moment distribution, what distribution factor does the 4 m member have at the joint?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0037",
+      "ask": "How much of the load does the steel carry?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "uniaxial loading and deformation"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "R_{prop}",
@@ -1232,6 +1657,99 @@
      "the turning effect of a force about a point: the force times its perpendicular distance from that point"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 230",
+     "svg": "<rect x='50.0' y='34.0' width='200.0' height='8.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><line x1='55.0' y1='20.0' x2='245.0' y2='20.0' stroke='#00574A' stroke-width='1.5'/><line x1='55.0' y1='20.0' x2='55.0' y2='27.0' stroke='#00574A' stroke-width='1.5'/><path d='M55.0 33.0 L58.0 27.0 L52.0 27.0 Z' fill='#00574A'/><line x1='82.1' y1='20.0' x2='82.1' y2='27.0' stroke='#00574A' stroke-width='1.5'/><path d='M82.1 33.0 L85.1 27.0 L79.1 27.0 Z' fill='#00574A'/><line x1='109.3' y1='20.0' x2='109.3' y2='27.0' stroke='#00574A' stroke-width='1.5'/><path d='M109.3 33.0 L112.3 27.0 L106.3 27.0 Z' fill='#00574A'/><line x1='136.4' y1='20.0' x2='136.4' y2='27.0' stroke='#00574A' stroke-width='1.5'/><path d='M136.4 33.0 L139.4 27.0 L133.4 27.0 Z' fill='#00574A'/><line x1='163.6' y1='20.0' x2='163.6' y2='27.0' stroke='#00574A' stroke-width='1.5'/><path d='M163.6 33.0 L166.6 27.0 L160.6 27.0 Z' fill='#00574A'/><line x1='190.7' y1='20.0' x2='190.7' y2='27.0' stroke='#00574A' stroke-width='1.5'/><path d='M190.7 33.0 L193.7 27.0 L187.7 27.0 Z' fill='#00574A'/><line x1='217.9' y1='20.0' x2='217.9' y2='27.0' stroke='#00574A' stroke-width='1.5'/><path d='M217.9 33.0 L220.9 27.0 L214.9 27.0 Z' fill='#00574A'/><line x1='245.0' y1='20.0' x2='245.0' y2='27.0' stroke='#00574A' stroke-width='1.5'/><path d='M245.0 33.0 L248.0 27.0 L242.0 27.0 Z' fill='#00574A'/><rect x='50.0' y='104.0' width='200.0' height='8.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><line x1='55.0' y1='90.0' x2='245.0' y2='90.0' stroke='#00574A' stroke-width='1.5'/><line x1='55.0' y1='90.0' x2='55.0' y2='97.0' stroke='#00574A' stroke-width='1.5'/><path d='M55.0 103.0 L58.0 97.0 L52.0 97.0 Z' fill='#00574A'/><line x1='82.1' y1='90.0' x2='82.1' y2='97.0' stroke='#00574A' stroke-width='1.5'/><path d='M82.1 103.0 L85.1 97.0 L79.1 97.0 Z' fill='#00574A'/><line x1='109.3' y1='90.0' x2='109.3' y2='97.0' stroke='#00574A' stroke-width='1.5'/><path d='M109.3 103.0 L112.3 97.0 L106.3 97.0 Z' fill='#00574A'/><line x1='136.4' y1='90.0' x2='136.4' y2='97.0' stroke='#00574A' stroke-width='1.5'/><path d='M136.4 103.0 L139.4 97.0 L133.4 97.0 Z' fill='#00574A'/><line x1='163.6' y1='90.0' x2='163.6' y2='97.0' stroke='#00574A' stroke-width='1.5'/><path d='M163.6 103.0 L166.6 97.0 L160.6 97.0 Z' fill='#00574A'/><line x1='190.7' y1='90.0' x2='190.7' y2='97.0' stroke='#00574A' stroke-width='1.5'/><path d='M190.7 103.0 L193.7 97.0 L187.7 97.0 Z' fill='#00574A'/><line x1='217.9' y1='90.0' x2='217.9' y2='97.0' stroke='#00574A' stroke-width='1.5'/><path d='M217.9 103.0 L220.9 97.0 L214.9 97.0 Z' fill='#00574A'/><line x1='245.0' y1='90.0' x2='245.0' y2='97.0' stroke='#00574A' stroke-width='1.5'/><path d='M245.0 103.0 L248.0 97.0 L242.0 97.0 Z' fill='#00574A'/><rect x='66.0' y='34.0' width='10.0' height='146.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><rect x='224.0' y='34.0' width='10.0' height='146.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><rect x='51.0' y='180.0' width='40.0' height='12.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><rect x='209.0' y='180.0' width='40.0' height='12.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><line x1='20.0' y1='192.0' x2='280.0' y2='192.0' stroke='#00242E' stroke-width='2'/><line x1='56.0' y1='208.0' x2='56.0' y2='199.0' stroke='#1B795A' stroke-width='1.2'/><path d='M56.0 194.0 L53.5 199.0 L58.5 199.0 Z' fill='#1B795A'/><line x1='66.0' y1='208.0' x2='66.0' y2='199.0' stroke='#1B795A' stroke-width='1.2'/><path d='M66.0 194.0 L63.5 199.0 L68.5 199.0 Z' fill='#1B795A'/><line x1='76.0' y1='208.0' x2='76.0' y2='199.0' stroke='#1B795A' stroke-width='1.2'/><path d='M76.0 194.0 L73.5 199.0 L78.5 199.0 Z' fill='#1B795A'/><line x1='86.0' y1='208.0' x2='86.0' y2='199.0' stroke='#1B795A' stroke-width='1.2'/><path d='M86.0 194.0 L83.5 199.0 L88.5 199.0 Z' fill='#1B795A'/><line x1='214.0' y1='208.0' x2='214.0' y2='199.0' stroke='#1B795A' stroke-width='1.2'/><path d='M214.0 194.0 L211.5 199.0 L216.5 199.0 Z' fill='#1B795A'/><line x1='224.0' y1='208.0' x2='224.0' y2='199.0' stroke='#1B795A' stroke-width='1.2'/><path d='M224.0 194.0 L221.5 199.0 L226.5 199.0 Z' fill='#1B795A'/><line x1='234.0' y1='208.0' x2='234.0' y2='199.0' stroke='#1B795A' stroke-width='1.2'/><path d='M234.0 194.0 L231.5 199.0 L236.5 199.0 Z' fill='#1B795A'/><line x1='244.0' y1='208.0' x2='244.0' y2='199.0' stroke='#1B795A' stroke-width='1.2'/><path d='M244.0 194.0 L241.5 199.0 L246.5 199.0 Z' fill='#1B795A'/><line x1='90.0' y1='50.0' x2='90.0' y2='140.0' stroke='#568CBB' stroke-width='2'/><path d='M90.0 150.0 L95.0 140.0 L85.0 140.0 Z' fill='#568CBB'/><text x='96' y='70' text-anchor='start' font-size='10' font-weight='400' fill='#568CBB'>down through</text><text x='96' y='82' text-anchor='start' font-size='10' font-weight='400' fill='#568CBB'>the columns</text><text x='150' y='222' text-anchor='middle' font-size='11' font-weight='400' fill='#1B795A'>soil pushes back on the footings</text><rect x='300.0' y='14.0' width='86.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='343' y='29' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Slab</text><line x1='343.0' y1='36.0' x2='343.0' y2='39.0' stroke='#00242E' stroke-width='1.5'/><path d='M343.0 45.0 L346.0 39.0 L340.0 39.0 Z' fill='#00242E'/><rect x='300.0' y='46.0' width='86.0' height='22.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><text x='343' y='61' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Beam</text><line x1='343.0' y1='68.0' x2='343.0' y2='71.0' stroke='#00242E' stroke-width='1.5'/><path d='M343.0 77.0 L346.0 71.0 L340.0 71.0 Z' fill='#00242E'/><rect x='300.0' y='78.0' width='86.0' height='22.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><text x='343' y='93' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Girder</text><line x1='343.0' y1='100.0' x2='343.0' y2='103.0' stroke='#00242E' stroke-width='1.5'/><path d='M343.0 109.0 L346.0 103.0 L340.0 103.0 Z' fill='#00242E'/><rect x='300.0' y='110.0' width='86.0' height='22.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><text x='343' y='125' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Column</text><line x1='343.0' y1='132.0' x2='343.0' y2='135.0' stroke='#00242E' stroke-width='1.5'/><path d='M343.0 141.0 L346.0 135.0 L340.0 135.0 Z' fill='#00242E'/><rect x='300.0' y='142.0' width='86.0' height='22.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><text x='343' y='157' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Footing</text><line x1='343.0' y1='164.0' x2='343.0' y2='167.0' stroke='#00242E' stroke-width='1.5'/><path d='M343.0 173.0 L346.0 167.0 L340.0 167.0 Z' fill='#00242E'/><rect x='300.0' y='174.0' width='86.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='343' y='189' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Soil</text><text x='343' y='222' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>the load path</text>",
+     "alt": "The load path: floor and roof loads go from the slab to the beams, girders and columns, down to the footings and into the soil. Each member carries the load from its tributary area.",
+     "caption": "The load path: floor and roof loads go from the slab to the beams, girders and columns, down to the footings and into the soil. Each member carries the load from its tributary area."
+    }
+   ],
+   "play": {
+    "intro": "Structural Engineering is 10 to 15 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Load combination",
+      "Write each LRFD combination (1.4D; 1.2D + 1.6L; ...) and take the largest."
+     ],
+     [
+      "Tributary area",
+      "Beam: load × tributary width. Column: half a bay each way × floors."
+     ],
+     [
+      "Live load reduction",
+      "Copy the ASCE 7 formula given or from the handbook; check the minimum."
+     ]
+    ],
+    "types": [
+     {
+      "id": "structural-0004",
+      "ask": "Checking the load combinations 1.4D and 1.2D + 1.6L, what factored load governs?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "load combinations"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0014",
+      "ask": "What line load does an interior beam carry?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "tributary area"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0024",
+      "ask": "Using 1.2D + 1.6L, what is the factored bending moment in an interior beam?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "load combinations"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0038",
+      "ask": "What factored axial load reaches the base of the column?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "tributary area"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0039",
+      "ask": "Among the LRFD combinations 1.4D, 1.2D + 1.6L + 0.5S and 1.2D + 1.6S + L, what factored load governs?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "load combinations"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0040",
+      "ask": "What is the largest bending moment it can cause?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "influence lines"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "M_{u}",
@@ -1327,7 +1845,7 @@
      "value": 869.4,
      "figure": {
       "viewBox": "0 0 400 150",
-      "svg": "<rect x='90' y='75' width='220' height='22' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='116' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>gross area 2,800 mm²</text><line x1='90' y1='62' x2='54' y2='62' stroke='#00574A' stroke-width='3'/><path d='M46 62 L58 56 L58 68 Z' fill='#00574A'/><text x='40' y='66' text-anchor='end' font-size='11' font-weight='600' fill='#00574A'>pull</text><line x1='310' y1='46' x2='346' y2='46' stroke='#00574A' stroke-width='3'/><path d='M354 46 L342 40 L342 52 Z' fill='#00574A'/><text x='360' y='50' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>869.4 kN</text><text x='200' y='142' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Design strength in yielding: 0.9 × yield strength × gross area</text>",
+      "svg": "<rect x='90' y='75' width='220' height='22' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='116' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>gross area 2,800 mm²</text><line x1='90' y1='62' x2='54' y2='62' stroke='#00574A' stroke-width='3'/><path d='M46 62 L58 56 L58 68 Z' fill='#00574A'/><text x='68' y='55' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>pull</text><line x1='310' y1='46' x2='346' y2='46' stroke='#00574A' stroke-width='3'/><path d='M354 46 L342 40 L342 52 Z' fill='#00574A'/><text x='332' y='39' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>869.4 kN</text><text x='200' y='142' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Design strength in yielding: 0.9 × yield strength × gross area</text>",
       "alt": "A bar with pull; 869.4 kN. Design strength in yielding: 0.9 × yield strength × gross area."
      }
     },
@@ -1463,6 +1981,125 @@
      "the distance from an axis at which the whole area (or mass) could be concentrated and keep the same moment of inertia"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 214",
+     "svg": "<rect x='40.0' y='50.0' width='300.0' height='90.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><circle cx='200.0' cy='75.0' r='9.0' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><circle cx='200.0' cy='115.0' r='9.0' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><line x1='40.0' y1='95.0' x2='16.0' y2='95.0' stroke='#00574A' stroke-width='3'/><path d='M6.0 95.0 L16.0 100.0 L16.0 90.0 Z' fill='#00574A'/><line x1='340.0' y1='95.0' x2='370.0' y2='95.0' stroke='#00574A' stroke-width='3'/><path d='M380.0 95.0 L370.0 90.0 L370.0 100.0 Z' fill='#00574A'/><text x='10' y='84' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P</text><text x='374' y='84' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>P</text><line x1='110.0' y1='40.0' x2='110.0' y2='150.0' stroke='#568CBB' stroke-width='2' stroke-dasharray='6 4'/><text x='110' y='168' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>gross section Ag</text><text x='110' y='182' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>(full width)</text><line x1='200.0' y1='40.0' x2='200.0' y2='150.0' stroke='#FF6622' stroke-width='2' stroke-dasharray='6 4'/><text x='200' y='30' text-anchor='middle' font-size='11' font-weight='600' fill='#FF6622'>net section An: width minus the holes</text><text x='250' y='168' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Yielding: φ = 0.90 on Ag Fy</text><text x='250' y='183' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Rupture: φ = 0.75 on Ae Fu</text><text x='241' y='198' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>The smaller strength governs.</text>",
+     "alt": "A plate in tension with two bolt holes. It can yield along its full width (gross area) or tear through the holes (net area); the design strength is the smaller of the two.",
+     "caption": "A plate in tension with two bolt holes. It can yield along its full width (gross area) or tear through the holes (net area); the design strength is the smaller of the two."
+    }
+   ],
+   "play": {
+    "intro": "Structural Engineering is 10 to 15 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Tension member capacity",
+      "Smaller of 0.9 Fy Ag and 0.75 Fu Ae."
+     ],
+     [
+      "Beam moment capacity (compact, braced)",
+      "φ Mn = 0.9 Fy Zx."
+     ],
+     [
+      "Column capacity",
+      "Use the handbook column table or the AISC formulas for K L / r."
+     ],
+     [
+      "Bolt shear",
+      "φ Rn = 0.75 Fnv Ab × number of bolts × shear planes."
+     ]
+    ],
+    "types": [
+     {
+      "id": "structural-0015",
+      "ask": "Using LRFD with a resistance factor of 0.90, what is its design strength for yielding on the gross section?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "tension members"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0016",
+      "ask": "With a resistance factor of 0.90, what is its design flexural strength?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "AISC"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0017",
+      "ask": "What is its slenderness ratio?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "slenderness"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0025",
+      "ask": "With a resistance factor of 0.75, what is the design strength for net-section rupture?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "tension members"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0041",
+      "ask": "With a resistance factor of 0.75, what is the design shear strength of the bolt group?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "bolt"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0042",
+      "ask": "Using 0.75 × 0.60 F_{EXX} on the effective throat, what is its design strength?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "weld"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0043",
+      "ask": "With a resistance factor of 0.90, what plastic section modulus is required?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "plastic"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0044",
+      "ask": "Taking the nominal shear strength as 0.6 F_{y} A_{w} with a resistance factor of 1.0, what is its design shear strength?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "shear"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "F_{y}",
@@ -1766,6 +2403,123 @@
      "the stress at which a metal stops springing back and starts to deform permanently"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 240",
+     "svg": "<rect x='40.0' y='30.0' width='70.0' height='160.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><circle cx='54.0' cy='172.0' r='5.0' fill='#00242E' stroke='#00242E' stroke-width='1.5'/><circle cx='68.0' cy='172.0' r='5.0' fill='#00242E' stroke='#00242E' stroke-width='1.5'/><circle cx='82.0' cy='172.0' r='5.0' fill='#00242E' stroke='#00242E' stroke-width='1.5'/><circle cx='96.0' cy='172.0' r='5.0' fill='#00242E' stroke='#00242E' stroke-width='1.5'/><text x='75' y='210' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>section</text><line x1='30.0' y1='90.0' x2='400.0' y2='90.0' stroke='#00574A' stroke-width='1' stroke-dasharray='6 4'/><text x='397' y='84' text-anchor='end' font-size='10' font-weight='400' fill='#00574A'>neutral axis</text><line x1='190.0' y1='30.0' x2='190.0' y2='190.0' stroke='#00242E' stroke-width='1'/><path d='M160.0 30.0 L190.0 90.0 L220.0 172.0' fill='none' stroke='#00242E' stroke-width='2'/><line x1='160.0' y1='30.0' x2='190.0' y2='30.0' stroke='#00242E' stroke-width='1'/><line x1='190.0' y1='172.0' x2='220.0' y2='172.0' stroke='#00242E' stroke-width='1'/><text x='156' y='26' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>εc = 0.003</text><text x='226' y='176' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>εs</text><text x='190' y='210' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>strain</text><line x1='130.0' y1='30.0' x2='130.0' y2='90.0' stroke='#00242E' stroke-width='1'/><line x1='125.0' y1='30.0' x2='135.0' y2='30.0' stroke='#00242E' stroke-width='1'/><line x1='125.0' y1='90.0' x2='135.0' y2='90.0' stroke='#00242E' stroke-width='1'/><text x='122' y='64' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>c</text><rect x='270.0' y='30.0' width='40.0' height='51.0' fill='#D9F1D6' stroke='#1B795A' stroke-width='1.5'/><text x='290' y='24' text-anchor='middle' font-size='11' font-weight='400' fill='#1B795A'>0.85 f′c</text><line x1='262.0' y1='30.0' x2='262.0' y2='81.0' stroke='#00242E' stroke-width='1'/><line x1='257.0' y1='30.0' x2='267.0' y2='30.0' stroke='#00242E' stroke-width='1'/><line x1='257.0' y1='81.0' x2='267.0' y2='81.0' stroke='#00242E' stroke-width='1'/><text x='254' y='60' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>a</text><line x1='330.0' y1='55.5' x2='322.0' y2='55.5' stroke='#568CBB' stroke-width='2.5'/><path d='M312.0 55.5 L322.0 60.5 L322.0 50.5 Z' fill='#568CBB'/><text x='336' y='60' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>C</text><line x1='312.0' y1='172.0' x2='340.0' y2='172.0' stroke='#00574A' stroke-width='2.5'/><path d='M350.0 172.0 L340.0 167.0 L340.0 177.0 Z' fill='#00574A'/><text x='356' y='176' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>T</text><line x1='386.0' y1='55.5' x2='386.0' y2='172.0' stroke='#00242E' stroke-width='1'/><line x1='381.0' y1='55.5' x2='391.0' y2='55.5' stroke='#00242E' stroke-width='1'/><line x1='381.0' y1='172.0' x2='391.0' y2='172.0' stroke='#00242E' stroke-width='1'/><text x='378' y='118' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>d - a/2</text><text x='310' y='210' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>forces</text><text x='200' y='232' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>a = β1 c.  C = 0.85 f′c a b = T = As fy.  Mn = T (d - a/2).</text>",
+     "alt": "A reinforced concrete beam at strength: strain grows linearly from the neutral axis (0.003 at the top); concrete compression is a rectangular block of depth a; C equals T and they form a couple with lever arm d - a/2.",
+     "caption": "A reinforced concrete beam at strength: strain grows linearly from the neutral axis (0.003 at the top); concrete compression is a rectangular block of depth a; C equals T and they form a couple with lever arm d - a/2."
+    }
+   ],
+   "play": {
+    "intro": "Structural Engineering is 10 to 15 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Flexural capacity of a singly reinforced beam",
+      "a = As fy / (0.85 f′c b); φ Mn = 0.9 As fy (d - a/2). Check tension control."
+     ],
+     [
+      "Required steel area",
+      "Assume a, solve As, recheck a; or guess from the answer choices."
+     ],
+     [
+      "Shear capacity",
+      "Vc = 2 λ √f′c b d (psi); φ = 0.75."
+     ],
+     [
+      "Column axial capacity",
+      "Copy the ACI tied or spiral formula from the handbook."
+     ]
+    ],
+    "types": [
+     {
+      "id": "structural-0005",
+      "ask": "Assuming the steel yields, what is the nominal moment capacity?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "ACI 318"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0018",
+      "ask": "What is the depth of the equivalent rectangular stress block?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "ACI 318"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0019",
+      "ask": "Using V_{c} = 0.17 × the square root of f'_{c} × b × d (MPa and mm), what shear does the concrete carry in a beam 300 mm wide with an...",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "ACI 318"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0020",
+      "ask": "What is the nominal axial strength at zero eccentricity, P_{0}?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "ACI 318"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0026",
+      "ask": "What shear do the stirrups carry, V_{s}?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "ACI 318"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0045",
+      "ask": "What is the strain in the tension steel when the concrete reaches 0.003?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "ACI 318"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0046",
+      "ask": "Using a modulus of rupture of 0.62 × the square root of f'_{c} (MPa) and the gross section, what is the cracking moment?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "structural-0047",
+      "ask": "What stirrup spacing is required?",
+      "section": "Civil Engineering",
+      "page": "259–309",
+      "find": [
+       "stirrup"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "f'_{c}",

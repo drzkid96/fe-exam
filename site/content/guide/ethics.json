@@ -69,6 +69,19 @@
     ],
     "links": "It stands apart from the technical topics, but every design topic ends in someone sealing the work.",
     "exam": "Answer from the NCEES Model Rules printed in the handbook, not from one state's law or a firm's policy."
+   },
+   "figures": [
+    {
+     "viewBox": "0 0 540 158",
+     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Ethics</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Comes back in</text><text x='360' y='97' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Construction A: Administration</text><line x1='338.0' y1='130.5' x2='356.0' y2='93.0' stroke='#00574A' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>1. Codes of ethics (A)</text><rect x='198.0' y='66.5' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='81' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>2. Liability (B)</text><rect x='198.0' y='93.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='108' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>3. Licensure (C)</text><rect x='198.0' y='119.5' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='134' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>4. Contracts (D)</text>",
+     "alt": "How Ethics and Professional Practice connects: the subtopics in a suggested study order, the earlier topics to refresh first, and the later topics that use this one.",
+     "caption": "How this topic connects. The middle column is a suggested study order; the left column lists earlier lessons to refresh first; the right column shows where this topic is used again."
+    }
+   ],
+   "play": {
+    "intro": "Ethics and Professional Practice: 4 to 6 of the 110 exam questions. At about 2.9 minutes a question, that is roughly 12 to 17 minutes of the exam. Answer from the NCEES Model Rules printed in the handbook, not from one state's law or a firm's policy. Work the lessons below in the order of the map; open each lesson's playbook first.",
+    "rows": [],
+    "types": []
    }
   },
   {
@@ -144,7 +157,89 @@
    "primer": "A code of ethics is a written list of duties. For engineers the first duty is to the public's safety, then to clients and employers, then to the profession. Questions describe a situation and ask which action the rules require.",
    "needs": [],
    "leads": [],
-   "terms": []
+   "terms": [],
+   "figures": [
+    {
+     "viewBox": "0 0 400 206",
+     "svg": "<rect x='20.0' y='24.0' width='310.0' height='36.0' fill='#00574A' stroke='#00242E' stroke-width='1.5'/><text x='175' y='46' text-anchor='middle' font-size='11' font-weight='600' fill='#FFFFFF'>1. The public: health, safety and welfare first</text><rect x='30.0' y='70.0' width='290.0' height='36.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='175' y='92' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>2. Employers and clients: faithful agent</text><rect x='40.0' y='116.0' width='270.0' height='36.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><text x='175' y='138' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>3. Other licensees: fair dealing, credit</text><line x1='352.0' y1='150.0' x2='352.0' y2='40.0' stroke='#00242E' stroke-width='2'/><path d='M352.0 30.0 L347.0 40.0 L357.0 40.0 Z' fill='#00242E'/><text x='362' y='76' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>higher</text><text x='362' y='90' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>duty</text><text x='362' y='104' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>wins</text><text x='20' y='176' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>When duties conflict, the higher one wins: report a danger</text><text x='20' y='191' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>to the public even if the client objects.</text>",
+     "alt": "The order of an engineer's obligations in the NCEES Model Rules: to the public first, then to employers and clients, then to other licensees.",
+     "caption": "The order of an engineer's obligations in the NCEES Model Rules: to the public first, then to employers and clients, then to other licensees."
+    }
+   ],
+   "play": {
+    "intro": "Ethics and Professional Practice is 4 to 6 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Any ethics scenario",
+      "Pick the answer that protects the public first, is honest, and stays within the engineer's competence."
+     ],
+     [
+      "Gifts, conflicts, bribes",
+      "Decline gifts from parties whose work you judge; disclose conflicts and step aside."
+     ],
+     [
+      "Pressure from a client or boss",
+      "Report the danger to the employer, then to the authority if it is not fixed."
+     ]
+    ],
+    "types": [
+     {
+      "id": "ethics-0001",
+      "ask": "Under the NCEES Model Rules, what must the engineer do?",
+      "section": "Ethics and Professional Practice",
+      "page": "4–12",
+      "find": [
+       "obligation to the public"
+      ],
+      "time": "about 1 min",
+      "n": 3
+     },
+     {
+      "id": "ethics-0003",
+      "ask": "When may the engineer accept both payments?",
+      "section": "Ethics and Professional Practice",
+      "page": "4–12",
+      "find": [
+       "conflicts of interest"
+      ],
+      "time": "about 1 min",
+      "n": 3
+     },
+     {
+      "id": "ethics-0009",
+      "ask": "Under the NCEES Model Rules, what should the engineer do?",
+      "section": "Ethics and Professional Practice",
+      "page": "4–12",
+      "find": [
+       "gratuities"
+      ],
+      "time": "about 1 min",
+      "n": 3
+     },
+     {
+      "id": "ethics-0011",
+      "ask": "What should he do?",
+      "section": "Ethics and Professional Practice",
+      "page": "4–12",
+      "find": [
+       "conflicts of interest"
+      ],
+      "time": "about 1 min",
+      "n": 3
+     },
+     {
+      "id": "ethics-0012",
+      "ask": "What should the engineer do?",
+      "section": "Ethics and Professional Practice",
+      "page": "4–12",
+      "find": [
+       "conflicts of interest"
+      ],
+      "time": "about 1 min",
+      "n": 3
+     }
+    ]
+   }
   },
   {
    "id": "ethics-b-lesson",
@@ -208,7 +303,65 @@
    "primer": "Liability means being legally answerable for harm. An engineer is expected to work as carefully as a competent peer would. Falling short of that is negligence. Insurance and contract terms decide who pays.",
    "needs": [],
    "leads": [],
-   "terms": []
+   "terms": [],
+   "figures": [
+    {
+     "viewBox": "0 0 400 128",
+     "svg": "<rect x='10.0' y='20.0' width='84.0' height='30.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='52' y='39' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Duty</text><text x='52' y='70' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>the engineer owed</text><text x='52' y='83' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>a duty of care</text><line x1='94.0' y1='35.0' x2='102.0' y2='35.0' stroke='#00242E' stroke-width='1.5'/><path d='M108.0 35.0 L102.0 32.0 L102.0 38.0 Z' fill='#00242E'/><rect x='108.0' y='20.0' width='84.0' height='30.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='150' y='39' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Breach</text><text x='150' y='70' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>work fell below the</text><text x='150' y='83' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>standard of care</text><line x1='192.0' y1='35.0' x2='200.0' y2='35.0' stroke='#00242E' stroke-width='1.5'/><path d='M206.0 35.0 L200.0 32.0 L200.0 38.0 Z' fill='#00242E'/><rect x='206.0' y='20.0' width='84.0' height='30.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='248' y='39' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Causation</text><text x='248' y='70' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>the breach caused</text><text x='248' y='83' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>the harm</text><line x1='290.0' y1='35.0' x2='298.0' y2='35.0' stroke='#00242E' stroke-width='1.5'/><path d='M304.0 35.0 L298.0 32.0 L298.0 38.0 Z' fill='#00242E'/><rect x='304.0' y='20.0' width='84.0' height='30.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='346' y='39' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Damages</text><text x='346' y='70' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>real loss or</text><text x='346' y='83' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>injury occurred</text><text x='200' y='118' text-anchor='middle' font-size='9.66469' font-weight='600' fill='#00242E'>All four must be proved for negligence. A bad outcome alone is not negligence.</text>",
+     "alt": "The four elements of negligence: duty, breach of the standard of care, causation and damages; all four must be proved.",
+     "caption": "The four elements of negligence: duty, breach of the standard of care, causation and damages; all four must be proved."
+    }
+   ],
+   "play": {
+    "intro": "Ethics and Professional Practice is 4 to 6 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Negligence",
+      "Needs duty, breach of the standard of care, causation and damages."
+     ],
+     [
+      "Standard of care",
+      "What a reasonably competent engineer would do: not perfection."
+     ],
+     [
+      "Insurance",
+      "Professional liability: design errors. General liability: third-party injury. Workers' comp: own employees."
+     ]
+    ],
+    "types": [
+     {
+      "id": "ethics-0005",
+      "ask": "In a negligence claim, an engineer's work is judged against which standard?",
+      "section": "Ethics and Professional Practice",
+      "page": "4–12",
+      "find": [
+       "negligence"
+      ],
+      "time": "about 1 min",
+      "n": 3
+     },
+     {
+      "id": "ethics-0006",
+      "ask": "Which type of insurance covers claims that an engineer's design errors caused a client financial loss?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 1 min",
+      "n": 3
+     },
+     {
+      "id": "ethics-0013",
+      "ask": "In a negligence claim, what must the plaintiff show about the engineer's work?",
+      "section": "Ethics and Professional Practice",
+      "page": "4–12",
+      "find": [
+       "negligence"
+      ],
+      "time": "about 1 min",
+      "n": 3
+     }
+    ]
+   }
   },
   {
    "id": "ethics-c-lesson",
@@ -279,7 +432,76 @@
    "primer": "A licence is the state's permission to practise engineering. It is earned by education, exams (the FE, then the PE) and experience, and it is kept by renewal. A seal on a drawing means a licensed engineer takes responsibility for it.",
    "needs": [],
    "leads": [],
-   "terms": []
+   "terms": [],
+   "figures": [
+    {
+     "viewBox": "0 0 400 166",
+     "svg": "<rect x='10.0' y='30.0' width='84.0' height='36.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><text x='52' y='46' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Engineering</text><text x='52' y='58' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>degree</text><rect x='106.0' y='30.0' width='84.0' height='36.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><text x='148' y='46' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Pass the</text><text x='148' y='58' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>FE exam</text><rect x='202.0' y='30.0' width='84.0' height='36.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><text x='244' y='46' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Engineer intern</text><text x='244' y='58' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>(EI or EIT)</text><rect x='298.0' y='30.0' width='84.0' height='36.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><text x='340' y='40' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Supervised</text><text x='340' y='52' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>experience,</text><text x='340' y='64' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>usually 4 yr</text><rect x='298.0' y='90.0' width='84.0' height='36.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><text x='340' y='106' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Pass the</text><text x='340' y='118' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>PE exam</text><rect x='202.0' y='90.0' width='84.0' height='36.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><text x='244' y='106' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Licensed</text><text x='244' y='118' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>PE</text><rect x='106.0' y='90.0' width='84.0' height='36.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='148' y='106' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Other states:</text><text x='148' y='118' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>comity</text><line x1='94.0' y1='48.0' x2='99.0' y2='48.0' stroke='#00242E' stroke-width='1.5'/><path d='M106.0 48.0 L99.0 44.5 L99.0 51.5 Z' fill='#00242E'/><line x1='190.0' y1='48.0' x2='195.0' y2='48.0' stroke='#00242E' stroke-width='1.5'/><path d='M202.0 48.0 L195.0 44.5 L195.0 51.5 Z' fill='#00242E'/><line x1='286.0' y1='48.0' x2='291.0' y2='48.0' stroke='#00242E' stroke-width='1.5'/><path d='M298.0 48.0 L291.0 44.5 L291.0 51.5 Z' fill='#00242E'/><line x1='340.0' y1='66.0' x2='340.0' y2='83.0' stroke='#00242E' stroke-width='1.5'/><path d='M340.0 90.0 L343.5 83.0 L336.5 83.0 Z' fill='#00242E'/><line x1='298.0' y1='108.0' x2='293.0' y2='108.0' stroke='#00242E' stroke-width='1.5'/><path d='M286.0 108.0 L293.0 111.5 L293.0 104.5 Z' fill='#00242E'/><line x1='202.0' y1='108.0' x2='197.0' y2='108.0' stroke='#00242E' stroke-width='1.5'/><path d='M190.0 108.0 L197.0 111.5 L197.0 104.5 Z' fill='#00242E'/><text x='200' y='16' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>The usual path to licensure (each state board sets its own rules)</text><text x='200' y='156' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>Only a licensed PE may seal work or offer engineering to the public.</text>",
+     "alt": "The usual path to a professional engineering licence: degree, FE exam, engineer intern, supervised experience, PE exam, licence, and licensure in other states by comity.",
+     "caption": "The usual path to a professional engineering licence: degree, FE exam, engineer intern, supervised experience, PE exam, licence, and licensure in other states by comity."
+    }
+   ],
+   "play": {
+    "intro": "Ethics and Professional Practice is 4 to 6 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Who may seal",
+      "Only a licensed PE in responsible charge of the work."
+     ],
+     [
+      "Engineer intern",
+      "May do engineering under a PE; cannot seal or offer services to the public."
+     ],
+     [
+      "Licence in another state",
+      "Comity, when the original licence meets that state's requirements."
+     ]
+    ],
+    "types": [
+     {
+      "id": "ethics-0002",
+      "ask": "May she seal them?",
+      "section": "Ethics and Professional Practice",
+      "page": "4–12",
+      "find": [
+       "responsible charge"
+      ],
+      "time": "about 1 min",
+      "n": 3
+     },
+     {
+      "id": "ethics-0004",
+      "ask": "Which route does the NCEES Model Law provide for someone who already holds a license elsewhere?",
+      "section": "Ethics and Professional Practice",
+      "page": "4–12",
+      "find": [
+       "licensure"
+      ],
+      "time": "about 1 min",
+      "n": 3
+     },
+     {
+      "id": "ethics-0010",
+      "ask": "What should she do?",
+      "section": "Ethics and Professional Practice",
+      "page": "4–12",
+      "find": [
+       "responsible charge"
+      ],
+      "time": "about 1 min",
+      "n": 3
+     },
+     {
+      "id": "ethics-0015",
+      "ask": "What may the engineer do?",
+      "section": "",
+      "page": "",
+      "find": [],
+      "time": "about 1 min",
+      "n": 3
+     }
+    ]
+   }
   },
   {
    "id": "ethics-d-lesson",
@@ -340,7 +562,67 @@
      "Construction Engineering: Project administration"
     ]
    ],
-   "terms": []
+   "terms": [],
+   "figures": [
+    {
+     "viewBox": "0 0 400 166",
+     "svg": "<text x='200' y='16' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>A valid contract needs all five</text><rect x='10.0' y='26.0' width='70.0' height='34.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='45' y='46' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Offer</text><rect x='87.0' y='26.0' width='70.0' height='34.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='122' y='46' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Acceptance</text><rect x='164.0' y='26.0' width='70.0' height='34.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='199' y='46' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Consideration</text><rect x='241.0' y='26.0' width='70.0' height='34.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='276' y='40' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Competent</text><text x='276' y='52' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>parties</text><rect x='318.0' y='26.0' width='70.0' height='34.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='353' y='40' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Lawful</text><text x='353' y='52' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>purpose</text><rect x='30.0' y='104.0' width='340.0' height='18.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1'/><line x1='200.0' y1='113.0' x2='40.0' y2='113.0' stroke='#568CBB' stroke-width='2.5'/><path d='M30.0 113.0 L40.0 118.0 L40.0 108.0 Z' fill='#568CBB'/><line x1='200.0' y1='113.0' x2='360.0' y2='113.0' stroke='#00574A' stroke-width='2.5'/><path d='M370.0 113.0 L360.0 108.0 L360.0 118.0 Z' fill='#00574A'/><text x='30' y='96' text-anchor='start' font-size='10' font-weight='600' fill='#568CBB'>owner carries the cost risk</text><text x='370' y='96' text-anchor='end' font-size='10' font-weight='600' fill='#00574A'>contractor carries it</text><text x='40' y='140' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Cost-plus</text><text x='200' y='140' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Unit price</text><text x='360' y='140' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Lump sum</text><text x='200' y='156' text-anchor='middle' font-size='8.42105' font-weight='400' fill='#00242E'>paid actual cost + fee    |    paid per unit, owner takes quantity risk    |    one fixed price</text>",
+     "alt": "A valid contract needs offer, acceptance, consideration, competent parties and a lawful purpose. Contract types range from cost-plus, where the owner carries the cost risk, to lump sum, where the contractor does.",
+     "caption": "A valid contract needs offer, acceptance, consideration, competent parties and a lawful purpose. Contract types range from cost-plus, where the owner carries the cost risk, to lump sum, where the contractor does."
+    }
+   ],
+   "play": {
+    "intro": "Ethics and Professional Practice is 4 to 6 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Is it a valid contract?",
+      "Offer, acceptance, consideration, competent parties, lawful purpose: all five."
+     ],
+     [
+      "Contract types and risk",
+      "Cost-plus: owner bears cost risk. Lump sum: contractor does. Unit price: owner takes quantity risk."
+     ],
+     [
+      "Breach or change",
+      "Written amendment before the extra work; damages follow the breach."
+     ]
+    ],
+    "types": [
+     {
+      "id": "ethics-0007",
+      "ask": "Which of the following is required for a contract to be enforceable?",
+      "section": "Ethics and Professional Practice",
+      "page": "4–12",
+      "find": [
+       "contract"
+      ],
+      "time": "about 1 min",
+      "n": 3
+     },
+     {
+      "id": "ethics-0008",
+      "ask": "What type of contract is this?",
+      "section": "Ethics and Professional Practice",
+      "page": "4–12",
+      "find": [
+       "contract"
+      ],
+      "time": "about 1 min",
+      "n": 3
+     },
+     {
+      "id": "ethics-0014",
+      "ask": "What should the consultant do first?",
+      "section": "Ethics and Professional Practice",
+      "page": "4–12",
+      "find": [
+       "contract"
+      ],
+      "time": "about 1 min",
+      "n": 3
+     }
+    ]
+   }
   }
  ]
 }

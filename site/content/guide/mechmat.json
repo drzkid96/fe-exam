@@ -71,6 +71,19 @@
     ],
     "links": "It needs statics to get the internal forces. Structural design (steel and concrete) and the strength of soils in geotechnics build on it.",
     "exam": "Work in newtons and millimetres so stresses come out in megapascals, or in kips and inches for ksi."
+   },
+   "figures": [
+    {
+     "viewBox": "0 0 540 180",
+     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Mechanics</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Comes back in</text><text x='182' y='55' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Statics C: Equilibrium</text><line x1='186.0' y1='51.0' x2='198.0' y2='51.0' stroke='#568CBB' stroke-width='1'/><text x='182' y='161' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Statics F: Moment of inertia</text><line x1='186.0' y1='157.0' x2='198.0' y2='83.0' stroke='#568CBB' stroke-width='1'/><text x='360' y='55' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Materials B: Test methods</text><line x1='338.0' y1='83.0' x2='356.0' y2='51.0' stroke='#00574A' stroke-width='1'/><text x='360' y='70' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Materials C: Material properties</text><line x1='338.0' y1='83.0' x2='356.0' y2='66.1' stroke='#00574A' stroke-width='1'/><text x='360' y='85' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Structural A: Determinate analysis</text><line x1='338.0' y1='51.0' x2='356.0' y2='81.3' stroke='#00574A' stroke-width='1'/><text x='360' y='100' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Structural B: Deflection</text><line x1='338.0' y1='115.0' x2='356.0' y2='96.4' stroke='#00574A' stroke-width='1'/><text x='360' y='116' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Structural C: Columns</text><line x1='338.0' y1='83.0' x2='356.0' y2='111.6' stroke='#00574A' stroke-width='1'/><text x='360' y='131' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Structural G: Steel design</text><line x1='338.0' y1='83.0' x2='356.0' y2='126.7' stroke='#00574A' stroke-width='1'/><text x='360' y='146' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Structural H: Concrete design</text><line x1='338.0' y1='83.0' x2='356.0' y2='141.9' stroke='#00574A' stroke-width='1'/><text x='360' y='161' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Geotech F: Shear strength</text><line x1='338.0' y1='147.0' x2='356.0' y2='157.0' stroke='#00574A' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>1. Shear and moment (A)</text><rect x='198.0' y='72.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='86' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>2. Stress and strain (B)</text><rect x='198.0' y='104.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='118' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>3. Deformations (C)</text><rect x='198.0' y='136.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='150' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>4. Mohr's circle (D)</text>",
+     "alt": "How Mechanics of Materials connects: the subtopics in a suggested study order, the earlier topics to refresh first, and the later topics that use this one.",
+     "caption": "How this topic connects. The middle column is a suggested study order; the left column lists earlier lessons to refresh first; the right column shows where this topic is used again."
+    }
+   ],
+   "play": {
+    "intro": "Mechanics of Materials: 7 to 11 of the 110 exam questions. At about 2.9 minutes a question, that is roughly 20 to 32 minutes of the exam. Work in newtons and millimetres so stresses come out in megapascals, or in kips and inches for ksi. Work the lessons below in the order of the map; open each lesson's playbook first.",
+    "rows": [],
+    "types": []
    }
   },
   {
@@ -291,6 +304,125 @@
      "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 258",
+     "svg": "<rect x='70.0' y='40.0' width='260.0' height='8.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><line x1='70.0' y1='24.0' x2='330.0' y2='24.0' stroke='#00574A' stroke-width='1.5'/><line x1='70.0' y1='24.0' x2='70.0' y2='33.0' stroke='#00574A' stroke-width='1.5'/><path d='M70.0 39.0 L73.0 33.0 L67.0 33.0 Z' fill='#00574A'/><line x1='96.0' y1='24.0' x2='96.0' y2='33.0' stroke='#00574A' stroke-width='1.5'/><path d='M96.0 39.0 L99.0 33.0 L93.0 33.0 Z' fill='#00574A'/><line x1='122.0' y1='24.0' x2='122.0' y2='33.0' stroke='#00574A' stroke-width='1.5'/><path d='M122.0 39.0 L125.0 33.0 L119.0 33.0 Z' fill='#00574A'/><line x1='148.0' y1='24.0' x2='148.0' y2='33.0' stroke='#00574A' stroke-width='1.5'/><path d='M148.0 39.0 L151.0 33.0 L145.0 33.0 Z' fill='#00574A'/><line x1='174.0' y1='24.0' x2='174.0' y2='33.0' stroke='#00574A' stroke-width='1.5'/><path d='M174.0 39.0 L177.0 33.0 L171.0 33.0 Z' fill='#00574A'/><line x1='200.0' y1='24.0' x2='200.0' y2='33.0' stroke='#00574A' stroke-width='1.5'/><path d='M200.0 39.0 L203.0 33.0 L197.0 33.0 Z' fill='#00574A'/><line x1='226.0' y1='24.0' x2='226.0' y2='33.0' stroke='#00574A' stroke-width='1.5'/><path d='M226.0 39.0 L229.0 33.0 L223.0 33.0 Z' fill='#00574A'/><line x1='252.0' y1='24.0' x2='252.0' y2='33.0' stroke='#00574A' stroke-width='1.5'/><path d='M252.0 39.0 L255.0 33.0 L249.0 33.0 Z' fill='#00574A'/><line x1='278.0' y1='24.0' x2='278.0' y2='33.0' stroke='#00574A' stroke-width='1.5'/><path d='M278.0 39.0 L281.0 33.0 L275.0 33.0 Z' fill='#00574A'/><line x1='304.0' y1='24.0' x2='304.0' y2='33.0' stroke='#00574A' stroke-width='1.5'/><path d='M304.0 39.0 L307.0 33.0 L301.0 33.0 Z' fill='#00574A'/><line x1='330.0' y1='24.0' x2='330.0' y2='33.0' stroke='#00574A' stroke-width='1.5'/><path d='M330.0 39.0 L333.0 33.0 L327.0 33.0 Z' fill='#00574A'/><path d='M70 48 L60 64 L80 64 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><line x1='56.0' y1='64.0' x2='84.0' y2='64.0' stroke='#00242E' stroke-width='2'/><line x1='62.0' y1='64.0' x2='56.0' y2='71.0' stroke='#00242E' stroke-width='1'/><line x1='70.0' y1='64.0' x2='64.0' y2='71.0' stroke='#00242E' stroke-width='1'/><line x1='78.0' y1='64.0' x2='72.0' y2='71.0' stroke='#00242E' stroke-width='1'/><path d='M330 48 L320 62 L340 62 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><circle cx='325.0' cy='66.0' r='3.5' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><circle cx='335.0' cy='66.0' r='3.5' fill='#FFFFFF' stroke='#00242E' stroke-width='1.5'/><line x1='316.0' y1='70.0' x2='344.0' y2='70.0' stroke='#00242E' stroke-width='2'/><text x='30' y='44' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Load</text><line x1='70.0' y1='118.0' x2='330.0' y2='118.0' stroke='#00242E' stroke-width='1'/><path d='M70.0 118.0 L70.0 92.0 L330.0 144.0 L330.0 118.0 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='1.5'/><text x='30' y='122' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Shear V</text><text x='74' y='88' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>+wL/2</text><text x='336' y='148' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>-wL/2</text><circle cx='200.0' cy='118.0' r='4' fill='#00574A'/><text x='208' y='110' text-anchor='start' font-size='11' font-weight='400' fill='#00574A'>V = 0 at midspan</text><line x1='70.0' y1='200.0' x2='330.0' y2='200.0' stroke='#00242E' stroke-width='1'/><path d='M70.0 200.0 L74.3 197.4 L78.7 194.8 L83.0 192.4 L87.3 190.0 L91.7 187.8 L96.0 185.6 L100.3 183.5 L104.7 181.5 L109.0 179.6 L113.3 177.8 L117.7 176.0 L122.0 174.4 L126.3 172.8 L130.7 171.4 L135.0 170.0 L139.3 168.7 L143.7 167.5 L148.0 166.4 L152.3 165.4 L156.7 164.4 L161.0 163.6 L165.3 162.8 L169.7 162.2 L174.0 161.6 L178.3 161.1 L182.7 160.7 L187.0 160.4 L191.3 160.2 L195.7 160.0 L200.0 160.0 L204.3 160.0 L208.7 160.2 L213.0 160.4 L217.3 160.7 L221.7 161.1 L226.0 161.6 L230.3 162.2 L234.7 162.8 L239.0 163.6 L243.3 164.4 L247.7 165.4 L252.0 166.4 L256.3 167.5 L260.7 168.7 L265.0 170.0 L269.3 171.4 L273.7 172.8 L278.0 174.4 L282.3 176.0 L286.7 177.8 L291.0 179.6 L295.3 181.5 L299.7 183.5 L304.0 185.6 L308.3 187.8 L312.7 190.0 L317.0 192.4 L321.3 194.8 L325.7 197.4 L330.0 200.0 L330.0 200.0 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='1.5'/><text x='30' y='190' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Moment M</text><text x='200' y='154' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>largest where V = 0: wL²/8</text><text x='200' y='228' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Slope of the moment diagram = shear.</text><text x='200' y='243' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Change in moment = area under the shear diagram.</text>",
+     "alt": "A uniformly loaded simple beam with its shear and moment diagrams stacked: shear falls linearly and crosses zero at midspan, where the moment peaks at wL²/8.",
+     "caption": "A uniformly loaded simple beam with its shear and moment diagrams stacked: shear falls linearly and crosses zero at midspan, where the moment peaks at wL²/8."
+    }
+   ],
+   "play": {
+    "intro": "Mechanics of Materials is 7 to 11 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Maximum moment of a simple beam",
+      "Use the handbook beam diagrams: UDL w L²/8 at midspan; point load P L/4 at midspan."
+     ],
+     [
+      "Shear or moment at a section",
+      "Cut there, keep the left piece, sum forces for V and moments for M."
+     ],
+     [
+      "Where is the maximum moment?",
+      "Where the shear diagram crosses zero."
+     ],
+     [
+      "Sketch matching (which diagram is right)",
+      "UDL: shear linear, moment parabolic. Point loads: shear steps, moment straight lines."
+     ]
+    ],
+    "types": [
+     {
+      "id": "mechmat-0003",
+      "ask": "What is the maximum bending moment?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "shearing force and bending moment"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0007",
+      "ask": "Click the place on the beam where the bending moment is largest.",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "shearing force and bending moment"
+      ],
+      "time": "about 3 min",
+      "n": 3
+     },
+     {
+      "id": "mechmat-0008",
+      "ask": "What is the maximum shear force?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "shearing force and bending moment"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0015",
+      "ask": "What is the maximum bending moment?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "shearing force and bending moment"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0016",
+      "ask": "What is the largest bending moment magnitude in the beam?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "shearing force and bending moment"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0017",
+      "ask": "What is the maximum bending moment in that length?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "shearing force and bending moment"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0018",
+      "ask": "What is the magnitude of the bending moment at the fixed support?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "shearing force and bending moment"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0019",
+      "ask": "What is the shear force 2.0 m from the left support?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "shearing force and bending moment"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "M_{max}",
@@ -451,7 +583,7 @@
      "value": 180.0,
      "figure": {
       "viewBox": "0 0 400 150",
-      "svg": "<rect x='90' y='75' width='220' height='22' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='116' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Heated bar: it tries to lengthen</text><rect x='76' y='50' width='14' height='72' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='310' y='50' width='14' height='72' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='90' y1='62' x2='126' y2='62' stroke='#568CBB' stroke-width='3'/><path d='M134 62 L122 56 L122 68 Z' fill='#568CBB'/><text x='140' y='66' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>wall pushes back</text><line x1='310' y1='46' x2='274' y2='46' stroke='#568CBB' stroke-width='3'/><path d='M266 46 L278 40 L278 52 Z' fill='#568CBB'/><text x='260' y='50' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>wall pushes back</text><text x='200' y='142' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Expansion is prevented, so the bar is squeezed to 180.0 MPa</text>",
+      "svg": "<rect x='90' y='75' width='220' height='22' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='116' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Heated bar: it tries to lengthen</text><rect x='76' y='50' width='14' height='72' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='310' y='50' width='14' height='72' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='90' y1='62' x2='126' y2='62' stroke='#568CBB' stroke-width='3'/><path d='M134 62 L122 56 L122 68 Z' fill='#568CBB'/><text x='112' y='55' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>wall pushes back</text><line x1='310' y1='46' x2='274' y2='46' stroke='#568CBB' stroke-width='3'/><path d='M266 46 L278 40 L278 52 Z' fill='#568CBB'/><text x='288' y='39' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>wall pushes back</text><text x='200' y='142' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Expansion is prevented, so the bar is squeezed to 180.0 MPa</text>",
       "alt": "A bar held between rigid supports with wall pushes back; wall pushes back. Expansion is prevented, so the bar is squeezed to 180.0 MPa."
      }
     },
@@ -477,7 +609,7 @@
      "value": 242.105263,
      "figure": {
       "viewBox": "0 0 400 168",
-      "svg": "<rect x='70' y='70' width='260' height='34' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='182' y='36' width='36' height='102' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='182' y='70' width='36' height='34' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='218' y1='52' x2='282' y2='52' stroke='#00574A' stroke-width='3'/><path d='M290 52 L278 46 L278 58 Z' fill='#00574A'/><text x='296' y='56' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>46 kN</text><line x1='182' y1='150' x2='218' y2='150' stroke='#00242E'/><line x1='182' y1='144' x2='182' y2='156' stroke='#00242E'/><line x1='218' y1='144' x2='218' y2='156' stroke='#00242E'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>bolt 19 mm</text><text x='62' y='91' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>plate 10 mm</text><text x='200' y='22' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>Bearing area = 19 × 10 = 190 mm²</text>",
+      "svg": "<rect x='70' y='70' width='260' height='34' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='182' y='36' width='36' height='102' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='182' y='70' width='36' height='34' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='218' y1='52' x2='282' y2='52' stroke='#00574A' stroke-width='3'/><path d='M290 52 L278 46 L278 58 Z' fill='#00574A'/><text x='296' y='56' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>46 kN</text><line x1='182' y1='150' x2='218' y2='150' stroke='#00242E'/><line x1='182' y1='144' x2='182' y2='156' stroke='#00242E'/><line x1='218' y1='144' x2='218' y2='156' stroke='#00242E'/><text x='200' y='165' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>bolt 19 mm</text><text x='62' y='91' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>plate 10 mm</text><text x='200' y='22' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>Bearing area = 19 × 10 = 190 mm²</text>",
       "alt": "A 19 mm bolt passing through a 10 mm plate. The bearing area is the bolt diameter times the plate thickness, 190 mm²."
      }
     }
@@ -593,6 +725,179 @@
      "moment of inertia divided by the distance to the outer edge; bending stress is moment divided by it"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 186",
+     "svg": "<rect x='30.0' y='60.0' width='120.0' height='30.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><line x1='30.0' y1='75.0' x2='14.0' y2='75.0' stroke='#00574A' stroke-width='2.5'/><path d='M4.0 75.0 L14.0 80.0 L14.0 70.0 Z' fill='#00574A'/><line x1='150.0' y1='75.0' x2='166.0' y2='75.0' stroke='#00574A' stroke-width='2.5'/><path d='M176.0 75.0 L166.0 70.0 L166.0 80.0 Z' fill='#00574A'/><text x='16' y='66' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>P</text><text x='166' y='66' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>P</text><line x1='100.0' y1='50.0' x2='100.0' y2='100.0' stroke='#568CBB' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='100.0' y1='64.0' x2='115.0' y2='64.0' stroke='#568CBB' stroke-width='1.2'/><path d='M120.0 64.0 L115.0 61.5 L115.0 66.5 Z' fill='#568CBB'/><line x1='100.0' y1='71.0' x2='115.0' y2='71.0' stroke='#568CBB' stroke-width='1.2'/><path d='M120.0 71.0 L115.0 68.5 L115.0 73.5 Z' fill='#568CBB'/><line x1='100.0' y1='78.0' x2='115.0' y2='78.0' stroke='#568CBB' stroke-width='1.2'/><path d='M120.0 78.0 L115.0 75.5 L115.0 80.5 Z' fill='#568CBB'/><line x1='100.0' y1='85.0' x2='115.0' y2='85.0' stroke='#568CBB' stroke-width='1.2'/><path d='M120.0 85.0 L115.0 82.5 L115.0 87.5 Z' fill='#568CBB'/><text x='90' y='120' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Normal stress</text><text x='90' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>acts at 90° to the cut</text><text x='90' y='150' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>σ = P / A</text><rect x='230.0' y='55.0' width='150.0' height='18.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><rect x='230.0' y='80.0' width='150.0' height='18.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><rect x='296.0' y='45.0' width='18.0' height='64.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><line x1='380.0' y1='64.0' x2='388.0' y2='64.0' stroke='#00574A' stroke-width='2.5'/><path d='M398.0 64.0 L388.0 59.0 L388.0 69.0 Z' fill='#00574A'/><line x1='230.0' y1='89.0' x2='222.0' y2='89.0' stroke='#00574A' stroke-width='2.5'/><path d='M212.0 89.0 L222.0 94.0 L222.0 84.0 Z' fill='#00574A'/><line x1='286.0' y1='76.5' x2='324.0' y2='76.5' stroke='#568CBB' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='298.0' y1='76.5' x2='301.0' y2='76.5' stroke='#568CBB' stroke-width='1.2'/><path d='M305.0 76.5 L301.0 74.5 L301.0 78.5 Z' fill='#568CBB'/><line x1='304.0' y1='76.5' x2='307.0' y2='76.5' stroke='#568CBB' stroke-width='1.2'/><path d='M311.0 76.5 L307.0 74.5 L307.0 78.5 Z' fill='#568CBB'/><line x1='310.0' y1='76.5' x2='313.0' y2='76.5' stroke='#568CBB' stroke-width='1.2'/><path d='M317.0 76.5 L313.0 74.5 L313.0 78.5 Z' fill='#568CBB'/><text x='305' y='120' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Shear stress</text><text x='305' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>acts along the cut</text><text x='305' y='150' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>τ = V / A</text><text x='200' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>A is the area of the cut surface the stress acts on.</text>",
+     "alt": "Left: a bar in tension has normal stress P/A acting at right angles to the cut. Right: a bolt between two plates has shear stress V/A acting along the cut.",
+     "caption": "Left: a bar in tension has normal stress P/A acting at right angles to the cut. Right: a bolt between two plates has shear stress V/A acting along the cut."
+    },
+    {
+     "viewBox": "0 0 400 234",
+     "svg": "<rect x='60.0' y='40.0' width='140.0' height='120.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><line x1='50.0' y1='100.0' x2='210.0' y2='100.0' stroke='#00574A' stroke-width='1' stroke-dasharray='6 4'/><text x='196' y='94' text-anchor='end' font-size='11' font-weight='400' fill='#00574A'>neutral axis</text><path d='M47.0 77.5 A26 26 0 0 0 47.0 122.5' fill='none' stroke='#568CBB' stroke-width='2'/><line x1='40.1' y1='118.5' x2='41.8' y2='119.5' stroke='#568CBB' stroke-width='2'/><path d='M48.7 123.5 L43.8 116.1 L39.8 123.0 Z' fill='#568CBB'/><text x='28' y='100' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>M</text><line x1='272.0' y1='44.0' x2='207.0' y2='44.0' stroke='#568CBB' stroke-width='1.3'/><path d='M202.0 44.0 L207.0 46.5 L207.0 41.5 Z' fill='#568CBB'/><line x1='202.0' y1='156.0' x2='267.0' y2='156.0' stroke='#00574A' stroke-width='1.3'/><path d='M272.0 156.0 L267.0 153.5 L267.0 158.5 Z' fill='#00574A'/><line x1='260.8' y1='53.0' x2='207.0' y2='53.0' stroke='#568CBB' stroke-width='1.3'/><path d='M202.0 53.0 L207.0 55.5 L207.0 50.5 Z' fill='#568CBB'/><line x1='202.0' y1='147.0' x2='255.8' y2='147.0' stroke='#00574A' stroke-width='1.3'/><path d='M260.8 147.0 L255.8 144.5 L255.8 149.5 Z' fill='#00574A'/><line x1='249.5' y1='62.0' x2='207.0' y2='62.0' stroke='#568CBB' stroke-width='1.3'/><path d='M202.0 62.0 L207.0 64.5 L207.0 59.5 Z' fill='#568CBB'/><line x1='202.0' y1='138.0' x2='244.5' y2='138.0' stroke='#00574A' stroke-width='1.3'/><path d='M249.5 138.0 L244.5 135.5 L244.5 140.5 Z' fill='#00574A'/><line x1='238.2' y1='71.0' x2='207.0' y2='71.0' stroke='#568CBB' stroke-width='1.3'/><path d='M202.0 71.0 L207.0 73.5 L207.0 68.5 Z' fill='#568CBB'/><line x1='202.0' y1='129.0' x2='233.2' y2='129.0' stroke='#00574A' stroke-width='1.3'/><path d='M238.2 129.0 L233.2 126.5 L233.2 131.5 Z' fill='#00574A'/><line x1='227.0' y1='80.0' x2='207.0' y2='80.0' stroke='#568CBB' stroke-width='1.3'/><path d='M202.0 80.0 L207.0 82.5 L207.0 77.5 Z' fill='#568CBB'/><line x1='202.0' y1='120.0' x2='222.0' y2='120.0' stroke='#00574A' stroke-width='1.3'/><path d='M227.0 120.0 L222.0 117.5 L222.0 122.5 Z' fill='#00574A'/><line x1='215.8' y1='89.0' x2='207.0' y2='89.0' stroke='#568CBB' stroke-width='1.3'/><path d='M202.0 89.0 L207.0 91.5 L207.0 86.5 Z' fill='#568CBB'/><line x1='202.0' y1='111.0' x2='210.8' y2='111.0' stroke='#00574A' stroke-width='1.3'/><path d='M215.8 111.0 L210.8 108.5 L210.8 113.5 Z' fill='#00574A'/><line x1='272.0' y1='44.0' x2='202.0' y2='100.0' stroke='#00242E' stroke-width='1'/><line x1='202.0' y1='100.0' x2='272.0' y2='156.0' stroke='#00242E' stroke-width='1'/><text x='280' y='52' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>compression (top)</text><text x='280' y='154' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>tension (bottom)</text><text x='268' y='104' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>zero at the neutral axis</text><text x='20' y='186' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>σ = M c / I. c: distance from the neutral axis to the outer edge;</text><text x='20' y='201' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>I: moment of inertia of the section. Stress grows in a straight</text><text x='20' y='216' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>line with distance from the neutral axis.</text>",
+     "alt": "Bending stress across a beam section under a sagging moment: compression at the top, tension at the bottom, zero at the neutral axis, largest at the outer edges, σ = M c / I.",
+     "caption": "Bending stress across a beam section under a sagging moment: compression at the top, tension at the bottom, zero at the neutral axis, largest at the outer edges, σ = M c / I."
+    }
+   ],
+   "play": {
+    "intro": "Mechanics of Materials is 7 to 11 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Axial stress, shear stress, bearing stress",
+      "σ = P/A (area perpendicular); τ = V/A (area of the shear plane, ×2 for double shear); bearing on d × t."
+     ],
+     [
+      "Bending stress",
+      "σ = M c / I, or M / S. c is half the depth for symmetric sections."
+     ],
+     [
+      "Strain and Poisson",
+      "ε = σ/E; lateral strain = -ν ε."
+     ],
+     [
+      "Torsion stress",
+      "τ = T r / J; J = π d⁴/32 for a solid shaft."
+     ],
+     [
+      "Thin-walled pressure vessel",
+      "Hoop σ = p r / t; axial σ = p r / (2t)."
+     ]
+    ],
+    "types": [
+     {
+      "id": "mechmat-0001",
+      "ask": "What is the axial stress?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "uniaxial loading"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0005",
+      "ask": "What is the maximum bending stress?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "stresses in beams"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0009",
+      "ask": "What is the maximum shear stress?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "torsion"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0010",
+      "ask": "What compressive stress develops?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "thermal deformations"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0020",
+      "ask": "What is the average shear stress in the bolt?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "shear stress"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0021",
+      "ask": "What is the average bearing stress on the plate?",
+      "section": "Mechanical Engineering",
+      "page": "431–460",
+      "find": [
+       "crushing"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0022",
+      "ask": "What is the strain in the cable, in millionths?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "uniaxial loading and deformation"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0023",
+      "ask": "What is the maximum transverse shear stress?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "transverse shear"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0024",
+      "ask": "By how much does its diameter decrease?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "Poisson's ratio"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0025",
+      "ask": "What section modulus is required?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "stresses in beams"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0026",
+      "ask": "What is its shear modulus?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "shear stress-strain"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0027",
+      "ask": "What is the maximum shear stress?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "torsion"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "E",
@@ -772,7 +1077,7 @@
      "value": 63.104171,
      "figure": {
       "viewBox": "0 0 400 150",
-      "svg": "<rect x='90' y='75' width='112' height='22' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='146' y='116' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Steel 1,400 mm</text><rect x='202' y='75' width='108' height='22' fill='#D9F1D6' stroke='#00242E' stroke-width='2'/><text x='256' y='116' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Aluminium 1,350 mm</text><rect x='76' y='50' width='14' height='72' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='310' y1='62' x2='346' y2='62' stroke='#00574A' stroke-width='3'/><path d='M354 62 L342 56 L342 68 Z' fill='#00574A'/><text x='360' y='66' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>63.1 kN</text><text x='200' y='142' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>The same force passes through both bars; their stretches add</text>",
+      "svg": "<rect x='90' y='75' width='112' height='22' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='146' y='116' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Steel 1,400 mm</text><rect x='202' y='75' width='108' height='22' fill='#D9F1D6' stroke='#00242E' stroke-width='2'/><text x='256' y='116' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Aluminium 1,350 mm</text><rect x='76' y='50' width='14' height='72' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='310' y1='62' x2='346' y2='62' stroke='#00574A' stroke-width='3'/><path d='M354 62 L342 56 L342 68 Z' fill='#00574A'/><text x='332' y='55' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>63.1 kN</text><text x='200' y='142' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>The same force passes through both bars; their stretches add</text>",
       "alt": "A bar with 63.1 kN. The same force passes through both bars; their stretches add."
      }
     },
@@ -862,6 +1167,125 @@
      "a measure of how far an area's material is spread from an axis; the larger it is, the stiffer the shape in bending about that axis"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 204",
+     "svg": "<rect x='40.0' y='40.0' width='200.0' height='24.0' fill='none' stroke='#00242E' stroke-width='1' stroke-dasharray='5 4'/><rect x='40.0' y='40.0' width='230.0' height='24.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><rect x='28.0' y='30.0' width='12.0' height='44.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><line x1='240.0' y1='84.0' x2='270.0' y2='84.0' stroke='#00242E' stroke-width='1'/><line x1='240.0' y1='79.0' x2='240.0' y2='89.0' stroke='#00242E' stroke-width='1'/><line x1='270.0' y1='79.0' x2='270.0' y2='89.0' stroke='#00242E' stroke-width='1'/><text x='255' y='98' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>δ = α L ΔT</text><text x='300' y='56' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>Free to grow:</text><text x='300' y='70' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>no stress</text><rect x='40.0' y='120.0' width='230.0' height='24.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><rect x='28.0' y='110.0' width='12.0' height='44.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><rect x='282.0' y='110.0' width='12.0' height='44.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><line x1='316.0' y1='132.0' x2='284.0' y2='132.0' stroke='#568CBB' stroke-width='2.5'/><path d='M274.0 132.0 L284.0 137.0 L284.0 127.0 Z' fill='#568CBB'/><line x1='4.0' y1='132.0' x2='16.0' y2='132.0' stroke='#568CBB' stroke-width='2.5'/><path d='M26.0 132.0 L16.0 127.0 L16.0 137.0 Z' fill='#568CBB'/><text x='300' y='112' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>Walls push back:</text><text x='300' y='172' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>σ = E α ΔT</text><text x='300' y='186' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>(compression)</text><text x='150' y='180' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>α = expansion per degree</text><text x='150' y='194' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>ΔT = temperature change</text>",
+     "alt": "Top: a heated bar free to grow lengthens by α L ΔT with no stress. Bottom: held between rigid walls it cannot grow, so the walls squeeze it with stress E α ΔT.",
+     "caption": "Top: a heated bar free to grow lengthens by α L ΔT with no stress. Bottom: held between rigid walls it cannot grow, so the walls squeeze it with stress E α ΔT."
+    }
+   ],
+   "play": {
+    "intro": "Mechanics of Materials is 7 to 11 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Elongation of a bar",
+      "δ = P L / (A E). Several segments: add each segment's δ."
+     ],
+     [
+      "Temperature change",
+      "Free: δ = α L ΔT. Restrained: σ = E α ΔT."
+     ],
+     [
+      "Beam deflection",
+      "Copy the case from the handbook beam table; superpose for combined loads."
+     ],
+     [
+      "Angle of twist",
+      "φ = T L / (J G), in radians."
+     ]
+    ],
+    "types": [
+     {
+      "id": "mechmat-0002",
+      "ask": "How much does the rod stretch?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "uniaxial loading and deformation"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0006",
+      "ask": "Which changes reduce its midspan deflection?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "deflection of beams"
+      ],
+      "time": "about 3 min",
+      "n": 3
+     },
+     {
+      "id": "mechmat-0011",
+      "ask": "How much longer does it get if it is free to expand?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "thermal deformations"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0014",
+      "ask": "What is the angle of twist, in degrees?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "torsion"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0028",
+      "ask": "What axial force stretches the pair by a total of 2.0 mm?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "uniaxial loading and deformation"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0029",
+      "ask": "What temperature rise just closes the gap?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "thermal deformations"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0030",
+      "ask": "What is the midspan deflection?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "deflection of beams"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0031",
+      "ask": "What is the reaction at the left wall?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "uniaxial loading and deformation"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "L",
@@ -1008,7 +1432,7 @@
      "value": 22.4256,
      "figure": {
       "viewBox": "0 0 400 185",
-      "svg": "<path d='M80 150 L210 150 L210 20 L80 20 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='145' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>125 mm square</text><circle cx='288' cy='85' r='5' fill='#00574A'/><text x='297' y='78' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>load, 325 mm from the centroid</text>",
+      "svg": "<path d='M80 150 L210 150 L210 20 L80 20 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='145' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>125 mm square</text><circle cx='288' cy='85' r='5' fill='#00574A'/><text x='260' y='78' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>load 325 mm off centre</text>",
       "alt": "A square column section with the load point offset from the centroid along one axis."
      }
     },
@@ -1099,6 +1523,114 @@
      "the turning effect of a force about a point: the force times its perpendicular distance from that point"
     ]
    ],
+   "figures": [
+    {
+     "viewBox": "0 0 400 210",
+     "svg": "<path d='M132.0 73.0 L68.0 73.0 L68.0 137.0 L132.0 137.0 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><line x1='136.0' y1='105.0' x2='156.0' y2='105.0' stroke='#00574A' stroke-width='2.2'/><path d='M164.0 105.0 L156.0 101.0 L156.0 109.0 Z' fill='#00574A'/><line x1='64.0' y1='105.0' x2='44.0' y2='105.0' stroke='#00574A' stroke-width='2.2'/><path d='M36.0 105.0 L44.0 109.0 L44.0 101.0 Z' fill='#00574A'/><line x1='100.0' y1='69.0' x2='100.0' y2='59.0' stroke='#568CBB' stroke-width='2.2'/><path d='M100.0 51.0 L96.0 59.0 L104.0 59.0 Z' fill='#568CBB'/><line x1='100.0' y1='141.0' x2='100.0' y2='151.0' stroke='#568CBB' stroke-width='2.2'/><path d='M100.0 159.0 L104.0 151.0 L96.0 151.0 Z' fill='#568CBB'/><line x1='139.0' y1='121.0' x2='139.0' y2='96.0' stroke='#1B795A' stroke-width='1.8'/><path d='M139.0 89.0 L135.5 96.0 L142.5 96.0 Z' fill='#1B795A'/><line x1='61.0' y1='89.0' x2='61.0' y2='114.0' stroke='#1B795A' stroke-width='1.8'/><path d='M61.0 121.0 L64.5 114.0 L57.5 114.0 Z' fill='#1B795A'/><line x1='84.0' y1='66.0' x2='109.0' y2='66.0' stroke='#1B795A' stroke-width='1.8'/><path d='M116.0 66.0 L109.0 62.5 L109.0 69.5 Z' fill='#1B795A'/><line x1='116.0' y1='144.0' x2='91.0' y2='144.0' stroke='#1B795A' stroke-width='1.8'/><path d='M84.0 144.0 L91.0 147.5 L91.0 140.5 Z' fill='#1B795A'/><text x='166' y='109' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>σx</text><text x='108' y='50' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>σy</text><text x='146' y='66' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>τ</text><text x='100' y='186' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Any orientation:</text><text x='100' y='200' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>normal and shear stress</text><line x1='178.0' y1='150.0' x2='212.0' y2='150.0' stroke='#00242E' stroke-width='1.5'/><path d='M222.0 150.0 L212.0 145.0 L212.0 155.0 Z' fill='#00242E'/><text x='200' y='140' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>rotate by θp</text><path d='M315.5 62.5 L257.5 89.5 L284.5 147.5 L342.5 120.5 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><line x1='332.6' y1='89.8' x2='356.2' y2='78.8' stroke='#00574A' stroke-width='2.2'/><path d='M363.4 75.4 L354.5 75.2 L357.9 82.4 Z' fill='#00574A'/><line x1='267.4' y1='120.2' x2='243.8' y2='131.2' stroke='#00574A' stroke-width='2.2'/><path d='M236.6 134.6 L245.5 134.8 L242.1 127.6 Z' fill='#00574A'/><line x1='284.8' y1='72.4' x2='283.1' y2='68.7' stroke='#568CBB' stroke-width='2.2'/><path d='M279.7 61.5 L279.5 70.4 L286.7 67.1 Z' fill='#568CBB'/><line x1='315.2' y1='137.6' x2='316.9' y2='141.3' stroke='#568CBB' stroke-width='2.2'/><path d='M320.3 148.5 L320.5 139.6 L313.3 142.9 Z' fill='#568CBB'/><line x1='300.0' y1='105.0' x2='370.0' y2='105.0' stroke='#E7E8E8' stroke-width='1' stroke-dasharray='6 4'/><path d='M348.0 105.0 A48 48 0 0 0 343.5 84.7' fill='none' stroke='#00242E' stroke-width='1.5'/><text x='352' y='96' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>θp</text><text x='342' y='52' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>σ1</text><text x='268' y='60' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>σ2</text><text x='300' y='186' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Principal orientation:</text><text x='300' y='200' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>no shear; σ1 largest, σ2 smallest</text>",
+     "alt": "The same state of stress on a square element at two orientations. Rotated by the principal angle θp, the shear disappears and only the principal stresses σ1 and σ2 remain.",
+     "caption": "The same state of stress on a square element at two orientations. Rotated by the principal angle θp, the shear disappears and only the principal stresses σ1 and σ2 remain."
+    }
+   ],
+   "play": {
+    "intro": "Mechanics of Materials is 7 to 11 of the 110 exam questions. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near 3 minutes each.",
+    "rows": [
+     [
+      "Principal stresses",
+      "σ1,2 = (σx + σy)/2 ± √(((σx - σy)/2)² + τ²). Centre and radius of Mohr's circle."
+     ],
+     [
+      "Maximum in-plane shear",
+      "τmax = radius = √(((σx - σy)/2)² + τ²)."
+     ],
+     [
+      "Angle to the principal planes",
+      "tan 2θp = 2τ / (σx - σy)."
+     ],
+     [
+      "Combined axial and bending",
+      "Add: σ = P/A ± M c / I at each edge."
+     ]
+    ],
+    "types": [
+     {
+      "id": "mechmat-0004",
+      "ask": "What is the maximum principal stress?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "Mohr's circle"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0012",
+      "ask": "What is the maximum in-plane shear stress?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "Mohr's circle"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0013",
+      "ask": "What is the hoop stress in the wall?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "cylindrical pressure vessel"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0032",
+      "ask": "What is the maximum tensile stress on the cross-section?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "stresses in beams"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0033",
+      "ask": "What is the longitudinal (axial) stress in the wall?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "cylindrical pressure vessel"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0034",
+      "ask": "What is the shear stress on a plane whose normal makes 30° with the bar's axis?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "Mohr's Circle"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     },
+     {
+      "id": "mechmat-0035",
+      "ask": "What is the maximum principal stress?",
+      "section": "Mechanics of Materials",
+      "page": "130–142",
+      "find": [
+       "Mohr's Circle"
+      ],
+      "time": "about 3 min",
+      "n": 4
+     }
+    ]
+   },
    "symbols": [
     [
      "C",

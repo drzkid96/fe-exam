@@ -58,6 +58,15 @@
      "If you did not check something, say so. Never state that a check was done when it was not.",
      "Most questions yield to common sense plus the order of duties: public first."
     ]
+   },
+   "bridge": {
+    "keep": "The duties you already work under: protect the public, stay within your competence, seal only what you were in responsible charge of.",
+    "rusty": [
+     "The exact wording and order of duties in the NCEES Model Rules, which the exam tests in place of any one state's law.",
+     "Contract and liability terms: standard of care, indemnity, types of insurance and bonds."
+    ],
+    "work": "Designer-of-record responsibility, QA/QC sign-off, sealing sheets prepared by others, gifts from contractors and vendors, and public-agency clients are all everyday versions of exam questions.",
+    "exam": "Answer from the Model Rules in the handbook, not from a particular state's practice act or a firm's policy. When two duties conflict, public safety comes first."
    }
   },
   {
@@ -248,7 +257,8 @@
     "Ask whether the work is within the engineer's area of competence.",
     "When in doubt, choose the option that involves the licensing board or obtaining the proper licence."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Signing and sealing plan sheets as designer of record is the working form of the responsible-charge rule."
   },
   {
    "id": "ethics-d-lesson",
@@ -284,7 +294,15 @@
     }
    ],
    "examples": [],
-   "lookup": [],
+   "lookup": [
+    {
+     "section": "Ethics and Professional Practice",
+     "page": "4–12",
+     "find": [
+      "contract"
+     ]
+    }
+   ],
    "deep": "A contract is a set of promises the law will enforce. Engineering questions focus on formation (was there a valid contract?), performance (who has to do what, and who carries which risk?) and breach (what happens when a party does not perform?).\n\nRead the payment terms to see who carries cost risk, and the documents to see what was actually promised. Changes after signing need a written change order. Only parties to a contract can enforce it, which is why a contractor's claim normally runs to the owner and not to the owner's engineer.",
    "method": [
     "Check the elements: offer, acceptance, consideration, competent parties, lawful purpose.",

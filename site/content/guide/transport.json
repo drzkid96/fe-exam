@@ -62,6 +62,16 @@
      "Related formulas sit together in the handbook, so knowing roughly where the transportation pages are saves search time.",
      "When traffic grows over the design period, adjust the volumes before applying the design formula."
     ]
+   },
+   "bridge": {
+    "keep": "Geometric design, traffic control devices, signal timing and operations, which are your working tools.",
+    "rusty": [
+     "Pavement structural design by the AASHTO structural number.",
+     "Traffic flow theory as theory: Greenshields, shock waves, queueing.",
+     "Planning models: trip generation and distribution, logit mode choice."
+    ],
+    "work": "This is home ground, which makes it the topic where habit can cost marks.",
+    "exam": "Answer with the handbook's equations and constants, which follow the AASHTO Green Book and national MUTCD values, not a state manual, a local standard or newer editions you use at work. Check the handbook's stopping sight distance, vertical curve and signal change interval formulas before relying on memory."
    }
   },
   {
@@ -312,7 +322,82 @@
     "For a vertical curve, compute A, the rate of grade change, elevations along the curve and the turning point.",
     "Keep U.S. units straight: speeds in mph, lengths in ft, grades in percent or decimal as the formula requires."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Your daily work, but answer with the handbook's AASHTO-based values for reaction time, deceleration and friction rather than agency figures.",
+   "symbols": [
+    [
+     "g_{1}",
+     "grade entering the curve, %"
+    ],
+    [
+     "g_{2}",
+     "grade leaving the curve, %"
+    ],
+    [
+     "R_{min}",
+     "minimum curve radius"
+    ],
+    [
+     "a",
+     "deceleration rate"
+    ],
+    [
+     "G",
+     "grade as a decimal"
+    ],
+    [
+     "R",
+     "curve radius"
+    ],
+    [
+     "e",
+     "superelevation rate"
+    ],
+    [
+     "f",
+     "side friction factor"
+    ],
+    [
+     "T",
+     "tangent length"
+    ],
+    [
+     "L",
+     "length of the curve"
+    ],
+    [
+     "x",
+     "distance from the PVC"
+    ],
+    [
+     "D",
+     "degree of curve, or directional split"
+    ],
+    [
+     "V",
+     "speed, mph"
+    ],
+    [
+     "r",
+     "all-red interval"
+    ],
+    [
+     "K",
+     "rate of vertical curvature L / A, or the design-hour factor"
+    ],
+    [
+     "A",
+     "algebraic difference in grades, %"
+    ],
+    [
+     "I",
+     "deflection (intersection) angle"
+    ],
+    [
+     "S",
+     "sight distance"
+    ]
+   ]
   },
   {
    "id": "transport-b-lesson",
@@ -393,7 +478,6 @@
      "page": "259–309",
      "find": [
       "structural number",
-      "ESAL",
       "load equivalency"
      ]
     }
@@ -406,7 +490,45 @@
     "Check each layer against the structural number required above the layer beneath.",
     "Round thicknesses up to practical values."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "a_{1}",
+     "layer coefficient of the surface course"
+    ],
+    [
+     "D_{1}",
+     "thickness of the surface course"
+    ],
+    [
+     "a_{2}",
+     "layer coefficient of the base"
+    ],
+    [
+     "D_{2}",
+     "thickness of the base"
+    ],
+    [
+     "m_{2}",
+     "drainage coefficient of the base"
+    ],
+    [
+     "a_{3}",
+     "layer coefficient of the subbase"
+    ],
+    [
+     "D_{3}",
+     "thickness of the subbase"
+    ],
+    [
+     "m_{3}",
+     "drainage coefficient of the subbase"
+    ],
+    [
+     "M_{R}",
+     "resilient modulus of the subgrade"
+    ]
+   ]
   },
   {
    "id": "transport-c-lesson",
@@ -534,7 +656,6 @@
      "find": [
       "traffic flow relationships",
       "peak hour factor",
-      "saturation flow",
       "capacity",
       "Greenshields",
       "level of service"
@@ -549,7 +670,82 @@
     "Convert volume to flow rate with the peak hour factor.",
     "For a signal, compute capacity as saturation flow × g / C and the v/c ratio."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Capacity and level of service follow the handbook's simplified relations, which are leaner than a full Highway Capacity Manual analysis.",
+   "symbols": [
+    [
+     "q_{max}",
+     "capacity (maximum flow)"
+    ],
+    [
+     "v_{f}",
+     "free-flow speed"
+    ],
+    [
+     "k_{j}",
+     "jam density"
+    ],
+    [
+     "v_{p}",
+     "passenger car flow rate per lane"
+    ],
+    [
+     "f_{HV}",
+     "heavy vehicle adjustment factor"
+    ],
+    [
+     "P_{T}",
+     "proportion of trucks"
+    ],
+    [
+     "E_{T}",
+     "passenger car equivalent of a truck"
+    ],
+    [
+     "V_{15}",
+     "volume in the busiest 15 minutes"
+    ],
+    [
+     "u_{f}",
+     "free-flow speed"
+    ],
+    [
+     "s",
+     "saturation flow rate"
+    ],
+    [
+     "V",
+     "speed, mph"
+    ],
+    [
+     "N",
+     "number of lanes"
+    ],
+    [
+     "q",
+     "flow, veh/h"
+    ],
+    [
+     "k",
+     "density, veh/mi"
+    ],
+    [
+     "u",
+     "space mean speed"
+    ],
+    [
+     "c",
+     "capacity"
+    ],
+    [
+     "g",
+     "effective green time"
+    ],
+    [
+     "C",
+     "cycle length"
+    ]
+   ]
   },
   {
    "id": "transport-d-lesson",
@@ -612,7 +808,7 @@
      "section": "Civil Engineering",
      "page": "259–309",
      "find": [
-      "vehicle signal change interval",
+      "yellow interval",
       "yellow"
      ]
     }
@@ -625,7 +821,26 @@
     "For pedestrian clearance, divide crossing distance by walking speed.",
     "For installation questions, look for the engineering study and warrants."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "The exam cites the national MUTCD. Where a state supplement differs, the national manual is the answer.",
+   "symbols": [
+    [
+     "t",
+     "perception-reaction time"
+    ],
+    [
+     "y",
+     "yellow interval, or elevation on the curve"
+    ],
+    [
+     "v",
+     "approach speed"
+    ],
+    [
+     "G",
+     "grade as a decimal"
+    ]
+   ]
   },
   {
    "id": "transport-e-lesson",
@@ -734,18 +949,19 @@
      "section": "Civil Engineering",
      "page": "259–309",
      "find": [
-      "trip generation",
       "crash rate",
       "traffic safety equations",
       "logit",
-      "gravity model"
+      "gravity model",
+      "crash reduction",
+      "crash rates"
      ]
     },
     {
      "section": "Engineering Economics",
      "page": "230–237",
      "find": [
-      "single payment compound amount"
+      "compound amount"
      ]
     }
    ],
@@ -757,7 +973,33 @@
     "For logit, compute e to the utility for each mode and divide by the sum.",
     "For crash rates, divide crashes by exposure and scale to the stated basis."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "P_{i}",
+     "probability of choosing mode i"
+    ],
+    [
+     "U_{i}",
+     "utility of mode i"
+    ],
+    [
+     "e",
+     "superelevation rate"
+    ],
+    [
+     "P",
+     "trips produced"
+    ],
+    [
+     "A",
+     "algebraic difference in grades, %"
+    ],
+    [
+     "F",
+     "friction factor between zones"
+    ]
+   ]
   }
  ]
 }

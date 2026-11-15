@@ -2,7 +2,7 @@
 '-' marks a question that is not a handbook lookup (a rule to know, or plain arithmetic). 'Section::terms' overrides the section."""
 import json, os, glob
 from author_common import ROOT, HBP
-HBP = dict(HBP); HBP.setdefault('Safety', '13–33')
+HBP = dict(HBP); HBP.setdefault('Safety', '13–33'); HBP.setdefault('Chemical Engineering', '238–258')
 MM, CE, EN, MA, PS = 'Mechanics of Materials', 'Civil Engineering', 'Environmental Engineering', 'Mathematics', 'Engineering Probability and Statistics'
 FIND = {
  'statics-0001': 'resultant; resolution of a force', 'statics-0002': 'equilibrium requirements; systems of forces', 'statics-0003': 'centroid', 'statics-0004': 'friction',
@@ -50,8 +50,22 @@ FIND = {
  'construction-0001': 'CPM; float', 'construction-0002': 'earned-value analysis', 'construction-0003': '-', 'construction-0004': '-', 'construction-0005': '-', 'construction-0006': '-', 'construction-0007': '-', 'construction-0008': '-', 'construction-0009': '-',
  'construction-0010': '-', 'construction-0011': 'Safety::incidence rate', 'construction-0012': '-', 'construction-0013': 'earned-value analysis; schedule variance', 'construction-0014': '-', 'construction-0015': '-', 'construction-0016': '-',
 }
-_F2 = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'find2.json')
-if os.path.exists(_F2): FIND.update(json.load(open(_F2)))
+for _f in sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'find*.json'))): FIND.update(json.load(open(_f)))
+# Search words corrected against the handbook itself (edition 10.0.1): the handbook's own wording, or None where it has no entry.
+FIX = {'ESAL': None, 'Mohr-Coulomb': 'major principal stress', 'angle of twist': 'twist', 'break-even analysis': 'breakeven analysis', 'coefficient of consolidation': 'time factor',
+       'coefficient of curvature': 'coefficient of concavity', 'effective annual interest': 'effective interest rate', 'equivalent weight': None, 'maximum in-plane shear': "Mohr's Circle",
+       'saturation flow': None, 'single payment compound amount': 'compound amount', 'single payment present worth': 'single payment', 'trip generation': None, 'undrained shear strength': None,
+       'uniform series compound amount': 'uniform series', 'uniform series present worth': 'uniform series', 'vehicle signal change interval': 'yellow interval',
+       'conditional probability': 'joint probability', 'conflict of interest': 'conflicts of interest', 'continuing': None, 'standard of care': None, 'shear and moment diagrams': 'shearing force and bending moment'}
+def terms_of(v, default=None):
+    """(section, [search words]) for one FIND entry, or (None, []) when the question is not a handbook lookup."""
+    if v == '-': return None, []
+    sec, ts = v.split('::') if '::' in v else (default, v)
+    out = []
+    for t in ts.split(';'):
+        t = FIX.get(t.strip(), t.strip())
+        if t and t not in out: out.append(t)
+    return sec, out
 def main():
   global n, miss, none
   n = miss = none = 0
@@ -60,9 +74,9 @@ def main():
       for q in qs:
           v = FIND.get(q.get('family') or q['id'])
           if v is None: miss += 1; print('no entry:', q['id']); continue
-          if v == '-': q['handbook'] = [dict(h, find=[]) for h in q['handbook'][:1]]; q['lookup'] = False; none += 1; continue
-          sec, terms = v.split('::') if '::' in v else (q['handbook'][0]['section'], v)
-          q['handbook'] = [{'section': sec, 'page': HBP[sec], 'find': [x.strip() for x in terms.split(';')]}]; q['lookup'] = True; n += 1
+          sec, terms = terms_of(v, q['handbook'][0]['section'])
+          if not terms: q['handbook'] = [dict(h, find=[]) for h in q['handbook'][:1]]; q['lookup'] = False; none += 1; continue
+          q['handbook'] = [{'section': sec, 'page': HBP[sec], 'find': terms}]; q['lookup'] = True; n += 1
       json.dump(qs, open(f, 'w'), indent=1, ensure_ascii=False); open(f, 'a').write('\n')
   print('handbook lookups:', n, 'not a lookup:', none, 'missing:', miss)
 

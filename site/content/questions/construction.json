@@ -56,7 +56,25 @@
    "svg": "<rect x='20' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='55' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='55' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3 days</text><rect x='165' y='12' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='30' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><text x='200' y='45' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4 days</text><rect x='165' y='108' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='126' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>C</text><text x='200' y='141' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6 days</text><rect x='310' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='345' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>D</text><text x='345' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2 days</text><line x1='90' y1='72' x2='159' y2='33' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='35' r='4' fill='#00574A'/><line x1='90' y1='88' x2='159' y2='127' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='125' r='4' fill='#00574A'/><line x1='235' y1='36' x2='304' y2='75' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='73' r='4' fill='#00574A'/><line x1='235' y1='124' x2='304' y2='85' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='87' r='4' fill='#00574A'/>",
    "alt": "An activity network: A (3 days) is followed by B (4 days) and C (6 days), which are both followed by D (2 days)."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "activity A"
+   ],
+   [
+    "B",
+    "activity B"
+   ],
+   [
+    "D",
+    "activity D"
+   ],
+   [
+    "C",
+    "activity C"
+   ]
+  ]
  },
  {
   "id": "construction-0001-b",
@@ -115,7 +133,25 @@
    "svg": "<rect x='20' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='55' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='55' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2 days</text><rect x='165' y='12' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='30' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><text x='200' y='45' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3 days</text><rect x='165' y='108' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='126' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>C</text><text x='200' y='141' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8 days</text><rect x='310' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='345' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>D</text><text x='345' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4 days</text><line x1='90' y1='72' x2='159' y2='33' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='35' r='4' fill='#00574A'/><line x1='90' y1='88' x2='159' y2='127' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='125' r='4' fill='#00574A'/><line x1='235' y1='36' x2='304' y2='75' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='73' r='4' fill='#00574A'/><line x1='235' y1='124' x2='304' y2='85' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='87' r='4' fill='#00574A'/>",
    "alt": "An activity network: A (2 days) is followed by B (3 days) and C (8 days), which are both followed by D (4 days)."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "activity A"
+   ],
+   [
+    "B",
+    "activity B"
+   ],
+   [
+    "D",
+    "activity D"
+   ],
+   [
+    "C",
+    "activity C"
+   ]
+  ]
  },
  {
   "id": "construction-0001-c",
@@ -174,7 +210,25 @@
    "svg": "<rect x='20' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='55' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='55' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5 days</text><rect x='165' y='12' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='30' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><text x='200' y='45' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6 days</text><rect x='165' y='108' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='126' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>C</text><text x='200' y='141' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10 days</text><rect x='310' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='345' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>D</text><text x='345' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3 days</text><line x1='90' y1='72' x2='159' y2='33' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='35' r='4' fill='#00574A'/><line x1='90' y1='88' x2='159' y2='127' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='125' r='4' fill='#00574A'/><line x1='235' y1='36' x2='304' y2='75' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='73' r='4' fill='#00574A'/><line x1='235' y1='124' x2='304' y2='85' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='87' r='4' fill='#00574A'/>",
    "alt": "An activity network: A (5 days) is followed by B (6 days) and C (10 days), which are both followed by D (3 days)."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "activity A"
+   ],
+   [
+    "B",
+    "activity B"
+   ],
+   [
+    "D",
+    "activity D"
+   ],
+   [
+    "C",
+    "activity C"
+   ]
+  ]
  },
  {
   "id": "construction-0001-d",
@@ -233,7 +287,25 @@
    "svg": "<rect x='20' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='55' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='55' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4 days</text><rect x='165' y='12' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='30' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><text x='200' y='45' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5 days</text><rect x='165' y='108' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='126' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>C</text><text x='200' y='141' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9 days</text><rect x='310' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='345' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>D</text><text x='345' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2 days</text><line x1='90' y1='72' x2='159' y2='33' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='35' r='4' fill='#00574A'/><line x1='90' y1='88' x2='159' y2='127' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='125' r='4' fill='#00574A'/><line x1='235' y1='36' x2='304' y2='75' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='73' r='4' fill='#00574A'/><line x1='235' y1='124' x2='304' y2='85' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='87' r='4' fill='#00574A'/>",
    "alt": "An activity network: A (4 days) is followed by B (5 days) and C (9 days), which are both followed by D (2 days)."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "activity A"
+   ],
+   [
+    "B",
+    "activity B"
+   ],
+   [
+    "D",
+    "activity D"
+   ],
+   [
+    "C",
+    "activity C"
+   ]
+  ]
  },
  {
   "id": "construction-0002",
@@ -639,7 +711,13 @@
   "family": "construction-0004",
   "version": 1,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "symbols": [
+   [
+    "h",
+    "hour"
+   ]
+  ]
  },
  {
   "id": "construction-0004-b",
@@ -689,7 +767,13 @@
   "family": "construction-0004",
   "version": 2,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "symbols": [
+   [
+    "h",
+    "hour"
+   ]
+  ]
  },
  {
   "id": "construction-0004-c",
@@ -739,7 +823,13 @@
   "family": "construction-0004",
   "version": 3,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "symbols": [
+   [
+    "h",
+    "hour"
+   ]
+  ]
  },
  {
   "id": "construction-0004-d",
@@ -789,7 +879,13 @@
   "family": "construction-0004",
   "version": 4,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "symbols": [
+   [
+    "h",
+    "hour"
+   ]
+  ]
  },
  {
   "id": "construction-0005",
@@ -2967,5 +3063,1457 @@
   "version": 4,
   "versions": 4,
   "lookup": false
+ },
+ {
+  "id": "construction-0021",
+  "topic": "construction",
+  "subtopic": "construction-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A contractor has completed work worth $400,000 to date. The contract holds 10% retainage, and $250,000 has already been paid. How much is due on this progress payment?",
+  "answer": {
+   "value": 110000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "A progress payment is the value of work done to date, less the retainage the owner holds until completion, less what has already been paid.",
+  "solution": "Earned less retainage = 400,000 × (1 - 0.10) = $360,000.\n\nDue now = 360,000 - 250,000 = $110,000.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0021",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0021-b",
+  "topic": "construction",
+  "subtopic": "construction-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A contractor has completed work worth $1,250,000 to date. The contract holds 5% retainage, and $900,000 has already been paid. How much is due on this progress payment?",
+  "answer": {
+   "value": 287500.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "A progress payment is the value of work done to date, less the retainage the owner holds until completion, less what has already been paid.",
+  "solution": "Earned less retainage = 1,250,000 × (1 - 0.05) = $1,187,500.\n\nDue now = 1,187,500 - 900,000 = $287,500.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0021",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0021-c",
+  "topic": "construction",
+  "subtopic": "construction-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A contractor has completed work worth $86,000 to date. The contract holds 10% retainage, and $40,500 has already been paid. How much is due on this progress payment?",
+  "answer": {
+   "value": 36900.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "A progress payment is the value of work done to date, less the retainage the owner holds until completion, less what has already been paid.",
+  "solution": "Earned less retainage = 86,000 × (1 - 0.10) = $77,400.\n\nDue now = 77,400 - 40,500 = $36,900.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0021",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0022",
+  "topic": "construction",
+  "subtopic": "construction-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An estimate has direct costs of $800,000 and indirect costs of $120,000. The contractor adds a 8% markup for profit and contingency. What is the bid price?",
+  "answer": {
+   "value": 993600.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "The bid is the total estimated cost, direct plus indirect (overhead), increased by the markup.",
+  "solution": "Bid = (800,000 + 120,000) × (1 + 0.08) = 920,000 × 1.08 = $993,600.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0022",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0022-b",
+  "topic": "construction",
+  "subtopic": "construction-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An estimate has direct costs of $2,400,000 and indirect costs of $300,000. The contractor adds a 6% markup for profit and contingency. What is the bid price?",
+  "answer": {
+   "value": 2862000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "The bid is the total estimated cost, direct plus indirect (overhead), increased by the markup.",
+  "solution": "Bid = (2,400,000 + 300,000) × (1 + 0.06) = 2,700,000 × 1.06 = $2,862,000.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0022",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0022-c",
+  "topic": "construction",
+  "subtopic": "construction-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An estimate has direct costs of $150,000 and indirect costs of $30,000. The contractor adds a 12% markup for profit and contingency. What is the bid price?",
+  "answer": {
+   "value": 201600.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "The bid is the total estimated cost, direct plus indirect (overhead), increased by the markup.",
+  "solution": "Bid = (150,000 + 30,000) × (1 + 0.12) = 180,000 × 1.12 = $201,600.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0022",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0023",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A job must haul 600 m^{3} of soil measured in the bank. The soil swells 25% when excavated, and each truck carries 10 m^{3} loose. How many truckloads are needed?",
+  "answer": {
+   "value": 75.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "loads"
+  },
+  "eli5": "Excavated soil loosens and takes up more room than it did in the ground. Trucks are filled with loose soil, so convert bank volume to loose volume before dividing by truck capacity.",
+  "solution": "Loose volume = 600 × (1 + 0.25) = 750 m^{3}.\n\nLoads = \\frac{750}{10} = 75.0.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0023",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0023-b",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A job must haul 1,500 m^{3} of soil measured in the bank. The soil swells 30% when excavated, and each truck carries 12 m^{3} loose. How many truckloads are needed?",
+  "answer": {
+   "value": 162.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "loads"
+  },
+  "eli5": "Excavated soil loosens and takes up more room than it did in the ground. Trucks are filled with loose soil, so convert bank volume to loose volume before dividing by truck capacity.",
+  "solution": "Loose volume = 1,500 × (1 + 0.30) = 1,950 m^{3}.\n\nLoads = \\frac{1,950}{12} = 162.5.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0023",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0023-c",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A job must haul 240 m^{3} of soil measured in the bank. The soil swells 20% when excavated, and each truck carries 8 m^{3} loose. How many truckloads are needed?",
+  "answer": {
+   "value": 36.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "loads"
+  },
+  "eli5": "Excavated soil loosens and takes up more room than it did in the ground. Trucks are filled with loose soil, so convert bank volume to loose volume before dividing by truck capacity.",
+  "solution": "Loose volume = 240 × (1 + 0.20) = 288 m^{3}.\n\nLoads = \\frac{288}{8} = 36.0.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0023",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0024",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A roller 2.0 m wide travels at 5 km/h and compacts lifts 0.20 m thick in 4 passes, working at 0.80 efficiency. What is its hourly production of compacted fill?",
+  "answer": {
+   "value": 400.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/h"
+  },
+  "eli5": "Compaction production is the volume covered in an hour, width × speed × lift thickness, divided by the number of passes each strip needs, times job efficiency.",
+  "solution": "Production = \\frac{2.0 × 5,000 × 0.20 × 0.80}{4} = 400.0 m^{3}/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0024",
+  "version": 1,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "h",
+    "hour"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0024-b",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A roller 1.8 m wide travels at 4 km/h and compacts lifts 0.15 m thick in 6 passes, working at 0.75 efficiency. What is its hourly production of compacted fill?",
+  "answer": {
+   "value": 135.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/h"
+  },
+  "eli5": "Compaction production is the volume covered in an hour, width × speed × lift thickness, divided by the number of passes each strip needs, times job efficiency.",
+  "solution": "Production = \\frac{1.8 × 4,000 × 0.15 × 0.75}{6} = 135.0 m^{3}/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0024",
+  "version": 2,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "h",
+    "hour"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0024-c",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A roller 2.1 m wide travels at 6 km/h and compacts lifts 0.25 m thick in 5 passes, working at 0.83 efficiency. What is its hourly production of compacted fill?",
+  "answer": {
+   "value": 522.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/h"
+  },
+  "eli5": "Compaction production is the volume covered in an hour, width × speed × lift thickness, divided by the number of passes each strip needs, times job efficiency.",
+  "solution": "Production = \\frac{2.1 × 6,000 × 0.25 × 0.83}{5} = 522.9 m^{3}/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0024",
+  "version": 3,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "h",
+    "hour"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0025",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Fresh concrete with a unit weight of 24.0 kN/m^{3} is placed quickly to a height of 3.0 m in a wall form. Treating it as a liquid, what is the maximum pressure on the form?",
+  "options": [
+   {
+    "id": "a",
+    "text": "36.0 kPa"
+   },
+   {
+    "id": "b",
+    "text": "72.0 kPa"
+   },
+   {
+    "id": "c",
+    "text": "24.0 kPa"
+   },
+   {
+    "id": "d",
+    "text": "108.0 kPa"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Until it begins to set, fresh concrete behaves like a heavy liquid, so form pressure rises linearly with depth to unit weight × height at the bottom. Slower placing lets the lower concrete stiffen and caps the pressure.",
+  "solution": "Maximum pressure = 24.0 × 3.0 = 72.0 kPa at the base of the form.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0025",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0025-b",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Fresh concrete with a unit weight of 23.5 kN/m^{3} is placed quickly to a height of 4.2 m in a wall form. Treating it as a liquid, what is the maximum pressure on the form?",
+  "options": [
+   {
+    "id": "a",
+    "text": "49.4 kPa"
+   },
+   {
+    "id": "b",
+    "text": "98.7 kPa"
+   },
+   {
+    "id": "c",
+    "text": "32.9 kPa"
+   },
+   {
+    "id": "d",
+    "text": "207.3 kPa"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Until it begins to set, fresh concrete behaves like a heavy liquid, so form pressure rises linearly with depth to unit weight × height at the bottom. Slower placing lets the lower concrete stiffen and caps the pressure.",
+  "solution": "Maximum pressure = 23.5 × 4.2 = 98.7 kPa at the base of the form.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0025",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0025-c",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Fresh concrete with a unit weight of 24.0 kN/m^{3} is placed quickly to a height of 2.4 m in a wall form. Treating it as a liquid, what is the maximum pressure on the form?",
+  "options": [
+   {
+    "id": "a",
+    "text": "28.8 kPa"
+   },
+   {
+    "id": "b",
+    "text": "57.6 kPa"
+   },
+   {
+    "id": "c",
+    "text": "19.2 kPa"
+   },
+   {
+    "id": "d",
+    "text": "69.1 kPa"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Until it begins to set, fresh concrete behaves like a heavy liquid, so form pressure rises linearly with depth to unit weight × height at the bottom. Slower placing lets the lower concrete stiffen and caps the pressure.",
+  "solution": "Maximum pressure = 24.0 × 2.4 = 57.6 kPa at the base of the form.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0025",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0026",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A project has a budget at completion of $500,000. To date the earned value is $200,000 and the actual cost is $250,000. If cost performance continues at the same rate, what is the estimate at completion?",
+  "answer": {
+   "value": 625000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "The cost performance index is earned value divided by actual cost: the value produced per dollar spent. If that rate holds, the estimate at completion is the budget divided by the index.",
+  "solution": "CPI = \\frac{200,000}{250,000} = 0.800.\n\nEAC = \\frac{500,000}{0.800} = $625,000.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "earned-value analysis"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0026",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "construction-0026-b",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A project has a budget at completion of $1,200,000. To date the earned value is $450,000 and the actual cost is $420,000. If cost performance continues at the same rate, what is the estimate at completion?",
+  "answer": {
+   "value": 1120000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "The cost performance index is earned value divided by actual cost: the value produced per dollar spent. If that rate holds, the estimate at completion is the budget divided by the index.",
+  "solution": "CPI = \\frac{450,000}{420,000} = 1.071.\n\nEAC = \\frac{1,200,000}{1.071} = $1,120,000.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "earned-value analysis"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0026",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "construction-0026-c",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A project has a budget at completion of $80,000. To date the earned value is $30,000 and the actual cost is $36,000. If cost performance continues at the same rate, what is the estimate at completion?",
+  "answer": {
+   "value": 96000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "The cost performance index is earned value divided by actual cost: the value produced per dollar spent. If that rate holds, the estimate at completion is the budget divided by the index.",
+  "solution": "CPI = \\frac{30,000}{36,000} = 0.833.\n\nEAC = \\frac{80,000}{0.833} = $96,000.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "earned-value analysis"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0026",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "construction-0027",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An activity has an optimistic duration of 4 days, a most likely duration of 6 days and a pessimistic duration of 14 days. What is its PERT expected duration?",
+  "options": [
+   {
+    "id": "a",
+    "text": "8.00 days"
+   },
+   {
+    "id": "b",
+    "text": "6.00 days"
+   },
+   {
+    "id": "c",
+    "text": "7.00 days"
+   },
+   {
+    "id": "d",
+    "text": "9.00 days"
+   }
+  ],
+  "answer": "c",
+  "eli5": "PERT weights the most likely estimate four times as heavily as the two extremes: expected time = (optimistic + 4 × most likely + pessimistic) / 6.",
+  "solution": "t_{e} = \\frac{4 + 4(6) + 14}{6} = 7.00 days.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0027",
+  "version": 1,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "t_{e}",
+    "PERT expected duration"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0027-b",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An activity has an optimistic duration of 10 days, a most likely duration of 14 days and a pessimistic duration of 24 days. What is its PERT expected duration?",
+  "options": [
+   {
+    "id": "a",
+    "text": "16.00 days"
+   },
+   {
+    "id": "b",
+    "text": "14.00 days"
+   },
+   {
+    "id": "c",
+    "text": "15.00 days"
+   },
+   {
+    "id": "d",
+    "text": "17.00 days"
+   }
+  ],
+  "answer": "c",
+  "eli5": "PERT weights the most likely estimate four times as heavily as the two extremes: expected time = (optimistic + 4 × most likely + pessimistic) / 6.",
+  "solution": "t_{e} = \\frac{10 + 4(14) + 24}{6} = 15.00 days.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0027",
+  "version": 2,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "t_{e}",
+    "PERT expected duration"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0027-c",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An activity has an optimistic duration of 2 days, a most likely duration of 5 days and a pessimistic duration of 9 days. What is its PERT expected duration?",
+  "options": [
+   {
+    "id": "a",
+    "text": "5.33 days"
+   },
+   {
+    "id": "b",
+    "text": "5.00 days"
+   },
+   {
+    "id": "c",
+    "text": "5.17 days"
+   },
+   {
+    "id": "d",
+    "text": "5.50 days"
+   }
+  ],
+  "answer": "c",
+  "eli5": "PERT weights the most likely estimate four times as heavily as the two extremes: expected time = (optimistic + 4 × most likely + pessimistic) / 6.",
+  "solution": "t_{e} = \\frac{2 + 4(5) + 9}{6} = 5.17 days.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0027",
+  "version": 3,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "t_{e}",
+    "PERT expected duration"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0028",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An activity normally takes 8 days at a cost of $10,000. It can be crashed to 6 days at a cost of $14,000. What is its crash cost per day saved?",
+  "answer": {
+   "value": 2000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$ per day"
+  },
+  "eli5": "The cost slope is the extra cost divided by the time saved. When shortening a schedule, crash the critical activity with the lowest cost slope first.",
+  "solution": "Cost slope = \\frac{14,000 - 10,000}{8 - 6} = $2,000 per day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0028",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0028-b",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An activity normally takes 12 days at a cost of $24,000. It can be crashed to 9 days at a cost of $33,000. What is its crash cost per day saved?",
+  "answer": {
+   "value": 3000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$ per day"
+  },
+  "eli5": "The cost slope is the extra cost divided by the time saved. When shortening a schedule, crash the critical activity with the lowest cost slope first.",
+  "solution": "Cost slope = \\frac{33,000 - 24,000}{12 - 9} = $3,000 per day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0028",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0028-c",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An activity normally takes 5 days at a cost of $6,500. It can be crashed to 4 days at a cost of $8,000. What is its crash cost per day saved?",
+  "answer": {
+   "value": 1500.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$ per day"
+  },
+  "eli5": "The cost slope is the extra cost divided by the time saved. When shortening a schedule, crash the critical activity with the lowest cost slope first.",
+  "solution": "Cost slope = \\frac{8,000 - 6,500}{5 - 4} = $1,500 per day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0028",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0029",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A block wall is 12 m long and 3.0 m high. Each block covers 0.40 m by 0.20 m of wall face including its mortar joint. Allowing 5% for waste, how many blocks should be ordered?",
+  "answer": {
+   "value": 472.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "blocks"
+  },
+  "eli5": "Divide the wall area by the face area of one block, joint included, then add the waste allowance.",
+  "solution": "Blocks = \\frac{12 × 3.0}{0.40 × 0.20} × (1 + 0.05) = 450 × 1.05 = 472.5.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0029",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0029-b",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A block wall is 20 m long and 2.4 m high. Each block covers 0.40 m by 0.20 m of wall face including its mortar joint. Allowing 8% for waste, how many blocks should be ordered?",
+  "answer": {
+   "value": 648.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "blocks"
+  },
+  "eli5": "Divide the wall area by the face area of one block, joint included, then add the waste allowance.",
+  "solution": "Blocks = \\frac{20 × 2.4}{0.40 × 0.20} × (1 + 0.08) = 600 × 1.08 = 648.0.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0029",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0029-c",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A block wall is 8 m long and 3.6 m high. Each block covers 0.40 m by 0.20 m of wall face including its mortar joint. Allowing 10% for waste, how many blocks should be ordered?",
+  "answer": {
+   "value": 396.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "blocks"
+  },
+  "eli5": "Divide the wall area by the face area of one block, joint included, then add the waste allowance.",
+  "solution": "Blocks = \\frac{8 × 3.6}{0.40 × 0.20} × (1 + 0.10) = 360 × 1.10 = 396.0.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0029",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0030",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A street overlay covers 2,000 m^{2} at a compacted thickness of 50 mm. The asphalt has a compacted density of 2.40 t/m^{3}. How many tonnes are needed?",
+  "answer": {
+   "value": 240.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "t"
+  },
+  "eli5": "Asphalt is ordered and paid for by mass. Quantity = area × compacted thickness × compacted density.",
+  "solution": "Mass = 2,000 × 0.050 × 2.40 = 240.0 t.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0030",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0030-b",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A street overlay covers 7,500 m^{2} at a compacted thickness of 40 mm. The asphalt has a compacted density of 2.35 t/m^{3}. How many tonnes are needed?",
+  "answer": {
+   "value": 705.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "t"
+  },
+  "eli5": "Asphalt is ordered and paid for by mass. Quantity = area × compacted thickness × compacted density.",
+  "solution": "Mass = 7,500 × 0.040 × 2.35 = 705.0 t.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0030",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0030-c",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A street overlay covers 640 m^{2} at a compacted thickness of 75 mm. The asphalt has a compacted density of 2.40 t/m^{3}. How many tonnes are needed?",
+  "answer": {
+   "value": 115.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "t"
+  },
+  "eli5": "Asphalt is ordered and paid for by mass. Quantity = area × compacted thickness × compacted density.",
+  "solution": "Mass = 640 × 0.075 × 2.40 = 115.2 t.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0030",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0031",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "On a grading plan with a contour interval of 2.0 m, two adjacent contours are 25 m apart on the ground. What is the average slope between them?",
+  "options": [
+   {
+    "id": "a",
+    "text": "12.50 %"
+   },
+   {
+    "id": "b",
+    "text": "16.00 %"
+   },
+   {
+    "id": "c",
+    "text": "4.00 %"
+   },
+   {
+    "id": "d",
+    "text": "8.00 %"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Slope is rise over run. Between adjacent contours the rise is the contour interval and the run is the horizontal distance between them.",
+  "solution": "Slope = \\frac{2.0}{25} × 100 = 8.0%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0031",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0031-b",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "On a grading plan with a contour interval of 0.5 m, two adjacent contours are 20 m apart on the ground. What is the average slope between them?",
+  "options": [
+   {
+    "id": "a",
+    "text": "40.00 %"
+   },
+   {
+    "id": "b",
+    "text": "5.00 %"
+   },
+   {
+    "id": "c",
+    "text": "1.25 %"
+   },
+   {
+    "id": "d",
+    "text": "2.50 %"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Slope is rise over run. Between adjacent contours the rise is the contour interval and the run is the horizontal distance between them.",
+  "solution": "Slope = \\frac{0.5}{20} × 100 = 2.5%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0031",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0031-c",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "On a grading plan with a contour interval of 5.0 m, two adjacent contours are 40 m apart on the ground. What is the average slope between them?",
+  "options": [
+   {
+    "id": "a",
+    "text": "8.00 %"
+   },
+   {
+    "id": "b",
+    "text": "25.00 %"
+   },
+   {
+    "id": "c",
+    "text": "6.25 %"
+   },
+   {
+    "id": "d",
+    "text": "12.50 %"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Slope is rise over run. Between adjacent contours the rise is the contour interval and the run is the horizontal distance between them.",
+  "solution": "Slope = \\frac{5.0}{40} × 100 = 12.5%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0031",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "construction-0032",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A plan sheet is drawn at 1 in = 50 ft. Written as a ratio 1:N, what is N?",
+  "options": [
+   {
+    "id": "a",
+    "text": "50"
+   },
+   {
+    "id": "b",
+    "text": "5,000"
+   },
+   {
+    "id": "c",
+    "text": "150"
+   },
+   {
+    "id": "d",
+    "text": "600"
+   }
+  ],
+  "answer": "d",
+  "eli5": "A ratio scale needs both sides in the same unit. One foot is 12 inches, so 1 in = X ft is 1:12X.",
+  "solution": "N = 50 × 12 = 600, so the scale is 1:600.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0032",
+  "version": 1,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "X",
+    "a quantity"
+   ],
+   [
+    "N",
+    "number of recordable cases"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0032-b",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A plan sheet is drawn at 1 in = 20 ft. Written as a ratio 1:N, what is N?",
+  "options": [
+   {
+    "id": "a",
+    "text": "20"
+   },
+   {
+    "id": "b",
+    "text": "2,000"
+   },
+   {
+    "id": "c",
+    "text": "60"
+   },
+   {
+    "id": "d",
+    "text": "240"
+   }
+  ],
+  "answer": "d",
+  "eli5": "A ratio scale needs both sides in the same unit. One foot is 12 inches, so 1 in = X ft is 1:12X.",
+  "solution": "N = 20 × 12 = 240, so the scale is 1:240.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0032",
+  "version": 2,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "X",
+    "a quantity"
+   ],
+   [
+    "N",
+    "number of recordable cases"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0032-c",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A plan sheet is drawn at 1 in = 100 ft. Written as a ratio 1:N, what is N?",
+  "options": [
+   {
+    "id": "a",
+    "text": "100"
+   },
+   {
+    "id": "b",
+    "text": "10,000"
+   },
+   {
+    "id": "c",
+    "text": "300"
+   },
+   {
+    "id": "d",
+    "text": "1,200"
+   }
+  ],
+  "answer": "d",
+  "eli5": "A ratio scale needs both sides in the same unit. One foot is 12 inches, so 1 in = X ft is 1:12X.",
+  "solution": "N = 100 × 12 = 1,200, so the scale is 1:1,200.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0032",
+  "version": 3,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "X",
+    "a quantity"
+   ],
+   [
+    "N",
+    "number of recordable cases"
+   ]
+  ]
  }
 ]

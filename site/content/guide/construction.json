@@ -61,6 +61,16 @@
      "Earned value is the budgeted cost of the work actually performed, not what was spent.",
      "In a takeoff, convert inches to feet before multiplying."
     ]
+   },
+   "bridge": {
+    "keep": "Quantities, unit costs and bid items, from engineer's estimates; reading plans and specifications.",
+    "rusty": [
+     "Scheduling: critical path, float and precedence diagrams.",
+     "Earned value terms and indices.",
+     "Equipment productivity and construction safety rates."
+    ],
+    "work": "Planning-level and engineer's estimates, quantity take-offs from plan sheets, construction staging and traffic handling all draw on this topic.",
+    "exam": "Scheduling and earned value are formula-driven and quick once the definitions are fixed in memory. They repay an hour of drill."
    }
   },
   {
@@ -223,7 +233,13 @@
     "Balance trucks to loader as truck cycle time over loading time.",
     "Divide the quantity by production for duration."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "h",
+     "hour"
+    ]
+   ]
   },
   {
    "id": "construction-c-lesson",
@@ -340,7 +356,25 @@
     "Total float = late start - early start.",
     "For earned value, compute SV = EV - PV, CV = EV - AC, SPI = EV / PV, CPI = EV / AC."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "A",
+     "activity A"
+    ],
+    [
+     "B",
+     "activity B"
+    ],
+    [
+     "D",
+     "activity D"
+    ],
+    [
+     "C",
+     "activity C"
+    ]
+   ]
   },
   {
    "id": "construction-d-lesson",
@@ -465,7 +499,8 @@
     "Add overhead and profit as percentages.",
     "Adjust old costs with the ratio of cost indices."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "The same take-off and unit-price logic as an engineer's estimate, with waste, swell and productivity made explicit."
   },
   {
    "id": "construction-e-lesson",
@@ -549,7 +584,8 @@
     "On profiles, read elevations and stations separately from their own scales.",
     "Cross-reference details and schedules for sizes."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Scales, contours and sections are read exactly as on your own plan sheets."
   }
  ]
 }

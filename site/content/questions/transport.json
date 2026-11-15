@@ -245,7 +245,29 @@
   "family": "transport-0002",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "R_{min}",
+    "minimum curve radius"
+   ],
+   [
+    "R",
+    "curve radius"
+   ],
+   [
+    "V",
+    "speed, mph"
+   ],
+   [
+    "e",
+    "superelevation rate"
+   ],
+   [
+    "f",
+    "side friction factor"
+   ]
+  ]
  },
  {
   "id": "transport-0002-b",
@@ -285,7 +307,29 @@
   "family": "transport-0002",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "R_{min}",
+    "minimum curve radius"
+   ],
+   [
+    "R",
+    "curve radius"
+   ],
+   [
+    "V",
+    "speed, mph"
+   ],
+   [
+    "e",
+    "superelevation rate"
+   ],
+   [
+    "f",
+    "side friction factor"
+   ]
+  ]
  },
  {
   "id": "transport-0002-c",
@@ -325,7 +369,29 @@
   "family": "transport-0002",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "R_{min}",
+    "minimum curve radius"
+   ],
+   [
+    "R",
+    "curve radius"
+   ],
+   [
+    "V",
+    "speed, mph"
+   ],
+   [
+    "e",
+    "superelevation rate"
+   ],
+   [
+    "f",
+    "side friction factor"
+   ]
+  ]
  },
  {
   "id": "transport-0002-d",
@@ -365,7 +431,29 @@
   "family": "transport-0002",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "R_{min}",
+    "minimum curve radius"
+   ],
+   [
+    "R",
+    "curve radius"
+   ],
+   [
+    "V",
+    "speed, mph"
+   ],
+   [
+    "e",
+    "superelevation rate"
+   ],
+   [
+    "f",
+    "side friction factor"
+   ]
+  ]
  },
  {
   "id": "transport-0003",
@@ -418,7 +506,21 @@
   "family": "transport-0003",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "q",
+    "flow, veh/h"
+   ],
+   [
+    "k",
+    "density, veh/mi"
+   ],
+   [
+    "u",
+    "space mean speed"
+   ]
+  ]
  },
  {
   "id": "transport-0003-b",
@@ -471,7 +573,21 @@
   "family": "transport-0003",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "q",
+    "flow, veh/h"
+   ],
+   [
+    "k",
+    "density, veh/mi"
+   ],
+   [
+    "u",
+    "space mean speed"
+   ]
+  ]
  },
  {
   "id": "transport-0003-c",
@@ -524,7 +640,21 @@
   "family": "transport-0003",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "q",
+    "flow, veh/h"
+   ],
+   [
+    "k",
+    "density, veh/mi"
+   ],
+   [
+    "u",
+    "space mean speed"
+   ]
+  ]
  },
  {
   "id": "transport-0003-d",
@@ -577,7 +707,21 @@
   "family": "transport-0003",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "q",
+    "flow, veh/h"
+   ],
+   [
+    "k",
+    "density, veh/mi"
+   ],
+   [
+    "u",
+    "space mean speed"
+   ]
+  ]
  },
  {
   "id": "transport-0004",
@@ -615,7 +759,17 @@
   "family": "transport-0004",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V_{15}",
+    "volume in the busiest 15 minutes"
+   ],
+   [
+    "V",
+    "speed, mph"
+   ]
+  ]
  },
  {
   "id": "transport-0004-b",
@@ -653,7 +807,17 @@
   "family": "transport-0004",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V_{15}",
+    "volume in the busiest 15 minutes"
+   ],
+   [
+    "V",
+    "speed, mph"
+   ]
+  ]
  },
  {
   "id": "transport-0004-c",
@@ -691,7 +855,17 @@
   "family": "transport-0004",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V_{15}",
+    "volume in the busiest 15 minutes"
+   ],
+   [
+    "V",
+    "speed, mph"
+   ]
+  ]
  },
  {
   "id": "transport-0004-d",
@@ -729,7 +903,17 @@
   "family": "transport-0004",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V_{15}",
+    "volume in the busiest 15 minutes"
+   ],
+   [
+    "V",
+    "speed, mph"
+   ]
+  ]
  },
  {
   "id": "transport-0005",
@@ -786,7 +970,29 @@
    "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+3%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-2%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>500 ft</text>",
    "alt": "A crest vertical curve 500 ft long joining a +3% grade to a -2% grade."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "g_{2}",
+    "grade leaving the curve, %"
+   ],
+   [
+    "g_{1}",
+    "grade entering the curve, %"
+   ],
+   [
+    "r",
+    "all-red interval"
+   ],
+   [
+    "L",
+    "length of the curve"
+   ],
+   [
+    "x",
+    "distance from the PVC"
+   ]
+  ]
  },
  {
   "id": "transport-0005-b",
@@ -843,7 +1049,29 @@
    "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+2%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-4%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>600 ft</text>",
    "alt": "A crest vertical curve 600 ft long joining a +2% grade to a -4% grade."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "g_{2}",
+    "grade leaving the curve, %"
+   ],
+   [
+    "g_{1}",
+    "grade entering the curve, %"
+   ],
+   [
+    "r",
+    "all-red interval"
+   ],
+   [
+    "L",
+    "length of the curve"
+   ],
+   [
+    "x",
+    "distance from the PVC"
+   ]
+  ]
  },
  {
   "id": "transport-0005-c",
@@ -900,7 +1128,29 @@
    "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+4%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-1%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>800 ft</text>",
    "alt": "A crest vertical curve 800 ft long joining a +4% grade to a -1% grade."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "g_{2}",
+    "grade leaving the curve, %"
+   ],
+   [
+    "g_{1}",
+    "grade entering the curve, %"
+   ],
+   [
+    "r",
+    "all-red interval"
+   ],
+   [
+    "L",
+    "length of the curve"
+   ],
+   [
+    "x",
+    "distance from the PVC"
+   ]
+  ]
  },
  {
   "id": "transport-0005-d",
@@ -957,7 +1207,29 @@
    "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+1.5%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-3.5%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>400 ft</text>",
    "alt": "A crest vertical curve 400 ft long joining a +1.5% grade to a -3.5% grade."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "g_{2}",
+    "grade leaving the curve, %"
+   ],
+   [
+    "g_{1}",
+    "grade entering the curve, %"
+   ],
+   [
+    "r",
+    "all-red interval"
+   ],
+   [
+    "L",
+    "length of the curve"
+   ],
+   [
+    "x",
+    "distance from the PVC"
+   ]
+  ]
  },
  {
   "id": "transport-0006",
@@ -1115,7 +1387,41 @@
   "family": "transport-0007",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "a_{1}",
+    "layer coefficient of the surface course"
+   ],
+   [
+    "D_{1}",
+    "thickness of the surface course"
+   ],
+   [
+    "a_{2}",
+    "layer coefficient of the base"
+   ],
+   [
+    "D_{2}",
+    "thickness of the base"
+   ],
+   [
+    "m_{2}",
+    "drainage coefficient of the base"
+   ],
+   [
+    "a_{3}",
+    "layer coefficient of the subbase"
+   ],
+   [
+    "D_{3}",
+    "thickness of the subbase"
+   ],
+   [
+    "m_{3}",
+    "drainage coefficient of the subbase"
+   ]
+  ]
  },
  {
   "id": "transport-0007-b",
@@ -1151,7 +1457,41 @@
   "family": "transport-0007",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "a_{1}",
+    "layer coefficient of the surface course"
+   ],
+   [
+    "D_{1}",
+    "thickness of the surface course"
+   ],
+   [
+    "a_{2}",
+    "layer coefficient of the base"
+   ],
+   [
+    "D_{2}",
+    "thickness of the base"
+   ],
+   [
+    "m_{2}",
+    "drainage coefficient of the base"
+   ],
+   [
+    "a_{3}",
+    "layer coefficient of the subbase"
+   ],
+   [
+    "D_{3}",
+    "thickness of the subbase"
+   ],
+   [
+    "m_{3}",
+    "drainage coefficient of the subbase"
+   ]
+  ]
  },
  {
   "id": "transport-0007-c",
@@ -1187,7 +1527,41 @@
   "family": "transport-0007",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "a_{1}",
+    "layer coefficient of the surface course"
+   ],
+   [
+    "D_{1}",
+    "thickness of the surface course"
+   ],
+   [
+    "a_{2}",
+    "layer coefficient of the base"
+   ],
+   [
+    "D_{2}",
+    "thickness of the base"
+   ],
+   [
+    "m_{2}",
+    "drainage coefficient of the base"
+   ],
+   [
+    "a_{3}",
+    "layer coefficient of the subbase"
+   ],
+   [
+    "D_{3}",
+    "thickness of the subbase"
+   ],
+   [
+    "m_{3}",
+    "drainage coefficient of the subbase"
+   ]
+  ]
  },
  {
   "id": "transport-0007-d",
@@ -1223,7 +1597,41 @@
   "family": "transport-0007",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "a_{1}",
+    "layer coefficient of the surface course"
+   ],
+   [
+    "D_{1}",
+    "thickness of the surface course"
+   ],
+   [
+    "a_{2}",
+    "layer coefficient of the base"
+   ],
+   [
+    "D_{2}",
+    "thickness of the base"
+   ],
+   [
+    "m_{2}",
+    "drainage coefficient of the base"
+   ],
+   [
+    "a_{3}",
+    "layer coefficient of the subbase"
+   ],
+   [
+    "D_{3}",
+    "thickness of the subbase"
+   ],
+   [
+    "m_{3}",
+    "drainage coefficient of the subbase"
+   ]
+  ]
  },
  {
   "id": "transport-0008",
@@ -1270,7 +1678,13 @@
   "family": "transport-0008",
   "version": 1,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "symbols": [
+   [
+    "M_{R}",
+    "resilient modulus of the subgrade"
+   ]
+  ]
  },
  {
   "id": "transport-0008-b",
@@ -1317,7 +1731,13 @@
   "family": "transport-0008",
   "version": 2,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "symbols": [
+   [
+    "M_{R}",
+    "resilient modulus of the subgrade"
+   ]
+  ]
  },
  {
   "id": "transport-0008-c",
@@ -1364,7 +1784,13 @@
   "family": "transport-0008",
   "version": 3,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "symbols": [
+   [
+    "M_{R}",
+    "resilient modulus of the subgrade"
+   ]
+  ]
  },
  {
   "id": "transport-0008-d",
@@ -1411,7 +1837,13 @@
   "family": "transport-0008",
   "version": 4,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "symbols": [
+   [
+    "M_{R}",
+    "resilient modulus of the subgrade"
+   ]
+  ]
  },
  {
   "id": "transport-0009",
@@ -1448,7 +1880,6 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "ESAL",
      "load equivalency"
     ]
    }
@@ -1498,7 +1929,6 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "ESAL",
      "load equivalency"
     ]
    }
@@ -1548,7 +1978,6 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "ESAL",
      "load equivalency"
     ]
    }
@@ -1598,7 +2027,6 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "ESAL",
      "load equivalency"
     ]
    }
@@ -1635,7 +2063,6 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "saturation flow",
      "capacity"
     ]
    }
@@ -1648,7 +2075,29 @@
   "family": "transport-0010",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "c",
+    "capacity"
+   ],
+   [
+    "N",
+    "number of lanes"
+   ],
+   [
+    "s",
+    "saturation flow rate"
+   ],
+   [
+    "g",
+    "effective green time"
+   ],
+   [
+    "C",
+    "cycle length"
+   ]
+  ]
  },
  {
   "id": "transport-0010-b",
@@ -1672,7 +2121,6 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "saturation flow",
      "capacity"
     ]
    }
@@ -1685,7 +2133,29 @@
   "family": "transport-0010",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "c",
+    "capacity"
+   ],
+   [
+    "N",
+    "number of lanes"
+   ],
+   [
+    "s",
+    "saturation flow rate"
+   ],
+   [
+    "g",
+    "effective green time"
+   ],
+   [
+    "C",
+    "cycle length"
+   ]
+  ]
  },
  {
   "id": "transport-0010-c",
@@ -1709,7 +2179,6 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "saturation flow",
      "capacity"
     ]
    }
@@ -1722,7 +2191,29 @@
   "family": "transport-0010",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "c",
+    "capacity"
+   ],
+   [
+    "N",
+    "number of lanes"
+   ],
+   [
+    "s",
+    "saturation flow rate"
+   ],
+   [
+    "g",
+    "effective green time"
+   ],
+   [
+    "C",
+    "cycle length"
+   ]
+  ]
  },
  {
   "id": "transport-0010-d",
@@ -1746,7 +2237,6 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "saturation flow",
      "capacity"
     ]
    }
@@ -1759,7 +2249,29 @@
   "family": "transport-0010",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "c",
+    "capacity"
+   ],
+   [
+    "N",
+    "number of lanes"
+   ],
+   [
+    "s",
+    "saturation flow rate"
+   ],
+   [
+    "g",
+    "effective green time"
+   ],
+   [
+    "C",
+    "cycle length"
+   ]
+  ]
  },
  {
   "id": "transport-0011",
@@ -1814,7 +2326,29 @@
    "svg": "<line x1='50' y1='20' x2='50' y2='140' stroke='#00242E'/><line x1='50' y1='140' x2='370' y2='140' stroke='#00242E'/><line x1='50' y1='36' x2='350' y2='140' stroke='#1B795A' stroke-width='3'/><circle cx='200' cy='88' r='5' fill='#00574A'/><text x='44' y='40' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>60</text><text x='350' y='156' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>120</text><text x='200' y='156' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>60</text><text x='44' y='92' text-anchor='end' font-size='12' font-weight='400' fill='#00574A'>30</text><text x='210' y='82' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>Capacity point</text><text x='210' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Density, veh/mi</text><text x='56' y='16' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Speed, mph</text><line x1='200' y1='88' x2='200' y2='140' stroke='#00574A' stroke-dasharray='4 4'/><line x1='50' y1='88' x2='200' y2='88' stroke='#00574A' stroke-dasharray='4 4'/>",
    "alt": "A straight speed-density line falling from 60 mph at zero density to zero speed at 120 veh/mi, with the capacity point at its middle."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "u_{f}",
+    "free-flow speed"
+   ],
+   [
+    "k_{j}",
+    "jam density"
+   ],
+   [
+    "q_{max}",
+    "capacity (maximum flow)"
+   ],
+   [
+    "k",
+    "density, veh/mi"
+   ],
+   [
+    "u",
+    "space mean speed"
+   ]
+  ]
  },
  {
   "id": "transport-0011-b",
@@ -1869,7 +2403,29 @@
    "svg": "<line x1='50' y1='20' x2='50' y2='140' stroke='#00242E'/><line x1='50' y1='140' x2='370' y2='140' stroke='#00242E'/><line x1='50' y1='36' x2='350' y2='140' stroke='#1B795A' stroke-width='3'/><circle cx='200' cy='88' r='5' fill='#00574A'/><text x='44' y='40' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>50</text><text x='350' y='156' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>160</text><text x='200' y='156' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>80</text><text x='44' y='92' text-anchor='end' font-size='12' font-weight='400' fill='#00574A'>25</text><text x='210' y='82' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>Capacity point</text><text x='210' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Density, veh/mi</text><text x='56' y='16' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Speed, mph</text><line x1='200' y1='88' x2='200' y2='140' stroke='#00574A' stroke-dasharray='4 4'/><line x1='50' y1='88' x2='200' y2='88' stroke='#00574A' stroke-dasharray='4 4'/>",
    "alt": "A straight speed-density line falling from 50 mph at zero density to zero speed at 160 veh/mi, with the capacity point at its middle."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "u_{f}",
+    "free-flow speed"
+   ],
+   [
+    "k_{j}",
+    "jam density"
+   ],
+   [
+    "q_{max}",
+    "capacity (maximum flow)"
+   ],
+   [
+    "k",
+    "density, veh/mi"
+   ],
+   [
+    "u",
+    "space mean speed"
+   ]
+  ]
  },
  {
   "id": "transport-0011-c",
@@ -1924,7 +2480,29 @@
    "svg": "<line x1='50' y1='20' x2='50' y2='140' stroke='#00242E'/><line x1='50' y1='140' x2='370' y2='140' stroke='#00242E'/><line x1='50' y1='36' x2='350' y2='140' stroke='#1B795A' stroke-width='3'/><circle cx='200' cy='88' r='5' fill='#00574A'/><text x='44' y='40' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>70</text><text x='350' y='156' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>110</text><text x='200' y='156' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>55</text><text x='44' y='92' text-anchor='end' font-size='12' font-weight='400' fill='#00574A'>35</text><text x='210' y='82' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>Capacity point</text><text x='210' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Density, veh/mi</text><text x='56' y='16' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Speed, mph</text><line x1='200' y1='88' x2='200' y2='140' stroke='#00574A' stroke-dasharray='4 4'/><line x1='50' y1='88' x2='200' y2='88' stroke='#00574A' stroke-dasharray='4 4'/>",
    "alt": "A straight speed-density line falling from 70 mph at zero density to zero speed at 110 veh/mi, with the capacity point at its middle."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "u_{f}",
+    "free-flow speed"
+   ],
+   [
+    "k_{j}",
+    "jam density"
+   ],
+   [
+    "q_{max}",
+    "capacity (maximum flow)"
+   ],
+   [
+    "k",
+    "density, veh/mi"
+   ],
+   [
+    "u",
+    "space mean speed"
+   ]
+  ]
  },
  {
   "id": "transport-0011-d",
@@ -1979,7 +2557,29 @@
    "svg": "<line x1='50' y1='20' x2='50' y2='140' stroke='#00242E'/><line x1='50' y1='140' x2='370' y2='140' stroke='#00242E'/><line x1='50' y1='36' x2='350' y2='140' stroke='#1B795A' stroke-width='3'/><circle cx='200' cy='88' r='5' fill='#00574A'/><text x='44' y='40' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>45</text><text x='350' y='156' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>200</text><text x='200' y='156' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>100</text><text x='44' y='92' text-anchor='end' font-size='12' font-weight='400' fill='#00574A'>22.5</text><text x='210' y='82' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>Capacity point</text><text x='210' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Density, veh/mi</text><text x='56' y='16' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Speed, mph</text><line x1='200' y1='88' x2='200' y2='140' stroke='#00574A' stroke-dasharray='4 4'/><line x1='50' y1='88' x2='200' y2='88' stroke='#00574A' stroke-dasharray='4 4'/>",
    "alt": "A straight speed-density line falling from 45 mph at zero density to zero speed at 200 veh/mi, with the capacity point at its middle."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "u_{f}",
+    "free-flow speed"
+   ],
+   [
+    "k_{j}",
+    "jam density"
+   ],
+   [
+    "q_{max}",
+    "capacity (maximum flow)"
+   ],
+   [
+    "k",
+    "density, veh/mi"
+   ],
+   [
+    "u",
+    "space mean speed"
+   ]
+  ]
  },
  {
   "id": "transport-0012",
@@ -2003,7 +2603,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "vehicle signal change interval",
+     "yellow interval",
      "yellow"
     ]
    }
@@ -2016,7 +2616,25 @@
   "family": "transport-0012",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y",
+    "yellow interval, or elevation on the curve"
+   ],
+   [
+    "t",
+    "perception-reaction time"
+   ],
+   [
+    "v",
+    "approach speed"
+   ],
+   [
+    "G",
+    "grade as a decimal"
+   ]
+  ]
  },
  {
   "id": "transport-0012-b",
@@ -2040,7 +2658,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "vehicle signal change interval",
+     "yellow interval",
      "yellow"
     ]
    }
@@ -2053,7 +2671,25 @@
   "family": "transport-0012",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y",
+    "yellow interval, or elevation on the curve"
+   ],
+   [
+    "t",
+    "perception-reaction time"
+   ],
+   [
+    "v",
+    "approach speed"
+   ],
+   [
+    "G",
+    "grade as a decimal"
+   ]
+  ]
  },
  {
   "id": "transport-0012-c",
@@ -2077,7 +2713,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "vehicle signal change interval",
+     "yellow interval",
      "yellow"
     ]
    }
@@ -2090,7 +2726,25 @@
   "family": "transport-0012",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y",
+    "yellow interval, or elevation on the curve"
+   ],
+   [
+    "t",
+    "perception-reaction time"
+   ],
+   [
+    "v",
+    "approach speed"
+   ],
+   [
+    "G",
+    "grade as a decimal"
+   ]
+  ]
  },
  {
   "id": "transport-0012-d",
@@ -2114,7 +2768,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "vehicle signal change interval",
+     "yellow interval",
      "yellow"
     ]
    }
@@ -2127,7 +2781,25 @@
   "family": "transport-0012",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y",
+    "yellow interval, or elevation on the curve"
+   ],
+   [
+    "t",
+    "perception-reaction time"
+   ],
+   [
+    "v",
+    "approach speed"
+   ],
+   [
+    "G",
+    "grade as a decimal"
+   ]
+  ]
  },
  {
   "id": "transport-0013",
@@ -2163,9 +2835,7 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": [
-     "trip generation"
-    ]
+    "find": []
    }
   ],
   "tags": [],
@@ -2176,7 +2846,7 @@
   "family": "transport-0013",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": false
  },
  {
   "id": "transport-0013-b",
@@ -2212,9 +2882,7 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": [
-     "trip generation"
-    ]
+    "find": []
    }
   ],
   "tags": [],
@@ -2225,7 +2893,7 @@
   "family": "transport-0013",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": false
  },
  {
   "id": "transport-0013-c",
@@ -2261,9 +2929,7 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": [
-     "trip generation"
-    ]
+    "find": []
    }
   ],
   "tags": [],
@@ -2274,7 +2940,7 @@
   "family": "transport-0013",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": false
  },
  {
   "id": "transport-0013-d",
@@ -2310,9 +2976,7 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": [
-     "trip generation"
-    ]
+    "find": []
    }
   ],
   "tags": [],
@@ -2323,7 +2987,7 @@
   "family": "transport-0013",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": false
  },
  {
   "id": "transport-0014",
@@ -2520,7 +3184,17 @@
   "family": "transport-0015",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "e",
+    "superelevation rate"
+   ],
+   [
+    "P",
+    "trips produced"
+   ]
+  ]
  },
  {
   "id": "transport-0015-b",
@@ -2569,7 +3243,17 @@
   "family": "transport-0015",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "e",
+    "superelevation rate"
+   ],
+   [
+    "P",
+    "trips produced"
+   ]
+  ]
  },
  {
   "id": "transport-0015-c",
@@ -2618,7 +3302,17 @@
   "family": "transport-0015",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "e",
+    "superelevation rate"
+   ],
+   [
+    "P",
+    "trips produced"
+   ]
+  ]
  },
  {
   "id": "transport-0015-d",
@@ -2667,7 +3361,17 @@
   "family": "transport-0015",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "e",
+    "superelevation rate"
+   ],
+   [
+    "P",
+    "trips produced"
+   ]
+  ]
  },
  {
   "id": "transport-0016",
@@ -2721,7 +3425,17 @@
    "svg": "<path d='M70 110 A502 502 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='31' y1='120' x2='200' y2='75' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='369' y1='120' x2='200' y2='75' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='86' y2='168' stroke='#00242E'/><line x1='330' y1='110' x2='314' y2='168' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='67' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 1,000 ft, deflection angle 30°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
    "alt": "A horizontal circular curve of radius 1,000 ft with a deflection angle of 30°, showing PC, PI and PT."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "L",
+    "length of the curve"
+   ],
+   [
+    "R",
+    "curve radius"
+   ]
+  ]
  },
  {
   "id": "transport-0016-b",
@@ -2775,7 +3489,17 @@
    "svg": "<path d='M70 110 A340 340 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='33' y1='125' x2='200' y2='56' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='367' y1='125' x2='200' y2='56' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='93' y2='165' stroke='#00242E'/><line x1='330' y1='110' x2='307' y2='165' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='48' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 800 ft, deflection angle 45°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
    "alt": "A horizontal circular curve of radius 800 ft with a deflection angle of 45°, showing PC, PI and PT."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "L",
+    "length of the curve"
+   ],
+   [
+    "R",
+    "curve radius"
+   ]
+  ]
  },
  {
   "id": "transport-0016-c",
@@ -2829,7 +3553,17 @@
    "svg": "<path d='M70 110 A625 625 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='31' y1='118' x2='200' y2='82' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='369' y1='118' x2='200' y2='82' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='82' y2='169' stroke='#00242E'/><line x1='330' y1='110' x2='318' y2='169' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='74' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 1,500 ft, deflection angle 24°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
    "alt": "A horizontal circular curve of radius 1,500 ft with a deflection angle of 24°, showing PC, PI and PT."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "L",
+    "length of the curve"
+   ],
+   [
+    "R",
+    "curve radius"
+   ]
+  ]
  },
  {
   "id": "transport-0016-d",
@@ -2883,7 +3617,17 @@
    "svg": "<path d='M70 110 A297 297 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='34' y1='128' x2='200' y2='47' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='366' y1='128' x2='200' y2='47' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='96' y2='164' stroke='#00242E'/><line x1='330' y1='110' x2='304' y2='164' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='39' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 600 ft, deflection angle 52°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
    "alt": "A horizontal circular curve of radius 600 ft with a deflection angle of 52°, showing PC, PI and PT."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "L",
+    "length of the curve"
+   ],
+   [
+    "R",
+    "curve radius"
+   ]
+  ]
  },
  {
   "id": "transport-0017",
@@ -2924,7 +3668,17 @@
    "svg": "<path d='M70 110 A502 502 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='31' y1='120' x2='200' y2='75' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='369' y1='120' x2='200' y2='75' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='86' y2='168' stroke='#00242E'/><line x1='330' y1='110' x2='314' y2='168' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='67' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 1,000 ft, deflection angle 30°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
    "alt": "A horizontal circular curve of radius 1,000 ft with a deflection angle of 30°, showing PC, PI and PT."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "T",
+    "tangent length"
+   ],
+   [
+    "R",
+    "curve radius"
+   ]
+  ]
  },
  {
   "id": "transport-0017-b",
@@ -2965,7 +3719,17 @@
    "svg": "<path d='M70 110 A340 340 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='33' y1='125' x2='200' y2='56' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='367' y1='125' x2='200' y2='56' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='93' y2='165' stroke='#00242E'/><line x1='330' y1='110' x2='307' y2='165' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='48' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 800 ft, deflection angle 45°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
    "alt": "A horizontal circular curve of radius 800 ft with a deflection angle of 45°, showing PC, PI and PT."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "T",
+    "tangent length"
+   ],
+   [
+    "R",
+    "curve radius"
+   ]
+  ]
  },
  {
   "id": "transport-0017-c",
@@ -3006,7 +3770,17 @@
    "svg": "<path d='M70 110 A625 625 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='31' y1='118' x2='200' y2='82' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='369' y1='118' x2='200' y2='82' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='82' y2='169' stroke='#00242E'/><line x1='330' y1='110' x2='318' y2='169' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='74' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 1,500 ft, deflection angle 24°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
    "alt": "A horizontal circular curve of radius 1,500 ft with a deflection angle of 24°, showing PC, PI and PT."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "T",
+    "tangent length"
+   ],
+   [
+    "R",
+    "curve radius"
+   ]
+  ]
  },
  {
   "id": "transport-0017-d",
@@ -3047,7 +3821,17 @@
    "svg": "<path d='M70 110 A297 297 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='34' y1='128' x2='200' y2='47' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='366' y1='128' x2='200' y2='47' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='96' y2='164' stroke='#00242E'/><line x1='330' y1='110' x2='304' y2='164' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='39' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 600 ft, deflection angle 52°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
    "alt": "A horizontal circular curve of radius 600 ft with a deflection angle of 52°, showing PC, PI and PT."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "T",
+    "tangent length"
+   ],
+   [
+    "R",
+    "curve radius"
+   ]
+  ]
  },
  {
   "id": "transport-0018",
@@ -3102,7 +3886,17 @@
    "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+2%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-3%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
    "alt": "A crest vertical curve L = ? ft long joining a +2% grade to a -3% grade."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "K",
+    "rate of vertical curvature L / A, or the design-hour factor"
+   ],
+   [
+    "A",
+    "algebraic difference in grades, %"
+   ]
+  ]
  },
  {
   "id": "transport-0018-b",
@@ -3157,7 +3951,17 @@
    "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+3%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-1%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
    "alt": "A crest vertical curve L = ? ft long joining a +3% grade to a -1% grade."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "K",
+    "rate of vertical curvature L / A, or the design-hour factor"
+   ],
+   [
+    "A",
+    "algebraic difference in grades, %"
+   ]
+  ]
  },
  {
   "id": "transport-0018-c",
@@ -3212,7 +4016,17 @@
    "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+1.5%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-2.5%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
    "alt": "A crest vertical curve L = ? ft long joining a +1.5% grade to a -2.5% grade."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "K",
+    "rate of vertical curvature L / A, or the design-hour factor"
+   ],
+   [
+    "A",
+    "algebraic difference in grades, %"
+   ]
+  ]
  },
  {
   "id": "transport-0018-d",
@@ -3267,7 +4081,17 @@
    "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+4%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-2%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
    "alt": "A crest vertical curve L = ? ft long joining a +4% grade to a -2% grade."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "K",
+    "rate of vertical curvature L / A, or the design-hour factor"
+   ],
+   [
+    "A",
+    "algebraic difference in grades, %"
+   ]
+  ]
  },
  {
   "id": "transport-0019",
@@ -3308,7 +4132,21 @@
    "svg": "<path d='M70 110 A380 380 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='32' y1='124' x2='200' y2='63' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='368' y1='124' x2='200' y2='63' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='91' y2='166' stroke='#00242E'/><line x1='330' y1='110' x2='309' y2='166' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='55' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 800 ft, deflection angle 40°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
    "alt": "A horizontal circular curve of radius 800 ft with a deflection angle of 40°, showing PC, PI and PT."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "T",
+    "tangent length"
+   ],
+   [
+    "R",
+    "curve radius"
+   ],
+   [
+    "I",
+    "deflection (intersection) angle"
+   ]
+  ]
  },
  {
   "id": "transport-0019-b",
@@ -3349,7 +4187,21 @@
    "svg": "<path d='M70 110 A537 537 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='31' y1='120' x2='200' y2='78' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='369' y1='120' x2='200' y2='78' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='85' y2='168' stroke='#00242E'/><line x1='330' y1='110' x2='315' y2='168' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='70' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 1,200 ft, deflection angle 28°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
    "alt": "A horizontal circular curve of radius 1,200 ft with a deflection angle of 28°, showing PC, PI and PT."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "T",
+    "tangent length"
+   ],
+   [
+    "R",
+    "curve radius"
+   ],
+   [
+    "I",
+    "deflection (intersection) angle"
+   ]
+  ]
  },
  {
   "id": "transport-0019-c",
@@ -3390,7 +4242,21 @@
    "svg": "<path d='M70 110 A297 297 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='34' y1='128' x2='200' y2='47' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='366' y1='128' x2='200' y2='47' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='96' y2='164' stroke='#00242E'/><line x1='330' y1='110' x2='304' y2='164' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='39' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 600 ft, deflection angle 52°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
    "alt": "A horizontal circular curve of radius 600 ft with a deflection angle of 52°, showing PC, PI and PT."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "T",
+    "tangent length"
+   ],
+   [
+    "R",
+    "curve radius"
+   ],
+   [
+    "I",
+    "deflection (intersection) angle"
+   ]
+  ]
  },
  {
   "id": "transport-0019-d",
@@ -3431,7 +4297,21 @@
    "svg": "<path d='M70 110 A421 421 0 0 1 330 110' fill='none' stroke='#00242E' stroke-width='3'/><line x1='32' y1='122' x2='200' y2='68' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='368' y1='122' x2='200' y2='68' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='70' y1='110' x2='89' y2='167' stroke='#00242E'/><line x1='330' y1='110' x2='311' y2='167' stroke='#00242E'/><text x='66' y='102' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>PC</text><text x='334' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>PT</text><text x='200' y='60' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>PI</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>R = 1,500 ft, deflection angle 36°</text><text x='110' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text><text x='290' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>R</text>",
    "alt": "A horizontal circular curve of radius 1,500 ft with a deflection angle of 36°, showing PC, PI and PT."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "T",
+    "tangent length"
+   ],
+   [
+    "R",
+    "curve radius"
+   ],
+   [
+    "I",
+    "deflection (intersection) angle"
+   ]
+  ]
  },
  {
   "id": "transport-0020",
@@ -3617,7 +4497,25 @@
    "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+2%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-1.5%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
    "alt": "A crest vertical curve L = ? ft long joining a +2% grade to a -1.5% grade."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "a",
+    "deceleration rate"
+   ],
+   [
+    "L",
+    "length of the curve"
+   ],
+   [
+    "A",
+    "algebraic difference in grades, %"
+   ],
+   [
+    "S",
+    "sight distance"
+   ]
+  ]
  },
  {
   "id": "transport-0021-b",
@@ -3659,7 +4557,25 @@
    "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+3%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-2%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
    "alt": "A crest vertical curve L = ? ft long joining a +3% grade to a -2% grade."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "a",
+    "deceleration rate"
+   ],
+   [
+    "L",
+    "length of the curve"
+   ],
+   [
+    "A",
+    "algebraic difference in grades, %"
+   ],
+   [
+    "S",
+    "sight distance"
+   ]
+  ]
  },
  {
   "id": "transport-0021-c",
@@ -3701,7 +4617,25 @@
    "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+1.5%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-2.5%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
    "alt": "A crest vertical curve L = ? ft long joining a +1.5% grade to a -2.5% grade."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "a",
+    "deceleration rate"
+   ],
+   [
+    "L",
+    "length of the curve"
+   ],
+   [
+    "A",
+    "algebraic difference in grades, %"
+   ],
+   [
+    "S",
+    "sight distance"
+   ]
+  ]
  },
  {
   "id": "transport-0021-d",
@@ -3743,7 +4677,25 @@
    "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+2.5%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-3.5%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>L = ? ft</text>",
    "alt": "A crest vertical curve L = ? ft long joining a +2.5% grade to a -3.5% grade."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "a",
+    "deceleration rate"
+   ],
+   [
+    "L",
+    "length of the curve"
+   ],
+   [
+    "A",
+    "algebraic difference in grades, %"
+   ],
+   [
+    "S",
+    "sight distance"
+   ]
+  ]
  },
  {
   "id": "transport-0022",
@@ -3779,7 +4731,17 @@
   "family": "transport-0022",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "R",
+    "curve radius"
+   ],
+   [
+    "D",
+    "degree of curve, or directional split"
+   ]
+  ]
  },
  {
   "id": "transport-0022-b",
@@ -3815,7 +4777,17 @@
   "family": "transport-0022",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "R",
+    "curve radius"
+   ],
+   [
+    "D",
+    "degree of curve, or directional split"
+   ]
+  ]
  },
  {
   "id": "transport-0022-c",
@@ -3851,7 +4823,17 @@
   "family": "transport-0022",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "R",
+    "curve radius"
+   ],
+   [
+    "D",
+    "degree of curve, or directional split"
+   ]
+  ]
  },
  {
   "id": "transport-0022-d",
@@ -3887,7 +4869,17 @@
   "family": "transport-0022",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "R",
+    "curve radius"
+   ],
+   [
+    "D",
+    "degree of curve, or directional split"
+   ]
+  ]
  },
  {
   "id": "transport-0023",
@@ -3924,7 +4916,25 @@
   "family": "transport-0023",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "f_{HV}",
+    "heavy vehicle adjustment factor"
+   ],
+   [
+    "P_{T}",
+    "proportion of trucks"
+   ],
+   [
+    "E_{T}",
+    "passenger car equivalent of a truck"
+   ],
+   [
+    "v_{p}",
+    "passenger car flow rate per lane"
+   ]
+  ]
  },
  {
   "id": "transport-0023-b",
@@ -3961,7 +4971,25 @@
   "family": "transport-0023",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "f_{HV}",
+    "heavy vehicle adjustment factor"
+   ],
+   [
+    "P_{T}",
+    "proportion of trucks"
+   ],
+   [
+    "E_{T}",
+    "passenger car equivalent of a truck"
+   ],
+   [
+    "v_{p}",
+    "passenger car flow rate per lane"
+   ]
+  ]
  },
  {
   "id": "transport-0023-c",
@@ -3998,7 +5026,25 @@
   "family": "transport-0023",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "f_{HV}",
+    "heavy vehicle adjustment factor"
+   ],
+   [
+    "P_{T}",
+    "proportion of trucks"
+   ],
+   [
+    "E_{T}",
+    "passenger car equivalent of a truck"
+   ],
+   [
+    "v_{p}",
+    "passenger car flow rate per lane"
+   ]
+  ]
  },
  {
   "id": "transport-0023-d",
@@ -4035,7 +5081,25 @@
   "family": "transport-0023",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "f_{HV}",
+    "heavy vehicle adjustment factor"
+   ],
+   [
+    "P_{T}",
+    "proportion of trucks"
+   ],
+   [
+    "E_{T}",
+    "passenger car equivalent of a truck"
+   ],
+   [
+    "v_{p}",
+    "passenger car flow rate per lane"
+   ]
+  ]
  },
  {
   "id": "transport-0024",
@@ -4059,7 +5123,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "single payment compound amount"
+     "compound amount"
     ]
    }
   ],
@@ -4095,7 +5159,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "single payment compound amount"
+     "compound amount"
     ]
    }
   ],
@@ -4131,7 +5195,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "single payment compound amount"
+     "compound amount"
     ]
    }
   ],
@@ -4167,7 +5231,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "single payment compound amount"
+     "compound amount"
     ]
    }
   ],
@@ -4215,7 +5279,17 @@
   "family": "transport-0025",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "algebraic difference in grades, %"
+   ],
+   [
+    "F",
+    "friction factor between zones"
+   ]
+  ]
  },
  {
   "id": "transport-0025-b",
@@ -4251,7 +5325,17 @@
   "family": "transport-0025",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "algebraic difference in grades, %"
+   ],
+   [
+    "F",
+    "friction factor between zones"
+   ]
+  ]
  },
  {
   "id": "transport-0025-c",
@@ -4287,7 +5371,17 @@
   "family": "transport-0025",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "algebraic difference in grades, %"
+   ],
+   [
+    "F",
+    "friction factor between zones"
+   ]
+  ]
  },
  {
   "id": "transport-0025-d",
@@ -4323,6 +5417,2095 @@
   "family": "transport-0025",
   "version": 4,
   "versions": 4,
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "algebraic difference in grades, %"
+   ],
+   [
+    "F",
+    "friction factor between zones"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0026",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A horizontal curve has a radius of 800 ft and a deflection angle of 40°. What is its middle ordinate?",
+  "answer": {
+   "value": 48.25,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "The middle ordinate is the distance from the midpoint of the long chord to the midpoint of the curve: M = R(1 - cos(I / 2)). It sets how far an obstruction on the inside of the curve must be kept back for sight distance.",
+  "solution": "M = 800(1 - cos 20.0°) = 800(1 - 0.93969) = 48.25 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "horizontal curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0026",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "M",
+    "middle ordinate"
+   ],
+   [
+    "R",
+    "curve radius"
+   ],
+   [
+    "I",
+    "deflection (intersection) angle"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0026-b",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A horizontal curve has a radius of 1,200 ft and a deflection angle of 24°. What is its middle ordinate?",
+  "answer": {
+   "value": 26.22,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "The middle ordinate is the distance from the midpoint of the long chord to the midpoint of the curve: M = R(1 - cos(I / 2)). It sets how far an obstruction on the inside of the curve must be kept back for sight distance.",
+  "solution": "M = 1,200(1 - cos 12.0°) = 1,200(1 - 0.97815) = 26.22 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "horizontal curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0026",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "M",
+    "middle ordinate"
+   ],
+   [
+    "R",
+    "curve radius"
+   ],
+   [
+    "I",
+    "deflection (intersection) angle"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0026-c",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A horizontal curve has a radius of 500 ft and a deflection angle of 60°. What is its middle ordinate?",
+  "answer": {
+   "value": 66.99,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "The middle ordinate is the distance from the midpoint of the long chord to the midpoint of the curve: M = R(1 - cos(I / 2)). It sets how far an obstruction on the inside of the curve must be kept back for sight distance.",
+  "solution": "M = 500(1 - cos 30.0°) = 500(1 - 0.86603) = 66.99 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "horizontal curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0026",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "M",
+    "middle ordinate"
+   ],
+   [
+    "R",
+    "curve radius"
+   ],
+   [
+    "I",
+    "deflection (intersection) angle"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0027",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A sag vertical curve 500 ft long joins a -3.0% grade to a +2.0% grade. The PVC elevation is 250.00 ft. What is the elevation of the low point?",
+  "answer": {
+   "value": 245.5,
+   "tolerance": 0.001,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "The low point is where the grade along the curve passes through zero, at x = -g_{1} L / (g_{2} - g_{1}) from the PVC. Its elevation follows from the parabola y = y_{PVC} + g_{1} x + ((g_{2} - g_{1}) / 2L) x^{2}, with grades as decimals.",
+  "solution": "x = \\frac{-(-3.0)(500)}{2.0 - (-3.0)} = 300.0 ft.\n\nElevation = 250.00 + \\frac{-3.0}{100}(300.0) + \\frac{5.0 / 100}{2(500)}(300.0)^{2} = 245.50 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "vertical curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0027",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "g_{1}",
+    "grade entering the curve, %"
+   ],
+   [
+    "g_{2}",
+    "grade leaving the curve, %"
+   ],
+   [
+    "y_{PVC}",
+    "elevation of the PVC"
+   ],
+   [
+    "x",
+    "distance from the PVC"
+   ],
+   [
+    "L",
+    "length of the curve"
+   ],
+   [
+    "y",
+    "yellow interval, or elevation on the curve"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0027-b",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A sag vertical curve 400 ft long joins a -2.0% grade to a +3.0% grade. The PVC elevation is 612.40 ft. What is the elevation of the low point?",
+  "answer": {
+   "value": 610.8,
+   "tolerance": 0.001,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "The low point is where the grade along the curve passes through zero, at x = -g_{1} L / (g_{2} - g_{1}) from the PVC. Its elevation follows from the parabola y = y_{PVC} + g_{1} x + ((g_{2} - g_{1}) / 2L) x^{2}, with grades as decimals.",
+  "solution": "x = \\frac{-(-2.0)(400)}{3.0 - (-2.0)} = 160.0 ft.\n\nElevation = 612.40 + \\frac{-2.0}{100}(160.0) + \\frac{5.0 / 100}{2(400)}(160.0)^{2} = 610.80 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "vertical curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0027",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "g_{1}",
+    "grade entering the curve, %"
+   ],
+   [
+    "g_{2}",
+    "grade leaving the curve, %"
+   ],
+   [
+    "y_{PVC}",
+    "elevation of the PVC"
+   ],
+   [
+    "x",
+    "distance from the PVC"
+   ],
+   [
+    "L",
+    "length of the curve"
+   ],
+   [
+    "y",
+    "yellow interval, or elevation on the curve"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0027-c",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A sag vertical curve 660 ft long joins a -4.0% grade to a +1.5% grade. The PVC elevation is 88.20 ft. What is the elevation of the low point?",
+  "answer": {
+   "value": 78.6,
+   "tolerance": 0.001,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "The low point is where the grade along the curve passes through zero, at x = -g_{1} L / (g_{2} - g_{1}) from the PVC. Its elevation follows from the parabola y = y_{PVC} + g_{1} x + ((g_{2} - g_{1}) / 2L) x^{2}, with grades as decimals.",
+  "solution": "x = \\frac{-(-4.0)(660)}{1.5 - (-4.0)} = 480.0 ft.\n\nElevation = 88.20 + \\frac{-4.0}{100}(480.0) + \\frac{5.5 / 100}{2(660)}(480.0)^{2} = 78.60 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "vertical curves"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0027",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "g_{1}",
+    "grade entering the curve, %"
+   ],
+   [
+    "g_{2}",
+    "grade leaving the curve, %"
+   ],
+   [
+    "y_{PVC}",
+    "elevation of the PVC"
+   ],
+   [
+    "x",
+    "distance from the PVC"
+   ],
+   [
+    "L",
+    "length of the curve"
+   ],
+   [
+    "y",
+    "yellow interval, or elevation on the curve"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0028",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A curve of radius 1,000 ft is designed for 50 mph with a side friction factor of 0.14. Using 0.01e + f = V^{2} / (15R), what superelevation rate is required?",
+  "answer": {
+   "value": 2.67,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "On a curve, superelevation and side friction together supply the inward force a vehicle needs. Whatever V^{2} / (15R) calls for beyond the friction factor has to come from superelevation.",
+  "solution": "\\frac{V^{2}}{15R} = \\frac{50^{2}}{15(1,000)} = 0.1667.\n\ne = (0.1667 - 0.14) × 100 = 2.67%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "superelevation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0028",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "e",
+    "superelevation rate"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0028-b",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A curve of radius 1,200 ft is designed for 60 mph with a side friction factor of 0.12. Using 0.01e + f = V^{2} / (15R), what superelevation rate is required?",
+  "answer": {
+   "value": 8.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "On a curve, superelevation and side friction together supply the inward force a vehicle needs. Whatever V^{2} / (15R) calls for beyond the friction factor has to come from superelevation.",
+  "solution": "\\frac{V^{2}}{15R} = \\frac{60^{2}}{15(1,200)} = 0.2000.\n\ne = (0.2000 - 0.12) × 100 = 8.00%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "superelevation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0028",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "e",
+    "superelevation rate"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0028-c",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A curve of radius 500 ft is designed for 40 mph with a side friction factor of 0.16. Using 0.01e + f = V^{2} / (15R), what superelevation rate is required?",
+  "answer": {
+   "value": 5.33,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "On a curve, superelevation and side friction together supply the inward force a vehicle needs. Whatever V^{2} / (15R) calls for beyond the friction factor has to come from superelevation.",
+  "solution": "\\frac{V^{2}}{15R} = \\frac{40^{2}}{15(500)} = 0.2133.\n\ne = (0.2133 - 0.16) × 100 = 5.33%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "superelevation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0028",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "e",
+    "superelevation rate"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0029",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A vehicle travels at 50 mph on a -4% grade (negative is downhill). Using a 2.5 s perception-reaction time and a deceleration of 11.2 ft/s^{2}, what is the stopping sight distance?",
+  "answer": {
+   "value": 454.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "Stopping sight distance is reaction distance plus braking distance: 1.47 V t + V^{2} / (30(a / 32.2 ± G)). A downgrade lengthens braking because gravity works against the brakes; an upgrade shortens it.",
+  "solution": "Reaction distance = 1.47(50)(2.5) = 183.8 ft.\n\nBraking distance = \\frac{50^{2}}{30(\\frac{11.2}{32.2} + (-0.04))} = 270.7 ft.\n\nSSD = 454.5 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "stopping sight distance"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0029",
+  "version": 1,
+  "versions": 3,
   "lookup": true
+ },
+ {
+  "id": "transport-0029-b",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A vehicle travels at 65 mph on a 3% grade (negative is downhill). Using a 2.5 s perception-reaction time and a deceleration of 11.2 ft/s^{2}, what is the stopping sight distance?",
+  "answer": {
+   "value": 611.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "Stopping sight distance is reaction distance plus braking distance: 1.47 V t + V^{2} / (30(a / 32.2 ± G)). A downgrade lengthens braking because gravity works against the brakes; an upgrade shortens it.",
+  "solution": "Reaction distance = 1.47(65)(2.5) = 238.9 ft.\n\nBraking distance = \\frac{65^{2}}{30(\\frac{11.2}{32.2} + (0.03))} = 372.7 ft.\n\nSSD = 611.6 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "stopping sight distance"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0029",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "transport-0029-c",
+  "topic": "transport",
+  "subtopic": "transport-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A vehicle travels at 40 mph on a -6% grade (negative is downhill). Using a 2.5 s perception-reaction time and a deceleration of 11.2 ft/s^{2}, what is the stopping sight distance?",
+  "answer": {
+   "value": 332.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ft"
+  },
+  "eli5": "Stopping sight distance is reaction distance plus braking distance: 1.47 V t + V^{2} / (30(a / 32.2 ± G)). A downgrade lengthens braking because gravity works against the brakes; an upgrade shortens it.",
+  "solution": "Reaction distance = 1.47(40)(2.5) = 147.0 ft.\n\nBraking distance = \\frac{40^{2}}{30(\\frac{11.2}{32.2} + (-0.06))} = 185.3 ft.\n\nSSD = 332.3 ft.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "stopping sight distance"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0029",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "transport-0030",
+  "topic": "transport",
+  "subtopic": "transport-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A flexible pavement needs a structural number of 4.2. It will have 5.0 in of asphalt with a layer coefficient of 0.44, on a granular base with a layer coefficient of 0.14 and a drainage coefficient of 1.0. How thick must the base be?",
+  "answer": {
+   "value": 14.29,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "in"
+  },
+  "eli5": "The AASHTO structural number is the sum, over the layers, of layer coefficient × thickness × drainage coefficient. Subtract what the asphalt provides and divide the remainder by the base's coefficient times its drainage coefficient.",
+  "solution": "Asphalt provides 0.44(5.0) = 2.20.\n\nD_{2} = \\frac{4.2 - 2.20}{0.14(1.0)} = 14.29 in.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "structural number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0030",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "D_{2}",
+    "thickness of the base"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0030-b",
+  "topic": "transport",
+  "subtopic": "transport-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A flexible pavement needs a structural number of 3.6. It will have 4.0 in of asphalt with a layer coefficient of 0.44, on a granular base with a layer coefficient of 0.13 and a drainage coefficient of 0.9. How thick must the base be?",
+  "answer": {
+   "value": 15.73,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "in"
+  },
+  "eli5": "The AASHTO structural number is the sum, over the layers, of layer coefficient × thickness × drainage coefficient. Subtract what the asphalt provides and divide the remainder by the base's coefficient times its drainage coefficient.",
+  "solution": "Asphalt provides 0.44(4.0) = 1.76.\n\nD_{2} = \\frac{3.6 - 1.76}{0.13(0.9)} = 15.73 in.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "structural number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0030",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "D_{2}",
+    "thickness of the base"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0030-c",
+  "topic": "transport",
+  "subtopic": "transport-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A flexible pavement needs a structural number of 5.0. It will have 6.5 in of asphalt with a layer coefficient of 0.44, on a granular base with a layer coefficient of 0.14 and a drainage coefficient of 1.1. How thick must the base be?",
+  "answer": {
+   "value": 13.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "in"
+  },
+  "eli5": "The AASHTO structural number is the sum, over the layers, of layer coefficient × thickness × drainage coefficient. Subtract what the asphalt provides and divide the remainder by the base's coefficient times its drainage coefficient.",
+  "solution": "Asphalt provides 0.44(6.5) = 2.86.\n\nD_{2} = \\frac{5.0 - 2.86}{0.14(1.1)} = 13.90 in.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "structural number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0030",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "D_{2}",
+    "thickness of the base"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0031",
+  "topic": "transport",
+  "subtopic": "transport-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A road carries 8,000 vehicles per day, of which 12% are trucks with an average truck factor of 0.9 ESALs per truck. Half the traffic uses the design lane. How many ESALs does the design lane receive in one year?",
+  "answer": {
+   "value": 157680.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ESALs"
+  },
+  "eli5": "Pavement damage is counted in equivalent 18-kip single axle loads. Yearly ESALs = daily traffic × truck share × truck factor × 365 × the share in the design lane. Cars are ignored because their damage is negligible.",
+  "solution": "ESALs = 8,000 × 0.12 × 0.9 × 365 × 0.5 = 157,680.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0031",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "transport-0031-b",
+  "topic": "transport",
+  "subtopic": "transport-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A road carries 22,000 vehicles per day, of which 8% are trucks with an average truck factor of 1.2 ESALs per truck. Half the traffic uses the design lane. How many ESALs does the design lane receive in one year?",
+  "answer": {
+   "value": 385440.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ESALs"
+  },
+  "eli5": "Pavement damage is counted in equivalent 18-kip single axle loads. Yearly ESALs = daily traffic × truck share × truck factor × 365 × the share in the design lane. Cars are ignored because their damage is negligible.",
+  "solution": "ESALs = 22,000 × 0.08 × 1.2 × 365 × 0.5 = 385,440.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0031",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "transport-0031-c",
+  "topic": "transport",
+  "subtopic": "transport-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A road carries 3,500 vehicles per day, of which 20% are trucks with an average truck factor of 0.6 ESALs per truck. Half the traffic uses the design lane. How many ESALs does the design lane receive in one year?",
+  "answer": {
+   "value": 76650.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "ESALs"
+  },
+  "eli5": "Pavement damage is counted in equivalent 18-kip single axle loads. Yearly ESALs = daily traffic × truck share × truck factor × 365 × the share in the design lane. Cars are ignored because their damage is negligible.",
+  "solution": "ESALs = 3,500 × 0.20 × 0.6 × 365 × 0.5 = 76,650.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0031",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "transport-0032",
+  "topic": "transport",
+  "subtopic": "transport-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "Using the fourth-power rule, how many passes of an 18-kip single axle do the same pavement damage as one pass of a 24 kip single axle?",
+  "answer": {
+   "value": 3.16,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Pavement damage rises very steeply with axle load, roughly with the fourth power of the load ratio. A modest overload therefore does several times the damage, which is why weight limits matter.",
+  "solution": "Equivalency = (\\frac{24}{18})^{4} = 3.160.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0032",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "transport-0032-b",
+  "topic": "transport",
+  "subtopic": "transport-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "Using the fourth-power rule, how many passes of an 18-kip single axle do the same pavement damage as one pass of a 30 kip single axle?",
+  "answer": {
+   "value": 7.716,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Pavement damage rises very steeply with axle load, roughly with the fourth power of the load ratio. A modest overload therefore does several times the damage, which is why weight limits matter.",
+  "solution": "Equivalency = (\\frac{30}{18})^{4} = 7.716.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0032",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "transport-0032-c",
+  "topic": "transport",
+  "subtopic": "transport-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "Using the fourth-power rule, how many passes of an 18-kip single axle do the same pavement damage as one pass of a 12 kip single axle?",
+  "answer": {
+   "value": 0.198,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Pavement damage rises very steeply with axle load, roughly with the fourth power of the load ratio. A modest overload therefore does several times the damage, which is why weight limits matter.",
+  "solution": "Equivalency = (\\frac{12}{18})^{4} = 0.198.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0032",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "transport-0033",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "Three vehicles cross a short road section at 30, 40 and 60 mph. What is the space mean speed?",
+  "answer": {
+   "value": 40.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mph"
+  },
+  "eli5": "Space mean speed is the harmonic mean of the individual speeds: the number of vehicles divided by the sum of 1 / speed. It is the speed that ties flow to density, and it is never more than the arithmetic (time) mean.",
+  "solution": "Space mean speed = \\frac{3}{\\frac{1}{30} + \\frac{1}{40} + \\frac{1}{60}} = \\frac{3}{0.07500} = 40.00 mph. The arithmetic mean is 43.33 mph.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "traffic flow relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0033",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "transport-0033-b",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "Three vehicles cross a short road section at 45, 50 and 65 mph. What is the space mean speed?",
+  "answer": {
+   "value": 52.08,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mph"
+  },
+  "eli5": "Space mean speed is the harmonic mean of the individual speeds: the number of vehicles divided by the sum of 1 / speed. It is the speed that ties flow to density, and it is never more than the arithmetic (time) mean.",
+  "solution": "Space mean speed = \\frac{3}{\\frac{1}{45} + \\frac{1}{50} + \\frac{1}{65}} = \\frac{3}{0.05761} = 52.08 mph. The arithmetic mean is 53.33 mph.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "traffic flow relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0033",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "transport-0033-c",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "Three vehicles cross a short road section at 25, 35 and 50 mph. What is the space mean speed?",
+  "answer": {
+   "value": 33.87,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mph"
+  },
+  "eli5": "Space mean speed is the harmonic mean of the individual speeds: the number of vehicles divided by the sum of 1 / speed. It is the speed that ties flow to density, and it is never more than the arithmetic (time) mean.",
+  "solution": "Space mean speed = \\frac{3}{\\frac{1}{25} + \\frac{1}{35} + \\frac{1}{50}} = \\frac{3}{0.08857} = 33.87 mph. The arithmetic mean is 36.67 mph.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "traffic flow relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0033",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "transport-0034",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Vehicles in a lane pass a point with an average time headway of 2.4 s. What is the flow rate?",
+  "answer": {
+   "value": 1500.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "veh/h"
+  },
+  "eli5": "Flow is the reciprocal of the average time headway. With the headway in seconds, flow in vehicles per hour is 3,600 divided by it.",
+  "solution": "Flow = \\frac{3,600}{2.4} = 1,500 veh/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "traffic flow relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0034",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "transport-0034-b",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Vehicles in a lane pass a point with an average time headway of 1.8 s. What is the flow rate?",
+  "answer": {
+   "value": 2000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "veh/h"
+  },
+  "eli5": "Flow is the reciprocal of the average time headway. With the headway in seconds, flow in vehicles per hour is 3,600 divided by it.",
+  "solution": "Flow = \\frac{3,600}{1.8} = 2,000 veh/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "traffic flow relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0034",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "transport-0034-c",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Vehicles in a lane pass a point with an average time headway of 4.5 s. What is the flow rate?",
+  "answer": {
+   "value": 800.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "veh/h"
+  },
+  "eli5": "Flow is the reciprocal of the average time headway. With the headway in seconds, flow in vehicles per hour is 3,600 divided by it.",
+  "solution": "Flow = \\frac{3,600}{4.5} = 800 veh/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "traffic flow relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0034",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "transport-0035",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A signalised lane group has a saturation flow rate of 1,800 veh/h and receives 40 s of effective green in a 90 s cycle. The demand is 700 veh/h. What is its volume-to-capacity ratio?",
+  "answer": {
+   "value": 0.875,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Capacity at a signal is the saturation flow rate times the share of the cycle that is effectively green. The volume-to-capacity ratio compares demand with that; values near or above 1 mean the approach is saturated.",
+  "solution": "Capacity = 1,800 × \\frac{40}{90} = 800 veh/h.\n\nv/c = \\frac{700}{800} = 0.875.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0035",
+  "version": 1,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "v",
+    "demand volume"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0035-b",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A signalised lane group has a saturation flow rate of 1,900 veh/h and receives 55 s of effective green in a 100 s cycle. The demand is 950 veh/h. What is its volume-to-capacity ratio?",
+  "answer": {
+   "value": 0.909,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Capacity at a signal is the saturation flow rate times the share of the cycle that is effectively green. The volume-to-capacity ratio compares demand with that; values near or above 1 mean the approach is saturated.",
+  "solution": "Capacity = 1,900 × \\frac{55}{100} = 1,045 veh/h.\n\nv/c = \\frac{950}{1,045} = 0.909.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0035",
+  "version": 2,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "v",
+    "demand volume"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0035-c",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A signalised lane group has a saturation flow rate of 1,750 veh/h and receives 24 s of effective green in a 80 s cycle. The demand is 420 veh/h. What is its volume-to-capacity ratio?",
+  "answer": {
+   "value": 0.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Capacity at a signal is the saturation flow rate times the share of the cycle that is effectively green. The volume-to-capacity ratio compares demand with that; values near or above 1 mean the approach is saturated.",
+  "solution": "Capacity = 1,750 × \\frac{24}{80} = 525 veh/h.\n\nv/c = \\frac{420}{525} = 0.800.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0035",
+  "version": 3,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "v",
+    "demand volume"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0036",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "Traffic approaches a stopped queue at a flow of 1,800 veh/h and a density of 30 veh/mi. In the queue the density is 150 veh/mi and the flow is zero. How fast does the back of the queue move upstream?",
+  "answer": {
+   "value": 15.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mph"
+  },
+  "eli5": "The boundary between two traffic states is a shock wave. Its speed is the change in flow divided by the change in density between the states; a negative value means it travels upstream.",
+  "solution": "Wave speed = \\frac{0 - 1,800}{150 - 30} = -15.00 mph, so the back of the queue moves upstream at 15.00 mph.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "traffic flow relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0036",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "transport-0036-b",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "Traffic approaches a stopped queue at a flow of 1,500 veh/h and a density of 25 veh/mi. In the queue the density is 180 veh/mi and the flow is zero. How fast does the back of the queue move upstream?",
+  "answer": {
+   "value": 9.68,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mph"
+  },
+  "eli5": "The boundary between two traffic states is a shock wave. Its speed is the change in flow divided by the change in density between the states; a negative value means it travels upstream.",
+  "solution": "Wave speed = \\frac{0 - 1,500}{180 - 25} = -9.68 mph, so the back of the queue moves upstream at 9.68 mph.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "traffic flow relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0036",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "transport-0036-c",
+  "topic": "transport",
+  "subtopic": "transport-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "Traffic approaches a stopped queue at a flow of 1,200 veh/h and a density of 40 veh/mi. In the queue the density is 200 veh/mi and the flow is zero. How fast does the back of the queue move upstream?",
+  "answer": {
+   "value": 7.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mph"
+  },
+  "eli5": "The boundary between two traffic states is a shock wave. Its speed is the change in flow divided by the change in density between the states; a negative value means it travels upstream.",
+  "solution": "Wave speed = \\frac{0 - 1,200}{200 - 40} = -7.50 mph, so the back of the queue moves upstream at 7.50 mph.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "traffic flow relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0036",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "transport-0037",
+  "topic": "transport",
+  "subtopic": "transport-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "An intersection is 60 ft wide between stop line and far-side conflict point, and the design vehicle is 20 ft long. Approach speed is 44.0 ft/s. Using r = (W + L) / v, what all-red clearance interval is needed?",
+  "answer": {
+   "value": 1.82,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "s"
+  },
+  "eli5": "The all-red interval gives a vehicle that entered at the end of yellow time to clear the intersection. It must cover the crossing width plus the vehicle's own length at the approach speed.",
+  "solution": "r = \\frac{60 + 20}{44.0} = 1.82 s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "yellow interval"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0037",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "r",
+    "all-red interval"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0037-b",
+  "topic": "transport",
+  "subtopic": "transport-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "An intersection is 84 ft wide between stop line and far-side conflict point, and the design vehicle is 20 ft long. Approach speed is 51.3 ft/s. Using r = (W + L) / v, what all-red clearance interval is needed?",
+  "answer": {
+   "value": 2.03,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "s"
+  },
+  "eli5": "The all-red interval gives a vehicle that entered at the end of yellow time to clear the intersection. It must cover the crossing width plus the vehicle's own length at the approach speed.",
+  "solution": "r = \\frac{84 + 20}{51.3} = 2.03 s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "yellow interval"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0037",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "r",
+    "all-red interval"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0037-c",
+  "topic": "transport",
+  "subtopic": "transport-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "An intersection is 48 ft wide between stop line and far-side conflict point, and the design vehicle is 20 ft long. Approach speed is 36.7 ft/s. Using r = (W + L) / v, what all-red clearance interval is needed?",
+  "answer": {
+   "value": 1.85,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "s"
+  },
+  "eli5": "The all-red interval gives a vehicle that entered at the end of yellow time to clear the intersection. It must cover the crossing width plus the vehicle's own length at the approach speed.",
+  "solution": "r = \\frac{48 + 20}{36.7} = 1.85 s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "yellow interval"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0037",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "r",
+    "all-red interval"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0038",
+  "topic": "transport",
+  "subtopic": "transport-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A signal has a total lost time of 12 s per cycle, and the sum of the critical flow ratios is 0.60. Using Webster's formula C = (1.5L + 5) / (1 - Y), what is the optimum cycle length?",
+  "answer": {
+   "value": 57.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "s"
+  },
+  "eli5": "Webster's formula balances two effects: short cycles waste a large share of time on lost time at each phase change, and long cycles make stopped vehicles wait. As the critical flow ratios approach 1 the best cycle grows without limit.",
+  "solution": "C = \\frac{1.5(12) + 5}{1 - 0.60} = \\frac{23.0}{0.40} = 57.5 s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0038",
+  "version": 1,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "C",
+    "cycle length"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0038-b",
+  "topic": "transport",
+  "subtopic": "transport-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A signal has a total lost time of 16 s per cycle, and the sum of the critical flow ratios is 0.72. Using Webster's formula C = (1.5L + 5) / (1 - Y), what is the optimum cycle length?",
+  "answer": {
+   "value": 103.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "s"
+  },
+  "eli5": "Webster's formula balances two effects: short cycles waste a large share of time on lost time at each phase change, and long cycles make stopped vehicles wait. As the critical flow ratios approach 1 the best cycle grows without limit.",
+  "solution": "C = \\frac{1.5(16) + 5}{1 - 0.72} = \\frac{29.0}{0.28} = 103.6 s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0038",
+  "version": 2,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "C",
+    "cycle length"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0038-c",
+  "topic": "transport",
+  "subtopic": "transport-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A signal has a total lost time of 10 s per cycle, and the sum of the critical flow ratios is 0.55. Using Webster's formula C = (1.5L + 5) / (1 - Y), what is the optimum cycle length?",
+  "answer": {
+   "value": 44.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "s"
+  },
+  "eli5": "Webster's formula balances two effects: short cycles waste a large share of time on lost time at each phase change, and long cycles make stopped vehicles wait. As the critical flow ratios approach 1 the best cycle grows without limit.",
+  "solution": "C = \\frac{1.5(10) + 5}{1 - 0.55} = \\frac{20.0}{0.45} = 44.4 s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0038",
+  "version": 3,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "C",
+    "cycle length"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0039",
+  "topic": "transport",
+  "subtopic": "transport-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A crosswalk is 70 ft long. Using a walking speed of 3.5 ft/s, what pedestrian clearance time is needed?",
+  "options": [
+   {
+    "id": "a",
+    "text": "20.0 s"
+   },
+   {
+    "id": "b",
+    "text": "17.5 s"
+   },
+   {
+    "id": "c",
+    "text": "23.3 s"
+   },
+   {
+    "id": "d",
+    "text": "28.0 s"
+   }
+  ],
+  "answer": "a",
+  "eli5": "The pedestrian clearance time lets someone who steps off the kerb at the end of the walk interval finish crossing. It is the crossing distance divided by the walking speed; the MUTCD uses 3.5 ft/s.",
+  "solution": "Clearance time = \\frac{70}{3.5} = 20.0 s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0039",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "transport-0039-b",
+  "topic": "transport",
+  "subtopic": "transport-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A crosswalk is 56 ft long. Using a walking speed of 3.5 ft/s, what pedestrian clearance time is needed?",
+  "options": [
+   {
+    "id": "a",
+    "text": "16.0 s"
+   },
+   {
+    "id": "b",
+    "text": "14.0 s"
+   },
+   {
+    "id": "c",
+    "text": "18.7 s"
+   },
+   {
+    "id": "d",
+    "text": "22.4 s"
+   }
+  ],
+  "answer": "a",
+  "eli5": "The pedestrian clearance time lets someone who steps off the kerb at the end of the walk interval finish crossing. It is the crossing distance divided by the walking speed; the MUTCD uses 3.5 ft/s.",
+  "solution": "Clearance time = \\frac{56}{3.5} = 16.0 s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0039",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "transport-0039-c",
+  "topic": "transport",
+  "subtopic": "transport-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A crosswalk is 98 ft long. Using a walking speed of 3.5 ft/s, what pedestrian clearance time is needed?",
+  "options": [
+   {
+    "id": "a",
+    "text": "28.0 s"
+   },
+   {
+    "id": "b",
+    "text": "24.5 s"
+   },
+   {
+    "id": "c",
+    "text": "32.7 s"
+   },
+   {
+    "id": "d",
+    "text": "39.2 s"
+   }
+  ],
+  "answer": "a",
+  "eli5": "The pedestrian clearance time lets someone who steps off the kerb at the end of the walk interval finish crossing. It is the crossing distance divided by the walking speed; the MUTCD uses 3.5 ft/s.",
+  "solution": "Clearance time = \\frac{98}{3.5} = 28.0 s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0039",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "transport-0040",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A site had 20 crashes in the study period. A countermeasure with a crash reduction factor of 25% is planned. The ADT was 10,000 before and is forecast at 11,000 after. How many crashes are expected to be prevented?",
+  "answer": {
+   "value": 5.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "crashes"
+  },
+  "eli5": "Crashes prevented = expected crashes without the improvement × crash reduction factor × (ADT after / ADT before). The traffic ratio scales the benefit to the exposure in the period being forecast.",
+  "solution": "Prevented = 20 × 0.25 × \\frac{11,000}{10,000} = 5.50 crashes.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "crash reduction"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0040",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "transport-0040-b",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A site had 36 crashes in the study period. A countermeasure with a crash reduction factor of 40% is planned. The ADT was 18,000 before and is forecast at 21,600 after. How many crashes are expected to be prevented?",
+  "answer": {
+   "value": 17.28,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "crashes"
+  },
+  "eli5": "Crashes prevented = expected crashes without the improvement × crash reduction factor × (ADT after / ADT before). The traffic ratio scales the benefit to the exposure in the period being forecast.",
+  "solution": "Prevented = 36 × 0.40 × \\frac{21,600}{18,000} = 17.28 crashes.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "crash reduction"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0040",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "transport-0040-c",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A site had 12 crashes in the study period. A countermeasure with a crash reduction factor of 15% is planned. The ADT was 7,500 before and is forecast at 7,500 after. How many crashes are expected to be prevented?",
+  "answer": {
+   "value": 1.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "crashes"
+  },
+  "eli5": "Crashes prevented = expected crashes without the improvement × crash reduction factor × (ADT after / ADT before). The traffic ratio scales the benefit to the exposure in the period being forecast.",
+  "solution": "Prevented = 12 × 0.15 × \\frac{7,500}{7,500} = 1.80 crashes.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "crash reduction"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0040",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "transport-0041",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A 5.0 mi road segment with an ADT of 12,000 had 30 crashes in one year. What is its crash rate per hundred million vehicle-miles?",
+  "answer": {
+   "value": 137.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "per HMVM"
+  },
+  "eli5": "Segment crash rates are expressed per unit of exposure, vehicle-miles travelled: rate = crashes × 100,000,000 / (ADT × 365 × years × length).",
+  "solution": "Rate = \\frac{30 × 100,000,000}{12,000 × 365 × 1 × 5.0} = 137.0 crashes per hundred million vehicle-miles.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "crash rates"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0041",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "transport-0041-b",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A 2.5 mi road segment with an ADT of 8,000 had 18 crashes in one year. What is its crash rate per hundred million vehicle-miles?",
+  "answer": {
+   "value": 246.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "per HMVM"
+  },
+  "eli5": "Segment crash rates are expressed per unit of exposure, vehicle-miles travelled: rate = crashes × 100,000,000 / (ADT × 365 × years × length).",
+  "solution": "Rate = \\frac{18 × 100,000,000}{8,000 × 365 × 1 × 2.5} = 246.6 crashes per hundred million vehicle-miles.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "crash rates"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0041",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "transport-0041-c",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A 8.0 mi road segment with an ADT of 30,000 had 45 crashes in one year. What is its crash rate per hundred million vehicle-miles?",
+  "answer": {
+   "value": 51.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "per HMVM"
+  },
+  "eli5": "Segment crash rates are expressed per unit of exposure, vehicle-miles travelled: rate = crashes × 100,000,000 / (ADT × 365 × years × length).",
+  "solution": "Rate = \\frac{45 × 100,000,000}{30,000 × 365 × 1 × 8.0} = 51.4 crashes per hundred million vehicle-miles.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "crash rates"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0041",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "transport-0042",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A highway has an AADT of 40,000. The design-hour factor K is 0.09 and the directional split D is 0.60. What is the directional design-hour volume?",
+  "answer": {
+   "value": 2160.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "veh/h"
+  },
+  "eli5": "The directional design-hour volume turns a daily volume into the hourly, one-direction volume used to size the road: DDHV = AADT × K × D.",
+  "solution": "DDHV = 40,000 × 0.09 × 0.60 = 2,160 veh/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0042",
+  "version": 1,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "K",
+    "rate of vertical curvature L / A, or the design-hour factor"
+   ],
+   [
+    "D",
+    "degree of curve, or directional split"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0042-b",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A highway has an AADT of 25,000. The design-hour factor K is 0.10 and the directional split D is 0.55. What is the directional design-hour volume?",
+  "answer": {
+   "value": 1375.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "veh/h"
+  },
+  "eli5": "The directional design-hour volume turns a daily volume into the hourly, one-direction volume used to size the road: DDHV = AADT × K × D.",
+  "solution": "DDHV = 25,000 × 0.10 × 0.55 = 1,375 veh/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0042",
+  "version": 2,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "K",
+    "rate of vertical curvature L / A, or the design-hour factor"
+   ],
+   [
+    "D",
+    "degree of curve, or directional split"
+   ]
+  ]
+ },
+ {
+  "id": "transport-0042-c",
+  "topic": "transport",
+  "subtopic": "transport-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A highway has an AADT of 62,000. The design-hour factor K is 0.08 and the directional split D is 0.65. What is the directional design-hour volume?",
+  "answer": {
+   "value": 3224.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "veh/h"
+  },
+  "eli5": "The directional design-hour volume turns a daily volume into the hourly, one-direction volume used to size the road: DDHV = AADT × K × D.",
+  "solution": "DDHV = 62,000 × 0.08 × 0.65 = 3,224 veh/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "transport-0042",
+  "version": 3,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "K",
+    "rate of vertical curvature L / A, or the design-hour factor"
+   ],
+   [
+    "D",
+    "degree of curve, or directional split"
+   ]
+  ]
  }
 ]

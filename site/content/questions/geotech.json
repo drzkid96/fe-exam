@@ -213,7 +213,21 @@
   "family": "geotech-0002",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "G_{s}",
+    "specific gravity of the soil solids"
+   ],
+   [
+    "e",
+    "void ratio"
+   ],
+   [
+    "n",
+    "porosity"
+   ]
+  ]
  },
  {
   "id": "geotech-0002-b",
@@ -265,7 +279,21 @@
   "family": "geotech-0002",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "G_{s}",
+    "specific gravity of the soil solids"
+   ],
+   [
+    "e",
+    "void ratio"
+   ],
+   [
+    "n",
+    "porosity"
+   ]
+  ]
  },
  {
   "id": "geotech-0002-c",
@@ -317,7 +345,21 @@
   "family": "geotech-0002",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "G_{s}",
+    "specific gravity of the soil solids"
+   ],
+   [
+    "e",
+    "void ratio"
+   ],
+   [
+    "n",
+    "porosity"
+   ]
+  ]
  },
  {
   "id": "geotech-0002-d",
@@ -369,7 +411,21 @@
   "family": "geotech-0002",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "G_{s}",
+    "specific gravity of the soil solids"
+   ],
+   [
+    "e",
+    "void ratio"
+   ],
+   [
+    "n",
+    "porosity"
+   ]
+  ]
  },
  {
   "id": "geotech-0003",
@@ -651,7 +707,13 @@
   "family": "geotech-0004",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "K_{a}",
+    "Rankine active earth pressure coefficient"
+   ]
+  ]
  },
  {
   "id": "geotech-0004-b",
@@ -705,7 +767,13 @@
   "family": "geotech-0004",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "K_{a}",
+    "Rankine active earth pressure coefficient"
+   ]
+  ]
  },
  {
   "id": "geotech-0004-c",
@@ -759,7 +827,13 @@
   "family": "geotech-0004",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "K_{a}",
+    "Rankine active earth pressure coefficient"
+   ]
+  ]
  },
  {
   "id": "geotech-0004-d",
@@ -813,7 +887,13 @@
   "family": "geotech-0004",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "K_{a}",
+    "Rankine active earth pressure coefficient"
+   ]
+  ]
  },
  {
   "id": "geotech-0005",
@@ -837,7 +917,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "Mohr-Coulomb"
+     "major principal stress"
     ]
    }
   ],
@@ -876,7 +956,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "Mohr-Coulomb"
+     "major principal stress"
     ]
    }
   ],
@@ -915,7 +995,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "Mohr-Coulomb"
+     "major principal stress"
     ]
    }
   ],
@@ -954,7 +1034,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "Mohr-Coulomb"
+     "major principal stress"
     ]
    }
   ],
@@ -1364,7 +1444,17 @@
   "family": "geotech-0008",
   "version": 1,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{u}",
+    "coefficient of uniformity"
+   ],
+   [
+    "C_{c}",
+    "compression index (or, in a gradation, the coefficient of curvature)"
+   ]
+  ]
  },
  {
   "id": "geotech-0008-b",
@@ -1414,7 +1504,17 @@
   "family": "geotech-0008",
   "version": 2,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{u}",
+    "coefficient of uniformity"
+   ],
+   [
+    "C_{c}",
+    "compression index (or, in a gradation, the coefficient of curvature)"
+   ]
+  ]
  },
  {
   "id": "geotech-0009",
@@ -1439,7 +1539,7 @@
     "page": "259–309",
     "find": [
      "coefficient of uniformity",
-     "coefficient of curvature"
+     "coefficient of concavity"
     ]
    }
   ],
@@ -1451,7 +1551,29 @@
   "family": "geotech-0009",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{u}",
+    "coefficient of uniformity"
+   ],
+   [
+    "D_{60}",
+    "grain size with 60% finer"
+   ],
+   [
+    "D_{10}",
+    "grain size with 10% finer"
+   ],
+   [
+    "C_{c}",
+    "compression index (or, in a gradation, the coefficient of curvature)"
+   ],
+   [
+    "D_{30}",
+    "grain size with 30% finer"
+   ]
+  ]
  },
  {
   "id": "geotech-0009-b",
@@ -1476,7 +1598,7 @@
     "page": "259–309",
     "find": [
      "coefficient of uniformity",
-     "coefficient of curvature"
+     "coefficient of concavity"
     ]
    }
   ],
@@ -1488,7 +1610,29 @@
   "family": "geotech-0009",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{u}",
+    "coefficient of uniformity"
+   ],
+   [
+    "D_{60}",
+    "grain size with 60% finer"
+   ],
+   [
+    "D_{10}",
+    "grain size with 10% finer"
+   ],
+   [
+    "C_{c}",
+    "compression index (or, in a gradation, the coefficient of curvature)"
+   ],
+   [
+    "D_{30}",
+    "grain size with 30% finer"
+   ]
+  ]
  },
  {
   "id": "geotech-0009-c",
@@ -1513,7 +1657,7 @@
     "page": "259–309",
     "find": [
      "coefficient of uniformity",
-     "coefficient of curvature"
+     "coefficient of concavity"
     ]
    }
   ],
@@ -1525,7 +1669,29 @@
   "family": "geotech-0009",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{u}",
+    "coefficient of uniformity"
+   ],
+   [
+    "D_{60}",
+    "grain size with 60% finer"
+   ],
+   [
+    "D_{10}",
+    "grain size with 10% finer"
+   ],
+   [
+    "C_{c}",
+    "compression index (or, in a gradation, the coefficient of curvature)"
+   ],
+   [
+    "D_{30}",
+    "grain size with 30% finer"
+   ]
+  ]
  },
  {
   "id": "geotech-0009-d",
@@ -1550,7 +1716,7 @@
     "page": "259–309",
     "find": [
      "coefficient of uniformity",
-     "coefficient of curvature"
+     "coefficient of concavity"
     ]
    }
   ],
@@ -1562,7 +1728,29 @@
   "family": "geotech-0009",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{u}",
+    "coefficient of uniformity"
+   ],
+   [
+    "D_{60}",
+    "grain size with 60% finer"
+   ],
+   [
+    "D_{10}",
+    "grain size with 10% finer"
+   ],
+   [
+    "C_{c}",
+    "compression index (or, in a gradation, the coefficient of curvature)"
+   ],
+   [
+    "D_{30}",
+    "grain size with 30% finer"
+   ]
+  ]
  },
  {
   "id": "geotech-0010",
@@ -1756,7 +1944,41 @@
   "family": "geotech-0011",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "k",
+    "coefficient of permeability"
+   ],
+   [
+    "i",
+    "hydraulic gradient"
+   ],
+   [
+    "A",
+    "cross-sectional area"
+   ],
+   [
+    "Q",
+    "volume of water collected, or column load"
+   ],
+   [
+    "L",
+    "length of the sample or pile"
+   ],
+   [
+    "h",
+    "head difference"
+   ],
+   [
+    "t",
+    "time"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "geotech-0011-b",
@@ -1806,7 +2028,41 @@
   "family": "geotech-0011",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "k",
+    "coefficient of permeability"
+   ],
+   [
+    "i",
+    "hydraulic gradient"
+   ],
+   [
+    "A",
+    "cross-sectional area"
+   ],
+   [
+    "Q",
+    "volume of water collected, or column load"
+   ],
+   [
+    "L",
+    "length of the sample or pile"
+   ],
+   [
+    "h",
+    "head difference"
+   ],
+   [
+    "t",
+    "time"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "geotech-0011-c",
@@ -1856,7 +2112,41 @@
   "family": "geotech-0011",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "k",
+    "coefficient of permeability"
+   ],
+   [
+    "i",
+    "hydraulic gradient"
+   ],
+   [
+    "A",
+    "cross-sectional area"
+   ],
+   [
+    "Q",
+    "volume of water collected, or column load"
+   ],
+   [
+    "L",
+    "length of the sample or pile"
+   ],
+   [
+    "h",
+    "head difference"
+   ],
+   [
+    "t",
+    "time"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "geotech-0011-d",
@@ -1906,7 +2196,41 @@
   "family": "geotech-0011",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "k",
+    "coefficient of permeability"
+   ],
+   [
+    "i",
+    "hydraulic gradient"
+   ],
+   [
+    "A",
+    "cross-sectional area"
+   ],
+   [
+    "Q",
+    "volume of water collected, or column load"
+   ],
+   [
+    "L",
+    "length of the sample or pile"
+   ],
+   [
+    "h",
+    "head difference"
+   ],
+   [
+    "t",
+    "time"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "geotech-0012",
@@ -1953,7 +2277,17 @@
    "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='250' y1='107' x2='184' y2='107' stroke='#00574A' stroke-width='3'/><path d='M176 107 L190 101 L190 113 Z' fill='#00574A'/><text x='300' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>48.0 kN/m</text><text x='300' y='120' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>at H / 3</text>",
    "alt": "A retaining wall 4 m high with a triangular active pressure diagram behind it."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "K_{a}",
+    "Rankine active earth pressure coefficient"
+   ],
+   [
+    "P_{a}",
+    "active force per metre of wall"
+   ]
+  ]
  },
  {
   "id": "geotech-0012-b",
@@ -2000,7 +2334,17 @@
    "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>5 m</text><line x1='250' y1='107' x2='184' y2='107' stroke='#00574A' stroke-width='3'/><path d='M176 107 L190 101 L190 113 Z' fill='#00574A'/><text x='300' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>65.2 kN/m</text><text x='300' y='120' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>at H / 3</text>",
    "alt": "A retaining wall 5 m high with a triangular active pressure diagram behind it."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "K_{a}",
+    "Rankine active earth pressure coefficient"
+   ],
+   [
+    "P_{a}",
+    "active force per metre of wall"
+   ]
+  ]
  },
  {
   "id": "geotech-0012-c",
@@ -2047,7 +2391,17 @@
    "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>6 m</text><line x1='250' y1='107' x2='184' y2='107' stroke='#00574A' stroke-width='3'/><path d='M176 107 L190 101 L190 113 Z' fill='#00574A'/><text x='300' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>92.7 kN/m</text><text x='300' y='120' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>at H / 3</text>",
    "alt": "A retaining wall 6 m high with a triangular active pressure diagram behind it."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "K_{a}",
+    "Rankine active earth pressure coefficient"
+   ],
+   [
+    "P_{a}",
+    "active force per metre of wall"
+   ]
+  ]
  },
  {
   "id": "geotech-0012-d",
@@ -2094,7 +2448,17 @@
    "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>3 m</text><line x1='250' y1='107' x2='184' y2='107' stroke='#00574A' stroke-width='3'/><path d='M176 107 L190 101 L190 113 Z' fill='#00574A'/><text x='300' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>36.5 kN/m</text><text x='300' y='120' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>at H / 3</text>",
    "alt": "A retaining wall 3 m high with a triangular active pressure diagram behind it."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "K_{a}",
+    "Rankine active earth pressure coefficient"
+   ],
+   [
+    "P_{a}",
+    "active force per metre of wall"
+   ]
+  ]
  },
  {
   "id": "geotech-0013",
@@ -2131,8 +2495,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "unconfined",
-     "undrained shear strength"
+     "unconfined"
     ]
    }
   ],
@@ -2144,7 +2507,17 @@
   "family": "geotech-0013",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "q_{u}",
+    "unconfined compressive strength"
+   ],
+   [
+    "s_{u}",
+    "undrained shear strength"
+   ]
+  ]
  },
  {
   "id": "geotech-0013-b",
@@ -2181,8 +2554,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "unconfined",
-     "undrained shear strength"
+     "unconfined"
     ]
    }
   ],
@@ -2194,7 +2566,17 @@
   "family": "geotech-0013",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "q_{u}",
+    "unconfined compressive strength"
+   ],
+   [
+    "s_{u}",
+    "undrained shear strength"
+   ]
+  ]
  },
  {
   "id": "geotech-0013-c",
@@ -2231,8 +2613,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "unconfined",
-     "undrained shear strength"
+     "unconfined"
     ]
    }
   ],
@@ -2244,7 +2625,17 @@
   "family": "geotech-0013",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "q_{u}",
+    "unconfined compressive strength"
+   ],
+   [
+    "s_{u}",
+    "undrained shear strength"
+   ]
+  ]
  },
  {
   "id": "geotech-0013-d",
@@ -2281,8 +2672,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "unconfined",
-     "undrained shear strength"
+     "unconfined"
     ]
    }
   ],
@@ -2294,7 +2684,17 @@
   "family": "geotech-0013",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "q_{u}",
+    "unconfined compressive strength"
+   ],
+   [
+    "s_{u}",
+    "undrained shear strength"
+   ]
+  ]
  },
  {
   "id": "geotech-0014",
@@ -2330,7 +2730,33 @@
   "family": "geotech-0014",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "N_{c}",
+    "bearing capacity factor for cohesion"
+   ],
+   [
+    "N_{q}",
+    "bearing capacity factor for surcharge"
+   ],
+   [
+    "N_{gamma}",
+    "bearing capacity factor for soil weight"
+   ],
+   [
+    "q_{ult}",
+    "ultimate bearing capacity"
+   ],
+   [
+    "c",
+    "cohesion"
+   ],
+   [
+    "D",
+    "depth of the footing"
+   ]
+  ]
  },
  {
   "id": "geotech-0014-b",
@@ -2366,7 +2792,33 @@
   "family": "geotech-0014",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "N_{c}",
+    "bearing capacity factor for cohesion"
+   ],
+   [
+    "N_{q}",
+    "bearing capacity factor for surcharge"
+   ],
+   [
+    "N_{gamma}",
+    "bearing capacity factor for soil weight"
+   ],
+   [
+    "q_{ult}",
+    "ultimate bearing capacity"
+   ],
+   [
+    "c",
+    "cohesion"
+   ],
+   [
+    "D",
+    "depth of the footing"
+   ]
+  ]
  },
  {
   "id": "geotech-0014-c",
@@ -2402,7 +2854,33 @@
   "family": "geotech-0014",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "N_{c}",
+    "bearing capacity factor for cohesion"
+   ],
+   [
+    "N_{q}",
+    "bearing capacity factor for surcharge"
+   ],
+   [
+    "N_{gamma}",
+    "bearing capacity factor for soil weight"
+   ],
+   [
+    "q_{ult}",
+    "ultimate bearing capacity"
+   ],
+   [
+    "c",
+    "cohesion"
+   ],
+   [
+    "D",
+    "depth of the footing"
+   ]
+  ]
  },
  {
   "id": "geotech-0014-d",
@@ -2438,7 +2916,33 @@
   "family": "geotech-0014",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "N_{c}",
+    "bearing capacity factor for cohesion"
+   ],
+   [
+    "N_{q}",
+    "bearing capacity factor for surcharge"
+   ],
+   [
+    "N_{gamma}",
+    "bearing capacity factor for soil weight"
+   ],
+   [
+    "q_{ult}",
+    "ultimate bearing capacity"
+   ],
+   [
+    "c",
+    "cohesion"
+   ],
+   [
+    "D",
+    "depth of the footing"
+   ]
+  ]
  },
  {
   "id": "geotech-0015",
@@ -2479,7 +2983,17 @@
    "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>600 kN</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = ?</text>",
    "alt": "A footing below the ground surface carrying a column load."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "q_{allow}",
+    "allowable bearing pressure"
+   ],
+   [
+    "B",
+    "width of the footing"
+   ]
+  ]
  },
  {
   "id": "geotech-0015-b",
@@ -2520,7 +3034,17 @@
    "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>900 kN</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = ?</text>",
    "alt": "A footing below the ground surface carrying a column load."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "q_{allow}",
+    "allowable bearing pressure"
+   ],
+   [
+    "B",
+    "width of the footing"
+   ]
+  ]
  },
  {
   "id": "geotech-0015-c",
@@ -2561,7 +3085,17 @@
    "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>1,200 kN</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = ?</text>",
    "alt": "A footing below the ground surface carrying a column load."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "q_{allow}",
+    "allowable bearing pressure"
+   ],
+   [
+    "B",
+    "width of the footing"
+   ]
+  ]
  },
  {
   "id": "geotech-0015-d",
@@ -2602,7 +3136,17 @@
    "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>450 kN</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = ?</text>",
    "alt": "A footing below the ground surface carrying a column load."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "q_{allow}",
+    "allowable bearing pressure"
+   ],
+   [
+    "B",
+    "width of the footing"
+   ]
+  ]
  },
  {
   "id": "geotech-0016",
@@ -2636,7 +3180,13 @@
   "family": "geotech-0016",
   "version": 1,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "symbols": [
+   [
+    "Q_{ult}",
+    "ultimate pile capacity"
+   ]
+  ]
  },
  {
   "id": "geotech-0016-b",
@@ -2670,7 +3220,13 @@
   "family": "geotech-0016",
   "version": 2,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "symbols": [
+   [
+    "Q_{ult}",
+    "ultimate pile capacity"
+   ]
+  ]
  },
  {
   "id": "geotech-0016-c",
@@ -2704,7 +3260,13 @@
   "family": "geotech-0016",
   "version": 3,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "symbols": [
+   [
+    "Q_{ult}",
+    "ultimate pile capacity"
+   ]
+  ]
  },
  {
   "id": "geotech-0016-d",
@@ -2738,7 +3300,13 @@
   "family": "geotech-0016",
   "version": 4,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "symbols": [
+   [
+    "Q_{ult}",
+    "ultimate pile capacity"
+   ]
+  ]
  },
  {
   "id": "geotech-0017",
@@ -2871,7 +3439,33 @@
   "family": "geotech-0018",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{c}",
+    "compression index (or, in a gradation, the coefficient of curvature)"
+   ],
+   [
+    "e_{0}",
+    "initial void ratio"
+   ],
+   [
+    "p_{2}",
+    "final effective stress"
+   ],
+   [
+    "p_{1}",
+    "initial effective stress"
+   ],
+   [
+    "S",
+    "settlement"
+   ],
+   [
+    "H",
+    "thickness of the clay layer"
+   ]
+  ]
  },
  {
   "id": "geotech-0018-b",
@@ -2908,7 +3502,33 @@
   "family": "geotech-0018",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{c}",
+    "compression index (or, in a gradation, the coefficient of curvature)"
+   ],
+   [
+    "e_{0}",
+    "initial void ratio"
+   ],
+   [
+    "p_{2}",
+    "final effective stress"
+   ],
+   [
+    "p_{1}",
+    "initial effective stress"
+   ],
+   [
+    "S",
+    "settlement"
+   ],
+   [
+    "H",
+    "thickness of the clay layer"
+   ]
+  ]
  },
  {
   "id": "geotech-0018-c",
@@ -2945,7 +3565,33 @@
   "family": "geotech-0018",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{c}",
+    "compression index (or, in a gradation, the coefficient of curvature)"
+   ],
+   [
+    "e_{0}",
+    "initial void ratio"
+   ],
+   [
+    "p_{2}",
+    "final effective stress"
+   ],
+   [
+    "p_{1}",
+    "initial effective stress"
+   ],
+   [
+    "S",
+    "settlement"
+   ],
+   [
+    "H",
+    "thickness of the clay layer"
+   ]
+  ]
  },
  {
   "id": "geotech-0018-d",
@@ -2982,7 +3628,33 @@
   "family": "geotech-0018",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{c}",
+    "compression index (or, in a gradation, the coefficient of curvature)"
+   ],
+   [
+    "e_{0}",
+    "initial void ratio"
+   ],
+   [
+    "p_{2}",
+    "final effective stress"
+   ],
+   [
+    "p_{1}",
+    "initial effective stress"
+   ],
+   [
+    "S",
+    "settlement"
+   ],
+   [
+    "H",
+    "thickness of the clay layer"
+   ]
+  ]
  },
  {
   "id": "geotech-0019",
@@ -3019,8 +3691,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "time factor",
-     "coefficient of consolidation"
+     "time factor"
     ]
    }
   ],
@@ -3032,7 +3703,25 @@
   "family": "geotech-0019",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "T_{v}",
+    "time factor"
+   ],
+   [
+    "H_{dr}",
+    "longest drainage path"
+   ],
+   [
+    "c_{v}",
+    "coefficient of consolidation"
+   ],
+   [
+    "t",
+    "time"
+   ]
+  ]
  },
  {
   "id": "geotech-0019-b",
@@ -3069,8 +3758,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "time factor",
-     "coefficient of consolidation"
+     "time factor"
     ]
    }
   ],
@@ -3082,7 +3770,25 @@
   "family": "geotech-0019",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "T_{v}",
+    "time factor"
+   ],
+   [
+    "H_{dr}",
+    "longest drainage path"
+   ],
+   [
+    "c_{v}",
+    "coefficient of consolidation"
+   ],
+   [
+    "t",
+    "time"
+   ]
+  ]
  },
  {
   "id": "geotech-0019-c",
@@ -3119,8 +3825,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "time factor",
-     "coefficient of consolidation"
+     "time factor"
     ]
    }
   ],
@@ -3132,7 +3837,25 @@
   "family": "geotech-0019",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "T_{v}",
+    "time factor"
+   ],
+   [
+    "H_{dr}",
+    "longest drainage path"
+   ],
+   [
+    "c_{v}",
+    "coefficient of consolidation"
+   ],
+   [
+    "t",
+    "time"
+   ]
+  ]
  },
  {
   "id": "geotech-0019-d",
@@ -3169,8 +3892,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "time factor",
-     "coefficient of consolidation"
+     "time factor"
     ]
    }
   ],
@@ -3182,7 +3904,25 @@
   "family": "geotech-0019",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "T_{v}",
+    "time factor"
+   ],
+   [
+    "H_{dr}",
+    "longest drainage path"
+   ],
+   [
+    "c_{v}",
+    "coefficient of consolidation"
+   ],
+   [
+    "t",
+    "time"
+   ]
+  ]
  },
  {
   "id": "geotech-0020",
@@ -3439,7 +4179,25 @@
   "family": "geotech-0021",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "s_{u}",
+    "undrained shear strength"
+   ],
+   [
+    "R",
+    "radius of the slip circle"
+   ],
+   [
+    "W",
+    "weight of the sliding mass"
+   ],
+   [
+    "x",
+    "horizontal distance from the circle centre to the weight"
+   ]
+  ]
  },
  {
   "id": "geotech-0021-b",
@@ -3476,7 +4234,25 @@
   "family": "geotech-0021",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "s_{u}",
+    "undrained shear strength"
+   ],
+   [
+    "R",
+    "radius of the slip circle"
+   ],
+   [
+    "W",
+    "weight of the sliding mass"
+   ],
+   [
+    "x",
+    "horizontal distance from the circle centre to the weight"
+   ]
+  ]
  },
  {
   "id": "geotech-0021-c",
@@ -3513,7 +4289,25 @@
   "family": "geotech-0021",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "s_{u}",
+    "undrained shear strength"
+   ],
+   [
+    "R",
+    "radius of the slip circle"
+   ],
+   [
+    "W",
+    "weight of the sliding mass"
+   ],
+   [
+    "x",
+    "horizontal distance from the circle centre to the weight"
+   ]
+  ]
  },
  {
   "id": "geotech-0021-d",
@@ -3550,7 +4344,25 @@
   "family": "geotech-0021",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "s_{u}",
+    "undrained shear strength"
+   ],
+   [
+    "R",
+    "radius of the slip circle"
+   ],
+   [
+    "W",
+    "weight of the sliding mass"
+   ],
+   [
+    "x",
+    "horizontal distance from the circle centre to the weight"
+   ]
+  ]
  },
  {
   "id": "geotech-0022",
@@ -3818,7 +4630,13 @@
   "family": "geotech-0024",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "w",
+    "water content"
+   ]
+  ]
  },
  {
   "id": "geotech-0024-b",
@@ -3854,7 +4672,13 @@
   "family": "geotech-0024",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "w",
+    "water content"
+   ]
+  ]
  },
  {
   "id": "geotech-0024-c",
@@ -3890,7 +4714,13 @@
   "family": "geotech-0024",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "w",
+    "water content"
+   ]
+  ]
  },
  {
   "id": "geotech-0024-d",
@@ -3926,7 +4756,13 @@
   "family": "geotech-0024",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "w",
+    "water content"
+   ]
+  ]
  },
  {
   "id": "geotech-0025",
@@ -3962,7 +4798,13 @@
   "family": "geotech-0025",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "D_{r}",
+    "relative density"
+   ]
+  ]
  },
  {
   "id": "geotech-0025-b",
@@ -3998,7 +4840,13 @@
   "family": "geotech-0025",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "D_{r}",
+    "relative density"
+   ]
+  ]
  },
  {
   "id": "geotech-0025-c",
@@ -4034,7 +4882,13 @@
   "family": "geotech-0025",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "D_{r}",
+    "relative density"
+   ]
+  ]
  },
  {
   "id": "geotech-0025-d",
@@ -4070,7 +4924,13 @@
   "family": "geotech-0025",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "D_{r}",
+    "relative density"
+   ]
+  ]
  },
  {
   "id": "geotech-0026",
@@ -4094,7 +4954,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "Mohr-Coulomb"
+     "major principal stress"
     ]
    }
   ],
@@ -4130,7 +4990,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "Mohr-Coulomb"
+     "major principal stress"
     ]
    }
   ],
@@ -4166,7 +5026,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "Mohr-Coulomb"
+     "major principal stress"
     ]
    }
   ],
@@ -4202,7 +5062,7 @@
     "section": "Civil Engineering",
     "page": "259–309",
     "find": [
-     "Mohr-Coulomb"
+     "major principal stress"
     ]
    }
   ],
@@ -4251,7 +5111,29 @@
   "family": "geotech-0027",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "q_{max}",
+    "maximum bearing pressure"
+   ],
+   [
+    "e",
+    "void ratio"
+   ],
+   [
+    "M",
+    "moment on the footing"
+   ],
+   [
+    "P",
+    "load on the footing"
+   ],
+   [
+    "B",
+    "width of the footing"
+   ]
+  ]
  },
  {
   "id": "geotech-0027-b",
@@ -4288,7 +5170,29 @@
   "family": "geotech-0027",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "q_{max}",
+    "maximum bearing pressure"
+   ],
+   [
+    "e",
+    "void ratio"
+   ],
+   [
+    "M",
+    "moment on the footing"
+   ],
+   [
+    "P",
+    "load on the footing"
+   ],
+   [
+    "B",
+    "width of the footing"
+   ]
+  ]
  },
  {
   "id": "geotech-0027-c",
@@ -4325,7 +5229,29 @@
   "family": "geotech-0027",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "q_{max}",
+    "maximum bearing pressure"
+   ],
+   [
+    "e",
+    "void ratio"
+   ],
+   [
+    "M",
+    "moment on the footing"
+   ],
+   [
+    "P",
+    "load on the footing"
+   ],
+   [
+    "B",
+    "width of the footing"
+   ]
+  ]
  },
  {
   "id": "geotech-0027-d",
@@ -4362,7 +5288,29 @@
   "family": "geotech-0027",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "q_{max}",
+    "maximum bearing pressure"
+   ],
+   [
+    "e",
+    "void ratio"
+   ],
+   [
+    "M",
+    "moment on the footing"
+   ],
+   [
+    "P",
+    "load on the footing"
+   ],
+   [
+    "B",
+    "width of the footing"
+   ]
+  ]
  },
  {
   "id": "geotech-0028",
@@ -4398,7 +5346,13 @@
   "family": "geotech-0028",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{c}",
+    "compression index (or, in a gradation, the coefficient of curvature)"
+   ]
+  ]
  },
  {
   "id": "geotech-0028-b",
@@ -4434,7 +5388,13 @@
   "family": "geotech-0028",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{c}",
+    "compression index (or, in a gradation, the coefficient of curvature)"
+   ]
+  ]
  },
  {
   "id": "geotech-0028-c",
@@ -4470,7 +5430,13 @@
   "family": "geotech-0028",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{c}",
+    "compression index (or, in a gradation, the coefficient of curvature)"
+   ]
+  ]
  },
  {
   "id": "geotech-0028-d",
@@ -4506,7 +5472,13 @@
   "family": "geotech-0028",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{c}",
+    "compression index (or, in a gradation, the coefficient of curvature)"
+   ]
+  ]
  },
  {
   "id": "geotech-0029",
@@ -4675,5 +5647,3326 @@
    "alt": "A block on an incline at 20° to the horizontal."
   },
   "lookup": true
+ },
+ {
+  "id": "geotech-0030",
+  "topic": "geotech",
+  "subtopic": "geotech-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A clay has a natural water content of 32%, a liquid limit of 48 and a plastic limit of 22. What is its liquidity index?",
+  "answer": {
+   "value": 0.385,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The liquidity index places the natural water content between the plastic limit (index 0) and the liquid limit (index 1). Values near 1 indicate a soft, sensitive soil; values near 0 or below indicate a stiff one.",
+  "solution": "LI = \\frac{w - PL}{LL - PL} = \\frac{32 - 22}{48 - 22} = 0.385.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0030",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0030-b",
+  "topic": "geotech",
+  "subtopic": "geotech-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A clay has a natural water content of 45%, a liquid limit of 60 and a plastic limit of 25. What is its liquidity index?",
+  "answer": {
+   "value": 0.571,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The liquidity index places the natural water content between the plastic limit (index 0) and the liquid limit (index 1). Values near 1 indicate a soft, sensitive soil; values near 0 or below indicate a stiff one.",
+  "solution": "LI = \\frac{w - PL}{LL - PL} = \\frac{45 - 25}{60 - 25} = 0.571.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0030",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0030-c",
+  "topic": "geotech",
+  "subtopic": "geotech-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A clay has a natural water content of 18%, a liquid limit of 35 and a plastic limit of 15. What is its liquidity index?",
+  "answer": {
+   "value": 0.15,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The liquidity index places the natural water content between the plastic limit (index 0) and the liquid limit (index 1). Values near 1 indicate a soft, sensitive soil; values near 0 or below indicate a stiff one.",
+  "solution": "LI = \\frac{w - PL}{LL - PL} = \\frac{18 - 15}{35 - 15} = 0.150.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0030",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0031",
+  "topic": "geotech",
+  "subtopic": "geotech-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil has 60% passing the No. 200 sieve, a liquid limit of 45 and a plasticity index of 20. Using GI = (F - 35)(0.2 + 0.005(LL - 40)) + 0.01(F - 15)(PI - 10), what is its AASHTO group index, rounded to the nearest whole number?",
+  "answer": {
+   "value": 10,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The AASHTO group index rates a subgrade soil within its group: the higher the number, the poorer the soil as a pavement subgrade. It is reported as a whole number in parentheses after the group symbol.",
+  "solution": "GI = (60 - 35)(0.2 + 0.005(45 - 40)) + 0.01(60 - 15)(20 - 10) = 5.62 + 4.50 = 10.12, reported as 10.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "group index"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0031",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0031-b",
+  "topic": "geotech",
+  "subtopic": "geotech-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil has 75% passing the No. 200 sieve, a liquid limit of 58 and a plasticity index of 30. Using GI = (F - 35)(0.2 + 0.005(LL - 40)) + 0.01(F - 15)(PI - 10), what is its AASHTO group index, rounded to the nearest whole number?",
+  "answer": {
+   "value": 24,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The AASHTO group index rates a subgrade soil within its group: the higher the number, the poorer the soil as a pavement subgrade. It is reported as a whole number in parentheses after the group symbol.",
+  "solution": "GI = (75 - 35)(0.2 + 0.005(58 - 40)) + 0.01(75 - 15)(30 - 10) = 11.60 + 12.00 = 23.60, reported as 24.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "group index"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0031",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0031-c",
+  "topic": "geotech",
+  "subtopic": "geotech-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil has 48% passing the No. 200 sieve, a liquid limit of 38 and a plasticity index of 14. Using GI = (F - 35)(0.2 + 0.005(LL - 40)) + 0.01(F - 15)(PI - 10), what is its AASHTO group index, rounded to the nearest whole number?",
+  "answer": {
+   "value": 4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The AASHTO group index rates a subgrade soil within its group: the higher the number, the poorer the soil as a pavement subgrade. It is reported as a whole number in parentheses after the group symbol.",
+  "solution": "GI = (48 - 35)(0.2 + 0.005(38 - 40)) + 0.01(48 - 15)(14 - 10) = 2.47 + 1.32 = 3.79, reported as 4.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "group index"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0031",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0032",
+  "topic": "geotech",
+  "subtopic": "geotech-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil has a water content of 18%, a specific gravity of solids of 2.70 and a void ratio of 0.65. What is its degree of saturation?",
+  "answer": {
+   "value": 74.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "The phase relationships link four quantities: S e = w G_{s}. The degree of saturation is the share of the void space that is filled with water.",
+  "solution": "S = \\frac{w G_{s}}{e} = \\frac{0.18(2.70)}{0.65} × 100 = 74.8%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "phase relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0032",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "G_{s}",
+    "specific gravity of the soil solids"
+   ],
+   [
+    "S",
+    "degree of saturation"
+   ],
+   [
+    "e",
+    "void ratio"
+   ],
+   [
+    "w",
+    "water content"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0032-b",
+  "topic": "geotech",
+  "subtopic": "geotech-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil has a water content of 25%, a specific gravity of solids of 2.65 and a void ratio of 0.80. What is its degree of saturation?",
+  "answer": {
+   "value": 82.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "The phase relationships link four quantities: S e = w G_{s}. The degree of saturation is the share of the void space that is filled with water.",
+  "solution": "S = \\frac{w G_{s}}{e} = \\frac{0.25(2.65)}{0.80} × 100 = 82.8%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "phase relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0032",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "G_{s}",
+    "specific gravity of the soil solids"
+   ],
+   [
+    "S",
+    "degree of saturation"
+   ],
+   [
+    "e",
+    "void ratio"
+   ],
+   [
+    "w",
+    "water content"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0032-c",
+  "topic": "geotech",
+  "subtopic": "geotech-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil has a water content of 12%, a specific gravity of solids of 2.72 and a void ratio of 0.55. What is its degree of saturation?",
+  "answer": {
+   "value": 59.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "The phase relationships link four quantities: S e = w G_{s}. The degree of saturation is the share of the void space that is filled with water.",
+  "solution": "S = \\frac{w G_{s}}{e} = \\frac{0.12(2.72)}{0.55} × 100 = 59.3%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "phase relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0032",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "G_{s}",
+    "specific gravity of the soil solids"
+   ],
+   [
+    "S",
+    "degree of saturation"
+   ],
+   [
+    "e",
+    "void ratio"
+   ],
+   [
+    "w",
+    "water content"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0033",
+  "topic": "geotech",
+  "subtopic": "geotech-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil has a void ratio of 0.65. What is its porosity?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.394"
+   },
+   {
+    "id": "b",
+    "text": "0.606"
+   },
+   {
+    "id": "c",
+    "text": "1.857"
+   },
+   {
+    "id": "d",
+    "text": "0.239"
+   }
+  ],
+  "answer": "a",
+  "eli5": "Void ratio compares the volume of voids with the volume of solids; porosity compares it with the total volume. They are linked by n = e / (1 + e), so porosity is always less than 1.",
+  "solution": "n = \\frac{0.65}{1 + 0.65} = 0.394.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "phase relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0033",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "n",
+    "porosity"
+   ],
+   [
+    "e",
+    "void ratio"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0033-b",
+  "topic": "geotech",
+  "subtopic": "geotech-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil has a void ratio of 0.90. What is its porosity?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.474"
+   },
+   {
+    "id": "b",
+    "text": "0.526"
+   },
+   {
+    "id": "c",
+    "text": "9.000"
+   },
+   {
+    "id": "d",
+    "text": "0.249"
+   }
+  ],
+  "answer": "a",
+  "eli5": "Void ratio compares the volume of voids with the volume of solids; porosity compares it with the total volume. They are linked by n = e / (1 + e), so porosity is always less than 1.",
+  "solution": "n = \\frac{0.90}{1 + 0.90} = 0.474.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "phase relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0033",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "n",
+    "porosity"
+   ],
+   [
+    "e",
+    "void ratio"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0033-c",
+  "topic": "geotech",
+  "subtopic": "geotech-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil has a void ratio of 0.45. What is its porosity?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.310"
+   },
+   {
+    "id": "b",
+    "text": "0.690"
+   },
+   {
+    "id": "c",
+    "text": "0.818"
+   },
+   {
+    "id": "d",
+    "text": "0.214"
+   }
+  ],
+  "answer": "a",
+  "eli5": "Void ratio compares the volume of voids with the volume of solids; porosity compares it with the total volume. They are linked by n = e / (1 + e), so porosity is always less than 1.",
+  "solution": "n = \\frac{0.45}{1 + 0.45} = 0.310.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "phase relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0033",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "n",
+    "porosity"
+   ],
+   [
+    "e",
+    "void ratio"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0034",
+  "topic": "geotech",
+  "subtopic": "geotech-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A fully saturated soil has a specific gravity of solids of 2.70 and a void ratio of 0.70. What is its saturated unit weight? Use 9.81 kN/m^{3} for water.",
+  "answer": {
+   "value": 19.62,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN/m^{3}"
+  },
+  "eli5": "Take a volume of solids of 1: the solids weigh G_{s} times the unit weight of water, the water filling the voids weighs e times it, and the total volume is 1 + e.",
+  "solution": "Saturated unit weight = \\frac{(2.70 + 0.70)(9.81)}{1 + 0.70} = 19.62 kN/m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "phase relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0034",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "G_{s}",
+    "specific gravity of the soil solids"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0034-b",
+  "topic": "geotech",
+  "subtopic": "geotech-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A fully saturated soil has a specific gravity of solids of 2.65 and a void ratio of 0.55. What is its saturated unit weight? Use 9.81 kN/m^{3} for water.",
+  "answer": {
+   "value": 20.25,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN/m^{3}"
+  },
+  "eli5": "Take a volume of solids of 1: the solids weigh G_{s} times the unit weight of water, the water filling the voids weighs e times it, and the total volume is 1 + e.",
+  "solution": "Saturated unit weight = \\frac{(2.65 + 0.55)(9.81)}{1 + 0.55} = 20.25 kN/m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "phase relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0034",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "G_{s}",
+    "specific gravity of the soil solids"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0034-c",
+  "topic": "geotech",
+  "subtopic": "geotech-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A fully saturated soil has a specific gravity of solids of 2.75 and a void ratio of 1.10. What is its saturated unit weight? Use 9.81 kN/m^{3} for water.",
+  "answer": {
+   "value": 17.98,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN/m^{3}"
+  },
+  "eli5": "Take a volume of solids of 1: the solids weigh G_{s} times the unit weight of water, the water filling the voids weighs e times it, and the total volume is 1 + e.",
+  "solution": "Saturated unit weight = \\frac{(2.75 + 1.10)(9.81)}{1 + 1.10} = 17.98 kN/m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "phase relationships"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0034",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "G_{s}",
+    "specific gravity of the soil solids"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0035",
+  "topic": "geotech",
+  "subtopic": "geotech-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In a falling-head test, a soil sample 15 cm long with a cross-section of 80 cm^{2} is fed from a standpipe of 1.0 cm^{2}. The head falls from 100 cm to 60 cm in 600 s. What is the coefficient of permeability?",
+  "answer": {
+   "value": 1.596,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "× 10^{-4} cm/s"
+  },
+  "eli5": "In a falling-head test the flow comes from a narrow standpipe, so the head drops as water passes: k = (a L / (A t)) ln(h_{1} / h_{2}). It suits fine soils, where a constant-head test would pass too little water to measure.",
+  "solution": "k = \\frac{1.0(15)}{80(600)} ln(\\frac{100}{60}) = 3.1250 × 10^{-4} × 0.5108 = 1.596 × 10^{-4} cm/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "coefficient of permeability"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0035",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "h_{1}",
+    "head at the start of the test"
+   ],
+   [
+    "h_{2}",
+    "head at the end of the test"
+   ],
+   [
+    "k",
+    "coefficient of permeability"
+   ],
+   [
+    "a",
+    "area of the standpipe"
+   ],
+   [
+    "L",
+    "length of the sample or pile"
+   ],
+   [
+    "A",
+    "cross-sectional area"
+   ],
+   [
+    "t",
+    "time"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0035-b",
+  "topic": "geotech",
+  "subtopic": "geotech-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In a falling-head test, a soil sample 10 cm long with a cross-section of 50 cm^{2} is fed from a standpipe of 0.5 cm^{2}. The head falls from 80 cm to 50 cm in 900 s. What is the coefficient of permeability?",
+  "answer": {
+   "value": 0.522,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "× 10^{-4} cm/s"
+  },
+  "eli5": "In a falling-head test the flow comes from a narrow standpipe, so the head drops as water passes: k = (a L / (A t)) ln(h_{1} / h_{2}). It suits fine soils, where a constant-head test would pass too little water to measure.",
+  "solution": "k = \\frac{0.5(10)}{50(900)} ln(\\frac{80}{50}) = 1.1111 × 10^{-4} × 0.4700 = 0.522 × 10^{-4} cm/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "coefficient of permeability"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0035",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "h_{1}",
+    "head at the start of the test"
+   ],
+   [
+    "h_{2}",
+    "head at the end of the test"
+   ],
+   [
+    "k",
+    "coefficient of permeability"
+   ],
+   [
+    "a",
+    "area of the standpipe"
+   ],
+   [
+    "L",
+    "length of the sample or pile"
+   ],
+   [
+    "A",
+    "cross-sectional area"
+   ],
+   [
+    "t",
+    "time"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0035-c",
+  "topic": "geotech",
+  "subtopic": "geotech-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In a falling-head test, a soil sample 12 cm long with a cross-section of 100 cm^{2} is fed from a standpipe of 2.0 cm^{2}. The head falls from 120 cm to 90 cm in 300 s. What is the coefficient of permeability?",
+  "answer": {
+   "value": 2.301,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "× 10^{-4} cm/s"
+  },
+  "eli5": "In a falling-head test the flow comes from a narrow standpipe, so the head drops as water passes: k = (a L / (A t)) ln(h_{1} / h_{2}). It suits fine soils, where a constant-head test would pass too little water to measure.",
+  "solution": "k = \\frac{2.0(12)}{100(300)} ln(\\frac{120}{90}) = 8.0000 × 10^{-4} × 0.2877 = 2.301 × 10^{-4} cm/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "coefficient of permeability"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0035",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "h_{1}",
+    "head at the start of the test"
+   ],
+   [
+    "h_{2}",
+    "head at the end of the test"
+   ],
+   [
+    "k",
+    "coefficient of permeability"
+   ],
+   [
+    "a",
+    "area of the standpipe"
+   ],
+   [
+    "L",
+    "length of the sample or pile"
+   ],
+   [
+    "A",
+    "cross-sectional area"
+   ],
+   [
+    "t",
+    "time"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0036",
+  "topic": "geotech",
+  "subtopic": "geotech-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A standard penetration test records 18 blows per 300 mm with a hammer that delivers 75% of the theoretical free-fall energy. What is the blow count corrected to 60% energy, N_{60}?",
+  "answer": {
+   "value": 22.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "blows"
+  },
+  "eli5": "Different hammers deliver different fractions of the theoretical energy, so blow counts are normalised to a standard 60%. A more efficient hammer drives the sampler with fewer blows, and its count is scaled up.",
+  "solution": "N_{60} = N × \\frac{ER}{60} = 18 × \\frac{75}{60} = 22.5.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0036",
+  "version": 1,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "N_{60}",
+    "blow count corrected to 60% hammer energy"
+   ],
+   [
+    "N",
+    "measured blow count"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0036-b",
+  "topic": "geotech",
+  "subtopic": "geotech-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A standard penetration test records 32 blows per 300 mm with a hammer that delivers 45% of the theoretical free-fall energy. What is the blow count corrected to 60% energy, N_{60}?",
+  "answer": {
+   "value": 24.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "blows"
+  },
+  "eli5": "Different hammers deliver different fractions of the theoretical energy, so blow counts are normalised to a standard 60%. A more efficient hammer drives the sampler with fewer blows, and its count is scaled up.",
+  "solution": "N_{60} = N × \\frac{ER}{60} = 32 × \\frac{45}{60} = 24.0.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0036",
+  "version": 2,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "N_{60}",
+    "blow count corrected to 60% hammer energy"
+   ],
+   [
+    "N",
+    "measured blow count"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0036-c",
+  "topic": "geotech",
+  "subtopic": "geotech-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A standard penetration test records 9 blows per 300 mm with a hammer that delivers 80% of the theoretical free-fall energy. What is the blow count corrected to 60% energy, N_{60}?",
+  "answer": {
+   "value": 12.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "blows"
+  },
+  "eli5": "Different hammers deliver different fractions of the theoretical energy, so blow counts are normalised to a standard 60%. A more efficient hammer drives the sampler with fewer blows, and its count is scaled up.",
+  "solution": "N_{60} = N × \\frac{ER}{60} = 9 × \\frac{80}{60} = 12.0.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0036",
+  "version": 3,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "N_{60}",
+    "blow count corrected to 60% hammer energy"
+   ],
+   [
+    "N",
+    "measured blow count"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0037",
+  "topic": "geotech",
+  "subtopic": "geotech-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A direct shear test on dry sand fails at a shear stress of 95 kPa under a normal stress of 150 kPa. Taking cohesion as zero, what is the friction angle?",
+  "answer": {
+   "value": 32.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "°"
+  },
+  "eli5": "For a cohesionless soil the failure envelope is a straight line through the origin, shear strength = normal stress × tan(friction angle). One test gives the angle directly.",
+  "solution": "Friction angle = tan^{-1}(\\frac{95}{150}) = tan^{-1}(0.6333) = 32.3°.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "major principal stress"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0037",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0037-b",
+  "topic": "geotech",
+  "subtopic": "geotech-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A direct shear test on dry sand fails at a shear stress of 115 kPa under a normal stress of 200 kPa. Taking cohesion as zero, what is the friction angle?",
+  "answer": {
+   "value": 29.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "°"
+  },
+  "eli5": "For a cohesionless soil the failure envelope is a straight line through the origin, shear strength = normal stress × tan(friction angle). One test gives the angle directly.",
+  "solution": "Friction angle = tan^{-1}(\\frac{115}{200}) = tan^{-1}(0.5750) = 29.9°.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "major principal stress"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0037",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0037-c",
+  "topic": "geotech",
+  "subtopic": "geotech-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A direct shear test on dry sand fails at a shear stress of 58 kPa under a normal stress of 80 kPa. Taking cohesion as zero, what is the friction angle?",
+  "answer": {
+   "value": 35.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "°"
+  },
+  "eli5": "For a cohesionless soil the failure envelope is a straight line through the origin, shear strength = normal stress × tan(friction angle). One test gives the angle directly.",
+  "solution": "Friction angle = tan^{-1}(\\frac{58}{80}) = tan^{-1}(0.7250) = 35.9°.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "major principal stress"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0037",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0038",
+  "topic": "geotech",
+  "subtopic": "geotech-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A saturated soil with a unit weight of 19.5 kN/m^{3} lies beneath a lake. What is the vertical effective stress 6.0 m below the lake bed? Use 9.81 kN/m^{3} for water.",
+  "options": [
+   {
+    "id": "a",
+    "text": "117.0 kPa"
+   },
+   {
+    "id": "b",
+    "text": "107.2 kPa"
+   },
+   {
+    "id": "c",
+    "text": "58.1 kPa"
+   },
+   {
+    "id": "d",
+    "text": "175.9 kPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Below standing water, the weight of the water above the bed adds equally to total stress and to pore pressure, so it cancels. Effective stress is the buoyant unit weight times the depth below the bed, whatever the depth of the lake.",
+  "solution": "Effective stress = (19.5 - 9.81)(6.0) = 9.69 × 6.0 = 58.1 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "effective stress"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0038",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0038-b",
+  "topic": "geotech",
+  "subtopic": "geotech-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A saturated soil with a unit weight of 18.2 kN/m^{3} lies beneath a lake. What is the vertical effective stress 10.0 m below the lake bed? Use 9.81 kN/m^{3} for water.",
+  "options": [
+   {
+    "id": "a",
+    "text": "182.0 kPa"
+   },
+   {
+    "id": "b",
+    "text": "172.2 kPa"
+   },
+   {
+    "id": "c",
+    "text": "83.9 kPa"
+   },
+   {
+    "id": "d",
+    "text": "280.1 kPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Below standing water, the weight of the water above the bed adds equally to total stress and to pore pressure, so it cancels. Effective stress is the buoyant unit weight times the depth below the bed, whatever the depth of the lake.",
+  "solution": "Effective stress = (18.2 - 9.81)(10.0) = 8.39 × 10.0 = 83.9 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "effective stress"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0038",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0038-c",
+  "topic": "geotech",
+  "subtopic": "geotech-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A saturated soil with a unit weight of 20.4 kN/m^{3} lies beneath a lake. What is the vertical effective stress 3.5 m below the lake bed? Use 9.81 kN/m^{3} for water.",
+  "options": [
+   {
+    "id": "a",
+    "text": "71.4 kPa"
+   },
+   {
+    "id": "b",
+    "text": "61.6 kPa"
+   },
+   {
+    "id": "c",
+    "text": "37.1 kPa"
+   },
+   {
+    "id": "d",
+    "text": "105.7 kPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Below standing water, the weight of the water above the bed adds equally to total stress and to pore pressure, so it cancels. Effective stress is the buoyant unit weight times the depth below the bed, whatever the depth of the lake.",
+  "solution": "Effective stress = (20.4 - 9.81)(3.5) = 10.59 × 3.5 = 37.1 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "effective stress"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0038",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0039",
+  "topic": "geotech",
+  "subtopic": "geotech-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sand has a specific gravity of solids of 2.65 and a void ratio of 0.60. What upward hydraulic gradient would cause a quick (boiling) condition?",
+  "answer": {
+   "value": 1.031,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Upward seepage reduces effective stress. When the seepage force equals the buoyant weight of the soil the effective stress is zero and the sand boils. That critical gradient is (G_{s} - 1) / (1 + e), usually close to 1.",
+  "solution": "i_{c} = \\frac{2.65 - 1}{1 + 0.60} = 1.031.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0039",
+  "version": 1,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "G_{s}",
+    "specific gravity of the soil solids"
+   ],
+   [
+    "i_{c}",
+    "critical hydraulic gradient"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0039-b",
+  "topic": "geotech",
+  "subtopic": "geotech-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sand has a specific gravity of solids of 2.70 and a void ratio of 0.85. What upward hydraulic gradient would cause a quick (boiling) condition?",
+  "answer": {
+   "value": 0.919,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Upward seepage reduces effective stress. When the seepage force equals the buoyant weight of the soil the effective stress is zero and the sand boils. That critical gradient is (G_{s} - 1) / (1 + e), usually close to 1.",
+  "solution": "i_{c} = \\frac{2.70 - 1}{1 + 0.85} = 0.919.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0039",
+  "version": 2,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "G_{s}",
+    "specific gravity of the soil solids"
+   ],
+   [
+    "i_{c}",
+    "critical hydraulic gradient"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0039-c",
+  "topic": "geotech",
+  "subtopic": "geotech-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sand has a specific gravity of solids of 2.68 and a void ratio of 0.45. What upward hydraulic gradient would cause a quick (boiling) condition?",
+  "answer": {
+   "value": 1.159,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Upward seepage reduces effective stress. When the seepage force equals the buoyant weight of the soil the effective stress is zero and the sand boils. That critical gradient is (G_{s} - 1) / (1 + e), usually close to 1.",
+  "solution": "i_{c} = \\frac{2.68 - 1}{1 + 0.45} = 1.159.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0039",
+  "version": 3,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "G_{s}",
+    "specific gravity of the soil solids"
+   ],
+   [
+    "i_{c}",
+    "critical hydraulic gradient"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0040",
+  "topic": "geotech",
+  "subtopic": "geotech-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A footing 2.0 m by 3.0 m carries a load of 900 kN. Using the 2:1 method, what is the increase in vertical stress 2.0 m below the footing?",
+  "answer": {
+   "value": 45.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "The 2:1 method spreads the load outward at 2 vertical to 1 horizontal, so at depth z the loaded area has grown by z in each plan dimension. Stress increase is the load divided by that enlarged area.",
+  "solution": "Stress increase = \\frac{900}{(2.0 + 2.0)(3.0 + 2.0)} = \\frac{900}{20.00} = 45.00 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0040",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0040-b",
+  "topic": "geotech",
+  "subtopic": "geotech-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A footing 2.5 m by 2.5 m carries a load of 1,500 kN. Using the 2:1 method, what is the increase in vertical stress 3.0 m below the footing?",
+  "answer": {
+   "value": 49.59,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "The 2:1 method spreads the load outward at 2 vertical to 1 horizontal, so at depth z the loaded area has grown by z in each plan dimension. Stress increase is the load divided by that enlarged area.",
+  "solution": "Stress increase = \\frac{1,500}{(2.5 + 3.0)(2.5 + 3.0)} = \\frac{1,500}{30.25} = 49.59 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0040",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0040-c",
+  "topic": "geotech",
+  "subtopic": "geotech-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A footing 1.5 m by 1.5 m carries a load of 400 kN. Using the 2:1 method, what is the increase in vertical stress 1.0 m below the footing?",
+  "answer": {
+   "value": 64.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "The 2:1 method spreads the load outward at 2 vertical to 1 horizontal, so at depth z the loaded area has grown by z in each plan dimension. Stress increase is the load divided by that enlarged area.",
+  "solution": "Stress increase = \\frac{400}{(1.5 + 1.0)(1.5 + 1.0)} = \\frac{400}{6.25} = 64.00 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0040",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0041",
+  "topic": "geotech",
+  "subtopic": "geotech-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The toe of a retaining wall is embedded 1.5 m in sand with a friction angle of 30° and a unit weight of 18.0 kN/m^{3}. Using Rankine theory, what passive resistance is available per metre of wall?",
+  "answer": {
+   "value": 60.75,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN/m"
+  },
+  "eli5": "Passive pressure develops when a wall pushes into the soil. The coefficient is K_{p} = tan^{2}(45° + friction angle / 2), the reciprocal of the active coefficient, and the force is (1/2) K_{p} (unit weight) H^{2}.",
+  "solution": "K_{p} = tan^{2}(45° + \\frac{30°}{2}) = 3.000.\n\nP_{p} = \\frac{1}{2}(3.000)(18.0)(1.5)^{2} = 60.75 kN/m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Rankine"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0041",
+  "version": 1,
+  "versions": 3,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>1.5 m</text>",
+   "alt": "A retaining wall 1.5 m high with a triangular active pressure diagram behind it."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "K_{p}",
+    "Rankine passive earth pressure coefficient"
+   ],
+   [
+    "P_{p}",
+    "passive force per metre of wall"
+   ],
+   [
+    "H",
+    "height of the wall"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0041-b",
+  "topic": "geotech",
+  "subtopic": "geotech-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The toe of a retaining wall is embedded 2.0 m in sand with a friction angle of 34° and a unit weight of 19.0 kN/m^{3}. Using Rankine theory, what passive resistance is available per metre of wall?",
+  "answer": {
+   "value": 134.41,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN/m"
+  },
+  "eli5": "Passive pressure develops when a wall pushes into the soil. The coefficient is K_{p} = tan^{2}(45° + friction angle / 2), the reciprocal of the active coefficient, and the force is (1/2) K_{p} (unit weight) H^{2}.",
+  "solution": "K_{p} = tan^{2}(45° + \\frac{34°}{2}) = 3.537.\n\nP_{p} = \\frac{1}{2}(3.537)(19.0)(2.0)^{2} = 134.41 kN/m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Rankine"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0041",
+  "version": 2,
+  "versions": 3,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>2 m</text>",
+   "alt": "A retaining wall 2 m high with a triangular active pressure diagram behind it."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "K_{p}",
+    "Rankine passive earth pressure coefficient"
+   ],
+   [
+    "P_{p}",
+    "passive force per metre of wall"
+   ],
+   [
+    "H",
+    "height of the wall"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0041-c",
+  "topic": "geotech",
+  "subtopic": "geotech-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The toe of a retaining wall is embedded 1.2 m in sand with a friction angle of 28° and a unit weight of 17.5 kN/m^{3}. Using Rankine theory, what passive resistance is available per metre of wall?",
+  "answer": {
+   "value": 34.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN/m"
+  },
+  "eli5": "Passive pressure develops when a wall pushes into the soil. The coefficient is K_{p} = tan^{2}(45° + friction angle / 2), the reciprocal of the active coefficient, and the force is (1/2) K_{p} (unit weight) H^{2}.",
+  "solution": "K_{p} = tan^{2}(45° + \\frac{28°}{2}) = 2.770.\n\nP_{p} = \\frac{1}{2}(2.770)(17.5)(1.2)^{2} = 34.90 kN/m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Rankine"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0041",
+  "version": 3,
+  "versions": 3,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>1.2 m</text>",
+   "alt": "A retaining wall 1.2 m high with a triangular active pressure diagram behind it."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "K_{p}",
+    "Rankine passive earth pressure coefficient"
+   ],
+   [
+    "P_{p}",
+    "passive force per metre of wall"
+   ],
+   [
+    "H",
+    "height of the wall"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0042",
+  "topic": "geotech",
+  "subtopic": "geotech-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rigid basement wall that cannot move retains sand with a friction angle of 30° and a unit weight of 18.0 kN/m^{3}. Using K_{0} = 1 - sin(friction angle), what is the horizontal earth pressure 5 m below the surface?",
+  "answer": {
+   "value": 45.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "A wall that cannot move does not let the soil relax to the active state, so it feels at-rest pressure, which is higher. For normally consolidated sand the at-rest coefficient is about 1 - sin(friction angle).",
+  "solution": "K_{0} = 1 - sin 30° = 0.5000.\n\nPressure = 0.5000 × 18.0 × 5 = 45.00 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0042",
+  "version": 1,
+  "versions": 3,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>5 m</text>",
+   "alt": "A retaining wall 5 m high with a triangular active pressure diagram behind it."
+  },
+  "lookup": false,
+  "symbols": [
+   [
+    "K_{0}",
+    "at-rest earth pressure coefficient"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0042-b",
+  "topic": "geotech",
+  "subtopic": "geotech-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rigid basement wall that cannot move retains sand with a friction angle of 36° and a unit weight of 19.5 kN/m^{3}. Using K_{0} = 1 - sin(friction angle), what is the horizontal earth pressure 4 m below the surface?",
+  "answer": {
+   "value": 32.15,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "A wall that cannot move does not let the soil relax to the active state, so it feels at-rest pressure, which is higher. For normally consolidated sand the at-rest coefficient is about 1 - sin(friction angle).",
+  "solution": "K_{0} = 1 - sin 36° = 0.4122.\n\nPressure = 0.4122 × 19.5 × 4 = 32.15 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0042",
+  "version": 2,
+  "versions": 3,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>4 m</text>",
+   "alt": "A retaining wall 4 m high with a triangular active pressure diagram behind it."
+  },
+  "lookup": false,
+  "symbols": [
+   [
+    "K_{0}",
+    "at-rest earth pressure coefficient"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0042-c",
+  "topic": "geotech",
+  "subtopic": "geotech-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rigid basement wall that cannot move retains sand with a friction angle of 25° and a unit weight of 17.0 kN/m^{3}. Using K_{0} = 1 - sin(friction angle), what is the horizontal earth pressure 8 m below the surface?",
+  "answer": {
+   "value": 78.52,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "A wall that cannot move does not let the soil relax to the active state, so it feels at-rest pressure, which is higher. For normally consolidated sand the at-rest coefficient is about 1 - sin(friction angle).",
+  "solution": "K_{0} = 1 - sin 25° = 0.5774.\n\nPressure = 0.5774 × 17.0 × 8 = 78.52 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0042",
+  "version": 3,
+  "versions": 3,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>8 m</text>",
+   "alt": "A retaining wall 8 m high with a triangular active pressure diagram behind it."
+  },
+  "lookup": false,
+  "symbols": [
+   [
+    "K_{0}",
+    "at-rest earth pressure coefficient"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0043",
+  "topic": "geotech",
+  "subtopic": "geotech-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A uniform surcharge of 15 kPa, such as traffic, acts on the ground behind a 4.0 m retaining wall. The backfill has a friction angle of 30°. Using the Rankine active coefficient, what extra horizontal force does the surcharge put on each metre of wall?",
+  "answer": {
+   "value": 20.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN/m"
+  },
+  "eli5": "A uniform surcharge adds a constant horizontal pressure of K_{a} q over the full height of the wall. Its resultant, K_{a} q H, acts at mid-height, unlike the triangular soil pressure, which acts at one third.",
+  "solution": "K_{a} = tan^{2}(45° - \\frac{30°}{2}) = 0.3333.\n\nForce = 0.3333 × 15 × 4.0 = 20.00 kN/m, acting 2.00 m above the base.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Rankine"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0043",
+  "version": 1,
+  "versions": 3,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>4 m</text>",
+   "alt": "A retaining wall 4 m high with a triangular active pressure diagram behind it."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "K_{a}",
+    "Rankine active earth pressure coefficient"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0043-b",
+  "topic": "geotech",
+  "subtopic": "geotech-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A uniform surcharge of 20 kPa, such as traffic, acts on the ground behind a 6.0 m retaining wall. The backfill has a friction angle of 35°. Using the Rankine active coefficient, what extra horizontal force does the surcharge put on each metre of wall?",
+  "answer": {
+   "value": 32.52,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN/m"
+  },
+  "eli5": "A uniform surcharge adds a constant horizontal pressure of K_{a} q over the full height of the wall. Its resultant, K_{a} q H, acts at mid-height, unlike the triangular soil pressure, which acts at one third.",
+  "solution": "K_{a} = tan^{2}(45° - \\frac{35°}{2}) = 0.2710.\n\nForce = 0.2710 × 20 × 6.0 = 32.52 kN/m, acting 3.00 m above the base.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Rankine"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0043",
+  "version": 2,
+  "versions": 3,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>6 m</text>",
+   "alt": "A retaining wall 6 m high with a triangular active pressure diagram behind it."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "K_{a}",
+    "Rankine active earth pressure coefficient"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0043-c",
+  "topic": "geotech",
+  "subtopic": "geotech-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A uniform surcharge of 10 kPa, such as traffic, acts on the ground behind a 3.5 m retaining wall. The backfill has a friction angle of 26°. Using the Rankine active coefficient, what extra horizontal force does the surcharge put on each metre of wall?",
+  "answer": {
+   "value": 13.67,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN/m"
+  },
+  "eli5": "A uniform surcharge adds a constant horizontal pressure of K_{a} q over the full height of the wall. Its resultant, K_{a} q H, acts at mid-height, unlike the triangular soil pressure, which acts at one third.",
+  "solution": "K_{a} = tan^{2}(45° - \\frac{26°}{2}) = 0.3905.\n\nForce = 0.3905 × 10 × 3.5 = 13.67 kN/m, acting 1.75 m above the base.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Rankine"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0043",
+  "version": 3,
+  "versions": 3,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>3.5 m</text>",
+   "alt": "A retaining wall 3.5 m high with a triangular active pressure diagram behind it."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "K_{a}",
+    "Rankine active earth pressure coefficient"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0044",
+  "topic": "geotech",
+  "subtopic": "geotech-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil has a cohesion of 20 kPa and a friction angle of 30°. In a triaxial test with a cell pressure of 100 kPa, what major principal stress causes failure?",
+  "answer": {
+   "value": 369.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "At failure Mohr's circle touches the Mohr-Coulomb envelope. That gives the major principal stress as the minor one times tan^{2}(45° + friction angle / 2), plus 2c tan(45° + friction angle / 2).",
+  "solution": "tan(45° + \\frac{30°}{2}) = 1.7321.\n\nMajor principal stress = 100(1.7321)^{2} + 2(20)(1.7321) = 300.0 + 69.3 = 369.3 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "major principal stress"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0044",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0044-b",
+  "topic": "geotech",
+  "subtopic": "geotech-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil has a cohesion of 35 kPa and a friction angle of 24°. In a triaxial test with a cell pressure of 150 kPa, what major principal stress causes failure?",
+  "answer": {
+   "value": 463.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "At failure Mohr's circle touches the Mohr-Coulomb envelope. That gives the major principal stress as the minor one times tan^{2}(45° + friction angle / 2), plus 2c tan(45° + friction angle / 2).",
+  "solution": "tan(45° + \\frac{24°}{2}) = 1.5399.\n\nMajor principal stress = 150(1.5399)^{2} + 2(35)(1.5399) = 355.7 + 107.8 = 463.5 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "major principal stress"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0044",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0044-c",
+  "topic": "geotech",
+  "subtopic": "geotech-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A soil has a cohesion of 0 kPa and a friction angle of 35°. In a triaxial test with a cell pressure of 60 kPa, what major principal stress causes failure?",
+  "answer": {
+   "value": 221.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "At failure Mohr's circle touches the Mohr-Coulomb envelope. That gives the major principal stress as the minor one times tan^{2}(45° + friction angle / 2), plus 2c tan(45° + friction angle / 2).",
+  "solution": "tan(45° + \\frac{35°}{2}) = 1.9210.\n\nMajor principal stress = 60(1.9210)^{2} + 2(0)(1.9210) = 221.4 + 0.0 = 221.4 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "major principal stress"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0044",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "geotech-0045",
+  "topic": "geotech",
+  "subtopic": "geotech-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A strip footing 2.0 m wide is founded 1.0 m deep in sand with a unit weight of 18 kN/m^{3} and no cohesion. The bearing capacity factors are N_{q} = 22.5 and N_{γ} = 19.7. What is the ultimate bearing capacity?",
+  "answer": {
+   "value": 759.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "The bearing capacity equation has three terms: cohesion, surcharge from the soil beside the footing, and the weight of soil below it. With no cohesion only the last two remain: (unit weight)(depth) N_{q} + (1/2)(unit weight) B N_{γ}.",
+  "solution": "q_{ult} = 18(1.0)(22.5) + \\frac{1}{2}(18)(2.0)(19.7) = 405.0 + 354.6 = 759.6 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ultimate bearing capacity"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0045",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "N_{q}",
+    "bearing capacity factor for surcharge"
+   ],
+   [
+    "N_{γ}",
+    "bearing capacity factor for soil weight"
+   ],
+   [
+    "q_{ult}",
+    "ultimate bearing capacity"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0045-b",
+  "topic": "geotech",
+  "subtopic": "geotech-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A strip footing 1.2 m wide is founded 1.5 m deep in sand with a unit weight of 19 kN/m^{3} and no cohesion. The bearing capacity factors are N_{q} = 41.4 and N_{γ} = 42.4. What is the ultimate bearing capacity?",
+  "answer": {
+   "value": 1663.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "The bearing capacity equation has three terms: cohesion, surcharge from the soil beside the footing, and the weight of soil below it. With no cohesion only the last two remain: (unit weight)(depth) N_{q} + (1/2)(unit weight) B N_{γ}.",
+  "solution": "q_{ult} = 19(1.5)(41.4) + \\frac{1}{2}(19)(1.2)(42.4) = 1,179.9 + 483.4 = 1,663.3 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ultimate bearing capacity"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0045",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "N_{q}",
+    "bearing capacity factor for surcharge"
+   ],
+   [
+    "N_{γ}",
+    "bearing capacity factor for soil weight"
+   ],
+   [
+    "q_{ult}",
+    "ultimate bearing capacity"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0045-c",
+  "topic": "geotech",
+  "subtopic": "geotech-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A strip footing 3.0 m wide is founded 0.8 m deep in sand with a unit weight of 17 kN/m^{3} and no cohesion. The bearing capacity factors are N_{q} = 12.7 and N_{γ} = 9.7. What is the ultimate bearing capacity?",
+  "answer": {
+   "value": 420.1,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "The bearing capacity equation has three terms: cohesion, surcharge from the soil beside the footing, and the weight of soil below it. With no cohesion only the last two remain: (unit weight)(depth) N_{q} + (1/2)(unit weight) B N_{γ}.",
+  "solution": "q_{ult} = 17(0.8)(12.7) + \\frac{1}{2}(17)(3.0)(9.7) = 172.7 + 247.3 = 420.1 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "ultimate bearing capacity"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0045",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "N_{q}",
+    "bearing capacity factor for surcharge"
+   ],
+   [
+    "N_{γ}",
+    "bearing capacity factor for soil weight"
+   ],
+   [
+    "q_{ult}",
+    "ultimate bearing capacity"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0046",
+  "topic": "geotech",
+  "subtopic": "geotech-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A strip footing 2.5 m wide carries 400 kN per metre and a moment of 120 kN·m per metre. Using the effective width B' = B - 2e, what uniform bearing pressure acts on the effective width?",
+  "answer": {
+   "value": 210.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "The effective-area method replaces an eccentrically loaded footing by a narrower one loaded centrally. The resultant sits at the centre of the reduced width B - 2e, and bearing capacity is checked on that width.",
+  "solution": "e = \\frac{120}{400} = 0.300 m, so B' = 2.5 - 2(0.300) = 1.900 m.\n\nPressure = \\frac{400}{1.900} = 210.5 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0046",
+  "version": 1,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "e",
+    "void ratio"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0046-b",
+  "topic": "geotech",
+  "subtopic": "geotech-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A strip footing 3.0 m wide carries 600 kN per metre and a moment of 90 kN·m per metre. Using the effective width B' = B - 2e, what uniform bearing pressure acts on the effective width?",
+  "answer": {
+   "value": 222.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "The effective-area method replaces an eccentrically loaded footing by a narrower one loaded centrally. The resultant sits at the centre of the reduced width B - 2e, and bearing capacity is checked on that width.",
+  "solution": "e = \\frac{90}{600} = 0.150 m, so B' = 3.0 - 2(0.150) = 2.700 m.\n\nPressure = \\frac{600}{2.700} = 222.2 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0046",
+  "version": 2,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "e",
+    "void ratio"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0046-c",
+  "topic": "geotech",
+  "subtopic": "geotech-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A strip footing 1.8 m wide carries 250 kN per metre and a moment of 40 kN·m per metre. Using the effective width B' = B - 2e, what uniform bearing pressure acts on the effective width?",
+  "answer": {
+   "value": 168.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "The effective-area method replaces an eccentrically loaded footing by a narrower one loaded centrally. The resultant sits at the centre of the reduced width B - 2e, and bearing capacity is checked on that width.",
+  "solution": "e = \\frac{40}{250} = 0.160 m, so B' = 1.8 - 2(0.160) = 1.480 m.\n\nPressure = \\frac{250}{1.480} = 168.9 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0046",
+  "version": 3,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "e",
+    "void ratio"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0047",
+  "topic": "geotech",
+  "subtopic": "geotech-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A round pile 0.4 m in diameter is driven 12 m into clay with an undrained shear strength of 50 kPa. The adhesion factor is 0.8 and the tip capacity is 9 c_{u} on the tip area. What is the ultimate capacity?",
+  "answer": {
+   "value": 659.7,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A pile in clay carries load by adhesion along its shaft, a fraction of the undrained strength acting on the shaft surface, and by end bearing of about nine times the undrained strength on the tip.",
+  "solution": "Shaft: 0.8(50) × π(0.4)(12) = 603.2 kN.\n\nTip: 9(50) × \\frac{π(0.4)^{2}}{4} = 56.5 kN.\n\nTotal = 659.7 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0047",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0047-b",
+  "topic": "geotech",
+  "subtopic": "geotech-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A round pile 0.5 m in diameter is driven 15 m into clay with an undrained shear strength of 90 kPa. The adhesion factor is 0.6 and the tip capacity is 9 c_{u} on the tip area. What is the ultimate capacity?",
+  "answer": {
+   "value": 1431.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A pile in clay carries load by adhesion along its shaft, a fraction of the undrained strength acting on the shaft surface, and by end bearing of about nine times the undrained strength on the tip.",
+  "solution": "Shaft: 0.6(90) × π(0.5)(15) = 1,272.3 kN.\n\nTip: 9(90) × \\frac{π(0.5)^{2}}{4} = 159.0 kN.\n\nTotal = 1,431.4 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0047",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0047-c",
+  "topic": "geotech",
+  "subtopic": "geotech-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A round pile 0.3 m in diameter is driven 10 m into clay with an undrained shear strength of 25 kPa. The adhesion factor is 1.0 and the tip capacity is 9 c_{u} on the tip area. What is the ultimate capacity?",
+  "answer": {
+   "value": 251.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "A pile in clay carries load by adhesion along its shaft, a fraction of the undrained strength acting on the shaft surface, and by end bearing of about nine times the undrained strength on the tip.",
+  "solution": "Shaft: 1.0(25) × π(0.3)(10) = 235.6 kN.\n\nTip: 9(25) × \\frac{π(0.3)^{2}}{4} = 15.9 kN.\n\nTotal = 251.5 kN.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0047",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0048",
+  "topic": "geotech",
+  "subtopic": "geotech-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Two columns 5 m apart carry 600 kN and 900 kN and share one rectangular footing. The footing starts 0.4 m beyond the centre of the 600 kN column. How long must it be for the soil pressure to be uniform?",
+  "answer": {
+   "value": 6.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Soil pressure under a rigid footing is uniform only if the footing's centroid lies under the resultant of the column loads. Locate the resultant, then make the footing twice the distance from its end to the resultant.",
+  "solution": "Resultant from the first column = \\frac{900(5)}{600 + 900} = 3.000 m.\n\nLength = 2(0.4 + 3.000) = 6.80 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0048",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0048-b",
+  "topic": "geotech",
+  "subtopic": "geotech-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Two columns 6 m apart carry 800 kN and 1,000 kN and share one rectangular footing. The footing starts 0.5 m beyond the centre of the 800 kN column. How long must it be for the soil pressure to be uniform?",
+  "answer": {
+   "value": 7.67,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Soil pressure under a rigid footing is uniform only if the footing's centroid lies under the resultant of the column loads. Locate the resultant, then make the footing twice the distance from its end to the resultant.",
+  "solution": "Resultant from the first column = \\frac{1,000(6)}{800 + 1,000} = 3.333 m.\n\nLength = 2(0.5 + 3.333) = 7.67 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0048",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0048-c",
+  "topic": "geotech",
+  "subtopic": "geotech-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Two columns 4 m apart carry 450 kN and 750 kN and share one rectangular footing. The footing starts 0.3 m beyond the centre of the 450 kN column. How long must it be for the soil pressure to be uniform?",
+  "answer": {
+   "value": 5.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Soil pressure under a rigid footing is uniform only if the footing's centroid lies under the resultant of the column loads. Locate the resultant, then make the footing twice the distance from its end to the resultant.",
+  "solution": "Resultant from the first column = \\frac{750(4)}{450 + 750} = 2.500 m.\n\nLength = 2(0.3 + 2.500) = 5.60 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0048",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0049",
+  "topic": "geotech",
+  "subtopic": "geotech-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A consolidation test specimen 20 mm thick drains from both faces. It reaches 50% consolidation in 4.0 min. With a time factor of 0.197 at 50%, what is the coefficient of consolidation?",
+  "answer": {
+   "value": 4.925,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm^{2}/min"
+  },
+  "eli5": "The time factor links time and drainage path: T_{v} = c_{v} t / H_{dr}^{2}. With drainage from both faces the drainage path is half the thickness.",
+  "solution": "H_{dr} = \\frac{20}{2} = 10.00 mm.\n\nc_{v} = \\frac{0.197(10.00)^{2}}{4.0} = 4.925 mm^{2}/min.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "time factor"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0049",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "T_{v}",
+    "time factor"
+   ],
+   [
+    "c_{v}",
+    "coefficient of consolidation"
+   ],
+   [
+    "H_{dr}",
+    "longest drainage path"
+   ],
+   [
+    "t",
+    "time"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0049-b",
+  "topic": "geotech",
+  "subtopic": "geotech-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A consolidation test specimen 25 mm thick drains from both faces. It reaches 50% consolidation in 6.5 min. With a time factor of 0.197 at 50%, what is the coefficient of consolidation?",
+  "answer": {
+   "value": 4.736,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm^{2}/min"
+  },
+  "eli5": "The time factor links time and drainage path: T_{v} = c_{v} t / H_{dr}^{2}. With drainage from both faces the drainage path is half the thickness.",
+  "solution": "H_{dr} = \\frac{25}{2} = 12.50 mm.\n\nc_{v} = \\frac{0.197(12.50)^{2}}{6.5} = 4.736 mm^{2}/min.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "time factor"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0049",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "T_{v}",
+    "time factor"
+   ],
+   [
+    "c_{v}",
+    "coefficient of consolidation"
+   ],
+   [
+    "H_{dr}",
+    "longest drainage path"
+   ],
+   [
+    "t",
+    "time"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0049-c",
+  "topic": "geotech",
+  "subtopic": "geotech-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A consolidation test specimen 19 mm thick drains from both faces. It reaches 50% consolidation in 2.5 min. With a time factor of 0.197 at 50%, what is the coefficient of consolidation?",
+  "answer": {
+   "value": 7.112,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm^{2}/min"
+  },
+  "eli5": "The time factor links time and drainage path: T_{v} = c_{v} t / H_{dr}^{2}. With drainage from both faces the drainage path is half the thickness.",
+  "solution": "H_{dr} = \\frac{19}{2} = 9.50 mm.\n\nc_{v} = \\frac{0.197(9.50)^{2}}{2.5} = 7.112 mm^{2}/min.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "time factor"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0049",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "T_{v}",
+    "time factor"
+   ],
+   [
+    "c_{v}",
+    "coefficient of consolidation"
+   ],
+   [
+    "H_{dr}",
+    "longest drainage path"
+   ],
+   [
+    "t",
+    "time"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0050",
+  "topic": "geotech",
+  "subtopic": "geotech-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An overconsolidated clay layer 5 m thick has a recompression index of 0.05 and an initial void ratio of 0.90. The effective stress at mid-layer rises from 100 kPa to 180 kPa, which is still below the preconsolidation pressure. What is the consolidation settlement?",
+  "answer": {
+   "value": 33.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "While the stress stays below the preconsolidation pressure the clay is being reloaded, so the flatter recompression index applies in place of the compression index: S = C_{r} H / (1 + e_{0}) × log(final / initial).",
+  "solution": "S = \\frac{0.05(5)}{1 + 0.90} log(\\frac{180}{100}) = 0.13158 × 0.2553 = 0.03359 m = 33.6 mm.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "compression index"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0050",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{r}",
+    "recompression index"
+   ],
+   [
+    "e_{0}",
+    "initial void ratio"
+   ],
+   [
+    "S",
+    "settlement"
+   ],
+   [
+    "H",
+    "thickness of the clay layer"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0050-b",
+  "topic": "geotech",
+  "subtopic": "geotech-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An overconsolidated clay layer 8 m thick has a recompression index of 0.04 and an initial void ratio of 1.10. The effective stress at mid-layer rises from 80 kPa to 120 kPa, which is still below the preconsolidation pressure. What is the consolidation settlement?",
+  "answer": {
+   "value": 26.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "While the stress stays below the preconsolidation pressure the clay is being reloaded, so the flatter recompression index applies in place of the compression index: S = C_{r} H / (1 + e_{0}) × log(final / initial).",
+  "solution": "S = \\frac{0.04(8)}{1 + 1.10} log(\\frac{120}{80}) = 0.15238 × 0.1761 = 0.02683 m = 26.8 mm.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "compression index"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0050",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{r}",
+    "recompression index"
+   ],
+   [
+    "e_{0}",
+    "initial void ratio"
+   ],
+   [
+    "S",
+    "settlement"
+   ],
+   [
+    "H",
+    "thickness of the clay layer"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0050-c",
+  "topic": "geotech",
+  "subtopic": "geotech-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An overconsolidated clay layer 3 m thick has a recompression index of 0.06 and an initial void ratio of 0.75. The effective stress at mid-layer rises from 150 kPa to 240 kPa, which is still below the preconsolidation pressure. What is the consolidation settlement?",
+  "answer": {
+   "value": 21.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "While the stress stays below the preconsolidation pressure the clay is being reloaded, so the flatter recompression index applies in place of the compression index: S = C_{r} H / (1 + e_{0}) × log(final / initial).",
+  "solution": "S = \\frac{0.06(3)}{1 + 0.75} log(\\frac{240}{150}) = 0.10286 × 0.2041 = 0.02100 m = 21.0 mm.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "compression index"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0050",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{r}",
+    "recompression index"
+   ],
+   [
+    "e_{0}",
+    "initial void ratio"
+   ],
+   [
+    "S",
+    "settlement"
+   ],
+   [
+    "H",
+    "thickness of the clay layer"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0051",
+  "topic": "geotech",
+  "subtopic": "geotech-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A clay 5 m below the surface has a preconsolidation pressure of 240 kPa. The soil above has a unit weight of 18.0 kN/m^{3} and the water table is deep. What is the overconsolidation ratio?",
+  "answer": {
+   "value": 2.67,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The overconsolidation ratio is the largest effective stress the soil has ever carried divided by what it carries now. A ratio of 1 is normally consolidated; above 1 the soil has been unloaded and settles less under new load.",
+  "solution": "Present effective stress = 18.0 × 5 = 90.0 kPa.\n\nOCR = \\frac{240}{90.0} = 2.67.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0051",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0051-b",
+  "topic": "geotech",
+  "subtopic": "geotech-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A clay 6 m below the surface has a preconsolidation pressure of 150 kPa. The soil above has a unit weight of 17.0 kN/m^{3} and the water table is deep. What is the overconsolidation ratio?",
+  "answer": {
+   "value": 1.47,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The overconsolidation ratio is the largest effective stress the soil has ever carried divided by what it carries now. A ratio of 1 is normally consolidated; above 1 the soil has been unloaded and settles less under new load.",
+  "solution": "Present effective stress = 17.0 × 6 = 102.0 kPa.\n\nOCR = \\frac{150}{102.0} = 1.47.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0051",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0051-c",
+  "topic": "geotech",
+  "subtopic": "geotech-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A clay 8 m below the surface has a preconsolidation pressure of 400 kPa. The soil above has a unit weight of 19.5 kN/m^{3} and the water table is deep. What is the overconsolidation ratio?",
+  "answer": {
+   "value": 2.56,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The overconsolidation ratio is the largest effective stress the soil has ever carried divided by what it carries now. A ratio of 1 is normally consolidated; above 1 the soil has been unloaded and settles less under new load.",
+  "solution": "Present effective stress = 19.5 × 8 = 156.0 kPa.\n\nOCR = \\frac{400}{156.0} = 2.56.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0051",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0052",
+  "topic": "geotech",
+  "subtopic": "geotech-j",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A dry soil layer 3 m thick (measured vertically) lies on a planar interface sloping at 25°. The soil has a cohesion of 10 kPa, a friction angle of 30° and a unit weight of 18 kN/m^{3}. For an infinite slope, what is the factor of safety against sliding on the interface?",
+  "answer": {
+   "value": 1.72,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "For an infinite slope with cohesion, FS = c / (unit weight × H × sin(slope) × cos(slope)) + tan(friction angle) / tan(slope). The cohesion term shrinks as the layer gets thicker; the friction term does not depend on thickness.",
+  "solution": "Cohesion term = \\frac{10}{18(3)(sin 25°)(cos 25°)} = 0.483.\n\nFriction term = \\frac{tan 30°}{tan 25°} = 1.238.\n\nFS = 1.72.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "slope failure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0052",
+  "version": 1,
+  "versions": 3,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M71 150 L329 150 L329 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(213 84) rotate(-25)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='115' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>25°</text>",
+   "alt": "A block on an incline at 25° to the horizontal."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "c",
+    "cohesion"
+   ],
+   [
+    "H",
+    "thickness of the layer, or height of the wall"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0052-b",
+  "topic": "geotech",
+  "subtopic": "geotech-j",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A dry soil layer 2 m thick (measured vertically) lies on a planar interface sloping at 30°. The soil has a cohesion of 5 kPa, a friction angle of 28° and a unit weight of 19 kN/m^{3}. For an infinite slope, what is the factor of safety against sliding on the interface?",
+  "answer": {
+   "value": 1.22,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "For an infinite slope with cohesion, FS = c / (unit weight × H × sin(slope) × cos(slope)) + tan(friction angle) / tan(slope). The cohesion term shrinks as the layer gets thicker; the friction term does not depend on thickness.",
+  "solution": "Cohesion term = \\frac{5}{19(2)(sin 30°)(cos 30°)} = 0.304.\n\nFriction term = \\frac{tan 28°}{tan 30°} = 0.921.\n\nFS = 1.22.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "slope failure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0052",
+  "version": 2,
+  "versions": 3,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M96 150 L304 150 L304 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(210 84) rotate(-30)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='140' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>30°</text>",
+   "alt": "A block on an incline at 30° to the horizontal."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "c",
+    "cohesion"
+   ],
+   [
+    "H",
+    "thickness of the layer, or height of the wall"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0052-c",
+  "topic": "geotech",
+  "subtopic": "geotech-j",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A dry soil layer 5 m thick (measured vertically) lies on a planar interface sloping at 20°. The soil has a cohesion of 15 kPa, a friction angle of 22° and a unit weight of 17 kN/m^{3}. For an infinite slope, what is the factor of safety against sliding on the interface?",
+  "answer": {
+   "value": 1.66,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "For an infinite slope with cohesion, FS = c / (unit weight × H × sin(slope) × cos(slope)) + tan(friction angle) / tan(slope). The cohesion term shrinks as the layer gets thicker; the friction term does not depend on thickness.",
+  "solution": "Cohesion term = \\frac{15}{17(5)(sin 20°)(cos 20°)} = 0.549.\n\nFriction term = \\frac{tan 22°}{tan 20°} = 1.110.\n\nFS = 1.66.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "slope failure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0052",
+  "version": 3,
+  "versions": 3,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M60 150 L340 150 L340 48 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(214 94) rotate(-20)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='104' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>20°</text>",
+   "alt": "A block on an incline at 20° to the horizontal."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "c",
+    "cohesion"
+   ],
+   [
+    "H",
+    "thickness of the layer, or height of the wall"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0053",
+  "topic": "geotech",
+  "subtopic": "geotech-j",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A long slope of cohesionless soil stands at 15° with seepage parallel to the slope and the water table at the surface. The saturated unit weight is 20 kN/m^{3} and the friction angle is 32°. What is the factor of safety? Use 9.81 kN/m^{3} for water.",
+  "answer": {
+   "value": 1.19,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Seepage parallel to the slope lowers the effective normal stress without lowering the driving weight. The dry-slope factor of safety, tan(friction angle) / tan(slope), is multiplied by the ratio of buoyant to saturated unit weight, roughly one half.",
+  "solution": "FS = \\frac{20 - 9.81}{20} × \\frac{tan 32°}{tan 15°} = 0.5095 × 2.3320 = 1.19.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "slope failure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0053",
+  "version": 1,
+  "versions": 3,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M60 150 L340 150 L340 75 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(214 109) rotate(-15)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='104' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>15°</text>",
+   "alt": "A block on an incline at 15° to the horizontal."
+  },
+  "lookup": true
+ },
+ {
+  "id": "geotech-0053-b",
+  "topic": "geotech",
+  "subtopic": "geotech-j",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A long slope of cohesionless soil stands at 18° with seepage parallel to the slope and the water table at the surface. The saturated unit weight is 19 kN/m^{3} and the friction angle is 35°. What is the factor of safety? Use 9.81 kN/m^{3} for water.",
+  "answer": {
+   "value": 1.04,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Seepage parallel to the slope lowers the effective normal stress without lowering the driving weight. The dry-slope factor of safety, tan(friction angle) / tan(slope), is multiplied by the ratio of buoyant to saturated unit weight, roughly one half.",
+  "solution": "FS = \\frac{19 - 9.81}{19} × \\frac{tan 35°}{tan 18°} = 0.4837 × 2.1550 = 1.04.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "slope failure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0053",
+  "version": 2,
+  "versions": 3,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M60 150 L340 150 L340 59 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(214 100) rotate(-18)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='104' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>18°</text>",
+   "alt": "A block on an incline at 18° to the horizontal."
+  },
+  "lookup": true
+ },
+ {
+  "id": "geotech-0053-c",
+  "topic": "geotech",
+  "subtopic": "geotech-j",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A long slope of cohesionless soil stands at 12° with seepage parallel to the slope and the water table at the surface. The saturated unit weight is 21 kN/m^{3} and the friction angle is 30°. What is the factor of safety? Use 9.81 kN/m^{3} for water.",
+  "answer": {
+   "value": 1.45,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Seepage parallel to the slope lowers the effective normal stress without lowering the driving weight. The dry-slope factor of safety, tan(friction angle) / tan(slope), is multiplied by the ratio of buoyant to saturated unit weight, roughly one half.",
+  "solution": "FS = \\frac{21 - 9.81}{21} × \\frac{tan 30°}{tan 12°} = 0.5329 × 2.7162 = 1.45.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "slope failure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0053",
+  "version": 3,
+  "versions": 3,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M60 150 L340 150 L340 90 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(214 117) rotate(-12)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='104' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>12°</text>",
+   "alt": "A block on an incline at 12° to the horizontal."
+  },
+  "lookup": true
+ },
+ {
+  "id": "geotech-0054",
+  "topic": "geotech",
+  "subtopic": "geotech-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Fill is to be compacted to a dry density of 1,750 kg/m^{3}. The borrow soil arrives at a water content of 8.0% and the optimum is 13.0%. How much water must be added per cubic metre of compacted fill?",
+  "answer": {
+   "value": 87.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L"
+  },
+  "eli5": "Water content is the mass of water divided by the mass of dry solids. The water to add is the dry mass times the increase in water content, and 1 kg of water is 1 L.",
+  "solution": "Water = 1,750 × \\frac{13.0 - 8.0}{100} = 87.5 kg, or 87.5 L per cubic metre.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0054",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0054-b",
+  "topic": "geotech",
+  "subtopic": "geotech-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Fill is to be compacted to a dry density of 1,680 kg/m^{3}. The borrow soil arrives at a water content of 10.5% and the optimum is 16.0%. How much water must be added per cubic metre of compacted fill?",
+  "answer": {
+   "value": 92.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L"
+  },
+  "eli5": "Water content is the mass of water divided by the mass of dry solids. The water to add is the dry mass times the increase in water content, and 1 kg of water is 1 L.",
+  "solution": "Water = 1,680 × \\frac{16.0 - 10.5}{100} = 92.4 kg, or 92.4 L per cubic metre.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0054",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "geotech-0054-c",
+  "topic": "geotech",
+  "subtopic": "geotech-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Fill is to be compacted to a dry density of 1,900 kg/m^{3}. The borrow soil arrives at a water content of 4.0% and the optimum is 9.5%. How much water must be added per cubic metre of compacted fill?",
+  "answer": {
+   "value": 104.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L"
+  },
+  "eli5": "Water content is the mass of water divided by the mass of dry solids. The water to add is the dry mass times the increase in water content, and 1 kg of water is 1 L.",
+  "solution": "Water = 1,900 × \\frac{9.5 - 4.0}{100} = 104.5 kg, or 104.5 L per cubic metre.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0054",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
  }
 ]

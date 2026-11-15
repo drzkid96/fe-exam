@@ -50,7 +50,41 @@
   "family": "math-0001",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y_{2}",
+    "y-coordinate of the second point"
+   ],
+   [
+    "y_{1}",
+    "y-coordinate of the first point"
+   ],
+   [
+    "x_{2}",
+    "x-coordinate of the second point"
+   ],
+   [
+    "x_{1}",
+    "x-coordinate of the first point"
+   ],
+   [
+    "y",
+    "the dependent variable"
+   ],
+   [
+    "m",
+    "slope of the line"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "b",
+    "y-intercept, or a side or coefficient as given"
+   ]
+  ]
  },
  {
   "id": "math-0001-b",
@@ -103,7 +137,41 @@
   "family": "math-0001",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y_{2}",
+    "y-coordinate of the second point"
+   ],
+   [
+    "y_{1}",
+    "y-coordinate of the first point"
+   ],
+   [
+    "x_{2}",
+    "x-coordinate of the second point"
+   ],
+   [
+    "x_{1}",
+    "x-coordinate of the first point"
+   ],
+   [
+    "y",
+    "the dependent variable"
+   ],
+   [
+    "m",
+    "slope of the line"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "b",
+    "y-intercept, or a side or coefficient as given"
+   ]
+  ]
  },
  {
   "id": "math-0001-c",
@@ -156,7 +224,41 @@
   "family": "math-0001",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y_{2}",
+    "y-coordinate of the second point"
+   ],
+   [
+    "y_{1}",
+    "y-coordinate of the first point"
+   ],
+   [
+    "x_{2}",
+    "x-coordinate of the second point"
+   ],
+   [
+    "x_{1}",
+    "x-coordinate of the first point"
+   ],
+   [
+    "y",
+    "the dependent variable"
+   ],
+   [
+    "m",
+    "slope of the line"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "b",
+    "y-intercept, or a side or coefficient as given"
+   ]
+  ]
  },
  {
   "id": "math-0001-d",
@@ -209,7 +311,41 @@
   "family": "math-0001",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y_{2}",
+    "y-coordinate of the second point"
+   ],
+   [
+    "y_{1}",
+    "y-coordinate of the first point"
+   ],
+   [
+    "x_{2}",
+    "x-coordinate of the second point"
+   ],
+   [
+    "x_{1}",
+    "x-coordinate of the first point"
+   ],
+   [
+    "y",
+    "the dependent variable"
+   ],
+   [
+    "m",
+    "slope of the line"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "b",
+    "y-intercept, or a side or coefficient as given"
+   ]
+  ]
  },
  {
   "id": "math-0002",
@@ -421,7 +557,22 @@
   "family": "math-0003",
   "version": 1,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='104' x2='370' y2='104' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='99' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='104' x2='119' y2='39' stroke='#00574A' stroke-width='3'/><path d='M126 30 L115 36 L124 42 Z' fill='#00574A'/><text x='136' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='104' x2='135' y2='153' stroke='#1B795A' stroke-width='3'/><path d='M144 160 L139 149 L132 158 Z' fill='#1B795A'/><text x='154' y='176' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text>",
+   "alt": "Vector diagram: A; B."
+  },
+  "symbols": [
+   [
+    "A",
+    "first vector, an angle of the triangle, or the line coefficient of x"
+   ],
+   [
+    "B",
+    "second vector, an angle of the triangle, or the line coefficient of y"
+   ]
+  ]
  },
  {
   "id": "math-0003-b",
@@ -473,7 +624,22 @@
   "family": "math-0003",
   "version": 2,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='192' y2='38' stroke='#00574A' stroke-width='3'/><path d='M200 30 L188 34 L196 42 Z' fill='#00574A'/><text x='210' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text>",
+   "alt": "Vector diagram: A."
+  },
+  "symbols": [
+   [
+    "A",
+    "first vector, an angle of the triangle, or the line coefficient of x"
+   ],
+   [
+    "B",
+    "second vector, an angle of the triangle, or the line coefficient of y"
+   ]
+  ]
  },
  {
   "id": "math-0004",
@@ -526,7 +692,13 @@
   "family": "math-0004",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "s",
+    "arc length, position, or sample standard deviation"
+   ]
+  ]
  },
  {
   "id": "math-0004-b",
@@ -579,7 +751,13 @@
   "family": "math-0004",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "s",
+    "arc length, position, or sample standard deviation"
+   ]
+  ]
  },
  {
   "id": "math-0004-c",
@@ -632,7 +810,13 @@
   "family": "math-0004",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "s",
+    "arc length, position, or sample standard deviation"
+   ]
+  ]
  },
  {
   "id": "math-0004-d",
@@ -685,7 +869,13 @@
   "family": "math-0004",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "s",
+    "arc length, position, or sample standard deviation"
+   ]
+  ]
  },
  {
   "id": "math-0005",
@@ -857,7 +1047,37 @@
   "family": "math-0006",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "y",
+    "the dependent variable"
+   ],
+   [
+    "h",
+    "x-coordinate of the centre of the circle"
+   ],
+   [
+    "k",
+    "y-coordinate of the centre, or a rate constant"
+   ],
+   [
+    "r",
+    "radius"
+   ],
+   [
+    "D",
+    "coefficient of x in the general circle equation"
+   ],
+   [
+    "E",
+    "coefficient of y in the general circle equation"
+   ]
+  ]
  },
  {
   "id": "math-0006-b",
@@ -907,7 +1127,37 @@
   "family": "math-0006",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "y",
+    "the dependent variable"
+   ],
+   [
+    "h",
+    "x-coordinate of the centre of the circle"
+   ],
+   [
+    "k",
+    "y-coordinate of the centre, or a rate constant"
+   ],
+   [
+    "r",
+    "radius"
+   ],
+   [
+    "D",
+    "coefficient of x in the general circle equation"
+   ],
+   [
+    "E",
+    "coefficient of y in the general circle equation"
+   ]
+  ]
  },
  {
   "id": "math-0006-c",
@@ -957,7 +1207,37 @@
   "family": "math-0006",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "y",
+    "the dependent variable"
+   ],
+   [
+    "h",
+    "x-coordinate of the centre of the circle"
+   ],
+   [
+    "k",
+    "y-coordinate of the centre, or a rate constant"
+   ],
+   [
+    "r",
+    "radius"
+   ],
+   [
+    "D",
+    "coefficient of x in the general circle equation"
+   ],
+   [
+    "E",
+    "coefficient of y in the general circle equation"
+   ]
+  ]
  },
  {
   "id": "math-0006-d",
@@ -1007,7 +1287,37 @@
   "family": "math-0006",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "y",
+    "the dependent variable"
+   ],
+   [
+    "h",
+    "x-coordinate of the centre of the circle"
+   ],
+   [
+    "k",
+    "y-coordinate of the centre, or a rate constant"
+   ],
+   [
+    "r",
+    "radius"
+   ],
+   [
+    "D",
+    "coefficient of x in the general circle equation"
+   ],
+   [
+    "E",
+    "coefficient of y in the general circle equation"
+   ]
+  ]
  },
  {
   "id": "math-0007",
@@ -1043,7 +1353,37 @@
   "family": "math-0007",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x_{2}",
+    "x-coordinate of the second point"
+   ],
+   [
+    "x_{1}",
+    "x-coordinate of the first point"
+   ],
+   [
+    "y_{2}",
+    "y-coordinate of the second point"
+   ],
+   [
+    "y_{1}",
+    "y-coordinate of the first point"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "y",
+    "the dependent variable"
+   ],
+   [
+    "d",
+    "distance"
+   ]
+  ]
  },
  {
   "id": "math-0007-b",
@@ -1079,7 +1419,37 @@
   "family": "math-0007",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x_{2}",
+    "x-coordinate of the second point"
+   ],
+   [
+    "x_{1}",
+    "x-coordinate of the first point"
+   ],
+   [
+    "y_{2}",
+    "y-coordinate of the second point"
+   ],
+   [
+    "y_{1}",
+    "y-coordinate of the first point"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "y",
+    "the dependent variable"
+   ],
+   [
+    "d",
+    "distance"
+   ]
+  ]
  },
  {
   "id": "math-0007-c",
@@ -1115,7 +1485,37 @@
   "family": "math-0007",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x_{2}",
+    "x-coordinate of the second point"
+   ],
+   [
+    "x_{1}",
+    "x-coordinate of the first point"
+   ],
+   [
+    "y_{2}",
+    "y-coordinate of the second point"
+   ],
+   [
+    "y_{1}",
+    "y-coordinate of the first point"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "y",
+    "the dependent variable"
+   ],
+   [
+    "d",
+    "distance"
+   ]
+  ]
  },
  {
   "id": "math-0007-d",
@@ -1151,7 +1551,37 @@
   "family": "math-0007",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x_{2}",
+    "x-coordinate of the second point"
+   ],
+   [
+    "x_{1}",
+    "x-coordinate of the first point"
+   ],
+   [
+    "y_{2}",
+    "y-coordinate of the second point"
+   ],
+   [
+    "y_{1}",
+    "y-coordinate of the first point"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "y",
+    "the dependent variable"
+   ],
+   [
+    "d",
+    "distance"
+   ]
+  ]
  },
  {
   "id": "math-0008",
@@ -1205,7 +1635,25 @@
    "svg": "<path d='M70 150 L264 150 L139 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='167' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>7 m</text><text x='97' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>5 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>60°</text>",
    "alt": "A triangle with sides of 7 m and 5 m meeting at 60°."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "c",
+    "side opposite angle C, or a constant"
+   ],
+   [
+    "a",
+    "side opposite angle A, or a coefficient as given"
+   ],
+   [
+    "b",
+    "y-intercept, or a side or coefficient as given"
+   ],
+   [
+    "C",
+    "third angle of the triangle, or the constant term of the line"
+   ]
+  ]
  },
  {
   "id": "math-0008-b",
@@ -1259,7 +1707,25 @@
    "svg": "<path d='M70 150 L327 150 L213 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='198' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>11 m</text><text x='134' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>8 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>40°</text>",
    "alt": "A triangle with sides of 11 m and 8 m meeting at 40°."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "c",
+    "side opposite angle C, or a constant"
+   ],
+   [
+    "a",
+    "side opposite angle A, or a coefficient as given"
+   ],
+   [
+    "b",
+    "y-intercept, or a side or coefficient as given"
+   ],
+   [
+    "C",
+    "third angle of the triangle, or the constant term of the line"
+   ]
+  ]
  },
  {
   "id": "math-0008-c",
@@ -1313,7 +1779,25 @@
    "svg": "<path d='M70 150 L256 150 L102 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='163' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>9 m</text><text x='78' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>6 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>75°</text>",
    "alt": "A triangle with sides of 9 m and 6 m meeting at 75°."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "c",
+    "side opposite angle C, or a constant"
+   ],
+   [
+    "a",
+    "side opposite angle A, or a coefficient as given"
+   ],
+   [
+    "b",
+    "y-intercept, or a side or coefficient as given"
+   ],
+   [
+    "C",
+    "third angle of the triangle, or the constant term of the line"
+   ]
+  ]
  },
  {
   "id": "math-0008-d",
@@ -1367,7 +1851,25 @@
    "svg": "<path d='M70 150 L249 150 L26 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='159' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>14 m</text><text x='40' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>10 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>110°</text>",
    "alt": "A triangle with sides of 14 m and 10 m meeting at 110°."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "c",
+    "side opposite angle C, or a constant"
+   ],
+   [
+    "a",
+    "side opposite angle A, or a coefficient as given"
+   ],
+   [
+    "b",
+    "y-intercept, or a side or coefficient as given"
+   ],
+   [
+    "C",
+    "third angle of the triangle, or the constant term of the line"
+   ]
+  ]
  },
  {
   "id": "math-0009",
@@ -1417,7 +1919,13 @@
   "family": "math-0009",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
  },
  {
   "id": "math-0009-b",
@@ -1467,7 +1975,13 @@
   "family": "math-0009",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
  },
  {
   "id": "math-0009-c",
@@ -1517,7 +2031,13 @@
   "family": "math-0009",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
  },
  {
   "id": "math-0009-d",
@@ -1567,7 +2087,13 @@
   "family": "math-0009",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
  },
  {
   "id": "math-0010",
@@ -1603,7 +2129,17 @@
   "family": "math-0010",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "f",
+    "the function"
+   ]
+  ]
  },
  {
   "id": "math-0010-b",
@@ -1639,7 +2175,17 @@
   "family": "math-0010",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "f",
+    "the function"
+   ]
+  ]
  },
  {
   "id": "math-0010-c",
@@ -1675,7 +2221,17 @@
   "family": "math-0010",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "f",
+    "the function"
+   ]
+  ]
  },
  {
   "id": "math-0010-d",
@@ -1711,7 +2267,17 @@
   "family": "math-0010",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "f",
+    "the function"
+   ]
+  ]
  },
  {
   "id": "math-0011",
@@ -1747,7 +2313,13 @@
   "family": "math-0011",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "s",
+    "arc length, position, or sample standard deviation"
+   ]
+  ]
  },
  {
   "id": "math-0011-b",
@@ -1783,7 +2355,13 @@
   "family": "math-0011",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "s",
+    "arc length, position, or sample standard deviation"
+   ]
+  ]
  },
  {
   "id": "math-0011-c",
@@ -1819,7 +2397,13 @@
   "family": "math-0011",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "s",
+    "arc length, position, or sample standard deviation"
+   ]
+  ]
  },
  {
   "id": "math-0011-d",
@@ -1855,7 +2439,13 @@
   "family": "math-0011",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "s",
+    "arc length, position, or sample standard deviation"
+   ]
+  ]
  },
  {
   "id": "math-0012",
@@ -1904,7 +2494,30 @@
   "family": "math-0012",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='128' x2='370' y2='128' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='122' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='128' x2='129' y2='39' stroke='#00574A' stroke-width='3'/><path d='M135 30 L124 36 L133 42 Z' fill='#00574A'/><text x='145' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='128' x2='189' y2='157' stroke='#1B795A' stroke-width='3'/><path d='M200 160 L191 152 L188 163 Z' fill='#1B795A'/><text x='210' y='176' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text>",
+   "alt": "Vector diagram: A; B."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "A_{x}",
+    "x-component of A"
+   ],
+   [
+    "B_{y}",
+    "y-component of B"
+   ],
+   [
+    "A_{y}",
+    "y-component of A"
+   ],
+   [
+    "B_{x}",
+    "x-component of B"
+   ]
+  ]
  },
  {
   "id": "math-0012-b",
@@ -1953,7 +2566,30 @@
   "family": "math-0012",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='138' y2='137' stroke='#00574A' stroke-width='3'/><path d='M148 134 L136 132 L139 143 Z' fill='#00574A'/><text x='158' y='126' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='118' y2='40' stroke='#1B795A' stroke-width='3'/><path d='M122 30 L113 38 L123 42 Z' fill='#1B795A'/><text x='132' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text>",
+   "alt": "Vector diagram: A; B."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "A_{x}",
+    "x-component of A"
+   ],
+   [
+    "B_{y}",
+    "y-component of B"
+   ],
+   [
+    "A_{y}",
+    "y-component of A"
+   ],
+   [
+    "B_{x}",
+    "x-component of B"
+   ]
+  ]
  },
  {
   "id": "math-0012-c",
@@ -2002,7 +2638,30 @@
   "family": "math-0012",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='222' y2='99' stroke='#00574A' stroke-width='3'/><path d='M232 95 L220 94 L224 104 Z' fill='#00574A'/><text x='242' y='87' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='100' y2='41' stroke='#1B795A' stroke-width='3'/><path d='M102 30 L94 39 L105 42 Z' fill='#1B795A'/><text x='112' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text>",
+   "alt": "Vector diagram: A; B."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "A_{x}",
+    "x-component of A"
+   ],
+   [
+    "B_{y}",
+    "y-component of B"
+   ],
+   [
+    "A_{y}",
+    "y-component of A"
+   ],
+   [
+    "B_{x}",
+    "x-component of B"
+   ]
+  ]
  },
  {
   "id": "math-0012-d",
@@ -2051,7 +2710,30 @@
   "family": "math-0012",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='90' y2='41' stroke='#00574A' stroke-width='3'/><path d='M92 30 L84 40 L95 42 Z' fill='#00574A'/><text x='102' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='126' y2='123' stroke='#1B795A' stroke-width='3'/><path d='M135 117 L123 118 L129 127 Z' fill='#1B795A'/><text x='145' y='109' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text>",
+   "alt": "Vector diagram: A; B."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "A_{x}",
+    "x-component of A"
+   ],
+   [
+    "B_{y}",
+    "y-component of B"
+   ],
+   [
+    "A_{y}",
+    "y-component of A"
+   ],
+   [
+    "B_{x}",
+    "x-component of B"
+   ]
+  ]
  },
  {
   "id": "math-0013",
@@ -2087,6 +2769,11 @@
   "family": "math-0013",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 200",
+   "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='214' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='214' y1='120' x2='166' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='166' y1='158' x2='166' y2='190' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='170' y2='179' stroke='#00574A' stroke-width='3'/><path d='M166 190 L175 181 L165 177 Z' fill='#00574A'/><text x='202' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>3</text><text x='158' y='151' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>12</text><text x='174' y='174' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>-4</text><text x='172' y='182' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
+   "alt": "A three-dimensional sketch of the vector with components 3, -4 and 12 along x, y and z."
+  },
   "lookup": true
  },
  {
@@ -2123,6 +2810,11 @@
   "family": "math-0013",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 200",
+   "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='211' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='211' y1='120' x2='164' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='164' y1='158' x2='164' y2='221' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='166' y2='211' stroke='#00574A' stroke-width='3'/><path d='M164 221 L172 212 L161 209 Z' fill='#00574A'/><text x='201' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>2</text><text x='156' y='151' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>9</text><text x='172' y='190' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>-6</text><text x='170' y='213' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
+   "alt": "A three-dimensional sketch of the vector with components 2, -6 and 9 along x, y and z."
+  },
   "lookup": true
  },
  {
@@ -2159,6 +2851,11 @@
   "family": "math-0013",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 200",
+   "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='244' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='244' y1='120' x2='292' y2='82' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='292' y1='82' x2='292' y2='28' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='284' y2='35' stroke='#00574A' stroke-width='3'/><path d='M292 28 L280 31 L287 39 Z' fill='#00574A'/><text x='217' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>4</text><text x='284' y='113' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>-7</text><text x='300' y='55' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>4</text><text x='298' y='20' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
+   "alt": "A three-dimensional sketch of the vector with components 4, 4 and -7 along x, y and z."
+  },
   "lookup": true
  },
  {
@@ -2195,6 +2892,11 @@
   "family": "math-0013",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 200",
+   "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='285' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='285' y1='120' x2='261' y2='139' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='261' y1='139' x2='261' y2='171' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='252' y2='164' stroke='#00574A' stroke-width='3'/><path d='M261 171 L255 160 L249 169 Z' fill='#00574A'/><text x='238' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>6</text><text x='253' y='142' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>3</text><text x='269' y='155' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>-2</text><text x='267' y='163' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
+   "alt": "A three-dimensional sketch of the vector with components 6, -2 and 3 along x, y and z."
+  },
   "lookup": true
  },
  {
@@ -2244,7 +2946,13 @@
   "family": "math-0014",
   "version": 1,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "probability"
+   ]
+  ]
  },
  {
   "id": "math-0014-b",
@@ -2293,7 +3001,13 @@
   "family": "math-0014",
   "version": 2,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "probability"
+   ]
+  ]
  },
  {
   "id": "math-0015",
@@ -2343,7 +3057,17 @@
   "family": "math-0015",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "z",
+    "standard normal variable, (value - mean) / standard deviation"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
  },
  {
   "id": "math-0015-b",
@@ -2393,7 +3117,17 @@
   "family": "math-0015",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "z",
+    "standard normal variable, (value - mean) / standard deviation"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
  },
  {
   "id": "math-0015-c",
@@ -2443,7 +3177,17 @@
   "family": "math-0015",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "z",
+    "standard normal variable, (value - mean) / standard deviation"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
  },
  {
   "id": "math-0015-d",
@@ -2493,7 +3237,17 @@
   "family": "math-0015",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "z",
+    "standard normal variable, (value - mean) / standard deviation"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
  },
  {
   "id": "math-0016",
@@ -2530,7 +3284,25 @@
   "family": "math-0016",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "S_{xy}",
+    "sum of (x - mean of x)(y - mean of y)"
+   ],
+   [
+    "S_{xx}",
+    "sum of (x - mean of x) squared"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "y",
+    "the dependent variable"
+   ]
+  ]
  },
  {
   "id": "math-0016-b",
@@ -2567,7 +3339,25 @@
   "family": "math-0016",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "S_{xy}",
+    "sum of (x - mean of x)(y - mean of y)"
+   ],
+   [
+    "S_{xx}",
+    "sum of (x - mean of x) squared"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "y",
+    "the dependent variable"
+   ]
+  ]
  },
  {
   "id": "math-0016-c",
@@ -2604,7 +3394,25 @@
   "family": "math-0016",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "S_{xy}",
+    "sum of (x - mean of x)(y - mean of y)"
+   ],
+   [
+    "S_{xx}",
+    "sum of (x - mean of x) squared"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "y",
+    "the dependent variable"
+   ]
+  ]
  },
  {
   "id": "math-0016-d",
@@ -2641,7 +3449,25 @@
   "family": "math-0016",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "S_{xy}",
+    "sum of (x - mean of x)(y - mean of y)"
+   ],
+   [
+    "S_{xx}",
+    "sum of (x - mean of x) squared"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "y",
+    "the dependent variable"
+   ]
+  ]
  },
  {
   "id": "math-0017",
@@ -2690,7 +3516,29 @@
   "family": "math-0017",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "n",
+    "sample size or number of trials"
+   ],
+   [
+    "P",
+    "probability"
+   ],
+   [
+    "C",
+    "third angle of the triangle, or the constant term of the line"
+   ],
+   [
+    "p",
+    "probability of success in one trial"
+   ]
+  ]
  },
  {
   "id": "math-0017-b",
@@ -2739,7 +3587,29 @@
   "family": "math-0017",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "n",
+    "sample size or number of trials"
+   ],
+   [
+    "P",
+    "probability"
+   ],
+   [
+    "C",
+    "third angle of the triangle, or the constant term of the line"
+   ],
+   [
+    "p",
+    "probability of success in one trial"
+   ]
+  ]
  },
  {
   "id": "math-0017-c",
@@ -2788,7 +3658,29 @@
   "family": "math-0017",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "n",
+    "sample size or number of trials"
+   ],
+   [
+    "P",
+    "probability"
+   ],
+   [
+    "C",
+    "third angle of the triangle, or the constant term of the line"
+   ],
+   [
+    "p",
+    "probability of success in one trial"
+   ]
+  ]
  },
  {
   "id": "math-0017-d",
@@ -2837,7 +3729,29 @@
   "family": "math-0017",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ],
+   [
+    "n",
+    "sample size or number of trials"
+   ],
+   [
+    "P",
+    "probability"
+   ],
+   [
+    "C",
+    "third angle of the triangle, or the constant term of the line"
+   ],
+   [
+    "p",
+    "probability of success in one trial"
+   ]
+  ]
  },
  {
   "id": "math-0018",
@@ -2873,7 +3787,13 @@
   "family": "math-0018",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
  },
  {
   "id": "math-0018-b",
@@ -2909,7 +3829,13 @@
   "family": "math-0018",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
  },
  {
   "id": "math-0018-c",
@@ -2945,7 +3871,13 @@
   "family": "math-0018",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
  },
  {
   "id": "math-0018-d",
@@ -2981,7 +3913,13 @@
   "family": "math-0018",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
  },
  {
   "id": "math-0019",
@@ -3017,7 +3955,13 @@
   "family": "math-0019",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "probability"
+   ]
+  ]
  },
  {
   "id": "math-0019-b",
@@ -3053,7 +3997,13 @@
   "family": "math-0019",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "probability"
+   ]
+  ]
  },
  {
   "id": "math-0019-c",
@@ -3089,7 +4039,13 @@
   "family": "math-0019",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "probability"
+   ]
+  ]
  },
  {
   "id": "math-0019-d",
@@ -3125,6 +4081,2382 @@
   "family": "math-0019",
   "version": 4,
   "versions": 4,
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "probability"
+   ]
+  ]
+ },
+ {
+  "id": "math-0020",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A line passes through the points (1, 2) and (5, 10). What is the slope of a line perpendicular to it?",
+  "options": [
+   {
+    "id": "a",
+    "text": "-0.500"
+   },
+   {
+    "id": "b",
+    "text": "2.000"
+   },
+   {
+    "id": "c",
+    "text": "-2.000"
+   },
+   {
+    "id": "d",
+    "text": "0.500"
+   }
+  ],
+  "answer": "a",
+  "eli5": "Perpendicular lines have slopes that are negative reciprocals of each other: m_{2} = -1 / m_{1}. Find the slope of the given line first, as rise over run.",
+  "solution": "m_{1} = \\frac{10 - (2)}{5 - (1)} = 2.000.\n\nm_{2} = -\\frac{1}{2.000} = -0.500.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "straight line"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0020",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "m_{2}",
+    "slope of the perpendicular line"
+   ],
+   [
+    "m_{1}",
+    "slope of the first line"
+   ]
+  ]
+ },
+ {
+  "id": "math-0020-b",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A line passes through the points (0, 1) and (4, 13). What is the slope of a line perpendicular to it?",
+  "options": [
+   {
+    "id": "a",
+    "text": "-0.333"
+   },
+   {
+    "id": "b",
+    "text": "3.000"
+   },
+   {
+    "id": "c",
+    "text": "-3.000"
+   },
+   {
+    "id": "d",
+    "text": "0.333"
+   }
+  ],
+  "answer": "a",
+  "eli5": "Perpendicular lines have slopes that are negative reciprocals of each other: m_{2} = -1 / m_{1}. Find the slope of the given line first, as rise over run.",
+  "solution": "m_{1} = \\frac{13 - (1)}{4 - (0)} = 3.000.\n\nm_{2} = -\\frac{1}{3.000} = -0.333.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "straight line"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0020",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "m_{2}",
+    "slope of the perpendicular line"
+   ],
+   [
+    "m_{1}",
+    "slope of the first line"
+   ]
+  ]
+ },
+ {
+  "id": "math-0020-c",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A line passes through the points (2, -1) and (6, 1). What is the slope of a line perpendicular to it?",
+  "options": [
+   {
+    "id": "a",
+    "text": "-2.000"
+   },
+   {
+    "id": "b",
+    "text": "0.500"
+   },
+   {
+    "id": "c",
+    "text": "-0.500"
+   },
+   {
+    "id": "d",
+    "text": "2.000"
+   }
+  ],
+  "answer": "a",
+  "eli5": "Perpendicular lines have slopes that are negative reciprocals of each other: m_{2} = -1 / m_{1}. Find the slope of the given line first, as rise over run.",
+  "solution": "m_{1} = \\frac{1 - (-1)}{6 - (2)} = 0.500.\n\nm_{2} = -\\frac{1}{0.500} = -2.000.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "straight line"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0020",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "m_{2}",
+    "slope of the perpendicular line"
+   ],
+   [
+    "m_{1}",
+    "slope of the first line"
+   ]
+  ]
+ },
+ {
+  "id": "math-0021",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In a triangle, side a is 10 m long and lies opposite a 30° angle. What is the length of the side opposite a 45° angle?",
+  "answer": {
+   "value": 14.14,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "The law of sines says each side divided by the sine of its opposite angle gives the same value: a / sin A = b / sin B. It applies whenever a side and its opposite angle are known.",
+  "solution": "b = \\frac{a sin B}{sin A} = \\frac{10 sin 45°}{sin 30°} = \\frac{10(0.7071)}{0.5000} = 14.14 m.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "law of sines"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0021",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "a",
+    "side opposite angle A, or a coefficient as given"
+   ],
+   [
+    "A",
+    "first vector, an angle of the triangle, or the line coefficient of x"
+   ],
+   [
+    "b",
+    "y-intercept, or a side or coefficient as given"
+   ],
+   [
+    "B",
+    "second vector, an angle of the triangle, or the line coefficient of y"
+   ]
+  ]
+ },
+ {
+  "id": "math-0021-b",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In a triangle, side a is 8 m long and lies opposite a 50° angle. What is the length of the side opposite a 70° angle?",
+  "answer": {
+   "value": 9.81,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "The law of sines says each side divided by the sine of its opposite angle gives the same value: a / sin A = b / sin B. It applies whenever a side and its opposite angle are known.",
+  "solution": "b = \\frac{a sin B}{sin A} = \\frac{8 sin 70°}{sin 50°} = \\frac{8(0.9397)}{0.7660} = 9.81 m.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "law of sines"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0021",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "a",
+    "side opposite angle A, or a coefficient as given"
+   ],
+   [
+    "A",
+    "first vector, an angle of the triangle, or the line coefficient of x"
+   ],
+   [
+    "b",
+    "y-intercept, or a side or coefficient as given"
+   ],
+   [
+    "B",
+    "second vector, an angle of the triangle, or the line coefficient of y"
+   ]
+  ]
+ },
+ {
+  "id": "math-0021-c",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In a triangle, side a is 25 m long and lies opposite a 40° angle. What is the length of the side opposite a 100° angle?",
+  "answer": {
+   "value": 38.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "The law of sines says each side divided by the sine of its opposite angle gives the same value: a / sin A = b / sin B. It applies whenever a side and its opposite angle are known.",
+  "solution": "b = \\frac{a sin B}{sin A} = \\frac{25 sin 100°}{sin 40°} = \\frac{25(0.9848)}{0.6428} = 38.30 m.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "law of sines"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0021",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "a",
+    "side opposite angle A, or a coefficient as given"
+   ],
+   [
+    "A",
+    "first vector, an angle of the triangle, or the line coefficient of x"
+   ],
+   [
+    "b",
+    "y-intercept, or a side or coefficient as given"
+   ],
+   [
+    "B",
+    "second vector, an angle of the triangle, or the line coefficient of y"
+   ]
+  ]
+ },
+ {
+  "id": "math-0022",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the perpendicular distance from the point (2, 6) to the line 3x + 4y + (-10) = 0?",
+  "answer": {
+   "value": 4.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "units"
+  },
+  "eli5": "For a line written as Ax + By + C = 0, the perpendicular distance from a point is |A x_{0} + B y_{0} + C| divided by the square root of (A^{2} + B^{2}).",
+  "solution": "d = \\frac{|3(2) + 4(6) + (-10)|}{\\sqrt{3^{2} + 4^{2}}} = \\frac{20}{5.000} = 4.000 units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "straight line"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0022",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "x_{0}",
+    "x-coordinate of the given point"
+   ],
+   [
+    "y_{0}",
+    "y-coordinate of the given point"
+   ]
+  ]
+ },
+ {
+  "id": "math-0022-b",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the perpendicular distance from the point (1, 3) to the line 5x + 12y + (-4) = 0?",
+  "answer": {
+   "value": 2.846,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "units"
+  },
+  "eli5": "For a line written as Ax + By + C = 0, the perpendicular distance from a point is |A x_{0} + B y_{0} + C| divided by the square root of (A^{2} + B^{2}).",
+  "solution": "d = \\frac{|5(1) + 12(3) + (-4)|}{\\sqrt{5^{2} + 12^{2}}} = \\frac{37}{13.000} = 2.846 units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "straight line"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0022",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "x_{0}",
+    "x-coordinate of the given point"
+   ],
+   [
+    "y_{0}",
+    "y-coordinate of the given point"
+   ]
+  ]
+ },
+ {
+  "id": "math-0022-c",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the perpendicular distance from the point (3, -2) to the line 8x + 6y + (5) = 0?",
+  "answer": {
+   "value": 1.7,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "units"
+  },
+  "eli5": "For a line written as Ax + By + C = 0, the perpendicular distance from a point is |A x_{0} + B y_{0} + C| divided by the square root of (A^{2} + B^{2}).",
+  "solution": "d = \\frac{|8(3) + 6(-2) + (5)|}{\\sqrt{8^{2} + 6^{2}}} = \\frac{17}{10.000} = 1.700 units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "straight line"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0022",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "x_{0}",
+    "x-coordinate of the given point"
+   ],
+   [
+    "y_{0}",
+    "y-coordinate of the given point"
+   ]
+  ]
+ },
+ {
+  "id": "math-0023",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A circular arc has a radius of 12 m and subtends a central angle of 75°. What is the arc length?",
+  "answer": {
+   "value": 15.71,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Arc length is radius times the central angle in radians. Convert degrees to radians by multiplying by π / 180.",
+  "solution": "Angle = 75 × \\frac{π}{180} = 1.3090 rad.\n\ns = r × angle = 12 × 1.3090 = 15.71 m.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0023",
+  "version": 1,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "s",
+    "arc length, position, or sample standard deviation"
+   ],
+   [
+    "r",
+    "radius"
+   ]
+  ]
+ },
+ {
+  "id": "math-0023-b",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A circular arc has a radius of 250 m and subtends a central angle of 18°. What is the arc length?",
+  "answer": {
+   "value": 78.54,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Arc length is radius times the central angle in radians. Convert degrees to radians by multiplying by π / 180.",
+  "solution": "Angle = 18 × \\frac{π}{180} = 0.3142 rad.\n\ns = r × angle = 250 × 0.3142 = 78.54 m.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0023",
+  "version": 2,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "s",
+    "arc length, position, or sample standard deviation"
+   ],
+   [
+    "r",
+    "radius"
+   ]
+  ]
+ },
+ {
+  "id": "math-0023-c",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A circular arc has a radius of 40 m and subtends a central angle of 130°. What is the arc length?",
+  "answer": {
+   "value": 90.76,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Arc length is radius times the central angle in radians. Convert degrees to radians by multiplying by π / 180.",
+  "solution": "Angle = 130 × \\frac{π}{180} = 2.2689 rad.\n\ns = r × angle = 40 × 2.2689 = 90.76 m.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0023",
+  "version": 3,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "s",
+    "arc length, position, or sample standard deviation"
+   ],
+   [
+    "r",
+    "radius"
+   ]
+  ]
+ },
+ {
+  "id": "math-0024",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the average value of f(x) = 3x^{2} + 2 over the interval from x = 0 to x = 4?",
+  "answer": {
+   "value": 18.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The average value of a function over an interval is its definite integral divided by the length of the interval.",
+  "solution": "Integral from 0 to 4 = \\frac{3(4)^{3}}{3} + 2(4) = 72.00.\n\nAverage = \\frac{72.00}{4} = 18.00.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "integral calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0024",
+  "version": 1,
+  "versions": 3,
   "lookup": true
+ },
+ {
+  "id": "math-0024-b",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the average value of f(x) = 6x^{2} + -4 over the interval from x = 0 to x = 2?",
+  "answer": {
+   "value": 4.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The average value of a function over an interval is its definite integral divided by the length of the interval.",
+  "solution": "Integral from 0 to 2 = \\frac{6(2)^{3}}{3} + -4(2) = 8.00.\n\nAverage = \\frac{8.00}{2} = 4.00.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "integral calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0024",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "math-0024-c",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the average value of f(x) = 1.5x^{2} + 10 over the interval from x = 0 to x = 6?",
+  "answer": {
+   "value": 28.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The average value of a function over an interval is its definite integral divided by the length of the interval.",
+  "solution": "Integral from 0 to 6 = \\frac{1.5(6)^{3}}{3} + 10(6) = 168.00.\n\nAverage = \\frac{168.00}{6} = 28.00.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "integral calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0024",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "math-0025",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "At what value of x does f(x) = x^{3} - 6x^{2} + 5x have its inflection point?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1.00"
+   },
+   {
+    "id": "b",
+    "text": "2.00"
+   },
+   {
+    "id": "c",
+    "text": "3.00"
+   },
+   {
+    "id": "d",
+    "text": "4.00"
+   }
+  ],
+  "answer": "b",
+  "eli5": "An inflection point is where the curvature changes sign, so the second derivative is zero there. For a cubic there is exactly one.",
+  "solution": "f'(x) = 3x^{2} - 12x + 5, and f''(x) = 6x - 12.\n\nSetting f''(x) = 0 gives x = 12 / 6 = 2.00.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "differential calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0025",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
+ },
+ {
+  "id": "math-0025-b",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "At what value of x does f(x) = x^{3} - 9x^{2} + 2x have its inflection point?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1.50"
+   },
+   {
+    "id": "b",
+    "text": "3.00"
+   },
+   {
+    "id": "c",
+    "text": "4.50"
+   },
+   {
+    "id": "d",
+    "text": "6.00"
+   }
+  ],
+  "answer": "b",
+  "eli5": "An inflection point is where the curvature changes sign, so the second derivative is zero there. For a cubic there is exactly one.",
+  "solution": "f'(x) = 3x^{2} - 18x + 2, and f''(x) = 6x - 18.\n\nSetting f''(x) = 0 gives x = 18 / 6 = 3.00.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "differential calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0025",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
+ },
+ {
+  "id": "math-0025-c",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "At what value of x does f(x) = x^{3} - 4.5x^{2} + 7x have its inflection point?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.75"
+   },
+   {
+    "id": "b",
+    "text": "1.50"
+   },
+   {
+    "id": "c",
+    "text": "2.25"
+   },
+   {
+    "id": "d",
+    "text": "3.00"
+   }
+  ],
+  "answer": "b",
+  "eli5": "An inflection point is where the curvature changes sign, so the second derivative is zero there. For a cubic there is exactly one.",
+  "solution": "f'(x) = 3x^{2} - 9x + 7, and f''(x) = 6x - 9.\n\nSetting f''(x) = 0 gives x = 9 / 6 = 1.50.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "differential calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0025",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
+ },
+ {
+  "id": "math-0026",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A particle's position is s(t) = 2t^{3} - 4t, with s in metres and t in seconds. What is its acceleration at t = 3 s?",
+  "answer": {
+   "value": 36,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s^{2}"
+  },
+  "eli5": "Velocity is the first derivative of position and acceleration is the second. Differentiate twice, then substitute the time.",
+  "solution": "v(t) = 6t^{2} - 4.\n\na(t) = 12t, so a(3) = 12 × 3 = 36.0 m/s^{2}.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "differential calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0026",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "v",
+    "velocity"
+   ],
+   [
+    "t",
+    "time"
+   ],
+   [
+    "a",
+    "side opposite angle A, or a coefficient as given"
+   ]
+  ]
+ },
+ {
+  "id": "math-0026-b",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A particle's position is s(t) = 0.5t^{3} - 3t, with s in metres and t in seconds. What is its acceleration at t = 4 s?",
+  "answer": {
+   "value": 12.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s^{2}"
+  },
+  "eli5": "Velocity is the first derivative of position and acceleration is the second. Differentiate twice, then substitute the time.",
+  "solution": "v(t) = 1.5t^{2} - 3.\n\na(t) = 3t, so a(4) = 3 × 4 = 12.0 m/s^{2}.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "differential calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0026",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "v",
+    "velocity"
+   ],
+   [
+    "t",
+    "time"
+   ],
+   [
+    "a",
+    "side opposite angle A, or a coefficient as given"
+   ]
+  ]
+ },
+ {
+  "id": "math-0026-c",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A particle's position is s(t) = 1.5t^{3} - 10t, with s in metres and t in seconds. What is its acceleration at t = 2 s?",
+  "answer": {
+   "value": 18.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s^{2}"
+  },
+  "eli5": "Velocity is the first derivative of position and acceleration is the second. Differentiate twice, then substitute the time.",
+  "solution": "v(t) = 4.5t^{2} - 10.\n\na(t) = 9t, so a(2) = 9 × 2 = 18.0 m/s^{2}.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "differential calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0026",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "v",
+    "velocity"
+   ],
+   [
+    "t",
+    "time"
+   ],
+   [
+    "a",
+    "side opposite angle A, or a coefficient as given"
+   ]
+  ]
+ },
+ {
+  "id": "math-0027",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A quantity decays exponentially with a half-life of 5 years. What fraction of it remains after 12 years?",
+  "answer": {
+   "value": 0.1895,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Each half-life halves what is left, so the fraction remaining is 0.5 raised to the number of half-lives elapsed. This is the same as e^{-kt} with k = ln 2 / half-life.",
+  "solution": "Half-lives elapsed = \\frac{12}{5} = 2.400.\n\nFraction remaining = 0.5^{2.400} = 0.1895.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0027",
+  "version": 1,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "e",
+    "Euler's number, 2.718"
+   ],
+   [
+    "k",
+    "y-coordinate of the centre, or a rate constant"
+   ]
+  ]
+ },
+ {
+  "id": "math-0027-b",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A quantity decays exponentially with a half-life of 8 years. What fraction of it remains after 20 years?",
+  "answer": {
+   "value": 0.1768,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Each half-life halves what is left, so the fraction remaining is 0.5 raised to the number of half-lives elapsed. This is the same as e^{-kt} with k = ln 2 / half-life.",
+  "solution": "Half-lives elapsed = \\frac{20}{8} = 2.500.\n\nFraction remaining = 0.5^{2.500} = 0.1768.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0027",
+  "version": 2,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "e",
+    "Euler's number, 2.718"
+   ],
+   [
+    "k",
+    "y-coordinate of the centre, or a rate constant"
+   ]
+  ]
+ },
+ {
+  "id": "math-0027-c",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A quantity decays exponentially with a half-life of 30 years. What fraction of it remains after 45 years?",
+  "answer": {
+   "value": 0.3536,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Each half-life halves what is left, so the fraction remaining is 0.5 raised to the number of half-lives elapsed. This is the same as e^{-kt} with k = ln 2 / half-life.",
+  "solution": "Half-lives elapsed = \\frac{45}{30} = 1.500.\n\nFraction remaining = 0.5^{1.500} = 0.3536.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0027",
+  "version": 3,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "e",
+    "Euler's number, 2.718"
+   ],
+   [
+    "k",
+    "y-coordinate of the centre, or a rate constant"
+   ]
+  ]
+ },
+ {
+  "id": "math-0028",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "For f(x, y) = 3x^{2}y + 1y^{3}, what is the partial derivative of f with respect to x at the point (3, 5)?",
+  "options": [
+   {
+    "id": "a",
+    "text": "90"
+   },
+   {
+    "id": "b",
+    "text": "102"
+   },
+   {
+    "id": "c",
+    "text": "18"
+   },
+   {
+    "id": "d",
+    "text": "135"
+   }
+  ],
+  "answer": "a",
+  "eli5": "A partial derivative with respect to x treats every other variable as a constant. Terms without x drop out.",
+  "solution": "∂f/∂x = 6xy, because 1y^{3} has no x in it.\n\nAt (3, 5): 6(3)(5) = 90.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "differential calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0028",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "f",
+    "the function"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
+ },
+ {
+  "id": "math-0028-b",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "For f(x, y) = 2x^{2}y + 4y^{3}, what is the partial derivative of f with respect to x at the point (1, 3)?",
+  "options": [
+   {
+    "id": "a",
+    "text": "12"
+   },
+   {
+    "id": "b",
+    "text": "110"
+   },
+   {
+    "id": "c",
+    "text": "4"
+   },
+   {
+    "id": "d",
+    "text": "6"
+   }
+  ],
+  "answer": "a",
+  "eli5": "A partial derivative with respect to x treats every other variable as a constant. Terms without x drop out.",
+  "solution": "∂f/∂x = 4xy, because 4y^{3} has no x in it.\n\nAt (1, 3): 4(1)(3) = 12.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "differential calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0028",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "f",
+    "the function"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
+ },
+ {
+  "id": "math-0028-c",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "For f(x, y) = 5x^{2}y + 2y^{3}, what is the partial derivative of f with respect to x at the point (4, -1)?",
+  "options": [
+   {
+    "id": "a",
+    "text": "-40"
+   },
+   {
+    "id": "b",
+    "text": "86"
+   },
+   {
+    "id": "c",
+    "text": "40"
+   },
+   {
+    "id": "d",
+    "text": "-80"
+   }
+  ],
+  "answer": "a",
+  "eli5": "A partial derivative with respect to x treats every other variable as a constant. Terms without x drop out.",
+  "solution": "∂f/∂x = 10xy, because 2y^{3} has no x in it.\n\nAt (4, -1): 10(4)(-1) = -40.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "differential calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0028",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "f",
+    "the function"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
+ },
+ {
+  "id": "math-0029",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Vectors **A** = 3**i** + 4**j** and **B** = 5**i** + 1**j** form two sides of a parallelogram. What is its area?",
+  "answer": {
+   "value": 17,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "square units"
+  },
+  "eli5": "The magnitude of the cross product of two vectors equals the area of the parallelogram they span. For vectors in the x-y plane it reduces to |a_{1}b_{2} - a_{2}b_{1}|.",
+  "solution": "Area = |3(1) - 4(5)| = |3 - 20| = 17 square units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "cross product"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0029",
+  "version": 1,
+  "versions": 3,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='141' y2='65' stroke='#00574A' stroke-width='3'/><path d='M148 56 L137 62 L146 68 Z' fill='#00574A'/><text x='158' y='48' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='189' y2='136' stroke='#1B795A' stroke-width='3'/><path d='M200 134 L188 131 L190 142 Z' fill='#1B795A'/><text x='210' y='126' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><line x1='70' y1='160' x2='269' y2='36' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M278 30 L266 31 L272 40 Z' fill='#568CBB'/><text x='288' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>A + B</text>",
+   "alt": "Vector diagram: A; B; A + B."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "a_{1}",
+    "x-component of A"
+   ],
+   [
+    "b_{2}",
+    "y-component of B"
+   ],
+   [
+    "a_{2}",
+    "y-component of A"
+   ],
+   [
+    "b_{1}",
+    "x-component of B"
+   ]
+  ]
+ },
+ {
+  "id": "math-0029-b",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Vectors **A** = 2**i** + 7**j** and **B** = 4**i** + 2**j** form two sides of a parallelogram. What is its area?",
+  "answer": {
+   "value": 24,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "square units"
+  },
+  "eli5": "The magnitude of the cross product of two vectors equals the area of the parallelogram they span. For vectors in the x-y plane it reduces to |a_{1}b_{2} - a_{2}b_{1}|.",
+  "solution": "Area = |2(2) - 7(4)| = |4 - 28| = 24 square units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "cross product"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0029",
+  "version": 2,
+  "versions": 3,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='96' y2='69' stroke='#00574A' stroke-width='3'/><path d='M99 59 L91 68 L101 71 Z' fill='#00574A'/><text x='109' y='51' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='118' y2='136' stroke='#1B795A' stroke-width='3'/><path d='M128 131 L115 131 L120 141 Z' fill='#1B795A'/><text x='138' y='123' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><line x1='70' y1='160' x2='151' y2='39' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M157 30 L146 36 L155 42 Z' fill='#568CBB'/><text x='167' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>A + B</text>",
+   "alt": "Vector diagram: A; B; A + B."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "a_{1}",
+    "x-component of A"
+   ],
+   [
+    "b_{2}",
+    "y-component of B"
+   ],
+   [
+    "a_{2}",
+    "y-component of A"
+   ],
+   [
+    "b_{1}",
+    "x-component of B"
+   ]
+  ]
+ },
+ {
+  "id": "math-0029-c",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Vectors **A** = 6**i** + 1**j** and **B** = 2**i** + 8**j** form two sides of a parallelogram. What is its area?",
+  "answer": {
+   "value": 46,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "square units"
+  },
+  "eli5": "The magnitude of the cross product of two vectors equals the area of the parallelogram they span. For vectors in the x-y plane it reduces to |a_{1}b_{2} - a_{2}b_{1}|.",
+  "solution": "Area = |6(8) - 1(2)| = |48 - 2| = 46 square units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "cross product"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0029",
+  "version": 3,
+  "versions": 3,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='146' y2='147' stroke='#00574A' stroke-width='3'/><path d='M157 146 L145 142 L147 153 Z' fill='#00574A'/><text x='167' y='138' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='96' y2='55' stroke='#1B795A' stroke-width='3'/><path d='M99 44 L91 54 L102 56 Z' fill='#1B795A'/><text x='109' y='36' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><line x1='70' y1='160' x2='178' y2='38' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M186 30 L174 35 L182 42 Z' fill='#568CBB'/><text x='196' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>A + B</text>",
+   "alt": "Vector diagram: A; B; A + B."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "a_{1}",
+    "x-component of A"
+   ],
+   [
+    "b_{2}",
+    "y-component of B"
+   ],
+   [
+    "a_{2}",
+    "y-component of A"
+   ],
+   [
+    "b_{1}",
+    "x-component of B"
+   ]
+  ]
+ },
+ {
+  "id": "math-0030",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the x-component of the unit vector in the direction of (2, -3, 6)?",
+  "answer": {
+   "value": 0.2857,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "A unit vector has length 1 and the same direction as the original. Divide each component by the vector's magnitude.",
+  "solution": "Magnitude = \\sqrt{2^{2} + (-3)^{2} + 6^{2}} = 7.000.\n\nx-component = \\frac{2}{7.000} = 0.2857.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0030",
+  "version": 1,
+  "versions": 3,
+  "solutionFigure": {
+   "viewBox": "0 0 400 200",
+   "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='222' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='222' y1='120' x2='174' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='174' y1='158' x2='174' y2='206' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='176' y2='195' stroke='#00574A' stroke-width='3'/><path d='M174 206 L182 196 L171 194 Z' fill='#00574A'/><text x='206' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>2</text><text x='166' y='151' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>6</text><text x='182' y='182' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>-3</text><text x='180' y='198' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
+   "alt": "A three-dimensional sketch of the vector with components 2, -3 and 6 along x, y and z."
+  },
+  "lookup": false,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
+ },
+ {
+  "id": "math-0030-b",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the x-component of the unit vector in the direction of (4, 4, 7)?",
+  "answer": {
+   "value": 0.4444,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "A unit vector has length 1 and the same direction as the original. Divide each component by the vector's magnitude.",
+  "solution": "Magnitude = \\sqrt{4^{2} + (4)^{2} + 7^{2}} = 9.000.\n\nx-component = \\frac{4}{9.000} = 0.4444.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0030",
+  "version": 2,
+  "versions": 3,
+  "solutionFigure": {
+   "viewBox": "0 0 400 200",
+   "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='244' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='244' y1='120' x2='197' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='197' y1='158' x2='197' y2='104' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='193' y2='114' stroke='#00574A' stroke-width='3'/><path d='M197 104 L187 112 L198 116 Z' fill='#00574A'/><text x='217' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>4</text><text x='189' y='151' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>7</text><text x='205' y='131' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>4</text><text x='203' y='96' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
+   "alt": "A three-dimensional sketch of the vector with components 4, 4 and 7 along x, y and z."
+  },
+  "lookup": false,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
+ },
+ {
+  "id": "math-0030-c",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the x-component of the unit vector in the direction of (1, 2, 2)?",
+  "answer": {
+   "value": 0.3333,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "A unit vector has length 1 and the same direction as the original. Divide each component by the vector's magnitude.",
+  "solution": "Magnitude = \\sqrt{1^{2} + (2)^{2} + 2^{2}} = 3.000.\n\nx-component = \\frac{1}{3.000} = 0.3333.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0030",
+  "version": 3,
+  "versions": 3,
+  "solutionFigure": {
+   "viewBox": "0 0 400 200",
+   "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='238' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='238' y1='120' x2='190' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='158' x2='190' y2='63' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='190' y2='74' stroke='#00574A' stroke-width='3'/><path d='M190 63 L184 74 L196 74 Z' fill='#00574A'/><text x='214' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>1</text><text x='182' y='151' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>2</text><text x='198' y='110' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>2</text><text x='196' y='55' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
+   "alt": "A three-dimensional sketch of the vector with components 1, 2 and 2 along x, y and z."
+  },
+  "lookup": false,
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
+ },
+ {
+  "id": "math-0031",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the scalar projection of **A** = (6, 8) onto **B** = (3, 4)?",
+  "answer": {
+   "value": 10.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The scalar projection of A onto B is the length of A's shadow along B. It equals the dot product divided by the magnitude of B.",
+  "solution": "A · B = 6(3) + 8(4) = 50. |B| = 5.000.\n\nProjection = \\frac{50}{5.000} = 10.000.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "dot product"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0031",
+  "version": 1,
+  "versions": 3,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='161' y2='39' stroke='#00574A' stroke-width='3'/><path d='M168 30 L156 36 L165 42 Z' fill='#00574A'/><text x='178' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='112' y2='104' stroke='#1B795A' stroke-width='3'/><path d='M119 95 L108 100 L117 107 Z' fill='#1B795A'/><text x='129' y='87' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><line x1='70' y1='160' x2='161' y2='39' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M168 30 L156 36 L165 42 Z' fill='#568CBB'/><text x='178' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>projection = 10.00</text>",
+   "alt": "Vector diagram: A; B; projection = 10.00."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "first vector, an angle of the triangle, or the line coefficient of x"
+   ],
+   [
+    "B",
+    "second vector, an angle of the triangle, or the line coefficient of y"
+   ]
+  ]
+ },
+ {
+  "id": "math-0031-b",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the scalar projection of **A** = (5, 2) onto **B** = (12, 5)?",
+  "answer": {
+   "value": 5.385,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The scalar projection of A onto B is the length of A's shadow along B. It equals the dot product divided by the magnitude of B.",
+  "solution": "A · B = 5(12) + 2(5) = 70. |B| = 13.000.\n\nProjection = \\frac{70}{13.000} = 5.385.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "dot product"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0031",
+  "version": 2,
+  "versions": 3,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='164' y2='122' stroke='#00574A' stroke-width='3'/><path d='M174 118 L162 117 L166 128 Z' fill='#00574A'/><text x='184' y='110' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='310' y2='60' stroke='#1B795A' stroke-width='3'/><path d='M320 56 L308 55 L312 65 Z' fill='#1B795A'/><text x='330' y='48' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><line x1='70' y1='160' x2='163' y2='121' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M174 117 L161 116 L166 126 Z' fill='#568CBB'/><text x='184' y='109' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>projection = 5.38</text>",
+   "alt": "Vector diagram: A; B; projection = 5.38."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "first vector, an angle of the triangle, or the line coefficient of x"
+   ],
+   [
+    "B",
+    "second vector, an angle of the triangle, or the line coefficient of y"
+   ]
+  ]
+ },
+ {
+  "id": "math-0031-c",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the scalar projection of **A** = (2, 9) onto **B** = (8, 6)?",
+  "answer": {
+   "value": 7.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The scalar projection of A onto B is the length of A's shadow along B. It equals the dot product divided by the magnitude of B.",
+  "solution": "A · B = 2(8) + 9(6) = 70. |B| = 10.000.\n\nProjection = \\frac{70}{10.000} = 7.000.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "dot product"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0031",
+  "version": 3,
+  "versions": 3,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='97' y2='41' stroke='#00574A' stroke-width='3'/><path d='M99 30 L91 40 L102 42 Z' fill='#00574A'/><text x='109' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='177' y2='80' stroke='#1B795A' stroke-width='3'/><path d='M186 73 L173 76 L180 84 Z' fill='#1B795A'/><text x='196' y='65' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><line x1='70' y1='160' x2='142' y2='106' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M151 99 L139 102 L145 110 Z' fill='#568CBB'/><text x='161' y='91' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>projection = 7.00</text>",
+   "alt": "Vector diagram: A; B; projection = 7.00."
+  },
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "first vector, an angle of the triangle, or the line coefficient of x"
+   ],
+   [
+    "B",
+    "second vector, an angle of the triangle, or the line coefficient of y"
+   ]
+  ]
+ },
+ {
+  "id": "math-0032",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sample of 36 measurements comes from a population with a known standard deviation of 12. What is the half-width of the 95% confidence interval for the mean? Use z = 1.96.",
+  "answer": {
+   "value": 3.92,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "With the population standard deviation known, the confidence interval for the mean is the sample mean plus or minus z times the standard deviation divided by the square root of the sample size.",
+  "solution": "Half-width = z \\frac{σ}{\\sqrt{n}} = 1.96 × \\frac{12}{\\sqrt{36}} = 1.96 × 2.0000 = 3.920.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "confidence interval"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0032",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "z",
+    "standard normal variable, (value - mean) / standard deviation"
+   ]
+  ]
+ },
+ {
+  "id": "math-0032-b",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sample of 25 measurements comes from a population with a known standard deviation of 4.5. What is the half-width of the 95% confidence interval for the mean? Use z = 1.96.",
+  "answer": {
+   "value": 1.764,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "With the population standard deviation known, the confidence interval for the mean is the sample mean plus or minus z times the standard deviation divided by the square root of the sample size.",
+  "solution": "Half-width = z \\frac{σ}{\\sqrt{n}} = 1.96 × \\frac{4.5}{\\sqrt{25}} = 1.96 × 0.9000 = 1.764.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "confidence interval"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0032",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "z",
+    "standard normal variable, (value - mean) / standard deviation"
+   ]
+  ]
+ },
+ {
+  "id": "math-0032-c",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sample of 100 measurements comes from a population with a known standard deviation of 30. What is the half-width of the 95% confidence interval for the mean? Use z = 1.96.",
+  "answer": {
+   "value": 5.88,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "With the population standard deviation known, the confidence interval for the mean is the sample mean plus or minus z times the standard deviation divided by the square root of the sample size.",
+  "solution": "Half-width = z \\frac{σ}{\\sqrt{n}} = 1.96 × \\frac{30}{\\sqrt{100}} = 1.96 × 3.0000 = 5.880.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "confidence interval"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0032",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "z",
+    "standard normal variable, (value - mean) / standard deviation"
+   ]
+  ]
+ },
+ {
+  "id": "math-0033",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sample of five values is 10, 12, 14, 16 and 18. What is its coefficient of variation, using the sample standard deviation?",
+  "answer": {
+   "value": 22.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "The coefficient of variation expresses scatter relative to size: the standard deviation divided by the mean. The sample standard deviation divides the sum of squared deviations by n - 1.",
+  "solution": "Mean = 14.00. Sample standard deviation = 3.162.\n\nCV = \\frac{3.162}{14.00} × 100 = 22.6%.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "coefficient of variation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0033",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "math-0033-b",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sample of five values is 4, 7, 7, 9 and 13. What is its coefficient of variation, using the sample standard deviation?",
+  "answer": {
+   "value": 41.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "The coefficient of variation expresses scatter relative to size: the standard deviation divided by the mean. The sample standard deviation divides the sum of squared deviations by n - 1.",
+  "solution": "Mean = 8.00. Sample standard deviation = 3.317.\n\nCV = \\frac{3.317}{8.00} × 100 = 41.5%.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "coefficient of variation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0033",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "math-0033-c",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sample of five values is 20, 25, 30, 45 and 55. What is its coefficient of variation, using the sample standard deviation?",
+  "answer": {
+   "value": 41.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "The coefficient of variation expresses scatter relative to size: the standard deviation divided by the mean. The sample standard deviation divides the sum of squared deviations by n - 1.",
+  "solution": "Mean = 35.00. Sample standard deviation = 14.577.\n\nCV = \\frac{14.577}{35.00} × 100 = 41.6%.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "coefficient of variation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0033",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "math-0034",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A box holds 4 red and 6 blue parts. Two parts are drawn at random without replacement. What is the probability that both are red?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.1600"
+   },
+   {
+    "id": "b",
+    "text": "0.1333"
+   },
+   {
+    "id": "c",
+    "text": "0.4000"
+   },
+   {
+    "id": "d",
+    "text": "0.5333"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Without replacement the second draw depends on the first. Multiply the probability of red on the first draw by the probability of red on the second, given one red is already gone.",
+  "solution": "P = \\frac{4}{10} × \\frac{3}{9} = 0.4000 × 0.3333 = 0.1333.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "joint probability"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0034",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "probability"
+   ]
+  ]
+ },
+ {
+  "id": "math-0034-b",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A box holds 5 red and 3 blue parts. Two parts are drawn at random without replacement. What is the probability that both are red?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.3906"
+   },
+   {
+    "id": "b",
+    "text": "0.3571"
+   },
+   {
+    "id": "c",
+    "text": "0.6250"
+   },
+   {
+    "id": "d",
+    "text": "0.5357"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Without replacement the second draw depends on the first. Multiply the probability of red on the first draw by the probability of red on the second, given one red is already gone.",
+  "solution": "P = \\frac{5}{8} × \\frac{4}{7} = 0.6250 × 0.5714 = 0.3571.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "joint probability"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0034",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "probability"
+   ]
+  ]
+ },
+ {
+  "id": "math-0034-c",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A box holds 3 red and 9 blue parts. Two parts are drawn at random without replacement. What is the probability that both are red?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.0625"
+   },
+   {
+    "id": "b",
+    "text": "0.0455"
+   },
+   {
+    "id": "c",
+    "text": "0.2500"
+   },
+   {
+    "id": "d",
+    "text": "0.4091"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Without replacement the second draw depends on the first. Multiply the probability of red on the first draw by the probability of red on the second, given one red is already gone.",
+  "solution": "P = \\frac{3}{12} × \\frac{2}{11} = 0.2500 × 0.1818 = 0.0455.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "joint probability"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0034",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "probability"
+   ]
+  ]
+ },
+ {
+  "id": "math-0035",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In how many different ways can a team of 3 be chosen from 8 people, if the order of selection does not matter?",
+  "options": [
+   {
+    "id": "a",
+    "text": "112"
+   },
+   {
+    "id": "b",
+    "text": "24"
+   },
+   {
+    "id": "c",
+    "text": "56"
+   },
+   {
+    "id": "d",
+    "text": "28"
+   }
+  ],
+  "answer": "c",
+  "eli5": "When order does not matter the count is a combination: n! / (k!(n - k)!). A permutation, where order matters, is larger by a factor of k!.",
+  "solution": "C(8, 3) = \\frac{8!}{3!(5)!} = 56.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "combinations"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0035",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "C",
+    "third angle of the triangle, or the constant term of the line"
+   ]
+  ]
+ },
+ {
+  "id": "math-0035-b",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In how many different ways can a team of 4 be chosen from 10 people, if the order of selection does not matter?",
+  "options": [
+   {
+    "id": "a",
+    "text": "420"
+   },
+   {
+    "id": "b",
+    "text": "40"
+   },
+   {
+    "id": "c",
+    "text": "210"
+   },
+   {
+    "id": "d",
+    "text": "120"
+   }
+  ],
+  "answer": "c",
+  "eli5": "When order does not matter the count is a combination: n! / (k!(n - k)!). A permutation, where order matters, is larger by a factor of k!.",
+  "solution": "C(10, 4) = \\frac{10!}{4!(6)!} = 210.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "combinations"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0035",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "C",
+    "third angle of the triangle, or the constant term of the line"
+   ]
+  ]
+ },
+ {
+  "id": "math-0035-c",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In how many different ways can a team of 2 be chosen from 12 people, if the order of selection does not matter?",
+  "options": [
+   {
+    "id": "a",
+    "text": "132"
+   },
+   {
+    "id": "b",
+    "text": "24"
+   },
+   {
+    "id": "c",
+    "text": "66"
+   },
+   {
+    "id": "d",
+    "text": "12"
+   }
+  ],
+  "answer": "c",
+  "eli5": "When order does not matter the count is a combination: n! / (k!(n - k)!). A permutation, where order matters, is larger by a factor of k!.",
+  "solution": "C(12, 2) = \\frac{12!}{2!(10)!} = 66.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "combinations"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0035",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "C",
+    "third angle of the triangle, or the constant term of the line"
+   ]
+  ]
  }
 ]

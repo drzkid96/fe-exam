@@ -58,6 +58,16 @@
      "The trapezoidal rule and Simpson's rule give slightly different areas from the same offsets; use the one the question names.",
      "Average end area is the three-dimensional version of the trapezoid: mean of the two end areas times the distance between them."
     ]
+   },
+   "bridge": {
+    "keep": "Stationing, bearings and azimuths, cross-sections and reading a profile, from plan production.",
+    "rusty": [
+     "Traverse arithmetic: latitudes, departures, closure and adjustment.",
+     "Area methods (coordinates, trapezoidal and Simpson's rules) and earthwork volumes.",
+     "Differential levelling notes."
+    ],
+    "work": "Alignment and profile sheets, right-of-way lines, grading and earthwork quantities for street projects use exactly these calculations, usually hidden inside CAD.",
+    "exam": "The exam expects the hand method. Lay out a small table for coordinates or level notes and fill it in."
    }
   },
   {
@@ -190,7 +200,30 @@
     "Compute the linear misclosure as the square root of the sum of squares, and precision as misclosure over perimeter.",
     "Reduce slope distances to horizontal before anything else."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Bearings, azimuths and deflection angles are the language of alignment sheets.",
+   "symbols": [
+    [
+     "A",
+     "area"
+    ],
+    [
+     "B",
+     "point B"
+    ],
+    [
+     "H",
+     "horizontal distance"
+    ],
+    [
+     "S",
+     "slope distance"
+    ],
+    [
+     "n",
+     "number of sides"
+    ]
+   ]
   },
   {
    "id": "surveying-b-lesson",
@@ -294,7 +327,9 @@
      "page": "259–309",
      "find": [
       "area by coordinates",
-      "trapezoidal rule"
+      "trapezoidal rule",
+      "Simpson's 1/3 rule",
+      "area formulas"
      ]
     },
     {
@@ -314,7 +349,66 @@
     "For offsets, apply the trapezoidal or Simpson's rule with the common interval.",
     "Convert units if asked: 1 acre = 43,560 ft^{2}; 1 hectare = 10,000 m^{2}."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Right-of-way takes and easements are areas computed from coordinates.",
+   "symbols": [
+    [
+     "x_{i}",
+     "easting of corner i"
+    ],
+    [
+     "y_{i+1}",
+     "northing of the next corner"
+    ],
+    [
+     "x_{i+1}",
+     "easting of the next corner"
+    ],
+    [
+     "y_{i}",
+     "northing of corner i"
+    ],
+    [
+     "h_{1}",
+     "first offset"
+    ],
+    [
+     "h_{n}",
+     "last offset"
+    ],
+    [
+     "h_{2}",
+     "second offset"
+    ],
+    [
+     "h_{n-1}",
+     "second-to-last offset"
+    ],
+    [
+     "A",
+     "area"
+    ],
+    [
+     "C",
+     "included angle, or correction"
+    ],
+    [
+     "w",
+     "common interval between offsets"
+    ],
+    [
+     "b",
+     "base width"
+    ],
+    [
+     "a",
+     "side length"
+    ],
+    [
+     "d",
+     "depth or common interval"
+    ]
+   ]
   },
   {
    "id": "surveying-c-lesson",
@@ -414,7 +508,30 @@
     "Apply swell or shrinkage factors to convert between bank, loose and compacted volumes.",
     "Watch stationing: one full station is 100 ft or, in metric practice, commonly 1 km with decimals."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Cut and fill quantities on a street widening come from end areas at each cross-section.",
+   "symbols": [
+    [
+     "A_{1}",
+     "area of the first end section"
+    ],
+    [
+     "A_{2}",
+     "area of the second end section"
+    ],
+    [
+     "A_{m}",
+     "area of the section midway between the ends"
+    ],
+    [
+     "V",
+     "volume"
+    ],
+    [
+     "L",
+     "distance between sections"
+    ]
+   ]
   },
   {
    "id": "surveying-d-lesson",
@@ -523,7 +640,17 @@
     "Azimuth is the inverse tangent of easting difference over northing difference, placed in the correct quadrant from the signs.",
     "To set out a point, reverse the steps with latitude and departure."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "L",
+     "distance between sections"
+    ],
+    [
+     "B",
+     "point B"
+    ]
+   ]
   },
   {
    "id": "surveying-e-lesson",
@@ -598,7 +725,15 @@
      "value": 3.5
     }
    ],
-   "lookup": [],
+   "lookup": [
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "trigonometry"
+     ]
+    }
+   ],
    "deep": "Differential leveling carries elevation from a benchmark to new points with a level and a rod. The backsight on a point of known elevation gives the height of the instrument; subtracting the foresight on the new point gives its elevation. Turning points link successive setups.\n\nA level circuit that returns to its start, or ends on another benchmark, shows its error as the misclosure, which is distributed in proportion to the number of setups or the distance. Over long sights the curvature of the earth and refraction matter; balancing backsight and foresight distances cancels them.",
    "method": [
     "Start with the benchmark elevation.",
@@ -607,7 +742,8 @@
     "Repeat through each turning point.",
     "Check: sum of backsights minus sum of foresights equals last elevation minus first."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Profile grades, kerb-return grades and ramp slopes are levelling arithmetic: rise over run."
   }
  ]
 }

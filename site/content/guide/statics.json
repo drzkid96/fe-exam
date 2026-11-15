@@ -63,6 +63,16 @@
      "On an incline, line the axes up with the surface.",
      "Know the common unit conversions by heart; looking them up costs time."
     ]
+   },
+   "bridge": {
+    "keep": "Summing forces, and the idea of a moment as force times distance.",
+    "rusty": [
+     "Free-body diagrams drawn quickly and completely. Every later structures topic depends on them.",
+     "Centroids and moments of inertia of built-up shapes, including the parallel axis theorem.",
+     "Truss methods and friction with impending motion."
+    ],
+    "work": "Sign and signal structures are statics problems: a mast arm is a cantilever carrying signal heads and wind on its signs, and the foundation resists the overturning moment. Reactions come up again in every beam question.",
+    "exam": "Get reactions down to a minute or two. They are the first step of a large share of the exam."
    }
   },
   {
@@ -135,9 +145,9 @@
      "answer": "196.8 N",
      "value": 196.782976,
      "figure": {
-      "viewBox": "0 0 400 185",
-      "svg": "<line x1='120' y1='150' x2='320' y2='150' stroke='#00574A' stroke-width='3'/><path d='M330 150 L316 144 L316 156 Z' fill='#00574A'/><line x1='120' y1='150' x2='216' y2='35' stroke='#1B795A' stroke-width='3'/><circle cx='216' cy='35' r='5' fill='#1B795A'/><circle cx='120' cy='150' r='4' fill='#00242E'/><text x='300' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>140 N</text><text x='250' y='39' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>75 N</text><text x='168' y='142' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>50°</text>",
-      "alt": "Two forces at a point: 140 N along the x-axis and 75 N at 50° above it."
+      "viewBox": "0 0 400 190",
+      "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='245' y2='160' stroke='#00574A' stroke-width='3'/><path d='M256 160 L245 154 L245 166 Z' fill='#00574A'/><text x='266' y='152' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>F1</text><line x1='70' y1='160' x2='127' y2='92' stroke='#1B795A' stroke-width='3'/><path d='M134 84 L123 89 L131 96 Z' fill='#1B795A'/><text x='144' y='76' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>F2</text><line x1='70' y1='160' x2='309' y2='87' stroke='#568CBB' stroke-width='3'/><path d='M320 84 L308 82 L311 92 Z' fill='#568CBB'/><text x='330' y='76' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>R = 196.8 N</text>",
+      "alt": "Vector diagram: F1; F2; R = 196.8 N."
      }
     },
     {
@@ -159,7 +169,12 @@
      "idea": "When a direction is given as a slope, the components are the force times the side ratios of the slope triangle. The hypotenuse is the square root of rise squared plus run squared.",
      "steps": "Hypotenuse = \\sqrt{8^{2} + 15^{2}} = 17.\n\nF_{x} = 850 × \\frac{15}{17} = 750.0 N. The vertical component is 850 × \\frac{8}{17} = 400.0 N.",
      "answer": "750.0 N",
-     "value": 750.0
+     "value": 750.0,
+     "figure": {
+      "viewBox": "0 0 400 190",
+      "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='304' y2='35' stroke='#00574A' stroke-width='3'/><path d='M314 30 L301 30 L307 40 Z' fill='#00574A'/><text x='324' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>F = 850 N</text><line x1='70' y1='160' x2='303' y2='160' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M314 160 L303 154 L303 166 Z' fill='#568CBB'/><text x='324' y='152' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>Fx = 750.0 N</text>",
+      "alt": "Vector diagram: F = 850 N; Fx = 750.0 N."
+     }
     }
    ],
    "lookup": [
@@ -182,7 +197,46 @@
     "Recombine: magnitude by the Pythagorean theorem, direction by the inverse tangent.",
     "Check the quadrant of the angle against the signs of the components."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Wind on a sign and the weight of a signal head are forces that are resolved into components before a pole or foundation is checked.",
+   "symbols": [
+    [
+     "F_{x}",
+     "x-component of the force"
+    ],
+    [
+     "F_{y}",
+     "y-component of the force"
+    ],
+    [
+     "R_{x}",
+     "x-component of the resultant"
+    ],
+    [
+     "R_{y}",
+     "y-component of the resultant"
+    ],
+    [
+     "F",
+     "force"
+    ],
+    [
+     "R",
+     "resultant force"
+    ],
+    [
+     "M",
+     "moment"
+    ],
+    [
+     "d",
+     "perpendicular distance (moment arm), or distance between parallel axes"
+    ],
+    [
+     "L",
+     "span or length"
+    ]
+   ]
   },
   {
    "id": "statics-b-lesson",
@@ -241,7 +295,12 @@
      "idea": "A couple is two equal, opposite, parallel forces. Its moment is force × perpendicular distance between the lines of action, and it is the same about every point, so a couple is a free vector.",
      "steps": "M = F d = 150 × 0.3 = 45 N·m.",
      "answer": "45 N·m",
-     "value": 45.0
+     "value": 45.0,
+     "figure": {
+      "viewBox": "0 0 400 180",
+      "svg": "<rect x='90' y='84' width='220' height='12' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='120' y1='30' x2='120' y2='74' stroke='#00574A' stroke-width='3'/><path d='M120 82 L114 70 L126 70 Z' fill='#00574A'/><line x1='280' y1='150' x2='280' y2='106' stroke='#00574A' stroke-width='3'/><path d='M280 98 L274 110 L286 110 Z' fill='#00574A'/><text x='120' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>150 N</text><text x='280' y='168' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>150 N</text><line x1='120' y1='118' x2='280' y2='118' stroke='#00242E'/><line x1='120' y1='112' x2='120' y2='124' stroke='#00242E'/><line x1='280' y1='112' x2='280' y2='124' stroke='#00242E'/><text x='200' y='134' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>0.3 m</text><text x='200' y='60' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>M = 45 N·m, the same about any point</text>",
+      "alt": "Two equal and opposite 150 N forces 0.3 m apart, forming a couple of 45 N·m."
+     }
     },
     {
      "family": "statics-0007",
@@ -270,7 +329,30 @@
     "Sum the moments of all forces and couples about that point; that is the accompanying couple.",
     "To find a single equivalent force with no couple, place the resultant at a distance equal to the moment divided by the force."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "A mast arm carries its signal heads and signs as loads at a distance from the pole; the pole base sees their equivalent force and moment.",
+   "symbols": [
+    [
+     "F",
+     "force"
+    ],
+    [
+     "d",
+     "perpendicular distance (moment arm), or distance between parallel axes"
+    ],
+    [
+     "M",
+     "moment"
+    ],
+    [
+     "O",
+     "the reference point (origin)"
+    ],
+    [
+     "a",
+     "distance to the load"
+    ]
+   ]
   },
   {
    "id": "statics-c-lesson",
@@ -358,9 +440,9 @@
      "answer": "1,061 N",
      "value": 1060.660172,
      "figure": {
-      "viewBox": "0 0 400 174",
-      "svg": "<line x1='40' y1='20' x2='360' y2='20' stroke='#00242E' stroke-width='4'/><line x1='110' y1='20' x2='200' y2='110' stroke='#1B795A' stroke-width='3'/><line x1='290' y1='20' x2='200' y2='110' stroke='#1B795A' stroke-width='3'/><line x1='200' y1='110' x2='200' y2='130' stroke='#00242E' stroke-width='2'/><rect x='176' y='130' width='48' height='30' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>1,500 N</text><text x='144' y='34' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>45°</text><text x='256' y='34' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>45°</text>",
-      "alt": "A 1,500 N weight hanging from two cables that each make 45° with the horizontal."
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 1,500 N</text><line x1='217' y1='83' x2='252' y2='48' stroke='#1B795A' stroke-width='3'/><path d='M259 41 L248 44 L256 52 Z' fill='#1B795A'/><text x='268' y='36' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>T = 1,060.7 N</text><line x1='183' y1='83' x2='148' y2='48' stroke='#1B795A' stroke-width='3'/><path d='M141 41 L144 52 L152 44 Z' fill='#1B795A'/><text x='132' y='36' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>T = 1,060.7 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Free-body diagram of the knot</text>",
+      "alt": "Free-body diagram showing W = 1,500 N, T = 1,060.7 N, T = 1,060.7 N."
      }
     },
     {
@@ -369,7 +451,12 @@
      "idea": "A triangular load acts as a single force equal to half its peak intensity times its length, placed one third of the length from the tall end. With the resultant known, take moments about A.",
      "steps": "Resultant = \\frac{1}{2}(16)(7.5) = 60 kN, acting 5.00 m from A.\n\nMoments about A: B_{y}(7.5) = 60(5.00), so B_{y} = 40.00 kN. A carries the other 20.00 kN.",
      "answer": "40.00 kN",
-     "value": 40.0
+     "value": 40.0,
+     "figure": {
+      "viewBox": "0 0 400 205",
+      "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='250' y1='10' x2='250' y2='69' stroke='#00574A' stroke-width='3'/><path d='M250 77 L244 65 L256 65 Z' fill='#00574A'/><text x='258' y='20' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>60 kN</text><line x1='50' y1='176' x2='250' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='250' y1='170' x2='250' y2='182' stroke='#00242E'/><text x='150' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text><line x1='250' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='250' y1='170' x2='250' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='300' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text><line x1='50' y1='162' x2='50' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M50 120 L44 132 L56 132 Z' fill='#568CBB'/><text x='60' y='160' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>20 kN</text><line x1='350' y1='162' x2='350' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M350 120 L344 132 L356 132 Z' fill='#568CBB'/><text x='340' y='160' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>40 kN</text>",
+      "alt": "A beam 7.5 m long, a pin support at 0 m, a roller support at 7.5 m, a 60 kN load at 5 m. Reactions: 20 kN at 0 m, 40 kN at 7.5 m."
+     }
     }
    ],
    "lookup": [
@@ -392,7 +479,42 @@
     "Sum vertical and horizontal forces for the rest.",
     "Check by taking moments about a different point."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Any pole, sign post or shelter is checked by the same three equilibrium equations used here.",
+   "symbols": [
+    [
+     "F_{x}",
+     "x-component of the force"
+    ],
+    [
+     "F_{y}",
+     "y-component of the force"
+    ],
+    [
+     "A_{y}",
+     "vertical reaction at support A"
+    ],
+    [
+     "B_{y}",
+     "vertical reaction at support B"
+    ],
+    [
+     "M",
+     "moment"
+    ],
+    [
+     "W",
+     "weight"
+    ],
+    [
+     "A",
+     "area"
+    ],
+    [
+     "T",
+     "cable tension"
+    ]
+   ]
   },
   {
    "id": "statics-d-lesson",
@@ -480,7 +602,8 @@
      "find": [
       "method of joints",
       "truss",
-      "method of sections"
+      "method of sections",
+      "moments"
      ]
     }
    ],
@@ -492,7 +615,29 @@
     "Assume unknown forces are tension; a negative answer means compression.",
     "Check with the remaining equilibrium equation."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "F_{x}",
+     "x-component of the force"
+    ],
+    [
+     "F_{y}",
+     "y-component of the force"
+    ],
+    [
+     "m",
+     "mass"
+    ],
+    [
+     "r",
+     "radius of gyration"
+    ],
+    [
+     "F",
+     "force"
+    ]
+   ]
   },
   {
    "id": "statics-e-lesson",
@@ -584,6 +729,28 @@
     "Tabulate each part's area and the distance from the axis to its own centroid.",
     "Divide the sum of area times distance by the sum of areas.",
     "Check that the answer lies inside the shape's extent and on any axis of symmetry."
+   ],
+   "symbols": [
+    [
+     "A_{i}",
+     "area of part i"
+    ],
+    [
+     "x_{i}",
+     "centroid distance of part i"
+    ],
+    [
+     "x",
+     "distance of the centroid from the reference edge"
+    ],
+    [
+     "y",
+     "distance from the reference axis to a centroid"
+    ],
+    [
+     "A",
+     "area"
+    ]
    ]
   },
   {
@@ -676,7 +843,8 @@
      "page": "107–113",
      "find": [
       "moment of inertia",
-      "parallel axis"
+      "parallel axis",
+      "radius of gyration"
      ]
     }
    ],
@@ -688,7 +856,41 @@
     "Sum the contributions; subtract those of holes.",
     "Check units of length to the fourth power."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "I_{c}",
+     "moment of inertia about the centroidal axis"
+    ],
+    [
+     "I_{base}",
+     "moment of inertia about the base"
+    ],
+    [
+     "I",
+     "moment of inertia of the area"
+    ],
+    [
+     "A",
+     "area"
+    ],
+    [
+     "d",
+     "distance between the parallel axes"
+    ],
+    [
+     "r",
+     "radius of gyration"
+    ],
+    [
+     "b",
+     "width of the rectangle"
+    ],
+    [
+     "h",
+     "height of the rectangle or depth of the truss"
+    ]
+   ]
   },
   {
    "id": "statics-g-lesson",
@@ -758,9 +960,9 @@
      "answer": "24.2°",
      "value": 24.227745,
      "figure": {
-      "viewBox": "0 0 400 180",
-      "svg": "<path d='M71 150 L329 150 L329 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(213 84) rotate(-25)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='115' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>angle ?</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Coefficient of static friction 0.45</text>",
-      "alt": "A block on an incline at an unknown angle to the horizontal."
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(-24.22774531795417 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W</text><line x1='190' y1='78' x2='170' y2='33' stroke='#1B795A' stroke-width='3'/><path d='M166 23 L165 36 L175 31 Z' fill='#1B795A'/><text x='161' y='16' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='222' y1='90' x2='267' y2='70' stroke='#568CBB' stroke-width='3'/><path d='M277 66 L264 65 L269 75 Z' fill='#568CBB'/><text x='288' y='65' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Friction = (coefficient) N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>On the point of sliding: tan(angle) = coefficient of friction</text>",
+      "alt": "Free-body diagram on a surface inclined at 24.23° showing W, N, Friction = (coefficient) N."
      }
     },
     {
@@ -769,7 +971,12 @@
      "idea": "The upward component of the rope force reduces the normal force, which reduces the friction available. Write equilibrium in both directions at impending motion: horizontal pull = coefficient × (weight minus vertical pull).",
      "steps": "Normal force: N = 1,000 - P sin 15°.\n\nImpending motion: P cos 15° = 0.30(1,000 - P sin 15°).\n\nP = \\frac{0.30(1,000)}{cos 15° + 0.30 sin 15°} = \\frac{300}{1.044} = 287.5 N.",
      "answer": "287.5 N",
-     "value": 287.474302
+     "value": 287.474302,
+     "figure": {
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 1,000 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='223' y1='94' x2='271' y2='81' stroke='#568CBB' stroke-width='3'/><path d='M281 78 L269 76 L272 86 Z' fill='#568CBB'/><text x='293' y='79' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>P = 287.5 N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#00242E' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#00242E'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#00242E'>Friction</text>",
+      "alt": "Free-body diagram showing W = 1,000 N, N, P = 287.5 N, Friction."
+     }
     },
     {
      "family": "statics-0017",
@@ -777,7 +984,12 @@
      "idea": "Each sliding surface has its own normal force. The top face of the lower block carries the upper block's weight; its bottom face carries both. Friction on both faces opposes the pull.",
      "steps": "Friction on the top face = 0.35 × 250 = 87.5 N.\n\nFriction on the bottom face = 0.25 × (250 + 500) = 187.5 N.\n\nP = 87.5 + 187.5 = 275.0 N.",
      "answer": "275.0 N",
-     "value": 275.0
+     "value": 275.0,
+     "figure": {
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#568CBB'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Pull = 275.0 N</text><line x1='177' y1='92' x2='131' y2='75' stroke='#1B795A' stroke-width='3'/><path d='M121 71 L130 80 L133 70 Z' fill='#1B795A'/><text x='110' y='71' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>Friction from the upper block, 87.5 N</text><line x1='177' y1='108' x2='131' y2='125' stroke='#00242E' stroke-width='3'/><path d='M121 129 L133 130 L130 120 Z' fill='#00242E'/><text x='110' y='137' text-anchor='end' font-size='11' font-weight='600' fill='#00242E'>Friction from the floor, 187.5 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Lower block: both friction forces oppose the pull</text>",
+      "alt": "Free-body diagram showing Pull = 275.0 N, Friction from the upper block, 87.5 N, Friction from the floor, 187.5 N."
+     }
     }
    ],
    "lookup": [
@@ -785,7 +997,8 @@
      "section": "Statics",
      "page": "107–113",
      "find": [
-      "friction"
+      "friction",
+      "belt friction"
      ]
     }
    ],
@@ -797,7 +1010,42 @@
     "Compare the force needed for equilibrium with that maximum, or set them equal if motion is impending.",
     "On an incline, resolve the weight along and perpendicular to the slope."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Tyre-road friction, the basis of stopping distance and side friction on curves, is this coefficient-times-normal-force model.",
+   "symbols": [
+    [
+     "T_{1}",
+     "tension in cable 1, or on the tight side"
+    ],
+    [
+     "T_{2}",
+     "tension on the slack side"
+    ],
+    [
+     "F_{max}",
+     "largest friction force available"
+    ],
+    [
+     "μ_{s}",
+     "coefficient of static friction"
+    ],
+    [
+     "e",
+     "Euler's number, 2.718"
+    ],
+    [
+     "W",
+     "weight"
+    ],
+    [
+     "N",
+     "normal force"
+    ],
+    [
+     "P",
+     "applied force"
+    ]
+   ]
   }
  ]
 }

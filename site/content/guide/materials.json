@@ -52,7 +52,17 @@
      "url": "https://ncees.org/wp-content/uploads/2022/09/FE-Civil-CBT-specs-1.pdf",
      "note": "The official list of topics and question counts."
     }
-   ]
+   ],
+   "bridge": {
+    "keep": "What asphalt and concrete are made of, from pavement and flatwork specifications.",
+    "rusty": [
+     "Mix design arithmetic: water-cement ratio, absolute volume, aggregate moisture corrections.",
+     "Asphalt volumetrics: air voids, VMA and binder content.",
+     "Stress-strain behaviour of metals and the standard test names."
+    ],
+    "work": "Pavement sections, concrete kerb, gutter and ramp work, and material submittals all rest on these properties and tests.",
+    "exam": "Many questions are recognition: which test measures which property. The handbook's materials tables carry the numbers."
+   }
   },
   {
    "id": "materials-a-lesson",
@@ -182,7 +192,26 @@
     "Convert that volume back to mass.",
     "Adjust batch water for aggregate moisture above or below the saturated-surface-dry condition."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Concrete for kerb, gutter, ramps and bus pads is specified by strength and water-cement ratio; asphalt by binder content and air voids.",
+   "symbols": [
+    [
+     "V_{a}",
+     "air voids, percent"
+    ],
+    [
+     "P_{b}",
+     "asphalt binder content, percent by mass of mix"
+    ],
+    [
+     "w",
+     "mass of water"
+    ],
+    [
+     "V",
+     "volume"
+    ]
+   ]
   },
   {
    "id": "materials-b-lesson",
@@ -249,7 +278,8 @@
     "Note the conditions that affect the result, such as age for concrete or temperature for impact tests.",
     "Convert the test reading to the property with the correct area or gauge length."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Slump, cylinder breaks, density tests and gradations are the test reports that come back on a street project."
   },
   {
    "id": "materials-c-lesson",
@@ -379,7 +409,9 @@
       "percent elongation",
       "ductility",
       "toughness",
-      "stress-strain"
+      "stress-strain",
+      "reduction in area",
+      "true stress"
      ]
     }
    ],
@@ -390,7 +422,33 @@
     "Compute ductility as percent elongation or percent reduction in area.",
     "Use the 0.2% offset method when there is no distinct yield point."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "L_{final}",
+     "gauge length after fracture"
+    ],
+    [
+     "L_{original}",
+     "original gauge length"
+    ],
+    [
+     "E_{c}",
+     "modulus of elasticity of concrete"
+    ],
+    [
+     "f'_{c}",
+     "specified compressive strength of concrete"
+    ],
+    [
+     "E",
+     "modulus of elasticity"
+    ],
+    [
+     "A",
+     "cross-sectional area"
+    ]
+   ]
   }
  ]
 }

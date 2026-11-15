@@ -264,7 +264,25 @@
    "svg": "<path d='M50 160 L206 160 L258 56 L102 30 Z' fill='#D9F1D6' fill-opacity='.6' stroke='#00242E' stroke-width='2'/><circle cx='50' cy='160' r='4' fill='#00242E'/><text x='50' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(0, 0)</text><circle cx='206' cy='160' r='4' fill='#00242E'/><text x='206' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(60, 0)</text><circle cx='258' cy='56' r='4' fill='#00242E'/><text x='258' y='48' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(80, 40)</text><circle cx='102' cy='30' r='4' fill='#00242E'/><text x='102' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(20, 50)</text>",
    "alt": "A parcel with corners at (0, 0), (60, 0), (80, 40), (20, 50) m."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x_{i}",
+    "easting of corner i"
+   ],
+   [
+    "y_{i+1}",
+    "northing of the next corner"
+   ],
+   [
+    "x_{i+1}",
+    "easting of the next corner"
+   ],
+   [
+    "y_{i}",
+    "northing of corner i"
+   ]
+  ]
  },
  {
   "id": "surveying-0002-b",
@@ -307,7 +325,25 @@
    "svg": "<path d='M50 160 L212 160 L278 62 L82 30 Z' fill='#D9F1D6' fill-opacity='.6' stroke='#00242E' stroke-width='2'/><circle cx='50' cy='160' r='4' fill='#00242E'/><text x='50' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(0, 0)</text><circle cx='212' cy='160' r='4' fill='#00242E'/><text x='212' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(50, 0)</text><circle cx='278' cy='62' r='4' fill='#00242E'/><text x='278' y='54' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(70, 30)</text><circle cx='82' cy='30' r='4' fill='#00242E'/><text x='82' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(10, 40)</text>",
    "alt": "A parcel with corners at (0, 0), (50, 0), (70, 30), (10, 40) m."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x_{i}",
+    "easting of corner i"
+   ],
+   [
+    "y_{i+1}",
+    "northing of the next corner"
+   ],
+   [
+    "x_{i+1}",
+    "easting of the next corner"
+   ],
+   [
+    "y_{i}",
+    "northing of corner i"
+   ]
+  ]
  },
  {
   "id": "surveying-0002-c",
@@ -350,7 +386,25 @@
    "svg": "<path d='M50 160 L199 160 L217 67 L106 30 Z' fill='#D9F1D6' fill-opacity='.6' stroke='#00242E' stroke-width='2'/><circle cx='50' cy='160' r='4' fill='#00242E'/><text x='50' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(0, 0)</text><circle cx='199' cy='160' r='4' fill='#00242E'/><text x='199' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(80, 0)</text><circle cx='217' cy='67' r='4' fill='#00242E'/><text x='217' y='59' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(90, 50)</text><circle cx='106' cy='30' r='4' fill='#00242E'/><text x='106' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(30, 70)</text>",
    "alt": "A parcel with corners at (0, 0), (80, 0), (90, 50), (30, 70) m."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x_{i}",
+    "easting of corner i"
+   ],
+   [
+    "y_{i+1}",
+    "northing of the next corner"
+   ],
+   [
+    "x_{i+1}",
+    "easting of the next corner"
+   ],
+   [
+    "y_{i}",
+    "northing of corner i"
+   ]
+  ]
  },
  {
   "id": "surveying-0002-d",
@@ -393,7 +447,25 @@
    "svg": "<path d='M50 160 L137 160 L180 73 L72 30 Z' fill='#D9F1D6' fill-opacity='.6' stroke='#00242E' stroke-width='2'/><circle cx='50' cy='160' r='4' fill='#00242E'/><text x='50' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(0, 0)</text><circle cx='137' cy='160' r='4' fill='#00242E'/><text x='137' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(40, 0)</text><circle cx='180' cy='73' r='4' fill='#00242E'/><text x='180' y='65' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(60, 40)</text><circle cx='72' cy='30' r='4' fill='#00242E'/><text x='72' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(10, 60)</text>",
    "alt": "A parcel with corners at (0, 0), (40, 0), (60, 40), (10, 60) m."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "x_{i}",
+    "easting of corner i"
+   ],
+   [
+    "y_{i+1}",
+    "northing of the next corner"
+   ],
+   [
+    "x_{i+1}",
+    "easting of the next corner"
+   ],
+   [
+    "y_{i}",
+    "northing of corner i"
+   ]
+  ]
  },
  {
   "id": "surveying-0003",
@@ -446,7 +518,25 @@
   "family": "surveying-0003",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A_{1}",
+    "area of the first end section"
+   ],
+   [
+    "A_{2}",
+    "area of the second end section"
+   ],
+   [
+    "V",
+    "volume"
+   ],
+   [
+    "L",
+    "distance between sections"
+   ]
+  ]
  },
  {
   "id": "surveying-0003-b",
@@ -499,7 +589,25 @@
   "family": "surveying-0003",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A_{1}",
+    "area of the first end section"
+   ],
+   [
+    "A_{2}",
+    "area of the second end section"
+   ],
+   [
+    "V",
+    "volume"
+   ],
+   [
+    "L",
+    "distance between sections"
+   ]
+  ]
  },
  {
   "id": "surveying-0003-c",
@@ -552,7 +660,25 @@
   "family": "surveying-0003",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A_{1}",
+    "area of the first end section"
+   ],
+   [
+    "A_{2}",
+    "area of the second end section"
+   ],
+   [
+    "V",
+    "volume"
+   ],
+   [
+    "L",
+    "distance between sections"
+   ]
+  ]
  },
  {
   "id": "surveying-0003-d",
@@ -605,7 +731,25 @@
   "family": "surveying-0003",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A_{1}",
+    "area of the first end section"
+   ],
+   [
+    "A_{2}",
+    "area of the second end section"
+   ],
+   [
+    "V",
+    "volume"
+   ],
+   [
+    "L",
+    "distance between sections"
+   ]
+  ]
  },
  {
   "id": "surveying-0004",
@@ -751,7 +895,25 @@
   "family": "surveying-0004",
   "version": 2,
   "versions": 2,
-  "lookup": false
+  "lookup": false,
+  "symbols": [
+   [
+    "S",
+    "slope distance"
+   ],
+   [
+    "E",
+    "easting"
+   ],
+   [
+    "W",
+    "west"
+   ],
+   [
+    "N",
+    "northing, or the relative precision denominator"
+   ]
+  ]
  },
  {
   "id": "surveying-0005",
@@ -948,7 +1110,17 @@
   "family": "surveying-0006",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "H",
+    "horizontal distance"
+   ],
+   [
+    "S",
+    "slope distance"
+   ]
+  ]
  },
  {
   "id": "surveying-0006-b",
@@ -997,7 +1169,17 @@
   "family": "surveying-0006",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "H",
+    "horizontal distance"
+   ],
+   [
+    "S",
+    "slope distance"
+   ]
+  ]
  },
  {
   "id": "surveying-0006-c",
@@ -1046,7 +1228,17 @@
   "family": "surveying-0006",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "H",
+    "horizontal distance"
+   ],
+   [
+    "S",
+    "slope distance"
+   ]
+  ]
  },
  {
   "id": "surveying-0006-d",
@@ -1095,7 +1287,17 @@
   "family": "surveying-0006",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "H",
+    "horizontal distance"
+   ],
+   [
+    "S",
+    "slope distance"
+   ]
+  ]
  },
  {
   "id": "surveying-0007",
@@ -1144,7 +1346,13 @@
   "family": "surveying-0007",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "n",
+    "number of sides"
+   ]
+  ]
  },
  {
   "id": "surveying-0007-b",
@@ -1193,7 +1401,13 @@
   "family": "surveying-0007",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "n",
+    "number of sides"
+   ]
+  ]
  },
  {
   "id": "surveying-0007-c",
@@ -1242,7 +1456,13 @@
   "family": "surveying-0007",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "n",
+    "number of sides"
+   ]
+  ]
  },
  {
   "id": "surveying-0007-d",
@@ -1291,7 +1511,13 @@
   "family": "surveying-0007",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "n",
+    "number of sides"
+   ]
+  ]
  },
  {
   "id": "surveying-0008",
@@ -1333,7 +1559,21 @@
    "svg": "<path d='M70 150 L330 150 L239 53 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>80 m</text><text x='146' y='97' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>60 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>30°</text>",
    "alt": "A triangle with sides of 80 m and 60 m meeting at 30°."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "b",
+    "base width"
+   ],
+   [
+    "C",
+    "included angle, or correction"
+   ],
+   [
+    "a",
+    "side length"
+   ]
+  ]
  },
  {
   "id": "surveying-0008-b",
@@ -1375,7 +1615,21 @@
    "svg": "<path d='M70 150 L321 150 L171 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='195' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>120 m</text><text x='112' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>75 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>50°</text>",
    "alt": "A triangle with sides of 120 m and 75 m meeting at 50°."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "b",
+    "base width"
+   ],
+   [
+    "C",
+    "included angle, or correction"
+   ],
+   [
+    "a",
+    "side length"
+   ]
+  ]
  },
  {
   "id": "surveying-0008-c",
@@ -1417,7 +1671,21 @@
    "svg": "<path d='M70 150 L275 150 L109 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='173' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>65 m</text><text x='81' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>40 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>72°</text>",
    "alt": "A triangle with sides of 65 m and 40 m meeting at 72°."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "b",
+    "base width"
+   ],
+   [
+    "C",
+    "included angle, or correction"
+   ],
+   [
+    "a",
+    "side length"
+   ]
+  ]
  },
  {
   "id": "surveying-0008-d",
@@ -1459,7 +1727,21 @@
    "svg": "<path d='M70 150 L229 150 L224 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='150' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>90 m</text><text x='139' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>110 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>38°</text>",
    "alt": "A triangle with sides of 90 m and 110 m meeting at 38°."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "b",
+    "base width"
+   ],
+   [
+    "C",
+    "included angle, or correction"
+   ],
+   [
+    "a",
+    "side length"
+   ]
+  ]
  },
  {
   "id": "surveying-0009",
@@ -1508,7 +1790,13 @@
   "family": "surveying-0009",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "volume"
+   ]
+  ]
  },
  {
   "id": "surveying-0009-b",
@@ -1557,7 +1845,13 @@
   "family": "surveying-0009",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "volume"
+   ]
+  ]
  },
  {
   "id": "surveying-0009-c",
@@ -1606,7 +1900,13 @@
   "family": "surveying-0009",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "volume"
+   ]
+  ]
  },
  {
   "id": "surveying-0009-d",
@@ -1655,7 +1955,13 @@
   "family": "surveying-0009",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "volume"
+   ]
+  ]
  },
  {
   "id": "surveying-0010",
@@ -1710,7 +2016,13 @@
    "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='287' y2='60' stroke='#00574A' stroke-width='3'/><circle cx='287' cy='60' r='5' fill='#00574A'/><text x='297' y='54' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>200.00 m, azimuth 60°</text>",
    "alt": "A line drawn from the origin at an azimuth of 60° clockwise from north."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "L",
+    "distance between sections"
+   ]
+  ]
  },
  {
   "id": "surveying-0010-b",
@@ -1765,7 +2077,13 @@
    "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='257' y2='34' stroke='#00574A' stroke-width='3'/><circle cx='257' cy='34' r='5' fill='#00574A'/><text x='267' y='28' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>150.00 m, azimuth 35°</text>",
    "alt": "A line drawn from the origin at an azimuth of 35° clockwise from north."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "L",
+    "distance between sections"
+   ]
+  ]
  },
  {
   "id": "surveying-0010-c",
@@ -1820,7 +2138,13 @@
    "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='295' y2='75' stroke='#00574A' stroke-width='3'/><circle cx='295' cy='75' r='5' fill='#00574A'/><text x='305' y='69' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>320.00 m, azimuth 72°</text>",
    "alt": "A line drawn from the origin at an azimuth of 72° clockwise from north."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "L",
+    "distance between sections"
+   ]
+  ]
  },
  {
   "id": "surveying-0010-d",
@@ -1875,7 +2199,13 @@
    "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='242' y2='27' stroke='#00574A' stroke-width='3'/><circle cx='242' cy='27' r='5' fill='#00574A'/><text x='252' y='21' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>85.50 m, azimuth 25°</text>",
    "alt": "A line drawn from the origin at an azimuth of 25° clockwise from north."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "L",
+    "distance between sections"
+   ]
+  ]
  },
  {
   "id": "surveying-0011",
@@ -1912,7 +2242,17 @@
   "family": "surveying-0011",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "L",
+    "distance between sections"
+   ],
+   [
+    "B",
+    "point B"
+   ]
+  ]
  },
  {
   "id": "surveying-0011-b",
@@ -1949,7 +2289,17 @@
   "family": "surveying-0011",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "L",
+    "distance between sections"
+   ],
+   [
+    "B",
+    "point B"
+   ]
+  ]
  },
  {
   "id": "surveying-0011-c",
@@ -1986,7 +2336,17 @@
   "family": "surveying-0011",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "L",
+    "distance between sections"
+   ],
+   [
+    "B",
+    "point B"
+   ]
+  ]
  },
  {
   "id": "surveying-0011-d",
@@ -2023,7 +2383,17 @@
   "family": "surveying-0011",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "L",
+    "distance between sections"
+   ],
+   [
+    "B",
+    "point B"
+   ]
+  ]
  },
  {
   "id": "surveying-0012",
@@ -2059,7 +2429,17 @@
   "family": "surveying-0012",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "area"
+   ],
+   [
+    "d",
+    "depth or common interval"
+   ]
+  ]
  },
  {
   "id": "surveying-0012-b",
@@ -2095,7 +2475,17 @@
   "family": "surveying-0012",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "area"
+   ],
+   [
+    "d",
+    "depth or common interval"
+   ]
+  ]
  },
  {
   "id": "surveying-0012-c",
@@ -2131,7 +2521,17 @@
   "family": "surveying-0012",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "area"
+   ],
+   [
+    "d",
+    "depth or common interval"
+   ]
+  ]
  },
  {
   "id": "surveying-0012-d",
@@ -2167,7 +2567,17 @@
   "family": "surveying-0012",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "area"
+   ],
+   [
+    "d",
+    "depth or common interval"
+   ]
+  ]
  },
  {
   "id": "surveying-0013",
@@ -2516,7 +2926,25 @@
   "family": "surveying-0015",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A_{1}",
+    "area of the first end section"
+   ],
+   [
+    "A_{m}",
+    "area of the section midway between the ends"
+   ],
+   [
+    "A_{2}",
+    "area of the second end section"
+   ],
+   [
+    "V",
+    "volume"
+   ]
+  ]
  },
  {
   "id": "surveying-0015-b",
@@ -2553,7 +2981,25 @@
   "family": "surveying-0015",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A_{1}",
+    "area of the first end section"
+   ],
+   [
+    "A_{m}",
+    "area of the section midway between the ends"
+   ],
+   [
+    "A_{2}",
+    "area of the second end section"
+   ],
+   [
+    "V",
+    "volume"
+   ]
+  ]
  },
  {
   "id": "surveying-0015-c",
@@ -2590,7 +3036,25 @@
   "family": "surveying-0015",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A_{1}",
+    "area of the first end section"
+   ],
+   [
+    "A_{m}",
+    "area of the section midway between the ends"
+   ],
+   [
+    "A_{2}",
+    "area of the second end section"
+   ],
+   [
+    "V",
+    "volume"
+   ]
+  ]
  },
  {
   "id": "surveying-0015-d",
@@ -2627,7 +3091,25 @@
   "family": "surveying-0015",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A_{1}",
+    "area of the first end section"
+   ],
+   [
+    "A_{m}",
+    "area of the section midway between the ends"
+   ],
+   [
+    "A_{2}",
+    "area of the second end section"
+   ],
+   [
+    "V",
+    "volume"
+   ]
+  ]
  },
  {
   "id": "surveying-0016",
@@ -2775,6 +3257,1899 @@
   "family": "surveying-0016",
   "version": 4,
   "versions": 4,
+  "lookup": true
+ },
+ {
+  "id": "surveying-0017",
+  "topic": "surveying",
+  "subtopic": "surveying-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel tape, correct at 20 °C, is used to measure 250 m at 35 °C. The coefficient of thermal expansion of steel is 11.6 × 10^{-6} per °C. What correction should be applied to the measured length?",
+  "answer": {
+   "value": 0.0435,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "A warm tape is longer than its marks say, so it reads short and the correction is positive; a cold tape reads long and the correction is negative. The size is (coefficient)(temperature difference)(length).",
+  "solution": "Correction = 11.6 × 10^{-6} × (35 - 20) × 250 = 0.0435 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0017",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0017-b",
+  "topic": "surveying",
+  "subtopic": "surveying-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel tape, correct at 20 °C, is used to measure 480 m at 5 °C. The coefficient of thermal expansion of steel is 11.6 × 10^{-6} per °C. What correction should be applied to the measured length?",
+  "answer": {
+   "value": -0.0835,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "A warm tape is longer than its marks say, so it reads short and the correction is positive; a cold tape reads long and the correction is negative. The size is (coefficient)(temperature difference)(length).",
+  "solution": "Correction = 11.6 × 10^{-6} × (5 - 20) × 480 = -0.0835 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0017",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0017-c",
+  "topic": "surveying",
+  "subtopic": "surveying-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel tape, correct at 20 °C, is used to measure 125 m at 42 °C. The coefficient of thermal expansion of steel is 11.6 × 10^{-6} per °C. What correction should be applied to the measured length?",
+  "answer": {
+   "value": 0.0319,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "A warm tape is longer than its marks say, so it reads short and the correction is positive; a cold tape reads long and the correction is negative. The size is (coefficient)(temperature difference)(length).",
+  "solution": "Correction = 11.6 × 10^{-6} × (42 - 20) × 125 = 0.0319 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0017",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0018",
+  "topic": "surveying",
+  "subtopic": "surveying-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The measured interior angles of a closed 5-sided traverse add up to 50\" more than the geometric total. If the error is shared equally, what correction is applied to each angle?",
+  "answer": {
+   "value": -10.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "seconds"
+  },
+  "eli5": "The interior angles of a closed polygon must total (n - 2) × 180°. The misclosure is shared equally among the angles, with the opposite sign.",
+  "solution": "Correction = -\\frac{50}{5} = -10\\\" per angle.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0018",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0018-b",
+  "topic": "surveying",
+  "subtopic": "surveying-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The measured interior angles of a closed 6-sided traverse add up to 36\" more than the geometric total. If the error is shared equally, what correction is applied to each angle?",
+  "answer": {
+   "value": -6.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "seconds"
+  },
+  "eli5": "The interior angles of a closed polygon must total (n - 2) × 180°. The misclosure is shared equally among the angles, with the opposite sign.",
+  "solution": "Correction = -\\frac{36}{6} = -6\\\" per angle.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0018",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0018-c",
+  "topic": "surveying",
+  "subtopic": "surveying-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The measured interior angles of a closed 4-sided traverse add up to 48\" more than the geometric total. If the error is shared equally, what correction is applied to each angle?",
+  "answer": {
+   "value": -12.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "seconds"
+  },
+  "eli5": "The interior angles of a closed polygon must total (n - 2) × 180°. The misclosure is shared equally among the angles, with the opposite sign.",
+  "solution": "Correction = -\\frac{48}{4} = -12\\\" per angle.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0018",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0019",
+  "topic": "surveying",
+  "subtopic": "surveying-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A line has an azimuth of 67.5°. What is its back azimuth?",
+  "options": [
+   {
+    "id": "a",
+    "text": "292.5 °"
+   },
+   {
+    "id": "b",
+    "text": "157.5 °"
+   },
+   {
+    "id": "c",
+    "text": "337.5 °"
+   },
+   {
+    "id": "d",
+    "text": "247.5 °"
+   }
+  ],
+  "answer": "d",
+  "eli5": "The back azimuth is the direction of the same line seen from its other end. It differs from the forward azimuth by 180°: add 180° if the azimuth is less than 180°, otherwise subtract.",
+  "solution": "Back azimuth = 67.5° + 180° = 247.5°.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0019",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0019-b",
+  "topic": "surveying",
+  "subtopic": "surveying-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A line has an azimuth of 215.0°. What is its back azimuth?",
+  "options": [
+   {
+    "id": "a",
+    "text": "145.0 °"
+   },
+   {
+    "id": "b",
+    "text": "305.0 °"
+   },
+   {
+    "id": "c",
+    "text": "125.0 °"
+   },
+   {
+    "id": "d",
+    "text": "35.0 °"
+   }
+  ],
+  "answer": "d",
+  "eli5": "The back azimuth is the direction of the same line seen from its other end. It differs from the forward azimuth by 180°: add 180° if the azimuth is less than 180°, otherwise subtract.",
+  "solution": "Back azimuth = 215.0° - 180° = 35.0°.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0019",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0019-c",
+  "topic": "surveying",
+  "subtopic": "surveying-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A line has an azimuth of 301.0°. What is its back azimuth?",
+  "options": [
+   {
+    "id": "a",
+    "text": "59.0 °"
+   },
+   {
+    "id": "b",
+    "text": "31.0 °"
+   },
+   {
+    "id": "c",
+    "text": "211.0 °"
+   },
+   {
+    "id": "d",
+    "text": "121.0 °"
+   }
+  ],
+  "answer": "d",
+  "eli5": "The back azimuth is the direction of the same line seen from its other end. It differs from the forward azimuth by 180°: add 180° if the azimuth is less than 180°, otherwise subtract.",
+  "solution": "Back azimuth = 301.0° - 180° = 121.0°.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0019",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0020",
+  "topic": "surveying",
+  "subtopic": "surveying-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Offsets from a baseline to a curved boundary, measured every 10 m, are 3.0, 5.0, 6.0, 4.0 and 2.0 m. Using Simpson's 1/3 rule, what is the area between the baseline and the boundary?",
+  "answer": {
+   "value": 176.67,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{2}"
+  },
+  "eli5": "Simpson's 1/3 rule fits parabolas through the offsets in pairs of intervals, so it needs an even number of intervals. The end offsets count once, odd-numbered interior offsets four times and even-numbered interior offsets twice.",
+  "solution": "A = \\frac{10}{3}(3.0 + 4(5.0) + 2(6.0) + 4(4.0) + 2.0) = \\frac{10}{3}(53.0) = 176.67 m^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Simpson's 1/3 rule"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0020",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "area"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0020-b",
+  "topic": "surveying",
+  "subtopic": "surveying-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Offsets from a baseline to a curved boundary, measured every 5 m, are 1.2, 2.5, 3.1, 2.8 and 1.5 m. Using Simpson's 1/3 rule, what is the area between the baseline and the boundary?",
+  "answer": {
+   "value": 50.17,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{2}"
+  },
+  "eli5": "Simpson's 1/3 rule fits parabolas through the offsets in pairs of intervals, so it needs an even number of intervals. The end offsets count once, odd-numbered interior offsets four times and even-numbered interior offsets twice.",
+  "solution": "A = \\frac{5}{3}(1.2 + 4(2.5) + 2(3.1) + 4(2.8) + 1.5) = \\frac{5}{3}(30.1) = 50.17 m^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Simpson's 1/3 rule"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0020",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "area"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0020-c",
+  "topic": "surveying",
+  "subtopic": "surveying-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Offsets from a baseline to a curved boundary, measured every 20 m, are 8.0, 11.0, 13.0, 10.0 and 6.0 m. Using Simpson's 1/3 rule, what is the area between the baseline and the boundary?",
+  "answer": {
+   "value": 826.67,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{2}"
+  },
+  "eli5": "Simpson's 1/3 rule fits parabolas through the offsets in pairs of intervals, so it needs an even number of intervals. The end offsets count once, odd-numbered interior offsets four times and even-numbered interior offsets twice.",
+  "solution": "A = \\frac{20}{3}(8.0 + 4(11.0) + 2(13.0) + 4(10.0) + 6.0) = \\frac{20}{3}(124.0) = 826.67 m^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Simpson's 1/3 rule"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0020",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "area"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0021",
+  "topic": "surveying",
+  "subtopic": "surveying-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A triangular parcel has sides of 130, 140 and 150 m. What is its area?",
+  "answer": {
+   "value": 8400.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{2}"
+  },
+  "eli5": "With three sides known and no angles, use Heron's formula: area = square root of s(s - a)(s - b)(s - c), where s is half the perimeter.",
+  "solution": "s = \\frac{130 + 140 + 150}{2} = 210.0 m.\n\nArea = \\sqrt{210.0(80.0)(70.0)(60.0)} = 8,400.0 m^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "area formulas"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0021",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "s",
+    "side slope (horizontal to 1 vertical), or half the perimeter"
+   ],
+   [
+    "a",
+    "side length"
+   ],
+   [
+    "b",
+    "base width"
+   ],
+   [
+    "c",
+    "side length, or the curvature and refraction correction"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0021-b",
+  "topic": "surveying",
+  "subtopic": "surveying-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A triangular parcel has sides of 60, 75 and 95 m. What is its area?",
+  "answer": {
+   "value": 2249.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{2}"
+  },
+  "eli5": "With three sides known and no angles, use Heron's formula: area = square root of s(s - a)(s - b)(s - c), where s is half the perimeter.",
+  "solution": "s = \\frac{60 + 75 + 95}{2} = 115.0 m.\n\nArea = \\sqrt{115.0(55.0)(40.0)(20.0)} = 2,249.4 m^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "area formulas"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0021",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "s",
+    "side slope (horizontal to 1 vertical), or half the perimeter"
+   ],
+   [
+    "a",
+    "side length"
+   ],
+   [
+    "b",
+    "base width"
+   ],
+   [
+    "c",
+    "side length, or the curvature and refraction correction"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0021-c",
+  "topic": "surveying",
+  "subtopic": "surveying-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A triangular parcel has sides of 85, 120 and 140 m. What is its area?",
+  "answer": {
+   "value": 5074.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{2}"
+  },
+  "eli5": "With three sides known and no angles, use Heron's formula: area = square root of s(s - a)(s - b)(s - c), where s is half the perimeter.",
+  "solution": "s = \\frac{85 + 120 + 140}{2} = 172.5 m.\n\nArea = \\sqrt{172.5(87.5)(52.5)(32.5)} = 5,074.8 m^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "area formulas"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0021",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "s",
+    "side slope (horizontal to 1 vertical), or half the perimeter"
+   ],
+   [
+    "a",
+    "side length"
+   ],
+   [
+    "b",
+    "base width"
+   ],
+   [
+    "c",
+    "side length, or the curvature and refraction correction"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0022",
+  "topic": "surveying",
+  "subtopic": "surveying-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A rectangular lot measures 300.0 ft by 450.0 ft. What is its area in acres?",
+  "answer": {
+   "value": 3.099,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "acres"
+  },
+  "eli5": "An acre is 43,560 square feet. Work out the area in square feet, then divide.",
+  "solution": "Area = 300.0 × 450.0 = 135,000 ft^{2}.\n\n\\frac{135,000}{43,560} = 3.099 acres.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0022",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0022-b",
+  "topic": "surveying",
+  "subtopic": "surveying-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A rectangular lot measures 660.0 ft by 330.0 ft. What is its area in acres?",
+  "answer": {
+   "value": 5.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "acres"
+  },
+  "eli5": "An acre is 43,560 square feet. Work out the area in square feet, then divide.",
+  "solution": "Area = 660.0 × 330.0 = 217,800 ft^{2}.\n\n\\frac{217,800}{43,560} = 5.000 acres.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0022",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0022-c",
+  "topic": "surveying",
+  "subtopic": "surveying-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A rectangular lot measures 208.7 ft by 208.7 ft. What is its area in acres?",
+  "answer": {
+   "value": 1.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "acres"
+  },
+  "eli5": "An acre is 43,560 square feet. Work out the area in square feet, then divide.",
+  "solution": "Area = 208.7 × 208.7 = 43,556 ft^{2}.\n\n\\frac{43,556}{43,560} = 1.000 acres.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0022",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0023",
+  "topic": "surveying",
+  "subtopic": "surveying-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An embankment needs 5,000 m^{3} of compacted fill. The borrow material shrinks by 12% when compacted. What bank volume must be excavated from the borrow pit?",
+  "answer": {
+   "value": 5682.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "Soil compacted in a fill usually occupies less volume than it did in the ground. Divide the compacted volume by (1 - shrinkage) to find the bank volume needed.",
+  "solution": "Bank volume = \\frac{5,000}{1 - 0.12} = 5,682 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0023",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0023-b",
+  "topic": "surveying",
+  "subtopic": "surveying-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An embankment needs 12,000 m^{3} of compacted fill. The borrow material shrinks by 15% when compacted. What bank volume must be excavated from the borrow pit?",
+  "answer": {
+   "value": 14118.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "Soil compacted in a fill usually occupies less volume than it did in the ground. Divide the compacted volume by (1 - shrinkage) to find the bank volume needed.",
+  "solution": "Bank volume = \\frac{12,000}{1 - 0.15} = 14,118 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0023",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0023-c",
+  "topic": "surveying",
+  "subtopic": "surveying-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An embankment needs 800 m^{3} of compacted fill. The borrow material shrinks by 8% when compacted. What bank volume must be excavated from the borrow pit?",
+  "answer": {
+   "value": 870.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "Soil compacted in a fill usually occupies less volume than it did in the ground. Divide the compacted volume by (1 - shrinkage) to find the bank volume needed.",
+  "solution": "Bank volume = \\frac{800}{1 - 0.08} = 870 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0023",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0024",
+  "topic": "surveying",
+  "subtopic": "surveying-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A roadway cut on level ground has a base width of 12.0 m, a centreline depth of 2.5 m and side slopes of 2.0 horizontal to 1 vertical. What is the cross-sectional area of the cut?",
+  "answer": {
+   "value": 42.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{2}"
+  },
+  "eli5": "A level section is a trapezoid: the base width plus a triangle on each side whose width is the side slope times the depth. Area = d(b + s d).",
+  "solution": "A = 2.5(12.0 + 2.0 × 2.5) = 2.5 × 17.00 = 42.50 m^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "earthwork formulas"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0024",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "d",
+    "depth or common interval"
+   ],
+   [
+    "b",
+    "base width"
+   ],
+   [
+    "s",
+    "side slope (horizontal to 1 vertical), or half the perimeter"
+   ],
+   [
+    "A",
+    "area"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0024-b",
+  "topic": "surveying",
+  "subtopic": "surveying-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A roadway cut on level ground has a base width of 10.0 m, a centreline depth of 1.8 m and side slopes of 3.0 horizontal to 1 vertical. What is the cross-sectional area of the cut?",
+  "answer": {
+   "value": 27.72,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{2}"
+  },
+  "eli5": "A level section is a trapezoid: the base width plus a triangle on each side whose width is the side slope times the depth. Area = d(b + s d).",
+  "solution": "A = 1.8(10.0 + 3.0 × 1.8) = 1.8 × 15.40 = 27.72 m^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "earthwork formulas"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0024",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "d",
+    "depth or common interval"
+   ],
+   [
+    "b",
+    "base width"
+   ],
+   [
+    "s",
+    "side slope (horizontal to 1 vertical), or half the perimeter"
+   ],
+   [
+    "A",
+    "area"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0024-c",
+  "topic": "surveying",
+  "subtopic": "surveying-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A roadway cut on level ground has a base width of 7.5 m, a centreline depth of 3.2 m and side slopes of 1.5 horizontal to 1 vertical. What is the cross-sectional area of the cut?",
+  "answer": {
+   "value": 39.36,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{2}"
+  },
+  "eli5": "A level section is a trapezoid: the base width plus a triangle on each side whose width is the side slope times the depth. Area = d(b + s d).",
+  "solution": "A = 3.2(7.5 + 1.5 × 3.2) = 3.2 × 12.30 = 39.36 m^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "earthwork formulas"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0024",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "d",
+    "depth or common interval"
+   ],
+   [
+    "b",
+    "base width"
+   ],
+   [
+    "s",
+    "side slope (horizontal to 1 vertical), or half the perimeter"
+   ],
+   [
+    "A",
+    "area"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0025",
+  "topic": "surveying",
+  "subtopic": "surveying-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A conical stockpile of aggregate has a base diameter of 20 m and a height of 6.0 m. What is its volume?",
+  "answer": {
+   "value": 628.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "The volume of a cone is one third of the base area times the height.",
+  "solution": "V = \\frac{π(10.0)^{2}(6.0)}{3} = 628.3 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0025",
+  "version": 1,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "V",
+    "volume"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0025-b",
+  "topic": "surveying",
+  "subtopic": "surveying-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A conical stockpile of aggregate has a base diameter of 12 m and a height of 4.5 m. What is its volume?",
+  "answer": {
+   "value": 169.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "The volume of a cone is one third of the base area times the height.",
+  "solution": "V = \\frac{π(6.0)^{2}(4.5)}{3} = 169.6 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0025",
+  "version": 2,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "V",
+    "volume"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0025-c",
+  "topic": "surveying",
+  "subtopic": "surveying-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A conical stockpile of aggregate has a base diameter of 35 m and a height of 9.0 m. What is its volume?",
+  "answer": {
+   "value": 2886.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "The volume of a cone is one third of the base area times the height.",
+  "solution": "V = \\frac{π(17.5)^{2}(9.0)}{3} = 2,886.3 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0025",
+  "version": 3,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "V",
+    "volume"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0026",
+  "topic": "surveying",
+  "subtopic": "surveying-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Point A is at N 1,000.00, E 2,000.00 and point B is at N 1,300.00, E 2,400.00, in metres. What is the horizontal distance from A to B?",
+  "answer": {
+   "value": 500.0,
+   "tolerance": 0.001,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "The difference in northings is the latitude of the line and the difference in eastings is its departure. The distance is the hypotenuse.",
+  "solution": "Latitude = 300.00 m, departure = 400.00 m.\n\nDistance = \\sqrt{300.00^{2} + 400.00^{2}} = 500.00 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "latitude",
+     "departure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0026",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "surveying-0026-b",
+  "topic": "surveying",
+  "subtopic": "surveying-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Point A is at N 5,250.50, E 3,100.20 and point B is at N 5,010.50, E 3,280.20, in metres. What is the horizontal distance from A to B?",
+  "answer": {
+   "value": 300.0,
+   "tolerance": 0.001,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "The difference in northings is the latitude of the line and the difference in eastings is its departure. The distance is the hypotenuse.",
+  "solution": "Latitude = -240.00 m, departure = 180.00 m.\n\nDistance = \\sqrt{-240.00^{2} + 180.00^{2}} = 300.00 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "latitude",
+     "departure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0026",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "surveying-0026-c",
+  "topic": "surveying",
+  "subtopic": "surveying-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Point A is at N 820.00, E 1,460.00 and point B is at N 1,000.00, E 1,535.00, in metres. What is the horizontal distance from A to B?",
+  "answer": {
+   "value": 195.0,
+   "tolerance": 0.001,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "The difference in northings is the latitude of the line and the difference in eastings is its departure. The distance is the hypotenuse.",
+  "solution": "Latitude = 180.00 m, departure = 75.00 m.\n\nDistance = \\sqrt{180.00^{2} + 75.00^{2}} = 195.00 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "latitude",
+     "departure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0026",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "surveying-0027",
+  "topic": "surveying",
+  "subtopic": "surveying-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A closed traverse 1,000 m long has a misclosure of 0.030 m in latitude and 0.040 m in departure. Its relative precision is 1 in N. What is N?",
+  "answer": {
+   "value": 20000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The linear misclosure is the hypotenuse of the latitude and departure misclosures. Relative precision is the perimeter divided by that misclosure, written as 1 in N.",
+  "solution": "Misclosure = \\sqrt{0.030^{2} + 0.040^{2}} = 0.0500 m.\n\nN = \\frac{1,000}{0.0500} = 20,000.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "latitude",
+     "departure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0027",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "N",
+    "northing, or the relative precision denominator"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0027-b",
+  "topic": "surveying",
+  "subtopic": "surveying-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A closed traverse 850 m long has a misclosure of 0.060 m in latitude and 0.080 m in departure. Its relative precision is 1 in N. What is N?",
+  "answer": {
+   "value": 8500.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The linear misclosure is the hypotenuse of the latitude and departure misclosures. Relative precision is the perimeter divided by that misclosure, written as 1 in N.",
+  "solution": "Misclosure = \\sqrt{0.060^{2} + 0.080^{2}} = 0.1000 m.\n\nN = \\frac{850}{0.1000} = 8,500.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "latitude",
+     "departure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0027",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "N",
+    "northing, or the relative precision denominator"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0027-c",
+  "topic": "surveying",
+  "subtopic": "surveying-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A closed traverse 925 m long has a misclosure of 0.012 m in latitude and 0.035 m in departure. Its relative precision is 1 in N. What is N?",
+  "answer": {
+   "value": 25000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The linear misclosure is the hypotenuse of the latitude and departure misclosures. Relative precision is the perimeter divided by that misclosure, written as 1 in N.",
+  "solution": "Misclosure = \\sqrt{0.012^{2} + 0.035^{2}} = 0.0370 m.\n\nN = \\frac{925}{0.0370} = 25,000.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "latitude",
+     "departure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0027",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "N",
+    "northing, or the relative precision denominator"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0028",
+  "topic": "surveying",
+  "subtopic": "surveying-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A ground distance of 1,520.00 m is to be reduced to the state plane grid. The combined scale factor is 0.99985. What is the grid distance?",
+  "answer": {
+   "value": 1519.77,
+   "tolerance": 3e-05,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "State plane coordinates lie on a projection surface. The combined factor allows for both the elevation of the ground above the ellipsoid and the scale of the projection at that place: grid = ground × combined factor.",
+  "solution": "Grid distance = 1,520.00 × 0.99985 = 1,519.77 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0028",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0028-b",
+  "topic": "surveying",
+  "subtopic": "surveying-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A ground distance of 2,640.50 m is to be reduced to the state plane grid. The combined scale factor is 0.99992. What is the grid distance?",
+  "answer": {
+   "value": 2640.29,
+   "tolerance": 3e-05,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "State plane coordinates lie on a projection surface. The combined factor allows for both the elevation of the ground above the ellipsoid and the scale of the projection at that place: grid = ground × combined factor.",
+  "solution": "Grid distance = 2,640.50 × 0.99992 = 2,640.29 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0028",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0028-c",
+  "topic": "surveying",
+  "subtopic": "surveying-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A ground distance of 825.25 m is to be reduced to the state plane grid. The combined scale factor is 1.00012. What is the grid distance?",
+  "answer": {
+   "value": 825.35,
+   "tolerance": 3e-05,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "State plane coordinates lie on a projection surface. The combined factor allows for both the elevation of the ground above the ellipsoid and the scale of the projection at that place: grid = ground × combined factor.",
+  "solution": "Grid distance = 825.25 × 1.00012 = 825.35 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0028",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0029",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A level run starts on a benchmark at 100.00 m. The readings are: backsight 1.520, foresight 2.310 on a turning point, then backsight 0.980 on the turning point and foresight 1.760 on the new point. What is the new point's elevation?",
+  "answer": {
+   "value": 98.43,
+   "tolerance": 0.0002,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Each set-up adds the backsight to get the height of instrument and subtracts the foresight to get the next elevation. Over the whole run, elevation = start + sum of backsights - sum of foresights.",
+  "solution": "Elevation = 100.00 + (1.520 + 0.980) - (2.310 + 1.760) = 100.00 + 2.500 - 4.070 = 98.430 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0029",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0029-b",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A level run starts on a benchmark at 45.72 m. The readings are: backsight 2.105, foresight 0.672 on a turning point, then backsight 1.980 on the turning point and foresight 1.254 on the new point. What is the new point's elevation?",
+  "answer": {
+   "value": 47.879,
+   "tolerance": 0.0002,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Each set-up adds the backsight to get the height of instrument and subtracts the foresight to get the next elevation. Over the whole run, elevation = start + sum of backsights - sum of foresights.",
+  "solution": "Elevation = 45.72 + (2.105 + 1.980) - (0.672 + 1.254) = 45.72 + 4.085 - 1.926 = 47.879 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0029",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0029-c",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A level run starts on a benchmark at 212.35 m. The readings are: backsight 0.845, foresight 2.910 on a turning point, then backsight 1.215 on the turning point and foresight 3.005 on the new point. What is the new point's elevation?",
+  "answer": {
+   "value": 208.495,
+   "tolerance": 0.0002,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Each set-up adds the backsight to get the height of instrument and subtracts the foresight to get the next elevation. Over the whole run, elevation = start + sum of backsights - sum of foresights.",
+  "solution": "Elevation = 212.35 + (0.845 + 1.215) - (2.910 + 3.005) = 212.35 + 2.060 - 5.915 = 208.495 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0029",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0030",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Using c = 0.0675 K^{2}, with c in metres and K in kilometres, what is the combined correction for earth curvature and refraction on a level sight 1.2 km long?",
+  "answer": {
+   "value": 0.0972,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Over a long sight the level surface curves away below the line of sight, while refraction bends the line slightly back down. The combined effect grows with the square of the distance, which is why backsight and foresight distances are kept equal.",
+  "solution": "c = 0.0675(1.2)^{2} = 0.0972 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0030",
+  "version": 1,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "c",
+    "side length, or the curvature and refraction correction"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0030-b",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Using c = 0.0675 K^{2}, with c in metres and K in kilometres, what is the combined correction for earth curvature and refraction on a level sight 0.8 km long?",
+  "answer": {
+   "value": 0.0432,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Over a long sight the level surface curves away below the line of sight, while refraction bends the line slightly back down. The combined effect grows with the square of the distance, which is why backsight and foresight distances are kept equal.",
+  "solution": "c = 0.0675(0.8)^{2} = 0.0432 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0030",
+  "version": 2,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "c",
+    "side length, or the curvature and refraction correction"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0030-c",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Using c = 0.0675 K^{2}, with c in metres and K in kilometres, what is the combined correction for earth curvature and refraction on a level sight 2.5 km long?",
+  "answer": {
+   "value": 0.4219,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Over a long sight the level surface curves away below the line of sight, while refraction bends the line slightly back down. The combined effect grows with the square of the distance, which is why backsight and foresight distances are kept equal.",
+  "solution": "c = 0.0675(2.5)^{2} = 0.4219 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0030",
+  "version": 3,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "c",
+    "side length, or the curvature and refraction correction"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0031",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A profile grade line passes through elevation 150.00 m and runs at a grade of -2.5%. What is its elevation 350 m farther along?",
+  "answer": {
+   "value": 141.25,
+   "tolerance": 0.0005,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "A grade in percent is metres of rise per 100 m of run; a negative grade falls. Elevation change = grade / 100 × distance.",
+  "solution": "Elevation = 150.00 + \\frac{-2.5}{100}(350) = 150.00 + (-8.75) = 141.25 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0031",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0031-b",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A profile grade line passes through elevation 82.40 m and runs at a grade of 1.8%. What is its elevation 225 m farther along?",
+  "answer": {
+   "value": 86.45,
+   "tolerance": 0.0005,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "A grade in percent is metres of rise per 100 m of run; a negative grade falls. Elevation change = grade / 100 × distance.",
+  "solution": "Elevation = 82.40 + \\frac{1.8}{100}(225) = 82.40 + (4.05) = 86.45 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0031",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0031-c",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A profile grade line passes through elevation 310.75 m and runs at a grade of 4.0%. What is its elevation 480 m farther along?",
+  "answer": {
+   "value": 329.95,
+   "tolerance": 0.0005,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "A grade in percent is metres of rise per 100 m of run; a negative grade falls. Elevation change = grade / 100 × distance.",
+  "solution": "Elevation = 310.75 + \\frac{4.0}{100}(480) = 310.75 + (19.20) = 329.95 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0031",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "surveying-0032",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A total station with a height of instrument of 1.55 m measures a slope distance of 85.3 m at a vertical angle of +6.50° to a prism on a 2.00 m rod. How much higher is the ground at the rod than the ground at the instrument?",
+  "answer": {
+   "value": 9.21,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "The vertical component of the slope distance is S sin(vertical angle). Add the instrument height, because the measurement starts above the ground, and subtract the rod height, because it ends above the ground.",
+  "solution": "Difference = 85.3 sin 6.50° + 1.55 - 2.00 = 9.656 + 1.55 - 2.00 = 9.21 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "trigonometry"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0032",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "surveying-0032-b",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A total station with a height of instrument of 1.48 m measures a slope distance of 142.0 m at a vertical angle of +3.25° to a prism on a 1.48 m rod. How much higher is the ground at the rod than the ground at the instrument?",
+  "answer": {
+   "value": 8.05,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "The vertical component of the slope distance is S sin(vertical angle). Add the instrument height, because the measurement starts above the ground, and subtract the rod height, because it ends above the ground.",
+  "solution": "Difference = 142.0 sin 3.25° + 1.48 - 1.48 = 8.050 + 1.48 - 1.48 = 8.05 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "trigonometry"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0032",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "surveying-0032-c",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A total station with a height of instrument of 1.62 m measures a slope distance of 60.5 m at a vertical angle of +12.00° to a prism on a 1.30 m rod. How much higher is the ground at the rod than the ground at the instrument?",
+  "answer": {
+   "value": 12.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "The vertical component of the slope distance is S sin(vertical angle). Add the instrument height, because the measurement starts above the ground, and subtract the rod height, because it ends above the ground.",
+  "solution": "Difference = 60.5 sin 12.00° + 1.62 - 1.30 = 12.579 + 1.62 - 1.30 = 12.90 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "trigonometry"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0032",
+  "version": 3,
+  "versions": 3,
   "lookup": true
  }
 ]

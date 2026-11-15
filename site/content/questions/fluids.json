@@ -48,7 +48,17 @@
   "family": "fluids-0001",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "p",
+    "pressure"
+   ],
+   [
+    "h",
+    "depth below the surface, or head"
+   ]
+  ]
  },
  {
   "id": "fluids-0001-b",
@@ -99,7 +109,17 @@
   "family": "fluids-0001",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "p",
+    "pressure"
+   ],
+   [
+    "h",
+    "depth below the surface, or head"
+   ]
+  ]
  },
  {
   "id": "fluids-0001-c",
@@ -150,7 +170,17 @@
   "family": "fluids-0001",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "p",
+    "pressure"
+   ],
+   [
+    "h",
+    "depth below the surface, or head"
+   ]
+  ]
  },
  {
   "id": "fluids-0001-d",
@@ -201,7 +231,17 @@
   "family": "fluids-0001",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "p",
+    "pressure"
+   ],
+   [
+    "h",
+    "depth below the surface, or head"
+   ]
+  ]
  },
  {
   "id": "fluids-0002",
@@ -456,7 +496,33 @@
    "svg": "<path d='M30 40 L170 40 L230 58 L370 58 L370 92 L230 92 L170 110 L30 110 Z' fill='#568CBB' fill-opacity='.25' stroke='#00242E' stroke-width='2'/><line x1='60' y1='75' x2='110' y2='75' stroke='#00574A' stroke-width='3'/><path d='M118 75 L104 69 L104 81 Z' fill='#00574A'/><text x='100' y='30' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>200 mm</text><text x='300' y='48' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>100 mm</text><text x='100' y='130' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 1</text><text x='300' y='112' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 2</text>",
    "alt": "A pipe narrowing from 200 mm to 100 mm in the direction of flow."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A_{1}",
+    "flow area at section 1"
+   ],
+   [
+    "V_{1}",
+    "velocity at section 1"
+   ],
+   [
+    "A_{2}",
+    "flow area at section 2 (the throat)"
+   ],
+   [
+    "V_{2}",
+    "velocity at section 2"
+   ],
+   [
+    "d_{1}",
+    "diameter at section 1"
+   ],
+   [
+    "d_{2}",
+    "diameter at section 2"
+   ]
+  ]
  },
  {
   "id": "fluids-0003-b",
@@ -499,7 +565,33 @@
    "svg": "<path d='M30 40 L170 40 L230 58 L370 58 L370 92 L230 92 L170 110 L30 110 Z' fill='#568CBB' fill-opacity='.25' stroke='#00242E' stroke-width='2'/><line x1='60' y1='75' x2='110' y2='75' stroke='#00574A' stroke-width='3'/><path d='M118 75 L104 69 L104 81 Z' fill='#00574A'/><text x='100' y='30' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>300 mm</text><text x='300' y='48' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>150 mm</text><text x='100' y='130' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 1</text><text x='300' y='112' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 2</text>",
    "alt": "A pipe narrowing from 300 mm to 150 mm in the direction of flow."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A_{1}",
+    "flow area at section 1"
+   ],
+   [
+    "V_{1}",
+    "velocity at section 1"
+   ],
+   [
+    "A_{2}",
+    "flow area at section 2 (the throat)"
+   ],
+   [
+    "V_{2}",
+    "velocity at section 2"
+   ],
+   [
+    "d_{1}",
+    "diameter at section 1"
+   ],
+   [
+    "d_{2}",
+    "diameter at section 2"
+   ]
+  ]
  },
  {
   "id": "fluids-0003-c",
@@ -542,7 +634,33 @@
    "svg": "<path d='M30 40 L170 40 L230 58 L370 58 L370 92 L230 92 L170 110 L30 110 Z' fill='#568CBB' fill-opacity='.25' stroke='#00242E' stroke-width='2'/><line x1='60' y1='75' x2='110' y2='75' stroke='#00574A' stroke-width='3'/><path d='M118 75 L104 69 L104 81 Z' fill='#00574A'/><text x='100' y='30' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>150 mm</text><text x='300' y='48' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>100 mm</text><text x='100' y='130' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 1</text><text x='300' y='112' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 2</text>",
    "alt": "A pipe narrowing from 150 mm to 100 mm in the direction of flow."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A_{1}",
+    "flow area at section 1"
+   ],
+   [
+    "V_{1}",
+    "velocity at section 1"
+   ],
+   [
+    "A_{2}",
+    "flow area at section 2 (the throat)"
+   ],
+   [
+    "V_{2}",
+    "velocity at section 2"
+   ],
+   [
+    "d_{1}",
+    "diameter at section 1"
+   ],
+   [
+    "d_{2}",
+    "diameter at section 2"
+   ]
+  ]
  },
  {
   "id": "fluids-0003-d",
@@ -585,7 +703,33 @@
    "svg": "<path d='M30 40 L170 40 L230 58 L370 58 L370 92 L230 92 L170 110 L30 110 Z' fill='#568CBB' fill-opacity='.25' stroke='#00242E' stroke-width='2'/><line x1='60' y1='75' x2='110' y2='75' stroke='#00574A' stroke-width='3'/><path d='M118 75 L104 69 L104 81 Z' fill='#00574A'/><text x='100' y='30' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>400 mm</text><text x='300' y='48' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>200 mm</text><text x='100' y='130' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 1</text><text x='300' y='112' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 2</text>",
    "alt": "A pipe narrowing from 400 mm to 200 mm in the direction of flow."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A_{1}",
+    "flow area at section 1"
+   ],
+   [
+    "V_{1}",
+    "velocity at section 1"
+   ],
+   [
+    "A_{2}",
+    "flow area at section 2 (the throat)"
+   ],
+   [
+    "V_{2}",
+    "velocity at section 2"
+   ],
+   [
+    "d_{1}",
+    "diameter at section 1"
+   ],
+   [
+    "d_{2}",
+    "diameter at section 2"
+   ]
+  ]
  },
  {
   "id": "fluids-0004",
@@ -637,7 +781,13 @@
   "family": "fluids-0004",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "velocity"
+   ]
+  ]
  },
  {
   "id": "fluids-0004-b",
@@ -689,7 +839,13 @@
   "family": "fluids-0004",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "velocity"
+   ]
+  ]
  },
  {
   "id": "fluids-0004-c",
@@ -741,7 +897,13 @@
   "family": "fluids-0004",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "velocity"
+   ]
+  ]
  },
  {
   "id": "fluids-0004-d",
@@ -793,7 +955,13 @@
   "family": "fluids-0004",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "velocity"
+   ]
+  ]
  },
  {
   "id": "fluids-0005",
@@ -1014,7 +1182,29 @@
    "svg": "<path d='M60 20 L60 150 L220 150 L220 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='62' y='40' width='156' height='108' fill='#568CBB' fill-opacity='.3'/><path d='M220 126 Q280 128 320 168' fill='none' stroke='#568CBB' stroke-width='5'/><line x1='250' y1='40' x2='250' y2='126' stroke='#00242E'/><line x1='220' y1='40' x2='260' y2='40' stroke='#00242E' stroke-dasharray='4 4'/><text x='258' y='86' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='300' y='122' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>50 mm orifice</text>",
    "alt": "A tank discharging through a 50 mm orifice 3 m below the water surface."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{d}",
+    "discharge coefficient"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "A",
+    "area"
+   ],
+   [
+    "h",
+    "depth below the surface, or head"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "fluids-0006-b",
@@ -1055,7 +1245,29 @@
    "svg": "<path d='M60 20 L60 150 L220 150 L220 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='62' y='40' width='156' height='108' fill='#568CBB' fill-opacity='.3'/><path d='M220 126 Q280 128 320 168' fill='none' stroke='#568CBB' stroke-width='5'/><line x1='250' y1='40' x2='250' y2='126' stroke='#00242E'/><line x1='220' y1='40' x2='260' y2='40' stroke='#00242E' stroke-dasharray='4 4'/><text x='258' y='86' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>2 m</text><text x='300' y='122' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>75 mm orifice</text>",
    "alt": "A tank discharging through a 75 mm orifice 2 m below the water surface."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{d}",
+    "discharge coefficient"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "A",
+    "area"
+   ],
+   [
+    "h",
+    "depth below the surface, or head"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "fluids-0006-c",
@@ -1096,7 +1308,29 @@
    "svg": "<path d='M60 20 L60 150 L220 150 L220 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='62' y='40' width='156' height='108' fill='#568CBB' fill-opacity='.3'/><path d='M220 126 Q280 128 320 168' fill='none' stroke='#568CBB' stroke-width='5'/><line x1='250' y1='40' x2='250' y2='126' stroke='#00242E'/><line x1='220' y1='40' x2='260' y2='40' stroke='#00242E' stroke-dasharray='4 4'/><text x='258' y='86' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>5 m</text><text x='300' y='122' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>40 mm orifice</text>",
    "alt": "A tank discharging through a 40 mm orifice 5 m below the water surface."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{d}",
+    "discharge coefficient"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "A",
+    "area"
+   ],
+   [
+    "h",
+    "depth below the surface, or head"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "fluids-0006-d",
@@ -1137,7 +1371,29 @@
    "svg": "<path d='M60 20 L60 150 L220 150 L220 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='62' y='40' width='156' height='108' fill='#568CBB' fill-opacity='.3'/><path d='M220 126 Q280 128 320 168' fill='none' stroke='#568CBB' stroke-width='5'/><line x1='250' y1='40' x2='250' y2='126' stroke='#00242E'/><line x1='220' y1='40' x2='260' y2='40' stroke='#00242E' stroke-dasharray='4 4'/><text x='258' y='86' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1.5 m</text><text x='300' y='122' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>100 mm orifice</text>",
    "alt": "A tank discharging through a 100 mm orifice 1.5 m below the water surface."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{d}",
+    "discharge coefficient"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "A",
+    "area"
+   ],
+   [
+    "h",
+    "depth below the surface, or head"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "fluids-0007",
@@ -1186,7 +1442,17 @@
   "family": "fluids-0007",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "velocity"
+   ],
+   [
+    "D",
+    "pipe diameter"
+   ]
+  ]
  },
  {
   "id": "fluids-0007-b",
@@ -1235,7 +1501,17 @@
   "family": "fluids-0007",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "velocity"
+   ],
+   [
+    "D",
+    "pipe diameter"
+   ]
+  ]
  },
  {
   "id": "fluids-0007-c",
@@ -1284,7 +1560,17 @@
   "family": "fluids-0007",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "velocity"
+   ],
+   [
+    "D",
+    "pipe diameter"
+   ]
+  ]
  },
  {
   "id": "fluids-0007-d",
@@ -1333,7 +1619,17 @@
   "family": "fluids-0007",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "velocity"
+   ],
+   [
+    "D",
+    "pipe diameter"
+   ]
+  ]
  },
  {
   "id": "fluids-0008",
@@ -1369,7 +1665,17 @@
   "family": "fluids-0008",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "m",
+    "mass"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "fluids-0008-b",
@@ -1405,7 +1711,17 @@
   "family": "fluids-0008",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "m",
+    "mass"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "fluids-0008-c",
@@ -1441,7 +1757,17 @@
   "family": "fluids-0008",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "m",
+    "mass"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "fluids-0008-d",
@@ -1477,7 +1803,17 @@
   "family": "fluids-0008",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "m",
+    "mass"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "fluids-0009",
@@ -1730,6 +2066,11 @@
   "family": "fluids-0010",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force = weight of water displaced</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>A floating body: buoyant force equals weight</text>",
+   "alt": "Free-body diagram showing Weight, Buoyant force = weight of water displaced."
+  },
   "lookup": true
  },
  {
@@ -1767,6 +2108,11 @@
   "family": "fluids-0010",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force = weight of water displaced</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>A floating body: buoyant force equals weight</text>",
+   "alt": "Free-body diagram showing Weight, Buoyant force = weight of water displaced."
+  },
   "lookup": true
  },
  {
@@ -1804,6 +2150,11 @@
   "family": "fluids-0010",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force = weight of water displaced</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>A floating body: buoyant force equals weight</text>",
+   "alt": "Free-body diagram showing Weight, Buoyant force = weight of water displaced."
+  },
   "lookup": true
  },
  {
@@ -1841,6 +2192,11 @@
   "family": "fluids-0010",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force = weight of water displaced</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>A floating body: buoyant force equals weight</text>",
+   "alt": "Free-body diagram showing Weight, Buoyant force = weight of water displaced."
+  },
   "lookup": true
  },
  {
@@ -1891,7 +2247,25 @@
   "family": "fluids-0011",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "p_{2}",
+    "pressure at section 2"
+   ],
+   [
+    "p_{1}",
+    "pressure at section 1"
+   ],
+   [
+    "V_{2}",
+    "velocity at section 2"
+   ],
+   [
+    "V_{1}",
+    "velocity at section 1"
+   ]
+  ]
  },
  {
   "id": "fluids-0011-b",
@@ -1941,7 +2315,25 @@
   "family": "fluids-0011",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "p_{2}",
+    "pressure at section 2"
+   ],
+   [
+    "p_{1}",
+    "pressure at section 1"
+   ],
+   [
+    "V_{2}",
+    "velocity at section 2"
+   ],
+   [
+    "V_{1}",
+    "velocity at section 1"
+   ]
+  ]
  },
  {
   "id": "fluids-0011-c",
@@ -1991,7 +2383,25 @@
   "family": "fluids-0011",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "p_{2}",
+    "pressure at section 2"
+   ],
+   [
+    "p_{1}",
+    "pressure at section 1"
+   ],
+   [
+    "V_{2}",
+    "velocity at section 2"
+   ],
+   [
+    "V_{1}",
+    "velocity at section 1"
+   ]
+  ]
  },
  {
   "id": "fluids-0011-d",
@@ -2041,7 +2451,25 @@
   "family": "fluids-0011",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "p_{2}",
+    "pressure at section 2"
+   ],
+   [
+    "p_{1}",
+    "pressure at section 1"
+   ],
+   [
+    "V_{2}",
+    "velocity at section 2"
+   ],
+   [
+    "V_{1}",
+    "velocity at section 1"
+   ]
+  ]
  },
  {
   "id": "fluids-0012",
@@ -2077,7 +2505,25 @@
   "family": "fluids-0012",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "F",
+    "force"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "V",
+    "velocity"
+   ],
+   [
+    "A",
+    "area"
+   ]
+  ]
  },
  {
   "id": "fluids-0012-b",
@@ -2113,7 +2559,25 @@
   "family": "fluids-0012",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "F",
+    "force"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "V",
+    "velocity"
+   ],
+   [
+    "A",
+    "area"
+   ]
+  ]
  },
  {
   "id": "fluids-0012-c",
@@ -2149,7 +2613,25 @@
   "family": "fluids-0012",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "F",
+    "force"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "V",
+    "velocity"
+   ],
+   [
+    "A",
+    "area"
+   ]
+  ]
  },
  {
   "id": "fluids-0012-d",
@@ -2185,7 +2667,25 @@
   "family": "fluids-0012",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "F",
+    "force"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "V",
+    "velocity"
+   ],
+   [
+    "A",
+    "area"
+   ]
+  ]
  },
  {
   "id": "fluids-0013",
@@ -2235,7 +2735,25 @@
   "family": "fluids-0013",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "h_{f}",
+    "head lost to friction"
+   ],
+   [
+    "f",
+    "Darcy friction factor"
+   ],
+   [
+    "L",
+    "pipe length"
+   ],
+   [
+    "V",
+    "velocity"
+   ]
+  ]
  },
  {
   "id": "fluids-0013-b",
@@ -2285,7 +2803,25 @@
   "family": "fluids-0013",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "h_{f}",
+    "head lost to friction"
+   ],
+   [
+    "f",
+    "Darcy friction factor"
+   ],
+   [
+    "L",
+    "pipe length"
+   ],
+   [
+    "V",
+    "velocity"
+   ]
+  ]
  },
  {
   "id": "fluids-0013-c",
@@ -2335,7 +2871,25 @@
   "family": "fluids-0013",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "h_{f}",
+    "head lost to friction"
+   ],
+   [
+    "f",
+    "Darcy friction factor"
+   ],
+   [
+    "L",
+    "pipe length"
+   ],
+   [
+    "V",
+    "velocity"
+   ]
+  ]
  },
  {
   "id": "fluids-0013-d",
@@ -2385,7 +2939,25 @@
   "family": "fluids-0013",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "h_{f}",
+    "head lost to friction"
+   ],
+   [
+    "f",
+    "Darcy friction factor"
+   ],
+   [
+    "L",
+    "pipe length"
+   ],
+   [
+    "V",
+    "velocity"
+   ]
+  ]
  },
  {
   "id": "fluids-0014",
@@ -2422,7 +2994,29 @@
   "family": "fluids-0014",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "F_{x}",
+    "force in the direction of the incoming jet"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "A",
+    "area"
+   ],
+   [
+    "V",
+    "velocity"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "fluids-0014-b",
@@ -2459,7 +3053,29 @@
   "family": "fluids-0014",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "F_{x}",
+    "force in the direction of the incoming jet"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "A",
+    "area"
+   ],
+   [
+    "V",
+    "velocity"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "fluids-0014-c",
@@ -2496,7 +3112,29 @@
   "family": "fluids-0014",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "F_{x}",
+    "force in the direction of the incoming jet"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "A",
+    "area"
+   ],
+   [
+    "V",
+    "velocity"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "fluids-0014-d",
@@ -2533,7 +3171,29 @@
   "family": "fluids-0014",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "F_{x}",
+    "force in the direction of the incoming jet"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "A",
+    "area"
+   ],
+   [
+    "V",
+    "velocity"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "fluids-0015",
@@ -2714,7 +3374,17 @@
   "family": "fluids-0016",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "p",
+    "pressure"
+   ],
+   [
+    "A",
+    "area"
+   ]
+  ]
  },
  {
   "id": "fluids-0016-b",
@@ -2751,7 +3421,17 @@
   "family": "fluids-0016",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "p",
+    "pressure"
+   ],
+   [
+    "A",
+    "area"
+   ]
+  ]
  },
  {
   "id": "fluids-0016-c",
@@ -2788,7 +3468,17 @@
   "family": "fluids-0016",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "p",
+    "pressure"
+   ],
+   [
+    "A",
+    "area"
+   ]
+  ]
  },
  {
   "id": "fluids-0016-d",
@@ -2825,7 +3515,17 @@
   "family": "fluids-0016",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "p",
+    "pressure"
+   ],
+   [
+    "A",
+    "area"
+   ]
+  ]
  },
  {
   "id": "fluids-0017",
@@ -2862,6 +3562,11 @@
   "family": "fluids-0017",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Raft weight + cargo</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force on the whole volume</text>",
+   "alt": "Free-body diagram showing Raft weight + cargo, Buoyant force on the whole volume."
+  },
   "lookup": true
  },
  {
@@ -2899,6 +3604,11 @@
   "family": "fluids-0017",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Raft weight + cargo</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force on the whole volume</text>",
+   "alt": "Free-body diagram showing Raft weight + cargo, Buoyant force on the whole volume."
+  },
   "lookup": true
  },
  {
@@ -2936,6 +3646,11 @@
   "family": "fluids-0017",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Raft weight + cargo</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force on the whole volume</text>",
+   "alt": "Free-body diagram showing Raft weight + cargo, Buoyant force on the whole volume."
+  },
   "lookup": true
  },
  {
@@ -2973,6 +3688,1805 @@
   "family": "fluids-0017",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Raft weight + cargo</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force on the whole volume</text>",
+   "alt": "Free-body diagram showing Raft weight + cargo, Buoyant force on the whole volume."
+  },
   "lookup": true
+ },
+ {
+  "id": "fluids-0018",
+  "topic": "fluids",
+  "subtopic": "fluids-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A venturi meter in a 200 mm water pipe has a 100 mm throat. The piezometric head drops by 0.8 m between inlet and throat, and the meter coefficient is 0.98. What is the flow rate? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 31.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "A venturi speeds the flow up in its throat, and Bernoulli's equation turns the resulting drop in head into a velocity. Continuity brings in the area ratio: Q = C_{v} A_{2} × square root of (2 g × head drop / (1 - (A_{2}/A_{1})^{2})).",
+  "solution": "A_{2} = \\frac{π(0.100)^{2}}{4} = 0.00785 m^{2}, and (A_{2}/A_{1})^{2} = (100 / 200)^{4} = 0.0625.\n\nQ = 0.98(0.00785) \\sqrt{\\frac{2(9.81)(0.8)}{1 - 0.0625}} = 0.03149 m^{3}/s = 31.5 L/s.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "venturi meters"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0018",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{v}",
+    "venturi meter coefficient"
+   ],
+   [
+    "A_{2}",
+    "flow area at section 2 (the throat)"
+   ],
+   [
+    "A_{1}",
+    "flow area at section 1"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0018-b",
+  "topic": "fluids",
+  "subtopic": "fluids-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A venturi meter in a 300 mm water pipe has a 150 mm throat. The piezometric head drops by 0.5 m between inlet and throat, and the meter coefficient is 0.98. What is the flow rate? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 56.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "A venturi speeds the flow up in its throat, and Bernoulli's equation turns the resulting drop in head into a velocity. Continuity brings in the area ratio: Q = C_{v} A_{2} × square root of (2 g × head drop / (1 - (A_{2}/A_{1})^{2})).",
+  "solution": "A_{2} = \\frac{π(0.150)^{2}}{4} = 0.01767 m^{2}, and (A_{2}/A_{1})^{2} = (150 / 300)^{4} = 0.0625.\n\nQ = 0.98(0.01767) \\sqrt{\\frac{2(9.81)(0.5)}{1 - 0.0625}} = 0.05602 m^{3}/s = 56.0 L/s.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "venturi meters"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0018",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{v}",
+    "venturi meter coefficient"
+   ],
+   [
+    "A_{2}",
+    "flow area at section 2 (the throat)"
+   ],
+   [
+    "A_{1}",
+    "flow area at section 1"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0018-c",
+  "topic": "fluids",
+  "subtopic": "fluids-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A venturi meter in a 150 mm water pipe has a 90 mm throat. The piezometric head drops by 1.2 m between inlet and throat, and the meter coefficient is 0.98. What is the flow rate? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 32.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "A venturi speeds the flow up in its throat, and Bernoulli's equation turns the resulting drop in head into a velocity. Continuity brings in the area ratio: Q = C_{v} A_{2} × square root of (2 g × head drop / (1 - (A_{2}/A_{1})^{2})).",
+  "solution": "A_{2} = \\frac{π(0.090)^{2}}{4} = 0.00636 m^{2}, and (A_{2}/A_{1})^{2} = (90 / 150)^{4} = 0.1296.\n\nQ = 0.98(0.00636) \\sqrt{\\frac{2(9.81)(1.2)}{1 - 0.1296}} = 0.03243 m^{3}/s = 32.4 L/s.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "venturi meters"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0018",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{v}",
+    "venturi meter coefficient"
+   ],
+   [
+    "A_{2}",
+    "flow area at section 2 (the throat)"
+   ],
+   [
+    "A_{1}",
+    "flow area at section 1"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0019",
+  "topic": "fluids",
+  "subtopic": "fluids-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 90° V-notch weir has a head of 0.25 m above the bottom of the notch. Using Q = 1.40 H^{5/2} in SI units, what is the discharge?",
+  "answer": {
+   "value": 43.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "Flow through a triangular notch grows with the head to the 5/2 power, because both the depth and the width of the flow section increase with head. That makes a V-notch sensitive at low flows.",
+  "solution": "Q = 1.40(0.25)^{2.5} = 1.40 × 0.03125 = 0.04375 m^{3}/s = 43.8 L/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "weir formulas"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0019",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0019-b",
+  "topic": "fluids",
+  "subtopic": "fluids-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 90° V-notch weir has a head of 0.40 m above the bottom of the notch. Using Q = 1.40 H^{5/2} in SI units, what is the discharge?",
+  "answer": {
+   "value": 141.7,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "Flow through a triangular notch grows with the head to the 5/2 power, because both the depth and the width of the flow section increase with head. That makes a V-notch sensitive at low flows.",
+  "solution": "Q = 1.40(0.40)^{2.5} = 1.40 × 0.10119 = 0.14167 m^{3}/s = 141.7 L/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "weir formulas"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0019",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0019-c",
+  "topic": "fluids",
+  "subtopic": "fluids-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 90° V-notch weir has a head of 0.15 m above the bottom of the notch. Using Q = 1.40 H^{5/2} in SI units, what is the discharge?",
+  "answer": {
+   "value": 12.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "Flow through a triangular notch grows with the head to the 5/2 power, because both the depth and the width of the flow section increase with head. That makes a V-notch sensitive at low flows.",
+  "solution": "Q = 1.40(0.15)^{2.5} = 1.40 × 0.00871 = 0.01220 m^{3}/s = 12.2 L/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "weir formulas"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0019",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0020",
+  "topic": "fluids",
+  "subtopic": "fluids-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An orifice plate with a 50 mm opening and a discharge coefficient of 0.62 is installed in a water line. The pressure drop across it is 30 kPa. What is the flow rate? Take the density of water as 1,000 kg/m^{3} and ignore the approach velocity.",
+  "answer": {
+   "value": 9.43,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "An orifice turns pressure into velocity: the ideal velocity is the square root of (2 × pressure drop / density). The discharge coefficient allows for the contraction of the jet and for friction.",
+  "solution": "A = \\frac{π(0.050)^{2}}{4} = 0.001963 m^{2}.\n\nQ = 0.62(0.001963) \\sqrt{\\frac{2(30,000)}{1,000}} = 0.00943 m^{3}/s = 9.43 L/s.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "orifices"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0020",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "area"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0020-b",
+  "topic": "fluids",
+  "subtopic": "fluids-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An orifice plate with a 75 mm opening and a discharge coefficient of 0.62 is installed in a water line. The pressure drop across it is 18 kPa. What is the flow rate? Take the density of water as 1,000 kg/m^{3} and ignore the approach velocity.",
+  "answer": {
+   "value": 16.43,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "An orifice turns pressure into velocity: the ideal velocity is the square root of (2 × pressure drop / density). The discharge coefficient allows for the contraction of the jet and for friction.",
+  "solution": "A = \\frac{π(0.075)^{2}}{4} = 0.004418 m^{2}.\n\nQ = 0.62(0.004418) \\sqrt{\\frac{2(18,000)}{1,000}} = 0.01643 m^{3}/s = 16.43 L/s.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "orifices"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0020",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "area"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0020-c",
+  "topic": "fluids",
+  "subtopic": "fluids-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An orifice plate with a 40 mm opening and a discharge coefficient of 0.62 is installed in a water line. The pressure drop across it is 50 kPa. What is the flow rate? Take the density of water as 1,000 kg/m^{3} and ignore the approach velocity.",
+  "answer": {
+   "value": 7.79,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "An orifice turns pressure into velocity: the ideal velocity is the square root of (2 × pressure drop / density). The discharge coefficient allows for the contraction of the jet and for friction.",
+  "solution": "A = \\frac{π(0.040)^{2}}{4} = 0.001257 m^{2}.\n\nQ = 0.62(0.001257) \\sqrt{\\frac{2(50,000)}{1,000}} = 0.00779 m^{3}/s = 7.79 L/s.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "orifices"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0020",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "area"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0021",
+  "topic": "fluids",
+  "subtopic": "fluids-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A clean glass tube with an inside diameter of 1.0 mm stands in water. The surface tension is 0.0728 N/m and the contact angle is 0°. How high does the water rise in the tube? Use 9,810 N/m^{3} for water.",
+  "answer": {
+   "value": 29.7,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "Surface tension pulling up around the tube's wall supports the weight of the raised column: h = 4 (surface tension) cos(contact angle) / (specific weight × diameter). Narrower tubes give a higher rise.",
+  "solution": "h = \\frac{4(0.0728)(1)}{9,810(0.0010)} = 0.02968 m = 29.7 mm.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "capillary rise"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0021",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "h",
+    "depth below the surface, or head"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0021-b",
+  "topic": "fluids",
+  "subtopic": "fluids-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A clean glass tube with an inside diameter of 0.5 mm stands in water. The surface tension is 0.0728 N/m and the contact angle is 0°. How high does the water rise in the tube? Use 9,810 N/m^{3} for water.",
+  "answer": {
+   "value": 59.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "Surface tension pulling up around the tube's wall supports the weight of the raised column: h = 4 (surface tension) cos(contact angle) / (specific weight × diameter). Narrower tubes give a higher rise.",
+  "solution": "h = \\frac{4(0.0728)(1)}{9,810(0.0005)} = 0.05937 m = 59.4 mm.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "capillary rise"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0021",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "h",
+    "depth below the surface, or head"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0021-c",
+  "topic": "fluids",
+  "subtopic": "fluids-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A clean glass tube with an inside diameter of 2.5 mm stands in water. The surface tension is 0.0712 N/m and the contact angle is 0°. How high does the water rise in the tube? Use 9,810 N/m^{3} for water.",
+  "answer": {
+   "value": 11.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "Surface tension pulling up around the tube's wall supports the weight of the raised column: h = 4 (surface tension) cos(contact angle) / (specific weight × diameter). Narrower tubes give a higher rise.",
+  "solution": "h = \\frac{4(0.0712)(1)}{9,810(0.0025)} = 0.01161 m = 11.6 mm.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "capillary rise"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0021",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "h",
+    "depth below the surface, or head"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0022",
+  "topic": "fluids",
+  "subtopic": "fluids-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A flat plate with an area of 0.50 m^{2} slides at 2.0 m/s over a fixed surface on an oil film 2.0 mm thick. The oil's dynamic viscosity is 0.25 Pa·s. What force keeps the plate moving?",
+  "answer": {
+   "value": 125.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "For a thin film the velocity varies linearly across the gap, so the shear stress is viscosity times velocity divided by film thickness (Newton's law of viscosity). Force is stress times area.",
+  "solution": "Shear stress = \\frac{0.25(2.0)}{0.0020} = 250.0 Pa.\n\nForce = 250.0 × 0.50 = 125.0 N.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "stress, pressure, and viscosity"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0022",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0022-b",
+  "topic": "fluids",
+  "subtopic": "fluids-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A flat plate with an area of 0.20 m^{2} slides at 0.5 m/s over a fixed surface on an oil film 0.5 mm thick. The oil's dynamic viscosity is 0.08 Pa·s. What force keeps the plate moving?",
+  "answer": {
+   "value": 16.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "For a thin film the velocity varies linearly across the gap, so the shear stress is viscosity times velocity divided by film thickness (Newton's law of viscosity). Force is stress times area.",
+  "solution": "Shear stress = \\frac{0.08(0.5)}{0.0005} = 80.0 Pa.\n\nForce = 80.0 × 0.20 = 16.0 N.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "stress, pressure, and viscosity"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0022",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0022-c",
+  "topic": "fluids",
+  "subtopic": "fluids-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A flat plate with an area of 0.05 m^{2} slides at 0.3 m/s over a fixed surface on an oil film 1.5 mm thick. The oil's dynamic viscosity is 1.20 Pa·s. What force keeps the plate moving?",
+  "answer": {
+   "value": 12.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "For a thin film the velocity varies linearly across the gap, so the shear stress is viscosity times velocity divided by film thickness (Newton's law of viscosity). Force is stress times area.",
+  "solution": "Shear stress = \\frac{1.20(0.3)}{0.0015} = 240.0 Pa.\n\nForce = 240.0 × 0.05 = 12.0 N.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "stress, pressure, and viscosity"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0022",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0023",
+  "topic": "fluids",
+  "subtopic": "fluids-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sample weighs 50.0 N in air and 30.0 N when fully submerged in water. What is its specific gravity?",
+  "answer": {
+   "value": 2.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The loss of weight in water equals the weight of water displaced, which has the sample's volume. Specific gravity is therefore the weight in air divided by the loss of weight.",
+  "solution": "SG = \\frac{50.0}{50.0 - 30.0} = \\frac{50.0}{20.0} = 2.500.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "buoyancy"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0023",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0023-b",
+  "topic": "fluids",
+  "subtopic": "fluids-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sample weighs 120.0 N in air and 75.0 N when fully submerged in water. What is its specific gravity?",
+  "answer": {
+   "value": 2.667,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The loss of weight in water equals the weight of water displaced, which has the sample's volume. Specific gravity is therefore the weight in air divided by the loss of weight.",
+  "solution": "SG = \\frac{120.0}{120.0 - 75.0} = \\frac{120.0}{45.0} = 2.667.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "buoyancy"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0023",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0023-c",
+  "topic": "fluids",
+  "subtopic": "fluids-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sample weighs 7.5 N in air and 4.7 N when fully submerged in water. What is its specific gravity?",
+  "answer": {
+   "value": 2.679,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The loss of weight in water equals the weight of water displaced, which has the sample's volume. Specific gravity is therefore the weight in air divided by the loss of weight.",
+  "solution": "SG = \\frac{7.5}{7.5 - 4.7} = \\frac{7.5}{2.8} = 2.679.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "buoyancy"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0023",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0024",
+  "topic": "fluids",
+  "subtopic": "fluids-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A vertical rectangular gate is 3.0 m tall. Its top edge is 2.0 m below the water surface. How far below the surface is the centre of pressure?",
+  "answer": {
+   "value": 3.714,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Pressure grows with depth, so the resultant force acts below the centroid of the gate. The centre of pressure is at the centroid depth plus I / (centroid depth × A); for a rectangle that extra distance is h^{2} / (12 × centroid depth).",
+  "solution": "Centroid depth = 2.0 + \\frac{3.0}{2} = 3.50 m.\n\nCentre of pressure = 3.50 + \\frac{3.0^{2}}{12(3.50)} = 3.714 m.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "center of pressure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0024",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0024-b",
+  "topic": "fluids",
+  "subtopic": "fluids-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A vertical rectangular gate is 2.0 m tall. Its top edge is 1.0 m below the water surface. How far below the surface is the centre of pressure?",
+  "answer": {
+   "value": 2.167,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Pressure grows with depth, so the resultant force acts below the centroid of the gate. The centre of pressure is at the centroid depth plus I / (centroid depth × A); for a rectangle that extra distance is h^{2} / (12 × centroid depth).",
+  "solution": "Centroid depth = 1.0 + \\frac{2.0}{2} = 2.00 m.\n\nCentre of pressure = 2.00 + \\frac{2.0^{2}}{12(2.00)} = 2.167 m.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "center of pressure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0024",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0024-c",
+  "topic": "fluids",
+  "subtopic": "fluids-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A vertical rectangular gate is 1.5 m tall. Its top edge is 4.0 m below the water surface. How far below the surface is the centre of pressure?",
+  "answer": {
+   "value": 4.789,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Pressure grows with depth, so the resultant force acts below the centroid of the gate. The centre of pressure is at the centroid depth plus I / (centroid depth × A); for a rectangle that extra distance is h^{2} / (12 × centroid depth).",
+  "solution": "Centroid depth = 4.0 + \\frac{1.5}{2} = 4.75 m.\n\nCentre of pressure = 4.75 + \\frac{1.5^{2}}{12(4.75)} = 4.789 m.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "center of pressure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0024",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0025",
+  "topic": "fluids",
+  "subtopic": "fluids-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A hydraulic jack has an input piston 20 mm in diameter and an output piston 100 mm in diameter. A force of 200 N is applied to the input piston. Ignoring friction, what force does the output piston deliver?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1,000 N"
+   },
+   {
+    "id": "b",
+    "text": "2,500 N"
+   },
+   {
+    "id": "c",
+    "text": "5,000 N"
+   },
+   {
+    "id": "d",
+    "text": "25,000 N"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Pressure in a confined static fluid is the same throughout (Pascal's law). The same pressure on a larger piston gives a larger force, in proportion to the areas, which go with diameter squared.",
+  "solution": "F_{2} = F_{1} (\\frac{d_{2}}{d_{1}})^{2} = 200 (\\frac{100}{20})^{2} = 5,000 N.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pressure field in a static liquid"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0025",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "F_{2}",
+    "force on the output piston"
+   ],
+   [
+    "F_{1}",
+    "force on the input piston"
+   ],
+   [
+    "d_{2}",
+    "diameter at section 2"
+   ],
+   [
+    "d_{1}",
+    "diameter at section 1"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0025-b",
+  "topic": "fluids",
+  "subtopic": "fluids-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A hydraulic jack has an input piston 25 mm in diameter and an output piston 150 mm in diameter. A force of 150 N is applied to the input piston. Ignoring friction, what force does the output piston deliver?",
+  "options": [
+   {
+    "id": "a",
+    "text": "900 N"
+   },
+   {
+    "id": "b",
+    "text": "2,700 N"
+   },
+   {
+    "id": "c",
+    "text": "5,400 N"
+   },
+   {
+    "id": "d",
+    "text": "32,400 N"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Pressure in a confined static fluid is the same throughout (Pascal's law). The same pressure on a larger piston gives a larger force, in proportion to the areas, which go with diameter squared.",
+  "solution": "F_{2} = F_{1} (\\frac{d_{2}}{d_{1}})^{2} = 150 (\\frac{150}{25})^{2} = 5,400 N.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pressure field in a static liquid"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0025",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "F_{2}",
+    "force on the output piston"
+   ],
+   [
+    "F_{1}",
+    "force on the input piston"
+   ],
+   [
+    "d_{2}",
+    "diameter at section 2"
+   ],
+   [
+    "d_{1}",
+    "diameter at section 1"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0025-c",
+  "topic": "fluids",
+  "subtopic": "fluids-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A hydraulic jack has an input piston 15 mm in diameter and an output piston 120 mm in diameter. A force of 400 N is applied to the input piston. Ignoring friction, what force does the output piston deliver?",
+  "options": [
+   {
+    "id": "a",
+    "text": "3,200 N"
+   },
+   {
+    "id": "b",
+    "text": "12,800 N"
+   },
+   {
+    "id": "c",
+    "text": "25,600 N"
+   },
+   {
+    "id": "d",
+    "text": "204,800 N"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Pressure in a confined static fluid is the same throughout (Pascal's law). The same pressure on a larger piston gives a larger force, in proportion to the areas, which go with diameter squared.",
+  "solution": "F_{2} = F_{1} (\\frac{d_{2}}{d_{1}})^{2} = 400 (\\frac{120}{15})^{2} = 25,600 N.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pressure field in a static liquid"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0025",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "F_{2}",
+    "force on the output piston"
+   ],
+   [
+    "F_{1}",
+    "force on the input piston"
+   ],
+   [
+    "d_{2}",
+    "diameter at section 2"
+   ],
+   [
+    "d_{1}",
+    "diameter at section 1"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0026",
+  "topic": "fluids",
+  "subtopic": "fluids-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A circular access cover 1.2 m in diameter is set in the vertical wall of a water tank. Its centre is 4.0 m below the water surface. What is the hydrostatic force on the cover? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 44.38,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "The force on any flat submerged surface is the pressure at its centroid times its area. The shape affects only the area and where the force acts.",
+  "solution": "F = (9.81)(4.0) × \\frac{π(1.2)^{2}}{4} = 39.24 × 1.1310 = 44.38 kN.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "forces on submerged surfaces"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0026",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0026-b",
+  "topic": "fluids",
+  "subtopic": "fluids-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A circular access cover 0.8 m in diameter is set in the vertical wall of a water tank. Its centre is 6.5 m below the water surface. What is the hydrostatic force on the cover? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 32.05,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "The force on any flat submerged surface is the pressure at its centroid times its area. The shape affects only the area and where the force acts.",
+  "solution": "F = (9.81)(6.5) × \\frac{π(0.8)^{2}}{4} = 63.77 × 0.5027 = 32.05 kN.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "forces on submerged surfaces"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0026",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0026-c",
+  "topic": "fluids",
+  "subtopic": "fluids-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A circular access cover 2.0 m in diameter is set in the vertical wall of a water tank. Its centre is 3.0 m below the water surface. What is the hydrostatic force on the cover? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 92.46,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "The force on any flat submerged surface is the pressure at its centroid times its area. The shape affects only the area and where the force acts.",
+  "solution": "F = (9.81)(3.0) × \\frac{π(2.0)^{2}}{4} = 29.43 × 3.1416 = 92.46 kN.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "forces on submerged surfaces"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0026",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0027",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Water flows at 3.0 m/s through a fitting with a loss coefficient of 0.9. What head is lost in the fitting? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 0.413,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Losses in fittings, valves, bends and entrances are written as a coefficient times the velocity head, v^{2} / 2g. They add to the friction loss in the pipe.",
+  "solution": "h = K \\frac{v^{2}}{2g} = 0.9 × \\frac{3.0^{2}}{2(9.81)} = 0.413 m.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "minor losses"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0027",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "h",
+    "depth below the surface, or head"
+   ],
+   [
+    "K",
+    "minor loss coefficient"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0027-b",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Water flows at 2.0 m/s through a fitting with a loss coefficient of 10.0. What head is lost in the fitting? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 2.039,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Losses in fittings, valves, bends and entrances are written as a coefficient times the velocity head, v^{2} / 2g. They add to the friction loss in the pipe.",
+  "solution": "h = K \\frac{v^{2}}{2g} = 10.0 × \\frac{2.0^{2}}{2(9.81)} = 2.039 m.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "minor losses"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0027",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "h",
+    "depth below the surface, or head"
+   ],
+   [
+    "K",
+    "minor loss coefficient"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0027-c",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Water flows at 4.5 m/s through a fitting with a loss coefficient of 0.5. What head is lost in the fitting? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 0.516,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Losses in fittings, valves, bends and entrances are written as a coefficient times the velocity head, v^{2} / 2g. They add to the friction loss in the pipe.",
+  "solution": "h = K \\frac{v^{2}}{2g} = 0.5 × \\frac{4.5^{2}}{2(9.81)} = 0.516 m.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "minor losses"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0027",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "h",
+    "depth below the surface, or head"
+   ],
+   [
+    "K",
+    "minor loss coefficient"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0028",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Flow in a pipe is laminar with a Reynolds number of 1,600. What is the Darcy friction factor?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.040"
+   },
+   {
+    "id": "b",
+    "text": "0.010"
+   },
+   {
+    "id": "c",
+    "text": "0.050"
+   },
+   {
+    "id": "d",
+    "text": "0.080"
+   }
+  ],
+  "answer": "a",
+  "eli5": "In laminar flow the friction factor depends only on the Reynolds number: f = 64 / Re. Pipe roughness matters only once the flow is turbulent, where the Moody diagram is needed.",
+  "solution": "f = \\frac{64}{1,600} = 0.040.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "Reynolds number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0028",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "f",
+    "Darcy friction factor"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0028-b",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Flow in a pipe is laminar with a Reynolds number of 800. What is the Darcy friction factor?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.080"
+   },
+   {
+    "id": "b",
+    "text": "0.020"
+   },
+   {
+    "id": "c",
+    "text": "0.059"
+   },
+   {
+    "id": "d",
+    "text": "0.160"
+   }
+  ],
+  "answer": "a",
+  "eli5": "In laminar flow the friction factor depends only on the Reynolds number: f = 64 / Re. Pipe roughness matters only once the flow is turbulent, where the Moody diagram is needed.",
+  "solution": "f = \\frac{64}{800} = 0.080.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "Reynolds number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0028",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "f",
+    "Darcy friction factor"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0028-c",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Flow in a pipe is laminar with a Reynolds number of 2,000. What is the Darcy friction factor?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.032"
+   },
+   {
+    "id": "b",
+    "text": "0.008"
+   },
+   {
+    "id": "c",
+    "text": "0.047"
+   },
+   {
+    "id": "d",
+    "text": "0.064"
+   }
+  ],
+  "answer": "a",
+  "eli5": "In laminar flow the friction factor depends only on the Reynolds number: f = 64 / Re. Pipe roughness matters only once the flow is turbulent, where the Moody diagram is needed.",
+  "solution": "f = \\frac{64}{2,000} = 0.032.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "Reynolds number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0028",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "f",
+    "Darcy friction factor"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0029",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A turbine receives 12.0 m^{3}/s of water under a net head of 45 m and is 88% efficient. What power does it deliver? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 4662.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kW"
+  },
+  "eli5": "The power available in flowing water is specific weight × flow × head. A turbine delivers that times its efficiency; a pump needs that divided by its efficiency.",
+  "solution": "Water power = 9.81(12.0)(45) = 5,297 kW.\n\nOutput = 0.88 × 5,297 = 4,662 kW.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pump power equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0029",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0029-b",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A turbine receives 3.5 m^{3}/s of water under a net head of 120 m and is 90% efficient. What power does it deliver? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 3708.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kW"
+  },
+  "eli5": "The power available in flowing water is specific weight × flow × head. A turbine delivers that times its efficiency; a pump needs that divided by its efficiency.",
+  "solution": "Water power = 9.81(3.5)(120) = 4,120 kW.\n\nOutput = 0.90 × 4,120 = 3,708 kW.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pump power equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0029",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0029-c",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A turbine receives 40.0 m^{3}/s of water under a net head of 18 m and is 85% efficient. What power does it deliver? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 6004.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kW"
+  },
+  "eli5": "The power available in flowing water is specific weight × flow × head. A turbine delivers that times its efficiency; a pump needs that divided by its efficiency.",
+  "solution": "Water power = 9.81(40.0)(18) = 7,063 kW.\n\nOutput = 0.85 × 7,063 = 6,004 kW.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pump power equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0029",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "fluids-0030",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sign panel with an area of 2.0 m^{2} faces a 30.0 m/s flow of fluid with a density of 1.2 kg/m^{3}. Its drag coefficient is 1.20. What is the drag force on it?",
+  "answer": {
+   "value": 1296.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "Drag on a body is the drag coefficient times the dynamic pressure, (1/2)(density)(velocity)^{2}, times the projected area facing the flow.",
+  "solution": "F = \\frac{C_{D} (density) V^{2} A}{2} = \\frac{1.20(1.2)(30.0)^{2}(2.0)}{2} = 1,296.0 N.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "drag force"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0030",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{D}",
+    "drag coefficient"
+   ],
+   [
+    "F",
+    "force"
+   ],
+   [
+    "V",
+    "velocity"
+   ],
+   [
+    "A",
+    "area"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0030-b",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sign panel with an area of 2.2 m^{2} faces a 25.0 m/s flow of fluid with a density of 1.2 kg/m^{3}. Its drag coefficient is 0.35. What is the drag force on it?",
+  "answer": {
+   "value": 288.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "Drag on a body is the drag coefficient times the dynamic pressure, (1/2)(density)(velocity)^{2}, times the projected area facing the flow.",
+  "solution": "F = \\frac{C_{D} (density) V^{2} A}{2} = \\frac{0.35(1.2)(25.0)^{2}(2.2)}{2} = 288.8 N.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "drag force"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0030",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{D}",
+    "drag coefficient"
+   ],
+   [
+    "F",
+    "force"
+   ],
+   [
+    "V",
+    "velocity"
+   ],
+   [
+    "A",
+    "area"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0030-c",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sign panel with an area of 0.8 m^{2} faces a 1.5 m/s flow of fluid with a density of 1,000.0 kg/m^{3}. Its drag coefficient is 1.00. What is the drag force on it?",
+  "answer": {
+   "value": 900.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "Drag on a body is the drag coefficient times the dynamic pressure, (1/2)(density)(velocity)^{2}, times the projected area facing the flow.",
+  "solution": "F = \\frac{C_{D} (density) V^{2} A}{2} = \\frac{1.00(1,000.0)(1.5)^{2}(0.8)}{2} = 900.0 N.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "drag force"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0030",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "C_{D}",
+    "drag coefficient"
+   ],
+   [
+    "F",
+    "force"
+   ],
+   [
+    "V",
+    "velocity"
+   ],
+   [
+    "A",
+    "area"
+   ]
+  ]
  }
 ]

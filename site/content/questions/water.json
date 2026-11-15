@@ -49,7 +49,25 @@
   "family": "water-0001",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "runoff (depth for the NRCS method, peak rate for the rational method)"
+   ],
+   [
+    "C",
+    "runoff coefficient"
+   ],
+   [
+    "i",
+    "rainfall intensity"
+   ],
+   [
+    "A",
+    "drainage area"
+   ]
+  ]
  },
  {
   "id": "water-0001-b",
@@ -101,7 +119,25 @@
   "family": "water-0001",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "runoff (depth for the NRCS method, peak rate for the rational method)"
+   ],
+   [
+    "C",
+    "runoff coefficient"
+   ],
+   [
+    "i",
+    "rainfall intensity"
+   ],
+   [
+    "A",
+    "drainage area"
+   ]
+  ]
  },
  {
   "id": "water-0001-c",
@@ -153,7 +189,25 @@
   "family": "water-0001",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "runoff (depth for the NRCS method, peak rate for the rational method)"
+   ],
+   [
+    "C",
+    "runoff coefficient"
+   ],
+   [
+    "i",
+    "rainfall intensity"
+   ],
+   [
+    "A",
+    "drainage area"
+   ]
+  ]
  },
  {
   "id": "water-0001-d",
@@ -205,7 +259,25 @@
   "family": "water-0001",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "runoff (depth for the NRCS method, peak rate for the rational method)"
+   ],
+   [
+    "C",
+    "runoff coefficient"
+   ],
+   [
+    "i",
+    "rainfall intensity"
+   ],
+   [
+    "A",
+    "drainage area"
+   ]
+  ]
  },
  {
   "id": "water-0002",
@@ -250,7 +322,33 @@
    "svg": "<path d='M100 20 L100 123 L300 123 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='57' width='196' height='67' fill='#568CBB' fill-opacity='.35'/><text x='200' y='139' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='308' y='90' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1 m deep</text>",
    "alt": "A rectangular channel 3 m wide flowing 1 m deep."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "n",
+    "Manning's roughness coefficient, or effective porosity"
+   ],
+   [
+    "A",
+    "drainage area or flow area"
+   ],
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ],
+   [
+    "S",
+    "slope of the energy line (channel slope for uniform flow)"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "water-0002-b",
@@ -295,7 +393,33 @@
    "svg": "<path d='M100 20 L100 135 L300 135 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='60' width='196' height='75' fill='#568CBB' fill-opacity='.35'/><text x='200' y='151' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><text x='308' y='98' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1.5 m deep</text>",
    "alt": "A rectangular channel 4 m wide flowing 1.5 m deep."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "n",
+    "Manning's roughness coefficient, or effective porosity"
+   ],
+   [
+    "A",
+    "drainage area or flow area"
+   ],
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ],
+   [
+    "S",
+    "slope of the energy line (channel slope for uniform flow)"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "water-0002-c",
@@ -340,7 +464,33 @@
    "svg": "<path d='M100 20 L100 142 L300 142 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='62' width='196' height='80' fill='#568CBB' fill-opacity='.35'/><text x='200' y='158' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text><text x='308' y='102' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>0.8 m deep</text>",
    "alt": "A rectangular channel 2 m wide flowing 0.8 m deep."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "n",
+    "Manning's roughness coefficient, or effective porosity"
+   ],
+   [
+    "A",
+    "drainage area or flow area"
+   ],
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ],
+   [
+    "S",
+    "slope of the energy line (channel slope for uniform flow)"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "water-0002-d",
@@ -385,7 +535,33 @@
    "svg": "<path d='M100 20 L100 142 L300 142 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='62' width='196' height='80' fill='#568CBB' fill-opacity='.35'/><text x='200' y='158' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text><text x='308' y='102' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>2 m deep</text>",
    "alt": "A rectangular channel 5 m wide flowing 2 m deep."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "n",
+    "Manning's roughness coefficient, or effective porosity"
+   ],
+   [
+    "A",
+    "drainage area or flow area"
+   ],
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ],
+   [
+    "S",
+    "slope of the energy line (channel slope for uniform flow)"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "water-0003",
@@ -646,7 +822,13 @@
   "family": "water-0004",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "t",
+    "time"
+   ]
+  ]
  },
  {
   "id": "water-0004-b",
@@ -699,7 +881,13 @@
   "family": "water-0004",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "t",
+    "time"
+   ]
+  ]
  },
  {
   "id": "water-0004-c",
@@ -752,7 +940,13 @@
   "family": "water-0004",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "t",
+    "time"
+   ]
+  ]
  },
  {
   "id": "water-0004-d",
@@ -805,7 +999,13 @@
   "family": "water-0004",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "t",
+    "time"
+   ]
+  ]
  },
  {
   "id": "water-0005",
@@ -857,7 +1057,25 @@
   "family": "water-0005",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "K",
+    "hydraulic conductivity"
+   ],
+   [
+    "i",
+    "hydraulic gradient"
+   ],
+   [
+    "A",
+    "cross-sectional area of flow"
+   ]
+  ]
  },
  {
   "id": "water-0005-b",
@@ -909,7 +1127,25 @@
   "family": "water-0005",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "K",
+    "hydraulic conductivity"
+   ],
+   [
+    "i",
+    "hydraulic gradient"
+   ],
+   [
+    "A",
+    "cross-sectional area of flow"
+   ]
+  ]
  },
  {
   "id": "water-0005-c",
@@ -961,7 +1197,25 @@
   "family": "water-0005",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "K",
+    "hydraulic conductivity"
+   ],
+   [
+    "i",
+    "hydraulic gradient"
+   ],
+   [
+    "A",
+    "cross-sectional area of flow"
+   ]
+  ]
  },
  {
   "id": "water-0005-d",
@@ -1013,7 +1267,25 @@
   "family": "water-0005",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "K",
+    "hydraulic conductivity"
+   ],
+   [
+    "i",
+    "hydraulic gradient"
+   ],
+   [
+    "A",
+    "cross-sectional area of flow"
+   ]
+  ]
  },
  {
   "id": "water-0006",
@@ -1179,7 +1451,21 @@
   "family": "water-0007",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "S",
+    "potential maximum retention, from the curve number"
+   ],
+   [
+    "Q",
+    "runoff (depth for the NRCS method, peak rate for the rational method)"
+   ],
+   [
+    "P",
+    "rainfall depth"
+   ]
+  ]
  },
  {
   "id": "water-0007-b",
@@ -1216,7 +1502,21 @@
   "family": "water-0007",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "S",
+    "potential maximum retention, from the curve number"
+   ],
+   [
+    "Q",
+    "runoff (depth for the NRCS method, peak rate for the rational method)"
+   ],
+   [
+    "P",
+    "rainfall depth"
+   ]
+  ]
  },
  {
   "id": "water-0007-c",
@@ -1253,7 +1553,21 @@
   "family": "water-0007",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "S",
+    "potential maximum retention, from the curve number"
+   ],
+   [
+    "Q",
+    "runoff (depth for the NRCS method, peak rate for the rational method)"
+   ],
+   [
+    "P",
+    "rainfall depth"
+   ]
+  ]
  },
  {
   "id": "water-0007-d",
@@ -1290,7 +1604,21 @@
   "family": "water-0007",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "S",
+    "potential maximum retention, from the curve number"
+   ],
+   [
+    "Q",
+    "runoff (depth for the NRCS method, peak rate for the rational method)"
+   ],
+   [
+    "P",
+    "rainfall depth"
+   ]
+  ]
  },
  {
   "id": "water-0008",
@@ -1339,7 +1667,21 @@
   "family": "water-0008",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y_{c}",
+    "critical depth"
+   ],
+   [
+    "q",
+    "flow per unit width"
+   ],
+   [
+    "g",
+    "acceleration due to gravity, 9.81 m/s^{2}"
+   ]
+  ]
  },
  {
   "id": "water-0008-b",
@@ -1388,7 +1730,21 @@
   "family": "water-0008",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y_{c}",
+    "critical depth"
+   ],
+   [
+    "q",
+    "flow per unit width"
+   ],
+   [
+    "g",
+    "acceleration due to gravity, 9.81 m/s^{2}"
+   ]
+  ]
  },
  {
   "id": "water-0008-c",
@@ -1437,7 +1793,21 @@
   "family": "water-0008",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y_{c}",
+    "critical depth"
+   ],
+   [
+    "q",
+    "flow per unit width"
+   ],
+   [
+    "g",
+    "acceleration due to gravity, 9.81 m/s^{2}"
+   ]
+  ]
  },
  {
   "id": "water-0008-d",
@@ -1486,7 +1856,21 @@
   "family": "water-0008",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y_{c}",
+    "critical depth"
+   ],
+   [
+    "q",
+    "flow per unit width"
+   ],
+   [
+    "g",
+    "acceleration due to gravity, 9.81 m/s^{2}"
+   ]
+  ]
  },
  {
   "id": "water-0009",
@@ -1536,7 +1920,25 @@
   "family": "water-0009",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q_{2}",
+    "flow at the second speed"
+   ],
+   [
+    "Q_{1}",
+    "flow at the first speed"
+   ],
+   [
+    "N_{2}",
+    "second pump speed"
+   ],
+   [
+    "N_{1}",
+    "first pump speed"
+   ]
+  ]
  },
  {
   "id": "water-0009-b",
@@ -1586,7 +1988,25 @@
   "family": "water-0009",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q_{2}",
+    "flow at the second speed"
+   ],
+   [
+    "Q_{1}",
+    "flow at the first speed"
+   ],
+   [
+    "N_{2}",
+    "second pump speed"
+   ],
+   [
+    "N_{1}",
+    "first pump speed"
+   ]
+  ]
  },
  {
   "id": "water-0009-c",
@@ -1636,7 +2056,25 @@
   "family": "water-0009",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q_{2}",
+    "flow at the second speed"
+   ],
+   [
+    "Q_{1}",
+    "flow at the first speed"
+   ],
+   [
+    "N_{2}",
+    "second pump speed"
+   ],
+   [
+    "N_{1}",
+    "first pump speed"
+   ]
+  ]
  },
  {
   "id": "water-0009-d",
@@ -1686,7 +2124,25 @@
   "family": "water-0009",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q_{2}",
+    "flow at the second speed"
+   ],
+   [
+    "Q_{1}",
+    "flow at the first speed"
+   ],
+   [
+    "N_{2}",
+    "second pump speed"
+   ],
+   [
+    "N_{1}",
+    "first pump speed"
+   ]
+  ]
  },
  {
   "id": "water-0010",
@@ -2599,7 +3055,41 @@
   "family": "water-0015",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q_{after}",
+    "peak flow after development"
+   ],
+   [
+    "Q_{before}",
+    "peak flow before development"
+   ],
+   [
+    "C_{2}",
+    "runoff coefficient after"
+   ],
+   [
+    "C_{1}",
+    "runoff coefficient before"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "C",
+    "runoff coefficient, concentration, or Hazen-Williams coefficient"
+   ],
+   [
+    "i",
+    "rainfall intensity, or hydraulic gradient"
+   ],
+   [
+    "A",
+    "drainage area or flow area"
+   ]
+  ]
  },
  {
   "id": "water-0015-b",
@@ -2648,7 +3138,41 @@
   "family": "water-0015",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q_{after}",
+    "peak flow after development"
+   ],
+   [
+    "Q_{before}",
+    "peak flow before development"
+   ],
+   [
+    "C_{2}",
+    "runoff coefficient after"
+   ],
+   [
+    "C_{1}",
+    "runoff coefficient before"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "C",
+    "runoff coefficient, concentration, or Hazen-Williams coefficient"
+   ],
+   [
+    "i",
+    "rainfall intensity, or hydraulic gradient"
+   ],
+   [
+    "A",
+    "drainage area or flow area"
+   ]
+  ]
  },
  {
   "id": "water-0015-c",
@@ -2697,7 +3221,41 @@
   "family": "water-0015",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q_{after}",
+    "peak flow after development"
+   ],
+   [
+    "Q_{before}",
+    "peak flow before development"
+   ],
+   [
+    "C_{2}",
+    "runoff coefficient after"
+   ],
+   [
+    "C_{1}",
+    "runoff coefficient before"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "C",
+    "runoff coefficient, concentration, or Hazen-Williams coefficient"
+   ],
+   [
+    "i",
+    "rainfall intensity, or hydraulic gradient"
+   ],
+   [
+    "A",
+    "drainage area or flow area"
+   ]
+  ]
  },
  {
   "id": "water-0015-d",
@@ -2746,7 +3304,41 @@
   "family": "water-0015",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q_{after}",
+    "peak flow after development"
+   ],
+   [
+    "Q_{before}",
+    "peak flow before development"
+   ],
+   [
+    "C_{2}",
+    "runoff coefficient after"
+   ],
+   [
+    "C_{1}",
+    "runoff coefficient before"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "C",
+    "runoff coefficient, concentration, or Hazen-Williams coefficient"
+   ],
+   [
+    "i",
+    "rainfall intensity, or hydraulic gradient"
+   ],
+   [
+    "A",
+    "drainage area or flow area"
+   ]
+  ]
  },
  {
   "id": "water-0016",
@@ -2782,7 +3374,29 @@
   "family": "water-0016",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "velocity or volume"
+   ],
+   [
+    "n",
+    "Manning's roughness coefficient, or effective porosity"
+   ],
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ],
+   [
+    "S",
+    "slope of the energy line (channel slope for uniform flow)"
+   ],
+   [
+    "D",
+    "pipe diameter"
+   ]
+  ]
  },
  {
   "id": "water-0016-b",
@@ -2818,7 +3432,29 @@
   "family": "water-0016",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "velocity or volume"
+   ],
+   [
+    "n",
+    "Manning's roughness coefficient, or effective porosity"
+   ],
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ],
+   [
+    "S",
+    "slope of the energy line (channel slope for uniform flow)"
+   ],
+   [
+    "D",
+    "pipe diameter"
+   ]
+  ]
  },
  {
   "id": "water-0016-c",
@@ -2854,7 +3490,29 @@
   "family": "water-0016",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "velocity or volume"
+   ],
+   [
+    "n",
+    "Manning's roughness coefficient, or effective porosity"
+   ],
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ],
+   [
+    "S",
+    "slope of the energy line (channel slope for uniform flow)"
+   ],
+   [
+    "D",
+    "pipe diameter"
+   ]
+  ]
  },
  {
   "id": "water-0016-d",
@@ -2890,7 +3548,29 @@
   "family": "water-0016",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "velocity or volume"
+   ],
+   [
+    "n",
+    "Manning's roughness coefficient, or effective porosity"
+   ],
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ],
+   [
+    "S",
+    "slope of the energy line (channel slope for uniform flow)"
+   ],
+   [
+    "D",
+    "pipe diameter"
+   ]
+  ]
  },
  {
   "id": "water-0017",
@@ -3128,7 +3808,25 @@
   "family": "water-0018",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "v",
+    "velocity"
+   ],
+   [
+    "K",
+    "hydraulic conductivity"
+   ],
+   [
+    "i",
+    "hydraulic gradient"
+   ],
+   [
+    "n",
+    "effective porosity"
+   ]
+  ]
  },
  {
   "id": "water-0018-b",
@@ -3178,7 +3876,25 @@
   "family": "water-0018",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "v",
+    "velocity"
+   ],
+   [
+    "K",
+    "hydraulic conductivity"
+   ],
+   [
+    "i",
+    "hydraulic gradient"
+   ],
+   [
+    "n",
+    "effective porosity"
+   ]
+  ]
  },
  {
   "id": "water-0018-c",
@@ -3228,7 +3944,25 @@
   "family": "water-0018",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "v",
+    "velocity"
+   ],
+   [
+    "K",
+    "hydraulic conductivity"
+   ],
+   [
+    "i",
+    "hydraulic gradient"
+   ],
+   [
+    "n",
+    "effective porosity"
+   ]
+  ]
  },
  {
   "id": "water-0018-d",
@@ -3278,7 +4012,25 @@
   "family": "water-0018",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "v",
+    "velocity"
+   ],
+   [
+    "K",
+    "hydraulic conductivity"
+   ],
+   [
+    "i",
+    "hydraulic gradient"
+   ],
+   [
+    "n",
+    "effective porosity"
+   ]
+  ]
  },
  {
   "id": "water-0019",
@@ -3327,7 +4079,13 @@
   "family": "water-0019",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "wetted perimeter, rainfall depth, or power"
+   ]
+  ]
  },
  {
   "id": "water-0019-b",
@@ -3376,7 +4134,13 @@
   "family": "water-0019",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "wetted perimeter, rainfall depth, or power"
+   ]
+  ]
  },
  {
   "id": "water-0019-c",
@@ -3425,7 +4189,13 @@
   "family": "water-0019",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "wetted perimeter, rainfall depth, or power"
+   ]
+  ]
  },
  {
   "id": "water-0019-d",
@@ -3474,7 +4244,13 @@
   "family": "water-0019",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "wetted perimeter, rainfall depth, or power"
+   ]
+  ]
  },
  {
   "id": "water-0020",
@@ -3498,8 +4274,7 @@
     "section": "Environmental Engineering",
     "page": "310–354",
     "find": [
-     "hardness",
-     "equivalent weight"
+     "hardness"
     ]
    }
   ],
@@ -3535,8 +4310,7 @@
     "section": "Environmental Engineering",
     "page": "310–354",
     "find": [
-     "hardness",
-     "equivalent weight"
+     "hardness"
     ]
    }
   ],
@@ -3572,8 +4346,7 @@
     "section": "Environmental Engineering",
     "page": "310–354",
     "find": [
-     "hardness",
-     "equivalent weight"
+     "hardness"
     ]
    }
   ],
@@ -3609,8 +4382,7 @@
     "section": "Environmental Engineering",
     "page": "310–354",
     "find": [
-     "hardness",
-     "equivalent weight"
+     "hardness"
     ]
    }
   ],
@@ -3955,7 +4727,13 @@
   "family": "water-0023",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "m",
+    "metre"
+   ]
+  ]
  },
  {
   "id": "water-0023-b",
@@ -3992,7 +4770,13 @@
   "family": "water-0023",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "m",
+    "metre"
+   ]
+  ]
  },
  {
   "id": "water-0023-c",
@@ -4029,7 +4813,13 @@
   "family": "water-0023",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "m",
+    "metre"
+   ]
+  ]
  },
  {
   "id": "water-0023-d",
@@ -4066,7 +4856,13 @@
   "family": "water-0023",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "m",
+    "metre"
+   ]
+  ]
  },
  {
   "id": "water-0024",
@@ -4290,7 +5086,25 @@
   "family": "water-0025",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "L_{0}",
+    "ultimate BOD"
+   ],
+   [
+    "e",
+    "Euler's number, 2.718"
+   ],
+   [
+    "k",
+    "BOD rate constant"
+   ],
+   [
+    "t",
+    "time"
+   ]
+  ]
  },
  {
   "id": "water-0025-b",
@@ -4326,7 +5140,25 @@
   "family": "water-0025",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "L_{0}",
+    "ultimate BOD"
+   ],
+   [
+    "e",
+    "Euler's number, 2.718"
+   ],
+   [
+    "k",
+    "BOD rate constant"
+   ],
+   [
+    "t",
+    "time"
+   ]
+  ]
  },
  {
   "id": "water-0025-c",
@@ -4362,7 +5194,25 @@
   "family": "water-0025",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "L_{0}",
+    "ultimate BOD"
+   ],
+   [
+    "e",
+    "Euler's number, 2.718"
+   ],
+   [
+    "k",
+    "BOD rate constant"
+   ],
+   [
+    "t",
+    "time"
+   ]
+  ]
  },
  {
   "id": "water-0025-d",
@@ -4398,7 +5248,25 @@
   "family": "water-0025",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "L_{0}",
+    "ultimate BOD"
+   ],
+   [
+    "e",
+    "Euler's number, 2.718"
+   ],
+   [
+    "k",
+    "BOD rate constant"
+   ],
+   [
+    "t",
+    "time"
+   ]
+  ]
  },
  {
   "id": "water-0026",
@@ -4439,7 +5307,13 @@
    "svg": "<path d='M100 20 L100 105 L300 105 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='51' width='196' height='53' fill='#568CBB' fill-opacity='.35'/><text x='200' y='121' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='308' y='78' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>0.8 m deep</text>",
    "alt": "A rectangular channel 3 m wide flowing 0.8 m deep."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y",
+    "depth of flow"
+   ]
+  ]
  },
  {
   "id": "water-0026-b",
@@ -4480,7 +5354,13 @@
    "svg": "<path d='M100 20 L100 170 L300 170 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='70' width='196' height='100' fill='#568CBB' fill-opacity='.35'/><text x='200' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='308' y='120' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1.5 m deep</text>",
    "alt": "A rectangular channel 3 m wide flowing 1.5 m deep."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y",
+    "depth of flow"
+   ]
+  ]
  },
  {
   "id": "water-0026-c",
@@ -4521,7 +5401,13 @@
    "svg": "<path d='M100 20 L100 67 L300 67 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='41' width='196' height='27' fill='#568CBB' fill-opacity='.35'/><text x='200' y='83' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='308' y='54' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>0.4 m deep</text>",
    "alt": "A rectangular channel 3 m wide flowing 0.4 m deep."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y",
+    "depth of flow"
+   ]
+  ]
  },
  {
   "id": "water-0026-d",
@@ -4562,7 +5448,13 @@
    "svg": "<path d='M100 20 L100 86 L300 86 L300 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='102' y='46' width='196' height='40' fill='#568CBB' fill-opacity='.35'/><text x='200' y='102' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='308' y='66' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>0.6 m deep</text>",
    "alt": "A rectangular channel 3 m wide flowing 0.6 m deep."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y",
+    "depth of flow"
+   ]
+  ]
  },
  {
   "id": "water-0027",
@@ -4890,7 +5782,17 @@
   "family": "water-0029",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y_{2}",
+    "depth after the jump"
+   ],
+   [
+    "y_{1}",
+    "depth before the jump"
+   ]
+  ]
  },
  {
   "id": "water-0029-b",
@@ -4926,7 +5828,17 @@
   "family": "water-0029",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y_{2}",
+    "depth after the jump"
+   ],
+   [
+    "y_{1}",
+    "depth before the jump"
+   ]
+  ]
  },
  {
   "id": "water-0029-c",
@@ -4962,7 +5874,17 @@
   "family": "water-0029",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y_{2}",
+    "depth after the jump"
+   ],
+   [
+    "y_{1}",
+    "depth before the jump"
+   ]
+  ]
  },
  {
   "id": "water-0029-d",
@@ -4998,7 +5920,17 @@
   "family": "water-0029",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "y_{2}",
+    "depth after the jump"
+   ],
+   [
+    "y_{1}",
+    "depth before the jump"
+   ]
+  ]
  },
  {
   "id": "water-0030",
@@ -5034,7 +5966,17 @@
   "family": "water-0030",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "water-0030-b",
@@ -5070,7 +6012,17 @@
   "family": "water-0030",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "water-0030-c",
@@ -5106,7 +6058,17 @@
   "family": "water-0030",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "water-0030-d",
@@ -5142,7 +6104,17 @@
   "family": "water-0030",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
  },
  {
   "id": "water-0031",
@@ -5178,7 +6150,29 @@
   "family": "water-0031",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "S",
+    "slope of the energy line (channel slope for uniform flow)"
+   ],
+   [
+    "V",
+    "velocity or volume"
+   ],
+   [
+    "n",
+    "Manning's roughness coefficient, or effective porosity"
+   ],
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ],
+   [
+    "D",
+    "pipe diameter"
+   ]
+  ]
  },
  {
   "id": "water-0031-b",
@@ -5214,7 +6208,29 @@
   "family": "water-0031",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "S",
+    "slope of the energy line (channel slope for uniform flow)"
+   ],
+   [
+    "V",
+    "velocity or volume"
+   ],
+   [
+    "n",
+    "Manning's roughness coefficient, or effective porosity"
+   ],
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ],
+   [
+    "D",
+    "pipe diameter"
+   ]
+  ]
  },
  {
   "id": "water-0031-c",
@@ -5250,7 +6266,29 @@
   "family": "water-0031",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "S",
+    "slope of the energy line (channel slope for uniform flow)"
+   ],
+   [
+    "V",
+    "velocity or volume"
+   ],
+   [
+    "n",
+    "Manning's roughness coefficient, or effective porosity"
+   ],
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ],
+   [
+    "D",
+    "pipe diameter"
+   ]
+  ]
  },
  {
   "id": "water-0031-d",
@@ -5286,7 +6324,29 @@
   "family": "water-0031",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "S",
+    "slope of the energy line (channel slope for uniform flow)"
+   ],
+   [
+    "V",
+    "velocity or volume"
+   ],
+   [
+    "n",
+    "Manning's roughness coefficient, or effective porosity"
+   ],
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ],
+   [
+    "D",
+    "pipe diameter"
+   ]
+  ]
  },
  {
   "id": "water-0032",
@@ -5323,7 +6383,37 @@
   "family": "water-0032",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "h_{2}",
+    "saturated thickness or head at radius r_{2}"
+   ],
+   [
+    "h_{1}",
+    "saturated thickness or head at radius r_{1}"
+   ],
+   [
+    "r_{2}",
+    "distance of the farther observation well"
+   ],
+   [
+    "r_{1}",
+    "distance of the nearer observation well"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "K",
+    "hydraulic conductivity"
+   ],
+   [
+    "h",
+    "head"
+   ]
+  ]
  },
  {
   "id": "water-0032-b",
@@ -5360,7 +6450,37 @@
   "family": "water-0032",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "h_{2}",
+    "saturated thickness or head at radius r_{2}"
+   ],
+   [
+    "h_{1}",
+    "saturated thickness or head at radius r_{1}"
+   ],
+   [
+    "r_{2}",
+    "distance of the farther observation well"
+   ],
+   [
+    "r_{1}",
+    "distance of the nearer observation well"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "K",
+    "hydraulic conductivity"
+   ],
+   [
+    "h",
+    "head"
+   ]
+  ]
  },
  {
   "id": "water-0032-c",
@@ -5397,7 +6517,37 @@
   "family": "water-0032",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "h_{2}",
+    "saturated thickness or head at radius r_{2}"
+   ],
+   [
+    "h_{1}",
+    "saturated thickness or head at radius r_{1}"
+   ],
+   [
+    "r_{2}",
+    "distance of the farther observation well"
+   ],
+   [
+    "r_{1}",
+    "distance of the nearer observation well"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "K",
+    "hydraulic conductivity"
+   ],
+   [
+    "h",
+    "head"
+   ]
+  ]
  },
  {
   "id": "water-0032-d",
@@ -5434,6 +6584,4167 @@
   "family": "water-0032",
   "version": 4,
   "versions": 4,
+  "lookup": true,
+  "symbols": [
+   [
+    "h_{2}",
+    "saturated thickness or head at radius r_{2}"
+   ],
+   [
+    "h_{1}",
+    "saturated thickness or head at radius r_{1}"
+   ],
+   [
+    "r_{2}",
+    "distance of the farther observation well"
+   ],
+   [
+    "r_{1}",
+    "distance of the nearer observation well"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "K",
+    "hydraulic conductivity"
+   ],
+   [
+    "h",
+    "head"
+   ]
+  ]
+ },
+ {
+  "id": "water-0033",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A drainage area has 3.0 ha of pavement with a runoff coefficient of 0.90 and 5.0 ha of landscaping with a runoff coefficient of 0.30. What composite runoff coefficient should be used in the rational formula?",
+  "answer": {
+   "value": 0.525,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "For mixed surfaces the rational method uses an area-weighted runoff coefficient: the sum of each C times its area, divided by the total area.",
+  "solution": "C = \\frac{0.90(3.0) + 0.30(5.0)}{3.0 + 5.0} = \\frac{4.200}{8.0} = 0.525.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "rational formula"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0033",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "C",
+    "runoff coefficient"
+   ]
+  ]
+ },
+ {
+  "id": "water-0033-b",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A drainage area has 1.2 ha of pavement with a runoff coefficient of 0.85 and 2.8 ha of landscaping with a runoff coefficient of 0.20. What composite runoff coefficient should be used in the rational formula?",
+  "answer": {
+   "value": 0.395,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "For mixed surfaces the rational method uses an area-weighted runoff coefficient: the sum of each C times its area, divided by the total area.",
+  "solution": "C = \\frac{0.85(1.2) + 0.20(2.8)}{1.2 + 2.8} = \\frac{1.580}{4.0} = 0.395.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "rational formula"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0033",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "C",
+    "runoff coefficient"
+   ]
+  ]
+ },
+ {
+  "id": "water-0033-c",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A drainage area has 10.0 ha of pavement with a runoff coefficient of 0.95 and 30.0 ha of landscaping with a runoff coefficient of 0.25. What composite runoff coefficient should be used in the rational formula?",
+  "answer": {
+   "value": 0.425,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "For mixed surfaces the rational method uses an area-weighted runoff coefficient: the sum of each C times its area, divided by the total area.",
+  "solution": "C = \\frac{0.95(10.0) + 0.25(30.0)}{10.0 + 30.0} = \\frac{17.000}{40.0} = 0.425.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "rational formula"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0033",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "C",
+    "runoff coefficient"
+   ]
+  ]
+ },
+ {
+  "id": "water-0034",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A catchment's unit hydrograph, for 1 cm of rainfall excess, peaks at 45 m^{3}/s. A storm of the same duration produces 2.5 cm of excess, and base flow is 5 m^{3}/s. What is the peak stream flow?",
+  "answer": {
+   "value": 117.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/s"
+  },
+  "eli5": "A unit hydrograph is the direct runoff from one unit of rainfall excess. Runoff scales in proportion to the excess, and base flow is added afterwards.",
+  "solution": "Peak direct runoff = 2.5 × 45 = 112.5 m^{3}/s.\n\nPeak flow = 112.5 + 5 = 117.5 m^{3}/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "unit hydrograph"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0034",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "water-0034-b",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A catchment's unit hydrograph, for 1 cm of rainfall excess, peaks at 120 m^{3}/s. A storm of the same duration produces 1.8 cm of excess, and base flow is 10 m^{3}/s. What is the peak stream flow?",
+  "answer": {
+   "value": 226.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/s"
+  },
+  "eli5": "A unit hydrograph is the direct runoff from one unit of rainfall excess. Runoff scales in proportion to the excess, and base flow is added afterwards.",
+  "solution": "Peak direct runoff = 1.8 × 120 = 216.0 m^{3}/s.\n\nPeak flow = 216.0 + 10 = 226.0 m^{3}/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "unit hydrograph"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0034",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "water-0034-c",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A catchment's unit hydrograph, for 1 cm of rainfall excess, peaks at 18 m^{3}/s. A storm of the same duration produces 4.0 cm of excess, and base flow is 2 m^{3}/s. What is the peak stream flow?",
+  "answer": {
+   "value": 74,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/s"
+  },
+  "eli5": "A unit hydrograph is the direct runoff from one unit of rainfall excess. Runoff scales in proportion to the excess, and base flow is added afterwards.",
+  "solution": "Peak direct runoff = 4.0 × 18 = 72.0 m^{3}/s.\n\nPeak flow = 72.0 + 2 = 74.0 m^{3}/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "unit hydrograph"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0034",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "water-0035",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Three rain gauges represent 20, 30 and 50 km^{2} of a catchment and record 40, 60 and 50 mm of rain. What is the area-weighted average rainfall over the catchment?",
+  "answer": {
+   "value": 51.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "When gauges represent unequal areas, as in the Thiessen polygon method, the average rainfall weights each gauge by the area it represents.",
+  "solution": "P = \\frac{20(40) + 30(60) + 50(50)}{20 + 30 + 50} = \\frac{5,100}{100} = 51.0 mm.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0035",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0035-b",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Three rain gauges represent 15, 25 and 10 km^{2} of a catchment and record 22, 30 and 18 mm of rain. What is the area-weighted average rainfall over the catchment?",
+  "answer": {
+   "value": 25.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "When gauges represent unequal areas, as in the Thiessen polygon method, the average rainfall weights each gauge by the area it represents.",
+  "solution": "P = \\frac{15(22) + 25(30) + 10(18)}{15 + 25 + 10} = \\frac{1,260}{50} = 25.2 mm.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0035",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0035-c",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Three rain gauges represent 8, 12 and 20 km^{2} of a catchment and record 65, 80 and 50 mm of rain. What is the area-weighted average rainfall over the catchment?",
+  "answer": {
+   "value": 62.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "When gauges represent unequal areas, as in the Thiessen polygon method, the average rainfall weights each gauge by the area it represents.",
+  "solution": "P = \\frac{8(65) + 12(80) + 20(50)}{8 + 12 + 20} = \\frac{2,480}{40} = 62.0 mm.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0035",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0036",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Infiltration follows f = f_{c} + (f_{0} - f_{c}) e^{-kt}, with an initial rate of 80 mm/h, a final rate of 10 mm/h and k = 2.0 per hour. What is the infiltration rate after 0.50 h?",
+  "answer": {
+   "value": 35.75,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm/h"
+  },
+  "eli5": "Horton's equation describes infiltration decaying exponentially from a high initial rate, when the soil is dry, toward a steady final rate as it wets up.",
+  "solution": "f = 10 + (80 - 10) e^{-2.0 × 0.50} = 10 + 70 × 0.3679 = 35.75 mm/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0036",
+  "version": 1,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "f",
+    "infiltration rate, or friction factor"
+   ]
+  ]
+ },
+ {
+  "id": "water-0036-b",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Infiltration follows f = f_{c} + (f_{0} - f_{c}) e^{-kt}, with an initial rate of 60 mm/h, a final rate of 5 mm/h and k = 1.5 per hour. What is the infiltration rate after 1.00 h?",
+  "answer": {
+   "value": 17.27,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm/h"
+  },
+  "eli5": "Horton's equation describes infiltration decaying exponentially from a high initial rate, when the soil is dry, toward a steady final rate as it wets up.",
+  "solution": "f = 5 + (60 - 5) e^{-1.5 × 1.00} = 5 + 55 × 0.2231 = 17.27 mm/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0036",
+  "version": 2,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "f",
+    "infiltration rate, or friction factor"
+   ]
+  ]
+ },
+ {
+  "id": "water-0036-c",
+  "topic": "water",
+  "subtopic": "water-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Infiltration follows f = f_{c} + (f_{0} - f_{c}) e^{-kt}, with an initial rate of 120 mm/h, a final rate of 20 mm/h and k = 4.0 per hour. What is the infiltration rate after 0.25 h?",
+  "answer": {
+   "value": 56.79,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm/h"
+  },
+  "eli5": "Horton's equation describes infiltration decaying exponentially from a high initial rate, when the soil is dry, toward a steady final rate as it wets up.",
+  "solution": "f = 20 + (120 - 20) e^{-4.0 × 0.25} = 20 + 100 × 0.3679 = 56.79 mm/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0036",
+  "version": 3,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "f",
+    "infiltration rate, or friction factor"
+   ]
+  ]
+ },
+ {
+  "id": "water-0037",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A trapezoidal roadside channel has a bottom width of 3.0 m, side slopes of 2.0 horizontal to 1 vertical, and flows 1.5 m deep. What is its hydraulic radius?",
+  "answer": {
+   "value": 0.927,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Hydraulic radius is flow area divided by wetted perimeter. For a trapezoid the area is (b + z y) y, and the wetted perimeter is the bottom plus two sloping sides, each y × square root of (1 + z^{2}) long.",
+  "solution": "A = (3.0 + 2.0 × 1.5)(1.5) = 9.000 m^{2}.\n\nP = 3.0 + 2(1.5)\\sqrt{1 + 2.0^{2}} = 9.708 m.\n\nR = \\frac{9.000}{9.708} = 0.927 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Manning's equation",
+     "hydraulic radius"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0037",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "drainage area or flow area"
+   ],
+   [
+    "P",
+    "wetted perimeter, rainfall depth, or power"
+   ],
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ]
+  ]
+ },
+ {
+  "id": "water-0037-b",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A trapezoidal roadside channel has a bottom width of 5.0 m, side slopes of 1.5 horizontal to 1 vertical, and flows 2.0 m deep. What is its hydraulic radius?",
+  "answer": {
+   "value": 1.31,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Hydraulic radius is flow area divided by wetted perimeter. For a trapezoid the area is (b + z y) y, and the wetted perimeter is the bottom plus two sloping sides, each y × square root of (1 + z^{2}) long.",
+  "solution": "A = (5.0 + 1.5 × 2.0)(2.0) = 16.000 m^{2}.\n\nP = 5.0 + 2(2.0)\\sqrt{1 + 1.5^{2}} = 12.211 m.\n\nR = \\frac{16.000}{12.211} = 1.310 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Manning's equation",
+     "hydraulic radius"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0037",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "drainage area or flow area"
+   ],
+   [
+    "P",
+    "wetted perimeter, rainfall depth, or power"
+   ],
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ]
+  ]
+ },
+ {
+  "id": "water-0037-c",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A trapezoidal roadside channel has a bottom width of 1.5 m, side slopes of 3.0 horizontal to 1 vertical, and flows 0.8 m deep. What is its hydraulic radius?",
+  "answer": {
+   "value": 0.476,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Hydraulic radius is flow area divided by wetted perimeter. For a trapezoid the area is (b + z y) y, and the wetted perimeter is the bottom plus two sloping sides, each y × square root of (1 + z^{2}) long.",
+  "solution": "A = (1.5 + 3.0 × 0.8)(0.8) = 3.120 m^{2}.\n\nP = 1.5 + 2(0.8)\\sqrt{1 + 3.0^{2}} = 6.560 m.\n\nR = \\frac{3.120}{6.560} = 0.476 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Manning's equation",
+     "hydraulic radius"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0037",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "drainage area or flow area"
+   ],
+   [
+    "P",
+    "wetted perimeter, rainfall depth, or power"
+   ],
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ]
+  ]
+ },
+ {
+  "id": "water-0038",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangular channel carries 3.0 m^{3}/s per metre of width at a depth of 1.2 m. What is the specific energy of the flow? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 1.519,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Specific energy is the energy head measured from the channel bottom: depth plus velocity head. In a rectangular channel the velocity is the unit discharge divided by the depth.",
+  "solution": "V = \\frac{3.0}{1.2} = 2.500 m/s.\n\nE = 1.2 + \\frac{2.500^{2}}{2(9.81)} = 1.2 + 0.319 = 1.519 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "specific energy"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0038",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "velocity or volume"
+   ],
+   [
+    "E",
+    "specific energy"
+   ]
+  ]
+ },
+ {
+  "id": "water-0038-b",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangular channel carries 2.4 m^{3}/s per metre of width at a depth of 0.6 m. What is the specific energy of the flow? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 1.415,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Specific energy is the energy head measured from the channel bottom: depth plus velocity head. In a rectangular channel the velocity is the unit discharge divided by the depth.",
+  "solution": "V = \\frac{2.4}{0.6} = 4.000 m/s.\n\nE = 0.6 + \\frac{4.000^{2}}{2(9.81)} = 0.6 + 0.815 = 1.415 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "specific energy"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0038",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "velocity or volume"
+   ],
+   [
+    "E",
+    "specific energy"
+   ]
+  ]
+ },
+ {
+  "id": "water-0038-c",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangular channel carries 8.0 m^{3}/s per metre of width at a depth of 2.0 m. What is the specific energy of the flow? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 2.815,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Specific energy is the energy head measured from the channel bottom: depth plus velocity head. In a rectangular channel the velocity is the unit discharge divided by the depth.",
+  "solution": "V = \\frac{8.0}{2.0} = 4.000 m/s.\n\nE = 2.0 + \\frac{4.000^{2}}{2(9.81)} = 2.0 + 0.815 = 2.815 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "specific energy"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0038",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "V",
+    "velocity or volume"
+   ],
+   [
+    "E",
+    "specific energy"
+   ]
+  ]
+ },
+ {
+  "id": "water-0039",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 600 mm concrete storm drain (n = 0.013) on a slope of 0.002 flows exactly half full. What flow does it carry?",
+  "answer": {
+   "value": 137.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "A circular pipe flowing half full has the same hydraulic radius as when full, D / 4, because area and wetted perimeter are both halved. The velocity is therefore the full-pipe velocity and the flow is half the full-pipe flow.",
+  "solution": "R = 0.1500 m. V = \\frac{1}{0.013}(0.1500)^{2/3}(0.002)^{1/2} = 0.971 m/s.\n\nHalf area = \\frac{π(0.60)^{2}}{8} = 0.1414 m^{2}.\n\nQ = 0.971 × 0.1414 = 137.3 L/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Manning's equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0039",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ],
+   [
+    "V",
+    "velocity or volume"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ]
+  ]
+ },
+ {
+  "id": "water-0039-b",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 450 mm concrete storm drain (n = 0.013) on a slope of 0.005 flows exactly half full. What flow does it carry?",
+  "answer": {
+   "value": 100.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "A circular pipe flowing half full has the same hydraulic radius as when full, D / 4, because area and wetted perimeter are both halved. The velocity is therefore the full-pipe velocity and the flow is half the full-pipe flow.",
+  "solution": "R = 0.1125 m. V = \\frac{1}{0.013}(0.1125)^{2/3}(0.005)^{1/2} = 1.268 m/s.\n\nHalf area = \\frac{π(0.45)^{2}}{8} = 0.0795 m^{2}.\n\nQ = 1.268 × 0.0795 = 100.8 L/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Manning's equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0039",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ],
+   [
+    "V",
+    "velocity or volume"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ]
+  ]
+ },
+ {
+  "id": "water-0039-c",
+  "topic": "water",
+  "subtopic": "water-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 900 mm concrete storm drain (n = 0.013) on a slope of 0.001 flows exactly half full. What flow does it carry?",
+  "answer": {
+   "value": 286.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "A circular pipe flowing half full has the same hydraulic radius as when full, D / 4, because area and wetted perimeter are both halved. The velocity is therefore the full-pipe velocity and the flow is half the full-pipe flow.",
+  "solution": "R = 0.2250 m. V = \\frac{1}{0.013}(0.2250)^{2/3}(0.001)^{1/2} = 0.900 m/s.\n\nHalf area = \\frac{π(0.90)^{2}}{8} = 0.3181 m^{2}.\n\nQ = 0.900 × 0.3181 = 286.2 L/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Manning's equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0039",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "R",
+    "hydraulic radius, flow area / wetted perimeter"
+   ],
+   [
+    "V",
+    "velocity or volume"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ]
+  ]
+ },
+ {
+  "id": "water-0040",
+  "topic": "water",
+  "subtopic": "water-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A centrifugal pump develops a head of 30 m at 1,200 rpm. Using the affinity laws, what head does it develop at 1,500 rpm?",
+  "options": [
+   {
+    "id": "a",
+    "text": "37.5 m"
+   },
+   {
+    "id": "b",
+    "text": "46.9 m"
+   },
+   {
+    "id": "c",
+    "text": "58.6 m"
+   },
+   {
+    "id": "d",
+    "text": "19.2 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "For the same pump, flow varies with speed, head with speed squared and power with speed cubed.",
+  "solution": "H_{2} = H_{1} (\\frac{N_{2}}{N_{1}})^{2} = 30 (\\frac{1,500}{1,200})^{2} = 46.9 m.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "affinity laws"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0040",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "H_{2}",
+    "head at the second speed"
+   ],
+   [
+    "H_{1}",
+    "head at the first speed"
+   ],
+   [
+    "N_{2}",
+    "second pump speed"
+   ],
+   [
+    "N_{1}",
+    "first pump speed"
+   ]
+  ]
+ },
+ {
+  "id": "water-0040-b",
+  "topic": "water",
+  "subtopic": "water-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A centrifugal pump develops a head of 45 m at 1,750 rpm. Using the affinity laws, what head does it develop at 1,450 rpm?",
+  "options": [
+   {
+    "id": "a",
+    "text": "37.3 m"
+   },
+   {
+    "id": "b",
+    "text": "30.9 m"
+   },
+   {
+    "id": "c",
+    "text": "25.6 m"
+   },
+   {
+    "id": "d",
+    "text": "65.5 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "For the same pump, flow varies with speed, head with speed squared and power with speed cubed.",
+  "solution": "H_{2} = H_{1} (\\frac{N_{2}}{N_{1}})^{2} = 45 (\\frac{1,450}{1,750})^{2} = 30.9 m.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "affinity laws"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0040",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "H_{2}",
+    "head at the second speed"
+   ],
+   [
+    "H_{1}",
+    "head at the first speed"
+   ],
+   [
+    "N_{2}",
+    "second pump speed"
+   ],
+   [
+    "N_{1}",
+    "first pump speed"
+   ]
+  ]
+ },
+ {
+  "id": "water-0040-c",
+  "topic": "water",
+  "subtopic": "water-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A centrifugal pump develops a head of 18 m at 900 rpm. Using the affinity laws, what head does it develop at 1,200 rpm?",
+  "options": [
+   {
+    "id": "a",
+    "text": "24.0 m"
+   },
+   {
+    "id": "b",
+    "text": "32.0 m"
+   },
+   {
+    "id": "c",
+    "text": "42.7 m"
+   },
+   {
+    "id": "d",
+    "text": "10.1 m"
+   }
+  ],
+  "answer": "b",
+  "eli5": "For the same pump, flow varies with speed, head with speed squared and power with speed cubed.",
+  "solution": "H_{2} = H_{1} (\\frac{N_{2}}{N_{1}})^{2} = 18 (\\frac{1,200}{900})^{2} = 32.0 m.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "affinity laws"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0040",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "H_{2}",
+    "head at the second speed"
+   ],
+   [
+    "H_{1}",
+    "head at the first speed"
+   ],
+   [
+    "N_{2}",
+    "second pump speed"
+   ],
+   [
+    "N_{1}",
+    "first pump speed"
+   ]
+  ]
+ },
+ {
+  "id": "water-0041",
+  "topic": "water",
+  "subtopic": "water-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A pump draws water from an open sump whose surface is 3.0 m below the pump inlet. Atmospheric pressure is 101.3 kPa, the vapour pressure of the water is 2.3 kPa and suction-pipe losses are 0.8 m. What net positive suction head is available? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 6.29,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "NPSH available is the absolute head at the pump inlet above the vapour pressure head: atmospheric head, minus vapour pressure head, minus the suction lift, minus suction losses. It must exceed what the pump requires, or the pump cavitates.",
+  "solution": "\\frac{101.3 - 2.3}{9.81} = 10.092 m.\n\nNPSH_{A} = 10.092 - 3.0 - 0.8 = 6.29 m.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "NPSH"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0041",
+  "version": 1,
+  "versions": 3,
   "lookup": true
+ },
+ {
+  "id": "water-0041-b",
+  "topic": "water",
+  "subtopic": "water-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A pump draws water from an open sump whose surface is 4.5 m below the pump inlet. Atmospheric pressure is 101.3 kPa, the vapour pressure of the water is 4.2 kPa and suction-pipe losses are 0.6 m. What net positive suction head is available? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 4.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "NPSH available is the absolute head at the pump inlet above the vapour pressure head: atmospheric head, minus vapour pressure head, minus the suction lift, minus suction losses. It must exceed what the pump requires, or the pump cavitates.",
+  "solution": "\\frac{101.3 - 4.2}{9.81} = 9.898 m.\n\nNPSH_{A} = 9.898 - 4.5 - 0.6 = 4.80 m.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "NPSH"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0041",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "water-0041-c",
+  "topic": "water",
+  "subtopic": "water-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A pump draws water from an open sump whose surface is 2.0 m below the pump inlet. Atmospheric pressure is 101.3 kPa, the vapour pressure of the water is 7.4 kPa and suction-pipe losses are 1.5 m. What net positive suction head is available? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 6.07,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "NPSH available is the absolute head at the pump inlet above the vapour pressure head: atmospheric head, minus vapour pressure head, minus the suction lift, minus suction losses. It must exceed what the pump requires, or the pump cavitates.",
+  "solution": "\\frac{101.3 - 7.4}{9.81} = 9.572 m.\n\nNPSH_{A} = 9.572 - 2.0 - 1.5 = 6.07 m.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "NPSH"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0041",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "water-0042",
+  "topic": "water",
+  "subtopic": "water-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A pump delivers 0.080 m^{3}/s of water against a total head of 30 m while drawing 30 kW of shaft power. What is its efficiency? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 78.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Efficiency is the power put into the water, specific weight × flow × head, divided by the shaft power supplied.",
+  "solution": "Water power = 9.81(0.080)(30) = 23.54 kW.\n\nEfficiency = \\frac{23.54}{30} × 100 = 78.5%.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pump power equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0042",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "water-0042-b",
+  "topic": "water",
+  "subtopic": "water-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A pump delivers 0.250 m^{3}/s of water against a total head of 18 m while drawing 60 kW of shaft power. What is its efficiency? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 73.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Efficiency is the power put into the water, specific weight × flow × head, divided by the shaft power supplied.",
+  "solution": "Water power = 9.81(0.250)(18) = 44.15 kW.\n\nEfficiency = \\frac{44.15}{60} × 100 = 73.6%.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pump power equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0042",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "water-0042-c",
+  "topic": "water",
+  "subtopic": "water-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A pump delivers 0.012 m^{3}/s of water against a total head of 55 m while drawing 9 kW of shaft power. What is its efficiency? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 71.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Efficiency is the power put into the water, specific weight × flow × head, divided by the shaft power supplied.",
+  "solution": "Water power = 9.81(0.012)(55) = 6.47 kW.\n\nEfficiency = \\frac{6.47}{9} × 100 = 71.9%.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pump power equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0042",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "water-0043",
+  "topic": "water",
+  "subtopic": "water-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A water main is 1,000 m long and 0.25 m in diameter, with a Hazen-Williams coefficient of 120. It carries 0.05 m^{3}/s. Using h_{f} = 10.67 L Q^{1.852} / (C^{1.852} D^{4.87}) in SI units, what is the friction head loss?",
+  "answer": {
+   "value": 5.01,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "The Hazen-Williams equation is an empirical formula for water in pressure pipes. Head loss rises with flow to the 1.852 power and falls steeply with diameter, to the 4.87 power.",
+  "solution": "h_{f} = \\frac{10.67(1,000)(0.05)^{1.852}}{(120)^{1.852}(0.25)^{4.87}} = \\frac{10.67(1,000)(0.003895)}{(7,090.0)(0.001169)} = 5.01 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Hazen-Williams"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0043",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "h_{f}",
+    "head lost to friction"
+   ]
+  ]
+ },
+ {
+  "id": "water-0043-b",
+  "topic": "water",
+  "subtopic": "water-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A water main is 600 m long and 0.15 m in diameter, with a Hazen-Williams coefficient of 100. It carries 0.02 m^{3}/s. Using h_{f} = 10.67 L Q^{1.852} / (C^{1.852} D^{4.87}) in SI units, what is the friction head loss?",
+  "answer": {
+   "value": 9.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "The Hazen-Williams equation is an empirical formula for water in pressure pipes. Head loss rises with flow to the 1.852 power and falls steeply with diameter, to the 4.87 power.",
+  "solution": "h_{f} = \\frac{10.67(600)(0.02)^{1.852}}{(100)^{1.852}(0.15)^{4.87}} = \\frac{10.67(600)(0.000714)}{(5,058.2)(0.000097)} = 9.30 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Hazen-Williams"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0043",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "h_{f}",
+    "head lost to friction"
+   ]
+  ]
+ },
+ {
+  "id": "water-0043-c",
+  "topic": "water",
+  "subtopic": "water-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A water main is 2,500 m long and 0.40 m in diameter, with a Hazen-Williams coefficient of 130. It carries 0.15 m^{3}/s. Using h_{f} = 10.67 L Q^{1.852} / (C^{1.852} D^{4.87}) in SI units, what is the friction head loss?",
+  "answer": {
+   "value": 8.38,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "The Hazen-Williams equation is an empirical formula for water in pressure pipes. Head loss rises with flow to the 1.852 power and falls steeply with diameter, to the 4.87 power.",
+  "solution": "h_{f} = \\frac{10.67(2,500)(0.15)^{1.852}}{(130)^{1.852}(0.40)^{4.87}} = \\frac{10.67(2,500)(0.029793)}{(8,222.9)(0.011535)} = 8.38 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Hazen-Williams"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0043",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "h_{f}",
+    "head lost to friction"
+   ]
+  ]
+ },
+ {
+  "id": "water-0044",
+  "topic": "water",
+  "subtopic": "water-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Two parallel pipes of equal length and friction factor join the same two junctions. Their diameters are 300 mm and 200 mm, and together they carry 100 L/s. How much flows in the 300 mm pipe?",
+  "answer": {
+   "value": 73.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "Pipes in parallel have the same head loss. With the Darcy-Weisbach equation and equal length and friction factor, each pipe's flow is proportional to its diameter to the 5/2 power.",
+  "solution": "D^{2.5}: 1,558,846 and 565,685.\n\nQ_{1} = 100 × \\frac{1,558,846}{1,558,846 + 565,685} = 73.4 L/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "head loss"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0044",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "Q_{1}",
+    "flow at the first speed"
+   ]
+  ]
+ },
+ {
+  "id": "water-0044-b",
+  "topic": "water",
+  "subtopic": "water-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Two parallel pipes of equal length and friction factor join the same two junctions. Their diameters are 400 mm and 250 mm, and together they carry 250 L/s. How much flows in the 400 mm pipe?",
+  "answer": {
+   "value": 191.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "Pipes in parallel have the same head loss. With the Darcy-Weisbach equation and equal length and friction factor, each pipe's flow is proportional to its diameter to the 5/2 power.",
+  "solution": "D^{2.5}: 3,200,000 and 988,212.\n\nQ_{1} = 250 × \\frac{3,200,000}{3,200,000 + 988,212} = 191.0 L/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "head loss"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0044",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "Q_{1}",
+    "flow at the first speed"
+   ]
+  ]
+ },
+ {
+  "id": "water-0044-c",
+  "topic": "water",
+  "subtopic": "water-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Two parallel pipes of equal length and friction factor join the same two junctions. Their diameters are 150 mm and 100 mm, and together they carry 30 L/s. How much flows in the 150 mm pipe?",
+  "answer": {
+   "value": 22.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "Pipes in parallel have the same head loss. With the Darcy-Weisbach equation and equal length and friction factor, each pipe's flow is proportional to its diameter to the 5/2 power.",
+  "solution": "D^{2.5}: 275,568 and 100,000.\n\nQ_{1} = 30 × \\frac{275,568}{275,568 + 100,000} = 22.0 L/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "head loss"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0044",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "Q_{1}",
+    "flow at the first speed"
+   ]
+  ]
+ },
+ {
+  "id": "water-0045",
+  "topic": "water",
+  "subtopic": "water-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The pressure at point A in a water main is 400 kPa. Point B, downstream, is 12 m higher than A, and the friction loss between them is 5.0 m. The pipe size is constant. What is the pressure at B? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 233.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "With a constant pipe size the velocity head cancels in the energy equation. Pressure head at B is the pressure head at A minus the rise in elevation and minus the head lost to friction.",
+  "solution": "p_{B} = 400 - 9.81(12 + 5.0) = 400 - 166.8 = 233.2 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Bernoulli equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0045",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "p_{B}",
+    "pressure at point B"
+   ]
+  ]
+ },
+ {
+  "id": "water-0045-b",
+  "topic": "water",
+  "subtopic": "water-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The pressure at point A in a water main is 550 kPa. Point B, downstream, is 25 m higher than A, and the friction loss between them is 8.5 m. The pipe size is constant. What is the pressure at B? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 221.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "With a constant pipe size the velocity head cancels in the energy equation. Pressure head at B is the pressure head at A minus the rise in elevation and minus the head lost to friction.",
+  "solution": "p_{B} = 550 - 9.81(25 + 8.5) = 550 - 328.6 = 221.4 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Bernoulli equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0045",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "p_{B}",
+    "pressure at point B"
+   ]
+  ]
+ },
+ {
+  "id": "water-0045-c",
+  "topic": "water",
+  "subtopic": "water-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The pressure at point A in a water main is 300 kPa. Point B, downstream, is 8 m higher than A, and the friction loss between them is 3.0 m. The pipe size is constant. What is the pressure at B? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 192.1,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kPa"
+  },
+  "eli5": "With a constant pipe size the velocity head cancels in the energy equation. Pressure head at B is the pressure head at A minus the rise in elevation and minus the head lost to friction.",
+  "solution": "p_{B} = 300 - 9.81(8 + 3.0) = 300 - 107.9 = 192.1 kPa.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Bernoulli equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0045",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "p_{B}",
+    "pressure at point B"
+   ]
+  ]
+ },
+ {
+  "id": "water-0046",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A spillway crest is 20 m long and has a discharge coefficient of 2.2 in SI units. What does it discharge under a head of 1.5 m, using Q = C L H^{3/2}?",
+  "answer": {
+   "value": 80.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/s"
+  },
+  "eli5": "A spillway crest behaves as a weir: discharge is proportional to the crest length and to the head raised to the 3/2 power. Doubling the head nearly triples the flow.",
+  "solution": "Q = 2.2(20)(1.5)^{1.5} = 2.2 × 20 × 1.8371 = 80.8 m^{3}/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "weir formulas"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0046",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "water-0046-b",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A spillway crest is 35 m long and has a discharge coefficient of 2.2 in SI units. What does it discharge under a head of 2.2 m, using Q = C L H^{3/2}?",
+  "answer": {
+   "value": 251.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/s"
+  },
+  "eli5": "A spillway crest behaves as a weir: discharge is proportional to the crest length and to the head raised to the 3/2 power. Doubling the head nearly triples the flow.",
+  "solution": "Q = 2.2(35)(2.2)^{1.5} = 2.2 × 35 × 3.2631 = 251.3 m^{3}/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "weir formulas"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0046",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "water-0046-c",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A spillway crest is 12 m long and has a discharge coefficient of 2.2 in SI units. What does it discharge under a head of 0.9 m, using Q = C L H^{3/2}?",
+  "answer": {
+   "value": 22.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/s"
+  },
+  "eli5": "A spillway crest behaves as a weir: discharge is proportional to the crest length and to the head raised to the 3/2 power. Doubling the head nearly triples the flow.",
+  "solution": "Q = 2.2(12)(0.9)^{1.5} = 2.2 × 12 × 0.8538 = 22.5 m^{3}/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "weir formulas"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0046",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "water-0047",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete gravity dam with a rectangular section is 4.0 m wide and 6 m high, with water level with its top on one side. Concrete weighs 23.5 kN/m^{3} and uplift is ignored. What is the factor of safety against overturning about the downstream toe?",
+  "answer": {
+   "value": 3.19,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Overturning is a moment check about the toe. The water thrust, the area of the triangular pressure diagram, acts one third of the depth above the base. The dam's weight acts at half its width from the toe.",
+  "solution": "Resisting moment = 23.5(4.0)(6) × \\frac{4.0}{2} = 1,128 kN·m/m.\n\nOverturning moment = \\frac{1}{2}(9.81)(6)^{2} × \\frac{6}{3} = 353 kN·m/m.\n\nFS = \\frac{1,128}{353} = 3.19.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "forces on submerged surfaces"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0047",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "water-0047-b",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete gravity dam with a rectangular section is 5.0 m wide and 9 m high, with water level with its top on one side. Concrete weighs 23.5 kN/m^{3} and uplift is ignored. What is the factor of safety against overturning about the downstream toe?",
+  "answer": {
+   "value": 2.22,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Overturning is a moment check about the toe. The water thrust, the area of the triangular pressure diagram, acts one third of the depth above the base. The dam's weight acts at half its width from the toe.",
+  "solution": "Resisting moment = 23.5(5.0)(9) × \\frac{5.0}{2} = 2,644 kN·m/m.\n\nOverturning moment = \\frac{1}{2}(9.81)(9)^{2} × \\frac{9}{3} = 1,192 kN·m/m.\n\nFS = \\frac{2,644}{1,192} = 2.22.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "forces on submerged surfaces"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0047",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "water-0047-c",
+  "topic": "water",
+  "subtopic": "water-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete gravity dam with a rectangular section is 3.5 m wide and 5 m high, with water level with its top on one side. Concrete weighs 23.5 kN/m^{3} and uplift is ignored. What is the factor of safety against overturning about the downstream toe?",
+  "answer": {
+   "value": 3.52,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Overturning is a moment check about the toe. The water thrust, the area of the triangular pressure diagram, acts one third of the depth above the base. The dam's weight acts at half its width from the toe.",
+  "solution": "Resisting moment = 23.5(3.5)(5) × \\frac{3.5}{2} = 720 kN·m/m.\n\nOverturning moment = \\frac{1}{2}(9.81)(5)^{2} × \\frac{5}{3} = 204 kN·m/m.\n\nFS = \\frac{720}{204} = 3.52.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "forces on submerged surfaces"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0047",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "water-0048",
+  "topic": "water",
+  "subtopic": "water-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A stormwater treatment facility must capture the runoff from the first 25 mm of rain on a 4.0 ha site whose volumetric runoff coefficient is 0.60. What water quality volume is required?",
+  "answer": {
+   "value": 600.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "The water quality volume is the depth of rain to be captured, times the fraction that runs off, times the drainage area. One hectare is 10,000 m^{2}.",
+  "solution": "Volume = 0.025 m × 0.60 × 40,000 m^{2} = 600 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0048",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0048-b",
+  "topic": "water",
+  "subtopic": "water-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A stormwater treatment facility must capture the runoff from the first 30 mm of rain on a 10.0 ha site whose volumetric runoff coefficient is 0.45. What water quality volume is required?",
+  "answer": {
+   "value": 1350.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "The water quality volume is the depth of rain to be captured, times the fraction that runs off, times the drainage area. One hectare is 10,000 m^{2}.",
+  "solution": "Volume = 0.030 m × 0.45 × 100,000 m^{2} = 1,350 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0048",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0048-c",
+  "topic": "water",
+  "subtopic": "water-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A stormwater treatment facility must capture the runoff from the first 13 mm of rain on a 1.5 ha site whose volumetric runoff coefficient is 0.80. What water quality volume is required?",
+  "answer": {
+   "value": 156.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "The water quality volume is the depth of rain to be captured, times the fraction that runs off, times the drainage area. One hectare is 10,000 m^{2}.",
+  "solution": "Volume = 0.013 m × 0.80 × 15,000 m^{2} = 156 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0048",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0049",
+  "topic": "water",
+  "subtopic": "water-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Local rainfall intensity is i = 2,500 / (t + 15) mm/h, with t in minutes. A 6 ha site with a runoff coefficient of 0.70 has a time of concentration of 20 min. Using Q = C i A / 360 (i in mm/h, A in ha), what is the peak runoff?",
+  "answer": {
+   "value": 0.833,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/s"
+  },
+  "eli5": "The rational method takes the storm duration equal to the time of concentration, because that is the shortest storm for which the whole site contributes at once. Longer times of concentration mean lower intensities.",
+  "solution": "i = \\frac{2,500}{20 + 15} = 71.43 mm/h.\n\nQ = \\frac{0.70(71.43)(6)}{360} = 0.833 m^{3}/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "rational formula"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0049",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "i",
+    "rainfall intensity, or hydraulic gradient"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "water-0049-b",
+  "topic": "water",
+  "subtopic": "water-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Local rainfall intensity is i = 2,500 / (t + 15) mm/h, with t in minutes. A 25 ha site with a runoff coefficient of 0.50 has a time of concentration of 45 min. Using Q = C i A / 360 (i in mm/h, A in ha), what is the peak runoff?",
+  "answer": {
+   "value": 1.447,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/s"
+  },
+  "eli5": "The rational method takes the storm duration equal to the time of concentration, because that is the shortest storm for which the whole site contributes at once. Longer times of concentration mean lower intensities.",
+  "solution": "i = \\frac{2,500}{45 + 15} = 41.67 mm/h.\n\nQ = \\frac{0.50(41.67)(25)}{360} = 1.447 m^{3}/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "rational formula"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0049",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "i",
+    "rainfall intensity, or hydraulic gradient"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "water-0049-c",
+  "topic": "water",
+  "subtopic": "water-f",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Local rainfall intensity is i = 2,500 / (t + 15) mm/h, with t in minutes. A 2 ha site with a runoff coefficient of 0.90 has a time of concentration of 10 min. Using Q = C i A / 360 (i in mm/h, A in ha), what is the peak runoff?",
+  "answer": {
+   "value": 0.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/s"
+  },
+  "eli5": "The rational method takes the storm duration equal to the time of concentration, because that is the shortest storm for which the whole site contributes at once. Longer times of concentration mean lower intensities.",
+  "solution": "i = \\frac{2,500}{10 + 15} = 100.00 mm/h.\n\nQ = \\frac{0.90(100.00)(2)}{360} = 0.500 m^{3}/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "rational formula"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0049",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "i",
+    "rainfall intensity, or hydraulic gradient"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "water-0050",
+  "topic": "water",
+  "subtopic": "water-f",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Runoff passes through two stormwater treatment devices in series. The first removes 60% of suspended solids and the second removes 40% of what reaches it. What is the overall removal?",
+  "options": [
+   {
+    "id": "a",
+    "text": "100 %"
+   },
+   {
+    "id": "b",
+    "text": "50 %"
+   },
+   {
+    "id": "c",
+    "text": "24 %"
+   },
+   {
+    "id": "d",
+    "text": "76 %"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Removals in series do not add. The second device only sees what the first lets through, so multiply the fractions that pass and subtract from one.",
+  "solution": "Fraction passing = (1 - 0.60)(1 - 0.40) = 0.24.\n\nOverall removal = 1 - 0.24 = 76%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0050",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0050-b",
+  "topic": "water",
+  "subtopic": "water-f",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Runoff passes through two stormwater treatment devices in series. The first removes 80% of suspended solids and the second removes 50% of what reaches it. What is the overall removal?",
+  "options": [
+   {
+    "id": "a",
+    "text": "130 %"
+   },
+   {
+    "id": "b",
+    "text": "65 %"
+   },
+   {
+    "id": "c",
+    "text": "40 %"
+   },
+   {
+    "id": "d",
+    "text": "90 %"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Removals in series do not add. The second device only sees what the first lets through, so multiply the fractions that pass and subtract from one.",
+  "solution": "Fraction passing = (1 - 0.80)(1 - 0.50) = 0.10.\n\nOverall removal = 1 - 0.10 = 90%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0050",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0050-c",
+  "topic": "water",
+  "subtopic": "water-f",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Runoff passes through two stormwater treatment devices in series. The first removes 50% of suspended solids and the second removes 30% of what reaches it. What is the overall removal?",
+  "options": [
+   {
+    "id": "a",
+    "text": "80 %"
+   },
+   {
+    "id": "b",
+    "text": "40 %"
+   },
+   {
+    "id": "c",
+    "text": "15 %"
+   },
+   {
+    "id": "d",
+    "text": "65 %"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Removals in series do not add. The second device only sees what the first lets through, so multiply the fractions that pass and subtract from one.",
+  "solution": "Fraction passing = (1 - 0.50)(1 - 0.30) = 0.35.\n\nOverall removal = 1 - 0.35 = 65%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0050",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0051",
+  "topic": "water",
+  "subtopic": "water-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sewer leaves a manhole at an invert elevation of 102.40 m and runs 120 m at a slope of 0.40% to the next manhole. What is the invert elevation where it arrives?",
+  "answer": {
+   "value": 101.92,
+   "tolerance": 0.0005,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "A gravity sewer falls at its design slope. The drop is slope, as a decimal, times the run.",
+  "solution": "Drop = \\frac{0.40}{100} × 120 = 0.48 m.\n\nInvert = 102.40 - 0.48 = 101.92 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0051",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0051-b",
+  "topic": "water",
+  "subtopic": "water-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sewer leaves a manhole at an invert elevation of 56.85 m and runs 100 m at a slope of 0.25% to the next manhole. What is the invert elevation where it arrives?",
+  "answer": {
+   "value": 56.6,
+   "tolerance": 0.0005,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "A gravity sewer falls at its design slope. The drop is slope, as a decimal, times the run.",
+  "solution": "Drop = \\frac{0.25}{100} × 100 = 0.25 m.\n\nInvert = 56.85 - 0.25 = 56.60 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0051",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0051-c",
+  "topic": "water",
+  "subtopic": "water-g",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sewer leaves a manhole at an invert elevation of 231.10 m and runs 75 m at a slope of 1.20% to the next manhole. What is the invert elevation where it arrives?",
+  "answer": {
+   "value": 230.2,
+   "tolerance": 0.0005,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "A gravity sewer falls at its design slope. The drop is slope, as a decimal, times the run.",
+  "solution": "Drop = \\frac{1.20}{100} × 75 = 0.90 m.\n\nInvert = 231.10 - 0.90 = 230.20 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0051",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0052",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A well fully penetrates a confined aquifer with a transmissivity of 500 m^{2}/day. At steady state, the piezometric level at 100 m from the well is 1.2 m higher than at 10 m. What is the pumping rate?",
+  "answer": {
+   "value": 1637.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/day"
+  },
+  "eli5": "For steady radial flow to a well in a confined aquifer, Q = 2π T (h_{2} - h_{1}) / ln(r_{2} / r_{1}). Transmissivity is hydraulic conductivity times aquifer thickness.",
+  "solution": "Q = \\frac{2π(500)(1.2)}{ln(100 / 10)} = \\frac{3,769.9}{2.3026} = 1,637 m^{3}/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "well drawdown"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0052",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "h_{2}",
+    "saturated thickness or head at radius r_{2}"
+   ],
+   [
+    "h_{1}",
+    "saturated thickness or head at radius r_{1}"
+   ],
+   [
+    "r_{2}",
+    "distance of the farther observation well"
+   ],
+   [
+    "r_{1}",
+    "distance of the nearer observation well"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "T",
+    "transmissivity"
+   ]
+  ]
+ },
+ {
+  "id": "water-0052-b",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A well fully penetrates a confined aquifer with a transmissivity of 250 m^{2}/day. At steady state, the piezometric level at 60 m from the well is 2.0 m higher than at 5 m. What is the pumping rate?",
+  "answer": {
+   "value": 1264.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/day"
+  },
+  "eli5": "For steady radial flow to a well in a confined aquifer, Q = 2π T (h_{2} - h_{1}) / ln(r_{2} / r_{1}). Transmissivity is hydraulic conductivity times aquifer thickness.",
+  "solution": "Q = \\frac{2π(250)(2.0)}{ln(60 / 5)} = \\frac{3,141.6}{2.4849} = 1,264 m^{3}/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "well drawdown"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0052",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "h_{2}",
+    "saturated thickness or head at radius r_{2}"
+   ],
+   [
+    "h_{1}",
+    "saturated thickness or head at radius r_{1}"
+   ],
+   [
+    "r_{2}",
+    "distance of the farther observation well"
+   ],
+   [
+    "r_{1}",
+    "distance of the nearer observation well"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "T",
+    "transmissivity"
+   ]
+  ]
+ },
+ {
+  "id": "water-0052-c",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A well fully penetrates a confined aquifer with a transmissivity of 1,200 m^{2}/day. At steady state, the piezometric level at 150 m from the well is 0.6 m higher than at 20 m. What is the pumping rate?",
+  "answer": {
+   "value": 2245.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/day"
+  },
+  "eli5": "For steady radial flow to a well in a confined aquifer, Q = 2π T (h_{2} - h_{1}) / ln(r_{2} / r_{1}). Transmissivity is hydraulic conductivity times aquifer thickness.",
+  "solution": "Q = \\frac{2π(1,200)(0.6)}{ln(150 / 20)} = \\frac{4,523.9}{2.0149} = 2,245 m^{3}/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "well drawdown"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0052",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "h_{2}",
+    "saturated thickness or head at radius r_{2}"
+   ],
+   [
+    "h_{1}",
+    "saturated thickness or head at radius r_{1}"
+   ],
+   [
+    "r_{2}",
+    "distance of the farther observation well"
+   ],
+   [
+    "r_{1}",
+    "distance of the nearer observation well"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "T",
+    "transmissivity"
+   ]
+  ]
+ },
+ {
+  "id": "water-0053",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The water table in an unconfined aquifer with a specific yield of 0.15 falls by 3.0 m over an area of 2.0 km^{2}. What volume of water has drained from storage?",
+  "answer": {
+   "value": 900000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "Specific yield is the volume of water an unconfined aquifer releases per unit area per unit drop of the water table. It is less than the porosity because some water stays held on the grains.",
+  "solution": "Volume = 0.15 × 2,000,000 m^{2} × 3.0 m = 900,000 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0053",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0053-b",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The water table in an unconfined aquifer with a specific yield of 0.22 falls by 1.5 m over an area of 0.5 km^{2}. What volume of water has drained from storage?",
+  "answer": {
+   "value": 165000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "Specific yield is the volume of water an unconfined aquifer releases per unit area per unit drop of the water table. It is less than the porosity because some water stays held on the grains.",
+  "solution": "Volume = 0.22 × 500,000 m^{2} × 1.5 m = 165,000 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0053",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0053-c",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The water table in an unconfined aquifer with a specific yield of 0.08 falls by 0.8 m over an area of 12.0 km^{2}. What volume of water has drained from storage?",
+  "answer": {
+   "value": 768000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "Specific yield is the volume of water an unconfined aquifer releases per unit area per unit drop of the water table. It is less than the porosity because some water stays held on the grains.",
+  "solution": "Volume = 0.08 × 12,000,000 m^{2} × 0.8 m = 768,000 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0053",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0054",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Groundwater flows through sand with a hydraulic conductivity of 20 m/day and an effective porosity of 0.30 under a hydraulic gradient of 0.004. How long does water take to travel 500 m?",
+  "answer": {
+   "value": 1875.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "days"
+  },
+  "eli5": "Darcy's law gives the flow per unit of total area. Water moves only through the pores, so the actual (seepage) velocity is the Darcy velocity divided by the effective porosity.",
+  "solution": "Seepage velocity = \\frac{20(0.004)}{0.30} = 0.2667 m/day.\n\nTime = \\frac{500}{0.2667} = 1,875 days.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Darcy's law"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0054",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "water-0054-b",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Groundwater flows through sand with a hydraulic conductivity of 8 m/day and an effective porosity of 0.25 under a hydraulic gradient of 0.010. How long does water take to travel 200 m?",
+  "answer": {
+   "value": 625.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "days"
+  },
+  "eli5": "Darcy's law gives the flow per unit of total area. Water moves only through the pores, so the actual (seepage) velocity is the Darcy velocity divided by the effective porosity.",
+  "solution": "Seepage velocity = \\frac{8(0.010)}{0.25} = 0.3200 m/day.\n\nTime = \\frac{200}{0.3200} = 625 days.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Darcy's law"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0054",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "water-0054-c",
+  "topic": "water",
+  "subtopic": "water-h",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Groundwater flows through sand with a hydraulic conductivity of 50 m/day and an effective porosity of 0.35 under a hydraulic gradient of 0.002. How long does water take to travel 1,200 m?",
+  "answer": {
+   "value": 4200.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "days"
+  },
+  "eli5": "Darcy's law gives the flow per unit of total area. Water moves only through the pores, so the actual (seepage) velocity is the Darcy velocity divided by the effective porosity.",
+  "solution": "Seepage velocity = \\frac{50(0.002)}{0.35} = 0.2857 m/day.\n\nTime = \\frac{1,200}{0.2857} = 4,200 days.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Darcy's law"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0054",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "water-0055",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A stream flowing at 8.0 m^{3}/s with a pollutant concentration of 2.0 mg/L receives a discharge of 1.0 m^{3}/s at 30 mg/L. What is the concentration just after complete mixing?",
+  "answer": {
+   "value": 5.11,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mg/L"
+  },
+  "eli5": "Mass is conserved at a mixing point: the load after mixing is the sum of the loads coming in. Concentration is that total load divided by the total flow.",
+  "solution": "C = \\frac{8.0(2.0) + 1.0(30)}{8.0 + 1.0} = \\frac{46.0}{9.0} = 5.11 mg/L.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0055",
+  "version": 1,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "C",
+    "concentration"
+   ]
+  ]
+ },
+ {
+  "id": "water-0055-b",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A stream flowing at 25.0 m^{3}/s with a pollutant concentration of 1.5 mg/L receives a discharge of 2.0 m^{3}/s at 25 mg/L. What is the concentration just after complete mixing?",
+  "answer": {
+   "value": 3.24,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mg/L"
+  },
+  "eli5": "Mass is conserved at a mixing point: the load after mixing is the sum of the loads coming in. Concentration is that total load divided by the total flow.",
+  "solution": "C = \\frac{25.0(1.5) + 2.0(25)}{25.0 + 2.0} = \\frac{87.5}{27.0} = 3.24 mg/L.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0055",
+  "version": 2,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "C",
+    "concentration"
+   ]
+  ]
+ },
+ {
+  "id": "water-0055-c",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A stream flowing at 3.5 m^{3}/s with a pollutant concentration of 3.0 mg/L receives a discharge of 0.5 m^{3}/s at 40 mg/L. What is the concentration just after complete mixing?",
+  "answer": {
+   "value": 7.62,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mg/L"
+  },
+  "eli5": "Mass is conserved at a mixing point: the load after mixing is the sum of the loads coming in. Concentration is that total load divided by the total flow.",
+  "solution": "C = \\frac{3.5(3.0) + 0.5(40)}{3.5 + 0.5} = \\frac{30.5}{4.0} = 7.62 mg/L.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0055",
+  "version": 3,
+  "versions": 3,
+  "lookup": false,
+  "symbols": [
+   [
+    "C",
+    "concentration"
+   ]
+  ]
+ },
+ {
+  "id": "water-0056",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A water sample contains 122 mg/L of bicarbonate (HCO_{3}^{-}, equivalent weight 61). Express this as mg/L as CaCO_{3} (equivalent weight 50).",
+  "answer": {
+   "value": 100.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mg/L as CaCO_{3}"
+  },
+  "eli5": "Concentrations are put on a common basis by converting to calcium carbonate equivalents: multiply by 50 and divide by the ion's own equivalent weight.",
+  "solution": "122 × \\frac{50}{61} = 100.0 mg/L as CaCO_{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0056",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0056-b",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A water sample contains 183 mg/L of bicarbonate (HCO_{3}^{-}, equivalent weight 61). Express this as mg/L as CaCO_{3} (equivalent weight 50).",
+  "answer": {
+   "value": 150.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mg/L as CaCO_{3}"
+  },
+  "eli5": "Concentrations are put on a common basis by converting to calcium carbonate equivalents: multiply by 50 and divide by the ion's own equivalent weight.",
+  "solution": "183 × \\frac{50}{61} = 150.0 mg/L as CaCO_{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0056",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0056-c",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A water sample contains 85 mg/L of bicarbonate (HCO_{3}^{-}, equivalent weight 61). Express this as mg/L as CaCO_{3} (equivalent weight 50).",
+  "answer": {
+   "value": 69.7,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mg/L as CaCO_{3}"
+  },
+  "eli5": "Concentrations are put on a common basis by converting to calcium carbonate equivalents: multiply by 50 and divide by the ion's own equivalent weight.",
+  "solution": "85 × \\frac{50}{61} = 69.7 mg/L as CaCO_{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0056",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0057",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A treatment plant receives 20,000 m^{3}/day of wastewater with a BOD of 250 mg/L. What is the BOD loading?",
+  "answer": {
+   "value": 5000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg/day"
+  },
+  "eli5": "Mass loading is flow times concentration. Since 1 mg/L is 1 g/m^{3}, multiplying m^{3}/day by mg/L gives g/day; divide by 1,000 for kg/day.",
+  "solution": "Loading = \\frac{20,000(250)}{1,000} = 5,000 kg/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0057",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0057-b",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A treatment plant receives 7,500 m^{3}/day of wastewater with a BOD of 180 mg/L. What is the BOD loading?",
+  "answer": {
+   "value": 1350.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg/day"
+  },
+  "eli5": "Mass loading is flow times concentration. Since 1 mg/L is 1 g/m^{3}, multiplying m^{3}/day by mg/L gives g/day; divide by 1,000 for kg/day.",
+  "solution": "Loading = \\frac{7,500(180)}{1,000} = 1,350 kg/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0057",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0057-c",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A treatment plant receives 48,000 m^{3}/day of wastewater with a BOD of 30 mg/L. What is the BOD loading?",
+  "answer": {
+   "value": 1440.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg/day"
+  },
+  "eli5": "Mass loading is flow times concentration. Since 1 mg/L is 1 g/m^{3}, multiplying m^{3}/day by mg/L gives g/day; divide by 1,000 for kg/day.",
+  "solution": "Loading = \\frac{48,000(30)}{1,000} = 1,440 kg/day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0057",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0058",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A solution has a hydrogen ion concentration of 2.5 × 10^{-6} mol/L. What is its pH?",
+  "answer": {
+   "value": 5.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "pH is the negative base-10 logarithm of the hydrogen ion concentration in mol/L. Each unit of pH is a factor of ten in concentration.",
+  "solution": "pH = -log(2.5 × 10^{-6}) = 6 - log(2.5) = 6 - 0.398 = 5.60.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0058",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0058-b",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A solution has a hydrogen ion concentration of 4.0 × 10^{-9} mol/L. What is its pH?",
+  "answer": {
+   "value": 8.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "pH is the negative base-10 logarithm of the hydrogen ion concentration in mol/L. Each unit of pH is a factor of ten in concentration.",
+  "solution": "pH = -log(4.0 × 10^{-9}) = 9 - log(4.0) = 9 - 0.602 = 8.40.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0058",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0058-c",
+  "topic": "water",
+  "subtopic": "water-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A solution has a hydrogen ion concentration of 6.3 × 10^{-4} mol/L. What is its pH?",
+  "answer": {
+   "value": 3.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "pH is the negative base-10 logarithm of the hydrogen ion concentration in mol/L. Each unit of pH is a factor of ten in concentration.",
+  "solution": "pH = -log(6.3 × 10^{-4}) = 4 - log(6.3) = 4 - 0.799 = 3.20.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0058",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0059",
+  "topic": "water",
+  "subtopic": "water-j",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In a suspended solids test, a filter weighs 1.5420 g before and 1.5532 g after filtering and drying a 50 mL sample. What is the total suspended solids concentration?",
+  "answer": {
+   "value": 224.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mg/L"
+  },
+  "eli5": "Total suspended solids is the dry mass caught on the filter divided by the volume filtered. Convert grams to milligrams and millilitres to litres.",
+  "solution": "Mass retained = 1.5532 - 1.5420 = 0.0112 g = 11.2 mg.\n\nTSS = \\frac{11.2}{0.050} = 224 mg/L.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0059",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0059-b",
+  "topic": "water",
+  "subtopic": "water-j",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In a suspended solids test, a filter weighs 1.2085 g before and 1.2139 g after filtering and drying a 100 mL sample. What is the total suspended solids concentration?",
+  "answer": {
+   "value": 54.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mg/L"
+  },
+  "eli5": "Total suspended solids is the dry mass caught on the filter divided by the volume filtered. Convert grams to milligrams and millilitres to litres.",
+  "solution": "Mass retained = 1.2139 - 1.2085 = 0.0054 g = 5.4 mg.\n\nTSS = \\frac{5.4}{0.100} = 54 mg/L.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0059",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0059-c",
+  "topic": "water",
+  "subtopic": "water-j",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In a suspended solids test, a filter weighs 0.9860 g before and 0.9915 g after filtering and drying a 25 mL sample. What is the total suspended solids concentration?",
+  "answer": {
+   "value": 220.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mg/L"
+  },
+  "eli5": "Total suspended solids is the dry mass caught on the filter divided by the volume filtered. Convert grams to milligrams and millilitres to litres.",
+  "solution": "Mass retained = 0.9915 - 0.9860 = 0.0055 g = 5.5 mg.\n\nTSS = \\frac{5.5}{0.025} = 220 mg/L.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0059",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0060",
+  "topic": "water",
+  "subtopic": "water-j",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Construction equipment produces a sound level of 90 dB at 10 m. Treating it as a point source in open ground, what is the level at 40 m?",
+  "answer": {
+   "value": 78.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "dB"
+  },
+  "eli5": "Sound from a point source spreads over a sphere, so its intensity falls with distance squared. In decibels that is a drop of 20 log(r_{2} / r_{1}), about 6 dB for each doubling of distance.",
+  "solution": "L_{2} = 90 - 20 log(\\frac{40}{10}) = 90 - 12.04 = 78.0 dB.",
+  "handbook": [
+   {
+    "section": "Safety",
+    "page": "13–33",
+    "find": [
+     "noise"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0060",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "r_{2}",
+    "distance of the farther observation well"
+   ],
+   [
+    "r_{1}",
+    "distance of the nearer observation well"
+   ],
+   [
+    "L_{2}",
+    "sound level at the second distance"
+   ]
+  ]
+ },
+ {
+  "id": "water-0060-b",
+  "topic": "water",
+  "subtopic": "water-j",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Construction equipment produces a sound level of 85 dB at 15 m. Treating it as a point source in open ground, what is the level at 60 m?",
+  "answer": {
+   "value": 73.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "dB"
+  },
+  "eli5": "Sound from a point source spreads over a sphere, so its intensity falls with distance squared. In decibels that is a drop of 20 log(r_{2} / r_{1}), about 6 dB for each doubling of distance.",
+  "solution": "L_{2} = 85 - 20 log(\\frac{60}{15}) = 85 - 12.04 = 73.0 dB.",
+  "handbook": [
+   {
+    "section": "Safety",
+    "page": "13–33",
+    "find": [
+     "noise"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0060",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "r_{2}",
+    "distance of the farther observation well"
+   ],
+   [
+    "r_{1}",
+    "distance of the nearer observation well"
+   ],
+   [
+    "L_{2}",
+    "sound level at the second distance"
+   ]
+  ]
+ },
+ {
+  "id": "water-0060-c",
+  "topic": "water",
+  "subtopic": "water-j",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Construction equipment produces a sound level of 100 dB at 5 m. Treating it as a point source in open ground, what is the level at 50 m?",
+  "answer": {
+   "value": 80.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "dB"
+  },
+  "eli5": "Sound from a point source spreads over a sphere, so its intensity falls with distance squared. In decibels that is a drop of 20 log(r_{2} / r_{1}), about 6 dB for each doubling of distance.",
+  "solution": "L_{2} = 100 - 20 log(\\frac{50}{5}) = 100 - 20.00 = 80.0 dB.",
+  "handbook": [
+   {
+    "section": "Safety",
+    "page": "13–33",
+    "find": [
+     "noise"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0060",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "r_{2}",
+    "distance of the farther observation well"
+   ],
+   [
+    "r_{1}",
+    "distance of the nearer observation well"
+   ],
+   [
+    "L_{2}",
+    "sound level at the second distance"
+   ]
+  ]
+ },
+ {
+  "id": "water-0061",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An aeration tank of 2,500 m^{3} holds mixed liquor at 2,500 mg/L and receives 10,000 m^{3}/day of wastewater with a BOD of 200 mg/L. What is the food-to-microorganism ratio?",
+  "answer": {
+   "value": 0.32,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "per day"
+  },
+  "eli5": "The food-to-microorganism ratio compares the daily mass of BOD fed with the mass of microorganisms in the tank: Q S_{0} / (V X).",
+  "solution": "F/M = \\frac{10,000(200)}{2,500(2,500)} = 0.320 per day.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "activated sludge"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0061",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "S_{0}",
+    "influent BOD"
+   ]
+  ]
+ },
+ {
+  "id": "water-0061-b",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An aeration tank of 1,500 m^{3} holds mixed liquor at 2,000 mg/L and receives 4,000 m^{3}/day of wastewater with a BOD of 250 mg/L. What is the food-to-microorganism ratio?",
+  "answer": {
+   "value": 0.333,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "per day"
+  },
+  "eli5": "The food-to-microorganism ratio compares the daily mass of BOD fed with the mass of microorganisms in the tank: Q S_{0} / (V X).",
+  "solution": "F/M = \\frac{4,000(250)}{1,500(2,000)} = 0.333 per day.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "activated sludge"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0061",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "S_{0}",
+    "influent BOD"
+   ]
+  ]
+ },
+ {
+  "id": "water-0061-c",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An aeration tank of 8,000 m^{3} holds mixed liquor at 3,000 mg/L and receives 25,000 m^{3}/day of wastewater with a BOD of 150 mg/L. What is the food-to-microorganism ratio?",
+  "answer": {
+   "value": 0.156,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "per day"
+  },
+  "eli5": "The food-to-microorganism ratio compares the daily mass of BOD fed with the mass of microorganisms in the tank: Q S_{0} / (V X).",
+  "solution": "F/M = \\frac{25,000(150)}{8,000(3,000)} = 0.156 per day.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "activated sludge"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0061",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "S_{0}",
+    "influent BOD"
+   ]
+  ]
+ },
+ {
+  "id": "water-0062",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An aeration tank of 2,500 m^{3} holds mixed liquor at 2,500 mg/L. Sludge is wasted at 100 m^{3}/day with a concentration of 8,000 mg/L, and solids lost in the effluent are negligible. What is the solids residence time?",
+  "answer": {
+   "value": 7.81,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "days"
+  },
+  "eli5": "Solids residence time, or sludge age, is the mass of solids in the system divided by the mass leaving it each day.",
+  "solution": "SRT = \\frac{V X}{Q_{w} X_{w}} = \\frac{2,500(2,500)}{100(8,000)} = 7.81 days.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "solids residence time"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0062",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "Q_{w}",
+    "waste sludge flow"
+   ],
+   [
+    "X_{w}",
+    "solids concentration in the waste sludge"
+   ],
+   [
+    "X",
+    "mixed liquor solids concentration"
+   ]
+  ]
+ },
+ {
+  "id": "water-0062-b",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An aeration tank of 4,000 m^{3} holds mixed liquor at 3,000 mg/L. Sludge is wasted at 150 m^{3}/day with a concentration of 10,000 mg/L, and solids lost in the effluent are negligible. What is the solids residence time?",
+  "answer": {
+   "value": 8.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "days"
+  },
+  "eli5": "Solids residence time, or sludge age, is the mass of solids in the system divided by the mass leaving it each day.",
+  "solution": "SRT = \\frac{V X}{Q_{w} X_{w}} = \\frac{4,000(3,000)}{150(10,000)} = 8.00 days.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "solids residence time"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0062",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "Q_{w}",
+    "waste sludge flow"
+   ],
+   [
+    "X_{w}",
+    "solids concentration in the waste sludge"
+   ],
+   [
+    "X",
+    "mixed liquor solids concentration"
+   ]
+  ]
+ },
+ {
+  "id": "water-0062-c",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An aeration tank of 1,200 m^{3} holds mixed liquor at 2,200 mg/L. Sludge is wasted at 40 m^{3}/day with a concentration of 7,500 mg/L, and solids lost in the effluent are negligible. What is the solids residence time?",
+  "answer": {
+   "value": 8.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "days"
+  },
+  "eli5": "Solids residence time, or sludge age, is the mass of solids in the system divided by the mass leaving it each day.",
+  "solution": "SRT = \\frac{V X}{Q_{w} X_{w}} = \\frac{1,200(2,200)}{40(7,500)} = 8.80 days.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "solids residence time"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0062",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "Q_{w}",
+    "waste sludge flow"
+   ],
+   [
+    "X_{w}",
+    "solids concentration in the waste sludge"
+   ],
+   [
+    "X",
+    "mixed liquor solids concentration"
+   ]
+  ]
+ },
+ {
+  "id": "water-0063",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rapid sand filter with a surface area of 60 m^{2} treats 12,000 m^{3}/day. What is its filtration rate?",
+  "answer": {
+   "value": 8.33,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/h"
+  },
+  "eli5": "Filtration rate is flow divided by filter surface area, a velocity. Convert days to hours when the rate is wanted in m/h.",
+  "solution": "Rate = \\frac{12,000}{60 × 24} = 8.33 m/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0063",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0063-b",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rapid sand filter with a surface area of 125 m^{2} treats 30,000 m^{3}/day. What is its filtration rate?",
+  "answer": {
+   "value": 10.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/h"
+  },
+  "eli5": "Filtration rate is flow divided by filter surface area, a velocity. Convert days to hours when the rate is wanted in m/h.",
+  "solution": "Rate = \\frac{30,000}{125 × 24} = 10.00 m/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0063",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0063-c",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rapid sand filter with a surface area of 40 m^{2} treats 4,800 m^{3}/day. What is its filtration rate?",
+  "answer": {
+   "value": 5.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/h"
+  },
+  "eli5": "Filtration rate is flow divided by filter surface area, a velocity. Convert days to hours when the rate is wanted in m/h.",
+  "solution": "Rate = \\frac{4,800}{40 × 24} = 5.00 m/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0063",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0064",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A spherical particle 0.05 mm in diameter with a density of 2,650 kg/m^{3} settles in water (density 1,000 kg/m^{3}, viscosity 0.001 Pa·s). Using Stokes' law, what is its settling velocity?",
+  "answer": {
+   "value": 2.248,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm/s"
+  },
+  "eli5": "For small particles in laminar conditions, the settling velocity is g (particle density - fluid density) d^{2} / (18 × viscosity). It depends on diameter squared, so fine particles settle very slowly.",
+  "solution": "v = \\frac{9.81(2,650 - 1,000)(0.00005)^{2}}{18(0.001)} = 0.002248 m/s = 2.248 mm/s.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "Stokes' law"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0064",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "v",
+    "velocity"
+   ]
+  ]
+ },
+ {
+  "id": "water-0064-b",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A spherical particle 0.02 mm in diameter with a density of 2,650 kg/m^{3} settles in water (density 1,000 kg/m^{3}, viscosity 0.001 Pa·s). Using Stokes' law, what is its settling velocity?",
+  "answer": {
+   "value": 0.36,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm/s"
+  },
+  "eli5": "For small particles in laminar conditions, the settling velocity is g (particle density - fluid density) d^{2} / (18 × viscosity). It depends on diameter squared, so fine particles settle very slowly.",
+  "solution": "v = \\frac{9.81(2,650 - 1,000)(0.00002)^{2}}{18(0.001)} = 0.000360 m/s = 0.360 mm/s.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "Stokes' law"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0064",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "v",
+    "velocity"
+   ]
+  ]
+ },
+ {
+  "id": "water-0064-c",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A spherical particle 0.08 mm in diameter with a density of 1,200 kg/m^{3} settles in water (density 1,000 kg/m^{3}, viscosity 0.001 Pa·s). Using Stokes' law, what is its settling velocity?",
+  "answer": {
+   "value": 0.698,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm/s"
+  },
+  "eli5": "For small particles in laminar conditions, the settling velocity is g (particle density - fluid density) d^{2} / (18 × viscosity). It depends on diameter squared, so fine particles settle very slowly.",
+  "solution": "v = \\frac{9.81(1,200 - 1,000)(0.00008)^{2}}{18(0.001)} = 0.000698 m/s = 0.698 mm/s.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "Stokes' law"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0064",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "v",
+    "velocity"
+   ]
+  ]
+ },
+ {
+  "id": "water-0065",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Disinfection requires a CT value of 40 mg·min/L. The chlorine residual is 0.8 mg/L. What contact time is needed?",
+  "answer": {
+   "value": 50.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "min"
+  },
+  "eli5": "CT is disinfectant concentration times contact time. A given level of inactivation needs a fixed CT, so a lower residual needs a proportionally longer contact time.",
+  "solution": "t = \\frac{40}{0.8} = 50.0 min.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0065",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0065-b",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Disinfection requires a CT value of 90 mg·min/L. The chlorine residual is 1.5 mg/L. What contact time is needed?",
+  "answer": {
+   "value": 60.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "min"
+  },
+  "eli5": "CT is disinfectant concentration times contact time. A given level of inactivation needs a fixed CT, so a lower residual needs a proportionally longer contact time.",
+  "solution": "t = \\frac{90}{1.5} = 60.0 min.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0065",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "water-0065-c",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Disinfection requires a CT value of 12 mg·min/L. The chlorine residual is 0.5 mg/L. What contact time is needed?",
+  "answer": {
+   "value": 24.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "min"
+  },
+  "eli5": "CT is disinfectant concentration times contact time. A given level of inactivation needs a fixed CT, so a lower residual needs a proportionally longer contact time.",
+  "solution": "t = \\frac{12}{0.5} = 24.0 min.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "water-0065",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
  }
 ]

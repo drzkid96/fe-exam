@@ -34,7 +34,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "single payment compound amount"
+     "compound amount"
     ]
    }
   ],
@@ -54,7 +54,25 @@
    "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$5,000</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
    "alt": "A cash flow diagram over 10 periods, $5,000 at time 0, F = ? at period 10."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "F",
+    "future amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
  },
  {
   "id": "econ-0001-b",
@@ -91,7 +109,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "single payment compound amount"
+     "compound amount"
     ]
    }
   ],
@@ -111,7 +129,25 @@
    "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='61' y1='86' x2='61' y2='94' stroke='#00242E'/><text x='61' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='83' y1='86' x2='83' y2='94' stroke='#00242E'/><text x='83' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='125' y1='86' x2='125' y2='94' stroke='#00242E'/><text x='125' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='147' y1='86' x2='147' y2='94' stroke='#00242E'/><text x='147' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='189' y1='86' x2='189' y2='94' stroke='#00242E'/><text x='189' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='211' y1='86' x2='211' y2='94' stroke='#00242E'/><text x='211' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='253' y1='86' x2='253' y2='94' stroke='#00242E'/><text x='253' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='275' y1='86' x2='275' y2='94' stroke='#00242E'/><text x='275' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>11</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='317' y1='86' x2='317' y2='94' stroke='#00242E'/><text x='317' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>13</text><line x1='339' y1='86' x2='339' y2='94' stroke='#00242E'/><text x='339' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>14</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>15</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$12,000</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
    "alt": "A cash flow diagram over 15 periods, $12,000 at time 0, F = ? at period 15."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "F",
+    "future amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
  },
  {
   "id": "econ-0001-c",
@@ -148,7 +184,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "single payment compound amount"
+     "compound amount"
     ]
    }
   ],
@@ -168,7 +204,25 @@
    "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='93' y1='86' x2='93' y2='94' stroke='#00242E'/><text x='93' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='147' y1='86' x2='147' y2='94' stroke='#00242E'/><text x='147' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='253' y1='86' x2='253' y2='94' stroke='#00242E'/><text x='253' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='307' y1='86' x2='307' y2='94' stroke='#00242E'/><text x='307' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$2,500</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
    "alt": "A cash flow diagram over 6 periods, $2,500 at time 0, F = ? at period 6."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "F",
+    "future amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
  },
  {
   "id": "econ-0001-d",
@@ -205,7 +259,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "single payment compound amount"
+     "compound amount"
     ]
    }
   ],
@@ -225,7 +279,25 @@
    "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='67' y1='86' x2='67' y2='94' stroke='#00242E'/><text x='67' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='93' y1='86' x2='93' y2='94' stroke='#00242E'/><text x='93' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='120' y1='86' x2='120' y2='94' stroke='#00242E'/><text x='120' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='147' y1='86' x2='147' y2='94' stroke='#00242E'/><text x='147' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='173' y1='86' x2='173' y2='94' stroke='#00242E'/><text x='173' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='227' y1='86' x2='227' y2='94' stroke='#00242E'/><text x='227' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='253' y1='86' x2='253' y2='94' stroke='#00242E'/><text x='253' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='280' y1='86' x2='280' y2='94' stroke='#00242E'/><text x='280' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='307' y1='86' x2='307' y2='94' stroke='#00242E'/><text x='307' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='333' y1='86' x2='333' y2='94' stroke='#00242E'/><text x='333' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>11</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$8,000</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
    "alt": "A cash flow diagram over 12 periods, $8,000 at time 0, F = ? at period 12."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "F",
+    "future amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
  },
  {
   "id": "econ-0002",
@@ -269,7 +341,25 @@
    "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$20,000</text><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>A = ? each period</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
    "alt": "A cash flow diagram over 5 periods, $20,000 at time 0, A = ? at the end of every period."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ],
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
  },
  {
   "id": "econ-0002-b",
@@ -313,7 +403,25 @@
    "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$50,000</text><line x1='72' y1='90' x2='72' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M72 56 L66 68 L78 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='136' y1='90' x2='136' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M136 56 L130 68 L142 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='264' y1='90' x2='264' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M264 56 L258 68 L270 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='328' y1='90' x2='328' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M328 56 L322 68 L334 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>A = ? each period</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
    "alt": "A cash flow diagram over 10 periods, $50,000 at time 0, A = ? at the end of every period."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ],
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
  },
  {
   "id": "econ-0002-c",
@@ -357,7 +465,25 @@
    "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='120' y1='86' x2='120' y2='94' stroke='#00242E'/><text x='120' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='280' y1='86' x2='280' y2='94' stroke='#00242E'/><text x='280' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$12,000</text><line x1='120' y1='90' x2='120' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M120 56 L114 68 L126 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='280' y1='90' x2='280' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M280 56 L274 68 L286 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>A = ? each period</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
    "alt": "A cash flow diagram over 4 periods, $12,000 at time 0, A = ? at the end of every period."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ],
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
  },
  {
   "id": "econ-0002-d",
@@ -401,7 +527,25 @@
    "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='56' y1='86' x2='56' y2='94' stroke='#00242E'/><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='88' y1='86' x2='88' y2='94' stroke='#00242E'/><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='120' y1='86' x2='120' y2='94' stroke='#00242E'/><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='152' y1='86' x2='152' y2='94' stroke='#00242E'/><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='184' y1='86' x2='184' y2='94' stroke='#00242E'/><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='216' y1='86' x2='216' y2='94' stroke='#00242E'/><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='248' y1='86' x2='248' y2='94' stroke='#00242E'/><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>14</text><line x1='280' y1='86' x2='280' y2='94' stroke='#00242E'/><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>16</text><line x1='312' y1='86' x2='312' y2='94' stroke='#00242E'/><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>18</text><line x1='344' y1='86' x2='344' y2='94' stroke='#00242E'/><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>20</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$150,000</text><line x1='56' y1='90' x2='56' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M56 56 L50 68 L62 68 Z' fill='#568CBB'/><line x1='72' y1='90' x2='72' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M72 56 L66 68 L78 68 Z' fill='#568CBB'/><line x1='88' y1='90' x2='88' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M88 56 L82 68 L94 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='120' y1='90' x2='120' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M120 56 L114 68 L126 68 Z' fill='#568CBB'/><line x1='136' y1='90' x2='136' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M136 56 L130 68 L142 68 Z' fill='#568CBB'/><line x1='152' y1='90' x2='152' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M152 56 L146 68 L158 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='184' y1='90' x2='184' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M184 56 L178 68 L190 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='216' y1='90' x2='216' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M216 56 L210 68 L222 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='248' y1='90' x2='248' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M248 56 L242 68 L254 68 Z' fill='#568CBB'/><line x1='264' y1='90' x2='264' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M264 56 L258 68 L270 68 Z' fill='#568CBB'/><line x1='280' y1='90' x2='280' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M280 56 L274 68 L286 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='312' y1='90' x2='312' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M312 56 L306 68 L318 68 Z' fill='#568CBB'/><line x1='328' y1='90' x2='328' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M328 56 L322 68 L334 68 Z' fill='#568CBB'/><line x1='344' y1='90' x2='344' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M344 56 L338 68 L350 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>A = ? each period</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
    "alt": "A cash flow diagram over 20 periods, $150,000 at time 0, A = ? at the end of every period."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ],
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
  },
  {
   "id": "econ-0003",
@@ -438,7 +582,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "break-even analysis"
+     "breakeven analysis"
     ]
    }
   ],
@@ -489,7 +633,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "break-even analysis"
+     "breakeven analysis"
     ]
    }
   ],
@@ -540,7 +684,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "break-even analysis"
+     "breakeven analysis"
     ]
    }
   ],
@@ -591,7 +735,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "break-even analysis"
+     "breakeven analysis"
     ]
    }
   ],
@@ -850,7 +994,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "break-even analysis"
+     "breakeven analysis"
     ]
    }
   ],
@@ -899,7 +1043,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "break-even analysis"
+     "breakeven analysis"
     ]
    }
   ],
@@ -948,7 +1092,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "break-even analysis"
+     "breakeven analysis"
     ]
    }
   ],
@@ -997,7 +1141,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "break-even analysis"
+     "breakeven analysis"
     ]
    }
   ],
@@ -1182,7 +1326,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "single payment present worth"
+     "single payment"
     ]
    }
   ],
@@ -1199,7 +1343,25 @@
    "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='93' y1='86' x2='93' y2='94' stroke='#00242E'/><text x='93' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='147' y1='86' x2='147' y2='94' stroke='#00242E'/><text x='147' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='253' y1='86' x2='253' y2='94' stroke='#00242E'/><text x='253' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='307' y1='86' x2='307' y2='94' stroke='#00242E'/><text x='307' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P = ?</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>$10,000</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
    "alt": "A cash flow diagram over 6 periods, P = ? at time 0, $10,000 at period 6."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "F",
+    "future amount"
+   ],
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
  },
  {
   "id": "econ-0007-b",
@@ -1236,7 +1398,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "single payment present worth"
+     "single payment"
     ]
    }
   ],
@@ -1253,7 +1415,25 @@
    "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P = ?</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>$25,000</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
    "alt": "A cash flow diagram over 10 periods, P = ? at time 0, $25,000 at period 10."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "F",
+    "future amount"
+   ],
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
  },
  {
   "id": "econ-0007-c",
@@ -1290,7 +1470,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "single payment present worth"
+     "single payment"
     ]
    }
   ],
@@ -1307,7 +1487,25 @@
    "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='120' y1='86' x2='120' y2='94' stroke='#00242E'/><text x='120' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='280' y1='86' x2='280' y2='94' stroke='#00242E'/><text x='280' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P = ?</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>$4,000</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
    "alt": "A cash flow diagram over 4 periods, P = ? at time 0, $4,000 at period 4."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "F",
+    "future amount"
+   ],
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
  },
  {
   "id": "econ-0007-d",
@@ -1344,7 +1542,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "single payment present worth"
+     "single payment"
     ]
    }
   ],
@@ -1361,7 +1559,25 @@
    "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='61' y1='86' x2='61' y2='94' stroke='#00242E'/><text x='61' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='83' y1='86' x2='83' y2='94' stroke='#00242E'/><text x='83' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='125' y1='86' x2='125' y2='94' stroke='#00242E'/><text x='125' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='147' y1='86' x2='147' y2='94' stroke='#00242E'/><text x='147' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='189' y1='86' x2='189' y2='94' stroke='#00242E'/><text x='189' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='211' y1='86' x2='211' y2='94' stroke='#00242E'/><text x='211' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='253' y1='86' x2='253' y2='94' stroke='#00242E'/><text x='253' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='275' y1='86' x2='275' y2='94' stroke='#00242E'/><text x='275' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>11</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='317' y1='86' x2='317' y2='94' stroke='#00242E'/><text x='317' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>13</text><line x1='339' y1='86' x2='339' y2='94' stroke='#00242E'/><text x='339' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>14</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>15</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P = ?</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>$60,000</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
    "alt": "A cash flow diagram over 15 periods, P = ? at time 0, $60,000 at period 15."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "F",
+    "future amount"
+   ],
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
  },
  {
   "id": "econ-0008",
@@ -1386,7 +1602,7 @@
     "page": "230–237",
     "find": [
      "non-annual compounding",
-     "effective annual interest"
+     "effective interest rate"
     ]
    }
   ],
@@ -1398,7 +1614,17 @@
   "family": "econ-0008",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "i_{e}",
+    "effective annual interest rate"
+   ],
+   [
+    "r",
+    "nominal annual interest rate"
+   ]
+  ]
  },
  {
   "id": "econ-0008-b",
@@ -1423,7 +1649,7 @@
     "page": "230–237",
     "find": [
      "non-annual compounding",
-     "effective annual interest"
+     "effective interest rate"
     ]
    }
   ],
@@ -1435,7 +1661,17 @@
   "family": "econ-0008",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "i_{e}",
+    "effective annual interest rate"
+   ],
+   [
+    "r",
+    "nominal annual interest rate"
+   ]
+  ]
  },
  {
   "id": "econ-0008-c",
@@ -1460,7 +1696,7 @@
     "page": "230–237",
     "find": [
      "non-annual compounding",
-     "effective annual interest"
+     "effective interest rate"
     ]
    }
   ],
@@ -1472,7 +1708,17 @@
   "family": "econ-0008",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "i_{e}",
+    "effective annual interest rate"
+   ],
+   [
+    "r",
+    "nominal annual interest rate"
+   ]
+  ]
  },
  {
   "id": "econ-0008-d",
@@ -1497,7 +1743,7 @@
     "page": "230–237",
     "find": [
      "non-annual compounding",
-     "effective annual interest"
+     "effective interest rate"
     ]
    }
   ],
@@ -1509,7 +1755,17 @@
   "family": "econ-0008",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "i_{e}",
+    "effective annual interest rate"
+   ],
+   [
+    "r",
+    "nominal annual interest rate"
+   ]
+  ]
  },
  {
   "id": "econ-0009",
@@ -1547,7 +1803,7 @@
     "page": "230–237",
     "find": [
      "benefit-cost analysis",
-     "uniform series present worth"
+     "uniform series"
     ]
    }
   ],
@@ -1559,7 +1815,25 @@
   "family": "econ-0009",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ],
+   [
+    "B",
+    "present worth of benefits"
+   ]
+  ]
  },
  {
   "id": "econ-0009-b",
@@ -1597,7 +1871,7 @@
     "page": "230–237",
     "find": [
      "benefit-cost analysis",
-     "uniform series present worth"
+     "uniform series"
     ]
    }
   ],
@@ -1609,7 +1883,25 @@
   "family": "econ-0009",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ],
+   [
+    "B",
+    "present worth of benefits"
+   ]
+  ]
  },
  {
   "id": "econ-0009-c",
@@ -1647,7 +1939,7 @@
     "page": "230–237",
     "find": [
      "benefit-cost analysis",
-     "uniform series present worth"
+     "uniform series"
     ]
    }
   ],
@@ -1659,7 +1951,25 @@
   "family": "econ-0009",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ],
+   [
+    "B",
+    "present worth of benefits"
+   ]
+  ]
  },
  {
   "id": "econ-0009-d",
@@ -1697,7 +2007,7 @@
     "page": "230–237",
     "find": [
      "benefit-cost analysis",
-     "uniform series present worth"
+     "uniform series"
     ]
    }
   ],
@@ -1709,7 +2019,25 @@
   "family": "econ-0009",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ],
+   [
+    "B",
+    "present worth of benefits"
+   ]
+  ]
  },
  {
   "id": "econ-0010",
@@ -1746,7 +2074,13 @@
   "family": "econ-0010",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ]
+  ]
  },
  {
   "id": "econ-0010-b",
@@ -1783,7 +2117,13 @@
   "family": "econ-0010",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ]
+  ]
  },
  {
   "id": "econ-0010-c",
@@ -1820,7 +2160,13 @@
   "family": "econ-0010",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ]
+  ]
  },
  {
   "id": "econ-0010-d",
@@ -1857,7 +2203,13 @@
   "family": "econ-0010",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ]
+  ]
  },
  {
   "id": "econ-0011",
@@ -1906,7 +2258,13 @@
   "family": "econ-0011",
   "version": 1,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "B",
+    "present worth of benefits"
+   ]
+  ]
  },
  {
   "id": "econ-0011-b",
@@ -1955,7 +2313,17 @@
   "family": "econ-0011",
   "version": 2,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "B",
+    "present worth of benefits"
+   ],
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ]
+  ]
  },
  {
   "id": "econ-0012",
@@ -2127,7 +2495,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "uniform series compound amount"
+     "uniform series"
     ]
    }
   ],
@@ -2144,7 +2512,25 @@
    "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='51' y1='86' x2='51' y2='94' stroke='#00242E'/><line x1='61' y1='86' x2='61' y2='94' stroke='#00242E'/><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='83' y1='86' x2='83' y2='94' stroke='#00242E'/><line x1='93' y1='86' x2='93' y2='94' stroke='#00242E'/><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='115' y1='86' x2='115' y2='94' stroke='#00242E'/><line x1='125' y1='86' x2='125' y2='94' stroke='#00242E'/><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='147' y1='86' x2='147' y2='94' stroke='#00242E'/><line x1='157' y1='86' x2='157' y2='94' stroke='#00242E'/><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='179' y1='86' x2='179' y2='94' stroke='#00242E'/><line x1='189' y1='86' x2='189' y2='94' stroke='#00242E'/><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>15</text><line x1='211' y1='86' x2='211' y2='94' stroke='#00242E'/><line x1='221' y1='86' x2='221' y2='94' stroke='#00242E'/><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>18</text><line x1='243' y1='86' x2='243' y2='94' stroke='#00242E'/><line x1='253' y1='86' x2='253' y2='94' stroke='#00242E'/><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>21</text><line x1='275' y1='86' x2='275' y2='94' stroke='#00242E'/><line x1='285' y1='86' x2='285' y2='94' stroke='#00242E'/><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>24</text><line x1='307' y1='86' x2='307' y2='94' stroke='#00242E'/><line x1='317' y1='86' x2='317' y2='94' stroke='#00242E'/><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>27</text><line x1='339' y1='86' x2='339' y2='94' stroke='#00242E'/><line x1='349' y1='86' x2='349' y2='94' stroke='#00242E'/><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>30</text><line x1='51' y1='90' x2='51' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M51 56 L45 68 L57 68 Z' fill='#568CBB'/><line x1='61' y1='90' x2='61' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M61 56 L55 68 L67 68 Z' fill='#568CBB'/><line x1='72' y1='90' x2='72' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M72 56 L66 68 L78 68 Z' fill='#568CBB'/><line x1='83' y1='90' x2='83' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M83 56 L77 68 L89 68 Z' fill='#568CBB'/><line x1='93' y1='90' x2='93' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M93 56 L87 68 L99 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='115' y1='90' x2='115' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M115 56 L109 68 L121 68 Z' fill='#568CBB'/><line x1='125' y1='90' x2='125' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M125 56 L119 68 L131 68 Z' fill='#568CBB'/><line x1='136' y1='90' x2='136' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M136 56 L130 68 L142 68 Z' fill='#568CBB'/><line x1='147' y1='90' x2='147' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M147 56 L141 68 L153 68 Z' fill='#568CBB'/><line x1='157' y1='90' x2='157' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M157 56 L151 68 L163 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='179' y1='90' x2='179' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M179 56 L173 68 L185 68 Z' fill='#568CBB'/><line x1='189' y1='90' x2='189' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M189 56 L183 68 L195 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='211' y1='90' x2='211' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M211 56 L205 68 L217 68 Z' fill='#568CBB'/><line x1='221' y1='90' x2='221' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M221 56 L215 68 L227 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='243' y1='90' x2='243' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M243 56 L237 68 L249 68 Z' fill='#568CBB'/><line x1='253' y1='90' x2='253' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M253 56 L247 68 L259 68 Z' fill='#568CBB'/><line x1='264' y1='90' x2='264' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M264 56 L258 68 L270 68 Z' fill='#568CBB'/><line x1='275' y1='90' x2='275' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M275 56 L269 68 L281 68 Z' fill='#568CBB'/><line x1='285' y1='90' x2='285' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M285 56 L279 68 L291 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='307' y1='90' x2='307' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M307 56 L301 68 L313 68 Z' fill='#568CBB'/><line x1='317' y1='90' x2='317' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M317 56 L311 68 L323 68 Z' fill='#568CBB'/><line x1='328' y1='90' x2='328' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M328 56 L322 68 L334 68 Z' fill='#568CBB'/><line x1='339' y1='90' x2='339' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M339 56 L333 68 L345 68 Z' fill='#568CBB'/><line x1='349' y1='90' x2='349' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M349 56 L343 68 L355 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$5,000 each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
    "alt": "A cash flow diagram over 30 periods, $5,000 at the end of every period, F = ? at period 30."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "F",
+    "future amount"
+   ],
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
  },
  {
   "id": "econ-0013-b",
@@ -2168,7 +2554,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "uniform series compound amount"
+     "uniform series"
     ]
    }
   ],
@@ -2185,7 +2571,25 @@
    "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='56' y1='86' x2='56' y2='94' stroke='#00242E'/><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='88' y1='86' x2='88' y2='94' stroke='#00242E'/><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='120' y1='86' x2='120' y2='94' stroke='#00242E'/><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='152' y1='86' x2='152' y2='94' stroke='#00242E'/><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='184' y1='86' x2='184' y2='94' stroke='#00242E'/><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='216' y1='86' x2='216' y2='94' stroke='#00242E'/><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='248' y1='86' x2='248' y2='94' stroke='#00242E'/><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>14</text><line x1='280' y1='86' x2='280' y2='94' stroke='#00242E'/><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>16</text><line x1='312' y1='86' x2='312' y2='94' stroke='#00242E'/><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>18</text><line x1='344' y1='86' x2='344' y2='94' stroke='#00242E'/><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>20</text><line x1='56' y1='90' x2='56' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M56 56 L50 68 L62 68 Z' fill='#568CBB'/><line x1='72' y1='90' x2='72' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M72 56 L66 68 L78 68 Z' fill='#568CBB'/><line x1='88' y1='90' x2='88' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M88 56 L82 68 L94 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='120' y1='90' x2='120' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M120 56 L114 68 L126 68 Z' fill='#568CBB'/><line x1='136' y1='90' x2='136' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M136 56 L130 68 L142 68 Z' fill='#568CBB'/><line x1='152' y1='90' x2='152' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M152 56 L146 68 L158 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='184' y1='90' x2='184' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M184 56 L178 68 L190 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='216' y1='90' x2='216' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M216 56 L210 68 L222 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='248' y1='90' x2='248' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M248 56 L242 68 L254 68 Z' fill='#568CBB'/><line x1='264' y1='90' x2='264' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M264 56 L258 68 L270 68 Z' fill='#568CBB'/><line x1='280' y1='90' x2='280' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M280 56 L274 68 L286 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='312' y1='90' x2='312' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M312 56 L306 68 L318 68 Z' fill='#568CBB'/><line x1='328' y1='90' x2='328' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M328 56 L322 68 L334 68 Z' fill='#568CBB'/><line x1='344' y1='90' x2='344' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M344 56 L338 68 L350 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$2,000 each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
    "alt": "A cash flow diagram over 20 periods, $2,000 at the end of every period, F = ? at period 20."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "F",
+    "future amount"
+   ],
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
  },
  {
   "id": "econ-0013-c",
@@ -2209,7 +2613,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "uniform series compound amount"
+     "uniform series"
     ]
    }
   ],
@@ -2226,7 +2630,25 @@
    "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='61' y1='86' x2='61' y2='94' stroke='#00242E'/><text x='61' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='83' y1='86' x2='83' y2='94' stroke='#00242E'/><text x='83' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='125' y1='86' x2='125' y2='94' stroke='#00242E'/><text x='125' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='147' y1='86' x2='147' y2='94' stroke='#00242E'/><text x='147' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='189' y1='86' x2='189' y2='94' stroke='#00242E'/><text x='189' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='211' y1='86' x2='211' y2='94' stroke='#00242E'/><text x='211' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='253' y1='86' x2='253' y2='94' stroke='#00242E'/><text x='253' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='275' y1='86' x2='275' y2='94' stroke='#00242E'/><text x='275' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>11</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='317' y1='86' x2='317' y2='94' stroke='#00242E'/><text x='317' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>13</text><line x1='339' y1='86' x2='339' y2='94' stroke='#00242E'/><text x='339' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>14</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>15</text><line x1='61' y1='90' x2='61' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M61 56 L55 68 L67 68 Z' fill='#568CBB'/><line x1='83' y1='90' x2='83' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M83 56 L77 68 L89 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='125' y1='90' x2='125' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M125 56 L119 68 L131 68 Z' fill='#568CBB'/><line x1='147' y1='90' x2='147' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M147 56 L141 68 L153 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='189' y1='90' x2='189' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M189 56 L183 68 L195 68 Z' fill='#568CBB'/><line x1='211' y1='90' x2='211' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M211 56 L205 68 L217 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='253' y1='90' x2='253' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M253 56 L247 68 L259 68 Z' fill='#568CBB'/><line x1='275' y1='90' x2='275' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M275 56 L269 68 L281 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='317' y1='90' x2='317' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M317 56 L311 68 L323 68 Z' fill='#568CBB'/><line x1='339' y1='90' x2='339' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M339 56 L333 68 L345 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$10,000 each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
    "alt": "A cash flow diagram over 15 periods, $10,000 at the end of every period, F = ? at period 15."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "F",
+    "future amount"
+   ],
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
  },
  {
   "id": "econ-0013-d",
@@ -2250,7 +2672,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "uniform series compound amount"
+     "uniform series"
     ]
    }
   ],
@@ -2267,7 +2689,25 @@
    "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='53' y1='86' x2='53' y2='94' stroke='#00242E'/><line x1='66' y1='86' x2='66' y2='94' stroke='#00242E'/><text x='66' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='78' y1='86' x2='78' y2='94' stroke='#00242E'/><line x1='91' y1='86' x2='91' y2='94' stroke='#00242E'/><text x='91' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><line x1='117' y1='86' x2='117' y2='94' stroke='#00242E'/><text x='117' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='130' y1='86' x2='130' y2='94' stroke='#00242E'/><line x1='142' y1='86' x2='142' y2='94' stroke='#00242E'/><text x='142' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='155' y1='86' x2='155' y2='94' stroke='#00242E'/><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='181' y1='86' x2='181' y2='94' stroke='#00242E'/><line x1='194' y1='86' x2='194' y2='94' stroke='#00242E'/><text x='194' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='206' y1='86' x2='206' y2='94' stroke='#00242E'/><line x1='219' y1='86' x2='219' y2='94' stroke='#00242E'/><text x='219' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>14</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><line x1='245' y1='86' x2='245' y2='94' stroke='#00242E'/><text x='245' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>16</text><line x1='258' y1='86' x2='258' y2='94' stroke='#00242E'/><line x1='270' y1='86' x2='270' y2='94' stroke='#00242E'/><text x='270' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>18</text><line x1='283' y1='86' x2='283' y2='94' stroke='#00242E'/><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>20</text><line x1='309' y1='86' x2='309' y2='94' stroke='#00242E'/><line x1='322' y1='86' x2='322' y2='94' stroke='#00242E'/><text x='322' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>22</text><line x1='334' y1='86' x2='334' y2='94' stroke='#00242E'/><line x1='347' y1='86' x2='347' y2='94' stroke='#00242E'/><text x='347' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>24</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>25</text><line x1='53' y1='90' x2='53' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M53 56 L47 68 L59 68 Z' fill='#568CBB'/><line x1='66' y1='90' x2='66' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M66 56 L60 68 L72 68 Z' fill='#568CBB'/><line x1='78' y1='90' x2='78' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M78 56 L72 68 L84 68 Z' fill='#568CBB'/><line x1='91' y1='90' x2='91' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M91 56 L85 68 L97 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='117' y1='90' x2='117' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M117 56 L111 68 L123 68 Z' fill='#568CBB'/><line x1='130' y1='90' x2='130' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M130 56 L124 68 L136 68 Z' fill='#568CBB'/><line x1='142' y1='90' x2='142' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M142 56 L136 68 L148 68 Z' fill='#568CBB'/><line x1='155' y1='90' x2='155' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M155 56 L149 68 L161 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='181' y1='90' x2='181' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M181 56 L175 68 L187 68 Z' fill='#568CBB'/><line x1='194' y1='90' x2='194' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M194 56 L188 68 L200 68 Z' fill='#568CBB'/><line x1='206' y1='90' x2='206' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M206 56 L200 68 L212 68 Z' fill='#568CBB'/><line x1='219' y1='90' x2='219' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M219 56 L213 68 L225 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='245' y1='90' x2='245' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M245 56 L239 68 L251 68 Z' fill='#568CBB'/><line x1='258' y1='90' x2='258' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M258 56 L252 68 L264 68 Z' fill='#568CBB'/><line x1='270' y1='90' x2='270' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M270 56 L264 68 L276 68 Z' fill='#568CBB'/><line x1='283' y1='90' x2='283' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M283 56 L277 68 L289 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='309' y1='90' x2='309' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M309 56 L303 68 L315 68 Z' fill='#568CBB'/><line x1='322' y1='90' x2='322' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M322 56 L316 68 L328 68 Z' fill='#568CBB'/><line x1='334' y1='90' x2='334' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M334 56 L328 68 L340 68 Z' fill='#568CBB'/><line x1='347' y1='90' x2='347' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M347 56 L341 68 L353 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$3,600 each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
    "alt": "A cash flow diagram over 25 periods, $3,600 at the end of every period, F = ? at period 25."
   },
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "F",
+    "future amount"
+   ],
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
  },
  {
   "id": "econ-0014",
@@ -2291,7 +2731,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "break-even analysis",
+     "breakeven analysis",
      "capital recovery"
     ]
    }
@@ -2304,7 +2744,13 @@
   "family": "econ-0014",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ]
+  ]
  },
  {
   "id": "econ-0014-b",
@@ -2328,7 +2774,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "break-even analysis",
+     "breakeven analysis",
      "capital recovery"
     ]
    }
@@ -2341,7 +2787,13 @@
   "family": "econ-0014",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ]
+  ]
  },
  {
   "id": "econ-0014-c",
@@ -2365,7 +2817,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "break-even analysis",
+     "breakeven analysis",
      "capital recovery"
     ]
    }
@@ -2378,7 +2830,13 @@
   "family": "econ-0014",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ]
+  ]
  },
  {
   "id": "econ-0014-d",
@@ -2402,7 +2860,7 @@
     "section": "Engineering Economics",
     "page": "230–237",
     "find": [
-     "break-even analysis",
+     "breakeven analysis",
      "capital recovery"
     ]
    }
@@ -2415,6 +2873,1638 @@
   "family": "econ-0014",
   "version": 4,
   "versions": 4,
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0015",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the present worth of $1,000 received at the end of each year for 10 years, at 8% interest?",
+  "answer": {
+   "value": 6710.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "The uniform series present worth factor (P/A, i, n) converts equal end-of-year amounts into a single equivalent amount today: ((1 + i)^{n} - 1) / (i (1 + i)^{n}).",
+  "solution": "(P/A, 8%, 10) = \\frac{(1 + 0.08)^{10} - 1}{0.08(1 + 0.08)^{10}} = 6.7101.\n\nP = 1,000 × 6.7101 = $6,710.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "uniform series"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0015",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "present amount"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0015-b",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the present worth of $2,500 received at the end of each year for 20 years, at 5% interest?",
+  "answer": {
+   "value": 31156.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "The uniform series present worth factor (P/A, i, n) converts equal end-of-year amounts into a single equivalent amount today: ((1 + i)^{n} - 1) / (i (1 + i)^{n}).",
+  "solution": "(P/A, 5%, 20) = \\frac{(1 + 0.05)^{20} - 1}{0.05(1 + 0.05)^{20}} = 12.4622.\n\nP = 2,500 × 12.4622 = $31,156.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "uniform series"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0015",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "present amount"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0015-c",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the present worth of $12,000 received at the end of each year for 6 years, at 10% interest?",
+  "answer": {
+   "value": 52263.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "The uniform series present worth factor (P/A, i, n) converts equal end-of-year amounts into a single equivalent amount today: ((1 + i)^{n} - 1) / (i (1 + i)^{n}).",
+  "solution": "(P/A, 10%, 6) = \\frac{(1 + 0.10)^{6} - 1}{0.10(1 + 0.10)^{6}} = 4.3553.\n\nP = 12,000 × 4.3553 = $52,263.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "uniform series"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0015",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "present amount"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0016",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An agency needs $100,000 in 10 years to replace equipment. What equal end-of-year deposit builds that amount at 6% interest?",
+  "answer": {
+   "value": 7587.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "The sinking fund factor (A/F, i, n) gives the equal annual deposit that grows to a required future amount: i / ((1 + i)^{n} - 1).",
+  "solution": "(A/F, 6%, 10) = \\frac{0.06}{(1 + 0.06)^{10} - 1} = 0.07587.\n\nA = 100,000 × 0.07587 = $7,587.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "sinking fund"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0016",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0016-b",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An agency needs $50,000 in 5 years to replace equipment. What equal end-of-year deposit builds that amount at 4% interest?",
+  "answer": {
+   "value": 9231.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "The sinking fund factor (A/F, i, n) gives the equal annual deposit that grows to a required future amount: i / ((1 + i)^{n} - 1).",
+  "solution": "(A/F, 4%, 5) = \\frac{0.04}{(1 + 0.04)^{5} - 1} = 0.18463.\n\nA = 50,000 × 0.18463 = $9,231.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "sinking fund"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0016",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0016-c",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An agency needs $1,000,000 in 20 years to replace equipment. What equal end-of-year deposit builds that amount at 7% interest?",
+  "answer": {
+   "value": 24393.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "The sinking fund factor (A/F, i, n) gives the equal annual deposit that grows to a required future amount: i / ((1 + i)^{n} - 1).",
+  "solution": "(A/F, 7%, 20) = \\frac{0.07}{(1 + 0.07)^{20} - 1} = 0.02439.\n\nA = 1,000,000 × 0.02439 = $24,393.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "sinking fund"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0016",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0017",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A facility costs $2,000,000 to build and $25,000 per year to maintain, forever. At 5% interest, what is its capitalized cost?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$500,000"
+   },
+   {
+    "id": "b",
+    "text": "$2,125,000"
+   },
+   {
+    "id": "c",
+    "text": "$2,250,000"
+   },
+   {
+    "id": "d",
+    "text": "$2,500,000"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Capitalized cost is the present worth of something that lasts indefinitely. A perpetual annual cost A has a present worth of A / i, because that sum earns exactly A in interest each year.",
+  "solution": "Capitalized cost = 2,000,000 + \\frac{25,000}{0.05} = 2,000,000 + 500,000 = $2,500,000.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "capitalized costs"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0017",
+  "version": 1,
+  "versions": 3,
   "lookup": true
+ },
+ {
+  "id": "econ-0017-b",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A facility costs $750,000 to build and $40,000 per year to maintain, forever. At 8% interest, what is its capitalized cost?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$500,000"
+   },
+   {
+    "id": "b",
+    "text": "$850,000"
+   },
+   {
+    "id": "c",
+    "text": "$1,150,000"
+   },
+   {
+    "id": "d",
+    "text": "$1,250,000"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Capitalized cost is the present worth of something that lasts indefinitely. A perpetual annual cost A has a present worth of A / i, because that sum earns exactly A in interest each year.",
+  "solution": "Capitalized cost = 750,000 + \\frac{40,000}{0.08} = 750,000 + 500,000 = $1,250,000.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "capitalized costs"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0017",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "econ-0017-c",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A facility costs $5,000,000 to build and $120,000 per year to maintain, forever. At 6% interest, what is its capitalized cost?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$2,000,000"
+   },
+   {
+    "id": "b",
+    "text": "$5,420,000"
+   },
+   {
+    "id": "c",
+    "text": "$6,200,000"
+   },
+   {
+    "id": "d",
+    "text": "$7,000,000"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Capitalized cost is the present worth of something that lasts indefinitely. A perpetual annual cost A has a present worth of A / i, because that sum earns exactly A in interest each year.",
+  "solution": "Capitalized cost = 5,000,000 + \\frac{120,000}{0.06} = 5,000,000 + 2,000,000 = $7,000,000.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "capitalized costs"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0017",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "econ-0018",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "At 7% interest compounded annually, how long does a sum of money take to double?",
+  "answer": {
+   "value": 10.24,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "years"
+  },
+  "eli5": "Set (1 + i)^{n} = 2 and solve with logarithms: n = ln 2 / ln(1 + i). The rule of 72, 72 divided by the rate in percent, is a quick check.",
+  "solution": "n = \\frac{ln 2}{ln(1 + 0.07)} = \\frac{0.6931}{0.06766} = 10.24 years.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "compound amount"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0018",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0018-b",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "At 4% interest compounded annually, how long does a sum of money take to double?",
+  "answer": {
+   "value": 17.67,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "years"
+  },
+  "eli5": "Set (1 + i)^{n} = 2 and solve with logarithms: n = ln 2 / ln(1 + i). The rule of 72, 72 divided by the rate in percent, is a quick check.",
+  "solution": "n = \\frac{ln 2}{ln(1 + 0.04)} = \\frac{0.6931}{0.03922} = 17.67 years.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "compound amount"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0018",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0018-c",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "At 12% interest compounded annually, how long does a sum of money take to double?",
+  "answer": {
+   "value": 6.12,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "years"
+  },
+  "eli5": "Set (1 + i)^{n} = 2 and solve with logarithms: n = ln 2 / ln(1 + i). The rule of 72, 72 divided by the rate in percent, is a quick check.",
+  "solution": "n = \\frac{ln 2}{ln(1 + 0.12)} = \\frac{0.6931}{0.11333} = 6.12 years.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "compound amount"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0018",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0019",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An investment of $10,000 grows to $16,105 in 5 years. What annual rate of return did it earn?",
+  "answer": {
+   "value": 10.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "For a single sum, F = P(1 + i)^{n}. Solve for the rate: i = (F / P)^{1/n} - 1.",
+  "solution": "i = (\\frac{16,105}{10,000})^{1/5} - 1 = 1.10000 - 1 = 10.00%.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "rate of return"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0019",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "F",
+    "future amount"
+   ],
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0019-b",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An investment of $5,000 grows to $8,000 in 6 years. What annual rate of return did it earn?",
+  "answer": {
+   "value": 8.15,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "For a single sum, F = P(1 + i)^{n}. Solve for the rate: i = (F / P)^{1/n} - 1.",
+  "solution": "i = (\\frac{8,000}{5,000})^{1/6} - 1 = 1.08148 - 1 = 8.15%.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "rate of return"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0019",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "F",
+    "future amount"
+   ],
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0019-c",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An investment of $25,000 grows to $35,000 in 4 years. What annual rate of return did it earn?",
+  "answer": {
+   "value": 8.78,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "For a single sum, F = P(1 + i)^{n}. Solve for the rate: i = (F / P)^{1/n} - 1.",
+  "solution": "i = (\\frac{35,000}{25,000})^{1/4} - 1 = 1.08776 - 1 = 8.78%.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "rate of return"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0019",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "F",
+    "future amount"
+   ],
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0020",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An investment earns a market interest rate of 8.0% while inflation runs at 3.0%. What is the real (inflation-free) rate of return?",
+  "answer": {
+   "value": 4.85,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "The market rate d combines the real rate i and inflation f: d = i + f + i f. Solving for the real rate gives (1 + d) / (1 + f) - 1, slightly less than the simple difference.",
+  "solution": "Real rate = \\frac{1 + 0.080}{1 + 0.030} - 1 = 4.85%.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "inflation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0020",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "d",
+    "market (inflation-adjusted) interest rate"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "f",
+    "inflation rate"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0020-b",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An investment earns a market interest rate of 6.0% while inflation runs at 2.5%. What is the real (inflation-free) rate of return?",
+  "answer": {
+   "value": 3.41,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "The market rate d combines the real rate i and inflation f: d = i + f + i f. Solving for the real rate gives (1 + d) / (1 + f) - 1, slightly less than the simple difference.",
+  "solution": "Real rate = \\frac{1 + 0.060}{1 + 0.025} - 1 = 3.41%.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "inflation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0020",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "d",
+    "market (inflation-adjusted) interest rate"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "f",
+    "inflation rate"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0020-c",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An investment earns a market interest rate of 12.0% while inflation runs at 5.0%. What is the real (inflation-free) rate of return?",
+  "answer": {
+   "value": 6.67,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "The market rate d combines the real rate i and inflation f: d = i + f + i f. Solving for the real rate gives (1 + d) / (1 + f) - 1, slightly less than the simple difference.",
+  "solution": "Real rate = \\frac{1 + 0.120}{1 + 0.050} - 1 = 6.67%.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "inflation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0020",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "d",
+    "market (inflation-adjusted) interest rate"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "f",
+    "inflation rate"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0021",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Equipment costing $50,000, with an expected salvage value of $5,000, is depreciated by MACRS. The MACRS factor for year 2 is 32.00%. What is the depreciation in year 2?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$16,000"
+   },
+   {
+    "id": "b",
+    "text": "$14,400"
+   },
+   {
+    "id": "c",
+    "text": "$10,000"
+   },
+   {
+    "id": "d",
+    "text": "$9,000"
+   }
+  ],
+  "answer": "a",
+  "eli5": "MACRS depreciation is the tabulated factor times the full cost. Salvage value is not subtracted, unlike straight-line depreciation, because the factors already write the asset down to zero.",
+  "solution": "D = 0.3200 × 50,000 = $16,000. The salvage value plays no part.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "MACRS"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0021",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "D",
+    "depreciation in the year"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0021-b",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Equipment costing $120,000, with an expected salvage value of $20,000, is depreciated by MACRS. The MACRS factor for year 3 is 19.20%. What is the depreciation in year 3?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$23,040"
+   },
+   {
+    "id": "b",
+    "text": "$19,200"
+   },
+   {
+    "id": "c",
+    "text": "$24,000"
+   },
+   {
+    "id": "d",
+    "text": "$20,000"
+   }
+  ],
+  "answer": "a",
+  "eli5": "MACRS depreciation is the tabulated factor times the full cost. Salvage value is not subtracted, unlike straight-line depreciation, because the factors already write the asset down to zero.",
+  "solution": "D = 0.1920 × 120,000 = $23,040. The salvage value plays no part.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "MACRS"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0021",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "D",
+    "depreciation in the year"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0021-c",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Equipment costing $36,000, with an expected salvage value of $6,000, is depreciated by MACRS. The MACRS factor for year 4 is 11.52%. What is the depreciation in year 4?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$4,147"
+   },
+   {
+    "id": "b",
+    "text": "$3,456"
+   },
+   {
+    "id": "c",
+    "text": "$7,200"
+   },
+   {
+    "id": "d",
+    "text": "$6,000"
+   }
+  ],
+  "answer": "a",
+  "eli5": "MACRS depreciation is the tabulated factor times the full cost. Salvage value is not subtracted, unlike straight-line depreciation, because the factors already write the asset down to zero.",
+  "solution": "D = 0.1152 × 36,000 = $4,147. The salvage value plays no part.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "MACRS"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0021",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "D",
+    "depreciation in the year"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0022",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A facility cost $2,000,000 when the construction cost index stood at 180. The index is now 234. What would the same facility cost today?",
+  "answer": {
+   "value": 2600000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "A cost index tracks how construction prices change over time. Scale a historical cost by the ratio of the current index to the index when the cost was recorded.",
+  "solution": "Cost today = 2,000,000 × \\frac{234}{180} = $2,600,000.",
+  "handbook": [
+   {
+    "section": "Chemical Engineering",
+    "page": "238–258",
+    "find": [
+     "cost indexes"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0022",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "econ-0022-b",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A facility cost $450,000 when the construction cost index stood at 220. The index is now 275. What would the same facility cost today?",
+  "answer": {
+   "value": 562500.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "A cost index tracks how construction prices change over time. Scale a historical cost by the ratio of the current index to the index when the cost was recorded.",
+  "solution": "Cost today = 450,000 × \\frac{275}{220} = $562,500.",
+  "handbook": [
+   {
+    "section": "Chemical Engineering",
+    "page": "238–258",
+    "find": [
+     "cost indexes"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0022",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "econ-0022-c",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A facility cost $12,500,000 when the construction cost index stood at 150. The index is now 210. What would the same facility cost today?",
+  "answer": {
+   "value": 17500000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "A cost index tracks how construction prices change over time. Scale a historical cost by the ratio of the current index to the index when the cost was recorded.",
+  "solution": "Cost today = 12,500,000 × \\frac{210}{150} = $17,500,000.",
+  "handbook": [
+   {
+    "section": "Chemical Engineering",
+    "page": "238–258",
+    "find": [
+     "cost indexes"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0022",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "econ-0023",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A signal retiming project costs $45,000 and saves $12,000 per year. What is its simple payback period?",
+  "answer": {
+   "value": 3.75,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "years"
+  },
+  "eli5": "Simple payback is the first cost divided by the annual saving. It ignores interest and anything after the payback date, so it screens projects but does not rank them.",
+  "solution": "Payback = \\frac{45,000}{12,000} = 3.75 years.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0023",
+  "version": 1,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "econ-0023-b",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A signal retiming project costs $180,000 and saves $40,000 per year. What is its simple payback period?",
+  "answer": {
+   "value": 4.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "years"
+  },
+  "eli5": "Simple payback is the first cost divided by the annual saving. It ignores interest and anything after the payback date, so it screens projects but does not rank them.",
+  "solution": "Payback = \\frac{180,000}{40,000} = 4.50 years.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0023",
+  "version": 2,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "econ-0023-c",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A signal retiming project costs $9,600 and saves $3,200 per year. What is its simple payback period?",
+  "answer": {
+   "value": 3.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "years"
+  },
+  "eli5": "Simple payback is the first cost divided by the annual saving. It ignores interest and anything after the payback date, so it screens projects but does not rank them.",
+  "solution": "Payback = \\frac{9,600}{3,200} = 3.00 years.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0023",
+  "version": 3,
+  "versions": 3,
+  "lookup": false
+ },
+ {
+  "id": "econ-0024",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A project costs $100,000 now, returns $30,000 at the end of each year for 5 years and has a salvage value of $10,000 at the end. At 10% interest, what is its net present worth?",
+  "answer": {
+   "value": 19933.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Net present worth brings every cash flow to today: the annual returns by the (P/A) factor and the salvage by the (P/F) factor, less the first cost. A positive value means the project earns more than the interest rate.",
+  "solution": "(P/A, 10%, 5) = 3.7908 and (P/F, 10%, 5) = 0.6209.\n\nNPW = -100,000 + 30,000(3.7908) + 10,000(0.6209) = $19,933.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "uniform series",
+     "single payment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0024",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "present amount"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0024-b",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A project costs $250,000 now, returns $55,000 at the end of each year for 8 years and has a salvage value of $30,000 at the end. At 8% interest, what is its net present worth?",
+  "answer": {
+   "value": 82273.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Net present worth brings every cash flow to today: the annual returns by the (P/A) factor and the salvage by the (P/F) factor, less the first cost. A positive value means the project earns more than the interest rate.",
+  "solution": "(P/A, 8%, 8) = 5.7466 and (P/F, 8%, 8) = 0.5403.\n\nNPW = -250,000 + 55,000(5.7466) + 30,000(0.5403) = $82,273.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "uniform series",
+     "single payment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0024",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "present amount"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0024-c",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A project costs $40,000 now, returns $12,000 at the end of each year for 4 years and has a salvage value of $0 at the end. At 12% interest, what is its net present worth?",
+  "answer": {
+   "value": -3552.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Net present worth brings every cash flow to today: the annual returns by the (P/A) factor and the salvage by the (P/F) factor, less the first cost. A positive value means the project earns more than the interest rate.",
+  "solution": "(P/A, 12%, 4) = 3.0373 and (P/F, 12%, 4) = 0.6355.\n\nNPW = -40,000 + 12,000(3.0373) + 0(0.6355) = $-3,552.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "uniform series",
+     "single payment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0024",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "P",
+    "present amount"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0025",
+  "topic": "econ",
+  "subtopic": "econ-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A firm estimates a 30% chance of winning a contract that would earn a profit of $200,000. Preparing the proposal costs $15,000, which is lost if the firm does not win. What is the expected value of pursuing it?",
+  "answer": {
+   "value": 49500.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Expected value weights each outcome by its probability: the chance of winning times the profit, minus the chance of losing times the cost of the proposal.",
+  "solution": "EV = 0.30(200,000) - 0.70(15,000) = 60,000 - 10,500 = $49,500.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "expected value"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0025",
+  "version": 1,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "econ-0025-b",
+  "topic": "econ",
+  "subtopic": "econ-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A firm estimates a 20% chance of winning a contract that would earn a profit of $750,000. Preparing the proposal costs $40,000, which is lost if the firm does not win. What is the expected value of pursuing it?",
+  "answer": {
+   "value": 118000.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Expected value weights each outcome by its probability: the chance of winning times the profit, minus the chance of losing times the cost of the proposal.",
+  "solution": "EV = 0.20(750,000) - 0.80(40,000) = 150,000 - 32,000 = $118,000.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "expected value"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0025",
+  "version": 2,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "econ-0025-c",
+  "topic": "econ",
+  "subtopic": "econ-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A firm estimates a 45% chance of winning a contract that would earn a profit of $80,000. Preparing the proposal costs $6,000, which is lost if the firm does not win. What is the expected value of pursuing it?",
+  "answer": {
+   "value": 32700.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Expected value weights each outcome by its probability: the chance of winning times the profit, minus the chance of losing times the cost of the proposal.",
+  "solution": "EV = 0.45(80,000) - 0.55(6,000) = 36,000 - 3,300 = $32,700.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "expected value"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0025",
+  "version": 3,
+  "versions": 3,
+  "lookup": true
+ },
+ {
+  "id": "econ-0026",
+  "topic": "econ",
+  "subtopic": "econ-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A venture gains $80,000 if it succeeds and loses $20,000 if it fails. At what probability of success is its expected value zero?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.25"
+   },
+   {
+    "id": "b",
+    "text": "0.80"
+   },
+   {
+    "id": "c",
+    "text": "0.50"
+   },
+   {
+    "id": "d",
+    "text": "0.20"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Set the expected value to zero: p × gain = (1 - p) × loss. Solving gives p = loss / (gain + loss). Above that probability the venture is worth taking on expected value alone.",
+  "solution": "p = \\frac{20,000}{80,000 + 20,000} = 0.20.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "expected value"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0026",
+  "version": 1,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "p",
+    "probability of success"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0026-b",
+  "topic": "econ",
+  "subtopic": "econ-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A venture gains $150,000 if it succeeds and loses $50,000 if it fails. At what probability of success is its expected value zero?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.33"
+   },
+   {
+    "id": "b",
+    "text": "0.75"
+   },
+   {
+    "id": "c",
+    "text": "0.50"
+   },
+   {
+    "id": "d",
+    "text": "0.25"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Set the expected value to zero: p × gain = (1 - p) × loss. Solving gives p = loss / (gain + loss). Above that probability the venture is worth taking on expected value alone.",
+  "solution": "p = \\frac{50,000}{150,000 + 50,000} = 0.25.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "expected value"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0026",
+  "version": 2,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "p",
+    "probability of success"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0026-c",
+  "topic": "econ",
+  "subtopic": "econ-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A venture gains $45,000 if it succeeds and loses $5,000 if it fails. At what probability of success is its expected value zero?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.11"
+   },
+   {
+    "id": "b",
+    "text": "0.90"
+   },
+   {
+    "id": "c",
+    "text": "0.50"
+   },
+   {
+    "id": "d",
+    "text": "0.10"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Set the expected value to zero: p × gain = (1 - p) × loss. Solving gives p = loss / (gain + loss). Above that probability the venture is worth taking on expected value alone.",
+  "solution": "p = \\frac{5,000}{45,000 + 5,000} = 0.10.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "expected value"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0026",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "symbols": [
+   [
+    "p",
+    "probability of success"
+   ]
+  ]
  }
 ]

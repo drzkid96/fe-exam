@@ -56,6 +56,16 @@
      "For a projectile, solve the vertical motion for time first, then use that time horizontally.",
      "In a composite mass moment of inertia, the parallel axis distance runs from the axis to the centre of mass of each part, not to its far end."
     ]
+   },
+   "bridge": {
+    "keep": "Speed, distance and time relations, since stopping and passing distances use them.",
+    "rusty": [
+     "Kinetics: writing force = mass × acceleration along the right axis.",
+     "Work-energy and impulse-momentum as shortcuts that avoid finding acceleration.",
+     "Rotation: mass moment of inertia and angular motion."
+    ],
+    "work": "Stopping sight distance is constant-deceleration kinematics plus a reaction distance. Superelevation and side friction come from the force balance on a vehicle in a curve. Yellow-interval timing is the same braking physics.",
+    "exam": "The handbook's dynamics formulas use SI and USCS side by side. Check whether mass is in kg or slugs before substituting."
    }
   },
   {
@@ -175,7 +185,12 @@
      "idea": "On a grade, gravity adds g times the grade to the deceleration when climbing, and takes it away when descending. With a constant total deceleration, stopping time is the speed divided by it.",
      "steps": "Deceleration from the grade = 9.81 × 0.05 = 0.491 m/s^{2}.\n\nTotal = 4.5 + 0.491 = 4.990 m/s^{2}.\n\nt = \\frac{22}{4.990} = 4.41 s.",
      "answer": "4.41 s",
-     "value": 4.408376
+     "value": 4.408376,
+     "figure": {
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(-2.862405226111748 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W</text><line x1='199' y1='76' x2='196' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M196 16 L191 27 L202 27 Z' fill='#1B795A'/><text x='203' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='176' y1='101' x2='127' y2='104' stroke='#568CBB' stroke-width='3'/><path d='M116 104 L127 109 L127 98 Z' fill='#568CBB'/><text x='104' y='109' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Braking force</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>On an upgrade the weight component along the slope also slows the car</text>",
+      "alt": "Free-body diagram on a surface inclined at 2.86° showing W, N, Braking force."
+     }
     }
    ],
    "lookup": [
@@ -186,7 +201,8 @@
       "constant acceleration",
       "particle kinematics",
       "projectile motion",
-      "normal and tangential components"
+      "normal and tangential components",
+      "constant angular acceleration"
      ]
     }
    ],
@@ -198,7 +214,50 @@
     "For curved motion, compute the normal acceleration from v^{2} / r.",
     "Check signs and that times are positive."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Stopping sight distance, passing sight distance and clearance intervals are constant-acceleration kinematics.",
+   "symbols": [
+    [
+     "v_{0}",
+     "initial speed"
+    ],
+    [
+     "s_{0}",
+     "initial position"
+    ],
+    [
+     "a_{n}",
+     "normal (centripetal) acceleration"
+    ],
+    [
+     "v",
+     "speed"
+    ],
+    [
+     "a",
+     "acceleration"
+    ],
+    [
+     "t",
+     "time"
+    ],
+    [
+     "s",
+     "distance travelled"
+    ],
+    [
+     "r",
+     "radius"
+    ],
+    [
+     "g",
+     "acceleration due to gravity, 9.81 m/s^{2} (32.2 ft/s^{2})"
+    ],
+    [
+     "R",
+     "range or radius"
+    ]
+   ]
   },
   {
    "id": "dynamics-b-lesson",
@@ -285,7 +344,8 @@
      "page": "114–129",
      "find": [
       "mass moment of inertia",
-      "parallel axis"
+      "parallel axis",
+      "radius of gyration"
      ]
     }
    ],
@@ -297,7 +357,37 @@
     "For a composite body, add the parts about the same axis.",
     "Check units of mass times length squared."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "I_{c}",
+     "mass moment of inertia about the centre of mass"
+    ],
+    [
+     "I_{end}",
+     "mass moment of inertia about an axis through the end"
+    ],
+    [
+     "I",
+     "mass moment of inertia"
+    ],
+    [
+     "m",
+     "mass"
+    ],
+    [
+     "d",
+     "distance between the parallel axes"
+    ],
+    [
+     "L",
+     "length of the rod"
+    ],
+    [
+     "r",
+     "radius"
+    ]
+   ]
   },
   {
    "id": "dynamics-c-lesson",
@@ -378,7 +468,12 @@
      "idea": "Newton's second law uses the net force. Kinetic friction equals the coefficient times the normal force, and on a level floor with a horizontal pull the normal force equals the weight.",
      "steps": "N = m g = 120(9.81) = 1,177.2 N.\n\nFriction = 0.35 × 1,177.2 = 412.0 N.\n\na = \\frac{700 - 412.0}{120} = 2.40 m/s^{2}.",
      "answer": "2.40 m/s^{2}",
-     "value": 2.399833
+     "value": 2.399833,
+     "figure": {
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 1,177.2 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N = 1,177.2 N</text><line x1='224' y1='100' x2='273' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#568CBB'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Pull = 700 N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#00242E' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#00242E'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#00242E'>Friction = 412.0 N</text>",
+      "alt": "Free-body diagram showing W = 1,177.2 N, N = 1,177.2 N, Pull = 700 N, Friction = 412.0 N."
+     }
     },
     {
      "family": "dynamics-0008",
@@ -388,9 +483,9 @@
      "answer": "5.63 m/s^{2}",
      "value": 5.626785,
      "figure": {
-      "viewBox": "0 0 400 180",
-      "svg": "<path d='M114 150 L286 150 L286 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(209 84) rotate(-35)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='158' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>35°</text>",
-      "alt": "A block on an incline at 35° to the horizontal."
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(-35 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = m g</text><line x1='186' y1='80' x2='158' y2='40' stroke='#1B795A' stroke-width='3'/><path d='M152 31 L154 43 L163 37 Z' fill='#1B795A'/><text x='145' y='25' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Only the weight component along the slope, m g sin(angle), causes acceleration</text>",
+      "alt": "Free-body diagram on a surface inclined at 35° showing W = m g, N."
      }
     },
     {
@@ -407,7 +502,12 @@
      "idea": "On a flat curve friction alone supplies the inward force m v^{2} / R, and friction cannot exceed the coefficient times the weight. Setting the two equal gives the smallest radius, and the mass cancels.",
      "steps": "\\frac{m v^{2}}{R} = (coefficient) m g, so R = \\frac{v^{2}}{(coefficient) g} = \\frac{18^{2}}{0.45(9.81)} = 73.4 m.",
      "answer": "73.4 m",
-     "value": 73.394495
+     "value": 73.394495,
+     "figure": {
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Friction, toward the centre of the curve</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>View along the direction of travel</text>",
+      "alt": "Free-body diagram showing W, N, Friction, toward the centre of the curve."
+     }
     },
     {
      "family": "dynamics-0015",
@@ -415,7 +515,12 @@
      "idea": "Bodies joined by a taut cord share one acceleration. Treat them as a single system along the cord: the only driving force is the weight of the hanging block, and it must accelerate the total mass. The tension is internal and cancels.",
      "steps": "Driving force = 3(9.81) = 29.43 N. Total mass = 9 + 3 = 12 kg.\n\na = \\frac{29.43}{12} = 2.45 m/s^{2}, which is less than g as it must be.",
      "answer": "2.45 m/s^{2}",
-     "value": 2.4525
+     "value": 2.4525,
+     "figure": {
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 29.4 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>T = 22.1 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Hanging block: accelerates downward at 2.45 m/s²</text>",
+      "alt": "Free-body diagram showing W = 29.4 N, T = 22.1 N."
+     }
     }
    ],
    "lookup": [
@@ -427,7 +532,8 @@
       "friction",
       "kinetics of a rigid body",
       "mass moment of inertia",
-      "normal and tangential components"
+      "normal and tangential components",
+      "impulse and momentum"
      ]
     }
    ],
@@ -439,7 +545,50 @@
     "Solve for acceleration, then use kinematics for speed, distance or time.",
     "For rotation, write the sum of moments = I × angular acceleration about the fixed axis."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "The curve formula 0.01e + f = V^{2} / (15R) is Newton's second law for a vehicle on a banked curve.",
+   "symbols": [
+    [
+     "μ_{k}",
+     "coefficient of kinetic friction"
+    ],
+    [
+     "F",
+     "force"
+    ],
+    [
+     "M",
+     "moment or torque"
+    ],
+    [
+     "I",
+     "mass moment of inertia"
+    ],
+    [
+     "m",
+     "mass"
+    ],
+    [
+     "a",
+     "acceleration"
+    ],
+    [
+     "N",
+     "normal force"
+    ],
+    [
+     "g",
+     "acceleration due to gravity, 9.81 m/s^{2} (32.2 ft/s^{2})"
+    ],
+    [
+     "v",
+     "speed"
+    ],
+    [
+     "R",
+     "range or radius"
+    ]
+   ]
   },
   {
    "id": "dynamics-d-lesson",
@@ -550,7 +699,12 @@
       "work",
       "elastic potential energy",
       "work and energy",
-      "mass moment of inertia"
+      "mass moment of inertia",
+      "principle of work and energy",
+      "friction",
+      "power",
+      "kinetic energy",
+      "spring"
      ]
     }
    ],
@@ -562,7 +716,38 @@
     "Solve the energy balance for the unknown speed or distance.",
     "For impact, write conservation of momentum, then the restitution equation."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Braking distance is a work-energy result: friction work equals the kinetic energy removed, which is why it grows with speed squared.",
+   "symbols": [
+    [
+     "v",
+     "speed"
+    ],
+    [
+     "h",
+     "height"
+    ],
+    [
+     "P",
+     "power"
+    ],
+    [
+     "m",
+     "mass"
+    ],
+    [
+     "g",
+     "acceleration due to gravity, 9.81 m/s^{2} (32.2 ft/s^{2})"
+    ],
+    [
+     "F",
+     "force"
+    ],
+    [
+     "L",
+     "length of the rod"
+    ]
+   ]
   }
  ]
 }

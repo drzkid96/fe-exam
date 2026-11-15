@@ -266,6 +266,37 @@ mark{background:var(--pale);color:inherit;border-radius:2px}
   .status span{display:none}
 }
 @media (prefers-reduced-motion:no-preference){.bar i{transition:width .3s}}
+
+#hb{position:fixed;top:0;right:0;bottom:0;width:min(780px,100%);background:var(--surface);border-left:1px solid var(--rule);box-shadow:-10px 0 28px rgb(0 36 46 / .18);display:flex;flex-direction:column;z-index:40}
+#hb[hidden]{display:none}
+.hb-head{display:flex;gap:8px;align-items:center;padding:10px 14px;border-bottom:1px solid var(--rule)}
+.hb-head h2{margin:0;font-size:16px;flex:1;color:var(--slate)}
+.hb-bar{display:flex;gap:6px;align-items:center;padding:8px 14px;border-bottom:1px solid var(--rule);flex-wrap:wrap;font-size:13px}
+.hb-bar input{padding:6px 8px;border:1px solid var(--rule);border-radius:var(--r);font:inherit;background:var(--band)}
+.hb-bar input[type=number]{width:72px} .hb-bar form{display:flex;gap:6px;flex:1;min-width:200px} .hb-bar form input{flex:1;min-width:0}
+.hb-body{flex:1;overflow:auto;background:var(--band);padding:12px;display:flex;flex-direction:column;gap:12px}
+.hb-res{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r);max-height:220px;overflow:auto;flex:none}
+.hb-res button{display:block;width:100%;text-align:left;border:0;border-bottom:1px solid var(--rule);background:none;padding:8px 12px;font:inherit;font-size:13px;cursor:pointer;color:var(--ink)}
+.hb-res button:hover,.hb-res button[aria-current=true]{background:var(--pale)} .hb-res b{color:var(--emerald)}
+.hb-page{position:relative;background:#fff;box-shadow:0 1px 6px rgb(0 36 46 / .2);flex:none;align-self:center}
+.hb-page canvas{display:block}
+.hb-hl{position:absolute;background:rgb(107 214 136 / .5);mix-blend-mode:multiply;pointer-events:none;border-radius:2px}
+.hb-drop{background:var(--surface);border:2px dashed var(--jade);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:12px}
+.pg{display:inline-flex;align-items:center;margin:0 2px;padding:1px 8px;border:1px solid var(--emerald);border-radius:999px;background:var(--surface);color:var(--emerald);font:inherit;font-size:12px;font-weight:600;cursor:pointer}
+.pg:hover{background:var(--pale)}
+
+.syms{margin:0;display:grid;grid-template-columns:max-content 1fr;gap:2px 14px;font-size:14px} .syms dt{font-weight:600;color:var(--emerald)} .syms dd{margin:0}
+.bridge{background:var(--cream);border-left:3px solid var(--jade);border-radius:var(--r);padding:12px 16px;display:flex;flex-direction:column;gap:8px} .bridge h3{margin:0} .bridge ul{margin:0;padding-left:18px}
+.calc-btn{display:none} body.on-q .calc-btn{display:inline-flex}
+#calc{position:fixed;left:232px;bottom:16px;width:300px;background:var(--surface);border:1px solid var(--slate);border-radius:var(--r);box-shadow:0 8px 28px rgb(0 36 46 / .25);z-index:30;padding:10px;display:flex;flex-direction:column;gap:8px}
+#calc[hidden],body:not(.on-q) #calc{display:none}
+@media (max-width:900px){#calc{left:8px}}
+.calc-h{display:flex;align-items:center;gap:8px} .calc-h strong{flex:1}
+#calc input{width:100%;padding:8px;border:1px solid var(--rule);border-radius:var(--r);font:inherit;font-size:16px;background:var(--band)}
+.calc-out{min-height:24px;font-size:18px;font-weight:700;text-align:right;color:var(--emerald);overflow-wrap:anywhere}
+.calc-k{display:grid;grid-template-columns:repeat(5,1fr);gap:4px} .calc-k button{padding:7px 0;border:1px solid var(--rule);border-radius:var(--r);background:var(--band);font:inherit;font-size:13px;font-weight:600;cursor:pointer;color:var(--ink)} .calc-k button:hover{background:var(--pale)} .calc-k button.eq{background:var(--emerald);color:#fff;border-color:var(--emerald)}
+.calc-hist{font-size:12px;color:var(--muted);max-height:66px;overflow:auto} .calc-hist button{border:0;background:none;font:inherit;color:inherit;cursor:pointer;padding:0;text-align:left;display:block}
+.goals{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px} .goal{border:1px solid var(--rule);border-radius:var(--r);padding:12px;display:flex;flex-direction:column;gap:6px} .goal .k{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--jade)} .goal .v{font-size:22px;font-weight:700} .goal .d{font-size:13px;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -286,11 +317,15 @@ mark{background:var(--pale);color:inherit;border-radius:2px}
   <div class="main">
     <header class="top">
       <form id="gform" role="search"><input id="gsearch" type="search" placeholder="Search questions, topics and guide" aria-label="Search the site" autocomplete="off"></form>
+      <button type="button" class="btn sm calc-btn" data-act="calcToggle">Calculator</button>
+      <button type="button" class="btn sm" data-act="hbOpen">Handbook</button>
       <div class="status" id="status" title=""><i class="dot"></i><span>Connecting</span></div>
     </header>
     <main id="view" tabindex="-1"><div class="wrap"><p class="sub">Loading the study site.</p></div></main>
   </div>
 </div>
+<aside id="hb" hidden aria-label="Handbook reader"></aside>
+<aside id="calc" hidden aria-label="Calculator"></aside>
 <div id="modal" hidden></div>
 <div id="toast" hidden role="status"></div>
 
@@ -702,6 +737,7 @@ async function loadContent() {
   const soft = (p, d) => getJSON(p).catch(e => { S.warnings.push(p + ' did not load'); return d; });
   const [ref, qs, gs] = await Promise.all([soft(m.reference, {sections: []}), Promise.all(m.questions.map(p => soft(p, []))), Promise.all(m.guide.map(p => soft(p, null)))]);
   S.reference = ref;
+  S.hbindex = m.hbindex ? await soft(m.hbindex, null) : null;
   const topics = new Set(S.exam.topics.map(t => t.id));
   for (const q of [].concat(...qs)) {
     if (!q || !q.id || !topics.has(q.topic) || !Core.FORMATS.includes(q.format)) { S.warnings.push('Skipped a question with a missing id, topic or format' + (q && q.id ? ': ' + q.id : '')); continue; }
@@ -840,13 +876,18 @@ function handbookHTML(q) {
   if (q.lookup === false) return '<div class="sol"><h3>Check in the handbook</h3><p>Not a handbook lookup. This rests on a rule or on arithmetic the handbook does not spell out. The lesson for this subtopic covers it: <a href="#topic-' + esc(q.topic) + '">open the lesson</a>.</p></div>';
   const ed = (S.reference.handbook || {}).edition, terms = hb.find || [];
   return '<div class="sol"><h3>Check in the handbook</h3><p>FE Reference Handbook' + (ed ? ' ' + esc(ed) : '') + ', <strong>' + esc(hb.section || '') + '</strong>' + (hb.page ? ', pages ' + esc(hb.page) : '') + '.' +
-    (terms.length ? ' Search the handbook for ' + terms.map(t => '<strong>' + esc(t) + '</strong>').join(' or ') + '.' : '') + hbLink() + '</p></div>';
+    (terms.length ? ' Search the handbook for ' + hbTerms(terms, hb.page) + '.' : '') + hbLink() + '</p></div>';
+}
+function symsHTML(list) { return (list || []).length ? '<div class="sol"><h3>Symbols used</h3><dl class="syms">' + list.map(x => '<dt>' + Core.richInline(x[0]) + '</dt><dd>' + Core.richInline(x[1]) + '</dd>').join('') + '</dl></div>' : ''; }
+function lessonLink(q) {
+  const t = S.exam.topics.find(x => x.id === q.topic), u = t && t.subtopics.find(x => x.id === q.subtopic); if (!t || !u) return '';
+  return '<div class="sol"><h3>Go to the lesson</h3><p><a href="#topic-' + esc(t.id) + '" data-open="' + esc(u.id) + '">' + esc(t.name) + ': ' + esc(u.code + '. ' + u.name.replace(/ \(.*$/, '')) + '</a>, with the method, formulas and worked examples for this question type. <a href="#topic-' + esc(t.id) + '">Topic overview</a>.</p></div>';
 }
 function feedbackHTML(q, slot) {
   const ok = slot.result && slot.result.correct, skipped = slot.result && slot.result.skipped;
   S.askCtx['q:' + q.id] = {q, slot};
   return '<div class="fb ' + (ok ? 'ok' : 'no') + '"><div class="fb-h">' + (ok ? IC.check : IC.cross) + '<strong>' + (ok ? 'Correct' : skipped ? 'Not answered' : 'Not correct') + '</strong><span>' + dur(slot.ms) + ' on this question, exam pace is ' + dur(targetMs()) + '</span></div>' +
-    '<p><strong>Answer:</strong> ' + Core.richInline(answerText(q)) + '</p>' + (q.eli5 ? '<div class="sol"><h3>Concept</h3>' + Core.rich(q.eli5) + '</div>' : '') + (q.solution ? '<div class="sol"><h3>Solution with the numbers</h3>' + Core.rich(q.solution) + figureHTML(q.solutionFigure) + '</div>' : '') +
+    '<p><strong>Answer:</strong> ' + Core.richInline(answerText(q)) + '</p>' + (q.eli5 ? '<div class="sol"><h3>Concept</h3>' + Core.rich(q.eli5) + '</div>' : '') + (q.solution ? '<div class="sol"><h3>Solution with the numbers</h3>' + Core.rich(q.solution) + figureHTML(q.solutionFigure) + '</div>' : '') + symsHTML(q.symbols) + lessonLink(q) +
     handbookHTML(q) + '<div class="chips">' + (q.verify ? '<span class="chip strong" title="' + esc(q.verify.basis || 'The answer key is recomputed by tools/verify_answers.py') + '">' + (q.verify.method === 'computed' ? 'Answer recomputed by code' : 'Answer checked against a reference') + '</span>' : '') + '</div>' + askHTML('q:' + q.id, !ok && !skipped) + '</div>';
 }
 
@@ -941,6 +982,8 @@ views.home = () => {
     '<div class="tile"><span class="k">Answered today</span><span class="v">' + today + ' / ' + goal + '</span>' + bar(today / goal) + '<span class="d">' + (T.streak ? T.streak + '-day streak' : 'No streak yet') + '</span></div>' +
     '<div class="tile"><span class="k">Mastery, exam-weighted</span><span class="v">' + pct(T.weighted) + '</span><span class="d">' + T.secure + ' of ' + T.bank + ' question types secure. One counts after three correct answers on separate, spaced days.</span></div>' +
     '<div class="tile"><span class="k">Pace</span><span class="v">' + dur(T.avgMs) + '</span><span class="d">Average per question, exam pace ' + dur(targetMs()) + '</span></div></section>' +
+    '<section class="card"><div class="card-h"><h2>Goals</h2><a class="btn sm ghost" href="#progress">All progress</a></div>' + goalsHTML(true) + '</section>' +
+    startOrderHTML() +
     '<section class="card"><div class="card-h"><h2>Topics by exam weight</h2><a class="btn sm ghost" href="#topics">All topics</a></div><div class="tw"><table class="t"><thead><tr><th></th><th>Topic</th><th class="num">Exam questions</th><th class="num">Question types</th><th class="num">Seen</th><th>Mastery</th><th class="num">Due</th></tr></thead><tbody>' +
     e.topics.map(t => { const x = m.byTopic[t.id]; return '<tr><td class="n">' + t.n + '</td><td><a href="#topic-' + t.id + '">' + esc(t.name) + '</a></td><td class="num">' + t.min + '–' + t.max + '</td><td class="num">' + x.total + '</td><td class="num">' + x.seen + '</td><td>' + (x.mastery == null ? '<span class="sub">No questions yet</span>' : '<div style="display:flex;gap:8px;align-items:center">' + bar(x.mastery) + '<span>' + secureText(x) + '</span></div>') + '</td><td class="num">' + x.due + '</td></tr>'; }).join('') +
     '</tbody></table></div></section><section class="card"><div class="card-h"><h2>Recent sessions</h2><a class="btn sm ghost" href="#review">Review</a></div>' + sessionRows((S.live || S.sessions).filter(s => (s.attempts || []).length).slice(0, 5)) + '</section></div>';
@@ -949,13 +992,130 @@ views.topics = () => '<div class="wrap"><header class="head"><div><p class="eyeb
   S.exam.topics.map(t => { const x = S.model.byTopic[t.id], g = ((S.guide[t.id] || {}).sections || []).length;
     return '<a class="tcard" href="#topic-' + t.id + '"><span class="tn">TOPIC ' + t.n + '</span><strong>' + esc(t.name) + '</strong><div class="row"><span>' + t.min + '–' + t.max + ' exam questions</span><span>' + t.subtopics.length + ' subtopics</span></div>' + bar(x.mastery || 0) +
       '<div class="row"><span>' + (x.mastery == null ? 'No questions yet' : 'Mastery ' + pct(x.mastery) + ', ' + secureText(x)) + '</span><span>' + x.total + ' types, ' + x.versions + ' versions</span></div></a>'; }).join('') + '</div></div>';
-function hbLink() { const u = (S.settings.handbookUrl || '').trim(); return /^https:\/\//i.test(u) ? ' <a href="' + esc(u) + '" target="_blank" rel="noopener">Open my handbook</a>' : ''; }
+
+/* ---------- Handbook reader ----------
+   Shows the student's own copy of the FE Reference Handbook PDF. The file is chosen on this device and kept in this
+   browser only (IndexedDB); it is never part of the site, the repository or the study log. content/hbindex.json holds
+   only search words and the printed page numbers they appear on. */
+const HB = {pdf: null, n: 0, text: null, page: 1, zoom: 1, term: '', res: null, busy: '', note: '', pend: null, tok: 0, tried: false};
+const hbOff = () => (S.hbindex && S.hbindex.offset) || 0;
+const hbNorm = t => String(t || '').replace(/[‘’]/g, "'").replace(/[–—]/g, '-').replace(/\s+/g, ' ').toLowerCase();
+function hbPages(term, range) {
+  const all = ((S.hbindex || {}).terms || {})[term] || [], m = /(\d+)\D+(\d+)/.exec(range || ''), inr = m ? all.filter(p => p >= +m[1] && p <= +m[2]) : [];
+  return (inr.length ? inr : all).slice(0, 3);
+}
+function hbTerms(terms, range, sep) {
+  return terms.map(t => '<strong>' + esc(t) + '</strong> ' + (hbPages(t, range).map(p => '<button type="button" class="pg" data-act="hbGo" data-page="' + p + '" data-term="' + esc(t) + '">p. ' + p + '</button>').join('') ||
+    '<button type="button" class="pg" data-act="hbGo" data-term="' + esc(t) + '">search</button>')).join(sep || ' or ');
+}
+function hbLink() { const u = (S.settings.handbookUrl || '').trim(); return ' <button type="button" class="btn sm" data-act="hbOpen">Open the handbook</button>' + (/^https:\/\//i.test(u) ? ' <a href="' + esc(u) + '" target="_blank" rel="noopener">Open my handbook</a>' : ''); }
+function hbStore(mode, fn) {
+  return new Promise((res, rej) => { let rq; try { rq = indexedDB.open('fe-handbook', 1); } catch (e) { rej(e); return; }
+    rq.onupgradeneeded = () => rq.result.createObjectStore('kv'); rq.onerror = () => rej(rq.error);
+    rq.onsuccess = () => { try { const tx = rq.result.transaction('kv', mode), out = fn(tx.objectStore('kv')); tx.oncomplete = () => res(out && out.result); tx.onerror = tx.onabort = () => rej(tx.error); } catch (e) { rej(e); } }; });
+}
+const HB_LIBS = ['https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/', 'vendor/'];     // the public CDN copy of PDF.js; a local copy is tried second, for offline testing
+function hbLib(n) {
+  if (window.pdfjsLib) return Promise.resolve();
+  const base = HB_LIBS[n || 0]; if (!base) return Promise.reject(new Error('the PDF viewer did not load; check the connection and try again'));
+  return new Promise((res, rej) => { const sc = document.createElement('script'); sc.src = base + 'pdf.min.js'; sc.onload = () => { window.pdfjsLib.GlobalWorkerOptions.workerSrc = base + 'pdf.worker.min.js'; res(); }; sc.onerror = () => hbLib((n || 0) + 1).then(res, rej); document.head.appendChild(sc); });
+}
+async function hbLoad(buf, fresh) {
+  HB.busy = 'Opening the handbook'; hbPaint();
+  try {
+    await hbLib();
+    HB.pdf = await window.pdfjsLib.getDocument({data: buf.slice(0)}).promise; HB.n = HB.pdf.numPages; HB.text = null;
+    if (fresh) hbStore('readwrite', st => { st.put(buf, 'pdf'); st.delete('text'); }).catch(() => { HB.note = 'This browser would not keep the file, so you will be asked for it again next time.'; });
+    else { const t = await hbStore('readonly', st => st.get('text')).catch(() => null); if (t && t.length === HB.n) HB.text = t; }
+    if (!HB.text) {
+      const text = [];
+      for (let i = 1; i <= HB.n; i++) {
+        const pg = await HB.pdf.getPage(i), tc = await pg.getTextContent(); text.push(hbNorm(tc.items.map(x => x.str).join(' ')));
+        if (i % 25 === 0) { HB.busy = 'Reading the handbook for search: page ' + i + ' of ' + HB.n; hbPaint(); }
+      }
+      HB.text = text; hbStore('readwrite', st => { st.put(text, 'text'); }).catch(() => {});
+    }
+    const want = (S.hbindex || {}).numPages; HB.note = want && want !== HB.n ? 'This PDF has ' + HB.n + ' pages. The page links on this site were made for edition ' + esc(S.hbindex.edition) + ' (' + want + ' pages), so they may land a little off in your copy. Search still works.' : HB.note;
+    HB.busy = ''; const t = HB.pend; HB.pend = null; if (t) hbGoto(t.page, t.term); else { hbPaint(); hbRender(); }
+  } catch (e) { HB.pdf = null; HB.busy = ''; HB.note = 'That file could not be opened as a PDF (' + esc(e.message || e.name || 'error') + ').'; hbPaint(); }
+}
+async function hbRestore(open) {
+  if (HB.pdf) return;
+  if (open) { if (HB.tried) { hbPaint(); return; } HB.tried = true; }
+  try {
+    if (open) { const buf = await hbStore('readonly', st => st.get('pdf')); if (buf) { await hbLoad(buf, false); return; } }
+    else { const t = await hbStore('readonly', st => st.get('text')); if (t) HB.text = t; }
+  } catch (e) { /* no stored copy, or storage is unavailable */ }
+  if (open) hbPaint();
+}
+function hbFind(term) {
+  const t = hbNorm(term); if (!t || !HB.text) return [];
+  const out = [];
+  HB.text.forEach((txt, i) => { let k = txt.indexOf(t), c = 0; if (k < 0) return; const first = k; while (k >= 0) { c++; k = txt.indexOf(t, k + t.length); }
+    out.push({page: i + 1, count: c, pre: txt.slice(Math.max(0, first - 50), first), hit: txt.slice(first, first + t.length), post: txt.slice(first + t.length, first + t.length + 70)}); });
+  return out;
+}
+function hbGoto(printed, term) {
+  $('#hb').hidden = false;
+  if (!HB.pdf) { HB.pend = {page: printed, term: term}; if (!HB.tried) hbRestore(true); else hbPaint(); return; }
+  if (term != null) { HB.term = term; HB.res = term ? hbFind(term) : null; }
+  if (printed) HB.page = Math.max(1, Math.min(HB.n, +printed + hbOff()));
+  else if (HB.res && HB.res.length) HB.page = HB.res[0].page;
+  hbPaint(); hbRender();
+}
+const hbLabel = p => p > hbOff() ? 'p. ' + (p - hbOff()) : 'front matter ' + p;
+function hbPaint() {
+  const el = $('#hb'); if (!el || el.hidden) return;
+  const head = '<div class="hb-head"><h2>FE Reference Handbook</h2>' + (HB.pdf ? '<button type="button" class="btn sm ghost" data-act="hbForget">Remove my copy</button>' : '') + '<button type="button" class="btn sm" data-act="hbClose">Close</button></div>';
+  if (HB.busy) { el.innerHTML = head + '<div class="hb-body"><p class="sub">' + esc(HB.busy) + '.</p></div>'; return; }
+  if (!HB.pdf) {
+    el.innerHTML = head + '<div class="hb-body"><div class="hb-drop" id="hb-drop"><h3>Load your copy of the handbook</h3><p>Choose the FE Reference Handbook PDF from this device (free from your MyNCEES account). It opens here beside the questions, with search across every page, and each answer and lesson links straight to the right page.</p>' +
+      '<p class="sub">Your copy stays in this browser. It is not uploaded, not added to the site and not saved in your study log, so each browser or device asks for it once.</p><label class="btn primary" for="hb-file">Choose the handbook PDF</label><input id="hb-file" type="file" accept="application/pdf,.pdf" data-change="hbFile" hidden>' +
+      (HB.pend ? '<p class="note">After it loads, the reader opens ' + (HB.pend.page ? 'page ' + esc(HB.pend.page) : 'the search') + (HB.pend.term ? ' for "' + esc(HB.pend.term) + '"' : '') + '.</p>' : '') + (HB.note ? '<p class="note">' + HB.note + '</p>' : '') + '</div></div>'; return;
+  }
+  const res = HB.res, list = res ? (res.length ? '<div class="hb-res" role="list">' + res.slice(0, 80).map(r => '<button type="button" data-act="hbRes" data-p="' + r.page + '"' + (r.page === HB.page ? ' aria-current="true"' : '') + '><b>' + esc(hbLabel(r.page)) + '</b>' + (r.count > 1 ? ' (' + r.count + ')' : '') + ' &nbsp;' + esc(r.pre) + '<b>' + esc(r.hit) + '</b>' + esc(r.post) + '</button>').join('') + '</div>' : '<p class="sub">No page of your copy contains "' + esc(HB.term) + '". Try a shorter word.</p>') : '';
+  el.innerHTML = head + '<div class="hb-bar"><button type="button" class="btn sm" data-act="hbStep" data-d="-1" aria-label="Previous page">Prev</button><label>Page <input id="hb-pg" type="number" min="1" max="' + (HB.n - hbOff()) + '" value="' + Math.max(1, HB.page - hbOff()) + '" data-change="hbPg" aria-label="Printed page number"></label><span class="sub">of ' + (HB.n - hbOff()) + '</span><button type="button" class="btn sm" data-act="hbStep" data-d="1" aria-label="Next page">Next</button>' +
+    '<button type="button" class="btn sm" data-act="hbZoom" data-d="-1" aria-label="Zoom out">Smaller</button><button type="button" class="btn sm" data-act="hbZoom" data-d="1" aria-label="Zoom in">Larger</button>' +
+    '<form id="hbform"><input id="hb-q" type="search" placeholder="Search the handbook" value="' + esc(HB.term) + '" aria-label="Search the handbook"><button class="btn sm primary">Search</button></form></div>' +
+    '<div class="hb-body">' + (HB.note ? '<p class="note">' + HB.note + '</p>' : '') + (res ? '<p class="sub">' + res.length + ' page' + (res.length === 1 ? '' : 's') + ' contain "' + esc(HB.term) + '".</p>' : '') + list + '<div class="hb-page" id="hb-page"></div></div>';
+}
+async function hbRender() {
+  const box = $('#hb-page'); if (!box || !HB.pdf) return; const tok = ++HB.tok;
+  const pg = await HB.pdf.getPage(HB.page), base = pg.getViewport({scale: 1}), w = Math.max(280, (box.parentNode.clientWidth - 24)) * HB.zoom, vp = pg.getViewport({scale: w / base.width}), dpr = Math.min(2, window.devicePixelRatio || 1);
+  const cv = document.createElement('canvas'); cv.width = Math.round(vp.width * dpr); cv.height = Math.round(vp.height * dpr); cv.style.width = vp.width + 'px'; cv.style.height = vp.height + 'px';
+  await pg.render({canvasContext: cv.getContext('2d'), viewport: vp, transform: dpr !== 1 ? [dpr, 0, 0, dpr, 0, 0] : null}).promise;
+  if (tok !== HB.tok) return;
+  box.style.width = vp.width + 'px'; box.replaceChildren(cv);
+  const t = hbNorm(HB.term); if (!t) return;
+  const tc = await pg.getTextContent(), words = t.split(' ').filter(x => x.length > 3);
+  let hits = tc.items.filter(it => hbNorm(it.str).includes(t)); if (!hits.length && words.length) hits = tc.items.filter(it => words.some(x => hbNorm(it.str).includes(x)));
+  if (tok !== HB.tok) return;
+  for (const it of hits) { const m = window.pdfjsLib.Util.transform(vp.transform, it.transform), h = Math.hypot(m[2], m[3]), d = document.createElement('div'); d.className = 'hb-hl';
+    d.style.left = m[4] + 'px'; d.style.top = (m[5] - h) + 'px'; d.style.width = (it.width * vp.scale) + 'px'; d.style.height = (h * 1.15) + 'px'; box.appendChild(d); }
+  const first = box.querySelector('.hb-hl'); if (first && first.scrollIntoView) first.scrollIntoView({block: 'center'});
+}
+function hbContext(key) {
+  if (!HB.text || !S.hbindex) return '';
+  let looks = [];
+  if (key[0] === 'q') { const c = S.askCtx[key], q = c && c.q, hb = q && q.lookup !== false && (q.handbook || [])[0]; if (hb) looks = [hb]; }
+  else { const s = findLesson(key.slice(2)); looks = (s && s.lookup) || []; }
+  let out = '', used = 0;
+  for (const l of looks) for (const t of (l.find || [])) {
+    if (used >= 2) break; const p = hbPages(t, l.page)[0]; if (!p) continue;
+    const txt = HB.text[p + hbOff() - 1] || '', i = txt.indexOf(hbNorm(t)); if (i < 0) continue;
+    out += 'Handbook page ' + p + ' (' + l.section + '), near "' + t + '": ' + txt.slice(Math.max(0, i - 150), i + 750) + '\n'; used++;
+  }
+  return out ? '\nEXTRACT FROM THE STUDENT\'S OWN COPY OF THE HANDBOOK (plain text, formulas may be garbled). Use it to say where to look, and cite these page numbers:\n' + out : '';
+}
+
 function exampleHTML(x, n) {
   return '<div class="sol ex"><h3>Worked example' + (n ? ' ' + n : '') + '</h3><p><strong>' + Core.richInline(x.problem) + '</strong></p>' + figureHTML(x.figure) + (x.idea ? '<div class="why"><span class="who">Why this works</span>' + Core.rich(x.idea) + '</div><p class="who">Steps</p>' : '') + Core.rich(x.steps) + (x.answer ? '<p><strong>Answer:</strong> ' + Core.richInline(x.answer) + '</p>' : '') + '</div>';
 }
 function guideSection(s) {
   const exs = (s.example ? [s.example] : []).concat(s.examples || []), ed = (S.reference.handbook || {}).edition;
-  return '<div class="gsec" id="g-' + esc(s.id) + '"><h3>' + esc(s.title) + '</h3>' + Core.rich(s.body) + figureHTML(s.figure) +
+  const br = s.bridge, bridge = br ? '<div class="bridge"><h3>Coming back to this after a few years</h3>' + (br.keep ? '<p><strong>What usually sticks:</strong> ' + Core.richInline(br.keep) + '</p>' : '') + ((br.rusty || []).length ? '<div><strong>What usually needs rebuilding:</strong><ul>' + br.rusty.map(x => '<li>' + Core.richInline(x) + '</li>').join('') + '</ul></div>' : '') +
+    (br.work ? '<p><strong>Where it meets transportation work:</strong> ' + Core.richInline(br.work) + '</p>' : '') + (br.exam ? '<p><strong>Exam versus practice:</strong> ' + Core.richInline(br.exam) + '</p>' : '') + '</div>' : '';
+  return '<div class="gsec" id="g-' + esc(s.id) + '"><h3>' + esc(s.title) + '</h3>' + bridge + Core.rich(s.body) + (s.work ? '<p class="note"><strong>From your own work:</strong> ' + Core.richInline(s.work) + '</p>' : '') + figureHTML(s.figure) +
     (s.deep ? '<div class="deep"><h3>In depth</h3>' + Core.rich(s.deep) + '</div>' : '') +
     ((s.method || []).length ? '<div><h3>How to solve these</h3><ol class="method">' + s.method.map(m => '<li>' + Core.richInline(m) + '</li>').join('') + '</ol></div>' : '') +
     (s.tips ? '<div><h3>What a review instructor stresses</h3><ul>' + s.tips.items.map(t => '<li>' + Core.richInline(t) + '</li>').join('') + '</ul><p class="hint">Restated in this site\'s words from <a href="' + esc(s.tips.url) + '" target="_blank" rel="noopener">' + esc(s.tips.from) + '</a>.</p></div>' : '') +
@@ -964,8 +1124,8 @@ function guideSection(s) {
     ((s.ideas || []).length ? '<div class="ideas"><h3>Key ideas</h3>' + s.ideas.map(i => '<div class="idea">' + (i.title ? '<strong>' + esc(i.title) + '</strong>' : '') + Core.rich(i.text) + '</div>').join('') + '</div>' : '') +
     exs.map((x, i) => exampleHTML(x, exs.length > 1 ? i + 1 : 0)).join('') +
     ((s.pitfalls || []).length ? '<div><h3>Common mistakes</h3><ul>' + s.pitfalls.map(p => '<li>' + Core.richInline(p) + '</li>').join('') + '</ul></div>' : '') +
-    ((s.lookup || []).length ? '<div><h3>Check in the handbook</h3><ul>' + s.lookup.map(l => '<li>FE Reference Handbook' + (ed ? ' ' + esc(ed) : '') + ', <strong>' + esc(l.section) + '</strong>, pages ' + esc(l.page) + '. Search the handbook for ' + l.find.map(t => '<strong>' + esc(t) + '</strong>').join(', ') + '.</li>').join('') + '</ul>' + (hbLink() ? '<p>' + hbLink() + '</p>' : '') + '</div>' : '') +
-    ((s.read || []).length ? '<div><h3>Where to read</h3><ul>' + s.read.map(r => '<li><strong>' + esc(r.source) + ':</strong> ' + esc(r.where) + '</li>').join('') + '</ul></div>' : '') + (s.credit ? '<p class="hint">' + esc(s.credit) + '</p>' : '') + askHTML('g:' + s.id) + '</div>';
+    ((s.lookup || []).length ? '<div><h3>Check in the handbook</h3><ul>' + s.lookup.map(l => '<li>FE Reference Handbook' + (ed ? ' ' + esc(ed) : '') + ', <strong>' + esc(l.section) + '</strong>, pages ' + esc(l.page) + '. Search the handbook for ' + hbTerms(l.find, l.page, ', ') + '.</li>').join('') + '</ul>' + (hbLink() ? '<p>' + hbLink() + '</p>' : '') + '</div>' : '') +
+    symsHTML(s.symbols).replace('class="sol"', '') + ((s.read || []).length ? '<div><h3>Where to read</h3><ul>' + s.read.map(r => '<li><strong>' + esc(r.source) + ':</strong> ' + esc(r.where) + '</li>').join('') + '</ul></div>' : '') + (s.credit ? '<p class="hint">' + esc(s.credit) + '</p>' : '') + askHTML('g:' + s.id) + '</div>';
 }
 
 /* ---------- Explain further with Claude ----------
@@ -991,8 +1151,9 @@ function respText(q, slot) {
   if (q.format === 'numeric') return String(r) + (q.answer && q.answer.unit ? ' ' + q.answer.unit : '');
   return JSON.stringify(r);
 }
-function askContext(key) {
-  const rules = 'You are tutoring a civil engineer who is studying for the NCEES FE Civil exam, a computer-based exam where the FE Reference Handbook is the only reference allowed. Be accurate and specific. Show calculations with the actual numbers and units. Name the handbook section a formula comes from, but never invent page numbers. If the stored solution below looks wrong, say so plainly. Write original material only and do not reproduce published exam or textbook questions. Keep the reply under about 250 words unless the student asks for more.\n' +
+function askContext(key) { const base = askContext0(key); return base ? base + hbContext(key) : base; }
+function askContext0(key) {
+  const rules = 'You are tutoring a practising transportation engineer and planner (complete streets and active transportation design, signing and striping plans, traffic signal design, accessible pedestrian facilities, corridor planning, operations analysis and cost estimating) who finished a civil engineering degree about six years ago and is re-learning the rest of civil engineering for the NCEES FE Civil exam, a computer-based exam where the FE Reference Handbook is the only reference allowed. Assume the fundamentals were learned once and are rusty: rebuild each idea from its first principle in a sentence or two, and do not skip algebra or unit conversions. Where a real connection exists, tie the idea to street and traffic work; do not force one. In transportation topics, point out where the handbook method differs from current agency practice, and answer the exam the handbook way. Define every variable you use, with its units, the first time it appears. Be accurate and specific. Show calculations with the actual numbers and units. Name the handbook section a formula comes from. Give a handbook page number only when one is supplied below; never invent one. If the stored solution below looks wrong, say so plainly. Write original material only and do not reproduce published exam or textbook questions. Keep the reply under about 250 words unless the student asks for more.\n' +
     'Format: short paragraphs separated by blank lines; lines starting with "- " for lists; **bold** for key terms; subscripts as _{x}, superscripts as ^{2}, fractions as \\frac{a}{b}, square roots as \\sqrt{x}. Do not use headings, tables, code fences or dollar-sign maths.\n\n';
   const tname = id => { const t = S.exam.topics.find(x => x.id === id); return t ? t.name : id; };
   const sname = id => { for (const t of S.exam.topics) { const u = t.subtopics.find(x => x.id === id); if (u) return u.name; } return ''; };
@@ -1166,6 +1327,7 @@ views.progress = () => {
   let cells = ''; for (let d = new Date(start), i = 0; i < 84; i++, d.setDate(d.getDate() + 1)) { const k = Core.dayKey(d.getTime()), n = (m.byDay[k] || {n: 0}).n, fut = d > end; cells += '<i class="' + (fut ? 'fut' : n >= 40 ? 'l4' : n >= 20 ? 'l3' : n >= 10 ? 'l2' : n ? 'l1' : '') + '" title="' + (fut ? '' : d.toLocaleDateString(undefined, {month: 'short', day: 'numeric'}) + ': ' + n + ' answered') + '"></i>'; }
   const row = (name, o) => '<tr><td>' + name + '</td><td class="num">' + o.n + '</td><td class="num">' + pct(o.accuracy) + '</td><td>' + bar(o.accuracy || 0) + '</td><td class="num">' + dur(o.avgMs) + '</td></tr>';
   return '<div class="wrap"><header class="head"><div><p class="eyebrow">Progress</p><h1>' + T.n + ' answers logged</h1><p class="sub">' + pct(T.accuracy) + ' overall accuracy. Exam-weighted mastery: ' + pct(T.weighted) + ', with ' + T.secure + ' of ' + T.bank + ' question types secure. A question type is secure after three correct answers on separate, spaced days, on a different version each time where one exists. Neither figure is a pass prediction.</p></div></header>' +
+    '<section class="card"><h2>Goals</h2>' + goalsHTML() + '</section>' + weakHTML() +
     '<section class="card"><h2>Activity, last 12 weeks</h2><div class="heat" role="img" aria-label="Answers per day for the last 12 weeks">' + cells + '</div><p class="hint">Darker squares are days with more answers. Each column is a week.</p></section>' +
     '<section class="card"><h2>By topic</h2><div class="tw"><table class="t"><thead><tr><th></th><th>Topic</th><th class="num">Answered</th><th class="num">Accuracy</th><th>Mastery</th><th class="num">Avg time</th><th class="num">Coverage</th></tr></thead><tbody>' + e.topics.map(t => { const x = m.byTopic[t.id]; return '<tr><td class="n">' + t.n + '</td><td><a href="#topic-' + t.id + '">' + esc(t.name) + '</a></td><td class="num">' + x.n + '</td><td class="num">' + pct(x.accuracy) + '</td><td>' + (x.mastery == null ? '<span class="sub">No questions yet</span>' : '<div style="display:flex;gap:8px;align-items:center">' + bar(x.mastery) + '<span>' + secureText(x) + '</span></div>') + '</td><td class="num">' + dur(x.avgMs) + '</td><td class="num">' + x.seen + ' of ' + x.total + '</td></tr>'; }).join('') + '</tbody></table></div></section>' +
     '<div class="grid2"><section class="card"><h2>By question format</h2><div class="tw"><table class="t"><thead><tr><th>Format</th><th class="num">Answered</th><th class="num">Accuracy</th><th></th><th class="num">Avg time</th></tr></thead><tbody>' + e.formats.map(f => row(esc(f.label), m.byFormat[f.id])).join('') + '</tbody></table></div></section>' +
@@ -1182,6 +1344,8 @@ views.setup = () => {
   const st = S.store, pending = Object.keys(Store.outbox()).length, modeTxt = {cloud: 'Saved to your study log in the cloud', local: 'This browser only. Storage is not available in this view', offline: 'Storage unreachable. Answers are kept on this device until it answers', loading: 'Connecting'}[st.mode];
   return '<div class="wrap"><header class="head"><div><p class="eyebrow">Setup</p><h1>Study settings</h1></div></header>' +
     '<section class="card"><h2>Your plan</h2><div class="fields"><div class="field"><label for="set-date">Exam date</label><input id="set-date" type="date" value="' + esc(S.settings.examDate || '') + '" data-change="setDate"></div><div class="field"><label for="set-goal">Daily goal, questions</label><input id="set-goal" type="number" min="1" max="300" value="' + (S.settings.dailyGoal || 20) + '" data-change="setGoal"></div><div class="field"><label for="set-len">Default session length</label><input id="set-len" type="number" min="1" max="200" value="' + (S.settings.sessionLength || 10) + '" data-change="setLen"></div><div class="field"><label for="set-hb">Link to your handbook PDF</label><input id="set-hb" type="url" placeholder="https://drive.google.com/..." value="' + esc(S.settings.handbookUrl || '') + '" data-change="setHb"><span class="hint">Optional. Paste the link to your own copy of the FE Reference Handbook. It then opens from every handbook lookup. The link is kept in your private study log, not in the site.</span></div></div></section>' +
+    '<section class="card"><h2>Goals</h2><div class="fields"><div class="field"><label for="set-target">Mastery target, percent</label><input id="set-target" type="number" min="40" max="100" value="' + (S.settings.targetMastery || 80) + '" data-change="setTarget"><span class="hint">Exam-weighted mastery you want to reach before the exam. Progress shows how far along you are.</span></div></div></section>' +
+    '<section class="card"><h2>Handbook reader</h2><p class="sub">Load your own copy of the FE Reference Handbook PDF once in this browser. It then opens beside any question or lesson, searchable across every page, and each handbook lookup jumps to its page. The file stays in this browser.</p><div class="head-actions"><button class="btn" data-act="hbOpen">Open the handbook reader</button></div></section>' +
     '<section class="card"><h2>Reset progress</h2><p class="sub">A reset gives you a clean start: mastery, due dates and missed lists go back to zero for what you reset. Nothing is deleted. Your earlier answers stay in the study log and stop counting, and you can bring them back.</p><div class="head-actions"><button class="btn" data-act="askReset" data-kind="all">Reset all progress</button>' + (hasResets() ? '<button class="btn ghost" data-act="askUndoReset">Undo all resets</button>' : '') + '</div><p class="hint">To reset one topic, open it under Topics. To reset one question type, open the question.</p></section>' +
     '<section class="card"><h2>Study log</h2><dl class="kv"><dt>Storage</dt><dd>' + esc(modeTxt) + '</dd><dt>Waiting to send</dt><dd>' + pending + '</dd><dt>Sessions</dt><dd>' + S.sessions.length + '</dd><dt>Answers</dt><dd>' + S.sessions.reduce((n, s) => n + (s.attempts || []).length, 0) + '</dd></dl><div class="head-actions"><button class="btn" data-act="copyLog">Copy study log as JSON</button>' + (st.mode !== 'cloud' || pending ? '<button class="btn" data-act="retry">Retry storage</button>' : '') + '</div></section>' +
     '<section class="card"><h2>Content</h2><dl class="kv"><dt>Exam</dt><dd>' + esc(S.exam.name) + '</dd><dt>Specification</dt><dd>' + esc(S.exam.spec) + '</dd><dt>Content version</dt><dd>' + esc(S.manifest.version) + ', updated ' + esc(S.manifest.updated || '') + '</dd><dt>Questions</dt><dd>' + S.questions.filter(q => !q.sample).length + ' in the bank, ' + S.questions.filter(q => q.sample).length + ' format samples</dd><dt>Guide sections</dt><dd>' + Object.values(S.guide).reduce((n, g) => n + (g.sections || []).length, 0) + '</dd></dl>' + (S.warnings.length ? '<div class="note"><strong>Content warnings</strong><ul>' + S.warnings.map(w => '<li>' + esc(w) + '</li>').join('') + '</ul></div>' : '') + '</section></div>';
@@ -1197,6 +1361,7 @@ function parseRoute() {
 function go(name) { if (location.hash === '#' + name) { R = parseRoute(); render(true); } else location.hash = name; }
 const NAVKEY = {topic: 'topics', quiz: 'practice', results: 'review', q: 'review'};
 function render(nav) {
+  document.body.classList.toggle('on-q', R.name === 'quiz' || R.name === 'q');
   const v = $('#view'), keep = nav ? 0 : v.scrollTop;
   if (!S.exam) return;
   let html;
@@ -1223,7 +1388,92 @@ function tick() {
 
 /* ---------- Actions ---------- */
 function moveOrder(from, to) { const c = cur(); if (!c || c.locked || c.q.format !== 'order' || from === to || to < 0 || to >= c.slot.r.length) return; const a = c.slot.r.slice(), x = a.splice(from, 1)[0]; a.splice(to, 0, x); c.slot.r = a; changed(); }
+/* ---------- Calculator (question pages) ---------- */
+const CALC = {expr: '', out: '', ans: 0, deg: true, hist: []};
+function calcEval(src, deg, ans) {
+  const s = String(src).replace(/×/g, '*').replace(/÷/g, '/').replace(/−/g, '-').replace(/,/g, '').toLowerCase(); let i = 0;
+  const k = deg ? Math.PI / 180 : 1, F = {sin: x => Math.sin(x * k), cos: x => Math.cos(x * k), tan: x => Math.tan(x * k), asin: x => Math.asin(x) / k, acos: x => Math.acos(x) / k, atan: x => Math.atan(x) / k, sqrt: Math.sqrt, ln: Math.log, log: Math.log10, exp: Math.exp, abs: Math.abs};
+  const ws = () => { while (s[i] === ' ') i++; }, bad = () => { throw new Error('syntax'); };
+  function expr() { let v = term(); for (;;) { ws(); if (s[i] === '+') { i++; v += term(); } else if (s[i] === '-') { i++; v -= term(); } else return v; } }
+  function term() { let v = unary(); for (;;) { ws(); if (s[i] === '*') { i++; v *= unary(); } else if (s[i] === '/') { i++; v /= unary(); } else if (s[i] === '(' || /[a-z]/.test(s[i] || '')) v *= power(); else return v; } }
+  function unary() { ws(); if (s[i] === '-') { i++; return -unary(); } if (s[i] === '+') { i++; return unary(); } return power(); }
+  function power() { const b = atom(); ws(); if (s[i] === '^') { i++; return Math.pow(b, unary()); } return b; }
+  function atom() {
+    ws(); if (s[i] === '(') { i++; const v = expr(); ws(); if (s[i] !== ')') bad(); i++; return v; }
+    const m = /^(\d+\.?\d*|\.\d+)(e[+-]?\d+)?/.exec(s.slice(i)); if (m) { i += m[0].length; return parseFloat(m[0]); }
+    const w = /^[a-z]+/.exec(s.slice(i)); if (!w) bad(); i += w[0].length;
+    if (w[0] === 'pi') return Math.PI; if (w[0] === 'e') return Math.E; if (w[0] === 'ans') return ans;
+    const f = F[w[0]]; if (!f) bad(); ws(); if (s[i] !== '(') bad(); i++; const v = expr(); ws(); if (s[i] !== ')') bad(); i++; return f(v);
+  }
+  const v = expr(); ws(); if (i < s.length) bad(); if (!isFinite(v)) throw new Error('range'); return v;
+}
+const calcFmt = v => { const a = Math.abs(v); return a !== 0 && (a >= 1e10 || a < 1e-6) ? v.toExponential(6) : String(+v.toPrecision(10)); };
+function calcPaint(focus) {
+  const el = $('#calc'); if (!el || el.hidden) return;
+  const K = [['7', '8', '9', '/', 'sqrt('], ['4', '5', '6', '*', '^'], ['1', '2', '3', '-', '('], ['0', '.', 'ans', '+', ')'], ['sin(', 'cos(', 'tan(', 'ln(', 'log('], ['asin(', 'acos(', 'atan(', 'pi', 'exp(']], lab = {'/': '÷', '*': '×'};
+  el.innerHTML = '<div class="calc-h"><strong>Calculator</strong><button type="button" class="btn sm" data-act="calcMode" title="Angle unit for sin, cos and tan">' + (CALC.deg ? 'Degrees' : 'Radians') + '</button><button type="button" class="btn sm" data-act="calcToggle">Close</button></div>' +
+    '<form id="calcform"><input id="calc-in" type="text" inputmode="text" autocomplete="off" spellcheck="false" aria-label="Expression" placeholder="for example 1.47*60*2.5 + 60^2/(30*0.35)" value="' + esc(CALC.expr) + '" data-input="calc"></form><div class="calc-out" aria-live="polite">' + esc(CALC.out) + '</div>' +
+    '<div class="calc-k">' + K.map(r => r.map(k => '<button type="button" data-act="calcKey" data-k="' + k + '">' + (lab[k] || (k.length > 1 ? k.replace('(', '') : k)) + '</button>').join('')).join('') + '<button type="button" data-act="calcClear">Clear</button><button type="button" data-act="calcDel">Del</button><button type="button" data-act="calcKey" data-k="e">e</button><button type="button" data-act="calcKey" data-k="abs(">abs</button><button type="button" class="eq" data-act="calcEq">=</button></div>' +
+    (CALC.hist.length ? '<div class="calc-hist">' + CALC.hist.map((h, n) => '<button type="button" data-act="calcUse" data-n="' + n + '">' + esc(h[0]) + ' = ' + esc(h[1]) + '</button>').join('') + '</div>' : '');
+  if (focus) { const i = $('#calc-in'); if (i) { i.focus(); i.setSelectionRange(i.value.length, i.value.length); } }
+}
+function calcRun() {
+  if (!CALC.expr.trim()) return;
+  try { const v = calcEval(CALC.expr, CALC.deg, CALC.ans), t = calcFmt(v); CALC.ans = v; CALC.out = '= ' + t; CALC.hist.unshift([CALC.expr, t]); CALC.hist = CALC.hist.slice(0, 6); }
+  catch (e) { CALC.out = e.message === 'range' ? 'Not a finite number' : 'Check the expression'; }
+  calcPaint(true);
+}
+/* ---------- Goals and extra statistics ---------- */
+const START_ORDER = [['water', 'one of the two heaviest topics, and treatment and water chemistry are far from street work'], ['structural', 'heavy on the exam and rarely used day to day'], ['geotech', 'heavy on the exam; phase relationships and effective stress need rebuilding'],
+  ['statics', 'the base for structures and mechanics, so it pays back twice'], ['mechmat', 'diagrams and stress formulas fade fastest'], ['math', 'calculus and statistics by hand'], ['fluids', 'supports the water topic'], ['materials', 'mostly recognition, quick to recover'],
+  ['surveying', 'close to plan production; drill the hand methods'], ['dynamics', 'small topic, partly familiar from sight distance'], ['construction', 'estimating is familiar; drill scheduling and earned value'], ['econ', 'short and formula-driven'], ['ethics', 'short; read the Model Rules once'],
+  ['transport', 'home ground: leave it late, then check your habits against the handbook']];
+function startOrderHTML() {
+  if (S.model.totals.n >= 150) return '';
+  return '<section class="card"><h2>A study order for a transportation engineer coming back to the rest of civil</h2><p class="sub">Heaviest exam topics that sit farthest from daily street and traffic work come first. Once you have answered about 150 questions, your own results take over and this list goes away.</p><ol class="method">' +
+    START_ORDER.map(o => { const t = S.exam.topics.find(x => x.id === o[0]); return t ? '<li><a href="#topic-' + t.id + '">' + esc(t.name) + '</a> (' + t.min + '–' + t.max + ' exam questions): ' + esc(o[1]) + '.</li>' : ''; }).join('') + '</ol></section>';
+}
+function goalStats() {
+  const m = S.model, T = m.totals, now = Date.now(), goal = S.settings.dailyGoal || 20, at = m.attempts, D = Core.DAY;
+  const win = (a, b) => at.filter(x => x.at >= now - a * D && x.at < now - b * D), acc = l => l.length ? l.filter(x => x.correct).length / l.length : null, ms = l => l.length ? l.reduce((n, x) => n + (x.ms || 0), 0) / l.length : null;
+  const w1 = win(7, 0), w0 = win(14, 7), w14 = win(14, 0); let need = 0;
+  for (const f of m.fams.values()) { const fs = m.byF.get(f.id); need += Math.max(0, 3 - (fs ? fs.box : 0)); }
+  const days = examDays(), a = acc(w1) || T.accuracy || 0.7, perDay = days > 0 ? Math.ceil(need / Math.max(a, 0.3) / days) : null;
+  return {goal, today: (m.byDay[Core.dayKey(now)] || {n: 0}).n, week: w1.length, acc1: acc(w1), acc0: acc(w0), ms1: ms(w1), need, days, perDay, target: (S.settings.targetMastery || 80) / 100, active: new Set(w14.map(x => Core.dayKey(x.at))).size, unseen: T.bank - T.seen};
+}
+function goalsHTML(short) {
+  const g = goalStats(), T = S.model.totals, d = (g.acc1 != null && g.acc0 != null) ? Math.round((g.acc1 - g.acc0) * 100) : null;
+  const card = (k, v, body) => '<div class="goal"><span class="k">' + k + '</span><span class="v">' + v + '</span>' + body + '</div>';
+  const out = [card('Today', g.today + ' / ' + g.goal, bar(g.today / g.goal) + '<span class="d">' + (g.today >= g.goal ? 'Daily goal met.' : (g.goal - g.today) + ' to go today.') + '</span>'),
+    card('Last 7 days', g.week + ' / ' + g.goal * 7, bar(g.week / (g.goal * 7)) + '<span class="d">Studied on ' + g.active + ' of the last 14 days.</span>'),
+    card('To make every type secure', g.need + ' correct answers', '<span class="d">' + (g.perDay != null ? 'About ' + g.perDay + ' answers a day for the ' + g.days + ' days to your exam, at your recent accuracy. ' + (g.perDay <= g.goal ? 'Your daily goal covers it.' : 'Your daily goal of ' + g.goal + ' is short of that.') : 'Set an exam date in Setup to see the daily pace this needs.') + '</span>')];
+  if (!short) out.push(card('Mastery target', pct(T.weighted) + ' of ' + pct(g.target), bar((T.weighted || 0) / g.target) + '<span class="d">Exam-weighted mastery against the target you set in Setup.</span>'),
+    card('Accuracy, last 7 days', pct(g.acc1), '<span class="d">' + (d == null ? 'Not enough answers in the last two weeks to show a trend.' : d === 0 ? 'Level with the week before.' : (d > 0 ? 'Up ' : 'Down ') + Math.abs(d) + ' points on the week before.') + '</span>'),
+    card('Pace, last 7 days', dur(g.ms1), '<span class="d">Exam pace is ' + dur(targetMs()) + ' per question.</span>'),
+    card('Not yet tried', g.unseen + ' types', bar(T.coverage) + '<span class="d">' + T.seen + ' of ' + T.bank + ' question types answered at least once.</span>'));
+  return '<div class="goals">' + out.join('') + '</div>';
+}
+function weakHTML() {
+  const rows = []; for (const t of S.exam.topics) for (const u of t.subtopics) { const o = S.model.bySub[u.id]; if (o && o.n >= 3) rows.push({t, u, o}); }
+  rows.sort((a, b) => a.o.accuracy - b.o.accuracy);
+  return rows.length ? '<section class="card"><h2>Where the next session should go</h2><p class="sub">The subtopics with the lowest accuracy so far, among those with at least three answers.</p><div class="tw"><table class="t"><thead><tr><th>Subtopic</th><th class="num">Answered</th><th class="num">Accuracy</th><th></th><th class="num">Types secure</th></tr></thead><tbody>' +
+    rows.slice(0, 6).map(r => '<tr><td><a href="#topic-' + r.t.id + '" data-open="' + r.u.id + '">' + esc(r.t.name + ': ' + r.u.name.replace(/ \(.*$/, '')) + '</a></td><td class="num">' + r.o.n + '</td><td class="num">' + pct(r.o.accuracy) + '</td><td>' + bar(r.o.accuracy || 0) + '</td><td class="num">' + r.o.secure + ' / ' + r.o.total + '</td></tr>').join('') + '</tbody></table></div></section>' : '';
+}
 const A = {
+  calcToggle() { const el = $('#calc'); el.hidden = !el.hidden; calcPaint(true); },
+  calcMode() { CALC.deg = !CALC.deg; calcPaint(true); },
+  calcKey(el) { CALC.expr += el.dataset.k; CALC.out = ''; calcPaint(true); },
+  calcClear() { CALC.expr = ''; CALC.out = ''; calcPaint(true); },
+  calcDel() { CALC.expr = CALC.expr.slice(0, -1); calcPaint(true); },
+  calcEq() { calcRun(); },
+  calcUse(el) { const h = CALC.hist[+el.dataset.n]; if (h) { CALC.expr += h[1]; calcPaint(true); } },
+  hbOpen() { $('#hb').hidden = false; if (!HB.pdf && !HB.tried) hbRestore(true); else { hbPaint(); hbRender(); } },
+  hbClose() { $('#hb').hidden = true; },
+  hbGo(el) { hbGoto(el.dataset.page ? +el.dataset.page : 0, el.dataset.term || ''); },
+  hbRes(el) { HB.page = +el.dataset.p; hbPaint(); hbRender(); },
+  hbStep(el) { HB.page = Math.max(1, Math.min(HB.n, HB.page + (+el.dataset.d))); hbPaint(); hbRender(); },
+  hbZoom(el) { HB.zoom = Math.max(.6, Math.min(2.4, HB.zoom * (+el.dataset.d > 0 ? 1.2 : 1 / 1.2))); hbRender(); },
+  hbForget() { modal({title: 'Remove your copy of the handbook from this browser?', body: 'The reader will ask for the PDF again next time. Your file on this device is not touched.', ok: 'Remove', cancel: 'Cancel', onOk: () => { hbStore('readwrite', st => { st.delete('pdf'); st.delete('text'); }).catch(() => {}); HB.pdf = null; HB.text = null; HB.res = null; HB.term = ''; HB.note = ''; hbPaint(); }}); },
   askReset(el) { const kind = el.dataset.kind, id = el.dataset.id || '', n = resetCount(kind, id), what = kind === 'all' ? 'all progress' : kind === 'topic' ? topicName(id) : 'this question type';
     modal({title: 'Reset ' + what + '?', body: n + ' logged answer' + (n === 1 ? '' : 's') + ' will stop counting toward mastery, due dates and the missed list. Nothing is deleted, and Setup has an undo.', ok: 'Reset', cancel: 'Cancel', onOk: () => doReset(kind, id)}); },
   askUndoReset() { modal({title: 'Undo all resets?', body: 'Every answer in your study log will count again.', ok: 'Undo resets', cancel: 'Cancel', onOk: undoResets}); },
@@ -1272,6 +1522,9 @@ const A = {
   modalClose() { $('#modal').hidden = true; }
 };
 const C = {
+  setTarget(el) { S.settings.targetMastery = Math.max(40, Math.min(100, +el.value || 80)); Store.saveSettings(); },
+  hbFile(el) { const f = el.files && el.files[0]; if (f) f.arrayBuffer().then(b => hbLoad(b, true)); },
+  hbPg(el) { if (HB.pdf) { HB.page = Math.max(1, Math.min(HB.n, (+el.value || 1) + hbOff())); hbPaint(); hbRender(); } },
   count(el) { S.ui.practice.count = Math.max(1, Math.min(200, +el.value || 10)); },
   examLen(el) { S.ui.practice.examLen = el.value; },
   pTopic(el) { const p = S.ui.practice; p.topics = el.checked ? p.topics.concat(el.value) : p.topics.filter(x => x !== el.value); },
@@ -1286,17 +1539,18 @@ const C = {
   setHb(el) { const v = el.value.trim(); S.settings.handbookUrl = /^https:\/\//i.test(v) ? v.slice(0, 500) : ''; Store.saveSettings(); }
 };
 document.addEventListener('click', ev => {
-  const res = ev.target.closest && ev.target.closest('a.res'); if (res && res.dataset.open) S.ui.open = res.dataset.open;
+  const res = ev.target.closest && ev.target.closest('a[data-open]'); if (res && res.dataset.open) S.ui.open = res.dataset.open;
   const el = ev.target.closest && ev.target.closest('[data-act]'); if (!el || el.disabled) return;
   const f = A[el.dataset.act]; if (f) f(el, ev);
 });
 document.addEventListener('change', ev => { const el = ev.target, f = el.dataset && C[el.dataset.change]; if (f) f(el); });
 document.addEventListener('input', ev => {
   const el = ev.target, k = el.dataset && el.dataset.input;
+  if (k === 'calc') { CALC.expr = el.value; return; }
   if (k === 'num') { const c = cur(); if (c && !c.locked) { c.slot.r = el.value; c.slot.touched = true; persistActive(); } }
   else if (k === 'sq') { S.ui.search.q = el.value; $('#gsearch').value = el.value; $('#s-res').innerHTML = searchResults(); }
 });
-document.addEventListener('submit', ev => { ev.preventDefault(); if (ev.target.id === 'gform') { S.ui.search.q = $('#gsearch').value; go('search'); } });
+document.addEventListener('submit', ev => { ev.preventDefault(); if (ev.target.id === 'gform') { S.ui.search.q = $('#gsearch').value; go('search'); } else if (ev.target.id === 'hbform') hbGoto(0, $('#hb-q').value.trim()); else if (ev.target.id === 'calcform') calcRun(); });
 document.addEventListener('keydown', ev => {
   if (!$('#modal').hidden) { if (ev.key === 'Escape') A.modalClose(); return; }
   const tag = (ev.target.tagName || '').toLowerCase(), typing = tag === 'input' || tag === 'textarea' || tag === 'select';
@@ -1311,8 +1565,9 @@ document.addEventListener('dragstart', ev => {
   if (t) { S.ui.held = t.dataset.id; ev.dataTransfer.setData('text/plain', t.dataset.id); ev.dataTransfer.effectAllowed = 'move'; }
   else if (o) { S.ui.dragI = +o.dataset.i; ev.dataTransfer.setData('text/plain', o.dataset.i); ev.dataTransfer.effectAllowed = 'move'; }
 });
-document.addEventListener('dragover', ev => { if (ev.target.closest && ev.target.closest('[data-drop],[data-drag="order"]')) ev.preventDefault(); });
+document.addEventListener('dragover', ev => { if (ev.target.closest && ev.target.closest('[data-drop],[data-drag="order"],#hb')) ev.preventDefault(); });
 document.addEventListener('drop', ev => {
+  if (ev.target.closest && ev.target.closest('#hb')) { ev.preventDefault(); const f = ev.dataTransfer && ev.dataTransfer.files && ev.dataTransfer.files[0]; if (f && !HB.pdf) f.arrayBuffer().then(b => hbLoad(b, true)); return; }
   const d = ev.target.closest && ev.target.closest('[data-drop]'), o = ev.target.closest && ev.target.closest('[data-drag="order"]');
   if (d && S.ui.held) { ev.preventDefault(); if (d.dataset.drop === 'pool') A.unplace(); else A.place(d); }
   else if (o && S.ui.dragI != null) { ev.preventDefault(); const from = S.ui.dragI; S.ui.dragI = null; moveOrder(from, +o.dataset.i); }
@@ -1328,7 +1583,7 @@ setInterval(tick, 1000);
   try { await loadContent(); }
   catch (e) { $('#view').innerHTML = '<div class="wrap"><div class="card"><h2>The site content did not load</h2><p class="sub">' + esc(e.message) + '. Reload the page. If it keeps happening, the content files need republishing.</p></div></div>'; return; }
   recompute(); restoreActive(); R = parseRoute(); render(true);     // usable straight away, before storage answers
-  initAsk();
+  initAsk(); hbRestore(false);
   await Store.init();
   recompute(); if (R.name !== 'quiz' || !S.session) render(); else paintStatus();
 })();

@@ -69,6 +69,16 @@
      "Ultimate BOD from a five-day value: divide BOD_{5} by (1 - e^{-k t}).",
      "Hardness, softening and flow regime (Froude number) are worth knowing; recent examinees reported them."
     ]
+   },
+   "bridge": {
+    "keep": "The rational method and pipe or gutter capacity, if you have sized street drainage.",
+    "rusty": [
+     "Hydrology beyond the rational method: curve numbers and hydrographs.",
+     "Open-channel concepts: critical depth, Froude number and specific energy.",
+     "Water and wastewater treatment, water chemistry and groundwater, which transportation work rarely touches."
+    ],
+    "work": "Inlet spacing, gutter spread, culverts and storm drains on street projects, plus stormwater quality requirements, are the practical side of this topic. It is also one of the two heaviest topics on the exam, so the unfamiliar treatment and chemistry parts deserve early time.",
+    "exam": "The handbook splits this material between Civil Engineering (hydrology, hydraulics) and Environmental Engineering (treatment, chemistry). Learn which chapter holds what."
    }
   },
   {
@@ -160,7 +170,8 @@
      "find": [
       "rational formula",
       "NRCS",
-      "curve number"
+      "curve number",
+      "unit hydrograph"
      ]
     }
    ],
@@ -172,7 +183,34 @@
     "For a unit hydrograph, multiply its ordinates by the runoff depth, and lag and add for successive periods.",
     "Keep units consistent: in/h and acres give cfs directly."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Street drainage starts with the rational method: runoff coefficient, intensity for the time of concentration, and drainage area.",
+   "symbols": [
+    [
+     "Q",
+     "runoff (depth for the NRCS method, peak rate for the rational method)"
+    ],
+    [
+     "C",
+     "runoff coefficient"
+    ],
+    [
+     "i",
+     "rainfall intensity"
+    ],
+    [
+     "A",
+     "drainage area"
+    ],
+    [
+     "S",
+     "potential maximum retention, from the curve number"
+    ],
+    [
+     "P",
+     "rainfall depth"
+    ]
+   ]
   },
   {
    "id": "water-b-lesson",
@@ -313,7 +351,8 @@
       "hydraulic radius",
       "critical depth",
       "hydraulic jump",
-      "weir"
+      "weir",
+      "specific energy"
      ]
     },
     {
@@ -332,7 +371,74 @@
     "For a jump, use the conjugate depth equation.",
     "For pipes, write the energy equation with the friction loss."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Gutter flow and roadside ditches are open channels sized with Manning's equation.",
+   "symbols": [
+    [
+     "y_{c}",
+     "critical depth"
+    ],
+    [
+     "y_{2}",
+     "depth after the jump"
+    ],
+    [
+     "y_{1}",
+     "depth before the jump"
+    ],
+    [
+     "V",
+     "velocity or volume"
+    ],
+    [
+     "Q",
+     "flow rate"
+    ],
+    [
+     "C",
+     "runoff coefficient, concentration, or Hazen-Williams coefficient"
+    ],
+    [
+     "L",
+     "length"
+    ],
+    [
+     "H",
+     "head"
+    ],
+    [
+     "n",
+     "Manning's roughness coefficient, or effective porosity"
+    ],
+    [
+     "A",
+     "drainage area or flow area"
+    ],
+    [
+     "R",
+     "hydraulic radius, flow area / wetted perimeter"
+    ],
+    [
+     "S",
+     "slope of the energy line (channel slope for uniform flow)"
+    ],
+    [
+     "q",
+     "flow per unit width"
+    ],
+    [
+     "g",
+     "acceleration due to gravity, 9.81 m/s^{2}"
+    ],
+    [
+     "s",
+     "second"
+    ],
+    [
+     "y",
+     "depth of flow"
+    ]
+   ]
   },
   {
    "id": "water-c-lesson",
@@ -399,7 +505,8 @@
      "find": [
       "pump power equation",
       "affinity laws",
-      "scaling laws"
+      "scaling laws",
+      "NPSH"
      ]
     }
    ],
@@ -410,6 +517,56 @@
     "For two pumps, build the combined curve: add heads (series) or flows (parallel).",
     "Find the operating point where pump and system curves meet.",
     "For a speed change, apply the affinity laws."
+   ],
+   "symbols": [
+    [
+     "P_{in}",
+     "shaft power supplied to the pump"
+    ],
+    [
+     "Q_{2}",
+     "flow at the second speed"
+    ],
+    [
+     "Q_{1}",
+     "flow at the first speed"
+    ],
+    [
+     "N_{2}",
+     "second pump speed"
+    ],
+    [
+     "N_{1}",
+     "first pump speed"
+    ],
+    [
+     "H_{2}",
+     "head at the second speed"
+    ],
+    [
+     "H_{1}",
+     "head at the first speed"
+    ],
+    [
+     "P_{2}",
+     "power at the second speed"
+    ],
+    [
+     "P_{1}",
+     "power at the first speed"
+    ],
+    [
+     "P",
+     "power"
+    ],
+    [
+     "Q",
+     "flow rate"
+    ],
+    [
+     "H",
+     "total head"
+    ]
    ]
   },
   {
@@ -497,6 +654,15 @@
      "find": [
       "pressure field in a static liquid"
      ]
+    },
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "Hazen-Williams",
+      "head loss",
+      "Bernoulli equation"
+     ]
     }
    ],
    "deep": "A distribution system delivers water at adequate pressure for peak and fire demands. Demand varies through the day, so average, maximum-day and peak-hour demands are related by peaking factors, and storage evens out the difference between supply and use.\n\nIn a network, flow splits between parallel pipes so that the head loss is the same along each path, and flow is conserved at every junction. The hydraulic grade line shows pressure head plus elevation along the system; pressure at any point is the height of the grade line above the pipe times the specific weight.",
@@ -507,7 +673,33 @@
     "For parallel pipes, set head losses equal and flows adding to the total.",
     "Size storage for equalising, fire and emergency volumes."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "h_{total}",
+     "total head"
+    ],
+    [
+     "h_{1}",
+     "saturated thickness or head at radius r_{1}"
+    ],
+    [
+     "h_{2}",
+     "saturated thickness or head at radius r_{2}"
+    ],
+    [
+     "Q_{total}",
+     "total flow"
+    ],
+    [
+     "Q_{1}",
+     "flow at the first speed"
+    ],
+    [
+     "Q_{2}",
+     "flow at the second speed"
+    ]
+   ]
   },
   {
    "id": "water-e-lesson",
@@ -589,6 +781,13 @@
      "page": "177–203",
      "find": [
       "forces on submerged surfaces"
+     ]
+    },
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "weir formulas"
      ]
     }
    ],
@@ -674,7 +873,42 @@
     "Estimate the required detention volume from the difference between inflow and allowed outflow over the storm.",
     "Size the outlet with the orifice or weir equation for the allowed release."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Complete streets projects often add bioretention and other treatment that must capture a water quality volume.",
+   "symbols": [
+    [
+     "Q_{after}",
+     "peak flow after development"
+    ],
+    [
+     "Q_{before}",
+     "peak flow before development"
+    ],
+    [
+     "C_{2}",
+     "runoff coefficient after"
+    ],
+    [
+     "C_{1}",
+     "runoff coefficient before"
+    ],
+    [
+     "Q",
+     "flow rate"
+    ],
+    [
+     "C",
+     "runoff coefficient, concentration, or Hazen-Williams coefficient"
+    ],
+    [
+     "i",
+     "rainfall intensity, or hydraulic gradient"
+    ],
+    [
+     "A",
+     "drainage area or flow area"
+    ]
+   ]
   },
   {
    "id": "water-g-lesson",
@@ -767,7 +1001,30 @@
     "Check the self-cleansing velocity at low flow.",
     "Use partial-flow relations if depth or velocity at a given flow is asked."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Storm drains are sized to flow by gravity at a self-cleansing velocity, the same checks as for sewers.",
+   "symbols": [
+    [
+     "V",
+     "velocity or volume"
+    ],
+    [
+     "R",
+     "hydraulic radius, flow area / wetted perimeter"
+    ],
+    [
+     "n",
+     "Manning's roughness coefficient, or effective porosity"
+    ],
+    [
+     "S",
+     "slope of the energy line (channel slope for uniform flow)"
+    ],
+    [
+     "D",
+     "pipe diameter"
+    ]
+   ]
   },
   {
    "id": "water-h-lesson",
@@ -853,7 +1110,8 @@
       "Darcy's law",
       "seepage velocity",
       "Dupuit",
-      "unconfined aquifer"
+      "unconfined aquifer",
+      "well drawdown"
      ]
     }
    ],
@@ -865,7 +1123,57 @@
     "For a well, choose the confined or unconfined equation and use two observation points.",
     "Transmissivity is hydraulic conductivity times the saturated thickness."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "v_{s}",
+     "settling velocity"
+    ],
+    [
+     "h_{2}",
+     "saturated thickness or head at radius r_{2}"
+    ],
+    [
+     "h_{1}",
+     "saturated thickness or head at radius r_{1}"
+    ],
+    [
+     "r_{2}",
+     "distance of the farther observation well"
+    ],
+    [
+     "r_{1}",
+     "distance of the nearer observation well"
+    ],
+    [
+     "Q",
+     "flow rate"
+    ],
+    [
+     "K",
+     "hydraulic conductivity"
+    ],
+    [
+     "i",
+     "hydraulic gradient"
+    ],
+    [
+     "A",
+     "cross-sectional area of flow"
+    ],
+    [
+     "v",
+     "velocity"
+    ],
+    [
+     "n",
+     "effective porosity"
+    ],
+    [
+     "h",
+     "head"
+    ]
+   ]
   },
   {
    "id": "water-i-lesson",
@@ -947,8 +1255,7 @@
      "page": "310–354",
      "find": [
       "BOD",
-      "hardness",
-      "equivalent weight"
+      "hardness"
      ]
     }
    ],
@@ -960,7 +1267,33 @@
     "For mass loading, multiply flow by concentration and convert units.",
     "Convert ions to CaCO_{3} equivalents by multiplying by 50 over the ion's equivalent weight."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "L_{0}",
+     "ultimate BOD"
+    ],
+    [
+     "L",
+     "length"
+    ],
+    [
+     "e",
+     "Euler's number, 2.718"
+    ],
+    [
+     "P",
+     "wetted perimeter, rainfall depth, or power"
+    ],
+    [
+     "k",
+     "BOD rate constant"
+    ],
+    [
+     "t",
+     "time"
+    ]
+   ]
   },
   {
    "id": "water-j-lesson",
@@ -1040,7 +1373,17 @@
     "Compute removal efficiency as (in - out) / in when a percentage is required.",
     "Compare the result with the limit on the same averaging basis."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "L_{i}",
+     "sound level of source i"
+    ],
+    [
+     "L",
+     "length"
+    ]
+   ]
   },
   {
    "id": "water-k-lesson",
@@ -1130,7 +1473,10 @@
       "hydraulic residence time",
       "sedimentation",
       "overflow rate",
-      "clarifier"
+      "clarifier",
+      "activated sludge",
+      "solids residence time",
+      "Stokes' law"
      ]
     }
    ],
@@ -1142,7 +1488,21 @@
     "Compute chemical mass as flow × dose, with 1 mg/L equal to 1 g/m^{3} or 8.34 lb per million gallons.",
     "Compare the result with typical design ranges if given."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "Q",
+     "flow rate"
+    ],
+    [
+     "t",
+     "time"
+    ],
+    [
+     "m",
+     "metre"
+    ]
+   ]
   }
  ]
 }

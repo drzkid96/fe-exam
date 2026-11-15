@@ -59,6 +59,16 @@
      "In the centre of pressure formula, the dimension that is cubed in the moment of inertia is the one measured down the surface.",
      "For a jet turned by a vane, find the force components separately with the cosine and sine of the turning angle."
     ]
+   },
+   "bridge": {
+    "keep": "Pressure increases with depth, and flow equals velocity times area.",
+    "rusty": [
+     "The energy equation with head loss, and reading the Moody diagram.",
+     "Forces on submerged surfaces and the centre of pressure.",
+     "Momentum for jets and bends; flow measurement devices."
+    ],
+    "work": "Street drainage is open-channel flow in gutters and pressure or gravity flow in storm drains. Wind load on a sign panel is a drag-force calculation.",
+    "exam": "Fluid mechanics has its own handbook chapter, separate from the civil hydraulics pages. Open-channel formulas appear in both; know where each is."
    }
   },
   {
@@ -149,7 +159,16 @@
      "page": "177–203",
      "find": [
       "Pitot tube",
-      "orifice"
+      "orifice",
+      "venturi meters",
+      "orifices"
+     ]
+    },
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "weir formulas"
      ]
     }
    ],
@@ -161,7 +180,41 @@
     "Apply the discharge coefficient.",
     "Check units, especially mm to m in areas."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "C_{d}",
+     "discharge coefficient"
+    ],
+    [
+     "A_{2}",
+     "flow area at section 2 (the throat)"
+    ],
+    [
+     "A_{1}",
+     "flow area at section 1"
+    ],
+    [
+     "V",
+     "velocity"
+    ],
+    [
+     "Q",
+     "flow rate"
+    ],
+    [
+     "A",
+     "area"
+    ],
+    [
+     "h",
+     "depth below the surface, or head"
+    ],
+    [
+     "s",
+     "second"
+    ]
+   ]
   },
   {
    "id": "fluids-b-lesson",
@@ -250,7 +303,10 @@
       "specific gravity",
       "specific weight",
       "Reynolds number",
-      "kinematic viscosity"
+      "kinematic viscosity",
+      "capillary rise",
+      "stress, pressure, and viscosity",
+      "buoyancy"
      ]
     }
    ],
@@ -261,7 +317,29 @@
     "For viscosity conversions, divide dynamic by density to get kinematic.",
     "Keep to one unit system throughout."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "g",
+     "acceleration due to gravity, 9.81 m/s^{2} (32.2 ft/s^{2})"
+    ],
+    [
+     "V",
+     "velocity"
+    ],
+    [
+     "D",
+     "pipe diameter"
+    ],
+    [
+     "m",
+     "mass"
+    ],
+    [
+     "s",
+     "second"
+    ]
+   ]
   },
   {
    "id": "fluids-c-lesson",
@@ -389,7 +467,12 @@
      "idea": "Archimedes' principle: a floating body displaces a weight of fluid equal to its own weight. In water, the submerged fraction of the volume equals the body's specific gravity.",
      "steps": "Weight of block = weight of displaced water, so submerged volume = SG × total volume = 0.70 × 1.5 = 1.050 m^{3}.",
      "answer": "1.050 m^{3}",
-     "value": 1.05
+     "value": 1.05,
+     "figure": {
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force = weight of water displaced</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>A floating body: buoyant force equals weight</text>",
+      "alt": "Free-body diagram showing Weight, Buoyant force = weight of water displaced."
+     }
     },
     {
      "family": "fluids-0015",
@@ -405,7 +488,12 @@
      "idea": "At the limit the raft is fully submerged and displaces its whole volume of water. The buoyant force then equals the raft's weight plus the cargo, so the cargo is the weight of displaced water minus the weight of the raft.",
      "steps": "Buoyant force when submerged = 9.81(2.8) = 27.47 kN.\n\nRaft weight = 0.62(9.81)(2.8) = 17.03 kN.\n\nCargo = 27.47 - 17.03 = 10.44 kN.",
      "answer": "10.44 kN",
-     "value": 10.43784
+     "value": 10.43784,
+     "figure": {
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Raft weight + cargo</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force on the whole volume</text>",
+      "alt": "Free-body diagram showing Raft weight + cargo, Buoyant force on the whole volume."
+     }
     }
    ],
    "lookup": [
@@ -430,7 +518,50 @@
     "For buoyancy, equate the weight of the body to the weight of displaced fluid.",
     "State whether pressures are gauge or absolute."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Buoyancy and hydrostatic pressure govern buried vaults and pull boxes below the water table.",
+   "symbols": [
+    [
+     "h_{c}",
+     "depth of the centroid"
+    ],
+    [
+     "y_{cp}",
+     "depth of the centre of pressure"
+    ],
+    [
+     "y_{c}",
+     "depth of the centroid"
+    ],
+    [
+     "I_{c}",
+     "moment of inertia of the surface about its centroidal axis"
+    ],
+    [
+     "F_{b}",
+     "buoyant force"
+    ],
+    [
+     "p",
+     "pressure"
+    ],
+    [
+     "h",
+     "depth below the surface, or head"
+    ],
+    [
+     "F",
+     "force"
+    ],
+    [
+     "A",
+     "area"
+    ],
+    [
+     "I",
+     "moment of inertia"
+    ]
+   ]
   },
   {
    "id": "fluids-d-lesson",
@@ -576,7 +707,11 @@
       "Darcy-Weisbach",
       "head loss",
       "deflectors and blades",
-      "pipe bends"
+      "pipe bends",
+      "minor losses",
+      "Reynolds number",
+      "pump power equation",
+      "drag force"
      ]
     }
    ],
@@ -588,7 +723,98 @@
     "Solve for the unknown head, pressure or flow.",
     "For forces, apply the momentum equation to a control volume with pressures and velocities at its faces."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Wind load on a sign panel is a drag force: drag coefficient × dynamic pressure × area.",
+   "symbols": [
+    [
+     "A_{1}",
+     "flow area at section 1"
+    ],
+    [
+     "V_{1}",
+     "velocity at section 1"
+    ],
+    [
+     "A_{2}",
+     "flow area at section 2 (the throat)"
+    ],
+    [
+     "V_{2}",
+     "velocity at section 2"
+    ],
+    [
+     "p_{1}",
+     "pressure at section 1"
+    ],
+    [
+     "z_{1}",
+     "elevation at section 1"
+    ],
+    [
+     "h_{pump}",
+     "head added by the pump"
+    ],
+    [
+     "p_{2}",
+     "pressure at section 2"
+    ],
+    [
+     "z_{2}",
+     "elevation at section 2"
+    ],
+    [
+     "h_{loss}",
+     "head lost"
+    ],
+    [
+     "h_{f}",
+     "head lost to friction"
+    ],
+    [
+     "d_{1}",
+     "diameter at section 1"
+    ],
+    [
+     "d_{2}",
+     "diameter at section 2"
+    ],
+    [
+     "F_{x}",
+     "force in the direction of the incoming jet"
+    ],
+    [
+     "Q",
+     "flow rate"
+    ],
+    [
+     "A",
+     "area"
+    ],
+    [
+     "V",
+     "velocity"
+    ],
+    [
+     "f",
+     "Darcy friction factor"
+    ],
+    [
+     "F",
+     "force"
+    ],
+    [
+     "L",
+     "pipe length"
+    ],
+    [
+     "s",
+     "second"
+    ],
+    [
+     "p",
+     "pressure"
+    ]
+   ]
   }
  ]
 }

@@ -60,6 +60,16 @@
      "On Mohr's circle an angle is twice the angle on the element.",
      "The tension side of a beam is where reinforcement goes in concrete, so know which face is in tension."
     ]
+   },
+   "bridge": {
+    "keep": "Stress as force over area, and the look of a simply supported beam's moment diagram.",
+    "rusty": [
+     "Shear and moment diagrams drawn by areas rather than by integration.",
+     "Bending stress M c / I, shear stress, torsion and the deformation formulas.",
+     "Combined stress and Mohr's circle."
+    ],
+    "work": "A signal pole or mast arm is a cantilever in bending and torsion; base-plate bolts are in tension and shear. Pavement and sidewalk slabs crack where bending tension exceeds the concrete's strength.",
+    "exam": "Work in N and mm so that stresses come out in MPa, or in kips and inches for ksi. Unit slips are the commonest wrong answer here."
    }
   },
   {
@@ -90,7 +100,9 @@
     }
    ],
    "pitfalls": [
-    "Assuming the maximum moment is at midspan when the loading is not symmetric."
+    "Assuming the maximum moment is at midspan when the loading is not symmetric.",
+    "Stopping at the first shear area. Work out the moment at every point of zero shear and compare magnitudes.",
+    "Drawing a positive moment for a cantilever under downward load. It is negative along the whole length and zero at the free end."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -104,6 +116,22 @@
     "caption": "A uniformly loaded simple beam. Shear is largest at the supports; moment is largest at midspan, where shear is zero."
    },
    "ideas": [
+    {
+     "title": "Shear height is moment slope",
+     "text": "The value of the shear diagram at any section equals the slope of the moment diagram there. Where the shear passes through zero the moment is at a peak, and where the shear jumps at a support the moment diagram has a kink."
+    },
+    {
+     "title": "Shapes that go together",
+     "text": "A point load gives a step in the shear and a straight-line moment. A uniform load gives a sloping shear and a parabolic moment. With no load between two points the shear is constant."
+    },
+    {
+     "title": "Moment from shear areas",
+     "text": "The change in moment between two sections is the area under the shear diagram between them. For point loads and uniform loads these areas are rectangles and triangles, so no integration is needed. Under a uniform load w, the shear reaches zero a distance V / w from where it has the value V."
+    },
+    {
+     "title": "Sketch the deflected shape",
+     "text": "A beam that sags has positive moment, with tension on the bottom. A beam that hogs, as over a support or along a cantilever, has negative moment, with tension on top. Where the curvature reverses, the moment passes through zero."
+    },
     {
      "title": "Shearing force and bending moment",
      "text": "For a simply supported beam under full uniform load, shear is zero at midspan, so the moment peaks there: M_{max} = w L^{2} / 8. It equals the area under the shear diagram from the support to midspan."
@@ -158,6 +186,30 @@
     "Locate where shear crosses zero.",
     "Compute the moment there as the area under the shear diagram up to that point.",
     "Check that shear and moment return to zero at free or simply supported ends."
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "A mast arm is a cantilever: its moment diagram is zero at the tip and largest at the pole, where the connection is designed.",
+   "symbols": [
+    [
+     "M_{max}",
+     "maximum bending moment"
+    ],
+    [
+     "V_{max}",
+     "maximum shear force"
+    ],
+    [
+     "w",
+     "uniform load per unit length"
+    ],
+    [
+     "V",
+     "shear force"
+    ],
+    [
+     "L",
+     "length"
+    ]
    ]
   },
   {
@@ -194,7 +246,10 @@
    ],
    "pitfalls": [
     "Mixing units. N and mm give MPa directly.",
-    "Using the diameter instead of the radius for the outer fibre distance."
+    "Using the diameter instead of the radius for the outer fibre distance.",
+    "Forgetting to halve the force for a bolt in double shear, which doubles the stress.",
+    "Mixing lb with kips, or ft^{2} with in^{2}. An answer wrong by a factor of 1,000 or 144 is a unit slip.",
+    "Reading a force as kN when the work was in N and mm. With stresses in MPa and lengths in mm, forces come out in N."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -208,6 +263,14 @@
     "caption": "Axial stress is force over the cross-sectional area perpendicular to the force."
    },
    "ideas": [
+    {
+     "title": "Hooke's law is the spring law",
+     "text": "Stress = E × strain is F = k x with force divided by area and stretch divided by length. Strain has no units, and it can be found from stress and E alone, without the member's length."
+    },
+    {
+     "title": "Average shear in a pin or bolt",
+     "text": "Average shear stress is the force on one shear plane divided by the bolt's cross-section. A bolt through a clevis is cut on two planes, so each plane carries half the load."
+    },
     {
      "title": "Uniaxial loading",
      "text": "Average normal stress is force divided by the cross-sectional area perpendicular to the force. With newtons and square millimetres the result is in MPa."
@@ -280,7 +343,13 @@
       "section modulus",
       "torsion",
       "polar moment of inertia",
-      "thermal deformations"
+      "thermal deformations",
+      "shear stress",
+      "uniaxial loading and deformation",
+      "Hooke's law",
+      "transverse shear",
+      "Poisson's ratio",
+      "shear stress-strain"
      ]
     }
    ],
@@ -291,6 +360,78 @@
     "Work in N, mm and MPa, or lb, in and psi.",
     "Find the location of maximum stress: extreme fibre for bending, outer surface for torsion, neutral axis for shear.",
     "Compare with the allowable stress if asked, using the factor of safety."
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Anchor bolts at a pole base carry tension from the overturning moment and shear from wind.",
+   "symbols": [
+    [
+     "E",
+     "modulus of elasticity"
+    ],
+    [
+     "G",
+     "shear modulus"
+    ],
+    [
+     "F",
+     "force"
+    ],
+    [
+     "k",
+     "a constant"
+    ],
+    [
+     "x",
+     "distance from the support"
+    ],
+    [
+     "M",
+     "bending moment"
+    ],
+    [
+     "c",
+     "distance from the neutral axis to the extreme fibre"
+    ],
+    [
+     "I",
+     "moment of inertia of the cross-section"
+    ],
+    [
+     "S",
+     "section modulus, I / c"
+    ],
+    [
+     "b",
+     "width of the section"
+    ],
+    [
+     "h",
+     "depth of the section"
+    ],
+    [
+     "T",
+     "torque"
+    ],
+    [
+     "r",
+     "radius"
+    ],
+    [
+     "J",
+     "polar moment of inertia"
+    ],
+    [
+     "d",
+     "diameter"
+    ],
+    [
+     "A",
+     "cross-sectional area"
+    ],
+    [
+     "N",
+     "newton"
+    ]
    ]
   },
   {
@@ -321,7 +462,9 @@
     }
    ],
    "pitfalls": [
-    "Entering E in GPa with other values in N and mm. Convert GPa to MPa by multiplying by 1,000."
+    "Entering E in GPa with other values in N and mm. Convert GPa to MPa by multiplying by 1,000.",
+    "Leaving the angle of twist in radians when the choices are in degrees. Multiply by 180 / π.",
+    "Using E where G is needed. Twist and torsional shear use the shear modulus G."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -335,6 +478,14 @@
     "caption": "Axial deformation of a prismatic bar: P L / (A E)."
    },
    "ideas": [
+    {
+     "title": "Bars in series",
+     "text": "For bars joined end to end under one axial force, the force is the same in each and the elongations add: total = sum of P L / (A E). If the total is given, factor out P and solve."
+    },
+    {
+     "title": "Thermal stress from two formulas",
+     "text": "A bar that is free to move changes length by (coefficient)(L)(temperature change) and feels no stress. If it is held, Hooke's law turns the prevented strain into stress = (coefficient)(E)(temperature change). Length and cross-section cancel."
+    },
     {
      "title": "Uniaxial loading and deformation",
      "text": "In the elastic range, stress = E × strain. Combining stress = P/A and strain = elongation/L gives elongation = P L / (A E). Keep units consistent: N, mm and MPa."
@@ -389,7 +540,7 @@
       "beam slopes and deflections",
       "thermal deformations",
       "torsion",
-      "angle of twist"
+      "twist"
      ]
     }
    ],
@@ -400,6 +551,33 @@
     "For a restrained system, write the free deformation, then the deformation caused by the unknown restraining force, and set their sum to the allowed movement.",
     "Solve for the force, then the stress.",
     "Check units, keeping E in MPa with N and mm."
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "L",
+     "length"
+    ],
+    [
+     "P",
+     "axial force or point load"
+    ],
+    [
+     "A",
+     "cross-sectional area"
+    ],
+    [
+     "E",
+     "modulus of elasticity"
+    ],
+    [
+     "J",
+     "polar moment of inertia"
+    ],
+    [
+     "d",
+     "diameter"
+    ]
    ]
   },
   {
@@ -431,7 +609,9 @@
    ],
    "pitfalls": [
     "Using the full difference of the normal stresses instead of half of it in the radius.",
-    "Forgetting that compression is negative."
+    "Forgetting that compression is negative.",
+    "Adding the axial and bending stresses without checking which face is in tension.",
+    "Forgetting that an angle on Mohr's circle is twice the angle on the element."
    ],
    "updated": "2026-11-13",
    "example": {
@@ -445,6 +625,14 @@
     "caption": "Mohr's circle. The centre is the average normal stress, the radius is the maximum in-plane shear stress, and the circle crosses the horizontal axis at the principal stresses."
    },
    "ideas": [
+    {
+     "title": "Combined axial and bending stress",
+     "text": "An eccentric load is an axial force plus a moment. The axial part gives P / A across the whole section. The bending part gives M c / I, tension on one face and compression on the other. Add them with their signs at the point asked about."
+    },
+    {
+     "title": "Mohr's circle by Pythagoras",
+     "text": "The centre is the average of the two normal stresses. The radius is the hypotenuse of a triangle whose sides are half the difference of the normal stresses and the shear stress. Principal stresses are centre plus and minus radius, and the maximum in-plane shear equals the radius."
+    },
     {
      "title": "Mohr's circle",
      "text": "Principal stresses are the largest and smallest normal stresses at a point, found on the planes where shear is zero. On Mohr's circle the centre is the average normal stress and the radius is the square root of ((difference/2)^{2} + shear^{2}); the maximum principal stress is centre + radius."
@@ -496,8 +684,10 @@
      "find": [
       "Mohr's circle",
       "principal stresses",
-      "maximum in-plane shear",
-      "cylindrical pressure vessel"
+      "Mohr's Circle",
+      "cylindrical pressure vessel",
+      "stresses in beams",
+      "uniaxial loading and deformation"
      ]
     }
    ],
@@ -508,6 +698,21 @@
     "Compute the radius: square root of (half the difference)^{2} plus the shear stress squared.",
     "Principal stresses are centre plus and minus radius; maximum in-plane shear is the radius.",
     "Check: the two principal stresses must add up to the sum of the original normal stresses."
+   ],
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "C",
+     "centre of Mohr's circle"
+    ],
+    [
+     "R",
+     "radius of Mohr's circle"
+    ],
+    [
+     "r",
+     "radius"
+    ]
    ]
   }
  ]

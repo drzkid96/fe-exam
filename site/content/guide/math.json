@@ -68,6 +68,16 @@
      "Learn the calculator's vector and statistics functions, and re-check what was typed in before trusting the result.",
      "Answer what is asked: a correct intermediate value is often one of the wrong choices."
     ]
+   },
+   "bridge": {
+    "keep": "Algebra, right-triangle trigonometry and reading a graph, because plan geometry uses them every week.",
+    "rusty": [
+     "Calculus by hand: derivatives for maxima and slopes, integrals for areas. The exam asks for simple polynomials, not hard techniques.",
+     "Vector products: the dot product for angles and projections, the cross product for areas and moments.",
+     "Statistics beyond the mean: standard deviation, the normal table, confidence intervals and regression."
+    ],
+    "work": "Horizontal curve geometry is trigonometry, a vertical curve is a parabola, and speed studies and counts are statistics. An 85th-percentile speed is a point on a distribution; a before-and-after crash study is a test on means.",
+    "exam": "Use the calculator's built-in statistics, solver and numeric integration wherever they apply. Practise them on the calculator you will take in."
    }
   },
   {
@@ -186,7 +196,8 @@
       "conic sections",
       "circle",
       "distance between two points",
-      "law of cosines"
+      "law of cosines",
+      "law of sines"
      ]
     }
    ],
@@ -198,7 +209,78 @@
     "For a triangle, list what is known and choose sines or cosines accordingly.",
     "Check the result against the sketch for size and sign."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Horizontal alignment is analytic geometry: tangents are straight lines, curves are circular arcs, and offsets are perpendicular distances.",
+   "symbols": [
+    [
+     "y_{2}",
+     "y-coordinate of the second point"
+    ],
+    [
+     "y_{1}",
+     "y-coordinate of the first point"
+    ],
+    [
+     "x_{2}",
+     "x-coordinate of the second point"
+    ],
+    [
+     "x_{1}",
+     "x-coordinate of the first point"
+    ],
+    [
+     "m",
+     "slope of the line"
+    ],
+    [
+     "y",
+     "the dependent variable"
+    ],
+    [
+     "b",
+     "y-intercept, or a side or coefficient as given"
+    ],
+    [
+     "d",
+     "distance"
+    ],
+    [
+     "x",
+     "the independent variable"
+    ],
+    [
+     "h",
+     "x-coordinate of the centre of the circle"
+    ],
+    [
+     "k",
+     "y-coordinate of the centre, or a rate constant"
+    ],
+    [
+     "r",
+     "radius"
+    ],
+    [
+     "c",
+     "side opposite angle C, or a constant"
+    ],
+    [
+     "a",
+     "side opposite angle A, or a coefficient as given"
+    ],
+    [
+     "C",
+     "third angle of the triangle, or the constant term of the line"
+    ],
+    [
+     "D",
+     "coefficient of x in the general circle equation"
+    ],
+    [
+     "E",
+     "coefficient of y in the general circle equation"
+    ]
+   ]
   },
   {
    "id": "math-b-lesson",
@@ -333,7 +415,21 @@
     "For a definite integral, evaluate at the upper limit and subtract the value at the lower limit.",
     "Check units: a derivative divides by the x unit, an integral multiplies by it."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "x",
+     "the independent variable"
+    ],
+    [
+     "f",
+     "the function"
+    ],
+    [
+     "s",
+     "arc length, position, or sample standard deviation"
+    ]
+   ]
   },
   {
    "id": "math-c-lesson",
@@ -393,7 +489,12 @@
      "idea": "For vectors in the x-y plane the cross product points along z and its magnitude is |A_{x} B_{y} - A_{y} B_{x}|. It equals the area of the parallelogram formed by the two vectors, and |A||B| sin(angle between them).",
      "steps": "A_{x} B_{y} - A_{y} B_{x} = (6)(5) - (-1)(2) = 30 - (-2) = 32.\n\nMagnitude = 32.",
      "answer": "32",
-     "value": 32
+     "value": 32,
+     "figure": {
+      "viewBox": "0 0 400 190",
+      "svg": "<line x1='40' y1='138' x2='370' y2='138' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='133' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='138' x2='189' y2='158' stroke='#00574A' stroke-width='3'/><path d='M200 160 L190 153 L188 164 Z' fill='#00574A'/><text x='210' y='176' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='138' x2='109' y2='40' stroke='#1B795A' stroke-width='3'/><path d='M113 30 L104 38 L114 42 Z' fill='#1B795A'/><text x='123' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text>",
+      "alt": "Vector diagram: A; B."
+     }
     },
     {
      "family": "math-0013",
@@ -401,7 +502,12 @@
      "idea": "The magnitude of a vector is the square root of the sum of the squares of its components, the three-dimensional form of the Pythagorean theorem. Signs do not matter because each component is squared.",
      "steps": "Magnitude = \\sqrt{(2)^{2} + (3)^{2} + (-6)^{2}} = \\sqrt{4 + 9 + 36} = \\sqrt{49} = 7.",
      "answer": "7",
-     "value": 7.0
+     "value": 7.0,
+     "figure": {
+      "viewBox": "0 0 400 200",
+      "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='222' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='222' y1='120' x2='269' y2='82' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='269' y1='82' x2='269' y2='34' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='262' y2='43' stroke='#00574A' stroke-width='3'/><path d='M269 34 L258 39 L266 46 Z' fill='#00574A'/><text x='206' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>2</text><text x='261' y='113' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>-6</text><text x='277' y='58' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>3</text><text x='275' y='26' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
+      "alt": "A three-dimensional sketch of the vector with components 2, 3 and -6 along x, y and z."
+     }
     }
    ],
    "lookup": [
@@ -423,7 +529,33 @@
     "Find magnitudes with the square root of the sum of squares.",
     "Sanity check: parallel vectors have zero cross product, perpendicular vectors have zero dot product."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "A_{x}",
+     "x-component of A"
+    ],
+    [
+     "A_{y}",
+     "y-component of A"
+    ],
+    [
+     "A_{z}",
+     "z-component of A"
+    ],
+    [
+     "B_{x}",
+     "x-component of B"
+    ],
+    [
+     "B_{y}",
+     "y-component of B"
+    ],
+    [
+     "B_{z}",
+     "z-component of B"
+    ]
+   ]
   },
   {
    "id": "math-d-lesson",
@@ -550,7 +682,11 @@
       "unit normal",
       "least squares",
       "linear regression",
-      "binomial distribution"
+      "binomial distribution",
+      "confidence interval",
+      "coefficient of variation",
+      "joint probability",
+      "combinations"
      ]
     }
    ],
@@ -562,7 +698,54 @@
     "For 'at least one', compute 1 minus the probability of none.",
     "Check that every probability lies between 0 and 1."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Speed studies, turning-movement counts and crash data are samples. Percentile speeds, confidence in a count and before-and-after comparisons all come from this lesson.",
+   "symbols": [
+    [
+     "S_{xy}",
+     "sum of (x - mean of x)(y - mean of y)"
+    ],
+    [
+     "S_{xx}",
+     "sum of (x - mean of x) squared"
+    ],
+    [
+     "z",
+     "standard normal variable, (value - mean) / standard deviation"
+    ],
+    [
+     "x",
+     "the independent variable"
+    ],
+    [
+     "s",
+     "arc length, position, or sample standard deviation"
+    ],
+    [
+     "C",
+     "third angle of the triangle, or the constant term of the line"
+    ],
+    [
+     "n",
+     "sample size or number of trials"
+    ],
+    [
+     "p",
+     "probability of success in one trial"
+    ],
+    [
+     "b",
+     "y-intercept, or a side or coefficient as given"
+    ],
+    [
+     "P",
+     "probability"
+    ],
+    [
+     "y",
+     "the dependent variable"
+    ]
+   ]
   }
  ]
 }

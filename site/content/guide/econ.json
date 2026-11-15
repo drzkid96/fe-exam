@@ -57,6 +57,15 @@
      "With monthly compounding use the rate as a decimal per period, 0.08 / 12, not 8 / 12.",
      "Draw the cash flow diagram first; it shows which factor is needed and how many periods apply."
     ]
+   },
+   "bridge": {
+    "keep": "The idea that money has a time value, and comparing options on a common basis.",
+    "rusty": [
+     "The six interest factors and their notation, such as (P/A, i, n). The handbook tabulates them; the skill is picking the right one.",
+     "Depreciation methods, benefit-cost ratios and break-even points."
+    ],
+    "work": "Life-cycle cost comparisons of pavement or signal equipment, benefit-cost ratios in grant applications, and escalating a planning-level cost estimate to the year of construction all use these factors.",
+    "exam": "Draw the cash-flow diagram first. Most errors come from putting a payment at the wrong end of a period."
    }
   },
   {
@@ -199,12 +208,16 @@
      "section": "Engineering Economics",
      "page": "230–237",
      "find": [
-      "single payment compound amount",
+      "compound amount",
       "capital recovery",
-      "single payment present worth",
+      "single payment",
       "non-annual compounding",
-      "effective annual interest",
-      "uniform series compound amount"
+      "effective interest rate",
+      "uniform series",
+      "sinking fund",
+      "capitalized costs",
+      "rate of return",
+      "inflation"
      ]
     }
    ],
@@ -216,7 +229,41 @@
     "Match the interest period to the payment period.",
     "Check direction: moving money forward in time must increase it."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "i_{e}",
+     "effective annual interest rate"
+    ],
+    [
+     "P",
+     "present amount"
+    ],
+    [
+     "i",
+     "interest rate per period"
+    ],
+    [
+     "A",
+     "uniform amount at the end of each period"
+    ],
+    [
+     "G",
+     "uniform gradient amount"
+    ],
+    [
+     "F",
+     "future amount"
+    ],
+    [
+     "n",
+     "number of periods"
+    ],
+    [
+     "r",
+     "nominal annual interest rate"
+    ]
+   ]
   },
   {
    "id": "econ-b-lesson",
@@ -296,9 +343,17 @@
      "section": "Engineering Economics",
      "page": "230–237",
      "find": [
-      "break-even analysis",
+      "breakeven analysis",
       "depreciation",
-      "straight line"
+      "straight line",
+      "MACRS"
+     ]
+    },
+    {
+     "section": "Chemical Engineering",
+     "page": "238–258",
+     "find": [
+      "cost indexes"
      ]
     }
    ],
@@ -409,11 +464,12 @@
      "section": "Engineering Economics",
      "page": "230–237",
      "find": [
-      "break-even analysis",
+      "breakeven analysis",
       "benefit-cost analysis",
-      "uniform series present worth",
+      "uniform series",
       "capital recovery",
-      "sinking fund"
+      "sinking fund",
+      "single payment"
      ]
     }
    ],
@@ -425,7 +481,34 @@
     "Choose the highest worth or lowest equivalent cost; for benefit-cost, require a ratio of at least 1.",
     "With unequal lives use annual worth."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Benefit-cost ratios and life-cycle costs are how safety and active transportation grant applications are scored.",
+   "symbols": [
+    [
+     "P",
+     "present amount"
+    ],
+    [
+     "A",
+     "uniform amount at the end of each period"
+    ],
+    [
+     "S",
+     "salvage value"
+    ],
+    [
+     "i",
+     "interest rate per period"
+    ],
+    [
+     "n",
+     "number of periods"
+    ],
+    [
+     "B",
+     "present worth of benefits"
+    ]
+   ]
   },
   {
    "id": "econ-d-lesson",

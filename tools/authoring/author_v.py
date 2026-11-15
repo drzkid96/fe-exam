@@ -4,7 +4,7 @@ import json, math, os, re, statistics
 from author_dsl import BANK, _load, ROOT
 SL, EM, JD, BL, CR, LG, RU = '#00242E', '#00574A', '#1B795A', '#568CBB', '#EEEDE8', '#D9F1D6', '#E7E8E8'
 NAMES = {k: getattr(math, k) for k in ('sqrt', 'pi', 'sin', 'cos', 'tan', 'atan', 'asin', 'acos', 'log10', 'log', 'exp', 'erf', 'hypot', 'comb')}
-NAMES.update(rad=math.radians, g=9.81, gw=9.81, abs=abs, max=max, min=min, sum=sum, sd=statistics.stdev, psd=statistics.pstdev)
+NAMES.update(rad=math.radians, g=9.81, gw=9.81, abs=abs, max=max, min=min, sum=sum, sd=statistics.stdev, psd=statistics.pstdev, int=int)
 def nf(x, dp=None):
     if isinstance(x, str): return x
     if isinstance(x, (list, tuple)): return ', '.join(nf(v) for v in x[:-1]) + ' and ' + nf(x[-1])
@@ -195,9 +195,13 @@ EXPR, STATS = {}, {'families': 0, 'versions': 0, 'figs': 0}
 ERRS = []
 TEMPLATES, DRY = {}, [False]
 def V(*a, **k):
-    names = ('base', 'stem', 'P', 'ans', 'sol', 'wrong', 'dp', 'fig', 'sfig', 'eli5'); t = dict(zip(names, a)); t.update(k); TEMPLATES[a[0]] = t
+    names = ('base', 'stem', 'P', 'ans', 'sol', 'wrong', 'dp', 'fig', 'sfig', 'eli5'); t = dict(zip(names, a)); t.update(k)
+    import fig2; f2, s2 = fig2.lookup(t['base'], t['stem'])          # figures for force, vector, beam and section questions
+    if f2 and not t.get('fig'): t['fig'] = f2
+    if s2 and not t.get('sfig'): t['sfig'] = s2
+    TEMPLATES[a[0]] = t
     if DRY[0]: return
-    try: _V(*a, **k)
+    try: _V(**t)
     except Exception as e: ERRS.append(f"{a[0]}: {type(e).__name__}: {e}"); [EXPR.pop(x) for x in list(EXPR) if x.startswith(a[0] + '-')]
 def _V(base, stem, P, ans, sol, wrong=None, dp=None, fig=None, sfig=None, eli5=None):
     topic = base.rsplit('-', 1)[0]; bank = _load(topic)

@@ -74,6 +74,16 @@
      "In U.S. units the concrete formulas that take a square root of the strength expect it in psi, not ksi.",
      "For shear, add the concrete and stirrup contributions, apply the reduction factor and compare with the factored shear."
     ]
+   },
+   "bridge": {
+    "keep": "Load paths in broad terms, and that beams bend and columns buckle.",
+    "rusty": [
+     "Analysis: reactions, internal forces, deflections and influence lines.",
+     "Indeterminate beams, with fixed-end moments from the handbook tables.",
+     "Steel (AISC) and concrete (ACI) design checks: strength reduction factors, plastic moment, stress block, shear."
+    ],
+    "work": "Sign bridges, mast arms, retaining walls along corridors and bus shelter foundations are designed by others on a project team, but reviewing their loads and reactions uses this topic.",
+    "exam": "Design questions follow the code excerpts printed in the handbook. Find the tension, flexure, shear and column pages for both steel and concrete before exam day."
    }
   },
   {
@@ -188,6 +198,21 @@
       "shearing force and bending moment",
       "cantilever"
      ]
+    },
+    {
+     "section": "Statics",
+     "page": "107–113",
+     "find": [
+      "moments",
+      "couple"
+     ]
+    },
+    {
+     "section": "Civil Engineering",
+     "page": "259–309",
+     "find": [
+      "shearing force and bending moment"
+     ]
     }
    ],
    "deep": "Analysing a determinate structure means finding reactions and then internal forces, with equilibrium alone. Beams carry load by shear and bending, trusses by axial force in their members and frames by a combination. The standard cases are worth knowing by heart: a simple span with a central load has a maximum moment of P L / 4, with a uniform load w L^{2} / 8, and a cantilever P L or w L^{2} / 2 at the support.\n\nMoving loads are handled with influence lines, which show how a reaction, shear or moment at one location varies as a unit load crosses the structure.",
@@ -198,7 +223,29 @@
     "For maximum effects, place loads where the influence line ordinates are largest.",
     "Check with a known standard case when one applies."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "M_{max}",
+     "maximum bending moment"
+    ],
+    [
+     "R_{left}",
+     "reaction at the left support"
+    ],
+    [
+     "L",
+     "span or length"
+    ],
+    [
+     "a",
+     "depth of the equivalent stress block, or distance to the load"
+    ],
+    [
+     "P",
+     "point load or axial load"
+    ]
+   ]
   },
   {
    "id": "structural-b-lesson",
@@ -297,7 +344,8 @@
      "page": "130–142",
      "find": [
       "simply supported beam slopes and deflections",
-      "cantilevered beam slopes and deflections"
+      "cantilevered beam slopes and deflections",
+      "deflection of beams"
      ]
     }
    ],
@@ -309,7 +357,13 @@
     "For several loads, compute each separately and add.",
     "For a truss joint, apply the unit load method."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "L",
+     "span or length"
+    ]
+   ]
   },
   {
    "id": "structural-c-lesson",
@@ -422,7 +476,33 @@
     "Apply Euler's formula for the critical load, or divide by area for critical stress.",
     "Check that the critical stress is below yield; otherwise Euler does not apply."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "P_{cr}",
+     "Euler buckling load"
+    ],
+    [
+     "E",
+     "modulus of elasticity"
+    ],
+    [
+     "I",
+     "moment of inertia"
+    ],
+    [
+     "K",
+     "effective length factor"
+    ],
+    [
+     "L",
+     "span or length"
+    ],
+    [
+     "P",
+     "point load or axial load"
+    ]
+   ]
   },
   {
    "id": "structural-d-lesson",
@@ -490,7 +570,21 @@
     "State the degree of indeterminacy as the excess of unknowns.",
     "Look for parallel or concurrent reactions that make the structure unstable."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "r",
+     "number of support reaction components"
+    ],
+    [
+     "n",
+     "number of items"
+    ],
+    [
+     "m",
+     "number of members"
+    ]
+   ]
   },
   {
    "id": "structural-e-lesson",
@@ -552,7 +646,12 @@
      "idea": "A propped cantilever has one more reaction than statics can solve, so a compatibility condition is needed: the deflection at the roller is zero. Setting the downward deflection from the load, w L^{4} / (8 EI), equal to the upward deflection from the reaction, R L^{3} / (3 EI), gives R = 3 w L / 8.",
      "steps": "\\frac{R L^{3}}{3 EI} = \\frac{w L^{4}}{8 EI}, so R = \\frac{3 w L}{8} = \\frac{3(12)(10)}{8} = 45 kN. The fixed end carries the other 75 kN.",
      "answer": "45 kN",
-     "value": 45.0
+     "value": 45.0,
+     "figure": {
+      "viewBox": "0 0 400 165",
+      "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>12 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>10 m</text>",
+      "alt": "A beam 10 m long, fixed at the left end, a roller support at 10 m, a uniform load of 12 kN/m from 0 to 10 m."
+     }
     },
     {
      "family": "structural-0013",
@@ -560,7 +659,12 @@
      "idea": "Fixed ends prevent rotation, which attracts negative moment to the supports. For a full uniform load the fixed-end moment is w L^{2} / 12 and the midspan moment drops to w L^{2} / 24; together they still add to the simple-span value w L^{2} / 8.",
      "steps": "Fixed-end moment = \\frac{w L^{2}}{12} = \\frac{16(9)^{2}}{12} = 108 kN·m. Midspan moment = 54 kN·m.",
      "answer": "108 kN·m",
-     "value": 108.0
+     "value": 108.0,
+     "figure": {
+      "viewBox": "0 0 400 165",
+      "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='350' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>16 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>9 m</text>",
+      "alt": "A beam 9 m long, fixed at the left end, fixed at the right end, a uniform load of 16 kN/m from 0 to 9 m."
+     }
     },
     {
      "family": "structural-0021",
@@ -568,7 +672,12 @@
      "idea": "Fixed-end moments are the support moments of a beam held against rotation at both ends. For a point load they are P a b^{2} / L^{2} at the end a distance a from the load and P a^{2} b / L^{2} at the other end. The end nearer the load takes the larger moment, and for a central load both equal P L / 8.",
      "steps": "b = 10 - 4 = 6 m.\n\nM_{left} = \\frac{P a b^{2}}{L^{2}} = \\frac{80(4)(6)^{2}}{10^{2}} = 115.20 kN·m.\n\nFor reference, M_{right} = \\frac{P a^{2} b}{L^{2}} = 76.80 kN·m.",
      "answer": "115.20 kN·m",
-     "value": 115.2
+     "value": 115.2,
+     "figure": {
+      "viewBox": "0 0 400 165",
+      "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='350' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='170' y1='10' x2='170' y2='69' stroke='#00574A' stroke-width='3'/><path d='M170 77 L164 65 L176 65 Z' fill='#00574A'/><text x='178' y='20' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>80 kN</text><line x1='50' y1='136' x2='170' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='170' y1='130' x2='170' y2='142' stroke='#00242E'/><text x='110' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='170' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='170' y1='130' x2='170' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='260' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6 m</text>",
+      "alt": "A beam 10 m long, fixed at the left end, fixed at the right end, a 80 kN load at 4 m."
+     }
     },
     {
      "family": "structural-0023",
@@ -576,7 +685,12 @@
      "idea": "A two-span continuous beam is indeterminate to the first degree. Removing the middle support and restoring zero deflection there gives a middle reaction of 1.25 w L, more than the w L that tributary length would suggest; each end support carries 0.375 w L.",
      "steps": "R_{middle} = 1.25 w L = 1.25(16)(7) = 140.0 kN.\n\nEach end support carries 0.375(16)(7) = 42.00 kN. Check: 140.0 + 2(42.00) = 224.0 kN, the total load.",
      "answer": "140.0 kN",
-     "value": 140.0
+     "value": 140.0,
+     "figure": {
+      "viewBox": "0 0 400 205",
+      "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='200' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='178' y1='114' x2='222' y2='114' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>16 kN/m</text><line x1='50' y1='176' x2='200' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='200' y1='170' x2='200' y2='182' stroke='#00242E'/><text x='125' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>7 m</text><line x1='200' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='200' y1='170' x2='200' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='275' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>7 m</text><line x1='50' y1='162' x2='50' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M50 120 L44 132 L56 132 Z' fill='#568CBB'/><text x='60' y='160' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>42 kN</text><line x1='200' y1='162' x2='200' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M200 120 L194 132 L206 132 Z' fill='#568CBB'/><text x='190' y='160' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>140 kN</text><line x1='350' y1='162' x2='350' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M350 120 L344 132 L356 132 Z' fill='#568CBB'/><text x='340' y='160' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>42 kN</text>",
+      "alt": "A beam 14 m long, a pin support at 0 m, a roller support at 7 m, a roller support at 14 m, a uniform load of 16 kN/m from 0 to 14 m. Reactions: 42 kN at 0 m, 140 kN at 7 m, 42 kN at 14 m."
+     }
     }
    ],
    "lookup": [
@@ -584,7 +698,8 @@
      "section": "Mechanics of Materials",
      "page": "130–142",
      "find": [
-      "cantilevered beam slopes and deflections"
+      "cantilevered beam slopes and deflections",
+      "uniaxial loading and deformation"
      ]
     },
     {
@@ -604,7 +719,49 @@
     "Solve for the redundant that makes the total deflection zero.",
     "Finish with equilibrium for the remaining reactions."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "R_{prop}",
+     "reaction at the simple support"
+    ],
+    [
+     "M_{end}",
+     "moment at the fixed end"
+    ],
+    [
+     "M_{left}",
+     "moment at the left support"
+    ],
+    [
+     "M_{right}",
+     "moment at the right support"
+    ],
+    [
+     "R_{middle}",
+     "reaction at the middle support"
+    ],
+    [
+     "w",
+     "uniform load per unit length"
+    ],
+    [
+     "L",
+     "span or length"
+    ],
+    [
+     "R",
+     "support reaction"
+    ],
+    [
+     "b",
+     "width of the section, or distance from the load to the far support"
+    ],
+    [
+     "a",
+     "depth of the equivalent stress block, or distance to the load"
+    ]
+   ]
   },
   {
    "id": "structural-f-lesson",
@@ -691,7 +848,8 @@
      "page": "259–309",
      "find": [
       "load combinations",
-      "LRFD"
+      "LRFD",
+      "influence lines"
      ]
     }
    ],
@@ -703,7 +861,18 @@
     "Take the largest factored effect for design.",
     "Follow the reactions down to the next member in the load path."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "work": "Sign, signal and lighting structures are designed for dead load plus wind, combined with load factors.",
+   "symbols": [
+    [
+     "M_{u}",
+     "factored moment"
+    ],
+    [
+     "w",
+     "uniform load per unit length"
+    ]
+   ]
   },
   {
    "id": "structural-g-lesson",
@@ -814,7 +983,11 @@
       "yielding",
       "AISC",
       "plastic section modulus",
-      "net area"
+      "net area",
+      "bolt",
+      "weld",
+      "plastic",
+      "shear"
      ]
     },
     {
@@ -834,7 +1007,69 @@
     "Compare the smallest design strength with the factored demand.",
     "Check serviceability under unfactored loads."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "F_{y}",
+     "yield stress of structural steel"
+    ],
+    [
+     "A_{g}",
+     "gross area"
+    ],
+    [
+     "F_{u}",
+     "tensile strength of structural steel"
+    ],
+    [
+     "A_{e}",
+     "effective net area"
+    ],
+    [
+     "Z_{x}",
+     "plastic section modulus about the strong axis"
+    ],
+    [
+     "F_{cr}",
+     "critical stress"
+    ],
+    [
+     "r_{x}",
+     "radius of gyration about the strong axis"
+    ],
+    [
+     "r_{y}",
+     "radius of gyration about the weak axis"
+    ],
+    [
+     "P_{n}",
+     "nominal axial strength"
+    ],
+    [
+     "M_{p}",
+     "plastic moment"
+    ],
+    [
+     "A_{n}",
+     "net area"
+    ],
+    [
+     "Z",
+     "plastic section modulus"
+    ],
+    [
+     "U",
+     "shear lag factor"
+    ],
+    [
+     "N",
+     "newton"
+    ],
+    [
+     "L",
+     "span or length"
+    ]
+   ]
   },
   {
    "id": "structural-h-lesson",
@@ -969,7 +1204,8 @@
       "singly-reinforced",
       "stress block",
       "shear",
-      "short columns"
+      "short columns",
+      "stirrup"
      ]
     }
    ],
@@ -981,7 +1217,73 @@
     "Compare with the factored moment from the load combinations.",
     "For shear, compute the concrete contribution and add the stirrup contribution if needed."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "symbols": [
+    [
+     "f'_{c}",
+     "specified compressive strength of concrete"
+    ],
+    [
+     "A_{s}",
+     "area of tension steel"
+    ],
+    [
+     "f_{y}",
+     "yield strength of reinforcing steel"
+    ],
+    [
+     "M_{n}",
+     "nominal moment strength"
+    ],
+    [
+     "V_{c}",
+     "shear strength provided by the concrete"
+    ],
+    [
+     "P_{0}",
+     "nominal axial strength at zero eccentricity"
+    ],
+    [
+     "A_{g}",
+     "gross area"
+    ],
+    [
+     "A_{st}",
+     "total area of longitudinal steel"
+    ],
+    [
+     "A_{v}",
+     "area of all stirrup legs crossing the crack"
+    ],
+    [
+     "V_{s}",
+     "shear strength provided by the stirrups"
+    ],
+    [
+     "d",
+     "effective depth, compression face to centroid of tension steel"
+    ],
+    [
+     "T",
+     "tension force in the steel"
+    ],
+    [
+     "a",
+     "depth of the equivalent stress block, or distance to the load"
+    ],
+    [
+     "s",
+     "stirrup spacing"
+    ],
+    [
+     "b",
+     "width of the section, or distance from the load to the far support"
+    ],
+    [
+     "N",
+     "newton"
+    ]
+   ]
   }
  ]
 }

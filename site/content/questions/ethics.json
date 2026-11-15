@@ -49,7 +49,7 @@
   },
   "family": "ethics-0001",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -103,7 +103,61 @@
   },
   "family": "ethics-0001",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": true,
+  "needs": []
+ },
+ {
+  "id": "ethics-0001-c",
+  "topic": "ethics",
+  "subtopic": "ethics-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "An engineer finds that a bridge railing detail approved by her supervisor does not meet the required crash-test standard. The supervisor tells her to issue the plans anyway. Under the NCEES Model Rules, what must she do?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Issue the plans, because the supervisor is responsible"
+   },
+   {
+    "id": "b",
+    "text": "Notify her employer in writing and, if the hazard remains, the appropriate authority"
+   },
+   {
+    "id": "c",
+    "text": "Quietly change the detail without telling anyone"
+   },
+   {
+    "id": "d",
+    "text": "Resign without comment"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Under the Model Rules the first duty is to the health, safety and welfare of the public, ahead of the duty to an employer or client. When professional judgement is overruled and the public is endangered, the engineer must notify the employer or client and any other authority that may be appropriate.",
+  "solution": "Her professional judgement has been overruled in a way that endangers the public. The rule requires her to notify the employer or client and any other authority that may be appropriate.\n\nIssuing the plans or leaving silently leaves the hazard in place.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12",
+    "find": [
+     "obligation to the public"
+    ]
+   }
+  ],
+  "tags": [
+   "public safety",
+   "model rules"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "NCEES Model Rules, Rules of Professional Conduct"
+  },
+  "family": "ethics-0001",
+  "version": 3,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -159,7 +213,7 @@
   },
   "family": "ethics-0002",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -215,7 +269,63 @@
   },
   "family": "ethics-0002",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": true,
+  "needs": []
+ },
+ {
+  "id": "ethics-0002-c",
+  "topic": "ethics",
+  "subtopic": "ethics-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A firm buys standard plans from a vendor and asks its licensed engineer to seal them, unchanged, for a local project. When may she seal them?",
+  "options": [
+   {
+    "id": "a",
+    "text": "At once, because the vendor is reputable"
+   },
+   {
+    "id": "b",
+    "text": "Never, under any conditions"
+   },
+   {
+    "id": "c",
+    "text": "Only after reviewing and adapting them thoroughly enough to take responsible charge of the work"
+   },
+   {
+    "id": "d",
+    "text": "After the client signs a waiver"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A licensee may sign and seal only work prepared under their responsible charge, meaning direct control and personal supervision, and only within their competence. The seal certifies that supervision; it is not a quality stamp added afterwards.",
+  "solution": "A seal certifies work done by the licensee or under her responsible charge. Plans prepared by others can be sealed only once she has reviewed them in detail, made them fit the site and taken professional responsibility for them.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12",
+    "find": [
+     "responsible charge",
+     "sign and seal"
+    ]
+   }
+  ],
+  "tags": [
+   "seal",
+   "responsible charge",
+   "licensure"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "NCEES Model Rules, Rules of Professional Conduct"
+  },
+  "family": "ethics-0002",
+  "version": 3,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -270,7 +380,7 @@
   },
   "family": "ethics-0003",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -325,7 +435,62 @@
   },
   "family": "ethics-0003",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": true,
+  "needs": []
+ },
+ {
+  "id": "ethics-0003-c",
+  "topic": "ethics",
+  "subtopic": "ethics-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "An engineer sits on a city planning commission that is about to vote on a project her firm designed. What do the Model Rules require?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Vote, since she knows the project best"
+   },
+   {
+    "id": "b",
+    "text": "Disclose the interest and take no part in the decision"
+   },
+   {
+    "id": "c",
+    "text": "Vote only if the result would be the same anyway"
+   },
+   {
+    "id": "d",
+    "text": "Ask a colleague to lobby the other members"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Licensees must disclose to their employer or client every known or potential conflict of interest, or any circumstance that could influence, or appear to influence, their judgement. Disclosure comes before the decision, and the client decides how to proceed.",
+  "solution": "A licensee serving on a public body must not take part in decisions about services provided by her own firm. She discloses the conflict and abstains.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12",
+    "find": [
+     "conflicts of interest",
+     "obligation to employer"
+    ]
+   }
+  ],
+  "tags": [
+   "conflict of interest",
+   "compensation"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "NCEES Model Rules, Rules of Professional Conduct"
+  },
+  "family": "ethics-0003",
+  "version": 3,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -380,7 +545,7 @@
   },
   "family": "ethics-0004",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -435,7 +600,62 @@
   },
   "family": "ethics-0004",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": true,
+  "needs": []
+ },
+ {
+  "id": "ethics-0004-c",
+  "topic": "ethics",
+  "subtopic": "ethics-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What must an engineer licensed in one state normally show in order to be licensed in a second state by comity?",
+  "options": [
+   {
+    "id": "a",
+    "text": "That the original licence was earned under requirements at least equal to the second state's"
+   },
+   {
+    "id": "b",
+    "text": "Only that a fee has been paid"
+   },
+   {
+    "id": "c",
+    "text": "That the engineer has a client in the second state"
+   },
+   {
+    "id": "d",
+    "text": "A new passing score on the FE exam"
+   }
+  ],
+  "answer": "a",
+  "eli5": "Engineering licences are issued by each state or territory and are valid only there. Practising or offering to practise elsewhere requires that jurisdiction's licence, usually obtained through comity on the strength of the existing licence, exams and experience.",
+  "solution": "Comity lets a board license an engineer already licensed elsewhere without repeating the exams, provided the education, examinations and experience behind the first licence meet the second state's standards.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12",
+    "find": [
+     "licensure",
+     "model law"
+    ]
+   }
+  ],
+  "tags": [
+   "licensure",
+   "comity"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "NCEES Model Law, licensure by comity"
+  },
+  "family": "ethics-0004",
+  "version": 3,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -473,7 +693,9 @@
    {
     "section": "Ethics and Professional Practice",
     "page": "4–12",
-    "find": []
+    "find": [
+     "negligence"
+    ]
    }
   ],
   "tags": [],
@@ -484,8 +706,8 @@
   },
   "family": "ethics-0005",
   "version": 1,
-  "versions": 2,
-  "lookup": false,
+  "versions": 3,
+  "lookup": true,
   "needs": []
  },
  {
@@ -522,7 +744,9 @@
    {
     "section": "Ethics and Professional Practice",
     "page": "4–12",
-    "find": []
+    "find": [
+     "negligence"
+    ]
    }
   ],
   "tags": [],
@@ -533,8 +757,59 @@
   },
   "family": "ethics-0005",
   "version": 2,
-  "versions": 2,
-  "lookup": false,
+  "versions": 3,
+  "lookup": true,
+  "needs": []
+ },
+ {
+  "id": "ethics-0005-c",
+  "topic": "ethics",
+  "subtopic": "ethics-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Which statement about the standard of care for engineers is correct?",
+  "options": [
+   {
+    "id": "a",
+    "text": "It requires a perfect result"
+   },
+   {
+    "id": "b",
+    "text": "It is whatever the client specifies"
+   },
+   {
+    "id": "c",
+    "text": "It requires the skill and care a reasonably competent engineer would use in the same circumstances"
+   },
+   {
+    "id": "d",
+    "text": "It applies only to licensed structural engineers"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Negligence requires a duty, a breach of the standard of care, causation and damages. The standard of care is the skill and care ordinarily exercised by reasonably prudent engineers doing similar work in similar circumstances. It does not promise a perfect outcome.",
+  "solution": "The law compares an engineer's work with what a reasonably competent peer would have done in the same place and time. A bad outcome alone is not negligence.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12",
+    "find": [
+     "negligence"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "General principles of professional liability"
+  },
+  "family": "ethics-0005",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
   "needs": []
  },
  {
@@ -582,7 +857,7 @@
   },
   "family": "ethics-0006",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": false,
   "needs": []
  },
@@ -631,7 +906,56 @@
   },
   "family": "ethics-0006",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": false,
+  "needs": []
+ },
+ {
+  "id": "ethics-0006-c",
+  "topic": "ethics",
+  "subtopic": "ethics-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Which type of insurance covers injuries to a firm's own employees while they are working?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Professional liability"
+   },
+   {
+    "id": "b",
+    "text": "Commercial general liability"
+   },
+   {
+    "id": "c",
+    "text": "Builder's risk"
+   },
+   {
+    "id": "d",
+    "text": "Workers' compensation"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Each policy covers a different risk. Professional liability (errors and omissions) covers losses from design errors. General liability covers injury or property damage to others from operations. Workers' compensation covers a firm's own employees who are hurt at work. Builder's risk covers the structure under construction.",
+  "solution": "Workers' compensation pays medical costs and lost wages for employees injured on the job, whoever was at fault.\n\nProfessional liability covers design errors; general liability covers injury or damage to third parties.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard definitions of insurance types"
+  },
+  "family": "ethics-0006",
+  "version": 3,
+  "versions": 3,
   "lookup": false,
   "needs": []
  },
@@ -669,7 +993,9 @@
    {
     "section": "Ethics and Professional Practice",
     "page": "4–12",
-    "find": []
+    "find": [
+     "contract"
+    ]
    }
   ],
   "tags": [],
@@ -680,8 +1006,8 @@
   },
   "family": "ethics-0007",
   "version": 1,
-  "versions": 2,
-  "lookup": false,
+  "versions": 3,
+  "lookup": true,
   "needs": []
  },
  {
@@ -718,7 +1044,9 @@
    {
     "section": "Ethics and Professional Practice",
     "page": "4–12",
-    "find": []
+    "find": [
+     "contract"
+    ]
    }
   ],
   "tags": [],
@@ -729,8 +1057,59 @@
   },
   "family": "ethics-0007",
   "version": 2,
-  "versions": 2,
-  "lookup": false,
+  "versions": 3,
+  "lookup": true,
+  "needs": []
+ },
+ {
+  "id": "ethics-0007-c",
+  "topic": "ethics",
+  "subtopic": "ethics-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A contractor promises to repave a driveway, and the owner promises nothing in return. Why is this not an enforceable contract?",
+  "options": [
+   {
+    "id": "a",
+    "text": "There is no consideration"
+   },
+   {
+    "id": "b",
+    "text": "It is not notarised"
+   },
+   {
+    "id": "c",
+    "text": "Paving is not a lawful purpose"
+   },
+   {
+    "id": "d",
+    "text": "The contractor is licensed"
+   }
+  ],
+  "answer": "a",
+  "eli5": "An enforceable contract needs an offer, acceptance, consideration, competent parties and a lawful purpose. Consideration is the exchange of something of value by each side; a one-sided promise is a gift, not a contract.",
+  "solution": "Each party to a contract must give something of value, called consideration. A one-sided promise with nothing given in exchange is a gift, not a contract.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12",
+    "find": [
+     "contract"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "General principles of contract law"
+  },
+  "family": "ethics-0007",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
   "needs": []
  },
  {
@@ -767,7 +1146,9 @@
    {
     "section": "Ethics and Professional Practice",
     "page": "4–12",
-    "find": []
+    "find": [
+     "contract"
+    ]
    }
   ],
   "tags": [],
@@ -778,8 +1159,8 @@
   },
   "family": "ethics-0008",
   "version": 1,
-  "versions": 2,
-  "lookup": false,
+  "versions": 3,
+  "lookup": true,
   "needs": []
  },
  {
@@ -816,7 +1197,9 @@
    {
     "section": "Ethics and Professional Practice",
     "page": "4–12",
-    "find": []
+    "find": [
+     "contract"
+    ]
    }
   ],
   "tags": [],
@@ -827,8 +1210,59 @@
   },
   "family": "ethics-0008",
   "version": 2,
-  "versions": 2,
-  "lookup": false,
+  "versions": 3,
+  "lookup": true,
+  "needs": []
+ },
+ {
+  "id": "ethics-0008-c",
+  "topic": "ethics",
+  "subtopic": "ethics-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Under which contract type is the contractor paid its actual costs plus a fee, leaving most of the cost risk with the owner?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Lump sum"
+   },
+   {
+    "id": "b",
+    "text": "Unit price"
+   },
+   {
+    "id": "c",
+    "text": "Cost-plus"
+   },
+   {
+    "id": "d",
+    "text": "Guaranteed maximum price"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The payment terms of a contract decide who carries cost risk. Under a lump sum the contractor does, because the price is fixed. Under cost plus a fee the owner does, because actual costs are reimbursed. Unit price contracts split it: the contractor carries the unit cost, the owner the quantity.",
+  "solution": "In a cost-plus contract the owner reimburses actual costs and adds a fee. The contractor's risk is low and the owner's final cost is uncertain.\n\nLump sum puts the cost risk on the contractor; unit price shares it, with quantities at the owner's risk.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12",
+    "find": [
+     "contract"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard definitions of construction contract types"
+  },
+  "family": "ethics-0008",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
   "needs": []
  },
  {
@@ -879,7 +1313,7 @@
   },
   "family": "ethics-0009",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -931,7 +1365,59 @@
   },
   "family": "ethics-0009",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": true,
+  "needs": []
+ },
+ {
+  "id": "ethics-0009-c",
+  "topic": "ethics",
+  "subtopic": "ethics-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A vendor offers an engineer a free tablet computer for attending a product demonstration while the engineer is evaluating that vendor's bid. What should the engineer do?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Accept it, because it was offered to everyone"
+   },
+   {
+    "id": "b",
+    "text": "Decline it"
+   },
+   {
+    "id": "c",
+    "text": "Accept it and give it to charity later"
+   },
+   {
+    "id": "d",
+    "text": "Accept it but score the vendor lower"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Licensees shall not solicit or accept gratuities, directly or indirectly, from contractors, their agents or other parties in connection with work for employers or clients. No favour needs to be requested; the gift itself compromises independence or appears to.",
+  "solution": "A valuable gift from a party whose bid the engineer is judging could influence, or appear to influence, that judgement. The rules require declining it.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12",
+    "find": [
+     "gratuities",
+     "obligation to employer"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "NCEES Model Rules, Rules of Professional Conduct"
+  },
+  "family": "ethics-0009",
+  "version": 3,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -982,7 +1468,7 @@
   },
   "family": "ethics-0010",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -1033,7 +1519,58 @@
   },
   "family": "ethics-0010",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": true,
+  "needs": []
+ },
+ {
+  "id": "ethics-0010-c",
+  "topic": "ethics",
+  "subtopic": "ethics-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A licensed engineer leaves a firm in the middle of a project she was directing. Who may seal the completed plans?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Any licensed engineer in the firm, at once"
+   },
+   {
+    "id": "b",
+    "text": "The project manager, whether licensed or not"
+   },
+   {
+    "id": "c",
+    "text": "A licensed engineer who takes over responsible charge and reviews the earlier work thoroughly"
+   },
+   {
+    "id": "d",
+    "text": "No one; the project must restart"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A seal certifies that the work was prepared by the licensee or under the licensee's responsible charge, meaning direct control and personal supervision. It is not a formatting step and cannot be lent, and a licensee seals only work within their own competence.",
+  "solution": "The successor may seal the work only after taking responsible charge: reviewing what was done, directing what remains and accepting professional responsibility for all of it.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12",
+    "find": [
+     "responsible charge"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "NCEES Model Rules, Rules of Professional Conduct"
+  },
+  "family": "ethics-0010",
+  "version": 3,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -1084,7 +1621,7 @@
   },
   "family": "ethics-0011",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -1135,7 +1672,58 @@
   },
   "family": "ethics-0011",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": true,
+  "needs": []
+ },
+ {
+  "id": "ethics-0011-c",
+  "topic": "ethics",
+  "subtopic": "ethics-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A client asks an engineer to delete a paragraph from a traffic study that says a proposed driveway does not meet sight distance requirements. What should the engineer do?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Delete it, since the client owns the report"
+   },
+   {
+    "id": "b",
+    "text": "Keep the finding in the report"
+   },
+   {
+    "id": "c",
+    "text": "Move it to a footnote in small type"
+   },
+   {
+    "id": "d",
+    "text": "Delete it and tell the reviewing agency by phone"
+   }
+  ],
+  "answer": "b",
+  "eli5": "A reviewer's duty is to give an honest professional opinion. Licensees must be objective and truthful in reports and statements, and must not let a business interest, a schedule or a relationship change a technical finding.",
+  "solution": "Reports must be objective and truthful and include all relevant information. Removing a safety finding would make the report misleading.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12",
+    "find": [
+     "conflicts of interest"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "NCEES Model Rules, Rules of Professional Conduct"
+  },
+  "family": "ethics-0011",
+  "version": 3,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -1186,7 +1774,7 @@
   },
   "family": "ethics-0012",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -1237,7 +1825,58 @@
   },
   "family": "ethics-0012",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": true,
+  "needs": []
+ },
+ {
+  "id": "ethics-0012-c",
+  "topic": "ethics",
+  "subtopic": "ethics-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A contractor offers to pave an inspector's home driveway at cost while the inspector is assigned to that contractor's project. What should the inspector do?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Accept, since full cost is being paid"
+   },
+   {
+    "id": "b",
+    "text": "Accept after the project ends"
+   },
+   {
+    "id": "c",
+    "text": "Decline"
+   },
+   {
+    "id": "d",
+    "text": "Accept and report it afterwards"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Licensees must not solicit or accept gratuities from contractors, suppliers or others dealing with their client in connection with work for which they are responsible. The test is whether it could influence, or appear to influence, their judgement.",
+  "solution": "A favour of value from a contractor whose work the inspector judges is a prohibited gratuity, whether or not a price is paid, because it could influence or appear to influence the inspector's judgement.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12",
+    "find": [
+     "conflicts of interest"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "NCEES Model Rules, Rules of Professional Conduct"
+  },
+  "family": "ethics-0012",
+  "version": 3,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -1275,7 +1914,9 @@
    {
     "section": "Ethics and Professional Practice",
     "page": "4–12",
-    "find": []
+    "find": [
+     "negligence"
+    ]
    }
   ],
   "tags": [],
@@ -1286,8 +1927,8 @@
   },
   "family": "ethics-0013",
   "version": 1,
-  "versions": 2,
-  "lookup": false,
+  "versions": 3,
+  "lookup": true,
   "needs": []
  },
  {
@@ -1324,7 +1965,9 @@
    {
     "section": "Ethics and Professional Practice",
     "page": "4–12",
-    "find": []
+    "find": [
+     "negligence"
+    ]
    }
   ],
   "tags": [],
@@ -1335,8 +1978,59 @@
   },
   "family": "ethics-0013",
   "version": 2,
-  "versions": 2,
-  "lookup": false,
+  "versions": 3,
+  "lookup": true,
+  "needs": []
+ },
+ {
+  "id": "ethics-0013-c",
+  "topic": "ethics",
+  "subtopic": "ethics-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Which fact would most strongly support a claim that an engineer breached the standard of care?",
+  "options": [
+   {
+    "id": "a",
+    "text": "The project cost more than estimated"
+   },
+   {
+    "id": "b",
+    "text": "The engineer ignored a mandatory requirement of the governing code"
+   },
+   {
+    "id": "c",
+    "text": "Another engineer would have chosen a different layout"
+   },
+   {
+    "id": "d",
+    "text": "The client was unhappy with the schedule"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Negligence is judged against the standard of care: the skill and diligence that a reasonably prudent engineer would use in the same place and circumstances. Engineers are not required to be perfect, and following the governing standards in force at the time is strong evidence of meeting it.",
+  "solution": "Competent engineers follow mandatory code requirements, so ignoring one is strong evidence of falling below the standard of care. Cost overruns and differences of professional opinion are not, by themselves.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12",
+    "find": [
+     "negligence"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "General principles of professional liability"
+  },
+  "family": "ethics-0013",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
   "needs": []
  },
  {
@@ -1386,7 +2080,7 @@
   },
   "family": "ethics-0014",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -1437,7 +2131,58 @@
   },
   "family": "ethics-0014",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": true,
+  "needs": []
+ },
+ {
+  "id": "ethics-0014-c",
+  "topic": "ethics",
+  "subtopic": "ethics-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A consultant did extra design work at a client's verbal request and was later refused payment for it. What would best have protected the consultant?",
+  "options": [
+   {
+    "id": "a",
+    "text": "A written contract amendment agreed before the work began"
+   },
+   {
+    "id": "b",
+    "text": "A higher hourly rate"
+   },
+   {
+    "id": "c",
+    "text": "Finishing the extra work faster"
+   },
+   {
+    "id": "d",
+    "text": "A verbal reminder at the next meeting"
+   }
+  ],
+  "answer": "a",
+  "eli5": "A scope of services defines what the engineer has agreed to do. Work outside it should be covered by a written amendment before it is done; otherwise payment is uncertain and the extra work may fall outside the contract's protections.",
+  "solution": "Work outside the agreed scope should be authorised in writing, with its fee and schedule, before it is done. Without that, the consultant has little proof that the client agreed to pay.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12",
+    "find": [
+     "contract"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "General principles of contract law"
+  },
+  "family": "ethics-0014",
+  "version": 3,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -1486,7 +2231,7 @@
   },
   "family": "ethics-0015",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": false,
   "needs": []
  },
@@ -1535,7 +2280,56 @@
   },
   "family": "ethics-0015",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": false,
+  "needs": []
+ },
+ {
+  "id": "ethics-0015-c",
+  "topic": "ethics",
+  "subtopic": "ethics-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A graduate has passed the FE exam and is certified as an engineer in training. What may the engineer in training do?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Seal plans for small projects"
+   },
+   {
+    "id": "b",
+    "text": "Offer engineering services directly to the public"
+   },
+   {
+    "id": "c",
+    "text": "Do engineering work under the supervision of a licensed engineer, without sealing it"
+   },
+   {
+    "id": "d",
+    "text": "Use the title Professional Engineer"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A licence is granted by a state board and must be kept current under that board's rules, usually by renewal and continuing professional competency hours. Practising, or offering to practise, without a current licence in the state where the project lies is unlawful.",
+  "solution": "An engineer in training is not yet licensed. The certificate records progress toward licensure; the work must be done under a licensed engineer's responsible charge, and only that licensee may seal it.",
+  "handbook": [
+   {
+    "section": "Ethics and Professional Practice",
+    "page": "4–12",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "NCEES Model Law and Model Rules, licensure provisions"
+  },
+  "family": "ethics-0015",
+  "version": 3,
+  "versions": 3,
   "lookup": false,
   "needs": []
  }

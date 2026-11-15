@@ -1390,7 +1390,7 @@
    ],
    [
     "R",
-    "range or radius"
+    "horizontal range of the projectile"
    ],
    [
     "v",
@@ -1465,7 +1465,7 @@
    ],
    [
     "R",
-    "range or radius"
+    "horizontal range of the projectile"
    ],
    [
     "v",
@@ -1540,7 +1540,7 @@
    ],
    [
     "R",
-    "range or radius"
+    "horizontal range of the projectile"
    ],
    [
     "v",
@@ -1615,7 +1615,7 @@
    ],
    [
     "R",
-    "range or radius"
+    "horizontal range of the projectile"
    ],
    [
     "v",
@@ -3166,6 +3166,11 @@
   "family": "dynamics-0011",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#568CBB'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Spring force</text><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Support from the surface</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Spring force = stiffness × compression; it pushes until its stored energy is used up</text>",
+   "alt": "Free-body diagram showing Spring force, Weight, Support from the surface."
+  },
   "lookup": true,
   "terms": [
    [
@@ -3222,6 +3227,11 @@
   "family": "dynamics-0011",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#568CBB'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Spring force</text><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Support from the surface</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Spring force = stiffness × compression; it pushes until its stored energy is used up</text>",
+   "alt": "Free-body diagram showing Spring force, Weight, Support from the surface."
+  },
   "lookup": true,
   "terms": [
    [
@@ -3278,6 +3288,11 @@
   "family": "dynamics-0011",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#568CBB'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Spring force</text><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Support from the surface</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Spring force = stiffness × compression; it pushes until its stored energy is used up</text>",
+   "alt": "Free-body diagram showing Spring force, Weight, Support from the surface."
+  },
   "lookup": true,
   "terms": [
    [
@@ -3334,6 +3349,11 @@
   "family": "dynamics-0011",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#568CBB'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Spring force</text><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Support from the surface</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Spring force = stiffness × compression; it pushes until its stored energy is used up</text>",
+   "alt": "Free-body diagram showing Spring force, Weight, Support from the surface."
+  },
   "lookup": true,
   "terms": [
    [
@@ -3881,7 +3901,7 @@
    ],
    [
     "R",
-    "range or radius"
+    "radius of the curve"
    ]
   ]
  },
@@ -3959,7 +3979,7 @@
    ],
    [
     "R",
-    "range or radius"
+    "radius of the curve"
    ]
   ]
  },
@@ -4037,7 +4057,7 @@
    ],
    [
     "R",
-    "range or radius"
+    "radius of the curve"
    ]
   ]
  },
@@ -4115,7 +4135,7 @@
    ],
    [
     "R",
-    "range or radius"
+    "radius of the curve"
    ]
   ]
  },
@@ -4390,6 +4410,11 @@
   "family": "dynamics-0016",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<circle cx='110' cy='40' r='5' fill='#00242E'/><rect x='110' y='35' width='180' height='10' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='105' y='40' width='10' height='130' fill='#D9F1D6' fill-opacity='.6' stroke='#1B795A' stroke-dasharray='6 4'/><circle cx='200' cy='40' r='4' fill='#00574A'/><circle cx='110' cy='105' r='4' fill='#00574A'/><line x1='200' y1='40' x2='200' y2='105' stroke='#00574A' stroke-dasharray='5 4'/><line x1='110' y1='105' x2='200' y2='105' stroke='#00574A' stroke-dasharray='5 4'/><text x='208' y='78' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>centre of mass falls 0.60 m</text><text x='200' y='26' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1.2 m rod, released level</text><text x='124' y='168' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>passing through the vertical</text>",
+   "alt": "A 1.2 m rod pinned at one end, shown level at release and hanging vertically. Its centre of mass falls by half its length, 0.60 m."
+  },
   "lookup": true,
   "terms": [
    [
@@ -4458,6 +4483,11 @@
   "family": "dynamics-0016",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<circle cx='110' cy='40' r='5' fill='#00242E'/><rect x='110' y='35' width='180' height='10' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='105' y='40' width='10' height='130' fill='#D9F1D6' fill-opacity='.6' stroke='#1B795A' stroke-dasharray='6 4'/><circle cx='200' cy='40' r='4' fill='#00574A'/><circle cx='110' cy='105' r='4' fill='#00574A'/><line x1='200' y1='40' x2='200' y2='105' stroke='#00574A' stroke-dasharray='5 4'/><line x1='110' y1='105' x2='200' y2='105' stroke='#00574A' stroke-dasharray='5 4'/><text x='208' y='78' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>centre of mass falls 1.00 m</text><text x='200' y='26' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2 m rod, released level</text><text x='124' y='168' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>passing through the vertical</text>",
+   "alt": "A 2 m rod pinned at one end, shown level at release and hanging vertically. Its centre of mass falls by half its length, 1.00 m."
+  },
   "lookup": true,
   "terms": [
    [
@@ -4526,6 +4556,11 @@
   "family": "dynamics-0016",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<circle cx='110' cy='40' r='5' fill='#00242E'/><rect x='110' y='35' width='180' height='10' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='105' y='40' width='10' height='130' fill='#D9F1D6' fill-opacity='.6' stroke='#1B795A' stroke-dasharray='6 4'/><circle cx='200' cy='40' r='4' fill='#00574A'/><circle cx='110' cy='105' r='4' fill='#00574A'/><line x1='200' y1='40' x2='200' y2='105' stroke='#00574A' stroke-dasharray='5 4'/><line x1='110' y1='105' x2='200' y2='105' stroke='#00574A' stroke-dasharray='5 4'/><text x='208' y='78' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>centre of mass falls 0.40 m</text><text x='200' y='26' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0.8 m rod, released level</text><text x='124' y='168' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>passing through the vertical</text>",
+   "alt": "A 0.8 m rod pinned at one end, shown level at release and hanging vertically. Its centre of mass falls by half its length, 0.40 m."
+  },
   "lookup": true,
   "terms": [
    [
@@ -4594,6 +4629,11 @@
   "family": "dynamics-0016",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<circle cx='110' cy='40' r='5' fill='#00242E'/><rect x='110' y='35' width='180' height='10' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='105' y='40' width='10' height='130' fill='#D9F1D6' fill-opacity='.6' stroke='#1B795A' stroke-dasharray='6 4'/><circle cx='200' cy='40' r='4' fill='#00574A'/><circle cx='110' cy='105' r='4' fill='#00574A'/><line x1='200' y1='40' x2='200' y2='105' stroke='#00574A' stroke-dasharray='5 4'/><line x1='110' y1='105' x2='200' y2='105' stroke='#00574A' stroke-dasharray='5 4'/><text x='208' y='78' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>centre of mass falls 0.75 m</text><text x='200' y='26' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1.5 m rod, released level</text><text x='124' y='168' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>passing through the vertical</text>",
+   "alt": "A 1.5 m rod pinned at one end, shown level at release and hanging vertically. Its centre of mass falls by half its length, 0.75 m."
+  },
   "lookup": true,
   "terms": [
    [
@@ -7593,6 +7633,11 @@
   "family": "dynamics-0028",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='176' y1='100' x2='127' y2='100' stroke='#00574A' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#00574A'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#00574A'>1,200 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Moving right at 40 m/s; this average force acts against the motion for 0.005 s</text>",
+   "alt": "Free-body diagram showing 1,200 N."
+  },
   "lookup": true,
   "terms": [
    [
@@ -7657,6 +7702,11 @@
   "family": "dynamics-0028",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='176' y1='100' x2='127' y2='100' stroke='#00574A' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#00574A'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#00574A'>45,000 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Moving right at 15 m/s; this average force acts against the motion for 0.4 s</text>",
+   "alt": "Free-body diagram showing 45,000 N."
+  },
   "lookup": true,
   "terms": [
    [
@@ -7721,6 +7771,11 @@
   "family": "dynamics-0028",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='176' y1='100' x2='127' y2='100' stroke='#00574A' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#00574A'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#00574A'>6,300 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Moving right at 70 m/s; this average force acts against the motion for 0.0005 s</text>",
+   "alt": "Free-body diagram showing 6,300 N."
+  },
   "lookup": true,
   "terms": [
    [
@@ -7785,6 +7840,11 @@
   "family": "dynamics-0028",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='176' y1='100' x2='127' y2='100' stroke='#00574A' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#00574A'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#00574A'>82,973 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Moving right at 28 m/s; this average force acts against the motion for 0.203 s</text>",
+   "alt": "Free-body diagram showing 82,973 N."
+  },
   "lookup": true,
   "terms": [
    [
@@ -8566,6 +8626,11 @@
   "family": "dynamics-0032",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Spring force</text><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Support from the surface</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Spring force = stiffness × compression; it slows the block until its motion energy is stored</text>",
+   "alt": "Free-body diagram showing Spring force, Weight, Support from the surface."
+  },
   "lookup": true,
   "terms": [
    [
@@ -8587,7 +8652,7 @@
    ],
    [
     "x",
-    "spring compression or position"
+    "compression of the spring"
    ]
   ]
  },
@@ -8626,6 +8691,11 @@
   "family": "dynamics-0032",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Spring force</text><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Support from the surface</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Spring force = stiffness × compression; it slows the block until its motion energy is stored</text>",
+   "alt": "Free-body diagram showing Spring force, Weight, Support from the surface."
+  },
   "lookup": true,
   "terms": [
    [
@@ -8647,7 +8717,7 @@
    ],
    [
     "x",
-    "spring compression or position"
+    "compression of the spring"
    ]
   ]
  },
@@ -8686,6 +8756,11 @@
   "family": "dynamics-0032",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Spring force</text><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Support from the surface</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Spring force = stiffness × compression; it slows the block until its motion energy is stored</text>",
+   "alt": "Free-body diagram showing Spring force, Weight, Support from the surface."
+  },
   "lookup": true,
   "terms": [
    [
@@ -8707,7 +8782,7 @@
    ],
    [
     "x",
-    "spring compression or position"
+    "compression of the spring"
    ]
   ]
  },
@@ -8746,6 +8821,11 @@
   "family": "dynamics-0032",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Spring force</text><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Support from the surface</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Spring force = stiffness × compression; it slows the block until its motion energy is stored</text>",
+   "alt": "Free-body diagram showing Spring force, Weight, Support from the surface."
+  },
   "lookup": true,
   "terms": [
    [
@@ -8767,7 +8847,7 @@
    ],
    [
     "x",
-    "spring compression or position"
+    "compression of the spring"
    ]
   ]
  },

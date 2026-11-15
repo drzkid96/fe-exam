@@ -193,7 +193,12 @@
      "idea": "Perpendicular lines have slopes that are negative reciprocals of each other: m_{2} = -1 / m_{1}. Find the slope of the given line first, as rise over run.",
      "steps": "m_{1} = \\frac{7 - (2)}{5 - (1)} = 1.250.\n\nm_{2} = -\\frac{1}{1.250} = -0.800.",
      "answer": "-0.800",
-     "value": -0.8
+     "value": -0.8,
+     "figure": {
+      "viewBox": "0 0 400 190",
+      "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='200' y1='14' x2='200' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='208' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='200' y1='160' x2='297' y2='39' stroke='#00574A' stroke-width='3'/><path d='M304 30 L293 35 L301 42 Z' fill='#00574A'/><text x='314' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>given line</text><line x1='200' y1='160' x2='79' y2='63' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M70 56 L75 67 L82 59 Z' fill='#568CBB'/><text x='60' y='48' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>at 90°</text>",
+      "alt": "Vector diagram: given line; at 90°."
+     }
     },
     {
      "family": "math-0021",
@@ -214,7 +219,8 @@
       "circle",
       "distance between two points",
       "law of cosines",
-      "law of sines"
+      "law of sines",
+      "circular sector"
      ]
     }
    ],
@@ -292,7 +298,7 @@
     ],
     [
      "b",
-     "y-intercept, or a side or coefficient as given"
+     "side opposite angle B; in other questions, y-intercept of the line; in other questions, coefficient of y in the line equation"
     ],
     [
      "d",
@@ -308,7 +314,7 @@
     ],
     [
      "k",
-     "y-coordinate of the centre, or a rate constant"
+     "y-coordinate of the circle's centre"
     ],
     [
      "r",
@@ -316,15 +322,15 @@
     ],
     [
      "c",
-     "side opposite angle C, or a constant"
+     "side opposite angle C; in other questions, constant in the equation"
     ],
     [
      "a",
-     "side opposite angle A, or a coefficient as given"
+     "side opposite angle A; in other questions, coefficient of x in the line equation"
     ],
     [
      "C",
-     "third angle of the triangle, or the constant term of the line"
+     "angle between the two known sides, opposite side c; in other questions, constant term of the line equation"
     ],
     [
      "D",
@@ -336,11 +342,11 @@
     ],
     [
      "B",
-     "second vector, an angle of the triangle, or the line coefficient of y"
+     "angle opposite side b; in other questions, coefficient of y in the line equation"
     ],
     [
      "A",
-     "first vector, an angle of the triangle, or the line coefficient of x"
+     "angle opposite side a; in other questions, coefficient of x in the line equation Ax + By + C = 0"
     ]
    ]
   },
@@ -475,6 +481,13 @@
       "derivative",
       "test for a maximum"
      ]
+    },
+    {
+     "section": "Environmental Engineering",
+     "page": "310–354",
+     "find": [
+      "half-life"
+     ]
     }
    ],
    "deep": "A derivative is a rate of change: the slope of the curve at a point. An integral is an accumulation: the area under the curve between two limits. They undo each other, which is why the area under a velocity graph is distance and the slope of a distance graph is velocity.\n\nMaxima and minima occur where the first derivative is zero; the second derivative says which, negative for a maximum and positive for a minimum. A zero second derivative with a sign change marks an inflection point. On the exam nearly every calculus item is one of four moves: differentiate with the power, product or chain rule, find an extreme value, integrate a polynomial between limits, or apply L'Hopital's rule to a 0/0 limit.",
@@ -518,7 +531,7 @@
     ],
     [
      "s",
-     "arc length, position, or sample standard deviation"
+     "position of the particle"
     ]
    ]
   },
@@ -647,7 +660,8 @@
      "find": [
       "dot product",
       "cross product",
-      "vectors"
+      "vectors",
+      "unit vector"
      ]
     }
    ],
@@ -707,11 +721,11 @@
     ],
     [
      "A",
-     "first vector, an angle of the triangle, or the line coefficient of x"
+     "first vector"
     ],
     [
      "B",
-     "second vector, an angle of the triangle, or the line coefficient of y"
+     "second vector"
     ]
    ]
   },
@@ -904,15 +918,15 @@
     ],
     [
      "s",
-     "arc length, position, or sample standard deviation"
+     "sample standard deviation"
     ],
     [
      "C",
-     "third angle of the triangle, or the constant term of the line"
+     "number of combinations"
     ],
     [
      "n",
-     "sample size or number of trials"
+     "number of trials; in other questions, number of items to choose from; in other questions, sample size"
     ],
     [
      "p",

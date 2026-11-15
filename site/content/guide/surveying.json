@@ -420,6 +420,13 @@
       "trigonometry",
       "law of sines"
      ]
+    },
+    {
+     "section": "Units and Conversion Factors",
+     "page": "1–3",
+     "find": [
+      "acre"
+     ]
     }
    ],
    "deep": "Areas of land parcels are found from coordinates or from offsets. The coordinate method works for any closed polygon: half the absolute value of the sum of cross products of successive corners. For a boundary that curves, offsets measured at regular intervals from a baseline are combined with the trapezoidal rule or, for an even number of intervals, Simpson's 1/3 rule, which is more accurate.\n\nSimple figures use geometry directly: half the base times the height, or half the product of two sides and the sine of the included angle.",
@@ -486,7 +493,7 @@
     ],
     [
      "C",
-     "included angle, or correction"
+     "angle between the two known sides"
     ],
     [
      "w",
@@ -502,11 +509,11 @@
     ],
     [
      "d",
-     "depth or common interval"
+     "common interval between offsets"
     ],
     [
      "s",
-     "side slope (horizontal to 1 vertical), or half the perimeter"
+     "half the perimeter of the triangle"
     ]
    ]
   },
@@ -626,6 +633,13 @@
       "average end area",
       "earthwork formulas",
       "prismoidal formula"
+     ]
+    },
+    {
+     "section": "Mathematics",
+     "page": "34–62",
+     "find": [
+      "right circular cone"
      ]
     }
    ],
@@ -759,9 +773,9 @@
      "answer": "68.75 °",
      "value": 68.749494,
      "figure": {
-      "viewBox": "0 0 400 200",
-      "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='293' y2='71' stroke='#00574A' stroke-width='3'/><circle cx='293' cy='71' r='5' fill='#00574A'/><text x='303' y='65' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>azimuth 68.7°</text>",
-      "alt": "A line drawn from the origin at an azimuth of 68.7° clockwise from north."
+      "viewBox": "0 0 400 190",
+      "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='310' y2='67' stroke='#00574A' stroke-width='3'/><path d='M320 63 L308 62 L312 72 Z' fill='#00574A'/><text x='330' y='55' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A to B</text><line x1='70' y1='160' x2='309' y2='160' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M320 160 L309 154 L309 166 Z' fill='#568CBB'/><text x='330' y='152' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>departure</text><line x1='70' y1='160' x2='70' y2='74' stroke='#1B795A' stroke-width='3' stroke-dasharray='6 4'/><path d='M70 63 L64 74 L76 74 Z' fill='#1B795A'/><text x='60' y='55' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>latitude</text>",
+      "alt": "Vector diagram: A to B; departure; latitude."
      }
     },
     {
@@ -770,7 +784,12 @@
      "idea": "The difference in northings is the latitude of the line and the difference in eastings is its departure. The distance is the hypotenuse.",
      "steps": "Latitude = -30.00 m, departure = 127.50 m.\n\nDistance = \\sqrt{-30.00^{2} + 127.50^{2}} = 130.98 m.",
      "answer": "130.98 m",
-     "value": 130.981869
+     "value": 130.981869,
+     "figure": {
+      "viewBox": "0 0 400 190",
+      "svg": "<line x1='40' y1='101' x2='370' y2='101' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='101' x2='309' y2='157' stroke='#00574A' stroke-width='3'/><path d='M320 160 L311 152 L308 163 Z' fill='#00574A'/><text x='330' y='176' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A to B</text><line x1='70' y1='101' x2='309' y2='101' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M320 101 L309 96 L309 107 Z' fill='#568CBB'/><text x='330' y='93' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>departure</text><line x1='70' y1='101' x2='70' y2='149' stroke='#1B795A' stroke-width='3' stroke-dasharray='6 4'/><path d='M70 160 L76 149 L64 149 Z' fill='#1B795A'/><text x='60' y='176' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>latitude</text>",
+      "alt": "Vector diagram: A to B; departure; latitude."
+     }
     },
     {
      "family": "surveying-0027",
@@ -842,7 +861,7 @@
     ],
     [
      "N",
-     "northing, or the relative precision denominator"
+     "denominator of the relative precision, 1 in N; in other questions, northing"
     ]
    ]
   },
@@ -948,7 +967,12 @@
      "idea": "The vertical component of the slope distance is S sin(vertical angle). Add the instrument height, because the measurement starts above the ground, and subtract the rod height, because it ends above the ground.",
      "steps": "Difference = 101.2 sin 7.62° + 1.55 - 1.39 = 13.419 + 1.55 - 1.39 = 13.58 m.",
      "answer": "13.58 m",
-     "value": 13.579361
+     "value": 13.579361,
+     "figure": {
+      "viewBox": "0 0 400 190",
+      "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='309' y2='128' stroke='#00574A' stroke-width='3'/><path d='M320 127 L308 123 L310 133 Z' fill='#00574A'/><text x='330' y='119' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>sloping</text><line x1='70' y1='160' x2='309' y2='160' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M320 160 L309 154 L309 166 Z' fill='#568CBB'/><text x='330' y='152' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>level</text>",
+      "alt": "Vector diagram: sloping; level."
+     }
     }
    ],
    "lookup": [
@@ -991,7 +1015,7 @@
    "symbols": [
     [
      "c",
-     "side length, or the curvature and refraction correction"
+     "combined correction for earth curvature and refraction"
     ]
    ]
   }

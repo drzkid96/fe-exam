@@ -197,7 +197,12 @@
      "idea": "Stopping sight distance has two parts: the distance covered at full speed during perception and reaction, 1.47 V t, and the braking distance, V^{2} / (30 (a/32.2 ± G)). With V in mph the constants give feet. On a level road the grade term G is zero.",
      "steps": "Reaction distance = 1.47(55)(2.5) = 202.1 ft.\n\nBraking distance = \\frac{55^{2}}{30(11.2 / 32.2)} = \\frac{3,025}{10.43} = 289.9 ft.\n\nSSD = 202.1 + 289.9 = 492 ft.",
      "answer": "492 ft",
-     "value": 492.020833
+     "value": 492.020833,
+     "figure": {
+      "viewBox": "0 0 400 150",
+      "svg": "<rect x='60' y='60' width='115' height='26' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><rect x='175' y='60' width='165' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='118' y='50' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>Reaction</text><text x='258' y='50' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Braking</text><text x='118' y='104' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>202.1 ft</text><text x='258' y='104' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>289.9 ft</text><line x1='60' y1='122' x2='340' y2='122' stroke='#00242E'/><line x1='60' y1='116' x2='60' y2='128' stroke='#00242E'/><line x1='340' y1='116' x2='340' y2='128' stroke='#00242E'/><text x='200' y='138' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>492.0 ft in total</text>",
+      "alt": "Stopping distance split into 202.1 ft travelled during the driver's reaction and 289.9 ft while braking."
+     }
     },
     {
      "family": "transport-0002",
@@ -359,7 +364,7 @@
     ],
     [
      "deflection angle",
-     "the angle through which the alignment turns at the point of intersection of two tangents"
+     "on a horizontal curve, the angle through which the road turns where its two straight tangents meet; in curve layout the same words can also mean the angle from the tangent to a chord, which is half the angle that chord subtends at the centre"
     ],
     [
      "pvc",
@@ -413,7 +418,7 @@
     ],
     [
      "D",
-     "degree of curve, or directional split"
+     "degree of curve"
     ],
     [
      "V",
@@ -425,7 +430,7 @@
     ],
     [
      "K",
-     "rate of vertical curvature L / A, or the design-hour factor"
+     "rate of vertical curvature, L / A"
     ],
     [
      "A",
@@ -949,7 +954,8 @@
      "page": "259–309",
      "find": [
       "yellow interval",
-      "yellow"
+      "yellow",
+      "pedestrian"
      ]
     }
    ],
@@ -985,7 +991,7 @@
     ],
     [
      "y",
-     "yellow interval, or elevation on the curve"
+     "yellow interval"
     ],
     [
      "v",

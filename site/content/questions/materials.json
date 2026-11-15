@@ -611,7 +611,7 @@
   },
   "family": "materials-0003",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": [
    [
@@ -697,7 +697,7 @@
   },
   "family": "materials-0003",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "terms": [
    [
@@ -705,6 +705,92 @@
     "mass of water divided by mass of dry solids in a soil, as a percentage"
    ]
   ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
+ },
+ {
+  "id": "materials-0003-c",
+  "topic": "materials",
+  "subtopic": "materials-b",
+  "format": "match",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Place each test on the property it measures.",
+  "tokens": [
+   {
+    "id": "cbr",
+    "text": "California bearing ratio test"
+   },
+   {
+    "id": "cyl",
+    "text": "Cylinder break"
+   },
+   {
+    "id": "meter",
+    "text": "Pressure meter"
+   },
+   {
+    "id": "rock",
+    "text": "Rockwell test"
+   }
+  ],
+  "targets": [
+   {
+    "id": "hard",
+    "label": "Hardness of a metal"
+   },
+   {
+    "id": "air",
+    "label": "Air content of fresh concrete"
+   },
+   {
+    "id": "sub",
+    "label": "Strength of a subgrade soil"
+   },
+   {
+    "id": "comp",
+    "label": "Compressive strength of concrete"
+   }
+  ],
+  "answer": {
+   "cyl": "comp",
+   "rock": "hard",
+   "meter": "air",
+   "cbr": "sub"
+  },
+  "eli5": "Each material has a signature test. Wet concrete is checked for how easily it flows, asphalt for how it holds up when squeezed, metal for how it takes a sudden hit, and stone for how it wears.",
+  "solution": "A cylinder break gives the compressive strength of concrete. The Rockwell test presses an indenter into a metal to measure hardness. The pressure meter measures the air content of fresh concrete. The California bearing ratio test compares a soil's resistance to penetration with that of a standard crushed stone, as a measure of subgrade strength.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": [
+     "hardness",
+     "impact test"
+    ]
+   }
+  ],
+  "tags": [
+   "test methods",
+   "slump",
+   "marshall",
+   "charpy"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard test methods: ASTM C39 (compressive strength of cylinders), ASTM E18 (Rockwell hardness), ASTM C231 (air content by the pressure method), ASTM D1883 (California bearing ratio)"
+  },
+  "family": "materials-0003",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
   "needs": [
    [
     "mechmat-b",
@@ -999,7 +1085,9 @@
    {
     "section": "Materials Science/Structure of Matter",
     "page": "94–106",
-    "find": []
+    "find": [
+     "water-cement ratio"
+    ]
    }
   ],
   "tags": [],
@@ -1010,7 +1098,7 @@
   "family": "materials-0005",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "specific gravity",
@@ -1059,7 +1147,9 @@
    {
     "section": "Materials Science/Structure of Matter",
     "page": "94–106",
-    "find": []
+    "find": [
+     "water-cement ratio"
+    ]
    }
   ],
   "tags": [],
@@ -1070,7 +1160,7 @@
   "family": "materials-0005",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "specific gravity",
@@ -1119,7 +1209,9 @@
    {
     "section": "Materials Science/Structure of Matter",
     "page": "94–106",
-    "find": []
+    "find": [
+     "water-cement ratio"
+    ]
    }
   ],
   "tags": [],
@@ -1130,7 +1222,7 @@
   "family": "materials-0005",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "specific gravity",
@@ -1179,7 +1271,9 @@
    {
     "section": "Materials Science/Structure of Matter",
     "page": "94–106",
-    "find": []
+    "find": [
+     "water-cement ratio"
+    ]
    }
   ],
   "tags": [],
@@ -1190,7 +1284,7 @@
   "family": "materials-0005",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "specific gravity",
@@ -1468,7 +1562,7 @@
   },
   "family": "materials-0007",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": [
    [
@@ -1525,7 +1619,64 @@
   },
   "family": "materials-0007",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
+ },
+ {
+  "id": "materials-0007-c",
+  "topic": "materials",
+  "subtopic": "materials-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Which property does a Charpy test measure?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Hardness"
+   },
+   {
+    "id": "b",
+    "text": "Impact toughness"
+   },
+   {
+    "id": "c",
+    "text": "Tensile strength"
+   },
+   {
+    "id": "d",
+    "text": "Fatigue life"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Mechanical tests each target one property. Hardness tests (Brinell, Rockwell) measure resistance to indentation. The Charpy test breaks a notched bar with a pendulum and measures the energy absorbed, which is impact toughness. Fatigue tests apply cyclic load; creep tests apply sustained load at temperature.",
+  "solution": "A Charpy test breaks a notched bar with a swinging pendulum and records the energy absorbed. That energy is a measure of the material's toughness under sudden loading.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": [
+     "hardness"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard test definitions"
+  },
+  "family": "materials-0007",
+  "version": 3,
+  "versions": 3,
   "lookup": true,
   "needs": [
    [
@@ -1582,7 +1733,7 @@
   },
   "family": "materials-0008",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "terms": [
    [
@@ -1645,7 +1796,70 @@
   },
   "family": "materials-0008",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": true,
+  "terms": [
+   [
+    "yield strength",
+    "the stress at which a metal stops springing back and starts to deform permanently"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
+ },
+ {
+  "id": "materials-0008-c",
+  "topic": "materials",
+  "subtopic": "materials-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "What is the minimum yield strength of Grade 420 (metric) reinforcing steel?",
+  "options": [
+   {
+    "id": "a",
+    "text": "280 MPa"
+   },
+   {
+    "id": "b",
+    "text": "420 MPa"
+   },
+   {
+    "id": "c",
+    "text": "520 MPa"
+   },
+   {
+    "id": "d",
+    "text": "620 MPa"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Steel grades are named or specified by minimum yield strength. A36 has 250 MPa (36 ksi). A992, used for wide-flange shapes, has 345 MPa (50 ksi). Grade 60 reinforcing bar has 420 MPa (60 ksi).",
+  "solution": "The grade number of reinforcing steel is its minimum yield strength: Grade 420 yields at 420 MPa, the metric counterpart of Grade 60 (60 ksi).",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "reinforcement bar"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "ASTM A615 grade designations"
+  },
+  "family": "materials-0008",
+  "version": 3,
+  "versions": 3,
   "lookup": true,
   "terms": [
    [
@@ -2161,7 +2375,7 @@
   },
   "family": "materials-0011",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "terms": [
    [
@@ -2225,12 +2439,80 @@
   },
   "family": "materials-0011",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "terms": [
    [
     "strain",
     "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
+ },
+ {
+  "id": "materials-0011-c",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "What does the slope of the straight, initial part of a stress-strain curve represent?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Toughness"
+   },
+   {
+    "id": "b",
+    "text": "Yield strength"
+   },
+   {
+    "id": "c",
+    "text": "Modulus of elasticity"
+   },
+   {
+    "id": "d",
+    "text": "Ductility"
+   }
+  ],
+  "answer": "c",
+  "eli5": "The area under a stress-strain curve is energy per unit volume. Up to the yield point it is the modulus of resilience, the energy the material can absorb and fully recover. Up to fracture it is the toughness.",
+  "solution": "While the material is elastic, stress is proportional to strain. The constant of proportionality, the slope of that straight line, is the modulus of elasticity: the material's stiffness.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": [
+     "toughness",
+     "stress-strain"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Hooke's law"
+  },
+  "family": "materials-0011",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "terms": [
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ],
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
    ]
   ],
   "needs": [
@@ -2262,7 +2544,9 @@
    {
     "section": "Materials Science/Structure of Matter",
     "page": "94–106",
-    "find": []
+    "find": [
+     "water-cement ratio"
+    ]
    }
   ],
   "tags": [],
@@ -2273,7 +2557,7 @@
   "family": "materials-0012",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "saturated surface-dry",
@@ -2307,7 +2591,9 @@
    {
     "section": "Materials Science/Structure of Matter",
     "page": "94–106",
-    "find": []
+    "find": [
+     "water-cement ratio"
+    ]
    }
   ],
   "tags": [],
@@ -2318,7 +2604,7 @@
   "family": "materials-0012",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "saturated surface-dry",
@@ -2352,7 +2638,9 @@
    {
     "section": "Materials Science/Structure of Matter",
     "page": "94–106",
-    "find": []
+    "find": [
+     "water-cement ratio"
+    ]
    }
   ],
   "tags": [],
@@ -2363,7 +2651,7 @@
   "family": "materials-0012",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "saturated surface-dry",
@@ -2397,7 +2685,9 @@
    {
     "section": "Materials Science/Structure of Matter",
     "page": "94–106",
-    "find": []
+    "find": [
+     "water-cement ratio"
+    ]
    }
   ],
   "tags": [],
@@ -2408,7 +2698,7 @@
   "family": "materials-0012",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "saturated surface-dry",
@@ -2614,7 +2904,9 @@
    {
     "section": "Materials Science/Structure of Matter",
     "page": "94–106",
-    "find": []
+    "find": [
+     "concrete"
+    ]
    }
   ],
   "tags": [],
@@ -2625,7 +2917,7 @@
   "family": "materials-0014",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "specific gravity",
@@ -2655,7 +2947,9 @@
    {
     "section": "Materials Science/Structure of Matter",
     "page": "94–106",
-    "find": []
+    "find": [
+     "concrete"
+    ]
    }
   ],
   "tags": [],
@@ -2666,7 +2960,7 @@
   "family": "materials-0014",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "specific gravity",
@@ -2696,7 +2990,9 @@
    {
     "section": "Materials Science/Structure of Matter",
     "page": "94–106",
-    "find": []
+    "find": [
+     "concrete"
+    ]
    }
   ],
   "tags": [],
@@ -2707,7 +3003,7 @@
   "family": "materials-0014",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "specific gravity",
@@ -2737,7 +3033,9 @@
    {
     "section": "Materials Science/Structure of Matter",
     "page": "94–106",
-    "find": []
+    "find": [
+     "concrete"
+    ]
    }
   ],
   "tags": [],
@@ -2748,7 +3046,7 @@
   "family": "materials-0014",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "specific gravity",
@@ -3194,7 +3492,9 @@
    {
     "section": "Materials Science/Structure of Matter",
     "page": "94–106",
-    "find": []
+    "find": [
+     "tensile strength"
+    ]
    }
   ],
   "tags": [],
@@ -3205,7 +3505,7 @@
   "family": "materials-0017",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "mechmat-b",
@@ -3235,7 +3535,9 @@
    {
     "section": "Materials Science/Structure of Matter",
     "page": "94–106",
-    "find": []
+    "find": [
+     "tensile strength"
+    ]
    }
   ],
   "tags": [],
@@ -3246,7 +3548,7 @@
   "family": "materials-0017",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "mechmat-b",
@@ -3276,7 +3578,9 @@
    {
     "section": "Materials Science/Structure of Matter",
     "page": "94–106",
-    "find": []
+    "find": [
+     "tensile strength"
+    ]
    }
   ],
   "tags": [],
@@ -3287,7 +3591,7 @@
   "family": "materials-0017",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "mechmat-b",
@@ -3317,7 +3621,9 @@
    {
     "section": "Materials Science/Structure of Matter",
     "page": "94–106",
-    "find": []
+    "find": [
+     "tensile strength"
+    ]
    }
   ],
   "tags": [],
@@ -3328,7 +3634,7 @@
   "family": "materials-0017",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "mechmat-b",
@@ -3384,7 +3690,7 @@
    ],
    [
     "d",
-    "depth or diameter of the specimen"
+    "depth of the test beam (its diameter, for a cylinder)"
    ],
    [
     "R",
@@ -3396,7 +3702,7 @@
    ],
    [
     "L",
-    "span or length of the specimen"
+    "length of the test specimen (its span, in a beam test)"
    ]
   ]
  },
@@ -3447,7 +3753,7 @@
    ],
    [
     "d",
-    "depth or diameter of the specimen"
+    "depth of the test beam (its diameter, for a cylinder)"
    ],
    [
     "R",
@@ -3459,7 +3765,7 @@
    ],
    [
     "L",
-    "span or length of the specimen"
+    "length of the test specimen (its span, in a beam test)"
    ]
   ]
  },
@@ -3510,7 +3816,7 @@
    ],
    [
     "d",
-    "depth or diameter of the specimen"
+    "depth of the test beam (its diameter, for a cylinder)"
    ],
    [
     "R",
@@ -3522,7 +3828,7 @@
    ],
    [
     "L",
-    "span or length of the specimen"
+    "length of the test specimen (its span, in a beam test)"
    ]
   ]
  },
@@ -3573,7 +3879,7 @@
    ],
    [
     "d",
-    "depth or diameter of the specimen"
+    "depth of the test beam (its diameter, for a cylinder)"
    ],
    [
     "R",
@@ -3585,7 +3891,7 @@
    ],
    [
     "L",
-    "span or length of the specimen"
+    "length of the test specimen (its span, in a beam test)"
    ]
   ]
  },
@@ -4336,9 +4642,11 @@
   "solution": "u_{r} = \\frac{250^{2}}{2(200,000)} = 0.15625 MPa = 156.2 kJ/m^{3}.",
   "handbook": [
    {
-    "section": "Materials Science/Structure of Matter",
-    "page": "94–106",
-    "find": []
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "elastic strain energy"
+    ]
    }
   ],
   "tags": [],
@@ -4349,7 +4657,7 @@
   "family": "materials-0023",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "yield strength",
@@ -4397,9 +4705,11 @@
   "solution": "u_{r} = \\frac{345^{2}}{2(200,000)} = 0.29756 MPa = 297.6 kJ/m^{3}.",
   "handbook": [
    {
-    "section": "Materials Science/Structure of Matter",
-    "page": "94–106",
-    "find": []
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "elastic strain energy"
+    ]
    }
   ],
   "tags": [],
@@ -4410,7 +4720,7 @@
   "family": "materials-0023",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "yield strength",
@@ -4458,9 +4768,11 @@
   "solution": "u_{r} = \\frac{275^{2}}{2(70,000)} = 0.54018 MPa = 540.2 kJ/m^{3}.",
   "handbook": [
    {
-    "section": "Materials Science/Structure of Matter",
-    "page": "94–106",
-    "find": []
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "elastic strain energy"
+    ]
    }
   ],
   "tags": [],
@@ -4471,7 +4783,7 @@
   "family": "materials-0023",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "yield strength",
@@ -4519,9 +4831,11 @@
   "solution": "u_{r} = \\frac{298^{2}}{2(70,000)} = 0.63431 MPa = 634.3 kJ/m^{3}.",
   "handbook": [
    {
-    "section": "Materials Science/Structure of Matter",
-    "page": "94–106",
-    "find": []
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "elastic strain energy"
+    ]
    }
   ],
   "tags": [],
@@ -4532,7 +4846,7 @@
   "family": "materials-0023",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "yield strength",
@@ -4580,9 +4894,11 @@
   "solution": "E_{c} = 4,700\\sqrt{28} = 24,870 MPa.\n\nn = \\frac{200,000}{24,870} = 8.04.",
   "handbook": [
    {
-    "section": "Materials Science/Structure of Matter",
-    "page": "94–106",
-    "find": []
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "modular ratio"
+    ]
    }
   ],
   "tags": [],
@@ -4593,7 +4909,7 @@
   "family": "materials-0024",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "mechmat-b",
@@ -4635,9 +4951,11 @@
   "solution": "E_{c} = 4,700\\sqrt{35} = 27,806 MPa.\n\nn = \\frac{200,000}{27,806} = 7.19.",
   "handbook": [
    {
-    "section": "Materials Science/Structure of Matter",
-    "page": "94–106",
-    "find": []
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "modular ratio"
+    ]
    }
   ],
   "tags": [],
@@ -4648,7 +4966,7 @@
   "family": "materials-0024",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "mechmat-b",
@@ -4690,9 +5008,11 @@
   "solution": "E_{c} = 4,700\\sqrt{21} = 21,538 MPa.\n\nn = \\frac{200,000}{21,538} = 9.29.",
   "handbook": [
    {
-    "section": "Materials Science/Structure of Matter",
-    "page": "94–106",
-    "find": []
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "modular ratio"
+    ]
    }
   ],
   "tags": [],
@@ -4703,7 +5023,7 @@
   "family": "materials-0024",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "mechmat-b",
@@ -4745,9 +5065,11 @@
   "solution": "E_{c} = 4,700\\sqrt{32} = 26,587 MPa.\n\nn = \\frac{200,000}{26,587} = 7.52.",
   "handbook": [
    {
-    "section": "Materials Science/Structure of Matter",
-    "page": "94–106",
-    "find": []
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "modular ratio"
+    ]
    }
   ],
   "tags": [],
@@ -4758,7 +5080,7 @@
   "family": "materials-0024",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "mechmat-b",

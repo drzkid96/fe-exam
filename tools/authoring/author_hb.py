@@ -2,7 +2,7 @@
 '-' marks a question that is not a handbook lookup (a rule to know, or plain arithmetic). 'Section::terms' overrides the section."""
 import json, os, glob
 from author_common import ROOT, HBP
-HBP = dict(HBP); HBP.setdefault('Safety', '13–33'); HBP.setdefault('Chemical Engineering', '238–258')
+HBP = dict(HBP); HBP.setdefault('Safety', '13–33'); HBP.setdefault('Chemical Engineering', '238–258'); HBP.setdefault('Units and Conversion Factors', '1–3'); HBP.setdefault('Chemistry and Biochemistry', '85–93'); HBP.setdefault('Industrial and Systems Engineering', '417–430'); HBP.setdefault('Mechanical Engineering', '431–460')
 MM, CE, EN, MA, PS = 'Mechanics of Materials', 'Civil Engineering', 'Environmental Engineering', 'Mathematics', 'Engineering Probability and Statistics'
 FIND = {
  'statics-0001': 'resultant; resolution of a force', 'statics-0002': 'equilibrium requirements; systems of forces', 'statics-0003': 'centroid', 'statics-0004': 'friction',
@@ -66,6 +66,16 @@ def terms_of(v, default=None):
         t = FIX.get(t.strip(), t.strip())
         if t and t not in out: out.append(t)
     return sec, out
+EN_, MM_, MA_, MS_, CE_, EC_, ET_ = 'Environmental Engineering', 'Mechanics of Materials', 'Mathematics', 'Materials Science/Structure of Matter', 'Civil Engineering', 'Engineering Economics', 'Ethics and Professional Practice'
+FIND.update({'econ-0023': EC_ + '::payback', 'ethics-0005': ET_ + '::negligence', 'ethics-0013': ET_ + '::negligence', 'ethics-0007': ET_ + '::contract', 'ethics-0008': ET_ + '::contract',
+ 'geotech-0042': CE_ + '::at rest', 'geotech-0046': CE_ + '::eccentric', 'geotech-0051': CE_ + '::overconsolidation', 'geotech-0054': CE_ + '::compaction',
+ 'materials-0005': MS_ + '::water-cement ratio', 'materials-0012': MS_ + '::water-cement ratio', 'materials-0014': MS_ + '::concrete', 'materials-0017': MS_ + '::tensile strength', 'materials-0024': MM_ + '::modular ratio',
+ 'math-0023': MA_ + '::circular sector', 'math-0027': EN_ + '::half-life', 'math-0030': MA_ + '::unit vector', 'structural-0033': CE_ + '::determinacy', 'structural-0034': CE_ + '::determinacy', 'structural-0035': CE_ + '::fixed-end',
+ 'transport-0031': CE_ + '::load equivalency', 'transport-0032': CE_ + '::load equivalency', 'transport-0039': CE_ + '::pedestrian', 'water-0024': EN_ + '::chlorine', 'water-0036': CE_ + '::infiltration', 'water-0053': CE_ + '::storativity',
+ 'construction-0027': 'Industrial and Systems Engineering::PERT', 'geotech-0039': CE_ + '::exit gradient', 'geotech-0030': CE_ + '::plasticity index', 'materials-0023': MM_ + '::elastic strain energy',
+ 'water-0058': 'Chemistry and Biochemistry::acids, bases, and ph', 'water-0065': EN_ + '::CT value', 'water-0017': CE_ + '::sewage flow', 'surveying-0022': 'Units and Conversion Factors::acre', 'surveying-0025': MA_ + '::right circular cone',
+ 'structural-0014': CE_ + '::tributary area', 'structural-0038': CE_ + '::tributary area', 'mechmat-0021': 'Mechanical Engineering::crushing',
+ 'water-0055': EN_ + '::mass balance', 'water-0056': EN_ + '::alkalinity', 'water-0057': EN_ + '::mass balance', 'water-0059': EN_ + '::suspended solids', 'water-0063': EN_ + '::filtration'})
 def main():
   global n, miss, none
   n = miss = none = 0

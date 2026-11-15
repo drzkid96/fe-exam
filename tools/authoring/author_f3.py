@@ -57,7 +57,7 @@ NQ('math-d', PS + '::confidence interval', '', 3, 3.92, "A sample of [n] measure
 NQ('math-d', PS + '::coefficient of variation', '%', 1, 22.6, "A sample of five values is [data]. What is its coefficient of variation, using the sample standard deviation?",
    "The coefficient of variation expresses scatter relative to size: the standard deviation divided by the mean. The sample standard deviation divides the sum of squared deviations by n - 1.",
    r"Mean = [sum(data)/5|2]. Sample standard deviation = [sd(data)|3]. || CV = \frac{[sd(data)|3]}{[sum(data)/5|2]} × 100 = [ans|1]%.",
-   "sd(data)/(sum(data)/5)*100", data=[[10, 12, 14, 16, 18], [4, 7, 7, 9, 13], [20, 25, 30, 45, 55]])
+   "sd(data)/(sum(data)/5)*100", data=[[10, 12, 14, 16, 18], [4, 7, 7, 9, 13], [20, 25, 30, 45, 55], [3, 5, 8, 10, 14]])
 NQ('math-d', PS + '::conditional probability', '', 4, 0.1333, "A box holds [r] red and [b] blue parts. Two parts are drawn at random without replacement. What is the probability that both are red?",
    "Without replacement the second draw depends on the first. Multiply the probability of red on the first draw by the probability of red on the second, given one red is already gone.",
    r"P = \frac{[r]}{[r+b]} × \frac{[r-1]}{[r+b-1]} = [r/(r+b)|4] × [(r-1)/(r+b-1)|4] = [ans|4].",
@@ -224,7 +224,7 @@ NQ('dynamics-d', 'principle of work and energy; friction', 'm/s', 2, 5.66, "A bl
 NQ('mechmat-a', 'shear and moment diagrams', 'kN·m', 2, 30.72, "A simply supported beam spans [L] m. A uniform load of [w] kN/m covers the first [a] m from the left support only. What is the maximum bending moment?",
    "The maximum moment is where the shear is zero. Under a uniform load the shear falls by w for every metre, so it reaches zero a distance (left reaction) / w from the left support. The moment there is the area of the shear triangle up to that point.",
    r"Left reaction = \frac{[w]([a])([L] - [a/2|2])}{[L]} = [w*a*(L-a/2)/L|3] kN. || Zero shear at \frac{[w*a*(L-a/2)/L|3]}{[w]} = [a*(L-a/2)/L|2] m, inside the loaded length. || M_{max} = \frac{1}{2}([w*a*(L-a/2)/L|3])([a*(L-a/2)/L|2]) = [ans|2] kN·m.",
-   "(w*a*(L-a/2)/L)**2/(2*w)", L=[10, 8, 12], w=[6, 10, 4], a=[4, 5, 6])
+   "(w*a*(L-a/2)/L)**2/(2*w)", L=[10, 8, 12, 9], w=[6, 10, 4, 8], a=[4, 5, 6, 4.5])
 NQ('mechmat-a', 'shear and moment diagrams', 'kN·m', 1, 14, "A beam rests on supports A and B, [L] m apart, and overhangs [a] m beyond B. It carries [P1] kN at [c] m from A and [P2] kN at the tip of the overhang. What is the largest bending moment magnitude in the beam?",
    "The moment peaks where the shear changes sign: under the load in the span and over support B. The moment at B is simply the overhang load times its arm, and it is negative. Compare the two magnitudes.",
    r"Moment at B = -[P2]([a]) = -[P2*a|1] kN·m. || Reaction at A = \frac{[P1]([L] - [c]) - [P2]([a])}{[L]} = [(P1*(L-c)-P2*a)/L|3] kN, so the moment under the span load = [(P1*(L-c)-P2*a)/L|3] × [c] = [(P1*(L-c)-P2*a)/L*c|1] kN·m. || The larger magnitude is [ans|1] kN·m.",

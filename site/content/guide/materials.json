@@ -117,7 +117,7 @@
      "text": "The water-cement ratio is the mass of water divided by the mass of cement. It is the main control on concrete strength and durability: a lower ratio gives stronger, less permeable concrete but less workability."
     },
     {
-     "title": "",
+     "title": "Water-cement ratio",
      "text": "In the absolute volume method each ingredient's volume is its mass divided by (specific gravity × density of water). The absolute volumes of cement, water, aggregates and air must add up to one cubic metre."
     },
     {
@@ -125,7 +125,7 @@
      "text": "Asphalt content is normally expressed as binder mass over total mix mass, not over aggregate mass. The two bases give different numbers, so check which one a specification uses."
     },
     {
-     "title": "",
+     "title": "Water-cement ratio",
      "text": "Mix designs assume saturated surface-dry aggregate. Moisture beyond the absorption is free water that would raise the water-cement ratio, so it is found and taken off the batch water."
     },
     {
@@ -189,6 +189,14 @@
      "page": "259–309",
      "find": [
       "water-cement ratio"
+     ]
+    },
+    {
+     "section": "Materials Science/Structure of Matter",
+     "page": "94–106",
+     "find": [
+      "water-cement ratio",
+      "concrete"
      ]
     }
    ],
@@ -335,7 +343,8 @@
      "page": "94–106",
      "find": [
       "hardness",
-      "impact test"
+      "impact test",
+      "tensile strength"
      ]
     },
     {
@@ -508,7 +517,9 @@
      "page": "130–142",
      "find": [
       "Hooke's law",
-      "modulus of elasticity"
+      "modulus of elasticity",
+      "elastic strain energy",
+      "modular ratio"
      ]
     },
     {

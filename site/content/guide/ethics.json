@@ -188,7 +188,15 @@
     }
    ],
    "examples": [],
-   "lookup": [],
+   "lookup": [
+    {
+     "section": "Ethics and Professional Practice",
+     "page": "4–12",
+     "find": [
+      "negligence"
+     ]
+    }
+   ],
    "deep": "Professional liability is the legal side of ethics. An engineer who agrees to do work owes a duty of care to the client and to anyone who could foreseeably be harmed. Falling below the standard of care, and so causing damage, is negligence.\n\nContracts allocate that risk. Indemnification clauses shift it, limitation-of-liability clauses cap it and insurance pays for it. Good practice reduces it: a clear scope, documented decisions, checking and staying within one's competence.",
    "method": [
     "Check the four elements of negligence: duty, breach, causation, damages.",

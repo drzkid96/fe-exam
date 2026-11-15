@@ -147,7 +147,7 @@ NQ('econ-a', 'inflation', '%', 2, 4.85, "An investment earns a market interest r
 NQ('econ-b', 'MACRS', '$', 0, 16000, "Equipment costing $[C], with an expected salvage value of $[Sv], is depreciated by MACRS. The MACRS factor for year [yr] is [fac|2]%. What is the depreciation in year [yr]?",
    "MACRS depreciation is the tabulated factor times the full cost. Salvage value is not subtracted, unlike straight-line depreciation, because the factors already write the asset down to zero.",
    "D = [fac/100|4] × [C] = $[ans|0]. The salvage value plays no part.",
-   "fac/100*C", wrong=["fac/100*(C-Sv)", "C/5", "(C-Sv)/5"], C=[50000, 120000, 36000], Sv=[5000, 20000, 6000], fac=[32, 19.2, 11.52], yr=['2', '3', '4'])
+   "fac/100*C", wrong=["fac/100*(C-Sv)", "C/5", "(C-Sv)/5"], C=[50000, 120000, 36000, 80000], Sv=[5000, 20000, 6000, 8000], fac=[32, 19.2, 11.52, 5.76], yr=['2', '3', '4', '6'])
 NQ('econ-b', 'Chemical Engineering::cost indexes', '$', 0, 2600000, "A facility cost $[C1] when the construction cost index stood at [I1]. The index is now [I2]. What would the same facility cost today?",
    "A cost index tracks how construction prices change over time. Scale a historical cost by the ratio of the current index to the index when the cost was recorded.",
    r"Cost today = [C1] × \frac{[I2]}{[I1]} = $[ans|0].",

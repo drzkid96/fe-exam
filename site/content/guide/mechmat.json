@@ -203,9 +203,9 @@
      "answer": "57.6 kN·m",
      "value": 57.6,
      "figure": {
-      "viewBox": "0 0 400 165",
-      "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>5 kN/m</text><line x1='350' y1='2' x2='350' y2='36' stroke='#00574A' stroke-width='3'/><path d='M350 44 L344 32 L356 32 Z' fill='#00574A'/><text x='342' y='12' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>10 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3.2 m</text>",
-      "alt": "A beam 3.2 m long, fixed at the left end, a uniform load of 5 kN/m from 0 to 3.2 m, a 10 kN load at 3.2 m."
+      "viewBox": "0 0 400 180",
+      "svg": "<path d='M60 70 L60 24 L67 26 L74 28 L81 31 L88 33 L95 35 L102 37 L109 39 L116 41 L123 42 L130 44 L137 46 L144 47 L151 49 L158 51 L165 52 L172 53 L179 55 L186 56 L193 57 L200 58 L207 60 L214 61 L221 62 L228 63 L235 64 L242 64 L249 65 L256 66 L263 67 L270 67 L277 68 L284 68 L291 69 L298 69 L305 69 L312 70 L319 70 L326 70 L333 70 L340 70 L340 70 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='70' x2='360' y2='70' stroke='#00242E' stroke-width='2'/><text x='64' y='16' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>57.6 kN·m at the fixed support</text><line x1='60' y1='138' x2='340' y2='138' stroke='#00242E'/><line x1='60' y1='132' x2='60' y2='144' stroke='#00242E'/><line x1='340' y1='132' x2='340' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3.2 m</text><text x='200' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Bending moment along the beam (sagging plotted downward)</text>",
+      "alt": "Bending moment diagram for a 3.2 m beam with a largest moment of 57.6 kN·m at the fixed support."
      }
     },
     {
@@ -448,7 +448,12 @@
      "idea": "A free bar would lengthen by (coefficient × temperature change × L). The walls prevent that, which is the same as compressing the bar by the same strain. Stress = E × coefficient × temperature change, independent of length and area.",
      "steps": "Restrained strain = 12 × 10^{-6} × 75 = 900 × 10^{-6}.\n\nStress = E × strain = (200,000 MPa)(900 × 10^{-6}) = 180.0 MPa (compression).",
      "answer": "180.0 MPa",
-     "value": 180.0
+     "value": 180.0,
+     "figure": {
+      "viewBox": "0 0 400 150",
+      "svg": "<rect x='90' y='75' width='220' height='22' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='116' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Heated bar: it tries to lengthen</text><rect x='76' y='50' width='14' height='72' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='310' y='50' width='14' height='72' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='90' y1='62' x2='126' y2='62' stroke='#568CBB' stroke-width='3'/><path d='M134 62 L122 56 L122 68 Z' fill='#568CBB'/><text x='140' y='66' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>wall pushes back</text><line x1='310' y1='46' x2='274' y2='46' stroke='#568CBB' stroke-width='3'/><path d='M266 46 L278 40 L278 52 Z' fill='#568CBB'/><text x='260' y='50' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>wall pushes back</text><text x='200' y='142' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Expansion is prevented, so the bar is squeezed to 180.0 MPa</text>",
+      "alt": "A bar held between rigid supports with wall pushes back; wall pushes back. Expansion is prevented, so the bar is squeezed to 180.0 MPa."
+     }
     },
     {
      "family": "mechmat-0020",
@@ -456,7 +461,12 @@
      "idea": "In double shear the bolt is cut on two planes, so each plane carries half the load. Average shear stress is the force on one plane divided by the bolt's cross-sectional area.",
      "steps": "A = \\frac{π(18)^{2}}{4} = 254.5 mm^{2}.\n\nStress = \\frac{67,000 / 2}{254.5} = 131.6 MPa.",
      "answer": "131.6 MPa",
-     "value": 131.646681
+     "value": 131.646681,
+     "figure": {
+      "viewBox": "0 0 400 160",
+      "svg": "<rect x='60' y='46' width='190' height='16' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='60' y='98' width='190' height='16' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='170' y='70' width='180' height='20' fill='#D9F1D6' stroke='#00242E' stroke-width='2'/><rect x='200' y='34' width='18' height='92' fill='#1B795A' stroke='#00242E' stroke-width='2'/><line x1='180' y1='66' x2='240' y2='66' stroke='#568CBB' stroke-width='2' stroke-dasharray='6 4'/><line x1='180' y1='94' x2='240' y2='94' stroke='#568CBB' stroke-width='2' stroke-dasharray='6 4'/><line x1='350' y1='80' x2='384' y2='80' stroke='#00574A' stroke-width='3'/><path d='M392 80 L380 74 L380 86 Z' fill='#00574A'/><text x='392' y='68' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>67 kN</text><line x1='60' y1='54' x2='26' y2='54' stroke='#00574A' stroke-width='3'/><path d='M18 54 L30 48 L30 60 Z' fill='#00574A'/><line x1='60' y1='106' x2='26' y2='106' stroke='#00574A' stroke-width='3'/><path d='M18 106 L30 100 L30 112 Z' fill='#00574A'/><text x='18' y='42' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>33.5 kN</text><text x='18' y='126' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>33.5 kN</text><text x='250' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Two shear planes (dashed): each carries half the force</text>",
+      "alt": "A pin through a clevis in double shear. The middle plate pulls with 67 kN and each outer plate with 33.5 kN, so the pin is cut on two planes."
+     }
     },
     {
      "family": "mechmat-0021",
@@ -464,7 +474,12 @@
      "idea": "Bearing stress is taken on the projected area of contact, the bolt diameter times the plate thickness, not on the curved surface.",
      "steps": "Bearing stress = \\frac{P}{d t} = \\frac{46,000}{19(10)} = 242.1 MPa.",
      "answer": "242.1 MPa",
-     "value": 242.105263
+     "value": 242.105263,
+     "figure": {
+      "viewBox": "0 0 400 168",
+      "svg": "<rect x='70' y='70' width='260' height='34' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='182' y='36' width='36' height='102' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='182' y='70' width='36' height='34' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='218' y1='52' x2='282' y2='52' stroke='#00574A' stroke-width='3'/><path d='M290 52 L278 46 L278 58 Z' fill='#00574A'/><text x='296' y='56' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>46 kN</text><line x1='182' y1='150' x2='218' y2='150' stroke='#00242E'/><line x1='182' y1='144' x2='182' y2='156' stroke='#00242E'/><line x1='218' y1='144' x2='218' y2='156' stroke='#00242E'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>bolt 19 mm</text><text x='62' y='91' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>plate 10 mm</text><text x='200' y='22' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>Bearing area = 19 × 10 = 190 mm²</text>",
+      "alt": "A 19 mm bolt passing through a 10 mm plate. The bearing area is the bolt diameter times the plate thickness, 190 mm²."
+     }
     }
    ],
    "lookup": [
@@ -485,6 +500,13 @@
       "transverse shear",
       "Poisson's ratio",
       "shear stress-strain"
+     ]
+    },
+    {
+     "section": "Mechanical Engineering",
+     "page": "431–460",
+     "find": [
+      "crushing"
      ]
     }
    ],
@@ -747,7 +769,12 @@
      "idea": "Bars in series carry the same force, and their elongations add. Write the total as P times the sum of L / (A E) for the two bars, then solve for P. Working in N and mm gives the force in N.",
      "steps": "\\frac{L}{AE}: steel \\frac{1,400}{575(200,000)} = 1.2174 × 10^{-5} mm/N; aluminium \\frac{1,350}{850(70,000)} = 2.2689 × 10^{-5} mm/N.\n\nP = \\frac{2.2}{3.4863 × 10^{-5}} = 63,104 N = 63.1 kN.",
      "answer": "63.1 kN",
-     "value": 63.104171
+     "value": 63.104171,
+     "figure": {
+      "viewBox": "0 0 400 150",
+      "svg": "<rect x='90' y='75' width='112' height='22' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='146' y='116' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Steel 1,400 mm</text><rect x='202' y='75' width='108' height='22' fill='#D9F1D6' stroke='#00242E' stroke-width='2'/><text x='256' y='116' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Aluminium 1,350 mm</text><rect x='76' y='50' width='14' height='72' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='310' y1='62' x2='346' y2='62' stroke='#00574A' stroke-width='3'/><path d='M354 62 L342 56 L342 68 Z' fill='#00574A'/><text x='360' y='66' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>63.1 kN</text><text x='200' y='142' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>The same force passes through both bars; their stretches add</text>",
+      "alt": "A bar with 63.1 kN. The same force passes through both bars; their stretches add."
+     }
     },
     {
      "family": "mechmat-0029",
@@ -842,7 +869,7 @@
     ],
     [
      "P",
-     "axial force or point load"
+     "axial force in the bar"
     ],
     [
      "A",
@@ -965,7 +992,12 @@
      "idea": "In a thin-walled cylinder the circumferential (hoop) stress is p r / t and the longitudinal stress is p r / (2 t). The hoop stress is twice the longitudinal stress, which is why such vessels split along their length.",
      "steps": "Hoop stress = \\frac{p r}{t} = \\frac{1.6(900)}{18} = 80 MPa. The longitudinal stress is half of that, 40 MPa.",
      "answer": "80 MPa",
-     "value": 80.0
+     "value": 80.0,
+     "figure": {
+      "viewBox": "0 0 400 166",
+      "svg": "<rect x='70' y='40' width='260' height='90' rx='44' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='182' y='67' width='36' height='36' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='200' y1='67' x2='200' y2='42' stroke='#00574A' stroke-width='3'/><path d='M200 34 L194 46 L206 46 Z' fill='#00574A'/><line x1='200' y1='103' x2='200' y2='128' stroke='#00574A' stroke-width='3'/><path d='M200 136 L194 124 L206 124 Z' fill='#00574A'/><line x1='218' y1='85' x2='254' y2='85' stroke='#568CBB' stroke-width='3'/><path d='M262 85 L250 79 L250 91 Z' fill='#568CBB'/><line x1='182' y1='85' x2='146' y2='85' stroke='#568CBB' stroke-width='3'/><path d='M138 85 L150 79 L150 91 Z' fill='#568CBB'/><text x='200' y='24' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Hoop stress 80.0 MPa (around the tank)</text><text x='200' y='156' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Axial stress 40.0 MPa (along the tank), half the hoop stress</text>",
+      "alt": "A small piece of the wall of a pressurised cylinder. Hoop stress of 80.0 MPa acts around the tank and axial stress of 40.0 MPa acts along it."
+     }
     },
     {
      "family": "mechmat-0032",
@@ -986,7 +1018,12 @@
      "idea": "The pressure on the end cap, p π r^{2}, is carried by the wall's ring of area 2π r t, giving p r / (2t). The hoop stress, p r / t, is twice as large, which is why pipes split lengthwise.",
      "steps": "Longitudinal stress = \\frac{p r}{2 t} = \\frac{1.4(575)}{2(8)} = 50.3 MPa.",
      "answer": "50.3 MPa",
-     "value": 50.3125
+     "value": 50.3125,
+     "figure": {
+      "viewBox": "0 0 400 166",
+      "svg": "<rect x='70' y='40' width='260' height='90' rx='44' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='182' y='67' width='36' height='36' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='200' y1='67' x2='200' y2='42' stroke='#00574A' stroke-width='3'/><path d='M200 34 L194 46 L206 46 Z' fill='#00574A'/><line x1='200' y1='103' x2='200' y2='128' stroke='#00574A' stroke-width='3'/><path d='M200 136 L194 124 L206 124 Z' fill='#00574A'/><line x1='218' y1='85' x2='254' y2='85' stroke='#568CBB' stroke-width='3'/><path d='M262 85 L250 79 L250 91 Z' fill='#568CBB'/><line x1='182' y1='85' x2='146' y2='85' stroke='#568CBB' stroke-width='3'/><path d='M138 85 L150 79 L150 91 Z' fill='#568CBB'/><text x='200' y='24' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Hoop stress 100.6 MPa (around the tank)</text><text x='200' y='156' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Axial stress 50.3 MPa (along the tank), half the hoop stress</text>",
+      "alt": "A small piece of the wall of a pressurised cylinder. Hoop stress of 100.6 MPa acts around the tank and axial stress of 50.3 MPa acts along it."
+     }
     },
     {
      "family": "mechmat-0034",

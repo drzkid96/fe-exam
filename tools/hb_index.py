@@ -4,7 +4,7 @@ Usage: python3 tools/hb_index.py /path/to/fe-handbook.pdf   (needs pdftotext). W
 import sys, os, re, json, glob, subprocess, collections
 HERE = os.path.dirname(os.path.abspath(__file__)); AUTH = os.path.join(HERE, 'authoring'); sys.path.insert(0, AUTH)
 # Tables whose headings are not searchable text in the PDF; pages taken from the handbook's own index.
-PINNED = {'beam slopes and deflections': [140, 141], 'simply supported beam slopes and deflections': [140], 'cantilevered beam slopes and deflections': [141], 'cantilever': [141]}
+PINNED = {'beam slopes and deflections': [140, 141], 'simply supported beam slopes and deflections': [140], 'cantilevered beam slopes and deflections': [141], 'cantilever': [141], 'acre': [3], 'PERT': [426], 'CT value': [345], 'crushing': [437]}
 OFFSET = 4          # PDF page number minus printed page number, edition 10.0.1
 def norm(t): return re.sub(r'\s+', ' ', t.replace('’', "'").replace('‘', "'").replace('–', '-').replace('—', '-').replace('­', '')).lower()
 def main(pdf):

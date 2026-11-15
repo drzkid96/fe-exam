@@ -425,6 +425,13 @@
       "earned-value analysis",
       "schedule variance"
      ]
+    },
+    {
+     "section": "Industrial and Systems Engineering",
+     "page": "417–430",
+     "find": [
+      "PERT"
+     ]
     }
    ],
    "deep": "Project controls measure whether the job is on time and on budget. The critical path method builds a network of activities, makes a forward pass for early dates and a backward pass for late dates, and reports float as the difference. The longest path is critical and has zero float.\n\nEarned value analysis puts progress in dollars. Planned value is what should have been done by now, earned value is the budget for what has been done and actual cost is what it cost. Their differences and ratios give schedule and cost variances and indices, and the indices forecast the cost at completion.",

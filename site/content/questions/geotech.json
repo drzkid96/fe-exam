@@ -1292,6 +1292,11 @@
   "family": "geotech-0005",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='60' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='16' stroke='#00242E' stroke-width='2'/><line x1='60' y1='137' x2='246' y2='30' stroke='#1B795A' stroke-width='3'/><line x1='188' y1='150' x2='188' y2='63' stroke='#00242E' stroke-dasharray='5 4'/><line x1='60' y1='63' x2='188' y2='63' stroke='#00242E' stroke-dasharray='5 4'/><circle cx='188' cy='63' r='5' fill='#00574A'/><text x='188' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>normal stress 100 kPa</text><text x='198' y='79' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>shear strength 67.7 kPa</text><text x='242' y='22' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>rises at the friction angle, 30.0°</text><text x='66' y='131' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>cohesion 10 kPa</text>",
+   "alt": "The soil's strength line: shear strength against normal stress, starting at a cohesion of 10 kPa and rising at the friction angle of 30.0°. At 100 kPa normal stress the strength is 67.7 kPa."
+  },
   "lookup": true,
   "terms": [
    [
@@ -1357,6 +1362,11 @@
   "family": "geotech-0005",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='60' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='16' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='231' y2='30' stroke='#1B795A' stroke-width='3'/><line x1='178' y1='150' x2='178' y2='67' stroke='#00242E' stroke-dasharray='5 4'/><line x1='60' y1='67' x2='178' y2='67' stroke='#00242E' stroke-dasharray='5 4'/><circle cx='178' cy='67' r='5' fill='#00574A'/><text x='178' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>normal stress 150 kPa</text><text x='188' y='83' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>shear strength 105.0 kPa</text><text x='227' y='22' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>rises at the friction angle, 35.0°</text>",
+   "alt": "The soil's strength line: shear strength against normal stress, starting at a cohesion of 0 kPa and rising at the friction angle of 35.0°. At 150 kPa normal stress the strength is 105.0 kPa."
+  },
   "lookup": true,
   "terms": [
    [
@@ -1422,6 +1432,11 @@
   "family": "geotech-0005",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='60' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='16' stroke='#00242E' stroke-width='2'/><line x1='60' y1='105' x2='267' y2='30' stroke='#1B795A' stroke-width='3'/><line x1='203' y1='150' x2='203' y2='53' stroke='#00242E' stroke-dasharray='5 4'/><line x1='60' y1='53' x2='203' y2='53' stroke='#00242E' stroke-dasharray='5 4'/><circle cx='203' cy='53' r='5' fill='#00574A'/><text x='203' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>normal stress 80 kPa</text><text x='213' y='69' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>shear strength 54.1 kPa</text><text x='263' y='22' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>rises at the friction angle, 20.0°</text><text x='66' y='99' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>cohesion 25 kPa</text>",
+   "alt": "The soil's strength line: shear strength against normal stress, starting at a cohesion of 25 kPa and rising at the friction angle of 20.0°. At 80 kPa normal stress the strength is 54.1 kPa."
+  },
   "lookup": true,
   "terms": [
    [
@@ -1487,6 +1502,11 @@
   "family": "geotech-0005",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='60' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='16' stroke='#00242E' stroke-width='2'/><line x1='60' y1='139' x2='266' y2='30' stroke='#1B795A' stroke-width='3'/><line x1='202' y1='150' x2='202' y2='64' stroke='#00242E' stroke-dasharray='5 4'/><line x1='60' y1='64' x2='202' y2='64' stroke='#00242E' stroke-dasharray='5 4'/><circle cx='202' cy='64' r='5' fill='#00574A'/><text x='202' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>normal stress 200 kPa</text><text x='212' y='80' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>shear strength 121.3 kPa</text><text x='262' y='22' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>rises at the friction angle, 28.0°</text><text x='66' y='133' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>cohesion 15 kPa</text>",
+   "alt": "The soil's strength line: shear strength against normal stress, starting at a cohesion of 15 kPa and rising at the friction angle of 28.0°. At 200 kPa normal stress the strength is 121.3 kPa."
+  },
   "lookup": true,
   "terms": [
    [
@@ -1848,7 +1868,7 @@
   },
   "family": "geotech-0007",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "terms": [
    [
@@ -1935,12 +1955,103 @@
   },
   "family": "geotech-0007",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "terms": [
    [
     "pore pressure",
     "the pressure of the water in the spaces between soil grains"
+   ]
+  ],
+  "needs": [
+   [
+    "geotech-b",
+    "geotech",
+    "Geotechnical Engineering: Phase relations"
+   ],
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0007-c",
+  "topic": "geotech",
+  "subtopic": "geotech-d",
+  "format": "hotspot",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A wide fill is placed on the ground surface. Click the layer that will go on settling slowly for a long time afterwards.",
+  "figure": {
+   "viewBox": "0 0 400 200",
+   "alt": "A soil profile with three layers: sand above the water table, sand below the water table, and clay at the bottom.",
+   "svg": "<rect x='20' y='30' width='360' height='50' fill='#EEEDE8'/><rect x='20' y='80' width='360' height='60' fill='#D9F1D6'/><rect x='20' y='140' width='360' height='50' fill='#E7E8E8'/><line x1='20' y1='30' x2='380' y2='30' stroke='#00242E' stroke-width='3'/><line x1='20' y1='80' x2='380' y2='80' stroke='#568CBB' stroke-width='2' stroke-dasharray='8 4'/><line x1='20' y1='140' x2='380' y2='140' stroke='#00242E' stroke-width='1'/><path d='M340 80 L332 66 L348 66 Z' fill='#568CBB'/><text x='30' y='22' font-size='12' fill='#00242E'>Ground surface</text><text x='326' y='60' text-anchor='end' font-size='12' fill='#568CBB'>Water table</text><text x='30' y='60' font-size='13' font-weight='600' fill='#00242E'>Sand</text><text x='30' y='115' font-size='13' font-weight='600' fill='#00242E'>Sand</text><text x='30' y='170' font-size='13' font-weight='600' fill='#00242E'>Clay</text>"
+  },
+  "regions": [
+   {
+    "id": "dry",
+    "label": "Sand above the water table",
+    "shape": "rect",
+    "x": 20,
+    "y": 31,
+    "w": 360,
+    "h": 48
+   },
+   {
+    "id": "satsand",
+    "label": "Sand below the water table",
+    "shape": "rect",
+    "x": 20,
+    "y": 81,
+    "w": 360,
+    "h": 58
+   },
+   {
+    "id": "clay",
+    "label": "Clay",
+    "shape": "rect",
+    "x": 20,
+    "y": 141,
+    "w": 360,
+    "h": 49
+   }
+  ],
+  "answer": "clay",
+  "eli5": "Effective stress is total stress minus water pressure. Where there is no water pressure, there is nothing to subtract.",
+  "solution": "Consolidation is the slow squeezing of water out of a soil under new load. Water escapes from sand almost at once, so sand settles as the fill is placed.\n\nClay lets water through thousands of times more slowly, so the clay layer goes on settling for months or years.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "effective stress"
+    ]
+   }
+  ],
+  "tags": [
+   "effective stress",
+   "water table"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Consolidation settlement occurs in saturated fine-grained soil of low permeability"
+  },
+  "family": "geotech-0007",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "terms": [
+   [
+    "effective stress",
+    "the part of the stress in a soil that is carried by grain-to-grain contact: total stress minus pore water pressure"
+   ],
+   [
+    "consolidation",
+    "the slow squeezing of water out of a clay under load, which makes the ground settle over months or years"
    ]
   ],
   "needs": [
@@ -2003,7 +2114,7 @@
   },
   "family": "geotech-0008",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": [],
   "symbols": [
@@ -2064,7 +2175,7 @@
   },
   "family": "geotech-0008",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": [],
   "symbols": [
@@ -2077,6 +2188,57 @@
     "compression index (or, in a gradation, the coefficient of curvature)"
    ]
   ]
+ },
+ {
+  "id": "geotech-0008-c",
+  "topic": "geotech",
+  "subtopic": "geotech-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A gravel has 2% fines, a coefficient of uniformity of 3 and a coefficient of curvature of 0.8. What is its Unified Soil Classification?",
+  "options": [
+   {
+    "id": "a",
+    "text": "GW"
+   },
+   {
+    "id": "b",
+    "text": "GP"
+   },
+   {
+    "id": "c",
+    "text": "GM"
+   },
+   {
+    "id": "d",
+    "text": "SP"
+   }
+  ],
+  "answer": "b",
+  "eli5": "In the Unified Soil Classification System a sand with less than 5% fines is classified on gradation alone. It is well graded, SW, only if the coefficient of uniformity is at least 6 and the coefficient of curvature is between 1 and 3. Otherwise it is poorly graded, SP.",
+  "solution": "With less than 5% fines, a gravel is GW (well graded) only if its coefficient of uniformity is at least 4 and its coefficient of curvature lies between 1 and 3. Here the uniformity coefficient is 3, so the gravel is poorly graded: GP.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Unified Soil Classification"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Unified Soil Classification System criteria"
+  },
+  "family": "geotech-0008",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "needs": []
  },
  {
   "id": "geotech-0009",
@@ -2607,11 +2769,11 @@
    ],
    [
     "Q",
-    "volume of water collected, or column load"
+    "volume of water collected in the test"
    ],
    [
     "L",
-    "length of the sample or pile"
+    "length of the soil sample along the flow"
    ],
    [
     "h",
@@ -2704,11 +2866,11 @@
    ],
    [
     "Q",
-    "volume of water collected, or column load"
+    "volume of water collected in the test"
    ],
    [
     "L",
-    "length of the sample or pile"
+    "length of the soil sample along the flow"
    ],
    [
     "h",
@@ -2801,11 +2963,11 @@
    ],
    [
     "Q",
-    "volume of water collected, or column load"
+    "volume of water collected in the test"
    ],
    [
     "L",
-    "length of the sample or pile"
+    "length of the soil sample along the flow"
    ],
    [
     "h",
@@ -2898,11 +3060,11 @@
    ],
    [
     "Q",
-    "volume of water collected, or column load"
+    "volume of water collected in the test"
    ],
    [
     "L",
-    "length of the sample or pile"
+    "length of the soil sample along the flow"
    ],
    [
     "h",
@@ -4451,7 +4613,7 @@
   },
   "family": "geotech-0017",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": false,
   "needs": [
    [
@@ -4506,7 +4668,62 @@
   },
   "family": "geotech-0017",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": false,
+  "needs": [
+   [
+    "geotech-g",
+    "geotech",
+    "Geotechnical Engineering: Bearing capacity"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0017-c",
+  "topic": "geotech",
+  "subtopic": "geotech-h",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Which foundation type carries load through weak surface soil down to a deeper, stronger layer?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Spread footing"
+   },
+   {
+    "id": "b",
+    "text": "Mat foundation"
+   },
+   {
+    "id": "c",
+    "text": "Pile foundation"
+   },
+   {
+    "id": "d",
+    "text": "Wall footing"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Shallow foundations (spread, strip and mat) bear on soil near the surface. Deep foundations (driven piles and drilled shafts) carry load to stronger material at depth or shed it through skin friction along their length.",
+  "solution": "Piles are long, slender members driven or drilled through weak soil. They carry load by friction along their length and by bearing on the stronger layer at their tip. Footings and mats bear near the surface.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard definitions of foundation types"
+  },
+  "family": "geotech-0017",
+  "version": 3,
+  "versions": 3,
   "lookup": false,
   "needs": [
    [
@@ -5587,6 +5804,11 @@
   "family": "geotech-0021",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 174",
+   "svg": "<line x1='40' y1='70' x2='360' y2='70' stroke='#00242E' stroke-width='2'/><path d='M96 70 A116 116 0 0 0 304 70' fill='#EEEDE8' stroke='#1B795A' stroke-width='3'/><circle cx='200' cy='18' r='4' fill='#00242E'/><text x='190' y='16' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>O</text><line x1='200' y1='18' x2='120' y2='102' stroke='#00242E' stroke-dasharray='5 4'/><text x='150' y='56' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>R = 15 m</text><line x1='248' y1='78' x2='248' y2='116' stroke='#00574A' stroke-width='3'/><path d='M248 124 L242 112 L254 112 Z' fill='#00574A'/><text x='240' y='108' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>W = 1,500 kN</text><line x1='200' y1='36' x2='248' y2='36' stroke='#00242E'/><line x1='200' y1='30' x2='200' y2='42' stroke='#00242E'/><line x1='248' y1='30' x2='248' y2='42' stroke='#00242E'/><text x='224' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>Clay strength 30 kPa acts along the 20 m arc, at radius R from O</text><text x='200' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Driving moment = W × its distance from O</text>",
+   "alt": "A circular slip surface of radius 15 m about O. The weight of 1,500 kN acts 4 m from O and tries to rotate the mass; the clay strength of 30 kPa along the 20 m arc resists at radius R."
+  },
   "lookup": true,
   "terms": [
    [
@@ -5668,6 +5890,11 @@
   "family": "geotech-0021",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 174",
+   "svg": "<line x1='40' y1='70' x2='360' y2='70' stroke='#00242E' stroke-width='2'/><path d='M96 70 A116 116 0 0 0 304 70' fill='#EEEDE8' stroke='#1B795A' stroke-width='3'/><circle cx='200' cy='18' r='4' fill='#00242E'/><text x='190' y='16' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>O</text><line x1='200' y1='18' x2='120' y2='102' stroke='#00242E' stroke-dasharray='5 4'/><text x='150' y='56' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>R = 12 m</text><line x1='248' y1='78' x2='248' y2='116' stroke='#00574A' stroke-width='3'/><path d='M248 124 L242 112 L254 112 Z' fill='#00574A'/><text x='240' y='108' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>W = 1,200 kN</text><line x1='200' y1='36' x2='248' y2='36' stroke='#00242E'/><line x1='200' y1='30' x2='200' y2='42' stroke='#00242E'/><line x1='248' y1='30' x2='248' y2='42' stroke='#00242E'/><text x='224' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3.6 m</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>Clay strength 40 kPa acts along the 18 m arc, at radius R from O</text><text x='200' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Driving moment = W × its distance from O</text>",
+   "alt": "A circular slip surface of radius 12 m about O. The weight of 1,200 kN acts 3.6 m from O and tries to rotate the mass; the clay strength of 40 kPa along the 18 m arc resists at radius R."
+  },
   "lookup": true,
   "terms": [
    [
@@ -5749,6 +5976,11 @@
   "family": "geotech-0021",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 174",
+   "svg": "<line x1='40' y1='70' x2='360' y2='70' stroke='#00242E' stroke-width='2'/><path d='M96 70 A116 116 0 0 0 304 70' fill='#EEEDE8' stroke='#1B795A' stroke-width='3'/><circle cx='200' cy='18' r='4' fill='#00242E'/><text x='190' y='16' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>O</text><line x1='200' y1='18' x2='120' y2='102' stroke='#00242E' stroke-dasharray='5 4'/><text x='150' y='56' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>R = 20 m</text><line x1='248' y1='78' x2='248' y2='116' stroke='#00574A' stroke-width='3'/><path d='M248 124 L242 112 L254 112 Z' fill='#00574A'/><text x='240' y='108' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>W = 2,000 kN</text><line x1='200' y1='36' x2='248' y2='36' stroke='#00242E'/><line x1='200' y1='30' x2='200' y2='42' stroke='#00242E'/><line x1='248' y1='30' x2='248' y2='42' stroke='#00242E'/><text x='224' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>Clay strength 25 kPa acts along the 28 m arc, at radius R from O</text><text x='200' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Driving moment = W × its distance from O</text>",
+   "alt": "A circular slip surface of radius 20 m about O. The weight of 2,000 kN acts 5 m from O and tries to rotate the mass; the clay strength of 25 kPa along the 28 m arc resists at radius R."
+  },
   "lookup": true,
   "terms": [
    [
@@ -5830,6 +6062,11 @@
   "family": "geotech-0021",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 174",
+   "svg": "<line x1='40' y1='70' x2='360' y2='70' stroke='#00242E' stroke-width='2'/><path d='M96 70 A116 116 0 0 0 304 70' fill='#EEEDE8' stroke='#1B795A' stroke-width='3'/><circle cx='200' cy='18' r='4' fill='#00242E'/><text x='190' y='16' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>O</text><line x1='200' y1='18' x2='120' y2='102' stroke='#00242E' stroke-dasharray='5 4'/><text x='150' y='56' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>R = 10 m</text><line x1='248' y1='78' x2='248' y2='116' stroke='#00574A' stroke-width='3'/><path d='M248 124 L242 112 L254 112 Z' fill='#00574A'/><text x='240' y='108' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>W = 800 kN</text><line x1='200' y1='36' x2='248' y2='36' stroke='#00242E'/><line x1='200' y1='30' x2='200' y2='42' stroke='#00242E'/><line x1='248' y1='30' x2='248' y2='42' stroke='#00242E'/><text x='224' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3.5 m</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>Clay strength 50 kPa acts along the 14 m arc, at radius R from O</text><text x='200' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Driving moment = W × its distance from O</text>",
+   "alt": "A circular slip surface of radius 10 m about O. The weight of 800 kN acts 3.5 m from O and tries to rotate the mass; the clay strength of 50 kPa along the 14 m arc resists at radius R."
+  },
   "lookup": true,
   "terms": [
    [
@@ -5921,7 +6158,7 @@
   },
   "family": "geotech-0022",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": false,
   "needs": [
    [
@@ -5976,7 +6213,62 @@
   },
   "family": "geotech-0022",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": false,
+  "needs": [
+   [
+    "geotech-c",
+    "geotech",
+    "Geotechnical Engineering: Laboratory and field tests"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0022-c",
+  "topic": "geotech",
+  "subtopic": "geotech-k",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A geotextile is wrapped around the stone of a subsurface drain. What is its main function?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Reinforcement"
+   },
+   {
+    "id": "b",
+    "text": "Filtration"
+   },
+   {
+    "id": "c",
+    "text": "Waterproofing"
+   },
+   {
+    "id": "d",
+    "text": "Compaction"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Geosynthetics are chosen by function. Geotextiles separate, filter, drain or reinforce. Geogrids, with their open apertures, interlock with aggregate and reinforce. Geomembranes are barriers.",
+  "solution": "Around a drain the fabric lets water pass into the stone while holding back the surrounding soil particles, so the drain does not clog. That is filtration.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard geosynthetic functions: separation, filtration, drainage, reinforcement"
+  },
+  "family": "geotech-0022",
+  "version": 3,
+  "versions": 3,
   "lookup": false,
   "needs": [
    [
@@ -6894,6 +7186,11 @@
    "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>300 kN</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = 2 m</text>",
    "alt": "A footing below the ground surface carrying a column load."
   },
+  "solutionFigure": {
+   "viewBox": "0 0 400 178",
+   "svg": "<rect x='180' y='10' width='40' height='40' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='100' y='50' width='200' height='22' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M100 76 L300 76 L300 136 L100 91 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='306' y='140' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>240.0 kPa</text><text x='94' y='95' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>60.0 kPa</text><line x1='100' y1='156' x2='300' y2='156' stroke='#00242E'/><line x1='100' y1='150' x2='100' y2='162' stroke='#00242E'/><line x1='300' y1='150' x2='300' y2='162' stroke='#00242E'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text>",
+   "alt": "Bearing pressure under an eccentrically loaded footing 2 m wide, varying from 60.0 to 240.0 kPa."
+  },
   "lookup": true,
   "terms": [
    [
@@ -6974,6 +7271,11 @@
    "viewBox": "0 0 400 170",
    "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>450 kN</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = 2.5 m</text>",
    "alt": "A footing below the ground surface carrying a column load."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 178",
+   "svg": "<rect x='180' y='10' width='40' height='40' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='100' y='50' width='200' height='22' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M100 76 L300 76 L300 136 L100 97 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='306' y='140' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>266.4 kPa</text><text x='94' y='101' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>93.6 kPa</text><line x1='100' y1='156' x2='300' y2='156' stroke='#00242E'/><line x1='100' y1='150' x2='100' y2='162' stroke='#00242E'/><line x1='300' y1='150' x2='300' y2='162' stroke='#00242E'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text>",
+   "alt": "Bearing pressure under an eccentrically loaded footing 2.5 m wide, varying from 93.6 to 266.4 kPa."
   },
   "lookup": true,
   "terms": [
@@ -7056,6 +7358,11 @@
    "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>180 kN</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = 1.5 m</text>",
    "alt": "A footing below the ground surface carrying a column load."
   },
+  "solutionFigure": {
+   "viewBox": "0 0 400 178",
+   "svg": "<rect x='180' y='10' width='40' height='40' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='100' y='50' width='200' height='22' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M100 76 L300 76 L300 136 L100 99 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='306' y='140' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>173.3 kPa</text><text x='94' y='103' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>66.7 kPa</text><line x1='100' y1='156' x2='300' y2='156' stroke='#00242E'/><line x1='100' y1='150' x2='100' y2='162' stroke='#00242E'/><line x1='300' y1='150' x2='300' y2='162' stroke='#00242E'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>1.5 m</text>",
+   "alt": "Bearing pressure under an eccentrically loaded footing 1.5 m wide, varying from 66.7 to 173.3 kPa."
+  },
   "lookup": true,
   "terms": [
    [
@@ -7136,6 +7443,11 @@
    "viewBox": "0 0 400 170",
    "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>600 kN</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = 3 m</text>",
    "alt": "A footing below the ground surface carrying a column load."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 178",
+   "svg": "<rect x='180' y='10' width='40' height='40' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='100' y='50' width='200' height='22' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M100 76 L300 76 L300 136 L100 96 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='306' y='140' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>300.0 kPa</text><text x='94' y='100' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>100.0 kPa</text><line x1='100' y1='156' x2='300' y2='156' stroke='#00242E'/><line x1='100' y1='150' x2='100' y2='162' stroke='#00242E'/><line x1='300' y1='150' x2='300' y2='162' stroke='#00242E'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text>",
+   "alt": "Bearing pressure under an eccentrically loaded footing 3 m wide, varying from 100.0 to 300.0 kPa."
   },
   "lookup": true,
   "terms": [
@@ -7707,7 +8019,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "plasticity index"
+    ]
    }
   ],
   "tags": [],
@@ -7718,7 +8032,7 @@
   "family": "geotech-0030",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "water content",
@@ -7756,7 +8070,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "plasticity index"
+    ]
    }
   ],
   "tags": [],
@@ -7767,7 +8083,7 @@
   "family": "geotech-0030",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "water content",
@@ -7805,7 +8121,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "plasticity index"
+    ]
    }
   ],
   "tags": [],
@@ -7816,7 +8134,7 @@
   "family": "geotech-0030",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "water content",
@@ -7854,7 +8172,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "plasticity index"
+    ]
    }
   ],
   "tags": [],
@@ -7865,7 +8185,7 @@
   "family": "geotech-0030",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "water content",
@@ -8987,7 +9307,7 @@
    ],
    [
     "L",
-    "length of the sample or pile"
+    "length of the soil sample along the flow"
    ],
    [
     "A",
@@ -9060,7 +9380,7 @@
    ],
    [
     "L",
-    "length of the sample or pile"
+    "length of the soil sample along the flow"
    ],
    [
     "A",
@@ -9133,7 +9453,7 @@
    ],
    [
     "L",
-    "length of the sample or pile"
+    "length of the soil sample along the flow"
    ],
    [
     "A",
@@ -9206,7 +9526,7 @@
    ],
    [
     "L",
-    "length of the sample or pile"
+    "length of the soil sample along the flow"
    ],
    [
     "A",
@@ -9456,6 +9776,11 @@
   "family": "geotech-0037",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='60' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='16' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='249' y2='30' stroke='#1B795A' stroke-width='3'/><line x1='191' y1='150' x2='191' y2='67' stroke='#00242E' stroke-dasharray='5 4'/><line x1='60' y1='67' x2='191' y2='67' stroke='#00242E' stroke-dasharray='5 4'/><circle cx='191' cy='67' r='5' fill='#00574A'/><text x='191' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>normal stress 150 kPa</text><text x='201' y='83' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>shear strength 95.0 kPa</text><text x='245' y='22' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>rises at the friction angle, 32.3°</text>",
+   "alt": "The soil's strength line: shear strength against normal stress, starting at a cohesion of 0 kPa and rising at the friction angle of 32.3°. At 150 kPa normal stress the strength is 95.0 kPa."
+  },
   "lookup": true,
   "terms": [
    [
@@ -9517,6 +9842,11 @@
   "family": "geotech-0037",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='60' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='16' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='269' y2='30' stroke='#1B795A' stroke-width='3'/><line x1='204' y1='150' x2='204' y2='67' stroke='#00242E' stroke-dasharray='5 4'/><line x1='60' y1='67' x2='204' y2='67' stroke='#00242E' stroke-dasharray='5 4'/><circle cx='204' cy='67' r='5' fill='#00574A'/><text x='204' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>normal stress 200 kPa</text><text x='214' y='83' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>shear strength 115.0 kPa</text><text x='265' y='22' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>rises at the friction angle, 29.9°</text>",
+   "alt": "The soil's strength line: shear strength against normal stress, starting at a cohesion of 0 kPa and rising at the friction angle of 29.9°. At 200 kPa normal stress the strength is 115.0 kPa."
+  },
   "lookup": true,
   "terms": [
    [
@@ -9578,6 +9908,11 @@
   "family": "geotech-0037",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='60' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='16' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='226' y2='30' stroke='#1B795A' stroke-width='3'/><line x1='174' y1='150' x2='174' y2='67' stroke='#00242E' stroke-dasharray='5 4'/><line x1='60' y1='67' x2='174' y2='67' stroke='#00242E' stroke-dasharray='5 4'/><circle cx='174' cy='67' r='5' fill='#00574A'/><text x='174' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>normal stress 80 kPa</text><text x='184' y='83' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>shear strength 58.0 kPa</text><text x='222' y='22' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>rises at the friction angle, 35.9°</text>",
+   "alt": "The soil's strength line: shear strength against normal stress, starting at a cohesion of 0 kPa and rising at the friction angle of 35.9°. At 80 kPa normal stress the strength is 58.0 kPa."
+  },
   "lookup": true,
   "terms": [
    [
@@ -9639,6 +9974,11 @@
   "family": "geotech-0037",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='60' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='16' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='260' y2='30' stroke='#1B795A' stroke-width='3'/><line x1='198' y1='150' x2='198' y2='67' stroke='#00242E' stroke-dasharray='5 4'/><line x1='60' y1='67' x2='198' y2='67' stroke='#00242E' stroke-dasharray='5 4'/><circle cx='198' cy='67' r='5' fill='#00574A'/><text x='198' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>normal stress 175 kPa</text><text x='208' y='83' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>shear strength 105.0 kPa</text><text x='256' y='22' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>rises at the friction angle, 31.0°</text>",
+   "alt": "The soil's strength line: shear strength against normal stress, starting at a cohesion of 0 kPa and rising at the friction angle of 31.0°. At 175 kPa normal stress the strength is 105.0 kPa."
+  },
   "lookup": true,
   "terms": [
    [
@@ -9987,7 +10327,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "exit gradient"
+    ]
    }
   ],
   "tags": [],
@@ -9998,7 +10340,7 @@
   "family": "geotech-0039",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "specific gravity",
@@ -10061,7 +10403,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "exit gradient"
+    ]
    }
   ],
   "tags": [],
@@ -10072,7 +10416,7 @@
   "family": "geotech-0039",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "specific gravity",
@@ -10135,7 +10479,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "exit gradient"
+    ]
    }
   ],
   "tags": [],
@@ -10146,7 +10492,7 @@
   "family": "geotech-0039",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "specific gravity",
@@ -10209,7 +10555,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "exit gradient"
+    ]
    }
   ],
   "tags": [],
@@ -10220,7 +10568,7 @@
   "family": "geotech-0039",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "specific gravity",
@@ -10294,6 +10642,11 @@
   "family": "geotech-0040",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 173",
+   "svg": "<line x1='40' y1='44' x2='360' y2='44' stroke='#00242E' stroke-width='2'/><rect x='162' y='30' width='75' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='4' x2='200' y2='20' stroke='#00574A' stroke-width='3'/><path d='M200 28 L194 16 L206 16 Z' fill='#00574A'/><path d='M162 44 L125 119 L275 119 L238 44' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2' stroke-dasharray='6 4'/><text x='246' y='40' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>2 m wide</text><text x='119' y='82' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>2 m</text><line x1='125' y1='133.0' x2='275' y2='133.0' stroke='#00242E'/><line x1='125' y1='127.0' x2='125' y2='139.0' stroke='#00242E'/><line x1='275' y1='127.0' x2='275' y2='139.0' stroke='#00242E'/><text x='200' y='149' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 + 2 = 4 m</text><text x='200' y='163' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>The same load over the larger area: 45.0 kPa</text>",
+   "alt": "The 2:1 method: the loaded area spreads outward by 1 for every 2 of depth, so 2 m down each side is 2 m longer and the stress falls to 45.0 kPa."
+  },
   "lookup": false,
   "needs": [
    [
@@ -10340,6 +10693,11 @@
   "family": "geotech-0040",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<line x1='40' y1='44' x2='360' y2='44' stroke='#00242E' stroke-width='2'/><rect x='166' y='30' width='68' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='4' x2='200' y2='20' stroke='#00574A' stroke-width='3'/><path d='M200 28 L194 16 L206 16 Z' fill='#00574A'/><path d='M166 44 L125 126 L275 126 L234 44' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2' stroke-dasharray='6 4'/><text x='242' y='40' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>2.5 m wide</text><text x='119' y='85' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>3 m</text><line x1='125' y1='139.8181818181818' x2='275' y2='139.8181818181818' stroke='#00242E'/><line x1='125' y1='133.8181818181818' x2='125' y2='145.8181818181818' stroke='#00242E'/><line x1='275' y1='133.8181818181818' x2='275' y2='145.8181818181818' stroke='#00242E'/><text x='200' y='156' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 + 3 = 5.5 m</text><text x='200' y='170' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>The same load over the larger area: 49.6 kPa</text>",
+   "alt": "The 2:1 method: the loaded area spreads outward by 1 for every 2 of depth, so 3 m down each side is 3 m longer and the stress falls to 49.6 kPa."
+  },
   "lookup": false,
   "needs": [
    [
@@ -10386,6 +10744,11 @@
   "family": "geotech-0040",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 158",
+   "svg": "<line x1='40' y1='44' x2='360' y2='44' stroke='#00242E' stroke-width='2'/><rect x='155' y='30' width='90' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='4' x2='200' y2='20' stroke='#00574A' stroke-width='3'/><path d='M200 28 L194 16 L206 16 Z' fill='#00574A'/><path d='M155 44 L125 104 L275 104 L245 44' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2' stroke-dasharray='6 4'/><text x='253' y='40' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>1.5 m wide</text><text x='119' y='74' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>1 m</text><line x1='125' y1='118.0' x2='275' y2='118.0' stroke='#00242E'/><line x1='125' y1='112.0' x2='125' y2='124.0' stroke='#00242E'/><line x1='275' y1='112.0' x2='275' y2='124.0' stroke='#00242E'/><text x='200' y='134' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>1.5 + 1 = 2.5 m</text><text x='200' y='148' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>The same load over the larger area: 64.0 kPa</text>",
+   "alt": "The 2:1 method: the loaded area spreads outward by 1 for every 2 of depth, so 1 m down each side is 1 m longer and the stress falls to 64.0 kPa."
+  },
   "lookup": false,
   "needs": [
    [
@@ -10432,6 +10795,11 @@
   "family": "geotech-0040",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 169",
+   "svg": "<line x1='40' y1='44' x2='360' y2='44' stroke='#00242E' stroke-width='2'/><rect x='161' y='30' width='79' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='4' x2='200' y2='20' stroke='#00574A' stroke-width='3'/><path d='M200 28 L194 16 L206 16 Z' fill='#00574A'/><path d='M161 44 L125 115 L275 115 L239 44' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2' stroke-dasharray='6 4'/><text x='247' y='40' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>2.2 m wide</text><text x='119' y='80' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>2 m</text><line x1='125' y1='129.42857142857144' x2='275' y2='129.42857142857144' stroke='#00242E'/><line x1='125' y1='123.42857142857144' x2='125' y2='135.42857142857144' stroke='#00242E'/><line x1='275' y1='123.42857142857144' x2='275' y2='135.42857142857144' stroke='#00242E'/><text x='200' y='145' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.2 + 2 = 4.2 m</text><text x='200' y='159' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>The same load over the larger area: 59.5 kPa</text>",
+   "alt": "The 2:1 method: the loaded area spreads outward by 1 for every 2 of depth, so 2 m down each side is 2 m longer and the stress falls to 59.5 kPa."
+  },
   "lookup": false,
   "needs": [
    [
@@ -10483,6 +10851,11 @@
   "figure": {
    "viewBox": "0 0 400 170",
    "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>1.5 m</text>",
+   "alt": "A retaining wall 1.5 m high with a triangular active pressure diagram behind it."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>1.5 m</text><line x1='250' y1='107' x2='184' y2='107' stroke='#00574A' stroke-width='3'/><path d='M176 107 L190 101 L190 113 Z' fill='#00574A'/><text x='300' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>60.7 kN/m</text><text x='300' y='120' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>at H / 3</text>",
    "alt": "A retaining wall 1.5 m high with a triangular active pressure diagram behind it."
   },
   "lookup": true,
@@ -10570,6 +10943,11 @@
    "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>2 m</text>",
    "alt": "A retaining wall 2 m high with a triangular active pressure diagram behind it."
   },
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>2 m</text><line x1='250' y1='107' x2='184' y2='107' stroke='#00574A' stroke-width='3'/><path d='M176 107 L190 101 L190 113 Z' fill='#00574A'/><text x='300' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>134.4 kN/m</text><text x='300' y='120' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>at H / 3</text>",
+   "alt": "A retaining wall 2 m high with a triangular active pressure diagram behind it."
+  },
   "lookup": true,
   "terms": [
    [
@@ -10653,6 +11031,11 @@
   "figure": {
    "viewBox": "0 0 400 170",
    "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>1.2 m</text>",
+   "alt": "A retaining wall 1.2 m high with a triangular active pressure diagram behind it."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>1.2 m</text><line x1='250' y1='107' x2='184' y2='107' stroke='#00574A' stroke-width='3'/><path d='M176 107 L190 101 L190 113 Z' fill='#00574A'/><text x='300' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>34.9 kN/m</text><text x='300' y='120' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>at H / 3</text>",
    "alt": "A retaining wall 1.2 m high with a triangular active pressure diagram behind it."
   },
   "lookup": true,
@@ -10740,6 +11123,11 @@
    "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>1.8 m</text>",
    "alt": "A retaining wall 1.8 m high with a triangular active pressure diagram behind it."
   },
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>1.8 m</text><line x1='250' y1='107' x2='184' y2='107' stroke='#00574A' stroke-width='3'/><path d='M176 107 L190 101 L190 113 Z' fill='#00574A'/><text x='300' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>97.5 kN/m</text><text x='300' y='120' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>at H / 3</text>",
+   "alt": "A retaining wall 1.8 m high with a triangular active pressure diagram behind it."
+  },
   "lookup": true,
   "terms": [
    [
@@ -10807,7 +11195,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "at rest"
+    ]
    }
   ],
   "tags": [],
@@ -10823,7 +11213,7 @@
    "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>5 m</text>",
    "alt": "A retaining wall 5 m high with a triangular active pressure diagram behind it."
   },
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "friction angle",
@@ -10882,7 +11272,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "at rest"
+    ]
    }
   ],
   "tags": [],
@@ -10898,7 +11290,7 @@
    "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>4 m</text>",
    "alt": "A retaining wall 4 m high with a triangular active pressure diagram behind it."
   },
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "friction angle",
@@ -10957,7 +11349,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "at rest"
+    ]
    }
   ],
   "tags": [],
@@ -10973,7 +11367,7 @@
    "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>8 m</text>",
    "alt": "A retaining wall 8 m high with a triangular active pressure diagram behind it."
   },
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "friction angle",
@@ -11032,7 +11426,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "at rest"
+    ]
    }
   ],
   "tags": [],
@@ -11048,7 +11444,7 @@
    "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>4 m</text>",
    "alt": "A retaining wall 4 m high with a triangular active pressure diagram behind it."
   },
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "friction angle",
@@ -11412,6 +11808,11 @@
   "family": "geotech-0044",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 202",
+   "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='199' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='279' y1='102' x2='119' y2='102' stroke='#568CBB' stroke-width='2'/><circle cx='279' cy='102' r='4' fill='#568CBB'/><circle cx='119' cy='102' r='4' fill='#568CBB'/><circle cx='199' cy='102.0' r='3' fill='#00242E'/><text x='199' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 234.6</text><text x='285' y='116' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(369.3, 0)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+   "alt": "Mohr's circle for normal stresses 369.3 and 100 MPa with shear stress 0 MPa."
+  },
   "lookup": true,
   "terms": [
    [
@@ -11478,6 +11879,11 @@
   "family": "geotech-0044",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 202",
+   "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='217' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='297' y1='102' x2='137' y2='102' stroke='#568CBB' stroke-width='2'/><circle cx='297' cy='102' r='4' fill='#568CBB'/><circle cx='137' cy='102' r='4' fill='#568CBB'/><circle cx='217' cy='102.0' r='3' fill='#00242E'/><text x='217' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 306.7</text><text x='303' y='116' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(463.5, 0)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+   "alt": "Mohr's circle for normal stresses 463.5 and 150 MPa with shear stress 0 MPa."
+  },
   "lookup": true,
   "terms": [
    [
@@ -11544,6 +11950,11 @@
   "family": "geotech-0044",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 202",
+   "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='199' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='279' y1='102' x2='119' y2='102' stroke='#568CBB' stroke-width='2'/><circle cx='279' cy='102' r='4' fill='#568CBB'/><circle cx='119' cy='102' r='4' fill='#568CBB'/><circle cx='199' cy='102.0' r='3' fill='#00242E'/><text x='199' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 140.7</text><text x='285' y='116' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(221.4, 0)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+   "alt": "Mohr's circle for normal stresses 221.4 and 60 MPa with shear stress 0 MPa."
+  },
   "lookup": true,
   "terms": [
    [
@@ -11610,6 +12021,11 @@
   "family": "geotech-0044",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 202",
+   "svg": "<line x1='40' y1='101.99999999999999' x2='370' y2='101.99999999999999' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='207' cy='101.99999999999999' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='287' y1='102' x2='127' y2='102' stroke='#568CBB' stroke-width='2'/><circle cx='287' cy='102' r='4' fill='#568CBB'/><circle cx='127' cy='102' r='4' fill='#568CBB'/><circle cx='207' cy='101.99999999999999' r='3' fill='#00242E'/><text x='207' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 274.6</text><text x='293' y='116' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(424.3, 0)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+   "alt": "Mohr's circle for normal stresses 424.3 and 125 MPa with shear stress 0 MPa."
+  },
   "lookup": true,
   "terms": [
    [
@@ -11967,7 +12383,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "eccentric"
+    ]
    }
   ],
   "tags": [],
@@ -11983,7 +12401,7 @@
    "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>400 kN</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = 2.5 m</text>",
    "alt": "A footing below the ground surface carrying a column load."
   },
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "moment",
@@ -12033,7 +12451,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "eccentric"
+    ]
    }
   ],
   "tags": [],
@@ -12049,7 +12469,7 @@
    "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>600 kN</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = 3 m</text>",
    "alt": "A footing below the ground surface carrying a column load."
   },
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "moment",
@@ -12099,7 +12519,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "eccentric"
+    ]
    }
   ],
   "tags": [],
@@ -12115,7 +12537,7 @@
    "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>250 kN</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = 1.8 m</text>",
    "alt": "A footing below the ground surface carrying a column load."
   },
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "moment",
@@ -12165,7 +12587,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "eccentric"
+    ]
    }
   ],
   "tags": [],
@@ -12181,7 +12605,7 @@
    "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>500 kN</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = 2.8 m</text>",
    "alt": "A footing below the ground surface carrying a column load."
   },
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "moment",
@@ -12939,7 +13363,7 @@
   },
   "family": "geotech-0050",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 172",
    "svg": "<rect x='40' y='20' width='320' height='34' fill='#EEEDE8'/><rect x='40' y='54' width='320' height='70' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><rect x='40' y='124' width='320' height='34' fill='#EEEDE8'/><text x='200' y='42' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Sand (drains freely)</text><text x='200' y='146' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Sand (drains freely)</text><text x='200' y='86' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Clay, 5 m thick</text><text x='200' y='104' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>effective stress rises from 100 to 180 kPa</text><line x1='120' y1='76' x2='120' y2='66' stroke='#568CBB' stroke-width='2'/><path d='M120 58 L114 70 L126 70 Z' fill='#568CBB'/><line x1='120' y1='102' x2='120' y2='112' stroke='#568CBB' stroke-width='2'/><path d='M120 120 L114 108 L126 108 Z' fill='#568CBB'/>",
@@ -13027,7 +13451,7 @@
   },
   "family": "geotech-0050",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 172",
    "svg": "<rect x='40' y='20' width='320' height='34' fill='#EEEDE8'/><rect x='40' y='54' width='320' height='70' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><rect x='40' y='124' width='320' height='34' fill='#EEEDE8'/><text x='200' y='42' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Sand (drains freely)</text><text x='200' y='146' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Sand (drains freely)</text><text x='200' y='86' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Clay, 8 m thick</text><text x='200' y='104' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>effective stress rises from 80 to 120 kPa</text><line x1='120' y1='76' x2='120' y2='66' stroke='#568CBB' stroke-width='2'/><path d='M120 58 L114 70 L126 70 Z' fill='#568CBB'/><line x1='120' y1='102' x2='120' y2='112' stroke='#568CBB' stroke-width='2'/><path d='M120 120 L114 108 L126 108 Z' fill='#568CBB'/>",
@@ -13115,11 +13539,99 @@
   },
   "family": "geotech-0050",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 172",
    "svg": "<rect x='40' y='20' width='320' height='34' fill='#EEEDE8'/><rect x='40' y='54' width='320' height='70' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><rect x='40' y='124' width='320' height='34' fill='#EEEDE8'/><text x='200' y='42' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Sand (drains freely)</text><text x='200' y='146' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Sand (drains freely)</text><text x='200' y='86' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Clay, 3 m thick</text><text x='200' y='104' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>effective stress rises from 150 to 240 kPa</text><line x1='120' y1='76' x2='120' y2='66' stroke='#568CBB' stroke-width='2'/><path d='M120 58 L114 70 L126 70 Z' fill='#568CBB'/><line x1='120' y1='102' x2='120' y2='112' stroke='#568CBB' stroke-width='2'/><path d='M120 120 L114 108 L126 108 Z' fill='#568CBB'/>",
    "alt": "A clay layer 3 m thick between two other layers; effective stress rises from 150 to 240 kPa."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "overconsolidated",
+    "loaded more heavily at some time in the past than it is now, so it compresses less under new load"
+   ],
+   [
+    "void ratio",
+    "volume of voids divided by volume of solid grains in a soil"
+   ],
+   [
+    "effective stress",
+    "the part of the stress in a soil that is carried by grain-to-grain contact: total stress minus pore water pressure"
+   ],
+   [
+    "consolidation",
+    "the slow squeezing of water out of a clay under load, which makes the ground settle over months or years"
+   ],
+   [
+    "compression index",
+    "the slope of a clay's void ratio against the logarithm of pressure; it sets how much the clay settles"
+   ]
+  ],
+  "needs": [
+   [
+    "geotech-d",
+    "geotech",
+    "Geotechnical Engineering: Effective stress"
+   ]
+  ],
+  "symbols": [
+   [
+    "C_{r}",
+    "recompression index"
+   ],
+   [
+    "e_{0}",
+    "initial void ratio"
+   ],
+   [
+    "S",
+    "settlement"
+   ],
+   [
+    "H",
+    "thickness of the clay layer"
+   ]
+  ]
+ },
+ {
+  "id": "geotech-0050-d",
+  "topic": "geotech",
+  "subtopic": "geotech-i",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An overconsolidated clay layer 6 m thick has a recompression index of 0.04 and an initial void ratio of 1.00. The effective stress at mid-layer rises from 90 kPa to 150 kPa, which is still below the preconsolidation pressure. What is the consolidation settlement?",
+  "answer": {
+   "value": 29.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "While the stress stays below the preconsolidation pressure the clay is being reloaded, so the flatter recompression index applies in place of the compression index: S = C_{r} H / (1 + e_{0}) × log(final / initial).",
+  "solution": "S = \\frac{0.04(6)}{1 + 1.00} log(\\frac{150}{90}) = 0.13500 × 0.2218 = 0.02995 m = 29.9 mm.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "compression index"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "geotech-0050",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 172",
+   "svg": "<rect x='40' y='20' width='320' height='34' fill='#EEEDE8'/><rect x='40' y='54' width='320' height='70' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><rect x='40' y='124' width='320' height='34' fill='#EEEDE8'/><text x='200' y='42' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Sand (drains freely)</text><text x='200' y='146' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Sand (drains freely)</text><text x='200' y='86' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Clay, 6 m thick</text><text x='200' y='104' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>effective stress rises from 90 to 150 kPa</text><line x1='120' y1='76' x2='120' y2='66' stroke='#568CBB' stroke-width='2'/><path d='M120 58 L114 70 L126 70 Z' fill='#568CBB'/><line x1='120' y1='102' x2='120' y2='112' stroke='#568CBB' stroke-width='2'/><path d='M120 120 L114 108 L126 108 Z' fill='#568CBB'/>",
+   "alt": "A clay layer 6 m thick between two other layers; effective stress rises from 90 to 150 kPa."
   },
   "lookup": true,
   "terms": [
@@ -13191,7 +13703,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "overconsolidation"
+    ]
    }
   ],
   "tags": [],
@@ -13202,7 +13716,7 @@
   "family": "geotech-0051",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "unit weight",
@@ -13246,7 +13760,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "overconsolidation"
+    ]
    }
   ],
   "tags": [],
@@ -13257,7 +13773,7 @@
   "family": "geotech-0051",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "unit weight",
@@ -13301,7 +13817,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "overconsolidation"
+    ]
    }
   ],
   "tags": [],
@@ -13312,7 +13830,7 @@
   "family": "geotech-0051",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "unit weight",
@@ -13356,7 +13874,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "overconsolidation"
+    ]
    }
   ],
   "tags": [],
@@ -13367,7 +13887,7 @@
   "family": "geotech-0051",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "unit weight",
@@ -13467,7 +13987,7 @@
    ],
    [
     "H",
-    "thickness of the layer, or height of the wall"
+    "thickness of the soil layer, measured vertically"
    ]
   ]
  },
@@ -13548,7 +14068,7 @@
    ],
    [
     "H",
-    "thickness of the layer, or height of the wall"
+    "thickness of the soil layer, measured vertically"
    ]
   ]
  },
@@ -13629,7 +14149,7 @@
    ],
    [
     "H",
-    "thickness of the layer, or height of the wall"
+    "thickness of the soil layer, measured vertically"
    ]
   ]
  },
@@ -13710,7 +14230,7 @@
    ],
    [
     "H",
-    "thickness of the layer, or height of the wall"
+    "thickness of the soil layer, measured vertically"
    ]
   ]
  },
@@ -14019,7 +14539,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "compaction"
+    ]
    }
   ],
   "tags": [],
@@ -14030,7 +14552,7 @@
   "family": "geotech-0054",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "water content",
@@ -14066,7 +14588,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "compaction"
+    ]
    }
   ],
   "tags": [],
@@ -14077,7 +14601,7 @@
   "family": "geotech-0054",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "water content",
@@ -14113,7 +14637,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "compaction"
+    ]
    }
   ],
   "tags": [],
@@ -14124,7 +14650,7 @@
   "family": "geotech-0054",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "water content",
@@ -14160,7 +14686,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "compaction"
+    ]
    }
   ],
   "tags": [],
@@ -14171,7 +14699,7 @@
   "family": "geotech-0054",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "water content",

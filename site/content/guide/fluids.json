@@ -253,7 +253,7 @@
     ],
     [
      "h",
-     "depth below the surface, or head"
+     "head: energy per unit weight of fluid, as a height"
     ],
     [
      "s",
@@ -353,7 +353,12 @@
      "idea": "For a thin film the velocity varies linearly across the gap, so the shear stress is viscosity times velocity divided by film thickness (Newton's law of viscosity). Force is stress times area.",
      "steps": "Shear stress = \\frac{0.64(0.4)}{0.0010} = 256.0 Pa.\n\nForce = 256.0 × 0.12 = 30.7 N.",
      "answer": "30.7 N",
-     "value": 30.72
+     "value": 30.72,
+     "figure": {
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#00574A' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#00574A'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Pull = 30.7 N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Oil drag</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Constant speed: the pull equals the oil film drag, shear stress × plate area</text>",
+      "alt": "Free-body diagram showing Pull = 30.7 N, Oil drag."
+     }
     },
     {
      "family": "fluids-0023",
@@ -361,7 +366,12 @@
      "idea": "The loss of weight in water equals the weight of water displaced, which has the sample's volume. Specific gravity is therefore the weight in air divided by the loss of weight.",
      "steps": "SG = \\frac{63.8}{63.8 - 39.9} = \\frac{63.8}{23.9} = 2.669.",
      "answer": "2.669",
-     "value": 2.669456
+     "value": 2.669456,
+     "figure": {
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight = 63.8 N</text><line x1='191' y1='78' x2='173' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M169 22 L168 34 L178 30 Z' fill='#1B795A'/><text x='164' y='15' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>Scale reads 39.9 N</text><line x1='209' y1='78' x2='227' y2='32' stroke='#568CBB' stroke-width='3'/><path d='M231 22 L222 30 L232 34 Z' fill='#568CBB'/><text x='236' y='15' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force = 23.9 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Buoyant force = weight in air - weight in water = weight of the water displaced</text>",
+      "alt": "Free-body diagram showing Weight = 63.8 N, Scale reads 39.9 N, Buoyant force = 23.9 N."
+     }
     }
    ],
    "lookup": [
@@ -542,7 +552,12 @@
      "idea": "In a fluid at rest, pressure increases linearly with depth: p = (specific weight) × h. Gauge pressure is measured relative to the atmosphere, so it is zero at the free surface.",
      "steps": "p = (specific weight)(h) = 9.81 × 15 = 147.2 kPa gauge.",
      "answer": "147.2 kPa",
-     "value": 147.15
+     "value": 147.15,
+     "figure": {
+      "viewBox": "0 0 400 176",
+      "svg": "<rect x='60' y='30' width='150' height='120' fill='#568CBB' fill-opacity='.3'/><path d='M60 30 L60 150 L210 150 L210 30' fill='none' stroke='#00242E' stroke-width='3'/><line x1='60' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><path d='M250 30 L250 150 L350 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='52' y='94' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>15 m</text><text x='300' y='168' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>147.2 kPa at the bottom</text><text x='250' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>zero at the surface</text>",
+      "alt": "Water 15 m deep with its pressure diagram: zero at the surface, rising in a straight line to 147.2 kPa at the bottom."
+     }
     },
     {
      "family": "fluids-0005",
@@ -589,7 +604,12 @@
      "idea": "Pressure at depth is the sum of specific weight times thickness for each layer above. The lower layer starts from the pressure at the interface, not from zero.",
      "steps": "Pressure at the interface = 0.82(9.81)(1.2) = 9.65 kPa.\n\nAdd the water: 9.65 + 9.81(1.8) = 27.31 kPa.",
      "answer": "27.31 kPa",
-     "value": 27.31104
+     "value": 27.31104,
+     "figure": {
+      "viewBox": "0 0 400 170",
+      "svg": "<rect x='70' y='30' width='150' height='44' fill='#EEEDE8' stroke='#00242E'/><rect x='70' y='74' width='150' height='66' fill='#568CBB' fill-opacity='.3' stroke='#00242E'/><path d='M70 30 L70 140 L220 140 L220 30' fill='none' stroke='#00242E' stroke-width='3'/><text x='145' y='56' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Oil, SG 0.82, 1.2 m</text><text x='145' y='111' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Water, 1.8 m</text><path d='M250 30 L250 140 L340 140 L282 74 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='300' y='156' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>27.31 kPa at the floor</text><text x='300' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Pressure</text>",
+      "alt": "A tank with 1.2 m of oil floating on 1.8 m of water, with the pressure diagram, which steepens in the denser water."
+     }
     },
     {
      "family": "fluids-0017",
@@ -707,7 +727,7 @@
     ],
     [
      "h",
-     "depth below the surface, or head"
+     "depth below the liquid surface"
     ],
     [
      "F",
@@ -828,7 +848,12 @@
      "idea": "The impulse-momentum principle: force equals the rate of change of momentum. The plate destroys all of the jet's momentum in the original direction, so F = (density)(Q)(V) = (density)(A)(V^{2}).",
      "steps": "A = \\frac{π(0.080)^{2}}{4} = 0.00503 m^{2}.\n\nF = (density) A V^{2} = 1,000(0.00503)(18)^{2} = 1,629 N.",
      "answer": "1,629 N",
-     "value": 1628.601632
+     "value": 1628.601632,
+     "figure": {
+      "viewBox": "0 0 400 176",
+      "svg": "<line x1='40' y1='90' x2='172' y2='90' stroke='#568CBB' stroke-width='6'/><path d='M180 90 L168 84 L168 96 Z' fill='#568CBB'/><text x='100' y='76' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>Jet</text><rect x='186' y='30' width='12' height='120' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='90' x2='282' y2='90' stroke='#00574A' stroke-width='3'/><path d='M290 90 L278 84 L278 96 Z' fill='#00574A'/><text x='296' y='94' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>1,628.6 N on the plate</text><text x='200' y='168' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>The plate removes all of the jet's forward momentum</text>",
+      "alt": "A water jet striking a flat plate at right angles; the force on it along the jet is 1,628.6 N."
+     }
     },
     {
      "family": "fluids-0013",
@@ -844,7 +869,12 @@
      "idea": "The momentum equation gives the force on the fluid as mass flow rate times the change in velocity. In the jet's original direction the velocity changes from V to V cos(angle), so the vane feels (density)(Q)(V)(1 - cos(angle)). A flat plate is the 90° case, and a full reversal at 180° doubles it.",
      "steps": "Q = A V = 0.00332 × 16 = 0.0531 m^{3}/s.\n\nF_{x} = (density) Q V (1 - cos 75°) = 1,000(0.0531)(16)(1 - (0.259)) = 630 N.",
      "answer": "630 N",
-     "value": 629.623329
+     "value": 629.623329,
+     "figure": {
+      "viewBox": "0 0 400 176",
+      "svg": "<line x1='40' y1='90' x2='172' y2='90' stroke='#568CBB' stroke-width='6'/><path d='M180 90 L168 84 L168 96 Z' fill='#568CBB'/><text x='100' y='76' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>Jet</text><path d='M180 90 Q230 90 246 32' fill='none' stroke='#00242E' stroke-width='4'/><line x1='248' y1='28' x2='260' y2='-17' stroke='#568CBB' stroke-width='6'/><path d='M263 -28 L255 -19 L266 -16 Z' fill='#568CBB'/><line x1='206' y1='120' x2='278' y2='120' stroke='#00574A' stroke-width='3'/><path d='M286 120 L274 114 L274 126 Z' fill='#00574A'/><text x='206' y='140' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>629.6 N on the vane, along the jet</text><text x='200' y='168' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Turned through 75°: the forward momentum falls by the factor (1 - cos 75°)</text>",
+      "alt": "A water jet striking a vane that turns it through 75°; the force on it along the jet is 629.6 N."
+     }
     },
     {
      "family": "fluids-0016",
@@ -852,7 +882,12 @@
      "idea": "The pressure force p A acts along the pipe axis at each end of the bend. The two are equal in size but differ in direction, leaving a resultant of 2 p A sin(angle / 2) that a thrust block must resist.",
      "steps": "A = \\frac{π(0.250)^{2}}{4} = 0.04909 m^{2}, so p A = 22.09 kN.\n\nThrust = 2(22.09) sin(30.00°) = 22.09 kN.",
      "answer": "22.09 kN",
-     "value": 22.089323
+     "value": 22.089323,
+     "figure": {
+      "viewBox": "0 0 400 190",
+      "svg": "<line x1='40' y1='30' x2='370' y2='30' stroke='#E7E8E8' stroke-width='2'/><line x1='145' y1='14' x2='145' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='25' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='153' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='145' y1='30' x2='284' y2='30' stroke='#00574A' stroke-width='3'/><path d='M295 30 L284 24 L284 36 Z' fill='#00574A'/><text x='305' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>p A in</text><line x1='145' y1='30' x2='76' y2='150' stroke='#1B795A' stroke-width='3'/><path d='M70 160 L80 153 L71 148 Z' fill='#1B795A'/><text x='60' y='176' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>p A out</text><line x1='145' y1='30' x2='215' y2='150' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M220 160 L219 148 L210 153 Z' fill='#568CBB'/><text x='230' y='176' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>22.09 kN</text>",
+      "alt": "Vector diagram: p A in; p A out; 22.09 kN."
+     }
     }
    ],
    "lookup": [

@@ -48,6 +48,11 @@
   "family": "fluids-0001",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<rect x='60' y='30' width='150' height='120' fill='#568CBB' fill-opacity='.3'/><path d='M60 30 L60 150 L210 150 L210 30' fill='none' stroke='#00242E' stroke-width='3'/><line x1='60' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><path d='M250 30 L250 150 L350 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='52' y='94' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>12 m</text><text x='300' y='168' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>117.7 kPa at the bottom</text><text x='250' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>zero at the surface</text>",
+   "alt": "Water 12 m deep with its pressure diagram: zero at the surface, rising in a straight line to 117.7 kPa at the bottom."
+  },
   "lookup": true,
   "terms": [
    [
@@ -74,7 +79,7 @@
    ],
    [
     "h",
-    "depth below the surface, or head"
+    "depth below the liquid surface"
    ]
   ]
  },
@@ -127,6 +132,11 @@
   "family": "fluids-0001",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<rect x='60' y='30' width='150' height='120' fill='#568CBB' fill-opacity='.3'/><path d='M60 30 L60 150 L210 150 L210 30' fill='none' stroke='#00242E' stroke-width='3'/><line x1='60' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><path d='M250 30 L250 150 L350 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='52' y='94' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>8 m</text><text x='300' y='168' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>78.5 kPa at the bottom</text><text x='250' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>zero at the surface</text>",
+   "alt": "Water 8 m deep with its pressure diagram: zero at the surface, rising in a straight line to 78.5 kPa at the bottom."
+  },
   "lookup": true,
   "terms": [
    [
@@ -153,7 +163,7 @@
    ],
    [
     "h",
-    "depth below the surface, or head"
+    "depth below the liquid surface"
    ]
   ]
  },
@@ -206,6 +216,11 @@
   "family": "fluids-0001",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<rect x='60' y='30' width='150' height='120' fill='#568CBB' fill-opacity='.3'/><path d='M60 30 L60 150 L210 150 L210 30' fill='none' stroke='#00242E' stroke-width='3'/><line x1='60' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><path d='M250 30 L250 150 L350 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='52' y='94' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>20 m</text><text x='300' y='168' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>196.2 kPa at the bottom</text><text x='250' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>zero at the surface</text>",
+   "alt": "Water 20 m deep with its pressure diagram: zero at the surface, rising in a straight line to 196.2 kPa at the bottom."
+  },
   "lookup": true,
   "terms": [
    [
@@ -232,7 +247,7 @@
    ],
    [
     "h",
-    "depth below the surface, or head"
+    "depth below the liquid surface"
    ]
   ]
  },
@@ -285,6 +300,11 @@
   "family": "fluids-0001",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<rect x='60' y='30' width='150' height='120' fill='#568CBB' fill-opacity='.3'/><path d='M60 30 L60 150 L210 150 L210 30' fill='none' stroke='#00242E' stroke-width='3'/><line x1='60' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><path d='M250 30 L250 150 L350 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='52' y='94' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>5 m</text><text x='300' y='168' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>49.1 kPa at the bottom</text><text x='250' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>zero at the surface</text>",
+   "alt": "Water 5 m deep with its pressure diagram: zero at the surface, rising in a straight line to 49.1 kPa at the bottom."
+  },
   "lookup": true,
   "terms": [
    [
@@ -311,7 +331,7 @@
    ],
    [
     "h",
-    "depth below the surface, or head"
+    "depth below the liquid surface"
    ]
   ]
  },
@@ -1495,7 +1515,7 @@
    ],
    [
     "h",
-    "depth below the surface, or head"
+    "head: energy per unit weight of fluid, as a height"
    ],
    [
     "s",
@@ -1571,7 +1591,7 @@
    ],
    [
     "h",
-    "depth below the surface, or head"
+    "head: energy per unit weight of fluid, as a height"
    ],
    [
     "s",
@@ -1647,7 +1667,7 @@
    ],
    [
     "h",
-    "depth below the surface, or head"
+    "head: energy per unit weight of fluid, as a height"
    ],
    [
     "s",
@@ -1723,7 +1743,7 @@
    ],
    [
     "h",
-    "depth below the surface, or head"
+    "head: energy per unit weight of fluid, as a height"
    ],
    [
     "s",
@@ -3157,6 +3177,11 @@
   "family": "fluids-0012",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='40' y1='90' x2='172' y2='90' stroke='#568CBB' stroke-width='6'/><path d='M180 90 L168 84 L168 96 Z' fill='#568CBB'/><text x='100' y='76' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>Jet</text><rect x='186' y='30' width='12' height='120' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='90' x2='282' y2='90' stroke='#00574A' stroke-width='3'/><path d='M290 90 L278 84 L278 96 Z' fill='#00574A'/><text x='296' y='94' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>785.4 N on the plate</text><text x='200' y='168' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>The plate removes all of the jet's forward momentum</text>",
+   "alt": "A water jet striking a flat plate at right angles; the force on it along the jet is 785.4 N."
+  },
   "lookup": true,
   "terms": [
    [
@@ -3224,6 +3249,11 @@
   "family": "fluids-0012",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='40' y1='90' x2='172' y2='90' stroke='#568CBB' stroke-width='6'/><path d='M180 90 L168 84 L168 96 Z' fill='#568CBB'/><text x='100' y='76' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>Jet</text><rect x='186' y='30' width='12' height='120' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='90' x2='282' y2='90' stroke='#00574A' stroke-width='3'/><path d='M290 90 L278 84 L278 96 Z' fill='#00574A'/><text x='296' y='94' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>636.2 N on the plate</text><text x='200' y='168' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>The plate removes all of the jet's forward momentum</text>",
+   "alt": "A water jet striking a flat plate at right angles; the force on it along the jet is 636.2 N."
+  },
   "lookup": true,
   "terms": [
    [
@@ -3291,6 +3321,11 @@
   "family": "fluids-0012",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='40' y1='90' x2='172' y2='90' stroke='#568CBB' stroke-width='6'/><path d='M180 90 L168 84 L168 96 Z' fill='#568CBB'/><text x='100' y='76' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>Jet</text><rect x='186' y='30' width='12' height='120' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='90' x2='282' y2='90' stroke='#00574A' stroke-width='3'/><path d='M290 90 L278 84 L278 96 Z' fill='#00574A'/><text x='296' y='94' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>785.4 N on the plate</text><text x='200' y='168' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>The plate removes all of the jet's forward momentum</text>",
+   "alt": "A water jet striking a flat plate at right angles; the force on it along the jet is 785.4 N."
+  },
   "lookup": true,
   "terms": [
    [
@@ -3358,6 +3393,11 @@
   "family": "fluids-0012",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='40' y1='90' x2='172' y2='90' stroke='#568CBB' stroke-width='6'/><path d='M180 90 L168 84 L168 96 Z' fill='#568CBB'/><text x='100' y='76' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>Jet</text><rect x='186' y='30' width='12' height='120' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='90' x2='282' y2='90' stroke='#00574A' stroke-width='3'/><path d='M290 90 L278 84 L278 96 Z' fill='#00574A'/><text x='296' y='94' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>636.2 N on the plate</text><text x='200' y='168' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>The plate removes all of the jet's forward momentum</text>",
+   "alt": "A water jet striking a flat plate at right angles; the force on it along the jet is 636.2 N."
+  },
   "lookup": true,
   "terms": [
    [
@@ -3766,6 +3806,11 @@
   "family": "fluids-0014",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='40' y1='90' x2='172' y2='90' stroke='#568CBB' stroke-width='6'/><path d='M180 90 L168 84 L168 96 Z' fill='#568CBB'/><text x='100' y='76' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>Jet</text><path d='M180 90 Q230 90 260 38' fill='none' stroke='#00242E' stroke-width='4'/><line x1='263' y1='34' x2='286' y2='-6' stroke='#568CBB' stroke-width='6'/><path d='M292 -16 L282 -9 L291 -4 Z' fill='#568CBB'/><line x1='206' y1='120' x2='278' y2='120' stroke='#00574A' stroke-width='3'/><path d='M286 120 L274 114 L274 126 Z' fill='#00574A'/><text x='206' y='140' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>392.7 N on the vane, along the jet</text><text x='200' y='168' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Turned through 60°: the forward momentum falls by the factor (1 - cos 60°)</text>",
+   "alt": "A water jet striking a vane that turns it through 60°; the force on it along the jet is 392.7 N."
+  },
   "lookup": true,
   "terms": [
    [
@@ -3838,6 +3883,11 @@
   "family": "fluids-0014",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='40' y1='90' x2='172' y2='90' stroke='#568CBB' stroke-width='6'/><path d='M180 90 L168 84 L168 96 Z' fill='#568CBB'/><text x='100' y='76' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>Jet</text><path d='M180 90 Q230 90 230 30' fill='none' stroke='#00242E' stroke-width='4'/><line x1='232' y1='26' x2='232' y2='-21' stroke='#568CBB' stroke-width='6'/><path d='M232 -32 L226 -21 L238 -21 Z' fill='#568CBB'/><line x1='206' y1='120' x2='278' y2='120' stroke='#00574A' stroke-width='3'/><path d='M286 120 L274 114 L274 126 Z' fill='#00574A'/><text x='206' y='140' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>785.4 N on the vane, along the jet</text><text x='200' y='168' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Turned through 90°: the forward momentum falls by the factor (1 - cos 90°)</text>",
+   "alt": "A water jet striking a vane that turns it through 90°; the force on it along the jet is 785.4 N."
+  },
   "lookup": true,
   "terms": [
    [
@@ -3910,6 +3960,11 @@
   "family": "fluids-0014",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='40' y1='90' x2='172' y2='90' stroke='#568CBB' stroke-width='6'/><path d='M180 90 L168 84 L168 96 Z' fill='#568CBB'/><text x='100' y='76' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>Jet</text><path d='M180 90 Q230 90 272 48' fill='none' stroke='#00242E' stroke-width='4'/><line x1='276' y1='44' x2='309' y2='11' stroke='#568CBB' stroke-width='6'/><path d='M317 3 L305 7 L313 15 Z' fill='#568CBB'/><line x1='206' y1='120' x2='278' y2='120' stroke='#00574A' stroke-width='3'/><path d='M286 120 L274 114 L274 126 Z' fill='#00574A'/><text x='206' y='140' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>186.3 N on the vane, along the jet</text><text x='200' y='168' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Turned through 45°: the forward momentum falls by the factor (1 - cos 45°)</text>",
+   "alt": "A water jet striking a vane that turns it through 45°; the force on it along the jet is 186.3 N."
+  },
   "lookup": true,
   "terms": [
    [
@@ -3982,6 +4037,11 @@
   "family": "fluids-0014",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='40' y1='90' x2='172' y2='90' stroke='#568CBB' stroke-width='6'/><path d='M180 90 L168 84 L168 96 Z' fill='#568CBB'/><text x='100' y='76' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>Jet</text><path d='M180 90 Q230 90 200 38' fill='none' stroke='#00242E' stroke-width='4'/><line x1='201' y1='34' x2='178' y2='-6' stroke='#568CBB' stroke-width='6'/><path d='M172 -16 L173 -4 L182 -9 Z' fill='#568CBB'/><line x1='206' y1='120' x2='278' y2='120' stroke='#00574A' stroke-width='3'/><path d='M286 120 L274 114 L274 126 Z' fill='#00574A'/><text x='206' y='140' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>1,374.1 N on the vane, along the jet</text><text x='200' y='168' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Turned through 120°: the forward momentum falls by the factor (1 - cos 120°)</text>",
+   "alt": "A water jet striking a vane that turns it through 120°; the force on it along the jet is 1,374.1 N."
+  },
   "lookup": true,
   "terms": [
    [
@@ -4053,6 +4113,16 @@
   "family": "fluids-0015",
   "version": 1,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='70' y='30' width='150' height='47' fill='#EEEDE8' stroke='#00242E'/><rect x='70' y='77' width='150' height='63' fill='#568CBB' fill-opacity='.3' stroke='#00242E'/><path d='M70 30 L70 140 L220 140 L220 30' fill='none' stroke='#00242E' stroke-width='3'/><text x='145' y='58' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Oil, SG 0.85, 1.5 m</text><text x='145' y='113' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Water, 2 m</text>",
+   "alt": "A tank with 1.5 m of oil floating on 2 m of water."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='70' y='30' width='150' height='47' fill='#EEEDE8' stroke='#00242E'/><rect x='70' y='77' width='150' height='63' fill='#568CBB' fill-opacity='.3' stroke='#00242E'/><path d='M70 30 L70 140 L220 140 L220 30' fill='none' stroke='#00242E' stroke-width='3'/><text x='145' y='58' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Oil, SG 0.85, 1.5 m</text><text x='145' y='113' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Water, 2 m</text><path d='M250 30 L250 140 L340 140 L285 77 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='300' y='156' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>32.13 kPa at the floor</text><text x='300' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Pressure</text>",
+   "alt": "A tank with 1.5 m of oil floating on 2 m of water, with the pressure diagram, which steepens in the denser water."
+  },
   "lookup": true,
   "terms": [
    [
@@ -4111,6 +4181,16 @@
   "family": "fluids-0015",
   "version": 2,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='70' y='30' width='150' height='73' fill='#EEEDE8' stroke='#00242E'/><rect x='70' y='103' width='150' height='37' fill='#568CBB' fill-opacity='.3' stroke='#00242E'/><path d='M70 30 L70 140 L220 140 L220 30' fill='none' stroke='#00242E' stroke-width='3'/><text x='145' y='71' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Oil, SG 0.90, 2 m</text><text x='145' y='126' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Water, 1 m</text>",
+   "alt": "A tank with 2 m of oil floating on 1 m of water."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='70' y='30' width='150' height='73' fill='#EEEDE8' stroke='#00242E'/><rect x='70' y='103' width='150' height='37' fill='#568CBB' fill-opacity='.3' stroke='#00242E'/><path d='M70 30 L70 140 L220 140 L220 30' fill='none' stroke='#00242E' stroke-width='3'/><text x='145' y='71' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Oil, SG 0.90, 2 m</text><text x='145' y='126' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Water, 1 m</text><path d='M250 30 L250 140 L340 140 L308 103 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='300' y='156' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>27.47 kPa at the floor</text><text x='300' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Pressure</text>",
+   "alt": "A tank with 2 m of oil floating on 1 m of water, with the pressure diagram, which steepens in the denser water."
+  },
   "lookup": true,
   "terms": [
    [
@@ -4169,6 +4249,16 @@
   "family": "fluids-0015",
   "version": 3,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='70' y='30' width='150' height='27' fill='#EEEDE8' stroke='#00242E'/><rect x='70' y='57' width='150' height='83' fill='#568CBB' fill-opacity='.3' stroke='#00242E'/><path d='M70 30 L70 140 L220 140 L220 30' fill='none' stroke='#00242E' stroke-width='3'/><text x='145' y='47' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Oil, SG 0.80, 0.8 m</text><text x='145' y='102' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Water, 2.5 m</text>",
+   "alt": "A tank with 0.8 m of oil floating on 2.5 m of water."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='70' y='30' width='150' height='27' fill='#EEEDE8' stroke='#00242E'/><rect x='70' y='57' width='150' height='83' fill='#568CBB' fill-opacity='.3' stroke='#00242E'/><path d='M70 30 L70 140 L220 140 L220 30' fill='none' stroke='#00242E' stroke-width='3'/><text x='145' y='47' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Oil, SG 0.80, 0.8 m</text><text x='145' y='102' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Water, 2.5 m</text><path d='M250 30 L250 140 L340 140 L268 57 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='300' y='156' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>30.80 kPa at the floor</text><text x='300' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Pressure</text>",
+   "alt": "A tank with 0.8 m of oil floating on 2.5 m of water, with the pressure diagram, which steepens in the denser water."
+  },
   "lookup": true,
   "terms": [
    [
@@ -4227,6 +4317,16 @@
   "family": "fluids-0015",
   "version": 4,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='70' y='30' width='150' height='73' fill='#EEEDE8' stroke='#00242E'/><rect x='70' y='103' width='150' height='37' fill='#568CBB' fill-opacity='.3' stroke='#00242E'/><path d='M70 30 L70 140 L220 140 L220 30' fill='none' stroke='#00242E' stroke-width='3'/><text x='145' y='71' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Oil, SG 0.88, 3 m</text><text x='145' y='126' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Water, 1.5 m</text>",
+   "alt": "A tank with 3 m of oil floating on 1.5 m of water."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='70' y='30' width='150' height='73' fill='#EEEDE8' stroke='#00242E'/><rect x='70' y='103' width='150' height='37' fill='#568CBB' fill-opacity='.3' stroke='#00242E'/><path d='M70 30 L70 140 L220 140 L220 30' fill='none' stroke='#00242E' stroke-width='3'/><text x='145' y='71' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Oil, SG 0.88, 3 m</text><text x='145' y='126' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Water, 1.5 m</text><path d='M250 30 L250 140 L340 140 L307 103 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='300' y='156' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>40.61 kPa at the floor</text><text x='300' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Pressure</text>",
+   "alt": "A tank with 3 m of oil floating on 1.5 m of water, with the pressure diagram, which steepens in the denser water."
+  },
   "lookup": true,
   "terms": [
    [
@@ -4286,6 +4386,11 @@
   "family": "fluids-0016",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='93' x2='370' y2='93' stroke='#E7E8E8' stroke-width='2'/><line x1='186' y1='14' x2='186' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='88' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='194' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='186' y1='93' x2='309' y2='93' stroke='#00574A' stroke-width='3'/><path d='M320 93 L309 88 L309 99 Z' fill='#00574A'/><text x='330' y='85' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>p A in</text><line x1='186' y1='93' x2='80' y2='154' stroke='#1B795A' stroke-width='3'/><path d='M70 160 L82 159 L77 150 Z' fill='#1B795A'/><text x='60' y='176' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>p A out</text><line x1='186' y1='93' x2='201' y2='149' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M204 160 L206 148 L196 151 Z' fill='#568CBB'/><text x='214' y='176' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>14.64 kN</text>",
+   "alt": "Vector diagram: p A in; p A out; 14.64 kN."
+  },
   "lookup": true,
   "terms": [
    [
@@ -4350,6 +4455,11 @@
   "family": "fluids-0016",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='56' x2='370' y2='56' stroke='#E7E8E8' stroke-width='2'/><line x1='174' y1='14' x2='174' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='51' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='182' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='174' y1='56' x2='309' y2='56' stroke='#00574A' stroke-width='3'/><path d='M320 56 L309 51 L309 62 Z' fill='#00574A'/><text x='330' y='48' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>p A in</text><line x1='174' y1='56' x2='78' y2='152' stroke='#1B795A' stroke-width='3'/><path d='M70 160 L82 156 L74 148 Z' fill='#1B795A'/><text x='60' y='176' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>p A out</text><line x1='174' y1='56' x2='212' y2='150' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M216 160 L217 148 L207 152 Z' fill='#568CBB'/><text x='226' y='176' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>14.43 kN</text>",
+   "alt": "Vector diagram: p A in; p A out; 14.43 kN."
+  },
   "lookup": true,
   "terms": [
    [
@@ -4414,6 +4524,11 @@
   "family": "fluids-0016",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='30' x2='370' y2='30' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='25' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='30' x2='189' y2='30' stroke='#00574A' stroke-width='3'/><path d='M200 30 L189 24 L189 36 Z' fill='#00574A'/><text x='210' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>p A in</text><line x1='70' y1='30' x2='70' y2='149' stroke='#1B795A' stroke-width='3'/><path d='M70 160 L76 149 L64 149 Z' fill='#1B795A'/><text x='60' y='176' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>p A out</text><line x1='70' y1='30' x2='192' y2='152' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M200 160 L196 148 L188 156 Z' fill='#568CBB'/><text x='210' y='176' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>78.72 kN</text>",
+   "alt": "Vector diagram: p A in; p A out; 78.72 kN."
+  },
   "lookup": true,
   "terms": [
    [
@@ -4478,6 +4593,11 @@
   "family": "fluids-0016",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='110' x2='370' y2='110' stroke='#E7E8E8' stroke-width='2'/><line x1='190' y1='14' x2='190' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='105' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='198' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='110' x2='309' y2='110' stroke='#00574A' stroke-width='3'/><path d='M320 110 L309 105 L309 116 Z' fill='#00574A'/><text x='330' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>p A in</text><line x1='190' y1='110' x2='80' y2='156' stroke='#1B795A' stroke-width='3'/><path d='M70 160 L82 161 L78 151 Z' fill='#1B795A'/><text x='60' y='176' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>p A out</text><line x1='190' y1='110' x2='198' y2='149' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M200 160 L203 148 L192 150 Z' fill='#568CBB'/><text x='210' y='176' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>55.16 kN</text>",
+   "alt": "Vector diagram: p A in; p A out; 55.16 kN."
+  },
   "lookup": true,
   "terms": [
    [
@@ -5560,7 +5680,7 @@
   "symbols": [
    [
     "h",
-    "depth below the surface, or head"
+    "height the liquid rises in the tube"
    ]
   ]
  },
@@ -5609,7 +5729,7 @@
   "symbols": [
    [
     "h",
-    "depth below the surface, or head"
+    "height the liquid rises in the tube"
    ]
   ]
  },
@@ -5658,7 +5778,7 @@
   "symbols": [
    [
     "h",
-    "depth below the surface, or head"
+    "height the liquid rises in the tube"
    ]
   ]
  },
@@ -5707,7 +5827,7 @@
   "symbols": [
    [
     "h",
-    "depth below the surface, or head"
+    "height the liquid rises in the tube"
    ]
   ]
  },
@@ -5745,6 +5865,11 @@
   "family": "fluids-0022",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#00574A' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#00574A'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Pull = 125.0 N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Oil drag</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Constant speed: the pull equals the oil film drag, shear stress × plate area</text>",
+   "alt": "Free-body diagram showing Pull = 125.0 N, Oil drag."
+  },
   "lookup": true,
   "terms": [
    [
@@ -5792,6 +5917,11 @@
   "family": "fluids-0022",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#00574A' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#00574A'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Pull = 16.0 N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Oil drag</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Constant speed: the pull equals the oil film drag, shear stress × plate area</text>",
+   "alt": "Free-body diagram showing Pull = 16.0 N, Oil drag."
+  },
   "lookup": true,
   "terms": [
    [
@@ -5839,6 +5969,11 @@
   "family": "fluids-0022",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#00574A' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#00574A'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Pull = 12.0 N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Oil drag</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Constant speed: the pull equals the oil film drag, shear stress × plate area</text>",
+   "alt": "Free-body diagram showing Pull = 12.0 N, Oil drag."
+  },
   "lookup": true,
   "terms": [
    [
@@ -5886,6 +6021,11 @@
   "family": "fluids-0022",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#00574A' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#00574A'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Pull = 59.5 N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Oil drag</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Constant speed: the pull equals the oil film drag, shear stress × plate area</text>",
+   "alt": "Free-body diagram showing Pull = 59.5 N, Oil drag."
+  },
   "lookup": true,
   "terms": [
    [
@@ -5933,6 +6073,11 @@
   "family": "fluids-0023",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight = 50.0 N</text><line x1='191' y1='78' x2='173' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M169 22 L168 34 L178 30 Z' fill='#1B795A'/><text x='164' y='15' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>Scale reads 30.0 N</text><line x1='209' y1='78' x2='227' y2='32' stroke='#568CBB' stroke-width='3'/><path d='M231 22 L222 30 L232 34 Z' fill='#568CBB'/><text x='236' y='15' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force = 20.0 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Buoyant force = weight in air - weight in water = weight of the water displaced</text>",
+   "alt": "Free-body diagram showing Weight = 50.0 N, Scale reads 30.0 N, Buoyant force = 20.0 N."
+  },
   "lookup": true,
   "terms": [
    [
@@ -5976,6 +6121,11 @@
   "family": "fluids-0023",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight = 120.0 N</text><line x1='191' y1='78' x2='173' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M169 22 L168 34 L178 30 Z' fill='#1B795A'/><text x='164' y='15' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>Scale reads 75.0 N</text><line x1='209' y1='78' x2='227' y2='32' stroke='#568CBB' stroke-width='3'/><path d='M231 22 L222 30 L232 34 Z' fill='#568CBB'/><text x='236' y='15' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force = 45.0 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Buoyant force = weight in air - weight in water = weight of the water displaced</text>",
+   "alt": "Free-body diagram showing Weight = 120.0 N, Scale reads 75.0 N, Buoyant force = 45.0 N."
+  },
   "lookup": true,
   "terms": [
    [
@@ -6019,6 +6169,11 @@
   "family": "fluids-0023",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight = 7.5 N</text><line x1='191' y1='78' x2='173' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M169 22 L168 34 L178 30 Z' fill='#1B795A'/><text x='164' y='15' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>Scale reads 4.7 N</text><line x1='209' y1='78' x2='227' y2='32' stroke='#568CBB' stroke-width='3'/><path d='M231 22 L222 30 L232 34 Z' fill='#568CBB'/><text x='236' y='15' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force = 2.8 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Buoyant force = weight in air - weight in water = weight of the water displaced</text>",
+   "alt": "Free-body diagram showing Weight = 7.5 N, Scale reads 4.7 N, Buoyant force = 2.8 N."
+  },
   "lookup": true,
   "terms": [
    [
@@ -6062,6 +6217,11 @@
   "family": "fluids-0023",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight = 85.0 N</text><line x1='191' y1='78' x2='173' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M169 22 L168 34 L178 30 Z' fill='#1B795A'/><text x='164' y='15' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>Scale reads 52.5 N</text><line x1='209' y1='78' x2='227' y2='32' stroke='#568CBB' stroke-width='3'/><path d='M231 22 L222 30 L232 34 Z' fill='#568CBB'/><text x='236' y='15' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force = 32.5 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Buoyant force = weight in air - weight in water = weight of the water displaced</text>",
+   "alt": "Free-body diagram showing Weight = 85.0 N, Scale reads 52.5 N, Buoyant force = 32.5 N."
+  },
   "lookup": true,
   "terms": [
    [
@@ -6390,6 +6550,11 @@
   "family": "fluids-0025",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 166",
+   "svg": "<path d='M70 60 L70 140 L330 140 L330 60 L250 60 L250 110 L110 110 L110 60 Z' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><rect x='70' y='52' width='40' height='10' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='250' y='52' width='80' height='10' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='90' y1='12' x2='90' y2='42' stroke='#00574A' stroke-width='3'/><path d='M90 50 L84 38 L96 38 Z' fill='#00574A'/><line x1='290' y1='50' x2='290' y2='20' stroke='#1B795A' stroke-width='3'/><path d='M290 12 L284 24 L296 24 Z' fill='#1B795A'/><text x='100' y='24' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>200 N in</text><text x='300' y='24' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>5,000 N out</text><text x='90' y='158' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>20 mm piston</text><text x='290' y='158' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>100 mm piston</text><text x='200' y='130' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>same pressure throughout</text>",
+   "alt": "A hydraulic jack: 200 N on a 20 mm piston produces the same pressure under a 100 mm piston, which lifts 5,000 N."
+  },
   "lookup": true,
   "needs": [
    [
@@ -6469,6 +6634,11 @@
   "family": "fluids-0025",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 166",
+   "svg": "<path d='M70 60 L70 140 L330 140 L330 60 L250 60 L250 110 L110 110 L110 60 Z' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><rect x='70' y='52' width='40' height='10' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='250' y='52' width='80' height='10' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='90' y1='12' x2='90' y2='42' stroke='#00574A' stroke-width='3'/><path d='M90 50 L84 38 L96 38 Z' fill='#00574A'/><line x1='290' y1='50' x2='290' y2='20' stroke='#1B795A' stroke-width='3'/><path d='M290 12 L284 24 L296 24 Z' fill='#1B795A'/><text x='100' y='24' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>150 N in</text><text x='300' y='24' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>5,400 N out</text><text x='90' y='158' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>25 mm piston</text><text x='290' y='158' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>150 mm piston</text><text x='200' y='130' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>same pressure throughout</text>",
+   "alt": "A hydraulic jack: 150 N on a 25 mm piston produces the same pressure under a 150 mm piston, which lifts 5,400 N."
+  },
   "lookup": true,
   "needs": [
    [
@@ -6548,6 +6718,11 @@
   "family": "fluids-0025",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 166",
+   "svg": "<path d='M70 60 L70 140 L330 140 L330 60 L250 60 L250 110 L110 110 L110 60 Z' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><rect x='70' y='52' width='40' height='10' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='250' y='52' width='80' height='10' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='90' y1='12' x2='90' y2='42' stroke='#00574A' stroke-width='3'/><path d='M90 50 L84 38 L96 38 Z' fill='#00574A'/><line x1='290' y1='50' x2='290' y2='20' stroke='#1B795A' stroke-width='3'/><path d='M290 12 L284 24 L296 24 Z' fill='#1B795A'/><text x='100' y='24' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>400 N in</text><text x='300' y='24' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>25,600 N out</text><text x='90' y='158' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>15 mm piston</text><text x='290' y='158' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>120 mm piston</text><text x='200' y='130' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>same pressure throughout</text>",
+   "alt": "A hydraulic jack: 400 N on a 15 mm piston produces the same pressure under a 120 mm piston, which lifts 25,600 N."
+  },
   "lookup": true,
   "needs": [
    [
@@ -6627,6 +6802,11 @@
   "family": "fluids-0025",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 166",
+   "svg": "<path d='M70 60 L70 140 L330 140 L330 60 L250 60 L250 110 L110 110 L110 60 Z' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><rect x='70' y='52' width='40' height='10' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='250' y='52' width='80' height='10' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='90' y1='12' x2='90' y2='42' stroke='#00574A' stroke-width='3'/><path d='M90 50 L84 38 L96 38 Z' fill='#00574A'/><line x1='290' y1='50' x2='290' y2='20' stroke='#1B795A' stroke-width='3'/><path d='M290 12 L284 24 L296 24 Z' fill='#1B795A'/><text x='100' y='24' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>175 N in</text><text x='300' y='24' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>5,650 N out</text><text x='90' y='158' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>22 mm piston</text><text x='290' y='158' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>125 mm piston</text><text x='200' y='130' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>same pressure throughout</text>",
+   "alt": "A hydraulic jack: 175 N on a 22 mm piston produces the same pressure under a 125 mm piston, which lifts 5,650 N."
+  },
   "lookup": true,
   "needs": [
    [
@@ -6946,7 +7126,7 @@
   "symbols": [
    [
     "h",
-    "depth below the surface, or head"
+    "head lost, as a height of fluid"
    ],
    [
     "K",
@@ -7005,7 +7185,7 @@
   "symbols": [
    [
     "h",
-    "depth below the surface, or head"
+    "head lost, as a height of fluid"
    ],
    [
     "K",
@@ -7064,7 +7244,7 @@
   "symbols": [
    [
     "h",
-    "depth below the surface, or head"
+    "head lost, as a height of fluid"
    ],
    [
     "K",
@@ -7123,7 +7303,7 @@
   "symbols": [
    [
     "h",
-    "depth below the surface, or head"
+    "head lost, as a height of fluid"
    ],
    [
     "K",
@@ -7177,7 +7357,7 @@
   },
   "family": "fluids-0028",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
   "terms": [
    [
@@ -7249,7 +7429,7 @@
   },
   "family": "fluids-0028",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
   "terms": [
    [
@@ -7321,7 +7501,79 @@
   },
   "family": "fluids-0028",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "laminar",
+    "smooth, layered flow with no mixing between layers"
+   ],
+   [
+    "reynolds number",
+    "a ratio that tells whether flow is smooth (laminar, low values) or mixed and eddying (turbulent, high values)"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
+  "symbols": [
+   [
+    "f",
+    "Darcy friction factor"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0028-d",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Flow in a pipe is laminar with a Reynolds number of 1,250. What is the Darcy friction factor?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.051"
+   },
+   {
+    "id": "b",
+    "text": "0.013"
+   },
+   {
+    "id": "c",
+    "text": "0.053"
+   },
+   {
+    "id": "d",
+    "text": "0.102"
+   }
+  ],
+  "answer": "a",
+  "eli5": "In laminar flow the friction factor depends only on the Reynolds number: f = 64 / Re. Pipe roughness matters only once the flow is turbulent, where the Moody diagram is needed.",
+  "solution": "f = \\frac{64}{1,250} = 0.051.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "Reynolds number"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0028",
+  "version": 4,
+  "versions": 4,
   "lookup": true,
   "terms": [
    [
@@ -7593,6 +7845,11 @@
   "family": "fluids-0030",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#00574A' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#00574A'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Drag = 1,296.0 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>The flow comes from the left; drag acts in the direction of the flow</text>",
+   "alt": "Free-body diagram showing Drag = 1,296.0 N."
+  },
   "lookup": true,
   "needs": [
    [
@@ -7654,6 +7911,11 @@
   "family": "fluids-0030",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#00574A' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#00574A'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Drag = 288.8 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>The flow comes from the left; drag acts in the direction of the flow</text>",
+   "alt": "Free-body diagram showing Drag = 288.8 N."
+  },
   "lookup": true,
   "needs": [
    [
@@ -7715,6 +7977,11 @@
   "family": "fluids-0030",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#00574A' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#00574A'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Drag = 900.0 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>The flow comes from the left; drag acts in the direction of the flow</text>",
+   "alt": "Free-body diagram showing Drag = 900.0 N."
+  },
   "lookup": true,
   "needs": [
    [
@@ -7776,6 +8043,11 @@
   "family": "fluids-0030",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#00574A' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#00574A'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Drag = 230.7 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>The flow comes from the left; drag acts in the direction of the flow</text>",
+   "alt": "Free-body diagram showing Drag = 230.7 N."
+  },
   "lookup": true,
   "needs": [
    [

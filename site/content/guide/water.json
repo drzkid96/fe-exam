@@ -196,7 +196,8 @@
       "rational formula",
       "NRCS",
       "curve number",
-      "unit hydrograph"
+      "unit hydrograph",
+      "infiltration"
      ]
     }
    ],
@@ -396,7 +397,12 @@
      "idea": "A hydraulic jump takes supercritical flow to subcritical. The depths on either side are conjugate: y_{2} = (y_{1} / 2)(square root of (1 + 8 Fr_{1}^{2}) - 1), with the Froude number taken upstream. It must exceed 1 for a jump to occur.",
      "steps": "Fr_{1} = \\frac{6.5}{\\sqrt{9.81(0.35)}} = 3.51, greater than 1.\n\ny_{2} = \\frac{0.35}{2}(\\sqrt{1 + 8(3.51)^{2}} - 1) = 1.57 m.",
      "answer": "1.57 m",
-     "value": 1.570109
+     "value": 1.570109,
+     "figure": {
+      "viewBox": "0 0 400 170",
+      "svg": "<line x1='30' y1='140' x2='370' y2='140' stroke='#00242E' stroke-width='3'/><path d='M30 140 L30 120 L170 120 Q200 36 230 50 L370 50 L370 140 Z' fill='#568CBB' fill-opacity='.3' stroke='#568CBB' stroke-width='2'/><line x1='50' y1='130' x2='102' y2='130' stroke='#00574A' stroke-width='3'/><path d='M110 130 L98 124 L98 136 Z' fill='#00574A'/><text x='100' y='112' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0.35 m, fast and shallow</text><text x='300' y='42' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1.57 m, slow and deep</text><text x='200' y='160' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Hydraulic jump</text>",
+      "alt": "A hydraulic jump: flow 0.35 m deep rises abruptly to 1.57 m."
+     }
     },
     {
      "family": "water-0030",
@@ -485,7 +491,7 @@
     ],
     [
      "critical depth",
-     "the depth at which a given flow has the least energy; shallower flow is fast (supercritical), deeper flow is slow (subcritical)"
+     "the depth at which a given flow has the least specific energy; shallower flow is fast (supercritical), deeper flow is slow (subcritical)"
     ],
     [
      "froude number",
@@ -511,7 +517,7 @@
     ],
     [
      "V",
-     "velocity or volume"
+     "velocity of flow"
     ],
     [
      "Q",
@@ -531,11 +537,11 @@
     ],
     [
      "n",
-     "Manning's roughness coefficient, or effective porosity"
+     "Manning's roughness coefficient"
     ],
     [
      "A",
-     "drainage area or flow area"
+     "flow area, the cross-section of the water"
     ],
     [
      "R",
@@ -563,7 +569,7 @@
     ],
     [
      "P",
-     "wetted perimeter, rainfall depth, or power"
+     "wetted perimeter"
     ]
    ]
   },
@@ -1244,15 +1250,15 @@
     ],
     [
      "C",
-     "runoff coefficient, concentration, or Hazen-Williams coefficient"
+     "runoff coefficient"
     ],
     [
      "i",
-     "rainfall intensity, or hydraulic gradient"
+     "rainfall intensity"
     ],
     [
      "A",
-     "drainage area or flow area"
+     "drainage area"
     ],
     [
      "s",
@@ -1300,7 +1306,7 @@
      "text": "Manning's equation for velocity (SI): V = (1/n) R^{2/3} S^{1/2}. For a circular pipe flowing full the hydraulic radius is D / 4."
     },
     {
-     "title": "",
+     "title": "Sewage flow",
      "text": "Sewers are sized for peak flow, the average flow multiplied by a peaking factor that is larger for small populations. Convert daily volume to L/s by dividing by 86,400 s per day."
     },
     {
@@ -1347,7 +1353,8 @@
      "section": "Civil Engineering",
      "page": "259–309",
      "find": [
-      "Manning's equation"
+      "Manning's equation",
+      "sewage flow"
      ]
     }
    ],
@@ -1378,7 +1385,7 @@
    "symbols": [
     [
      "V",
-     "velocity or volume"
+     "velocity of flow"
     ],
     [
      "R",
@@ -1386,7 +1393,7 @@
     ],
     [
      "n",
-     "Manning's roughness coefficient, or effective porosity"
+     "Manning's roughness coefficient"
     ],
     [
      "S",
@@ -1507,7 +1514,8 @@
       "seepage velocity",
       "Dupuit",
       "unconfined aquifer",
-      "well drawdown"
+      "well drawdown",
+      "storativity"
      ]
     }
    ],
@@ -1554,11 +1562,11 @@
     ],
     [
      "h_{2}",
-     "saturated thickness or head at radius r_{2}"
+     "water level above the aquifer base at the farther observation point"
     ],
     [
      "h_{1}",
-     "saturated thickness or head at radius r_{1}"
+     "water level above the aquifer base at the nearer observation point"
     ],
     [
      "r_{2}",
@@ -1702,7 +1710,16 @@
      "page": "310–354",
      "find": [
       "BOD",
-      "hardness"
+      "hardness",
+      "mass balance",
+      "alkalinity"
+     ]
+    },
+    {
+     "section": "Chemistry and Biochemistry",
+     "page": "85–93",
+     "find": [
+      "acids, bases, and ph"
      ]
     }
    ],
@@ -1754,7 +1771,7 @@
     ],
     [
      "P",
-     "wetted perimeter, rainfall depth, or power"
+     "fraction of the BOD bottle volume that is sample"
     ],
     [
      "k",
@@ -1855,6 +1872,13 @@
       "sound pressure level",
       "noise"
      ]
+    },
+    {
+     "section": "Environmental Engineering",
+     "page": "310–354",
+     "find": [
+      "suspended solids"
+     ]
     }
    ],
    "deep": "Testing and standards tie water quality to law. Drinking water must meet maximum contaminant levels; wastewater discharges must meet permit limits. Each parameter has a standard test, and results are compared with the limit as an average or a maximum over a stated period.\n\nSampling matters as much as analysis: where, when and how the sample is taken decides what it represents. Indicator organisms stand in for pathogens because they are easier to detect.",
@@ -1953,7 +1977,7 @@
      "text": "The surface overflow rate, Q / A, is the upward velocity of water in a clarifier. A particle is removed if its settling velocity is at least the overflow rate, so the rate is the key design parameter and depth does not appear."
     },
     {
-     "title": "",
+     "title": "Chlorine",
      "text": "Mass feed rate = flow × concentration. A dose of 1 mg/L is 1 g/m^{3}, so m^{3}/day × mg/L gives g/day; divide by 1,000 for kg/day."
     }
    ],
@@ -2016,9 +2040,12 @@
       "sedimentation",
       "overflow rate",
       "clarifier",
+      "chlorine",
       "activated sludge",
       "solids residence time",
-      "Stokes' law"
+      "filtration",
+      "Stokes' law",
+      "CT value"
      ]
     }
    ],

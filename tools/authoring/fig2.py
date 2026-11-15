@@ -245,6 +245,166 @@ BY_STEM.update({
  'A vertical curve [L] ft long joins': (L(0, lambda e: vcurve(e.g1, e.g2, e.L) if e.g1 > e.g2 else sag(e.g1, e.g2, e.L)), None),
  'A [W] N crate is [b|1] m wide': (L(0, lambda e: shape(RECT(e.b, e.h), labels=[(e.b / 2, -e.h * 0.12, f"{nf(e.b)} m", 'middle'), (-e.b * 0.06, e.h / 2, f"{nf(e.h)} m", 'end'), (e.b * 1.05, e.h, 'P', 'start'), (e.b / 2, e.h / 2, f"{nf(e.W)} N", 'middle')], unit='m', alt='A crate pushed horizontally at its top edge.')), BY_STEM['A [W] N crate is [b|1] m wide'][1]),
 })
+def bmd(L, kind, M, unit='kN·m'):
+    """Bending moment diagram on a baseline: 'simple' (sagging parabola), 'cant' (zero at the free end), 'fixed', 'propped'."""
+    X = lambda t: 60 + 280 * t; y0 = 70; k = 46; pts = [i / 40 for i in range(41)]
+    f = {'simple': lambda t: 4 * t * (1 - t), 'cant': lambda t: -(1 - t) ** 2, 'cantl': lambda t: -(1 - t), 'fixed': lambda t: 1.5 * (4 * t * (1 - t)) - 1, 'propped': lambda t: -(1 - t) * (1 - 4 * t)}[kind]
+    s = f"<path d='M60 {y0} " + ' '.join(f"L{X(t):.0f} {y0 + f(t) * k:.0f}" for t in pts) + f" L340 {y0} Z' fill='{LG}' stroke='{JD}' stroke-width='2'/><line x1='40' y1='{y0}' x2='360' y2='{y0}' stroke='{SL}' stroke-width='2'/>"
+    where = {'simple': (200, y0 + k + 16, 'at midspan'), 'cant': (64, y0 - k - 8, 'at the fixed support'), 'cantl': (64, y0 - k - 8, 'at the fixed support'), 'fixed': (64, y0 - k - 8, 'at each fixed end'), 'propped': (64, y0 - k - 8, 'at the fixed end')}[kind]
+    s += T(where[0], where[1], f"{nf(M)} {unit} {where[2]}", a='middle' if kind == 'simple' else 'start', c=EM, w='600') + dim(60, 340, 138, f"{nf(L)} m") + T(200, 172, 'Bending moment along the beam (sagging plotted downward)', z=11)
+    return {'viewBox': '0 0 400 180', 'svg': s, 'alt': f"Bending moment diagram for a {nf(L)} m beam with a largest moment of {nf(M)} {unit} {where[2]}."}
+def ssd(react, brake, unit='ft'):
+    tot = react + brake; a = 60 + 280 * react / tot
+    s = f"<rect x='60' y='60' width='{a-60:.0f}' height='26' fill='{LG}' stroke='{JD}' stroke-width='2'/><rect x='{a:.0f}' y='60' width='{340-a:.0f}' height='26' fill='{CR}' stroke='{SL}' stroke-width='2'/>" + T((60 + a) / 2, 50, 'Reaction', c=JD, w='600') + T((a + 340) / 2, 50, 'Braking', w='600') + T((60 + a) / 2, 104, f"{nf(react, 1)} {unit}", z=11) + T((a + 340) / 2, 104, f"{nf(brake, 1)} {unit}", z=11) + dim(60, 340, 122, f"{nf(tot, 1)} {unit} in total")
+    return {'viewBox': '0 0 400 150', 'svg': s, 'alt': f"Stopping distance split into {nf(react, 1)} {unit} travelled during the driver's reaction and {nf(brake, 1)} {unit} while braking."}
+def jump(y1, y2):
+    k = 90 / y2; s = f"<line x1='30' y1='140' x2='370' y2='140' stroke='{SL}' stroke-width='3'/><path d='M30 140 L30 {140-y1*k:.0f} L170 {140-y1*k:.0f} Q200 {140-y2*k-14:.0f} 230 {140-y2*k:.0f} L370 {140-y2*k:.0f} L370 140 Z' fill='{BL}' fill-opacity='.3' stroke='{BL}' stroke-width='2'/>"
+    s += harrow(50, 110, 140 - y1 * k / 2, EM) + T(100, 140 - y1 * k - 8, f"{nf(y1, 2)} m, fast and shallow", z=11) + T(300, 140 - y2 * k - 8, f"{nf(y2, 2)} m, slow and deep", z=11) + T(200, 160, 'Hydraulic jump', w='600', z=11)
+    return {'viewBox': '0 0 400 170', 'svg': s, 'alt': f"A hydraulic jump: flow {nf(y1, 2)} m deep rises abruptly to {nf(y2, 2)} m."}
+def tank2(h1, sg, h2, p=None):
+    k = 110 / (h1 + h2); s = f"<rect x='70' y='30' width='150' height='{h1*k:.0f}' fill='{CR}' stroke='{SL}'/><rect x='70' y='{30+h1*k:.0f}' width='150' height='{h2*k:.0f}' fill='{BL}' fill-opacity='.3' stroke='{SL}'/><path d='M70 30 L70 {30+(h1+h2)*k:.0f} L220 {30+(h1+h2)*k:.0f} L220 30' fill='none' stroke='{SL}' stroke-width='3'/>"
+    s += T(145, 30 + h1 * k / 2 + 4, f"Oil, SG {nf(sg, 2)}, {nf(h1)} m") + T(145, 30 + h1 * k + h2 * k / 2 + 4, f"Water, {nf(h2)} m")
+    if p: s += f"<path d='M250 30 L250 {30+(h1+h2)*k:.0f} L{250+90:.0f} {30+(h1+h2)*k:.0f} L{250+90*sg*h1/(sg*h1+h2):.0f} {30+h1*k:.0f} Z' fill='{LG}' stroke='{JD}' stroke-width='2'/>" + T(300, 30 + (h1 + h2) * k + 16, f"{nf(p, 2)} kPa at the floor", c=EM, w='600', z=11) + T(300, 22, 'Pressure', z=11)
+    return {'viewBox': '0 0 400 170', 'svg': s, 'alt': f"A tank with {nf(h1)} m of oil floating on {nf(h2)} m of water" + (', with the pressure diagram, which steepens in the denser water.' if p else '.')}
+def fpress(B, qmax, qmin):
+    k = 60 / qmax; s = f"<rect x='180' y='10' width='40' height='40' fill='{RU}' stroke='{SL}' stroke-width='2'/><rect x='100' y='50' width='200' height='22' fill='{CR}' stroke='{SL}' stroke-width='2'/><path d='M100 76 L300 76 L300 {76+qmax*k:.0f} L100 {76+max(qmin,0)*k:.0f} Z' fill='{LG}' stroke='{JD}' stroke-width='2'/>"
+    s += T(306, 80 + qmax * k, f"{nf(qmax, 1)} kPa", a='start', c=EM, w='600') + T(94, 80 + max(qmin, 0) * k, f"{nf(qmin, 1)} kPa", a='end', c=EM, w='600') + dim(100, 300, 156, f"{nf(B)} m")
+    return {'viewBox': '0 0 400 178', 'svg': s, 'alt': f"Bearing pressure under an eccentrically loaded footing {nf(B)} m wide, varying from {nf(qmin, 1)} to {nf(qmax, 1)} kPa."}
+from author_v import cashflow
+_money = lambda v: '$' + nf(v)
+BY_ID.update({
+ 'structural-0006': (None, L(0, lambda e: bmd(e.L, 'cantl', e.P * e.L))), 'structural-0013': (BY_ID['structural-0013'][0], L(0, lambda e: bmd(e.L, 'fixed', e.w * e.L ** 2 / 12))),
+ 'transport-0001': (None, L(0, lambda e: ssd(1.47 * e.V * 2.5, e.ans - 1.47 * e.V * 2.5))), 'fluids-0015': (L(0, lambda e: tank2(e.h1, e.sg, e.h2)), L(0, lambda e: tank2(e.h1, e.sg, e.h2, e.ans))),
+ 'geotech-0027': (BY_ID['geotech-0027'][0], L(0, lambda e: fpress(e.B, e.ans, e.P / e.B * (1 - 6 * (e.M / e.P) / e.B)))), 'water-0029': (None, L(0, lambda e: jump(e.y1, e.ans))),
+ 'econ-0001': (L(0, lambda e: cashflow(min(e.n, 30), P=_money(e.P), F='F = ?')), None), 'econ-0002': (L(0, lambda e: cashflow(e.n, P=_money(e.P), A='A = ?')), None), 'econ-0007': (L(0, lambda e: cashflow(min(e.n, 30), P='P = ?', F=_money(e.Fv))), None),
+ 'surveying-0013': (None, L(0, lambda e: vec([('A to B', e.EB - e.EA, e.NB - e.NA), ('departure', e.EB - e.EA, 0, BL, True), ('latitude', 0, e.NB - e.NA, JD, True)]))),
+})
+BY_STEM.update({
+ 'A cantilever beam [L|1] m long carries a uniform load of [w] kN/m over its whole length and a [P] kN': (BY_STEM['A cantilever beam [L|1] m long carries a uniform load of [w] kN/m over its whole length and a [P] kN'][0], L(0, lambda e: bmd(e.L, 'cant', e.ans))),
+ 'A beam [L|1] m long is fixed at one end and simply supported': (BY_STEM['A beam [L|1] m long is fixed at one end and simply supported'][0], L(0, lambda e: bmd(e.L, 'propped', e.ans))),
+ 'A vehicle travels at [V] mph on a [G]% grade': (None, L(0, lambda e: ssd(1.47 * e.V * 2.5, e.ans - 1.47 * e.V * 2.5))),
+ 'The toe of a retaining wall is embedded': (BY_STEM['The toe of a retaining wall is embedded'][0], L(0, lambda e: wall(e.H, e.ans))),
+ 'What is the present worth of $[A] received': (L(0, lambda e: cashflow(e.n, P='P = ?', A=_money(e.A))), None), 'An agency needs $[F] in [n] years': (L(0, lambda e: cashflow(e.n, A='A = ?', F=_money(e.F))), None),
+ 'A project costs $[C] now, returns': (L(0, lambda e: cashflow(e.n, P=_money(e.C) + ' cost', A=_money(e.A), F=_money(e.Sv) + ' salvage')), None),
+ 'Point A is at N [NA|2], E [EA|2]': (None, L(0, lambda e: vec([('A to B', e.EB - e.EA, e.NB - e.NA), ('departure', e.EB - e.EA, 0, BL, True), ('latitude', 0, e.NB - e.NA, JD, True)]))),
+ 'A total station with a height of instrument': (None, L(0, lambda e: vec([('sloping', e.S * cos(rad(e.va)), e.S * sin(rad(e.va))), ('level', e.S * cos(rad(e.va)), 0, BL, True)]))),
+ 'A line passes through the points ([x1], [y1])': (None, L(0, lambda e: vec([('given line', e.x2 - e.x1, e.y2 - e.y1), ('at 90°', -(e.y2 - e.y1), e.x2 - e.x1, BL, True)]))),
+ 'A rectangular channel carries [q|1] m^{3}/s per metre': (None, None),
+})
+# ---- further explanation figures for questions that involve forces ----
+def bar(segs, forces=(), walls=(True, False), note=''):
+    """A straight bar. segs: (label, share of length). forces: (position 0 to 1, label, +1 to the right or -1 to the left, colour)."""
+    x0, x1, y = 90, 310, 86; X = lambda t: x0 + (x1 - x0) * t; s = ''; t = 0
+    for i, (lab, fr) in enumerate(segs): s += f"<rect x='{X(t):.0f}' y='{y-11}' width='{(x1-x0)*fr:.0f}' height='22' fill='{CR if i % 2 == 0 else LG}' stroke='{SL}' stroke-width='2'/>" + T(X(t + fr / 2), y + 30, lab, z=11); t += fr
+    for k, w in enumerate(walls):
+        if w: s += f"<rect x='{(x0 - 14) if k == 0 else x1}' y='{y-36}' width='14' height='72' fill='{RU}' stroke='{SL}' stroke-width='2'/>"
+    for n, (xf, lab, d, col) in enumerate(forces):
+        yy = y - 24 - 16 * (n % 3); s += harrow(X(xf), X(xf) + 44 * d, yy, col or EM) + T(X(xf) + 50 * d, yy + 4, lab, a='start' if d > 0 else 'end', c=col or EM, w='600', z=11)
+    return {'viewBox': '0 0 400 150', 'svg': s + (T(200, 142, note, z=11) if note else ''), 'alt': 'A bar' + (' held between rigid supports' if all(walls) else '') + ' with ' + '; '.join(f[1] for f in forces) + '.' + (' ' + note + '.' if note else '')}
+def dshear(P, tau=None, u='kN'):
+    s = f"<rect x='60' y='46' width='190' height='16' fill='{CR}' stroke='{SL}' stroke-width='2'/><rect x='60' y='98' width='190' height='16' fill='{CR}' stroke='{SL}' stroke-width='2'/><rect x='170' y='70' width='180' height='20' fill='{LG}' stroke='{SL}' stroke-width='2'/><rect x='200' y='34' width='18' height='92' fill='{JD}' stroke='{SL}' stroke-width='2'/>"
+    s += f"<line x1='180' y1='66' x2='240' y2='66' stroke='{BL}' stroke-width='2' stroke-dasharray='6 4'/><line x1='180' y1='94' x2='240' y2='94' stroke='{BL}' stroke-width='2' stroke-dasharray='6 4'/>"
+    s += harrow(350, 392, 80) + T(392, 68, f"{nf(P)} {u}", a='end', c=EM, w='600') + harrow(60, 18, 54) + harrow(60, 18, 106) + T(18, 42, f"{nf(P / 2)} {u}", a='start', c=EM, w='600') + T(18, 126, f"{nf(P / 2)} {u}", a='start', c=EM, w='600')
+    s += T(250, 150, 'Two shear planes (dashed): each carries half the force', c=BL, z=11)
+    return {'viewBox': '0 0 400 160', 'svg': s, 'alt': f"A pin through a clevis in double shear. The middle plate pulls with {nf(P)} {u} and each outer plate with {nf(P / 2)} {u}, so the pin is cut on two planes."}
+def bearing(d, t, P):
+    s = f"<rect x='70' y='70' width='260' height='34' fill='{CR}' stroke='{SL}' stroke-width='2'/><rect x='182' y='36' width='36' height='102' fill='{RU}' stroke='{SL}' stroke-width='2'/><rect x='182' y='70' width='36' height='34' fill='{LG}' stroke='{JD}' stroke-width='2'/>"
+    s += harrow(218, 290, 52) + T(296, 56, f"{nf(P)} kN", a='start', c=EM, w='600') + dim(182, 218, 150, f"bolt {nf(d)} mm") + T(62, 91, f"plate {nf(t)} mm", a='end', z=11) + T(200, 22, f"Bearing area = {nf(d)} × {nf(t)} = {nf(d * t)} mm²", c=JD, w='600', z=11)
+    return {'viewBox': '0 0 400 168', 'svg': s, 'alt': f"A {nf(d)} mm bolt passing through a {nf(t)} mm plate. The bearing area is the bolt diameter times the plate thickness, {nf(d * t)} mm²."}
+def vessel(hoop, ax):
+    s = f"<rect x='70' y='40' width='260' height='90' rx='44' fill='{CR}' stroke='{SL}' stroke-width='2'/><rect x='182' y='67' width='36' height='36' fill='{LG}' stroke='{JD}' stroke-width='2'/>"
+    s += arrow(200, 67, 34, EM) + arrow(200, 103, 136, EM) + harrow(218, 262, 85, BL) + harrow(182, 138, 85, BL) + T(200, 24, f"Hoop stress {nf(hoop, 1)} MPa (around the tank)", c=EM, w='600', z=11) + T(200, 156, f"Axial stress {nf(ax, 1)} MPa (along the tank), half the hoop stress", c=BL, w='600', z=11)
+    return {'viewBox': '0 0 400 166', 'svg': s, 'alt': f"A small piece of the wall of a pressurised cylinder. Hoop stress of {nf(hoop, 1)} MPa acts around the tank and axial stress of {nf(ax, 1)} MPa acts along it."}
+def lever(P, a, b, F, u='mm'):
+    k = 260 / (a + b); px = 70 + b * k
+    s = f"<rect x='70' y='78' width='260' height='12' fill='{CR}' stroke='{SL}' stroke-width='2'/><path d='M{px:.0f} 90 L{px-12:.0f} 112 L{px+12:.0f} 112 Z' fill='#FFFFFF' stroke='{SL}' stroke-width='2'/>" + arrow(330, 30, 76) + arrow(70, 30, 76, BL)
+    s += T(330, 22, f"Hand {nf(P)} N", a='end', c=EM, w='600') + T(70, 22, f"Wire pushes back {nf(F)} N", a='start', c=BL, w='600') + dim(70, px, 130, f"{nf(b)} {u}") + dim(px, 330, 130, f"{nf(a)} {u}") + T(px + 18, 108, 'pivot', a='start', z=11)
+    return {'viewBox': '0 0 400 164', 'svg': s, 'alt': f"One handle as a lever about the pivot: a hand force of {nf(P)} N at {nf(a)} {u} balances a jaw force of {nf(F)} N at {nf(b)} {u}."}
+def fcs(F, d, M):
+    s = f"<line x1='60' y1='110' x2='340' y2='110' stroke='{RU}' stroke-width='3'/><circle cx='130' cy='110' r='5' fill='{SL}'/>" + T(130, 132, 'O') + arr(270, 40, 270, 106, SL, 2, True) + T(278, 50, 'original position', a='start', z=11) + arrow(130, 40, 104) + T(122, 50, f"{nf(F)} N", a='end', c=EM, w='600')
+    s += f"<path d='M106 96 A28 28 0 1 1 158 96' fill='none' stroke='{BL}' stroke-width='3'/><path d='M158 102 L150 88 L166 90 Z' fill='{BL}'/>" + T(168, 76, f"{nf(M)} N·m clockwise", a='start', c=BL, w='600') + dim(130, 270, 150, f"{nf(d)} m")
+    return {'viewBox': '0 0 400 170', 'svg': s, 'alt': f"The {nf(F)} N force moved to point O, together with a clockwise moment of {nf(M)} N·m that makes up for moving it {nf(d)} m."}
+def press(h, pr):
+    s = f"<rect x='60' y='30' width='150' height='120' fill='{BL}' fill-opacity='.3'/><path d='M60 30 L60 150 L210 150 L210 30' fill='none' stroke='{SL}' stroke-width='3'/><line x1='60' y1='30' x2='210' y2='30' stroke='{BL}' stroke-width='2'/>"
+    s += f"<path d='M250 30 L250 150 L350 150 Z' fill='{LG}' stroke='{JD}' stroke-width='2'/>" + T(52, 94, f"{nf(h)} m", a='end') + T(300, 168, f"{nf(pr, 1)} kPa at the bottom", c=EM, w='600', z=11) + T(250, 22, 'zero at the surface', a='start', z=11)
+    return {'viewBox': '0 0 400 176', 'svg': s, 'alt': f"Water {nf(h)} m deep with its pressure diagram: zero at the surface, rising in a straight line to {nf(pr, 1)} kPa at the bottom."}
+def jet(F, th=None):
+    s = harrow(40, 180, 90, BL, 6) + T(100, 76, 'Jet', c=BL, w='600')
+    if th is None: s += f"<rect x='186' y='30' width='12' height='120' fill='{RU}' stroke='{SL}' stroke-width='2'/>" + harrow(200, 290, 90) + T(296, 94, f"{nf(F, 1)} N on the plate", a='start', c=EM, w='600', z=11) + T(200, 168, 'The plate removes all of the jet\'s forward momentum', z=11)
+    else:
+        a = rad(th); s += f"<path d='M180 90 Q230 90 {230 + 60 * cos(a):.0f} {90 - 60 * sin(a):.0f}' fill='none' stroke='{SL}' stroke-width='4'/>" + arr(232 + 62 * cos(a), 88 - 62 * sin(a), 232 + 120 * cos(a), 88 - 120 * sin(a), BL, 6) + harrow(206, 286, 120) + T(206, 140, f"{nf(F, 1)} N on the vane, along the jet", a='start', c=EM, w='600', z=11) + T(200, 168, f"Turned through {nf(th)}°: the forward momentum falls by the factor (1 - cos {nf(th)}°)", z=11)
+    return {'viewBox': '0 0 400 176', 'svg': s, 'alt': f"A water jet striking a {'flat plate at right angles' if th is None else f'vane that turns it through {nf(th)}°'}; the force on it along the jet is {nf(F, 1)} N."}
+def jack(F1, d1, d2, F2):
+    s = f"<path d='M70 60 L70 140 L330 140 L330 60 L250 60 L250 110 L110 110 L110 60 Z' fill='{BL}' fill-opacity='.3' stroke='{SL}' stroke-width='2'/><rect x='70' y='52' width='40' height='10' fill='{RU}' stroke='{SL}' stroke-width='2'/><rect x='250' y='52' width='80' height='10' fill='{RU}' stroke='{SL}' stroke-width='2'/>"
+    s += arrow(90, 12, 50) + arrow(290, 50, 12, JD) + T(100, 24, f"{nf(F1)} N in", a='start', c=EM, w='600') + T(300, 24, f"{nf(F2)} N out", a='start', c=JD, w='600') + T(90, 158, f"{nf(d1)} mm piston", z=11) + T(290, 158, f"{nf(d2)} mm piston", z=11) + T(200, 130, 'same pressure throughout', z=11)
+    return {'viewBox': '0 0 400 166', 'svg': s, 'alt': f"A hydraulic jack: {nf(F1)} N on a {nf(d1)} mm piston produces the same pressure under a {nf(d2)} mm piston, which lifts {nf(F2)} N."}
+def mcline(c, phi, sn, tau):
+    xm = sn * 1.45; ym = c + xm * math.tan(rad(phi)); k = min(280 / xm, 120 / ym); X = lambda v: 60 + v * k; Y = lambda v: 150 - v * k
+    s = f"<line x1='60' y1='150' x2='360' y2='150' stroke='{SL}' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='16' stroke='{SL}' stroke-width='2'/><line x1='60' y1='{Y(c):.0f}' x2='{X(xm):.0f}' y2='{Y(ym):.0f}' stroke='{JD}' stroke-width='3'/>"
+    s += f"<line x1='{X(sn):.0f}' y1='150' x2='{X(sn):.0f}' y2='{Y(tau):.0f}' stroke='{SL}' stroke-dasharray='5 4'/><line x1='60' y1='{Y(tau):.0f}' x2='{X(sn):.0f}' y2='{Y(tau):.0f}' stroke='{SL}' stroke-dasharray='5 4'/><circle cx='{X(sn):.0f}' cy='{Y(tau):.0f}' r='5' fill='{EM}'/>"
+    s += T(X(sn), 166, f"normal stress {nf(sn)} kPa", z=11) + T(X(sn) + 10, Y(tau) + 16, f"shear strength {nf(tau, 1)} kPa", a='start', c=EM, w='600', z=11) + T(X(xm) - 4, Y(ym) - 8, f"rises at the friction angle, {nf(phi, 1)}°", a='end', c=JD, w='600', z=11) + (T(66, Y(c) - 6, f"cohesion {nf(c)} kPa", a='start', z=11) if c else '')
+    return {'viewBox': '0 0 400 176', 'svg': s, 'alt': f"The soil's strength line: shear strength against normal stress, starting at a cohesion of {nf(c)} kPa and rising at the friction angle of {nf(phi, 1)}°. At {nf(sn)} kPa normal stress the strength is {nf(tau, 1)} kPa."}
+def slip(R, La, x, W, su):
+    s = f"<line x1='40' y1='70' x2='360' y2='70' stroke='{SL}' stroke-width='2'/><path d='M96 70 A116 116 0 0 0 304 70' fill='{CR}' stroke='{JD}' stroke-width='3'/><circle cx='200' cy='18' r='4' fill='{SL}'/>" + T(190, 16, 'O', a='end')
+    s += f"<line x1='200' y1='18' x2='120' y2='102' stroke='{SL}' stroke-dasharray='5 4'/>" + T(150, 56, f"R = {nf(R)} m", a='end', z=11) + arrow(248, 78, 124) + T(240, 108, f"W = {nf(W)} kN", a='end', c=EM, w='600') + dim(200, 248, 36, f"{nf(x)} m")
+    s += T(200, 150, f"Clay strength {nf(su)} kPa acts along the {nf(La)} m arc, at radius R from O", c=JD, w='600', z=11) + T(200, 166, 'Driving moment = W × its distance from O', z=11)
+    return {'viewBox': '0 0 400 174', 'svg': s, 'alt': f"A circular slip surface of radius {nf(R)} m about O. The weight of {nf(W)} kN acts {nf(x)} m from O and tries to rotate the mass; the clay strength of {nf(su)} kPa along the {nf(La)} m arc resists at radius R."}
+def two1(B, z, dq):
+    k = 150 / (B + z); x0 = 200 - B * k / 2; h = min(z * k, 90); sp = z * k / 2
+    s = f"<line x1='40' y1='44' x2='360' y2='44' stroke='{SL}' stroke-width='2'/><rect x='{x0:.0f}' y='30' width='{B*k:.0f}' height='14' fill='{CR}' stroke='{SL}' stroke-width='2'/>" + arrow(200, 4, 28) + f"<path d='M{x0:.0f} 44 L{x0 - sp:.0f} {44 + h:.0f} L{x0 + B * k + sp:.0f} {44 + h:.0f} L{x0 + B * k:.0f} 44' fill='{LG}' fill-opacity='.5' stroke='{JD}' stroke-width='2' stroke-dasharray='6 4'/>"
+    s += T(x0 + B * k + 8, 40, f"{nf(B)} m wide", a='start', z=11) + T(x0 - sp - 6, 44 + h / 2, f"{nf(z)} m", a='end', z=11) + dim(x0 - sp, x0 + B * k + sp, 44 + h + 14, f"{nf(B)} + {nf(z)} = {nf(B + z)} m") + T(200, 44 + h + 44, f"The same load over the larger area: {nf(dq, 1)} kPa", c=EM, w='600', z=11)
+    return {'viewBox': f"0 0 400 {44 + h + 54:.0f}", 'svg': s, 'alt': f"The 2:1 method: the loaded area spreads outward by 1 for every 2 of depth, so {nf(z)} m down each side is {nf(z)} m longer and the stress falls to {nf(dq, 1)} kPa."}
+def trib(sp, w=None, q=None):
+    s = ''.join(f"<line x1='{x}' y1='30' x2='{x}' y2='130' stroke='{SL}' stroke-width='{4 if x == 200 else 2}'/>" for x in (80, 200, 320)) + f"<rect x='140' y='30' width='120' height='100' fill='{LG}' fill-opacity='.6' stroke='{JD}' stroke-dasharray='6 4'/>"
+    s += dim(80, 200, 148, f"{nf(sp)} m") + dim(200, 320, 148, f"{nf(sp)} m") + T(200, 20, f"This beam carries a strip {nf(sp)} m wide: half a bay on each side", c=JD, w='600', z=11) + (T(200, 190, f"{nf(q)} kPa × {nf(sp)} m = {nf(w, 1)} kN/m along the beam", c=EM, w='600', z=11) if w else '')
+    return {'viewBox': '0 0 400 198', 'svg': s, 'alt': f"Plan of floor beams {nf(sp)} m apart. The middle beam carries the floor from halfway to each neighbour, a strip {nf(sp)} m wide."}
+def tribcol(a, b, note=''):
+    s = ''.join(f"<rect x='{x-5}' y='{y-5}' width='10' height='10' fill='{SL}'/>" for x in (90, 200, 310) for y in (30, 90, 150)) + f"<rect x='145' y='60' width='110' height='60' fill='{LG}' fill-opacity='.6' stroke='{JD}' stroke-dasharray='6 4'/>" + dim(90, 200, 172, f"{nf(a)} m") + T(322, 64, f"{nf(b)} m", a='start', z=11)
+    s += T(200, 14, f"The middle column carries {nf(a)} m × {nf(b)} m = {nf(a * b)} m² of each floor", c=JD, w='600', z=11) + (T(200, 214, note, c=EM, w='600', z=11) if note else '')
+    return {'viewBox': '0 0 400 222', 'svg': s, 'alt': f"Plan of a column grid {nf(a)} m by {nf(b)} m. An interior column carries the floor halfway to each neighbouring column, {nf(a * b)} m² per floor."}
+def lap(n, R, u='kips'):
+    xs = [150 + 100 * (i + 0.5) / n for i in range(n)]
+    s = f"<rect x='40' y='60' width='210' height='40' fill='{CR}' stroke='{SL}' stroke-width='2'/><rect x='150' y='70' width='210' height='40' fill='{LG}' fill-opacity='.7' stroke='{SL}' stroke-width='2'/>" + ''.join(f"<circle cx='{x:.0f}' cy='85' r='7' fill='{JD}' stroke='{SL}'/>" for x in xs)
+    s += harrow(40, 6, 80) + harrow(360, 394, 90) + T(200, 136, f"{n} bolts, each cut on one plane between the plates", z=11) + T(200, 154, f"Design strength of the group = {nf(R, 1)} {u}", c=EM, w='600', z=11)
+    return {'viewBox': '0 0 400 162', 'svg': s, 'alt': f"Two overlapping plates pulled in opposite directions and joined by {n} bolts, each in single shear."}
+def swing(Ln):
+    s = f"<circle cx='110' cy='40' r='5' fill='{SL}'/><rect x='110' y='35' width='180' height='10' fill='{CR}' stroke='{SL}' stroke-width='2'/><rect x='105' y='40' width='10' height='130' fill='{LG}' fill-opacity='.6' stroke='{JD}' stroke-dasharray='6 4'/><circle cx='200' cy='40' r='4' fill='{EM}'/><circle cx='110' cy='105' r='4' fill='{EM}'/>"
+    s += f"<line x1='200' y1='40' x2='200' y2='105' stroke='{EM}' stroke-dasharray='5 4'/><line x1='110' y1='105' x2='200' y2='105' stroke='{EM}' stroke-dasharray='5 4'/>" + T(208, 78, f"centre of mass falls {nf(Ln / 2, 2)} m", a='start', c=EM, w='600', z=11) + T(200, 26, f"{nf(Ln)} m rod, released level", z=11) + T(124, 168, 'passing through the vertical', a='start', z=11)
+    return {'viewBox': '0 0 400 180', 'svg': s, 'alt': f"A {nf(Ln)} m rod pinned at one end, shown level at release and hanging vertically. Its centre of mass falls by half its length, {nf(Ln / 2, 2)} m."}
+_ws = (None, None)
+def _keep(d, key): return d.get(key, _ws)[0]
+BY_ID.update({
+ 'statics-0007': (None, L(0, lambda e: fcs(e.Fc, e.d, e.ans))),
+ 'fluids-0001': (None, L(0, lambda e: press(e.h, e.ans))), 'fluids-0012': (None, L(0, lambda e: jet(e.ans))), 'fluids-0014': (None, L(0, lambda e: jet(e.ans, e.th))),
+ 'geotech-0005': (None, L(0, lambda e: mcline(e.c, e.phi, e.sn, e.ans))), 'geotech-0021': (None, L(0, lambda e: slip(e.R, e.La, e.x, e.W, e.su))),
+ 'mechmat-0010': (None, L(0, lambda e: bar([('Heated bar: it tries to lengthen', 1)], [(0, 'wall pushes back', 1, BL), (1, 'wall pushes back', -1, BL)], (True, True), f"Expansion is prevented, so the bar is squeezed to {nf(e.ans, 1)} MPa"))),
+ 'mechmat-0013': (None, L(0, lambda e: vessel(e.ans, e.ans / 2))), 'structural-0014': (None, L(0, lambda e: trib(e.s, e.ans, e.q))),
+ 'structural-0015': (None, L(0, lambda e: bar([(f"gross area {nf(e.Ag)} mm²", 1)], [(0, 'pull', -1, EM), (1, f"{nf(e.ans, 1)} kN", 1, EM)], (False, False), 'Design strength in yielding: 0.9 × yield strength × gross area'))),
+ 'dynamics-0011': (None, L(0, lambda e: fbd([('Spring force', 0, BL), ('Weight', 270, EM), ('Support from the surface', 90, JD)], 0, 'Spring force = stiffness × compression; it pushes until its stored energy is used up'))),
+})
+BY_STEM.update({
+ 'A [m] kg object moving at [v] m/s is brought to rest': (None, L(0, lambda e: fbd([(f"{nf(e.ans)} N", 180, EM)], 0, f"Moving right at {nf(e.v)} m/s; this average force acts against the motion for {nf(e.dt)} s"))),
+ 'A [m] kg block sliding at [v] m/s on a frictionless surface runs into a spring': (None, L(0, lambda e: fbd([('Spring force', 180, BL), ('Weight', 270, EM), ('Support from the surface', 90, JD)], 0, 'Spring force = stiffness × compression; it slows the block until its motion energy is stored'))),
+ 'A uniform slender rod [L|1] m long is released from rest': (None, L(0, lambda e: swing(e.L))),
+ 'A horizontal [d] mm pipe bend turns the flow': (None, L(0, lambda e: vec([('p A in', 1, 0), ('p A out', -cos(rad(e.th)), -sin(rad(e.th)), JD), (f"{nf(e.ans, 2)} kN", 1 - cos(rad(e.th)), -sin(rad(e.th)), BL, True)]))),
+ 'A flat plate with an area of [A|2] m^{2} slides': (None, L(0, lambda e: fbd([(f"Pull = {nf(e.ans, 1)} N", 0, EM), ('Oil drag', 180, BL)], 0, 'Constant speed: the pull equals the oil film drag, shear stress × plate area'))),
+ 'A sample weighs [Wa|1] N in air': (None, L(0, lambda e: fbd([(f"Weight = {nf(e.Wa, 1)} N", 270, EM), (f"Scale reads {nf(e.Ww, 1)} N", 112, JD), (f"Buoyant force = {nf(e.Wa - e.Ww, 1)} N", 68, BL)], 0, 'Buoyant force = weight in air - weight in water = weight of the water displaced'))),
+ 'A hydraulic jack has an input piston': (None, L(0, lambda e: jack(e.F1, e.d1, e.d2, e.ans))),
+ 'A sign panel with an area of [A|1] m^{2}': (None, L(0, lambda e: fbd([(f"Drag = {nf(e.ans, 1)} N", 0, EM)], 0, 'The flow comes from the left; drag acts in the direction of the flow'))),
+ 'A footing [B|1] m by [Lf|1] m carries a load of [Q] kN. Using the 2:1 method': (None, L(0, lambda e: two1(e.B, e.z, e.ans))),
+ 'A direct shear test on dry sand fails': (None, L(0, lambda e: mcline(0, e.ans, e.sn, e.ta))),
+ 'A soil has a cohesion of [c] kPa and a friction angle of [phi]°. In a triaxial test': (None, L(0, lambda e: mohr(e.ans, e.s3, 0))),
+ 'A clevis is pinned by a single [d] mm diameter bolt': (None, L(0, lambda e: dshear(e.P))),
+ 'A [d] mm diameter bolt bears against a plate': (None, L(0, lambda e: bearing(e.d, e.t, e.P))),
+ 'A steel bar (E = 200 GPa) [L1] mm long': (None, L(0, lambda e: bar([(f"Steel {nf(e.L1)} mm", e.L1 / (e.L1 + e.L2)), (f"Aluminium {nf(e.L2)} mm", e.L2 / (e.L1 + e.L2))], [(1, f"{nf(e.ans, 1)} kN", 1, EM)], (True, False), 'The same force passes through both bars; their stretches add'))),
+ 'A uniform bar [L|1] m long is fixed to rigid walls at both ends': (None, L(0, lambda e: bar([(f"{nf(e.a)} m, stretched", e.a / e.L), (f"{nf(e.L - e.a)} m, squeezed", 1 - e.a / e.L)], [(e.a / e.L, f"{nf(e.P)} kN", 1, EM), (0, f"{nf(e.ans, 1)} kN", -1, BL), (1, f"{nf(e.P - e.ans, 1)} kN", -1, BL)], (True, True), 'The shorter, stiffer part takes the larger share'))),
+ 'A thin-walled cylindrical tank with closed ends': (None, L(0, lambda e: vessel(2 * e.ans, e.ans))),
+ 'A hand force of [P] N is applied to each handle of a pair of pliers': (None, L(0, lambda e: lever(e.P, e.a, e.b, e.ans))),
+ 'A short composite column has a steel core': (None, L(0, lambda e: fbd([(f"Load {nf(e.P)} kN", 270, EM), (f"Steel {nf(e.ans, 1)} kN", 112, JD), (f"Concrete {nf(e.P - e.ans, 1)} kN", 68, BL)], 0, 'Both shorten equally, so each takes load in proportion to its E × area'))),
+ 'A connection has [n] bolts of [db|3] in diameter': (None, L(0, lambda e: lap(e.n, e.ans))),
+ 'An interior column supports [n] floors': (None, L(0, lambda e: tribcol(e.a, e.b, f"{nf(e.n)} floors × {nf(e.q, 1)} kPa × {nf(e.a * e.b)} m² = {nf(e.ans)} kN"))),
+ 'Floor beams span [L] m and are spaced [s] m apart': (None, L(0, lambda e: trib(e.s))),
+})
 def lookup(base, stem):
     if base in BY_ID: return BY_ID[base]
     for k, v in BY_STEM.items():

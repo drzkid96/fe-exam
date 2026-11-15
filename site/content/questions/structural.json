@@ -49,7 +49,7 @@
   },
   "family": "structural-0001",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "terms": [
    [
@@ -133,7 +133,88 @@
   },
   "family": "structural-0001",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": true,
+  "terms": [
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ],
+   [
+    "equilibrium",
+    "the state of an object that is not accelerating: all forces on it cancel, and so do all their turning effects"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-d",
+    "statics",
+    "Statics: Frames and trusses"
+   ]
+  ],
+  "symbols": [
+   [
+    "m",
+    "number of members"
+   ],
+   [
+    "r",
+    "number of support reaction components"
+   ]
+  ]
+ },
+ {
+  "id": "structural-0001-c",
+  "topic": "structural",
+  "subtopic": "structural-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A planar truss has 10 joints, 17 members and 3 support reactions. Assuming it is stable, how is it classified?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Unstable"
+   },
+   {
+    "id": "b",
+    "text": "Statically determinate"
+   },
+   {
+    "id": "c",
+    "text": "Statically indeterminate to the first degree"
+   },
+   {
+    "id": "d",
+    "text": "Statically indeterminate to the second degree"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Each joint of a plane truss gives two equilibrium equations, so there are 2j equations for m member forces and r reactions. If m + r = 2j the truss is determinate; if m + r is larger, the excess is the degree of indeterminacy; if smaller, the truss is unstable.",
+  "solution": "Each joint of a planar truss gives two equilibrium equations: 2 × 10 = 20. The unknowns are the member forces and the reactions: 17 + 3 = 20.\n\nUnknowns equal equations, so the truss is statically determinate.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "determinacy",
+     "classification of structures"
+    ]
+   }
+  ],
+  "tags": [
+   "determinacy",
+   "truss"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Truss determinacy: m + r compared with 2j"
+  },
+  "family": "structural-0001",
+  "version": 3,
+  "versions": 3,
   "lookup": true,
   "terms": [
    [
@@ -252,7 +333,7 @@
    ],
    [
     "L",
-    "span or length"
+    "length of the column"
    ]
   ]
  },
@@ -345,7 +426,7 @@
    ],
    [
     "L",
-    "span or length"
+    "length of the column"
    ]
   ]
  },
@@ -438,7 +519,7 @@
    ],
    [
     "L",
-    "span or length"
+    "length of the column"
    ]
   ]
  },
@@ -531,7 +612,7 @@
    ],
    [
     "L",
-    "span or length"
+    "length of the column"
    ]
   ]
  },
@@ -607,7 +688,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -683,7 +764,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -759,7 +840,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -835,7 +916,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -1227,11 +1308,11 @@
    ],
    [
     "a",
-    "depth of the equivalent stress block, or distance to the load"
+    "depth of the equivalent rectangular stress block"
    ],
    [
     "b",
-    "width of the section, or distance from the load to the far support"
+    "width of the beam section"
    ],
    [
     "d",
@@ -1367,11 +1448,11 @@
    ],
    [
     "a",
-    "depth of the equivalent stress block, or distance to the load"
+    "depth of the equivalent rectangular stress block"
    ],
    [
     "b",
-    "width of the section, or distance from the load to the far support"
+    "width of the beam section"
    ],
    [
     "d",
@@ -1507,11 +1588,11 @@
    ],
    [
     "a",
-    "depth of the equivalent stress block, or distance to the load"
+    "depth of the equivalent rectangular stress block"
    ],
    [
     "b",
-    "width of the section, or distance from the load to the far support"
+    "width of the beam section"
    ],
    [
     "d",
@@ -1647,11 +1728,11 @@
    ],
    [
     "a",
-    "depth of the equivalent stress block, or distance to the load"
+    "depth of the equivalent rectangular stress block"
    ],
    [
     "b",
-    "width of the section, or distance from the load to the far support"
+    "width of the beam section"
    ],
    [
     "d",
@@ -1719,6 +1800,11 @@
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='350' y1='14' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='324' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>12 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text>",
    "alt": "A cantilever beam 3 m long, a 12 kN point load 3 m from the left end."
   },
+  "solutionFigure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M60 70 L60 24 L67 25 L74 26 L81 27 L88 29 L95 30 L102 31 L109 32 L116 33 L123 34 L130 36 L137 37 L144 38 L151 39 L158 40 L165 41 L172 42 L179 44 L186 45 L193 46 L200 47 L207 48 L214 49 L221 50 L228 52 L235 53 L242 54 L249 55 L256 56 L263 57 L270 58 L277 60 L284 61 L291 62 L298 63 L305 64 L312 65 L319 67 L326 68 L333 69 L340 70 L340 70 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='70' x2='360' y2='70' stroke='#00242E' stroke-width='2'/><text x='64' y='16' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>36 kN·m at the fixed support</text><line x1='60' y1='138' x2='340' y2='138' stroke='#00242E'/><line x1='60' y1='132' x2='60' y2='144' stroke='#00242E'/><line x1='340' y1='132' x2='340' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='200' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Bending moment along the beam (sagging plotted downward)</text>",
+   "alt": "Bending moment diagram for a 3 m beam with a largest moment of 36 kN·m at the fixed support."
+  },
   "lookup": true,
   "terms": [
    [
@@ -1749,11 +1835,11 @@
   "symbols": [
    [
     "P",
-    "point load or axial load"
+    "point load"
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -1813,6 +1899,11 @@
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='350' y1='14' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='324' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>20 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text>",
    "alt": "A cantilever beam 2.5 m long, a 20 kN point load 2.5 m from the left end."
   },
+  "solutionFigure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M60 70 L60 24 L67 25 L74 26 L81 27 L88 29 L95 30 L102 31 L109 32 L116 33 L123 34 L130 36 L137 37 L144 38 L151 39 L158 40 L165 41 L172 42 L179 44 L186 45 L193 46 L200 47 L207 48 L214 49 L221 50 L228 52 L235 53 L242 54 L249 55 L256 56 L263 57 L270 58 L277 60 L284 61 L291 62 L298 63 L305 64 L312 65 L319 67 L326 68 L333 69 L340 70 L340 70 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='70' x2='360' y2='70' stroke='#00242E' stroke-width='2'/><text x='64' y='16' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>50 kN·m at the fixed support</text><line x1='60' y1='138' x2='340' y2='138' stroke='#00242E'/><line x1='60' y1='132' x2='60' y2='144' stroke='#00242E'/><line x1='340' y1='132' x2='340' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text><text x='200' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Bending moment along the beam (sagging plotted downward)</text>",
+   "alt": "Bending moment diagram for a 2.5 m beam with a largest moment of 50 kN·m at the fixed support."
+  },
   "lookup": true,
   "terms": [
    [
@@ -1843,11 +1934,11 @@
   "symbols": [
    [
     "P",
-    "point load or axial load"
+    "point load"
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -1907,6 +1998,11 @@
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='350' y1='14' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='324' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>15 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text>",
    "alt": "A cantilever beam 4 m long, a 15 kN point load 4 m from the left end."
   },
+  "solutionFigure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M60 70 L60 24 L67 25 L74 26 L81 27 L88 29 L95 30 L102 31 L109 32 L116 33 L123 34 L130 36 L137 37 L144 38 L151 39 L158 40 L165 41 L172 42 L179 44 L186 45 L193 46 L200 47 L207 48 L214 49 L221 50 L228 52 L235 53 L242 54 L249 55 L256 56 L263 57 L270 58 L277 60 L284 61 L291 62 L298 63 L305 64 L312 65 L319 67 L326 68 L333 69 L340 70 L340 70 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='70' x2='360' y2='70' stroke='#00242E' stroke-width='2'/><text x='64' y='16' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>60 kN·m at the fixed support</text><line x1='60' y1='138' x2='340' y2='138' stroke='#00242E'/><line x1='60' y1='132' x2='60' y2='144' stroke='#00242E'/><line x1='340' y1='132' x2='340' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><text x='200' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Bending moment along the beam (sagging plotted downward)</text>",
+   "alt": "Bending moment diagram for a 4 m beam with a largest moment of 60 kN·m at the fixed support."
+  },
   "lookup": true,
   "terms": [
    [
@@ -1937,11 +2033,11 @@
   "symbols": [
    [
     "P",
-    "point load or axial load"
+    "point load"
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -2001,6 +2097,11 @@
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='350' y1='14' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='324' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>18 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text>",
    "alt": "A cantilever beam 5 m long, a 18 kN point load 5 m from the left end."
   },
+  "solutionFigure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M60 70 L60 24 L67 25 L74 26 L81 27 L88 29 L95 30 L102 31 L109 32 L116 33 L123 34 L130 36 L137 37 L144 38 L151 39 L158 40 L165 41 L172 42 L179 44 L186 45 L193 46 L200 47 L207 48 L214 49 L221 50 L228 52 L235 53 L242 54 L249 55 L256 56 L263 57 L270 58 L277 60 L284 61 L291 62 L298 63 L305 64 L312 65 L319 67 L326 68 L333 69 L340 70 L340 70 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='70' x2='360' y2='70' stroke='#00242E' stroke-width='2'/><text x='64' y='16' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>90 kN·m at the fixed support</text><line x1='60' y1='138' x2='340' y2='138' stroke='#00242E'/><line x1='60' y1='132' x2='60' y2='144' stroke='#00242E'/><line x1='340' y1='132' x2='340' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text><text x='200' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Bending moment along the beam (sagging plotted downward)</text>",
+   "alt": "Bending moment diagram for a 5 m beam with a largest moment of 90 kN·m at the fixed support."
+  },
   "lookup": true,
   "terms": [
    [
@@ -2031,11 +2132,11 @@
   "symbols": [
    [
     "P",
-    "point load or axial load"
+    "point load"
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -2386,11 +2487,11 @@
    ],
    [
     "P",
-    "point load or axial load"
+    "point load"
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -2489,11 +2590,11 @@
    ],
    [
     "P",
-    "point load or axial load"
+    "point load"
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -2592,11 +2693,11 @@
    ],
    [
     "P",
-    "point load or axial load"
+    "point load"
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -2695,11 +2796,11 @@
    ],
    [
     "P",
-    "point load or axial load"
+    "point load"
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -2776,7 +2877,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -2853,7 +2954,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -2930,7 +3031,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -3007,7 +3108,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -3090,7 +3191,7 @@
    ],
    [
     "L",
-    "span or length"
+    "length of the column"
    ]
   ]
  },
@@ -3173,7 +3274,7 @@
    ],
    [
     "L",
-    "span or length"
+    "length of the column"
    ]
   ]
  },
@@ -3256,7 +3357,7 @@
    ],
    [
     "L",
-    "span or length"
+    "length of the column"
    ]
   ]
  },
@@ -3339,7 +3440,7 @@
    ],
    [
     "L",
-    "span or length"
+    "length of the column"
    ]
   ]
  },
@@ -3390,7 +3491,7 @@
   },
   "family": "structural-0011",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "terms": [
    [
@@ -3457,7 +3558,7 @@
   },
   "family": "structural-0011",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "terms": [
    [
@@ -3475,6 +3576,78 @@
    [
     "statically indeterminate",
     "having more unknown support forces than the equilibrium equations can solve, so deformation must be used as well"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-d",
+    "statics",
+    "Statics: Frames and trusses"
+   ]
+  ]
+ },
+ {
+  "id": "structural-0011-c",
+  "topic": "structural",
+  "subtopic": "structural-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A beam is fixed at both ends and carries loads in its own plane. How is it classified?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Statically determinate"
+   },
+   {
+    "id": "b",
+    "text": "Statically indeterminate to the first degree"
+   },
+   {
+    "id": "c",
+    "text": "Statically indeterminate to the second degree"
+   },
+   {
+    "id": "d",
+    "text": "Statically indeterminate to the third degree"
+   }
+  ],
+  "answer": "d",
+  "eli5": "A single rigid body in a plane has three equilibrium equations. Count the reaction components: a fixed support gives three, a pin two and a roller one. Reactions beyond three are redundants, and their number is the degree of indeterminacy.",
+  "solution": "Each fixed end supplies three reaction components: two forces and a moment, six in all. Only three equilibrium equations are available, so the beam is indeterminate to the 6 - 3 = third degree.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "determinacy",
+     "classification of structures"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Beam determinacy: reactions compared with three equilibrium equations"
+  },
+  "family": "structural-0011",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "terms": [
+   [
+    "equilibrium",
+    "the state of an object that is not accelerating: all forces on it cancel, and so do all their turning effects"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
    ]
   ],
   "needs": [
@@ -3554,7 +3727,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ],
    [
     "R",
@@ -3631,7 +3804,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ],
    [
     "R",
@@ -3708,7 +3881,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ],
    [
     "R",
@@ -3785,7 +3958,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ],
    [
     "R",
@@ -3845,6 +4018,11 @@
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='350' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>12 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6 m</text>",
    "alt": "A beam 6 m long, fixed at the left end, fixed at the right end, a uniform load of 12 kN/m from 0 to 6 m."
   },
+  "solutionFigure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M60 70 L60 24 L67 31 L74 37 L81 43 L88 49 L95 54 L102 59 L109 64 L116 68 L123 72 L130 76 L137 79 L144 82 L151 85 L158 87 L165 89 L172 90 L179 91 L186 92 L193 93 L200 93 L207 93 L214 92 L221 91 L228 90 L235 89 L242 87 L249 85 L256 82 L263 79 L270 76 L277 72 L284 68 L291 64 L298 59 L305 54 L312 49 L319 43 L326 37 L333 31 L340 24 L340 70 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='70' x2='360' y2='70' stroke='#00242E' stroke-width='2'/><text x='64' y='16' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>36 kN·m at each fixed end</text><line x1='60' y1='138' x2='340' y2='138' stroke='#00242E'/><line x1='60' y1='132' x2='60' y2='144' stroke='#00242E'/><line x1='340' y1='132' x2='340' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6 m</text><text x='200' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Bending moment along the beam (sagging plotted downward)</text>",
+   "alt": "Bending moment diagram for a 6 m beam with a largest moment of 36 kN·m at each fixed end."
+  },
   "lookup": true,
   "terms": [
    [
@@ -3871,7 +4049,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -3927,6 +4105,11 @@
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='350' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>18 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text>",
    "alt": "A beam 4 m long, fixed at the left end, fixed at the right end, a uniform load of 18 kN/m from 0 to 4 m."
   },
+  "solutionFigure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M60 70 L60 24 L67 31 L74 37 L81 43 L88 49 L95 54 L102 59 L109 64 L116 68 L123 72 L130 76 L137 79 L144 82 L151 85 L158 87 L165 89 L172 90 L179 91 L186 92 L193 93 L200 93 L207 93 L214 92 L221 91 L228 90 L235 89 L242 87 L249 85 L256 82 L263 79 L270 76 L277 72 L284 68 L291 64 L298 59 L305 54 L312 49 L319 43 L326 37 L333 31 L340 24 L340 70 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='70' x2='360' y2='70' stroke='#00242E' stroke-width='2'/><text x='64' y='16' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>24 kN·m at each fixed end</text><line x1='60' y1='138' x2='340' y2='138' stroke='#00242E'/><line x1='60' y1='132' x2='60' y2='144' stroke='#00242E'/><line x1='340' y1='132' x2='340' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><text x='200' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Bending moment along the beam (sagging plotted downward)</text>",
+   "alt": "Bending moment diagram for a 4 m beam with a largest moment of 24 kN·m at each fixed end."
+  },
   "lookup": true,
   "terms": [
    [
@@ -3953,7 +4136,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -4009,6 +4192,11 @@
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='350' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>9 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>8 m</text>",
    "alt": "A beam 8 m long, fixed at the left end, fixed at the right end, a uniform load of 9 kN/m from 0 to 8 m."
   },
+  "solutionFigure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M60 70 L60 24 L67 31 L74 37 L81 43 L88 49 L95 54 L102 59 L109 64 L116 68 L123 72 L130 76 L137 79 L144 82 L151 85 L158 87 L165 89 L172 90 L179 91 L186 92 L193 93 L200 93 L207 93 L214 92 L221 91 L228 90 L235 89 L242 87 L249 85 L256 82 L263 79 L270 76 L277 72 L284 68 L291 64 L298 59 L305 54 L312 49 L319 43 L326 37 L333 31 L340 24 L340 70 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='70' x2='360' y2='70' stroke='#00242E' stroke-width='2'/><text x='64' y='16' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>48 kN·m at each fixed end</text><line x1='60' y1='138' x2='340' y2='138' stroke='#00242E'/><line x1='60' y1='132' x2='60' y2='144' stroke='#00242E'/><line x1='340' y1='132' x2='340' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>8 m</text><text x='200' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Bending moment along the beam (sagging plotted downward)</text>",
+   "alt": "Bending moment diagram for a 8 m beam with a largest moment of 48 kN·m at each fixed end."
+  },
   "lookup": true,
   "terms": [
    [
@@ -4035,7 +4223,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -4091,6 +4279,11 @@
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='350' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>24 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text>",
    "alt": "A beam 5 m long, fixed at the left end, fixed at the right end, a uniform load of 24 kN/m from 0 to 5 m."
   },
+  "solutionFigure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M60 70 L60 24 L67 31 L74 37 L81 43 L88 49 L95 54 L102 59 L109 64 L116 68 L123 72 L130 76 L137 79 L144 82 L151 85 L158 87 L165 89 L172 90 L179 91 L186 92 L193 93 L200 93 L207 93 L214 92 L221 91 L228 90 L235 89 L242 87 L249 85 L256 82 L263 79 L270 76 L277 72 L284 68 L291 64 L298 59 L305 54 L312 49 L319 43 L326 37 L333 31 L340 24 L340 70 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='70' x2='360' y2='70' stroke='#00242E' stroke-width='2'/><text x='64' y='16' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>50 kN·m at each fixed end</text><line x1='60' y1='138' x2='340' y2='138' stroke='#00242E'/><line x1='60' y1='132' x2='60' y2='144' stroke='#00242E'/><line x1='340' y1='132' x2='340' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text><text x='200' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Bending moment along the beam (sagging plotted downward)</text>",
+   "alt": "Bending moment diagram for a 5 m beam with a largest moment of 50 kN·m at each fixed end."
+  },
   "lookup": true,
   "terms": [
    [
@@ -4117,7 +4310,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -4155,7 +4348,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "tributary area"
+    ]
    }
   ],
   "tags": [],
@@ -4166,7 +4361,12 @@
   "family": "structural-0014",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "solutionFigure": {
+   "viewBox": "0 0 400 198",
+   "svg": "<line x1='80' y1='30' x2='80' y2='130' stroke='#00242E' stroke-width='2'/><line x1='200' y1='30' x2='200' y2='130' stroke='#00242E' stroke-width='4'/><line x1='320' y1='30' x2='320' y2='130' stroke='#00242E' stroke-width='2'/><rect x='140' y='30' width='120' height='100' fill='#D9F1D6' fill-opacity='.6' stroke='#1B795A' stroke-dasharray='6 4'/><line x1='80' y1='148' x2='200' y2='148' stroke='#00242E'/><line x1='80' y1='142' x2='80' y2='154' stroke='#00242E'/><line x1='200' y1='142' x2='200' y2='154' stroke='#00242E'/><text x='140' y='164' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><line x1='200' y1='148' x2='320' y2='148' stroke='#00242E'/><line x1='200' y1='142' x2='200' y2='154' stroke='#00242E'/><line x1='320' y1='142' x2='320' y2='154' stroke='#00242E'/><text x='260' y='164' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='200' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>This beam carries a strip 3 m wide: half a bay on each side</text><text x='200' y='190' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>4 kPa × 3 m = 12.0 kN/m along the beam</text>",
+   "alt": "Plan of floor beams 3 m apart. The middle beam carries the floor from halfway to each neighbour, a strip 3 m wide."
+  },
+  "lookup": true,
   "terms": [
    [
     "tributary",
@@ -4221,7 +4421,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "tributary area"
+    ]
    }
   ],
   "tags": [],
@@ -4232,7 +4434,12 @@
   "family": "structural-0014",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "solutionFigure": {
+   "viewBox": "0 0 400 198",
+   "svg": "<line x1='80' y1='30' x2='80' y2='130' stroke='#00242E' stroke-width='2'/><line x1='200' y1='30' x2='200' y2='130' stroke='#00242E' stroke-width='4'/><line x1='320' y1='30' x2='320' y2='130' stroke='#00242E' stroke-width='2'/><rect x='140' y='30' width='120' height='100' fill='#D9F1D6' fill-opacity='.6' stroke='#1B795A' stroke-dasharray='6 4'/><line x1='80' y1='148' x2='200' y2='148' stroke='#00242E'/><line x1='80' y1='142' x2='80' y2='154' stroke='#00242E'/><line x1='200' y1='142' x2='200' y2='154' stroke='#00242E'/><text x='140' y='164' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text><line x1='200' y1='148' x2='320' y2='148' stroke='#00242E'/><line x1='200' y1='142' x2='200' y2='154' stroke='#00242E'/><line x1='320' y1='142' x2='320' y2='154' stroke='#00242E'/><text x='260' y='164' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text><text x='200' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>This beam carries a strip 2.5 m wide: half a bay on each side</text><text x='200' y='190' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>6 kPa × 2.5 m = 15.0 kN/m along the beam</text>",
+   "alt": "Plan of floor beams 2.5 m apart. The middle beam carries the floor from halfway to each neighbour, a strip 2.5 m wide."
+  },
+  "lookup": true,
   "terms": [
    [
     "tributary",
@@ -4287,7 +4494,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "tributary area"
+    ]
    }
   ],
   "tags": [],
@@ -4298,7 +4507,12 @@
   "family": "structural-0014",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "solutionFigure": {
+   "viewBox": "0 0 400 198",
+   "svg": "<line x1='80' y1='30' x2='80' y2='130' stroke='#00242E' stroke-width='2'/><line x1='200' y1='30' x2='200' y2='130' stroke='#00242E' stroke-width='4'/><line x1='320' y1='30' x2='320' y2='130' stroke='#00242E' stroke-width='2'/><rect x='140' y='30' width='120' height='100' fill='#D9F1D6' fill-opacity='.6' stroke='#1B795A' stroke-dasharray='6 4'/><line x1='80' y1='148' x2='200' y2='148' stroke='#00242E'/><line x1='80' y1='142' x2='80' y2='154' stroke='#00242E'/><line x1='200' y1='142' x2='200' y2='154' stroke='#00242E'/><text x='140' y='164' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='200' y1='148' x2='320' y2='148' stroke='#00242E'/><line x1='200' y1='142' x2='200' y2='154' stroke='#00242E'/><line x1='320' y1='142' x2='320' y2='154' stroke='#00242E'/><text x='260' y='164' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><text x='200' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>This beam carries a strip 4 m wide: half a bay on each side</text><text x='200' y='190' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>3.5 kPa × 4 m = 14.0 kN/m along the beam</text>",
+   "alt": "Plan of floor beams 4 m apart. The middle beam carries the floor from halfway to each neighbour, a strip 4 m wide."
+  },
+  "lookup": true,
   "terms": [
    [
     "tributary",
@@ -4353,7 +4567,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "tributary area"
+    ]
    }
   ],
   "tags": [],
@@ -4364,7 +4580,12 @@
   "family": "structural-0014",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "solutionFigure": {
+   "viewBox": "0 0 400 198",
+   "svg": "<line x1='80' y1='30' x2='80' y2='130' stroke='#00242E' stroke-width='2'/><line x1='200' y1='30' x2='200' y2='130' stroke='#00242E' stroke-width='4'/><line x1='320' y1='30' x2='320' y2='130' stroke='#00242E' stroke-width='2'/><rect x='140' y='30' width='120' height='100' fill='#D9F1D6' fill-opacity='.6' stroke='#1B795A' stroke-dasharray='6 4'/><line x1='80' y1='148' x2='200' y2='148' stroke='#00242E'/><line x1='80' y1='142' x2='80' y2='154' stroke='#00242E'/><line x1='200' y1='142' x2='200' y2='154' stroke='#00242E'/><text x='140' y='164' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text><line x1='200' y1='148' x2='320' y2='148' stroke='#00242E'/><line x1='200' y1='142' x2='200' y2='154' stroke='#00242E'/><line x1='320' y1='142' x2='320' y2='154' stroke='#00242E'/><text x='260' y='164' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text><text x='200' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>This beam carries a strip 2 m wide: half a bay on each side</text><text x='200' y='190' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>5 kPa × 2 m = 10.0 kN/m along the beam</text>",
+   "alt": "Plan of floor beams 2 m apart. The middle beam carries the floor from halfway to each neighbour, a strip 2 m wide."
+  },
+  "lookup": true,
   "terms": [
    [
     "tributary",
@@ -4420,6 +4641,11 @@
   "family": "structural-0015",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 150",
+   "svg": "<rect x='90' y='75' width='220' height='22' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='116' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>gross area 2,000 mm²</text><line x1='90' y1='62' x2='54' y2='62' stroke='#00574A' stroke-width='3'/><path d='M46 62 L58 56 L58 68 Z' fill='#00574A'/><text x='40' y='66' text-anchor='end' font-size='11' font-weight='600' fill='#00574A'>pull</text><line x1='310' y1='46' x2='346' y2='46' stroke='#00574A' stroke-width='3'/><path d='M354 46 L342 40 L342 52 Z' fill='#00574A'/><text x='360' y='50' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>621.0 kN</text><text x='200' y='142' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Design strength in yielding: 0.9 × yield strength × gross area</text>",
+   "alt": "A bar with pull; 621.0 kN. Design strength in yielding: 0.9 × yield strength × gross area."
+  },
   "lookup": true,
   "terms": [
    [
@@ -4497,6 +4723,11 @@
   "family": "structural-0015",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 150",
+   "svg": "<rect x='90' y='75' width='220' height='22' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='116' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>gross area 3,200 mm²</text><line x1='90' y1='62' x2='54' y2='62' stroke='#00574A' stroke-width='3'/><path d='M46 62 L58 56 L58 68 Z' fill='#00574A'/><text x='40' y='66' text-anchor='end' font-size='11' font-weight='600' fill='#00574A'>pull</text><line x1='310' y1='46' x2='346' y2='46' stroke='#00574A' stroke-width='3'/><path d='M354 46 L342 40 L342 52 Z' fill='#00574A'/><text x='360' y='50' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>993.6 kN</text><text x='200' y='142' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Design strength in yielding: 0.9 × yield strength × gross area</text>",
+   "alt": "A bar with pull; 993.6 kN. Design strength in yielding: 0.9 × yield strength × gross area."
+  },
   "lookup": true,
   "terms": [
    [
@@ -4574,6 +4805,11 @@
   "family": "structural-0015",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 150",
+   "svg": "<rect x='90' y='75' width='220' height='22' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='116' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>gross area 1,500 mm²</text><line x1='90' y1='62' x2='54' y2='62' stroke='#00574A' stroke-width='3'/><path d='M46 62 L58 56 L58 68 Z' fill='#00574A'/><text x='40' y='66' text-anchor='end' font-size='11' font-weight='600' fill='#00574A'>pull</text><line x1='310' y1='46' x2='346' y2='46' stroke='#00574A' stroke-width='3'/><path d='M354 46 L342 40 L342 52 Z' fill='#00574A'/><text x='360' y='50' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>337.5 kN</text><text x='200' y='142' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Design strength in yielding: 0.9 × yield strength × gross area</text>",
+   "alt": "A bar with pull; 337.5 kN. Design strength in yielding: 0.9 × yield strength × gross area."
+  },
   "lookup": true,
   "terms": [
    [
@@ -4651,6 +4887,11 @@
   "family": "structural-0015",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 150",
+   "svg": "<rect x='90' y='75' width='220' height='22' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='116' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>gross area 4,500 mm²</text><line x1='90' y1='62' x2='54' y2='62' stroke='#00574A' stroke-width='3'/><path d='M46 62 L58 56 L58 68 Z' fill='#00574A'/><text x='40' y='66' text-anchor='end' font-size='11' font-weight='600' fill='#00574A'>pull</text><line x1='310' y1='46' x2='346' y2='46' stroke='#00574A' stroke-width='3'/><path d='M354 46 L342 40 L342 52 Z' fill='#00574A'/><text x='360' y='50' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>1,397.2 kN</text><text x='200' y='142' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Design strength in yielding: 0.9 × yield strength × gross area</text>",
+   "alt": "A bar with pull; 1,397.2 kN. Design strength in yielding: 0.9 × yield strength × gross area."
+  },
   "lookup": true,
   "terms": [
    [
@@ -5183,7 +5424,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "length of the member"
    ]
   ]
  },
@@ -5269,7 +5510,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "length of the member"
    ]
   ]
  },
@@ -5355,7 +5596,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "length of the member"
    ]
   ]
  },
@@ -5441,7 +5682,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "length of the member"
    ]
   ]
  },
@@ -5532,11 +5773,11 @@
    ],
    [
     "a",
-    "depth of the equivalent stress block, or distance to the load"
+    "depth of the equivalent rectangular stress block"
    ],
    [
     "b",
-    "width of the section, or distance from the load to the far support"
+    "width of the beam section"
    ]
   ]
  },
@@ -5627,11 +5868,11 @@
    ],
    [
     "a",
-    "depth of the equivalent stress block, or distance to the load"
+    "depth of the equivalent rectangular stress block"
    ],
    [
     "b",
-    "width of the section, or distance from the load to the far support"
+    "width of the beam section"
    ]
   ]
  },
@@ -5722,11 +5963,11 @@
    ],
    [
     "a",
-    "depth of the equivalent stress block, or distance to the load"
+    "depth of the equivalent rectangular stress block"
    ],
    [
     "b",
-    "width of the section, or distance from the load to the far support"
+    "width of the beam section"
    ]
   ]
  },
@@ -5817,11 +6058,11 @@
    ],
    [
     "a",
-    "depth of the equivalent stress block, or distance to the load"
+    "depth of the equivalent rectangular stress block"
    ],
    [
     "b",
-    "width of the section, or distance from the load to the far support"
+    "width of the beam section"
    ]
   ]
  },
@@ -6566,11 +6807,11 @@
    ],
    [
     "b",
-    "width of the section, or distance from the load to the far support"
+    "distance from the load to the right support"
    ],
    [
     "a",
-    "depth of the equivalent stress block, or distance to the load"
+    "distance from the left support to the load"
    ]
   ]
  },
@@ -6647,11 +6888,11 @@
    ],
    [
     "b",
-    "width of the section, or distance from the load to the far support"
+    "distance from the load to the right support"
    ],
    [
     "a",
-    "depth of the equivalent stress block, or distance to the load"
+    "distance from the left support to the load"
    ]
   ]
  },
@@ -6728,11 +6969,11 @@
    ],
    [
     "b",
-    "width of the section, or distance from the load to the far support"
+    "distance from the load to the right support"
    ],
    [
     "a",
-    "depth of the equivalent stress block, or distance to the load"
+    "distance from the left support to the load"
    ]
   ]
  },
@@ -6809,11 +7050,11 @@
    ],
    [
     "b",
-    "width of the section, or distance from the load to the far support"
+    "distance from the load to the right support"
    ],
    [
     "a",
-    "depth of the equivalent stress block, or distance to the load"
+    "distance from the left support to the load"
    ]
   ]
  },
@@ -6882,7 +7123,7 @@
   "symbols": [
    [
     "P",
-    "point load or axial load"
+    "axial load on the column"
    ]
   ]
  },
@@ -6951,7 +7192,7 @@
   "symbols": [
    [
     "P",
-    "point load or axial load"
+    "axial load on the column"
    ]
   ]
  },
@@ -7020,7 +7261,7 @@
   "symbols": [
    [
     "P",
-    "point load or axial load"
+    "axial load on the column"
    ]
   ]
  },
@@ -7089,7 +7330,7 @@
   "symbols": [
    [
     "P",
-    "point load or axial load"
+    "axial load on the column"
    ]
   ]
  },
@@ -7168,7 +7409,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -7247,7 +7488,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -7326,7 +7567,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -7405,7 +7646,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -7444,6 +7685,11 @@
   "family": "structural-0024",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 198",
+   "svg": "<line x1='80' y1='30' x2='80' y2='130' stroke='#00242E' stroke-width='2'/><line x1='200' y1='30' x2='200' y2='130' stroke='#00242E' stroke-width='4'/><line x1='320' y1='30' x2='320' y2='130' stroke='#00242E' stroke-width='2'/><rect x='140' y='30' width='120' height='100' fill='#D9F1D6' fill-opacity='.6' stroke='#1B795A' stroke-dasharray='6 4'/><line x1='80' y1='148' x2='200' y2='148' stroke='#00242E'/><line x1='80' y1='142' x2='80' y2='154' stroke='#00242E'/><line x1='200' y1='142' x2='200' y2='154' stroke='#00242E'/><text x='140' y='164' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><line x1='200' y1='148' x2='320' y2='148' stroke='#00242E'/><line x1='200' y1='142' x2='200' y2='154' stroke='#00242E'/><line x1='320' y1='142' x2='320' y2='154' stroke='#00242E'/><text x='260' y='164' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='200' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>This beam carries a strip 3 m wide: half a bay on each side</text>",
+   "alt": "Plan of floor beams 3 m apart. The middle beam carries the floor from halfway to each neighbour, a strip 3 m wide."
+  },
   "lookup": true,
   "terms": [
    [
@@ -7512,6 +7758,11 @@
   "family": "structural-0024",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 198",
+   "svg": "<line x1='80' y1='30' x2='80' y2='130' stroke='#00242E' stroke-width='2'/><line x1='200' y1='30' x2='200' y2='130' stroke='#00242E' stroke-width='4'/><line x1='320' y1='30' x2='320' y2='130' stroke='#00242E' stroke-width='2'/><rect x='140' y='30' width='120' height='100' fill='#D9F1D6' fill-opacity='.6' stroke='#1B795A' stroke-dasharray='6 4'/><line x1='80' y1='148' x2='200' y2='148' stroke='#00242E'/><line x1='80' y1='142' x2='80' y2='154' stroke='#00242E'/><line x1='200' y1='142' x2='200' y2='154' stroke='#00242E'/><text x='140' y='164' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text><line x1='200' y1='148' x2='320' y2='148' stroke='#00242E'/><line x1='200' y1='142' x2='200' y2='154' stroke='#00242E'/><line x1='320' y1='142' x2='320' y2='154' stroke='#00242E'/><text x='260' y='164' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text><text x='200' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>This beam carries a strip 2.5 m wide: half a bay on each side</text>",
+   "alt": "Plan of floor beams 2.5 m apart. The middle beam carries the floor from halfway to each neighbour, a strip 2.5 m wide."
+  },
   "lookup": true,
   "terms": [
    [
@@ -7580,6 +7831,11 @@
   "family": "structural-0024",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 198",
+   "svg": "<line x1='80' y1='30' x2='80' y2='130' stroke='#00242E' stroke-width='2'/><line x1='200' y1='30' x2='200' y2='130' stroke='#00242E' stroke-width='4'/><line x1='320' y1='30' x2='320' y2='130' stroke='#00242E' stroke-width='2'/><rect x='140' y='30' width='120' height='100' fill='#D9F1D6' fill-opacity='.6' stroke='#1B795A' stroke-dasharray='6 4'/><line x1='80' y1='148' x2='200' y2='148' stroke='#00242E'/><line x1='80' y1='142' x2='80' y2='154' stroke='#00242E'/><line x1='200' y1='142' x2='200' y2='154' stroke='#00242E'/><text x='140' y='164' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='200' y1='148' x2='320' y2='148' stroke='#00242E'/><line x1='200' y1='142' x2='200' y2='154' stroke='#00242E'/><line x1='320' y1='142' x2='320' y2='154' stroke='#00242E'/><text x='260' y='164' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><text x='200' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>This beam carries a strip 4 m wide: half a bay on each side</text>",
+   "alt": "Plan of floor beams 4 m apart. The middle beam carries the floor from halfway to each neighbour, a strip 4 m wide."
+  },
   "lookup": true,
   "terms": [
    [
@@ -7648,6 +7904,11 @@
   "family": "structural-0024",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 198",
+   "svg": "<line x1='80' y1='30' x2='80' y2='130' stroke='#00242E' stroke-width='2'/><line x1='200' y1='30' x2='200' y2='130' stroke='#00242E' stroke-width='4'/><line x1='320' y1='30' x2='320' y2='130' stroke='#00242E' stroke-width='2'/><rect x='140' y='30' width='120' height='100' fill='#D9F1D6' fill-opacity='.6' stroke='#1B795A' stroke-dasharray='6 4'/><line x1='80' y1='148' x2='200' y2='148' stroke='#00242E'/><line x1='80' y1='142' x2='80' y2='154' stroke='#00242E'/><line x1='200' y1='142' x2='200' y2='154' stroke='#00242E'/><text x='140' y='164' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><line x1='200' y1='148' x2='320' y2='148' stroke='#00242E'/><line x1='200' y1='142' x2='200' y2='154' stroke='#00242E'/><line x1='320' y1='142' x2='320' y2='154' stroke='#00242E'/><text x='260' y='164' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='200' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>This beam carries a strip 3 m wide: half a bay on each side</text>",
+   "alt": "Plan of floor beams 3 m apart. The middle beam carries the floor from halfway to each neighbour, a strip 3 m wide."
+  },
   "lookup": true,
   "terms": [
    [
@@ -8779,7 +9040,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -8865,7 +9126,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -8951,7 +9212,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -9037,7 +9298,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -9325,7 +9586,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -9397,7 +9658,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -9469,7 +9730,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -9541,7 +9802,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -9842,7 +10103,7 @@
   },
   "family": "structural-0032",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 170",
    "svg": "<line x1='200' y1='24' x2='200' y2='150' stroke='#E7E8E8' stroke-width='10'/><path d='M200 24 Q230 87 200 150' fill='none' stroke='#1B795A' stroke-width='3' stroke-dasharray='7 4'/><line x1='160' y1='150' x2='240' y2='150' stroke='#00242E' stroke-width='3'/><line x1='160' y1='24' x2='240' y2='24' stroke='#00242E' stroke-width='3'/><line x1='200' y1='0' x2='200' y2='14' stroke='#00574A' stroke-width='3'/><path d='M200 22 L194 10 L206 10 Z' fill='#00574A'/><text x='250' y='28' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Fixed</text><text x='250' y='154' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Fixed</text><line x1='130' y1='24' x2='130' y2='150' stroke='#00242E'/><text x='122' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>5 m</text><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P</text>",
@@ -9898,7 +10159,7 @@
    ],
    [
     "L",
-    "span or length"
+    "length of the column"
    ]
   ]
  },
@@ -9935,7 +10196,7 @@
   },
   "family": "structural-0032",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 170",
    "svg": "<line x1='200' y1='24' x2='200' y2='150' stroke='#E7E8E8' stroke-width='10'/><path d='M200 24 Q230 87 200 150' fill='none' stroke='#1B795A' stroke-width='3' stroke-dasharray='7 4'/><line x1='160' y1='150' x2='240' y2='150' stroke='#00242E' stroke-width='3'/><line x1='160' y1='24' x2='240' y2='24' stroke='#00242E' stroke-width='3'/><line x1='200' y1='0' x2='200' y2='14' stroke='#00574A' stroke-width='3'/><path d='M200 22 L194 10 L206 10 Z' fill='#00574A'/><text x='250' y='28' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><text x='250' y='154' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Fixed</text><line x1='130' y1='24' x2='130' y2='150' stroke='#00242E'/><text x='122' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>6 m</text><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P</text>",
@@ -9991,7 +10252,7 @@
    ],
    [
     "L",
-    "span or length"
+    "length of the column"
    ]
   ]
  },
@@ -10028,7 +10289,7 @@
   },
   "family": "structural-0032",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 170",
    "svg": "<line x1='200' y1='24' x2='200' y2='150' stroke='#E7E8E8' stroke-width='10'/><path d='M200 24 Q246 87 200 150' fill='none' stroke='#1B795A' stroke-width='3' stroke-dasharray='7 4'/><line x1='160' y1='150' x2='240' y2='150' stroke='#00242E' stroke-width='3'/><line x1='160' y1='24' x2='240' y2='24' stroke='#00242E' stroke-width='3'/><line x1='200' y1='0' x2='200' y2='14' stroke='#00574A' stroke-width='3'/><path d='M200 22 L194 10 L206 10 Z' fill='#00574A'/><text x='250' y='28' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Free</text><text x='250' y='154' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Fixed</text><line x1='130' y1='24' x2='130' y2='150' stroke='#00242E'/><text x='122' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>4 m</text><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P</text>",
@@ -10084,7 +10345,100 @@
    ],
    [
     "L",
-    "span or length"
+    "length of the column"
+   ]
+  ]
+ },
+ {
+  "id": "structural-0032-d",
+  "topic": "structural",
+  "subtopic": "structural-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel column (E = 200 GPa) 4.5 m long is pinned at both ends, so its effective length factor is 1.0. Its least moment of inertia is 12.0 × 10^{6} mm^{4}. What is its Euler buckling load?",
+  "answer": {
+   "value": 1170.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "End restraint changes the length of the buckled half-wave. The effective length K L replaces L in Euler's formula, so the load varies with 1 / K^{2}: fixing both ends quadruples it, and a flagpole column has one quarter of it.",
+  "solution": "P_{cr} = \\frac{π^{2} E I}{(K L)^{2}} = \\frac{π^{2}(200,000)(12.0 × 10^{6})}{(1.0 × 4,500)^{2}} = 1,169,731 N = 1,170 kN.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Euler's formula"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0032",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<line x1='200' y1='24' x2='200' y2='150' stroke='#E7E8E8' stroke-width='10'/><path d='M200 24 Q246 87 200 150' fill='none' stroke='#1B795A' stroke-width='3' stroke-dasharray='7 4'/><line x1='160' y1='150' x2='240' y2='150' stroke='#00242E' stroke-width='3'/><line x1='160' y1='24' x2='240' y2='24' stroke='#00242E' stroke-width='3'/><line x1='200' y1='0' x2='200' y2='14' stroke='#00574A' stroke-width='3'/><path d='M200 22 L194 10 L206 10 Z' fill='#00574A'/><text x='250' y='28' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><text x='250' y='154' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>Pinned</text><line x1='130' y1='24' x2='130' y2='150' stroke='#00242E'/><text x='122' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>4.5 m</text><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P</text>",
+   "alt": "A column 4.5 m long under axial load, pinned at the base and pinned at the top, with its buckled shape dashed."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "effective length",
+    "the length of an equivalent pin-ended column that would buckle at the same load, allowing for how the real ends are held"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "moment of inertia",
+    "a measure of how far an area's material is spread from an axis; the larger it is, the stiffer the shape in bending about that axis"
+   ],
+   [
+    "buckling",
+    "sudden sideways bowing of a slender member in compression, at a load below what would crush the material"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
+  "symbols": [
+   [
+    "P_{cr}",
+    "Euler buckling load"
+   ],
+   [
+    "E",
+    "modulus of elasticity"
+   ],
+   [
+    "I",
+    "moment of inertia"
+   ],
+   [
+    "K",
+    "effective length factor"
+   ],
+   [
+    "L",
+    "length of the column"
    ]
   ]
  },
@@ -10122,7 +10476,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "determinacy"
+    ]
    }
   ],
   "tags": [],
@@ -10133,7 +10489,7 @@
   "family": "structural-0033",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "reaction",
@@ -10192,7 +10548,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "determinacy"
+    ]
    }
   ],
   "tags": [],
@@ -10203,7 +10561,7 @@
   "family": "structural-0033",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "reaction",
@@ -10262,7 +10620,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "determinacy"
+    ]
    }
   ],
   "tags": [],
@@ -10273,7 +10633,7 @@
   "family": "structural-0033",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "reaction",
@@ -10332,7 +10692,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "determinacy"
+    ]
    }
   ],
   "tags": [],
@@ -10343,7 +10705,7 @@
   "family": "structural-0033",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "reaction",
@@ -10402,7 +10764,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "determinacy"
+    ]
    }
   ],
   "tags": [],
@@ -10412,8 +10776,8 @@
   },
   "family": "structural-0034",
   "version": 1,
-  "versions": 3,
-  "lookup": false,
+  "versions": 4,
+  "lookup": true,
   "terms": [
    [
     "reaction",
@@ -10470,7 +10834,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "determinacy"
+    ]
    }
   ],
   "tags": [],
@@ -10480,8 +10846,8 @@
   },
   "family": "structural-0034",
   "version": 2,
-  "versions": 3,
-  "lookup": false,
+  "versions": 4,
+  "lookup": true,
   "terms": [
    [
     "reaction",
@@ -10538,7 +10904,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "determinacy"
+    ]
    }
   ],
   "tags": [],
@@ -10548,8 +10916,78 @@
   },
   "family": "structural-0034",
   "version": 3,
-  "versions": 3,
-  "lookup": false,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ],
+   [
+    "equilibrium",
+    "the state of an object that is not accelerating: all forces on it cancel, and so do all their turning effects"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-d",
+    "statics",
+    "Statics: Frames and trusses"
+   ]
+  ]
+ },
+ {
+  "id": "structural-0034-d",
+  "topic": "structural",
+  "subtopic": "structural-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A continuous beam under vertical and horizontal loads has 7 support reaction components and two internal hinges. What is its degree of static indeterminacy?",
+  "options": [
+   {
+    "id": "a",
+    "text": "3"
+   },
+   {
+    "id": "b",
+    "text": "5"
+   },
+   {
+    "id": "c",
+    "text": "6"
+   },
+   {
+    "id": "d",
+    "text": "2"
+   }
+  ],
+  "answer": "d",
+  "eli5": "A beam has three equilibrium equations, and each internal hinge adds one more because the moment there is zero. Degree = reactions - 3 - hinges.",
+  "solution": "Degree = 7 - 3 - 2 = 2.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "determinacy"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "structural-0034",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
   "terms": [
    [
     "reaction",
@@ -10593,7 +11031,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "fixed-end"
+    ]
    }
   ],
   "tags": [],
@@ -10609,7 +11049,12 @@
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>12 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6 m</text>",
    "alt": "A beam 6 m long, fixed at the left end, a roller support at 6 m, a uniform load of 12 kN/m from 0 to 6 m."
   },
-  "lookup": false,
+  "solutionFigure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M60 70 L60 24 L67 30 L74 35 L81 40 L88 45 L95 50 L102 54 L109 59 L116 63 L123 66 L130 70 L137 73 L144 76 L151 79 L158 82 L165 84 L172 87 L179 89 L186 90 L193 92 L200 93 L207 94 L214 95 L221 95 L228 96 L235 96 L242 96 L249 95 L256 95 L263 94 L270 93 L277 92 L284 90 L291 89 L298 87 L305 84 L312 82 L319 79 L326 76 L333 73 L340 70 L340 70 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='70' x2='360' y2='70' stroke='#00242E' stroke-width='2'/><text x='64' y='16' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>54 kN·m at the fixed end</text><line x1='60' y1='138' x2='340' y2='138' stroke='#00242E'/><line x1='60' y1='132' x2='60' y2='144' stroke='#00242E'/><line x1='340' y1='132' x2='340' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6 m</text><text x='200' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Bending moment along the beam (sagging plotted downward)</text>",
+   "alt": "Bending moment diagram for a 6 m beam with a largest moment of 54 kN·m at the fixed end."
+  },
+  "lookup": true,
   "terms": [
    [
     "simply supported",
@@ -10647,7 +11092,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -10672,7 +11117,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "fixed-end"
+    ]
    }
   ],
   "tags": [],
@@ -10688,7 +11135,12 @@
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>20 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text>",
    "alt": "A beam 4 m long, fixed at the left end, a roller support at 4 m, a uniform load of 20 kN/m from 0 to 4 m."
   },
-  "lookup": false,
+  "solutionFigure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M60 70 L60 24 L67 30 L74 35 L81 40 L88 45 L95 50 L102 54 L109 59 L116 63 L123 66 L130 70 L137 73 L144 76 L151 79 L158 82 L165 84 L172 87 L179 89 L186 90 L193 92 L200 93 L207 94 L214 95 L221 95 L228 96 L235 96 L242 96 L249 95 L256 95 L263 94 L270 93 L277 92 L284 90 L291 89 L298 87 L305 84 L312 82 L319 79 L326 76 L333 73 L340 70 L340 70 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='70' x2='360' y2='70' stroke='#00242E' stroke-width='2'/><text x='64' y='16' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>40 kN·m at the fixed end</text><line x1='60' y1='138' x2='340' y2='138' stroke='#00242E'/><line x1='60' y1='132' x2='60' y2='144' stroke='#00242E'/><line x1='340' y1='132' x2='340' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><text x='200' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Bending moment along the beam (sagging plotted downward)</text>",
+   "alt": "Bending moment diagram for a 4 m beam with a largest moment of 40 kN·m at the fixed end."
+  },
+  "lookup": true,
   "terms": [
    [
     "simply supported",
@@ -10726,7 +11178,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -10751,7 +11203,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "fixed-end"
+    ]
    }
   ],
   "tags": [],
@@ -10767,7 +11221,12 @@
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>8 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>7.5 m</text>",
    "alt": "A beam 7.5 m long, fixed at the left end, a roller support at 7.5 m, a uniform load of 8 kN/m from 0 to 7.5 m."
   },
-  "lookup": false,
+  "solutionFigure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M60 70 L60 24 L67 30 L74 35 L81 40 L88 45 L95 50 L102 54 L109 59 L116 63 L123 66 L130 70 L137 73 L144 76 L151 79 L158 82 L165 84 L172 87 L179 89 L186 90 L193 92 L200 93 L207 94 L214 95 L221 95 L228 96 L235 96 L242 96 L249 95 L256 95 L263 94 L270 93 L277 92 L284 90 L291 89 L298 87 L305 84 L312 82 L319 79 L326 76 L333 73 L340 70 L340 70 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='70' x2='360' y2='70' stroke='#00242E' stroke-width='2'/><text x='64' y='16' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>56.25 kN·m at the fixed end</text><line x1='60' y1='138' x2='340' y2='138' stroke='#00242E'/><line x1='60' y1='132' x2='60' y2='144' stroke='#00242E'/><line x1='340' y1='132' x2='340' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>7.5 m</text><text x='200' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Bending moment along the beam (sagging plotted downward)</text>",
+   "alt": "Bending moment diagram for a 7.5 m beam with a largest moment of 56.25 kN·m at the fixed end."
+  },
+  "lookup": true,
   "terms": [
    [
     "simply supported",
@@ -10805,7 +11264,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -10830,7 +11289,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "fixed-end"
+    ]
    }
   ],
   "tags": [],
@@ -10846,7 +11307,12 @@
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>16 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text>",
    "alt": "A beam 5 m long, fixed at the left end, a roller support at 5 m, a uniform load of 16 kN/m from 0 to 5 m."
   },
-  "lookup": false,
+  "solutionFigure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M60 70 L60 24 L67 30 L74 35 L81 40 L88 45 L95 50 L102 54 L109 59 L116 63 L123 66 L130 70 L137 73 L144 76 L151 79 L158 82 L165 84 L172 87 L179 89 L186 90 L193 92 L200 93 L207 94 L214 95 L221 95 L228 96 L235 96 L242 96 L249 95 L256 95 L263 94 L270 93 L277 92 L284 90 L291 89 L298 87 L305 84 L312 82 L319 79 L326 76 L333 73 L340 70 L340 70 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='70' x2='360' y2='70' stroke='#00242E' stroke-width='2'/><text x='64' y='16' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>50 kN·m at the fixed end</text><line x1='60' y1='138' x2='340' y2='138' stroke='#00242E'/><line x1='60' y1='132' x2='60' y2='144' stroke='#00242E'/><line x1='340' y1='132' x2='340' y2='144' stroke='#00242E'/><text x='200' y='154' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text><text x='200' y='172' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Bending moment along the beam (sagging plotted downward)</text>",
+   "alt": "Bending moment diagram for a 5 m beam with a largest moment of 50 kN·m at the fixed end."
+  },
+  "lookup": true,
   "terms": [
    [
     "simply supported",
@@ -10884,7 +11350,7 @@
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -11130,6 +11596,11 @@
   "family": "structural-0037",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Load 1,000 kN</text><line x1='191' y1='78' x2='173' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M169 22 L168 34 L178 30 Z' fill='#1B795A'/><text x='164' y='15' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>Steel 262.3 kN</text><line x1='209' y1='78' x2='227' y2='32' stroke='#568CBB' stroke-width='3'/><path d='M231 22 L222 30 L232 34 Z' fill='#568CBB'/><text x='236' y='15' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Concrete 737.7 kN</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Both shorten equally, so each takes load in proportion to its E × area</text>",
+   "alt": "Free-body diagram showing Load 1,000 kN, Steel 262.3 kN, Concrete 737.7 kN."
+  },
   "lookup": true,
   "terms": [
    [
@@ -11194,6 +11665,11 @@
   "family": "structural-0037",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Load 2,500 kN</text><line x1='191' y1='78' x2='173' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M169 22 L168 34 L178 30 Z' fill='#1B795A'/><text x='164' y='15' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>Steel 714.3 kN</text><line x1='209' y1='78' x2='227' y2='32' stroke='#568CBB' stroke-width='3'/><path d='M231 22 L222 30 L232 34 Z' fill='#568CBB'/><text x='236' y='15' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Concrete 1,785.7 kN</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Both shorten equally, so each takes load in proportion to its E × area</text>",
+   "alt": "Free-body diagram showing Load 2,500 kN, Steel 714.3 kN, Concrete 1,785.7 kN."
+  },
   "lookup": true,
   "terms": [
    [
@@ -11258,6 +11734,11 @@
   "family": "structural-0037",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Load 600 kN</text><line x1='191' y1='78' x2='173' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M169 22 L168 34 L178 30 Z' fill='#1B795A'/><text x='164' y='15' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>Steel 126.3 kN</text><line x1='209' y1='78' x2='227' y2='32' stroke='#568CBB' stroke-width='3'/><path d='M231 22 L222 30 L232 34 Z' fill='#568CBB'/><text x='236' y='15' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Concrete 473.7 kN</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Both shorten equally, so each takes load in proportion to its E × area</text>",
+   "alt": "Free-body diagram showing Load 600 kN, Steel 126.3 kN, Concrete 473.7 kN."
+  },
   "lookup": true,
   "terms": [
    [
@@ -11322,6 +11803,11 @@
   "family": "structural-0037",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Load 1,750 kN</text><line x1='191' y1='78' x2='173' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M169 22 L168 34 L178 30 Z' fill='#1B795A'/><text x='164' y='15' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>Steel 485.5 kN</text><line x1='209' y1='78' x2='227' y2='32' stroke='#568CBB' stroke-width='3'/><path d='M231 22 L222 30 L232 34 Z' fill='#568CBB'/><text x='236' y='15' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Concrete 1,264.5 kN</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Both shorten equally, so each takes load in proportion to its E × area</text>",
+   "alt": "Free-body diagram showing Load 1,750 kN, Steel 485.5 kN, Concrete 1,264.5 kN."
+  },
   "lookup": true,
   "terms": [
    [
@@ -11373,7 +11859,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "tributary area"
+    ]
    }
   ],
   "tags": [],
@@ -11384,7 +11872,12 @@
   "family": "structural-0038",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "solutionFigure": {
+   "viewBox": "0 0 400 222",
+   "svg": "<rect x='85' y='25' width='10' height='10' fill='#00242E'/><rect x='85' y='85' width='10' height='10' fill='#00242E'/><rect x='85' y='145' width='10' height='10' fill='#00242E'/><rect x='195' y='25' width='10' height='10' fill='#00242E'/><rect x='195' y='85' width='10' height='10' fill='#00242E'/><rect x='195' y='145' width='10' height='10' fill='#00242E'/><rect x='305' y='25' width='10' height='10' fill='#00242E'/><rect x='305' y='85' width='10' height='10' fill='#00242E'/><rect x='305' y='145' width='10' height='10' fill='#00242E'/><rect x='145' y='60' width='110' height='60' fill='#D9F1D6' fill-opacity='.6' stroke='#1B795A' stroke-dasharray='6 4'/><line x1='90' y1='172' x2='200' y2='172' stroke='#00242E'/><line x1='90' y1='166' x2='90' y2='178' stroke='#00242E'/><line x1='200' y1='166' x2='200' y2='178' stroke='#00242E'/><text x='145' y='188' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6 m</text><text x='322' y='64' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>8 m</text><text x='200' y='14' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>The middle column carries 6 m × 8 m = 48 m² of each floor</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>3 floors × 6.0 kPa × 48 m² = 864 kN</text>",
+   "alt": "Plan of a column grid 6 m by 8 m. An interior column carries the floor halfway to each neighbouring column, 48 m² per floor."
+  },
+  "lookup": true,
   "terms": [
    [
     "factored",
@@ -11424,7 +11917,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "tributary area"
+    ]
    }
   ],
   "tags": [],
@@ -11435,7 +11930,12 @@
   "family": "structural-0038",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "solutionFigure": {
+   "viewBox": "0 0 400 222",
+   "svg": "<rect x='85' y='25' width='10' height='10' fill='#00242E'/><rect x='85' y='85' width='10' height='10' fill='#00242E'/><rect x='85' y='145' width='10' height='10' fill='#00242E'/><rect x='195' y='25' width='10' height='10' fill='#00242E'/><rect x='195' y='85' width='10' height='10' fill='#00242E'/><rect x='195' y='145' width='10' height='10' fill='#00242E'/><rect x='305' y='25' width='10' height='10' fill='#00242E'/><rect x='305' y='85' width='10' height='10' fill='#00242E'/><rect x='305' y='145' width='10' height='10' fill='#00242E'/><rect x='145' y='60' width='110' height='60' fill='#D9F1D6' fill-opacity='.6' stroke='#1B795A' stroke-dasharray='6 4'/><line x1='90' y1='172' x2='200' y2='172' stroke='#00242E'/><line x1='90' y1='166' x2='90' y2='178' stroke='#00242E'/><line x1='200' y1='166' x2='200' y2='178' stroke='#00242E'/><text x='145' y='188' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>7.5 m</text><text x='322' y='64' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>9 m</text><text x='200' y='14' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>The middle column carries 7.5 m × 9 m = 67.5 m² of each floor</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>5 floors × 7.5 kPa × 67.5 m² = 2,531 kN</text>",
+   "alt": "Plan of a column grid 7.5 m by 9 m. An interior column carries the floor halfway to each neighbouring column, 67.5 m² per floor."
+  },
+  "lookup": true,
   "terms": [
    [
     "factored",
@@ -11475,7 +11975,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "tributary area"
+    ]
    }
   ],
   "tags": [],
@@ -11486,7 +11988,12 @@
   "family": "structural-0038",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "solutionFigure": {
+   "viewBox": "0 0 400 222",
+   "svg": "<rect x='85' y='25' width='10' height='10' fill='#00242E'/><rect x='85' y='85' width='10' height='10' fill='#00242E'/><rect x='85' y='145' width='10' height='10' fill='#00242E'/><rect x='195' y='25' width='10' height='10' fill='#00242E'/><rect x='195' y='85' width='10' height='10' fill='#00242E'/><rect x='195' y='145' width='10' height='10' fill='#00242E'/><rect x='305' y='25' width='10' height='10' fill='#00242E'/><rect x='305' y='85' width='10' height='10' fill='#00242E'/><rect x='305' y='145' width='10' height='10' fill='#00242E'/><rect x='145' y='60' width='110' height='60' fill='#D9F1D6' fill-opacity='.6' stroke='#1B795A' stroke-dasharray='6 4'/><line x1='90' y1='172' x2='200' y2='172' stroke='#00242E'/><line x1='90' y1='166' x2='90' y2='178' stroke='#00242E'/><line x1='200' y1='166' x2='200' y2='178' stroke='#00242E'/><text x='145' y='188' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text><text x='322' y='64' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>6 m</text><text x='200' y='14' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>The middle column carries 5 m × 6 m = 30 m² of each floor</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>2 floors × 4.8 kPa × 30 m² = 288 kN</text>",
+   "alt": "Plan of a column grid 5 m by 6 m. An interior column carries the floor halfway to each neighbouring column, 30 m² per floor."
+  },
+  "lookup": true,
   "terms": [
    [
     "factored",
@@ -11526,7 +12033,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "tributary area"
+    ]
    }
   ],
   "tags": [],
@@ -11537,7 +12046,12 @@
   "family": "structural-0038",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "solutionFigure": {
+   "viewBox": "0 0 400 222",
+   "svg": "<rect x='85' y='25' width='10' height='10' fill='#00242E'/><rect x='85' y='85' width='10' height='10' fill='#00242E'/><rect x='85' y='145' width='10' height='10' fill='#00242E'/><rect x='195' y='25' width='10' height='10' fill='#00242E'/><rect x='195' y='85' width='10' height='10' fill='#00242E'/><rect x='195' y='145' width='10' height='10' fill='#00242E'/><rect x='305' y='25' width='10' height='10' fill='#00242E'/><rect x='305' y='85' width='10' height='10' fill='#00242E'/><rect x='305' y='145' width='10' height='10' fill='#00242E'/><rect x='145' y='60' width='110' height='60' fill='#D9F1D6' fill-opacity='.6' stroke='#1B795A' stroke-dasharray='6 4'/><line x1='90' y1='172' x2='200' y2='172' stroke='#00242E'/><line x1='90' y1='166' x2='90' y2='178' stroke='#00242E'/><line x1='200' y1='166' x2='200' y2='178' stroke='#00242E'/><text x='145' y='188' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6.8 m</text><text x='322' y='64' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>8 m</text><text x='200' y='14' text-anchor='middle' font-size='11' font-weight='600' fill='#1B795A'>The middle column carries 6.8 m × 8 m = 54.4 m² of each floor</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>4 floors × 6.8 kPa × 54.4 m² = 1,480 kN</text>",
+   "alt": "Plan of a column grid 6.8 m by 8 m. An interior column carries the floor halfway to each neighbouring column, 54.4 m² per floor."
+  },
+  "lookup": true,
   "terms": [
    [
     "factored",
@@ -11607,7 +12121,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -11662,7 +12176,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -11717,7 +12231,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -11772,7 +12286,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -11865,11 +12379,11 @@
    ],
    [
     "P",
-    "point load or axial load"
+    "point load"
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -11962,11 +12476,11 @@
    ],
    [
     "P",
-    "point load or axial load"
+    "point load"
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -12059,11 +12573,11 @@
    ],
    [
     "P",
-    "point load or axial load"
+    "point load"
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -12156,11 +12670,11 @@
    ],
    [
     "P",
-    "point load or axial load"
+    "point load"
    ],
    [
     "L",
-    "span or length"
+    "span of the beam"
    ]
   ]
  },
@@ -12198,6 +12712,11 @@
   "family": "structural-0041",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 162",
+   "svg": "<rect x='40' y='60' width='210' height='40' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='150' y='70' width='210' height='40' fill='#D9F1D6' fill-opacity='.7' stroke='#00242E' stroke-width='2'/><circle cx='162' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><circle cx='188' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><circle cx='212' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><circle cx='238' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><line x1='40' y1='80' x2='14' y2='80' stroke='#00574A' stroke-width='3'/><path d='M6 80 L18 74 L18 86 Z' fill='#00574A'/><line x1='360' y1='90' x2='386' y2='90' stroke='#00574A' stroke-width='3'/><path d='M394 90 L382 84 L382 96 Z' fill='#00574A'/><text x='200' y='136' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4 bolts, each cut on one plane between the plates</text><text x='200' y='154' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Design strength of the group = 71.6 kips</text>",
+   "alt": "Two overlapping plates pulled in opposite directions and joined by 4 bolts, each in single shear."
+  },
   "lookup": true,
   "terms": [
    [
@@ -12266,6 +12785,11 @@
   "family": "structural-0041",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 162",
+   "svg": "<rect x='40' y='60' width='210' height='40' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='150' y='70' width='210' height='40' fill='#D9F1D6' fill-opacity='.7' stroke='#00242E' stroke-width='2'/><circle cx='158' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><circle cx='175' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><circle cx='192' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><circle cx='208' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><circle cx='225' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><circle cx='242' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><line x1='40' y1='80' x2='14' y2='80' stroke='#00574A' stroke-width='3'/><path d='M6 80 L18 74 L18 86 Z' fill='#00574A'/><line x1='360' y1='90' x2='386' y2='90' stroke='#00574A' stroke-width='3'/><path d='M394 90 L382 84 L382 96 Z' fill='#00574A'/><text x='200' y='136' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6 bolts, each cut on one plane between the plates</text><text x='200' y='154' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Design strength of the group = 146.1 kips</text>",
+   "alt": "Two overlapping plates pulled in opposite directions and joined by 6 bolts, each in single shear."
+  },
   "lookup": true,
   "terms": [
    [
@@ -12334,6 +12858,11 @@
   "family": "structural-0041",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 162",
+   "svg": "<rect x='40' y='60' width='210' height='40' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='150' y='70' width='210' height='40' fill='#D9F1D6' fill-opacity='.7' stroke='#00242E' stroke-width='2'/><circle cx='167' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><circle cx='200' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><circle cx='233' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><line x1='40' y1='80' x2='14' y2='80' stroke='#00574A' stroke-width='3'/><path d='M6 80 L18 74 L18 86 Z' fill='#00574A'/><line x1='360' y1='90' x2='386' y2='90' stroke='#00574A' stroke-width='3'/><path d='M394 90 L382 84 L382 96 Z' fill='#00574A'/><text x='200' y='136' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3 bolts, each cut on one plane between the plates</text><text x='200' y='154' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Design strength of the group = 120.2 kips</text>",
+   "alt": "Two overlapping plates pulled in opposite directions and joined by 3 bolts, each in single shear."
+  },
   "lookup": true,
   "terms": [
    [
@@ -12402,6 +12931,11 @@
   "family": "structural-0041",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 162",
+   "svg": "<rect x='40' y='60' width='210' height='40' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='150' y='70' width='210' height='40' fill='#D9F1D6' fill-opacity='.7' stroke='#00242E' stroke-width='2'/><circle cx='160' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><circle cx='180' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><circle cx='200' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><circle cx='220' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><circle cx='240' cy='85' r='7' fill='#1B795A' stroke='#00242E'/><line x1='40' y1='80' x2='14' y2='80' stroke='#00574A' stroke-width='3'/><path d='M6 80 L18 74 L18 86 Z' fill='#00574A'/><line x1='360' y1='90' x2='386' y2='90' stroke='#00574A' stroke-width='3'/><path d='M394 90 L382 84 L382 96 Z' fill='#00574A'/><text x='200' y='136' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5 bolts, each cut on one plane between the plates</text><text x='200' y='154' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Design strength of the group = 200.3 kips</text>",
+   "alt": "Two overlapping plates pulled in opposite directions and joined by 5 bolts, each in single shear."
+  },
   "lookup": true,
   "terms": [
    [
@@ -13335,7 +13869,7 @@
    ],
    [
     "a",
-    "depth of the equivalent stress block, or distance to the load"
+    "depth of the equivalent rectangular stress block"
    ]
   ]
  },
@@ -13430,7 +13964,7 @@
    ],
    [
     "a",
-    "depth of the equivalent stress block, or distance to the load"
+    "depth of the equivalent rectangular stress block"
    ]
   ]
  },
@@ -13525,7 +14059,7 @@
    ],
    [
     "a",
-    "depth of the equivalent stress block, or distance to the load"
+    "depth of the equivalent rectangular stress block"
    ]
   ]
  },
@@ -13620,7 +14154,7 @@
    ],
    [
     "a",
-    "depth of the equivalent stress block, or distance to the load"
+    "depth of the equivalent rectangular stress block"
    ]
   ]
  },

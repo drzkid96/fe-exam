@@ -45,7 +45,7 @@ NQ('fluids-d', 'minor losses', 'm', 3, 0.413, "Water flows at [v|1] m/s through 
 NQ('fluids-d', 'Reynolds number', '', 3, 0.04, "Flow in a pipe is laminar with a Reynolds number of [Re]. What is the Darcy friction factor?",
    "In laminar flow the friction factor depends only on the Reynolds number: f = 64 / Re. Pipe roughness matters only once the flow is turbulent, where the Moody diagram is needed.",
    r"f = \frac{64}{[Re]} = [ans|3].",
-   "64/Re", wrong=["16/Re", "0.316/Re**0.25", "128/Re"], Re=[1600, 800, 2000])
+   "64/Re", wrong=["16/Re", "0.316/Re**0.25", "128/Re"], Re=[1600, 800, 2000, 1250])
 NQ('fluids-d', 'pump power equation', 'kW', 0, 4662, "A turbine receives [Q|1] m^{3}/s of water under a net head of [H] m and is [eff]% efficient. What power does it deliver? Use 9.81 kN/m^{3}.",
    "The power available in flowing water is specific weight × flow × head. A turbine delivers that times its efficiency; a pump needs that divided by its efficiency.",
    "Water power = 9.81([Q|1])([H]) = [9.81*Q*H|0] kW. || Output = [eff/100|2] × [9.81*Q*H|0] = [ans|0] kW.",
@@ -195,11 +195,11 @@ NQ('surveying-a', '-', 'm', 4, 0.0435, "A steel tape, correct at 20 °C, is used
 NQ('surveying-a', '-', 'seconds', 0, -10, "The measured interior angles of a closed [n]-sided traverse add up to [exc]\" more than the geometric total. If the error is shared equally, what correction is applied to each angle?",
    "The interior angles of a closed polygon must total (n - 2) × 180°. The misclosure is shared equally among the angles, with the opposite sign.",
    r"Correction = -\frac{[exc]}{[n]} = [ans|0]\" per angle.",
-   "-exc/n", n=[5, 6, 4], exc=[50, 36, 48])
+   "-exc/n", n=[5, 6, 4, 8], exc=[50, 36, 48, 56])
 NQ('surveying-a', '-', '°', 1, 247.5, "A line has an azimuth of [az|1]°. What is its back azimuth?",
    "The back azimuth is the direction of the same line seen from its other end. It differs from the forward azimuth by 180°: add 180° if the azimuth is less than 180°, otherwise subtract.",
    "Back azimuth = [az|1]° [sgn] 180° = [ans|1]°.",
-   "(az+180)%360", wrong=["360-az", "(az+90)%360", "(az+270)%360"], az=[67.5, 215, 301], sgn=["+", "-", "-"])
+   "(az+180)%360", wrong=["360-az", "(az+90)%360", "(az+270)%360"], az=[67.5, 215, 301, 142.5], sgn=["+", "-", "-", "+"])
 NQ('surveying-b', "Simpson's 1/3 rule", 'm^{2}', 2, 176.67, "Offsets from a baseline to a curved boundary, measured every [dx] m, are [o0|1], [o1|1], [o2|1], [o3|1] and [o4|1] m. Using Simpson's 1/3 rule, what is the area between the baseline and the boundary?",
    "Simpson's 1/3 rule fits parabolas through the offsets in pairs of intervals, so it needs an even number of intervals. The end offsets count once, odd-numbered interior offsets four times and even-numbered interior offsets twice.",
    r"A = \frac{[dx]}{3}([o0|1] + 4([o1|1]) + 2([o2|1]) + 4([o3|1]) + [o4|1]) = \frac{[dx]}{3}([o0+4*o1+2*o2+4*o3+o4|1]) = [ans|2] m^{2}.",

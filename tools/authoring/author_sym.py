@@ -21,11 +21,16 @@ def symbols(text):
             if s[i - 1:i] in '/·' and re.search(r"[A-Za-z]$", s[:i - 1]): continue             # part of a compound unit
             if c not in out: out.append(c)
     return out
-def define(topic, sub, syms):
+def pick(d, text, whole):
+    """A meaning may be a list of (pattern, meaning): the first pattern found in the text decides. Lessons list every meaning."""
+    if isinstance(d, str): return d
+    if whole: return '; in other questions, '.join(dict.fromkeys(m for _, m in d))
+    return next(m for p, m in d if not p or re.search(p, text, re.I))
+def define(topic, sub, syms, text='', whole=False):
     got, miss = [], []
     for s in syms:
         d = G.get(sub, {}).get(s) or G.get(topic, {}).get(s) or G['*'].get(s)
-        (got if d else miss).append([s, d] if d else s)
+        (got if d else miss).append([s, pick(d, text, whole)] if d else s)
     return got, miss
 def main():
     missing = collections.defaultdict(collections.Counter); n = 0
@@ -33,7 +38,8 @@ def main():
         qs = json.load(open(f))
         for q in qs:
             fig2.post(q)
-            got, miss = define(q['topic'], q['subtopic'], symbols((q.get('eli5') or '') + '\n' + (q.get('solution') or '')))
+            _t = (q.get('stem') or '') + '\n' + (q.get('eli5') or '') + '\n' + (q.get('solution') or '')
+            got, miss = define(q['topic'], q['subtopic'], symbols((q.get('eli5') or '') + '\n' + (q.get('solution') or '')), _t)
             for m in miss: missing[q['topic']][m] += 1
             if got: q['symbols'] = got; n += 1
             else: q.pop('symbols', None)
@@ -42,7 +48,7 @@ def main():
         g = json.load(open(f))
         for s in g['sections']:
             txt = '\n'.join([s.get('body') or '', s.get('deep') or ''] + [x.get('expr', '') for x in s.get('formulas', [])] + [x['text'] for x in s.get('ideas', [])] + [x.get('steps', '') for x in s.get('examples', [])])
-            got, miss = define(g['topic'], s.get('subtopic') or '', symbols(txt))
+            got, miss = define(g['topic'], s.get('subtopic') or '', symbols(txt), txt, True)
             for m in miss: missing[g['topic']][m] += 1
             if got: s['symbols'] = got
             else: s.pop('symbols', None)

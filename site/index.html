@@ -288,10 +288,13 @@ mark{background:var(--pale);color:inherit;border-radius:2px}
 .syms{margin:0;display:grid;grid-template-columns:max-content 1fr;gap:2px 14px;font-size:14px} .syms dt{font-weight:600;color:var(--emerald)} .syms dd{margin:0}
 .bridge{background:var(--cream);border-left:3px solid var(--jade);border-radius:var(--r);padding:12px 16px;display:flex;flex-direction:column;gap:8px} .bridge h3{margin:0} .bridge ul{margin:0;padding-left:18px}
 .calc-btn{display:none} body.on-q .calc-btn{display:inline-flex}
-#calc{position:fixed;left:232px;bottom:16px;width:300px;background:var(--surface);border:1px solid var(--slate);border-radius:var(--r);box-shadow:0 8px 28px rgb(0 36 46 / .25);z-index:30;padding:10px;display:flex;flex-direction:column;gap:8px}
+#calc{position:fixed;right:16px;top:76px;width:300px;background:var(--surface);border:1px solid var(--slate);border-radius:var(--r);box-shadow:0 8px 28px rgb(0 36 46 / .25);z-index:30;padding:10px;display:flex;flex-direction:column;gap:8px}
 #calc[hidden],body:not(.on-q) #calc{display:none}
-@media (max-width:900px){#calc{left:8px}}
-.calc-h{display:flex;align-items:center;gap:8px} .calc-h strong{flex:1}
+body.hb-open #calc{right:auto;top:auto;left:232px;bottom:16px}
+@media (min-width:900px){body.on-q.calc-on:not(.hb-open) #view .wrap{padding-right:340px}}
+@media (max-width:899px){#calc,body.hb-open #calc{left:8px;right:8px;top:auto;bottom:8px;width:auto}body.on-q.calc-on #view{padding-bottom:170px}}
+#calc.min .calc-k,#calc.min .calc-hist{display:none}
+.calc-h{display:flex;align-items:center;gap:6px} .calc-h strong{flex:1} .calc-h .btn.sm{padding:4px 8px}
 #calc input{width:100%;padding:8px;border:1px solid var(--rule);border-radius:var(--r);font:inherit;font-size:16px;background:var(--band)}
 .calc-out{min-height:24px;font-size:18px;font-weight:700;text-align:right;color:var(--emerald);overflow-wrap:anywhere}
 .calc-k{display:grid;grid-template-columns:repeat(5,1fr);gap:4px} .calc-k button{padding:7px 0;border:1px solid var(--rule);border-radius:var(--r);background:var(--band);font:inherit;font-size:13px;font-weight:600;cursor:pointer;color:var(--ink)} .calc-k button:hover{background:var(--pale)} .calc-k button.eq{background:var(--emerald);color:#fff;border-color:var(--emerald)}
@@ -1057,7 +1060,7 @@ function hbFind(term) {
   return out;
 }
 function hbGoto(printed, term) {
-  $('#hb').hidden = false;
+  $('#hb').hidden = false; document.body.classList.add('hb-open');
   if (!HB.pdf) { HB.pend = {page: printed, term: term}; if (!HB.tried) hbRestore(true); else hbPaint(); return; }
   if (term != null) { HB.term = term; HB.res = term ? hbFind(term) : null; }
   if (printed) HB.page = Math.max(1, Math.min(HB.n, +printed + hbOff()));
@@ -1364,7 +1367,7 @@ function parseRoute() {
 function go(name) { if (location.hash === '#' + name) { R = parseRoute(); render(true); } else location.hash = name; }
 const NAVKEY = {topic: 'topics', quiz: 'practice', results: 'review', q: 'review'};
 function render(nav) {
-  document.body.classList.toggle('on-q', R.name === 'quiz' || R.name === 'q');
+  document.body.classList.toggle('on-q', R.name === 'quiz' || R.name === 'q'); calcSync();
   const v = $('#view'), keep = nav ? 0 : v.scrollTop;
   if (!S.exam) return;
   let html;
@@ -1414,11 +1417,19 @@ const calcFmt = v => { const a = Math.abs(v); return a !== 0 && (a >= 1e10 || a 
 function calcPaint(focus) {
   const el = $('#calc'); if (!el || el.hidden) return;
   const K = [['7', '8', '9', '/', 'sqrt('], ['4', '5', '6', '*', '^'], ['1', '2', '3', '-', '('], ['0', '.', 'ans', '+', ')'], ['sin(', 'cos(', 'tan(', 'ln(', 'log('], ['asin(', 'acos(', 'atan(', 'pi', 'exp(']], lab = {'/': '÷', '*': '×'};
-  el.innerHTML = '<div class="calc-h"><strong>Calculator</strong><button type="button" class="btn sm" data-act="calcMode" title="Angle unit for sin, cos and tan">' + (CALC.deg ? 'Degrees' : 'Radians') + '</button><button type="button" class="btn sm" data-act="calcToggle">Close</button></div>' +
+  if (CALC.min === undefined) { let m = null; try { m = localStorage.getItem('fe-calc-min'); } catch (e) { /* storage unavailable */ } CALC.min = m === null ? window.innerWidth < 900 : m === '1'; }
+  el.classList.toggle('min', CALC.min);
+  el.innerHTML = '<div class="calc-h"><strong>Calculator</strong><button type="button" class="btn sm" data-act="calcMode" title="Angle unit for sin, cos and tan">' + (CALC.deg ? 'Degrees' : 'Radians') + '</button><button type="button" class="btn sm" data-act="calcMin" aria-expanded="' + !CALC.min + '">' + (CALC.min ? 'Show keys' : 'Hide keys') + '</button><button type="button" class="btn sm" data-act="calcToggle">Close</button></div>' +
     '<form id="calcform"><input id="calc-in" type="text" inputmode="text" autocomplete="off" spellcheck="false" aria-label="Expression" placeholder="for example 1.47*60*2.5 + 60^2/(30*0.35)" value="' + esc(CALC.expr) + '" data-input="calc"></form><div class="calc-out" aria-live="polite">' + esc(CALC.out) + '</div>' +
     '<div class="calc-k">' + K.map(r => r.map(k => '<button type="button" data-act="calcKey" data-k="' + k + '">' + (lab[k] || (k.length > 1 ? k.replace('(', '') : k)) + '</button>').join('')).join('') + '<button type="button" data-act="calcClear">Clear</button><button type="button" data-act="calcDel">Del</button><button type="button" data-act="calcKey" data-k="e">e</button><button type="button" data-act="calcKey" data-k="abs(">abs</button><button type="button" class="eq" data-act="calcEq">=</button></div>' +
     (CALC.hist.length ? '<div class="calc-hist">' + CALC.hist.map((h, n) => '<button type="button" data-act="calcUse" data-n="' + n + '">' + esc(h[0]) + ' = ' + esc(h[1]) + '</button>').join('') + '</div>' : '');
   if (focus) { const i = $('#calc-in'); if (i) { i.focus(); i.setSelectionRange(i.value.length, i.value.length); } }
+}
+function calcSync() {            // the calculator sits on every question page unless it has been closed
+  const el = $('#calc'); if (!el) return;
+  if (CALC.init !== true) { CALC.init = true; el.hidden = false; }          // shown at the start of every visit; Close hides it until the next visit
+  document.body.classList.toggle('calc-on', !el.hidden); document.body.classList.toggle('hb-open', !$('#hb').hidden);
+  if (!el.hidden && document.body.classList.contains('on-q') && !el.firstChild) calcPaint(false);
 }
 function calcRun() {
   if (!CALC.expr.trim()) return;
@@ -1465,15 +1476,16 @@ function weakHTML() {
     rows.slice(0, 6).map(r => '<tr><td><a href="#topic-' + r.t.id + '" data-open="' + r.u.id + '">' + esc(r.t.name + ': ' + r.u.name.replace(/ \(.*$/, '')) + '</a></td><td class="num">' + r.o.n + '</td><td class="num">' + pct(r.o.accuracy) + '</td><td>' + bar(r.o.accuracy || 0) + '</td><td class="num">' + r.o.secure + ' / ' + r.o.total + '</td></tr>').join('') + '</tbody></table></div></section>' : '';
 }
 const A = {
-  calcToggle() { const el = $('#calc'); el.hidden = !el.hidden; calcPaint(true); },
+  calcToggle() { const el = $('#calc'); el.hidden = !el.hidden; calcSync(); calcPaint(true); },
+  calcMin() { CALC.min = !CALC.min; try { localStorage.setItem('fe-calc-min', CALC.min ? '1' : '0'); } catch (e) { /* storage unavailable */ } calcPaint(false); },
   calcMode() { CALC.deg = !CALC.deg; calcPaint(true); },
   calcKey(el) { CALC.expr += el.dataset.k; CALC.out = ''; calcPaint(true); },
   calcClear() { CALC.expr = ''; CALC.out = ''; calcPaint(true); },
   calcDel() { CALC.expr = CALC.expr.slice(0, -1); calcPaint(true); },
   calcEq() { calcRun(); },
   calcUse(el) { const h = CALC.hist[+el.dataset.n]; if (h) { CALC.expr += h[1]; calcPaint(true); } },
-  hbOpen() { $('#hb').hidden = false; if (!HB.pdf && !HB.tried) hbRestore(true); else { hbPaint(); hbRender(); } },
-  hbClose() { $('#hb').hidden = true; },
+  hbOpen() { $('#hb').hidden = false; document.body.classList.add('hb-open'); if (!HB.pdf && !HB.tried) hbRestore(true); else { hbPaint(); hbRender(); } },
+  hbClose() { $('#hb').hidden = true; document.body.classList.remove('hb-open'); },
   hbGo(el) { hbGoto(el.dataset.page ? +el.dataset.page : 0, el.dataset.term || ''); },
   hbRes(el) { HB.page = +el.dataset.p; hbPaint(); hbRender(); },
   hbStep(el) { HB.page = Math.max(1, Math.min(HB.n, HB.page + (+el.dataset.d))); hbPaint(); hbRender(); },

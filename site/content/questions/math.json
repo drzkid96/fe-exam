@@ -83,7 +83,7 @@
    ],
    [
     "b",
-    "y-intercept, or a side or coefficient as given"
+    "y-intercept of the line"
    ]
   ]
  },
@@ -171,7 +171,7 @@
    ],
    [
     "b",
-    "y-intercept, or a side or coefficient as given"
+    "y-intercept of the line"
    ]
   ]
  },
@@ -259,7 +259,7 @@
    ],
    [
     "b",
-    "y-intercept, or a side or coefficient as given"
+    "y-intercept of the line"
    ]
   ]
  },
@@ -347,7 +347,7 @@
    ],
    [
     "b",
-    "y-intercept, or a side or coefficient as given"
+    "y-intercept of the line"
    ]
   ]
  },
@@ -588,7 +588,7 @@
   },
   "family": "math-0003",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": [
    [
@@ -605,11 +605,11 @@
   "symbols": [
    [
     "A",
-    "first vector, an angle of the triangle, or the line coefficient of x"
+    "first vector"
    ],
    [
     "B",
-    "second vector, an angle of the triangle, or the line coefficient of y"
+    "second vector"
    ]
   ]
  },
@@ -662,7 +662,7 @@
   },
   "family": "math-0003",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": [
    [
@@ -679,11 +679,85 @@
   "symbols": [
    [
     "A",
-    "first vector, an angle of the triangle, or the line coefficient of x"
+    "first vector"
    ],
    [
     "B",
-    "second vector, an angle of the triangle, or the line coefficient of y"
+    "second vector"
+   ]
+  ]
+ },
+ {
+  "id": "math-0003-c",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Vectors **A** = 2**i** + 2**j** and **B** = 3**i** lie in the same plane. What is the angle between them?",
+  "options": [
+   {
+    "id": "a",
+    "text": "30°"
+   },
+   {
+    "id": "b",
+    "text": "45°"
+   },
+   {
+    "id": "c",
+    "text": "60°"
+   },
+   {
+    "id": "d",
+    "text": "90°"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The dot product links two vectors to the angle between them: A · B = |A||B| cos(angle). Compute the dot product from components, divide by the product of the magnitudes and take the inverse cosine. A zero dot product means the vectors are perpendicular.",
+  "solution": "A · B = 2(3) + 2(0) = 6. |A| = \\sqrt{2^{2} + 2^{2}} = 2.828 and |B| = 3.\n\ncos(angle) = \\frac{6}{2.828 × 3} = 0.7071, so the angle is 45°.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "dot product"
+    ]
+   }
+  ],
+  "tags": [
+   "dot product",
+   "vectors"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0003",
+  "version": 3,
+  "versions": 3,
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='192' y2='38' stroke='#00574A' stroke-width='3'/><path d='M200 30 L188 34 L196 42 Z' fill='#00574A'/><text x='210' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text>",
+   "alt": "Vector diagram: A."
+  },
+  "symbols": [
+   [
+    "A",
+    "first vector"
+   ],
+   [
+    "B",
+    "second vector"
    ]
   ]
  },
@@ -743,7 +817,7 @@
   "symbols": [
    [
     "s",
-    "arc length, position, or sample standard deviation"
+    "sample standard deviation"
    ]
   ]
  },
@@ -803,7 +877,7 @@
   "symbols": [
    [
     "s",
-    "arc length, position, or sample standard deviation"
+    "sample standard deviation"
    ]
   ]
  },
@@ -863,7 +937,7 @@
   "symbols": [
    [
     "s",
-    "arc length, position, or sample standard deviation"
+    "sample standard deviation"
    ]
   ]
  },
@@ -923,7 +997,7 @@
   "symbols": [
    [
     "s",
-    "arc length, position, or sample standard deviation"
+    "sample standard deviation"
    ]
   ]
  },
@@ -985,7 +1059,7 @@
   },
   "family": "math-0005",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -1047,7 +1121,69 @@
   },
   "family": "math-0005",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": true,
+  "needs": []
+ },
+ {
+  "id": "math-0005-c",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "multi",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Which statements about the median of a set of data are true? Select the two that apply.",
+  "selectCount": 2,
+  "options": [
+   {
+    "id": "a",
+    "text": "Half of the values lie at or below it"
+   },
+   {
+    "id": "b",
+    "text": "It is affected less by one extreme value than the mean is"
+   },
+   {
+    "id": "c",
+    "text": "It always equals the mean"
+   },
+   {
+    "id": "d",
+    "text": "It is the most frequent value"
+   },
+   {
+    "id": "e",
+    "text": "It is always one of the data values"
+   }
+  ],
+  "answer": [
+   "a",
+   "b"
+  ],
+  "eli5": "A normal distribution is the bell curve. It is perfectly balanced around its middle, and most values sit close to that middle.",
+  "solution": "The median is the middle value of the sorted data, so half the values lie at or below it. One extreme value moves the mean but hardly moves the middle value.\n\nIt equals the mean only for symmetric data. The most frequent value is the mode. With an even number of values the median is the average of the two middle ones, so it need not be one of the data.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "normal distribution"
+    ]
+   }
+  ],
+  "tags": [
+   "normal distribution",
+   "bell curve"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "FE Reference Handbook 10.0.1, Engineering Probability and Statistics, median and mode"
+  },
+  "family": "math-0005",
+  "version": 3,
+  "versions": 3,
   "lookup": true,
   "needs": []
  },
@@ -1116,7 +1252,7 @@
    ],
    [
     "k",
-    "y-coordinate of the centre, or a rate constant"
+    "y-coordinate of the circle's centre"
    ],
    [
     "r",
@@ -1197,7 +1333,7 @@
    ],
    [
     "k",
-    "y-coordinate of the centre, or a rate constant"
+    "y-coordinate of the circle's centre"
    ],
    [
     "r",
@@ -1278,7 +1414,7 @@
    ],
    [
     "k",
-    "y-coordinate of the centre, or a rate constant"
+    "y-coordinate of the circle's centre"
    ],
    [
     "r",
@@ -1359,7 +1495,7 @@
    ],
    [
     "k",
-    "y-coordinate of the centre, or a rate constant"
+    "y-coordinate of the circle's centre"
    ],
    [
     "r",
@@ -1700,19 +1836,19 @@
   "symbols": [
    [
     "c",
-    "side opposite angle C, or a constant"
+    "side opposite angle C"
    ],
    [
     "a",
-    "side opposite angle A, or a coefficient as given"
+    "side opposite angle A"
    ],
    [
     "b",
-    "y-intercept, or a side or coefficient as given"
+    "side opposite angle B"
    ],
    [
     "C",
-    "third angle of the triangle, or the constant term of the line"
+    "angle between the two known sides, opposite side c"
    ]
   ]
  },
@@ -1773,19 +1909,19 @@
   "symbols": [
    [
     "c",
-    "side opposite angle C, or a constant"
+    "side opposite angle C"
    ],
    [
     "a",
-    "side opposite angle A, or a coefficient as given"
+    "side opposite angle A"
    ],
    [
     "b",
-    "y-intercept, or a side or coefficient as given"
+    "side opposite angle B"
    ],
    [
     "C",
-    "third angle of the triangle, or the constant term of the line"
+    "angle between the two known sides, opposite side c"
    ]
   ]
  },
@@ -1846,19 +1982,19 @@
   "symbols": [
    [
     "c",
-    "side opposite angle C, or a constant"
+    "side opposite angle C"
    ],
    [
     "a",
-    "side opposite angle A, or a coefficient as given"
+    "side opposite angle A"
    ],
    [
     "b",
-    "y-intercept, or a side or coefficient as given"
+    "side opposite angle B"
    ],
    [
     "C",
-    "third angle of the triangle, or the constant term of the line"
+    "angle between the two known sides, opposite side c"
    ]
   ]
  },
@@ -1919,19 +2055,19 @@
   "symbols": [
    [
     "c",
-    "side opposite angle C, or a constant"
+    "side opposite angle C"
    ],
    [
     "a",
-    "side opposite angle A, or a coefficient as given"
+    "side opposite angle A"
    ],
    [
     "b",
-    "y-intercept, or a side or coefficient as given"
+    "side opposite angle B"
    ],
    [
     "C",
-    "third angle of the triangle, or the constant term of the line"
+    "angle between the two known sides, opposite side c"
    ]
   ]
  },
@@ -2444,7 +2580,7 @@
   "symbols": [
    [
     "s",
-    "arc length, position, or sample standard deviation"
+    "position of the particle"
    ]
   ]
  },
@@ -2493,7 +2629,7 @@
   "symbols": [
    [
     "s",
-    "arc length, position, or sample standard deviation"
+    "position of the particle"
    ]
   ]
  },
@@ -2542,7 +2678,7 @@
   "symbols": [
    [
     "s",
-    "arc length, position, or sample standard deviation"
+    "position of the particle"
    ]
   ]
  },
@@ -2591,7 +2727,7 @@
   "symbols": [
    [
     "s",
-    "arc length, position, or sample standard deviation"
+    "position of the particle"
    ]
   ]
  },
@@ -3149,7 +3285,7 @@
   },
   "family": "math-0014",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": [],
   "symbols": [
@@ -3205,7 +3341,63 @@
   },
   "family": "math-0014",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": true,
+  "needs": [],
+  "symbols": [
+   [
+    "P",
+    "probability"
+   ]
+  ]
+ },
+ {
+  "id": "math-0014-c",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Two fair dice are rolled. What is the probability that the total is 4?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.056"
+   },
+   {
+    "id": "b",
+    "text": "0.083"
+   },
+   {
+    "id": "c",
+    "text": "0.111"
+   },
+   {
+    "id": "d",
+    "text": "0.167"
+   }
+  ],
+  "answer": "b",
+  "eli5": "When all outcomes are equally likely, probability is the number of favourable outcomes divided by the total number. Two dice give 6 × 6 = 36 ordered outcomes, so count the ordered pairs that produce the total.",
+  "solution": "There are 36 equally likely outcomes. A total of 4 comes from (1, 3), (2, 2) and (3, 1): three outcomes.\n\nP = 3 / 36 = 0.083.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "probability"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0014",
+  "version": 3,
+  "versions": 3,
   "lookup": true,
   "needs": [],
   "symbols": [
@@ -3739,7 +3931,7 @@
    ],
    [
     "n",
-    "sample size or number of trials"
+    "number of trials"
    ],
    [
     "P",
@@ -3747,7 +3939,7 @@
    ],
    [
     "C",
-    "third angle of the triangle, or the constant term of the line"
+    "number of combinations"
    ],
    [
     "p",
@@ -3811,7 +4003,7 @@
    ],
    [
     "n",
-    "sample size or number of trials"
+    "number of trials"
    ],
    [
     "P",
@@ -3819,7 +4011,7 @@
    ],
    [
     "C",
-    "third angle of the triangle, or the constant term of the line"
+    "number of combinations"
    ],
    [
     "p",
@@ -3883,7 +4075,7 @@
    ],
    [
     "n",
-    "sample size or number of trials"
+    "number of trials"
    ],
    [
     "P",
@@ -3891,7 +4083,7 @@
    ],
    [
     "C",
-    "third angle of the triangle, or the constant term of the line"
+    "number of combinations"
    ],
    [
     "p",
@@ -3955,7 +4147,7 @@
    ],
    [
     "n",
-    "sample size or number of trials"
+    "number of trials"
    ],
    [
     "P",
@@ -3963,7 +4155,7 @@
    ],
    [
     "C",
-    "third angle of the triangle, or the constant term of the line"
+    "number of combinations"
    ],
    [
     "p",
@@ -4386,6 +4578,11 @@
   "family": "math-0020",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='200' y1='14' x2='200' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='208' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='200' y1='160' x2='260' y2='40' stroke='#00574A' stroke-width='3'/><path d='M265 30 L255 37 L265 42 Z' fill='#00574A'/><text x='275' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>given line</text><line x1='200' y1='160' x2='80' y2='100' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M70 95 L77 105 L82 95 Z' fill='#568CBB'/><text x='60' y='87' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>at 90°</text>",
+   "alt": "Vector diagram: given line; at 90°."
+  },
   "lookup": true,
   "needs": [],
   "symbols": [
@@ -4446,6 +4643,11 @@
   "family": "math-0020",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='200' y1='14' x2='200' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='208' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='200' y1='160' x2='240' y2='40' stroke='#00574A' stroke-width='3'/><path d='M243 30 L235 39 L245 42 Z' fill='#00574A'/><text x='253' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>given line</text><line x1='200' y1='160' x2='80' y2='120' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M70 117 L79 125 L82 115 Z' fill='#568CBB'/><text x='60' y='109' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>at 90°</text>",
+   "alt": "Vector diagram: given line; at 90°."
+  },
   "lookup": true,
   "needs": [],
   "symbols": [
@@ -4506,6 +4708,11 @@
   "family": "math-0020",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='135' y1='14' x2='135' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='143' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='135' y1='160' x2='255' y2='100' stroke='#00574A' stroke-width='3'/><path d='M265 95 L253 95 L258 105 Z' fill='#00574A'/><text x='275' y='87' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>given line</text><line x1='135' y1='160' x2='75' y2='40' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M70 30 L70 42 L80 37 Z' fill='#568CBB'/><text x='60' y='22' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>at 90°</text>",
+   "alt": "Vector diagram: given line; at 90°."
+  },
   "lookup": true,
   "needs": [],
   "symbols": [
@@ -4566,6 +4773,11 @@
   "family": "math-0020",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='200' y1='14' x2='200' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='208' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='200' y1='160' x2='248' y2='40' stroke='#00574A' stroke-width='3'/><path d='M252 30 L243 38 L253 42 Z' fill='#00574A'/><text x='262' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>given line</text><line x1='200' y1='160' x2='80' y2='112' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M70 108 L78 117 L82 107 Z' fill='#568CBB'/><text x='60' y='100' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>at 90°</text>",
+   "alt": "Vector diagram: given line; at 90°."
+  },
   "lookup": true,
   "needs": [],
   "symbols": [
@@ -4618,19 +4830,19 @@
   "symbols": [
    [
     "a",
-    "side opposite angle A, or a coefficient as given"
+    "side opposite angle A"
    ],
    [
     "A",
-    "first vector, an angle of the triangle, or the line coefficient of x"
+    "angle opposite side a"
    ],
    [
     "b",
-    "y-intercept, or a side or coefficient as given"
+    "side opposite angle B"
    ],
    [
     "B",
-    "second vector, an angle of the triangle, or the line coefficient of y"
+    "angle opposite side b"
    ]
   ]
  },
@@ -4673,19 +4885,19 @@
   "symbols": [
    [
     "a",
-    "side opposite angle A, or a coefficient as given"
+    "side opposite angle A"
    ],
    [
     "A",
-    "first vector, an angle of the triangle, or the line coefficient of x"
+    "angle opposite side a"
    ],
    [
     "b",
-    "y-intercept, or a side or coefficient as given"
+    "side opposite angle B"
    ],
    [
     "B",
-    "second vector, an angle of the triangle, or the line coefficient of y"
+    "angle opposite side b"
    ]
   ]
  },
@@ -4728,19 +4940,19 @@
   "symbols": [
    [
     "a",
-    "side opposite angle A, or a coefficient as given"
+    "side opposite angle A"
    ],
    [
     "A",
-    "first vector, an angle of the triangle, or the line coefficient of x"
+    "angle opposite side a"
    ],
    [
     "b",
-    "y-intercept, or a side or coefficient as given"
+    "side opposite angle B"
    ],
    [
     "B",
-    "second vector, an angle of the triangle, or the line coefficient of y"
+    "angle opposite side b"
    ]
   ]
  },
@@ -4783,19 +4995,19 @@
   "symbols": [
    [
     "a",
-    "side opposite angle A, or a coefficient as given"
+    "side opposite angle A"
    ],
    [
     "A",
-    "first vector, an angle of the triangle, or the line coefficient of x"
+    "angle opposite side a"
    ],
    [
     "b",
-    "y-intercept, or a side or coefficient as given"
+    "side opposite angle B"
    ],
    [
     "B",
-    "second vector, an angle of the triangle, or the line coefficient of y"
+    "angle opposite side b"
    ]
   ]
  },
@@ -5008,7 +5220,9 @@
    {
     "section": "Mathematics",
     "page": "34–62",
-    "find": []
+    "find": [
+     "circular sector"
+    ]
    }
   ],
   "tags": [],
@@ -5019,12 +5233,12 @@
   "family": "math-0023",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [],
   "symbols": [
    [
     "s",
-    "arc length, position, or sample standard deviation"
+    "arc length"
    ],
    [
     "r",
@@ -5053,7 +5267,9 @@
    {
     "section": "Mathematics",
     "page": "34–62",
-    "find": []
+    "find": [
+     "circular sector"
+    ]
    }
   ],
   "tags": [],
@@ -5064,12 +5280,12 @@
   "family": "math-0023",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [],
   "symbols": [
    [
     "s",
-    "arc length, position, or sample standard deviation"
+    "arc length"
    ],
    [
     "r",
@@ -5098,7 +5314,9 @@
    {
     "section": "Mathematics",
     "page": "34–62",
-    "find": []
+    "find": [
+     "circular sector"
+    ]
    }
   ],
   "tags": [],
@@ -5109,12 +5327,12 @@
   "family": "math-0023",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [],
   "symbols": [
    [
     "s",
-    "arc length, position, or sample standard deviation"
+    "arc length"
    ],
    [
     "r",
@@ -5143,7 +5361,9 @@
    {
     "section": "Mathematics",
     "page": "34–62",
-    "find": []
+    "find": [
+     "circular sector"
+    ]
    }
   ],
   "tags": [],
@@ -5154,12 +5374,12 @@
   "family": "math-0023",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [],
   "symbols": [
    [
     "s",
-    "arc length, position, or sample standard deviation"
+    "arc length"
    ],
    [
     "r",
@@ -5640,7 +5860,7 @@
    ],
    [
     "a",
-    "side opposite angle A, or a coefficient as given"
+    "coefficient in the function"
    ]
   ]
  },
@@ -5697,7 +5917,7 @@
    ],
    [
     "a",
-    "side opposite angle A, or a coefficient as given"
+    "coefficient in the function"
    ]
   ]
  },
@@ -5754,7 +5974,7 @@
    ],
    [
     "a",
-    "side opposite angle A, or a coefficient as given"
+    "coefficient in the function"
    ]
   ]
  },
@@ -5811,7 +6031,7 @@
    ],
    [
     "a",
-    "side opposite angle A, or a coefficient as given"
+    "coefficient in the function"
    ]
   ]
  },
@@ -5834,9 +6054,11 @@
   "solution": "Half-lives elapsed = \\frac{12}{5} = 2.400.\n\nFraction remaining = 0.5^{2.400} = 0.1895.",
   "handbook": [
    {
-    "section": "Mathematics",
-    "page": "34–62",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "half-life"
+    ]
    }
   ],
   "tags": [],
@@ -5847,7 +6069,7 @@
   "family": "math-0027",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "math-a",
@@ -5862,7 +6084,7 @@
    ],
    [
     "k",
-    "y-coordinate of the centre, or a rate constant"
+    "decay rate constant"
    ]
   ]
  },
@@ -5885,9 +6107,11 @@
   "solution": "Half-lives elapsed = \\frac{20}{8} = 2.500.\n\nFraction remaining = 0.5^{2.500} = 0.1768.",
   "handbook": [
    {
-    "section": "Mathematics",
-    "page": "34–62",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "half-life"
+    ]
    }
   ],
   "tags": [],
@@ -5898,7 +6122,7 @@
   "family": "math-0027",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "math-a",
@@ -5913,7 +6137,7 @@
    ],
    [
     "k",
-    "y-coordinate of the centre, or a rate constant"
+    "decay rate constant"
    ]
   ]
  },
@@ -5936,9 +6160,11 @@
   "solution": "Half-lives elapsed = \\frac{45}{30} = 1.500.\n\nFraction remaining = 0.5^{1.500} = 0.3536.",
   "handbook": [
    {
-    "section": "Mathematics",
-    "page": "34–62",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "half-life"
+    ]
    }
   ],
   "tags": [],
@@ -5949,7 +6175,7 @@
   "family": "math-0027",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "math-a",
@@ -5964,7 +6190,7 @@
    ],
    [
     "k",
-    "y-coordinate of the centre, or a rate constant"
+    "decay rate constant"
    ]
   ]
  },
@@ -5987,9 +6213,11 @@
   "solution": "Half-lives elapsed = \\frac{16}{6} = 2.667.\n\nFraction remaining = 0.5^{2.667} = 0.1575.",
   "handbook": [
    {
-    "section": "Mathematics",
-    "page": "34–62",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "half-life"
+    ]
    }
   ],
   "tags": [],
@@ -6000,7 +6228,7 @@
   "family": "math-0027",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "math-a",
@@ -6015,7 +6243,7 @@
    ],
    [
     "k",
-    "y-coordinate of the centre, or a rate constant"
+    "decay rate constant"
    ]
   ]
  },
@@ -6568,7 +6796,9 @@
    {
     "section": "Mathematics",
     "page": "34–62",
-    "find": []
+    "find": [
+     "unit vector"
+    ]
    }
   ],
   "tags": [],
@@ -6584,7 +6814,7 @@
    "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='222' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='222' y1='120' x2='174' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='174' y1='158' x2='174' y2='206' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='176' y2='195' stroke='#00574A' stroke-width='3'/><path d='M174 206 L182 196 L171 194 Z' fill='#00574A'/><text x='206' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>2</text><text x='166' y='151' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>6</text><text x='182' y='182' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>-3</text><text x='180' y='198' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
    "alt": "A three-dimensional sketch of the vector with components 2, -3 and 6 along x, y and z."
   },
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "math-a",
@@ -6620,7 +6850,9 @@
    {
     "section": "Mathematics",
     "page": "34–62",
-    "find": []
+    "find": [
+     "unit vector"
+    ]
    }
   ],
   "tags": [],
@@ -6636,7 +6868,7 @@
    "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='244' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='244' y1='120' x2='197' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='197' y1='158' x2='197' y2='104' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='193' y2='114' stroke='#00574A' stroke-width='3'/><path d='M197 104 L187 112 L198 116 Z' fill='#00574A'/><text x='217' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>4</text><text x='189' y='151' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>7</text><text x='205' y='131' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>4</text><text x='203' y='96' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
    "alt": "A three-dimensional sketch of the vector with components 4, 4 and 7 along x, y and z."
   },
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "math-a",
@@ -6672,7 +6904,9 @@
    {
     "section": "Mathematics",
     "page": "34–62",
-    "find": []
+    "find": [
+     "unit vector"
+    ]
    }
   ],
   "tags": [],
@@ -6688,7 +6922,7 @@
    "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='238' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='238' y1='120' x2='190' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='158' x2='190' y2='63' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='190' y2='74' stroke='#00574A' stroke-width='3'/><path d='M190 63 L184 74 L196 74 Z' fill='#00574A'/><text x='214' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>1</text><text x='182' y='151' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>2</text><text x='198' y='110' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>2</text><text x='196' y='55' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
    "alt": "A three-dimensional sketch of the vector with components 1, 2 and 2 along x, y and z."
   },
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "math-a",
@@ -6724,7 +6958,9 @@
    {
     "section": "Mathematics",
     "page": "34–62",
-    "find": []
+    "find": [
+     "unit vector"
+    ]
    }
   ],
   "tags": [],
@@ -6740,7 +6976,7 @@
    "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='238' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='238' y1='120' x2='190' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='158' x2='190' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='190' y2='147' stroke='#00574A' stroke-width='3'/><path d='M190 158 L196 147 L184 147 Z' fill='#00574A'/><text x='214' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>3</text><text x='182' y='151' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>6</text><text x='198' y='158' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>0</text><text x='196' y='150' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
    "alt": "A three-dimensional sketch of the vector with components 3, 0 and 6 along x, y and z."
   },
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "math-a",
@@ -6805,11 +7041,11 @@
   "symbols": [
    [
     "A",
-    "first vector, an angle of the triangle, or the line coefficient of x"
+    "first vector"
    ],
    [
     "B",
-    "second vector, an angle of the triangle, or the line coefficient of y"
+    "second vector"
    ]
   ]
  },
@@ -6863,11 +7099,11 @@
   "symbols": [
    [
     "A",
-    "first vector, an angle of the triangle, or the line coefficient of x"
+    "first vector"
    ],
    [
     "B",
-    "second vector, an angle of the triangle, or the line coefficient of y"
+    "second vector"
    ]
   ]
  },
@@ -6921,11 +7157,11 @@
   "symbols": [
    [
     "A",
-    "first vector, an angle of the triangle, or the line coefficient of x"
+    "first vector"
    ],
    [
     "B",
-    "second vector, an angle of the triangle, or the line coefficient of y"
+    "second vector"
    ]
   ]
  },
@@ -6979,11 +7215,11 @@
   "symbols": [
    [
     "A",
-    "first vector, an angle of the triangle, or the line coefficient of x"
+    "first vector"
    ],
    [
     "B",
-    "second vector, an angle of the triangle, or the line coefficient of y"
+    "second vector"
    ]
   ]
  },
@@ -7192,7 +7428,7 @@
   },
   "family": "math-0033",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
   "needs": []
  },
@@ -7229,7 +7465,7 @@
   },
   "family": "math-0033",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
   "needs": []
  },
@@ -7266,7 +7502,44 @@
   },
   "family": "math-0033",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
+  "lookup": true,
+  "needs": []
+ },
+ {
+  "id": "math-0033-d",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sample of five values is 3, 5, 8, 10 and 14. What is its coefficient of variation, using the sample standard deviation?",
+  "answer": {
+   "value": 53.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "The coefficient of variation expresses scatter relative to size: the standard deviation divided by the mean. The sample standard deviation divides the sum of squared deviations by n - 1.",
+  "solution": "Mean = 8.00. Sample standard deviation = 4.301.\n\nCV = \\frac{4.301}{8.00} × 100 = 53.8%.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "coefficient of variation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0033",
+  "version": 4,
+  "versions": 4,
   "lookup": true,
   "needs": []
  },
@@ -7546,7 +7819,7 @@
   "symbols": [
    [
     "C",
-    "third angle of the triangle, or the constant term of the line"
+    "number of combinations"
    ]
   ]
  },
@@ -7602,7 +7875,7 @@
   "symbols": [
    [
     "C",
-    "third angle of the triangle, or the constant term of the line"
+    "number of combinations"
    ]
   ]
  },
@@ -7658,7 +7931,7 @@
   "symbols": [
    [
     "C",
-    "third angle of the triangle, or the constant term of the line"
+    "number of combinations"
    ]
   ]
  },
@@ -7714,7 +7987,7 @@
   "symbols": [
    [
     "C",
-    "third angle of the triangle, or the constant term of the line"
+    "number of combinations"
    ]
   ]
  }

@@ -290,7 +290,7 @@
     ],
     [
      "L",
-     "span or length"
+     "length of the lever"
     ]
    ]
   },
@@ -364,7 +364,12 @@
      "idea": "A force can be moved to a parallel line of action if a couple is added equal to the moment of the original force about the new point. The force keeps its magnitude and direction; the couple is M = F d.",
      "steps": "The equivalent system at O is a 320 N downward force plus a couple M = F d = 320 × 0.45 = 144 N·m (clockwise).",
      "answer": "144 N·m",
-     "value": 144.0
+     "value": 144.0,
+     "figure": {
+      "viewBox": "0 0 400 170",
+      "svg": "<line x1='60' y1='110' x2='340' y2='110' stroke='#E7E8E8' stroke-width='3'/><circle cx='130' cy='110' r='5' fill='#00242E'/><text x='130' y='132' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>O</text><line x1='270' y1='40' x2='270' y2='95' stroke='#00242E' stroke-width='2' stroke-dasharray='6 4'/><path d='M270 106 L276 95 L264 95 Z' fill='#00242E'/><text x='278' y='50' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>original position</text><line x1='130' y1='40' x2='130' y2='96' stroke='#00574A' stroke-width='3'/><path d='M130 104 L124 92 L136 92 Z' fill='#00574A'/><text x='122' y='50' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>320 N</text><path d='M106 96 A28 28 0 1 1 158 96' fill='none' stroke='#568CBB' stroke-width='3'/><path d='M158 102 L150 88 L166 90 Z' fill='#568CBB'/><text x='168' y='76' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>144 N·m clockwise</text><line x1='130' y1='150' x2='270' y2='150' stroke='#00242E'/><line x1='130' y1='144' x2='130' y2='156' stroke='#00242E'/><line x1='270' y1='144' x2='270' y2='156' stroke='#00242E'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>0.45 m</text>",
+      "alt": "The 320 N force moved to point O, together with a clockwise moment of 144 N·m that makes up for moving it 0.45 m."
+     }
     },
     {
      "family": "statics-0021",
@@ -474,7 +479,7 @@
     ],
     [
      "d",
-     "perpendicular distance (moment arm), or distance between parallel axes"
+     "perpendicular distance between the two forces"
     ],
     [
      "M",
@@ -490,7 +495,7 @@
     ],
     [
      "x",
-     "distance from the reference edge or point"
+     "distance from the left end"
     ],
     [
      "y",
@@ -742,7 +747,7 @@
     ],
     [
      "L",
-     "span or length"
+     "span of the beam"
     ]
    ]
   },
@@ -856,7 +861,12 @@
      "idea": "Each half of the pliers is a lever in equilibrium about the pivot pin. The moments of the hand force and the gripping force about the pin are equal.",
      "steps": "P × a = F × b, so F = \\frac{85(190)}{35} = 461 N.",
      "answer": "461 N",
-     "value": 461.428571
+     "value": 461.428571,
+     "figure": {
+      "viewBox": "0 0 400 164",
+      "svg": "<rect x='70' y='78' width='260' height='12' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M110 90 L98 112 L122 112 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='330' y1='30' x2='330' y2='68' stroke='#00574A' stroke-width='3'/><path d='M330 76 L324 64 L336 64 Z' fill='#00574A'/><line x1='70' y1='30' x2='70' y2='68' stroke='#568CBB' stroke-width='3'/><path d='M70 76 L64 64 L76 64 Z' fill='#568CBB'/><text x='330' y='22' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>Hand 85 N</text><text x='70' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>Wire pushes back 461.4 N</text><line x1='70' y1='130' x2='110' y2='130' stroke='#00242E'/><line x1='70' y1='124' x2='70' y2='136' stroke='#00242E'/><line x1='110' y1='124' x2='110' y2='136' stroke='#00242E'/><text x='90' y='146' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>35 mm</text><line x1='110' y1='130' x2='330' y2='130' stroke='#00242E'/><line x1='110' y1='124' x2='110' y2='136' stroke='#00242E'/><line x1='330' y1='124' x2='330' y2='136' stroke='#00242E'/><text x='220' y='146' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>190 mm</text><text x='128' y='108' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>pivot</text>",
+      "alt": "One handle as a lever about the pivot: a hand force of 85 N at 190 mm balances a jaw force of 461.4 N at 35 mm."
+     }
     }
    ],
    "lookup": [
@@ -1353,7 +1363,7 @@
     ],
     [
      "h",
-     "height of the rectangle or depth of the truss"
+     "depth of the rectangle"
     ],
     [
      "J",
@@ -1552,7 +1562,7 @@
    "symbols": [
     [
      "T_{1}",
-     "tension in cable 1, or on the tight side"
+     "tension on the tight side of the rope"
     ],
     [
      "T_{2}",

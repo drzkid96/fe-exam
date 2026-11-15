@@ -1434,7 +1434,7 @@
    ],
    [
     "h",
-    "height of the rectangle or depth of the truss"
+    "depth of the rectangle"
    ]
   ]
  },
@@ -1513,7 +1513,7 @@
    ],
    [
     "h",
-    "height of the rectangle or depth of the truss"
+    "depth of the rectangle"
    ]
   ]
  },
@@ -1592,7 +1592,7 @@
    ],
    [
     "h",
-    "height of the rectangle or depth of the truss"
+    "depth of the rectangle"
    ]
   ]
  },
@@ -1671,7 +1671,7 @@
    ],
    [
     "h",
-    "height of the rectangle or depth of the truss"
+    "depth of the rectangle"
    ]
   ]
  },
@@ -1744,7 +1744,7 @@
    ],
    [
     "d",
-    "perpendicular distance (moment arm), or distance between parallel axes"
+    "perpendicular distance between the two forces"
    ]
   ]
  },
@@ -1817,7 +1817,7 @@
    ],
    [
     "d",
-    "perpendicular distance (moment arm), or distance between parallel axes"
+    "perpendicular distance between the two forces"
    ]
   ]
  },
@@ -1890,7 +1890,7 @@
    ],
    [
     "d",
-    "perpendicular distance (moment arm), or distance between parallel axes"
+    "perpendicular distance between the two forces"
    ]
   ]
  },
@@ -1963,7 +1963,7 @@
    ],
    [
     "d",
-    "perpendicular distance (moment arm), or distance between parallel axes"
+    "perpendicular distance between the two forces"
    ]
   ]
  },
@@ -2015,6 +2015,11 @@
   "family": "statics-0007",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<line x1='60' y1='110' x2='340' y2='110' stroke='#E7E8E8' stroke-width='3'/><circle cx='130' cy='110' r='5' fill='#00242E'/><text x='130' y='132' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>O</text><line x1='270' y1='40' x2='270' y2='95' stroke='#00242E' stroke-width='2' stroke-dasharray='6 4'/><path d='M270 106 L276 95 L264 95 Z' fill='#00242E'/><text x='278' y='50' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>original position</text><line x1='130' y1='40' x2='130' y2='96' stroke='#00574A' stroke-width='3'/><path d='M130 104 L124 92 L136 92 Z' fill='#00574A'/><text x='122' y='50' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>200 N</text><path d='M106 96 A28 28 0 1 1 158 96' fill='none' stroke='#568CBB' stroke-width='3'/><path d='M158 102 L150 88 L166 90 Z' fill='#568CBB'/><text x='168' y='76' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>60 N·m clockwise</text><line x1='130' y1='150' x2='270' y2='150' stroke='#00242E'/><line x1='130' y1='144' x2='130' y2='156' stroke='#00242E'/><line x1='270' y1='144' x2='270' y2='156' stroke='#00242E'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>0.3 m</text>",
+   "alt": "The 200 N force moved to point O, together with a clockwise moment of 60 N·m that makes up for moving it 0.3 m."
+  },
   "lookup": true,
   "terms": [
    [
@@ -2044,7 +2049,7 @@
    ],
    [
     "d",
-    "perpendicular distance (moment arm), or distance between parallel axes"
+    "perpendicular distance between the two forces"
    ],
    [
     "O",
@@ -2104,6 +2109,11 @@
   "family": "statics-0007",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<line x1='60' y1='110' x2='340' y2='110' stroke='#E7E8E8' stroke-width='3'/><circle cx='130' cy='110' r='5' fill='#00242E'/><text x='130' y='132' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>O</text><line x1='270' y1='40' x2='270' y2='95' stroke='#00242E' stroke-width='2' stroke-dasharray='6 4'/><path d='M270 106 L276 95 L264 95 Z' fill='#00242E'/><text x='278' y='50' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>original position</text><line x1='130' y1='40' x2='130' y2='96' stroke='#00574A' stroke-width='3'/><path d='M130 104 L124 92 L136 92 Z' fill='#00574A'/><text x='122' y='50' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>150 N</text><path d='M106 96 A28 28 0 1 1 158 96' fill='none' stroke='#568CBB' stroke-width='3'/><path d='M158 102 L150 88 L166 90 Z' fill='#568CBB'/><text x='168' y='76' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>60 N·m clockwise</text><line x1='130' y1='150' x2='270' y2='150' stroke='#00242E'/><line x1='130' y1='144' x2='130' y2='156' stroke='#00242E'/><line x1='270' y1='144' x2='270' y2='156' stroke='#00242E'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>0.4 m</text>",
+   "alt": "The 150 N force moved to point O, together with a clockwise moment of 60 N·m that makes up for moving it 0.4 m."
+  },
   "lookup": true,
   "terms": [
    [
@@ -2133,7 +2143,7 @@
    ],
    [
     "d",
-    "perpendicular distance (moment arm), or distance between parallel axes"
+    "perpendicular distance between the two forces"
    ],
    [
     "O",
@@ -2193,6 +2203,11 @@
   "family": "statics-0007",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<line x1='60' y1='110' x2='340' y2='110' stroke='#E7E8E8' stroke-width='3'/><circle cx='130' cy='110' r='5' fill='#00242E'/><text x='130' y='132' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>O</text><line x1='270' y1='40' x2='270' y2='95' stroke='#00242E' stroke-width='2' stroke-dasharray='6 4'/><path d='M270 106 L276 95 L264 95 Z' fill='#00242E'/><text x='278' y='50' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>original position</text><line x1='130' y1='40' x2='130' y2='96' stroke='#00574A' stroke-width='3'/><path d='M130 104 L124 92 L136 92 Z' fill='#00574A'/><text x='122' y='50' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>400 N</text><path d='M106 96 A28 28 0 1 1 158 96' fill='none' stroke='#568CBB' stroke-width='3'/><path d='M158 102 L150 88 L166 90 Z' fill='#568CBB'/><text x='168' y='76' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>100 N·m clockwise</text><line x1='130' y1='150' x2='270' y2='150' stroke='#00242E'/><line x1='130' y1='144' x2='130' y2='156' stroke='#00242E'/><line x1='270' y1='144' x2='270' y2='156' stroke='#00242E'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>0.25 m</text>",
+   "alt": "The 400 N force moved to point O, together with a clockwise moment of 100 N·m that makes up for moving it 0.25 m."
+  },
   "lookup": true,
   "terms": [
    [
@@ -2222,7 +2237,7 @@
    ],
    [
     "d",
-    "perpendicular distance (moment arm), or distance between parallel axes"
+    "perpendicular distance between the two forces"
    ],
    [
     "O",
@@ -2282,6 +2297,11 @@
   "family": "statics-0007",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<line x1='60' y1='110' x2='340' y2='110' stroke='#E7E8E8' stroke-width='3'/><circle cx='130' cy='110' r='5' fill='#00242E'/><text x='130' y='132' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>O</text><line x1='270' y1='40' x2='270' y2='95' stroke='#00242E' stroke-width='2' stroke-dasharray='6 4'/><path d='M270 106 L276 95 L264 95 Z' fill='#00242E'/><text x='278' y='50' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>original position</text><line x1='130' y1='40' x2='130' y2='96' stroke='#00574A' stroke-width='3'/><path d='M130 104 L124 92 L136 92 Z' fill='#00574A'/><text x='122' y='50' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>250 N</text><path d='M106 96 A28 28 0 1 1 158 96' fill='none' stroke='#568CBB' stroke-width='3'/><path d='M158 102 L150 88 L166 90 Z' fill='#568CBB'/><text x='168' y='76' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>150 N·m clockwise</text><line x1='130' y1='150' x2='270' y2='150' stroke='#00242E'/><line x1='130' y1='144' x2='130' y2='156' stroke='#00242E'/><line x1='270' y1='144' x2='270' y2='156' stroke='#00242E'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>0.6 m</text>",
+   "alt": "The 250 N force moved to point O, together with a clockwise moment of 150 N·m that makes up for moving it 0.6 m."
+  },
   "lookup": true,
   "terms": [
    [
@@ -2311,7 +2331,7 @@
    ],
    [
     "d",
-    "perpendicular distance (moment arm), or distance between parallel axes"
+    "perpendicular distance between the two forces"
    ],
    [
     "O",
@@ -2962,7 +2982,7 @@
    ],
    [
     "L",
-    "span or length"
+    "length of the lever"
    ]
   ]
  },
@@ -3049,7 +3069,7 @@
    ],
    [
     "L",
-    "span or length"
+    "length of the lever"
    ]
   ]
  },
@@ -3136,7 +3156,7 @@
    ],
    [
     "L",
-    "span or length"
+    "length of the lever"
    ]
   ]
  },
@@ -3223,7 +3243,7 @@
    ],
    [
     "L",
-    "span or length"
+    "length of the lever"
    ]
   ]
  },
@@ -3868,7 +3888,7 @@
    ],
    [
     "h",
-    "height of the rectangle or depth of the truss"
+    "depth of the rectangle"
    ],
    [
     "b",
@@ -3961,7 +3981,7 @@
    ],
    [
     "h",
-    "height of the rectangle or depth of the truss"
+    "depth of the rectangle"
    ],
    [
     "b",
@@ -4054,7 +4074,7 @@
    ],
    [
     "h",
-    "height of the rectangle or depth of the truss"
+    "depth of the rectangle"
    ],
    [
     "b",
@@ -4147,7 +4167,7 @@
    ],
    [
     "h",
-    "height of the rectangle or depth of the truss"
+    "depth of the rectangle"
    ],
    [
     "b",
@@ -6677,7 +6697,7 @@
    ],
    [
     "x",
-    "distance from the reference edge or point"
+    "distance from the left end"
    ],
    [
     "y",
@@ -6771,7 +6791,7 @@
    ],
    [
     "x",
-    "distance from the reference edge or point"
+    "distance from the left end"
    ],
    [
     "y",
@@ -6865,7 +6885,7 @@
    ],
    [
     "x",
-    "distance from the reference edge or point"
+    "distance from the left end"
    ],
    [
     "y",
@@ -6959,7 +6979,7 @@
    ],
    [
     "x",
-    "distance from the reference edge or point"
+    "distance from the left end"
    ],
    [
     "y",
@@ -7315,7 +7335,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ],
    [
     "T",
@@ -7379,7 +7399,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ],
    [
     "T",
@@ -7443,7 +7463,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ],
    [
     "T",
@@ -7507,7 +7527,7 @@
   "symbols": [
    [
     "L",
-    "span or length"
+    "span of the beam"
    ],
    [
     "T",
@@ -7571,7 +7591,7 @@
   "symbols": [
    [
     "T_{1}",
-    "tension in cable 1, or on the tight side"
+    "tension in cable 1"
    ],
    [
     "W",
@@ -7635,7 +7655,7 @@
   "symbols": [
    [
     "T_{1}",
-    "tension in cable 1, or on the tight side"
+    "tension in cable 1"
    ],
    [
     "W",
@@ -7699,7 +7719,7 @@
   "symbols": [
    [
     "T_{1}",
-    "tension in cable 1, or on the tight side"
+    "tension in cable 1"
    ],
    [
     "W",
@@ -7763,7 +7783,7 @@
   "symbols": [
    [
     "T_{1}",
-    "tension in cable 1, or on the tight side"
+    "tension in cable 1"
    ],
    [
     "W",
@@ -8269,6 +8289,11 @@
   "family": "statics-0029",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 164",
+   "svg": "<rect x='70' y='78' width='260' height='12' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M113 90 L101 112 L125 112 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='330' y1='30' x2='330' y2='68' stroke='#00574A' stroke-width='3'/><path d='M330 76 L324 64 L336 64 Z' fill='#00574A'/><line x1='70' y1='30' x2='70' y2='68' stroke='#568CBB' stroke-width='3'/><path d='M70 76 L64 64 L76 64 Z' fill='#568CBB'/><text x='330' y='22' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>Hand 80 N</text><text x='70' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>Wire pushes back 400 N</text><line x1='70' y1='130' x2='113' y2='130' stroke='#00242E'/><line x1='70' y1='124' x2='70' y2='136' stroke='#00242E'/><line x1='113' y1='124' x2='113' y2='136' stroke='#00242E'/><text x='92' y='146' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>30 mm</text><line x1='113' y1='130' x2='330' y2='130' stroke='#00242E'/><line x1='113' y1='124' x2='113' y2='136' stroke='#00242E'/><line x1='330' y1='124' x2='330' y2='136' stroke='#00242E'/><text x='222' y='146' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>150 mm</text><text x='131' y='108' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>pivot</text>",
+   "alt": "One handle as a lever about the pivot: a hand force of 80 N at 150 mm balances a jaw force of 400 N at 30 mm."
+  },
   "lookup": true,
   "terms": [
    [
@@ -8340,6 +8365,11 @@
   "family": "statics-0029",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 164",
+   "svg": "<rect x='70' y='78' width='260' height='12' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M99 90 L87 112 L111 112 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='330' y1='30' x2='330' y2='68' stroke='#00574A' stroke-width='3'/><path d='M330 76 L324 64 L336 64 Z' fill='#00574A'/><line x1='70' y1='30' x2='70' y2='68' stroke='#568CBB' stroke-width='3'/><path d='M70 76 L64 64 L76 64 Z' fill='#568CBB'/><text x='330' y='22' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>Hand 120 N</text><text x='70' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>Wire pushes back 960 N</text><line x1='70' y1='130' x2='99' y2='130' stroke='#00242E'/><line x1='70' y1='124' x2='70' y2='136' stroke='#00242E'/><line x1='99' y1='124' x2='99' y2='136' stroke='#00242E'/><text x='84' y='146' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>25 mm</text><line x1='99' y1='130' x2='330' y2='130' stroke='#00242E'/><line x1='99' y1='124' x2='99' y2='136' stroke='#00242E'/><line x1='330' y1='124' x2='330' y2='136' stroke='#00242E'/><text x='214' y='146' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>200 mm</text><text x='117' y='108' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>pivot</text>",
+   "alt": "One handle as a lever about the pivot: a hand force of 120 N at 200 mm balances a jaw force of 960 N at 25 mm."
+  },
   "lookup": true,
   "terms": [
    [
@@ -8411,6 +8441,11 @@
   "family": "statics-0029",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 164",
+   "svg": "<rect x='70' y='78' width='260' height='12' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M122 90 L110 112 L134 112 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='330' y1='30' x2='330' y2='68' stroke='#00574A' stroke-width='3'/><path d='M330 76 L324 64 L336 64 Z' fill='#00574A'/><line x1='70' y1='30' x2='70' y2='68' stroke='#568CBB' stroke-width='3'/><path d='M70 76 L64 64 L76 64 Z' fill='#568CBB'/><text x='330' y='22' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>Hand 50 N</text><text x='70' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>Wire pushes back 200 N</text><line x1='70' y1='130' x2='122' y2='130' stroke='#00242E'/><line x1='70' y1='124' x2='70' y2='136' stroke='#00242E'/><line x1='122' y1='124' x2='122' y2='136' stroke='#00242E'/><text x='96' y='146' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>45 mm</text><line x1='122' y1='130' x2='330' y2='130' stroke='#00242E'/><line x1='122' y1='124' x2='122' y2='136' stroke='#00242E'/><line x1='330' y1='124' x2='330' y2='136' stroke='#00242E'/><text x='226' y='146' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>180 mm</text><text x='140' y='108' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>pivot</text>",
+   "alt": "One handle as a lever about the pivot: a hand force of 50 N at 180 mm balances a jaw force of 200 N at 45 mm."
+  },
   "lookup": true,
   "terms": [
    [
@@ -8482,6 +8517,11 @@
   "family": "statics-0029",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 164",
+   "svg": "<rect x='70' y='78' width='260' height='12' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M106 90 L94 112 L118 112 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='330' y1='30' x2='330' y2='68' stroke='#00574A' stroke-width='3'/><path d='M330 76 L324 64 L336 64 Z' fill='#00574A'/><line x1='70' y1='30' x2='70' y2='68' stroke='#568CBB' stroke-width='3'/><path d='M70 76 L64 64 L76 64 Z' fill='#568CBB'/><text x='330' y='22' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>Hand 100 N</text><text x='70' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>Wire pushes back 625 N</text><line x1='70' y1='130' x2='106' y2='130' stroke='#00242E'/><line x1='70' y1='124' x2='70' y2='136' stroke='#00242E'/><line x1='106' y1='124' x2='106' y2='136' stroke='#00242E'/><text x='88' y='146' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>28 mm</text><line x1='106' y1='130' x2='330' y2='130' stroke='#00242E'/><line x1='106' y1='124' x2='106' y2='136' stroke='#00242E'/><line x1='330' y1='124' x2='330' y2='136' stroke='#00242E'/><text x='218' y='146' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>175 mm</text><text x='124' y='108' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>pivot</text>",
+   "alt": "One handle as a lever about the pivot: a hand force of 100 N at 175 mm balances a jaw force of 625 N at 28 mm."
+  },
   "lookup": true,
   "terms": [
    [
@@ -10684,7 +10724,7 @@
   "symbols": [
    [
     "T_{1}",
-    "tension in cable 1, or on the tight side"
+    "tension on the tight side of the rope"
    ],
    [
     "e",
@@ -10753,7 +10793,7 @@
   "symbols": [
    [
     "T_{1}",
-    "tension in cable 1, or on the tight side"
+    "tension on the tight side of the rope"
    ],
    [
     "e",
@@ -10822,7 +10862,7 @@
   "symbols": [
    [
     "T_{1}",
-    "tension in cable 1, or on the tight side"
+    "tension on the tight side of the rope"
    ],
    [
     "e",
@@ -10891,7 +10931,7 @@
   "symbols": [
    [
     "T_{1}",
-    "tension in cable 1, or on the tight side"
+    "tension on the tight side of the rope"
    ],
    [
     "e",

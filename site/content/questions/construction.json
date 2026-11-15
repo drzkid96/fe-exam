@@ -1031,7 +1031,7 @@
   },
   "family": "construction-0005",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": false,
   "needs": [
    [
@@ -1100,8 +1100,92 @@
   },
   "family": "construction-0005",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
   "lookup": false,
+  "needs": [
+   [
+    "ethics-d",
+    "ethics",
+    "Ethics and Professional Practice: Contracts and contract law"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0005-c",
+  "topic": "construction",
+  "subtopic": "construction-a",
+  "format": "order",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Put the steps of critical path scheduling in order, from first (top) to last (bottom).",
+  "items": [
+   {
+    "id": "fwd",
+    "text": "Forward pass: earliest start and finish dates"
+   },
+   {
+    "id": "list",
+    "text": "List the activities"
+   },
+   {
+    "id": "float",
+    "text": "Calculate float and mark the critical path"
+   },
+   {
+    "id": "dur",
+    "text": "Estimate each duration"
+   },
+   {
+    "id": "dep",
+    "text": "Set which activities depend on which"
+   },
+   {
+    "id": "back",
+    "text": "Backward pass: latest start and finish dates"
+   }
+  ],
+  "answer": [
+   "list",
+   "dep",
+   "dur",
+   "fwd",
+   "back",
+   "float"
+  ],
+  "eli5": "The owner asks for prices, opens them, picks a builder, tells the builder to start, takes over the nearly finished job, then pays the last of the money.",
+  "solution": "Activities and their dependencies come first, because they define the network. Durations are then estimated.\n\nThe forward pass works from the start to give the earliest dates; the backward pass works from the finish to give the latest dates. Float, late minus early, comes last, and the activities with zero float form the critical path.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [
+   "project delivery",
+   "bidding",
+   "contract administration"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Critical path method procedure"
+  },
+  "family": "construction-0005",
+  "version": 3,
+  "versions": 3,
+  "lookup": false,
+  "terms": [
+   [
+    "critical path",
+    "the longest chain of dependent activities through a schedule; it sets the project duration"
+   ],
+   [
+    "float",
+    "the time an activity can slip without delaying the project"
+   ]
+  ],
   "needs": [
    [
     "ethics-d",
@@ -1535,7 +1619,7 @@
   },
   "family": "construction-0008",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": false,
   "needs": [
    [
@@ -1590,7 +1674,62 @@
   },
   "family": "construction-0008",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0008-c",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "On a contour map, the contour lines across a site are evenly spaced and far apart. What does this indicate?",
+  "options": [
+   {
+    "id": "a",
+    "text": "A gentle, uniform slope"
+   },
+   {
+    "id": "b",
+    "text": "A cliff"
+   },
+   {
+    "id": "c",
+    "text": "A closed depression"
+   },
+   {
+    "id": "d",
+    "text": "A ridge line"
+   }
+  ],
+  "answer": "a",
+  "eli5": "Contour lines join points of equal elevation. Close spacing means steep ground and wide spacing means flat ground. Closed loops normally mark a hill; hachures on the downhill side mark a depression. Contours bend upstream where they cross a valley.",
+  "solution": "Each contour is a line of equal elevation, so the ground rises by one contour interval between neighbours. Lines far apart mean a long run for that rise, a gentle slope; even spacing means the slope is uniform.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Definition of a contour line"
+  },
+  "family": "construction-0008",
+  "version": 3,
+  "versions": 3,
   "lookup": false,
   "needs": [
    [
@@ -1645,7 +1784,7 @@
   },
   "family": "construction-0009",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": false,
   "needs": [
    [
@@ -1700,7 +1839,62 @@
   },
   "family": "construction-0009",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": false,
+  "needs": [
+   [
+    "ethics-d",
+    "ethics",
+    "Ethics and Professional Practice: Contracts and contract law"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0009-c",
+  "topic": "construction",
+  "subtopic": "construction-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Under which delivery method does the owner first hire a designer to complete the plans, then award a separate construction contract by competitive bid?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Design-build"
+   },
+   {
+    "id": "b",
+    "text": "Design-bid-build"
+   },
+   {
+    "id": "c",
+    "text": "Construction manager at risk"
+   },
+   {
+    "id": "d",
+    "text": "Integrated project delivery"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Delivery methods differ in who holds which contract. Design-bid-build: separate, sequential contracts for design and construction. Design-build: one contract for both. Construction manager at risk: a manager joins during design and guarantees a maximum price.",
+  "solution": "Design-bid-build keeps design and construction in two separate contracts held by the owner, in sequence.\n\nDesign-build puts both in one contract; a construction manager at risk joins during design and guarantees a maximum price.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard definitions of project delivery methods"
+  },
+  "family": "construction-0009",
+  "version": 3,
+  "versions": 3,
   "lookup": false,
   "needs": [
    [
@@ -1755,7 +1949,7 @@
   },
   "family": "construction-0010",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": false,
   "needs": [
    [
@@ -1810,7 +2004,62 @@
   },
   "family": "construction-0010",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": false,
+  "needs": [
+   [
+    "ethics-d",
+    "ethics",
+    "Ethics and Professional Practice: Contracts and contract law"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0010-c",
+  "topic": "construction",
+  "subtopic": "construction-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Which bond protects the owner if the low bidder refuses to sign the contract at its bid price?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Payment bond"
+   },
+   {
+    "id": "b",
+    "text": "Performance bond"
+   },
+   {
+    "id": "c",
+    "text": "Bid bond"
+   },
+   {
+    "id": "d",
+    "text": "Maintenance bond"
+   }
+  ],
+  "answer": "c",
+  "eli5": "A surety bond is a three-party guarantee from a surety to the owner. A bid bond guarantees that the bidder will sign the contract at its bid price. A performance bond guarantees completion of the work. A payment bond guarantees that subcontractors and suppliers are paid.",
+  "solution": "A bid bond guarantees that the bidder will enter into the contract at the price bid. If it does not, the surety pays the owner the difference up to the bond amount.\n\nA performance bond covers completion of the work; a payment bond covers subcontractors and suppliers.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Standard definitions of construction surety bonds"
+  },
+  "family": "construction-0010",
+  "version": 3,
+  "versions": 3,
   "lookup": false,
   "needs": [
    [
@@ -2207,7 +2456,7 @@
   },
   "family": "construction-0013",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "terms": [
    [
@@ -2264,7 +2513,64 @@
   },
   "family": "construction-0013",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": true,
+  "terms": [
+   [
+    "earned value",
+    "the budgeted cost of the work actually completed to date"
+   ]
+  ],
+  "needs": []
+ },
+ {
+  "id": "construction-0013-c",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "A project has a planned value of $240,000 and an earned value of $255,000 at the status date. What is the schedule variance?",
+  "options": [
+   {
+    "id": "a",
+    "text": "-$15,000"
+   },
+   {
+    "id": "b",
+    "text": "$15,000"
+   },
+   {
+    "id": "c",
+    "text": "$495,000"
+   },
+   {
+    "id": "d",
+    "text": "$1.06"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Earned value analysis measures progress in budget terms. Schedule variance is SV = EV - PV and cost variance is CV = EV - AC. A positive variance is favourable: ahead of schedule or under budget.",
+  "solution": "Schedule variance = earned value - planned value = 255,000 - 240,000 = $15,000.\n\nA positive value means more work has been completed than was planned by this date: the project is ahead of schedule.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "earned-value analysis",
+     "schedule variance"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0013",
+  "version": 3,
+  "versions": 3,
   "lookup": true,
   "terms": [
    [
@@ -4358,9 +4664,11 @@
   "solution": "t_{e} = \\frac{4 + 4(6) + 14}{6} = 7.00 days.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Industrial and Systems Engineering",
+    "page": "417–430",
+    "find": [
+     "PERT"
+    ]
    }
   ],
   "tags": [],
@@ -4371,7 +4679,7 @@
   "family": "construction-0027",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [],
   "symbols": [
    [
@@ -4412,9 +4720,11 @@
   "solution": "t_{e} = \\frac{10 + 4(14) + 24}{6} = 15.00 days.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Industrial and Systems Engineering",
+    "page": "417–430",
+    "find": [
+     "PERT"
+    ]
    }
   ],
   "tags": [],
@@ -4425,7 +4735,7 @@
   "family": "construction-0027",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [],
   "symbols": [
    [
@@ -4466,9 +4776,11 @@
   "solution": "t_{e} = \\frac{2 + 4(5) + 9}{6} = 5.17 days.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Industrial and Systems Engineering",
+    "page": "417–430",
+    "find": [
+     "PERT"
+    ]
    }
   ],
   "tags": [],
@@ -4479,7 +4791,7 @@
   "family": "construction-0027",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [],
   "symbols": [
    [
@@ -4520,9 +4832,11 @@
   "solution": "t_{e} = \\frac{7 + 4(10) + 19}{6} = 11.00 days.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Industrial and Systems Engineering",
+    "page": "417–430",
+    "find": [
+     "PERT"
+    ]
    }
   ],
   "tags": [],
@@ -4533,7 +4847,7 @@
   "family": "construction-0027",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [],
   "symbols": [
    [

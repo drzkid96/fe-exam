@@ -25,7 +25,7 @@ NQ('structural-c', MM + "::Euler's formula", 'MPa', 1, 137.1, "A column has a sl
 NQ('structural-c', MM + "::Euler's formula", 'kN', 0, 2527, "A steel column (E = 200 GPa) [L] m long is [ends], so its effective length factor is [K|1]. Its least moment of inertia is [I|1] × 10^{6} mm^{4}. What is its Euler buckling load?",
    "End restraint changes the length of the buckled half-wave. The effective length K L replaces L in Euler's formula, so the load varies with 1 / K^{2}: fixing both ends quadruples it, and a flagpole column has one quarter of it.",
    r"P_{cr} = \frac{π^{2} E I}{(K L)^{2}} = \frac{π^{2}(200,000)([I|1] × 10^{6})}{([K|1] × [L*1000|0])^{2}} = [pi**2*200000*I*1e6/(K*L*1000)**2|0] N = [ans|0] kN.",
-   "pi**2*200000*I*1e6/(K*L*1000)**2/1000", L=[5, 6, 4], K=[0.5, 0.7, 2.0], I=[8, 20, 3.5], ends=['fixed at both ends', 'fixed at one end and pinned at the other', 'fixed at the base and free at the top'])
+   "pi**2*200000*I*1e6/(K*L*1000)**2/1000", L=[5, 6, 4, 4.5], K=[0.5, 0.7, 2.0, 1.0], I=[8, 20, 3.5, 12], ends=['fixed at both ends', 'fixed at one end and pinned at the other', 'fixed at the base and free at the top', 'pinned at both ends'])
 NQ('structural-d', '-', '', 0, 3, "A rigid plane frame has [m] members, [j] joints and [r] support reaction components, with no internal hinges. What is its degree of static indeterminacy?",
    "For a rigid plane frame each member carries three unknown internal forces and each joint supplies three equilibrium equations: degree = 3m + r - 3j. Zero means determinate; a positive value is the number of extra unknowns.",
    "Degree = 3([m]) + [r] - 3([j]) = [3*m+r] - [3*j] = [ans|0].",
@@ -33,7 +33,7 @@ NQ('structural-d', '-', '', 0, 3, "A rigid plane frame has [m] members, [j] join
 NQ('structural-d', '-', '', 0, 2, "A continuous beam under vertical and horizontal loads has [r] support reaction components and [hw]. What is its degree of static indeterminacy?",
    "A beam has three equilibrium equations, and each internal hinge adds one more because the moment there is zero. Degree = reactions - 3 - hinges.",
    "Degree = [r] - 3 - [hg] = [ans|0].",
-   "r-3-hg", wrong=["r-2-hg", "r-hg", "r-3+hg"], r=[6, 6, 8], hg=[1, 2, 1], hw=['one internal hinge', 'two internal hinges', 'one internal hinge'])
+   "r-3-hg", wrong=["r-2-hg", "r-hg", "r-3+hg"], r=[6, 6, 8, 7], hg=[1, 2, 1, 2], hw=['one internal hinge', 'two internal hinges', 'one internal hinge', 'two internal hinges'])
 NQ('structural-e', '-', 'kN·m', 2, 54, "A beam [L|1] m long is fixed at one end and simply supported at the other. It carries a uniform load of [w] kN/m. What is the magnitude of the moment at the fixed end?",
    "A propped cantilever under uniform load has a fixed-end moment of w L^{2} / 8, the same number as the midspan moment of a simple span, but negative (tension on top) and at the support.",
    r"M = \frac{w L^{2}}{8} = \frac{[w]([L|1])^{2}}{8} = [ans|2] kN·m.",
@@ -170,7 +170,7 @@ NQ('geotech-i', 'time factor', 'mm^{2}/min', 3, 4.925, "A consolidation test spe
 NQ('geotech-i', 'compression index', 'mm', 1, 33.6, "An overconsolidated clay layer [H] m thick has a recompression index of [Cr|2] and an initial void ratio of [e0|2]. The effective stress at mid-layer rises from [s0] kPa to [sf] kPa, which is still below the preconsolidation pressure. What is the consolidation settlement?",
    "While the stress stays below the preconsolidation pressure the clay is being reloaded, so the flatter recompression index applies in place of the compression index: S = C_{r} H / (1 + e_{0}) × log(final / initial).",
    r"S = \frac{[Cr|2]([H])}{1 + [e0|2]} log(\frac{[sf]}{[s0]}) = [Cr*H/(1+e0)|5] × [log10(sf/s0)|4] = [Cr*H/(1+e0)*log10(sf/s0)|5] m = [ans|1] mm.",
-   "Cr*H/(1+e0)*log10(sf/s0)*1000", Cr=[0.05, 0.04, 0.06], H=[5, 8, 3], e0=[0.9, 1.1, 0.75], s0=[100, 80, 150], sf=[180, 120, 240])
+   "Cr*H/(1+e0)*log10(sf/s0)*1000", Cr=[0.05, 0.04, 0.06, 0.045], H=[5, 8, 3, 6], e0=[0.9, 1.1, 0.75, 1.0], s0=[100, 80, 150, 90], sf=[180, 120, 240, 150])
 NQ('geotech-i', '-', '', 2, 2.67, "A clay [z] m below the surface has a preconsolidation pressure of [sp] kPa. The soil above has a unit weight of [gam|1] kN/m^{3} and the water table is deep. What is the overconsolidation ratio?",
    "The overconsolidation ratio is the largest effective stress the soil has ever carried divided by what it carries now. A ratio of 1 is normally consolidated; above 1 the soil has been unloaded and settles less under new load.",
    r"Present effective stress = [gam|1] × [z] = [gam*z|1] kPa. || OCR = \frac{[sp]}{[gam*z|1]} = [ans|2].",

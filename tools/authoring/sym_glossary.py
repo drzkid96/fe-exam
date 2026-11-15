@@ -74,4 +74,40 @@ G = {
 'dynamics-b': {'k': 'radius of gyration', 'd': 'distance between the parallel axes'}, 'dynamics-d': {'k': 'spring stiffness', 'P': 'power', 'd': 'distance moved'},
 'transport-a': {'L': 'length of the curve', 'T': 'tangent length', 'e': 'superelevation rate'}, 'transport-c': {'s': 'saturation flow rate', 'g': 'effective green time', 'C': 'cycle length', 'v': 'demand volume', 'c': 'capacity'}, 'transport-d': {'C': 'cycle length', 'L': 'lost time per cycle, or vehicle length', 'v': 'approach speed'},
 'mechmat-d': {'R': "radius of Mohr's circle", 'C': "centre of Mohr's circle"}, 'statics-f': {'r': 'radius of gyration', 'd': 'distance between the parallel axes'}, 'statics-e': {'x': 'distance of the centroid from the reference edge'},
+
 }
+TRI = r'sin |cos |triangle|opposite'
+def _up(scope, **kw): G.setdefault(scope, {}).update({k.replace('__', "'"): v for k, v in kw.items()})
+G['*'].update({'L': 'length of the member (its span, for a beam)', 'P': 'applied load', 'R': 'reaction force at a support', 't': 'time', 'd': 'distance', 'h': 'height', 'a': 'distance to the load', 's': 'distance travelled', 'k': 'a constant',
+               'H': 'height', 'q': 'load per unit of area', 'M': 'moment', 'T': 'tension', 'D': 'diameter', 'S': 'slope'})
+_up('math-a', A=[(TRI, 'angle opposite side a'), ('', 'coefficient of x in the line equation Ax + By + C = 0')], B=[(TRI, 'angle opposite side b'), ('', 'coefficient of y in the line equation')], C=[(TRI, 'angle between the two known sides, opposite side c'), ('', 'constant term of the line equation')],
+    a=[(TRI, 'side opposite angle A'), ('', 'coefficient of x in the line equation')], b=[(TRI, 'side opposite angle B'), ('intercept', 'y-intercept of the line'), ('', 'coefficient of y in the line equation')], c=[(TRI, 'side opposite angle C'), ('', 'constant in the equation')], k="y-coordinate of the circle's centre", s='arc length')
+_up('math-b', a='coefficient in the function', k=[('half-life|decay', 'decay rate constant'), ('', 'a constant in the function')], s='position of the particle')
+_up('math-c', A='first vector', B='second vector')
+_up('math-d', C='number of combinations', n=[('trial|success|binomial', 'number of trials'), ('chosen|combination', 'number of items to choose from'), ('', 'sample size')], s='sample standard deviation')
+_up('surveying-b', C='angle between the two known sides', c='third side of the triangle', d='common interval between offsets', s='half the perimeter of the triangle')
+_up('surveying-c', d='depth of the cut at the centreline', s='side slope, horizontal distance per unit of height')
+_up('surveying-e', c='combined correction for earth curvature and refraction')
+for _s in ('surveying-a', 'surveying-d'): _up(_s, N=[('precision|1 in', 'denominator of the relative precision, 1 in N'), ('', 'northing')])
+_up('water-b', A='flow area, the cross-section of the water', P='wetted perimeter', V='velocity of flow', n="Manning's roughness coefficient")
+_up('water-g', V='velocity of flow', n="Manning's roughness coefficient")
+_up('water-f', A='drainage area', C='runoff coefficient', i='rainfall intensity')
+_up('water-a', f='infiltration rate')
+_up('water-i', P='fraction of the BOD bottle volume that is sample')
+_up('water-h', h_1='water level above the aquifer base at the nearer observation point', h_2='water level above the aquifer base at the farther observation point')
+G['water-h']['h_{1}'] = G['water-h'].pop('h_1'); G['water-h']['h_{2}'] = G['water-h'].pop('h_2')
+_up('transport-a', D='degree of curve', K='rate of vertical curvature, L / A', y='elevation of a point on the vertical curve')
+_up('transport-e', D='directional split, the share of traffic in the peak direction', K='design-hour factor, the share of daily traffic in the design hour')
+_up('transport-d', y='yellow interval')
+_up('geotech-j', H='thickness of the soil layer, measured vertically')
+_up('geotech-c', L='length of the soil sample along the flow', Q='volume of water collected in the test')
+_up('materials-b', L='length of the test specimen (its span, in a beam test)', d='depth of the test beam (its diameter, for a cylinder)')
+_up('mechmat-a', P='point load'); G['*'].update({'R_{A}': 'reaction (the force the support pushes back with) at A', 'R_{B}': 'reaction (the force the support pushes back with) at B'}); _up('mechmat-c', P='axial force in the bar')
+_up('structural-a', P='point load', L='span of the beam'); _up('structural-b', L='span of the beam'); _up('structural-c', P='axial load on the column', L='length of the column')
+_up('structural-e', L='span of the beam', a='distance from the left support to the load', b='distance from the load to the right support'); _up('structural-f', P='point load', L='span of the beam'); _up('structural-g', L='length of the member')
+_up('structural-h', a='depth of the equivalent rectangular stress block', b='width of the beam section')
+_up('statics-a', L='length of the lever'); _up('statics-c', L='span of the beam', T_1='tension in cable 1'); _up('statics-g', T_1='tension on the tight side of the rope')
+G['statics-c']['T_{1}'] = G['statics-c'].pop('T_1'); G['statics-g']['T_{1}'] = G['statics-g'].pop('T_1')
+_up('statics-b', d='perpendicular distance between the two forces', x='distance from the left end'); _up('statics-f', h='depth of the rectangle')
+_up('dynamics-a', R=[('range', 'horizontal range of the projectile'), ('', 'radius of the curve')]); _up('dynamics-c', R='radius of the curve'); _up('dynamics-d', x='compression of the spring')
+_up('fluids-a', h='head: energy per unit weight of fluid, as a height'); _up('fluids-b', h=[('capillar|rise', 'height the liquid rises in the tube'), ('', 'thickness of the fluid film')]); _up('fluids-c', h='depth below the liquid surface'); _up('fluids-d', h='head lost, as a height of fluid')

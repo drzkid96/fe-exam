@@ -391,11 +391,11 @@
    ],
    [
     "n",
-    "Manning's roughness coefficient, or effective porosity"
+    "Manning's roughness coefficient"
    ],
    [
     "A",
-    "drainage area or flow area"
+    "flow area, the cross-section of the water"
    ],
    [
     "R",
@@ -479,11 +479,11 @@
    ],
    [
     "n",
-    "Manning's roughness coefficient, or effective porosity"
+    "Manning's roughness coefficient"
    ],
    [
     "A",
-    "drainage area or flow area"
+    "flow area, the cross-section of the water"
    ],
    [
     "R",
@@ -567,11 +567,11 @@
    ],
    [
     "n",
-    "Manning's roughness coefficient, or effective porosity"
+    "Manning's roughness coefficient"
    ],
    [
     "A",
-    "drainage area or flow area"
+    "flow area, the cross-section of the water"
    ],
    [
     "R",
@@ -655,11 +655,11 @@
    ],
    [
     "n",
-    "Manning's roughness coefficient, or effective porosity"
+    "Manning's roughness coefficient"
    ],
    [
     "A",
-    "drainage area or flow area"
+    "flow area, the cross-section of the water"
    ],
    [
     "R",
@@ -1638,7 +1638,7 @@
   },
   "family": "water-0006",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": false,
   "needs": [
    [
@@ -1712,7 +1712,71 @@
   },
   "family": "water-0006",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": false,
+  "needs": [
+   [
+    "water-i",
+    "water",
+    "Water Resources and Environmental Engineering: Water quality"
+   ]
+  ]
+ },
+ {
+  "id": "water-0006-c",
+  "topic": "water",
+  "subtopic": "water-k",
+  "format": "order",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Put the steps of handling wastewater sludge in order, from first (top) to last (bottom).",
+  "items": [
+   {
+    "id": "dew",
+    "text": "Dewatering"
+   },
+   {
+    "id": "thick",
+    "text": "Thickening"
+   },
+   {
+    "id": "disp",
+    "text": "Land application or disposal"
+   },
+   {
+    "id": "dig",
+    "text": "Stabilisation by digestion"
+   }
+  ],
+  "answer": [
+   "thick",
+   "dig",
+   "dew",
+   "disp"
+  ],
+  "eli5": "First make the tiny dirt particles sticky, then stir gently so they clump, let the clumps sink, strain out what is left, and finally kill the germs.",
+  "solution": "Thickening removes free water first, so the later units can be smaller. Digestion then stabilises the solids: microorganisms break down the organic matter and reduce odour and pathogens.\n\nDewatering squeezes the digested solids to a cake that can be hauled, and the cake is finally applied to land or disposed of.",
+  "handbook": [
+   {
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": []
+   }
+  ],
+  "tags": [
+   "water treatment",
+   "coagulation",
+   "flocculation"
+  ],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Conventional wastewater solids (sludge) handling sequence"
+  },
+  "family": "water-0006",
+  "version": 3,
+  "versions": 3,
   "lookup": false,
   "needs": [
    [
@@ -2005,7 +2069,7 @@
   "terms": [
    [
     "critical depth",
-    "the depth at which a given flow has the least energy; shallower flow is fast (supercritical), deeper flow is slow (subcritical)"
+    "the depth at which a given flow has the least specific energy; shallower flow is fast (supercritical), deeper flow is slow (subcritical)"
    ],
    [
     "specific energy",
@@ -2089,7 +2153,7 @@
   "terms": [
    [
     "critical depth",
-    "the depth at which a given flow has the least energy; shallower flow is fast (supercritical), deeper flow is slow (subcritical)"
+    "the depth at which a given flow has the least specific energy; shallower flow is fast (supercritical), deeper flow is slow (subcritical)"
    ],
    [
     "specific energy",
@@ -2173,7 +2237,7 @@
   "terms": [
    [
     "critical depth",
-    "the depth at which a given flow has the least energy; shallower flow is fast (supercritical), deeper flow is slow (subcritical)"
+    "the depth at which a given flow has the least specific energy; shallower flow is fast (supercritical), deeper flow is slow (subcritical)"
    ],
    [
     "specific energy",
@@ -2257,7 +2321,7 @@
   "terms": [
    [
     "critical depth",
-    "the depth at which a given flow has the least energy; shallower flow is fast (supercritical), deeper flow is slow (subcritical)"
+    "the depth at which a given flow has the least specific energy; shallower flow is fast (supercritical), deeper flow is slow (subcritical)"
    ],
    [
     "specific energy",
@@ -3830,15 +3894,15 @@
    ],
    [
     "C",
-    "runoff coefficient, concentration, or Hazen-Williams coefficient"
+    "runoff coefficient"
    ],
    [
     "i",
-    "rainfall intensity, or hydraulic gradient"
+    "rainfall intensity"
    ],
    [
     "A",
-    "drainage area or flow area"
+    "drainage area"
    ]
   ]
  },
@@ -3926,15 +3990,15 @@
    ],
    [
     "C",
-    "runoff coefficient, concentration, or Hazen-Williams coefficient"
+    "runoff coefficient"
    ],
    [
     "i",
-    "rainfall intensity, or hydraulic gradient"
+    "rainfall intensity"
    ],
    [
     "A",
-    "drainage area or flow area"
+    "drainage area"
    ]
   ]
  },
@@ -4022,15 +4086,15 @@
    ],
    [
     "C",
-    "runoff coefficient, concentration, or Hazen-Williams coefficient"
+    "runoff coefficient"
    ],
    [
     "i",
-    "rainfall intensity, or hydraulic gradient"
+    "rainfall intensity"
    ],
    [
     "A",
-    "drainage area or flow area"
+    "drainage area"
    ]
   ]
  },
@@ -4118,15 +4182,15 @@
    ],
    [
     "C",
-    "runoff coefficient, concentration, or Hazen-Williams coefficient"
+    "runoff coefficient"
    ],
    [
     "i",
-    "rainfall intensity, or hydraulic gradient"
+    "rainfall intensity"
    ],
    [
     "A",
-    "drainage area or flow area"
+    "drainage area"
    ]
   ]
  },
@@ -4181,11 +4245,11 @@
   "symbols": [
    [
     "V",
-    "velocity or volume"
+    "velocity of flow"
    ],
    [
     "n",
-    "Manning's roughness coefficient, or effective porosity"
+    "Manning's roughness coefficient"
    ],
    [
     "R",
@@ -4252,11 +4316,11 @@
   "symbols": [
    [
     "V",
-    "velocity or volume"
+    "velocity of flow"
    ],
    [
     "n",
-    "Manning's roughness coefficient, or effective porosity"
+    "Manning's roughness coefficient"
    ],
    [
     "R",
@@ -4323,11 +4387,11 @@
   "symbols": [
    [
     "V",
-    "velocity or volume"
+    "velocity of flow"
    ],
    [
     "n",
-    "Manning's roughness coefficient, or effective porosity"
+    "Manning's roughness coefficient"
    ],
    [
     "R",
@@ -4394,11 +4458,11 @@
   "symbols": [
    [
     "V",
-    "velocity or volume"
+    "velocity of flow"
    ],
    [
     "n",
-    "Manning's roughness coefficient, or effective porosity"
+    "Manning's roughness coefficient"
    ],
    [
     "R",
@@ -4448,7 +4512,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "sewage flow"
+    ]
    }
   ],
   "tags": [],
@@ -4459,7 +4525,7 @@
   "family": "water-0017",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-b",
@@ -4502,7 +4568,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "sewage flow"
+    ]
    }
   ],
   "tags": [],
@@ -4513,7 +4581,7 @@
   "family": "water-0017",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-b",
@@ -4556,7 +4624,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "sewage flow"
+    ]
    }
   ],
   "tags": [],
@@ -4567,7 +4637,7 @@
   "family": "water-0017",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-b",
@@ -4610,7 +4680,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "sewage flow"
+    ]
    }
   ],
   "tags": [],
@@ -4621,7 +4693,7 @@
   "family": "water-0017",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-b",
@@ -5044,7 +5116,7 @@
   "symbols": [
    [
     "P",
-    "wetted perimeter, rainfall depth, or power"
+    "fraction of the BOD bottle volume that is sample"
    ]
   ]
  },
@@ -5106,7 +5178,7 @@
   "symbols": [
    [
     "P",
-    "wetted perimeter, rainfall depth, or power"
+    "fraction of the BOD bottle volume that is sample"
    ]
   ]
  },
@@ -5168,7 +5240,7 @@
   "symbols": [
    [
     "P",
-    "wetted perimeter, rainfall depth, or power"
+    "fraction of the BOD bottle volume that is sample"
    ]
   ]
  },
@@ -5230,7 +5302,7 @@
   "symbols": [
    [
     "P",
-    "wetted perimeter, rainfall depth, or power"
+    "fraction of the BOD bottle volume that is sample"
    ]
   ]
  },
@@ -5679,7 +5751,7 @@
   },
   "family": "water-0022",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": false,
   "needs": [
    [
@@ -5734,7 +5806,62 @@
   },
   "family": "water-0022",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": false,
+  "needs": [
+   [
+    "water-i",
+    "water",
+    "Water Resources and Environmental Engineering: Water quality"
+   ]
+  ]
+ },
+ {
+  "id": "water-0022-c",
+  "topic": "water",
+  "subtopic": "water-j",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Under the U.S. Safe Drinking Water Act, which term is the non-enforceable health goal for a contaminant?",
+  "options": [
+   {
+    "id": "a",
+    "text": "Maximum contaminant level (MCL)"
+   },
+   {
+    "id": "b",
+    "text": "Maximum contaminant level goal (MCLG)"
+   },
+   {
+    "id": "c",
+    "text": "Treatment technique"
+   },
+   {
+    "id": "d",
+    "text": "Secondary standard"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The Safe Drinking Water Act uses paired terms. The maximum contaminant level goal (MCLG) is a health target and is not enforceable. The maximum contaminant level (MCL) is the enforceable limit, set as close to the goal as is feasible. Secondary standards cover taste, odour and appearance.",
+  "solution": "The MCLG is the level at which no health effect is expected, with a margin of safety. It is a goal. The MCL, set as close to it as is feasible, is the limit that is enforced.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "reference",
+   "basis": "Safe Drinking Water Act definitions"
+  },
+  "family": "water-0022",
+  "version": 3,
+  "versions": 3,
   "lookup": false,
   "needs": [
    [
@@ -5976,9 +6103,11 @@
   "solution": "Chlorine = 10,000 m^{3}/day × 2.0 g/m^{3} = 20,000 g/day = 20.0 kg/day.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "chlorine"
+    ]
    }
   ],
   "tags": [],
@@ -5989,7 +6118,7 @@
   "family": "water-0024",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-i",
@@ -6030,9 +6159,11 @@
   "solution": "Chlorine = 25,000 m^{3}/day × 3.5 g/m^{3} = 87,500 g/day = 87.5 kg/day.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "chlorine"
+    ]
    }
   ],
   "tags": [],
@@ -6043,7 +6174,7 @@
   "family": "water-0024",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-i",
@@ -6084,9 +6215,11 @@
   "solution": "Chlorine = 4,000 m^{3}/day × 5.0 g/m^{3} = 20,000 g/day = 20.0 kg/day.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "chlorine"
+    ]
    }
   ],
   "tags": [],
@@ -6097,7 +6230,7 @@
   "family": "water-0024",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-i",
@@ -6138,9 +6271,11 @@
   "solution": "Chlorine = 60,000 m^{3}/day × 1.2 g/m^{3} = 72,000 g/day = 72.0 kg/day.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "chlorine"
+    ]
    }
   ],
   "tags": [],
@@ -6151,7 +6286,7 @@
   "family": "water-0024",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-i",
@@ -7126,6 +7261,11 @@
   "family": "water-0029",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<line x1='30' y1='140' x2='370' y2='140' stroke='#00242E' stroke-width='3'/><path d='M30 140 L30 120 L170 120 Q200 36 230 50 L370 50 L370 140 Z' fill='#568CBB' fill-opacity='.3' stroke='#568CBB' stroke-width='2'/><line x1='50' y1='130' x2='102' y2='130' stroke='#00574A' stroke-width='3'/><path d='M110 130 L98 124 L98 136 Z' fill='#00574A'/><text x='100' y='112' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0.30 m, fast and shallow</text><text x='300' y='42' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1.34 m, slow and deep</text><text x='200' y='160' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Hydraulic jump</text>",
+   "alt": "A hydraulic jump: flow 0.30 m deep rises abruptly to 1.34 m."
+  },
   "lookup": true,
   "terms": [
    [
@@ -7189,6 +7329,11 @@
   "family": "water-0029",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<line x1='30' y1='140' x2='370' y2='140' stroke='#00242E' stroke-width='3'/><path d='M30 140 L30 117 L170 117 Q200 36 230 50 L370 50 L370 140 Z' fill='#568CBB' fill-opacity='.3' stroke='#568CBB' stroke-width='2'/><line x1='50' y1='129' x2='102' y2='129' stroke='#00574A' stroke-width='3'/><path d='M110 129 L98 123 L98 135 Z' fill='#00574A'/><text x='100' y='109' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0.50 m, fast and shallow</text><text x='300' y='42' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2.00 m, slow and deep</text><text x='200' y='160' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Hydraulic jump</text>",
+   "alt": "A hydraulic jump: flow 0.50 m deep rises abruptly to 2.00 m."
+  },
   "lookup": true,
   "terms": [
    [
@@ -7252,6 +7397,11 @@
   "family": "water-0029",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<line x1='30' y1='140' x2='370' y2='140' stroke='#00242E' stroke-width='3'/><path d='M30 140 L30 118 L170 118 Q200 36 230 50 L370 50 L370 140 Z' fill='#568CBB' fill-opacity='.3' stroke='#568CBB' stroke-width='2'/><line x1='50' y1='129' x2='102' y2='129' stroke='#00574A' stroke-width='3'/><path d='M110 129 L98 123 L98 135 Z' fill='#00574A'/><text x='100' y='110' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0.25 m, fast and shallow</text><text x='300' y='42' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1.01 m, slow and deep</text><text x='200' y='160' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Hydraulic jump</text>",
+   "alt": "A hydraulic jump: flow 0.25 m deep rises abruptly to 1.01 m."
+  },
   "lookup": true,
   "terms": [
    [
@@ -7315,6 +7465,11 @@
   "family": "water-0029",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<line x1='30' y1='140' x2='370' y2='140' stroke='#00242E' stroke-width='3'/><path d='M30 140 L30 123 L170 123 Q200 36 230 50 L370 50 L370 140 Z' fill='#568CBB' fill-opacity='.3' stroke='#568CBB' stroke-width='2'/><line x1='50' y1='131' x2='102' y2='131' stroke='#00574A' stroke-width='3'/><path d='M110 131 L98 125 L98 137 Z' fill='#00574A'/><text x='100' y='115' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0.40 m, fast and shallow</text><text x='300' y='42' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2.09 m, slow and deep</text><text x='200' y='160' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Hydraulic jump</text>",
+   "alt": "A hydraulic jump: flow 0.40 m deep rises abruptly to 2.09 m."
+  },
   "lookup": true,
   "terms": [
    [
@@ -7629,11 +7784,11 @@
    ],
    [
     "V",
-    "velocity or volume"
+    "velocity of flow"
    ],
    [
     "n",
-    "Manning's roughness coefficient, or effective porosity"
+    "Manning's roughness coefficient"
    ],
    [
     "R",
@@ -7694,11 +7849,11 @@
    ],
    [
     "V",
-    "velocity or volume"
+    "velocity of flow"
    ],
    [
     "n",
-    "Manning's roughness coefficient, or effective porosity"
+    "Manning's roughness coefficient"
    ],
    [
     "R",
@@ -7759,11 +7914,11 @@
    ],
    [
     "V",
-    "velocity or volume"
+    "velocity of flow"
    ],
    [
     "n",
-    "Manning's roughness coefficient, or effective porosity"
+    "Manning's roughness coefficient"
    ],
    [
     "R",
@@ -7824,11 +7979,11 @@
    ],
    [
     "V",
-    "velocity or volume"
+    "velocity of flow"
    ],
    [
     "n",
-    "Manning's roughness coefficient, or effective porosity"
+    "Manning's roughness coefficient"
    ],
    [
     "R",
@@ -7892,11 +8047,11 @@
   "symbols": [
    [
     "h_{2}",
-    "saturated thickness or head at radius r_{2}"
+    "water level above the aquifer base at the farther observation point"
    ],
    [
     "h_{1}",
-    "saturated thickness or head at radius r_{1}"
+    "water level above the aquifer base at the nearer observation point"
    ],
    [
     "r_{2}",
@@ -7972,11 +8127,11 @@
   "symbols": [
    [
     "h_{2}",
-    "saturated thickness or head at radius r_{2}"
+    "water level above the aquifer base at the farther observation point"
    ],
    [
     "h_{1}",
-    "saturated thickness or head at radius r_{1}"
+    "water level above the aquifer base at the nearer observation point"
    ],
    [
     "r_{2}",
@@ -8052,11 +8207,11 @@
   "symbols": [
    [
     "h_{2}",
-    "saturated thickness or head at radius r_{2}"
+    "water level above the aquifer base at the farther observation point"
    ],
    [
     "h_{1}",
-    "saturated thickness or head at radius r_{1}"
+    "water level above the aquifer base at the nearer observation point"
    ],
    [
     "r_{2}",
@@ -8132,11 +8287,11 @@
   "symbols": [
    [
     "h_{2}",
-    "saturated thickness or head at radius r_{2}"
+    "water level above the aquifer base at the farther observation point"
    ],
    [
     "h_{1}",
-    "saturated thickness or head at radius r_{1}"
+    "water level above the aquifer base at the nearer observation point"
    ],
    [
     "r_{2}",
@@ -8713,7 +8868,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "infiltration"
+    ]
    }
   ],
   "tags": [],
@@ -8724,12 +8881,12 @@
   "family": "water-0036",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [],
   "symbols": [
    [
     "f",
-    "infiltration rate, or friction factor"
+    "infiltration rate"
    ]
   ]
  },
@@ -8754,7 +8911,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "infiltration"
+    ]
    }
   ],
   "tags": [],
@@ -8765,12 +8924,12 @@
   "family": "water-0036",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [],
   "symbols": [
    [
     "f",
-    "infiltration rate, or friction factor"
+    "infiltration rate"
    ]
   ]
  },
@@ -8795,7 +8954,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "infiltration"
+    ]
    }
   ],
   "tags": [],
@@ -8806,12 +8967,12 @@
   "family": "water-0036",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [],
   "symbols": [
    [
     "f",
-    "infiltration rate, or friction factor"
+    "infiltration rate"
    ]
   ]
  },
@@ -8836,7 +8997,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "infiltration"
+    ]
    }
   ],
   "tags": [],
@@ -8847,12 +9010,12 @@
   "family": "water-0036",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [],
   "symbols": [
    [
     "f",
-    "infiltration rate, or friction factor"
+    "infiltration rate"
    ]
   ]
  },
@@ -8917,11 +9080,11 @@
   "symbols": [
    [
     "A",
-    "drainage area or flow area"
+    "flow area, the cross-section of the water"
    ],
    [
     "P",
-    "wetted perimeter, rainfall depth, or power"
+    "wetted perimeter"
    ],
    [
     "R",
@@ -8990,11 +9153,11 @@
   "symbols": [
    [
     "A",
-    "drainage area or flow area"
+    "flow area, the cross-section of the water"
    ],
    [
     "P",
-    "wetted perimeter, rainfall depth, or power"
+    "wetted perimeter"
    ],
    [
     "R",
@@ -9063,11 +9226,11 @@
   "symbols": [
    [
     "A",
-    "drainage area or flow area"
+    "flow area, the cross-section of the water"
    ],
    [
     "P",
-    "wetted perimeter, rainfall depth, or power"
+    "wetted perimeter"
    ],
    [
     "R",
@@ -9136,11 +9299,11 @@
   "symbols": [
    [
     "A",
-    "drainage area or flow area"
+    "flow area, the cross-section of the water"
    ],
    [
     "P",
-    "wetted perimeter, rainfall depth, or power"
+    "wetted perimeter"
    ],
    [
     "R",
@@ -9203,7 +9366,7 @@
   "symbols": [
    [
     "V",
-    "velocity or volume"
+    "velocity of flow"
    ],
    [
     "E",
@@ -9266,7 +9429,7 @@
   "symbols": [
    [
     "V",
-    "velocity or volume"
+    "velocity of flow"
    ],
    [
     "E",
@@ -9329,7 +9492,7 @@
   "symbols": [
    [
     "V",
-    "velocity or volume"
+    "velocity of flow"
    ],
    [
     "E",
@@ -9392,7 +9555,7 @@
   "symbols": [
    [
     "V",
-    "velocity or volume"
+    "velocity of flow"
    ],
    [
     "E",
@@ -9459,7 +9622,7 @@
    ],
    [
     "V",
-    "velocity or volume"
+    "velocity of flow"
    ],
    [
     "Q",
@@ -9526,7 +9689,7 @@
    ],
    [
     "V",
-    "velocity or volume"
+    "velocity of flow"
    ],
    [
     "Q",
@@ -9593,7 +9756,7 @@
    ],
    [
     "V",
-    "velocity or volume"
+    "velocity of flow"
    ],
    [
     "Q",
@@ -9660,7 +9823,7 @@
    ],
    [
     "V",
-    "velocity or volume"
+    "velocity of flow"
    ],
    [
     "Q",
@@ -11919,7 +12082,7 @@
   "symbols": [
    [
     "i",
-    "rainfall intensity, or hydraulic gradient"
+    "rainfall intensity"
    ],
    [
     "Q",
@@ -11986,7 +12149,7 @@
   "symbols": [
    [
     "i",
-    "rainfall intensity, or hydraulic gradient"
+    "rainfall intensity"
    ],
    [
     "Q",
@@ -12053,7 +12216,7 @@
   "symbols": [
    [
     "i",
-    "rainfall intensity, or hydraulic gradient"
+    "rainfall intensity"
    ],
    [
     "Q",
@@ -12120,7 +12283,7 @@
   "symbols": [
    [
     "i",
-    "rainfall intensity, or hydraulic gradient"
+    "rainfall intensity"
    ],
    [
     "Q",
@@ -12563,11 +12726,11 @@
   "symbols": [
    [
     "h_{2}",
-    "saturated thickness or head at radius r_{2}"
+    "water level above the aquifer base at the farther observation point"
    ],
    [
     "h_{1}",
-    "saturated thickness or head at radius r_{1}"
+    "water level above the aquifer base at the nearer observation point"
    ],
    [
     "r_{2}",
@@ -12638,11 +12801,11 @@
   "symbols": [
    [
     "h_{2}",
-    "saturated thickness or head at radius r_{2}"
+    "water level above the aquifer base at the farther observation point"
    ],
    [
     "h_{1}",
-    "saturated thickness or head at radius r_{1}"
+    "water level above the aquifer base at the nearer observation point"
    ],
    [
     "r_{2}",
@@ -12713,11 +12876,11 @@
   "symbols": [
    [
     "h_{2}",
-    "saturated thickness or head at radius r_{2}"
+    "water level above the aquifer base at the farther observation point"
    ],
    [
     "h_{1}",
-    "saturated thickness or head at radius r_{1}"
+    "water level above the aquifer base at the nearer observation point"
    ],
    [
     "r_{2}",
@@ -12788,11 +12951,11 @@
   "symbols": [
    [
     "h_{2}",
-    "saturated thickness or head at radius r_{2}"
+    "water level above the aquifer base at the farther observation point"
    ],
    [
     "h_{1}",
-    "saturated thickness or head at radius r_{1}"
+    "water level above the aquifer base at the nearer observation point"
    ],
    [
     "r_{2}",
@@ -12833,7 +12996,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "storativity"
+    ]
    }
   ],
   "tags": [],
@@ -12844,7 +13009,7 @@
   "family": "water-0053",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "porosity",
@@ -12880,7 +13045,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "storativity"
+    ]
    }
   ],
   "tags": [],
@@ -12891,7 +13058,7 @@
   "family": "water-0053",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "porosity",
@@ -12927,7 +13094,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "storativity"
+    ]
    }
   ],
   "tags": [],
@@ -12938,7 +13107,7 @@
   "family": "water-0053",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "porosity",
@@ -12974,7 +13143,9 @@
    {
     "section": "Civil Engineering",
     "page": "259–309",
-    "find": []
+    "find": [
+     "storativity"
+    ]
    }
   ],
   "tags": [],
@@ -12985,7 +13156,7 @@
   "family": "water-0053",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "porosity",
@@ -13247,9 +13418,11 @@
   "solution": "C = \\frac{8.0(2.0) + 1.0(30)}{8.0 + 1.0} = \\frac{46.0}{9.0} = 5.11 mg/L.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "mass balance"
+    ]
    }
   ],
   "tags": [],
@@ -13260,7 +13433,7 @@
   "family": "water-0055",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [],
   "symbols": [
    [
@@ -13288,9 +13461,11 @@
   "solution": "C = \\frac{25.0(1.5) + 2.0(25)}{25.0 + 2.0} = \\frac{87.5}{27.0} = 3.24 mg/L.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "mass balance"
+    ]
    }
   ],
   "tags": [],
@@ -13301,7 +13476,7 @@
   "family": "water-0055",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [],
   "symbols": [
    [
@@ -13329,9 +13504,11 @@
   "solution": "C = \\frac{3.5(3.0) + 0.5(40)}{3.5 + 0.5} = \\frac{30.5}{4.0} = 7.62 mg/L.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "mass balance"
+    ]
    }
   ],
   "tags": [],
@@ -13342,7 +13519,7 @@
   "family": "water-0055",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [],
   "symbols": [
    [
@@ -13370,9 +13547,11 @@
   "solution": "C = \\frac{16.5(1.8) + 1.5(28)}{16.5 + 1.5} = \\frac{71.7}{18.0} = 3.98 mg/L.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "mass balance"
+    ]
    }
   ],
   "tags": [],
@@ -13383,7 +13562,7 @@
   "family": "water-0055",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [],
   "symbols": [
    [
@@ -13411,9 +13590,11 @@
   "solution": "122 × \\frac{50}{61} = 100.0 mg/L as CaCO_{3}.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "alkalinity"
+    ]
    }
   ],
   "tags": [],
@@ -13424,7 +13605,7 @@
   "family": "water-0056",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": []
  },
  {
@@ -13446,9 +13627,11 @@
   "solution": "183 × \\frac{50}{61} = 150.0 mg/L as CaCO_{3}.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "alkalinity"
+    ]
    }
   ],
   "tags": [],
@@ -13459,7 +13642,7 @@
   "family": "water-0056",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": []
  },
  {
@@ -13481,9 +13664,11 @@
   "solution": "85 × \\frac{50}{61} = 69.7 mg/L as CaCO_{3}.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "alkalinity"
+    ]
    }
   ],
   "tags": [],
@@ -13494,7 +13679,7 @@
   "family": "water-0056",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": []
  },
  {
@@ -13516,9 +13701,11 @@
   "solution": "152 × \\frac{50}{61} = 124.6 mg/L as CaCO_{3}.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "alkalinity"
+    ]
    }
   ],
   "tags": [],
@@ -13529,7 +13716,7 @@
   "family": "water-0056",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": []
  },
  {
@@ -13551,9 +13738,11 @@
   "solution": "Loading = \\frac{20,000(250)}{1,000} = 5,000 kg/day.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "mass balance"
+    ]
    }
   ],
   "tags": [],
@@ -13564,7 +13753,7 @@
   "family": "water-0057",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "bod",
@@ -13592,9 +13781,11 @@
   "solution": "Loading = \\frac{7,500(180)}{1,000} = 1,350 kg/day.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "mass balance"
+    ]
    }
   ],
   "tags": [],
@@ -13605,7 +13796,7 @@
   "family": "water-0057",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "bod",
@@ -13633,9 +13824,11 @@
   "solution": "Loading = \\frac{48,000(30)}{1,000} = 1,440 kg/day.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "mass balance"
+    ]
    }
   ],
   "tags": [],
@@ -13646,7 +13839,7 @@
   "family": "water-0057",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "bod",
@@ -13674,9 +13867,11 @@
   "solution": "Loading = \\frac{13,750(215)}{1,000} = 2,956 kg/day.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "mass balance"
+    ]
    }
   ],
   "tags": [],
@@ -13687,7 +13882,7 @@
   "family": "water-0057",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "terms": [
    [
     "bod",
@@ -13715,9 +13910,11 @@
   "solution": "pH = -log(2.5 × 10^{-6}) = 6 - log(2.5) = 6 - 0.398 = 5.60.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Chemistry and Biochemistry",
+    "page": "85–93",
+    "find": [
+     "acids, bases, and ph"
+    ]
    }
   ],
   "tags": [],
@@ -13728,7 +13925,7 @@
   "family": "water-0058",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": []
  },
  {
@@ -13750,9 +13947,11 @@
   "solution": "pH = -log(4.0 × 10^{-9}) = 9 - log(4.0) = 9 - 0.602 = 8.40.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Chemistry and Biochemistry",
+    "page": "85–93",
+    "find": [
+     "acids, bases, and ph"
+    ]
    }
   ],
   "tags": [],
@@ -13763,7 +13962,7 @@
   "family": "water-0058",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": []
  },
  {
@@ -13785,9 +13984,11 @@
   "solution": "pH = -log(6.3 × 10^{-4}) = 4 - log(6.3) = 4 - 0.799 = 3.20.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Chemistry and Biochemistry",
+    "page": "85–93",
+    "find": [
+     "acids, bases, and ph"
+    ]
    }
   ],
   "tags": [],
@@ -13798,7 +13999,7 @@
   "family": "water-0058",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": []
  },
  {
@@ -13820,9 +14021,11 @@
   "solution": "pH = -log(3.2 × 10^{-8}) = 8 - log(3.2) = 8 - 0.505 = 7.49.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Chemistry and Biochemistry",
+    "page": "85–93",
+    "find": [
+     "acids, bases, and ph"
+    ]
    }
   ],
   "tags": [],
@@ -13833,7 +14036,7 @@
   "family": "water-0058",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": []
  },
  {
@@ -13855,9 +14058,11 @@
   "solution": "Mass retained = 1.5532 - 1.5420 = 0.0112 g = 11.2 mg.\n\nTSS = \\frac{11.2}{0.050} = 224 mg/L.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "suspended solids"
+    ]
    }
   ],
   "tags": [],
@@ -13868,7 +14073,7 @@
   "family": "water-0059",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-i",
@@ -13896,9 +14101,11 @@
   "solution": "Mass retained = 1.2139 - 1.2085 = 0.0054 g = 5.4 mg.\n\nTSS = \\frac{5.4}{0.100} = 54 mg/L.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "suspended solids"
+    ]
    }
   ],
   "tags": [],
@@ -13909,7 +14116,7 @@
   "family": "water-0059",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-i",
@@ -13937,9 +14144,11 @@
   "solution": "Mass retained = 0.9915 - 0.9860 = 0.0055 g = 5.5 mg.\n\nTSS = \\frac{5.5}{0.025} = 220 mg/L.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "suspended solids"
+    ]
    }
   ],
   "tags": [],
@@ -13950,7 +14159,7 @@
   "family": "water-0059",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-i",
@@ -13978,9 +14187,11 @@
   "solution": "Mass retained = 1.3836 - 1.3752 = 0.0084 g = 8.4 mg.\n\nTSS = \\frac{8.4}{0.075} = 112 mg/L.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "suspended solids"
+    ]
    }
   ],
   "tags": [],
@@ -13991,7 +14202,7 @@
   "family": "water-0059",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-i",
@@ -14695,9 +14906,11 @@
   "solution": "Rate = \\frac{12,000}{60 × 24} = 8.33 m/h.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "filtration"
+    ]
    }
   ],
   "tags": [],
@@ -14708,7 +14921,7 @@
   "family": "water-0063",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-i",
@@ -14736,9 +14949,11 @@
   "solution": "Rate = \\frac{30,000}{125 × 24} = 10.00 m/h.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "filtration"
+    ]
    }
   ],
   "tags": [],
@@ -14749,7 +14964,7 @@
   "family": "water-0063",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-i",
@@ -14777,9 +14992,11 @@
   "solution": "Rate = \\frac{4,800}{40 × 24} = 5.00 m/h.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "filtration"
+    ]
    }
   ],
   "tags": [],
@@ -14790,7 +15007,7 @@
   "family": "water-0063",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-i",
@@ -14818,9 +15035,11 @@
   "solution": "Rate = \\frac{21,000}{92 × 24} = 9.51 m/h.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "filtration"
+    ]
    }
   ],
   "tags": [],
@@ -14831,7 +15050,7 @@
   "family": "water-0063",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-i",
@@ -15079,9 +15298,11 @@
   "solution": "t = \\frac{40}{0.8} = 50.0 min.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "CT value"
+    ]
    }
   ],
   "tags": [],
@@ -15092,7 +15313,7 @@
   "family": "water-0065",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-i",
@@ -15120,9 +15341,11 @@
   "solution": "t = \\frac{90}{1.5} = 60.0 min.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "CT value"
+    ]
    }
   ],
   "tags": [],
@@ -15133,7 +15356,7 @@
   "family": "water-0065",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-i",
@@ -15161,9 +15384,11 @@
   "solution": "t = \\frac{12}{0.5} = 24.0 min.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "CT value"
+    ]
    }
   ],
   "tags": [],
@@ -15174,7 +15399,7 @@
   "family": "water-0065",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-i",
@@ -15202,9 +15427,11 @@
   "solution": "t = \\frac{65}{1.1} = 59.1 min.",
   "handbook": [
    {
-    "section": "Civil Engineering",
-    "page": "259–309",
-    "find": []
+    "section": "Environmental Engineering",
+    "page": "310–354",
+    "find": [
+     "CT value"
+    ]
    }
   ],
   "tags": [],
@@ -15215,7 +15442,7 @@
   "family": "water-0065",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "water-i",

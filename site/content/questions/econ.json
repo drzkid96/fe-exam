@@ -2529,7 +2529,7 @@
   },
   "family": "econ-0011",
   "version": 1,
-  "versions": 2,
+  "versions": 3,
   "lookup": true,
   "needs": [
    [
@@ -2591,7 +2591,73 @@
   },
   "family": "econ-0011",
   "version": 2,
-  "versions": 2,
+  "versions": 3,
+  "lookup": true,
+  "needs": [
+   [
+    "math-d",
+    "math",
+    "Mathematics and Statistics: Statistics"
+   ]
+  ],
+  "symbols": [
+   [
+    "B",
+    "present worth of benefits"
+   ],
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0011-c",
+  "topic": "econ",
+  "subtopic": "econ-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": null,
+  "stem": "Option A pays a certain $45,000. Option B has a 70% chance of paying $70,000 and a 30% chance of paying nothing. Which has the higher expected value, and by how much?",
+  "options": [
+   {
+    "id": "a",
+    "text": "A by $1,000"
+   },
+   {
+    "id": "b",
+    "text": "B by $4,000"
+   },
+   {
+    "id": "c",
+    "text": "B by $25,000"
+   },
+   {
+    "id": "d",
+    "text": "They are equal"
+   }
+  ],
+  "answer": "b",
+  "eli5": "The expected value of an uncertain option is the sum of each outcome times its probability, with losses negative. Comparing expected values ignores risk, so it suits decisions that are repeated often or small relative to the owner's resources.",
+  "solution": "Expected value of B = 0.70 × 70,000 + 0.30 × 0 = $49,000.\n\nThat is 49,000 - 45,000 = $4,000 more than the certain $45,000 from A. Expected value says nothing about risk: B can also pay nothing.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "expected value"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0011",
+  "version": 3,
+  "versions": 3,
   "lookup": true,
   "needs": [
    [
@@ -3325,6 +3391,11 @@
   "family": "econ-0015",
   "version": 1,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P = ?</text><line x1='72' y1='90' x2='72' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M72 56 L66 68 L78 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='136' y1='90' x2='136' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M136 56 L130 68 L142 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='264' y1='90' x2='264' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M264 56 L258 68 L270 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='328' y1='90' x2='328' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M328 56 L322 68 L334 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$1,000 each period</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 10 periods, P = ? at time 0, $1,000 at the end of every period."
+  },
   "lookup": true,
   "terms": [
    [
@@ -3374,6 +3445,11 @@
   "family": "econ-0015",
   "version": 2,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='56' y1='86' x2='56' y2='94' stroke='#00242E'/><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='88' y1='86' x2='88' y2='94' stroke='#00242E'/><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='120' y1='86' x2='120' y2='94' stroke='#00242E'/><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='152' y1='86' x2='152' y2='94' stroke='#00242E'/><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='184' y1='86' x2='184' y2='94' stroke='#00242E'/><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='216' y1='86' x2='216' y2='94' stroke='#00242E'/><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='248' y1='86' x2='248' y2='94' stroke='#00242E'/><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>14</text><line x1='280' y1='86' x2='280' y2='94' stroke='#00242E'/><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>16</text><line x1='312' y1='86' x2='312' y2='94' stroke='#00242E'/><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>18</text><line x1='344' y1='86' x2='344' y2='94' stroke='#00242E'/><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>20</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P = ?</text><line x1='56' y1='90' x2='56' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M56 56 L50 68 L62 68 Z' fill='#568CBB'/><line x1='72' y1='90' x2='72' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M72 56 L66 68 L78 68 Z' fill='#568CBB'/><line x1='88' y1='90' x2='88' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M88 56 L82 68 L94 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='120' y1='90' x2='120' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M120 56 L114 68 L126 68 Z' fill='#568CBB'/><line x1='136' y1='90' x2='136' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M136 56 L130 68 L142 68 Z' fill='#568CBB'/><line x1='152' y1='90' x2='152' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M152 56 L146 68 L158 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='184' y1='90' x2='184' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M184 56 L178 68 L190 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='216' y1='90' x2='216' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M216 56 L210 68 L222 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='248' y1='90' x2='248' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M248 56 L242 68 L254 68 Z' fill='#568CBB'/><line x1='264' y1='90' x2='264' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M264 56 L258 68 L270 68 Z' fill='#568CBB'/><line x1='280' y1='90' x2='280' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M280 56 L274 68 L286 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='312' y1='90' x2='312' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M312 56 L306 68 L318 68 Z' fill='#568CBB'/><line x1='328' y1='90' x2='328' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M328 56 L322 68 L334 68 Z' fill='#568CBB'/><line x1='344' y1='90' x2='344' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M344 56 L338 68 L350 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$2,500 each period</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 20 periods, P = ? at time 0, $2,500 at the end of every period."
+  },
   "lookup": true,
   "terms": [
    [
@@ -3423,6 +3499,11 @@
   "family": "econ-0015",
   "version": 3,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='93' y1='86' x2='93' y2='94' stroke='#00242E'/><text x='93' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='147' y1='86' x2='147' y2='94' stroke='#00242E'/><text x='147' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='253' y1='86' x2='253' y2='94' stroke='#00242E'/><text x='253' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='307' y1='86' x2='307' y2='94' stroke='#00242E'/><text x='307' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P = ?</text><line x1='93' y1='90' x2='93' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M93 56 L87 68 L99 68 Z' fill='#568CBB'/><line x1='147' y1='90' x2='147' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M147 56 L141 68 L153 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='253' y1='90' x2='253' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M253 56 L247 68 L259 68 Z' fill='#568CBB'/><line x1='307' y1='90' x2='307' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M307 56 L301 68 L313 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$12,000 each period</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 6 periods, P = ? at time 0, $12,000 at the end of every period."
+  },
   "lookup": true,
   "terms": [
    [
@@ -3472,6 +3553,11 @@
   "family": "econ-0015",
   "version": 4,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='61' y1='86' x2='61' y2='94' stroke='#00242E'/><text x='61' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='83' y1='86' x2='83' y2='94' stroke='#00242E'/><text x='83' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='125' y1='86' x2='125' y2='94' stroke='#00242E'/><text x='125' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='147' y1='86' x2='147' y2='94' stroke='#00242E'/><text x='147' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='189' y1='86' x2='189' y2='94' stroke='#00242E'/><text x='189' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='211' y1='86' x2='211' y2='94' stroke='#00242E'/><text x='211' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='253' y1='86' x2='253' y2='94' stroke='#00242E'/><text x='253' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='275' y1='86' x2='275' y2='94' stroke='#00242E'/><text x='275' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>11</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='317' y1='86' x2='317' y2='94' stroke='#00242E'/><text x='317' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>13</text><line x1='339' y1='86' x2='339' y2='94' stroke='#00242E'/><text x='339' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>14</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>15</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>P = ?</text><line x1='61' y1='90' x2='61' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M61 56 L55 68 L67 68 Z' fill='#568CBB'/><line x1='83' y1='90' x2='83' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M83 56 L77 68 L89 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='125' y1='90' x2='125' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M125 56 L119 68 L131 68 Z' fill='#568CBB'/><line x1='147' y1='90' x2='147' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M147 56 L141 68 L153 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='189' y1='90' x2='189' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M189 56 L183 68 L195 68 Z' fill='#568CBB'/><line x1='211' y1='90' x2='211' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M211 56 L205 68 L217 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='253' y1='90' x2='253' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M253 56 L247 68 L259 68 Z' fill='#568CBB'/><line x1='275' y1='90' x2='275' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M275 56 L269 68 L281 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='317' y1='90' x2='317' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M317 56 L311 68 L323 68 Z' fill='#568CBB'/><line x1='339' y1='90' x2='339' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M339 56 L333 68 L345 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$1,750 each period</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 15 periods, P = ? at time 0, $1,750 at the end of every period."
+  },
   "lookup": true,
   "terms": [
    [
@@ -3521,6 +3607,11 @@
   "family": "econ-0016",
   "version": 1,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='72' y1='90' x2='72' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M72 56 L66 68 L78 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='136' y1='90' x2='136' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M136 56 L130 68 L142 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='264' y1='90' x2='264' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M264 56 L258 68 L270 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='328' y1='90' x2='328' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M328 56 L322 68 L334 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>A = ? each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>$100,000</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 10 periods, A = ? at the end of every period, $100,000 at period 10."
+  },
   "lookup": true,
   "needs": [],
   "symbols": [
@@ -3564,6 +3655,11 @@
   "family": "econ-0016",
   "version": 2,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>A = ? each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>$50,000</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 5 periods, A = ? at the end of every period, $50,000 at period 5."
+  },
   "lookup": true,
   "needs": [],
   "symbols": [
@@ -3607,6 +3703,11 @@
   "family": "econ-0016",
   "version": 3,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='56' y1='86' x2='56' y2='94' stroke='#00242E'/><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='88' y1='86' x2='88' y2='94' stroke='#00242E'/><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='120' y1='86' x2='120' y2='94' stroke='#00242E'/><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='152' y1='86' x2='152' y2='94' stroke='#00242E'/><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='184' y1='86' x2='184' y2='94' stroke='#00242E'/><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='216' y1='86' x2='216' y2='94' stroke='#00242E'/><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='248' y1='86' x2='248' y2='94' stroke='#00242E'/><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>14</text><line x1='280' y1='86' x2='280' y2='94' stroke='#00242E'/><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>16</text><line x1='312' y1='86' x2='312' y2='94' stroke='#00242E'/><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>18</text><line x1='344' y1='86' x2='344' y2='94' stroke='#00242E'/><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>20</text><line x1='56' y1='90' x2='56' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M56 56 L50 68 L62 68 Z' fill='#568CBB'/><line x1='72' y1='90' x2='72' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M72 56 L66 68 L78 68 Z' fill='#568CBB'/><line x1='88' y1='90' x2='88' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M88 56 L82 68 L94 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='120' y1='90' x2='120' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M120 56 L114 68 L126 68 Z' fill='#568CBB'/><line x1='136' y1='90' x2='136' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M136 56 L130 68 L142 68 Z' fill='#568CBB'/><line x1='152' y1='90' x2='152' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M152 56 L146 68 L158 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='184' y1='90' x2='184' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M184 56 L178 68 L190 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='216' y1='90' x2='216' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M216 56 L210 68 L222 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='248' y1='90' x2='248' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M248 56 L242 68 L254 68 Z' fill='#568CBB'/><line x1='264' y1='90' x2='264' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M264 56 L258 68 L270 68 Z' fill='#568CBB'/><line x1='280' y1='90' x2='280' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M280 56 L274 68 L286 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='312' y1='90' x2='312' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M312 56 L306 68 L318 68 Z' fill='#568CBB'/><line x1='328' y1='90' x2='328' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M328 56 L322 68 L334 68 Z' fill='#568CBB'/><line x1='344' y1='90' x2='344' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M344 56 L338 68 L350 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>A = ? each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>$1,000,000</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 20 periods, A = ? at the end of every period, $1,000,000 at period 20."
+  },
   "lookup": true,
   "needs": [],
   "symbols": [
@@ -3650,6 +3751,11 @@
   "family": "econ-0016",
   "version": 4,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='80' y1='86' x2='80' y2='94' stroke='#00242E'/><text x='80' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='120' y1='86' x2='120' y2='94' stroke='#00242E'/><text x='120' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='160' y1='86' x2='160' y2='94' stroke='#00242E'/><text x='160' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='240' y1='86' x2='240' y2='94' stroke='#00242E'/><text x='240' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='280' y1='86' x2='280' y2='94' stroke='#00242E'/><text x='280' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='320' y1='86' x2='320' y2='94' stroke='#00242E'/><text x='320' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='80' y1='90' x2='80' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M80 56 L74 68 L86 68 Z' fill='#568CBB'/><line x1='120' y1='90' x2='120' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M120 56 L114 68 L126 68 Z' fill='#568CBB'/><line x1='160' y1='90' x2='160' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M160 56 L154 68 L166 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='240' y1='90' x2='240' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M240 56 L234 68 L246 68 Z' fill='#568CBB'/><line x1='280' y1='90' x2='280' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M280 56 L274 68 L286 68 Z' fill='#568CBB'/><line x1='320' y1='90' x2='320' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M320 56 L314 68 L326 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>A = ? each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>$75,000</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 8 periods, A = ? at the end of every period, $75,000 at period 8."
+  },
   "lookup": true,
   "needs": [],
   "symbols": [
@@ -4541,7 +4647,7 @@
   },
   "family": "econ-0021",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
   "terms": [
    [
@@ -4613,7 +4719,7 @@
   },
   "family": "econ-0021",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
   "terms": [
    [
@@ -4685,7 +4791,79 @@
   },
   "family": "econ-0021",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ],
+   [
+    "depreciation",
+    "the loss of an asset's value over its life, written off year by year"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
+  "symbols": [
+   [
+    "D",
+    "depreciation in the year"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0021-d",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Equipment costing $80,000, with an expected salvage value of $8,000, is depreciated by MACRS. The MACRS factor for year 6 is 5.76%. What is the depreciation in year 6?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$4,608"
+   },
+   {
+    "id": "b",
+    "text": "$4,147"
+   },
+   {
+    "id": "c",
+    "text": "$16,000"
+   },
+   {
+    "id": "d",
+    "text": "$14,400"
+   }
+  ],
+  "answer": "a",
+  "eli5": "MACRS depreciation is the tabulated factor times the full cost. Salvage value is not subtracted, unlike straight-line depreciation, because the factors already write the asset down to zero.",
+  "solution": "D = 0.0576 × 80,000 = $4,608. The salvage value plays no part.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "MACRS"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0021",
+  "version": 4,
+  "versions": 4,
   "lookup": true,
   "terms": [
    [
@@ -4904,7 +5082,9 @@
    {
     "section": "Engineering Economics",
     "page": "230–237",
-    "find": []
+    "find": [
+     "payback"
+    ]
    }
   ],
   "tags": [],
@@ -4915,7 +5095,7 @@
   "family": "econ-0023",
   "version": 1,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "econ-a",
@@ -4945,7 +5125,9 @@
    {
     "section": "Engineering Economics",
     "page": "230–237",
-    "find": []
+    "find": [
+     "payback"
+    ]
    }
   ],
   "tags": [],
@@ -4956,7 +5138,7 @@
   "family": "econ-0023",
   "version": 2,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "econ-a",
@@ -4986,7 +5168,9 @@
    {
     "section": "Engineering Economics",
     "page": "230–237",
-    "find": []
+    "find": [
+     "payback"
+    ]
    }
   ],
   "tags": [],
@@ -4997,7 +5181,7 @@
   "family": "econ-0023",
   "version": 3,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "econ-a",
@@ -5027,7 +5211,9 @@
    {
     "section": "Engineering Economics",
     "page": "230–237",
-    "find": []
+    "find": [
+     "payback"
+    ]
    }
   ],
   "tags": [],
@@ -5038,7 +5224,7 @@
   "family": "econ-0023",
   "version": 4,
   "versions": 4,
-  "lookup": false,
+  "lookup": true,
   "needs": [
    [
     "econ-a",
@@ -5082,6 +5268,11 @@
   "family": "econ-0024",
   "version": 1,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$100,000 cost</text><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$30,000 each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>$10,000 salvage</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 5 periods, $100,000 cost at time 0, $30,000 at the end of every period, $10,000 salvage at period 5."
+  },
   "lookup": true,
   "terms": [
    [
@@ -5142,6 +5333,11 @@
   "family": "econ-0024",
   "version": 2,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='80' y1='86' x2='80' y2='94' stroke='#00242E'/><text x='80' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='120' y1='86' x2='120' y2='94' stroke='#00242E'/><text x='120' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='160' y1='86' x2='160' y2='94' stroke='#00242E'/><text x='160' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='240' y1='86' x2='240' y2='94' stroke='#00242E'/><text x='240' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='280' y1='86' x2='280' y2='94' stroke='#00242E'/><text x='280' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='320' y1='86' x2='320' y2='94' stroke='#00242E'/><text x='320' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$250,000 cost</text><line x1='80' y1='90' x2='80' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M80 56 L74 68 L86 68 Z' fill='#568CBB'/><line x1='120' y1='90' x2='120' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M120 56 L114 68 L126 68 Z' fill='#568CBB'/><line x1='160' y1='90' x2='160' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M160 56 L154 68 L166 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='240' y1='90' x2='240' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M240 56 L234 68 L246 68 Z' fill='#568CBB'/><line x1='280' y1='90' x2='280' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M280 56 L274 68 L286 68 Z' fill='#568CBB'/><line x1='320' y1='90' x2='320' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M320 56 L314 68 L326 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$55,000 each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>$30,000 salvage</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 8 periods, $250,000 cost at time 0, $55,000 at the end of every period, $30,000 salvage at period 8."
+  },
   "lookup": true,
   "terms": [
    [
@@ -5202,6 +5398,11 @@
   "family": "econ-0024",
   "version": 3,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='120' y1='86' x2='120' y2='94' stroke='#00242E'/><text x='120' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='280' y1='86' x2='280' y2='94' stroke='#00242E'/><text x='280' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$40,000 cost</text><line x1='120' y1='90' x2='120' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M120 56 L114 68 L126 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='280' y1='90' x2='280' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M280 56 L274 68 L286 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$12,000 each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>$0 salvage</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 4 periods, $40,000 cost at time 0, $12,000 at the end of every period, $0 salvage at period 4."
+  },
   "lookup": true,
   "terms": [
    [
@@ -5262,6 +5463,11 @@
   "family": "econ-0024",
   "version": 4,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 160",
+   "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='93' y1='86' x2='93' y2='94' stroke='#00242E'/><text x='93' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1</text><line x1='147' y1='86' x2='147' y2='94' stroke='#00242E'/><text x='147' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='253' y1='86' x2='253' y2='94' stroke='#00242E'/><text x='253' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='307' y1='86' x2='307' y2='94' stroke='#00242E'/><text x='307' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='40' y1='90' x2='40' y2='138' stroke='#00574A' stroke-width='3'/><path d='M40 146 L34 134 L46 134 Z' fill='#00574A'/><text x='48' y='142' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>$175,000 cost</text><line x1='93' y1='90' x2='93' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M93 56 L87 68 L99 68 Z' fill='#568CBB'/><line x1='147' y1='90' x2='147' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M147 56 L141 68 L153 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='253' y1='90' x2='253' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M253 56 L247 68 L259 68 Z' fill='#568CBB'/><line x1='307' y1='90' x2='307' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M307 56 L301 68 L313 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$42,500 each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>$20,000 salvage</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
+   "alt": "A cash flow diagram over 6 periods, $175,000 cost at time 0, $42,500 at the end of every period, $20,000 salvage at period 6."
+  },
   "lookup": true,
   "terms": [
    [

@@ -55,6 +55,7 @@
    "alt": "A cash flow diagram over 10 periods, $5,000 at time 0, F = ? at period 10."
   },
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "P",
@@ -130,6 +131,7 @@
    "alt": "A cash flow diagram over 15 periods, $12,000 at time 0, F = ? at period 15."
   },
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "P",
@@ -205,6 +207,7 @@
    "alt": "A cash flow diagram over 6 periods, $2,500 at time 0, F = ? at period 6."
   },
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "P",
@@ -280,6 +283,7 @@
    "alt": "A cash flow diagram over 12 periods, $8,000 at time 0, F = ? at period 12."
   },
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "P",
@@ -342,6 +346,7 @@
    "alt": "A cash flow diagram over 5 periods, $20,000 at time 0, A = ? at the end of every period."
   },
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "A",
@@ -404,6 +409,7 @@
    "alt": "A cash flow diagram over 10 periods, $50,000 at time 0, A = ? at the end of every period."
   },
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "A",
@@ -466,6 +472,7 @@
    "alt": "A cash flow diagram over 4 periods, $12,000 at time 0, A = ? at the end of every period."
   },
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "A",
@@ -528,6 +535,7 @@
    "alt": "A cash flow diagram over 20 periods, $150,000 at time 0, A = ? at the end of every period."
   },
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "A",
@@ -596,7 +604,14 @@
   "family": "econ-0003",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0003-b",
@@ -647,7 +662,14 @@
   "family": "econ-0003",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0003-c",
@@ -698,7 +720,14 @@
   "family": "econ-0003",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0003-d",
@@ -749,7 +778,14 @@
   "family": "econ-0003",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0004",
@@ -801,7 +837,14 @@
   "family": "econ-0004",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-d",
+    "math",
+    "Mathematics and Statistics: Statistics"
+   ]
+  ]
  },
  {
   "id": "econ-0004-b",
@@ -853,7 +896,14 @@
   "family": "econ-0004",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-d",
+    "math",
+    "Mathematics and Statistics: Statistics"
+   ]
+  ]
  },
  {
   "id": "econ-0004-c",
@@ -905,7 +955,14 @@
   "family": "econ-0004",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-d",
+    "math",
+    "Mathematics and Statistics: Statistics"
+   ]
+  ]
  },
  {
   "id": "econ-0004-d",
@@ -957,7 +1014,14 @@
   "family": "econ-0004",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-d",
+    "math",
+    "Mathematics and Statistics: Statistics"
+   ]
+  ]
  },
  {
   "id": "econ-0005",
@@ -1006,7 +1070,14 @@
   "family": "econ-0005",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0005-b",
@@ -1055,7 +1126,14 @@
   "family": "econ-0005",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0005-c",
@@ -1104,7 +1182,14 @@
   "family": "econ-0005",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0005-d",
@@ -1153,7 +1238,14 @@
   "family": "econ-0005",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0006",
@@ -1187,7 +1279,14 @@
   "family": "econ-0006",
   "version": 1,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0006-b",
@@ -1221,7 +1320,14 @@
   "family": "econ-0006",
   "version": 2,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0006-c",
@@ -1255,7 +1361,14 @@
   "family": "econ-0006",
   "version": 3,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0006-d",
@@ -1289,7 +1402,14 @@
   "family": "econ-0006",
   "version": 4,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0007",
@@ -1344,6 +1464,13 @@
    "alt": "A cash flow diagram over 6 periods, P = ? at time 0, $10,000 at period 6."
   },
   "lookup": true,
+  "terms": [
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "F",
@@ -1416,6 +1543,13 @@
    "alt": "A cash flow diagram over 10 periods, P = ? at time 0, $25,000 at period 10."
   },
   "lookup": true,
+  "terms": [
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "F",
@@ -1488,6 +1622,13 @@
    "alt": "A cash flow diagram over 4 periods, P = ? at time 0, $4,000 at period 4."
   },
   "lookup": true,
+  "terms": [
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "F",
@@ -1560,6 +1701,13 @@
    "alt": "A cash flow diagram over 15 periods, P = ? at time 0, $60,000 at period 15."
   },
   "lookup": true,
+  "terms": [
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "F",
@@ -1615,6 +1763,7 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "i_{e}",
@@ -1662,6 +1811,7 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "i_{e}",
@@ -1709,6 +1859,7 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "i_{e}",
@@ -1756,6 +1907,7 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "i_{e}",
@@ -1816,6 +1968,23 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "benefit-cost",
+    "benefits divided by costs, both in present-worth terms; above 1 means the project pays"
+   ],
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "P",
@@ -1884,6 +2053,23 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "benefit-cost",
+    "benefits divided by costs, both in present-worth terms; above 1 means the project pays"
+   ],
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "P",
@@ -1952,6 +2138,23 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "benefit-cost",
+    "benefits divided by costs, both in present-worth terms; above 1 means the project pays"
+   ],
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "P",
@@ -2020,6 +2223,23 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "benefit-cost",
+    "benefits divided by costs, both in present-worth terms; above 1 means the project pays"
+   ],
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "P",
@@ -2075,6 +2295,19 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -2118,6 +2351,19 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -2161,6 +2407,19 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -2204,6 +2463,19 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -2259,6 +2531,13 @@
   "version": 1,
   "versions": 2,
   "lookup": true,
+  "needs": [
+   [
+    "math-d",
+    "math",
+    "Mathematics and Statistics: Statistics"
+   ]
+  ],
   "symbols": [
    [
     "B",
@@ -2314,6 +2593,13 @@
   "version": 2,
   "versions": 2,
   "lookup": true,
+  "needs": [
+   [
+    "math-d",
+    "math",
+    "Mathematics and Statistics: Statistics"
+   ]
+  ],
   "symbols": [
    [
     "B",
@@ -2360,7 +2646,24 @@
   "family": "econ-0012",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ],
+   [
+    "depreciation",
+    "the loss of an asset's value over its life, written off year by year"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0012-b",
@@ -2397,7 +2700,24 @@
   "family": "econ-0012",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ],
+   [
+    "depreciation",
+    "the loss of an asset's value over its life, written off year by year"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0012-c",
@@ -2434,7 +2754,24 @@
   "family": "econ-0012",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ],
+   [
+    "depreciation",
+    "the loss of an asset's value over its life, written off year by year"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0012-d",
@@ -2471,7 +2808,24 @@
   "family": "econ-0012",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ],
+   [
+    "depreciation",
+    "the loss of an asset's value over its life, written off year by year"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0013",
@@ -2513,6 +2867,7 @@
    "alt": "A cash flow diagram over 30 periods, $5,000 at the end of every period, F = ? at period 30."
   },
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "F",
@@ -2572,6 +2927,7 @@
    "alt": "A cash flow diagram over 20 periods, $2,000 at the end of every period, F = ? at period 20."
   },
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "F",
@@ -2631,6 +2987,7 @@
    "alt": "A cash flow diagram over 15 periods, $10,000 at the end of every period, F = ? at period 15."
   },
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "F",
@@ -2690,6 +3047,7 @@
    "alt": "A cash flow diagram over 25 periods, $3,600 at the end of every period, F = ? at period 25."
   },
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "F",
@@ -2745,6 +3103,19 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -2788,6 +3159,19 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -2831,6 +3215,19 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -2874,6 +3271,19 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -2914,8 +3324,15 @@
   },
   "family": "econ-0015",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "P",
@@ -2956,8 +3373,15 @@
   },
   "family": "econ-0015",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "P",
@@ -2998,8 +3422,64 @@
   },
   "family": "econ-0015",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": [],
+  "symbols": [
+   [
+    "P",
+    "present amount"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0015-d",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the present worth of $1,750 received at the end of each year for 15 years, at 6% interest?",
+  "answer": {
+   "value": 16996.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "The uniform series present worth factor (P/A, i, n) converts equal end-of-year amounts into a single equivalent amount today: ((1 + i)^{n} - 1) / (i (1 + i)^{n}).",
+  "solution": "(P/A, 6%, 15) = \\frac{(1 + 0.06)^{15} - 1}{0.06(1 + 0.06)^{15}} = 9.7122.\n\nP = 1,750 × 9.7122 = $16,996.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "uniform series"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0015",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "P",
@@ -3040,8 +3520,9 @@
   },
   "family": "econ-0016",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "A",
@@ -3082,8 +3563,9 @@
   },
   "family": "econ-0016",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "A",
@@ -3124,8 +3606,52 @@
   },
   "family": "econ-0016",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
+  "symbols": [
+   [
+    "A",
+    "uniform amount at the end of each period"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0016-d",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An agency needs $75,000 in 8 years to replace equipment. What equal end-of-year deposit builds that amount at 5% interest?",
+  "answer": {
+   "value": 7854.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "The sinking fund factor (A/F, i, n) gives the equal annual deposit that grows to a required future amount: i / ((1 + i)^{n} - 1).",
+  "solution": "(A/F, 5%, 8) = \\frac{0.05}{(1 + 0.05)^{8} - 1} = 0.10472.\n\nA = 75,000 × 0.10472 = $7,854.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "sinking fund"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0016",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "A",
@@ -3179,8 +3705,15 @@
   },
   "family": "econ-0017",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "econ-0017-b",
@@ -3228,8 +3761,15 @@
   },
   "family": "econ-0017",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "econ-0017-c",
@@ -3277,8 +3817,71 @@
   },
   "family": "econ-0017",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": []
+ },
+ {
+  "id": "econ-0017-d",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A facility costs $1,375,000 to build and $32,500 per year to maintain, forever. At 6% interest, what is its capitalized cost?",
+  "options": [
+   {
+    "id": "a",
+    "text": "$541,667"
+   },
+   {
+    "id": "b",
+    "text": "$1,490,000"
+   },
+   {
+    "id": "c",
+    "text": "$1,700,000"
+   },
+   {
+    "id": "d",
+    "text": "$1,916,667"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Capitalized cost is the present worth of something that lasts indefinitely. A perpetual annual cost A has a present worth of A / i, because that sum earns exactly A in interest each year.",
+  "solution": "Capitalized cost = 1,375,000 + \\frac{32,500}{0.06} = 1,375,000 + 541,667 = $1,916,667.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "capitalized costs"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0017",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "econ-0018",
@@ -3313,8 +3916,9 @@
   },
   "family": "econ-0018",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "i",
@@ -3359,8 +3963,9 @@
   },
   "family": "econ-0018",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "i",
@@ -3405,8 +4010,56 @@
   },
   "family": "econ-0018",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
+  "symbols": [
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0018-d",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "At 6% interest compounded annually, how long does a sum of money take to double?",
+  "answer": {
+   "value": 11.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "years"
+  },
+  "eli5": "Set (1 + i)^{n} = 2 and solve with logarithms: n = ln 2 / ln(1 + i). The rule of 72, 72 divided by the rate in percent, is a quick check.",
+  "solution": "n = \\frac{ln 2}{ln(1 + 0.06)} = \\frac{0.6931}{0.05827} = 11.90 years.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "compound amount"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0018",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "i",
@@ -3451,8 +4104,9 @@
   },
   "family": "econ-0019",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "F",
@@ -3505,8 +4159,9 @@
   },
   "family": "econ-0019",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "F",
@@ -3559,8 +4214,64 @@
   },
   "family": "econ-0019",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
+  "symbols": [
+   [
+    "F",
+    "future amount"
+   ],
+   [
+    "P",
+    "present amount"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "n",
+    "number of periods"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0019-d",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An investment of $7,500 grows to $12,052 in 6 years. What annual rate of return did it earn?",
+  "answer": {
+   "value": 8.23,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "For a single sum, F = P(1 + i)^{n}. Solve for the rate: i = (F / P)^{1/n} - 1.",
+  "solution": "i = (\\frac{12,052}{7,500})^{1/6} - 1 = 1.08226 - 1 = 8.23%.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "rate of return"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0019",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "F",
@@ -3613,8 +4324,9 @@
   },
   "family": "econ-0020",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "d",
@@ -3663,8 +4375,9 @@
   },
   "family": "econ-0020",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "d",
@@ -3713,8 +4426,60 @@
   },
   "family": "econ-0020",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
+  "symbols": [
+   [
+    "d",
+    "market (inflation-adjusted) interest rate"
+   ],
+   [
+    "i",
+    "interest rate per period"
+   ],
+   [
+    "f",
+    "inflation rate"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0020-d",
+  "topic": "econ",
+  "subtopic": "econ-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An investment earns a market interest rate of 7.0% while inflation runs at 2.8%. What is the real (inflation-free) rate of return?",
+  "answer": {
+   "value": 4.09,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "The market rate d combines the real rate i and inflation f: d = i + f + i f. Solving for the real rate gives (1 + d) / (1 + f) - 1, slightly less than the simple difference.",
+  "solution": "Real rate = \\frac{1 + 0.070}{1 + 0.028} - 1 = 4.09%.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "inflation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0020",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "d",
@@ -3778,6 +4543,23 @@
   "version": 1,
   "versions": 3,
   "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ],
+   [
+    "depreciation",
+    "the loss of an asset's value over its life, written off year by year"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "D",
@@ -3833,6 +4615,23 @@
   "version": 2,
   "versions": 3,
   "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ],
+   [
+    "depreciation",
+    "the loss of an asset's value over its life, written off year by year"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "D",
@@ -3888,6 +4687,23 @@
   "version": 3,
   "versions": 3,
   "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ],
+   [
+    "depreciation",
+    "the loss of an asset's value over its life, written off year by year"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "D",
@@ -3928,8 +4744,15 @@
   },
   "family": "econ-0022",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0022-b",
@@ -3964,8 +4787,15 @@
   },
   "family": "econ-0022",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0022-c",
@@ -4000,8 +4830,58 @@
   },
   "family": "econ-0022",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0022-d",
+  "topic": "econ",
+  "subtopic": "econ-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A facility cost $1,225,000 when the construction cost index stood at 200. The index is now 254. What would the same facility cost today?",
+  "answer": {
+   "value": 1555750.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "A cost index tracks how construction prices change over time. Scale a historical cost by the ratio of the current index to the index when the cost was recorded.",
+  "solution": "Cost today = 1,225,000 × \\frac{254}{200} = $1,555,750.",
+  "handbook": [
+   {
+    "section": "Chemical Engineering",
+    "page": "238–258",
+    "find": [
+     "cost indexes"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0022",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0023",
@@ -4034,8 +4914,15 @@
   },
   "family": "econ-0023",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0023-b",
@@ -4068,8 +4955,15 @@
   },
   "family": "econ-0023",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0023-c",
@@ -4102,8 +4996,56 @@
   },
   "family": "econ-0023",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0023-d",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A signal retiming project costs $112,500 and saves $26,000 per year. What is its simple payback period?",
+  "answer": {
+   "value": 4.33,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "years"
+  },
+  "eli5": "Simple payback is the first cost divided by the annual saving. It ignores interest and anything after the payback date, so it screens projects but does not rank them.",
+  "solution": "Payback = \\frac{112,500}{26,000} = 4.33 years.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0023",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ]
  },
  {
   "id": "econ-0024",
@@ -4139,8 +5081,25 @@
   },
   "family": "econ-0024",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ],
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "P",
@@ -4182,8 +5141,25 @@
   },
   "family": "econ-0024",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ],
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "P",
@@ -4225,8 +5201,85 @@
   },
   "family": "econ-0024",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ],
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
+  "symbols": [
+   [
+    "P",
+    "present amount"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0024-d",
+  "topic": "econ",
+  "subtopic": "econ-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A project costs $175,000 now, returns $42,500 at the end of each year for 6 years and has a salvage value of $20,000 at the end. At 9% interest, what is its net present worth?",
+  "answer": {
+   "value": 27577.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Net present worth brings every cash flow to today: the annual returns by the (P/A) factor and the salvage by the (P/F) factor, less the first cost. A positive value means the project earns more than the interest rate.",
+  "solution": "(P/A, 9%, 6) = 4.4859 and (P/F, 9%, 6) = 0.5963.\n\nNPW = -175,000 + 42,500(4.4859) + 20,000(0.5963) = $27,577.",
+  "handbook": [
+   {
+    "section": "Engineering Economics",
+    "page": "230–237",
+    "find": [
+     "uniform series",
+     "single payment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0024",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "salvage value",
+    "what an asset can be sold for at the end of its life"
+   ],
+   [
+    "present worth",
+    "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+   ]
+  ],
+  "needs": [
+   [
+    "econ-a",
+    "econ",
+    "Engineering Economics: Time value of money"
+   ]
+  ],
   "symbols": [
    [
     "P",
@@ -4267,8 +5320,15 @@
   },
   "family": "econ-0025",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "math-d",
+    "math",
+    "Mathematics and Statistics: Statistics"
+   ]
+  ]
  },
  {
   "id": "econ-0025-b",
@@ -4303,8 +5363,15 @@
   },
   "family": "econ-0025",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "math-d",
+    "math",
+    "Mathematics and Statistics: Statistics"
+   ]
+  ]
  },
  {
   "id": "econ-0025-c",
@@ -4339,8 +5406,58 @@
   },
   "family": "econ-0025",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "math-d",
+    "math",
+    "Mathematics and Statistics: Statistics"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0025-d",
+  "topic": "econ",
+  "subtopic": "econ-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A firm estimates a 25% chance of winning a contract that would earn a profit of $475,000. Preparing the proposal costs $27,500, which is lost if the firm does not win. What is the expected value of pursuing it?",
+  "answer": {
+   "value": 98125.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "Expected value weights each outcome by its probability: the chance of winning times the profit, minus the chance of losing times the cost of the proposal.",
+  "solution": "EV = 0.25(475,000) - 0.75(27,500) = 118,750 - 20,625 = $98,125.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "expected value"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0025",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "math-d",
+    "math",
+    "Mathematics and Statistics: Statistics"
+   ]
+  ]
  },
  {
   "id": "econ-0026",
@@ -4388,8 +5505,15 @@
   },
   "family": "econ-0026",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-d",
+    "math",
+    "Mathematics and Statistics: Statistics"
+   ]
+  ],
   "symbols": [
    [
     "p",
@@ -4443,8 +5567,15 @@
   },
   "family": "econ-0026",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-d",
+    "math",
+    "Mathematics and Statistics: Statistics"
+   ]
+  ],
   "symbols": [
    [
     "p",
@@ -4498,8 +5629,77 @@
   },
   "family": "econ-0026",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-d",
+    "math",
+    "Mathematics and Statistics: Statistics"
+   ]
+  ],
+  "symbols": [
+   [
+    "p",
+    "probability of success"
+   ]
+  ]
+ },
+ {
+  "id": "econ-0026-d",
+  "topic": "econ",
+  "subtopic": "econ-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A venture gains $97,500 if it succeeds and loses $27,500 if it fails. At what probability of success is its expected value zero?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.28"
+   },
+   {
+    "id": "b",
+    "text": "0.78"
+   },
+   {
+    "id": "c",
+    "text": "0.50"
+   },
+   {
+    "id": "d",
+    "text": "0.22"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Set the expected value to zero: p × gain = (1 - p) × loss. Solving gives p = loss / (gain + loss). Above that probability the venture is worth taking on expected value alone.",
+  "solution": "p = \\frac{27,500}{97,500 + 27,500} = 0.22.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "expected value"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "econ-0026",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "math-d",
+    "math",
+    "Mathematics and Statistics: Statistics"
+   ]
+  ],
   "symbols": [
    [
     "p",

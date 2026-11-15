@@ -59,6 +59,20 @@ for f in sorted(os.listdir(os.path.join(ROOT, 'questions'))):
 try: from author_depth import MANUAL
 except ImportError: MANUAL = {}
 for _sp in author_f2.SPECS: E(_sp['base'], **_sp['ex'])
+# Later question types: one worked example each with numbers no version uses, up to six examples in a lesson.
+import author_fx, author_f3, author_f4, author_f5, author_f6
+_n2 = 0
+for _sp in author_fx.SPECS:
+    if _sp['kind'] != 'n': continue
+    _bank = _load(_sp['sub'].rsplit('-', 1)[0]); _s0 = render(_sp['stem'], author_fx._env(_sp))
+    _b = next((x for x in _bank if x['stem'] == _s0), None)
+    if not _b or len(EXS.get(_sp['sub'], [])) >= 6: continue
+    author_fx.fourth(_sp); _x = author_fx.example(_sp)
+    if not _x: continue
+    author_v.V(_b['id'], _sp['stem'], _sp['P'], _sp['ans'], _sp['sol'], _sp['wrong'], _sp['dp'], _sp['fig'], None, _sp['concept'])
+    try: E(_b['id'], **_x); _n2 += 1
+    except Exception as _e: print('example skipped', _b['id'], type(_e).__name__)
+print('examples from the later question types:', _n2)
 n = ni = 0; thin = []
 for f in sorted(os.listdir(os.path.join(ROOT, 'guide'))):
     path = os.path.join(ROOT, 'guide', f); g = json.load(open(path))

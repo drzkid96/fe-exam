@@ -55,6 +55,24 @@
    "alt": "A 20 mm diameter rod fixed at one end and pulled with 50 kN at the other."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal stress",
+    "force per unit area acting perpendicular to a surface; tension pulls apart, compression pushes together"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -118,6 +136,24 @@
    "alt": "A 25 mm diameter rod fixed at one end and pulled with 80 kN at the other."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal stress",
+    "force per unit area acting perpendicular to a surface; tension pulls apart, compression pushes together"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -181,6 +217,24 @@
    "alt": "A 16 mm diameter rod fixed at one end and pulled with 40 kN at the other."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal stress",
+    "force per unit area acting perpendicular to a surface; tension pulls apart, compression pushes together"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -244,6 +298,24 @@
    "alt": "A 30 mm diameter rod fixed at one end and pulled with 120 kN at the other."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal stress",
+    "force per unit area acting perpendicular to a surface; tension pulls apart, compression pushes together"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -294,6 +366,23 @@
    "alt": "A 20 mm diameter rod fixed at one end and pulled with 50 kN at the other."
   },
   "lookup": true,
+  "terms": [
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ],
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "E",
@@ -356,6 +445,23 @@
    "alt": "A 25 mm diameter rod fixed at one end and pulled with 80 kN at the other."
   },
   "lookup": true,
+  "terms": [
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ],
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "E",
@@ -418,6 +524,23 @@
    "alt": "A 16 mm diameter rod fixed at one end and pulled with 40 kN at the other."
   },
   "lookup": true,
+  "terms": [
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ],
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "E",
@@ -480,6 +603,23 @@
    "alt": "A 30 mm diameter rod fixed at one end and pulled with 120 kN at the other."
   },
   "lookup": true,
+  "terms": [
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ],
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "E",
@@ -561,6 +701,31 @@
    "alt": "A simply supported beam 8 m long with a uniform load of 10 kN/m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ],
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "M_{max}",
@@ -638,6 +803,31 @@
    "alt": "A simply supported beam 6 m long with a uniform load of 12 kN/m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ],
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "M_{max}",
@@ -715,6 +905,31 @@
    "alt": "A simply supported beam 10 m long with a uniform load of 8 kN/m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ],
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "M_{max}",
@@ -792,6 +1007,31 @@
    "alt": "A simply supported beam 4 m long with a uniform load of 25 kN/m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ],
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "M_{max}",
@@ -868,7 +1108,32 @@
    "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='140' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='188' y1='166' x2='92' y2='38' stroke='#568CBB' stroke-width='2'/><circle cx='188' cy='166' r='4' fill='#568CBB'/><circle cx='92' cy='38' r='4' fill='#568CBB'/><circle cx='140' cy='102.0' r='3' fill='#00242E'/><text x='140' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 50</text><text x='194' y='180' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(80, 40)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
    "alt": "Mohr's circle for normal stresses 80 and 20 MPa with shear stress 40 MPa."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "normal stress",
+    "force per unit area acting perpendicular to a surface; tension pulls apart, compression pushes together"
+   ],
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "principal stress",
+    "the largest and smallest normal stresses at a point, found on the planes where shear stress is zero"
+   ],
+   [
+    "mohr's circle",
+    "a circle drawn on stress axes that shows the normal and shear stress on every plane through a point"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0004-b",
@@ -931,7 +1196,32 @@
    "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='172' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='220' y1='166' x2='124' y2='38' stroke='#568CBB' stroke-width='2'/><circle cx='220' cy='166' r='4' fill='#568CBB'/><circle cx='124' cy='38' r='4' fill='#568CBB'/><circle cx='172' cy='102.0' r='3' fill='#00242E'/><text x='172' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 70</text><text x='226' y='180' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(100, 40)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
    "alt": "Mohr's circle for normal stresses 100 and 40 MPa with shear stress 40 MPa."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "normal stress",
+    "force per unit area acting perpendicular to a surface; tension pulls apart, compression pushes together"
+   ],
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "principal stress",
+    "the largest and smallest normal stresses at a point, found on the planes where shear stress is zero"
+   ],
+   [
+    "mohr's circle",
+    "a circle drawn on stress axes that shows the normal and shear stress on every plane through a point"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0004-c",
@@ -994,7 +1284,32 @@
    "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='116' y1='10' x2='116' y2='194' stroke='#00242E'/><circle cx='140' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='188' y1='166' x2='92' y2='38' stroke='#568CBB' stroke-width='2'/><circle cx='188' cy='166' r='4' fill='#568CBB'/><circle cx='92' cy='38' r='4' fill='#568CBB'/><circle cx='140' cy='102.0' r='3' fill='#00242E'/><text x='140' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 30</text><text x='194' y='180' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(90, 80)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='120' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
    "alt": "Mohr's circle for normal stresses 90 and -30 MPa with shear stress 80 MPa."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "normal stress",
+    "force per unit area acting perpendicular to a surface; tension pulls apart, compression pushes together"
+   ],
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "principal stress",
+    "the largest and smallest normal stresses at a point, found on the planes where shear stress is zero"
+   ],
+   [
+    "mohr's circle",
+    "a circle drawn on stress axes that shows the normal and shear stress on every plane through a point"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0004-d",
@@ -1057,7 +1372,32 @@
    "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='204' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='252' y1='166' x2='156' y2='38' stroke='#568CBB' stroke-width='2'/><circle cx='252' cy='166' r='4' fill='#568CBB'/><circle cx='156' cy='38' r='4' fill='#568CBB'/><circle cx='204' cy='102.0' r='3' fill='#00242E'/><text x='204' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 90</text><text x='258' y='180' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(120, 40)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
    "alt": "Mohr's circle for normal stresses 120 and 60 MPa with shear stress 40 MPa."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "normal stress",
+    "force per unit area acting perpendicular to a surface; tension pulls apart, compression pushes together"
+   ],
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "principal stress",
+    "the largest and smallest normal stresses at a point, found on the planes where shear stress is zero"
+   ],
+   [
+    "mohr's circle",
+    "a circle drawn on stress axes that shows the normal and shear stress on every plane through a point"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0005",
@@ -1116,6 +1456,36 @@
    "alt": "A rectangular section 100 mm wide and 200 mm deep with its horizontal centroidal axis."
   },
   "lookup": true,
+  "terms": [
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "neutral axis",
+    "the line through a bent beam's section where the material is neither stretched nor squeezed"
+   ],
+   [
+    "section modulus",
+    "moment of inertia divided by the distance to the outer edge; bending stress is moment divided by it"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "M",
@@ -1204,6 +1574,36 @@
    "alt": "A rectangular section 150 mm wide and 300 mm deep with its horizontal centroidal axis."
   },
   "lookup": true,
+  "terms": [
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "neutral axis",
+    "the line through a bent beam's section where the material is neither stretched nor squeezed"
+   ],
+   [
+    "section modulus",
+    "moment of inertia divided by the distance to the outer edge; bending stress is moment divided by it"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "M",
@@ -1292,6 +1692,36 @@
    "alt": "A rectangular section 200 mm wide and 400 mm deep with its horizontal centroidal axis."
   },
   "lookup": true,
+  "terms": [
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "neutral axis",
+    "the line through a bent beam's section where the material is neither stretched nor squeezed"
+   ],
+   [
+    "section modulus",
+    "moment of inertia divided by the distance to the outer edge; bending stress is moment divided by it"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "M",
@@ -1380,6 +1810,36 @@
    "alt": "A rectangular section 120 mm wide and 240 mm deep with its horizontal centroidal axis."
   },
   "lookup": true,
+  "terms": [
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "neutral axis",
+    "the line through a bent beam's section where the material is neither stretched nor squeezed"
+   ],
+   [
+    "section modulus",
+    "moment of inertia divided by the distance to the outer edge; bending stress is moment divided by it"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "M",
@@ -1470,7 +1930,20 @@
   "family": "mechmat-0006",
   "version": 1,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0006-b",
@@ -1531,7 +2004,28 @@
   "family": "mechmat-0006",
   "version": 2,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "cantilever",
+    "a beam held rigidly at one end and free at the other, like a diving board or a signal mast arm"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "moment of inertia",
+    "a measure of how far an area's material is spread from an axis; the larger it is, the stiffer the shape in bending about that axis"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0007",
@@ -1609,6 +2103,27 @@
   "version": 1,
   "versions": 2,
   "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ],
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "M_{max}",
@@ -1691,6 +2206,27 @@
   "version": 2,
   "versions": 2,
   "lookup": true,
+  "terms": [
+   [
+    "cantilever",
+    "a beam held rigidly at one end and free at the other, like a diving board or a signal mast arm"
+   ],
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -1755,6 +2291,27 @@
    "alt": "A simply supported beam 8 m long with a uniform load of 10 kN/m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ],
+   [
+    "shear force",
+    "the internal force that acts across a beam's section, trying to slide one part past the other"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "V_{max}",
@@ -1819,6 +2376,27 @@
    "alt": "A simply supported beam 6 m long with a uniform load of 15 kN/m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ],
+   [
+    "shear force",
+    "the internal force that acts across a beam's section, trying to slide one part past the other"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "V_{max}",
@@ -1883,6 +2461,27 @@
    "alt": "A simply supported beam 10 m long with a uniform load of 12 kN/m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ],
+   [
+    "shear force",
+    "the internal force that acts across a beam's section, trying to slide one part past the other"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "V_{max}",
@@ -1947,6 +2546,27 @@
    "alt": "A simply supported beam 5 m long with a uniform load of 24 kN/m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ],
+   [
+    "shear force",
+    "the internal force that acts across a beam's section, trying to slide one part past the other"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "V_{max}",
@@ -2006,7 +2626,30 @@
   "family": "mechmat-0009",
   "version": 1,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M80 150 L210 150 L210 150 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='145' cy='85' r='65' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='145' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>50 mm outside diameter</text>",
+   "alt": "A circular section 50 mm in diameter."
+  },
   "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "T",
@@ -2074,7 +2717,30 @@
   "family": "mechmat-0009",
   "version": 2,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M80 150 L210 150 L210 150 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='145' cy='85' r='65' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='145' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>60 mm outside diameter</text>",
+   "alt": "A circular section 60 mm in diameter."
+  },
   "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "T",
@@ -2142,7 +2808,30 @@
   "family": "mechmat-0009",
   "version": 3,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M80 150 L210 150 L210 150 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='145' cy='85' r='65' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='145' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>40 mm outside diameter</text>",
+   "alt": "A circular section 40 mm in diameter."
+  },
   "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "T",
@@ -2210,7 +2899,30 @@
   "family": "mechmat-0009",
   "version": 4,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M80 150 L210 150 L210 150 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='145' cy='85' r='65' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='145' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>80 mm outside diameter</text>",
+   "alt": "A circular section 80 mm in diameter."
+  },
   "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "T",
@@ -2265,6 +2977,24 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "E",
@@ -2307,6 +3037,24 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "E",
@@ -2349,6 +3097,24 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "E",
@@ -2391,6 +3157,24 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "E",
@@ -2432,7 +3216,14 @@
   "family": "mechmat-0011",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0011-b",
@@ -2468,7 +3259,14 @@
   "family": "mechmat-0011",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0011-c",
@@ -2504,7 +3302,14 @@
   "family": "mechmat-0011",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0011-d",
@@ -2540,7 +3345,14 @@
   "family": "mechmat-0011",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0012",
@@ -2590,7 +3402,33 @@
   "family": "mechmat-0012",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "solutionFigure": {
+   "viewBox": "0 0 400 202",
+   "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='220' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='300' y1='102' x2='140' y2='102' stroke='#568CBB' stroke-width='2'/><circle cx='300' cy='102' r='4' fill='#568CBB'/><circle cx='140' cy='102' r='4' fill='#568CBB'/><circle cx='220' cy='102.0' r='3' fill='#00242E'/><text x='220' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 80</text><text x='306' y='116' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(120, 0)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+   "alt": "Mohr's circle for normal stresses 120 and 40 MPa with shear stress 0 MPa."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "principal stress",
+    "the largest and smallest normal stresses at a point, found on the planes where shear stress is zero"
+   ],
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "mohr's circle",
+    "a circle drawn on stress axes that shows the normal and shear stress on every plane through a point"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0012-b",
@@ -2640,7 +3478,33 @@
   "family": "mechmat-0012",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "solutionFigure": {
+   "viewBox": "0 0 400 154",
+   "svg": "<line x1='40' y1='78.0' x2='370' y2='78.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='146' stroke='#00242E'/><circle cx='284' cy='78.0' r='56' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='340' y1='78' x2='228' y2='78' stroke='#568CBB' stroke-width='2'/><circle cx='340' cy='78' r='4' fill='#568CBB'/><circle cx='228' cy='78' r='4' fill='#568CBB'/><circle cx='284' cy='78.0' r='3' fill='#00242E'/><text x='284' y='94' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 80</text><text x='346' y='92' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(100, 0)</text><text x='376' y='72' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+   "alt": "Mohr's circle for normal stresses 100 and 60 MPa with shear stress 0 MPa."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "principal stress",
+    "the largest and smallest normal stresses at a point, found on the planes where shear stress is zero"
+   ],
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "mohr's circle",
+    "a circle drawn on stress axes that shows the normal and shear stress on every plane through a point"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0012-c",
@@ -2690,7 +3554,33 @@
   "family": "mechmat-0012",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "solutionFigure": {
+   "viewBox": "0 0 400 202",
+   "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='220' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='300' y1='102' x2='140' y2='102' stroke='#568CBB' stroke-width='2'/><circle cx='300' cy='102' r='4' fill='#568CBB'/><circle cx='140' cy='102' r='4' fill='#568CBB'/><circle cx='220' cy='102.0' r='3' fill='#00242E'/><text x='220' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 100</text><text x='306' y='116' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(150, 0)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+   "alt": "Mohr's circle for normal stresses 150 and 50 MPa with shear stress 0 MPa."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "principal stress",
+    "the largest and smallest normal stresses at a point, found on the planes where shear stress is zero"
+   ],
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "mohr's circle",
+    "a circle drawn on stress axes that shows the normal and shear stress on every plane through a point"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0012-d",
@@ -2740,7 +3630,33 @@
   "family": "mechmat-0012",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "solutionFigure": {
+   "viewBox": "0 0 400 202",
+   "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='220' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='300' y1='102' x2='140' y2='102' stroke='#568CBB' stroke-width='2'/><circle cx='300' cy='102' r='4' fill='#568CBB'/><circle cx='140' cy='102' r='4' fill='#568CBB'/><circle cx='220' cy='102.0' r='3' fill='#00242E'/><text x='220' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 60</text><text x='306' y='116' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(90, 0)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+   "alt": "Mohr's circle for normal stresses 90 and 30 MPa with shear stress 0 MPa."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "principal stress",
+    "the largest and smallest normal stresses at a point, found on the planes where shear stress is zero"
+   ],
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "mohr's circle",
+    "a circle drawn on stress axes that shows the normal and shear stress on every plane through a point"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0013",
@@ -2790,6 +3706,13 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "r",
@@ -2845,6 +3768,13 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "r",
@@ -2900,6 +3830,13 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "r",
@@ -2955,6 +3892,13 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "r",
@@ -2998,6 +3942,31 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "torsion",
+    "twisting of a member about its own long axis"
+   ],
+   [
+    "polar moment of inertia",
+    "the measure of a cross-section's resistance to twisting"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "moment of inertia",
+    "a measure of how far an area's material is spread from an axis; the larger it is, the stiffer the shape in bending about that axis"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "J",
@@ -3049,6 +4018,31 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "torsion",
+    "twisting of a member about its own long axis"
+   ],
+   [
+    "polar moment of inertia",
+    "the measure of a cross-section's resistance to twisting"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "moment of inertia",
+    "a measure of how far an area's material is spread from an axis; the larger it is, the stiffer the shape in bending about that axis"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "J",
@@ -3100,6 +4094,31 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "torsion",
+    "twisting of a member about its own long axis"
+   ],
+   [
+    "polar moment of inertia",
+    "the measure of a cross-section's resistance to twisting"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "moment of inertia",
+    "a measure of how far an area's material is spread from an axis; the larger it is, the stiffer the shape in bending about that axis"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "J",
@@ -3151,6 +4170,31 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "torsion",
+    "twisting of a member about its own long axis"
+   ],
+   [
+    "polar moment of inertia",
+    "the measure of a cross-section's resistance to twisting"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "moment of inertia",
+    "a measure of how far an area's material is spread from an axis; the larger it is, the stiffer the shape in bending about that axis"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "J",
@@ -3211,6 +4255,31 @@
    "alt": "A beam 10 m long, a pin support at 0 m, a roller support at 10 m, a uniform load of 6 kN/m from 0 to 4 m. Reactions: 19.2 kN at 0 m, 4.8 kN at 10 m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ],
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "M_{max}",
@@ -3263,6 +4332,31 @@
    "alt": "A beam 8 m long, a pin support at 0 m, a roller support at 8 m, a uniform load of 10 kN/m from 0 to 5 m. Reactions: 34.38 kN at 0 m, 15.62 kN at 8 m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ],
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "M_{max}",
@@ -3315,6 +4409,31 @@
    "alt": "A beam 12 m long, a pin support at 0 m, a roller support at 12 m, a uniform load of 4 kN/m from 0 to 6 m. Reactions: 18 kN at 0 m, 6 kN at 12 m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ],
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "M_{max}",
@@ -3355,7 +4474,7 @@
   },
   "family": "mechmat-0016",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 165",
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='290' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='268' y1='114' x2='312' y2='114' stroke='#00242E' stroke-width='2'/><line x1='170' y1='10' x2='170' y2='69' stroke='#00574A' stroke-width='3'/><path d='M170 77 L164 65 L176 65 Z' fill='#00574A'/><text x='178' y='20' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>10 kN</text><line x1='350' y1='10' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='342' y='32' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>6 kN</text><line x1='50' y1='136' x2='170' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='170' y1='130' x2='170' y2='142' stroke='#00242E'/><text x='110' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='170' y1='136' x2='290' y2='136' stroke='#00242E'/><line x1='170' y1='130' x2='170' y2='142' stroke='#00242E'/><line x1='290' y1='130' x2='290' y2='142' stroke='#00242E'/><text x='230' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='290' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='290' y1='130' x2='290' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='320' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text>",
@@ -3367,6 +4486,27 @@
    "alt": "A beam 10 m long, a pin support at 0 m, a roller support at 8 m, a 10 kN load at 4 m, a 6 kN load at 10 m. Reactions: 3.5 kN at 0 m, 12.5 kN at 8 m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "B",
@@ -3411,7 +4551,7 @@
   },
   "family": "mechmat-0016",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 165",
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='281' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='259' y1='114' x2='303' y2='114' stroke='#00242E' stroke-width='2'/><line x1='188' y1='10' x2='188' y2='69' stroke='#00574A' stroke-width='3'/><path d='M188 77 L182 65 L194 65 Z' fill='#00574A'/><text x='196' y='20' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>8 kN</text><line x1='350' y1='10' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='342' y='32' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>5 kN</text><line x1='50' y1='136' x2='188' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='188' y1='130' x2='188' y2='142' stroke='#00242E'/><text x='119' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6 m</text><line x1='188' y1='136' x2='281' y2='136' stroke='#00242E'/><line x1='188' y1='130' x2='188' y2='142' stroke='#00242E'/><line x1='281' y1='130' x2='281' y2='142' stroke='#00242E'/><text x='235' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='281' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='281' y1='130' x2='281' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='315' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text>",
@@ -3423,6 +4563,27 @@
    "alt": "A beam 13 m long, a pin support at 0 m, a roller support at 10 m, a 8 kN load at 6 m, a 5 kN load at 13 m. Reactions: 1.7 kN at 0 m, 11.3 kN at 10 m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "B",
@@ -3467,7 +4628,7 @@
   },
   "family": "mechmat-0016",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 165",
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='290' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='268' y1='114' x2='312' y2='114' stroke='#00242E' stroke-width='2'/><line x1='130' y1='10' x2='130' y2='69' stroke='#00574A' stroke-width='3'/><path d='M130 77 L124 65 L136 65 Z' fill='#00574A'/><text x='138' y='20' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>30 kN</text><line x1='350' y1='10' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='342' y='32' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>10 kN</text><line x1='50' y1='136' x2='130' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='130' y1='130' x2='130' y2='142' stroke='#00242E'/><text x='90' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2 m</text><line x1='130' y1='136' x2='290' y2='136' stroke='#00242E'/><line x1='130' y1='130' x2='130' y2='142' stroke='#00242E'/><line x1='290' y1='130' x2='290' y2='142' stroke='#00242E'/><text x='210' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='290' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='290' y1='130' x2='290' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='320' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>1.5 m</text>",
@@ -3479,6 +4640,104 @@
    "alt": "A beam 7.5 m long, a pin support at 0 m, a roller support at 6 m, a 30 kN load at 2 m, a 10 kN load at 7.5 m. Reactions: 17.5 kN at 0 m, 22.5 kN at 6 m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
+  "symbols": [
+   [
+    "B",
+    "support B"
+   ],
+   [
+    "A",
+    "cross-sectional area"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0016-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A beam rests on supports A and B, 9 m apart, and overhangs 2.5 m beyond B. It carries 9 kN at 5 m from A and 6 kN at the tip of the overhang. What is the largest bending moment magnitude in the beam?",
+  "answer": {
+   "value": 15.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN·m"
+  },
+  "eli5": "The moment peaks where the shear changes sign: under the load in the span and over support B. The moment at B is simply the overhang load times its arm, and it is negative. Compare the two magnitudes.",
+  "solution": "Moment at B = -6(2.5) = -15.0 kN·m.\n\nReaction at A = \\frac{9(9 - 5) - 6(2.5)}{9} = 2.333 kN, so the moment under the span load = 2.333 × 5 = 11.7 kN·m.\n\nThe larger magnitude is 15.0 kN·m.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0016",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='285' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='263' y1='114' x2='307' y2='114' stroke='#00242E' stroke-width='2'/><line x1='180' y1='10' x2='180' y2='69' stroke='#00574A' stroke-width='3'/><path d='M180 77 L174 65 L186 65 Z' fill='#00574A'/><text x='188' y='20' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>9 kN</text><line x1='350' y1='10' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='342' y='32' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>6 kN</text><line x1='50' y1='136' x2='180' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='180' y1='130' x2='180' y2='142' stroke='#00242E'/><text x='115' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text><line x1='180' y1='136' x2='285' y2='136' stroke='#00242E'/><line x1='180' y1='130' x2='180' y2='142' stroke='#00242E'/><line x1='285' y1='130' x2='285' y2='142' stroke='#00242E'/><text x='233' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='285' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='285' y1='130' x2='285' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='317' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text>",
+   "alt": "A beam 11.5 m long, a pin support at 0 m, a roller support at 9 m, a 9 kN load at 5 m, a 6 kN load at 11.5 m."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 205",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='285' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='263' y1='114' x2='307' y2='114' stroke='#00242E' stroke-width='2'/><line x1='180' y1='10' x2='180' y2='69' stroke='#00574A' stroke-width='3'/><path d='M180 77 L174 65 L186 65 Z' fill='#00574A'/><text x='188' y='20' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>9 kN</text><line x1='350' y1='10' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='342' y='32' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>6 kN</text><line x1='50' y1='176' x2='180' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='180' y1='170' x2='180' y2='182' stroke='#00242E'/><text x='115' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text><line x1='180' y1='176' x2='285' y2='176' stroke='#00242E'/><line x1='180' y1='170' x2='180' y2='182' stroke='#00242E'/><line x1='285' y1='170' x2='285' y2='182' stroke='#00242E'/><text x='233' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='285' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='285' y1='170' x2='285' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='317' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text><line x1='50' y1='162' x2='50' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M50 120 L44 132 L56 132 Z' fill='#568CBB'/><text x='60' y='160' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>2.33 kN</text><line x1='285' y1='162' x2='285' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M285 120 L279 132 L291 132 Z' fill='#568CBB'/><text x='275' y='160' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>12.67 kN</text>",
+   "alt": "A beam 11.5 m long, a pin support at 0 m, a roller support at 9 m, a 9 kN load at 5 m, a 6 kN load at 11.5 m. Reactions: 2.33 kN at 0 m, 12.67 kN at 9 m."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "B",
@@ -3523,7 +4782,7 @@
   },
   "family": "mechmat-0017",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 176",
    "svg": "<line x1='40' y1='93' x2='370' y2='93' stroke='#00242E'/><path d='M60 93 L60 30 L256 93 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><path d='M256 93 L340 120 L340 93 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='54' y='34' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>+21 kN</text><text x='346' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>-9 kN</text><line x1='60' y1='142' x2='340' y2='142' stroke='#00242E'/><line x1='60' y1='136' x2='60' y2='148' stroke='#00242E'/><line x1='340' y1='136' x2='340' y2='148' stroke='#00242E'/><text x='200' y='158' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>10 m</text><text x='46' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Shear</text>",
@@ -3535,6 +4794,23 @@
    "alt": "A shear diagram falling in a straight line from +21 kN to -9 kN over 10 m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "M_{max}",
@@ -3575,7 +4851,7 @@
   },
   "family": "mechmat-0017",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 176",
    "svg": "<line x1='40' y1='66' x2='370' y2='66' stroke='#00242E'/><path d='M60 66 L60 30 L172 66 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><path d='M172 66 L340 120 L340 66 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='54' y='34' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>+16 kN</text><text x='346' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>-24 kN</text><line x1='60' y1='142' x2='340' y2='142' stroke='#00242E'/><line x1='60' y1='136' x2='60' y2='148' stroke='#00242E'/><line x1='340' y1='136' x2='340' y2='148' stroke='#00242E'/><text x='200' y='158' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>8 m</text><text x='46' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Shear</text>",
@@ -3587,6 +4863,23 @@
    "alt": "A shear diagram falling in a straight line from +16 kN to -24 kN over 8 m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "M_{max}",
@@ -3627,7 +4920,7 @@
   },
   "family": "mechmat-0017",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 176",
    "svg": "<line x1='40' y1='98' x2='370' y2='98' stroke='#00242E'/><path d='M60 98 L60 30 L270 98 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><path d='M270 98 L340 120 L340 98 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='54' y='34' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>+45 kN</text><text x='346' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>-15 kN</text><line x1='60' y1='142' x2='340' y2='142' stroke='#00242E'/><line x1='60' y1='136' x2='60' y2='148' stroke='#00242E'/><line x1='340' y1='136' x2='340' y2='148' stroke='#00242E'/><text x='200' y='158' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6 m</text><text x='46' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Shear</text>",
@@ -3639,6 +4932,92 @@
    "alt": "A shear diagram falling in a straight line from +45 kN to -15 kN over 6 m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
+  "symbols": [
+   [
+    "M_{max}",
+    "maximum bending moment"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0017-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "The shear diagram of a beam starts at +18 kN at the left support, where the moment is zero, and falls in a straight line to -16 kN at a point 9 m away. What is the maximum bending moment in that length?",
+  "answer": {
+   "value": 42.88,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN·m"
+  },
+  "eli5": "The moment is greatest where the shear crosses zero. Similar triangles locate the crossing, and the moment there is the area of the positive shear triangle.",
+  "solution": "Zero shear at 9 × \\frac{18}{18 + 16} = 4.76 m from the support.\n\nM_{max} = \\frac{1}{2}(18)(4.76) = 42.88 kN·m.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0017",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='40' y1='78' x2='370' y2='78' stroke='#00242E'/><path d='M60 78 L60 30 L208 78 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><path d='M208 78 L340 120 L340 78 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='54' y='34' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>+18 kN</text><text x='346' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>-16 kN</text><line x1='60' y1='142' x2='340' y2='142' stroke='#00242E'/><line x1='60' y1='136' x2='60' y2='148' stroke='#00242E'/><line x1='340' y1='136' x2='340' y2='148' stroke='#00242E'/><text x='200' y='158' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>9 m</text><text x='46' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Shear</text>",
+   "alt": "A shear diagram falling in a straight line from +18 kN to -16 kN over 9 m."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<line x1='40' y1='78' x2='370' y2='78' stroke='#00242E'/><path d='M60 78 L60 30 L208 78 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><path d='M208 78 L340 120 L340 78 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='54' y='34' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>+18 kN</text><text x='346' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>-16 kN</text><line x1='60' y1='142' x2='340' y2='142' stroke='#00242E'/><line x1='60' y1='136' x2='60' y2='148' stroke='#00242E'/><line x1='340' y1='136' x2='340' y2='148' stroke='#00242E'/><text x='200' y='158' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>9 m</text><text x='46' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Shear</text><line x1='208' y1='24' x2='208' y2='128' stroke='#568CBB' stroke-dasharray='5 4'/><text x='200' y='166' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Zero shear at 4.76 m. Area of the shaded triangle: M = 42.88 kN·m</text>",
+   "alt": "A shear diagram falling in a straight line from +18 kN to -16 kN over 9 m."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "M_{max}",
@@ -3679,13 +5058,34 @@
   },
   "family": "mechmat-0018",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 165",
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>4 kN/m</text><line x1='350' y1='2' x2='350' y2='36' stroke='#00574A' stroke-width='3'/><path d='M350 44 L344 32 L356 32 Z' fill='#00574A'/><text x='342' y='12' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>10 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3 m</text>",
    "alt": "A beam 3 m long, fixed at the left end, a uniform load of 4 kN/m from 0 to 3 m, a 10 kN load at 3 m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "cantilever",
+    "a beam held rigidly at one end and free at the other, like a diving board or a signal mast arm"
+   ],
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "M",
@@ -3726,13 +5126,34 @@
   },
   "family": "mechmat-0018",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 165",
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>8 kN/m</text><line x1='350' y1='2' x2='350' y2='36' stroke='#00574A' stroke-width='3'/><path d='M350 44 L344 32 L356 32 Z' fill='#00574A'/><text x='342' y='12' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>6 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text>",
    "alt": "A beam 2.5 m long, fixed at the left end, a uniform load of 8 kN/m from 0 to 2.5 m, a 6 kN load at 2.5 m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "cantilever",
+    "a beam held rigidly at one end and free at the other, like a diving board or a signal mast arm"
+   ],
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "M",
@@ -3773,13 +5194,102 @@
   },
   "family": "mechmat-0018",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 165",
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>2 kN/m</text><line x1='350' y1='2' x2='350' y2='36' stroke='#00574A' stroke-width='3'/><path d='M350 44 L344 32 L356 32 Z' fill='#00574A'/><text x='342' y='12' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>15 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text>",
    "alt": "A beam 4 m long, fixed at the left end, a uniform load of 2 kN/m from 0 to 4 m, a 15 kN load at 4 m."
   },
   "lookup": true,
+  "terms": [
+   [
+    "cantilever",
+    "a beam held rigidly at one end and free at the other, like a diving board or a signal mast arm"
+   ],
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
+  "symbols": [
+   [
+    "M",
+    "bending moment"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0018-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A cantilever beam 2.8 m long carries a uniform load of 6 kN/m over its whole length and a 8 kN point load at its free end. What is the magnitude of the bending moment at the fixed support?",
+  "answer": {
+   "value": 45.9,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN·m"
+  },
+  "eli5": "For a cantilever, cut at the support and take moments of everything outboard. The uniform load acts as w L at mid-length. The moment is negative (tension on top) and zero at the free end.",
+  "solution": "M = \\frac{6(2.8)^{2}}{2} + 8(2.8) = 23.5 + 22.4 = 45.9 kN·m.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0018",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>6 kN/m</text><line x1='350' y1='2' x2='350' y2='36' stroke='#00574A' stroke-width='3'/><path d='M350 44 L344 32 L356 32 Z' fill='#00574A'/><text x='342' y='12' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>8 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.8 m</text>",
+   "alt": "A beam 2.8 m long, fixed at the left end, a uniform load of 6 kN/m from 0 to 2.8 m, a 8 kN load at 2.8 m."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "cantilever",
+    "a beam held rigidly at one end and free at the other, like a diving board or a signal mast arm"
+   ],
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ],
   "symbols": [
    [
     "M",
@@ -3820,7 +5330,7 @@
   },
   "family": "mechmat-0019",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 165",
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>12 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>8 m</text>",
@@ -3831,7 +5341,28 @@
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>12 kN/m</text><line x1='50' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='200' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>8 m</text><line x1='50' y1='162' x2='50' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M50 120 L44 132 L56 132 Z' fill='#568CBB'/><text x='60' y='160' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>48 kN</text><line x1='350' y1='162' x2='350' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M350 120 L344 132 L356 132 Z' fill='#568CBB'/><text x='340' y='160' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>48 kN</text>",
    "alt": "A beam 8 m long, a pin support at 0 m, a roller support at 8 m, a uniform load of 12 kN/m from 0 to 8 m. Reactions: 48 kN at 0 m, 48 kN at 8 m."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ],
+   [
+    "shear force",
+    "the internal force that acts across a beam's section, trying to slide one part past the other"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ]
  },
  {
   "id": "mechmat-0019-b",
@@ -3866,7 +5397,7 @@
   },
   "family": "mechmat-0019",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 165",
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>9 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>10 m</text>",
@@ -3877,7 +5408,28 @@
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>9 kN/m</text><line x1='50' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='200' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>10 m</text><line x1='50' y1='162' x2='50' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M50 120 L44 132 L56 132 Z' fill='#568CBB'/><text x='60' y='160' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>45 kN</text><line x1='350' y1='162' x2='350' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M350 120 L344 132 L356 132 Z' fill='#568CBB'/><text x='340' y='160' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>45 kN</text>",
    "alt": "A beam 10 m long, a pin support at 0 m, a roller support at 10 m, a uniform load of 9 kN/m from 0 to 10 m. Reactions: 45 kN at 0 m, 45 kN at 10 m."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ],
+   [
+    "shear force",
+    "the internal force that acts across a beam's section, trying to slide one part past the other"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ]
  },
  {
   "id": "mechmat-0019-c",
@@ -3912,7 +5464,7 @@
   },
   "family": "mechmat-0019",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 165",
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>20 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6 m</text>",
@@ -3923,7 +5475,95 @@
    "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>20 kN/m</text><line x1='50' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='200' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6 m</text><line x1='50' y1='162' x2='50' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M50 120 L44 132 L56 132 Z' fill='#568CBB'/><text x='60' y='160' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>60 kN</text><line x1='350' y1='162' x2='350' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M350 120 L344 132 L356 132 Z' fill='#568CBB'/><text x='340' y='160' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>60 kN</text>",
    "alt": "A beam 6 m long, a pin support at 0 m, a roller support at 6 m, a uniform load of 20 kN/m from 0 to 6 m. Reactions: 60 kN at 0 m, 60 kN at 6 m."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ],
+   [
+    "shear force",
+    "the internal force that acts across a beam's section, trying to slide one part past the other"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0019-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 9 m and carries a uniform load of 10 kN/m over the whole span. What is the shear force 2.8 m from the left support?",
+  "answer": {
+   "value": 17.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "The shear starts at the reaction, w L / 2, and falls by w for every metre of uniform load. It passes through zero at midspan.",
+  "solution": "V = \\frac{10(9)}{2} - 10(2.8) = 45.0 - 28.0 = 17.0 kN.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shearing force and bending moment"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0019",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>10 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>9 m</text>",
+   "alt": "A beam 9 m long, a pin support at 0 m, a roller support at 9 m, a uniform load of 10 kN/m from 0 to 9 m."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 205",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>10 kN/m</text><line x1='50' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='200' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>9 m</text><line x1='50' y1='162' x2='50' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M50 120 L44 132 L56 132 Z' fill='#568CBB'/><text x='60' y='160' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>45 kN</text><line x1='350' y1='162' x2='350' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M350 120 L344 132 L356 132 Z' fill='#568CBB'/><text x='340' y='160' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>45 kN</text>",
+   "alt": "A beam 9 m long, a pin support at 0 m, a roller support at 9 m, a uniform load of 10 kN/m from 0 to 9 m. Reactions: 45 kN at 0 m, 45 kN at 9 m."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ],
+   [
+    "shear force",
+    "the internal force that acts across a beam's section, trying to slide one part past the other"
+   ],
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ]
+  ]
  },
  {
   "id": "mechmat-0020",
@@ -3971,8 +5611,26 @@
   },
   "family": "mechmat-0020",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -4026,8 +5684,26 @@
   },
   "family": "mechmat-0020",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -4081,8 +5757,99 @@
   },
   "family": "mechmat-0020",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
+  "symbols": [
+   [
+    "A",
+    "cross-sectional area"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0020-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A clevis is pinned by a single 20 mm diameter bolt that is loaded in double shear by a force of 75 kN. What is the average shear stress in the bolt?",
+  "options": [
+   {
+    "id": "a",
+    "text": "238.7 MPa"
+   },
+   {
+    "id": "b",
+    "text": "29.8 MPa"
+   },
+   {
+    "id": "c",
+    "text": "119.4 MPa"
+   },
+   {
+    "id": "d",
+    "text": "477.5 MPa"
+   }
+  ],
+  "answer": "c",
+  "eli5": "In double shear the bolt is cut on two planes, so each plane carries half the load. Average shear stress is the force on one plane divided by the bolt's cross-sectional area.",
+  "solution": "A = \\frac{π(20)^{2}}{4} = 314.2 mm^{2}.\n\nStress = \\frac{75,000 / 2}{314.2} = 119.4 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shear stress"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0020",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -4121,8 +5888,20 @@
   },
   "family": "mechmat-0021",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "t",
@@ -4161,8 +5940,20 @@
   },
   "family": "mechmat-0021",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "t",
@@ -4201,8 +5992,72 @@
   },
   "family": "mechmat-0021",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
+  "symbols": [
+   [
+    "t",
+    "wall thickness"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0021-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 21 mm diameter bolt bears against a plate 11 mm thick and transfers 52 kN to it. What is the average bearing stress on the plate?",
+  "answer": {
+   "value": 225.1,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "MPa"
+  },
+  "eli5": "Bearing stress is taken on the projected area of contact, the bolt diameter times the plate thickness, not on the curved surface.",
+  "solution": "Bearing stress = \\frac{P}{d t} = \\frac{52,000}{21(11)} = 225.1 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0021",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "t",
@@ -4244,8 +6099,30 @@
   },
   "family": "mechmat-0022",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ],
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ]
  },
  {
   "id": "mechmat-0022-b",
@@ -4281,8 +6158,30 @@
   },
   "family": "mechmat-0022",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ],
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ]
  },
  {
   "id": "mechmat-0022-c",
@@ -4318,8 +6217,89 @@
   },
   "family": "mechmat-0022",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ],
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0022-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A cable with a cross-sectional area of 225 mm^{2} and a modulus of elasticity of 70 GPa carries a tension of 32 kN. What is the strain in the cable, in millionths?",
+  "answer": {
+   "value": 2032.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "× 10^{-6}"
+  },
+  "eli5": "Stress is force over area, and Hooke's law gives strain as stress divided by E. Strain has no units and does not depend on the cable's length.",
+  "solution": "Stress = \\frac{32,000}{225} = 142.2 MPa.\n\nStrain = \\frac{142.2}{70,000} = 0.002032 = 2,032 × 10^{-6}.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "uniaxial loading and deformation",
+     "Hooke's law"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0022",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ],
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ]
  },
  {
   "id": "mechmat-0023",
@@ -4367,8 +6347,39 @@
   },
   "family": "mechmat-0023",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<rect x='168' y='20' width='65' height='130' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='148' y1='85' x2='252' y2='85' stroke='#568CBB' stroke-dasharray='6 4'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>100 mm</text><text x='160' y='52' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>200 mm</text>",
+   "alt": "A rectangular section 100 mm wide and 200 mm deep with its horizontal centroidal axis."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "shear force",
+    "the internal force that acts across a beam's section, trying to slide one part past the other"
+   ],
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "neutral axis",
+    "the line through a bent beam's section where the material is neither stretched nor squeezed"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ]
  },
  {
   "id": "mechmat-0023-b",
@@ -4416,8 +6427,39 @@
   },
   "family": "mechmat-0023",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<rect x='178' y='20' width='43' height='130' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='158' y1='85' x2='242' y2='85' stroke='#568CBB' stroke-dasharray='6 4'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>50 mm</text><text x='170' y='52' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>150 mm</text>",
+   "alt": "A rectangular section 50 mm wide and 150 mm deep with its horizontal centroidal axis."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "shear force",
+    "the internal force that acts across a beam's section, trying to slide one part past the other"
+   ],
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "neutral axis",
+    "the line through a bent beam's section where the material is neither stretched nor squeezed"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ]
  },
  {
   "id": "mechmat-0023-c",
@@ -4465,8 +6507,119 @@
   },
   "family": "mechmat-0023",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<rect x='168' y='20' width='65' height='130' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='148' y1='85' x2='252' y2='85' stroke='#568CBB' stroke-dasharray='6 4'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>200 mm</text><text x='160' y='52' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>400 mm</text>",
+   "alt": "A rectangular section 200 mm wide and 400 mm deep with its horizontal centroidal axis."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "shear force",
+    "the internal force that acts across a beam's section, trying to slide one part past the other"
+   ],
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "neutral axis",
+    "the line through a bent beam's section where the material is neither stretched nor squeezed"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0023-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rectangular beam 75 mm wide and 175 mm deep carries a shear force of 42 kN. What is the maximum transverse shear stress?",
+  "options": [
+   {
+    "id": "a",
+    "text": "4.80 MPa"
+   },
+   {
+    "id": "b",
+    "text": "3.20 MPa"
+   },
+   {
+    "id": "c",
+    "text": "6.40 MPa"
+   },
+   {
+    "id": "d",
+    "text": "4.27 MPa"
+   }
+  ],
+  "answer": "a",
+  "eli5": "Transverse shear stress in a rectangle varies parabolically, from zero at the top and bottom to a maximum at the neutral axis of 1.5 times the average, V / A.",
+  "solution": "Maximum stress = \\frac{3V}{2A} = \\frac{3(42,000)}{2(75)(175)} = 4.80 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "transverse shear"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0023",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 176",
+   "svg": "<rect x='172' y='20' width='56' height='130' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='152' y1='85' x2='248' y2='85' stroke='#568CBB' stroke-dasharray='6 4'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>75 mm</text><text x='164' y='52' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>175 mm</text>",
+   "alt": "A rectangular section 75 mm wide and 175 mm deep with its horizontal centroidal axis."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "shear force",
+    "the internal force that acts across a beam's section, trying to slide one part past the other"
+   ],
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "neutral axis",
+    "the line through a bent beam's section where the material is neither stretched nor squeezed"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ]
  },
  {
   "id": "mechmat-0024",
@@ -4501,8 +6654,30 @@
   },
   "family": "mechmat-0024",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "poisson's ratio",
+    "how much a bar thins sideways compared with how much it stretches lengthways"
+   ],
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ]
  },
  {
   "id": "mechmat-0024-b",
@@ -4537,8 +6712,30 @@
   },
   "family": "mechmat-0024",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "poisson's ratio",
+    "how much a bar thins sideways compared with how much it stretches lengthways"
+   ],
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ]
  },
  {
   "id": "mechmat-0024-c",
@@ -4573,8 +6770,88 @@
   },
   "family": "mechmat-0024",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "poisson's ratio",
+    "how much a bar thins sideways compared with how much it stretches lengthways"
+   ],
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0024-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 32 mm diameter rod carries an axial tensile stress of 132 MPa. E = 200 GPa and Poisson's ratio is 0.32. By how much does its diameter decrease?",
+  "answer": {
+   "value": 0.00676,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "Poisson's ratio is lateral strain divided by axial strain, with opposite sign: a bar that stretches gets thinner. Find the axial strain from Hooke's law, multiply by the ratio, then by the diameter.",
+  "solution": "Axial strain = \\frac{132}{200,000} = 0.000660.\n\nLateral strain = 0.32 × 0.000660 = 0.000211.\n\nChange in diameter = 0.000211 × 32 = 0.00676 mm.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Poisson's ratio"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0024",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "poisson's ratio",
+    "how much a bar thins sideways compared with how much it stretches lengthways"
+   ],
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ]
  },
  {
   "id": "mechmat-0025",
@@ -4609,8 +6886,34 @@
   },
   "family": "mechmat-0025",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "section modulus",
+    "moment of inertia divided by the distance to the outer edge; bending stress is moment divided by it"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "S",
@@ -4651,8 +6954,34 @@
   },
   "family": "mechmat-0025",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "section modulus",
+    "moment of inertia divided by the distance to the outer edge; bending stress is moment divided by it"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "S",
@@ -4693,8 +7022,102 @@
   },
   "family": "mechmat-0025",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "section modulus",
+    "moment of inertia divided by the distance to the outer edge; bending stress is moment divided by it"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
+  "symbols": [
+   [
+    "S",
+    "section modulus, I / c"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0025-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A beam must resist a bending moment of 82 kN·m without the bending stress exceeding 158 MPa. What section modulus is required?",
+  "answer": {
+   "value": 519.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "× 10^{3} mm^{3}"
+  },
+  "eli5": "Bending stress is M / S, where the section modulus S is I / c. The required section modulus is the moment divided by the allowable stress.",
+  "solution": "S = \\frac{M}{stress} = \\frac{82 × 10^{6}}{158} = 518,987 mm^{3} = 519.0 × 10^{3} mm^{3}.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "stresses in beams"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0025",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "bending moment",
+    "the internal turning effect at a beam's section that makes the beam curve"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "section modulus",
+    "moment of inertia divided by the distance to the outer edge; bending stress is moment divided by it"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "S",
@@ -4735,8 +7158,30 @@
   },
   "family": "mechmat-0026",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ],
+   [
+    "poisson's ratio",
+    "how much a bar thins sideways compared with how much it stretches lengthways"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "E",
@@ -4781,8 +7226,30 @@
   },
   "family": "mechmat-0026",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ],
+   [
+    "poisson's ratio",
+    "how much a bar thins sideways compared with how much it stretches lengthways"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "E",
@@ -4827,8 +7294,98 @@
   },
   "family": "mechmat-0026",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ],
+   [
+    "poisson's ratio",
+    "how much a bar thins sideways compared with how much it stretches lengthways"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
+  "symbols": [
+   [
+    "E",
+    "modulus of elasticity"
+   ],
+   [
+    "G",
+    "shear modulus"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0026-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A material has a modulus of elasticity of 110 GPa and a Poisson's ratio of 0.32. What is its shear modulus?",
+  "answer": {
+   "value": 41.7,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "GPa"
+  },
+  "eli5": "For an isotropic elastic material only two of E, G and Poisson's ratio are independent: G = E / (2(1 + Poisson's ratio)).",
+  "solution": "G = \\frac{110}{2(1 + 0.32)} = 41.7 GPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "shear stress-strain"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0026",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ],
+   [
+    "poisson's ratio",
+    "how much a bar thins sideways compared with how much it stretches lengthways"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "E",
@@ -4873,8 +7430,43 @@
   },
   "family": "mechmat-0027",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M80 150 L210 150 L210 150 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='145' cy='85' r='65' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='145' cy='85' r='49' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><text x='145' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>80 mm outside, 60 mm inside</text>",
+   "alt": "A hollow circular section 80 mm in diameter with a 60 mm bore."
+  },
   "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "polar moment of inertia",
+    "the measure of a cross-section's resistance to twisting"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "moment of inertia",
+    "a measure of how far an area's material is spread from an axis; the larger it is, the stiffer the shape in bending about that axis"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "J",
@@ -4915,8 +7507,43 @@
   },
   "family": "mechmat-0027",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M80 150 L210 150 L210 150 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='145' cy='85' r='65' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='145' cy='85' r='54' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><text x='145' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>120 mm outside, 100 mm inside</text>",
+   "alt": "A hollow circular section 120 mm in diameter with a 100 mm bore."
+  },
   "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "polar moment of inertia",
+    "the measure of a cross-section's resistance to twisting"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "moment of inertia",
+    "a measure of how far an area's material is spread from an axis; the larger it is, the stiffer the shape in bending about that axis"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "J",
@@ -4957,8 +7584,120 @@
   },
   "family": "mechmat-0027",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M80 150 L210 150 L210 150 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='145' cy='85' r='65' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='145' cy='85' r='52' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><text x='145' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>50 mm outside, 40 mm inside</text>",
+   "alt": "A hollow circular section 50 mm in diameter with a 40 mm bore."
+  },
   "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "polar moment of inertia",
+    "the measure of a cross-section's resistance to twisting"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "moment of inertia",
+    "a measure of how far an area's material is spread from an axis; the larger it is, the stiffer the shape in bending about that axis"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
+  "symbols": [
+   [
+    "J",
+    "polar moment of inertia"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0027-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A hollow shaft with an outside diameter of 100 mm and an inside diameter of 80 mm carries a torque of 6.5 kN·m. What is the maximum shear stress?",
+  "answer": {
+   "value": 56.07,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "MPa"
+  },
+  "eli5": "Torsional shear stress is T r / J and is greatest at the outer surface. For a tube, J is the outer circle's polar moment of inertia minus the bore's.",
+  "solution": "J = \\frac{π(100^{4} - 80^{4})}{32} = 5,796,238 mm^{4}.\n\nStress = \\frac{(6.5 × 10^{6})(50.0)}{5,796,238} = 56.07 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "torsion"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0027",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M80 150 L210 150 L210 150 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='145' cy='85' r='65' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='145' cy='85' r='52' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><text x='145' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>100 mm outside, 80 mm inside</text>",
+   "alt": "A hollow circular section 100 mm in diameter with a 80 mm bore."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "polar moment of inertia",
+    "the measure of a cross-section's resistance to twisting"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "moment of inertia",
+    "a measure of how far an area's material is spread from an axis; the larger it is, the stiffer the shape in bending about that axis"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-a",
+    "mechmat",
+    "Mechanics of Materials: Shear and moment diagrams"
+   ],
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "J",
@@ -4999,8 +7738,15 @@
   },
   "family": "mechmat-0028",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0028-b",
@@ -5035,8 +7781,15 @@
   },
   "family": "mechmat-0028",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0028-c",
@@ -5071,8 +7824,58 @@
   },
   "family": "mechmat-0028",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0028-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel bar (E = 200 GPa) 1,750 mm long with an area of 650 mm^{2} is joined end to end with an aluminium bar (E = 70 GPa) 1,100 mm long with an area of 900 mm^{2}. What axial force stretches the pair by a total of 1.8 mm?",
+  "answer": {
+   "value": 58.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "Bars in series carry the same force, and their elongations add. Write the total as P times the sum of L / (A E) for the two bars, then solve for P. Working in N and mm gives the force in N.",
+  "solution": "\\frac{L}{AE}: steel \\frac{1,750}{650(200,000)} = 1.3462 × 10^{-5} mm/N; aluminium \\frac{1,100}{900(70,000)} = 1.7460 × 10^{-5} mm/N.\n\nP = \\frac{1.8}{3.0922 × 10^{-5}} = 58,211 N = 58.2 kN.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "uniaxial loading and deformation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0028",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0029",
@@ -5107,8 +7910,15 @@
   },
   "family": "mechmat-0029",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "L",
@@ -5153,8 +7963,15 @@
   },
   "family": "mechmat-0029",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "L",
@@ -5199,8 +8016,68 @@
   },
   "family": "mechmat-0029",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
+  "symbols": [
+   [
+    "L",
+    "length"
+   ],
+   [
+    "C",
+    "centre of Mohr's circle"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0029-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A bar 2.5 m long has a gap of 0.8 mm between its free end and a rigid wall. Its coefficient of thermal expansion is 18 × 10^{-6} per °C. What temperature rise just closes the gap?",
+  "answer": {
+   "value": 17.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "°C"
+  },
+  "eli5": "A free bar lengthens by (coefficient)(length)(temperature change). Set that equal to the gap. No stress develops until the gap has closed.",
+  "solution": "Temperature rise = \\frac{gap}{(coefficient) L} = \\frac{0.8}{(18 × 10^{-6})(2,500)} = 17.8 °C.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "thermal deformations"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0029",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "L",
@@ -5245,8 +8122,26 @@
   },
   "family": "mechmat-0030",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>10 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6 m</text>",
+   "alt": "A beam 6 m long, a pin support at 0 m, a roller support at 6 m, a uniform load of 10 kN/m from 0 to 6 m."
+  },
   "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "L",
@@ -5287,8 +8182,26 @@
   },
   "family": "mechmat-0030",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>5 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>8 m</text>",
+   "alt": "A beam 8 m long, a pin support at 0 m, a roller support at 8 m, a uniform load of 5 kN/m from 0 to 8 m."
+  },
   "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "L",
@@ -5329,8 +8242,86 @@
   },
   "family": "mechmat-0030",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>25 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text>",
+   "alt": "A beam 4 m long, a pin support at 0 m, a roller support at 4 m, a uniform load of 25 kN/m from 0 to 4 m."
+  },
   "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
+  "symbols": [
+   [
+    "L",
+    "length"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0030-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A simply supported beam spans 7 m and carries a uniform load of 8 kN/m. Its flexural rigidity EI is 50,000 kN·m^{2}. What is the midspan deflection?",
+  "answer": {
+   "value": 5.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "For a simply supported beam under uniform load, the maximum deflection is at midspan and equals 5 w L^{4} / (384 EI). The fourth power makes deflection very sensitive to span.",
+  "solution": "Deflection = \\frac{5 w L^{4}}{384 EI} = \\frac{5(8)(7)^{4}}{384(50,000)} = 0.005002 m = 5.00 mm.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "deflection of beams"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0030",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 165",
+   "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>8 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>7 m</text>",
+   "alt": "A beam 7 m long, a pin support at 0 m, a roller support at 7 m, a uniform load of 8 kN/m from 0 to 7 m."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "simply supported",
+    "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "L",
@@ -5371,8 +8362,25 @@
   },
   "family": "mechmat-0031",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ],
+   [
+    "statically indeterminate",
+    "having more unknown support forces than the equilibrium equations can solve, so deformation must be used as well"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "R_{left}",
@@ -5421,8 +8429,25 @@
   },
   "family": "mechmat-0031",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ],
+   [
+    "statically indeterminate",
+    "having more unknown support forces than the equilibrium equations can solve, so deformation must be used as well"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "R_{left}",
@@ -5471,8 +8496,92 @@
   },
   "family": "mechmat-0031",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ],
+   [
+    "statically indeterminate",
+    "having more unknown support forces than the equilibrium equations can solve, so deformation must be used as well"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
+  "symbols": [
+   [
+    "R_{left}",
+    "reaction at the left support"
+   ],
+   [
+    "P",
+    "axial force or point load"
+   ],
+   [
+    "a",
+    "distance to the load"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0031-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A uniform bar 3.8 m long is fixed to rigid walls at both ends. An axial force of 75 kN is applied at a point 1.2 m from the left wall. What is the reaction at the left wall?",
+  "answer": {
+   "value": 51.32,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "The bar is statically indeterminate, so use compatibility: the part on one side stretches as much as the other side shortens. For a uniform bar each wall takes a share of the load in proportion to the length of the opposite segment.",
+  "solution": "R_{left} = P × \\frac{L - a}{L} = 75 × \\frac{2.6}{3.8} = 51.32 kN. The right wall takes the other 23.68 kN.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "uniaxial loading and deformation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0031",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "reaction",
+    "the force a support pushes back with to hold a structure in place"
+   ],
+   [
+    "statically indeterminate",
+    "having more unknown support forces than the equilibrium equations can solve, so deformation must be used as well"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "R_{left}",
@@ -5522,8 +8631,30 @@
   },
   "family": "mechmat-0032",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M80 150 L210 150 L210 20 L80 20 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='145' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>120 mm square</text><circle cx='288' cy='85' r='5' fill='#00574A'/><text x='297' y='78' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>load, 300 mm from the centroid</text>",
+   "alt": "A square column section with the load point offset from the centroid along one axis."
+  },
   "lookup": true,
+  "terms": [
+   [
+    "centroid",
+    "the geometric centre of an area, the point where it would balance if cut from uniform card"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "c",
@@ -5569,8 +8700,30 @@
   },
   "family": "mechmat-0032",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M80 150 L210 150 L210 20 L80 20 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='145' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>150 mm square</text><circle cx='288' cy='85' r='5' fill='#00574A'/><text x='297' y='78' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>load, 400 mm from the centroid</text>",
+   "alt": "A square column section with the load point offset from the centroid along one axis."
+  },
   "lookup": true,
+  "terms": [
+   [
+    "centroid",
+    "the geometric centre of an area, the point where it would balance if cut from uniform card"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "c",
@@ -5616,8 +8769,99 @@
   },
   "family": "mechmat-0032",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M80 150 L210 150 L210 20 L80 20 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='145' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>100 mm square</text><circle cx='288' cy='85' r='5' fill='#00574A'/><text x='297' y='78' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>load, 250 mm from the centroid</text>",
+   "alt": "A square column section with the load point offset from the centroid along one axis."
+  },
   "lookup": true,
+  "terms": [
+   [
+    "centroid",
+    "the geometric centre of an area, the point where it would balance if cut from uniform card"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
+  "symbols": [
+   [
+    "c",
+    "distance from the neutral axis to the extreme fibre"
+   ],
+   [
+    "e",
+    "eccentricity of the load"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0032-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A square column 135 mm on a side carries a compressive load of 28 kN applied 350 mm from its centroid, on one axis of symmetry. What is the maximum tensile stress on the cross-section?",
+  "answer": {
+   "value": 22.36,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "MPa"
+  },
+  "eli5": "An eccentric load is an axial force plus a moment P e. The axial part compresses the whole section by P / A. The bending part adds M c / I in compression on the loaded side and in tension on the far side.",
+  "solution": "Axial: \\frac{28,000}{18,225} = 1.536 MPa compression.\n\nBending: \\frac{M c}{I} = \\frac{6 P e}{b^{3}} = \\frac{6(28,000)(350)}{135^{3}} = 23.899 MPa.\n\nFar face: 23.899 - 1.536 = 22.36 MPa tension.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "stresses in beams",
+     "uniaxial loading and deformation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0032",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M80 150 L210 150 L210 20 L80 20 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='145' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>135 mm square</text><circle cx='288' cy='85' r='5' fill='#00574A'/><text x='297' y='78' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>load, 350 mm from the centroid</text>",
+   "alt": "A square column section with the load point offset from the centroid along one axis."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "centroid",
+    "the geometric centre of an area, the point where it would balance if cut from uniform card"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "c",
@@ -5675,8 +8919,15 @@
   },
   "family": "mechmat-0033",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "r",
@@ -5730,8 +8981,15 @@
   },
   "family": "mechmat-0033",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "r",
@@ -5785,8 +9043,77 @@
   },
   "family": "mechmat-0033",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
+  "symbols": [
+   [
+    "r",
+    "radius"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0033-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A thin-walled cylindrical tank with closed ends has a radius of 500 mm and a wall thickness of 9 mm. The internal pressure is 1.6 MPa. What is the longitudinal (axial) stress in the wall?",
+  "options": [
+   {
+    "id": "a",
+    "text": "88.9 MPa"
+   },
+   {
+    "id": "b",
+    "text": "22.2 MPa"
+   },
+   {
+    "id": "c",
+    "text": "177.8 MPa"
+   },
+   {
+    "id": "d",
+    "text": "44.4 MPa"
+   }
+  ],
+  "answer": "d",
+  "eli5": "The pressure on the end cap, p π r^{2}, is carried by the wall's ring of area 2π r t, giving p r / (2t). The hoop stress, p r / t, is twice as large, which is why pipes split lengthwise.",
+  "solution": "Longitudinal stress = \\frac{p r}{2 t} = \\frac{1.6(500)}{2(9)} = 44.4 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "cylindrical pressure vessel"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0033",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "r",
@@ -5827,8 +9154,26 @@
   },
   "family": "mechmat-0034",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 202",
+   "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='140' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='220' y1='102' x2='60' y2='102' stroke='#568CBB' stroke-width='2'/><circle cx='220' cy='102' r='4' fill='#568CBB'/><circle cx='60' cy='102' r='4' fill='#568CBB'/><circle cx='140' cy='102.0' r='3' fill='#00242E'/><text x='140' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 60</text><text x='226' y='116' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(120, 0)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+   "alt": "Mohr's circle for normal stresses 120 and 0 MPa with shear stress 0 MPa."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0034-b",
@@ -5863,8 +9208,26 @@
   },
   "family": "mechmat-0034",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 202",
+   "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='140' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='220' y1='102' x2='60' y2='102' stroke='#568CBB' stroke-width='2'/><circle cx='220' cy='102' r='4' fill='#568CBB'/><circle cx='60' cy='102' r='4' fill='#568CBB'/><circle cx='140' cy='102.0' r='3' fill='#00242E'/><text x='140' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 40</text><text x='226' y='116' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(80, 0)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+   "alt": "Mohr's circle for normal stresses 80 and 0 MPa with shear stress 0 MPa."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0034-c",
@@ -5899,8 +9262,80 @@
   },
   "family": "mechmat-0034",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 202",
+   "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='140' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='220' y1='102' x2='60' y2='102' stroke='#568CBB' stroke-width='2'/><circle cx='220' cy='102' r='4' fill='#568CBB'/><circle cx='60' cy='102' r='4' fill='#568CBB'/><circle cx='140' cy='102.0' r='3' fill='#00242E'/><text x='140' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 100</text><text x='226' y='116' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(200, 0)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+   "alt": "Mohr's circle for normal stresses 200 and 0 MPa with shear stress 0 MPa."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0034-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A bar carries a uniaxial tensile stress of 100 MPa. What is the shear stress on a plane whose normal makes 38° with the bar's axis?",
+  "answer": {
+   "value": 48.51,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "MPa"
+  },
+  "eli5": "On an inclined plane a uniaxial stress resolves into a normal part and a shear part. The shear stress is (stress) sin(angle) cos(angle), which peaks at half the axial stress on the 45° plane.",
+  "solution": "Shear stress = 100 sin 38° cos 38° = 100(0.6157)(0.7880) = 48.51 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Mohr's Circle"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0034",
+  "version": 4,
+  "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 202",
+   "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='140' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='220' y1='102' x2='60' y2='102' stroke='#568CBB' stroke-width='2'/><circle cx='220' cy='102' r='4' fill='#568CBB'/><circle cx='60' cy='102' r='4' fill='#568CBB'/><circle cx='140' cy='102.0' r='3' fill='#00242E'/><text x='140' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 50</text><text x='226' y='116' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(100, 0)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+   "alt": "Mohr's circle for normal stresses 100 and 0 MPa with shear stress 0 MPa."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0035",
@@ -5935,13 +9370,38 @@
   },
   "family": "mechmat-0035",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 202",
    "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='76' y1='10' x2='76' y2='194' stroke='#00242E'/><circle cx='140' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='204' y1='150' x2='76' y2='54' stroke='#568CBB' stroke-width='2'/><circle cx='204' cy='150' r='4' fill='#568CBB'/><circle cx='76' cy='54' r='4' fill='#568CBB'/><circle cx='140' cy='102.0' r='3' fill='#00242E'/><text x='140' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 40</text><text x='210' y='164' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(80, 30)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='80' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
    "alt": "Mohr's circle for normal stresses 80 and 0 MPa with shear stress 30 MPa."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "principal stress",
+    "the largest and smallest normal stresses at a point, found on the planes where shear stress is zero"
+   ],
+   [
+    "normal stress",
+    "force per unit area acting perpendicular to a surface; tension pulls apart, compression pushes together"
+   ],
+   [
+    "mohr's circle",
+    "a circle drawn on stress axes that shows the normal and shear stress on every plane through a point"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0035-b",
@@ -5976,13 +9436,38 @@
   },
   "family": "mechmat-0035",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 202",
    "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='92' y1='10' x2='92' y2='194' stroke='#00242E'/><circle cx='140' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='188' y1='166' x2='92' y2='38' stroke='#568CBB' stroke-width='2'/><circle cx='188' cy='166' r='4' fill='#568CBB'/><circle cx='92' cy='38' r='4' fill='#568CBB'/><circle cx='140' cy='102.0' r='3' fill='#00242E'/><text x='140' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 30</text><text x='194' y='180' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(60, 40)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='96' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
    "alt": "Mohr's circle for normal stresses 60 and 0 MPa with shear stress 40 MPa."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "principal stress",
+    "the largest and smallest normal stresses at a point, found on the planes where shear stress is zero"
+   ],
+   [
+    "normal stress",
+    "force per unit area acting perpendicular to a surface; tension pulls apart, compression pushes together"
+   ],
+   [
+    "mohr's circle",
+    "a circle drawn on stress axes that shows the normal and shear stress on every plane through a point"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "mechmat-0035-c",
@@ -6017,12 +9502,103 @@
   },
   "family": "mechmat-0035",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 202",
    "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='109' y1='10' x2='109' y2='194' stroke='#00242E'/><circle cx='140' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='171' y1='176' x2='109' y2='28' stroke='#568CBB' stroke-width='2'/><circle cx='171' cy='176' r='4' fill='#568CBB'/><circle cx='109' cy='28' r='4' fill='#568CBB'/><circle cx='140' cy='102.0' r='3' fill='#00242E'/><text x='140' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 50</text><text x='177' y='190' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(100, 120)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='113' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
    "alt": "Mohr's circle for normal stresses 100 and 0 MPa with shear stress 120 MPa."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "principal stress",
+    "the largest and smallest normal stresses at a point, found on the planes where shear stress is zero"
+   ],
+   [
+    "normal stress",
+    "force per unit area acting perpendicular to a surface; tension pulls apart, compression pushes together"
+   ],
+   [
+    "mohr's circle",
+    "a circle drawn on stress axes that shows the normal and shear stress on every plane through a point"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
+ },
+ {
+  "id": "mechmat-0035-d",
+  "topic": "mechmat",
+  "subtopic": "mechmat-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "At a point on a shaft surface there is a bending stress of 70 MPa in tension and a torsional shear stress of 35 MPa. There is no other stress. What is the maximum principal stress?",
+  "answer": {
+   "value": 84.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "MPa"
+  },
+  "eli5": "With one normal stress and a shear stress, Mohr's circle is centred at half the normal stress. Its radius is the hypotenuse of half the normal stress and the shear stress. The larger principal stress is centre plus radius.",
+  "solution": "Centre = \\frac{70}{2} = 35.0 MPa. Radius = \\sqrt{35.0^{2} + 35^{2}} = 49.50 MPa.\n\nMaximum principal stress = 35.0 + 49.50 = 84.5 MPa.",
+  "handbook": [
+   {
+    "section": "Mechanics of Materials",
+    "page": "130–142",
+    "find": [
+     "Mohr's Circle"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "mechmat-0035",
+  "version": 4,
+  "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 202",
+   "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='83' y1='10' x2='83' y2='194' stroke='#00242E'/><circle cx='140' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='197' y1='159' x2='83' y2='45' stroke='#568CBB' stroke-width='2'/><circle cx='197' cy='159' r='4' fill='#568CBB'/><circle cx='83' cy='45' r='4' fill='#568CBB'/><circle cx='140' cy='102.0' r='3' fill='#00242E'/><text x='140' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 35</text><text x='203' y='173' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(70, 35)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='87' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+   "alt": "Mohr's circle for normal stresses 70 and 0 MPa with shear stress 35 MPa."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ],
+   [
+    "principal stress",
+    "the largest and smallest normal stresses at a point, found on the planes where shear stress is zero"
+   ],
+   [
+    "normal stress",
+    "force per unit area acting perpendicular to a surface; tension pulls apart, compression pushes together"
+   ],
+   [
+    "mohr's circle",
+    "a circle drawn on stress axes that shows the normal and shear stress on every plane through a point"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  }
 ]

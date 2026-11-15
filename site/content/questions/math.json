@@ -51,6 +51,7 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "y_{2}",
@@ -138,6 +139,7 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "y_{2}",
@@ -225,6 +227,7 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "y_{2}",
@@ -312,6 +315,7 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "y_{2}",
@@ -385,7 +389,14 @@
   "family": "math-0002",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "math-0002-b",
@@ -425,7 +436,14 @@
   "family": "math-0002",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "math-0002-c",
@@ -465,7 +483,14 @@
   "family": "math-0002",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "math-0002-d",
@@ -505,7 +530,14 @@
   "family": "math-0002",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "math-0003",
@@ -558,6 +590,13 @@
   "version": 1,
   "versions": 2,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "solutionFigure": {
    "viewBox": "0 0 400 190",
    "svg": "<line x1='40' y1='104' x2='370' y2='104' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='99' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='104' x2='119' y2='39' stroke='#00574A' stroke-width='3'/><path d='M126 30 L115 36 L124 42 Z' fill='#00574A'/><text x='136' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='104' x2='135' y2='153' stroke='#1B795A' stroke-width='3'/><path d='M144 160 L139 149 L132 158 Z' fill='#1B795A'/><text x='154' y='176' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text>",
@@ -625,6 +664,13 @@
   "version": 2,
   "versions": 2,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "solutionFigure": {
    "viewBox": "0 0 400 190",
    "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='192' y2='38' stroke='#00574A' stroke-width='3'/><path d='M200 30 L188 34 L196 42 Z' fill='#00574A'/><text x='210' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text>",
@@ -693,6 +739,7 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "s",
@@ -752,6 +799,7 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "s",
@@ -811,6 +859,7 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "s",
@@ -870,6 +919,7 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "s",
@@ -936,7 +986,8 @@
   "family": "math-0005",
   "version": 1,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "needs": []
  },
  {
   "id": "math-0005-b",
@@ -997,7 +1048,8 @@
   "family": "math-0005",
   "version": 2,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "needs": []
  },
  {
   "id": "math-0006",
@@ -1048,6 +1100,7 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "x",
@@ -1128,6 +1181,7 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "x",
@@ -1208,6 +1262,7 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "x",
@@ -1288,6 +1343,7 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "x",
@@ -1354,6 +1410,7 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "x_{2}",
@@ -1420,6 +1477,7 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "x_{2}",
@@ -1486,6 +1544,7 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "x_{2}",
@@ -1552,6 +1611,7 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "x_{2}",
@@ -1636,6 +1696,7 @@
    "alt": "A triangle with sides of 7 m and 5 m meeting at 60°."
   },
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "c",
@@ -1708,6 +1769,7 @@
    "alt": "A triangle with sides of 11 m and 8 m meeting at 40°."
   },
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "c",
@@ -1780,6 +1842,7 @@
    "alt": "A triangle with sides of 9 m and 6 m meeting at 75°."
   },
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "c",
@@ -1852,6 +1915,7 @@
    "alt": "A triangle with sides of 14 m and 10 m meeting at 110°."
   },
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "c",
@@ -1920,6 +1984,13 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -1976,6 +2047,13 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -2032,6 +2110,13 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -2088,6 +2173,13 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -2130,6 +2222,13 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -2176,6 +2275,13 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -2222,6 +2328,13 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -2268,6 +2381,13 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -2314,6 +2434,13 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "s",
@@ -2356,6 +2483,13 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "s",
@@ -2398,6 +2532,13 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "s",
@@ -2440,6 +2581,13 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "s",
@@ -2500,6 +2648,13 @@
    "alt": "Vector diagram: A; B."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "A_{x}",
@@ -2572,6 +2727,13 @@
    "alt": "Vector diagram: A; B."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "A_{x}",
@@ -2644,6 +2806,13 @@
    "alt": "Vector diagram: A; B."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "A_{x}",
@@ -2716,6 +2885,13 @@
    "alt": "Vector diagram: A; B."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "A_{x}",
@@ -2774,7 +2950,14 @@
    "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='214' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='214' y1='120' x2='166' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='166' y1='158' x2='166' y2='190' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='170' y2='179' stroke='#00574A' stroke-width='3'/><path d='M166 190 L175 181 L165 177 Z' fill='#00574A'/><text x='202' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>3</text><text x='158' y='151' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>12</text><text x='174' y='174' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>-4</text><text x='172' y='182' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
    "alt": "A three-dimensional sketch of the vector with components 3, -4 and 12 along x, y and z."
   },
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "math-0013-b",
@@ -2815,7 +2998,14 @@
    "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='211' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='211' y1='120' x2='164' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='164' y1='158' x2='164' y2='221' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='166' y2='211' stroke='#00574A' stroke-width='3'/><path d='M164 221 L172 212 L161 209 Z' fill='#00574A'/><text x='201' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>2</text><text x='156' y='151' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>9</text><text x='172' y='190' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>-6</text><text x='170' y='213' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
    "alt": "A three-dimensional sketch of the vector with components 2, -6 and 9 along x, y and z."
   },
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "math-0013-c",
@@ -2856,7 +3046,14 @@
    "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='244' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='244' y1='120' x2='292' y2='82' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='292' y1='82' x2='292' y2='28' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='284' y2='35' stroke='#00574A' stroke-width='3'/><path d='M292 28 L280 31 L287 39 Z' fill='#00574A'/><text x='217' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>4</text><text x='284' y='113' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>-7</text><text x='300' y='55' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>4</text><text x='298' y='20' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
    "alt": "A three-dimensional sketch of the vector with components 4, 4 and -7 along x, y and z."
   },
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "math-0013-d",
@@ -2897,7 +3094,14 @@
    "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='285' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='285' y1='120' x2='261' y2='139' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='261' y1='139' x2='261' y2='171' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='252' y2='164' stroke='#00574A' stroke-width='3'/><path d='M261 171 L255 160 L249 169 Z' fill='#00574A'/><text x='238' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>6</text><text x='253' y='142' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>3</text><text x='269' y='155' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>-2</text><text x='267' y='163' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
    "alt": "A three-dimensional sketch of the vector with components 6, -2 and 3 along x, y and z."
   },
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "math-0014",
@@ -2947,6 +3151,7 @@
   "version": 1,
   "versions": 2,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "P",
@@ -3002,6 +3207,7 @@
   "version": 2,
   "versions": 2,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "P",
@@ -3058,6 +3264,7 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "z",
@@ -3118,6 +3325,7 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "z",
@@ -3178,6 +3386,7 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "z",
@@ -3238,6 +3447,7 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "z",
@@ -3285,6 +3495,7 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "S_{xy}",
@@ -3340,6 +3551,7 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "S_{xy}",
@@ -3395,6 +3607,7 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "S_{xy}",
@@ -3450,6 +3663,7 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "S_{xy}",
@@ -3517,6 +3731,7 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "x",
@@ -3588,6 +3803,7 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "x",
@@ -3659,6 +3875,7 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "x",
@@ -3730,6 +3947,7 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "x",
@@ -3788,6 +4006,13 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -3830,6 +4055,13 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -3872,6 +4104,13 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -3914,6 +4153,13 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -3956,6 +4202,7 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "P",
@@ -3998,6 +4245,7 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "P",
@@ -4040,6 +4288,7 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "P",
@@ -4082,6 +4331,7 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "P",
@@ -4135,8 +4385,9 @@
   },
   "family": "math-0020",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "m_{2}",
@@ -4194,8 +4445,9 @@
   },
   "family": "math-0020",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "m_{2}",
@@ -4253,8 +4505,69 @@
   },
   "family": "math-0020",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
+  "symbols": [
+   [
+    "m_{2}",
+    "slope of the perpendicular line"
+   ],
+   [
+    "m_{1}",
+    "slope of the first line"
+   ]
+  ]
+ },
+ {
+  "id": "math-0020-d",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A line passes through the points (0, 2) and (4, 12). What is the slope of a line perpendicular to it?",
+  "options": [
+   {
+    "id": "a",
+    "text": "-0.400"
+   },
+   {
+    "id": "b",
+    "text": "2.500"
+   },
+   {
+    "id": "c",
+    "text": "-2.500"
+   },
+   {
+    "id": "d",
+    "text": "0.400"
+   }
+  ],
+  "answer": "a",
+  "eli5": "Perpendicular lines have slopes that are negative reciprocals of each other: m_{2} = -1 / m_{1}. Find the slope of the given line first, as rise over run.",
+  "solution": "m_{1} = \\frac{12 - (2)}{4 - (0)} = 2.500.\n\nm_{2} = -\\frac{1}{2.500} = -0.400.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "straight line"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0020",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "m_{2}",
@@ -4299,8 +4612,9 @@
   },
   "family": "math-0021",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "a",
@@ -4353,8 +4667,9 @@
   },
   "family": "math-0021",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "a",
@@ -4407,8 +4722,64 @@
   },
   "family": "math-0021",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
+  "symbols": [
+   [
+    "a",
+    "side opposite angle A, or a coefficient as given"
+   ],
+   [
+    "A",
+    "first vector, an angle of the triangle, or the line coefficient of x"
+   ],
+   [
+    "b",
+    "y-intercept, or a side or coefficient as given"
+   ],
+   [
+    "B",
+    "second vector, an angle of the triangle, or the line coefficient of y"
+   ]
+  ]
+ },
+ {
+  "id": "math-0021-d",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In a triangle, side a is 9 m long and lies opposite a 40° angle. What is the length of the side opposite a 58° angle?",
+  "answer": {
+   "value": 11.87,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "The law of sines says each side divided by the sine of its opposite angle gives the same value: a / sin A = b / sin B. It applies whenever a side and its opposite angle are known.",
+  "solution": "b = \\frac{a sin B}{sin A} = \\frac{9 sin 58°}{sin 40°} = \\frac{9(0.8480)}{0.6428} = 11.87 m.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "law of sines"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0021",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "a",
@@ -4461,8 +4832,9 @@
   },
   "family": "math-0022",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "x_{0}",
@@ -4507,8 +4879,9 @@
   },
   "family": "math-0022",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "x_{0}",
@@ -4553,8 +4926,56 @@
   },
   "family": "math-0022",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
+  "symbols": [
+   [
+    "x_{0}",
+    "x-coordinate of the given point"
+   ],
+   [
+    "y_{0}",
+    "y-coordinate of the given point"
+   ]
+  ]
+ },
+ {
+  "id": "math-0022-d",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the perpendicular distance from the point (2, 4) to the line 4x + 8y + (-7) = 0?",
+  "answer": {
+   "value": 3.69,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "units"
+  },
+  "eli5": "For a line written as Ax + By + C = 0, the perpendicular distance from a point is |A x_{0} + B y_{0} + C| divided by the square root of (A^{2} + B^{2}).",
+  "solution": "d = \\frac{|4(2) + 8(4) + (-7)|}{\\sqrt{4^{2} + 8^{2}}} = \\frac{33}{8.944} = 3.690 units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "straight line"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0022",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "x_{0}",
@@ -4597,8 +5018,9 @@
   },
   "family": "math-0023",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [],
   "symbols": [
    [
     "s",
@@ -4641,8 +5063,9 @@
   },
   "family": "math-0023",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [],
   "symbols": [
    [
     "s",
@@ -4685,8 +5108,54 @@
   },
   "family": "math-0023",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [],
+  "symbols": [
+   [
+    "s",
+    "arc length, position, or sample standard deviation"
+   ],
+   [
+    "r",
+    "radius"
+   ]
+  ]
+ },
+ {
+  "id": "math-0023-d",
+  "topic": "math",
+  "subtopic": "math-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A circular arc has a radius of 131 m and subtends a central angle of 46°. What is the arc length?",
+  "answer": {
+   "value": 105.17,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Arc length is radius times the central angle in radians. Convert degrees to radians by multiplying by π / 180.",
+  "solution": "Angle = 46 × \\frac{π}{180} = 0.8029 rad.\n\ns = r × angle = 131 × 0.8029 = 105.17 m.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0023",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [],
   "symbols": [
    [
     "s",
@@ -4731,8 +5200,15 @@
   },
   "family": "math-0024",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "math-0024-b",
@@ -4767,8 +5243,15 @@
   },
   "family": "math-0024",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "math-0024-c",
@@ -4803,8 +5286,58 @@
   },
   "family": "math-0024",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
+ },
+ {
+  "id": "math-0024-d",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the average value of f(x) = 4.5x^{2} + -1 over the interval from x = 0 to x = 3?",
+  "answer": {
+   "value": 12.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The average value of a function over an interval is its definite integral divided by the length of the interval.",
+  "solution": "Integral from 0 to 3 = \\frac{4.5(3)^{3}}{3} + -1(3) = 37.50.\n\nAverage = \\frac{37.50}{3} = 12.50.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "integral calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0024",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "math-0025",
@@ -4852,8 +5385,15 @@
   },
   "family": "math-0025",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -4907,8 +5447,15 @@
   },
   "family": "math-0025",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -4962,8 +5509,77 @@
   },
   "family": "math-0025",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
+ },
+ {
+  "id": "math-0025-d",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "At what value of x does f(x) = x^{3} - 7.5x^{2} + 4x have its inflection point?",
+  "options": [
+   {
+    "id": "a",
+    "text": "1.25"
+   },
+   {
+    "id": "b",
+    "text": "2.50"
+   },
+   {
+    "id": "c",
+    "text": "3.75"
+   },
+   {
+    "id": "d",
+    "text": "5.00"
+   }
+  ],
+  "answer": "b",
+  "eli5": "An inflection point is where the curvature changes sign, so the second derivative is zero there. For a cubic there is exactly one.",
+  "solution": "f'(x) = 3x^{2} - 15x + 4, and f''(x) = 6x - 15.\n\nSetting f''(x) = 0 gives x = 15 / 6 = 2.50.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "differential calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0025",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -5004,8 +5620,15 @@
   },
   "family": "math-0026",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -5054,8 +5677,15 @@
   },
   "family": "math-0026",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -5104,8 +5734,72 @@
   },
   "family": "math-0026",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
+  "symbols": [
+   [
+    "v",
+    "velocity"
+   ],
+   [
+    "t",
+    "time"
+   ],
+   [
+    "a",
+    "side opposite angle A, or a coefficient as given"
+   ]
+  ]
+ },
+ {
+  "id": "math-0026-d",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A particle's position is s(t) = 1.2t^{3} - 4t, with s in metres and t in seconds. What is its acceleration at t = 4 s?",
+  "answer": {
+   "value": 28.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s^{2}"
+  },
+  "eli5": "Velocity is the first derivative of position and acceleration is the second. Differentiate twice, then substitute the time.",
+  "solution": "v(t) = 3.6t^{2} - 4.\n\na(t) = 7.2t, so a(4) = 7.2 × 4 = 28.8 m/s^{2}.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "differential calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0026",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -5152,8 +5846,15 @@
   },
   "family": "math-0027",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "e",
@@ -5196,8 +5897,15 @@
   },
   "family": "math-0027",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "e",
@@ -5240,8 +5948,66 @@
   },
   "family": "math-0027",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
+  "symbols": [
+   [
+    "e",
+    "Euler's number, 2.718"
+   ],
+   [
+    "k",
+    "y-coordinate of the centre, or a rate constant"
+   ]
+  ]
+ },
+ {
+  "id": "math-0027-d",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A quantity decays exponentially with a half-life of 6 years. What fraction of it remains after 16 years?",
+  "answer": {
+   "value": 0.1575,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "Each half-life halves what is left, so the fraction remaining is 0.5 raised to the number of half-lives elapsed. This is the same as e^{-kt} with k = ln 2 / half-life.",
+  "solution": "Half-lives elapsed = \\frac{16}{6} = 2.667.\n\nFraction remaining = 0.5^{2.667} = 0.1575.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0027",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "e",
@@ -5299,8 +6065,15 @@
   },
   "family": "math-0028",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "f",
@@ -5358,8 +6131,15 @@
   },
   "family": "math-0028",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "f",
@@ -5417,8 +6197,81 @@
   },
   "family": "math-0028",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
+  "symbols": [
+   [
+    "f",
+    "the function"
+   ],
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
+ },
+ {
+  "id": "math-0028-d",
+  "topic": "math",
+  "subtopic": "math-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "For f(x, y) = 4x^{2}y + 2y^{3}, what is the partial derivative of f with respect to x at the point (4, 2)?",
+  "options": [
+   {
+    "id": "a",
+    "text": "64"
+   },
+   {
+    "id": "b",
+    "text": "88"
+   },
+   {
+    "id": "c",
+    "text": "32"
+   },
+   {
+    "id": "d",
+    "text": "128"
+   }
+  ],
+  "answer": "a",
+  "eli5": "A partial derivative with respect to x treats every other variable as a constant. Terms without x drop out.",
+  "solution": "∂f/∂x = 8xy, because 2y^{3} has no x in it.\n\nAt (4, 2): 8(4)(2) = 64.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "differential calculus"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0028",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "f",
@@ -5463,13 +6316,20 @@
   },
   "family": "math-0029",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 190",
    "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='141' y2='65' stroke='#00574A' stroke-width='3'/><path d='M148 56 L137 62 L146 68 Z' fill='#00574A'/><text x='158' y='48' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='189' y2='136' stroke='#1B795A' stroke-width='3'/><path d='M200 134 L188 131 L190 142 Z' fill='#1B795A'/><text x='210' y='126' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><line x1='70' y1='160' x2='269' y2='36' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M278 30 L266 31 L272 40 Z' fill='#568CBB'/><text x='288' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>A + B</text>",
    "alt": "Vector diagram: A; B; A + B."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "a_{1}",
@@ -5522,13 +6382,20 @@
   },
   "family": "math-0029",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 190",
    "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='96' y2='69' stroke='#00574A' stroke-width='3'/><path d='M99 59 L91 68 L101 71 Z' fill='#00574A'/><text x='109' y='51' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='118' y2='136' stroke='#1B795A' stroke-width='3'/><path d='M128 131 L115 131 L120 141 Z' fill='#1B795A'/><text x='138' y='123' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><line x1='70' y1='160' x2='151' y2='39' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M157 30 L146 36 L155 42 Z' fill='#568CBB'/><text x='167' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>A + B</text>",
    "alt": "Vector diagram: A; B; A + B."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "a_{1}",
@@ -5581,13 +6448,86 @@
   },
   "family": "math-0029",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 190",
    "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='146' y2='147' stroke='#00574A' stroke-width='3'/><path d='M157 146 L145 142 L147 153 Z' fill='#00574A'/><text x='167' y='138' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='96' y2='55' stroke='#1B795A' stroke-width='3'/><path d='M99 44 L91 54 L102 56 Z' fill='#1B795A'/><text x='109' y='36' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><line x1='70' y1='160' x2='178' y2='38' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M186 30 L174 35 L182 42 Z' fill='#568CBB'/><text x='196' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>A + B</text>",
    "alt": "Vector diagram: A; B; A + B."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
+  "symbols": [
+   [
+    "a_{1}",
+    "x-component of A"
+   ],
+   [
+    "b_{2}",
+    "y-component of B"
+   ],
+   [
+    "a_{2}",
+    "y-component of A"
+   ],
+   [
+    "b_{1}",
+    "x-component of B"
+   ]
+  ]
+ },
+ {
+  "id": "math-0029-d",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Vectors **A** = 2**i** + 6**j** and **B** = 4**i** + 2**j** form two sides of a parallelogram. What is its area?",
+  "answer": {
+   "value": 20,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "square units"
+  },
+  "eli5": "The magnitude of the cross product of two vectors equals the area of the parallelogram they span. For vectors in the x-y plane it reduces to |a_{1}b_{2} - a_{2}b_{1}|.",
+  "solution": "Area = |2(2) - 6(4)| = |4 - 24| = 20 square units.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "cross product"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0029",
+  "version": 4,
+  "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='99' y2='73' stroke='#00574A' stroke-width='3'/><path d='M102 62 L94 71 L104 75 Z' fill='#00574A'/><text x='112' y='54' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='125' y2='132' stroke='#1B795A' stroke-width='3'/><path d='M135 128 L123 128 L128 137 Z' fill='#1B795A'/><text x='145' y='120' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><line x1='70' y1='160' x2='161' y2='39' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M168 30 L156 36 L165 42 Z' fill='#568CBB'/><text x='178' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>A + B</text>",
+   "alt": "Vector diagram: A; B; A + B."
+  },
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "a_{1}",
@@ -5638,13 +6578,20 @@
   },
   "family": "math-0030",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 200",
    "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='222' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='222' y1='120' x2='174' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='174' y1='158' x2='174' y2='206' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='176' y2='195' stroke='#00574A' stroke-width='3'/><path d='M174 206 L182 196 L171 194 Z' fill='#00574A'/><text x='206' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>2</text><text x='166' y='151' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>6</text><text x='182' y='182' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>-3</text><text x='180' y='198' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
    "alt": "A three-dimensional sketch of the vector with components 2, -3 and 6 along x, y and z."
   },
   "lookup": false,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -5683,13 +6630,20 @@
   },
   "family": "math-0030",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 200",
    "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='244' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='244' y1='120' x2='197' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='197' y1='158' x2='197' y2='104' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='193' y2='114' stroke='#00574A' stroke-width='3'/><path d='M197 104 L187 112 L198 116 Z' fill='#00574A'/><text x='217' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>4</text><text x='189' y='151' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>7</text><text x='205' y='131' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>4</text><text x='203' y='96' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
    "alt": "A three-dimensional sketch of the vector with components 4, 4 and 7 along x, y and z."
   },
   "lookup": false,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -5728,13 +6682,72 @@
   },
   "family": "math-0030",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 200",
    "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='238' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='238' y1='120' x2='190' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='158' x2='190' y2='63' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='190' y2='74' stroke='#00574A' stroke-width='3'/><path d='M190 63 L184 74 L196 74 Z' fill='#00574A'/><text x='214' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>1</text><text x='182' y='151' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>2</text><text x='198' y='110' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>2</text><text x='196' y='55' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
    "alt": "A three-dimensional sketch of the vector with components 1, 2 and 2 along x, y and z."
   },
   "lookup": false,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
+  "symbols": [
+   [
+    "x",
+    "the independent variable"
+   ]
+  ]
+ },
+ {
+  "id": "math-0030-d",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the x-component of the unit vector in the direction of (3, 0, 6)?",
+  "answer": {
+   "value": 0.4472,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "A unit vector has length 1 and the same direction as the original. Divide each component by the vector's magnitude.",
+  "solution": "Magnitude = \\sqrt{3^{2} + (0)^{2} + 6^{2}} = 6.708.\n\nx-component = \\frac{3}{6.708} = 0.4472.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0030",
+  "version": 4,
+  "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 200",
+   "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='238' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='238' y1='120' x2='190' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='158' x2='190' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='190' y2='147' stroke='#00574A' stroke-width='3'/><path d='M190 158 L196 147 L184 147 Z' fill='#00574A'/><text x='214' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>3</text><text x='182' y='151' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>6</text><text x='198' y='158' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>0</text><text x='196' y='150' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
+   "alt": "A three-dimensional sketch of the vector with components 3, 0 and 6 along x, y and z."
+  },
+  "lookup": false,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "x",
@@ -5775,13 +6788,20 @@
   },
   "family": "math-0031",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 190",
    "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='161' y2='39' stroke='#00574A' stroke-width='3'/><path d='M168 30 L156 36 L165 42 Z' fill='#00574A'/><text x='178' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='112' y2='104' stroke='#1B795A' stroke-width='3'/><path d='M119 95 L108 100 L117 107 Z' fill='#1B795A'/><text x='129' y='87' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><line x1='70' y1='160' x2='161' y2='39' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M168 30 L156 36 L165 42 Z' fill='#568CBB'/><text x='178' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>projection = 10.00</text>",
    "alt": "Vector diagram: A; B; projection = 10.00."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -5826,13 +6846,20 @@
   },
   "family": "math-0031",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 190",
    "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='164' y2='122' stroke='#00574A' stroke-width='3'/><path d='M174 118 L162 117 L166 128 Z' fill='#00574A'/><text x='184' y='110' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='310' y2='60' stroke='#1B795A' stroke-width='3'/><path d='M320 56 L308 55 L312 65 Z' fill='#1B795A'/><text x='330' y='48' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><line x1='70' y1='160' x2='163' y2='121' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M174 117 L161 116 L166 126 Z' fill='#568CBB'/><text x='184' y='109' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>projection = 5.38</text>",
    "alt": "Vector diagram: A; B; projection = 5.38."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -5877,13 +6904,78 @@
   },
   "family": "math-0031",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 190",
    "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='97' y2='41' stroke='#00574A' stroke-width='3'/><path d='M99 30 L91 40 L102 42 Z' fill='#00574A'/><text x='109' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='177' y2='80' stroke='#1B795A' stroke-width='3'/><path d='M186 73 L173 76 L180 84 Z' fill='#1B795A'/><text x='196' y='65' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><line x1='70' y1='160' x2='142' y2='106' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M151 99 L139 102 L145 110 Z' fill='#568CBB'/><text x='161' y='91' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>projection = 7.00</text>",
    "alt": "Vector diagram: A; B; projection = 7.00."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
+  "symbols": [
+   [
+    "A",
+    "first vector, an angle of the triangle, or the line coefficient of x"
+   ],
+   [
+    "B",
+    "second vector, an angle of the triangle, or the line coefficient of y"
+   ]
+  ]
+ },
+ {
+  "id": "math-0031-d",
+  "topic": "math",
+  "subtopic": "math-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "What is the scalar projection of **A** = (6, 5) onto **B** = (8, 4)?",
+  "answer": {
+   "value": 7.603,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The scalar projection of A onto B is the length of A's shadow along B. It equals the dot product divided by the magnitude of B.",
+  "solution": "A · B = 6(8) + 5(4) = 68. |B| = 8.944.\n\nProjection = \\frac{68}{8.944} = 7.603.",
+  "handbook": [
+   {
+    "section": "Mathematics",
+    "page": "34–62",
+    "find": [
+     "dot product"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0031",
+  "version": 4,
+  "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='218' y2='37' stroke='#00574A' stroke-width='3'/><path d='M226 30 L214 33 L221 41 Z' fill='#00574A'/><text x='236' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='268' y2='61' stroke='#1B795A' stroke-width='3'/><path d='M278 56 L266 56 L271 66 Z' fill='#1B795A'/><text x='288' y='48' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><line x1='70' y1='160' x2='237' y2='77' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M247 72 L235 72 L239 81 Z' fill='#568CBB'/><text x='257' y='64' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>projection = 7.60</text>",
+   "alt": "Vector diagram: A; B; projection = 7.60."
+  },
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -5928,8 +7020,9 @@
   },
   "family": "math-0032",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "z",
@@ -5970,8 +7063,9 @@
   },
   "family": "math-0032",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "z",
@@ -6012,8 +7106,52 @@
   },
   "family": "math-0032",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
+  "symbols": [
+   [
+    "z",
+    "standard normal variable, (value - mean) / standard deviation"
+   ]
+  ]
+ },
+ {
+  "id": "math-0032-d",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sample of 30 measurements comes from a population with a known standard deviation of 8.2. What is the half-width of the 95% confidence interval for the mean? Use z = 1.96.",
+  "answer": {
+   "value": 2.934,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "With the population standard deviation known, the confidence interval for the mean is the sample mean plus or minus z times the standard deviation divided by the square root of the sample size.",
+  "solution": "Half-width = z \\frac{σ}{\\sqrt{n}} = 1.96 × \\frac{8.2}{\\sqrt{30}} = 1.96 × 1.4971 = 2.934.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "confidence interval"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0032",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "z",
@@ -6055,7 +7193,8 @@
   "family": "math-0033",
   "version": 1,
   "versions": 3,
-  "lookup": true
+  "lookup": true,
+  "needs": []
  },
  {
   "id": "math-0033-b",
@@ -6091,7 +7230,8 @@
   "family": "math-0033",
   "version": 2,
   "versions": 3,
-  "lookup": true
+  "lookup": true,
+  "needs": []
  },
  {
   "id": "math-0033-c",
@@ -6127,7 +7267,8 @@
   "family": "math-0033",
   "version": 3,
   "versions": 3,
-  "lookup": true
+  "lookup": true,
+  "needs": []
  },
  {
   "id": "math-0034",
@@ -6175,8 +7316,9 @@
   },
   "family": "math-0034",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "P",
@@ -6230,8 +7372,9 @@
   },
   "family": "math-0034",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "P",
@@ -6285,8 +7428,65 @@
   },
   "family": "math-0034",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
+  "symbols": [
+   [
+    "P",
+    "probability"
+   ]
+  ]
+ },
+ {
+  "id": "math-0034-d",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A box holds 4 red and 4 blue parts. Two parts are drawn at random without replacement. What is the probability that both are red?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.2500"
+   },
+   {
+    "id": "b",
+    "text": "0.2143"
+   },
+   {
+    "id": "c",
+    "text": "0.5000"
+   },
+   {
+    "id": "d",
+    "text": "0.5714"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Without replacement the second draw depends on the first. Multiply the probability of red on the first draw by the probability of red on the second, given one red is already gone.",
+  "solution": "P = \\frac{4}{8} × \\frac{3}{7} = 0.5000 × 0.4286 = 0.2143.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "joint probability"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0034",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "P",
@@ -6340,8 +7540,9 @@
   },
   "family": "math-0035",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "C",
@@ -6395,8 +7596,9 @@
   },
   "family": "math-0035",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "C",
@@ -6450,8 +7652,65 @@
   },
   "family": "math-0035",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [],
+  "symbols": [
+   [
+    "C",
+    "third angle of the triangle, or the constant term of the line"
+   ]
+  ]
+ },
+ {
+  "id": "math-0035-d",
+  "topic": "math",
+  "subtopic": "math-d",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In how many different ways can a team of 4 be chosen from 9 people, if the order of selection does not matter?",
+  "options": [
+   {
+    "id": "a",
+    "text": "252"
+   },
+   {
+    "id": "b",
+    "text": "36"
+   },
+   {
+    "id": "c",
+    "text": "126"
+   },
+   {
+    "id": "d",
+    "text": "84"
+   }
+  ],
+  "answer": "c",
+  "eli5": "When order does not matter the count is a combination: n! / (k!(n - k)!). A permutation, where order matters, is larger by a factor of k!.",
+  "solution": "C(9, 4) = \\frac{9!}{4!(5)!} = 126.",
+  "handbook": [
+   {
+    "section": "Engineering Probability and Statistics",
+    "page": "63–84",
+    "find": [
+     "combinations"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "math-0035",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [],
   "symbols": [
    [
     "C",

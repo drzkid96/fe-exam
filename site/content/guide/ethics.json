@@ -60,13 +60,15 @@
     ]
    },
    "bridge": {
-    "keep": "The duties you already work under: protect the public, stay within your competence, seal only what you were in responsible charge of.",
-    "rusty": [
-     "The exact wording and order of duties in the NCEES Model Rules, which the exam tests in place of any one state's law.",
-     "Contract and liability terms: standard of care, indemnity, types of insurance and bonds."
+    "plain": "This topic asks what a professional engineer must do when duties pull in different directions, and how licences, contracts and liability work.",
+    "core": [
+     "Public health, safety and welfare come first.",
+     "Work only within your competence, and seal only work done under your direct control.",
+     "Disclose conflicts of interest; refuse gifts that could sway your judgement.",
+     "A contract needs an offer, acceptance, something of value exchanged, and a lawful purpose."
     ],
-    "work": "Designer-of-record responsibility, QA/QC sign-off, sealing sheets prepared by others, gifts from contractors and vendors, and public-agency clients are all everyday versions of exam questions.",
-    "exam": "Answer from the Model Rules in the handbook, not from a particular state's practice act or a firm's policy. When two duties conflict, public safety comes first."
+    "links": "It stands apart from the technical topics, but every design topic ends in someone sealing the work.",
+    "exam": "Answer from the NCEES Model Rules printed in the handbook, not from one state's law or a firm's policy."
    }
   },
   {
@@ -138,7 +140,11 @@
     "Prefer the option that discloses to the client or employer first and escalates to an authority if the hazard remains.",
     "If two options both seem ethical, choose the one the Model Rules state explicitly."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "A code of ethics is a written list of duties. For engineers the first duty is to the public's safety, then to clients and employers, then to the profession. Questions describe a situation and ask which action the rules require.",
+   "needs": [],
+   "leads": [],
+   "terms": []
   },
   {
    "id": "ethics-b-lesson",
@@ -190,7 +196,11 @@
     "Match the type of loss to the policy that covers it.",
     "Separate contract claims (what was promised) from tort claims (the duty of care)."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "Liability means being legally answerable for harm. An engineer is expected to work as carefully as a competent peer would. Falling short of that is negligence. Insurance and contract terms decide who pays.",
+   "needs": [],
+   "leads": [],
+   "terms": []
   },
   {
    "id": "ethics-c-lesson",
@@ -258,7 +268,10 @@
     "When in doubt, choose the option that involves the licensing board or obtaining the proper licence."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Signing and sealing plan sheets as designer of record is the working form of the responsible-charge rule."
+   "primer": "A licence is the state's permission to practise engineering. It is earned by education, exams (the FE, then the PE) and experience, and it is kept by renewal. A seal on a drawing means a licensed engineer takes responsibility for it.",
+   "needs": [],
+   "leads": [],
+   "terms": []
   },
   {
    "id": "ethics-d-lesson",
@@ -309,7 +322,17 @@
     "Identify the contract type from how payment is set.",
     "Decide who carries the risk that actually occurred.",
     "For a dispute, ask what the written documents say and whether a change order exists."
-   ]
+   ],
+   "primer": "A contract is an agreement the law will enforce. It needs an offer, an acceptance, something of value given by each side, parties able to agree, and a lawful purpose. Construction contracts differ mainly in who carries the risk of cost.",
+   "needs": [],
+   "leads": [
+    [
+     "construction-a",
+     "construction",
+     "Construction Engineering: Project administration"
+    ]
+   ],
+   "terms": []
   }
  ]
 }

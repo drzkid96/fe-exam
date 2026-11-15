@@ -61,14 +61,15 @@
     ]
    },
    "bridge": {
-    "keep": "Pressure increases with depth, and flow equals velocity times area.",
-    "rusty": [
-     "The energy equation with head loss, and reading the Moody diagram.",
-     "Forces on submerged surfaces and the centre of pressure.",
-     "Momentum for jets and bends; flow measurement devices."
+    "plain": "Fluid mechanics describes water and other fluids at rest and in motion. At rest, pressure grows with depth. In motion, a fluid trades pressure, speed and height against each other, and loses some energy to friction.",
+    "core": [
+     "Pressure = unit weight × depth.",
+     "Flow rate = velocity × area, and it is the same at every section of a full pipe.",
+     "The energy equation tracks pressure, speed and elevation, minus losses, along the flow.",
+     "A fluid that changes speed or direction pushes on whatever turns it."
     ],
-    "work": "Street drainage is open-channel flow in gutters and pressure or gravity flow in storm drains. Wind load on a sign panel is a drag-force calculation.",
-    "exam": "Fluid mechanics has its own handbook chapter, separate from the civil hydraulics pages. Open-channel formulas appear in both; know where each is."
+    "links": "Water resources applies it to pipes, pumps, channels and drains. Geotechnics uses the pressure ideas for groundwater. Statics supplies the force and centroid methods.",
+    "exam": "Fluid mechanics has its own handbook chapter; open-channel formulas also appear in the civil chapter."
    }
   },
   {
@@ -151,6 +152,35 @@
       "svg": "<path d='M60 20 L60 150 L220 150 L220 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='62' y='40' width='156' height='108' fill='#568CBB' fill-opacity='.3'/><path d='M220 126 Q280 128 320 168' fill='none' stroke='#568CBB' stroke-width='5'/><line x1='250' y1='40' x2='250' y2='126' stroke='#00242E'/><line x1='220' y1='40' x2='260' y2='40' stroke='#00242E' stroke-dasharray='4 4'/><text x='258' y='86' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>4 m</text><text x='300' y='122' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>60 mm orifice</text>",
       "alt": "A tank discharging through a 60 mm orifice 4 m below the water surface."
      }
+    },
+    {
+     "family": "fluids-0018",
+     "problem": "A venturi meter in a 225 mm water pipe has a 120 mm throat. The piezometric head drops by 0.8 m between inlet and throat, and the meter coefficient is 0.98. What is the flow rate? Use g = 9.81 m/s^{2}.",
+     "idea": "A venturi speeds the flow up in its throat, and Bernoulli's equation turns the resulting drop in head into a velocity. Continuity brings in the area ratio: Q = C_{v} A_{2} × square root of (2 g × head drop / (1 - (A_{2}/A_{1})^{2})).",
+     "steps": "A_{2} = \\frac{π(0.120)^{2}}{4} = 0.01131 m^{2}, and (A_{2}/A_{1})^{2} = (120 / 225)^{4} = 0.0809.\n\nQ = 0.98(0.01131) \\sqrt{\\frac{2(9.81)(0.8)}{1 - 0.0809}} = 0.04580 m^{3}/s = 45.8 L/s.",
+     "answer": "45.8 L/s",
+     "value": 45.802966,
+     "figure": {
+      "viewBox": "0 0 400 140",
+      "svg": "<path d='M30 40 L170 40 L230 58 L370 58 L370 92 L230 92 L170 110 L30 110 Z' fill='#568CBB' fill-opacity='.25' stroke='#00242E' stroke-width='2'/><line x1='60' y1='75' x2='110' y2='75' stroke='#00574A' stroke-width='3'/><path d='M118 75 L104 69 L104 81 Z' fill='#00574A'/><text x='100' y='30' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>225 mm</text><text x='300' y='48' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>120 mm</text><text x='100' y='130' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 1</text><text x='300' y='112' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 2</text>",
+      "alt": "A pipe narrowing from 225 mm to 120 mm in the direction of flow."
+     }
+    },
+    {
+     "family": "fluids-0019",
+     "problem": "A 90° V-notch weir has a head of 0.28 m above the bottom of the notch. Using Q = 1.40 H^{5/2} in SI units, what is the discharge?",
+     "idea": "Flow through a triangular notch grows with the head to the 5/2 power, because both the depth and the width of the flow section increase with head. That makes a V-notch sensitive at low flows.",
+     "steps": "Q = 1.40(0.28)^{2.5} = 1.40 × 0.04149 = 0.05808 m^{3}/s = 58.1 L/s.",
+     "answer": "58.1 L/s",
+     "value": 58.079533
+    },
+    {
+     "family": "fluids-0020",
+     "problem": "An orifice plate with a 58 mm opening and a discharge coefficient of 0.62 is installed in a water line. The pressure drop across it is 34 kPa. What is the flow rate? Take the density of water as 1,000 kg/m^{3} and ignore the approach velocity.",
+     "idea": "An orifice turns pressure into velocity: the ideal velocity is the square root of (2 × pressure drop / density). The discharge coefficient allows for the contraction of the jet and for friction.",
+     "steps": "A = \\frac{π(0.058)^{2}}{4} = 0.002642 m^{2}.\n\nQ = 0.62(0.002642) \\sqrt{\\frac{2(34,000)}{1,000}} = 0.01351 m^{3}/s = 13.51 L/s.",
+     "answer": "13.51 L/s",
+     "value": 13.50803
     }
    ],
    "lookup": [
@@ -181,6 +211,21 @@
     "Check units, especially mm to m in areas."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "Flow is measured by making the fluid do something that can be read. A narrowing speeds the flow up and lowers its pressure; a weir makes water spill over at a depth that depends on the flow. Each device has a formula that turns the reading into a flow rate.",
+   "needs": [
+    [
+     "fluids-d",
+     "fluids",
+     "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "head",
+     "energy of a fluid expressed as a height of that fluid, in metres or feet"
+    ]
+   ],
    "symbols": [
     [
      "C_{d}",
@@ -293,6 +338,30 @@
      "steps": "Kinematic viscosity = \\frac{0.0018}{900} = 2.00 × 10^{-6} m^{2}/s.",
      "answer": "2.00 × 10^{-6} m^{2}/s",
      "value": 2.0
+    },
+    {
+     "family": "fluids-0021",
+     "problem": "A clean glass tube with an inside diameter of 1.5 mm stands in water. The surface tension is 0.0728 N/m and the contact angle is 0°. How high does the water rise in the tube? Use 9,810 N/m^{3} for water.",
+     "idea": "Surface tension pulling up around the tube's wall supports the weight of the raised column: h = 4 (surface tension) cos(contact angle) / (specific weight × diameter). Narrower tubes give a higher rise.",
+     "steps": "h = \\frac{4(0.0728)(1)}{9,810(0.0015)} = 0.01979 m = 19.8 mm.",
+     "answer": "19.8 mm",
+     "value": 19.789331
+    },
+    {
+     "family": "fluids-0022",
+     "problem": "A flat plate with an area of 0.12 m^{2} slides at 0.4 m/s over a fixed surface on an oil film 1.0 mm thick. The oil's dynamic viscosity is 0.64 Pa·s. What force keeps the plate moving?",
+     "idea": "For a thin film the velocity varies linearly across the gap, so the shear stress is viscosity times velocity divided by film thickness (Newton's law of viscosity). Force is stress times area.",
+     "steps": "Shear stress = \\frac{0.64(0.4)}{0.0010} = 256.0 Pa.\n\nForce = 256.0 × 0.12 = 30.7 N.",
+     "answer": "30.7 N",
+     "value": 30.72
+    },
+    {
+     "family": "fluids-0023",
+     "problem": "A sample weighs 63.8 N in air and 39.9 N when fully submerged in water. What is its specific gravity?",
+     "idea": "The loss of weight in water equals the weight of water displaced, which has the sample's volume. Specific gravity is therefore the weight in air divided by the loss of weight.",
+     "steps": "SG = \\frac{63.8}{63.8 - 39.9} = \\frac{63.8}{23.9} = 2.669.",
+     "answer": "2.669",
+     "value": 2.669456
     }
    ],
    "lookup": [
@@ -318,6 +387,46 @@
     "Keep to one unit system throughout."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "Fluid properties say how heavy and how thick a fluid is. Density is mass per volume; specific weight is weight per volume; specific gravity compares the density with water's. Viscosity measures resistance to flowing.",
+   "needs": [],
+   "leads": [
+    [
+     "fluids-c",
+     "fluids",
+     "Fluid Mechanics: Fluid statics"
+    ],
+    [
+     "water-h",
+     "water",
+     "Water Resources and Environmental Engineering: Groundwater"
+    ]
+   ],
+   "terms": [
+    [
+     "specific weight",
+     "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+    ],
+    [
+     "specific gravity",
+     "density of a substance divided by the density of water; it has no units"
+    ],
+    [
+     "viscosity",
+     "a fluid's resistance to flowing; honey has a high viscosity, water a low one"
+    ],
+    [
+     "shear stress",
+     "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+    ],
+    [
+     "reynolds number",
+     "a ratio that tells whether flow is smooth (laminar, low values) or mixed and eddying (turbulent, high values)"
+    ],
+    [
+     "laminar",
+     "smooth, layered flow with no mixing between layers"
+    ]
+   ],
    "symbols": [
     [
      "g",
@@ -519,7 +628,58 @@
     "State whether pressures are gauge or absolute."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Buoyancy and hydrostatic pressure govern buried vaults and pull boxes below the water table.",
+   "primer": "In a fluid at rest, pressure depends only on depth: unit weight times depth. That pressure pushes at right angles on every surface it touches. An object in a fluid is pushed up by a force equal to the weight of the fluid it displaces.",
+   "needs": [
+    [
+     "fluids-b",
+     "fluids",
+     "Fluid Mechanics: Fluid properties"
+    ],
+    [
+     "statics-e",
+     "statics",
+     "Statics: Centroid of area"
+    ]
+   ],
+   "leads": [
+    [
+     "fluids-d",
+     "fluids",
+     "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+    ],
+    [
+     "water-e",
+     "water",
+     "Water Resources and Environmental Engineering: Flood control"
+    ],
+    [
+     "geotech-d",
+     "geotech",
+     "Geotechnical Engineering: Effective stress"
+    ]
+   ],
+   "terms": [
+    [
+     "specific weight",
+     "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+    ],
+    [
+     "centroid",
+     "the geometric centre of an area, the point where it would balance if cut from uniform card"
+    ],
+    [
+     "resultant",
+     "the single force that has the same effect as several forces acting together"
+    ],
+    [
+     "moment",
+     "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+    ],
+    [
+     "specific gravity",
+     "density of a substance divided by the density of water; it has no units"
+    ]
+   ],
    "symbols": [
     [
      "h_{c}",
@@ -724,7 +884,59 @@
     "For forces, apply the momentum equation to a control volume with pressures and velocities at its faces."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Wind load on a sign panel is a drag force: drag coefficient × dynamic pressure × area.",
+   "primer": "Moving fluid carries energy in three forms: pressure, speed and height. Along a pipe or stream their total stays the same except for what friction takes away. Flow rate, velocity times area, stays constant, so a narrower section means faster flow.",
+   "needs": [
+    [
+     "fluids-c",
+     "fluids",
+     "Fluid Mechanics: Fluid statics"
+    ]
+   ],
+   "leads": [
+    [
+     "fluids-a",
+     "fluids",
+     "Fluid Mechanics: Flow measurement"
+    ],
+    [
+     "water-b",
+     "water",
+     "Water Resources and Environmental Engineering: Basic hydraulics"
+    ],
+    [
+     "water-c",
+     "water",
+     "Water Resources and Environmental Engineering: Pumps"
+    ],
+    [
+     "water-d",
+     "water",
+     "Water Resources and Environmental Engineering: Water distribution systems"
+    ]
+   ],
+   "work": "Wind pushing on a sign panel is a drag force: fluid speed squared, times area, times a coefficient.",
+   "terms": [
+    [
+     "head",
+     "energy of a fluid expressed as a height of that fluid, in metres or feet"
+    ],
+    [
+     "momentum",
+     "mass times velocity; a force acting for a time changes it"
+    ],
+    [
+     "reynolds number",
+     "a ratio that tells whether flow is smooth (laminar, low values) or mixed and eddying (turbulent, high values)"
+    ],
+    [
+     "resultant",
+     "the single force that has the same effect as several forces acting together"
+    ],
+    [
+     "head loss",
+     "energy, expressed as a height of fluid, used up by friction and fittings"
+    ]
+   ],
    "symbols": [
     [
      "A_{1}",

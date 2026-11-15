@@ -64,14 +64,15 @@
     ]
    },
    "bridge": {
-    "keep": "Geometric design, traffic control devices, signal timing and operations, which are your working tools.",
-    "rusty": [
-     "Pavement structural design by the AASHTO structural number.",
-     "Traffic flow theory as theory: Greenshields, shock waves, queueing.",
-     "Planning models: trip generation and distribution, logit mode choice."
+    "plain": "Transportation engineering covers the geometry of roads, how traffic flows and is controlled, pavement thickness, and forecasting travel.",
+    "core": [
+     "Road geometry follows from how far a driver needs to see and how fast a vehicle can turn.",
+     "Traffic flow links volume, speed and density.",
+     "Signals share time between conflicting movements.",
+     "Pavement thickness depends on truck loads and the soil beneath."
     ],
-    "work": "This is home ground, which makes it the topic where habit can cost marks.",
-    "exam": "Answer with the handbook's equations and constants, which follow the AASHTO Green Book and national MUTCD values, not a state manual, a local standard or newer editions you use at work. Check the handbook's stopping sight distance, vertical curve and signal change interval formulas before relying on memory."
+    "links": "Sight distance and curves come from dynamics; alignment geometry from mathematics and surveying; pavement from materials and geotechnics; traffic data from statistics.",
+    "exam": "Use the handbook's equations and constants, which follow national references, even where daily practice uses a state manual or a newer edition."
    }
   },
   {
@@ -277,7 +278,12 @@
      "idea": "The PVI sits at half the curve length. From the PVC, follow the first grade for L / 2 to the PVI, then the second grade for L / 2 to the PVT. The curve itself is not needed for the end points.",
      "steps": "PVI elevation = 215.50 + \\frac{3.0}{100}(350) = 226.00 ft.\n\nPVT elevation = 226.00 + \\frac{-2.0}{100}(350) = 219.00 ft.",
      "answer": "219.00 ft",
-     "value": 219.0
+     "value": 219.0,
+     "figure": {
+      "viewBox": "0 0 400 170",
+      "svg": "<path d='M40 110 Q200 10 360 96' fill='none' stroke='#00242E' stroke-width='3'/><line x1='40' y1='110' x2='200' y2='10' stroke='#568CBB' stroke-dasharray='6 4'/><line x1='200' y1='10' x2='360' y2='96' stroke='#568CBB' stroke-dasharray='6 4'/><text x='40' y='128' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVC</text><text x='360' y='114' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVT</text><text x='200' y='8' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>PVI</text><text x='96' y='52' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>+3%</text><text x='304' y='44' text-anchor='middle' font-size='12' font-weight='400' fill='#568CBB'>-2%</text><line x1='40' y1='146' x2='360' y2='146' stroke='#00242E'/><line x1='40' y1='140' x2='40' y2='152' stroke='#00242E'/><line x1='360' y1='140' x2='360' y2='152' stroke='#00242E'/><text x='200' y='162' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>700 ft</text>",
+      "alt": "A crest vertical curve 700 ft long joining a +3% grade to a -2% grade."
+     }
     },
     {
      "family": "transport-0021",
@@ -323,7 +329,43 @@
     "Keep U.S. units straight: speeds in mph, lengths in ft, grades in percent or decimal as the formula requires."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Your daily work, but answer with the handbook's AASHTO-based values for reaction time, deceleration and friction rather than agency figures.",
+   "primer": "Road geometry is set by what drivers and vehicles can do: how far ahead a driver must see to stop, how sharply a vehicle can turn at speed, and how grades change smoothly through vertical curves.",
+   "needs": [
+    [
+     "math-a",
+     "math",
+     "Mathematics and Statistics: Analytic geometry"
+    ],
+    [
+     "dynamics-a",
+     "dynamics",
+     "Dynamics: Kinematics"
+    ]
+   ],
+   "leads": [],
+   "work": "Answer with the handbook's values for reaction time, deceleration and friction, even where an agency manual differs.",
+   "terms": [
+    [
+     "stopping sight distance",
+     "the distance a driver needs to see ahead in order to react and brake to a stop"
+    ],
+    [
+     "superelevation",
+     "the cross slope that banks a road around a curve"
+    ],
+    [
+     "side friction",
+     "the sideways tyre-road friction that helps hold a vehicle on a curve"
+    ],
+    [
+     "deflection angle",
+     "the angle through which the alignment turns at the point of intersection of two tangents"
+    ],
+    [
+     "pvc",
+     "point of vertical curvature, where a vertical curve begins; the PVI is where the two grades would meet and the PVT is where the curve ends"
+    ]
+   ],
    "symbols": [
     [
      "g_{1}",
@@ -470,6 +512,30 @@
      "steps": "Design ESALs = 950 × 365 × 20 = 6,935,000 = 6.93 million.",
      "answer": "6.93 million",
      "value": 6.935
+    },
+    {
+     "family": "transport-0030",
+     "problem": "A flexible pavement needs a structural number of 4.3. It will have 5.2 in of asphalt with a layer coefficient of 0.44, on a granular base with a layer coefficient of 0.14 and a drainage coefficient of 1.0. How thick must the base be?",
+     "idea": "The AASHTO structural number is the sum, over the layers, of layer coefficient × thickness × drainage coefficient. Subtract what the asphalt provides and divide the remainder by the base's coefficient times its drainage coefficient.",
+     "steps": "Asphalt provides 0.44(5.2) = 2.29.\n\nD_{2} = \\frac{4.3 - 2.29}{0.14(1.0)} = 14.37 in.",
+     "answer": "14.37 in",
+     "value": 14.371429
+    },
+    {
+     "family": "transport-0031",
+     "problem": "A road carries 12,750 vehicles per day, of which 14% are trucks with an average truck factor of 0.9 ESALs per truck. Half the traffic uses the design lane. How many ESALs does the design lane receive in one year?",
+     "idea": "Pavement damage is counted in equivalent 18-kip single axle loads. Yearly ESALs = daily traffic × truck share × truck factor × 365 × the share in the design lane. Cars are ignored because their damage is negligible.",
+     "steps": "ESALs = 12,750 × 0.14 × 0.9 × 365 × 0.5 = 293,186.",
+     "answer": "293,186 ESALs",
+     "value": 293186.25
+    },
+    {
+     "family": "transport-0032",
+     "problem": "Using the fourth-power rule, how many passes of an 18-kip single axle do the same pavement damage as one pass of a 21 kip single axle?",
+     "idea": "Pavement damage rises very steeply with axle load, roughly with the fourth power of the load ratio. A modest overload therefore does several times the damage, which is why weight limits matter.",
+     "steps": "Equivalency = (\\frac{21}{18})^{4} = 1.853.",
+     "answer": "1.853",
+     "value": 1.852623
     }
    ],
    "lookup": [
@@ -491,6 +557,26 @@
     "Round thicknesses up to practical values."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "A pavement spreads wheel loads so the soil beneath is not overstressed. Its thickness depends on the number and weight of truck axles and on the strength of the soil.",
+   "needs": [
+    [
+     "geotech-a",
+     "geotech",
+     "Geotechnical Engineering: Index properties and soil classifications"
+    ],
+    [
+     "materials-a",
+     "materials",
+     "Materials: Mix design of concrete and asphalt"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "structural number",
+     "an index of the total strength of a flexible pavement, built up from each layer's thickness and quality"
+    ]
+   ],
    "symbols": [
     [
      "a_{1}",
@@ -647,6 +733,14 @@
      "steps": "f_{HV} = \\frac{1}{1 + 0.06(2.0 - 1)} = 0.9434.\n\nv_{p} = \\frac{4,800}{0.94(4)(0.9434)} = 1,353 pc/h/ln.\n\nDensity = \\frac{1,353}{64} = 21.1 pc/mi/ln.",
      "answer": "21.1 pc/mi/ln",
      "value": 21.143617
+    },
+    {
+     "family": "transport-0033",
+     "problem": "Three vehicles cross a short road section at 35, 42 and 58 mph. What is the space mean speed?",
+     "idea": "Space mean speed is the harmonic mean of the individual speeds: the number of vehicles divided by the sum of 1 / speed. It is the speed that ties flow to density, and it is never more than the arithmetic (time) mean.",
+     "steps": "Space mean speed = \\frac{3}{\\frac{1}{35} + \\frac{1}{42} + \\frac{1}{58}} = \\frac{3}{0.06962} = 43.09 mph. The arithmetic mean is 45.00 mph.",
+     "answer": "43.09 mph",
+     "value": 43.089623
     }
    ],
    "lookup": [
@@ -671,7 +765,29 @@
     "For a signal, compute capacity as saturation flow × g / C and the v/c ratio."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Capacity and level of service follow the handbook's simplified relations, which are leaner than a full Highway Capacity Manual analysis.",
+   "primer": "Traffic on a road is described by flow (vehicles per hour), speed and density (vehicles per mile). Flow = speed × density. Capacity is the most flow a road or signal approach can carry.",
+   "needs": [
+    [
+     "math-d",
+     "math",
+     "Mathematics and Statistics: Statistics"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "density",
+     "in traffic flow, the number of vehicles per mile of lane"
+    ],
+    [
+     "saturation flow",
+     "the number of vehicles per hour a lane could pass if its signal were green all the time"
+    ],
+    [
+     "peak hour factor",
+     "the hourly volume divided by four times the busiest 15-minute volume; it shows how peaked the traffic is"
+    ]
+   ],
    "symbols": [
     [
      "q_{max}",
@@ -801,6 +917,30 @@
      "steps": "y = t + \\frac{v}{2a} = 1.0 + \\frac{77}{2(10)} = 1.0 + 3.85 = 4.85 s.",
      "answer": "4.85 s",
      "value": 4.85
+    },
+    {
+     "family": "transport-0037",
+     "problem": "An intersection is 66 ft wide between stop line and far-side conflict point, and the design vehicle is 20 ft long. Approach speed is 44.0 ft/s. Using r = (W + L) / v, what all-red clearance interval is needed?",
+     "idea": "The all-red interval gives a vehicle that entered at the end of yellow time to clear the intersection. It must cover the crossing width plus the vehicle's own length at the approach speed.",
+     "steps": "r = \\frac{66 + 20}{44.0} = 1.95 s.",
+     "answer": "1.95 s",
+     "value": 1.954545
+    },
+    {
+     "family": "transport-0038",
+     "problem": "A signal has a total lost time of 13 s per cycle, and the sum of the critical flow ratios is 0.64. Using Webster's formula C = (1.5L + 5) / (1 - Y), what is the optimum cycle length?",
+     "idea": "Webster's formula balances two effects: short cycles waste a large share of time on lost time at each phase change, and long cycles make stopped vehicles wait. As the critical flow ratios approach 1 the best cycle grows without limit.",
+     "steps": "C = \\frac{1.5(13) + 5}{1 - 0.64} = \\frac{24.5}{0.36} = 68.1 s.",
+     "answer": "68.1 s",
+     "value": 68.055556
+    },
+    {
+     "family": "transport-0039",
+     "problem": "A crosswalk is 77 ft long. Using a walking speed of 3.5 ft/s, what pedestrian clearance time is needed?",
+     "idea": "The pedestrian clearance time lets someone who steps off the kerb at the end of the walk interval finish crossing. It is the crossing distance divided by the walking speed; the MUTCD uses 3.5 ft/s.",
+     "steps": "Clearance time = \\frac{77}{3.5} = 22.0 s.",
+     "answer": "22.0 s",
+     "value": 22.0
     }
    ],
    "lookup": [
@@ -822,7 +962,22 @@
     "For installation questions, look for the engineering study and warrants."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "The exam cites the national MUTCD. Where a state supplement differs, the national manual is the answer.",
+   "primer": "Signs, markings and signals tell road users what to do. A national manual standardises them. Signal timing gives each movement enough green and safe clearance between movements.",
+   "needs": [
+    [
+     "dynamics-a",
+     "dynamics",
+     "Dynamics: Kinematics"
+    ]
+   ],
+   "leads": [],
+   "work": "The exam cites the national manual; where a state supplement differs, the national one is the answer.",
+   "terms": [
+    [
+     "stopping sight distance",
+     "the distance a driver needs to see ahead in order to react and brake to a stop"
+    ]
+   ],
    "symbols": [
     [
      "t",
@@ -839,6 +994,14 @@
     [
      "G",
      "grade as a decimal"
+    ],
+    [
+     "r",
+     "all-red interval"
+    ],
+    [
+     "C",
+     "cycle length"
     ]
    ]
   },
@@ -942,6 +1105,14 @@
      "steps": "A × F for each zone: 2,100, 1,350 and 1,600; sum = 5,050.\n\nTrips to the first = 1,800 × \\frac{2,100}{5,050} = 749.",
      "answer": "749 trips",
      "value": 748.514851
+    },
+    {
+     "family": "transport-0040",
+     "problem": "A site had 24 crashes in the study period. A countermeasure with a crash reduction factor of 28% is planned. The ADT was 12,750 before and is forecast at 14,550 after. How many crashes are expected to be prevented?",
+     "idea": "Crashes prevented = expected crashes without the improvement × crash reduction factor × (ADT after / ADT before). The traffic ratio scales the benefit to the exposure in the period being forecast.",
+     "steps": "Prevented = 24 × 0.28 × \\frac{14,550}{12,750} = 7.67 crashes.",
+     "answer": "7.67 crashes",
+     "value": 7.668706
     }
    ],
    "lookup": [
@@ -974,6 +1145,16 @@
     "For crash rates, divide crashes by exposure and scale to the stated basis."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "Planning estimates how many trips people will make, where they go, by what mode and on what route. Safety analysis measures crashes relative to traffic.",
+   "needs": [
+    [
+     "math-d",
+     "math",
+     "Mathematics and Statistics: Statistics"
+    ]
+   ],
+   "leads": [],
+   "terms": [],
    "symbols": [
     [
      "P_{i}",

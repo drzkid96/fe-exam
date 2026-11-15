@@ -63,14 +63,14 @@
     ]
    },
    "bridge": {
-    "keep": "Quantities, unit costs and bid items, from engineer's estimates; reading plans and specifications.",
-    "rusty": [
-     "Scheduling: critical path, float and precedence diagrams.",
-     "Earned value terms and indices.",
-     "Equipment productivity and construction safety rates."
+    "plain": "Construction engineering covers how a project is bought, scheduled, measured, priced and built safely.",
+    "core": [
+     "An estimate is quantity × unit cost, plus overhead and profit.",
+     "A schedule is a network of activities; the longest chain sets the duration.",
+     "Earned value compares work done with money spent and time used."
     ],
-    "work": "Planning-level and engineer's estimates, quantity take-offs from plan sheets, construction staging and traffic handling all draw on this topic.",
-    "exam": "Scheduling and earned value are formula-driven and quick once the definitions are fixed in memory. They repay an hour of drill."
+    "links": "Quantities come from surveying and drawings; costs over time use engineering economics; contracts link to ethics and professional practice.",
+    "exam": "Scheduling and earned value are quick once the definitions are fixed in memory."
    }
   },
   {
@@ -123,7 +123,24 @@
      "text": "A request for information asks the designer to clarify the documents. A submittal or shop drawing shows how the contractor intends to meet them and is reviewed for conformance with the design intent, not for means and methods."
     }
    ],
-   "examples": [],
+   "examples": [
+    {
+     "family": "construction-0021",
+     "problem": "A contractor has completed work worth $668,000 to date. The contract holds 10% retainage, and $470,250 has already been paid. How much is due on this progress payment?",
+     "idea": "A progress payment is the value of work done to date, less the retainage the owner holds until completion, less what has already been paid.",
+     "steps": "Earned less retainage = 668,000 × (1 - 0.10) = $601,200.\n\nDue now = 601,200 - 470,250 = $130,950.",
+     "answer": "$130,950",
+     "value": 130950.0
+    },
+    {
+     "family": "construction-0022",
+     "problem": "An estimate has direct costs of $1,275,000 and indirect costs of $165,000. The contractor adds a 9% markup for profit and contingency. What is the bid price?",
+     "idea": "The bid is the total estimated cost, direct plus indirect (overhead), increased by the markup.",
+     "steps": "Bid = (1,275,000 + 165,000) × (1 + 0.09) = 1,440,000 × 1.09 = $1,569,600.",
+     "answer": "$1,569,600",
+     "value": 1569600.0
+    }
+   ],
    "lookup": [],
    "deep": "Project administration is how a design becomes a built project under a contract. The delivery method decides who holds which contract and when the builder joins. The contract documents define the work, and a hierarchy of bonds, insurance and payment procedures manages the risk that a party fails to perform.\n\nDuring construction the engineer's role is usually to interpret the documents, review submittals, observe the work and certify payment. Changes are made only through the contract's change procedure.",
    "method": [
@@ -132,7 +149,17 @@
     "Match the risk to the bond or insurance that covers it.",
     "Place the event in the project sequence from bid to closeout."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "Project administration covers who is responsible for what: the documents that make up a contract, how the builder is chosen, and how payments and changes are handled.",
+   "needs": [
+    [
+     "ethics-d",
+     "ethics",
+     "Ethics and Professional Practice: Contracts and contract law"
+    ]
+   ],
+   "leads": [],
+   "terms": []
   },
   {
    "id": "construction-b-lesson",
@@ -214,6 +241,30 @@
      "steps": "Trucks = \\frac{truck cycle time}{loading time} = \\frac{35}{5} = 7.",
      "answer": "7",
      "value": 7.0
+    },
+    {
+     "family": "construction-0023",
+     "problem": "A job must haul 870 m^{3} of soil measured in the bank. The soil swells 25% when excavated, and each truck carries 10 m^{3} loose. How many truckloads are needed?",
+     "idea": "Excavated soil loosens and takes up more room than it did in the ground. Trucks are filled with loose soil, so convert bank volume to loose volume before dividing by truck capacity.",
+     "steps": "Loose volume = 870 × (1 + 0.25) = 1,088 m^{3}.\n\nLoads = \\frac{1,088}{10} = 108.8.",
+     "answer": "108.8 loads",
+     "value": 108.75
+    },
+    {
+     "family": "construction-0024",
+     "problem": "A roller 2.0 m wide travels at 4 km/h and compacts lifts 0.23 m thick in 6 passes, working at 0.75 efficiency. What is its hourly production of compacted fill?",
+     "idea": "Compaction production is the volume covered in an hour, width × speed × lift thickness, divided by the number of passes each strip needs, times job efficiency.",
+     "steps": "Production = \\frac{2.0 × 4,000 × 0.23 × 0.75}{6} = 230.0 m^{3}/h.",
+     "answer": "230.0 m^{3}/h",
+     "value": 230.0
+    },
+    {
+     "family": "construction-0025",
+     "problem": "Fresh concrete with a unit weight of 24.0 kN/m^{3} is placed quickly to a height of 3.3 m in a wall form. Treating it as a liquid, what is the maximum pressure on the form?",
+     "idea": "Until it begins to set, fresh concrete behaves like a heavy liquid, so form pressure rises linearly with depth to unit weight × height at the bottom. Slower placing lets the lower concrete stiffen and caps the pressure.",
+     "steps": "Maximum pressure = 24.0 × 3.3 = 79.2 kPa at the base of the form.",
+     "answer": "79.2 kPa",
+     "value": 79.2
     }
    ],
    "lookup": [
@@ -234,6 +285,10 @@
     "Divide the quantity by production for duration."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "Construction operations are the work on site: how much earth a machine moves in an hour, how crews are organised, and how workers are kept safe.",
+   "needs": [],
+   "leads": [],
+   "terms": [],
    "symbols": [
     [
      "h",
@@ -334,6 +389,30 @@
      "steps": "Daily output = 3 × 45 = 135 m^{2}/day.\n\nDuration = \\frac{1,620}{135} = 12 working days.",
      "answer": "12 days",
      "value": 12.0
+    },
+    {
+     "family": "construction-0026",
+     "problem": "A project has a budget at completion of $640,000. To date the earned value is $240,000 and the actual cost is $228,000. If cost performance continues at the same rate, what is the estimate at completion?",
+     "idea": "The cost performance index is earned value divided by actual cost: the value produced per dollar spent. If that rate holds, the estimate at completion is the budget divided by the index.",
+     "steps": "CPI = \\frac{240,000}{228,000} = 1.053.\n\nEAC = \\frac{640,000}{1.053} = $608,000.",
+     "answer": "$608,000",
+     "value": 608000.0
+    },
+    {
+     "family": "construction-0027",
+     "problem": "An activity has an optimistic duration of 6 days, a most likely duration of 10 days and a pessimistic duration of 16 days. What is its PERT expected duration?",
+     "idea": "PERT weights the most likely estimate four times as heavily as the two extremes: expected time = (optimistic + 4 × most likely + pessimistic) / 6.",
+     "steps": "t_{e} = \\frac{6 + 4(10) + 16}{6} = 10.33 days.",
+     "answer": "10.33 days",
+     "value": 10.333333
+    },
+    {
+     "family": "construction-0028",
+     "problem": "An activity normally takes 8 days at a cost of $15,250. It can be crashed to 6 days at a cost of $20,500. What is its crash cost per day saved?",
+     "idea": "The cost slope is the extra cost divided by the time saved. When shortening a schedule, crash the critical activity with the lowest cost slope first.",
+     "steps": "Cost slope = \\frac{20,500 - 15,250}{8 - 6} = $2,625 per day.",
+     "answer": "$2,625 per day",
+     "value": 2625.0
     }
    ],
    "lookup": [
@@ -357,7 +436,28 @@
     "For earned value, compute SV = EV - PV, CV = EV - AC, SPI = EV / PV, CPI = EV / AC."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "Project control keeps a job on time and on budget. A schedule orders the activities; earned value compares the work actually done with the plan and with the money spent.",
+   "needs": [],
+   "leads": [],
+   "terms": [
+    [
+     "earned value",
+     "the budgeted cost of the work actually completed to date"
+    ],
+    [
+     "critical path",
+     "the longest chain of dependent activities through a schedule; it sets the project duration"
+    ],
+    [
+     "float",
+     "the time an activity can slip without delaying the project"
+    ]
+   ],
    "symbols": [
+    [
+     "t_{e}",
+     "PERT expected duration"
+    ],
     [
      "A",
      "activity A"
@@ -500,7 +600,11 @@
     "Adjust old costs with the ratio of cost indices."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "The same take-off and unit-price logic as an engineer's estimate, with waste, swell and productivity made explicit."
+   "primer": "An estimate is a list of quantities, each multiplied by a unit cost, with allowances for waste, overhead and profit.",
+   "needs": [],
+   "leads": [],
+   "work": "An engineer's estimate uses the same quantity times unit price logic.",
+   "terms": []
   },
   {
    "id": "construction-e-lesson",
@@ -573,6 +677,22 @@
      "steps": "Length = \\frac{13.50}{0.75} = 18.00 ft. Width = \\frac{8.25}{0.75} = 11.00 ft.\n\nArea = 18.00 × 11.00 = 198.0 ft^{2}.",
      "answer": "198.0 ft^{2}",
      "value": 198.0
+    },
+    {
+     "family": "construction-0031",
+     "problem": "On a grading plan with a contour interval of 2.8 m, two adjacent contours are 30 m apart on the ground. What is the average slope between them?",
+     "idea": "Slope is rise over run. Between adjacent contours the rise is the contour interval and the run is the horizontal distance between them.",
+     "steps": "Slope = \\frac{2.8}{30} × 100 = 9.3%.",
+     "answer": "9.33 %",
+     "value": 9.333333
+    },
+    {
+     "family": "construction-0032",
+     "problem": "A plan sheet is drawn at 1 in = 60 ft. Written as a ratio 1:N, what is N?",
+     "idea": "A ratio scale needs both sides in the same unit. One foot is 12 inches, so 1 in = X ft is 1:12X.",
+     "steps": "N = 60 × 12 = 720, so the scale is 1:720.",
+     "answer": "720",
+     "value": 720
     }
    ],
    "lookup": [],
@@ -585,7 +705,22 @@
     "Cross-reference details and schedules for sizes."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Scales, contours and sections are read exactly as on your own plan sheets."
+   "primer": "Engineering drawings describe a project to scale. Plans look down, profiles look from the side along the route, and sections cut across it. Reading them means converting measured lengths with the scale and reading levels from contours and grades.",
+   "needs": [
+    [
+     "surveying-e",
+     "surveying",
+     "Surveying: Leveling"
+    ]
+   ],
+   "leads": [],
+   "terms": [],
+   "symbols": [
+    [
+     "N",
+     "number of recordable cases"
+    ]
+   ]
   }
  ]
 }

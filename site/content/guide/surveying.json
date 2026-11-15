@@ -60,14 +60,15 @@
     ]
    },
    "bridge": {
-    "keep": "Stationing, bearings and azimuths, cross-sections and reading a profile, from plan production.",
-    "rusty": [
-     "Traverse arithmetic: latitudes, departures, closure and adjustment.",
-     "Area methods (coordinates, trapezoidal and Simpson's rules) and earthwork volumes.",
-     "Differential levelling notes."
+    "plain": "Surveying measures where things are: distances, directions, elevations, areas and volumes of earth.",
+    "core": [
+     "A direction is an angle from north.",
+     "A line can be split into a north-south part and an east-west part.",
+     "Elevations are carried from a known point by reading a rod through a level.",
+     "Earthwork volume is cross-section area times distance."
     ],
-    "work": "Alignment and profile sheets, right-of-way lines, grading and earthwork quantities for street projects use exactly these calculations, usually hidden inside CAD.",
-    "exam": "The exam expects the hand method. Lay out a small table for coordinates or level notes and fill it in."
+    "links": "It is applied trigonometry. Road geometry in transportation and quantities in construction use its results.",
+    "exam": "The exam expects the hand method: set out a small table and fill it in."
    }
   },
   {
@@ -172,6 +173,14 @@
      "steps": "Correction = -(misclosure) × \\frac{leg length}{perimeter} = -(0.16) × \\frac{240.0}{960} = -0.040 m.",
      "answer": "-0.040 m",
      "value": -0.04
+    },
+    {
+     "family": "surveying-0017",
+     "problem": "A steel tape, correct at 20 °C, is used to measure 302 m at 24 °C. The coefficient of thermal expansion of steel is 11.6 × 10^{-6} per °C. What correction should be applied to the measured length?",
+     "idea": "A warm tape is longer than its marks say, so it reads short and the correction is positive; a cold tape reads long and the correction is negative. The size is (coefficient)(temperature difference)(length).",
+     "steps": "Correction = 11.6 × 10^{-6} × (24 - 20) × 302 = 0.0140 m.",
+     "answer": "0.0140 m",
+     "value": 0.014013
     }
    ],
    "lookup": [
@@ -201,7 +210,40 @@
     "Reduce slope distances to horizontal before anything else."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Bearings, azimuths and deflection angles are the language of alignment sheets.",
+   "primer": "Survey measurements are distances and angles. A direction is given as an azimuth (an angle clockwise from north) or a bearing (an angle from north or south toward east or west). Sloping distances are converted to horizontal ones with trigonometry.",
+   "needs": [
+    [
+     "math-a",
+     "math",
+     "Mathematics and Statistics: Analytic geometry"
+    ]
+   ],
+   "leads": [
+    [
+     "surveying-b",
+     "surveying",
+     "Surveying: Area computations"
+    ],
+    [
+     "surveying-d",
+     "surveying",
+     "Surveying: Coordinate systems"
+    ]
+   ],
+   "terms": [
+    [
+     "azimuth",
+     "a direction given as an angle measured clockwise from north, from 0° to 360°"
+    ],
+    [
+     "latitude",
+     "the north-south component of a survey line"
+    ],
+    [
+     "departure",
+     "the east-west component of a survey line"
+    ]
+   ],
    "symbols": [
     [
      "A",
@@ -318,7 +360,46 @@
      "idea": "The trapezoidal rule treats each strip between adjacent offsets as a trapezoid. Summed, the area is the common interval times (half the first and last offsets plus all the offsets in between). Simpson's 1/3 rule fits parabolas instead and needs an even number of intervals.",
      "steps": "A = d × ((first + last) / 2 + the others) = 12 × ((2.4 + 2.0) / 2 + 3.8 + 4.6 + 3.9) = 12 × 14.50 = 174.0 m^{2}.",
      "answer": "174.0 m^{2}",
-     "value": 174.0
+     "value": 174.0,
+     "figure": {
+      "viewBox": "0 0 400 185",
+      "svg": "<path d='M60 150 L60 93 L130 59 L200 40 L270 57 L340 102 L340 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='93' stroke='#00242E' stroke-dasharray='4 3'/><text x='60' y='87' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2.4</text><line x1='130' y1='150' x2='130' y2='59' stroke='#00242E' stroke-dasharray='4 3'/><text x='130' y='53' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3.8</text><line x1='200' y1='150' x2='200' y2='40' stroke='#00242E' stroke-dasharray='4 3'/><text x='200' y='34' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4.6</text><line x1='270' y1='150' x2='270' y2='57' stroke='#00242E' stroke-dasharray='4 3'/><text x='270' y='51' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3.9</text><line x1='340' y1='150' x2='340' y2='102' stroke='#00242E' stroke-dasharray='4 3'/><text x='340' y='96' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='60' y1='160' x2='130' y2='160' stroke='#00242E'/><line x1='60' y1='154' x2='60' y2='166' stroke='#00242E'/><line x1='130' y1='154' x2='130' y2='166' stroke='#00242E'/><text x='95' y='176' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>12 m</text>",
+      "alt": "Offsets of 2.4, 3.8, 4.6, 3.9 and 2 m from a baseline to a curved boundary at 12 m intervals."
+     }
+    },
+    {
+     "family": "surveying-0020",
+     "problem": "Offsets from a baseline to a curved boundary, measured every 12 m, are 4.6, 6.8, 8.1, 6.4 and 3.8 m. Using Simpson's 1/3 rule, what is the area between the baseline and the boundary?",
+     "idea": "Simpson's 1/3 rule fits parabolas through the offsets in pairs of intervals, so it needs an even number of intervals. The end offsets count once, odd-numbered interior offsets four times and even-numbered interior offsets twice.",
+     "steps": "A = \\frac{12}{3}(4.6 + 4(6.8) + 2(8.1) + 4(6.4) + 3.8) = \\frac{12}{3}(77.4) = 309.60 m^{2}.",
+     "answer": "309.60 m^{2}",
+     "value": 309.6,
+     "figure": {
+      "viewBox": "0 0 400 185",
+      "svg": "<path d='M60 150 L60 88 L130 58 L200 40 L270 63 L340 98 L340 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='88' stroke='#00242E' stroke-dasharray='4 3'/><text x='60' y='82' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4.6</text><line x1='130' y1='150' x2='130' y2='58' stroke='#00242E' stroke-dasharray='4 3'/><text x='130' y='52' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6.8</text><line x1='200' y1='150' x2='200' y2='40' stroke='#00242E' stroke-dasharray='4 3'/><text x='200' y='34' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8.1</text><line x1='270' y1='150' x2='270' y2='63' stroke='#00242E' stroke-dasharray='4 3'/><text x='270' y='57' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6.4</text><line x1='340' y1='150' x2='340' y2='98' stroke='#00242E' stroke-dasharray='4 3'/><text x='340' y='92' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3.8</text><line x1='60' y1='160' x2='130' y2='160' stroke='#00242E'/><line x1='60' y1='154' x2='60' y2='166' stroke='#00242E'/><line x1='130' y1='154' x2='130' y2='166' stroke='#00242E'/><text x='95' y='176' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>12 m</text>",
+      "alt": "Offsets of 4.6, 6.8, 8.1, 6.4 and 3.8 m from a baseline to a curved boundary at 12 m intervals."
+     }
+    },
+    {
+     "family": "surveying-0021",
+     "problem": "A triangular parcel has sides of 72, 98 and 118 m. What is its area?",
+     "idea": "With three sides known and no angles, use Heron's formula: area = square root of s(s - a)(s - b)(s - c), where s is half the perimeter.",
+     "steps": "s = \\frac{72 + 98 + 118}{2} = 144.0 m.\n\nArea = \\sqrt{144.0(72.0)(46.0)(26.0)} = 3,521.4 m^{2}.",
+     "answer": "3,521.4 m^{2}",
+     "value": 3521.381547,
+     "figure": {
+      "viewBox": "0 0 400 180",
+      "svg": "<path d='M70 150 L158 150 L77 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='114' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>72 m</text><text x='66' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>98 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>86.49°</text>",
+      "alt": "A triangle with sides of 72 m and 98 m meeting at 86.49°."
+     }
+    },
+    {
+     "family": "surveying-0022",
+     "problem": "A rectangular lot measures 434.4 ft by 269.4 ft. What is its area in acres?",
+     "idea": "An acre is 43,560 square feet. Work out the area in square feet, then divide.",
+     "steps": "Area = 434.4 × 269.4 = 117,027 ft^{2}.\n\n\\frac{117,027}{43,560} = 2.687 acres.",
+     "answer": "2.687 acres",
+     "value": 2.686579
     }
    ],
    "lookup": [
@@ -350,7 +431,22 @@
     "Convert units if asked: 1 acre = 43,560 ft^{2}; 1 hectare = 10,000 m^{2}."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Right-of-way takes and easements are areas computed from coordinates.",
+   "primer": "The area of a parcel can be found from the coordinates of its corners, from its sides and angles, or, for a curved edge, by adding up strips measured at regular spacing.",
+   "needs": [
+    [
+     "surveying-a",
+     "surveying",
+     "Surveying: Angles, distances, and trigonometry"
+    ]
+   ],
+   "leads": [
+    [
+     "surveying-c",
+     "surveying",
+     "Surveying: Earthwork and volume computations"
+    ]
+   ],
+   "terms": [],
    "symbols": [
     [
      "x_{i}",
@@ -407,6 +503,10 @@
     [
      "d",
      "depth or common interval"
+    ],
+    [
+     "s",
+     "side slope (horizontal to 1 vertical), or half the perimeter"
     ]
    ]
   },
@@ -487,6 +587,35 @@
      "steps": "V = \\frac{L(A_{1} + 4A_{m} + A_{2})}{6} = \\frac{50(16 + 4(22) + 30)}{6} = 1,117 m^{3}.\n\nAverage end area would give 1,150 m^{3}.",
      "answer": "1,117 m^{3}",
      "value": 1116.666667
+    },
+    {
+     "family": "surveying-0023",
+     "problem": "An embankment needs 6,400 m^{3} of compacted fill. The borrow material shrinks by 12% when compacted. What bank volume must be excavated from the borrow pit?",
+     "idea": "Soil compacted in a fill usually occupies less volume than it did in the ground. Divide the compacted volume by (1 - shrinkage) to find the bank volume needed.",
+     "steps": "Bank volume = \\frac{6,400}{1 - 0.12} = 7,273 m^{3}.",
+     "answer": "7,273 m^{3}",
+     "value": 7272.727273
+    },
+    {
+     "family": "surveying-0024",
+     "problem": "A roadway cut on level ground has a base width of 8.8 m, a centreline depth of 2.5 m and side slopes of 2.2 horizontal to 1 vertical. What is the cross-sectional area of the cut?",
+     "idea": "A level section is a trapezoid: the base width plus a triangle on each side whose width is the side slope times the depth. Area = d(b + s d).",
+     "steps": "A = 2.5(8.8 + 2.2 × 2.5) = 2.5 × 14.30 = 35.75 m^{2}.",
+     "answer": "35.75 m^{2}",
+     "value": 35.75,
+     "figure": {
+      "viewBox": "0 0 400 185",
+      "svg": "<path d='M147 150 L253 150 L320 120 L80 120 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='155' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8.8 m</text><text x='200' y='135' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2.5 m deep</text><text x='320' y='138' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>2.2 : 1</text>",
+      "alt": "A level-section cut: a trapezoid wider at the top than at the base."
+     }
+    },
+    {
+     "family": "surveying-0025",
+     "problem": "A conical stockpile of aggregate has a base diameter of 24 m and a height of 6.8 m. What is its volume?",
+     "idea": "The volume of a cone is one third of the base area times the height.",
+     "steps": "V = \\frac{π(12.0)^{2}(6.8)}{3} = 1,025.4 m^{3}.",
+     "answer": "1,025.4 m^{3}",
+     "value": 1025.415842
     }
    ],
    "lookup": [
@@ -509,7 +638,17 @@
     "Watch stationing: one full station is 100 ft or, in metric practice, commonly 1 km with decimals."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Cut and fill quantities on a street widening come from end areas at each cross-section.",
+   "primer": "Earthwork is measured from cross-sections drawn at intervals along a route. The volume between two sections is roughly their average area times the distance between them. Soil also changes volume when it is dug up and when it is compacted.",
+   "needs": [
+    [
+     "surveying-b",
+     "surveying",
+     "Surveying: Area computations"
+    ]
+   ],
+   "leads": [],
+   "work": "Cut and fill quantities on a road project come from end areas at each cross-section.",
+   "terms": [],
    "symbols": [
     [
      "A_{1}",
@@ -530,6 +669,10 @@
     [
      "L",
      "distance between sections"
+    ],
+    [
+     "A",
+     "area"
     ]
    ]
   },
@@ -620,6 +763,30 @@
       "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='293' y2='71' stroke='#00574A' stroke-width='3'/><circle cx='293' cy='71' r='5' fill='#00574A'/><text x='303' y='65' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>azimuth 68.7°</text>",
       "alt": "A line drawn from the origin at an azimuth of 68.7° clockwise from north."
      }
+    },
+    {
+     "family": "surveying-0026",
+     "problem": "Point A is at N 3,035.20, E 2,280.10 and point B is at N 3,005.20, E 2,407.60, in metres. What is the horizontal distance from A to B?",
+     "idea": "The difference in northings is the latitude of the line and the difference in eastings is its departure. The distance is the hypotenuse.",
+     "steps": "Latitude = -30.00 m, departure = 127.50 m.\n\nDistance = \\sqrt{-30.00^{2} + 127.50^{2}} = 130.98 m.",
+     "answer": "130.98 m",
+     "value": 130.981869
+    },
+    {
+     "family": "surveying-0027",
+     "problem": "A closed traverse 1,000 m long has a misclosure of 0.036 m in latitude and 0.058 m in departure. Its relative precision is 1 in N. What is N?",
+     "idea": "The linear misclosure is the hypotenuse of the latitude and departure misclosures. Relative precision is the perimeter divided by that misclosure, written as 1 in N.",
+     "steps": "Misclosure = \\sqrt{0.036^{2} + 0.058^{2}} = 0.0683 m.\n\nN = \\frac{1,000}{0.0683} = 14,649.",
+     "answer": "14,649",
+     "value": 14648.968383
+    },
+    {
+     "family": "surveying-0028",
+     "problem": "A ground distance of 1,732.88 m is to be reduced to the state plane grid. The combined scale factor is 1.00002. What is the grid distance?",
+     "idea": "State plane coordinates lie on a projection surface. The combined factor allows for both the elevation of the ground above the ellipsoid and the scale of the projection at that place: grid = ground × combined factor.",
+     "steps": "Grid distance = 1,732.88 × 1.00002 = 1,732.91 m.",
+     "answer": "1,732.91 m",
+     "value": 1732.914658
     }
    ],
    "lookup": [
@@ -641,6 +808,29 @@
     "To set out a point, reverse the steps with latitude and departure."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "A coordinate system gives every point a northing and an easting. Moving along a line changes them by the line's north-south part (latitude) and east-west part (departure), found from its length and direction.",
+   "needs": [
+    [
+     "surveying-a",
+     "surveying",
+     "Surveying: Angles, distances, and trigonometry"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "latitude",
+     "the north-south component of a survey line"
+    ],
+    [
+     "departure",
+     "the east-west component of a survey line"
+    ],
+    [
+     "azimuth",
+     "a direction given as an angle measured clockwise from north, from 0° to 360°"
+    ]
+   ],
    "symbols": [
     [
      "L",
@@ -649,6 +839,10 @@
     [
      "B",
      "point B"
+    ],
+    [
+     "N",
+     "northing, or the relative precision denominator"
     ]
    ]
   },
@@ -723,6 +917,38 @@
      "steps": "Rise = 162.6 - 150.0 = 12.6 m.\n\nGrade = \\frac{12.6}{360} × 100 = 3.50%.",
      "answer": "3.50 %",
      "value": 3.5
+    },
+    {
+     "family": "surveying-0029",
+     "problem": "A level run starts on a benchmark at 129.03 m. The readings are: backsight 1.475, foresight 1.791 on a turning point, then backsight 1.598 on the turning point and foresight 2.130 on the new point. What is the new point's elevation?",
+     "idea": "Each set-up adds the backsight to get the height of instrument and subtracts the foresight to get the next elevation. Over the whole run, elevation = start + sum of backsights - sum of foresights.",
+     "steps": "Elevation = 129.03 + (1.475 + 1.598) - (1.791 + 2.130) = 129.03 + 3.073 - 3.921 = 128.182 m.",
+     "answer": "128.182 m",
+     "value": 128.182
+    },
+    {
+     "family": "surveying-0030",
+     "problem": "Using c = 0.0675 K^{2}, with c in metres and K in kilometres, what is the combined correction for earth curvature and refraction on a level sight 1.6 km long?",
+     "idea": "Over a long sight the level surface curves away below the line of sight, while refraction bends the line slightly back down. The combined effect grows with the square of the distance, which is why backsight and foresight distances are kept equal.",
+     "steps": "c = 0.0675(1.6)^{2} = 0.1728 m.",
+     "answer": "0.1728 m",
+     "value": 0.1728
+    },
+    {
+     "family": "surveying-0031",
+     "problem": "A profile grade line passes through elevation 196.57 m and runs at a grade of 2.9%. What is its elevation 352 m farther along?",
+     "idea": "A grade in percent is metres of rise per 100 m of run; a negative grade falls. Elevation change = grade / 100 × distance.",
+     "steps": "Elevation = 196.57 + \\frac{2.9}{100}(352) = 196.57 + (10.21) = 206.78 m.",
+     "answer": "206.78 m",
+     "value": 206.778
+    },
+    {
+     "family": "surveying-0032",
+     "problem": "A total station with a height of instrument of 1.55 m measures a slope distance of 101.2 m at a vertical angle of +7.62° to a prism on a 1.39 m rod. How much higher is the ground at the rod than the ground at the instrument?",
+     "idea": "The vertical component of the slope distance is S sin(vertical angle). Add the instrument height, because the measurement starts above the ground, and subtract the rod height, because it ends above the ground.",
+     "steps": "Difference = 101.2 sin 7.62° + 1.55 - 1.39 = 13.419 + 1.55 - 1.39 = 13.58 m.",
+     "answer": "13.58 m",
+     "value": 13.579361
     }
    ],
    "lookup": [
@@ -743,7 +969,31 @@
     "Check: sum of backsights minus sum of foresights equals last elevation minus first."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Profile grades, kerb-return grades and ramp slopes are levelling arithmetic: rise over run."
+   "primer": "Levelling finds elevations. A level gives a horizontal line of sight; reading a rod on a known point and then on a new point gives the difference in height. A grade is the rise or fall per hundred units of distance.",
+   "needs": [],
+   "leads": [
+    [
+     "construction-e",
+     "construction",
+     "Construction Engineering: Interpretation of engineering drawings"
+    ]
+   ],
+   "terms": [
+    [
+     "backsight",
+     "a level-rod reading taken on a point of known elevation"
+    ],
+    [
+     "foresight",
+     "a level-rod reading taken on a point whose elevation is wanted"
+    ]
+   ],
+   "symbols": [
+    [
+     "c",
+     "side length, or the curvature and refraction correction"
+    ]
+   ]
   }
  ]
 }

@@ -159,6 +159,92 @@ BY_STEM = {
  'What is the x-component of the unit vector': (None, L(0, lambda e: vec3(e.a, e.b, e.c))),
  'What is the scalar projection of **A**': (None, L(0, lambda e: vec([('A', e.a1, e.a2), ('B', e.b1, e.b2), (f"projection = {nf(e.ans, 2)}", e.ans * e.b1 / math.hypot(e.b1, e.b2), e.ans * e.b2 / math.hypot(e.b1, e.b2), BL, True)]))),
 }
+# ---------------- further generators ----------------
+from author_v import footing, column, rcbeam, hcurve, vcurve, pipe, triangle, tsec
+def dam(b, h, F=None, Wt=None):
+    k = min(150 / h, 120 / b); x = 200; s = f"<rect x='40' y='{170-h*k:.0f}' width='{x-40}' height='{h*k:.0f}' fill='{BL}' fill-opacity='.25'/><rect x='{x}' y='{170-h*k:.0f}' width='{b*k:.0f}' height='{h*k:.0f}' fill='{RU}' stroke='{SL}' stroke-width='2'/><line x1='20' y1='170' x2='380' y2='170' stroke='{SL}' stroke-width='2'/>"
+    s += f"<path d='M{x} {170-h*k:.0f} L{x} 170 L{x-0.45*h*k:.0f} 170 Z' fill='{LG}' stroke='{JD}' stroke-width='2'/>" + T(x + b * k / 2, 186, f"{nf(b)} m") + T(x + b * k + 8, 170 - h * k / 2, f"{nf(h)} m", a='start')
+    if F: s += harrow(x - 70, x - 4, 170 - h * k / 3, EM) + T(x - 74, 170 - h * k / 3 + 4, f"{nf(F, 1)} kN/m at h / 3", a='end', c=EM, w='600', z=11) + arrow(x + b * k / 2, 170 - h * k / 2 - 20, 170 - h * k / 2 + 20, BL) + T(x + b * k / 2, 170 - h * k / 2 - 26, f"{nf(Wt, 1)} kN/m", c=BL, w='600', z=11)
+    return {'viewBox': '0 0 400 195', 'svg': s, 'alt': f"A rectangular concrete dam {nf(b)} m wide and {nf(h)} m high with water level with its top on one side and a triangular pressure diagram."}
+def trap(b, y, z):
+    k = min(240 / (b + 2 * z * y * 1.3), 110 / (y * 1.3)); cx = 200; yb = 150; top = lambda d: (cx - (b / 2 + z * d) * k, cx + (b / 2 + z * d) * k, yb - d * k)
+    l, r, yt = top(y * 1.3); wl, wr, yw = top(y)
+    s = f"<path d='M{l:.0f} {yt:.0f} L{cx-b/2*k:.0f} {yb} L{cx+b/2*k:.0f} {yb} L{r:.0f} {yt:.0f}' fill='none' stroke='{SL}' stroke-width='3'/><path d='M{wl:.0f} {yw:.0f} L{cx-b/2*k:.0f} {yb} L{cx+b/2*k:.0f} {yb} L{wr:.0f} {yw:.0f} Z' fill='{BL}' fill-opacity='.3'/>"
+    s += T(cx, yb + 16, f"{nf(b)} m") + T(cx, (yw + yb) / 2 + 4, f"{nf(y)} m deep") + T(wr + 10, yw + 20, f"{nf(z)} : 1", a='start', z=11)
+    return {'viewBox': '0 0 400 175', 'svg': s, 'alt': f"A trapezoidal channel with a {nf(b)} m bottom, side slopes of {nf(z)} horizontal to 1 vertical, flowing {nf(y)} m deep."}
+def pile(d, L, lab=''):
+    s = f"<rect x='40' y='40' width='320' height='130' fill='{CR}'/><line x1='40' y1='40' x2='360' y2='40' stroke='{SL}' stroke-width='3'/><rect x='188' y='24' width='24' height='128' fill='{RU}' stroke='{SL}' stroke-width='2'/>" + arrow(200, 0, 22) + ''.join(arrow(x, 136 - 26 * i, 112 - 26 * i, BL, 2) for i in range(4) for x in (178, 222))
+    s += arrow(200, 176, 154, JD) + T(232, 100, 'Skin friction', a='start', c=BL, z=11) + T(210, 176, 'End bearing', a='start', c=JD, z=11) + f"<line x1='120' y1='40' x2='120' y2='152' stroke='{SL}'/>" + T(112, 100, f"{nf(L)} m", a='end') + T(214, 18, lab or f"{nf(d)} m wide", a='start', z=11)
+    return {'viewBox': '0 0 400 185', 'svg': s, 'alt': f"A pile {nf(L)} m long carrying load by skin friction along its shaft and end bearing at its tip."}
+def layer(H, note, double=True):
+    s = f"<rect x='40' y='20' width='320' height='34' fill='{CR}'/><rect x='40' y='54' width='320' height='70' fill='{LG}' stroke='{JD}' stroke-width='2'/><rect x='40' y='124' width='320' height='34' fill='{CR if double else RU}'/>" + T(200, 42, 'Sand (drains freely)', z=11) + T(200, 146, 'Sand (drains freely)' if double else 'Rock (no drainage)', z=11) + T(200, 86, f"Clay, {nf(H)} thick", w='600') + T(200, 104, note, z=11)
+    s += arrow(120, 76, 58, BL, 2) + (arrow(120, 102, 120, BL, 2) if double else '')
+    return {'viewBox': '0 0 400 172', 'svg': s, 'alt': f"A clay layer {nf(H)} thick between two other layers; {note}."}
+def offsets(dx, o):
+    n = len(o); k = 110 / max(o); X = lambda i: 60 + 280 * i / (n - 1)
+    s = f"<path d='M60 150 " + ' '.join(f"L{X(i):.0f} {150-v*k:.0f}" for i, v in enumerate(o)) + f" L340 150 Z' fill='{LG}' stroke='{JD}' stroke-width='2'/><line x1='40' y1='150' x2='360' y2='150' stroke='{SL}' stroke-width='2'/>"
+    s += ''.join(f"<line x1='{X(i):.0f}' y1='150' x2='{X(i):.0f}' y2='{150-v*k:.0f}' stroke='{SL}' stroke-dasharray='4 3'/>" + T(X(i), 150 - v * k - 6, nf(v), z=11) for i, v in enumerate(o)) + dim(X(0), X(1), 160, f"{nf(dx)} m")
+    return {'viewBox': '0 0 400 185', 'svg': s, 'alt': 'Offsets of ' + nf(list(o)) + f" m from a baseline to a curved boundary at {nf(dx)} m intervals."}
+def sag(g1, g2, L):
+    s = f"<path d='M40 50 Q200 150 360 64' fill='none' stroke='{SL}' stroke-width='3'/><line x1='40' y1='50' x2='200' y2='150' stroke='{BL}' stroke-dasharray='6 4'/><line x1='200' y1='150' x2='360' y2='64' stroke='{BL}' stroke-dasharray='6 4'/>" + T(40, 40, 'PVC') + T(360, 54, 'PVT') + T(200, 166, 'PVI') + T(96, 112, f"{nf(g1)}%", c=BL) + T(304, 122, f"+{nf(g2)}%", c=BL) + dim(40, 360, 178, f"{nf(L)} ft")
+    return {'viewBox': '0 0 400 200', 'svg': s, 'alt': f"A sag vertical curve {nf(L)} ft long joining a {nf(g1)}% grade to a +{nf(g2)}% grade."}
+def ptruss(p, h, lab=''):
+    x = [60 + 70 * i for i in range(5)]; s = f"<path d='M60 130 L340 130 M60 50 L340 50' stroke='{SL}' stroke-width='4'/>" + ''.join(f"<line x1='{a}' y1='50' x2='{a}' y2='130' stroke='{SL}' stroke-width='3'/>" for a in x) + ''.join(f"<line x1='{x[i]}' y1='50' x2='{x[i+1]}' y2='130' stroke='{SL}' stroke-width='3'/>" for i in range(4))
+    s += f"<line x1='165' y1='30' x2='165' y2='150' stroke='{EM}' stroke-width='2' stroke-dasharray='7 4'/>" + T(165, 24, 'cut', c=EM, w='600', z=11) + dim(130, 200, 150, f"{nf(p)} m" if p else 'panel') + f"<line x1='356' y1='50' x2='356' y2='130' stroke='{SL}'/>" + T(362, 94, f"{nf(h)} m", a='start') + (T(200, 184, lab, c=BL, w='600', z=11) if lab else '')
+    return {'viewBox': '0 0 420 192', 'svg': s, 'alt': f"A parallel-chord truss {nf(h)} m deep with a vertical cut through one panel."}
+def drum(wrap, T2, T1=None):
+    a = rad(wrap); s = f"<circle cx='200' cy='90' r='50' fill='{RU}' stroke='{SL}' stroke-width='2'/><path d='M150 90 A50 50 0 {1 if wrap > 180 else 0} 1 {200+50*cos(math.pi-a):.0f} {90-50*sin(math.pi-a):.0f}' fill='none' stroke='{JD}' stroke-width='5'/>" + arrow(150, 92, 170, EM) + T(140, 168, f"slack side {nf(T2)} N", a='end', c=EM, w='600', z=11) + T(200, 94, f"wrap {nf(wrap)}°", z=11)
+    return {'viewBox': '0 0 400 185', 'svg': s + (T(200, 22, f"tight side {nf(T1, 1)} N", c=BL, w='600') if T1 else ''), 'alt': f"A rope wrapped {nf(wrap)}° around a fixed drum with {nf(T2)} N on the slack side."}
+def gate2(a, h, ycp=None, circ=None):
+    k = 120 / (a + h); yt = 30 + a * k
+    s = f"<rect x='60' y='30' width='150' height='{(a+h)*k+10:.0f}' fill='{BL}' fill-opacity='.25'/><line x1='40' y1='30' x2='210' y2='30' stroke='{BL}' stroke-width='2'/><line x1='210' y1='14' x2='210' y2='{40+(a+h)*k:.0f}' stroke='{SL}' stroke-width='3'/><rect x='205' y='{yt:.0f}' width='10' height='{h*k:.0f}' fill='{JD}'/>"
+    s += f"<path d='M205 {yt:.0f} L{205-a*k*0.5:.0f} {yt:.0f} L{205-(a+h)*k*0.5:.0f} {yt+h*k:.0f} L205 {yt+h*k:.0f} Z' fill='{LG}' stroke='{JD}'/>" + f"<line x1='240' y1='30' x2='240' y2='{yt:.0f}' stroke='{SL}'/>" + T(248, 30 + a * k / 2 + 4, f"{nf(a)} m", a='start') + T(248, yt + h * k / 2 + 4, (f"{nf(h)} m diameter cover" if circ else f"gate {nf(h)} m tall"), a='start')
+    if ycp: s += harrow(120, 203, 30 + ycp * k, EM) + T(116, 34 + ycp * k, f"F at {nf(ycp, 3)} m", a='end', c=EM, w='600', z=11)
+    return {'viewBox': f"0 0 400 {50+(a+h)*k:.0f}", 'svg': s, 'alt': f"A vertical {'circular cover' if circ else 'gate'} {nf(h)} m high whose top is {nf(a)} m below the water surface, with the pressure diagram on it."}
+CIRC = lambda do, di=0: dict(polys=[[(-do / 2, -do / 2), (-do / 2, -do / 2)]], circles=[(0, 0, do / 2, False)] + ([(0, 0, di / 2, True)] if di else []))
+def ring(do, di=0): return shape([[(-do * 0.5, -do * 0.5), (do * 0.5, -do * 0.5), (do * 0.5, -do * 0.5)]], circles=[(0, 0, do / 2, False)] + ([(0, 0, di / 2, True)] if di else []), labels=[(0, -do * 0.62, f"{nf(do)} mm outside" + (f", {nf(di)} mm inside" if di else ' diameter'), 'middle')], alt=f"A {'hollow ' if di else ''}circular section {nf(do)} mm in diameter" + (f" with a {nf(di)} mm bore." if di else '.'))
+ENDS = {0.5: ('Fixed', 'Fixed'), 0.7: ('Pinned', 'Fixed'), 2.0: ('Free', 'Fixed'), 1.0: ('Pinned', 'Pinned')}
+BY_ID.update({
+ 'statics-0008': (None, L(0, lambda e: fbd([(f"Reaction = {nf(e.P / 2, 1)} kN", 90, BL), ('Sloping member', math.degrees(math.atan(e.h / (e.span / 2))), EM), ('Bottom chord', 0, JD)], 0, 'Free-body diagram of the support joint; unknown member forces drawn as tension'))),
+ 'statics-0009': (None, L(0, lambda e: fbd([(f"Reaction = {nf(e.P / 2, 1)} kN", 90, BL), ('Sloping member', math.degrees(math.atan(e.h / (e.span / 2))), EM), ('Bottom chord', 0, JD)], 0, 'Free-body diagram of the support joint; unknown member forces drawn as tension'))),
+ 'dynamics-0010': (None, L(0, lambda e: fbd([('Weight = m g', 270, EM), ('Cable force = m g at constant speed', 90, JD)], 0, 'Constant speed means zero net force'))),
+ 'mechmat-0009': (L(0, lambda e: ring(e.d)), None), 'mechmat-0012': (None, L(0, lambda e: mohr(e.s1, e.s2, 0))),
+ 'geotech-0014': (L(0, lambda e: footing(0, 0, e.D)), None), 'geotech-0016': (L(0, lambda e: pile(e.s, e.L, f"{nf(e.s)} m square")), None), 'geotech-0018': (L(0, lambda e: layer(f"{nf(e.H)} m", f"effective stress rises from {nf(e.p1)} to {nf(e.p2)} kPa")), None),
+ 'geotech-0019': (L(0, lambda e: layer(f"{nf(e.H)} m", 'drains to the top and the bottom')), None), 'geotech-0027': (L(0, lambda e: footing(e.B, e.P)), None),
+ 'structural-0018': (L(0, lambda e: rect(e.b, e.b * 1.8)), None), 'structural-0019': (L(0, lambda e: rect(e.b, e.d)), None), 'structural-0020': (L(0, lambda e: rect(e.sd0, e.sd0)), None),
+ 'surveying-0012': (L(0, lambda e: offsets(e.dx, [e.o0, e.o1, e.o2, e.o3, e.o4])), None), 'water-0027': (L(0, lambda e: dam(e.b, e.h)), L(0, lambda e: dam(e.b, e.h, 0.5 * 9.81 * e.h ** 2, 23.5 * e.b * e.h))),
+})
+BY_STEM.update({
+ 'A parallel-chord truss is [h] m deep': (L(0, lambda e: ptruss(0, e.h)), L(0, lambda e: ptruss(0, e.h, f"Moments about the top joint: bottom chord = {nf(e.M)} / {nf(e.h)} = {nf(e.ans, 1)} kN"))),
+ 'A parallel-chord truss has panels [p] m long': (L(0, lambda e: ptruss(e.p, e.h)), L(0, lambda e: ptruss(e.p, e.h, f"Vertical part of the diagonal = {nf(e.V)} kN, so the diagonal carries {nf(e.ans, 2)} kN"))),
+ 'A hollow circular shaft has an outside diameter': (L(0, lambda e: ring(e.do, e.di)), None), 'A hollow shaft with an outside diameter': (L(0, lambda e: ring(e.do, e.di)), None),
+ 'A rope passes over a fixed drum': (L(0, lambda e: drum(e.wrap, e.T2)), L(0, lambda e: drum(e.wrap, e.T2, e.ans))),
+ 'A rectangular beam [b] mm wide and [h] mm deep carries a shear': (L(0, lambda e: rect(e.b, e.h)), None),
+ 'A square column [b] mm on a side carries a compressive load': (L(0, lambda e: shape(RECT(e.b, e.b), mark=(min(e.b / 2 + e.ec, e.b * 1.6), e.b / 2, f"load, {nf(e.ec)} mm from the centroid"), labels=[(e.b / 2, -e.b * 0.12, f"{nf(e.b)} mm square", 'middle')], alt='A square column section with the load point offset from the centroid along one axis.')), None),
+ 'A bar carries a uniaxial tensile stress': (None, L(0, lambda e: mohr(e.s, 0, 0))),
+ 'A simply supported beam spans [L] m and carries a uniform load of [w] kN/m. Its flexural rigidity': (L(0, lambda e: gbeam(e.L, [(0, 'pin'), (e.L, 'roller')], udl=(0, e.L, e.w))), None),
+ 'A simply supported steel beam (E = 200 GPa) spans': (L(0, lambda e: gbeam(e.L, [(0, 'pin'), (e.L, 'roller')], udl=(0, e.L, e.w))), None),
+ 'A steel column (E = 200 GPa) [L] m long is [ends]': (L(0, lambda e: column(e.L, e.K, *ENDS.get(e.K, ('Pinned', 'Pinned')))), None),
+ 'A singly reinforced beam is [b] mm wide with an effective depth': (L(0, lambda e: rcbeam(e.b, e.d, e.As)), L(0, lambda e: rcbeam(e.b, e.d, e.As, e.As * 420 / (0.85 * e.fc * e.b)))),
+ 'A rectangular concrete beam is [b] mm wide and [h] mm deep overall': (L(0, lambda e: rect(e.b, e.h)), None),
+ 'A vertical rectangular gate is [h|1] m tall': (L(0, lambda e: gate2(e.a, e.h)), L(0, lambda e: gate2(e.a, e.h, e.ans))),
+ 'A circular access cover [d|1] m in diameter': (L(0, lambda e: gate2(e.hc - e.d / 2, e.d, None, True)), None),
+ 'A venturi meter in a [d1] mm water pipe': (L(0, lambda e: pipe(e.d1, e.d2)), None),
+ 'A strip footing [B|1] m wide is founded': (L(0, lambda e: footing(e.B, 0, e.D)), None), 'A strip footing [B|1] m wide carries [P] kN per metre and a moment of [M] kN·m per metre. Using': (L(0, lambda e: footing(e.B, e.P)), None),
+ 'A round pile [d|1] m in diameter': (L(0, lambda e: pile(e.d, e.L, f"{nf(e.d)} m diameter")), None),
+ 'Two columns [s] m apart carry': (None, L(0, lambda e: gbeam(e.ans, [], pts=[(e.a, e.P1), (e.a + e.s, e.P2)], R=[(e.ans / 2, e.P1 + e.P2)]))),
+ 'A consolidation test specimen [H] mm thick': (L(0, lambda e: layer(f"{nf(e.H)} mm", 'drains from both faces, so the drainage path is half the thickness')), None),
+ 'An overconsolidated clay layer [H] m thick': (L(0, lambda e: layer(f"{nf(e.H)} m", f"effective stress rises from {nf(e.s0)} to {nf(e.sf)} kPa")), None),
+ 'A trapezoidal roadside channel': (L(0, lambda e: trap(e.b, e.y, e.z)), None),
+ 'A concrete gravity dam with a rectangular section is [b|1] m wide': (L(0, lambda e: dam(e.b, e.h)), L(0, lambda e: dam(e.b, e.h, 0.5 * 9.81 * e.h ** 2, 23.5 * e.b * e.h))),
+ 'Offsets from a baseline to a curved boundary': (L(0, lambda e: offsets(e.dx, [e.o0, e.o1, e.o2, e.o3, e.o4])), None),
+ 'A triangular parcel has sides of': (L(0, lambda e: triangle(e.a, e.b, math.degrees(math.acos((e.a ** 2 + e.b ** 2 - e.c ** 2) / (2 * e.a * e.b))))), None),
+ 'A roadway cut on level ground': (L(0, lambda e: shape([[(0, 0), (e.b, 0), (e.b + e.s * e.d, e.d), (-e.s * e.d, e.d)]], labels=[(e.b / 2, -e.d * 0.16, f"{nf(e.b)} m", 'middle'), (e.b / 2, e.d / 2, f"{nf(e.d)} m deep", 'middle'), (e.b + e.s * e.d, e.d * 0.4, f"{nf(e.s)} : 1", 'start')], alt='A level-section cut: a trapezoid wider at the top than at the base.')), None),
+ 'A horizontal curve has a radius of [R] ft and a deflection angle of [I]°. What is its middle': (L(0, lambda e: hcurve(e.R, e.I)), None),
+ 'A sag vertical curve [L] ft long': (L(0, lambda e: sag(e.g1, e.g2, e.L)), None),
+ 'A vertical curve [L] ft long joins': (L(0, lambda e: vcurve(e.g1, e.g2, e.L) if e.g1 > e.g2 else sag(e.g1, e.g2, e.L)), None),
+ 'A [W] N crate is [b|1] m wide': (L(0, lambda e: shape(RECT(e.b, e.h), labels=[(e.b / 2, -e.h * 0.12, f"{nf(e.b)} m", 'middle'), (-e.b * 0.06, e.h / 2, f"{nf(e.h)} m", 'end'), (e.b * 1.05, e.h, 'P', 'start'), (e.b / 2, e.h / 2, f"{nf(e.W)} N", 'middle')], unit='m', alt='A crate pushed horizontally at its top edge.')), BY_STEM['A [W] N crate is [b|1] m wide'][1]),
+})
 def lookup(base, stem):
     if base in BY_ID: return BY_ID[base]
     for k, v in BY_STEM.items():

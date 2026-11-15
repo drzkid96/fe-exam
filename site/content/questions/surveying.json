@@ -53,7 +53,18 @@
    "svg": "<path d='M20 150 L120 140 L200 132 L290 150 L380 158' fill='none' stroke='#00242E' stroke-width='2'/><line x1='70' y1='50' x2='330' y2='50' stroke='#568CBB' stroke-dasharray='6 4'/><rect x='66' y='38' width='8' height='107' fill='#EEEDE8' stroke='#00242E'/><rect x='326' y='38' width='8' height='116' fill='#EEEDE8' stroke='#00242E'/><rect x='186' y='43' width='28' height='14' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><path d='M200 57 L186 132 M200 57 L214 132' stroke='#00242E' stroke-width='2'/><text x='70' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Benchmark</text><text x='330' y='176' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>New point</text><text x='84' y='96' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>BS 1.52 m</text><text x='316' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>FS 2.31 m</text><text x='200' y='36' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Line of sight</text>",
    "alt": "A level set up between a benchmark and a new point, with a backsight of 1.52 m and a foresight of 2.31 m."
   },
-  "lookup": false
+  "lookup": false,
+  "terms": [
+   [
+    "backsight",
+    "a level-rod reading taken on a point of known elevation"
+   ],
+   [
+    "foresight",
+    "a level-rod reading taken on a point whose elevation is wanted"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "surveying-0001-b",
@@ -109,7 +120,18 @@
    "svg": "<path d='M20 150 L120 140 L200 132 L290 150 L380 158' fill='none' stroke='#00242E' stroke-width='2'/><line x1='70' y1='50' x2='330' y2='50' stroke='#568CBB' stroke-dasharray='6 4'/><rect x='66' y='38' width='8' height='107' fill='#EEEDE8' stroke='#00242E'/><rect x='326' y='38' width='8' height='116' fill='#EEEDE8' stroke='#00242E'/><rect x='186' y='43' width='28' height='14' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><path d='M200 57 L186 132 M200 57 L214 132' stroke='#00242E' stroke-width='2'/><text x='70' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Benchmark</text><text x='330' y='176' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>New point</text><text x='84' y='96' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>BS 2.84 m</text><text x='316' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>FS 1.16 m</text><text x='200' y='36' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Line of sight</text>",
    "alt": "A level set up between a benchmark and a new point, with a backsight of 2.84 m and a foresight of 1.16 m."
   },
-  "lookup": false
+  "lookup": false,
+  "terms": [
+   [
+    "backsight",
+    "a level-rod reading taken on a point of known elevation"
+   ],
+   [
+    "foresight",
+    "a level-rod reading taken on a point whose elevation is wanted"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "surveying-0001-c",
@@ -165,7 +187,18 @@
    "svg": "<path d='M20 150 L120 140 L200 132 L290 150 L380 158' fill='none' stroke='#00242E' stroke-width='2'/><line x1='70' y1='50' x2='330' y2='50' stroke='#568CBB' stroke-dasharray='6 4'/><rect x='66' y='38' width='8' height='107' fill='#EEEDE8' stroke='#00242E'/><rect x='326' y='38' width='8' height='116' fill='#EEEDE8' stroke='#00242E'/><rect x='186' y='43' width='28' height='14' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><path d='M200 57 L186 132 M200 57 L214 132' stroke='#00242E' stroke-width='2'/><text x='70' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Benchmark</text><text x='330' y='176' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>New point</text><text x='84' y='96' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>BS 0.95 m</text><text x='316' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>FS 2.67 m</text><text x='200' y='36' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Line of sight</text>",
    "alt": "A level set up between a benchmark and a new point, with a backsight of 0.95 m and a foresight of 2.67 m."
   },
-  "lookup": false
+  "lookup": false,
+  "terms": [
+   [
+    "backsight",
+    "a level-rod reading taken on a point of known elevation"
+   ],
+   [
+    "foresight",
+    "a level-rod reading taken on a point whose elevation is wanted"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "surveying-0001-d",
@@ -221,7 +254,18 @@
    "svg": "<path d='M20 150 L120 140 L200 132 L290 150 L380 158' fill='none' stroke='#00242E' stroke-width='2'/><line x1='70' y1='50' x2='330' y2='50' stroke='#568CBB' stroke-dasharray='6 4'/><rect x='66' y='38' width='8' height='107' fill='#EEEDE8' stroke='#00242E'/><rect x='326' y='38' width='8' height='116' fill='#EEEDE8' stroke='#00242E'/><rect x='186' y='43' width='28' height='14' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><path d='M200 57 L186 132 M200 57 L214 132' stroke='#00242E' stroke-width='2'/><text x='70' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Benchmark</text><text x='330' y='176' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>New point</text><text x='84' y='96' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>BS 3.10 m</text><text x='316' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>FS 0.88 m</text><text x='200' y='36' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Line of sight</text>",
    "alt": "A level set up between a benchmark and a new point, with a backsight of 3.10 m and a foresight of 0.88 m."
   },
-  "lookup": false
+  "lookup": false,
+  "terms": [
+   [
+    "backsight",
+    "a level-rod reading taken on a point of known elevation"
+   ],
+   [
+    "foresight",
+    "a level-rod reading taken on a point whose elevation is wanted"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "surveying-0002",
@@ -265,6 +309,13 @@
    "alt": "A parcel with corners at (0, 0), (60, 0), (80, 40), (20, 50) m."
   },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "x_{i}",
@@ -326,6 +377,13 @@
    "alt": "A parcel with corners at (0, 0), (50, 0), (70, 30), (10, 40) m."
   },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "x_{i}",
@@ -387,6 +445,13 @@
    "alt": "A parcel with corners at (0, 0), (80, 0), (90, 50), (30, 70) m."
   },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "x_{i}",
@@ -448,6 +513,13 @@
    "alt": "A parcel with corners at (0, 0), (40, 0), (60, 40), (10, 60) m."
   },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "x_{i}",
@@ -519,6 +591,13 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "A_{1}",
@@ -590,6 +669,13 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "A_{1}",
@@ -661,6 +747,13 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "A_{1}",
@@ -732,6 +825,13 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "A_{1}",
@@ -822,7 +922,20 @@
   "family": "surveying-0004",
   "version": 1,
   "versions": 2,
-  "lookup": false
+  "lookup": false,
+  "terms": [
+   [
+    "azimuth",
+    "a direction given as an angle measured clockwise from north, from 0° to 360°"
+   ]
+  ],
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0004-b",
@@ -896,6 +1009,19 @@
   "version": 2,
   "versions": 2,
   "lookup": false,
+  "terms": [
+   [
+    "azimuth",
+    "a direction given as an angle measured clockwise from north, from 0° to 360°"
+   ]
+  ],
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "S",
@@ -950,7 +1076,8 @@
   "family": "surveying-0005",
   "version": 1,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "surveying-0005-b",
@@ -987,7 +1114,8 @@
   "family": "surveying-0005",
   "version": 2,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "surveying-0005-c",
@@ -1024,7 +1152,8 @@
   "family": "surveying-0005",
   "version": 3,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "surveying-0005-d",
@@ -1061,7 +1190,8 @@
   "family": "surveying-0005",
   "version": 4,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "surveying-0006",
@@ -1111,6 +1241,13 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "H",
@@ -1170,6 +1307,13 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "H",
@@ -1229,6 +1373,13 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "H",
@@ -1288,6 +1439,13 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "H",
@@ -1347,6 +1505,13 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "n",
@@ -1402,6 +1567,13 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "n",
@@ -1457,6 +1629,13 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "n",
@@ -1512,6 +1691,13 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ],
   "symbols": [
    [
     "n",
@@ -1560,6 +1746,13 @@
    "alt": "A triangle with sides of 80 m and 60 m meeting at 30°."
   },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "b",
@@ -1616,6 +1809,13 @@
    "alt": "A triangle with sides of 120 m and 75 m meeting at 50°."
   },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "b",
@@ -1672,6 +1872,13 @@
    "alt": "A triangle with sides of 65 m and 40 m meeting at 72°."
   },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "b",
@@ -1728,6 +1935,13 @@
    "alt": "A triangle with sides of 90 m and 110 m meeting at 38°."
   },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "b",
@@ -1791,6 +2005,13 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "V",
@@ -1846,6 +2067,13 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "V",
@@ -1901,6 +2129,13 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "V",
@@ -1956,6 +2191,13 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "V",
@@ -2017,6 +2259,27 @@
    "alt": "A line drawn from the origin at an azimuth of 60° clockwise from north."
   },
   "lookup": true,
+  "terms": [
+   [
+    "azimuth",
+    "a direction given as an angle measured clockwise from north, from 0° to 360°"
+   ],
+   [
+    "departure",
+    "the east-west component of a survey line"
+   ],
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "L",
@@ -2078,6 +2341,27 @@
    "alt": "A line drawn from the origin at an azimuth of 35° clockwise from north."
   },
   "lookup": true,
+  "terms": [
+   [
+    "azimuth",
+    "a direction given as an angle measured clockwise from north, from 0° to 360°"
+   ],
+   [
+    "departure",
+    "the east-west component of a survey line"
+   ],
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "L",
@@ -2139,6 +2423,27 @@
    "alt": "A line drawn from the origin at an azimuth of 72° clockwise from north."
   },
   "lookup": true,
+  "terms": [
+   [
+    "azimuth",
+    "a direction given as an angle measured clockwise from north, from 0° to 360°"
+   ],
+   [
+    "departure",
+    "the east-west component of a survey line"
+   ],
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "L",
@@ -2200,6 +2505,27 @@
    "alt": "A line drawn from the origin at an azimuth of 25° clockwise from north."
   },
   "lookup": true,
+  "terms": [
+   [
+    "azimuth",
+    "a direction given as an angle measured clockwise from north, from 0° to 360°"
+   ],
+   [
+    "departure",
+    "the east-west component of a survey line"
+   ],
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "L",
@@ -2243,6 +2569,23 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ],
+   [
+    "departure",
+    "the east-west component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "L",
@@ -2290,6 +2633,23 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ],
+   [
+    "departure",
+    "the east-west component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "L",
@@ -2337,6 +2697,23 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ],
+   [
+    "departure",
+    "the east-west component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "L",
@@ -2384,6 +2761,23 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ],
+   [
+    "departure",
+    "the east-west component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "L",
@@ -2429,7 +2823,19 @@
   "family": "surveying-0012",
   "version": 1,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M60 150 L60 81 L130 53 L200 40 L270 64 L340 94 L340 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='81' stroke='#00242E' stroke-dasharray='4 3'/><text x='60' y='75' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3.2</text><line x1='130' y1='150' x2='130' y2='53' stroke='#00242E' stroke-dasharray='4 3'/><text x='130' y='47' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4.5</text><line x1='200' y1='150' x2='200' y2='40' stroke='#00242E' stroke-dasharray='4 3'/><text x='200' y='34' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5.1</text><line x1='270' y1='150' x2='270' y2='64' stroke='#00242E' stroke-dasharray='4 3'/><text x='270' y='58' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='340' y1='150' x2='340' y2='94' stroke='#00242E' stroke-dasharray='4 3'/><text x='340' y='88' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2.6</text><line x1='60' y1='160' x2='130' y2='160' stroke='#00242E'/><line x1='60' y1='154' x2='60' y2='166' stroke='#00242E'/><line x1='130' y1='154' x2='130' y2='166' stroke='#00242E'/><text x='95' y='176' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>10 m</text>",
+   "alt": "Offsets of 3.2, 4.5, 5.1, 4 and 2.6 m from a baseline to a curved boundary at 10 m intervals."
+  },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -2475,7 +2881,19 @@
   "family": "surveying-0012",
   "version": 2,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M60 150 L60 79 L130 52 L200 40 L270 61 L340 97 L340 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='79' stroke='#00242E' stroke-dasharray='4 3'/><text x='60' y='73' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='130' y1='150' x2='130' y2='52' stroke='#00242E' stroke-dasharray='4 3'/><text x='130' y='46' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5.5</text><line x1='200' y1='150' x2='200' y2='40' stroke='#00242E' stroke-dasharray='4 3'/><text x='200' y='34' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6.2</text><line x1='270' y1='150' x2='270' y2='61' stroke='#00242E' stroke-dasharray='4 3'/><text x='270' y='55' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='340' y1='150' x2='340' y2='97' stroke='#00242E' stroke-dasharray='4 3'/><text x='340' y='91' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='60' y1='160' x2='130' y2='160' stroke='#00242E'/><line x1='60' y1='154' x2='60' y2='166' stroke='#00242E'/><line x1='130' y1='154' x2='130' y2='166' stroke='#00242E'/><text x='95' y='176' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>15 m</text>",
+   "alt": "Offsets of 4, 5.5, 6.2, 5 and 3 m from a baseline to a curved boundary at 15 m intervals."
+  },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -2521,7 +2939,19 @@
   "family": "surveying-0012",
   "version": 3,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M60 150 L60 75 L130 57 L200 40 L270 69 L340 86 L340 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='75' stroke='#00242E' stroke-dasharray='4 3'/><text x='60' y='69' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6.5</text><line x1='130' y1='150' x2='130' y2='57' stroke='#00242E' stroke-dasharray='4 3'/><text x='130' y='51' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='200' y1='150' x2='200' y2='40' stroke='#00242E' stroke-dasharray='4 3'/><text x='200' y='34' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>9.5</text><line x1='270' y1='150' x2='270' y2='69' stroke='#00242E' stroke-dasharray='4 3'/><text x='270' y='63' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7</text><line x1='340' y1='150' x2='340' y2='86' stroke='#00242E' stroke-dasharray='4 3'/><text x='340' y='80' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5.5</text><line x1='60' y1='160' x2='130' y2='160' stroke='#00242E'/><line x1='60' y1='154' x2='60' y2='166' stroke='#00242E'/><line x1='130' y1='154' x2='130' y2='166' stroke='#00242E'/><text x='95' y='176' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>20 m</text>",
+   "alt": "Offsets of 6.5, 8, 9.5, 7 and 5.5 m from a baseline to a curved boundary at 20 m intervals."
+  },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -2567,7 +2997,19 @@
   "family": "surveying-0012",
   "version": 4,
   "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M60 150 L60 86 L130 58 L200 40 L270 65 L340 107 L340 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='86' stroke='#00242E' stroke-dasharray='4 3'/><text x='60' y='80' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1.8</text><line x1='130' y1='150' x2='130' y2='58' stroke='#00242E' stroke-dasharray='4 3'/><text x='130' y='52' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2.6</text><line x1='200' y1='150' x2='200' y2='40' stroke='#00242E' stroke-dasharray='4 3'/><text x='200' y='34' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3.1</text><line x1='270' y1='150' x2='270' y2='65' stroke='#00242E' stroke-dasharray='4 3'/><text x='270' y='59' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2.4</text><line x1='340' y1='150' x2='340' y2='107' stroke='#00242E' stroke-dasharray='4 3'/><text x='340' y='101' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1.2</text><line x1='60' y1='160' x2='130' y2='160' stroke='#00242E'/><line x1='60' y1='154' x2='60' y2='166' stroke='#00242E'/><line x1='130' y1='154' x2='130' y2='166' stroke='#00242E'/><text x='95' y='176' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text>",
+   "alt": "Offsets of 1.8, 2.6, 3.1, 2.4 and 1.2 m from a baseline to a curved boundary at 5 m intervals."
+  },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -2619,7 +3061,20 @@
    "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='260' y2='36' stroke='#00574A' stroke-width='3'/><circle cx='260' cy='36' r='5' fill='#00574A'/><text x='270' y='30' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>azimuth 36.9°</text>",
    "alt": "A line drawn from the origin at an azimuth of 36.9° clockwise from north."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "azimuth",
+    "a direction given as an angle measured clockwise from north, from 0° to 360°"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0013-b",
@@ -2661,7 +3116,20 @@
    "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='297' y2='79' stroke='#00574A' stroke-width='3'/><circle cx='297' cy='79' r='5' fill='#00574A'/><text x='307' y='73' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>azimuth 75.1°</text>",
    "alt": "A line drawn from the origin at an azimuth of 75.1° clockwise from north."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "azimuth",
+    "a direction given as an angle measured clockwise from north, from 0° to 360°"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0013-c",
@@ -2703,7 +3171,20 @@
    "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='294' y2='73' stroke='#00574A' stroke-width='3'/><circle cx='294' cy='73' r='5' fill='#00574A'/><text x='304' y='67' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>azimuth 70.3°</text>",
    "alt": "A line drawn from the origin at an azimuth of 70.3° clockwise from north."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "azimuth",
+    "a direction given as an angle measured clockwise from north, from 0° to 360°"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0013-d",
@@ -2745,7 +3226,20 @@
    "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='255' y2='33' stroke='#00574A' stroke-width='3'/><circle cx='255' cy='33' r='5' fill='#00574A'/><text x='265' y='27' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>azimuth 33.7°</text>",
    "alt": "A line drawn from the origin at an azimuth of 33.7° clockwise from north."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "azimuth",
+    "a direction given as an angle measured clockwise from north, from 0° to 360°"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0014",
@@ -2781,7 +3275,14 @@
   "family": "surveying-0014",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0014-b",
@@ -2817,7 +3318,14 @@
   "family": "surveying-0014",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0014-c",
@@ -2853,7 +3361,14 @@
   "family": "surveying-0014",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0014-d",
@@ -2889,7 +3404,14 @@
   "family": "surveying-0014",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0015",
@@ -2927,6 +3449,13 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "A_{1}",
@@ -2982,6 +3511,13 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "A_{1}",
@@ -3037,6 +3573,13 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "A_{1}",
@@ -3092,6 +3635,13 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "A_{1}",
@@ -3146,7 +3696,20 @@
   "family": "surveying-0016",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0016-b",
@@ -3183,7 +3746,20 @@
   "family": "surveying-0016",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0016-c",
@@ -3220,7 +3796,20 @@
   "family": "surveying-0016",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0016-d",
@@ -3257,7 +3846,20 @@
   "family": "surveying-0016",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0017",
@@ -3290,8 +3892,15 @@
   },
   "family": "surveying-0017",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0017-b",
@@ -3324,8 +3933,15 @@
   },
   "family": "surveying-0017",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0017-c",
@@ -3358,8 +3974,56 @@
   },
   "family": "surveying-0017",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0017-d",
+  "topic": "surveying",
+  "subtopic": "surveying-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A steel tape, correct at 20 °C, is used to measure 188 m at 38 °C. The coefficient of thermal expansion of steel is 11.6 × 10^{-6} per °C. What correction should be applied to the measured length?",
+  "answer": {
+   "value": 0.0393,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "A warm tape is longer than its marks say, so it reads short and the correction is positive; a cold tape reads long and the correction is negative. The size is (coefficient)(temperature difference)(length).",
+  "solution": "Correction = 11.6 × 10^{-6} × (38 - 20) × 188 = 0.0393 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0017",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0018",
@@ -3393,7 +4057,14 @@
   "family": "surveying-0018",
   "version": 1,
   "versions": 3,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0018-b",
@@ -3427,7 +4098,14 @@
   "family": "surveying-0018",
   "version": 2,
   "versions": 3,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0018-c",
@@ -3461,7 +4139,14 @@
   "family": "surveying-0018",
   "version": 3,
   "versions": 3,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0019",
@@ -3508,7 +4193,20 @@
   "family": "surveying-0019",
   "version": 1,
   "versions": 3,
-  "lookup": false
+  "lookup": false,
+  "terms": [
+   [
+    "azimuth",
+    "a direction given as an angle measured clockwise from north, from 0° to 360°"
+   ]
+  ],
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0019-b",
@@ -3555,7 +4253,20 @@
   "family": "surveying-0019",
   "version": 2,
   "versions": 3,
-  "lookup": false
+  "lookup": false,
+  "terms": [
+   [
+    "azimuth",
+    "a direction given as an angle measured clockwise from north, from 0° to 360°"
+   ]
+  ],
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0019-c",
@@ -3602,7 +4313,20 @@
   "family": "surveying-0019",
   "version": 3,
   "versions": 3,
-  "lookup": false
+  "lookup": false,
+  "terms": [
+   [
+    "azimuth",
+    "a direction given as an angle measured clockwise from north, from 0° to 360°"
+   ]
+  ],
+  "needs": [
+   [
+    "math-a",
+    "math",
+    "Mathematics and Statistics: Analytic geometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0020",
@@ -3637,8 +4361,20 @@
   },
   "family": "surveying-0020",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M60 150 L60 95 L130 58 L200 40 L270 77 L340 113 L340 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='95' stroke='#00242E' stroke-dasharray='4 3'/><text x='60' y='89' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3</text><line x1='130' y1='150' x2='130' y2='58' stroke='#00242E' stroke-dasharray='4 3'/><text x='130' y='52' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5</text><line x1='200' y1='150' x2='200' y2='40' stroke='#00242E' stroke-dasharray='4 3'/><text x='200' y='34' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='270' y1='150' x2='270' y2='77' stroke='#00242E' stroke-dasharray='4 3'/><text x='270' y='71' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='340' y1='150' x2='340' y2='113' stroke='#00242E' stroke-dasharray='4 3'/><text x='340' y='107' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='60' y1='160' x2='130' y2='160' stroke='#00242E'/><line x1='60' y1='154' x2='60' y2='166' stroke='#00242E'/><line x1='130' y1='154' x2='130' y2='166' stroke='#00242E'/><text x='95' y='176' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>10 m</text>",
+   "alt": "Offsets of 3, 5, 6, 4 and 2 m from a baseline to a curved boundary at 10 m intervals."
+  },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -3679,8 +4415,20 @@
   },
   "family": "surveying-0020",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M60 150 L60 107 L130 61 L200 40 L270 51 L340 97 L340 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='107' stroke='#00242E' stroke-dasharray='4 3'/><text x='60' y='101' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1.2</text><line x1='130' y1='150' x2='130' y2='61' stroke='#00242E' stroke-dasharray='4 3'/><text x='130' y='55' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2.5</text><line x1='200' y1='150' x2='200' y2='40' stroke='#00242E' stroke-dasharray='4 3'/><text x='200' y='34' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3.1</text><line x1='270' y1='150' x2='270' y2='51' stroke='#00242E' stroke-dasharray='4 3'/><text x='270' y='45' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2.8</text><line x1='340' y1='150' x2='340' y2='97' stroke='#00242E' stroke-dasharray='4 3'/><text x='340' y='91' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1.5</text><line x1='60' y1='160' x2='130' y2='160' stroke='#00242E'/><line x1='60' y1='154' x2='60' y2='166' stroke='#00242E'/><line x1='130' y1='154' x2='130' y2='166' stroke='#00242E'/><text x='95' y='176' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text>",
+   "alt": "Offsets of 1.2, 2.5, 3.1, 2.8 and 1.5 m from a baseline to a curved boundary at 5 m intervals."
+  },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -3721,8 +4469,74 @@
   },
   "family": "surveying-0020",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M60 150 L60 82 L130 57 L200 40 L270 65 L340 99 L340 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='82' stroke='#00242E' stroke-dasharray='4 3'/><text x='60' y='76' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='130' y1='150' x2='130' y2='57' stroke='#00242E' stroke-dasharray='4 3'/><text x='130' y='51' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>11</text><line x1='200' y1='150' x2='200' y2='40' stroke='#00242E' stroke-dasharray='4 3'/><text x='200' y='34' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>13</text><line x1='270' y1='150' x2='270' y2='65' stroke='#00242E' stroke-dasharray='4 3'/><text x='270' y='59' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='340' y1='150' x2='340' y2='99' stroke='#00242E' stroke-dasharray='4 3'/><text x='340' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='60' y1='160' x2='130' y2='160' stroke='#00242E'/><line x1='60' y1='154' x2='60' y2='166' stroke='#00242E'/><line x1='130' y1='154' x2='130' y2='166' stroke='#00242E'/><text x='95' y='176' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>20 m</text>",
+   "alt": "Offsets of 8, 11, 13, 10 and 6 m from a baseline to a curved boundary at 20 m intervals."
+  },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
+  "symbols": [
+   [
+    "A",
+    "area"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0020-d",
+  "topic": "surveying",
+  "subtopic": "surveying-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Offsets from a baseline to a curved boundary, measured every 8 m, are 2.1, 3.8, 4.5, 3.4 and 1.8 m. Using Simpson's 1/3 rule, what is the area between the baseline and the boundary?",
+  "answer": {
+   "value": 111.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{2}"
+  },
+  "eli5": "Simpson's 1/3 rule fits parabolas through the offsets in pairs of intervals, so it needs an even number of intervals. The end offsets count once, odd-numbered interior offsets four times and even-numbered interior offsets twice.",
+  "solution": "A = \\frac{8}{3}(2.1 + 4(3.8) + 2(4.5) + 4(3.4) + 1.8) = \\frac{8}{3}(41.7) = 111.20 m^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "Simpson's 1/3 rule"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0020",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M60 150 L60 99 L130 57 L200 40 L270 67 L340 106 L340 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='99' stroke='#00242E' stroke-dasharray='4 3'/><text x='60' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2.1</text><line x1='130' y1='150' x2='130' y2='57' stroke='#00242E' stroke-dasharray='4 3'/><text x='130' y='51' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3.8</text><line x1='200' y1='150' x2='200' y2='40' stroke='#00242E' stroke-dasharray='4 3'/><text x='200' y='34' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4.5</text><line x1='270' y1='150' x2='270' y2='67' stroke='#00242E' stroke-dasharray='4 3'/><text x='270' y='61' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3.4</text><line x1='340' y1='150' x2='340' y2='106' stroke='#00242E' stroke-dasharray='4 3'/><text x='340' y='100' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1.8</text><line x1='60' y1='160' x2='130' y2='160' stroke='#00242E'/><line x1='60' y1='154' x2='60' y2='166' stroke='#00242E'/><line x1='130' y1='154' x2='130' y2='166' stroke='#00242E'/><text x='95' y='176' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>8 m</text>",
+   "alt": "Offsets of 2.1, 3.8, 4.5, 3.4 and 1.8 m from a baseline to a curved boundary at 8 m intervals."
+  },
+  "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -3763,8 +4577,20 @@
   },
   "family": "surveying-0021",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M70 150 L191 150 L120 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='130' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>130 m</text><text x='87' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>140 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>67.38°</text>",
+   "alt": "A triangle with sides of 130 m and 140 m meeting at 67.38°."
+  },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "s",
@@ -3817,8 +4643,20 @@
   },
   "family": "surveying-0021",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M70 150 L166 150 L73 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='118' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>60 m</text><text x='63' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>75 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>88.73°</text>",
+   "alt": "A triangle with sides of 60 m and 75 m meeting at 88.73°."
+  },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "s",
@@ -3871,8 +4709,86 @@
   },
   "family": "surveying-0021",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M70 150 L155 150 L82 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='113' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>85 m</text><text x='68' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>120 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>84.3°</text>",
+   "alt": "A triangle with sides of 85 m and 120 m meeting at 84.3°."
+  },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
+  "symbols": [
+   [
+    "s",
+    "side slope (horizontal to 1 vertical), or half the perimeter"
+   ],
+   [
+    "a",
+    "side length"
+   ],
+   [
+    "b",
+    "base width"
+   ],
+   [
+    "c",
+    "side length, or the curvature and refraction correction"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0021-d",
+  "topic": "surveying",
+  "subtopic": "surveying-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A triangular parcel has sides of 95, 108 and 122 m. What is its area?",
+  "answer": {
+   "value": 4920.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{2}"
+  },
+  "eli5": "With three sides known and no angles, use Heron's formula: area = square root of s(s - a)(s - b)(s - c), where s is half the perimeter.",
+  "solution": "s = \\frac{95 + 108 + 122}{2} = 162.5 m.\n\nArea = \\sqrt{162.5(67.5)(54.5)(40.5)} = 4,920.4 m^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "area formulas"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0021",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M70 150 L180 150 L105 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='125' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>95 m</text><text x='80' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>108 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>73.57°</text>",
+   "alt": "A triangle with sides of 95 m and 108 m meeting at 73.57°."
+  },
+  "lookup": true,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "s",
@@ -3923,8 +4839,15 @@
   },
   "family": "surveying-0022",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0022-b",
@@ -3957,8 +4880,15 @@
   },
   "family": "surveying-0022",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0022-c",
@@ -3991,8 +4921,56 @@
   },
   "family": "surveying-0022",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0022-d",
+  "topic": "surveying",
+  "subtopic": "surveying-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "USCS",
+  "stem": "A rectangular lot measures 480.0 ft by 390.0 ft. What is its area in acres?",
+  "answer": {
+   "value": 4.298,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "acres"
+  },
+  "eli5": "An acre is 43,560 square feet. Work out the area in square feet, then divide.",
+  "solution": "Area = 480.0 × 390.0 = 187,200 ft^{2}.\n\n\\frac{187,200}{43,560} = 4.298 acres.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0022",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0023",
@@ -4025,8 +5003,15 @@
   },
   "family": "surveying-0023",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ]
  },
  {
   "id": "surveying-0023-b",
@@ -4059,8 +5044,15 @@
   },
   "family": "surveying-0023",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ]
  },
  {
   "id": "surveying-0023-c",
@@ -4093,8 +5085,56 @@
   },
   "family": "surveying-0023",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0023-d",
+  "topic": "surveying",
+  "subtopic": "surveying-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An embankment needs 8,500 m^{3} of compacted fill. The borrow material shrinks by 14% when compacted. What bank volume must be excavated from the borrow pit?",
+  "answer": {
+   "value": 9884.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "Soil compacted in a fill usually occupies less volume than it did in the ground. Divide the compacted volume by (1 - shrinkage) to find the bank volume needed.",
+  "solution": "Bank volume = \\frac{8,500}{1 - 0.14} = 9,884 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0023",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ]
  },
  {
   "id": "surveying-0024",
@@ -4129,8 +5169,20 @@
   },
   "family": "surveying-0024",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M135 150 L265 150 L320 123 L80 123 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='154' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12 m</text><text x='200' y='136' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2.5 m deep</text><text x='320' y='139' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>2 : 1</text>",
+   "alt": "A level-section cut: a trapezoid wider at the top than at the base."
+  },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "d",
@@ -4183,8 +5235,20 @@
   },
   "family": "surveying-0024",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M142 150 L258 150 L320 129 L80 129 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='153' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10 m</text><text x='200' y='140' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1.8 m deep</text><text x='320' y='142' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>3 : 1</text>",
+   "alt": "A level-section cut: a trapezoid wider at the top than at the base."
+  },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "d",
@@ -4237,8 +5301,86 @@
   },
   "family": "surveying-0024",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M147 150 L253 150 L320 105 L80 105 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='157' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>7.5 m</text><text x='200' y='128' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3.2 m deep</text><text x='320' y='132' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>1.5 : 1</text>",
+   "alt": "A level-section cut: a trapezoid wider at the top than at the base."
+  },
   "lookup": true,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
+  "symbols": [
+   [
+    "d",
+    "depth or common interval"
+   ],
+   [
+    "b",
+    "base width"
+   ],
+   [
+    "s",
+    "side slope (horizontal to 1 vertical), or half the perimeter"
+   ],
+   [
+    "A",
+    "area"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0024-d",
+  "topic": "surveying",
+  "subtopic": "surveying-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A roadway cut on level ground has a base width of 11.0 m, a centreline depth of 2.1 m and side slopes of 2.5 horizontal to 1 vertical. What is the cross-sectional area of the cut?",
+  "answer": {
+   "value": 34.12,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{2}"
+  },
+  "eli5": "A level section is a trapezoid: the base width plus a triangle on each side whose width is the side slope times the depth. Area = d(b + s d).",
+  "solution": "A = 2.1(11.0 + 2.5 × 2.1) = 2.1 × 16.25 = 34.12 m^{2}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "earthwork formulas"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0024",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 185",
+   "svg": "<path d='M139 150 L261 150 L320 127 L80 127 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='154' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>11 m</text><text x='200' y='138' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2.1 m deep</text><text x='320' y='141' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>2.5 : 1</text>",
+   "alt": "A level-section cut: a trapezoid wider at the top than at the base."
+  },
+  "lookup": true,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "d",
@@ -4289,8 +5431,15 @@
   },
   "family": "surveying-0025",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "V",
@@ -4329,8 +5478,15 @@
   },
   "family": "surveying-0025",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "V",
@@ -4369,8 +5525,62 @@
   },
   "family": "surveying-0025",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
+  "symbols": [
+   [
+    "V",
+    "volume"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0025-d",
+  "topic": "surveying",
+  "subtopic": "surveying-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A conical stockpile of aggregate has a base diameter of 16 m and a height of 5.2 m. What is its volume?",
+  "answer": {
+   "value": 348.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "The volume of a cone is one third of the base area times the height.",
+  "solution": "V = \\frac{π(8.0)^{2}(5.2)}{3} = 348.5 m^{3}.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0025",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-b",
+    "surveying",
+    "Surveying: Area computations"
+   ]
+  ],
   "symbols": [
    [
     "V",
@@ -4412,8 +5622,25 @@
   },
   "family": "surveying-0026",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ],
+   [
+    "departure",
+    "the east-west component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0026-b",
@@ -4449,8 +5676,25 @@
   },
   "family": "surveying-0026",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ],
+   [
+    "departure",
+    "the east-west component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0026-c",
@@ -4486,8 +5730,79 @@
   },
   "family": "surveying-0026",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ],
+   [
+    "departure",
+    "the east-west component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0026-d",
+  "topic": "surveying",
+  "subtopic": "surveying-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Point A is at N 3,125.20, E 2,550.10 and point B is at N 3,155.20, E 2,840.10, in metres. What is the horizontal distance from A to B?",
+  "answer": {
+   "value": 291.55,
+   "tolerance": 0.001,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "The difference in northings is the latitude of the line and the difference in eastings is its departure. The distance is the hypotenuse.",
+  "solution": "Latitude = 30.00 m, departure = 290.00 m.\n\nDistance = \\sqrt{30.00^{2} + 290.00^{2}} = 291.55 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "latitude",
+     "departure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0026",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ],
+   [
+    "departure",
+    "the east-west component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0027",
@@ -4523,8 +5838,25 @@
   },
   "family": "surveying-0027",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ],
+   [
+    "departure",
+    "the east-west component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "N",
@@ -4566,8 +5898,25 @@
   },
   "family": "surveying-0027",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ],
+   [
+    "departure",
+    "the east-west component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "N",
@@ -4609,8 +5958,85 @@
   },
   "family": "surveying-0027",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ],
+   [
+    "departure",
+    "the east-west component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
+  "symbols": [
+   [
+    "N",
+    "northing, or the relative precision denominator"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0027-d",
+  "topic": "surveying",
+  "subtopic": "surveying-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A closed traverse 925 m long has a misclosure of 0.045 m in latitude and 0.060 m in departure. Its relative precision is 1 in N. What is N?",
+  "answer": {
+   "value": 12333.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The linear misclosure is the hypotenuse of the latitude and departure misclosures. Relative precision is the perimeter divided by that misclosure, written as 1 in N.",
+  "solution": "Misclosure = \\sqrt{0.045^{2} + 0.060^{2}} = 0.0750 m.\n\nN = \\frac{925}{0.0750} = 12,333.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "latitude",
+     "departure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0027",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "latitude",
+    "the north-south component of a survey line"
+   ],
+   [
+    "departure",
+    "the east-west component of a survey line"
+   ]
+  ],
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ],
   "symbols": [
    [
     "N",
@@ -4649,8 +6075,15 @@
   },
   "family": "surveying-0028",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0028-b",
@@ -4683,8 +6116,15 @@
   },
   "family": "surveying-0028",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0028-c",
@@ -4717,8 +6157,56 @@
   },
   "family": "surveying-0028",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0028-d",
+  "topic": "surveying",
+  "subtopic": "surveying-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A ground distance of 2,080.25 m is to be reduced to the state plane grid. The combined scale factor is 0.99989. What is the grid distance?",
+  "answer": {
+   "value": 2080.02,
+   "tolerance": 3e-05,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "State plane coordinates lie on a projection surface. The combined factor allows for both the elevation of the ground above the ellipsoid and the scale of the projection at that place: grid = ground × combined factor.",
+  "solution": "Grid distance = 2,080.25 × 0.99989 = 2,080.02 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0028",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-a",
+    "surveying",
+    "Surveying: Angles, distances, and trigonometry"
+   ]
+  ]
  },
  {
   "id": "surveying-0029",
@@ -4751,8 +6239,19 @@
   },
   "family": "surveying-0029",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "backsight",
+    "a level-rod reading taken on a point of known elevation"
+   ],
+   [
+    "foresight",
+    "a level-rod reading taken on a point whose elevation is wanted"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "surveying-0029-b",
@@ -4785,8 +6284,19 @@
   },
   "family": "surveying-0029",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "backsight",
+    "a level-rod reading taken on a point of known elevation"
+   ],
+   [
+    "foresight",
+    "a level-rod reading taken on a point whose elevation is wanted"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "surveying-0029-c",
@@ -4819,8 +6329,64 @@
   },
   "family": "surveying-0029",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "backsight",
+    "a level-rod reading taken on a point of known elevation"
+   ],
+   [
+    "foresight",
+    "a level-rod reading taken on a point whose elevation is wanted"
+   ]
+  ],
+  "needs": []
+ },
+ {
+  "id": "surveying-0029-d",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A level run starts on a benchmark at 72.86 m. The readings are: backsight 1.812, foresight 1.491 on a turning point, then backsight 1.480 on the turning point and foresight 1.507 on the new point. What is the new point's elevation?",
+  "answer": {
+   "value": 73.154,
+   "tolerance": 0.0002,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Each set-up adds the backsight to get the height of instrument and subtracts the foresight to get the next elevation. Over the whole run, elevation = start + sum of backsights - sum of foresights.",
+  "solution": "Elevation = 72.86 + (1.812 + 1.480) - (1.491 + 1.507) = 72.86 + 3.292 - 2.998 = 73.154 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0029",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "backsight",
+    "a level-rod reading taken on a point of known elevation"
+   ],
+   [
+    "foresight",
+    "a level-rod reading taken on a point whose elevation is wanted"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "surveying-0030",
@@ -4853,8 +6419,19 @@
   },
   "family": "surveying-0030",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "terms": [
+   [
+    "backsight",
+    "a level-rod reading taken on a point of known elevation"
+   ],
+   [
+    "foresight",
+    "a level-rod reading taken on a point whose elevation is wanted"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "c",
@@ -4893,8 +6470,19 @@
   },
   "family": "surveying-0030",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "terms": [
+   [
+    "backsight",
+    "a level-rod reading taken on a point of known elevation"
+   ],
+   [
+    "foresight",
+    "a level-rod reading taken on a point whose elevation is wanted"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "c",
@@ -4933,8 +6521,70 @@
   },
   "family": "surveying-0030",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "terms": [
+   [
+    "backsight",
+    "a level-rod reading taken on a point of known elevation"
+   ],
+   [
+    "foresight",
+    "a level-rod reading taken on a point whose elevation is wanted"
+   ]
+  ],
+  "needs": [],
+  "symbols": [
+   [
+    "c",
+    "side length, or the curvature and refraction correction"
+   ]
+  ]
+ },
+ {
+  "id": "surveying-0030-d",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Using c = 0.0675 K^{2}, with c in metres and K in kilometres, what is the combined correction for earth curvature and refraction on a level sight 1.0 km long?",
+  "answer": {
+   "value": 0.0675,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Over a long sight the level surface curves away below the line of sight, while refraction bends the line slightly back down. The combined effect grows with the square of the distance, which is why backsight and foresight distances are kept equal.",
+  "solution": "c = 0.0675(1.0)^{2} = 0.0675 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0030",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "backsight",
+    "a level-rod reading taken on a point of known elevation"
+   ],
+   [
+    "foresight",
+    "a level-rod reading taken on a point whose elevation is wanted"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "c",
@@ -4973,8 +6623,9 @@
   },
   "family": "surveying-0031",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "surveying-0031-b",
@@ -5007,8 +6658,9 @@
   },
   "family": "surveying-0031",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "surveying-0031-c",
@@ -5041,8 +6693,44 @@
   },
   "family": "surveying-0031",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
+ },
+ {
+  "id": "surveying-0031-d",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A profile grade line passes through elevation 116.20 m and runs at a grade of -0.3%. What is its elevation 288 m farther along?",
+  "answer": {
+   "value": 115.34,
+   "tolerance": 0.0005,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "A grade in percent is metres of rise per 100 m of run; a negative grade falls. Elevation change = grade / 100 × distance.",
+  "solution": "Elevation = 116.20 + \\frac{-0.3}{100}(288) = 116.20 + (-0.86) = 115.34 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0031",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "surveying-0032",
@@ -5077,8 +6765,9 @@
   },
   "family": "surveying-0032",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": []
  },
  {
   "id": "surveying-0032-b",
@@ -5113,8 +6802,9 @@
   },
   "family": "surveying-0032",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": []
  },
  {
   "id": "surveying-0032-c",
@@ -5149,7 +6839,45 @@
   },
   "family": "surveying-0032",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": []
+ },
+ {
+  "id": "surveying-0032-d",
+  "topic": "surveying",
+  "subtopic": "surveying-e",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A total station with a height of instrument of 1.52 m measures a slope distance of 113.7 m at a vertical angle of +4.88° to a prism on a 1.74 m rod. How much higher is the ground at the rod than the ground at the instrument?",
+  "answer": {
+   "value": 9.45,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "The vertical component of the slope distance is S sin(vertical angle). Add the instrument height, because the measurement starts above the ground, and subtract the rod height, because it ends above the ground.",
+  "solution": "Difference = 113.7 sin 4.88° + 1.52 - 1.74 = 9.672 + 1.52 - 1.74 = 9.45 m.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "trigonometry"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "surveying-0032",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": []
  }
 ]

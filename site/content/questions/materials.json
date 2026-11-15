@@ -50,6 +50,13 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "water-cement ratio",
+    "mass of water divided by mass of cement in concrete; lower ratios give stronger concrete"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "w",
@@ -108,6 +115,13 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "water-cement ratio",
+    "mass of water divided by mass of cement in concrete; lower ratios give stronger concrete"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "w",
@@ -166,6 +180,13 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "water-cement ratio",
+    "mass of water divided by mass of cement in concrete; lower ratios give stronger concrete"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "w",
@@ -224,6 +245,13 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "water-cement ratio",
+    "mass of water divided by mass of cement in concrete; lower ratios give stronger concrete"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "w",
@@ -282,6 +310,13 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "f'_{c}",
@@ -344,6 +379,13 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "f'_{c}",
@@ -406,6 +448,13 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "f'_{c}",
@@ -468,6 +517,13 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "f'_{c}",
@@ -556,7 +612,14 @@
   "family": "materials-0003",
   "version": 1,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0003-b",
@@ -635,7 +698,20 @@
   "family": "materials-0003",
   "version": 2,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "water content",
+    "mass of water divided by mass of dry solids in a soil, as a percentage"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0004",
@@ -676,6 +752,23 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ],
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "E",
@@ -722,6 +815,23 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ],
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "E",
@@ -768,6 +878,23 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ],
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "E",
@@ -814,6 +941,23 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ],
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "E",
@@ -867,6 +1011,13 @@
   "version": 1,
   "versions": 4,
   "lookup": false,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "V",
@@ -920,6 +1071,13 @@
   "version": 2,
   "versions": 4,
   "lookup": false,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "V",
@@ -973,6 +1131,13 @@
   "version": 3,
   "versions": 4,
   "lookup": false,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "V",
@@ -1026,6 +1191,13 @@
   "version": 4,
   "versions": 4,
   "lookup": false,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "V",
@@ -1079,6 +1251,7 @@
   "version": 1,
   "versions": 4,
   "lookup": false,
+  "needs": [],
   "symbols": [
    [
     "P_{b}",
@@ -1132,6 +1305,7 @@
   "version": 2,
   "versions": 4,
   "lookup": false,
+  "needs": [],
   "symbols": [
    [
     "P_{b}",
@@ -1185,6 +1359,7 @@
   "version": 3,
   "versions": 4,
   "lookup": false,
+  "needs": [],
   "symbols": [
    [
     "P_{b}",
@@ -1238,6 +1413,7 @@
   "version": 4,
   "versions": 4,
   "lookup": false,
+  "needs": [],
   "symbols": [
    [
     "P_{b}",
@@ -1293,7 +1469,14 @@
   "family": "materials-0007",
   "version": 1,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0007-b",
@@ -1343,7 +1526,14 @@
   "family": "materials-0007",
   "version": 2,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0008",
@@ -1393,7 +1583,20 @@
   "family": "materials-0008",
   "version": 1,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "yield strength",
+    "the stress at which a metal stops springing back and starts to deform permanently"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0008-b",
@@ -1443,7 +1646,20 @@
   "family": "materials-0008",
   "version": 2,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "yield strength",
+    "the stress at which a metal stops springing back and starts to deform permanently"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0009",
@@ -1494,6 +1710,19 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "E_{c}",
@@ -1550,6 +1779,19 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "E_{c}",
@@ -1606,6 +1848,19 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "E_{c}",
@@ -1662,6 +1917,19 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "E_{c}",
@@ -1704,7 +1972,14 @@
   "family": "materials-0010",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0010-b",
@@ -1741,7 +2016,14 @@
   "family": "materials-0010",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0010-c",
@@ -1778,7 +2060,14 @@
   "family": "materials-0010",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0010-d",
@@ -1815,7 +2104,14 @@
   "family": "materials-0010",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0011",
@@ -1866,7 +2162,20 @@
   "family": "materials-0011",
   "version": 1,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0011-b",
@@ -1917,7 +2226,20 @@
   "family": "materials-0011",
   "version": 2,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0012",
@@ -1951,7 +2273,18 @@
   "family": "materials-0012",
   "version": 1,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "terms": [
+   [
+    "saturated surface-dry",
+    "the condition of aggregate whose pores are full of water but whose surface is dry"
+   ],
+   [
+    "water-cement ratio",
+    "mass of water divided by mass of cement in concrete; lower ratios give stronger concrete"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "materials-0012-b",
@@ -1985,7 +2318,18 @@
   "family": "materials-0012",
   "version": 2,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "terms": [
+   [
+    "saturated surface-dry",
+    "the condition of aggregate whose pores are full of water but whose surface is dry"
+   ],
+   [
+    "water-cement ratio",
+    "mass of water divided by mass of cement in concrete; lower ratios give stronger concrete"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "materials-0012-c",
@@ -2019,7 +2363,18 @@
   "family": "materials-0012",
   "version": 3,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "terms": [
+   [
+    "saturated surface-dry",
+    "the condition of aggregate whose pores are full of water but whose surface is dry"
+   ],
+   [
+    "water-cement ratio",
+    "mass of water divided by mass of cement in concrete; lower ratios give stronger concrete"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "materials-0012-d",
@@ -2053,7 +2408,18 @@
   "family": "materials-0012",
   "version": 4,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "terms": [
+   [
+    "saturated surface-dry",
+    "the condition of aggregate whose pores are full of water but whose surface is dry"
+   ],
+   [
+    "water-cement ratio",
+    "mass of water divided by mass of cement in concrete; lower ratios give stronger concrete"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "materials-0013",
@@ -2089,7 +2455,14 @@
   "family": "materials-0013",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "water-cement ratio",
+    "mass of water divided by mass of cement in concrete; lower ratios give stronger concrete"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "materials-0013-b",
@@ -2125,7 +2498,14 @@
   "family": "materials-0013",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "water-cement ratio",
+    "mass of water divided by mass of cement in concrete; lower ratios give stronger concrete"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "materials-0013-c",
@@ -2161,7 +2541,14 @@
   "family": "materials-0013",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "water-cement ratio",
+    "mass of water divided by mass of cement in concrete; lower ratios give stronger concrete"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "materials-0013-d",
@@ -2197,7 +2584,14 @@
   "family": "materials-0013",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "water-cement ratio",
+    "mass of water divided by mass of cement in concrete; lower ratios give stronger concrete"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "materials-0014",
@@ -2230,8 +2624,15 @@
   },
   "family": "materials-0014",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "materials-0014-b",
@@ -2264,8 +2665,15 @@
   },
   "family": "materials-0014",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "materials-0014-c",
@@ -2298,8 +2706,56 @@
   },
   "family": "materials-0014",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": []
+ },
+ {
+  "id": "materials-0014-d",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A concrete batch contains 375 kg of cement (specific gravity 3.15), 178 kg of water, 675 kg of sand (2.65) and 1,075 kg of coarse aggregate (2.70). Ignoring air, what volume of concrete does it make?",
+  "answer": {
+   "value": 0.95,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}"
+  },
+  "eli5": "The absolute volume method adds the solid volume of each ingredient: mass divided by (specific gravity × 1,000 kg/m^{3}). The bulk volumes of the piles do not add, because the fines fill the gaps between the coarse particles.",
+  "solution": "\\frac{375}{3,150} + \\frac{178}{1,000} + \\frac{675}{2,650} + \\frac{1,075}{2,700} = 0.1190 + 0.1780 + 0.2547 + 0.3981 = 0.950 m^{3}.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0014",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "materials-0015",
@@ -2332,8 +2788,19 @@
   },
   "family": "materials-0015",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "air voids",
+    "the small pockets of air in a compacted asphalt mix, as a percentage of its volume"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "materials-0015-b",
@@ -2366,8 +2833,19 @@
   },
   "family": "materials-0015",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "air voids",
+    "the small pockets of air in a compacted asphalt mix, as a percentage of its volume"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "materials-0015-c",
@@ -2400,8 +2878,64 @@
   },
   "family": "materials-0015",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "air voids",
+    "the small pockets of air in a compacted asphalt mix, as a percentage of its volume"
+   ]
+  ],
+  "needs": []
+ },
+ {
+  "id": "materials-0015-d",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A compacted asphalt mix has a bulk specific gravity of 2.38 and a theoretical maximum specific gravity of 2.49. What is its air void content?",
+  "answer": {
+   "value": 4.42,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "The theoretical maximum specific gravity is the mix with no air at all. Air voids are the shortfall of the compacted bulk specific gravity from it, as a percentage; about 4% is the usual design target.",
+  "solution": "Air voids = (1 - \\frac{2.38}{2.49}) × 100 = 4.42%.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0015",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "air voids",
+    "the small pockets of air in a compacted asphalt mix, as a percentage of its volume"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "materials-0016",
@@ -2434,8 +2968,19 @@
   },
   "family": "materials-0016",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "air voids",
+    "the small pockets of air in a compacted asphalt mix, as a percentage of its volume"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "G_{mb}",
@@ -2482,8 +3027,19 @@
   },
   "family": "materials-0016",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "air voids",
+    "the small pockets of air in a compacted asphalt mix, as a percentage of its volume"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "G_{mb}",
@@ -2530,8 +3086,78 @@
   },
   "family": "materials-0016",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "air voids",
+    "the small pockets of air in a compacted asphalt mix, as a percentage of its volume"
+   ]
+  ],
+  "needs": [],
+  "symbols": [
+   [
+    "G_{mb}",
+    "bulk specific gravity of the compacted mix"
+   ],
+   [
+    "P_{s}",
+    "aggregate content, percent by mass of mix"
+   ],
+   [
+    "G_{sb}",
+    "bulk specific gravity of the aggregate"
+   ]
+  ]
+ },
+ {
+  "id": "materials-0016-d",
+  "topic": "materials",
+  "subtopic": "materials-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A compacted asphalt mix has a bulk specific gravity of 2.38 and contains 94.8% aggregate by mass of mix. The aggregate's bulk specific gravity is 2.67. What are the voids in the mineral aggregate (VMA)?",
+  "answer": {
+   "value": 15.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "VMA is the space between the aggregate particles in the compacted mix, which holds both the air voids and the effective asphalt. VMA = 100 - G_{mb} P_{s} / G_{sb}.",
+  "solution": "VMA = 100 - \\frac{2.38(94.8)}{2.67} = 100 - 84.50 = 15.50%.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0016",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "air voids",
+    "the small pockets of air in a compacted asphalt mix, as a percentage of its volume"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "G_{mb}",
@@ -2578,8 +3204,15 @@
   },
   "family": "materials-0017",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0017-b",
@@ -2612,8 +3245,15 @@
   },
   "family": "materials-0017",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0017-c",
@@ -2646,8 +3286,56 @@
   },
   "family": "materials-0017",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
+ },
+ {
+  "id": "materials-0017-d",
+  "topic": "materials",
+  "subtopic": "materials-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "In a splitting tensile test, a concrete cylinder 100 mm in diameter and 200 mm long fails at a load of 225 kN applied along its length. What is its splitting tensile strength?",
+  "answer": {
+   "value": 7.16,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "MPa"
+  },
+  "eli5": "Loading a cylinder along two opposite lines sets up nearly uniform tension across the loaded diameter. The splitting tensile strength is 2P / (π L D).",
+  "solution": "Strength = \\frac{2(225,000)}{π(200)(100)} = 7.16 MPa.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0017",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0018",
@@ -2680,8 +3368,15 @@
   },
   "family": "materials-0018",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "b",
@@ -2736,8 +3431,15 @@
   },
   "family": "materials-0018",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "b",
@@ -2792,8 +3494,78 @@
   },
   "family": "materials-0018",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
+  "symbols": [
+   [
+    "b",
+    "width of the specimen"
+   ],
+   [
+    "d",
+    "depth or diameter of the specimen"
+   ],
+   [
+    "R",
+    "modulus of rupture"
+   ],
+   [
+    "P",
+    "load at failure"
+   ],
+   [
+    "L",
+    "span or length of the specimen"
+   ]
+  ]
+ },
+ {
+  "id": "materials-0018-d",
+  "topic": "materials",
+  "subtopic": "materials-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 150 mm square concrete beam is tested in third-point loading on a span of 600 mm and breaks in the middle third at a total load of 33.0 kN. What is its modulus of rupture?",
+  "answer": {
+   "value": 5.87,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "MPa"
+  },
+  "eli5": "Third-point loading puts a constant moment of P L / 6 across the middle third. Dividing by the section modulus, b d^{2} / 6, gives the modulus of rupture R = P L / (b d^{2}).",
+  "solution": "R = \\frac{33,000(600)}{150(150)^{2}} = 5.87 MPa.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0018",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "b",
@@ -2848,8 +3620,15 @@
   },
   "family": "materials-0019",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0019-b",
@@ -2882,8 +3661,15 @@
   },
   "family": "materials-0019",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0019-c",
@@ -2916,8 +3702,56 @@
   },
   "family": "materials-0019",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
+ },
+ {
+  "id": "materials-0019-d",
+  "topic": "materials",
+  "subtopic": "materials-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sieve analysis of sand gives cumulative percentages retained on the six standard sieves from No. 4 to No. 100 of 3, 14, 32, 55, 80 and 96. What is the fineness modulus?",
+  "answer": {
+   "value": 2.8,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The fineness modulus is the sum of the cumulative percentages retained on the standard sieves, divided by 100. A larger value means a coarser sand; concrete sands usually fall between 2.3 and 3.1.",
+  "solution": "FM = \\frac{3 + 14 + 32 + 55 + 80 + 96}{100} = \\frac{280}{100} = 2.80.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0019",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0020",
@@ -2950,8 +3784,21 @@
   },
   "family": "materials-0020",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "saturated surface-dry",
+    "the condition of aggregate whose pores are full of water but whose surface is dry"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0020-b",
@@ -2984,8 +3831,21 @@
   },
   "family": "materials-0020",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "saturated surface-dry",
+    "the condition of aggregate whose pores are full of water but whose surface is dry"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0020-c",
@@ -3018,8 +3878,68 @@
   },
   "family": "materials-0020",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "saturated surface-dry",
+    "the condition of aggregate whose pores are full of water but whose surface is dry"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
+ },
+ {
+  "id": "materials-0020-d",
+  "topic": "materials",
+  "subtopic": "materials-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An aggregate sample has a mass of 757.2 g in the saturated surface-dry condition and 747.5 g after oven drying. What is its absorption?",
+  "answer": {
+   "value": 1.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Absorption is the water an aggregate holds inside its pores when saturated surface-dry, as a percentage of its oven-dry mass.",
+  "solution": "Absorption = \\frac{757.2 - 747.5}{747.5} × 100 = 1.30%.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0020",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "saturated surface-dry",
+    "the condition of aggregate whose pores are full of water but whose surface is dry"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0021",
@@ -3052,8 +3972,25 @@
   },
   "family": "materials-0021",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "saturated surface-dry",
+    "the condition of aggregate whose pores are full of water but whose surface is dry"
+   ],
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0021-b",
@@ -3086,8 +4023,25 @@
   },
   "family": "materials-0021",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "saturated surface-dry",
+    "the condition of aggregate whose pores are full of water but whose surface is dry"
+   ],
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0021-c",
@@ -3120,8 +4074,76 @@
   },
   "family": "materials-0021",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "saturated surface-dry",
+    "the condition of aggregate whose pores are full of water but whose surface is dry"
+   ],
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
+ },
+ {
+  "id": "materials-0021-d",
+  "topic": "materials",
+  "subtopic": "materials-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A coarse aggregate sample has a mass of 1,725 g saturated surface-dry in air and an apparent mass of 1,082 g when submerged in water. What is its bulk specific gravity (SSD)?",
+  "answer": {
+   "value": 2.683,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "By Archimedes' principle the loss of mass in water equals the mass of water displaced, which gives the sample's bulk volume. Specific gravity is the SSD mass divided by that loss.",
+  "solution": "Bulk specific gravity (SSD) = \\frac{1,725}{1,725 - 1,082} = 2.683.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0021",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "saturated surface-dry",
+    "the condition of aggregate whose pores are full of water but whose surface is dry"
+   ],
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0022",
@@ -3156,8 +4178,15 @@
   },
   "family": "materials-0022",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0022-b",
@@ -3192,8 +4221,15 @@
   },
   "family": "materials-0022",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0022-c",
@@ -3228,8 +4264,58 @@
   },
   "family": "materials-0022",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
+ },
+ {
+  "id": "materials-0022-d",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A tension specimen has an original diameter of 11.4 mm. After fracture the diameter at the neck is 8.4 mm. What is the percent reduction in area?",
+  "answer": {
+   "value": 45.71,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "%"
+  },
+  "eli5": "Reduction in area measures ductility: the loss of cross-section at the fracture as a percentage of the original. Areas go with diameter squared.",
+  "solution": "Reduction = (1 - (\\frac{8.4}{11.4})^{2}) × 100 = 45.71%.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": [
+     "reduction in area"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0022",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0023",
@@ -3262,8 +4348,29 @@
   },
   "family": "materials-0023",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "terms": [
+   [
+    "yield strength",
+    "the stress at which a metal stops springing back and starts to deform permanently"
+   ],
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ],
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "u_{r}",
@@ -3302,8 +4409,29 @@
   },
   "family": "materials-0023",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "terms": [
+   [
+    "yield strength",
+    "the stress at which a metal stops springing back and starts to deform permanently"
+   ],
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ],
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "u_{r}",
@@ -3342,8 +4470,90 @@
   },
   "family": "materials-0023",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "terms": [
+   [
+    "yield strength",
+    "the stress at which a metal stops springing back and starts to deform permanently"
+   ],
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ],
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
+  "symbols": [
+   [
+    "u_{r}",
+    "modulus of resilience"
+   ]
+  ]
+ },
+ {
+  "id": "materials-0023-d",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A metal has a yield strength of 298 MPa and a modulus of elasticity of 70 GPa. What is its modulus of resilience?",
+  "answer": {
+   "value": 634.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kJ/m^{3}"
+  },
+  "eli5": "The modulus of resilience is the energy per unit volume a material can absorb without permanent deformation: the area under the straight part of the stress-strain curve, (yield strength)^{2} / (2E).",
+  "solution": "u_{r} = \\frac{298^{2}}{2(70,000)} = 0.63431 MPa = 634.3 kJ/m^{3}.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0023",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "terms": [
+   [
+    "yield strength",
+    "the stress at which a metal stops springing back and starts to deform permanently"
+   ],
+   [
+    "modulus of elasticity",
+    "the stiffness of a material: stress divided by strain while the material still springs back"
+   ],
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "u_{r}",
@@ -3382,8 +4592,15 @@
   },
   "family": "materials-0024",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "E_{s}",
@@ -3430,8 +4647,15 @@
   },
   "family": "materials-0024",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "E_{s}",
@@ -3478,8 +4702,70 @@
   },
   "family": "materials-0024",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
+  "symbols": [
+   [
+    "E_{s}",
+    "modulus of elasticity of steel"
+   ],
+   [
+    "E_{c}",
+    "modulus of elasticity of concrete"
+   ],
+   [
+    "n",
+    "modular ratio, E_{s} / E_{c}"
+   ]
+  ]
+ },
+ {
+  "id": "materials-0024-d",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Concrete has f'_{c} = 32 MPa. Using E_{c} = 4,700 × the square root of f'_{c} (MPa) and E_{s} = 200 GPa, what is the modular ratio of steel to concrete?",
+  "answer": {
+   "value": 7.52,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The modular ratio n = E_{s} / E_{c} converts steel area into an equivalent area of concrete in transformed-section analysis. Stronger concrete is stiffer, so n falls as strength rises.",
+  "solution": "E_{c} = 4,700\\sqrt{32} = 26,587 MPa.\n\nn = \\frac{200,000}{26,587} = 7.52.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0024",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ],
   "symbols": [
    [
     "E_{s}",
@@ -3528,8 +4814,21 @@
   },
   "family": "materials-0025",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0025-b",
@@ -3564,8 +4863,21 @@
   },
   "family": "materials-0025",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  },
  {
   "id": "materials-0025-c",
@@ -3600,7 +4912,69 @@
   },
   "family": "materials-0025",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
+ },
+ {
+  "id": "materials-0025-d",
+  "topic": "materials",
+  "subtopic": "materials-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "At a point in a tension test before necking begins, the engineering stress is 460 MPa and the engineering strain is 0.10. What is the true stress?",
+  "answer": {
+   "value": 506.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "MPa"
+  },
+  "eli5": "Engineering stress uses the original area; true stress uses the current, smaller area. While deformation is uniform and volume is constant, true stress = engineering stress × (1 + engineering strain).",
+  "solution": "True stress = 460(1 + 0.10) = 506.0 MPa.",
+  "handbook": [
+   {
+    "section": "Materials Science/Structure of Matter",
+    "page": "94–106",
+    "find": [
+     "true stress"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "materials-0025",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "strain",
+    "change in length divided by original length; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "mechmat-b",
+    "mechmat",
+    "Mechanics of Materials: Stresses and strains"
+   ]
+  ]
  }
 ]

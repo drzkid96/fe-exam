@@ -59,13 +59,14 @@
     ]
    },
    "bridge": {
-    "keep": "The idea that money has a time value, and comparing options on a common basis.",
-    "rusty": [
-     "The six interest factors and their notation, such as (P/A, i, n). The handbook tabulates them; the skill is picking the right one.",
-     "Depreciation methods, benefit-cost ratios and break-even points."
+    "plain": "Engineering economics compares amounts of money at different times. A dollar today is worth more than a dollar next year, because it can earn interest in between.",
+    "core": [
+     "Draw a time line with every payment on it.",
+     "Interest factors move money along that line: to the present, to the future, or into equal yearly amounts.",
+     "Compare options only after putting them on the same basis."
     ],
-    "work": "Life-cycle cost comparisons of pavement or signal equipment, benefit-cost ratios in grant applications, and escalating a planning-level cost estimate to the year of construction all use these factors.",
-    "exam": "Draw the cash-flow diagram first. Most errors come from putting a payment at the wrong end of a period."
+    "links": "Construction uses it for estimates and schedules of payment; transportation and water projects use benefit-cost ratios to justify funding.",
+    "exam": "The handbook tabulates the factors. Most errors come from putting a payment at the wrong point on the time line."
    }
   },
   {
@@ -201,6 +202,14 @@
       "svg": "<line x1='40' y1='90' x2='360' y2='90' stroke='#00242E' stroke-width='2'/><line x1='40' y1='86' x2='40' y2='94' stroke='#00242E'/><text x='40' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>0</text><line x1='56' y1='86' x2='56' y2='94' stroke='#00242E'/><line x1='72' y1='86' x2='72' y2='94' stroke='#00242E'/><text x='72' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='88' y1='86' x2='88' y2='94' stroke='#00242E'/><line x1='104' y1='86' x2='104' y2='94' stroke='#00242E'/><text x='104' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4</text><line x1='120' y1='86' x2='120' y2='94' stroke='#00242E'/><line x1='136' y1='86' x2='136' y2='94' stroke='#00242E'/><text x='136' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6</text><line x1='152' y1='86' x2='152' y2='94' stroke='#00242E'/><line x1='168' y1='86' x2='168' y2='94' stroke='#00242E'/><text x='168' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8</text><line x1='184' y1='86' x2='184' y2='94' stroke='#00242E'/><line x1='200' y1='86' x2='200' y2='94' stroke='#00242E'/><text x='200' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>10</text><line x1='216' y1='86' x2='216' y2='94' stroke='#00242E'/><line x1='232' y1='86' x2='232' y2='94' stroke='#00242E'/><text x='232' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12</text><line x1='248' y1='86' x2='248' y2='94' stroke='#00242E'/><line x1='264' y1='86' x2='264' y2='94' stroke='#00242E'/><text x='264' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>14</text><line x1='280' y1='86' x2='280' y2='94' stroke='#00242E'/><line x1='296' y1='86' x2='296' y2='94' stroke='#00242E'/><text x='296' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>16</text><line x1='312' y1='86' x2='312' y2='94' stroke='#00242E'/><line x1='328' y1='86' x2='328' y2='94' stroke='#00242E'/><text x='328' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>18</text><line x1='344' y1='86' x2='344' y2='94' stroke='#00242E'/><line x1='360' y1='86' x2='360' y2='94' stroke='#00242E'/><text x='360' y='108' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>20</text><line x1='56' y1='90' x2='56' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M56 56 L50 68 L62 68 Z' fill='#568CBB'/><line x1='72' y1='90' x2='72' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M72 56 L66 68 L78 68 Z' fill='#568CBB'/><line x1='88' y1='90' x2='88' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M88 56 L82 68 L94 68 Z' fill='#568CBB'/><line x1='104' y1='90' x2='104' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M104 56 L98 68 L110 68 Z' fill='#568CBB'/><line x1='120' y1='90' x2='120' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M120 56 L114 68 L126 68 Z' fill='#568CBB'/><line x1='136' y1='90' x2='136' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M136 56 L130 68 L142 68 Z' fill='#568CBB'/><line x1='152' y1='90' x2='152' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M152 56 L146 68 L158 68 Z' fill='#568CBB'/><line x1='168' y1='90' x2='168' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M168 56 L162 68 L174 68 Z' fill='#568CBB'/><line x1='184' y1='90' x2='184' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M184 56 L178 68 L190 68 Z' fill='#568CBB'/><line x1='200' y1='90' x2='200' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M200 56 L194 68 L206 68 Z' fill='#568CBB'/><line x1='216' y1='90' x2='216' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M216 56 L210 68 L222 68 Z' fill='#568CBB'/><line x1='232' y1='90' x2='232' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M232 56 L226 68 L238 68 Z' fill='#568CBB'/><line x1='248' y1='90' x2='248' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M248 56 L242 68 L254 68 Z' fill='#568CBB'/><line x1='264' y1='90' x2='264' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M264 56 L258 68 L270 68 Z' fill='#568CBB'/><line x1='280' y1='90' x2='280' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M280 56 L274 68 L286 68 Z' fill='#568CBB'/><line x1='296' y1='90' x2='296' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M296 56 L290 68 L302 68 Z' fill='#568CBB'/><line x1='312' y1='90' x2='312' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M312 56 L306 68 L318 68 Z' fill='#568CBB'/><line x1='328' y1='90' x2='328' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M328 56 L322 68 L334 68 Z' fill='#568CBB'/><line x1='344' y1='90' x2='344' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M344 56 L338 68 L350 68 Z' fill='#568CBB'/><line x1='360' y1='90' x2='360' y2='64' stroke='#568CBB' stroke-width='2'/><path d='M360 56 L354 68 L366 68 Z' fill='#568CBB'/><text x='200' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>$4,000 each period</text><line x1='360' y1='90' x2='360' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M360 24 L354 36 L366 36 Z' fill='#1B795A'/><text x='352' y='20' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>F = ?</text><text x='200' y='150' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>End of period</text>",
       "alt": "A cash flow diagram over 20 periods, $4,000 at the end of every period, F = ? at period 20."
      }
+    },
+    {
+     "family": "econ-0015",
+     "problem": "What is the present worth of $7,250 received at the end of each year for 13 years, at 8% interest?",
+     "idea": "The uniform series present worth factor (P/A, i, n) converts equal end-of-year amounts into a single equivalent amount today: ((1 + i)^{n} - 1) / (i (1 + i)^{n}).",
+     "steps": "(P/A, 8%, 13) = \\frac{(1 + 0.08)^{13} - 1}{0.08(1 + 0.08)^{13}} = 7.9038.\n\nP = 7,250 × 7.9038 = $57,302.",
+     "answer": "$57,302",
+     "value": 57302.375577
     }
    ],
    "lookup": [
@@ -230,6 +239,21 @@
     "Check direction: moving money forward in time must increase it."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "Money now and money later are not equal, because money now can earn interest. To compare them, move every amount to the same moment using interest factors. P is an amount now, F an amount in the future, A an equal amount every period.",
+   "needs": [],
+   "leads": [
+    [
+     "econ-b",
+     "econ",
+     "Engineering Economics: Cost"
+    ],
+    [
+     "econ-c",
+     "econ",
+     "Engineering Economics: Analyses"
+    ]
+   ],
+   "terms": [],
    "symbols": [
     [
      "i_{e}",
@@ -336,6 +360,14 @@
      "steps": "Annual depreciation = \\frac{64,000 - 4,000}{8} = $7,500.\n\nBook value = 64,000 - 3(7,500) = $41,500.",
      "answer": "$41,500",
      "value": 41500.0
+    },
+    {
+     "family": "econ-0022",
+     "problem": "A facility cost $6,475,000 when the construction cost index stood at 185. The index is now 242. What would the same facility cost today?",
+     "idea": "A cost index tracks how construction prices change over time. Scale a historical cost by the ratio of the current index to the index when the cost was recorded.",
+     "steps": "Cost today = 6,475,000 × \\frac{242}{185} = $8,470,000.",
+     "answer": "$8,470,000",
+     "value": 8470000.0
     }
    ],
    "lookup": [
@@ -364,7 +396,22 @@
     "For break-even, set revenue equal to cost (or the two alternatives' costs equal) and solve for quantity.",
     "Ignore sunk costs; include opportunity costs."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "Costs are sorted by how they behave. Fixed costs stay the same whatever the output; variable costs grow with each unit. Direct costs belong to one job; indirect costs (overhead) are shared. Depreciation spreads an asset's cost over its life.",
+   "needs": [
+    [
+     "econ-a",
+     "econ",
+     "Engineering Economics: Time value of money"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "depreciation",
+     "the loss of an asset's value over its life, written off year by year"
+    ]
+   ]
   },
   {
    "id": "econ-c-lesson",
@@ -457,6 +504,22 @@
      "steps": "(A/P, 9%, 10) = 0.15582, so the annual cost of owning before any units = 75,000(0.15582) + 5,000 = $16,687.\n\nEach unit made saves 6.50 - 2.80 = $3.70.\n\nBreak-even = \\frac{16,687}{3.70} = 4,510 units per year.",
      "answer": "4,510 units per year",
      "value": 4509.866687
+    },
+    {
+     "family": "econ-0023",
+     "problem": "A signal retiming project costs $94,800 and saves $21,600 per year. What is its simple payback period?",
+     "idea": "Simple payback is the first cost divided by the annual saving. It ignores interest and anything after the payback date, so it screens projects but does not rank them.",
+     "steps": "Payback = \\frac{94,800}{21,600} = 4.39 years.",
+     "answer": "4.39 years",
+     "value": 4.388889
+    },
+    {
+     "family": "econ-0024",
+     "problem": "A project costs $145,000 now, returns $33,500 at the end of each year for 6 years and has a salvage value of $15,000 at the end. At 10% interest, what is its net present worth?",
+     "idea": "Net present worth brings every cash flow to today: the annual returns by the (P/A) factor and the salvage by the (P/F) factor, less the first cost. A positive value means the project earns more than the interest rate.",
+     "steps": "(P/A, 10%, 6) = 4.3553 and (P/F, 10%, 6) = 0.5645.\n\nNPW = -145,000 + 33,500(4.3553) + 15,000(0.5645) = $9,368.",
+     "answer": "$9,368",
+     "value": 9368.342383
     }
    ],
    "lookup": [
@@ -482,7 +545,29 @@
     "With unequal lives use annual worth."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Benefit-cost ratios and life-cycle costs are how safety and active transportation grant applications are scored.",
+   "primer": "An analysis decides between options. Break-even finds the quantity at which two options cost the same. Benefit-cost divides the value of benefits by the cost. Life-cycle cost adds everything spent over the whole life, moved to one point in time.",
+   "needs": [
+    [
+     "econ-a",
+     "econ",
+     "Engineering Economics: Time value of money"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "benefit-cost",
+     "benefits divided by costs, both in present-worth terms; above 1 means the project pays"
+    ],
+    [
+     "present worth",
+     "the amount today that is equivalent to money received or paid in the future, at a given interest rate"
+    ],
+    [
+     "salvage value",
+     "what an asset can be sold for at the end of its life"
+    ]
+   ],
    "symbols": [
     [
      "P",
@@ -561,6 +646,14 @@
      "steps": "EV = 0.15(-60,000) + 0.55(35,000) + 0.30(110,000) = -9,000 + 19,250 + 33,000 = $43,250.",
      "answer": "$43,250",
      "value": 43250.0
+    },
+    {
+     "family": "econ-0025",
+     "problem": "A firm estimates a 32% chance of winning a contract that would earn a profit of $415,000. Preparing the proposal costs $23,000, which is lost if the firm does not win. What is the expected value of pursuing it?",
+     "idea": "Expected value weights each outcome by its probability: the chance of winning times the profit, minus the chance of losing times the cost of the proposal.",
+     "steps": "EV = 0.32(415,000) - 0.68(23,000) = 132,800 - 15,640 = $117,160.",
+     "answer": "$117,160",
+     "value": 117160.0
     }
    ],
    "lookup": [
@@ -579,7 +672,17 @@
     "For a tree, work from the right: expected values at chance nodes, best branch at decision nodes.",
     "Compare options on expected value, then comment on risk if asked."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "When outcomes are uncertain, weight each one by its probability and add them up. The result, the expected value, is the average outcome if the choice were repeated many times.",
+   "needs": [
+    [
+     "math-d",
+     "math",
+     "Mathematics and Statistics: Statistics"
+    ]
+   ],
+   "leads": [],
+   "terms": []
   }
  ]
 }

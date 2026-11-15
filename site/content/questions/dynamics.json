@@ -51,6 +51,13 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "a",
@@ -118,6 +125,13 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "a",
@@ -185,6 +199,13 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "a",
@@ -252,6 +273,13 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "a",
@@ -311,6 +339,24 @@
    "alt": "Free-body diagram showing W = 490.5 N, N = 490.5 N, Pull = 300 N, Friction = 147.2 N."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "N",
@@ -374,6 +420,24 @@
    "alt": "Free-body diagram showing W = 392.4 N, N = 392.4 N, Pull = 250 N, Friction = 98.1 N."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "N",
@@ -437,6 +501,24 @@
    "alt": "Free-body diagram showing W = 784.8 N, N = 784.8 N, Pull = 500 N, Friction = 313.9 N."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "N",
@@ -500,6 +582,24 @@
    "alt": "Free-body diagram showing W = 245.2 N, N = 245.2 N, Pull = 150 N, Friction = 49.1 N."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "N",
@@ -571,6 +671,19 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -642,6 +755,19 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -713,6 +839,19 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -784,6 +923,19 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -855,6 +1007,27 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "parallel axis theorem",
+    "the rule for moving a moment of inertia to a parallel axis: add the area times the square of the distance between the axes"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "I_{end}",
@@ -926,6 +1099,27 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "parallel axis theorem",
+    "the rule for moving a moment of inertia to a parallel axis: add the area times the square of the distance between the axes"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "I_{end}",
@@ -997,6 +1191,27 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "parallel axis theorem",
+    "the rule for moving a moment of inertia to a parallel axis: add the area times the square of the distance between the axes"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "I_{end}",
@@ -1068,6 +1283,27 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "parallel axis theorem",
+    "the rule for moving a moment of inertia to a parallel axis: add the area times the square of the distance between the axes"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "I_{end}",
@@ -1140,6 +1376,13 @@
    "alt": "The path of a projectile launched from level ground at 20 m/s and 30° above the horizontal."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "g",
@@ -1208,6 +1451,13 @@
    "alt": "The path of a projectile launched from level ground at 25 m/s and 20° above the horizontal."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "g",
@@ -1276,6 +1526,13 @@
    "alt": "The path of a projectile launched from level ground at 30 m/s and 35° above the horizontal."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "g",
@@ -1344,6 +1601,13 @@
    "alt": "The path of a projectile launched from level ground at 15 m/s and 25° above the horizontal."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "g",
@@ -1394,6 +1658,13 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "a_{n}",
@@ -1436,6 +1707,13 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "a_{n}",
@@ -1478,6 +1756,13 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "a_{n}",
@@ -1520,6 +1805,13 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "a_{n}",
@@ -1575,6 +1867,23 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "I",
@@ -1638,6 +1947,23 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "I",
@@ -1701,6 +2027,23 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "I",
@@ -1764,6 +2107,23 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "I",
@@ -1837,6 +2197,24 @@
    "alt": "Free-body diagram on a surface inclined at 30° showing W = m g, N."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "a",
@@ -1906,6 +2284,24 @@
    "alt": "Free-body diagram on a surface inclined at 20° showing W = m g, N."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "a",
@@ -1975,6 +2371,24 @@
    "alt": "Free-body diagram on a surface inclined at 40° showing W = m g, N."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "a",
@@ -2044,6 +2458,24 @@
    "alt": "Free-body diagram on a surface inclined at 25° showing W = m g, N."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "a",
@@ -2091,6 +2523,28 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "I",
@@ -2146,6 +2600,28 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "I",
@@ -2201,6 +2677,28 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "I",
@@ -2256,6 +2754,28 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "I",
@@ -2323,7 +2843,19 @@
   "family": "dynamics-0010",
   "version": 1,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight = m g</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Cable force = m g at constant speed</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Constant speed means zero net force</text>",
+   "alt": "Free-body diagram showing Weight = m g, Cable force = m g at constant speed."
+  },
   "lookup": true,
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "P",
@@ -2395,7 +2927,19 @@
   "family": "dynamics-0010",
   "version": 2,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight = m g</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Cable force = m g at constant speed</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Constant speed means zero net force</text>",
+   "alt": "Free-body diagram showing Weight = m g, Cable force = m g at constant speed."
+  },
   "lookup": true,
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "P",
@@ -2467,7 +3011,19 @@
   "family": "dynamics-0010",
   "version": 3,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight = m g</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Cable force = m g at constant speed</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Constant speed means zero net force</text>",
+   "alt": "Free-body diagram showing Weight = m g, Cable force = m g at constant speed."
+  },
   "lookup": true,
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "P",
@@ -2539,7 +3095,19 @@
   "family": "dynamics-0010",
   "version": 4,
   "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight = m g</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Cable force = m g at constant speed</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Constant speed means zero net force</text>",
+   "alt": "Free-body diagram showing Weight = m g, Cable force = m g at constant speed."
+  },
   "lookup": true,
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "P",
@@ -2599,6 +3167,19 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -2642,6 +3223,19 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -2685,6 +3279,19 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -2728,6 +3335,19 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -2770,7 +3390,28 @@
   "family": "dynamics-0012",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "parallel axis theorem",
+    "the rule for moving a moment of inertia to a parallel axis: add the area times the square of the distance between the axes"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ]
  },
  {
   "id": "dynamics-0012-b",
@@ -2807,7 +3448,28 @@
   "family": "dynamics-0012",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "parallel axis theorem",
+    "the rule for moving a moment of inertia to a parallel axis: add the area times the square of the distance between the axes"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ]
  },
  {
   "id": "dynamics-0012-c",
@@ -2844,7 +3506,28 @@
   "family": "dynamics-0012",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "parallel axis theorem",
+    "the rule for moving a moment of inertia to a parallel axis: add the area times the square of the distance between the axes"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ]
  },
  {
   "id": "dynamics-0012-d",
@@ -2881,7 +3564,28 @@
   "family": "dynamics-0012",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "parallel axis theorem",
+    "the rule for moving a moment of inertia to a parallel axis: add the area times the square of the distance between the axes"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ]
  },
  {
   "id": "dynamics-0013",
@@ -2924,6 +3628,13 @@
    "alt": "Free-body diagram on a surface inclined at 2.29° showing W, N, Braking force."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "t",
@@ -2972,6 +3683,13 @@
    "alt": "Free-body diagram on a surface inclined at 3.43° showing W, N, Braking force."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "t",
@@ -3020,6 +3738,13 @@
    "alt": "Free-body diagram on a surface inclined at 1.72° showing W, N, Braking force."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "t",
@@ -3068,6 +3793,13 @@
    "alt": "Free-body diagram on a surface inclined at 2.86° showing W, N, Braking force."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "t",
@@ -3116,6 +3848,24 @@
    "alt": "Free-body diagram showing W, N, Friction, toward the centre of the curve."
   },
   "lookup": true,
+  "terms": [
+   [
+    "coefficient of friction",
+    "the ratio of the largest friction force a surface can supply to the normal force pressing the surfaces together"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -3176,6 +3926,24 @@
    "alt": "Free-body diagram showing W, N, Friction, toward the centre of the curve."
   },
   "lookup": true,
+  "terms": [
+   [
+    "coefficient of friction",
+    "the ratio of the largest friction force a surface can supply to the normal force pressing the surfaces together"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -3236,6 +4004,24 @@
    "alt": "Free-body diagram showing W, N, Friction, toward the centre of the curve."
   },
   "lookup": true,
+  "terms": [
+   [
+    "coefficient of friction",
+    "the ratio of the largest friction force a surface can supply to the normal force pressing the surfaces together"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -3296,6 +4082,24 @@
    "alt": "Free-body diagram showing W, N, Friction, toward the centre of the curve."
   },
   "lookup": true,
+  "terms": [
+   [
+    "coefficient of friction",
+    "the ratio of the largest friction force a surface can supply to the normal force pressing the surfaces together"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -3355,6 +4159,18 @@
    "alt": "Free-body diagram showing W = 39.2 N, T = 23.5 N."
   },
   "lookup": true,
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "g",
@@ -3402,6 +4218,18 @@
    "alt": "Free-body diagram showing W = 49.1 N, T = 32.7 N."
   },
   "lookup": true,
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "g",
@@ -3449,6 +4277,18 @@
    "alt": "Free-body diagram showing W = 58.9 N, T = 23.5 N."
   },
   "lookup": true,
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "g",
@@ -3496,6 +4336,18 @@
    "alt": "Free-body diagram showing W = 49.1 N, T = 36.8 N."
   },
   "lookup": true,
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "g",
@@ -3539,6 +4391,23 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "m",
@@ -3590,6 +4459,23 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "m",
@@ -3641,6 +4527,23 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "m",
@@ -3692,6 +4595,23 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "m",
@@ -3740,13 +4660,20 @@
   },
   "family": "dynamics-0017",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 180",
    "svg": "<line x1='30' y1='140' x2='380' y2='140' stroke='#00242E' stroke-width='2'/><path d='M50 140 Q200 14 350 140' fill='none' stroke='#1B795A' stroke-width='2' stroke-dasharray='7 4'/><line x1='50' y1='140' x2='104' y2='95' stroke='#00574A' stroke-width='3'/><circle cx='104' cy='95' r='5' fill='#00574A'/><text x='92' y='85' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>30 m/s</text><text x='96' y='134' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>40°</text><line x1='50' y1='156' x2='350' y2='156' stroke='#00242E'/><line x1='50' y1='150' x2='50' y2='162' stroke='#00242E'/><line x1='350' y1='150' x2='350' y2='162' stroke='#00242E'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Range</text>",
    "alt": "The path of a projectile launched from level ground at 30 m/s and 40° above the horizontal."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "h",
@@ -3787,13 +4714,20 @@
   },
   "family": "dynamics-0017",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 180",
    "svg": "<line x1='30' y1='140' x2='380' y2='140' stroke='#00242E' stroke-width='2'/><path d='M50 140 Q200 -120 350 140' fill='none' stroke='#1B795A' stroke-width='2' stroke-dasharray='7 4'/><line x1='50' y1='140' x2='85' y2='79' stroke='#00574A' stroke-width='3'/><circle cx='85' cy='79' r='5' fill='#00574A'/><text x='73' y='69' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>25 m/s</text><text x='96' y='134' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>60°</text><line x1='50' y1='156' x2='350' y2='156' stroke='#00242E'/><line x1='50' y1='150' x2='50' y2='162' stroke='#00242E'/><line x1='350' y1='150' x2='350' y2='162' stroke='#00242E'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Range</text>",
    "alt": "The path of a projectile launched from level ground at 25 m/s and 60° above the horizontal."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "h",
@@ -3834,13 +4768,74 @@
   },
   "family": "dynamics-0017",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 180",
    "svg": "<line x1='30' y1='140' x2='380' y2='140' stroke='#00242E' stroke-width='2'/><path d='M50 140 Q200 35 350 140' fill='none' stroke='#1B795A' stroke-width='2' stroke-dasharray='7 4'/><line x1='50' y1='140' x2='107' y2='100' stroke='#00574A' stroke-width='3'/><circle cx='107' cy='100' r='5' fill='#00574A'/><text x='95' y='90' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>40 m/s</text><text x='96' y='134' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>35°</text><line x1='50' y1='156' x2='350' y2='156' stroke='#00242E'/><line x1='50' y1='150' x2='50' y2='162' stroke='#00242E'/><line x1='350' y1='150' x2='350' y2='162' stroke='#00242E'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Range</text>",
    "alt": "The path of a projectile launched from level ground at 40 m/s and 35° above the horizontal."
   },
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
+  "symbols": [
+   [
+    "h",
+    "height"
+   ]
+  ]
+ },
+ {
+  "id": "dynamics-0017-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A projectile is launched from level ground at 28 m/s, 50° above the horizontal. What maximum height does it reach? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 23.45,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Only the vertical component of the launch velocity carries the projectile upward, and at the top it is zero. The height is that component squared divided by 2g.",
+  "solution": "Vertical component = 28 sin 50° = 21.449 m/s.\n\nh = \\frac{(21.449)^{2}}{2(9.81)} = 23.45 m.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "projectile motion"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0017",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<line x1='30' y1='140' x2='380' y2='140' stroke='#00242E' stroke-width='2'/><path d='M50 140 Q200 -39 350 140' fill='none' stroke='#1B795A' stroke-width='2' stroke-dasharray='7 4'/><line x1='50' y1='140' x2='95' y2='86' stroke='#00574A' stroke-width='3'/><circle cx='95' cy='86' r='5' fill='#00574A'/><text x='83' y='76' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>28 m/s</text><text x='96' y='134' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>50°</text><line x1='50' y1='156' x2='350' y2='156' stroke='#00242E'/><line x1='50' y1='150' x2='50' y2='162' stroke='#00242E'/><line x1='350' y1='150' x2='350' y2='162' stroke='#00242E'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Range</text>",
+   "alt": "The path of a projectile launched from level ground at 28 m/s and 50° above the horizontal."
+  },
+  "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "h",
@@ -3882,8 +4877,15 @@
   },
   "family": "dynamics-0018",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ]
  },
  {
   "id": "dynamics-0018-b",
@@ -3919,8 +4921,15 @@
   },
   "family": "dynamics-0018",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ]
  },
  {
   "id": "dynamics-0018-c",
@@ -3956,8 +4965,59 @@
   },
   "family": "dynamics-0018",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ]
+ },
+ {
+  "id": "dynamics-0018-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A wheel starts from rest and accelerates at a constant 3.2 rad/s^{2} for 9 s. How many revolutions does it turn in that time?",
+  "answer": {
+   "value": 20.63,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "revolutions"
+  },
+  "eli5": "Rotation under constant angular acceleration follows the same equations as straight-line motion: angle = (1/2)(angular acceleration)(time)^{2} from rest. One revolution is 2π radians.",
+  "solution": "Angle = \\frac{1}{2}(3.2)(9)^{2} = 129.6 rad.\n\nRevolutions = \\frac{129.6}{2π} = 20.63.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "particle kinematics",
+     "constant angular acceleration"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0018",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ]
  },
  {
   "id": "dynamics-0019",
@@ -3992,8 +5052,15 @@
   },
   "family": "dynamics-0019",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "v_{0}",
@@ -4042,8 +5109,15 @@
   },
   "family": "dynamics-0019",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "v_{0}",
@@ -4092,8 +5166,72 @@
   },
   "family": "dynamics-0019",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
+  "symbols": [
+   [
+    "v_{0}",
+    "initial speed"
+   ],
+   [
+    "v",
+    "speed"
+   ],
+   [
+    "s",
+    "distance travelled"
+   ]
+  ]
+ },
+ {
+  "id": "dynamics-0019-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A stone is thrown straight down at 6 m/s from a bridge 32 m above the water. Ignoring air resistance, how fast is it moving when it reaches the water? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 25.77,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s"
+  },
+  "eli5": "For constant acceleration, v^{2} = v_{0}^{2} + 2 a s. The initial speed is squared, so it adds less than its full value to the final speed.",
+  "solution": "v = \\sqrt{6^{2} + 2(9.81)(32)} = \\sqrt{663.8} = 25.77 m/s.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "constant acceleration"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0019",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ],
   "symbols": [
    [
     "v_{0}",
@@ -4142,13 +5280,20 @@
   },
   "family": "dynamics-0020",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 190",
    "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='124' y2='160' stroke='#00574A' stroke-width='3'/><path d='M135 160 L124 154 L124 166 Z' fill='#00574A'/><text x='145' y='152' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>tangential 2.0</text><line x1='70' y1='160' x2='70' y2='41' stroke='#1B795A' stroke-width='3'/><path d='M70 30 L64 41 L76 41 Z' fill='#1B795A'/><text x='60' y='22' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>normal 4.00</text><line x1='70' y1='160' x2='130' y2='40' stroke='#568CBB' stroke-width='3'/><path d='M135 30 L125 37 L135 42 Z' fill='#568CBB'/><text x='145' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>total 4.47 m/s²</text>",
    "alt": "Vector diagram: tangential 2.0; normal 4.00; total 4.47 m/s²."
   },
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ]
  },
  {
   "id": "dynamics-0020-b",
@@ -4183,13 +5328,20 @@
   },
   "family": "dynamics-0020",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 190",
    "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='102' y2='160' stroke='#00574A' stroke-width='3'/><path d='M113 160 L102 154 L102 166 Z' fill='#00574A'/><text x='123' y='152' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>tangential 1.5</text><line x1='70' y1='160' x2='70' y2='41' stroke='#1B795A' stroke-width='3'/><path d='M70 30 L64 41 L76 41 Z' fill='#1B795A'/><text x='60' y='22' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>normal 4.50</text><line x1='70' y1='160' x2='110' y2='40' stroke='#568CBB' stroke-width='3'/><path d='M113 30 L105 39 L115 42 Z' fill='#568CBB'/><text x='123' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>total 4.74 m/s²</text>",
    "alt": "Vector diagram: tangential 1.5; normal 4.50; total 4.74 m/s²."
   },
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ]
  },
  {
   "id": "dynamics-0020-c",
@@ -4224,13 +5376,68 @@
   },
   "family": "dynamics-0020",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 190",
    "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='167' y2='160' stroke='#00574A' stroke-width='3'/><path d='M178 160 L167 154 L167 166 Z' fill='#00574A'/><text x='188' y='152' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>tangential 3.0</text><line x1='70' y1='160' x2='70' y2='41' stroke='#1B795A' stroke-width='3'/><path d='M70 30 L64 41 L76 41 Z' fill='#1B795A'/><text x='60' y='22' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>normal 3.60</text><line x1='70' y1='160' x2='171' y2='38' stroke='#568CBB' stroke-width='3'/><path d='M178 30 L167 35 L176 42 Z' fill='#568CBB'/><text x='188' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>total 4.69 m/s²</text>",
    "alt": "Vector diagram: tangential 3.0; normal 3.60; total 4.69 m/s²."
   },
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ]
+ },
+ {
+  "id": "dynamics-0020-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A car moving at 18 m/s on a curve of radius 75 m is speeding up at 1.8 m/s^{2}. What is the magnitude of its total acceleration?",
+  "answer": {
+   "value": 4.68,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s^{2}"
+  },
+  "eli5": "On a curve, acceleration has two perpendicular parts: tangential, which changes the speed, and normal, v^{2} / r toward the centre, which changes the direction. Combine them by Pythagoras.",
+  "solution": "Normal: \\frac{18^{2}}{75} = 4.320 m/s^{2}.\n\nTotal = \\sqrt{1.8^{2} + 4.320^{2}} = 4.68 m/s^{2}.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "normal and tangential components"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0020",
+  "version": 4,
+  "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 190",
+   "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='113' y2='160' stroke='#00574A' stroke-width='3'/><path d='M124 160 L113 154 L113 166 Z' fill='#00574A'/><text x='134' y='152' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>tangential 1.8</text><line x1='70' y1='160' x2='70' y2='41' stroke='#1B795A' stroke-width='3'/><path d='M70 30 L64 41 L76 41 Z' fill='#1B795A'/><text x='60' y='22' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>normal 4.32</text><line x1='70' y1='160' x2='120' y2='40' stroke='#568CBB' stroke-width='3'/><path d='M124 30 L115 38 L125 42 Z' fill='#568CBB'/><text x='134' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>total 4.68 m/s²</text>",
+   "alt": "Vector diagram: tangential 1.8; normal 4.32; total 4.68 m/s²."
+  },
+  "lookup": true,
+  "needs": [
+   [
+    "math-b",
+    "math",
+    "Mathematics and Statistics: Single-variable calculus"
+   ]
+  ]
  },
  {
   "id": "dynamics-0021",
@@ -4265,8 +5472,25 @@
   },
   "family": "dynamics-0021",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "r_{o}",
@@ -4319,8 +5543,25 @@
   },
   "family": "dynamics-0021",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "r_{o}",
@@ -4373,8 +5614,96 @@
   },
   "family": "dynamics-0021",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
+  "symbols": [
+   [
+    "r_{o}",
+    "outer radius"
+   ],
+   [
+    "r_{i}",
+    "inner radius"
+   ],
+   [
+    "I",
+    "mass moment of inertia"
+   ],
+   [
+    "m",
+    "mass"
+   ]
+  ]
+ },
+ {
+  "id": "dynamics-0021-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A hollow cylinder has a mass of 14 kg, an outer radius of 0.22 m and an inner radius of 0.20 m. What is its mass moment of inertia about its central axis?",
+  "answer": {
+   "value": 0.619,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kg·m^{2}"
+  },
+  "eli5": "For a hollow cylinder about its own axis, I = m(r_{o}^{2} + r_{i}^{2}) / 2. The radii are added, not subtracted, because for a given mass a hollow shape has its material farther from the axis than a solid one.",
+  "solution": "I = \\frac{14(0.22^{2} + 0.20^{2})}{2} = \\frac{14(0.0884)}{2} = 0.619 kg·m^{2}.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "mass moment of inertia"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0021",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "r_{o}",
@@ -4427,8 +5756,29 @@
   },
   "family": "dynamics-0022",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "radius of gyration",
+    "the distance from an axis at which the whole area (or mass) could be concentrated and keep the same moment of inertia"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "I",
@@ -4477,8 +5827,29 @@
   },
   "family": "dynamics-0022",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "radius of gyration",
+    "the distance from an axis at which the whole area (or mass) could be concentrated and keep the same moment of inertia"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "I",
@@ -4527,8 +5898,100 @@
   },
   "family": "dynamics-0022",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "radius of gyration",
+    "the distance from an axis at which the whole area (or mass) could be concentrated and keep the same moment of inertia"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
+  "symbols": [
+   [
+    "I",
+    "mass moment of inertia"
+   ],
+   [
+    "m",
+    "mass"
+   ],
+   [
+    "k",
+    "radius of gyration"
+   ]
+  ]
+ },
+ {
+  "id": "dynamics-0022-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A rotor has a mass of 24 kg and a mass moment of inertia of 2 kg·m^{2} about its axis. What is its radius of gyration?",
+  "answer": {
+   "value": 0.289,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "The radius of gyration is the distance from the axis at which all the mass could be concentrated to give the same moment of inertia: I = m k^{2}.",
+  "solution": "k = \\sqrt{\\frac{I}{m}} = \\sqrt{\\frac{2}{24}} = 0.289 m.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "radius of gyration"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0022",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "radius of gyration",
+    "the distance from an axis at which the whole area (or mass) could be concentrated and keep the same moment of inertia"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "I",
@@ -4591,8 +6054,29 @@
   },
   "family": "dynamics-0023",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "parallel axis theorem",
+    "the rule for moving a moment of inertia to a parallel axis: add the area times the square of the distance between the axes"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "I",
@@ -4647,8 +6131,29 @@
   },
   "family": "dynamics-0023",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "parallel axis theorem",
+    "the rule for moving a moment of inertia to a parallel axis: add the area times the square of the distance between the axes"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "I",
@@ -4703,8 +6208,106 @@
   },
   "family": "dynamics-0023",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "parallel axis theorem",
+    "the rule for moving a moment of inertia to a parallel axis: add the area times the square of the distance between the axes"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
+  "symbols": [
+   [
+    "I",
+    "mass moment of inertia"
+   ]
+  ]
+ },
+ {
+  "id": "dynamics-0023-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A solid uniform disk has a mass of 7 kg and a radius of 0.4 m. What is its mass moment of inertia about an axis through its rim, perpendicular to the disk?",
+  "options": [
+   {
+    "id": "a",
+    "text": "0.56 kg·m^{2}"
+   },
+   {
+    "id": "b",
+    "text": "1.12 kg·m^{2}"
+   },
+   {
+    "id": "c",
+    "text": "2.24 kg·m^{2}"
+   },
+   {
+    "id": "d",
+    "text": "1.68 kg·m^{2}"
+   }
+  ],
+  "answer": "d",
+  "eli5": "The parallel axis theorem moves a moment of inertia from the centre of mass to a parallel axis: add the mass times the square of the distance between the axes. For a disk about its rim that gives m r^{2} / 2 + m r^{2}.",
+  "solution": "I = \\frac{1}{2}(7)(0.4)^{2} + 7(0.4)^{2} = 0.560 + 1.120 = 1.68 kg·m^{2}.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "mass moment of inertia",
+     "parallel axis"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0023",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "parallel axis theorem",
+    "the rule for moving a moment of inertia to a parallel axis: add the area times the square of the distance between the axes"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-f",
+    "statics",
+    "Statics: Area moments of inertia"
+   ]
+  ],
   "symbols": [
    [
     "I",
@@ -4745,13 +6348,31 @@
   },
   "family": "dynamics-0024",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 686.7 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N = 791.7 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Net upward force = m a = 105.0 N</text>",
    "alt": "Free-body diagram showing W = 686.7 N, N = 791.7 N."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "N",
@@ -4804,13 +6425,31 @@
   },
   "family": "dynamics-0024",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 833.9 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N = 1,003.9 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Net upward force = m a = 170.0 N</text>",
    "alt": "Free-body diagram showing W = 833.9 N, N = 1,003.9 N."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "N",
@@ -4863,13 +6502,108 @@
   },
   "family": "dynamics-0024",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 588.6 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N = 636.6 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Net upward force = m a = 48.0 N</text>",
    "alt": "Free-body diagram showing W = 588.6 N, N = 636.6 N."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
+  "symbols": [
+   [
+    "N",
+    "normal force"
+   ],
+   [
+    "m",
+    "mass"
+   ],
+   [
+    "g",
+    "acceleration due to gravity, 9.81 m/s^{2} (32.2 ft/s^{2})"
+   ],
+   [
+    "a",
+    "acceleration"
+   ]
+  ]
+ },
+ {
+  "id": "dynamics-0024-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 78 kg person stands on a scale in a lift that is accelerating upward at 1.8 m/s^{2}. What force does the scale read? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 905.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "The scale reads the normal force. Newton's second law for the person, with upward positive, is N - m g = m a, so the reading exceeds the weight while the lift accelerates upward.",
+  "solution": "N = m(g + a) = 78(9.81 + 1.8) = 905.6 N.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "Newton's second law"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0024",
+  "version": 4,
+  "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 765.2 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N = 905.6 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Net upward force = m a = 140.4 N</text>",
+   "alt": "Free-body diagram showing W = 765.2 N, N = 905.6 N."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "N",
@@ -4922,13 +6656,31 @@
   },
   "family": "dynamics-0025",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(-8 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W</text><line x1='197' y1='76' x2='190' y2='28' stroke='#1B795A' stroke-width='3'/><path d='M188 17 L184 28 L195 27 Z' fill='#1B795A'/><text x='195' y='9' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N, perpendicular to the road</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>The horizontal part of N supplies m v² / r; the vertical part balances the weight</text>",
    "alt": "Free-body diagram on a surface inclined at 8° showing W, N, perpendicular to the road."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -4977,13 +6729,31 @@
   },
   "family": "dynamics-0025",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(-12 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W</text><line x1='195' y1='77' x2='185' y2='29' stroke='#1B795A' stroke-width='3'/><path d='M183 18 L179 30 L190 27 Z' fill='#1B795A'/><text x='188' y='10' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N, perpendicular to the road</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>The horizontal part of N supplies m v² / r; the vertical part balances the weight</text>",
    "alt": "Free-body diagram on a surface inclined at 12° showing W, N, perpendicular to the road."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -5032,13 +6802,104 @@
   },
   "family": "dynamics-0025",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(-5 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W</text><line x1='198' y1='76' x2='194' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M193 16 L188 28 L199 27 Z' fill='#1B795A'/><text x='200' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N, perpendicular to the road</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>The horizontal part of N supplies m v² / r; the vertical part balances the weight</text>",
    "alt": "Free-body diagram on a surface inclined at 5° showing W, N, perpendicular to the road."
   },
   "lookup": true,
+  "terms": [
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
+  "symbols": [
+   [
+    "v",
+    "speed"
+   ],
+   [
+    "g",
+    "acceleration due to gravity, 9.81 m/s^{2} (32.2 ft/s^{2})"
+   ],
+   [
+    "r",
+    "radius"
+   ]
+  ]
+ },
+ {
+  "id": "dynamics-0025-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A curve of radius 160 m is banked at 10°. At what speed can a car take it with no reliance on friction? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 16.64,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s"
+  },
+  "eli5": "With no friction, the road's normal force alone must both support the weight and supply the inward force m v^{2} / r. Dividing the two component equations gives tan(bank angle) = v^{2} / (g r).",
+  "solution": "v = \\sqrt{g r tan 10°} = \\sqrt{9.81(160)(0.1763)} = 16.64 m/s.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "normal and tangential components"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0025",
+  "version": 4,
+  "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(-10 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W</text><line x1='196' y1='76' x2='187' y2='28' stroke='#1B795A' stroke-width='3'/><path d='M185 17 L182 29 L193 27 Z' fill='#1B795A'/><text x='191' y='9' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N, perpendicular to the road</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>The horizontal part of N supplies m v² / r; the vertical part balances the weight</text>",
+   "alt": "Free-body diagram on a surface inclined at 10° showing W, N, perpendicular to the road."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -5100,13 +6961,25 @@
   },
   "family": "dynamics-0026",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 58.9 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>T</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Heavier mass: accelerates downward at 1.962 m/s²</text>",
    "alt": "Free-body diagram showing W = 58.9 N, T."
   },
   "lookup": true,
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "m_{1}",
@@ -5172,13 +7045,25 @@
   },
   "family": "dynamics-0026",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 98.1 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>T</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Heavier mass: accelerates downward at 1.731 m/s²</text>",
    "alt": "Free-body diagram showing W = 98.1 N, T."
   },
   "lookup": true,
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "m_{1}",
@@ -5244,13 +7129,109 @@
   },
   "family": "dynamics-0026",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 49.1 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>T</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Heavier mass: accelerates downward at 4.204 m/s²</text>",
    "alt": "Free-body diagram showing W = 49.1 N, T."
   },
   "lookup": true,
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
+  "symbols": [
+   [
+    "m_{1}",
+    "first mass"
+   ],
+   [
+    "m_{2}",
+    "second mass"
+   ],
+   [
+    "a",
+    "acceleration"
+   ],
+   [
+    "g",
+    "acceleration due to gravity, 9.81 m/s^{2} (32.2 ft/s^{2})"
+   ]
+  ]
+ },
+ {
+  "id": "dynamics-0026-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Masses of 8 kg and 6 kg hang from the two ends of a light cord over a frictionless pulley. What is the acceleration of the masses? Use g = 9.81 m/s^{2}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "5.606 m/s^{2}"
+   },
+   {
+    "id": "b",
+    "text": "2.453 m/s^{2}"
+   },
+   {
+    "id": "c",
+    "text": "1.401 m/s^{2}"
+   },
+   {
+    "id": "d",
+    "text": "9.810 m/s^{2}"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Treat the two masses as one system along the cord. The net driving force is the difference of the weights, and it accelerates the sum of the masses.",
+  "solution": "a = \\frac{(m_{1} - m_{2}) g}{m_{1} + m_{2}} = \\frac{(8 - 6)(9.81)}{8 + 6} = 1.401 m/s^{2}.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "Newton's second law"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0026",
+  "version": 4,
+  "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 78.5 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>T</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Heavier mass: accelerates downward at 1.401 m/s²</text>",
+   "alt": "Free-body diagram showing W = 78.5 N, T."
+  },
+  "lookup": true,
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "m_{1}",
@@ -5317,13 +7298,25 @@
   },
   "family": "dynamics-0027",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(-30 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = m g</text><line x1='188' y1='79' x2='164' y2='37' stroke='#1B795A' stroke-width='3'/><path d='M158 27 L159 40 L168 34 Z' fill='#1B795A'/><text x='152' y='21' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='221' y1='88' x2='263' y2='64' stroke='#568CBB' stroke-width='3'/><path d='M273 58 L260 59 L266 68 Z' fill='#568CBB'/><text x='283' y='56' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Friction, up the slope, which spins the disk</text>",
    "alt": "Free-body diagram on a surface inclined at 30° showing W = m g, N, Friction, up the slope, which spins the disk."
   },
   "lookup": true,
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "a",
@@ -5382,13 +7375,25 @@
   },
   "family": "dynamics-0027",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(-20 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = m g</text><line x1='192' y1='77' x2='175' y2='31' stroke='#1B795A' stroke-width='3'/><path d='M171 21 L170 33 L180 30 Z' fill='#1B795A'/><text x='167' y='14' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='223' y1='92' x2='269' y2='75' stroke='#568CBB' stroke-width='3'/><path d='M279 71 L267 70 L270 80 Z' fill='#568CBB'/><text x='290' y='71' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Friction, up the slope, which spins the disk</text>",
    "alt": "Free-body diagram on a surface inclined at 20° showing W = m g, N, Friction, up the slope, which spins the disk."
   },
   "lookup": true,
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "a",
@@ -5447,13 +7452,102 @@
   },
   "family": "dynamics-0027",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(-45 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = m g</text><line x1='183' y1='83' x2='148' y2='48' stroke='#1B795A' stroke-width='3'/><path d='M141 41 L144 52 L152 44 Z' fill='#1B795A'/><text x='132' y='36' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='217' y1='83' x2='252' y2='48' stroke='#568CBB' stroke-width='3'/><path d='M259 41 L248 44 L256 52 Z' fill='#568CBB'/><text x='268' y='36' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Friction, up the slope, which spins the disk</text>",
    "alt": "Free-body diagram on a surface inclined at 45° showing W = m g, N, Friction, up the slope, which spins the disk."
   },
   "lookup": true,
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
+  "symbols": [
+   [
+    "a",
+    "acceleration"
+   ],
+   [
+    "g",
+    "acceleration due to gravity, 9.81 m/s^{2} (32.2 ft/s^{2})"
+   ]
+  ]
+ },
+ {
+  "id": "dynamics-0027-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A solid uniform disk rolls without slipping down a slope inclined at 25°. What is the acceleration of its centre? Use g = 9.81 m/s^{2}.",
+  "options": [
+   {
+    "id": "a",
+    "text": "4.15 m/s^{2}"
+   },
+   {
+    "id": "b",
+    "text": "2.76 m/s^{2}"
+   },
+   {
+    "id": "c",
+    "text": "2.07 m/s^{2}"
+   },
+   {
+    "id": "d",
+    "text": "2.96 m/s^{2}"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Gravity must speed up both the translation and the rotation of a rolling body, so it accelerates more slowly than a sliding block. For a solid disk, a = (2/3) g sin(angle); the mass and radius cancel.",
+  "solution": "a = \\frac{2}{3} g sin 25° = \\frac{2}{3}(9.81)(0.4226) = 2.76 m/s^{2}.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "kinetics of a rigid body",
+     "mass moment of inertia"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0027",
+  "version": 4,
+  "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(-25 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = m g</text><line x1='190' y1='78' x2='169' y2='34' stroke='#1B795A' stroke-width='3'/><path d='M165 24 L164 36 L174 32 Z' fill='#1B795A'/><text x='159' y='17' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='222' y1='90' x2='266' y2='69' stroke='#568CBB' stroke-width='3'/><path d='M276 65 L264 64 L268 74 Z' fill='#568CBB'/><text x='287' y='63' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Friction, up the slope, which spins the disk</text>",
+   "alt": "Free-body diagram on a surface inclined at 25° showing W = m g, N, Friction, up the slope, which spins the disk."
+  },
+  "lookup": true,
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "a",
@@ -5498,8 +7592,26 @@
   },
   "family": "dynamics-0028",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "momentum",
+    "mass times velocity; a force acting for a time changes it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "F",
@@ -5544,8 +7656,26 @@
   },
   "family": "dynamics-0028",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "momentum",
+    "mass times velocity; a force acting for a time changes it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "F",
@@ -5590,8 +7720,90 @@
   },
   "family": "dynamics-0028",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "momentum",
+    "mass times velocity; a force acting for a time changes it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
+  "symbols": [
+   [
+    "F",
+    "force"
+   ],
+   [
+    "v",
+    "speed"
+   ]
+  ]
+ },
+ {
+  "id": "dynamics-0028-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 600.1 kg object moving at 28 m/s is brought to rest in 0.203 s. What average force acts on it during that time?",
+  "answer": {
+   "value": 82973.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "Impulse equals the change in momentum: average force × time = mass × change in velocity. A shorter stopping time means a larger force for the same momentum.",
+  "solution": "F = \\frac{m v}{time} = \\frac{600.1(28)}{0.203} = 82,973 N.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "impulse and momentum"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0028",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "momentum",
+    "mass times velocity; a force acting for a time changes it"
+   ]
+  ],
+  "needs": [
+   [
+    "statics-c",
+    "statics",
+    "Statics: Equilibrium of rigid bodies"
+   ],
+   [
+    "dynamics-a",
+    "dynamics",
+    "Dynamics: Kinematics"
+   ]
+  ],
   "symbols": [
    [
     "F",
@@ -5637,13 +7849,26 @@
   },
   "family": "dynamics-0029",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Friction = (coefficient) N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Friction is the only force doing work</text>",
    "alt": "Free-body diagram showing W, N, Friction = (coefficient) N."
   },
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "m",
@@ -5697,13 +7922,26 @@
   },
   "family": "dynamics-0029",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Friction = (coefficient) N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Friction is the only force doing work</text>",
    "alt": "Free-body diagram showing W, N, Friction = (coefficient) N."
   },
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "m",
@@ -5757,13 +7995,99 @@
   },
   "family": "dynamics-0029",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Friction = (coefficient) N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Friction is the only force doing work</text>",
    "alt": "Free-body diagram showing W, N, Friction = (coefficient) N."
   },
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
+  "symbols": [
+   [
+    "m",
+    "mass"
+   ],
+   [
+    "g",
+    "acceleration due to gravity, 9.81 m/s^{2} (32.2 ft/s^{2})"
+   ],
+   [
+    "d",
+    "distance moved"
+   ],
+   [
+    "v",
+    "speed"
+   ]
+  ]
+ },
+ {
+  "id": "dynamics-0029-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A car travelling at 20 m/s locks its wheels on a level road where the coefficient of kinetic friction is 0.50. How far does it slide before stopping? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 40.77,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "The work done by friction equals the kinetic energy removed: (coefficient) m g d = (1/2) m v^{2}. The mass cancels, and the distance grows with the square of the speed.",
+  "solution": "d = \\frac{v^{2}}{2 (coefficient) g} = \\frac{20^{2}}{2(0.50)(9.81)} = 40.77 m.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "principle of work and energy",
+     "friction"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0029",
+  "version": 4,
+  "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Friction = (coefficient) N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Friction is the only force doing work</text>",
+   "alt": "Free-body diagram showing W, N, Friction = (coefficient) N."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "m",
@@ -5816,13 +8140,20 @@
   },
   "family": "dynamics-0030",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(-2.862405226111748 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = m g</text><line x1='199' y1='76' x2='196' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M196 16 L191 27 L202 27 Z' fill='#1B795A'/><text x='203' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='224' y1='99' x2='273' y2='96' stroke='#568CBB' stroke-width='3'/><path d='M284 96 L273 91 L273 102 Z' fill='#568CBB'/><text x='296' y='99' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Driving force</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>At steady speed the driving force equals the weight component along the slope</text>",
    "alt": "Free-body diagram on a surface inclined at 2.86° showing W = m g, N, Driving force."
   },
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ]
  },
  {
   "id": "dynamics-0030-b",
@@ -5857,13 +8188,20 @@
   },
   "family": "dynamics-0030",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(-4.573921259900861 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = m g</text><line x1='198' y1='76' x2='194' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M193 16 L189 28 L200 27 Z' fill='#1B795A'/><text x='200' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='224' y1='98' x2='273' y2='94' stroke='#568CBB' stroke-width='3'/><path d='M284 93 L272 89 L273 100 Z' fill='#568CBB'/><text x='296' y='96' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Driving force</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>At steady speed the driving force equals the weight component along the slope</text>",
    "alt": "Free-body diagram on a surface inclined at 4.57° showing W = m g, N, Driving force."
   },
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ]
  },
  {
   "id": "dynamics-0030-c",
@@ -5898,13 +8236,68 @@
   },
   "family": "dynamics-0030",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "solutionFigure": {
    "viewBox": "0 0 400 224",
    "svg": "<g transform='rotate(-1.7183580016554572 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = m g</text><line x1='199' y1='76' x2='198' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M197 16 L192 27 L203 27 Z' fill='#1B795A'/><text x='205' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='224' y1='99' x2='273' y2='98' stroke='#568CBB' stroke-width='3'/><path d='M284 97 L273 92 L273 103 Z' fill='#568CBB'/><text x='296' y='101' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Driving force</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>At steady speed the driving force equals the weight component along the slope</text>",
    "alt": "Free-body diagram on a surface inclined at 1.72° showing W = m g, N, Driving force."
   },
-  "lookup": true
+  "lookup": true,
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ]
+ },
+ {
+  "id": "dynamics-0030-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 10,750 kg truck climbs a 6% grade at a steady 20 m/s. Ignoring rolling and air resistance, what power does the climb require? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 126.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kW"
+  },
+  "eli5": "Power is force times speed. At steady speed the driving force equals the weight component along the slope, m g times the grade as a decimal (for small slopes the sine equals the grade).",
+  "solution": "Force = 10,750(9.81)(0.06) = 6,327 N.\n\nPower = 6,327 × 20 = 126,549 W = 126.5 kW.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "power"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0030",
+  "version": 4,
+  "versions": 4,
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(-3.433630362450522 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = m g</text><line x1='199' y1='76' x2='196' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M195 16 L190 27 L201 27 Z' fill='#1B795A'/><text x='202' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='224' y1='99' x2='273' y2='96' stroke='#568CBB' stroke-width='3'/><path d='M284 95 L273 90 L273 101 Z' fill='#568CBB'/><text x='296' y='98' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Driving force</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>At steady speed the driving force equals the weight component along the slope</text>",
+   "alt": "Free-body diagram on a surface inclined at 3.43° showing W = m g, N, Driving force."
+  },
+  "lookup": true,
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ]
  },
  {
   "id": "dynamics-0031",
@@ -5940,8 +8333,29 @@
   },
   "family": "dynamics-0031",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ]
  },
  {
   "id": "dynamics-0031-b",
@@ -5977,8 +8391,29 @@
   },
   "family": "dynamics-0031",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ]
  },
  {
   "id": "dynamics-0031-c",
@@ -6014,8 +8449,87 @@
   },
   "family": "dynamics-0031",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ]
+ },
+ {
+  "id": "dynamics-0031-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A flywheel with a mass moment of inertia of 7.2 kg·m^{2} spins at 1,200 rpm. What is its kinetic energy?",
+  "answer": {
+   "value": 56.85,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kJ"
+  },
+  "eli5": "Rotational kinetic energy is (1/2) I (angular speed)^{2}, with the angular speed in rad/s. Convert rpm by multiplying by 2π / 60.",
+  "solution": "Angular speed = 1,200 × \\frac{2π}{60} = 125.66 rad/s.\n\nKE = \\frac{1}{2}(7.2)(125.66)^{2} = 56,849 J = 56.85 kJ.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "kinetic energy",
+     "mass moment of inertia"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0031",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "mass moment of inertia",
+    "a body's resistance to being spun up or slowed down about an axis"
+   ],
+   [
+    "moment",
+    "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+   ],
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ]
  },
  {
   "id": "dynamics-0032",
@@ -6051,8 +8565,21 @@
   },
   "family": "dynamics-0032",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -6098,8 +8625,21 @@
   },
   "family": "dynamics-0032",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -6145,8 +8685,81 @@
   },
   "family": "dynamics-0032",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
+  "symbols": [
+   [
+    "v",
+    "speed"
+   ],
+   [
+    "x",
+    "spring compression or position"
+   ]
+  ]
+ },
+ {
+  "id": "dynamics-0032-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 7 kg block sliding at 2 m/s on a frictionless surface runs into a spring of stiffness 2,450 N/m. What is the maximum compression of the spring?",
+  "answer": {
+   "value": 0.107,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "At maximum compression the block is momentarily at rest and all its kinetic energy is stored in the spring: (1/2) m v^{2} = (1/2) k x^{2}.",
+  "solution": "x = v \\sqrt{\\frac{m}{k}} = 2 \\sqrt{\\frac{7}{2,450}} = 0.107 m.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "principle of work and energy",
+     "spring"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0032",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -6192,7 +8805,7 @@
   },
   "family": "dynamics-0033",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 180",
    "svg": "<path d='M96 150 L304 150 L304 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(210 84) rotate(-30)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='140' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>30°</text>",
@@ -6204,6 +8817,23 @@
    "alt": "Free-body diagram on a surface inclined at 30° showing W = m g, N, Friction."
   },
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ],
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -6249,7 +8879,7 @@
   },
   "family": "dynamics-0033",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 180",
    "svg": "<path d='M71 150 L329 150 L329 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(213 84) rotate(-25)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='115' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>25°</text>",
@@ -6261,6 +8891,23 @@
    "alt": "Free-body diagram on a surface inclined at 25° showing W = m g, N, Friction."
   },
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ],
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "v",
@@ -6306,7 +8953,7 @@
   },
   "family": "dynamics-0033",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "figure": {
    "viewBox": "0 0 400 180",
    "svg": "<path d='M128 150 L272 150 L272 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(207 84) rotate(-40)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='172' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>40°</text>",
@@ -6318,6 +8965,97 @@
    "alt": "Free-body diagram on a surface inclined at 40° showing W = m g, N, Friction."
   },
   "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ],
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
+  "symbols": [
+   [
+    "v",
+    "speed"
+   ],
+   [
+    "d",
+    "distance moved"
+   ]
+  ]
+ },
+ {
+  "id": "dynamics-0033-d",
+  "topic": "dynamics",
+  "subtopic": "dynamics-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A block starts from rest and slides 6 m down a plane inclined at 28°. The coefficient of kinetic friction is 0.17. How fast is it moving at the end? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 6.13,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m/s"
+  },
+  "eli5": "Work and energy: the work of gravity along the slope minus the work of friction equals the kinetic energy gained. Friction is the coefficient times the normal force, m g cos(angle).",
+  "solution": "v^{2} = 2 g d (sin 28° - 0.17 cos 28°) = 2(9.81)(6)(0.3194) = 37.60.\n\nv = 6.13 m/s.",
+  "handbook": [
+   {
+    "section": "Dynamics",
+    "page": "114–129",
+    "find": [
+     "principle of work and energy",
+     "friction"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "dynamics-0033",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 180",
+   "svg": "<path d='M87 150 L313 150 L313 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(211 84) rotate(-28)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='131' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>28°</text>",
+   "alt": "A block on an incline at 28° to the horizontal."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 224",
+   "svg": "<g transform='rotate(-28 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = m g</text><line x1='189' y1='79' x2='166' y2='36' stroke='#1B795A' stroke-width='3'/><path d='M161 26 L161 38 L171 33 Z' fill='#1B795A'/><text x='155' y='19' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='221' y1='89' x2='264' y2='66' stroke='#568CBB' stroke-width='3'/><path d='M274 61 L262 61 L267 71 Z' fill='#568CBB'/><text x='285' y='59' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Friction</text>",
+   "alt": "Free-body diagram on a surface inclined at 28° showing W = m g, N, Friction."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "kinetic energy",
+    "energy of motion: half the mass times the speed squared"
+   ],
+   [
+    "normal force",
+    "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+   ]
+  ],
+  "needs": [
+   [
+    "dynamics-c",
+    "dynamics",
+    "Dynamics: Force acceleration"
+   ]
+  ],
   "symbols": [
    [
     "v",

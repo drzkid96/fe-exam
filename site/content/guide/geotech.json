@@ -61,14 +61,15 @@
     ]
    },
    "bridge": {
-    "keep": "Soil classification terms and compaction requirements, from pavement and grading specifications.",
-    "rusty": [
-     "Phase relationships: void ratio, water content, saturation and unit weights.",
-     "Effective stress, seepage and consolidation settlement.",
-     "Shear strength, earth pressure, bearing capacity and slope stability."
+    "plain": "Geotechnical engineering treats soil as a building material. Soil is grains with water and air in the gaps, and its strength comes from the grains pressing and rubbing on each other.",
+    "core": [
+     "Describe a soil by how much of it is solid, water and air.",
+     "Water in the gaps carries part of the load; only the rest (effective stress) gives the soil strength.",
+     "Clay squeezes slowly under load, which causes settlement.",
+     "Strength is friction plus cohesion; it governs walls, footings and slopes."
     ],
-    "work": "Subgrade strength drives pavement thickness, relative compaction is a standard inspection item, and retaining walls and slopes along a corridor rest on earth pressure and stability checks.",
-    "exam": "Draw the phase diagram or the soil profile every time. Most geotechnical questions come apart once the diagram is right."
+    "links": "It uses water pressure from fluids, stress and Mohr's circle from mechanics of materials, and force balance from statics. Pavement subgrades link it to transportation.",
+    "exam": "Draw the three-part soil diagram or the soil profile every time."
    }
   },
   {
@@ -136,6 +137,22 @@
      "steps": "C_{u} = \\frac{D_{60}}{D_{10}} = \\frac{1.8}{0.15} = 12.00. For reference, C_{c} = \\frac{0.6^{2}}{1.8 × 0.15} = 1.33.",
      "answer": "12.00",
      "value": 12.0
+    },
+    {
+     "family": "geotech-0030",
+     "problem": "A clay has a natural water content of 32%, a liquid limit of 48 and a plastic limit of 20. What is its liquidity index?",
+     "idea": "The liquidity index places the natural water content between the plastic limit (index 0) and the liquid limit (index 1). Values near 1 indicate a soft, sensitive soil; values near 0 or below indicate a stiff one.",
+     "steps": "LI = \\frac{w - PL}{LL - PL} = \\frac{32 - 20}{48 - 20} = 0.429.",
+     "answer": "0.429",
+     "value": 0.428571
+    },
+    {
+     "family": "geotech-0031",
+     "problem": "A soil has 62% passing the No. 200 sieve, a liquid limit of 48 and a plasticity index of 22. Using GI = (F - 35)(0.2 + 0.005(LL - 40)) + 0.01(F - 15)(PI - 10), what is its AASHTO group index, rounded to the nearest whole number?",
+     "idea": "The AASHTO group index rates a subgrade soil within its group: the higher the number, the poorer the soil as a pavement subgrade. It is reported as a whole number in parentheses after the group symbol.",
+     "steps": "GI = (62 - 35)(0.2 + 0.005(48 - 40)) + 0.01(62 - 15)(22 - 10) = 6.48 + 5.64 = 12.12, reported as 12.",
+     "answer": "12",
+     "value": 12
     }
    ],
    "lookup": [
@@ -160,7 +177,34 @@
     "Write the two-letter symbol."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "The AASHTO soil classification and group index exist to rate subgrades for pavement design.",
+   "primer": "Soils are named by their grain sizes and by how they behave when wet. Gravels and sands are coarse; silts and clays are fine. The water contents at which a clay changes behaviour are the Atterberg limits.",
+   "needs": [],
+   "leads": [
+    [
+     "geotech-b",
+     "geotech",
+     "Geotechnical Engineering: Phase relations"
+    ],
+    [
+     "transport-b",
+     "transport",
+     "Transportation Engineering: Pavement system design"
+    ]
+   ],
+   "terms": [
+    [
+     "water content",
+     "mass of water divided by mass of dry solids in a soil, as a percentage"
+    ],
+    [
+     "plastic limit",
+     "the water content at which a clay changes from crumbly to plastic behaviour"
+    ],
+    [
+     "liquid limit",
+     "the water content at which a clay changes from plastic to liquid behaviour"
+    ]
+   ],
    "symbols": [
     [
      "C_{u}",
@@ -266,6 +310,30 @@
      "steps": "Mass of water = 152.6 - 128.0 = 24.6 g.\n\nw = \\frac{24.6}{128.0} × 100 = 19.22%.",
      "answer": "19.22 %",
      "value": 19.21875
+    },
+    {
+     "family": "geotech-0032",
+     "problem": "A soil has a water content of 18%, a specific gravity of solids of 2.69 and a void ratio of 0.68. What is its degree of saturation?",
+     "idea": "The phase relationships link four quantities: S e = w G_{s}. The degree of saturation is the share of the void space that is filled with water.",
+     "steps": "S = \\frac{w G_{s}}{e} = \\frac{0.18(2.69)}{0.68} × 100 = 71.2%.",
+     "answer": "71.2 %",
+     "value": 71.205882
+    },
+    {
+     "family": "geotech-0033",
+     "problem": "A soil has a void ratio of 0.68. What is its porosity?",
+     "idea": "Void ratio compares the volume of voids with the volume of solids; porosity compares it with the total volume. They are linked by n = e / (1 + e), so porosity is always less than 1.",
+     "steps": "n = \\frac{0.68}{1 + 0.68} = 0.405.",
+     "answer": "0.405",
+     "value": 0.404762
+    },
+    {
+     "family": "geotech-0034",
+     "problem": "A fully saturated soil has a specific gravity of solids of 2.70 and a void ratio of 0.83. What is its saturated unit weight? Use 9.81 kN/m^{3} for water.",
+     "idea": "Take a volume of solids of 1: the solids weigh G_{s} times the unit weight of water, the water filling the voids weighs e times it, and the total volume is 1 + e.",
+     "steps": "Saturated unit weight = \\frac{(2.70 + 0.83)(9.81)}{1 + 0.83} = 18.92 kN/m^{3}.",
+     "answer": "18.92 kN/m^{3}",
+     "value": 18.923115
     }
    ],
    "lookup": [
@@ -289,6 +357,52 @@
     "Check that saturation is between 0 and 100%."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "A lump of soil is three things: solid grains, water and air. Phase relationships are ratios between their volumes and masses, such as void ratio, water content and unit weight. Sketching the three parts as stacked blocks makes them easy to find.",
+   "needs": [
+    [
+     "geotech-a",
+     "geotech",
+     "Geotechnical Engineering: Index properties and soil classifications"
+    ]
+   ],
+   "leads": [
+    [
+     "geotech-c",
+     "geotech",
+     "Geotechnical Engineering: Laboratory and field tests"
+    ],
+    [
+     "geotech-d",
+     "geotech",
+     "Geotechnical Engineering: Effective stress"
+    ]
+   ],
+   "terms": [
+    [
+     "void ratio",
+     "volume of voids divided by volume of solid grains in a soil"
+    ],
+    [
+     "water content",
+     "mass of water divided by mass of dry solids in a soil, as a percentage"
+    ],
+    [
+     "unit weight",
+     "weight per unit volume of a soil or material"
+    ],
+    [
+     "porosity",
+     "volume of voids divided by the total volume of a soil or rock"
+    ],
+    [
+     "degree of saturation",
+     "the share of a soil's void space that is filled with water"
+    ],
+    [
+     "free-body diagram",
+     "a sketch of one object on its own with every force acting on it drawn as an arrow; the first step of almost every force problem"
+    ]
+   ],
    "symbols": [
     [
      "G_{s}",
@@ -388,6 +502,30 @@
      "steps": "D_{r} = \\frac{16.8 - 14.8}{18.4 - 14.8} × \\frac{18.4}{16.8} × 100 = 0.5556 × 1.0952 × 100 = 60.8%.\n\nFor comparison, relative compaction = 16.8 / 18.4 = 91.3%.",
      "answer": "60.8 %",
      "value": 60.846561
+    },
+    {
+     "family": "geotech-0035",
+     "problem": "In a falling-head test, a soil sample 15 cm long with a cross-section of 75 cm^{2} is fed from a standpipe of 1.2 cm^{2}. The head falls from 100 cm to 70 cm in 600 s. What is the coefficient of permeability?",
+     "idea": "In a falling-head test the flow comes from a narrow standpipe, so the head drops as water passes: k = (a L / (A t)) ln(h_{1} / h_{2}). It suits fine soils, where a constant-head test would pass too little water to measure.",
+     "steps": "k = \\frac{1.2(15)}{75(600)} ln(\\frac{100}{70}) = 4.0000 × 10^{-4} × 0.3567 = 1.427 × 10^{-4} cm/s.",
+     "answer": "1.427 × 10^{-4} cm/s",
+     "value": 1.4267
+    },
+    {
+     "family": "geotech-0036",
+     "problem": "A standard penetration test records 20 blows per 300 mm with a hammer that delivers 62% of the theoretical free-fall energy. What is the blow count corrected to 60% energy, N_{60}?",
+     "idea": "Different hammers deliver different fractions of the theoretical energy, so blow counts are normalised to a standard 60%. A more efficient hammer drives the sampler with fewer blows, and its count is scaled up.",
+     "steps": "N_{60} = N × \\frac{ER}{60} = 20 × \\frac{62}{60} = 20.7.",
+     "answer": "20.7 blows",
+     "value": 20.666667
+    },
+    {
+     "family": "geotech-0037",
+     "problem": "A direct shear test on dry sand fails at a shear stress of 86 kPa under a normal stress of 140 kPa. Taking cohesion as zero, what is the friction angle?",
+     "idea": "For a cohesionless soil the failure envelope is a straight line through the origin, shear strength = normal stress × tan(friction angle). One test gives the angle directly.",
+     "steps": "Friction angle = tan^{-1}(\\frac{86}{140}) = tan^{-1}(0.6143) = 31.6°.",
+     "answer": "31.6 °",
+     "value": 31.561812
     }
    ],
    "lookup": [
@@ -412,7 +550,44 @@
     "Use consistent units for permeability results."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Relative compaction against the Proctor maximum is the acceptance test for subgrade, trench backfill and base.",
+   "primer": "Laboratory and field tests turn a soil sample into numbers for design: how dense it can be compacted, how fast water passes through it, and how strong it is.",
+   "needs": [
+    [
+     "geotech-b",
+     "geotech",
+     "Geotechnical Engineering: Phase relations"
+    ]
+   ],
+   "leads": [
+    [
+     "geotech-k",
+     "geotech",
+     "Geotechnical Engineering: Soil stabilization"
+    ]
+   ],
+   "work": "Relative compaction against a laboratory maximum is the acceptance test for subgrade and trench backfill.",
+   "terms": [
+    [
+     "water content",
+     "mass of water divided by mass of dry solids in a soil, as a percentage"
+    ],
+    [
+     "relative compaction",
+     "field dry density as a percentage of the laboratory maximum"
+    ],
+    [
+     "consolidation",
+     "the slow squeezing of water out of a clay under load, which makes the ground settle over months or years"
+    ],
+    [
+     "unit weight",
+     "weight per unit volume of a soil or material"
+    ],
+    [
+     "hydraulic gradient",
+     "the drop in water level (head) per unit distance along the flow path"
+    ]
+   ],
    "symbols": [
     [
      "D_{r}",
@@ -425,6 +600,10 @@
     [
      "e_{min}",
      "void ratio in the densest state"
+    ],
+    [
+     "N_{60}",
+     "blow count corrected to 60% hammer energy"
     ],
     [
      "e",
@@ -461,6 +640,10 @@
     [
      "s",
      "second"
+    ],
+    [
+     "N",
+     "measured blow count"
     ]
    ]
   },
@@ -531,6 +714,30 @@
       "svg": "<rect x='30' y='24' width='300' height='54' fill='#EEEDE8'/><rect x='30' y='78' width='300' height='96' fill='#D9F1D6'/><line x1='30' y1='24' x2='330' y2='24' stroke='#00242E' stroke-width='3'/><line x1='30' y1='78' x2='330' y2='78' stroke='#568CBB' stroke-width='2' stroke-dasharray='8 4'/><text x='40' y='55' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>18.5 kN/m³</text><text x='40' y='130' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>20 kN/m³ saturated</text><text x='322' y='73' text-anchor='end' font-size='12' font-weight='400' fill='#568CBB'>Water table</text><circle cx='300' cy='174' r='5' fill='#00574A'/><line x1='350' y1='24' x2='350' y2='174' stroke='#00242E'/><text x='358' y='99' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>7 m</text><text x='358' y='51' text-anchor='start' font-size='12' font-weight='400' fill='#568CBB'>2.5 m</text>",
       "alt": "A soil profile with the water table 2.5 m below the surface and a point at 7 m depth."
      }
+    },
+    {
+     "family": "geotech-0038",
+     "problem": "A saturated soil with a unit weight of 19.3 kN/m^{3} lies beneath a lake. What is the vertical effective stress 6.8 m below the lake bed? Use 9.81 kN/m^{3} for water.",
+     "idea": "Below standing water, the weight of the water above the bed adds equally to total stress and to pore pressure, so it cancels. Effective stress is the buoyant unit weight times the depth below the bed, whatever the depth of the lake.",
+     "steps": "Effective stress = (19.3 - 9.81)(6.8) = 9.49 × 6.8 = 64.5 kPa.",
+     "answer": "64.5 kPa",
+     "value": 64.532
+    },
+    {
+     "family": "geotech-0039",
+     "problem": "A sand has a specific gravity of solids of 2.69 and a void ratio of 0.65. What upward hydraulic gradient would cause a quick (boiling) condition?",
+     "idea": "Upward seepage reduces effective stress. When the seepage force equals the buoyant weight of the soil the effective stress is zero and the sand boils. That critical gradient is (G_{s} - 1) / (1 + e), usually close to 1.",
+     "steps": "i_{c} = \\frac{2.69 - 1}{1 + 0.65} = 1.024.",
+     "answer": "1.024",
+     "value": 1.024242
+    },
+    {
+     "family": "geotech-0040",
+     "problem": "A footing 2.0 m by 2.0 m carries a load of 950 kN. Using the 2:1 method, what is the increase in vertical stress 2.0 m below the footing?",
+     "idea": "The 2:1 method spreads the load outward at 2 vertical to 1 horizontal, so at depth z the loaded area has grown by z in each plan dimension. Stress increase is the load divided by that enlarged area.",
+     "steps": "Stress increase = \\frac{950}{(2.0 + 2.0)(2.0 + 2.0)} = \\frac{950}{16.00} = 59.38 kPa.",
+     "answer": "59.38 kPa",
+     "value": 59.375
     }
    ],
    "lookup": [
@@ -549,6 +756,60 @@
     "Compute pore pressure from depth below the water table.",
     "Subtract to get effective stress.",
     "Recompute after any change in water level or surcharge."
+   ],
+   "primer": "Below the water table, water in the gaps between grains carries part of the weight above. Only the remainder, the effective stress, presses the grains together, and only that gives the soil strength.",
+   "needs": [
+    [
+     "geotech-b",
+     "geotech",
+     "Geotechnical Engineering: Phase relations"
+    ],
+    [
+     "fluids-c",
+     "fluids",
+     "Fluid Mechanics: Fluid statics"
+    ]
+   ],
+   "leads": [
+    [
+     "geotech-e",
+     "geotech",
+     "Geotechnical Engineering: Stability of retaining structures"
+    ],
+    [
+     "geotech-f",
+     "geotech",
+     "Geotechnical Engineering: Shear strength"
+    ],
+    [
+     "geotech-i",
+     "geotech",
+     "Geotechnical Engineering: Consolidation and differential settlement"
+    ]
+   ],
+   "terms": [
+    [
+     "effective stress",
+     "the part of the stress in a soil that is carried by grain-to-grain contact: total stress minus pore water pressure"
+    ],
+    [
+     "unit weight",
+     "weight per unit volume of a soil or material"
+    ],
+    [
+     "pore pressure",
+     "the pressure of the water in the spaces between soil grains"
+    ],
+    [
+     "hydraulic gradient",
+     "the drop in water level (head) per unit distance along the flow path"
+    ]
+   ],
+   "symbols": [
+    [
+     "i_{c}",
+     "critical hydraulic gradient"
+    ]
    ]
   },
   {
@@ -628,6 +889,45 @@
       "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>7 m</text><line x1='250' y1='107' x2='184' y2='107' stroke='#00574A' stroke-width='3'/><path d='M176 107 L190 101 L190 113 Z' fill='#00574A'/><text x='300' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>139.1 kN/m</text><text x='300' y='120' text-anchor='middle' font-size='12' font-weight='400' fill='#00574A'>at H / 3</text>",
       "alt": "A retaining wall 7 m high with a triangular active pressure diagram behind it."
      }
+    },
+    {
+     "family": "geotech-0041",
+     "problem": "The toe of a retaining wall is embedded 1.6 m in sand with a friction angle of 31° and a unit weight of 18.2 kN/m^{3}. Using Rankine theory, what passive resistance is available per metre of wall?",
+     "idea": "Passive pressure develops when a wall pushes into the soil. The coefficient is K_{p} = tan^{2}(45° + friction angle / 2), the reciprocal of the active coefficient, and the force is (1/2) K_{p} (unit weight) H^{2}.",
+     "steps": "K_{p} = tan^{2}(45° + \\frac{31°}{2}) = 3.124.\n\nP_{p} = \\frac{1}{2}(3.124)(18.2)(1.6)^{2} = 72.78 kN/m.",
+     "answer": "72.78 kN/m",
+     "value": 72.777522,
+     "figure": {
+      "viewBox": "0 0 400 170",
+      "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>1.6 m</text>",
+      "alt": "A retaining wall 1.6 m high with a triangular active pressure diagram behind it."
+     }
+    },
+    {
+     "family": "geotech-0042",
+     "problem": "A rigid basement wall that cannot move retains sand with a friction angle of 30° and a unit weight of 18.2 kN/m^{3}. Using K_{0} = 1 - sin(friction angle), what is the horizontal earth pressure 5 m below the surface?",
+     "idea": "A wall that cannot move does not let the soil relax to the active state, so it feels at-rest pressure, which is higher. For normally consolidated sand the at-rest coefficient is about 1 - sin(friction angle).",
+     "steps": "K_{0} = 1 - sin 30° = 0.5000.\n\nPressure = 0.5000 × 18.2 × 5 = 45.50 kPa.",
+     "answer": "45.50 kPa",
+     "value": 45.5,
+     "figure": {
+      "viewBox": "0 0 400 170",
+      "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>5 m</text>",
+      "alt": "A retaining wall 5 m high with a triangular active pressure diagram behind it."
+     }
+    },
+    {
+     "family": "geotech-0043",
+     "problem": "A uniform surcharge of 15 kPa, such as traffic, acts on the ground behind a 4.8 m retaining wall. The backfill has a friction angle of 30°. Using the Rankine active coefficient, what extra horizontal force does the surcharge put on each metre of wall?",
+     "idea": "A uniform surcharge adds a constant horizontal pressure of K_{a} q over the full height of the wall. Its resultant, K_{a} q H, acts at mid-height, unlike the triangular soil pressure, which acts at one third.",
+     "steps": "K_{a} = tan^{2}(45° - \\frac{30°}{2}) = 0.3333.\n\nForce = 0.3333 × 15 × 4.8 = 24.00 kN/m, acting 2.40 m above the base.",
+     "answer": "24.00 kN/m",
+     "value": 24.0,
+     "figure": {
+      "viewBox": "0 0 400 170",
+      "svg": "<rect x='150' y='20' width='24' height='130' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='174' y='20' width='170' height='130' fill='#EEEDE8'/><line x1='174' y1='20' x2='344' y2='20' stroke='#00242E' stroke-width='2'/><line x1='110' y1='150' x2='344' y2='150' stroke='#00242E' stroke-width='2'/><path d='M174 20 L174 150 L254 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='128' y1='20' x2='128' y2='150' stroke='#00242E'/><text x='120' y='90' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>4.8 m</text>",
+      "alt": "A retaining wall 4.8 m high with a triangular active pressure diagram behind it."
+     }
     }
    ],
    "lookup": [
@@ -650,7 +950,47 @@
     "Factor of safety against overturning: resisting moments over overturning moments about the toe."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Retaining walls beside a widened roadway carry soil pressure plus a traffic surcharge.",
+   "primer": "Soil pushes sideways on a wall that holds it back. The push grows with depth and depends on the soil's friction angle and on whether the wall can move away from the soil or is pushed into it.",
+   "needs": [
+    [
+     "geotech-d",
+     "geotech",
+     "Geotechnical Engineering: Effective stress"
+    ],
+    [
+     "geotech-f",
+     "geotech",
+     "Geotechnical Engineering: Shear strength"
+    ]
+   ],
+   "leads": [],
+   "work": "A retaining wall beside a road carries the soil's push plus extra from traffic above.",
+   "terms": [
+    [
+     "friction angle",
+     "the angle whose tangent is the ratio of a soil's frictional shear strength to the normal stress on it"
+    ],
+    [
+     "active",
+     "the low earth pressure reached when a wall moves slightly away from the soil it retains"
+    ],
+    [
+     "passive",
+     "the high earth pressure reached when a wall is pushed into the soil"
+    ],
+    [
+     "effective stress",
+     "the part of the stress in a soil that is carried by grain-to-grain contact: total stress minus pore water pressure"
+    ],
+    [
+     "resultant",
+     "the single force that has the same effect as several forces acting together"
+    ],
+    [
+     "unit weight",
+     "weight per unit volume of a soil or material"
+    ]
+   ],
    "symbols": [
     [
      "K_{a}",
@@ -667,6 +1007,10 @@
     [
      "P_{a}",
      "active force per metre of wall"
+    ],
+    [
+     "P_{p}",
+     "passive force per metre of wall"
     ],
     [
      "H",
@@ -745,6 +1089,14 @@
      "steps": "sin(friction angle) = \\frac{400 - 120}{400 + 120} = \\frac{280}{520} = 0.5385.\n\nFriction angle = 32.6°.",
      "answer": "32.6 °",
      "value": 32.57897
+    },
+    {
+     "family": "geotech-0044",
+     "problem": "A soil has a cohesion of 18 kPa and a friction angle of 30°. In a triaxial test with a cell pressure of 105 kPa, what major principal stress causes failure?",
+     "idea": "At failure Mohr's circle touches the Mohr-Coulomb envelope. That gives the major principal stress as the minor one times tan^{2}(45° + friction angle / 2), plus 2c tan(45° + friction angle / 2).",
+     "steps": "tan(45° + \\frac{30°}{2}) = 1.7321.\n\nMajor principal stress = 105(1.7321)^{2} + 2(18)(1.7321) = 315.0 + 62.4 = 377.4 kPa.",
+     "answer": "377.4 kPa",
+     "value": 377.353829
     }
    ],
    "lookup": [
@@ -766,6 +1118,58 @@
     "From triaxial data, draw the Mohr circles and read the envelope."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "Soil fails by sliding along a surface. Its resistance to sliding has two parts: friction, which grows with the pressure on the surface, and cohesion, which does not.",
+   "needs": [
+    [
+     "geotech-d",
+     "geotech",
+     "Geotechnical Engineering: Effective stress"
+    ],
+    [
+     "mechmat-d",
+     "mechmat",
+     "Mechanics of Materials: Combined stresses, principal stresses, and Mohr's circle"
+    ]
+   ],
+   "leads": [
+    [
+     "geotech-e",
+     "geotech",
+     "Geotechnical Engineering: Stability of retaining structures"
+    ],
+    [
+     "geotech-g",
+     "geotech",
+     "Geotechnical Engineering: Bearing capacity"
+    ],
+    [
+     "geotech-j",
+     "geotech",
+     "Geotechnical Engineering: Slope stability"
+    ]
+   ],
+   "terms": [
+    [
+     "cohesion",
+     "the part of a soil's shear strength that does not depend on how hard the grains are pressed together"
+    ],
+    [
+     "effective stress",
+     "the part of the stress in a soil that is carried by grain-to-grain contact: total stress minus pore water pressure"
+    ],
+    [
+     "normal stress",
+     "force per unit area acting perpendicular to a surface; tension pulls apart, compression pushes together"
+    ],
+    [
+     "friction angle",
+     "the angle whose tangent is the ratio of a soil's frictional shear strength to the normal stress on it"
+    ],
+    [
+     "principal stress",
+     "the largest and smallest normal stresses at a point, found on the planes where shear stress is zero"
+    ]
+   ],
    "symbols": [
     [
      "s_{u}",
@@ -838,7 +1242,12 @@
      "idea": "Terzaghi's equation for a strip footing adds three resistances: cohesion (c N_{c}), surcharge from the soil beside the footing (unit weight × depth × N_{q}) and the weight of soil below (half × unit weight × B × N_{gamma}). For clay in undrained loading the third term is zero.",
      "steps": "q_{ult} = c N_{c} + (unit weight)(D) N_{q} = 60(5.7) + 18.5(1.8)(1.0) = 342.0 + 33.3 = 375.3 kPa.",
      "answer": "375.3 kPa",
-     "value": 375.3
+     "value": 375.3,
+     "figure": {
+      "viewBox": "0 0 400 170",
+      "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>load</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = ?</text><line x1='320' y1='60' x2='320' y2='126' stroke='#00242E'/><text x='328' y='98' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1.8 m</text>",
+      "alt": "A footing below the ground surface carrying a column load."
+     }
     },
     {
      "family": "geotech-0015",
@@ -859,7 +1268,38 @@
      "idea": "A moment shifts the resultant by e = M / P. While e is within B / 6, the pressure under the footing is trapezoidal, with edge values (P / B)(1 ± 6e / B). The larger value is at the toe.",
      "steps": "e = \\frac{84}{420} = 0.200 m, which is less than B / 6 = 0.400 m.\n\nq_{max} = \\frac{420}{2.4}(1 + \\frac{6(0.200)}{2.4}) = 175.0 × 1.500 = 262.5 kPa.",
      "answer": "262.5 kPa",
-     "value": 262.5
+     "value": 262.5,
+     "figure": {
+      "viewBox": "0 0 400 170",
+      "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>420 kN</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = 2.4 m</text>",
+      "alt": "A footing below the ground surface carrying a column load."
+     }
+    },
+    {
+     "family": "geotech-0045",
+     "problem": "A strip footing 2.1 m wide is founded 1.1 m deep in sand with a unit weight of 18 kN/m^{3} and no cohesion. The bearing capacity factors are N_{q} = 27.0 and N_{γ} = 26.0. What is the ultimate bearing capacity?",
+     "idea": "The bearing capacity equation has three terms: cohesion, surcharge from the soil beside the footing, and the weight of soil below it. With no cohesion only the last two remain: (unit weight)(depth) N_{q} + (1/2)(unit weight) B N_{γ}.",
+     "steps": "q_{ult} = 18(1.1)(27.0) + \\frac{1}{2}(18)(2.1)(26.0) = 534.6 + 491.4 = 1,026.0 kPa.",
+     "answer": "1,026.0 kPa",
+     "value": 1026.0,
+     "figure": {
+      "viewBox": "0 0 400 170",
+      "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>load</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = 2.1 m</text><line x1='320' y1='60' x2='320' y2='126' stroke='#00242E'/><text x='328' y='98' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1.1 m</text>",
+      "alt": "A footing below the ground surface carrying a column load."
+     }
+    },
+    {
+     "family": "geotech-0046",
+     "problem": "A strip footing 2.4 m wide carries 425 kN per metre and a moment of 65 kN·m per metre. Using the effective width B' = B - 2e, what uniform bearing pressure acts on the effective width?",
+     "idea": "The effective-area method replaces an eccentrically loaded footing by a narrower one loaded centrally. The resultant sits at the centre of the reduced width B - 2e, and bearing capacity is checked on that width.",
+     "steps": "e = \\frac{65}{425} = 0.153 m, so B' = 2.4 - 2(0.153) = 2.094 m.\n\nPressure = \\frac{425}{2.094} = 202.9 kPa.",
+     "answer": "202.9 kPa",
+     "value": 202.949438,
+     "figure": {
+      "viewBox": "0 0 400 170",
+      "svg": "<line x1='40' y1='60' x2='360' y2='60' stroke='#00242E' stroke-width='2'/><rect x='180' y='20' width='40' height='80' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><rect x='110' y='100' width='180' height='26' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='10' stroke='#00574A' stroke-width='3'/><path d='M200 18 L194 6 L206 6 Z' fill='#00574A'/><text x='214' y='12' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>425 kN</text><line x1='110' y1='144' x2='290' y2='144' stroke='#00242E'/><line x1='110' y1='138' x2='110' y2='150' stroke='#00242E'/><line x1='290' y1='138' x2='290' y2='150' stroke='#00242E'/><text x='200' y='160' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>B = 2.4 m</text>",
+      "alt": "A footing below the ground surface carrying a column load."
+     }
     }
    ],
    "lookup": [
@@ -882,6 +1322,51 @@
     "Size the footing as load over allowable pressure."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "A footing spreads a load over the ground. If the pressure is too high the soil beneath shears and the footing sinks or tilts. Bearing capacity is that limiting pressure.",
+   "needs": [
+    [
+     "geotech-f",
+     "geotech",
+     "Geotechnical Engineering: Shear strength"
+    ]
+   ],
+   "leads": [
+    [
+     "geotech-h",
+     "geotech",
+     "Geotechnical Engineering: Foundation types"
+    ]
+   ],
+   "terms": [
+    [
+     "bearing capacity",
+     "the pressure at which the soil under a footing fails in shear"
+    ],
+    [
+     "cohesion",
+     "the part of a soil's shear strength that does not depend on how hard the grains are pressed together"
+    ],
+    [
+     "friction angle",
+     "the angle whose tangent is the ratio of a soil's frictional shear strength to the normal stress on it"
+    ],
+    [
+     "factor of safety",
+     "resisting effect divided by driving effect; above 1 means stable"
+    ],
+    [
+     "unit weight",
+     "weight per unit volume of a soil or material"
+    ],
+    [
+     "moment",
+     "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+    ],
+    [
+     "resultant",
+     "the single force that has the same effect as several forces acting together"
+    ]
+   ],
    "symbols": [
     [
      "q_{ult}",
@@ -990,7 +1475,38 @@
      "idea": "A pile carries load two ways: skin friction acting on the surface area of the shaft (perimeter × length) and end bearing acting on the tip area. The ultimate capacity is the sum.",
      "steps": "Shaft: 45 × (4 × 0.5) × 20 = 1,800 kN.\n\nTip: 2,200 × 0.5^{2} = 550 kN.\n\nQ_{ult} = 1,800 + 550 = 2,350 kN.",
      "answer": "2,350 kN",
-     "value": 2350.0
+     "value": 2350.0,
+     "figure": {
+      "viewBox": "0 0 400 185",
+      "svg": "<rect x='40' y='40' width='320' height='130' fill='#EEEDE8'/><line x1='40' y1='40' x2='360' y2='40' stroke='#00242E' stroke-width='3'/><rect x='188' y='24' width='24' height='128' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='14' stroke='#00574A' stroke-width='3'/><path d='M200 22 L194 10 L206 10 Z' fill='#00574A'/><line x1='178' y1='136' x2='178' y2='120' stroke='#568CBB' stroke-width='2'/><path d='M178 112 L172 124 L184 124 Z' fill='#568CBB'/><line x1='222' y1='136' x2='222' y2='120' stroke='#568CBB' stroke-width='2'/><path d='M222 112 L216 124 L228 124 Z' fill='#568CBB'/><line x1='178' y1='110' x2='178' y2='94' stroke='#568CBB' stroke-width='2'/><path d='M178 86 L172 98 L184 98 Z' fill='#568CBB'/><line x1='222' y1='110' x2='222' y2='94' stroke='#568CBB' stroke-width='2'/><path d='M222 86 L216 98 L228 98 Z' fill='#568CBB'/><line x1='178' y1='84' x2='178' y2='68' stroke='#568CBB' stroke-width='2'/><path d='M178 60 L172 72 L184 72 Z' fill='#568CBB'/><line x1='222' y1='84' x2='222' y2='68' stroke='#568CBB' stroke-width='2'/><path d='M222 60 L216 72 L228 72 Z' fill='#568CBB'/><line x1='178' y1='58' x2='178' y2='42' stroke='#568CBB' stroke-width='2'/><path d='M178 34 L172 46 L184 46 Z' fill='#568CBB'/><line x1='222' y1='58' x2='222' y2='42' stroke='#568CBB' stroke-width='2'/><path d='M222 34 L216 46 L228 46 Z' fill='#568CBB'/><line x1='200' y1='176' x2='200' y2='162' stroke='#1B795A' stroke-width='3'/><path d='M200 154 L194 166 L206 166 Z' fill='#1B795A'/><text x='232' y='100' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>Skin friction</text><text x='210' y='176' text-anchor='start' font-size='11' font-weight='400' fill='#1B795A'>End bearing</text><line x1='120' y1='40' x2='120' y2='152' stroke='#00242E'/><text x='112' y='100' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>20 m</text><text x='214' y='18' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>0.5 m square</text>",
+      "alt": "A pile 20 m long carrying load by skin friction along its shaft and end bearing at its tip."
+     }
+    },
+    {
+     "family": "geotech-0047",
+     "problem": "A round pile 0.4 m in diameter is driven 12 m into clay with an undrained shear strength of 58 kPa. The adhesion factor is 0.8 and the tip capacity is 9 c_{u} on the tip area. What is the ultimate capacity?",
+     "idea": "A pile in clay carries load by adhesion along its shaft, a fraction of the undrained strength acting on the shaft surface, and by end bearing of about nine times the undrained strength on the tip.",
+     "steps": "Shaft: 0.8(58) × π(0.4)(12) = 699.7 kN.\n\nTip: 9(58) × \\frac{π(0.4)^{2}}{4} = 65.6 kN.\n\nTotal = 765.3 kN.",
+     "answer": "765.3 kN",
+     "value": 765.29197,
+     "figure": {
+      "viewBox": "0 0 400 185",
+      "svg": "<rect x='40' y='40' width='320' height='130' fill='#EEEDE8'/><line x1='40' y1='40' x2='360' y2='40' stroke='#00242E' stroke-width='3'/><rect x='188' y='24' width='24' height='128' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='14' stroke='#00574A' stroke-width='3'/><path d='M200 22 L194 10 L206 10 Z' fill='#00574A'/><line x1='178' y1='136' x2='178' y2='120' stroke='#568CBB' stroke-width='2'/><path d='M178 112 L172 124 L184 124 Z' fill='#568CBB'/><line x1='222' y1='136' x2='222' y2='120' stroke='#568CBB' stroke-width='2'/><path d='M222 112 L216 124 L228 124 Z' fill='#568CBB'/><line x1='178' y1='110' x2='178' y2='94' stroke='#568CBB' stroke-width='2'/><path d='M178 86 L172 98 L184 98 Z' fill='#568CBB'/><line x1='222' y1='110' x2='222' y2='94' stroke='#568CBB' stroke-width='2'/><path d='M222 86 L216 98 L228 98 Z' fill='#568CBB'/><line x1='178' y1='84' x2='178' y2='68' stroke='#568CBB' stroke-width='2'/><path d='M178 60 L172 72 L184 72 Z' fill='#568CBB'/><line x1='222' y1='84' x2='222' y2='68' stroke='#568CBB' stroke-width='2'/><path d='M222 60 L216 72 L228 72 Z' fill='#568CBB'/><line x1='178' y1='58' x2='178' y2='42' stroke='#568CBB' stroke-width='2'/><path d='M178 34 L172 46 L184 46 Z' fill='#568CBB'/><line x1='222' y1='58' x2='222' y2='42' stroke='#568CBB' stroke-width='2'/><path d='M222 34 L216 46 L228 46 Z' fill='#568CBB'/><line x1='200' y1='176' x2='200' y2='162' stroke='#1B795A' stroke-width='3'/><path d='M200 154 L194 166 L206 166 Z' fill='#1B795A'/><text x='232' y='100' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>Skin friction</text><text x='210' y='176' text-anchor='start' font-size='11' font-weight='400' fill='#1B795A'>End bearing</text><line x1='120' y1='40' x2='120' y2='152' stroke='#00242E'/><text x='112' y='100' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>12 m</text><text x='214' y='18' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>0.4 m diameter</text>",
+      "alt": "A pile 12 m long carrying load by skin friction along its shaft and end bearing at its tip."
+     }
+    },
+    {
+     "family": "geotech-0048",
+     "problem": "Two columns 5 m apart carry 625 kN and 875 kN and share one rectangular footing. The footing starts 0.4 m beyond the centre of the 625 kN column. How long must it be for the soil pressure to be uniform?",
+     "idea": "Soil pressure under a rigid footing is uniform only if the footing's centroid lies under the resultant of the column loads. Locate the resultant, then make the footing twice the distance from its end to the resultant.",
+     "steps": "Resultant from the first column = \\frac{875(5)}{625 + 875} = 2.917 m.\n\nLength = 2(0.4 + 2.917) = 6.63 m.",
+     "answer": "6.63 m",
+     "value": 6.633333,
+     "figure": {
+      "viewBox": "0 0 400 205",
+      "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='68' y1='10' x2='68' y2='69' stroke='#00574A' stroke-width='3'/><path d='M68 77 L62 65 L74 65 Z' fill='#00574A'/><text x='76' y='20' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>625 kN</text><line x1='294' y1='10' x2='294' y2='69' stroke='#00574A' stroke-width='3'/><path d='M294 77 L288 65 L300 65 Z' fill='#00574A'/><text x='302' y='32' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>875 kN</text><line x1='68' y1='176' x2='294' y2='176' stroke='#00242E'/><line x1='68' y1='170' x2='68' y2='182' stroke='#00242E'/><line x1='294' y1='170' x2='294' y2='182' stroke='#00242E'/><text x='181' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text><line x1='294' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='294' y1='170' x2='294' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='322' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>1.23 m</text><line x1='200' y1='162' x2='200' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M200 120 L194 132 L206 132 Z' fill='#568CBB'/><text x='190' y='160' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>1,500 kN</text>",
+      "alt": "A beam 6.63 m long, a 625 kN load at 0.4 m, a 875 kN load at 5.4 m. Reactions: 1,500 kN at 3.32 m."
+     }
     }
    ],
    "lookup": [],
@@ -1002,6 +1518,16 @@
     "Apply the factor of safety.",
     "Consider group effects and settlement."
    ],
+   "primer": "Foundations pass structural loads to the ground. Shallow footings bear near the surface; deep foundations such as piles carry load down to stronger soil by friction along their length and bearing at their tip.",
+   "needs": [
+    [
+     "geotech-g",
+     "geotech",
+     "Geotechnical Engineering: Bearing capacity"
+    ]
+   ],
+   "leads": [],
+   "terms": [],
    "symbols": [
     [
      "Q_{ult}",
@@ -1060,7 +1586,12 @@
      "idea": "For normally consolidated clay, void ratio falls linearly with the logarithm of effective stress, at slope C_{c}. Settlement is the change in void ratio converted to a change in layer thickness: S = C_{c} H / (1 + e_{0}) × log_{10}(final stress / initial stress).",
      "steps": "S = \\frac{C_{c} H}{1 + e_{0}} log_{10}(\\frac{p_{2}}{p_{1}}) = \\frac{0.32(8)}{1 + 0.9} log_{10}(\\frac{280}{140}) = 1.347 × 0.301 = 0.406 m = 406 mm.",
      "answer": "406 mm",
-     "value": 405.59831
+     "value": 405.59831,
+     "figure": {
+      "viewBox": "0 0 400 172",
+      "svg": "<rect x='40' y='20' width='320' height='34' fill='#EEEDE8'/><rect x='40' y='54' width='320' height='70' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><rect x='40' y='124' width='320' height='34' fill='#EEEDE8'/><text x='200' y='42' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Sand (drains freely)</text><text x='200' y='146' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Sand (drains freely)</text><text x='200' y='86' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Clay, 8 m thick</text><text x='200' y='104' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>effective stress rises from 140 to 280 kPa</text><line x1='120' y1='76' x2='120' y2='66' stroke='#568CBB' stroke-width='2'/><path d='M120 58 L114 70 L126 70 Z' fill='#568CBB'/><line x1='120' y1='102' x2='120' y2='112' stroke='#568CBB' stroke-width='2'/><path d='M120 120 L114 108 L126 108 Z' fill='#568CBB'/>",
+      "alt": "A clay layer 8 m thick between two other layers; effective stress rises from 140 to 280 kPa."
+     }
     },
     {
      "family": "geotech-0019",
@@ -1068,7 +1599,12 @@
      "idea": "Consolidation time follows t = T_{v} H_{dr}^{2} / c_{v}, where H_{dr} is the longest path water must travel to drain. With drainage at both faces, H_{dr} is half the layer thickness, which makes consolidation four times faster than single drainage.",
      "steps": "H_{dr} = 10 / 2 = 5 m.\n\nt = \\frac{T_{v} H_{dr}^{2}}{c_{v}} = \\frac{0.197(5)^{2}}{2.5} = 1.970 years.",
      "answer": "1.970 years",
-     "value": 1.97
+     "value": 1.97,
+     "figure": {
+      "viewBox": "0 0 400 172",
+      "svg": "<rect x='40' y='20' width='320' height='34' fill='#EEEDE8'/><rect x='40' y='54' width='320' height='70' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><rect x='40' y='124' width='320' height='34' fill='#EEEDE8'/><text x='200' y='42' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Sand (drains freely)</text><text x='200' y='146' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Sand (drains freely)</text><text x='200' y='86' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Clay, 10 m thick</text><text x='200' y='104' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>drains to the top and the bottom</text><line x1='120' y1='76' x2='120' y2='66' stroke='#568CBB' stroke-width='2'/><path d='M120 58 L114 70 L126 70 Z' fill='#568CBB'/><line x1='120' y1='102' x2='120' y2='112' stroke='#568CBB' stroke-width='2'/><path d='M120 120 L114 108 L126 108 Z' fill='#568CBB'/>",
+      "alt": "A clay layer 10 m thick between two other layers; drains to the top and the bottom."
+     }
     },
     {
      "family": "geotech-0028",
@@ -1077,6 +1613,27 @@
      "steps": "C_{c} = 0.009(52 - 10) = 0.378. The recompression index would be about 0.063.",
      "answer": "0.378",
      "value": 0.378
+    },
+    {
+     "family": "geotech-0049",
+     "problem": "A consolidation test specimen 22 mm thick drains from both faces. It reaches 50% consolidation in 4.5 min. With a time factor of 0.197 at 50%, what is the coefficient of consolidation?",
+     "idea": "The time factor links time and drainage path: T_{v} = c_{v} t / H_{dr}^{2}. With drainage from both faces the drainage path is half the thickness.",
+     "steps": "H_{dr} = \\frac{22}{2} = 11.00 mm.\n\nc_{v} = \\frac{0.197(11.00)^{2}}{4.5} = 5.297 mm^{2}/min.",
+     "answer": "5.297 mm^{2}/min",
+     "value": 5.297111,
+     "figure": {
+      "viewBox": "0 0 400 172",
+      "svg": "<rect x='40' y='20' width='320' height='34' fill='#EEEDE8'/><rect x='40' y='54' width='320' height='70' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><rect x='40' y='124' width='320' height='34' fill='#EEEDE8'/><text x='200' y='42' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Sand (drains freely)</text><text x='200' y='146' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Sand (drains freely)</text><text x='200' y='86' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Clay, 22 mm thick</text><text x='200' y='104' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>drains from both faces, so the drainage path is half the thickness</text><line x1='120' y1='76' x2='120' y2='66' stroke='#568CBB' stroke-width='2'/><path d='M120 58 L114 70 L126 70 Z' fill='#568CBB'/><line x1='120' y1='102' x2='120' y2='112' stroke='#568CBB' stroke-width='2'/><path d='M120 120 L114 108 L126 108 Z' fill='#568CBB'/>",
+      "alt": "A clay layer 22 mm thick between two other layers; drains from both faces, so the drainage path is half the thickness."
+     }
+    },
+    {
+     "family": "geotech-0051",
+     "problem": "A clay 5 m below the surface has a preconsolidation pressure of 275 kPa. The soil above has a unit weight of 18.2 kN/m^{3} and the water table is deep. What is the overconsolidation ratio?",
+     "idea": "The overconsolidation ratio is the largest effective stress the soil has ever carried divided by what it carries now. A ratio of 1 is normally consolidated; above 1 the soil has been unloaded and settles less under new load.",
+     "steps": "Present effective stress = 18.2 × 5 = 91.0 kPa.\n\nOCR = \\frac{275}{91.0} = 3.02.",
+     "answer": "3.02",
+     "value": 3.021978
     }
    ],
    "lookup": [
@@ -1099,6 +1656,45 @@
     "Compare settlements at adjacent footings."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "A loaded clay settles slowly as water is squeezed out of it. The amount depends on how compressible the clay is and how much the stress increases; the time depends on how far the water must travel to escape.",
+   "needs": [
+    [
+     "geotech-d",
+     "geotech",
+     "Geotechnical Engineering: Effective stress"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "consolidation",
+     "the slow squeezing of water out of a clay under load, which makes the ground settle over months or years"
+    ],
+    [
+     "compression index",
+     "the slope of a clay's void ratio against the logarithm of pressure; it sets how much the clay settles"
+    ],
+    [
+     "effective stress",
+     "the part of the stress in a soil that is carried by grain-to-grain contact: total stress minus pore water pressure"
+    ],
+    [
+     "overconsolidated",
+     "loaded more heavily at some time in the past than it is now, so it compresses less under new load"
+    ],
+    [
+     "normally consolidated",
+     "never loaded more heavily in the past than it is now"
+    ],
+    [
+     "void ratio",
+     "volume of voids divided by volume of solid grains in a soil"
+    ],
+    [
+     "liquid limit",
+     "the water content at which a clay changes from plastic to liquid behaviour"
+    ]
+   ],
    "symbols": [
     [
      "C_{c}",
@@ -1229,6 +1825,32 @@
       "svg": "<path d='M87 150 L313 150 L313 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(211 84) rotate(-28)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='131' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>28°</text>",
       "alt": "A block on an incline at 28° to the horizontal."
      }
+    },
+    {
+     "family": "geotech-0052",
+     "problem": "A dry soil layer 3 m thick (measured vertically) lies on a planar interface sloping at 25°. The soil has a cohesion of 10 kPa, a friction angle of 25° and a unit weight of 18 kN/m^{3}. For an infinite slope, what is the factor of safety against sliding on the interface?",
+     "idea": "For an infinite slope with cohesion, FS = c / (unit weight × H × sin(slope) × cos(slope)) + tan(friction angle) / tan(slope). The cohesion term shrinks as the layer gets thicker; the friction term does not depend on thickness.",
+     "steps": "Cohesion term = \\frac{10}{18(3)(sin 25°)(cos 25°)} = 0.483.\n\nFriction term = \\frac{tan 25°}{tan 25°} = 1.000.\n\nFS = 1.48.",
+     "answer": "1.48",
+     "value": 1.483484,
+     "figure": {
+      "viewBox": "0 0 400 180",
+      "svg": "<path d='M71 150 L329 150 L329 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(213 84) rotate(-25)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='115' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>25°</text>",
+      "alt": "A block on an incline at 25° to the horizontal."
+     }
+    },
+    {
+     "family": "geotech-0053",
+     "problem": "A long slope of cohesionless soil stands at 14° with seepage parallel to the slope and the water table at the surface. The saturated unit weight is 19 kN/m^{3} and the friction angle is 31°. What is the factor of safety? Use 9.81 kN/m^{3} for water.",
+     "idea": "Seepage parallel to the slope lowers the effective normal stress without lowering the driving weight. The dry-slope factor of safety, tan(friction angle) / tan(slope), is multiplied by the ratio of buoyant to saturated unit weight, roughly one half.",
+     "steps": "FS = \\frac{19 - 9.81}{19} × \\frac{tan 31°}{tan 14°} = 0.4837 × 2.4099 = 1.17.",
+     "answer": "1.17",
+     "value": 1.16564,
+     "figure": {
+      "viewBox": "0 0 400 180",
+      "svg": "<path d='M60 150 L340 150 L340 80 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(214 112) rotate(-14)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='104' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>14°</text>",
+      "alt": "A block on an incline at 14° to the horizontal."
+     }
     }
    ],
    "lookup": [
@@ -1249,6 +1871,50 @@
     "Compare the factor of safety with the required value, typically 1.3 to 1.5."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "A slope fails when the weight trying to slide it exceeds the soil's shear strength along the slip surface. The ratio of resistance to driving force is the factor of safety.",
+   "needs": [
+    [
+     "geotech-f",
+     "geotech",
+     "Geotechnical Engineering: Shear strength"
+    ],
+    [
+     "statics-g",
+     "statics",
+     "Statics: Static friction"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "factor of safety",
+     "resisting effect divided by driving effect; above 1 means stable"
+    ],
+    [
+     "moment",
+     "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+    ],
+    [
+     "friction angle",
+     "the angle whose tangent is the ratio of a soil's frictional shear strength to the normal stress on it"
+    ],
+    [
+     "pore pressure",
+     "the pressure of the water in the spaces between soil grains"
+    ],
+    [
+     "effective stress",
+     "the part of the stress in a soil that is carried by grain-to-grain contact: total stress minus pore water pressure"
+    ],
+    [
+     "shear stress",
+     "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+    ],
+    [
+     "cohesion",
+     "the part of a soil's shear strength that does not depend on how hard the grains are pressed together"
+    ]
+   ],
    "symbols": [
     [
      "s_{u}",
@@ -1314,6 +1980,14 @@
      "steps": "Dry mass of soil = 1,750 × 600 = 1,050,000 kg.\n\nLime = 4.5% × 1,050,000 = 47,250 kg.",
      "answer": "47,250 kg",
      "value": 47250.0
+    },
+    {
+     "family": "geotech-0054",
+     "problem": "Fill is to be compacted to a dry density of 1,790 kg/m^{3}. The borrow soil arrives at a water content of 7.2% and the optimum is 12.8%. How much water must be added per cubic metre of compacted fill?",
+     "idea": "Water content is the mass of water divided by the mass of dry solids. The water to add is the dry mass times the increase in water content, and 1 kg of water is 1 L.",
+     "steps": "Water = 1,790 × \\frac{12.8 - 7.2}{100} = 100.2 kg, or 100.2 L per cubic metre.",
+     "answer": "100.2 L",
+     "value": 100.24
     }
    ],
    "lookup": [],
@@ -1324,7 +1998,25 @@
     "Compute additive quantities from the dry mass of soil and the percentage specified.",
     "Check compaction against the Proctor maximum."
    ],
-   "work": "Lime or cement treatment and geotextiles are common fixes for weak pavement subgrades."
+   "primer": "Weak ground can be improved by compacting it, mixing in lime or cement, draining it, or reinforcing it with fabric or grids.",
+   "needs": [
+    [
+     "geotech-c",
+     "geotech",
+     "Geotechnical Engineering: Laboratory and field tests"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "relative compaction",
+     "field dry density as a percentage of the laboratory maximum"
+    ],
+    [
+     "water content",
+     "mass of water divided by mass of dry solids in a soil, as a percentage"
+    ]
+   ]
   }
  ]
 }

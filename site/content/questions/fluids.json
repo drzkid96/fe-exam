@@ -49,6 +49,24 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ],
   "symbols": [
    [
     "p",
@@ -110,6 +128,24 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ],
   "symbols": [
    [
     "p",
@@ -171,6 +207,24 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ],
   "symbols": [
    [
     "p",
@@ -232,6 +286,24 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ],
   "symbols": [
    [
     "p",
@@ -294,7 +366,18 @@
   "family": "fluids-0002",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "fluids-0002-b",
@@ -347,7 +430,18 @@
   "family": "fluids-0002",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "fluids-0002-c",
@@ -400,7 +494,18 @@
   "family": "fluids-0002",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "fluids-0002-d",
@@ -453,7 +558,18 @@
   "family": "fluids-0002",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "fluids-0003",
@@ -497,6 +613,13 @@
    "alt": "A pipe narrowing from 200 mm to 100 mm in the direction of flow."
   },
   "lookup": true,
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "A_{1}",
@@ -566,6 +689,13 @@
    "alt": "A pipe narrowing from 300 mm to 150 mm in the direction of flow."
   },
   "lookup": true,
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "A_{1}",
@@ -635,6 +765,13 @@
    "alt": "A pipe narrowing from 150 mm to 100 mm in the direction of flow."
   },
   "lookup": true,
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "A_{1}",
@@ -704,6 +841,13 @@
    "alt": "A pipe narrowing from 400 mm to 200 mm in the direction of flow."
   },
   "lookup": true,
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "A_{1}",
@@ -782,6 +926,19 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
   "symbols": [
    [
     "V",
@@ -840,6 +997,19 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
   "symbols": [
    [
     "V",
@@ -898,6 +1068,19 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
   "symbols": [
    [
     "V",
@@ -956,6 +1139,19 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
   "symbols": [
    [
     "V",
@@ -1006,7 +1202,29 @@
    "svg": "<rect x='40' y='30' width='150' height='120' fill='#568CBB' fill-opacity='.25'/><line x1='20' y1='30' x2='190' y2='30' stroke='#568CBB' stroke-width='2'/><rect x='190' y='30' width='12' height='120' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='20' y1='150' x2='260' y2='150' stroke='#00242E' stroke-width='2'/><path d='M190 30 L190 150 L110 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='120' y1='110' x2='180' y2='110' stroke='#00574A' stroke-width='3'/><path d='M188 110 L176 104 L176 116 Z' fill='#00574A'/><text x='100' y='24' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Water surface</text><line x1='222' y1='30' x2='222' y2='150' stroke='#00242E'/><text x='230' y='94' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>3 m tall, 2 m wide</text><text x='112' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>F</text>",
    "alt": "A vertical gate 3 m tall and 2 m wide with its top at the water surface and a triangular pressure diagram."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "resultant",
+    "the single force that has the same effect as several forces acting together"
+   ],
+   [
+    "centroid",
+    "the geometric centre of an area, the point where it would balance if cut from uniform card"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0005-b",
@@ -1051,7 +1269,29 @@
    "svg": "<rect x='40' y='30' width='150' height='120' fill='#568CBB' fill-opacity='.25'/><line x1='20' y1='30' x2='190' y2='30' stroke='#568CBB' stroke-width='2'/><rect x='190' y='30' width='12' height='120' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='20' y1='150' x2='260' y2='150' stroke='#00242E' stroke-width='2'/><path d='M190 30 L190 150 L110 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='120' y1='110' x2='180' y2='110' stroke='#00574A' stroke-width='3'/><path d='M188 110 L176 104 L176 116 Z' fill='#00574A'/><text x='100' y='24' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Water surface</text><line x1='222' y1='30' x2='222' y2='150' stroke='#00242E'/><text x='230' y='94' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>2 m tall, 3 m wide</text><text x='112' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>F</text>",
    "alt": "A vertical gate 2 m tall and 3 m wide with its top at the water surface and a triangular pressure diagram."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "resultant",
+    "the single force that has the same effect as several forces acting together"
+   ],
+   [
+    "centroid",
+    "the geometric centre of an area, the point where it would balance if cut from uniform card"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0005-c",
@@ -1096,7 +1336,29 @@
    "svg": "<rect x='40' y='30' width='150' height='120' fill='#568CBB' fill-opacity='.25'/><line x1='20' y1='30' x2='190' y2='30' stroke='#568CBB' stroke-width='2'/><rect x='190' y='30' width='12' height='120' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='20' y1='150' x2='260' y2='150' stroke='#00242E' stroke-width='2'/><path d='M190 30 L190 150 L110 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='120' y1='110' x2='180' y2='110' stroke='#00574A' stroke-width='3'/><path d='M188 110 L176 104 L176 116 Z' fill='#00574A'/><text x='100' y='24' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Water surface</text><line x1='222' y1='30' x2='222' y2='150' stroke='#00242E'/><text x='230' y='94' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>4 m tall, 1.5 m wide</text><text x='112' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>F</text>",
    "alt": "A vertical gate 4 m tall and 1.5 m wide with its top at the water surface and a triangular pressure diagram."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "resultant",
+    "the single force that has the same effect as several forces acting together"
+   ],
+   [
+    "centroid",
+    "the geometric centre of an area, the point where it would balance if cut from uniform card"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0005-d",
@@ -1141,7 +1403,29 @@
    "svg": "<rect x='40' y='30' width='150' height='120' fill='#568CBB' fill-opacity='.25'/><line x1='20' y1='30' x2='190' y2='30' stroke='#568CBB' stroke-width='2'/><rect x='190' y='30' width='12' height='120' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='20' y1='150' x2='260' y2='150' stroke='#00242E' stroke-width='2'/><path d='M190 30 L190 150 L110 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='120' y1='110' x2='180' y2='110' stroke='#00574A' stroke-width='3'/><path d='M188 110 L176 104 L176 116 Z' fill='#00574A'/><text x='100' y='24' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Water surface</text><line x1='222' y1='30' x2='222' y2='150' stroke='#00242E'/><text x='230' y='94' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>2.5 m tall, 4 m wide</text><text x='112' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>F</text>",
    "alt": "A vertical gate 2.5 m tall and 4 m wide with its top at the water surface and a triangular pressure diagram."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "resultant",
+    "the single force that has the same effect as several forces acting together"
+   ],
+   [
+    "centroid",
+    "the geometric centre of an area, the point where it would balance if cut from uniform card"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0006",
@@ -1183,6 +1467,19 @@
    "alt": "A tank discharging through a 50 mm orifice 3 m below the water surface."
   },
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
   "symbols": [
    [
     "C_{d}",
@@ -1246,6 +1543,19 @@
    "alt": "A tank discharging through a 75 mm orifice 2 m below the water surface."
   },
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
   "symbols": [
    [
     "C_{d}",
@@ -1309,6 +1619,19 @@
    "alt": "A tank discharging through a 40 mm orifice 5 m below the water surface."
   },
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
   "symbols": [
    [
     "C_{d}",
@@ -1372,6 +1695,19 @@
    "alt": "A tank discharging through a 100 mm orifice 1.5 m below the water surface."
   },
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
   "symbols": [
    [
     "C_{d}",
@@ -1443,6 +1779,21 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "viscosity",
+    "a fluid's resistance to flowing; honey has a high viscosity, water a low one"
+   ],
+   [
+    "reynolds number",
+    "a ratio that tells whether flow is smooth (laminar, low values) or mixed and eddying (turbulent, high values)"
+   ],
+   [
+    "laminar",
+    "smooth, layered flow with no mixing between layers"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "V",
@@ -1502,6 +1853,21 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "viscosity",
+    "a fluid's resistance to flowing; honey has a high viscosity, water a low one"
+   ],
+   [
+    "reynolds number",
+    "a ratio that tells whether flow is smooth (laminar, low values) or mixed and eddying (turbulent, high values)"
+   ],
+   [
+    "laminar",
+    "smooth, layered flow with no mixing between layers"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "V",
@@ -1561,6 +1927,21 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "viscosity",
+    "a fluid's resistance to flowing; honey has a high viscosity, water a low one"
+   ],
+   [
+    "reynolds number",
+    "a ratio that tells whether flow is smooth (laminar, low values) or mixed and eddying (turbulent, high values)"
+   ],
+   [
+    "laminar",
+    "smooth, layered flow with no mixing between layers"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "V",
@@ -1620,6 +2001,21 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "viscosity",
+    "a fluid's resistance to flowing; honey has a high viscosity, water a low one"
+   ],
+   [
+    "reynolds number",
+    "a ratio that tells whether flow is smooth (laminar, low values) or mixed and eddying (turbulent, high values)"
+   ],
+   [
+    "laminar",
+    "smooth, layered flow with no mixing between layers"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "V",
@@ -1666,6 +2062,17 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "viscosity",
+    "a fluid's resistance to flowing; honey has a high viscosity, water a low one"
+   ],
+   [
+    "reynolds number",
+    "a ratio that tells whether flow is smooth (laminar, low values) or mixed and eddying (turbulent, high values)"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "m",
@@ -1712,6 +2119,17 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "viscosity",
+    "a fluid's resistance to flowing; honey has a high viscosity, water a low one"
+   ],
+   [
+    "reynolds number",
+    "a ratio that tells whether flow is smooth (laminar, low values) or mixed and eddying (turbulent, high values)"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "m",
@@ -1758,6 +2176,17 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "viscosity",
+    "a fluid's resistance to flowing; honey has a high viscosity, water a low one"
+   ],
+   [
+    "reynolds number",
+    "a ratio that tells whether flow is smooth (laminar, low values) or mixed and eddying (turbulent, high values)"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "m",
@@ -1804,6 +2233,17 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "viscosity",
+    "a fluid's resistance to flowing; honey has a high viscosity, water a low one"
+   ],
+   [
+    "reynolds number",
+    "a ratio that tells whether flow is smooth (laminar, low values) or mixed and eddying (turbulent, high values)"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "m",
@@ -1867,7 +2307,29 @@
    "svg": "<circle cx='70' cy='50' r='22' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><circle cx='330' cy='50' r='22' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><path d='M70 72 L70 150 L330 150 L330 72' fill='none' stroke='#00242E' stroke-width='10' stroke-opacity='.25'/><path d='M70 120 L70 150 L330 150 L330 84' fill='none' stroke='#1B795A' stroke-width='8'/><line x1='90' y1='120' x2='360' y2='120' stroke='#00242E' stroke-dasharray='4 4'/><line x1='310' y1='84' x2='360' y2='84' stroke='#00242E' stroke-dasharray='4 4'/><line x1='352' y1='84' x2='352' y2='120' stroke='#00242E'/><text x='362' y='106' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>0.2 m</text><text x='70' y='20' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Pipe 1</text><text x='330' y='20' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Pipe 2</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#1B795A'>Gauge liquid, specific gravity 13.6</text>",
    "alt": "A U-tube manometer between two water pipes at the same elevation, with a gauge liquid deflection of 0.2 m."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0009-b",
@@ -1921,7 +2383,29 @@
    "svg": "<circle cx='70' cy='50' r='22' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><circle cx='330' cy='50' r='22' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><path d='M70 72 L70 150 L330 150 L330 72' fill='none' stroke='#00242E' stroke-width='10' stroke-opacity='.25'/><path d='M70 120 L70 150 L330 150 L330 84' fill='none' stroke='#1B795A' stroke-width='8'/><line x1='90' y1='120' x2='360' y2='120' stroke='#00242E' stroke-dasharray='4 4'/><line x1='310' y1='84' x2='360' y2='84' stroke='#00242E' stroke-dasharray='4 4'/><line x1='352' y1='84' x2='352' y2='120' stroke='#00242E'/><text x='362' y='106' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>0.15 m</text><text x='70' y='20' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Pipe 1</text><text x='330' y='20' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Pipe 2</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#1B795A'>Gauge liquid, specific gravity 13.6</text>",
    "alt": "A U-tube manometer between two water pipes at the same elevation, with a gauge liquid deflection of 0.15 m."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0009-c",
@@ -1975,7 +2459,29 @@
    "svg": "<circle cx='70' cy='50' r='22' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><circle cx='330' cy='50' r='22' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><path d='M70 72 L70 150 L330 150 L330 72' fill='none' stroke='#00242E' stroke-width='10' stroke-opacity='.25'/><path d='M70 120 L70 150 L330 150 L330 84' fill='none' stroke='#1B795A' stroke-width='8'/><line x1='90' y1='120' x2='360' y2='120' stroke='#00242E' stroke-dasharray='4 4'/><line x1='310' y1='84' x2='360' y2='84' stroke='#00242E' stroke-dasharray='4 4'/><line x1='352' y1='84' x2='352' y2='120' stroke='#00242E'/><text x='362' y='106' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>0.3 m</text><text x='70' y='20' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Pipe 1</text><text x='330' y='20' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Pipe 2</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#1B795A'>Gauge liquid, specific gravity 13.6</text>",
    "alt": "A U-tube manometer between two water pipes at the same elevation, with a gauge liquid deflection of 0.3 m."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0009-d",
@@ -2029,7 +2535,29 @@
    "svg": "<circle cx='70' cy='50' r='22' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><circle cx='330' cy='50' r='22' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><path d='M70 72 L70 150 L330 150 L330 72' fill='none' stroke='#00242E' stroke-width='10' stroke-opacity='.25'/><path d='M70 120 L70 150 L330 150 L330 84' fill='none' stroke='#1B795A' stroke-width='8'/><line x1='90' y1='120' x2='360' y2='120' stroke='#00242E' stroke-dasharray='4 4'/><line x1='310' y1='84' x2='360' y2='84' stroke='#00242E' stroke-dasharray='4 4'/><line x1='352' y1='84' x2='352' y2='120' stroke='#00242E'/><text x='362' y='106' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>0.08 m</text><text x='70' y='20' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Pipe 1</text><text x='330' y='20' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Pipe 2</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#1B795A'>Gauge liquid, specific gravity 13.6</text>",
    "alt": "A U-tube manometer between two water pipes at the same elevation, with a gauge liquid deflection of 0.08 m."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0010",
@@ -2071,7 +2599,25 @@
    "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force = weight of water displaced</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>A floating body: buoyant force equals weight</text>",
    "alt": "Free-body diagram showing Weight, Buoyant force = weight of water displaced."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0010-b",
@@ -2113,7 +2659,25 @@
    "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force = weight of water displaced</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>A floating body: buoyant force equals weight</text>",
    "alt": "Free-body diagram showing Weight, Buoyant force = weight of water displaced."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0010-c",
@@ -2155,7 +2719,25 @@
    "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force = weight of water displaced</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>A floating body: buoyant force equals weight</text>",
    "alt": "Free-body diagram showing Weight, Buoyant force = weight of water displaced."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0010-d",
@@ -2197,7 +2779,25 @@
    "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force = weight of water displaced</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>A floating body: buoyant force equals weight</text>",
    "alt": "Free-body diagram showing Weight, Buoyant force = weight of water displaced."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0011",
@@ -2248,6 +2848,19 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "p_{2}",
@@ -2316,6 +2929,19 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "p_{2}",
@@ -2384,6 +3010,19 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "p_{2}",
@@ -2452,6 +3091,19 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "p_{2}",
@@ -2506,6 +3158,19 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "momentum",
+    "mass times velocity; a force acting for a time changes it"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "F",
@@ -2560,6 +3225,19 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "momentum",
+    "mass times velocity; a force acting for a time changes it"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "F",
@@ -2614,6 +3292,19 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "momentum",
+    "mass times velocity; a force acting for a time changes it"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "F",
@@ -2668,6 +3359,19 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "momentum",
+    "mass times velocity; a force acting for a time changes it"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "F",
@@ -2736,6 +3440,23 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ],
+   [
+    "head loss",
+    "energy, expressed as a height of fluid, used up by friction and fittings"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "h_{f}",
@@ -2804,6 +3525,23 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ],
+   [
+    "head loss",
+    "energy, expressed as a height of fluid, used up by friction and fittings"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "h_{f}",
@@ -2872,6 +3610,23 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ],
+   [
+    "head loss",
+    "energy, expressed as a height of fluid, used up by friction and fittings"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "h_{f}",
@@ -2940,6 +3695,23 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ],
+   [
+    "head loss",
+    "energy, expressed as a height of fluid, used up by friction and fittings"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "h_{f}",
@@ -2995,6 +3767,19 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "momentum",
+    "mass times velocity; a force acting for a time changes it"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "F_{x}",
@@ -3054,6 +3839,19 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "momentum",
+    "mass times velocity; a force acting for a time changes it"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "F_{x}",
@@ -3113,6 +3911,19 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "momentum",
+    "mass times velocity; a force acting for a time changes it"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "F_{x}",
@@ -3172,6 +3983,19 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "momentum",
+    "mass times velocity; a force acting for a time changes it"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "F_{x}",
@@ -3229,7 +4053,29 @@
   "family": "fluids-0015",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0015-b",
@@ -3265,7 +4111,29 @@
   "family": "fluids-0015",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0015-c",
@@ -3301,7 +4169,29 @@
   "family": "fluids-0015",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0015-d",
@@ -3337,7 +4227,29 @@
   "family": "fluids-0015",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ],
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0016",
@@ -3375,6 +4287,23 @@
   "version": 1,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "momentum",
+    "mass times velocity; a force acting for a time changes it"
+   ],
+   [
+    "resultant",
+    "the single force that has the same effect as several forces acting together"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "p",
@@ -3422,6 +4351,23 @@
   "version": 2,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "momentum",
+    "mass times velocity; a force acting for a time changes it"
+   ],
+   [
+    "resultant",
+    "the single force that has the same effect as several forces acting together"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "p",
@@ -3469,6 +4415,23 @@
   "version": 3,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "momentum",
+    "mass times velocity; a force acting for a time changes it"
+   ],
+   [
+    "resultant",
+    "the single force that has the same effect as several forces acting together"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "p",
@@ -3516,6 +4479,23 @@
   "version": 4,
   "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "momentum",
+    "mass times velocity; a force acting for a time changes it"
+   ],
+   [
+    "resultant",
+    "the single force that has the same effect as several forces acting together"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "p",
@@ -3567,7 +4547,25 @@
    "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Raft weight + cargo</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force on the whole volume</text>",
    "alt": "Free-body diagram showing Raft weight + cargo, Buoyant force on the whole volume."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0017-b",
@@ -3609,7 +4607,25 @@
    "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Raft weight + cargo</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force on the whole volume</text>",
    "alt": "Free-body diagram showing Raft weight + cargo, Buoyant force on the whole volume."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0017-c",
@@ -3651,7 +4667,25 @@
    "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Raft weight + cargo</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force on the whole volume</text>",
    "alt": "Free-body diagram showing Raft weight + cargo, Buoyant force on the whole volume."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0017-d",
@@ -3693,7 +4727,25 @@
    "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Raft weight + cargo</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force on the whole volume</text>",
    "alt": "Free-body diagram showing Raft weight + cargo, Buoyant force on the whole volume."
   },
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0018",
@@ -3728,8 +4780,26 @@
   },
   "family": "fluids-0018",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 140",
+   "svg": "<path d='M30 40 L170 40 L230 58 L370 58 L370 92 L230 92 L170 110 L30 110 Z' fill='#568CBB' fill-opacity='.25' stroke='#00242E' stroke-width='2'/><line x1='60' y1='75' x2='110' y2='75' stroke='#00574A' stroke-width='3'/><path d='M118 75 L104 69 L104 81 Z' fill='#00574A'/><text x='100' y='30' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>200 mm</text><text x='300' y='48' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>100 mm</text><text x='100' y='130' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 1</text><text x='300' y='112' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 2</text>",
+   "alt": "A pipe narrowing from 200 mm to 100 mm in the direction of flow."
+  },
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
   "symbols": [
    [
     "C_{v}",
@@ -3786,8 +4856,26 @@
   },
   "family": "fluids-0018",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 140",
+   "svg": "<path d='M30 40 L170 40 L230 58 L370 58 L370 92 L230 92 L170 110 L30 110 Z' fill='#568CBB' fill-opacity='.25' stroke='#00242E' stroke-width='2'/><line x1='60' y1='75' x2='110' y2='75' stroke='#00574A' stroke-width='3'/><path d='M118 75 L104 69 L104 81 Z' fill='#00574A'/><text x='100' y='30' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>300 mm</text><text x='300' y='48' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>150 mm</text><text x='100' y='130' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 1</text><text x='300' y='112' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 2</text>",
+   "alt": "A pipe narrowing from 300 mm to 150 mm in the direction of flow."
+  },
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
   "symbols": [
    [
     "C_{v}",
@@ -3844,8 +4932,102 @@
   },
   "family": "fluids-0018",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 140",
+   "svg": "<path d='M30 40 L170 40 L230 58 L370 58 L370 92 L230 92 L170 110 L30 110 Z' fill='#568CBB' fill-opacity='.25' stroke='#00242E' stroke-width='2'/><line x1='60' y1='75' x2='110' y2='75' stroke='#00574A' stroke-width='3'/><path d='M118 75 L104 69 L104 81 Z' fill='#00574A'/><text x='100' y='30' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>150 mm</text><text x='300' y='48' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>90 mm</text><text x='100' y='130' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 1</text><text x='300' y='112' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 2</text>",
+   "alt": "A pipe narrowing from 150 mm to 90 mm in the direction of flow."
+  },
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
+  "symbols": [
+   [
+    "C_{v}",
+    "venturi meter coefficient"
+   ],
+   [
+    "A_{2}",
+    "flow area at section 2 (the throat)"
+   ],
+   [
+    "A_{1}",
+    "flow area at section 1"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0018-d",
+  "topic": "fluids",
+  "subtopic": "fluids-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A venturi meter in a 250 mm water pipe has a 125 mm throat. The piezometric head drops by 0.7 m between inlet and throat, and the meter coefficient is 0.98. What is the flow rate? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 46.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "A venturi speeds the flow up in its throat, and Bernoulli's equation turns the resulting drop in head into a velocity. Continuity brings in the area ratio: Q = C_{v} A_{2} × square root of (2 g × head drop / (1 - (A_{2}/A_{1})^{2})).",
+  "solution": "A_{2} = \\frac{π(0.125)^{2}}{4} = 0.01227 m^{2}, and (A_{2}/A_{1})^{2} = (125 / 250)^{4} = 0.0625.\n\nQ = 0.98(0.01227) \\sqrt{\\frac{2(9.81)(0.7)}{1 - 0.0625}} = 0.04603 m^{3}/s = 46.0 L/s.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "venturi meters"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0018",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 140",
+   "svg": "<path d='M30 40 L170 40 L230 58 L370 58 L370 92 L230 92 L170 110 L30 110 Z' fill='#568CBB' fill-opacity='.25' stroke='#00242E' stroke-width='2'/><line x1='60' y1='75' x2='110' y2='75' stroke='#00574A' stroke-width='3'/><path d='M118 75 L104 69 L104 81 Z' fill='#00574A'/><text x='100' y='30' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>250 mm</text><text x='300' y='48' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>125 mm</text><text x='100' y='130' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 1</text><text x='300' y='112' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 2</text>",
+   "alt": "A pipe narrowing from 250 mm to 125 mm in the direction of flow."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
   "symbols": [
    [
     "C_{v}",
@@ -3902,8 +5084,21 @@
   },
   "family": "fluids-0019",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
   "symbols": [
    [
     "Q",
@@ -3948,8 +5143,21 @@
   },
   "family": "fluids-0019",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
   "symbols": [
    [
     "Q",
@@ -3994,8 +5202,80 @@
   },
   "family": "fluids-0019",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
+  "symbols": [
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0019-d",
+  "topic": "fluids",
+  "subtopic": "fluids-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A 90° V-notch weir has a head of 0.33 m above the bottom of the notch. Using Q = 1.40 H^{5/2} in SI units, what is the discharge?",
+  "answer": {
+   "value": 87.6,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "Flow through a triangular notch grows with the head to the 5/2 power, because both the depth and the width of the flow section increase with head. That makes a V-notch sensitive at low flows.",
+  "solution": "Q = 1.40(0.33)^{2.5} = 1.40 × 0.06256 = 0.08758 m^{3}/s = 87.6 L/s.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "weir formulas"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0019",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
   "symbols": [
    [
     "Q",
@@ -4040,8 +5320,15 @@
   },
   "family": "fluids-0020",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -4090,8 +5377,15 @@
   },
   "family": "fluids-0020",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -4140,8 +5434,72 @@
   },
   "family": "fluids-0020",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
+  "symbols": [
+   [
+    "A",
+    "area"
+   ],
+   [
+    "Q",
+    "flow rate"
+   ],
+   [
+    "s",
+    "second"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0020-d",
+  "topic": "fluids",
+  "subtopic": "fluids-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An orifice plate with a 62 mm opening and a discharge coefficient of 0.62 is installed in a water line. The pressure drop across it is 24 kPa. What is the flow rate? Take the density of water as 1,000 kg/m^{3} and ignore the approach velocity.",
+  "answer": {
+   "value": 12.97,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "L/s"
+  },
+  "eli5": "An orifice turns pressure into velocity: the ideal velocity is the square root of (2 × pressure drop / density). The discharge coefficient allows for the contraction of the jet and for friction.",
+  "solution": "A = \\frac{π(0.062)^{2}}{4} = 0.003019 m^{2}.\n\nQ = 0.62(0.003019) \\sqrt{\\frac{2(24,000)}{1,000}} = 0.01297 m^{3}/s = 12.97 L/s.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "orifices"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0020",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "fluids-d",
+    "fluids",
+    "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+   ]
+  ],
   "symbols": [
    [
     "A",
@@ -4190,8 +5548,15 @@
   },
   "family": "fluids-0021",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "h",
@@ -4232,8 +5597,15 @@
   },
   "family": "fluids-0021",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "h",
@@ -4274,8 +5646,64 @@
   },
   "family": "fluids-0021",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [],
+  "symbols": [
+   [
+    "h",
+    "depth below the surface, or head"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0021-d",
+  "topic": "fluids",
+  "subtopic": "fluids-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A clean glass tube with an inside diameter of 0.8 mm stands in water. The surface tension is 0.0712 N/m and the contact angle is 0°. How high does the water rise in the tube? Use 9,810 N/m^{3} for water.",
+  "answer": {
+   "value": 36.3,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "mm"
+  },
+  "eli5": "Surface tension pulling up around the tube's wall supports the weight of the raised column: h = 4 (surface tension) cos(contact angle) / (specific weight × diameter). Narrower tubes give a higher rise.",
+  "solution": "h = \\frac{4(0.0712)(1)}{9,810(0.0008)} = 0.03629 m = 36.3 mm.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "capillary rise"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0021",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "h",
@@ -4316,8 +5744,19 @@
   },
   "family": "fluids-0022",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "viscosity",
+    "a fluid's resistance to flowing; honey has a high viscosity, water a low one"
+   ],
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "fluids-0022-b",
@@ -4352,8 +5791,19 @@
   },
   "family": "fluids-0022",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "viscosity",
+    "a fluid's resistance to flowing; honey has a high viscosity, water a low one"
+   ],
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "fluids-0022-c",
@@ -4388,8 +5838,66 @@
   },
   "family": "fluids-0022",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "viscosity",
+    "a fluid's resistance to flowing; honey has a high viscosity, water a low one"
+   ],
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ]
+  ],
+  "needs": []
+ },
+ {
+  "id": "fluids-0022-d",
+  "topic": "fluids",
+  "subtopic": "fluids-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A flat plate with an area of 0.35 m^{2} slides at 1.2 m/s over a fixed surface on an oil film 1.2 mm thick. The oil's dynamic viscosity is 0.17 Pa·s. What force keeps the plate moving?",
+  "answer": {
+   "value": 59.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "For a thin film the velocity varies linearly across the gap, so the shear stress is viscosity times velocity divided by film thickness (Newton's law of viscosity). Force is stress times area.",
+  "solution": "Shear stress = \\frac{0.17(1.2)}{0.0012} = 170.0 Pa.\n\nForce = 170.0 × 0.35 = 59.5 N.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "stress, pressure, and viscosity"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0022",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "viscosity",
+    "a fluid's resistance to flowing; honey has a high viscosity, water a low one"
+   ],
+   [
+    "shear stress",
+    "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "fluids-0023",
@@ -4424,8 +5932,15 @@
   },
   "family": "fluids-0023",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "fluids-0023-b",
@@ -4460,8 +5975,15 @@
   },
   "family": "fluids-0023",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "fluids-0023-c",
@@ -4496,8 +6018,58 @@
   },
   "family": "fluids-0023",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": []
+ },
+ {
+  "id": "fluids-0023-d",
+  "topic": "fluids",
+  "subtopic": "fluids-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sample weighs 85.0 N in air and 52.5 N when fully submerged in water. What is its specific gravity?",
+  "answer": {
+   "value": 2.615,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": ""
+  },
+  "eli5": "The loss of weight in water equals the weight of water displaced, which has the sample's volume. Specific gravity is therefore the weight in air divided by the loss of weight.",
+  "solution": "SG = \\frac{85.0}{85.0 - 52.5} = \\frac{85.0}{32.5} = 2.615.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "buoyancy"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0023",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "specific gravity",
+    "density of a substance divided by the density of water; it has no units"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "fluids-0024",
@@ -4532,8 +6104,40 @@
   },
   "family": "fluids-0024",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='60' y='30' width='150' height='130' fill='#568CBB' fill-opacity='.25'/><line x1='40' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><line x1='210' y1='14' x2='210' y2='160' stroke='#00242E' stroke-width='3'/><rect x='205' y='78' width='10' height='72' fill='#1B795A'/><path d='M205 78 L181 78 L145 150 L205 150 Z' fill='#D9F1D6' stroke='#1B795A'/><line x1='240' y1='30' x2='240' y2='78' stroke='#00242E'/><text x='248' y='58' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>2 m</text><text x='248' y='118' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>gate 3 m tall</text>",
+   "alt": "A vertical gate 3 m high whose top is 2 m below the water surface, with the pressure diagram on it."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='60' y='30' width='150' height='130' fill='#568CBB' fill-opacity='.25'/><line x1='40' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><line x1='210' y1='14' x2='210' y2='160' stroke='#00242E' stroke-width='3'/><rect x='205' y='78' width='10' height='72' fill='#1B795A'/><path d='M205 78 L181 78 L145 150 L205 150 Z' fill='#D9F1D6' stroke='#1B795A'/><line x1='240' y1='30' x2='240' y2='78' stroke='#00242E'/><text x='248' y='58' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>2 m</text><text x='248' y='118' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>gate 3 m tall</text><line x1='120' y1='119' x2='195' y2='119' stroke='#00574A' stroke-width='3'/><path d='M203 119 L191 113 L191 125 Z' fill='#00574A'/><text x='116' y='123' text-anchor='end' font-size='11' font-weight='600' fill='#00574A'>F at 3.714 m</text>",
+   "alt": "A vertical gate 3 m high whose top is 2 m below the water surface, with the pressure diagram on it."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "resultant",
+    "the single force that has the same effect as several forces acting together"
+   ],
+   [
+    "centroid",
+    "the geometric centre of an area, the point where it would balance if cut from uniform card"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0024-b",
@@ -4568,8 +6172,40 @@
   },
   "family": "fluids-0024",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='60' y='30' width='150' height='130' fill='#568CBB' fill-opacity='.25'/><line x1='40' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><line x1='210' y1='14' x2='210' y2='160' stroke='#00242E' stroke-width='3'/><rect x='205' y='70' width='10' height='80' fill='#1B795A'/><path d='M205 70 L185 70 L145 150 L205 150 Z' fill='#D9F1D6' stroke='#1B795A'/><line x1='240' y1='30' x2='240' y2='70' stroke='#00242E'/><text x='248' y='54' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1 m</text><text x='248' y='114' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>gate 2 m tall</text>",
+   "alt": "A vertical gate 2 m high whose top is 1 m below the water surface, with the pressure diagram on it."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='60' y='30' width='150' height='130' fill='#568CBB' fill-opacity='.25'/><line x1='40' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><line x1='210' y1='14' x2='210' y2='160' stroke='#00242E' stroke-width='3'/><rect x='205' y='70' width='10' height='80' fill='#1B795A'/><path d='M205 70 L185 70 L145 150 L205 150 Z' fill='#D9F1D6' stroke='#1B795A'/><line x1='240' y1='30' x2='240' y2='70' stroke='#00242E'/><text x='248' y='54' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1 m</text><text x='248' y='114' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>gate 2 m tall</text><line x1='120' y1='117' x2='195' y2='117' stroke='#00574A' stroke-width='3'/><path d='M203 117 L191 111 L191 123 Z' fill='#00574A'/><text x='116' y='121' text-anchor='end' font-size='11' font-weight='600' fill='#00574A'>F at 2.167 m</text>",
+   "alt": "A vertical gate 2 m high whose top is 1 m below the water surface, with the pressure diagram on it."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "resultant",
+    "the single force that has the same effect as several forces acting together"
+   ],
+   [
+    "centroid",
+    "the geometric centre of an area, the point where it would balance if cut from uniform card"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0024-c",
@@ -4604,8 +6240,108 @@
   },
   "family": "fluids-0024",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='60' y='30' width='150' height='130' fill='#568CBB' fill-opacity='.25'/><line x1='40' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><line x1='210' y1='14' x2='210' y2='160' stroke='#00242E' stroke-width='3'/><rect x='205' y='117' width='10' height='33' fill='#1B795A'/><path d='M205 117 L161 117 L145 150 L205 150 Z' fill='#D9F1D6' stroke='#1B795A'/><line x1='240' y1='30' x2='240' y2='117' stroke='#00242E'/><text x='248' y='78' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>4 m</text><text x='248' y='138' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>gate 1.5 m tall</text>",
+   "alt": "A vertical gate 1.5 m high whose top is 4 m below the water surface, with the pressure diagram on it."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='60' y='30' width='150' height='130' fill='#568CBB' fill-opacity='.25'/><line x1='40' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><line x1='210' y1='14' x2='210' y2='160' stroke='#00242E' stroke-width='3'/><rect x='205' y='117' width='10' height='33' fill='#1B795A'/><path d='M205 117 L161 117 L145 150 L205 150 Z' fill='#D9F1D6' stroke='#1B795A'/><line x1='240' y1='30' x2='240' y2='117' stroke='#00242E'/><text x='248' y='78' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>4 m</text><text x='248' y='138' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>gate 1.5 m tall</text><line x1='120' y1='134' x2='195' y2='134' stroke='#00574A' stroke-width='3'/><path d='M203 134 L191 128 L191 140 Z' fill='#00574A'/><text x='116' y='138' text-anchor='end' font-size='11' font-weight='600' fill='#00574A'>F at 4.789 m</text>",
+   "alt": "A vertical gate 1.5 m high whose top is 4 m below the water surface, with the pressure diagram on it."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "resultant",
+    "the single force that has the same effect as several forces acting together"
+   ],
+   [
+    "centroid",
+    "the geometric centre of an area, the point where it would balance if cut from uniform card"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0024-d",
+  "topic": "fluids",
+  "subtopic": "fluids-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A vertical rectangular gate is 2.5 m tall. Its top edge is 2.0 m below the water surface. How far below the surface is the centre of pressure?",
+  "answer": {
+   "value": 3.41,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Pressure grows with depth, so the resultant force acts below the centroid of the gate. The centre of pressure is at the centroid depth plus I / (centroid depth × A); for a rectangle that extra distance is h^{2} / (12 × centroid depth).",
+  "solution": "Centroid depth = 2.0 + \\frac{2.5}{2} = 3.25 m.\n\nCentre of pressure = 3.25 + \\frac{2.5^{2}}{12(3.25)} = 3.410 m.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "center of pressure"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0024",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='60' y='30' width='150' height='130' fill='#568CBB' fill-opacity='.25'/><line x1='40' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><line x1='210' y1='14' x2='210' y2='160' stroke='#00242E' stroke-width='3'/><rect x='205' y='83' width='10' height='67' fill='#1B795A'/><path d='M205 83 L178 83 L145 150 L205 150 Z' fill='#D9F1D6' stroke='#1B795A'/><line x1='240' y1='30' x2='240' y2='83' stroke='#00242E'/><text x='248' y='61' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>2 m</text><text x='248' y='121' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>gate 2.5 m tall</text>",
+   "alt": "A vertical gate 2.5 m high whose top is 2 m below the water surface, with the pressure diagram on it."
+  },
+  "solutionFigure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='60' y='30' width='150' height='130' fill='#568CBB' fill-opacity='.25'/><line x1='40' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><line x1='210' y1='14' x2='210' y2='160' stroke='#00242E' stroke-width='3'/><rect x='205' y='83' width='10' height='67' fill='#1B795A'/><path d='M205 83 L178 83 L145 150 L205 150 Z' fill='#D9F1D6' stroke='#1B795A'/><line x1='240' y1='30' x2='240' y2='83' stroke='#00242E'/><text x='248' y='61' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>2 m</text><text x='248' y='121' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>gate 2.5 m tall</text><line x1='120' y1='121' x2='195' y2='121' stroke='#00574A' stroke-width='3'/><path d='M203 121 L191 115 L191 127 Z' fill='#00574A'/><text x='116' y='125' text-anchor='end' font-size='11' font-weight='600' fill='#00574A'>F at 3.410 m</text>",
+   "alt": "A vertical gate 2.5 m high whose top is 2 m below the water surface, with the pressure diagram on it."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "resultant",
+    "the single force that has the same effect as several forces acting together"
+   ],
+   [
+    "centroid",
+    "the geometric centre of an area, the point where it would balance if cut from uniform card"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0025",
@@ -4653,8 +6389,20 @@
   },
   "family": "fluids-0025",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ],
   "symbols": [
    [
     "F_{2}",
@@ -4720,8 +6468,20 @@
   },
   "family": "fluids-0025",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ],
   "symbols": [
    [
     "F_{2}",
@@ -4787,8 +6547,99 @@
   },
   "family": "fluids-0025",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ],
+  "symbols": [
+   [
+    "F_{2}",
+    "force on the output piston"
+   ],
+   [
+    "F_{1}",
+    "force on the input piston"
+   ],
+   [
+    "d_{2}",
+    "diameter at section 2"
+   ],
+   [
+    "d_{1}",
+    "diameter at section 1"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0025-d",
+  "topic": "fluids",
+  "subtopic": "fluids-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A hydraulic jack has an input piston 22 mm in diameter and an output piston 125 mm in diameter. A force of 175 N is applied to the input piston. Ignoring friction, what force does the output piston deliver?",
+  "options": [
+   {
+    "id": "a",
+    "text": "994 N"
+   },
+   {
+    "id": "b",
+    "text": "2,825 N"
+   },
+   {
+    "id": "c",
+    "text": "5,650 N"
+   },
+   {
+    "id": "d",
+    "text": "32,100 N"
+   }
+  ],
+  "answer": "c",
+  "eli5": "Pressure in a confined static fluid is the same throughout (Pascal's law). The same pressure on a larger piston gives a larger force, in proportion to the areas, which go with diameter squared.",
+  "solution": "F_{2} = F_{1} (\\frac{d_{2}}{d_{1}})^{2} = 175 (\\frac{125}{22})^{2} = 5,650 N.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pressure field in a static liquid"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0025",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ],
   "symbols": [
    [
     "F_{2}",
@@ -4841,8 +6692,31 @@
   },
   "family": "fluids-0026",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='60' y='30' width='150' height='130' fill='#568CBB' fill-opacity='.25'/><line x1='40' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><line x1='210' y1='14' x2='210' y2='160' stroke='#00242E' stroke-width='3'/><rect x='205' y='119' width='10' height='31' fill='#1B795A'/><path d='M205 119 L161 119 L145 150 L205 150 Z' fill='#D9F1D6' stroke='#1B795A'/><line x1='240' y1='30' x2='240' y2='119' stroke='#00242E'/><text x='248' y='78' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>3.4 m</text><text x='248' y='138' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1.2 m diameter cover</text>",
+   "alt": "A vertical circular cover 1.2 m high whose top is 3.4 m below the water surface, with the pressure diagram on it."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "centroid",
+    "the geometric centre of an area, the point where it would balance if cut from uniform card"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0026-b",
@@ -4877,8 +6751,31 @@
   },
   "family": "fluids-0026",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='60' y='30' width='150' height='130' fill='#568CBB' fill-opacity='.25'/><line x1='40' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><line x1='210' y1='14' x2='210' y2='160' stroke='#00242E' stroke-width='3'/><rect x='205' y='136' width='10' height='14' fill='#1B795A'/><path d='M205 136 L152 136 L145 150 L205 150 Z' fill='#D9F1D6' stroke='#1B795A'/><line x1='240' y1='30' x2='240' y2='136' stroke='#00242E'/><text x='248' y='87' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>6.1 m</text><text x='248' y='147' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>0.8 m diameter cover</text>",
+   "alt": "A vertical circular cover 0.8 m high whose top is 6.1 m below the water surface, with the pressure diagram on it."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "centroid",
+    "the geometric centre of an area, the point where it would balance if cut from uniform card"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0026-c",
@@ -4913,8 +6810,90 @@
   },
   "family": "fluids-0026",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='60' y='30' width='150' height='130' fill='#568CBB' fill-opacity='.25'/><line x1='40' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><line x1='210' y1='14' x2='210' y2='160' stroke='#00242E' stroke-width='3'/><rect x='205' y='90' width='10' height='60' fill='#1B795A'/><path d='M205 90 L175 90 L145 150 L205 150 Z' fill='#D9F1D6' stroke='#1B795A'/><line x1='240' y1='30' x2='240' y2='90' stroke='#00242E'/><text x='248' y='64' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>2 m</text><text x='248' y='124' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>2 m diameter cover</text>",
+   "alt": "A vertical circular cover 2 m high whose top is 2 m below the water surface, with the pressure diagram on it."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "centroid",
+    "the geometric centre of an area, the point where it would balance if cut from uniform card"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0026-d",
+  "topic": "fluids",
+  "subtopic": "fluids-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A circular access cover 1.0 m in diameter is set in the vertical wall of a water tank. Its centre is 5.2 m below the water surface. What is the hydrostatic force on the cover? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 40.06,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kN"
+  },
+  "eli5": "The force on any flat submerged surface is the pressure at its centroid times its area. The shape affects only the area and where the force acts.",
+  "solution": "F = (9.81)(5.2) × \\frac{π(1.0)^{2}}{4} = 51.01 × 0.7854 = 40.06 kN.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "forces on submerged surfaces"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0026",
+  "version": 4,
+  "versions": 4,
+  "figure": {
+   "viewBox": "0 0 400 170",
+   "svg": "<rect x='60' y='30' width='150' height='130' fill='#568CBB' fill-opacity='.25'/><line x1='40' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><line x1='210' y1='14' x2='210' y2='160' stroke='#00242E' stroke-width='3'/><rect x='205' y='129' width='10' height='21' fill='#1B795A'/><path d='M205 129 L156 129 L145 150 L205 150 Z' fill='#D9F1D6' stroke='#1B795A'/><line x1='240' y1='30' x2='240' y2='129' stroke='#00242E'/><text x='248' y='83' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>4.7 m</text><text x='248' y='143' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>1 m diameter cover</text>",
+   "alt": "A vertical circular cover 1 m high whose top is 4.7 m below the water surface, with the pressure diagram on it."
+  },
+  "lookup": true,
+  "terms": [
+   [
+    "centroid",
+    "the geometric centre of an area, the point where it would balance if cut from uniform card"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-b",
+    "fluids",
+    "Fluid Mechanics: Fluid properties"
+   ],
+   [
+    "statics-e",
+    "statics",
+    "Statics: Centroid of area"
+   ]
+  ]
  },
  {
   "id": "fluids-0027",
@@ -4949,8 +6928,21 @@
   },
   "family": "fluids-0027",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "h",
@@ -4995,8 +6987,21 @@
   },
   "family": "fluids-0027",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "h",
@@ -5041,8 +7046,80 @@
   },
   "family": "fluids-0027",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
+  "symbols": [
+   [
+    "h",
+    "depth below the surface, or head"
+   ],
+   [
+    "K",
+    "minor loss coefficient"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0027-d",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Water flows at 2.5 m/s through a fitting with a loss coefficient of 5.5. What head is lost in the fitting? Use g = 9.81 m/s^{2}.",
+  "answer": {
+   "value": 1.752,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m"
+  },
+  "eli5": "Losses in fittings, valves, bends and entrances are written as a coefficient times the velocity head, v^{2} / 2g. They add to the friction loss in the pipe.",
+  "solution": "h = K \\frac{v^{2}}{2g} = 5.5 × \\frac{2.5^{2}}{2(9.81)} = 1.752 m.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "minor losses"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0027",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "h",
@@ -5102,6 +7179,23 @@
   "version": 1,
   "versions": 3,
   "lookup": true,
+  "terms": [
+   [
+    "laminar",
+    "smooth, layered flow with no mixing between layers"
+   ],
+   [
+    "reynolds number",
+    "a ratio that tells whether flow is smooth (laminar, low values) or mixed and eddying (turbulent, high values)"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "f",
@@ -5157,6 +7251,23 @@
   "version": 2,
   "versions": 3,
   "lookup": true,
+  "terms": [
+   [
+    "laminar",
+    "smooth, layered flow with no mixing between layers"
+   ],
+   [
+    "reynolds number",
+    "a ratio that tells whether flow is smooth (laminar, low values) or mixed and eddying (turbulent, high values)"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "f",
@@ -5212,6 +7323,23 @@
   "version": 3,
   "versions": 3,
   "lookup": true,
+  "terms": [
+   [
+    "laminar",
+    "smooth, layered flow with no mixing between layers"
+   ],
+   [
+    "reynolds number",
+    "a ratio that tells whether flow is smooth (laminar, low values) or mixed and eddying (turbulent, high values)"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "f",
@@ -5252,8 +7380,25 @@
   },
   "family": "fluids-0029",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ],
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ]
  },
  {
   "id": "fluids-0029-b",
@@ -5288,8 +7433,25 @@
   },
   "family": "fluids-0029",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ],
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ]
  },
  {
   "id": "fluids-0029-c",
@@ -5324,8 +7486,78 @@
   },
   "family": "fluids-0029",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ],
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0029-d",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A turbine receives 7.8 m^{3}/s of water under a net head of 82 m and is 89% efficient. What power does it deliver? Use 9.81 kN/m^{3}.",
+  "answer": {
+   "value": 5584.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "kW"
+  },
+  "eli5": "The power available in flowing water is specific weight × flow × head. A turbine delivers that times its efficiency; a pump needs that divided by its efficiency.",
+  "solution": "Water power = 9.81(7.8)(82) = 6,274 kW.\n\nOutput = 0.89 × 6,274 = 5,584 kW.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "pump power equation"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0029",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "head",
+    "energy of a fluid expressed as a height of that fluid, in metres or feet"
+   ],
+   [
+    "specific weight",
+    "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+   ]
+  ],
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ]
  },
  {
   "id": "fluids-0030",
@@ -5360,8 +7592,15 @@
   },
   "family": "fluids-0030",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "C_{D}",
@@ -5414,8 +7653,15 @@
   },
   "family": "fluids-0030",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "C_{D}",
@@ -5468,8 +7714,76 @@
   },
   "family": "fluids-0030",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": true,
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
+  "symbols": [
+   [
+    "C_{D}",
+    "drag coefficient"
+   ],
+   [
+    "F",
+    "force"
+   ],
+   [
+    "V",
+    "velocity"
+   ],
+   [
+    "A",
+    "area"
+   ]
+  ]
+ },
+ {
+  "id": "fluids-0030-d",
+  "topic": "fluids",
+  "subtopic": "fluids-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A sign panel with an area of 1.4 m^{2} faces a 15.8 m/s flow of fluid with a density of 1.2 kg/m^{3}. Its drag coefficient is 1.10. What is the drag force on it?",
+  "answer": {
+   "value": 230.7,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "N"
+  },
+  "eli5": "Drag on a body is the drag coefficient times the dynamic pressure, (1/2)(density)(velocity)^{2}, times the projected area facing the flow.",
+  "solution": "F = \\frac{C_{D} (density) V^{2} A}{2} = \\frac{1.10(1.2)(15.8)^{2}(1.4)}{2} = 230.7 N.",
+  "handbook": [
+   {
+    "section": "Fluid Mechanics",
+    "page": "177–203",
+    "find": [
+     "drag force"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "fluids-0030",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "needs": [
+   [
+    "fluids-c",
+    "fluids",
+    "Fluid Mechanics: Fluid statics"
+   ]
+  ],
   "symbols": [
    [
     "C_{D}",

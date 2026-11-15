@@ -65,14 +65,15 @@
     ]
    },
    "bridge": {
-    "keep": "Summing forces, and the idea of a moment as force times distance.",
-    "rusty": [
-     "Free-body diagrams drawn quickly and completely. Every later structures topic depends on them.",
-     "Centroids and moments of inertia of built-up shapes, including the parallel axis theorem.",
-     "Truss methods and friction with impending motion."
+    "plain": "Statics is the study of things that do not move. If an object stays still, every push on it is cancelled by another, and every turning effect is cancelled too. From that one fact you can find the unknown forces holding it up.",
+    "core": [
+     "A force has a size and a direction; split it into a horizontal and a vertical part.",
+     "A moment is a force's turning effect: force times perpendicular distance.",
+     "Draw the object alone with every force on it (a free-body diagram), then write: sum of horizontal forces = 0, sum of vertical forces = 0, sum of moments = 0.",
+     "Shape properties, the centroid and the moment of inertia, are found by adding up simple pieces."
     ],
-    "work": "Sign and signal structures are statics problems: a mast arm is a cantilever carrying signal heads and wind on its signs, and the foundation resists the overturning moment. Reactions come up again in every beam question.",
-    "exam": "Get reactions down to a minute or two. They are the first step of a large share of the exam."
+    "links": "Everything structural starts here: mechanics of materials turns these forces into stresses, structural analysis applies them to beams and frames, geotechnics uses them for walls and slopes, and fluids uses them for water pressure on surfaces.",
+    "exam": "Finding support reactions is the first step of a large share of exam questions, so it is the first skill to rebuild."
    }
   },
   {
@@ -175,6 +176,32 @@
       "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='304' y2='35' stroke='#00574A' stroke-width='3'/><path d='M314 30 L301 30 L307 40 Z' fill='#00574A'/><text x='324' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>F = 850 N</text><line x1='70' y1='160' x2='303' y2='160' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M314 160 L303 154 L303 166 Z' fill='#568CBB'/><text x='324' y='152' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>Fx = 750.0 N</text>",
       "alt": "Vector diagram: F = 850 N; Fx = 750.0 N."
      }
+    },
+    {
+     "family": "statics-0019",
+     "problem": "Two forces act at a point: 310 N at 30° and 195 N at 70°, both measured counterclockwise from the positive x-axis. What angle does their resultant make with the positive x-axis?",
+     "idea": "Resolve each force into x and y components, add the components, then take the inverse tangent of the summed y over the summed x.",
+     "steps": "R_{x} = 310 cos 30° + 195 cos 70° = 335.2 N.\n\nR_{y} = 310 sin 30° + 195 sin 70° = 338.2 N.\n\nAngle = tan^{-1}(\\frac{338.2}{335.2}) = 45.3°.",
+     "answer": "45.3 °",
+     "value": 45.261909,
+     "figure": {
+      "viewBox": "0 0 400 190",
+      "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='164' y2='106' stroke='#00574A' stroke-width='3'/><path d='M173 100 L161 101 L166 111 Z' fill='#00574A'/><text x='183' y='92' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>F1</text><line x1='70' y1='160' x2='92' y2='100' stroke='#1B795A' stroke-width='3'/><path d='M96 90 L87 98 L97 102 Z' fill='#1B795A'/><text x='106' y='82' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>F2</text><line x1='70' y1='160' x2='191' y2='38' stroke='#568CBB' stroke-width='3'/><path d='M199 30 L187 34 L195 42 Z' fill='#568CBB'/><text x='209' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>R at 45.3°</text>",
+      "alt": "Vector diagram: F1; F2; R at 45.3°."
+     }
+    },
+    {
+     "family": "statics-0020",
+     "problem": "A force has components F_{x} = 2 kN, F_{y} = 3 kN and F_{z} = 2 kN. What angle does it make with the x-axis?",
+     "idea": "The direction cosine with an axis is the component along that axis divided by the magnitude of the force. The magnitude is the square root of the sum of the squared components.",
+     "steps": "|F| = \\sqrt{2^{2} + (3)^{2} + (2)^{2}} = 4.123 kN.\n\ncos(angle) = \\frac{2}{4.123} = 0.4851, so the angle is 61.0°.",
+     "answer": "61.0 °",
+     "value": 60.982859,
+     "figure": {
+      "viewBox": "0 0 400 200",
+      "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='253' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='253' y1='120' x2='222' y2='145' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='222' y1='145' x2='222' y2='50' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='217' y2='60' stroke='#00574A' stroke-width='3'/><path d='M222 50 L212 58 L222 63 Z' fill='#00574A'/><text x='222' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>2</text><text x='214' y='145' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>2</text><text x='230' y='98' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>3</text><text x='228' y='42' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>force</text>",
+      "alt": "A three-dimensional sketch of the force with components 2, 3 and 2 along x, y and z."
+     }
     }
    ],
    "lookup": [
@@ -198,7 +225,36 @@
     "Check the quadrant of the angle against the signs of the components."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Wind on a sign and the weight of a signal head are forces that are resolved into components before a pole or foundation is checked.",
+   "primer": "A force is a push or a pull with a size and a direction. Any force can be replaced by two parts at right angles: a horizontal component and a vertical component, found with sine and cosine. To combine several forces, add their horizontal parts, add their vertical parts, and the two totals give the single resultant force.",
+   "needs": [
+    [
+     "math-a",
+     "math",
+     "Mathematics and Statistics: Analytic geometry"
+    ],
+    [
+     "math-c",
+     "math",
+     "Mathematics and Statistics: Vector operations"
+    ]
+   ],
+   "leads": [
+    [
+     "statics-b",
+     "statics",
+     "Statics: Equivalent force systems"
+    ]
+   ],
+   "terms": [
+    [
+     "resultant",
+     "the single force that has the same effect as several forces acting together"
+    ],
+    [
+     "moment",
+     "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+    ]
+   ],
    "symbols": [
     [
      "F_{x}",
@@ -309,6 +365,45 @@
      "steps": "The equivalent system at O is a 320 N downward force plus a couple M = F d = 320 × 0.45 = 144 N·m (clockwise).",
      "answer": "144 N·m",
      "value": 144.0
+    },
+    {
+     "family": "statics-0021",
+     "problem": "Three parallel downward forces act on a beam: 22 kN at the left end, 12 kN at 2.2 m and 18 kN at 6 m from the left end. How far from the left end does their single resultant act?",
+     "idea": "A single force replaces a set of parallel forces if it has the same total and the same moment about any point. Its position is the sum of the moments divided by the sum of the forces.",
+     "steps": "Sum of forces = 22 + 12 + 18 = 52 kN.\n\nSum of moments about the left end = 12(2.2) + 18(6) = 134.4 kN·m.\n\nPosition = \\frac{134.4}{52} = 2.58 m.",
+     "answer": "2.58 m",
+     "value": 2.584615,
+     "figure": {
+      "viewBox": "0 0 400 165",
+      "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='179' y1='10' x2='179' y2='69' stroke='#00574A' stroke-width='3'/><path d='M179 77 L173 65 L185 65 Z' fill='#00574A'/><text x='187' y='20' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>52 kN</text><line x1='50' y1='136' x2='179' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='179' y1='130' x2='179' y2='142' stroke='#00242E'/><text x='115' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.58 m</text><line x1='179' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='179' y1='130' x2='179' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='265' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3.42 m</text>",
+      "alt": "A beam 6 m long, a 52 kN load at 2.58 m."
+     }
+    },
+    {
+     "family": "statics-0022",
+     "problem": "A distributed load on a beam 6 m long increases linearly from 2 kN/m at the left end to 11 kN/m at the right end. How far from the left end does its resultant act?",
+     "idea": "Split a trapezoidal load into a rectangle, whose resultant acts at mid-length, and a triangle, whose resultant acts two thirds of the way toward its tall end. Then take moments.",
+     "steps": "Rectangle: 2(6) = 12.0 kN at 3.00 m. Triangle: \\frac{1}{2}(9)(6) = 27.0 kN at 4.00 m.\n\nPosition = \\frac{12.0(3.00) + 27.0(4.00)}{39.0} = 3.69 m.",
+     "answer": "3.69 m",
+     "value": 3.692308,
+     "figure": {
+      "viewBox": "0 0 400 165",
+      "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='235' y1='10' x2='235' y2='69' stroke='#00574A' stroke-width='3'/><path d='M235 77 L229 65 L241 65 Z' fill='#00574A'/><text x='243' y='20' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>39 kN</text><line x1='50' y1='136' x2='235' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='235' y1='130' x2='235' y2='142' stroke='#00242E'/><text x='142' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3.69 m</text><line x1='235' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='235' y1='130' x2='235' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='292' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.31 m</text>",
+      "alt": "A beam 6 m long, a 39 kN load at 3.69 m."
+     }
+    },
+    {
+     "family": "statics-0023",
+     "problem": "A force with components F_{x} = -2 N and F_{y} = 20 N acts at the point (3.4, 1.4) m. What is its moment about the origin, counterclockwise positive?",
+     "idea": "The moment of a force about the origin in a plane is x F_{y} - y F_{x}. Each component has its own lever arm: the y-component acts at distance x and the x-component at distance y, turning the opposite way.",
+     "steps": "M = x F_{y} - y F_{x} = 3.4(20) - 1.4(-2) = 68 - (-3) = 71 N·m.",
+     "answer": "71 N·m",
+     "value": 70.8,
+     "figure": {
+      "viewBox": "0 0 400 190",
+      "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='187' y2='112' stroke='#00242E' stroke-dasharray='5 4'/><circle cx='187' cy='112' r='4' fill='#00242E'/><text x='179' y='128' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>(3.4, 1.4)</text><line x1='187' y1='112' x2='190' y2='112' stroke='#00574A' stroke-width='3'/><path d='M179 112 L190 117 L190 106 Z' fill='#00574A'/><text x='169' y='104' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>Fx = -2 N, arm 1.4 m</text><line x1='187' y1='112' x2='187' y2='41' stroke='#1B795A' stroke-width='3'/><path d='M187 30 L181 41 L192 41 Z' fill='#1B795A'/><text x='177' y='22' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>Fy = 20 N, arm 3.4 m</text>",
+      "alt": "Vector diagram: Fx = -2 N, arm 1.4 m; Fy = 20 N, arm 3.4 m."
+     }
     }
    ],
    "lookup": [
@@ -330,8 +425,49 @@
     "To find a single equivalent force with no couple, place the resultant at a distance equal to the moment divided by the force."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "A mast arm carries its signal heads and signs as loads at a distance from the pole; the pole base sees their equivalent force and moment.",
+   "primer": "A force also tries to turn an object. That turning effect is its moment: the force times the perpendicular distance from the force's line to the point of interest. Any set of forces can be replaced by one force plus one moment that have the same overall effect.",
+   "needs": [
+    [
+     "statics-a",
+     "statics",
+     "Statics: Resultants of force systems"
+    ]
+   ],
+   "leads": [
+    [
+     "statics-c",
+     "statics",
+     "Statics: Equilibrium of rigid bodies"
+    ]
+   ],
+   "work": "A signal mast arm carries its signal heads at a distance from the pole, so the pole base feels both their weight and a moment.",
+   "terms": [
+    [
+     "moment",
+     "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+    ],
+    [
+     "couple",
+     "two equal and opposite forces a distance apart; together they only turn an object and do not push it anywhere"
+    ],
+    [
+     "resultant",
+     "the single force that has the same effect as several forces acting together"
+    ],
+    [
+     "centroid",
+     "the geometric centre of an area, the point where it would balance if cut from uniform card"
+    ]
+   ],
    "symbols": [
+    [
+     "F_{y}",
+     "y-component of the force"
+    ],
+    [
+     "F_{x}",
+     "x-component of the force"
+    ],
     [
      "F",
      "force"
@@ -351,6 +487,14 @@
     [
      "a",
      "distance to the load"
+    ],
+    [
+     "x",
+     "distance from the reference edge or point"
+    ],
+    [
+     "y",
+     "distance from the reference axis to a centroid"
     ]
    ]
   },
@@ -457,6 +601,32 @@
       "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='250' y1='10' x2='250' y2='69' stroke='#00574A' stroke-width='3'/><path d='M250 77 L244 65 L256 65 Z' fill='#00574A'/><text x='258' y='20' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>60 kN</text><line x1='50' y1='176' x2='250' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='250' y1='170' x2='250' y2='182' stroke='#00242E'/><text x='150' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text><line x1='250' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='250' y1='170' x2='250' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='300' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.5 m</text><line x1='50' y1='162' x2='50' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M50 120 L44 132 L56 132 Z' fill='#568CBB'/><text x='60' y='160' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>20 kN</text><line x1='350' y1='162' x2='350' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M350 120 L344 132 L356 132 Z' fill='#568CBB'/><text x='340' y='160' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>40 kN</text>",
       "alt": "A beam 7.5 m long, a pin support at 0 m, a roller support at 7.5 m, a 60 kN load at 5 m. Reactions: 20 kN at 0 m, 40 kN at 7.5 m."
      }
+    },
+    {
+     "family": "statics-0024",
+     "problem": "A beam rests on a pin at A and a roller at B, 8 m apart, and overhangs 2.2 m beyond B. It carries a 14 kN load 4 m from A and a 6 kN load at the tip of the overhang. What is the reaction at B?",
+     "idea": "Take moments about A so the unknown reaction there drops out. A load on the overhang has a lever arm longer than the span, so it adds more than its own weight to the reaction at B.",
+     "steps": "Moments about A: B_{y}(8) = 14(4) + 6(8 + 2.2).\n\nB_{y} = \\frac{56.0 + 61.2}{8} = 14.65 kN.",
+     "answer": "14.65 kN",
+     "value": 14.65,
+     "figure": {
+      "viewBox": "0 0 400 205",
+      "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='285' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='263' y1='114' x2='307' y2='114' stroke='#00242E' stroke-width='2'/><line x1='168' y1='10' x2='168' y2='69' stroke='#00574A' stroke-width='3'/><path d='M168 77 L162 65 L174 65 Z' fill='#00574A'/><text x='176' y='20' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>14 kN</text><line x1='350' y1='10' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='342' y='32' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>6 kN</text><line x1='50' y1='176' x2='168' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='168' y1='170' x2='168' y2='182' stroke='#00242E'/><text x='109' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='168' y1='176' x2='285' y2='176' stroke='#00242E'/><line x1='168' y1='170' x2='168' y2='182' stroke='#00242E'/><line x1='285' y1='170' x2='285' y2='182' stroke='#00242E'/><text x='226' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='285' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='285' y1='170' x2='285' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='318' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.2 m</text><line x1='50' y1='162' x2='50' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M50 120 L44 132 L56 132 Z' fill='#568CBB'/><text x='60' y='160' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>5.35 kN</text><line x1='285' y1='162' x2='285' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M285 120 L279 132 L291 132 Z' fill='#568CBB'/><text x='275' y='160' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>14.65 kN</text>",
+      "alt": "A beam 10.2 m long, a pin support at 0 m, a roller support at 8 m, a 14 kN load at 4 m, a 6 kN load at 10.2 m. Reactions: 5.35 kN at 0 m, 14.65 kN at 8 m."
+     }
+    },
+    {
+     "family": "statics-0025",
+     "problem": "A uniform horizontal bar weighing 200 N is pinned to a wall at one end. A cable from its other end to the wall makes 48° with the bar. A 575 N load hangs from the cable end of the bar. What is the cable tension?",
+     "idea": "Take moments about the pin. Only the vertical component of the tension has a lever arm, the full bar length. The bar's own weight acts at mid-length.",
+     "steps": "T sin 48° (L) = 575(L) + 200(\\frac{L}{2}), and the length cancels.\n\nT = \\frac{575 + 100.0}{sin 48°} = \\frac{675.0}{0.7431} = 908.3 N.",
+     "answer": "908.3 N",
+     "value": 908.302092,
+     "figure": {
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Load 575 N</text><line x1='184' y1='82' x2='151' y2='46' stroke='#1B795A' stroke-width='3'/><path d='M144 38 L147 49 L155 42 Z' fill='#1B795A'/><text x='136' y='33' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>T = 908.3 N</text><line x1='177' y1='108' x2='131' y2='125' stroke='#00242E' stroke-width='3'/><path d='M121 129 L133 130 L130 120 Z' fill='#00242E'/><text x='110' y='137' text-anchor='end' font-size='11' font-weight='600' fill='#00242E'>Pin reaction</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Bar: weight 200 N acts at mid-length; moments are taken about the pin</text>",
+      "alt": "Free-body diagram showing Load 575 N, T = 908.3 N, Pin reaction."
+     }
     }
    ],
    "lookup": [
@@ -480,7 +650,63 @@
     "Check by taking moments about a different point."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Any pole, sign post or shelter is checked by the same three equilibrium equations used here.",
+   "primer": "An object at rest is in equilibrium: the forces on it add to zero in every direction, and so do their moments. Draw the object by itself with every load and every support force (a free-body diagram), write those balance equations, and solve them for the unknown support forces, called reactions.",
+   "needs": [
+    [
+     "statics-b",
+     "statics",
+     "Statics: Equivalent force systems"
+    ]
+   ],
+   "leads": [
+    [
+     "statics-d",
+     "statics",
+     "Statics: Frames and trusses"
+    ],
+    [
+     "statics-g",
+     "statics",
+     "Statics: Static friction"
+    ],
+    [
+     "dynamics-c",
+     "dynamics",
+     "Dynamics: Force acceleration"
+    ],
+    [
+     "mechmat-a",
+     "mechmat",
+     "Mechanics of Materials: Shear and moment diagrams"
+    ],
+    [
+     "structural-a",
+     "structural",
+     "Structural Engineering: Analysis of statically determinant beams, columns, trusses, and frames"
+    ]
+   ],
+   "terms": [
+    [
+     "equilibrium",
+     "the state of an object that is not accelerating: all forces on it cancel, and so do all their turning effects"
+    ],
+    [
+     "moment",
+     "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+    ],
+    [
+     "free-body diagram",
+     "a sketch of one object on its own with every force acting on it drawn as an arrow; the first step of almost every force problem"
+    ],
+    [
+     "reaction",
+     "the force a support pushes back with to hold a structure in place"
+    ],
+    [
+     "resultant",
+     "the single force that has the same effect as several forces acting together"
+    ]
+   ],
    "symbols": [
     [
      "F_{x}",
@@ -513,6 +739,10 @@
     [
      "T",
      "cable tension"
+    ],
+    [
+     "L",
+     "span or length"
     ]
    ]
   },
@@ -576,9 +806,9 @@
      "answer": "50 kN",
      "value": 50.0,
      "figure": {
-      "viewBox": "0 0 430 195",
-      "svg": "<path d='M60 130 L340 130 L200 30 Z' fill='none' stroke='#00242E' stroke-width='4'/><path d='M60 130 L46 154 L74 154 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='340' cy='142' r='9' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='20' stroke='#00574A' stroke-width='3'/><path d='M200 28 L194 16 L206 16 Z' fill='#00574A'/><text x='236' y='12' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>60 kN</text><line x1='60' y1='170' x2='340' y2='170' stroke='#00242E'/><line x1='60' y1='164' x2='60' y2='176' stroke='#00242E'/><line x1='340' y1='164' x2='340' y2='176' stroke='#00242E'/><text x='200' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>16 m</text><line x1='372' y1='30' x2='372' y2='130' stroke='#00242E'/><text x='386' y='84' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>6 m</text>",
-      "alt": "A symmetric triangular truss with a span of 16 m and a height of 6 m, loaded with 60 kN at the apex."
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Reaction = 30.0 kN</text><line x1='219' y1='86' x2='258' y2='56' stroke='#00574A' stroke-width='3'/><path d='M267 50 L255 52 L262 61 Z' fill='#00574A'/><text x='277' y='46' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Sloping member</text><line x1='224' y1='100' x2='273' y2='100' stroke='#1B795A' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#1B795A'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Bottom chord</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Free-body diagram of the support joint; unknown member forces drawn as tension</text>",
+      "alt": "Free-body diagram showing Reaction = 30.0 kN, Sloping member, Bottom chord."
      }
     },
     {
@@ -589,10 +819,44 @@
      "answer": "40.00 kN",
      "value": 40.0,
      "figure": {
-      "viewBox": "0 0 430 195",
-      "svg": "<path d='M60 130 L340 130 L200 30 Z' fill='none' stroke='#00242E' stroke-width='4'/><path d='M60 130 L46 154 L74 154 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='340' cy='142' r='9' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='200' y1='0' x2='200' y2='20' stroke='#00574A' stroke-width='3'/><path d='M200 28 L194 16 L206 16 Z' fill='#00574A'/><text x='236' y='12' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>60 kN</text><line x1='60' y1='170' x2='340' y2='170' stroke='#00242E'/><line x1='60' y1='164' x2='60' y2='176' stroke='#00242E'/><line x1='340' y1='164' x2='340' y2='176' stroke='#00242E'/><text x='200' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>16 m</text><line x1='372' y1='30' x2='372' y2='130' stroke='#00242E'/><text x='386' y='84' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>6 m</text>",
-      "alt": "A symmetric triangular truss with a span of 16 m and a height of 6 m, loaded with 60 kN at the apex."
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Reaction = 30.0 kN</text><line x1='219' y1='86' x2='258' y2='56' stroke='#00574A' stroke-width='3'/><path d='M267 50 L255 52 L262 61 Z' fill='#00574A'/><text x='277' y='46' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Sloping member</text><line x1='224' y1='100' x2='273' y2='100' stroke='#1B795A' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#1B795A'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Bottom chord</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Free-body diagram of the support joint; unknown member forces drawn as tension</text>",
+      "alt": "Free-body diagram showing Reaction = 30.0 kN, Sloping member, Bottom chord."
      }
+    },
+    {
+     "family": "statics-0027",
+     "problem": "A parallel-chord truss is 2 m deep. A vertical section is cut through one panel. The loads and reactions to the left of the cut give a moment of 273 kN·m about the top-chord joint at the cut. What is the force in the bottom chord?",
+     "idea": "In the method of sections, take moments about the joint where the other two cut members meet. Only the bottom chord then has a moment, with a lever arm equal to the truss depth.",
+     "steps": "Bottom chord force × 2 = 273, so the force = \\frac{273}{2} = 136.5 kN. Under gravity loads on a simple span it is tension.",
+     "answer": "136.5 kN",
+     "value": 136.5,
+     "figure": {
+      "viewBox": "0 0 420 192",
+      "svg": "<path d='M60 130 L340 130 M60 50 L340 50' stroke='#00242E' stroke-width='4'/><line x1='60' y1='50' x2='60' y2='130' stroke='#00242E' stroke-width='3'/><line x1='130' y1='50' x2='130' y2='130' stroke='#00242E' stroke-width='3'/><line x1='200' y1='50' x2='200' y2='130' stroke='#00242E' stroke-width='3'/><line x1='270' y1='50' x2='270' y2='130' stroke='#00242E' stroke-width='3'/><line x1='340' y1='50' x2='340' y2='130' stroke='#00242E' stroke-width='3'/><line x1='60' y1='50' x2='130' y2='130' stroke='#00242E' stroke-width='3'/><line x1='130' y1='50' x2='200' y2='130' stroke='#00242E' stroke-width='3'/><line x1='200' y1='50' x2='270' y2='130' stroke='#00242E' stroke-width='3'/><line x1='270' y1='50' x2='340' y2='130' stroke='#00242E' stroke-width='3'/><line x1='165' y1='30' x2='165' y2='150' stroke='#00574A' stroke-width='2' stroke-dasharray='7 4'/><text x='165' y='24' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>cut</text><line x1='130' y1='150' x2='200' y2='150' stroke='#00242E'/><line x1='130' y1='144' x2='130' y2='156' stroke='#00242E'/><line x1='200' y1='144' x2='200' y2='156' stroke='#00242E'/><text x='165' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>panel</text><line x1='356' y1='50' x2='356' y2='130' stroke='#00242E'/><text x='362' y='94' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>2 m</text><text x='200' y='184' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Moments about the top joint: bottom chord = 273 / 2 = 136.5 kN</text>",
+      "alt": "A parallel-chord truss 2 m deep with a vertical cut through one panel."
+     }
+    },
+    {
+     "family": "statics-0028",
+     "problem": "A parallel-chord truss has panels 2.7 m long and 3 m high. In one panel the shear carried across a vertical cut is 32 kN, and the diagonal is the only cut member with a vertical component. What is the force in the diagonal?",
+     "idea": "The chords are horizontal, so only the diagonal can carry the panel shear. Its vertical component must equal the shear, and the force is larger by the ratio of the diagonal's length to its height.",
+     "steps": "Diagonal length = \\sqrt{2.7^{2} + 3^{2}} = 4.036 m.\n\nForce = 32 × \\frac{4.036}{3} = 43.05 kN.",
+     "answer": "43.05 kN",
+     "value": 43.051597,
+     "figure": {
+      "viewBox": "0 0 420 192",
+      "svg": "<path d='M60 130 L340 130 M60 50 L340 50' stroke='#00242E' stroke-width='4'/><line x1='60' y1='50' x2='60' y2='130' stroke='#00242E' stroke-width='3'/><line x1='130' y1='50' x2='130' y2='130' stroke='#00242E' stroke-width='3'/><line x1='200' y1='50' x2='200' y2='130' stroke='#00242E' stroke-width='3'/><line x1='270' y1='50' x2='270' y2='130' stroke='#00242E' stroke-width='3'/><line x1='340' y1='50' x2='340' y2='130' stroke='#00242E' stroke-width='3'/><line x1='60' y1='50' x2='130' y2='130' stroke='#00242E' stroke-width='3'/><line x1='130' y1='50' x2='200' y2='130' stroke='#00242E' stroke-width='3'/><line x1='200' y1='50' x2='270' y2='130' stroke='#00242E' stroke-width='3'/><line x1='270' y1='50' x2='340' y2='130' stroke='#00242E' stroke-width='3'/><line x1='165' y1='30' x2='165' y2='150' stroke='#00574A' stroke-width='2' stroke-dasharray='7 4'/><text x='165' y='24' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>cut</text><line x1='130' y1='150' x2='200' y2='150' stroke='#00242E'/><line x1='130' y1='144' x2='130' y2='156' stroke='#00242E'/><line x1='200' y1='144' x2='200' y2='156' stroke='#00242E'/><text x='165' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.7 m</text><line x1='356' y1='50' x2='356' y2='130' stroke='#00242E'/><text x='362' y='94' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='200' y='184' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Vertical part of the diagonal = 32 kN, so the diagonal carries 43.05 kN</text>",
+      "alt": "A parallel-chord truss 3 m deep with a vertical cut through one panel."
+     }
+    },
+    {
+     "family": "statics-0029",
+     "problem": "A hand force of 85 N is applied to each handle of a pair of pliers, 190 mm from the pivot. The jaws grip a wire 35 mm from the pivot. What force do the jaws apply to the wire?",
+     "idea": "Each half of the pliers is a lever in equilibrium about the pivot pin. The moments of the hand force and the gripping force about the pin are equal.",
+     "steps": "P × a = F × b, so F = \\frac{85(190)}{35} = 461 N.",
+     "answer": "461 N",
+     "value": 461.428571
     }
    ],
    "lookup": [
@@ -616,6 +880,31 @@
     "Check with the remaining equilibrium equation."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "A truss is a frame of straight bars joined at their ends, loaded only at the joints, so each bar is purely pulled (tension) or pushed (compression). Find a bar's force by isolating one joint, or by cutting through the truss and balancing one side.",
+   "needs": [
+    [
+     "statics-c",
+     "statics",
+     "Statics: Equilibrium of rigid bodies"
+    ]
+   ],
+   "leads": [
+    [
+     "structural-d",
+     "structural",
+     "Structural Engineering: Structural determinacy and stability analysis of beams, trusses, and frames"
+    ]
+   ],
+   "terms": [
+    [
+     "equilibrium",
+     "the state of an object that is not accelerating: all forces on it cancel, and so do all their turning effects"
+    ],
+    [
+     "reaction",
+     "the force a support pushes back with to hold a structure in place"
+    ]
+   ],
    "symbols": [
     [
      "F_{x}",
@@ -636,6 +925,18 @@
     [
      "F",
      "force"
+    ],
+    [
+     "P",
+     "applied force"
+    ],
+    [
+     "a",
+     "distance to the load"
+    ],
+    [
+     "b",
+     "width of the rectangle"
     ]
    ]
   },
@@ -711,6 +1012,45 @@
       "svg": "<path d='M120 20 L147 20 L147 123 L228 123 L228 150 L120 150 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='112' y='85' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>120 mm</text><text x='134' y='14' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>25 mm</text><text x='188' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>75 mm</text><text x='236' y='140' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>25 mm</text>",
       "alt": "An L-shaped area: a vertical leg 25 mm wide and 120 mm tall with a horizontal leg 75 mm wide and 25 mm tall at the bottom right."
      }
+    },
+    {
+     "family": "statics-0030",
+     "problem": "A plate is a rectangle 70 mm wide and 50 mm high with a right triangle of base 30 mm and the same height attached along its right side, tapering to the right. How far is the centroid from the left edge?",
+     "idea": "For a composite area, the centroid is the sum of each part's area times its centroid distance, divided by the total area. A triangle's centroid is one third of its base from the side it tapers away from.",
+     "steps": "Rectangle: 3,500 mm^{2} at 35.0 mm. Triangle: 750 mm^{2} at 70 + \\frac{30}{3} = 80.0 mm.\n\nx = \\frac{3,500(35.0) + 750(80.0)}{4,250} = 42.94 mm.",
+     "answer": "42.94 mm",
+     "value": 42.941176,
+     "figure": {
+      "viewBox": "0 0 400 185",
+      "svg": "<path d='M80 150 L248 150 L248 30 L80 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M248 150 L320 150 L248 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='183' cy='100' r='5' fill='#00574A'/><text x='192' y='93' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>centroid, 42.94 mm from the left</text>",
+      "alt": "The same plate with its centroid marked."
+     }
+    },
+    {
+     "family": "statics-0031",
+     "problem": "A rectangular plate 210 mm wide and 115 mm high has a 60 mm diameter hole whose centre is 82 mm from the left edge, at mid-height. How far is the centroid of the plate from its left edge?",
+     "idea": "Treat a hole as a negative area. Subtract its area and its area moment from those of the full rectangle.",
+     "steps": "Rectangle: 24,150 mm^{2} at 105.0 mm. Hole: \\frac{π(60)^{2}}{4} = 2,827.4 mm^{2} at 82 mm.\n\nx = \\frac{24,150(105.0) - 2,827.4(82)}{24,150 - 2,827.4} = 108.05 mm.",
+     "answer": "108.05 mm",
+     "value": 108.049866,
+     "figure": {
+      "viewBox": "0 0 400 185",
+      "svg": "<path d='M80 150 L317 150 L317 20 L80 20 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='173' cy='85' r='34' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='202' cy='85' r='5' fill='#00574A'/><text x='211' y='78' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>centroid, 108.05 mm</text>",
+      "alt": "The plate with its centroid marked, shifted away from the hole."
+     }
+    },
+    {
+     "family": "statics-0032",
+     "problem": "A channel section has two flanges 80 mm long and a web 225 mm high overall, all 10 mm thick. How far is its centroid from the back (outer face) of the web?",
+     "idea": "Divide the channel into two flanges and the web between them. The web's centroid is half a thickness from the back; each flange's centroid is half its length from the back.",
+     "steps": "Flanges: 2 × 800 mm^{2} at 40.0 mm. Web: (225 - 2 × 10)(10) = 2,050 mm^{2} at 5.0 mm.\n\nx = \\frac{2(800)(40.0) + 2,050(5.0)}{2(800) + 2,050} = 20.34 mm.",
+     "answer": "20.34 mm",
+     "value": 20.342466,
+     "figure": {
+      "viewBox": "0 0 400 185",
+      "svg": "<path d='M80 150 L126 150 L126 144 L86 144 L86 26 L126 26 L126 20 L80 20 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='92' cy='85' r='5' fill='#00574A'/><text x='101' y='78' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>centroid, 20.34 mm from the back</text>",
+      "alt": "The channel with its centroid marked."
+     }
     }
    ],
    "lookup": [
@@ -729,6 +1069,32 @@
     "Tabulate each part's area and the distance from the axis to its own centroid.",
     "Divide the sum of area times distance by the sum of areas.",
     "Check that the answer lies inside the shape's extent and on any axis of symmetry."
+   ],
+   "primer": "The centroid of a shape is its balance point. For a shape made of simple pieces, multiply each piece's area by the distance to its own centre, add those up, and divide by the total area.",
+   "needs": [
+    [
+     "math-b",
+     "math",
+     "Mathematics and Statistics: Single-variable calculus"
+    ]
+   ],
+   "leads": [
+    [
+     "statics-f",
+     "statics",
+     "Statics: Area moments of inertia"
+    ],
+    [
+     "fluids-c",
+     "fluids",
+     "Fluid Mechanics: Fluid statics"
+    ]
+   ],
+   "terms": [
+    [
+     "centroid",
+     "the geometric centre of an area, the point where it would balance if cut from uniform card"
+    ]
    ],
    "symbols": [
     [
@@ -835,6 +1201,58 @@
       "svg": "<rect x='168' y='20' width='65' height='130' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='148' y1='85' x2='252' y2='85' stroke='#568CBB' stroke-dasharray='6 4'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>90 mm</text><text x='160' y='52' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>180 mm</text>",
       "alt": "A rectangular section 90 mm wide and 180 mm deep with its horizontal centroidal axis."
      }
+    },
+    {
+     "family": "statics-0033",
+     "problem": "A hollow rectangular section is 105 mm wide and 210 mm deep outside, with a centred rectangular opening 85 mm wide and 180 mm deep. What is its moment of inertia about the horizontal centroidal axis?",
+     "idea": "When shapes share the same centroidal axis their moments of inertia add or subtract directly. Take the outer rectangle's b h^{3} / 12 and subtract the opening's.",
+     "steps": "I = \\frac{105(210)^{3} - 85(180)^{3}}{12} = \\frac{972,405,000 - 495,720,000}{12} = 39.72 × 10^{6} mm^{4}.",
+     "answer": "39.72 × 10^{6} mm^{4}",
+     "value": 39.72375,
+     "figure": {
+      "viewBox": "0 0 400 185",
+      "svg": "<path d='M80 150 L145 150 L145 20 L80 20 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M86 141 L139 141 L139 29 L86 29 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><text x='112' y='163' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>105 mm</text><text x='76' y='85' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>210 mm</text><text x='112' y='85' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>85 × 180 opening</text>",
+      "alt": "A hollow rectangular section."
+     }
+    },
+    {
+     "family": "statics-0034",
+     "problem": "A symmetric I-section has flanges 150 mm wide and 18 mm thick, and a web 10 mm thick and 263 mm high between them. What is its moment of inertia about the horizontal centroidal axis?",
+     "idea": "The web sits on the centroidal axis, so only its own b h^{3} / 12 counts. Each flange is offset, so the parallel axis theorem adds its area times the square of the distance from the axis to the flange's centroid. That term usually dominates.",
+     "steps": "Web: \\frac{10(263)^{3}}{12} = 15.160 × 10^{6}.\n\nEach flange: \\frac{150(18)^{3}}{12} + 2,700(140.5)^{2} = 53.372 × 10^{6}.\n\nI = 15.160 + 2(53.372) = 121.9 × 10^{6} mm^{4}.",
+     "answer": "121.9 × 10^{6} mm^{4}",
+     "value": 121.902689,
+     "figure": {
+      "viewBox": "0 0 400 185",
+      "svg": "<path d='M80 150 L145 150 L145 142 L115 142 L115 28 L145 28 L145 20 L80 20 L80 28 L110 28 L110 142 L80 142 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='113' y='161' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>150 mm</text><text x='148' y='146' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>18 mm</text><text x='117' y='85' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>web 10 × 263 mm</text>",
+      "alt": "A symmetric I-section."
+     }
+    },
+    {
+     "family": "statics-0035",
+     "problem": "A rectangular section is 120 mm wide and 345 mm deep. What is its radius of gyration about the horizontal centroidal axis?",
+     "idea": "The radius of gyration is the square root of the moment of inertia divided by the area. For a rectangle about its centroidal axis this is h divided by the square root of 12.",
+     "steps": "r = \\sqrt{\\frac{I}{A}} = \\sqrt{\\frac{120(345)^{3} / 12}{120(345)}} = \\frac{345}{\\sqrt{12}} = 99.6 mm.",
+     "answer": "99.6 mm",
+     "value": 99.592921,
+     "figure": {
+      "viewBox": "0 0 400 176",
+      "svg": "<rect x='177' y='20' width='45' height='130' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><line x1='157' y1='85' x2='243' y2='85' stroke='#568CBB' stroke-dasharray='6 4'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>120 mm</text><text x='169' y='52' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>345 mm</text>",
+      "alt": "A rectangular section 120 mm wide and 345 mm deep with its horizontal centroidal axis."
+     }
+    },
+    {
+     "family": "statics-0036",
+     "problem": "A hollow circular shaft has an outside diameter of 105 mm and an inside diameter of 80 mm. What is its polar moment of inertia?",
+     "idea": "The polar moment of inertia of a circle is π d^{4} / 32, twice the moment of inertia about a diameter. For a tube, subtract the bore.",
+     "steps": "J = \\frac{π(105^{4} - 80^{4})}{32} = \\frac{π(80,590,625)}{32} = 7.91 × 10^{6} mm^{4}.",
+     "answer": "7.91 × 10^{6} mm^{4}",
+     "value": 7.911966,
+     "figure": {
+      "viewBox": "0 0 400 185",
+      "svg": "<path d='M80 150 L210 150 L210 150 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='145' cy='85' r='65' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='145' cy='85' r='50' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><text x='145' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>105 mm outside, 80 mm inside</text>",
+      "alt": "A hollow circular section 105 mm in diameter with a 80 mm bore."
+     }
     }
    ],
    "lookup": [
@@ -857,6 +1275,53 @@
     "Check units of length to the fourth power."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "The moment of inertia of an area measures how far its material lies from an axis. Material far from the axis counts much more, by distance squared. It decides how stiff and strong a beam's cross-section is in bending. For built-up shapes, add the pieces, shifting each to the common axis.",
+   "needs": [
+    [
+     "statics-e",
+     "statics",
+     "Statics: Centroid of area"
+    ]
+   ],
+   "leads": [
+    [
+     "dynamics-b",
+     "dynamics",
+     "Dynamics: Mass moments of inertia"
+    ],
+    [
+     "mechmat-b",
+     "mechmat",
+     "Mechanics of Materials: Stresses and strains"
+    ],
+    [
+     "structural-c",
+     "structural",
+     "Structural Engineering: Column analysis"
+    ]
+   ],
+   "terms": [
+    [
+     "moment",
+     "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+    ],
+    [
+     "moment of inertia",
+     "a measure of how far an area's material is spread from an axis; the larger it is, the stiffer the shape in bending about that axis"
+    ],
+    [
+     "centroid",
+     "the geometric centre of an area, the point where it would balance if cut from uniform card"
+    ],
+    [
+     "parallel axis theorem",
+     "the rule for moving a moment of inertia to a parallel axis: add the area times the square of the distance between the axes"
+    ],
+    [
+     "radius of gyration",
+     "the distance from an axis at which the whole area (or mass) could be concentrated and keep the same moment of inertia"
+    ]
+   ],
    "symbols": [
     [
      "I_{c}",
@@ -889,6 +1354,10 @@
     [
      "h",
      "height of the rectangle or depth of the truss"
+    ],
+    [
+     "J",
+     "polar moment of inertia"
     ]
    ]
   },
@@ -990,6 +1459,45 @@
       "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#568CBB'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Pull = 275.0 N</text><line x1='177' y1='92' x2='131' y2='75' stroke='#1B795A' stroke-width='3'/><path d='M121 71 L130 80 L133 70 Z' fill='#1B795A'/><text x='110' y='71' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>Friction from the upper block, 87.5 N</text><line x1='177' y1='108' x2='131' y2='125' stroke='#00242E' stroke-width='3'/><path d='M121 129 L133 130 L130 120 Z' fill='#00242E'/><text x='110' y='137' text-anchor='end' font-size='11' font-weight='600' fill='#00242E'>Friction from the floor, 187.5 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Lower block: both friction forces oppose the pull</text>",
       "alt": "Free-body diagram showing Pull = 275.0 N, Friction from the upper block, 87.5 N, Friction from the floor, 187.5 N."
      }
+    },
+    {
+     "family": "statics-0037",
+     "problem": "A 460 N block rests on a plane inclined at 22° to the horizontal. The coefficient of static friction is 0.33. What force, applied parallel to the plane, will start the block moving up the plane?",
+     "idea": "To start motion up the plane the force must overcome both the component of weight down the plane and the maximum friction, which also acts down the plane when motion is impending upward.",
+     "steps": "Weight component down the plane = 460 sin 22° = 172.3 N. Normal force = 460 cos 22° = 426.5 N.\n\nP = 172.3 + 0.33(426.5) = 313.1 N.",
+     "answer": "313.1 N",
+     "value": 313.065542,
+     "figure": {
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(-22 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 460 N</text><line x1='191' y1='78' x2='173' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M169 22 L168 34 L178 30 Z' fill='#1B795A'/><text x='164' y='15' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>N = 426.5 N</text><line x1='222' y1='91' x2='268' y2='73' stroke='#568CBB' stroke-width='3'/><path d='M278 69 L266 68 L270 78 Z' fill='#568CBB'/><text x='289' y='68' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>P = 313.1 N</text><line x1='178' y1='109' x2='132' y2='127' stroke='#00242E' stroke-width='3'/><path d='M122 131 L134 132 L130 122 Z' fill='#00242E'/><text x='111' y='140' text-anchor='end' font-size='11' font-weight='600' fill='#00242E'>Friction = 140.7 N</text>",
+      "alt": "Free-body diagram on a surface inclined at 22° showing W = 460 N, N = 426.5 N, P = 313.1 N, Friction = 140.7 N."
+     }
+    },
+    {
+     "family": "statics-0038",
+     "problem": "A rope passes over a fixed drum with a wrap angle of 180°. The coefficient of friction is 0.23 and the tension on the slack side is 275 N. What is the largest tension the other side can hold before the rope slips?",
+     "idea": "Friction around a curved surface multiplies tension exponentially: tight-side tension = slack-side tension × e^{(coefficient × wrap angle)}, with the angle in radians.",
+     "steps": "Wrap angle = 180° = 3.1416 rad.\n\nT_{1} = 275 e^{0.23 × 3.1416} = 275 × 2.0597 = 566.4 N.",
+     "answer": "566.4 N",
+     "value": 566.420881,
+     "figure": {
+      "viewBox": "0 0 400 185",
+      "svg": "<circle cx='200' cy='90' r='50' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><path d='M150 90 A50 50 0 0 1 250 90' fill='none' stroke='#1B795A' stroke-width='5'/><line x1='150' y1='92' x2='150' y2='162' stroke='#00574A' stroke-width='3'/><path d='M150 170 L144 158 L156 158 Z' fill='#00574A'/><text x='140' y='168' text-anchor='end' font-size='11' font-weight='600' fill='#00574A'>slack side 275 N</text><text x='200' y='94' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>wrap 180°</text><text x='200' y='22' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>tight side 566.4 N</text>",
+      "alt": "A rope wrapped 180° around a fixed drum with 275 N on the slack side."
+     }
+    },
+    {
+     "family": "statics-0039",
+     "problem": "A 570 N crate is 0.6 m wide and 1.5 m tall, with its weight acting through its centre. A horizontal force is applied at its top edge, and friction is high enough to prevent sliding. What force makes the crate start to tip?",
+     "idea": "At the point of tipping the floor reaction moves to the edge the crate would rotate about. Take moments about that edge: the push at height h overturns, and the weight at half the width resists.",
+     "steps": "P × 1.5 = 570 × \\frac{0.6}{2}, so P = \\frac{570(0.30)}{1.5} = 114 N.",
+     "answer": "114 N",
+     "value": 114.0,
+     "figure": {
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 570 N at mid-width</text><line x1='224' y1='100' x2='273' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#568CBB'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>P = 114 N at the top</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Floor reaction at the tipping edge</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Moments about the tipping edge: P × 1.5 = W × 0.30</text>",
+      "alt": "Free-body diagram showing W = 570 N at mid-width, P = 114 N at the top, Floor reaction at the tipping edge."
+     }
     }
    ],
    "lookup": [
@@ -1011,7 +1519,36 @@
     "On an incline, resolve the weight along and perpendicular to the slope."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Tyre-road friction, the basis of stopping distance and side friction on curves, is this coefficient-times-normal-force model.",
+   "primer": "Friction is the force that resists sliding between two surfaces. It can grow only up to a limit: the coefficient of friction times the normal force pressing the surfaces together. Below the limit the object stays put; at the limit it is about to slide.",
+   "needs": [
+    [
+     "statics-c",
+     "statics",
+     "Statics: Equilibrium of rigid bodies"
+    ]
+   ],
+   "leads": [
+    [
+     "geotech-j",
+     "geotech",
+     "Geotechnical Engineering: Slope stability"
+    ]
+   ],
+   "work": "Tyre grip on the road is this same friction model; it sets stopping distance and how fast a curve can be taken.",
+   "terms": [
+    [
+     "coefficient of friction",
+     "the ratio of the largest friction force a surface can supply to the normal force pressing the surfaces together"
+    ],
+    [
+     "normal force",
+     "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+    ],
+    [
+     "equilibrium",
+     "the state of an object that is not accelerating: all forces on it cancel, and so do all their turning effects"
+    ]
+   ],
    "symbols": [
     [
      "T_{1}",

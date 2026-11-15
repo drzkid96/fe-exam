@@ -161,7 +161,7 @@ def main():
         if not s.get("id") or not s.get("title") or any(t not in topics for t in s.get("topics", [])):
             err(m["reference"], f"bad section {s.get('id')!r}")
     on_disk = {os.path.relpath(os.path.join(d, f), ROOT).replace(os.sep, "/") for d, _, fs in os.walk(os.path.join(ROOT, "content")) for f in fs}
-    listed = set(m["questions"]) | set(m["guide"]) | {m["exam"], m["reference"], "content/manifest.json"}
+    listed = set(m["questions"]) | set(m["guide"]) | {m["exam"], m["reference"], m.get("hbindex", ""), "content/manifest.json"}
     for f in sorted(on_disk - listed):
         if not f.startswith("content/figures/"):
             warnings.append(f"{f}: on disk but not in the manifest, so the site will not load it")

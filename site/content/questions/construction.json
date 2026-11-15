@@ -57,6 +57,17 @@
    "alt": "An activity network: A (3 days) is followed by B (4 days) and C (6 days), which are both followed by D (2 days)."
   },
   "lookup": true,
+  "terms": [
+   [
+    "float",
+    "the time an activity can slip without delaying the project"
+   ],
+   [
+    "critical path",
+    "the longest chain of dependent activities through a schedule; it sets the project duration"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "A",
@@ -134,6 +145,17 @@
    "alt": "An activity network: A (2 days) is followed by B (3 days) and C (8 days), which are both followed by D (4 days)."
   },
   "lookup": true,
+  "terms": [
+   [
+    "float",
+    "the time an activity can slip without delaying the project"
+   ],
+   [
+    "critical path",
+    "the longest chain of dependent activities through a schedule; it sets the project duration"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "A",
@@ -211,6 +233,17 @@
    "alt": "An activity network: A (5 days) is followed by B (6 days) and C (10 days), which are both followed by D (3 days)."
   },
   "lookup": true,
+  "terms": [
+   [
+    "float",
+    "the time an activity can slip without delaying the project"
+   ],
+   [
+    "critical path",
+    "the longest chain of dependent activities through a schedule; it sets the project duration"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "A",
@@ -288,6 +321,17 @@
    "alt": "An activity network: A (4 days) is followed by B (5 days) and C (9 days), which are both followed by D (2 days)."
   },
   "lookup": true,
+  "terms": [
+   [
+    "float",
+    "the time an activity can slip without delaying the project"
+   ],
+   [
+    "critical path",
+    "the longest chain of dependent activities through a schedule; it sets the project duration"
+   ]
+  ],
+  "needs": [],
   "symbols": [
    [
     "A",
@@ -357,7 +401,14 @@
   "family": "construction-0002",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "earned value",
+    "the budgeted cost of the work actually completed to date"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "construction-0002-b",
@@ -409,7 +460,14 @@
   "family": "construction-0002",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "earned value",
+    "the budgeted cost of the work actually completed to date"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "construction-0002-c",
@@ -461,7 +519,14 @@
   "family": "construction-0002",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "earned value",
+    "the budgeted cost of the work actually completed to date"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "construction-0002-d",
@@ -513,7 +578,14 @@
   "family": "construction-0002",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "earned value",
+    "the budgeted cost of the work actually completed to date"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "construction-0003",
@@ -550,7 +622,8 @@
   "family": "construction-0003",
   "version": 1,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0003-b",
@@ -587,7 +660,8 @@
   "family": "construction-0003",
   "version": 2,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0003-c",
@@ -624,7 +698,8 @@
   "family": "construction-0003",
   "version": 3,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0003-d",
@@ -661,7 +736,8 @@
   "family": "construction-0003",
   "version": 4,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0004",
@@ -712,6 +788,7 @@
   "version": 1,
   "versions": 4,
   "lookup": false,
+  "needs": [],
   "symbols": [
    [
     "h",
@@ -768,6 +845,7 @@
   "version": 2,
   "versions": 4,
   "lookup": false,
+  "needs": [],
   "symbols": [
    [
     "h",
@@ -824,6 +902,7 @@
   "version": 3,
   "versions": 4,
   "lookup": false,
+  "needs": [],
   "symbols": [
    [
     "h",
@@ -880,6 +959,7 @@
   "version": 4,
   "versions": 4,
   "lookup": false,
+  "needs": [],
   "symbols": [
    [
     "h",
@@ -952,7 +1032,14 @@
   "family": "construction-0005",
   "version": 1,
   "versions": 2,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "ethics-d",
+    "ethics",
+    "Ethics and Professional Practice: Contracts and contract law"
+   ]
+  ]
  },
  {
   "id": "construction-0005-b",
@@ -1014,7 +1101,14 @@
   "family": "construction-0005",
   "version": 2,
   "versions": 2,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "ethics-d",
+    "ethics",
+    "Ethics and Professional Practice: Contracts and contract law"
+   ]
+  ]
  },
  {
   "id": "construction-0006",
@@ -1048,7 +1142,14 @@
   "family": "construction-0006",
   "version": 1,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
  },
  {
   "id": "construction-0006-b",
@@ -1082,7 +1183,14 @@
   "family": "construction-0006",
   "version": 2,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
  },
  {
   "id": "construction-0006-c",
@@ -1116,7 +1224,14 @@
   "family": "construction-0006",
   "version": 3,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
  },
  {
   "id": "construction-0006-d",
@@ -1150,7 +1265,14 @@
   "family": "construction-0006",
   "version": 4,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
  },
  {
   "id": "construction-0007",
@@ -1197,7 +1319,14 @@
   "family": "construction-0007",
   "version": 1,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
  },
  {
   "id": "construction-0007-b",
@@ -1244,7 +1373,14 @@
   "family": "construction-0007",
   "version": 2,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
  },
  {
   "id": "construction-0007-c",
@@ -1291,7 +1427,14 @@
   "family": "construction-0007",
   "version": 3,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
  },
  {
   "id": "construction-0007-d",
@@ -1338,7 +1481,14 @@
   "family": "construction-0007",
   "version": 4,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
  },
  {
   "id": "construction-0008",
@@ -1386,7 +1536,14 @@
   "family": "construction-0008",
   "version": 1,
   "versions": 2,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
  },
  {
   "id": "construction-0008-b",
@@ -1434,7 +1591,14 @@
   "family": "construction-0008",
   "version": 2,
   "versions": 2,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
  },
  {
   "id": "construction-0009",
@@ -1482,7 +1646,14 @@
   "family": "construction-0009",
   "version": 1,
   "versions": 2,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "ethics-d",
+    "ethics",
+    "Ethics and Professional Practice: Contracts and contract law"
+   ]
+  ]
  },
  {
   "id": "construction-0009-b",
@@ -1530,7 +1701,14 @@
   "family": "construction-0009",
   "version": 2,
   "versions": 2,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "ethics-d",
+    "ethics",
+    "Ethics and Professional Practice: Contracts and contract law"
+   ]
+  ]
  },
  {
   "id": "construction-0010",
@@ -1578,7 +1756,14 @@
   "family": "construction-0010",
   "version": 1,
   "versions": 2,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "ethics-d",
+    "ethics",
+    "Ethics and Professional Practice: Contracts and contract law"
+   ]
+  ]
  },
  {
   "id": "construction-0010-b",
@@ -1626,7 +1811,14 @@
   "family": "construction-0010",
   "version": 2,
   "versions": 2,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "ethics-d",
+    "ethics",
+    "Ethics and Professional Practice: Contracts and contract law"
+   ]
+  ]
  },
  {
   "id": "construction-0011",
@@ -1662,7 +1854,8 @@
   "family": "construction-0011",
   "version": 1,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": []
  },
  {
   "id": "construction-0011-b",
@@ -1698,7 +1891,8 @@
   "family": "construction-0011",
   "version": 2,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": []
  },
  {
   "id": "construction-0011-c",
@@ -1734,7 +1928,8 @@
   "family": "construction-0011",
   "version": 3,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": []
  },
  {
   "id": "construction-0011-d",
@@ -1770,7 +1965,8 @@
   "family": "construction-0011",
   "version": 4,
   "versions": 4,
-  "lookup": true
+  "lookup": true,
+  "needs": []
  },
  {
   "id": "construction-0012",
@@ -1817,7 +2013,8 @@
   "family": "construction-0012",
   "version": 1,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0012-b",
@@ -1864,7 +2061,8 @@
   "family": "construction-0012",
   "version": 2,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0012-c",
@@ -1911,7 +2109,8 @@
   "family": "construction-0012",
   "version": 3,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0012-d",
@@ -1958,7 +2157,8 @@
   "family": "construction-0012",
   "version": 4,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0013",
@@ -2008,7 +2208,14 @@
   "family": "construction-0013",
   "version": 1,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "earned value",
+    "the budgeted cost of the work actually completed to date"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "construction-0013-b",
@@ -2058,7 +2265,14 @@
   "family": "construction-0013",
   "version": 2,
   "versions": 2,
-  "lookup": true
+  "lookup": true,
+  "terms": [
+   [
+    "earned value",
+    "the budgeted cost of the work actually completed to date"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "construction-0014",
@@ -2092,7 +2306,8 @@
   "family": "construction-0014",
   "version": 1,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0014-b",
@@ -2126,7 +2341,8 @@
   "family": "construction-0014",
   "version": 2,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0014-c",
@@ -2160,7 +2376,8 @@
   "family": "construction-0014",
   "version": 3,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0014-d",
@@ -2194,7 +2411,8 @@
   "family": "construction-0014",
   "version": 4,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0015",
@@ -2228,7 +2446,8 @@
   "family": "construction-0015",
   "version": 1,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0015-b",
@@ -2262,7 +2481,8 @@
   "family": "construction-0015",
   "version": 2,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0015-c",
@@ -2296,7 +2516,8 @@
   "family": "construction-0015",
   "version": 3,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0015-d",
@@ -2330,7 +2551,8 @@
   "family": "construction-0015",
   "version": 4,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0016",
@@ -2377,7 +2599,8 @@
   "family": "construction-0016",
   "version": 1,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0016-b",
@@ -2424,7 +2647,8 @@
   "family": "construction-0016",
   "version": 2,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0016-c",
@@ -2471,7 +2695,8 @@
   "family": "construction-0016",
   "version": 3,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0016-d",
@@ -2518,7 +2743,8 @@
   "family": "construction-0016",
   "version": 4,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0017",
@@ -2552,7 +2778,8 @@
   "family": "construction-0017",
   "version": 1,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0017-b",
@@ -2586,7 +2813,8 @@
   "family": "construction-0017",
   "version": 2,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0017-c",
@@ -2620,7 +2848,8 @@
   "family": "construction-0017",
   "version": 3,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0017-d",
@@ -2654,7 +2883,8 @@
   "family": "construction-0017",
   "version": 4,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0018",
@@ -2688,7 +2918,8 @@
   "family": "construction-0018",
   "version": 1,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0018-b",
@@ -2722,7 +2953,8 @@
   "family": "construction-0018",
   "version": 2,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0018-c",
@@ -2756,7 +2988,8 @@
   "family": "construction-0018",
   "version": 3,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0018-d",
@@ -2790,7 +3023,8 @@
   "family": "construction-0018",
   "version": 4,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0019",
@@ -2824,7 +3058,14 @@
   "family": "construction-0019",
   "version": 1,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
  },
  {
   "id": "construction-0019-b",
@@ -2858,7 +3099,14 @@
   "family": "construction-0019",
   "version": 2,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
  },
  {
   "id": "construction-0019-c",
@@ -2892,7 +3140,14 @@
   "family": "construction-0019",
   "version": 3,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
  },
  {
   "id": "construction-0019-d",
@@ -2926,7 +3181,14 @@
   "family": "construction-0019",
   "version": 4,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
  },
  {
   "id": "construction-0020",
@@ -2960,7 +3222,8 @@
   "family": "construction-0020",
   "version": 1,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0020-b",
@@ -2994,7 +3257,8 @@
   "family": "construction-0020",
   "version": 2,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0020-c",
@@ -3028,7 +3292,8 @@
   "family": "construction-0020",
   "version": 3,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0020-d",
@@ -3062,7 +3327,8 @@
   "family": "construction-0020",
   "version": 4,
   "versions": 4,
-  "lookup": false
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0021",
@@ -3095,8 +3361,15 @@
   },
   "family": "construction-0021",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "ethics-d",
+    "ethics",
+    "Ethics and Professional Practice: Contracts and contract law"
+   ]
+  ]
  },
  {
   "id": "construction-0021-b",
@@ -3129,8 +3402,15 @@
   },
   "family": "construction-0021",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "ethics-d",
+    "ethics",
+    "Ethics and Professional Practice: Contracts and contract law"
+   ]
+  ]
  },
  {
   "id": "construction-0021-c",
@@ -3163,8 +3443,56 @@
   },
   "family": "construction-0021",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "ethics-d",
+    "ethics",
+    "Ethics and Professional Practice: Contracts and contract law"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0021-d",
+  "topic": "construction",
+  "subtopic": "construction-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A contractor has completed work worth $825,000 to date. The contract holds 10% retainage, and $575,000 has already been paid. How much is due on this progress payment?",
+  "answer": {
+   "value": 167500.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "A progress payment is the value of work done to date, less the retainage the owner holds until completion, less what has already been paid.",
+  "solution": "Earned less retainage = 825,000 × (1 - 0.10) = $742,500.\n\nDue now = 742,500 - 575,000 = $167,500.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0021",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "ethics-d",
+    "ethics",
+    "Ethics and Professional Practice: Contracts and contract law"
+   ]
+  ]
  },
  {
   "id": "construction-0022",
@@ -3197,8 +3525,15 @@
   },
   "family": "construction-0022",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "ethics-d",
+    "ethics",
+    "Ethics and Professional Practice: Contracts and contract law"
+   ]
+  ]
  },
  {
   "id": "construction-0022-b",
@@ -3231,8 +3566,15 @@
   },
   "family": "construction-0022",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "ethics-d",
+    "ethics",
+    "Ethics and Professional Practice: Contracts and contract law"
+   ]
+  ]
  },
  {
   "id": "construction-0022-c",
@@ -3265,8 +3607,56 @@
   },
   "family": "construction-0022",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "ethics-d",
+    "ethics",
+    "Ethics and Professional Practice: Contracts and contract law"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0022-d",
+  "topic": "construction",
+  "subtopic": "construction-a",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An estimate has direct costs of $1,600,000 and indirect costs of $210,000. The contractor adds a 7% markup for profit and contingency. What is the bid price?",
+  "answer": {
+   "value": 1936700.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "The bid is the total estimated cost, direct plus indirect (overhead), increased by the markup.",
+  "solution": "Bid = (1,600,000 + 210,000) × (1 + 0.07) = 1,810,000 × 1.07 = $1,936,700.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0022",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "ethics-d",
+    "ethics",
+    "Ethics and Professional Practice: Contracts and contract law"
+   ]
+  ]
  },
  {
   "id": "construction-0023",
@@ -3299,8 +3689,9 @@
   },
   "family": "construction-0023",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0023-b",
@@ -3333,8 +3724,9 @@
   },
   "family": "construction-0023",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0023-c",
@@ -3367,8 +3759,44 @@
   },
   "family": "construction-0023",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
+ },
+ {
+  "id": "construction-0023-d",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A job must haul 1,050 m^{3} of soil measured in the bank. The soil swells 28% when excavated, and each truck carries 11 m^{3} loose. How many truckloads are needed?",
+  "answer": {
+   "value": 122.2,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "loads"
+  },
+  "eli5": "Excavated soil loosens and takes up more room than it did in the ground. Trucks are filled with loose soil, so convert bank volume to loose volume before dividing by truck capacity.",
+  "solution": "Loose volume = 1,050 × (1 + 0.28) = 1,344 m^{3}.\n\nLoads = \\frac{1,344}{11} = 122.2.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0023",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0024",
@@ -3401,8 +3829,9 @@
   },
   "family": "construction-0024",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [],
   "symbols": [
    [
     "h",
@@ -3441,8 +3870,9 @@
   },
   "family": "construction-0024",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [],
   "symbols": [
    [
     "h",
@@ -3481,8 +3911,50 @@
   },
   "family": "construction-0024",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [],
+  "symbols": [
+   [
+    "h",
+    "hour"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0024-d",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A roller 1.9 m wide travels at 4 km/h and compacts lifts 0.17 m thick in 5 passes, working at 0.83 efficiency. What is its hourly production of compacted fill?",
+  "answer": {
+   "value": 214.5,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "m^{3}/h"
+  },
+  "eli5": "Compaction production is the volume covered in an hour, width × speed × lift thickness, divided by the number of passes each strip needs, times job efficiency.",
+  "solution": "Production = \\frac{1.9 × 4,000 × 0.17 × 0.83}{5} = 214.5 m^{3}/h.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0024",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [],
   "symbols": [
    [
     "h",
@@ -3534,8 +4006,9 @@
   },
   "family": "construction-0025",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0025-b",
@@ -3581,8 +4054,9 @@
   },
   "family": "construction-0025",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0025-c",
@@ -3628,8 +4102,57 @@
   },
   "family": "construction-0025",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
+ },
+ {
+  "id": "construction-0025-d",
+  "topic": "construction",
+  "subtopic": "construction-b",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "Fresh concrete with a unit weight of 24.0 kN/m^{3} is placed quickly to a height of 3.6 m in a wall form. Treating it as a liquid, what is the maximum pressure on the form?",
+  "options": [
+   {
+    "id": "a",
+    "text": "43.2 kPa"
+   },
+   {
+    "id": "b",
+    "text": "86.4 kPa"
+   },
+   {
+    "id": "c",
+    "text": "28.8 kPa"
+   },
+   {
+    "id": "d",
+    "text": "155.5 kPa"
+   }
+  ],
+  "answer": "b",
+  "eli5": "Until it begins to set, fresh concrete behaves like a heavy liquid, so form pressure rises linearly with depth to unit weight × height at the bottom. Slower placing lets the lower concrete stiffen and caps the pressure.",
+  "solution": "Maximum pressure = 24.0 × 3.6 = 86.4 kPa at the base of the form.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0025",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0026",
@@ -3664,8 +4187,15 @@
   },
   "family": "construction-0026",
   "version": 1,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "earned value",
+    "the budgeted cost of the work actually completed to date"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "construction-0026-b",
@@ -3700,8 +4230,15 @@
   },
   "family": "construction-0026",
   "version": 2,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "earned value",
+    "the budgeted cost of the work actually completed to date"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "construction-0026-c",
@@ -3736,8 +4273,58 @@
   },
   "family": "construction-0026",
   "version": 3,
-  "versions": 3,
-  "lookup": true
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "earned value",
+    "the budgeted cost of the work actually completed to date"
+   ]
+  ],
+  "needs": []
+ },
+ {
+  "id": "construction-0026-d",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A project has a budget at completion of $850,000. To date the earned value is $325,000 and the actual cost is $335,000. If cost performance continues at the same rate, what is the estimate at completion?",
+  "answer": {
+   "value": 876154.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$"
+  },
+  "eli5": "The cost performance index is earned value divided by actual cost: the value produced per dollar spent. If that rate holds, the estimate at completion is the budget divided by the index.",
+  "solution": "CPI = \\frac{325,000}{335,000} = 0.970.\n\nEAC = \\frac{850,000}{0.970} = $876,154.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": [
+     "earned-value analysis"
+    ]
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0026",
+  "version": 4,
+  "versions": 4,
+  "lookup": true,
+  "terms": [
+   [
+    "earned value",
+    "the budgeted cost of the work actually completed to date"
+   ]
+  ],
+  "needs": []
  },
  {
   "id": "construction-0027",
@@ -3783,8 +4370,9 @@
   },
   "family": "construction-0027",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [],
   "symbols": [
    [
     "t_{e}",
@@ -3836,8 +4424,9 @@
   },
   "family": "construction-0027",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [],
   "symbols": [
    [
     "t_{e}",
@@ -3889,8 +4478,63 @@
   },
   "family": "construction-0027",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [],
+  "symbols": [
+   [
+    "t_{e}",
+    "PERT expected duration"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0027-d",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An activity has an optimistic duration of 7 days, a most likely duration of 10 days and a pessimistic duration of 19 days. What is its PERT expected duration?",
+  "options": [
+   {
+    "id": "a",
+    "text": "12.00 days"
+   },
+   {
+    "id": "b",
+    "text": "10.00 days"
+   },
+   {
+    "id": "c",
+    "text": "11.00 days"
+   },
+   {
+    "id": "d",
+    "text": "13.00 days"
+   }
+  ],
+  "answer": "c",
+  "eli5": "PERT weights the most likely estimate four times as heavily as the two extremes: expected time = (optimistic + 4 × most likely + pessimistic) / 6.",
+  "solution": "t_{e} = \\frac{7 + 4(10) + 19}{6} = 11.00 days.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0027",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [],
   "symbols": [
    [
     "t_{e}",
@@ -3929,8 +4573,9 @@
   },
   "family": "construction-0028",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0028-b",
@@ -3963,8 +4608,9 @@
   },
   "family": "construction-0028",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0028-c",
@@ -3997,8 +4643,44 @@
   },
   "family": "construction-0028",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
+ },
+ {
+  "id": "construction-0028-d",
+  "topic": "construction",
+  "subtopic": "construction-c",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "An activity normally takes 10 days at a cost of $17,000. It can be crashed to 8 days at a cost of $23,500. What is its crash cost per day saved?",
+  "answer": {
+   "value": 3250.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "$ per day"
+  },
+  "eli5": "The cost slope is the extra cost divided by the time saved. When shortening a schedule, crash the critical activity with the lowest cost slope first.",
+  "solution": "Cost slope = \\frac{23,500 - 17,000}{10 - 8} = $3,250 per day.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0028",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0029",
@@ -4031,8 +4713,9 @@
   },
   "family": "construction-0029",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0029-b",
@@ -4065,8 +4748,9 @@
   },
   "family": "construction-0029",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0029-c",
@@ -4099,8 +4783,44 @@
   },
   "family": "construction-0029",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
+ },
+ {
+  "id": "construction-0029-d",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A block wall is 16 m long and 2.7 m high. Each block covers 0.40 m by 0.20 m of wall face including its mortar joint. Allowing 6% for waste, how many blocks should be ordered?",
+  "answer": {
+   "value": 572.4,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "blocks"
+  },
+  "eli5": "Divide the wall area by the face area of one block, joint included, then add the waste allowance.",
+  "solution": "Blocks = \\frac{16 × 2.7}{0.40 × 0.20} × (1 + 0.06) = 540 × 1.06 = 572.4.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0029",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0030",
@@ -4133,8 +4853,9 @@
   },
   "family": "construction-0030",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0030-b",
@@ -4167,8 +4888,9 @@
   },
   "family": "construction-0030",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0030-c",
@@ -4201,8 +4923,44 @@
   },
   "family": "construction-0030",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": []
+ },
+ {
+  "id": "construction-0030-d",
+  "topic": "construction",
+  "subtopic": "construction-d",
+  "format": "numeric",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A street overlay covers 4,750 m^{2} at a compacted thickness of 45 mm. The asphalt has a compacted density of 2.40 t/m^{3}. How many tonnes are needed?",
+  "answer": {
+   "value": 513.0,
+   "tolerance": 0.01,
+   "toleranceType": "rel",
+   "unit": "t"
+  },
+  "eli5": "Asphalt is ordered and paid for by mass. Quantity = area × compacted thickness × compacted density.",
+  "solution": "Mass = 4,750 × 0.045 × 2.40 = 513.0 t.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0030",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": []
  },
  {
   "id": "construction-0031",
@@ -4248,8 +5006,15 @@
   },
   "family": "construction-0031",
   "version": 1,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
  },
  {
   "id": "construction-0031-b",
@@ -4295,8 +5060,15 @@
   },
   "family": "construction-0031",
   "version": 2,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
  },
  {
   "id": "construction-0031-c",
@@ -4342,8 +5114,69 @@
   },
   "family": "construction-0031",
   "version": 3,
-  "versions": 3,
-  "lookup": false
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0031-d",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "On a grading plan with a contour interval of 1.2 m, two adjacent contours are 22 m apart on the ground. What is the average slope between them?",
+  "options": [
+   {
+    "id": "a",
+    "text": "18.33 %"
+   },
+   {
+    "id": "b",
+    "text": "10.91 %"
+   },
+   {
+    "id": "c",
+    "text": "2.73 %"
+   },
+   {
+    "id": "d",
+    "text": "5.45 %"
+   }
+  ],
+  "answer": "d",
+  "eli5": "Slope is rise over run. Between adjacent contours the rise is the contour interval and the run is the horizontal distance between them.",
+  "solution": "Slope = \\frac{1.2}{22} × 100 = 5.5%.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0031",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ]
  },
  {
   "id": "construction-0032",
@@ -4389,8 +5222,15 @@
   },
   "family": "construction-0032",
   "version": 1,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ],
   "symbols": [
    [
     "X",
@@ -4446,8 +5286,15 @@
   },
   "family": "construction-0032",
   "version": 2,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ],
   "symbols": [
    [
     "X",
@@ -4503,8 +5350,79 @@
   },
   "family": "construction-0032",
   "version": 3,
-  "versions": 3,
+  "versions": 4,
   "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ],
+  "symbols": [
+   [
+    "X",
+    "a quantity"
+   ],
+   [
+    "N",
+    "number of recordable cases"
+   ]
+  ]
+ },
+ {
+  "id": "construction-0032-d",
+  "topic": "construction",
+  "subtopic": "construction-e",
+  "format": "mcq",
+  "status": "live",
+  "difficulty": 2,
+  "units": "SI",
+  "stem": "A plan sheet is drawn at 1 in = 35 ft. Written as a ratio 1:N, what is N?",
+  "options": [
+   {
+    "id": "a",
+    "text": "35"
+   },
+   {
+    "id": "b",
+    "text": "3,500"
+   },
+   {
+    "id": "c",
+    "text": "105"
+   },
+   {
+    "id": "d",
+    "text": "420"
+   }
+  ],
+  "answer": "d",
+  "eli5": "A ratio scale needs both sides in the same unit. One foot is 12 inches, so 1 in = X ft is 1:12X.",
+  "solution": "N = 35 × 12 = 420, so the scale is 1:420.",
+  "handbook": [
+   {
+    "section": "Civil Engineering",
+    "page": "259–309",
+    "find": []
+   }
+  ],
+  "tags": [],
+  "source": "original",
+  "verify": {
+   "method": "computed"
+  },
+  "family": "construction-0032",
+  "version": 4,
+  "versions": 4,
+  "lookup": false,
+  "needs": [
+   [
+    "surveying-e",
+    "surveying",
+    "Surveying: Leveling"
+   ]
+  ],
   "symbols": [
    [
     "X",

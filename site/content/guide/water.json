@@ -71,14 +71,15 @@
     ]
    },
    "bridge": {
-    "keep": "The rational method and pipe or gutter capacity, if you have sized street drainage.",
-    "rusty": [
-     "Hydrology beyond the rational method: curve numbers and hydrographs.",
-     "Open-channel concepts: critical depth, Froude number and specific energy.",
-     "Water and wastewater treatment, water chemistry and groundwater, which transportation work rarely touches."
+    "plain": "Water resources covers rain becoming runoff, water moving through channels, pipes, pumps and soil, and how water is cleaned before and after use.",
+    "core": [
+     "Runoff depends on how much rain falls, on what surface, over what area.",
+     "Open channels are sized by how area, wall roughness and slope set the velocity.",
+     "Pumps add energy; friction removes it.",
+     "Treatment is a chain of steps: settle, filter, disinfect; or use microorganisms to consume waste."
     ],
-    "work": "Inlet spacing, gutter spread, culverts and storm drains on street projects, plus stormwater quality requirements, are the practical side of this topic. It is also one of the two heaviest topics on the exam, so the unfamiliar treatment and chemistry parts deserve early time.",
-    "exam": "The handbook splits this material between Civil Engineering (hydrology, hydraulics) and Environmental Engineering (treatment, chemistry). Learn which chapter holds what."
+    "links": "Hydraulics is fluid mechanics applied. Groundwater links to geotechnics. Water chemistry stands largely on its own.",
+    "exam": "The handbook splits this between the civil chapter (hydrology, hydraulics) and the environmental chapter (treatment, chemistry)."
    }
   },
   {
@@ -161,6 +162,30 @@
      "steps": "CN = \\frac{3.0(98) + 9.0(70)}{3.0 + 9.0} = \\frac{924.0}{12.0} = 77.0.",
      "answer": "77.0",
      "value": 77.0
+    },
+    {
+     "family": "water-0033",
+     "problem": "A drainage area has 5.6 ha of pavement with a runoff coefficient of 0.90 and 16.4 ha of landscaping with a runoff coefficient of 0.30. What composite runoff coefficient should be used in the rational formula?",
+     "idea": "For mixed surfaces the rational method uses an area-weighted runoff coefficient: the sum of each C times its area, divided by the total area.",
+     "steps": "C = \\frac{0.90(5.6) + 0.30(16.4)}{5.6 + 16.4} = \\frac{9.960}{22.0} = 0.453.",
+     "answer": "0.453",
+     "value": 0.452727
+    },
+    {
+     "family": "water-0034",
+     "problem": "A catchment's unit hydrograph, for 1 cm of rainfall excess, peaks at 69 m^{3}/s. A storm of the same duration produces 2.9 cm of excess, and base flow is 6 m^{3}/s. What is the peak stream flow?",
+     "idea": "A unit hydrograph is the direct runoff from one unit of rainfall excess. Runoff scales in proportion to the excess, and base flow is added afterwards.",
+     "steps": "Peak direct runoff = 2.9 × 69 = 200.1 m^{3}/s.\n\nPeak flow = 200.1 + 6 = 206.1 m^{3}/s.",
+     "answer": "206.1 m^{3}/s",
+     "value": 206.1
+    },
+    {
+     "family": "water-0035",
+     "problem": "Three rain gauges represent 12, 18 and 15 km^{2} of a catchment and record 44, 55 and 50 mm of rain. What is the area-weighted average rainfall over the catchment?",
+     "idea": "When gauges represent unequal areas, as in the Thiessen polygon method, the average rainfall weights each gauge by the area it represents.",
+     "steps": "P = \\frac{12(44) + 18(55) + 15(50)}{12 + 18 + 15} = \\frac{2,268}{45} = 50.4 mm.",
+     "answer": "50.4 mm",
+     "value": 50.4
     }
    ],
    "lookup": [
@@ -184,7 +209,43 @@
     "Keep units consistent: in/h and acres give cfs directly."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Street drainage starts with the rational method: runoff coefficient, intensity for the time of concentration, and drainage area.",
+   "primer": "Hydrology follows rain. Some soaks in, some evaporates and the rest runs off. Peak runoff from a small area is estimated from the rain intensity, the area, and a coefficient for how much the surface sheds.",
+   "needs": [],
+   "leads": [
+    [
+     "water-e",
+     "water",
+     "Water Resources and Environmental Engineering: Flood control"
+    ],
+    [
+     "water-f",
+     "water",
+     "Water Resources and Environmental Engineering: Stormwater"
+    ]
+   ],
+   "work": "Street drainage design starts here: runoff coefficient, rain intensity and drainage area.",
+   "terms": [
+    [
+     "runoff coefficient",
+     "the fraction of rainfall that runs off a surface instead of soaking in; near 1 for pavement, low for lawn"
+    ],
+    [
+     "time of concentration",
+     "the time for runoff from the farthest point of a drainage area to reach the outlet"
+    ],
+    [
+     "curve number",
+     "an index from 0 to 100 of how much rain a land surface turns into runoff"
+    ],
+    [
+     "hydrograph",
+     "a graph of flow against time at one point on a stream or drain"
+    ],
+    [
+     "return period",
+     "the average number of years between events of a given size or larger; its reciprocal is the chance in any one year"
+    ]
+   ],
    "symbols": [
     [
      "Q",
@@ -209,6 +270,10 @@
     [
      "P",
      "rainfall depth"
+    ],
+    [
+     "s",
+     "second"
     ]
    ]
   },
@@ -340,6 +405,19 @@
      "steps": "Q = 1.84(2.5)(0.35)^{3/2} = 1.84 × 2.5 × 0.2071 = 0.952 m^{3}/s.",
      "answer": "0.952 m^{3}/s",
      "value": 0.952489
+    },
+    {
+     "family": "water-0037",
+     "problem": "A trapezoidal roadside channel has a bottom width of 3.2 m, side slopes of 2.2 horizontal to 1 vertical, and flows 1.4 m deep. What is its hydraulic radius?",
+     "idea": "Hydraulic radius is flow area divided by wetted perimeter. For a trapezoid the area is (b + z y) y, and the wetted perimeter is the bottom plus two sloping sides, each y × square root of (1 + z^{2}) long.",
+     "steps": "A = (3.2 + 2.2 × 1.4)(1.4) = 8.792 m^{2}.\n\nP = 3.2 + 2(1.4)\\sqrt{1 + 2.2^{2}} = 9.967 m.\n\nR = \\frac{8.792}{9.967} = 0.882 m.",
+     "answer": "0.882 m",
+     "value": 0.882155,
+     "figure": {
+      "viewBox": "0 0 400 175",
+      "svg": "<path d='M80 111 L166 150 L234 150 L320 111' fill='none' stroke='#00242E' stroke-width='3'/><path d='M100 120 L166 150 L234 150 L300 120 Z' fill='#568CBB' fill-opacity='.3'/><text x='200' y='166' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3.2 m</text><text x='200' y='139' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>1.4 m deep</text><text x='310' y='140' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>2.2 : 1</text>",
+      "alt": "A trapezoidal channel with a 3.2 m bottom, side slopes of 2.2 horizontal to 1 vertical, flowing 1.4 m deep."
+     }
     }
    ],
    "lookup": [
@@ -372,7 +450,52 @@
     "For pipes, write the energy equation with the friction loss."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Gutter flow and roadside ditches are open channels sized with Manning's equation.",
+   "primer": "Water in a channel or a part-full pipe flows downhill under gravity. Its speed depends on the slope, the roughness of the walls and the shape of the flow section. Manning's equation ties these together.",
+   "needs": [
+    [
+     "fluids-d",
+     "fluids",
+     "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+    ]
+   ],
+   "leads": [
+    [
+     "water-g",
+     "water",
+     "Water Resources and Environmental Engineering: Collection systems"
+    ]
+   ],
+   "work": "Gutters and roadside ditches are open channels.",
+   "terms": [
+    [
+     "hydraulic radius",
+     "flow area divided by wetted perimeter; a measure of how efficiently a channel or pipe carries water"
+    ],
+    [
+     "wetted perimeter",
+     "the length of channel or pipe wall in contact with the water, measured across the flow"
+    ],
+    [
+     "specific energy",
+     "the depth of flow plus its velocity head, measured from the channel bottom"
+    ],
+    [
+     "head",
+     "energy of a fluid expressed as a height of that fluid, in metres or feet"
+    ],
+    [
+     "critical depth",
+     "the depth at which a given flow has the least energy; shallower flow is fast (supercritical), deeper flow is slow (subcritical)"
+    ],
+    [
+     "froude number",
+     "flow velocity compared with the speed of a small surface wave; below 1 is slow, deep flow and above 1 is fast, shallow flow"
+    ],
+    [
+     "hydraulic jump",
+     "an abrupt rise in the water surface where fast, shallow flow changes to slow, deep flow"
+    ]
+   ],
    "symbols": [
     [
      "y_{c}",
@@ -437,6 +560,10 @@
     [
      "y",
      "depth of flow"
+    ],
+    [
+     "P",
+     "wetted perimeter, rainfall depth, or power"
     ]
    ]
   },
@@ -496,6 +623,30 @@
      "steps": "Q_{2} = Q_{1} × \\frac{N_{2}}{N_{1}} = 150 × \\frac{1,750}{1,150} = 228.3 L/s. The head would change by a factor of (1,750 / 1,150)^{2} = 2.32.",
      "answer": "228.3 L/s",
      "value": 228.26087
+    },
+    {
+     "family": "water-0040",
+     "problem": "A centrifugal pump develops a head of 21 m at 975 rpm. Using the affinity laws, what head does it develop at 1,275 rpm?",
+     "idea": "For the same pump, flow varies with speed, head with speed squared and power with speed cubed.",
+     "steps": "H_{2} = H_{1} (\\frac{N_{2}}{N_{1}})^{2} = 21 (\\frac{1,275}{975})^{2} = 35.9 m.",
+     "answer": "35.9 m",
+     "value": 35.911243
+    },
+    {
+     "family": "water-0041",
+     "problem": "A pump draws water from an open sump whose surface is 3.2 m below the pump inlet. Atmospheric pressure is 101.3 kPa, the vapour pressure of the water is 5.8 kPa and suction-pipe losses are 1.1 m. What net positive suction head is available? Use 9.81 kN/m^{3}.",
+     "idea": "NPSH available is the absolute head at the pump inlet above the vapour pressure head: atmospheric head, minus vapour pressure head, minus the suction lift, minus suction losses. It must exceed what the pump requires, or the pump cavitates.",
+     "steps": "\\frac{101.3 - 5.8}{9.81} = 9.735 m.\n\nNPSH_{A} = 9.735 - 3.2 - 1.1 = 5.43 m.",
+     "answer": "5.43 m",
+     "value": 5.434964
+    },
+    {
+     "family": "water-0042",
+     "problem": "A pump delivers 0.131 m^{3}/s of water against a total head of 36 m while drawing 34 kW of shaft power. What is its efficiency? Use 9.81 kN/m^{3}.",
+     "idea": "Efficiency is the power put into the water, specific weight × flow × head, divided by the shaft power supplied.",
+     "steps": "Water power = 9.81(0.131)(36) = 46.26 kW.\n\nEfficiency = \\frac{46.26}{34} × 100 = 136.1%.",
+     "answer": "136.1 %",
+     "value": 136.070471
     }
    ],
    "lookup": [
@@ -517,6 +668,35 @@
     "For two pumps, build the combined curve: add heads (series) or flows (parallel).",
     "Find the operating point where pump and system curves meet.",
     "For a speed change, apply the affinity laws."
+   ],
+   "primer": "A pump adds energy to water so it can rise or overcome friction. The energy added per unit weight is the pump head, in metres or feet. Power is flow times head times the unit weight of water, divided by efficiency.",
+   "needs": [
+    [
+     "fluids-d",
+     "fluids",
+     "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+    ]
+   ],
+   "leads": [
+    [
+     "water-d",
+     "water",
+     "Water Resources and Environmental Engineering: Water distribution systems"
+    ]
+   ],
+   "terms": [
+    [
+     "unit weight",
+     "weight per unit volume of a soil or material"
+    ],
+    [
+     "head",
+     "energy of a fluid expressed as a height of that fluid, in metres or feet"
+    ],
+    [
+     "specific weight",
+     "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+    ]
    ],
    "symbols": [
     [
@@ -645,6 +825,30 @@
       "svg": "<rect x='40' y='20' width='90' height='46' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><line x1='85' y1='66' x2='85' y2='150' stroke='#00242E' stroke-width='4'/><line x1='85' y1='150' x2='330' y2='150' stroke='#00242E' stroke-width='4'/><rect x='322' y='128' width='16' height='22' fill='#1B795A'/><line x1='20' y1='158' x2='380' y2='158' stroke='#00242E'/><line x1='200' y1='24' x2='200' y2='150' stroke='#00242E'/><line x1='130' y1='24' x2='210' y2='24' stroke='#00242E' stroke-dasharray='4 4'/><text x='208' y='92' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>46 m</text><text x='85' y='14' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Water surface</text><text x='330' y='122' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Hydrant</text>",
       "alt": "An elevated tank whose water surface is 46 m above a hydrant."
      }
+    },
+    {
+     "family": "water-0043",
+     "problem": "A water main is 1,550 m long and 0.28 m in diameter, with a Hazen-Williams coefficient of 115. It carries 0.08 m^{3}/s. Using h_{f} = 10.67 L Q^{1.852} / (C^{1.852} D^{4.87}) in SI units, what is the friction head loss?",
+     "idea": "The Hazen-Williams equation is an empirical formula for water in pressure pipes. Head loss rises with flow to the 1.852 power and falls steeply with diameter, to the 4.87 power.",
+     "steps": "h_{f} = \\frac{10.67(1,550)(0.08)^{1.852}}{(115)^{1.852}(0.28)^{4.87}} = \\frac{10.67(1,550)(0.009301)}{(6,552.6)(0.002031)} = 11.56 m.",
+     "answer": "11.56 m",
+     "value": 11.559705
+    },
+    {
+     "family": "water-0044",
+     "problem": "Two parallel pipes of equal length and friction factor join the same two junctions. Their diameters are 275 mm and 175 mm, and together they carry 140 L/s. How much flows in the 275 mm pipe?",
+     "idea": "Pipes in parallel have the same head loss. With the Darcy-Weisbach equation and equal length and friction factor, each pipe's flow is proportional to its diameter to the 5/2 power.",
+     "steps": "D^{2.5}: 1,254,099 and 405,131.\n\nQ_{1} = 140 × \\frac{1,254,099}{1,254,099 + 405,131} = 105.8 L/s.",
+     "answer": "105.8 L/s",
+     "value": 105.816485
+    },
+    {
+     "family": "water-0045",
+     "problem": "The pressure at point A in a water main is 425 kPa. Point B, downstream, is 16 m higher than A, and the friction loss between them is 5.8 m. The pipe size is constant. What is the pressure at B? Use 9.81 kN/m^{3}.",
+     "idea": "With a constant pipe size the velocity head cancels in the energy equation. Pressure head at B is the pressure head at A minus the rise in elevation and minus the head lost to friction.",
+     "steps": "p_{B} = 425 - 9.81(16 + 5.8) = 425 - 213.9 = 211.1 kPa.",
+     "answer": "211.1 kPa",
+     "value": 211.142
     }
    ],
    "lookup": [
@@ -674,6 +878,34 @@
     "Size storage for equalising, fire and emergency volumes."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "A distribution system delivers water under pressure through a network of pipes. Pressure falls with elevation and with friction along the pipes, and the system must meet the peak demand.",
+   "needs": [
+    [
+     "fluids-d",
+     "fluids",
+     "Fluid Mechanics: Energy, impulse, and momentum of fluids"
+    ],
+    [
+     "water-c",
+     "water",
+     "Water Resources and Environmental Engineering: Pumps"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "head",
+     "energy of a fluid expressed as a height of that fluid, in metres or feet"
+    ],
+    [
+     "head loss",
+     "energy, expressed as a height of fluid, used up by friction and fittings"
+    ],
+    [
+     "specific weight",
+     "weight per unit volume; for water 9.81 kN/m^{3} or 62.4 lb/ft^{3}"
+    ]
+   ],
    "symbols": [
     [
      "h_{total}",
@@ -698,6 +930,14 @@
     [
      "Q_{2}",
      "flow at the second speed"
+    ],
+    [
+     "h_{f}",
+     "head lost to friction"
+    ],
+    [
+     "p_{B}",
+     "pressure at point B"
     ]
    ]
   },
@@ -772,7 +1012,33 @@
      "idea": "Check a one-metre length of dam as a rigid block. The water thrust is the area of the triangular pressure diagram, half the unit weight of water times the depth squared. Friction can supply up to the coefficient times the dam's weight.",
      "steps": "Weight = 23.5(5)(7) = 822.5 kN/m.\n\nWater thrust = \\frac{1}{2}(9.81)(7)^{2} = 240.3 kN/m.\n\nFS = \\frac{0.60(822.5)}{240.3} = 2.05.",
      "answer": "2.05",
-     "value": 2.053298
+     "value": 2.053298,
+     "figure": {
+      "viewBox": "0 0 400 195",
+      "svg": "<rect x='40' y='20' width='160' height='150' fill='#568CBB' fill-opacity='.25'/><rect x='200' y='20' width='107' height='150' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='20' y1='170' x2='380' y2='170' stroke='#00242E' stroke-width='2'/><path d='M200 20 L200 170 L132 170 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='254' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>5 m</text><text x='315' y='95' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>7 m</text><line x1='130' y1='120' x2='188' y2='120' stroke='#00574A' stroke-width='3'/><path d='M196 120 L184 114 L184 126 Z' fill='#00574A'/><text x='126' y='124' text-anchor='end' font-size='11' font-weight='600' fill='#00574A'>240.3 kN/m at h / 3</text><line x1='254' y1='75' x2='254' y2='107' stroke='#568CBB' stroke-width='3'/><path d='M254 115 L248 103 L260 103 Z' fill='#568CBB'/><text x='254' y='69' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>822.5 kN/m</text>",
+      "alt": "A rectangular concrete dam 5 m wide and 7 m high with water level with its top on one side and a triangular pressure diagram."
+     }
+    },
+    {
+     "family": "water-0046",
+     "problem": "A spillway crest is 24 m long and has a discharge coefficient of 2.2 in SI units. What does it discharge under a head of 1.6 m, using Q = C L H^{3/2}?",
+     "idea": "A spillway crest behaves as a weir: discharge is proportional to the crest length and to the head raised to the 3/2 power. Doubling the head nearly triples the flow.",
+     "steps": "Q = 2.2(24)(1.6)^{1.5} = 2.2 × 24 × 2.0239 = 106.9 m^{3}/s.",
+     "answer": "106.9 m^{3}/s",
+     "value": 106.859687
+    },
+    {
+     "family": "water-0047",
+     "problem": "A concrete gravity dam with a rectangular section is 4.2 m wide and 7 m high, with water level with its top on one side. Concrete weighs 23.5 kN/m^{3} and uplift is ignored. What is the factor of safety against overturning about the downstream toe?",
+     "idea": "Overturning is a moment check about the toe. The water thrust, the area of the triangular pressure diagram, acts one third of the depth above the base. The dam's weight acts at half its width from the toe.",
+     "steps": "Resisting moment = 23.5(4.2)(7) × \\frac{4.2}{2} = 1,451 kN·m/m.\n\nOverturning moment = \\frac{1}{2}(9.81)(7)^{2} × \\frac{7}{3} = 561 kN·m/m.\n\nFS = \\frac{1,451}{561} = 2.59.",
+     "answer": "2.59",
+     "value": 2.587156,
+     "figure": {
+      "viewBox": "0 0 400 195",
+      "svg": "<rect x='40' y='20' width='160' height='150' fill='#568CBB' fill-opacity='.25'/><rect x='200' y='20' width='90' height='150' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='20' y1='170' x2='380' y2='170' stroke='#00242E' stroke-width='2'/><path d='M200 20 L200 170 L132 170 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='245' y='186' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4.2 m</text><text x='298' y='95' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>7 m</text><line x1='130' y1='120' x2='188' y2='120' stroke='#00574A' stroke-width='3'/><path d='M196 120 L184 114 L184 126 Z' fill='#00574A'/><text x='126' y='124' text-anchor='end' font-size='11' font-weight='600' fill='#00574A'>240.3 kN/m at h / 3</text><line x1='245' y1='75' x2='245' y2='107' stroke='#568CBB' stroke-width='3'/><path d='M245 115 L239 103 L251 103 Z' fill='#568CBB'/><text x='245' y='69' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>690.9 kN/m</text>",
+      "alt": "A rectangular concrete dam 4.2 m wide and 7 m high with water level with its top on one side and a triangular pressure diagram."
+     }
     }
    ],
    "lookup": [
@@ -798,7 +1064,41 @@
     "For storage, apply inflow minus outflow times the time step.",
     "Compare the reduced peak outflow with the capacity downstream."
    ],
-   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words."
+   "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "Flood control stores or passes high flows safely. A flood's size is described by how often it is expected: a 100-year flood has a 1 in 100 chance in any year. Dams must also resist the push of the water behind them.",
+   "needs": [
+    [
+     "water-a",
+     "water",
+     "Water Resources and Environmental Engineering: Basic hydrology"
+    ],
+    [
+     "fluids-c",
+     "fluids",
+     "Fluid Mechanics: Fluid statics"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "return period",
+     "the average number of years between events of a given size or larger; its reciprocal is the chance in any one year"
+    ],
+    [
+     "unit weight",
+     "weight per unit volume of a soil or material"
+    ]
+   ],
+   "symbols": [
+    [
+     "Q",
+     "flow rate"
+    ],
+    [
+     "s",
+     "second"
+    ]
+   ]
   },
   {
    "id": "water-f-lesson",
@@ -855,6 +1155,30 @@
      "steps": "\\frac{Q_{after}}{Q_{before}} = \\frac{C_{2}}{C_{1}} = \\frac{0.75}{0.35} = 2.14.",
      "answer": "2.14",
      "value": 2.142857
+    },
+    {
+     "family": "water-0048",
+     "problem": "A stormwater treatment facility must capture the runoff from the first 22 mm of rain on a 5.8 ha site whose volumetric runoff coefficient is 0.62. What water quality volume is required?",
+     "idea": "The water quality volume is the depth of rain to be captured, times the fraction that runs off, times the drainage area. One hectare is 10,000 m^{2}.",
+     "steps": "Volume = 0.022 m × 0.62 × 58,000 m^{2} = 791 m^{3}.",
+     "answer": "791 m^{3}",
+     "value": 791.12
+    },
+    {
+     "family": "water-0049",
+     "problem": "Local rainfall intensity is i = 2,500 / (t + 15) mm/h, with t in minutes. A 14 ha site with a runoff coefficient of 0.70 has a time of concentration of 28 min. Using Q = C i A / 360 (i in mm/h, A in ha), what is the peak runoff?",
+     "idea": "The rational method takes the storm duration equal to the time of concentration, because that is the shortest storm for which the whole site contributes at once. Longer times of concentration mean lower intensities.",
+     "steps": "i = \\frac{2,500}{28 + 15} = 58.14 mm/h.\n\nQ = \\frac{0.70(58.14)(14)}{360} = 1.583 m^{3}/s.",
+     "answer": "1.583 m^{3}/s",
+     "value": 1.582687
+    },
+    {
+     "family": "water-0050",
+     "problem": "Runoff passes through two stormwater treatment devices in series. The first removes 65% of suspended solids and the second removes 40% of what reaches it. What is the overall removal?",
+     "idea": "Removals in series do not add. The second device only sees what the first lets through, so multiply the fractions that pass and subtract from one.",
+     "steps": "Fraction passing = (1 - 0.65)(1 - 0.40) = 0.21.\n\nOverall removal = 1 - 0.21 = 79%.",
+     "answer": "79 %",
+     "value": 79.0
     }
    ],
    "lookup": [
@@ -874,7 +1198,29 @@
     "Size the outlet with the orifice or weir equation for the allowed release."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Complete streets projects often add bioretention and other treatment that must capture a water quality volume.",
+   "primer": "Paving land makes more rain run off, faster. Stormwater management holds runoff back in basins and releases it slowly, and treats the first, dirtiest part of it.",
+   "needs": [
+    [
+     "water-a",
+     "water",
+     "Water Resources and Environmental Engineering: Basic hydrology"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "runoff coefficient",
+     "the fraction of rainfall that runs off a surface instead of soaking in; near 1 for pavement, low for lawn"
+    ],
+    [
+     "time of concentration",
+     "the time for runoff from the farthest point of a drainage area to reach the outlet"
+    ],
+    [
+     "hydrograph",
+     "a graph of flow against time at one point on a stream or drain"
+    ]
+   ],
    "symbols": [
     [
      "Q_{after}",
@@ -907,6 +1253,10 @@
     [
      "A",
      "drainage area or flow area"
+    ],
+    [
+     "s",
+     "second"
     ]
    ]
   },
@@ -982,6 +1332,14 @@
      "steps": "R = 0.375 / 4 = 0.0938 m, and R^{2/3} = 0.2064.\n\nS = (\\frac{0.6(0.013)}{0.2064})^{2} = 0.00143 = 0.143%.",
      "answer": "0.143 %",
      "value": 0.142855
+    },
+    {
+     "family": "water-0051",
+     "problem": "A sewer leaves a manhole at an invert elevation of 143.97 m and runs 88 m at a slope of 0.72% to the next manhole. What is the invert elevation where it arrives?",
+     "idea": "A gravity sewer falls at its design slope. The drop is slope, as a decimal, times the run.",
+     "steps": "Drop = \\frac{0.72}{100} × 88 = 0.63 m.\n\nInvert = 143.97 - 0.63 = 143.34 m.",
+     "answer": "143.34 m",
+     "value": 143.3364
     }
    ],
    "lookup": [
@@ -1002,7 +1360,21 @@
     "Use partial-flow relations if depth or velocity at a given flow is asked."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Storm drains are sized to flow by gravity at a self-cleansing velocity, the same checks as for sewers.",
+   "primer": "Collection systems are pipes that carry wastewater or stormwater by gravity. They are laid on a slope steep enough to keep solids moving and sized for the peak flow.",
+   "needs": [
+    [
+     "water-b",
+     "water",
+     "Water Resources and Environmental Engineering: Basic hydraulics"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "hydraulic radius",
+     "flow area divided by wetted perimeter; a measure of how efficiently a channel or pipe carries water"
+    ]
+   ],
    "symbols": [
     [
      "V",
@@ -1100,6 +1472,30 @@
      "steps": "K = \\frac{Q ln(r_{2} / r_{1})}{π(h_{2}^{2} - h_{1}^{2})} = \\frac{800 ln(60 / 12)}{π(21.4^{2} - 20.0^{2})} = \\frac{800(1.6094)}{π(57.96)} = 7.07 m/day.",
      "answer": "7.07 m/day",
      "value": 7.071083
+    },
+    {
+     "family": "water-0052",
+     "problem": "A well fully penetrates a confined aquifer with a transmissivity of 725 m^{2}/day. At steady state, the piezometric level at 105 m from the well is 1.3 m higher than at 12 m. What is the pumping rate?",
+     "idea": "For steady radial flow to a well in a confined aquifer, Q = 2π T (h_{2} - h_{1}) / ln(r_{2} / r_{1}). Transmissivity is hydraulic conductivity times aquifer thickness.",
+     "steps": "Q = \\frac{2π(725)(1.3)}{ln(105 / 12)} = \\frac{5,921.9}{2.1691} = 2,730 m^{3}/day.",
+     "answer": "2,730 m^{3}/day",
+     "value": 2730.17775
+    },
+    {
+     "family": "water-0053",
+     "problem": "The water table in an unconfined aquifer with a specific yield of 0.15 falls by 1.1 m over an area of 6.2 km^{2}. What volume of water has drained from storage?",
+     "idea": "Specific yield is the volume of water an unconfined aquifer releases per unit area per unit drop of the water table. It is less than the porosity because some water stays held on the grains.",
+     "steps": "Volume = 0.15 × 6,200,000 m^{2} × 1.1 m = 1,023,000 m^{3}.",
+     "answer": "1,023,000 m^{3}",
+     "value": 1023000.0
+    },
+    {
+     "family": "water-0054",
+     "problem": "Groundwater flows through sand with a hydraulic conductivity of 29 m/day and an effective porosity of 0.30 under a hydraulic gradient of 0.006. How long does water take to travel 700 m?",
+     "idea": "Darcy's law gives the flow per unit of total area. Water moves only through the pores, so the actual (seepage) velocity is the Darcy velocity divided by the effective porosity.",
+     "steps": "Seepage velocity = \\frac{29(0.006)}{0.30} = 0.5800 m/day.\n\nTime = \\frac{700}{0.5800} = 1,207 days.",
+     "answer": "1,207 days",
+     "value": 1206.896552
     }
    ],
    "lookup": [
@@ -1124,6 +1520,33 @@
     "Transmissivity is hydraulic conductivity times the saturated thickness."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "Groundwater moves slowly through the gaps in soil and rock. The flow is proportional to how easily the ground lets water through and to the slope of the water table. Pumping a well lowers the water level around it.",
+   "needs": [
+    [
+     "fluids-b",
+     "fluids",
+     "Fluid Mechanics: Fluid properties"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "hydraulic conductivity",
+     "how easily water moves through a soil or aquifer, as a velocity per unit hydraulic gradient"
+    ],
+    [
+     "hydraulic gradient",
+     "the drop in water level (head) per unit distance along the flow path"
+    ],
+    [
+     "porosity",
+     "volume of voids divided by the total volume of a soil or rock"
+    ],
+    [
+     "head",
+     "energy of a fluid expressed as a height of that fluid, in metres or feet"
+    ]
+   ],
    "symbols": [
     [
      "v_{s}",
@@ -1247,6 +1670,30 @@
      "steps": "BOD_{t} = L_{0}(1 - e^{-k t}), so L_{0} = \\frac{200}{1 - e^{-0.25(5)}} = \\frac{200}{1 - 0.2865} = \\frac{200}{0.7135} = 280 mg/L.",
      "answer": "280 mg/L",
      "value": 280.310224
+    },
+    {
+     "family": "water-0055",
+     "problem": "A stream flowing at 14.2 m^{3}/s with a pollutant concentration of 2.2 mg/L receives a discharge of 1.2 m^{3}/s at 32 mg/L. What is the concentration just after complete mixing?",
+     "idea": "Mass is conserved at a mixing point: the load after mixing is the sum of the loads coming in. Concentration is that total load divided by the total flow.",
+     "steps": "C = \\frac{14.2(2.2) + 1.2(32)}{14.2 + 1.2} = \\frac{69.6}{15.4} = 4.52 mg/L.",
+     "answer": "4.52 mg/L",
+     "value": 4.522078
+    },
+    {
+     "family": "water-0056",
+     "problem": "A water sample contains 134 mg/L of bicarbonate (HCO_{3}^{-}, equivalent weight 61). Express this as mg/L as CaCO_{3} (equivalent weight 50).",
+     "idea": "Concentrations are put on a common basis by converting to calcium carbonate equivalents: multiply by 50 and divide by the ion's own equivalent weight.",
+     "steps": "134 × \\frac{50}{61} = 109.8 mg/L as CaCO_{3}.",
+     "answer": "109.8 mg/L as CaCO_{3}",
+     "value": 109.836066
+    },
+    {
+     "family": "water-0057",
+     "problem": "A treatment plant receives 27,750 m^{3}/day of wastewater with a BOD of 105 mg/L. What is the BOD loading?",
+     "idea": "Mass loading is flow times concentration. Since 1 mg/L is 1 g/m^{3}, multiplying m^{3}/day by mg/L gives g/day; divide by 1,000 for kg/day.",
+     "steps": "Loading = \\frac{27,750(105)}{1,000} = 2,914 kg/day.",
+     "answer": "2,914 kg/day",
+     "value": 2913.75
     }
    ],
    "lookup": [
@@ -1268,6 +1715,30 @@
     "Convert ions to CaCO_{3} equivalents by multiplying by 50 over the ion's equivalent weight."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "Water quality is described by what is dissolved or suspended in the water, in milligrams per litre. Organic pollution is measured by the oxygen that microorganisms need to break it down.",
+   "needs": [],
+   "leads": [
+    [
+     "water-j",
+     "water",
+     "Water Resources and Environmental Engineering: Testing and standards"
+    ],
+    [
+     "water-k",
+     "water",
+     "Water Resources and Environmental Engineering: Water and wastewater treatment"
+    ]
+   ],
+   "terms": [
+    [
+     "bod",
+     "biochemical oxygen demand: the oxygen that microorganisms use up while breaking down the organic matter in water"
+    ],
+    [
+     "hardness",
+     "the calcium and magnesium dissolved in water, reported as an equivalent amount of calcium carbonate"
+    ]
+   ],
    "symbols": [
     [
      "L_{0}",
@@ -1292,6 +1763,10 @@
     [
      "t",
      "time"
+    ],
+    [
+     "C",
+     "concentration"
     ]
    ]
   },
@@ -1354,6 +1829,22 @@
      "steps": "Combined level = 85 + 10 log_{10}(5) = 85 + 7.0 = 92 dB.",
      "answer": "92 dB",
      "value": 91.9897
+    },
+    {
+     "family": "water-0059",
+     "problem": "In a suspended solids test, a filter weighs 1.0972 g before and 1.1027 g after filtering and drying a 62 mL sample. What is the total suspended solids concentration?",
+     "idea": "Total suspended solids is the dry mass caught on the filter divided by the volume filtered. Convert grams to milligrams and millilitres to litres.",
+     "steps": "Mass retained = 1.1027 - 1.0972 = 0.0055 g = 5.5 mg.\n\nTSS = \\frac{5.5}{0.062} = 89 mg/L.",
+     "answer": "89 mg/L",
+     "value": 88.709677
+    },
+    {
+     "family": "water-0060",
+     "problem": "Construction equipment produces a sound level of 92 dB at 10 m. Treating it as a point source in open ground, what is the level at 40 m?",
+     "idea": "Sound from a point source spreads over a sphere, so its intensity falls with distance squared. In decibels that is a drop of 20 log(r_{2} / r_{1}), about 6 dB for each doubling of distance.",
+     "steps": "L_{2} = 92 - 20 log(\\frac{40}{10}) = 92 - 12.04 = 80.0 dB.",
+     "answer": "80.0 dB",
+     "value": 79.9588
     }
    ],
    "lookup": [
@@ -1374,10 +1865,37 @@
     "Compare the result with the limit on the same averaging basis."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "Standards set the limits that drinking water, discharges, air and noise must meet, and standard tests measure against them.",
+   "needs": [
+    [
+     "water-i",
+     "water",
+     "Water Resources and Environmental Engineering: Water quality"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "bod",
+     "biochemical oxygen demand: the oxygen that microorganisms use up while breaking down the organic matter in water"
+    ],
+    [
+     "hardness",
+     "the calcium and magnesium dissolved in water, reported as an equivalent amount of calcium carbonate"
+    ],
+    [
+     "moment",
+     "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+    ]
+   ],
    "symbols": [
     [
      "L_{i}",
      "sound level of source i"
+    ],
+    [
+     "L_{2}",
+     "sound level at the second distance"
     ],
     [
      "L",
@@ -1463,6 +1981,30 @@
      "steps": "Chlorine = 36,000 m^{3}/day × 2.5 g/m^{3} = 90,000 g/day = 90.0 kg/day.",
      "answer": "90 kg",
      "value": 90.0
+    },
+    {
+     "family": "water-0061",
+     "problem": "An aeration tank of 4,750 m^{3} holds mixed liquor at 2,500 mg/L and receives 14,500 m^{3}/day of wastewater with a BOD of 200 mg/L. What is the food-to-microorganism ratio?",
+     "idea": "The food-to-microorganism ratio compares the daily mass of BOD fed with the mass of microorganisms in the tank: Q S_{0} / (V X).",
+     "steps": "F/M = \\frac{14,500(200)}{4,750(2,500)} = 0.244 per day.",
+     "answer": "0.244 per day",
+     "value": 0.244211
+    },
+    {
+     "family": "water-0062",
+     "problem": "An aeration tank of 2,600 m^{3} holds mixed liquor at 2,600 mg/L. Sludge is wasted at 95 m^{3}/day with a concentration of 8,750 mg/L, and solids lost in the effluent are negligible. What is the solids residence time?",
+     "idea": "Solids residence time, or sludge age, is the mass of solids in the system divided by the mass leaving it each day.",
+     "steps": "SRT = \\frac{V X}{Q_{w} X_{w}} = \\frac{2,600(2,600)}{95(8,750)} = 8.13 days.",
+     "answer": "8.13 days",
+     "value": 8.132331
+    },
+    {
+     "family": "water-0063",
+     "problem": "A rapid sand filter with a surface area of 82 m^{2} treats 17,400 m^{3}/day. What is its filtration rate?",
+     "idea": "Filtration rate is flow divided by filter surface area, a velocity. Convert days to hours when the rate is wanted in m/h.",
+     "steps": "Rate = \\frac{17,400}{82 × 24} = 8.84 m/h.",
+     "answer": "8.84 m/h",
+     "value": 8.841463
     }
    ],
    "lookup": [
@@ -1489,7 +2031,30 @@
     "Compare the result with typical design ranges if given."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "Treatment removes what should not be in water. Drinking water is settled, filtered and disinfected. Wastewater is settled and then fed to microorganisms that consume the organic matter.",
+   "needs": [
+    [
+     "water-i",
+     "water",
+     "Water Resources and Environmental Engineering: Water quality"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "hardness",
+     "the calcium and magnesium dissolved in water, reported as an equivalent amount of calcium carbonate"
+    ]
+   ],
    "symbols": [
+    [
+     "Q_{w}",
+     "waste sludge flow"
+    ],
+    [
+     "X_{w}",
+     "solids concentration in the waste sludge"
+    ],
     [
      "Q",
      "flow rate"
@@ -1501,6 +2066,10 @@
     [
      "m",
      "metre"
+    ],
+    [
+     "X",
+     "mixed liquor solids concentration"
     ]
    ]
   }

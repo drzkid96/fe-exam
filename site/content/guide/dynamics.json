@@ -58,14 +58,14 @@
     ]
    },
    "bridge": {
-    "keep": "Speed, distance and time relations, since stopping and passing distances use them.",
-    "rusty": [
-     "Kinetics: writing force = mass × acceleration along the right axis.",
-     "Work-energy and impulse-momentum as shortcuts that avoid finding acceleration.",
-     "Rotation: mass moment of inertia and angular motion."
+    "plain": "Dynamics is the study of things that move and speed up or slow down. A net force makes a mass accelerate; without one, it keeps its velocity.",
+    "core": [
+     "Position, velocity and acceleration are linked: velocity is how fast position changes, acceleration is how fast velocity changes.",
+     "Force = mass × acceleration, written along one direction at a time.",
+     "Energy and momentum give shortcuts when forces act over a distance or over a time."
     ],
-    "work": "Stopping sight distance is constant-deceleration kinematics plus a reaction distance. Superelevation and side friction come from the force balance on a vehicle in a curve. Yellow-interval timing is the same braking physics.",
-    "exam": "The handbook's dynamics formulas use SI and USCS side by side. Check whether mass is in kg or slugs before substituting."
+    "links": "It rests on statics (free-body diagrams) and calculus. Stopping distance and banking of curves in transportation are dynamics problems.",
+    "exam": "Check whether mass is given in kilograms or weight in newtons or pounds before substituting."
    }
   },
   {
@@ -191,6 +191,27 @@
       "svg": "<g transform='rotate(-2.862405226111748 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W</text><line x1='199' y1='76' x2='196' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M196 16 L191 27 L202 27 Z' fill='#1B795A'/><text x='203' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='176' y1='101' x2='127' y2='104' stroke='#568CBB' stroke-width='3'/><path d='M116 104 L127 109 L127 98 Z' fill='#568CBB'/><text x='104' y='109' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Braking force</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>On an upgrade the weight component along the slope also slows the car</text>",
       "alt": "Free-body diagram on a surface inclined at 2.86° showing W, N, Braking force."
      }
+    },
+    {
+     "family": "dynamics-0017",
+     "problem": "A projectile is launched from level ground at 32 m/s, 48° above the horizontal. What maximum height does it reach? Use g = 9.81 m/s^{2}.",
+     "idea": "Only the vertical component of the launch velocity carries the projectile upward, and at the top it is zero. The height is that component squared divided by 2g.",
+     "steps": "Vertical component = 32 sin 48° = 23.781 m/s.\n\nh = \\frac{(23.781)^{2}}{2(9.81)} = 28.82 m.",
+     "answer": "28.82 m",
+     "value": 28.823577,
+     "figure": {
+      "viewBox": "0 0 400 180",
+      "svg": "<line x1='30' y1='140' x2='380' y2='140' stroke='#00242E' stroke-width='2'/><path d='M50 140 Q200 -27 350 140' fill='none' stroke='#1B795A' stroke-width='2' stroke-dasharray='7 4'/><line x1='50' y1='140' x2='97' y2='88' stroke='#00574A' stroke-width='3'/><circle cx='97' cy='88' r='5' fill='#00574A'/><text x='85' y='78' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>32 m/s</text><text x='96' y='134' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>48°</text><line x1='50' y1='156' x2='350' y2='156' stroke='#00242E'/><line x1='50' y1='150' x2='50' y2='162' stroke='#00242E'/><line x1='350' y1='150' x2='350' y2='162' stroke='#00242E'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Range</text>",
+      "alt": "The path of a projectile launched from level ground at 32 m/s and 48° above the horizontal."
+     }
+    },
+    {
+     "family": "dynamics-0018",
+     "problem": "A wheel starts from rest and accelerates at a constant 4.2 rad/s^{2} for 6 s. How many revolutions does it turn in that time?",
+     "idea": "Rotation under constant angular acceleration follows the same equations as straight-line motion: angle = (1/2)(angular acceleration)(time)^{2} from rest. One revolution is 2π radians.",
+     "steps": "Angle = \\frac{1}{2}(4.2)(6)^{2} = 75.6 rad.\n\nRevolutions = \\frac{75.6}{2π} = 12.03.",
+     "answer": "12.03 revolutions",
+     "value": 12.032114
     }
    ],
    "lookup": [
@@ -215,7 +236,38 @@
     "Check signs and that times are positive."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Stopping sight distance, passing sight distance and clearance intervals are constant-acceleration kinematics.",
+   "primer": "Kinematics describes motion without asking what causes it. Velocity is the rate of change of position; acceleration is the rate of change of velocity. With constant acceleration a few standard equations link distance, speed and time.",
+   "needs": [
+    [
+     "math-b",
+     "math",
+     "Mathematics and Statistics: Single-variable calculus"
+    ]
+   ],
+   "leads": [
+    [
+     "dynamics-c",
+     "dynamics",
+     "Dynamics: Force acceleration"
+    ],
+    [
+     "transport-a",
+     "transport",
+     "Transportation Engineering: Geometric design"
+    ],
+    [
+     "transport-d",
+     "transport",
+     "Transportation Engineering: Traffic control devices"
+    ]
+   ],
+   "work": "Stopping sight distance is this topic applied: distance covered while reacting, plus distance covered while braking.",
+   "terms": [
+    [
+     "moment",
+     "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+    ]
+   ],
    "symbols": [
     [
      "v_{0}",
@@ -256,6 +308,10 @@
     [
      "R",
      "range or radius"
+    ],
+    [
+     "h",
+     "height"
     ]
    ]
   },
@@ -336,6 +392,30 @@
      "steps": "Rod about its end: \\frac{9(2)^{2}}{3} = 12.00 kg·m^{2}.\n\nTip mass, treated as a particle 2 m from the pivot: 3(2)^{2} = 12.00 kg·m^{2}.\n\nTotal = 12.00 + 12.00 = 24.00 kg·m^{2}.",
      "answer": "24.00 kg·m^{2}",
      "value": 24.0
+    },
+    {
+     "family": "dynamics-0021",
+     "problem": "A hollow cylinder has a mass of 29 kg, an outer radius of 0.33 m and an inner radius of 0.20 m. What is its mass moment of inertia about its central axis?",
+     "idea": "For a hollow cylinder about its own axis, I = m(r_{o}^{2} + r_{i}^{2}) / 2. The radii are added, not subtracted, because for a given mass a hollow shape has its material farther from the axis than a solid one.",
+     "steps": "I = \\frac{29(0.33^{2} + 0.20^{2})}{2} = \\frac{29(0.1489)}{2} = 2.159 kg·m^{2}.",
+     "answer": "2.159 kg·m^{2}",
+     "value": 2.15905
+    },
+    {
+     "family": "dynamics-0022",
+     "problem": "A rotor has a mass of 29 kg and a mass moment of inertia of 9.2 kg·m^{2} about its axis. What is its radius of gyration?",
+     "idea": "The radius of gyration is the distance from the axis at which all the mass could be concentrated to give the same moment of inertia: I = m k^{2}.",
+     "steps": "k = \\sqrt{\\frac{I}{m}} = \\sqrt{\\frac{9.2}{29}} = 0.563 m.",
+     "answer": "0.563 m",
+     "value": 0.563242
+    },
+    {
+     "family": "dynamics-0023",
+     "problem": "A solid uniform disk has a mass of 14 kg and a radius of 0.3 m. What is its mass moment of inertia about an axis through its rim, perpendicular to the disk?",
+     "idea": "The parallel axis theorem moves a moment of inertia from the centre of mass to a parallel axis: add the mass times the square of the distance between the axes. For a disk about its rim that gives m r^{2} / 2 + m r^{2}.",
+     "steps": "I = \\frac{1}{2}(14)(0.3)^{2} + 14(0.3)^{2} = 0.630 + 1.260 = 1.89 kg·m^{2}.",
+     "answer": "1.89 kg·m^{2}",
+     "value": 1.89
     }
    ],
    "lookup": [
@@ -358,6 +438,29 @@
     "Check units of mass times length squared."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "A spinning object resists changes to its spin. The mass moment of inertia measures that resistance: it grows with the mass and with the square of its distance from the axis.",
+   "needs": [
+    [
+     "statics-f",
+     "statics",
+     "Statics: Area moments of inertia"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "mass moment of inertia",
+     "a body's resistance to being spun up or slowed down about an axis"
+    ],
+    [
+     "moment",
+     "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+    ],
+    [
+     "parallel axis theorem",
+     "the rule for moving a moment of inertia to a parallel axis: add the area times the square of the distance between the axes"
+    ]
+   ],
    "symbols": [
     [
      "I_{c}",
@@ -386,6 +489,10 @@
     [
      "r",
      "radius"
+    ],
+    [
+     "k",
+     "radius of gyration"
     ]
    ]
   },
@@ -521,6 +628,19 @@
       "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 29.4 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>T = 22.1 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Hanging block: accelerates downward at 2.45 m/s²</text>",
       "alt": "Free-body diagram showing W = 29.4 N, T = 22.1 N."
      }
+    },
+    {
+     "family": "dynamics-0024",
+     "problem": "A 72 kg person stands on a scale in a lift that is accelerating upward at 1.4 m/s^{2}. What force does the scale read? Use g = 9.81 m/s^{2}.",
+     "idea": "The scale reads the normal force. Newton's second law for the person, with upward positive, is N - m g = m a, so the reading exceeds the weight while the lift accelerates upward.",
+     "steps": "N = m(g + a) = 72(9.81 + 1.4) = 807.1 N.",
+     "answer": "807.1 N",
+     "value": 807.12,
+     "figure": {
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 706.3 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N = 807.1 N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Net upward force = m a = 100.8 N</text>",
+      "alt": "Free-body diagram showing W = 706.3 N, N = 807.1 N."
+     }
     }
    ],
    "lookup": [
@@ -546,7 +666,45 @@
     "For rotation, write the sum of moments = I × angular acceleration about the fixed axis."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "The curve formula 0.01e + f = V^{2} / (15R) is Newton's second law for a vehicle on a banked curve.",
+   "primer": "Newton's second law says a net force makes a mass accelerate: force = mass × acceleration. Draw the free-body diagram, add the forces in the direction of motion, and set the total equal to mass times acceleration. For rotation, net moment = mass moment of inertia × angular acceleration.",
+   "needs": [
+    [
+     "statics-c",
+     "statics",
+     "Statics: Equilibrium of rigid bodies"
+    ],
+    [
+     "dynamics-a",
+     "dynamics",
+     "Dynamics: Kinematics"
+    ]
+   ],
+   "leads": [
+    [
+     "dynamics-d",
+     "dynamics",
+     "Dynamics: Work, energy, and power"
+    ]
+   ],
+   "work": "The curve design formula for superelevation and side friction is Newton's second law for a vehicle turning.",
+   "terms": [
+    [
+     "free-body diagram",
+     "a sketch of one object on its own with every force acting on it drawn as an arrow; the first step of almost every force problem"
+    ],
+    [
+     "moment",
+     "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+    ],
+    [
+     "mass moment of inertia",
+     "a body's resistance to being spun up or slowed down about an axis"
+    ],
+    [
+     "normal force",
+     "the force a surface exerts perpendicular to itself on an object resting or pressing on it"
+    ]
+   ],
    "symbols": [
     [
      "μ_{k}",
@@ -669,7 +827,12 @@
      "idea": "Power is force times velocity in the direction of the force. At constant speed the hoist force equals the weight, so P = m g v.",
      "steps": "Force = m g = 2,000(9.81) = 19,620 N.\n\nP = F v = 19,620 × 1.2 = 23,544 W = 23.54 kW.",
      "answer": "23.54 kW",
-     "value": 23.544
+     "value": 23.544,
+     "figure": {
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight = m g</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Cable force = m g at constant speed</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Constant speed means zero net force</text>",
+      "alt": "Free-body diagram showing Weight = m g, Cable force = m g at constant speed."
+     }
     },
     {
      "family": "dynamics-0011",
@@ -686,6 +849,32 @@
      "steps": "m g \\frac{L}{2} = \\frac{1}{2}(\\frac{m L^{2}}{3})(angular speed)^{2}, so angular speed = \\sqrt{\\frac{3 g}{L}} = \\sqrt{\\frac{3(9.81)}{1.8}} = 4.04 rad/s.",
      "answer": "4.04 rad/s",
      "value": 4.043513
+    },
+    {
+     "family": "dynamics-0029",
+     "problem": "A car travelling at 22 m/s locks its wheels on a level road where the coefficient of kinetic friction is 0.57. How far does it slide before stopping? Use g = 9.81 m/s^{2}.",
+     "idea": "The work done by friction equals the kinetic energy removed: (coefficient) m g d = (1/2) m v^{2}. The mass cancels, and the distance grows with the square of the speed.",
+     "steps": "d = \\frac{v^{2}}{2 (coefficient) g} = \\frac{22^{2}}{2(0.57)(9.81)} = 43.28 m.",
+     "answer": "43.28 m",
+     "value": 43.278431,
+     "figure": {
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Friction = (coefficient) N</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Friction is the only force doing work</text>",
+      "alt": "Free-body diagram showing W, N, Friction = (coefficient) N."
+     }
+    },
+    {
+     "family": "dynamics-0030",
+     "problem": "A 18,750 kg truck climbs a 6% grade at a steady 15 m/s. Ignoring rolling and air resistance, what power does the climb require? Use g = 9.81 m/s^{2}.",
+     "idea": "Power is force times speed. At steady speed the driving force equals the weight component along the slope, m g times the grade as a decimal (for small slopes the sine equals the grade).",
+     "steps": "Force = 18,750(9.81)(0.06) = 11,036 N.\n\nPower = 11,036 × 15 = 165,544 W = 165.5 kW.",
+     "answer": "165.5 kW",
+     "value": 165.54375,
+     "figure": {
+      "viewBox": "0 0 400 224",
+      "svg": "<g transform='rotate(-3.433630362450522 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = m g</text><line x1='199' y1='76' x2='196' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M195 16 L190 27 L201 27 Z' fill='#1B795A'/><text x='202' y='8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='224' y1='99' x2='273' y2='96' stroke='#568CBB' stroke-width='3'/><path d='M284 95 L273 90 L273 101 Z' fill='#568CBB'/><text x='296' y='98' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Driving force</text><text x='200' y='218' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>At steady speed the driving force equals the weight component along the slope</text>",
+      "alt": "Free-body diagram on a surface inclined at 3.43° showing W = m g, N, Driving force."
+     }
     }
    ],
    "lookup": [
@@ -717,7 +906,29 @@
     "For impact, write conservation of momentum, then the restitution equation."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Braking distance is a work-energy result: friction work equals the kinetic energy removed, which is why it grows with speed squared.",
+   "primer": "Work is force times the distance moved along it. Doing work on an object changes its kinetic energy, the energy of motion. Raising it stores potential energy. Power is how fast work is done. Tracking energy often avoids having to find acceleration.",
+   "needs": [
+    [
+     "dynamics-c",
+     "dynamics",
+     "Dynamics: Force acceleration"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "kinetic energy",
+     "energy of motion: half the mass times the speed squared"
+    ],
+    [
+     "momentum",
+     "mass times velocity; a force acting for a time changes it"
+    ],
+    [
+     "moment",
+     "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+    ]
+   ],
    "symbols": [
     [
      "v",
@@ -746,6 +957,10 @@
     [
      "L",
      "length of the rod"
+    ],
+    [
+     "d",
+     "distance moved"
     ]
    ]
   }

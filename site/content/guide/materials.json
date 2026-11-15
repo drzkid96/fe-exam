@@ -54,14 +54,14 @@
     }
    ],
    "bridge": {
-    "keep": "What asphalt and concrete are made of, from pavement and flatwork specifications.",
-    "rusty": [
-     "Mix design arithmetic: water-cement ratio, absolute volume, aggregate moisture corrections.",
-     "Asphalt volumetrics: air voids, VMA and binder content.",
-     "Stress-strain behaviour of metals and the standard test names."
+    "plain": "This topic covers what concrete, asphalt, steel, aggregate and wood are made of, how their quality is tested, and how they behave under load.",
+    "core": [
+     "Concrete is cement, water and aggregate; less water for the same cement means stronger concrete.",
+     "Asphalt mix is aggregate glued with asphalt binder, with a little air left in it.",
+     "A stress-strain curve from a tension test gives stiffness, yield strength, ultimate strength and ductility."
     ],
-    "work": "Pavement sections, concrete kerb, gutter and ramp work, and material submittals all rest on these properties and tests.",
-    "exam": "Many questions are recognition: which test measures which property. The handbook's materials tables carry the numbers."
+    "links": "Structural design uses these strengths; pavement design in transportation uses the mix properties; geotechnics uses the same density and moisture ideas for soil.",
+    "exam": "Many questions only ask which test measures which property."
    }
   },
   {
@@ -173,6 +173,14 @@
      "steps": "Cement in the truck = 360 × 7.0 = 2,520 kg.\n\nAllowable water = 0.44 × 2,520 = 1,108.8 kg.\n\nMay still be added: 1,108.8 - 1,050 = 58.8 kg.",
      "answer": "58.8 kg",
      "value": 58.8
+    },
+    {
+     "family": "materials-0014",
+     "problem": "A concrete batch contains 350 kg of cement (specific gravity 3.15), 172 kg of water, 715 kg of sand (2.65) and 1,100 kg of coarse aggregate (2.70). Ignoring air, what volume of concrete does it make?",
+     "idea": "The absolute volume method adds the solid volume of each ingredient: mass divided by (specific gravity × 1,000 kg/m^{3}). The bulk volumes of the piles do not add, because the fines fill the gaps between the coarse particles.",
+     "steps": "\\frac{350}{3,150} + \\frac{172}{1,000} + \\frac{715}{2,650} + \\frac{1,100}{2,700} = 0.1111 + 0.1720 + 0.2698 + 0.4074 = 0.960 m^{3}.",
+     "answer": "0.960 m^{3}",
+     "value": 0.96033
     }
    ],
    "lookup": [
@@ -193,7 +201,33 @@
     "Adjust batch water for aggregate moisture above or below the saturated-surface-dry condition."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Concrete for kerb, gutter, ramps and bus pads is specified by strength and water-cement ratio; asphalt by binder content and air voids.",
+   "primer": "A mix design is a recipe. For concrete it sets the cement, water, sand and stone for one cubic metre; the ratio of water to cement controls strength. For asphalt it sets the binder content and the small amount of air left after compaction.",
+   "needs": [],
+   "leads": [
+    [
+     "transport-b",
+     "transport",
+     "Transportation Engineering: Pavement system design"
+    ]
+   ],
+   "terms": [
+    [
+     "water-cement ratio",
+     "mass of water divided by mass of cement in concrete; lower ratios give stronger concrete"
+    ],
+    [
+     "air voids",
+     "the small pockets of air in a compacted asphalt mix, as a percentage of its volume"
+    ],
+    [
+     "specific gravity",
+     "density of a substance divided by the density of water; it has no units"
+    ],
+    [
+     "saturated surface-dry",
+     "the condition of aggregate whose pores are full of water but whose surface is dry"
+    ]
+   ],
    "symbols": [
     [
      "V_{a}",
@@ -253,7 +287,48 @@
      "text": "ASTM and AASHTO publish test methods and material specifications. ACI and AISC publish the design specifications for concrete and steel."
     }
    ],
-   "examples": [],
+   "examples": [
+    {
+     "family": "materials-0017",
+     "problem": "In a splitting tensile test, a concrete cylinder 150 mm in diameter and 300 mm long fails at a load of 205 kN applied along its length. What is its splitting tensile strength?",
+     "idea": "Loading a cylinder along two opposite lines sets up nearly uniform tension across the loaded diameter. The splitting tensile strength is 2P / (π L D).",
+     "steps": "Strength = \\frac{2(205,000)}{π(300)(150)} = 2.90 MPa.",
+     "answer": "2.90 MPa",
+     "value": 2.900157
+    },
+    {
+     "family": "materials-0018",
+     "problem": "A 150 mm square concrete beam is tested in third-point loading on a span of 450 mm and breaks in the middle third at a total load of 28.0 kN. What is its modulus of rupture?",
+     "idea": "Third-point loading puts a constant moment of P L / 6 across the middle third. Dividing by the section modulus, b d^{2} / 6, gives the modulus of rupture R = P L / (b d^{2}).",
+     "steps": "R = \\frac{28,000(450)}{150(150)^{2}} = 3.73 MPa.",
+     "answer": "3.73 MPa",
+     "value": 3.733333
+    },
+    {
+     "family": "materials-0019",
+     "problem": "A sieve analysis of sand gives cumulative percentages retained on the six standard sieves from No. 4 to No. 100 of 4, 16, 36, 58, 82 and 96. What is the fineness modulus?",
+     "idea": "The fineness modulus is the sum of the cumulative percentages retained on the standard sieves, divided by 100. A larger value means a coarser sand; concrete sands usually fall between 2.3 and 3.1.",
+     "steps": "FM = \\frac{4 + 16 + 36 + 58 + 82 + 96}{100} = \\frac{292}{100} = 2.92.",
+     "answer": "2.92",
+     "value": 2.92
+    },
+    {
+     "family": "materials-0020",
+     "problem": "An aggregate sample has a mass of 883.7 g in the saturated surface-dry condition and 870.6 g after oven drying. What is its absorption?",
+     "idea": "Absorption is the water an aggregate holds inside its pores when saturated surface-dry, as a percentage of its oven-dry mass.",
+     "steps": "Absorption = \\frac{883.7 - 870.6}{870.6} × 100 = 1.50%.",
+     "answer": "1.50 %",
+     "value": 1.504709
+    },
+    {
+     "family": "materials-0021",
+     "problem": "A coarse aggregate sample has a mass of 1,985 g saturated surface-dry in air and an apparent mass of 1,240 g when submerged in water. What is its bulk specific gravity (SSD)?",
+     "idea": "By Archimedes' principle the loss of mass in water equals the mass of water displaced, which gives the sample's bulk volume. Specific gravity is the SSD mass divided by that loss.",
+     "steps": "Bulk specific gravity (SSD) = \\frac{1,985}{1,985 - 1,240} = 2.664.",
+     "answer": "2.664",
+     "value": 2.66443
+    }
+   ],
    "lookup": [
     {
      "section": "Materials Science/Structure of Matter",
@@ -279,7 +354,25 @@
     "Convert the test reading to the property with the correct area or gauge length."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Slump, cylinder breaks, density tests and gradations are the test reports that come back on a street project."
+   "primer": "Materials are accepted on the basis of standard tests. Each test measures one property: a cylinder break gives concrete strength, a slump test gives workability, a tension test gives a metal's strength and ductility, a sieve analysis gives the range of particle sizes.",
+   "needs": [
+    [
+     "mechmat-b",
+     "mechmat",
+     "Mechanics of Materials: Stresses and strains"
+    ]
+   ],
+   "leads": [],
+   "terms": [
+    [
+     "yield strength",
+     "the stress at which a metal stops springing back and starts to deform permanently"
+    ],
+    [
+     "modulus of elasticity",
+     "the stiffness of a material: stress divided by strain while the material still springs back"
+    ]
+   ]
   },
   {
    "id": "materials-c-lesson",
@@ -382,6 +475,22 @@
      "steps": "Elongation = \\frac{61.0 - 50}{50} × 100 = \\frac{11.0}{50} × 100 = 22.0%.",
      "answer": "22.0 %",
      "value": 22.0
+    },
+    {
+     "family": "materials-0022",
+     "problem": "A tension specimen has an original diameter of 11.2 mm. After fracture the diameter at the neck is 8.8 mm. What is the percent reduction in area?",
+     "idea": "Reduction in area measures ductility: the loss of cross-section at the fracture as a percentage of the original. Areas go with diameter squared.",
+     "steps": "Reduction = (1 - (\\frac{8.8}{11.2})^{2}) × 100 = 38.27%.",
+     "answer": "38.27 %",
+     "value": 38.265306
+    },
+    {
+     "family": "materials-0023",
+     "problem": "A metal has a yield strength of 310 MPa and a modulus of elasticity of 200 GPa. What is its modulus of resilience?",
+     "idea": "The modulus of resilience is the energy per unit volume a material can absorb without permanent deformation: the area under the straight part of the stress-strain curve, (yield strength)^{2} / (2E).",
+     "steps": "u_{r} = \\frac{310^{2}}{2(200,000)} = 0.24025 MPa = 240.2 kJ/m^{3}.",
+     "answer": "240.2 kJ/m^{3}",
+     "value": 240.25
     }
    ],
    "lookup": [
@@ -423,6 +532,35 @@
     "Use the 0.2% offset method when there is no distinct yield point."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "Mechanical properties describe how a material responds to load: how stiff it is, the stress at which it yields, the stress at which it breaks, and how much it stretches first. They are read from a stress-strain curve.",
+   "needs": [
+    [
+     "mechmat-b",
+     "mechmat",
+     "Mechanics of Materials: Stresses and strains"
+    ]
+   ],
+   "leads": [
+    [
+     "structural-h",
+     "structural",
+     "Structural Engineering: Design of reinforced concrete components"
+    ]
+   ],
+   "terms": [
+    [
+     "strain",
+     "change in length divided by original length; it has no units"
+    ],
+    [
+     "modulus of elasticity",
+     "the stiffness of a material: stress divided by strain while the material still springs back"
+    ],
+    [
+     "yield strength",
+     "the stress at which a metal stops springing back and starts to deform permanently"
+    ]
+   ],
    "symbols": [
     [
      "L_{final}",
@@ -439,6 +577,10 @@
     [
      "f'_{c}",
      "specified compressive strength of concrete"
+    ],
+    [
+     "u_{r}",
+     "modulus of resilience"
     ],
     [
      "E",

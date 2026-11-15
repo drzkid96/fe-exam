@@ -62,14 +62,15 @@
     ]
    },
    "bridge": {
-    "keep": "Stress as force over area, and the look of a simply supported beam's moment diagram.",
-    "rusty": [
-     "Shear and moment diagrams drawn by areas rather than by integration.",
-     "Bending stress M c / I, shear stress, torsion and the deformation formulas.",
-     "Combined stress and Mohr's circle."
+    "plain": "Mechanics of materials asks what happens inside a member that carries load: how hard the material is being pulled, squeezed or sheared (stress), and how much it stretches or bends (strain and deflection).",
+    "core": [
+     "Stress is force divided by area. Strain is change in length divided by length.",
+     "For most materials stress = stiffness × strain, until yielding.",
+     "A beam carries load by bending: the top squeezes and the bottom stretches, or the reverse.",
+     "Shear and moment diagrams show the internal forces along a beam."
     ],
-    "work": "A signal pole or mast arm is a cantilever in bending and torsion; base-plate bolts are in tension and shear. Pavement and sidewalk slabs crack where bending tension exceeds the concrete's strength.",
-    "exam": "Work in N and mm so that stresses come out in MPa, or in kips and inches for ksi. Unit slips are the commonest wrong answer here."
+    "links": "It needs statics to get the internal forces. Structural design (steel and concrete) and the strength of soils in geotechnics build on it.",
+    "exam": "Work in newtons and millimetres so stresses come out in megapascals, or in kips and inches for ksi."
    }
   },
   {
@@ -167,6 +168,58 @@
       "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><text x='26' y='112' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='376' y='108' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><line x1='50' y1='44' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='44' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='44' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='44' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='44' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='44' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='44' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='44' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='44' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='44' x2='350' y2='44' stroke='#1B795A' stroke-width='2'/><text x='260' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>15 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>12 m</text>",
       "alt": "A simply supported beam 12 m long with a uniform load of 15 kN/m."
      }
+    },
+    {
+     "family": "mechmat-0016",
+     "problem": "A beam rests on supports A and B, 8 m apart, and overhangs 2.2 m beyond B. It carries 19 kN at 4 m from A and 6 kN at the tip of the overhang. What is the largest bending moment magnitude in the beam?",
+     "idea": "The moment peaks where the shear changes sign: under the load in the span and over support B. The moment at B is simply the overhang load times its arm, and it is negative. Compare the two magnitudes.",
+     "steps": "Moment at B = -6(2.2) = -13.2 kN·m.\n\nReaction at A = \\frac{19(8 - 4) - 6(2.2)}{8} = 7.850 kN, so the moment under the span load = 7.850 × 4 = 31.4 kN·m.\n\nThe larger magnitude is 31.4 kN·m.",
+     "answer": "31.4 kN·m",
+     "value": 31.4,
+     "figure": {
+      "viewBox": "0 0 400 205",
+      "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='285' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='263' y1='114' x2='307' y2='114' stroke='#00242E' stroke-width='2'/><line x1='168' y1='10' x2='168' y2='69' stroke='#00574A' stroke-width='3'/><path d='M168 77 L162 65 L174 65 Z' fill='#00574A'/><text x='176' y='20' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>19 kN</text><line x1='350' y1='10' x2='350' y2='69' stroke='#00574A' stroke-width='3'/><path d='M350 77 L344 65 L356 65 Z' fill='#00574A'/><text x='342' y='32' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>6 kN</text><line x1='50' y1='176' x2='168' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='168' y1='170' x2='168' y2='182' stroke='#00242E'/><text x='109' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='168' y1='176' x2='285' y2='176' stroke='#00242E'/><line x1='168' y1='170' x2='168' y2='182' stroke='#00242E'/><line x1='285' y1='170' x2='285' y2='182' stroke='#00242E'/><text x='226' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>4 m</text><line x1='285' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='285' y1='170' x2='285' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='318' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>2.2 m</text><line x1='50' y1='162' x2='50' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M50 120 L44 132 L56 132 Z' fill='#568CBB'/><text x='60' y='160' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>7.85 kN</text><line x1='285' y1='162' x2='285' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M285 120 L279 132 L291 132 Z' fill='#568CBB'/><text x='275' y='160' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>17.15 kN</text>",
+      "alt": "A beam 10.2 m long, a pin support at 0 m, a roller support at 8 m, a 19 kN load at 4 m, a 6 kN load at 10.2 m. Reactions: 7.85 kN at 0 m, 17.15 kN at 8 m."
+     }
+    },
+    {
+     "family": "mechmat-0017",
+     "problem": "The shear diagram of a beam starts at +30 kN at the left support, where the moment is zero, and falls in a straight line to -20 kN at a point 7 m away. What is the maximum bending moment in that length?",
+     "idea": "The moment is greatest where the shear crosses zero. Similar triangles locate the crossing, and the moment there is the area of the positive shear triangle.",
+     "steps": "Zero shear at 7 × \\frac{30}{30 + 20} = 4.20 m from the support.\n\nM_{max} = \\frac{1}{2}(30)(4.20) = 63.00 kN·m.",
+     "answer": "63.00 kN·m",
+     "value": 63.0,
+     "figure": {
+      "viewBox": "0 0 400 176",
+      "svg": "<line x1='40' y1='84' x2='370' y2='84' stroke='#00242E'/><path d='M60 84 L60 30 L228 84 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><path d='M228 84 L340 120 L340 84 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='54' y='34' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>+30 kN</text><text x='346' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>-20 kN</text><line x1='60' y1='142' x2='340' y2='142' stroke='#00242E'/><line x1='60' y1='136' x2='60' y2='148' stroke='#00242E'/><line x1='340' y1='136' x2='340' y2='148' stroke='#00242E'/><text x='200' y='158' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>7 m</text><text x='46' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Shear</text><line x1='228' y1='24' x2='228' y2='128' stroke='#568CBB' stroke-dasharray='5 4'/><text x='200' y='166' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Zero shear at 4.20 m. Area of the shaded triangle: M = 63.00 kN·m</text>",
+      "alt": "A shear diagram falling in a straight line from +30 kN to -20 kN over 7 m."
+     }
+    },
+    {
+     "family": "mechmat-0018",
+     "problem": "A cantilever beam 3.2 m long carries a uniform load of 5 kN/m over its whole length and a 10 kN point load at its free end. What is the magnitude of the bending moment at the fixed support?",
+     "idea": "For a cantilever, cut at the support and take moments of everything outboard. The uniform load acts as w L at mid-length. The moment is negative (tension on top) and zero at the free end.",
+     "steps": "M = \\frac{5(3.2)^{2}}{2} + 10(3.2) = 25.6 + 32.0 = 57.6 kN·m.",
+     "answer": "57.6 kN·m",
+     "value": 57.6,
+     "figure": {
+      "viewBox": "0 0 400 165",
+      "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='36' y='48' width='14' height='74' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>5 kN/m</text><line x1='350' y1='2' x2='350' y2='36' stroke='#00574A' stroke-width='3'/><path d='M350 44 L344 32 L356 32 Z' fill='#00574A'/><text x='342' y='12' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>10 kN</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>3.2 m</text>",
+      "alt": "A beam 3.2 m long, fixed at the left end, a uniform load of 5 kN/m from 0 to 3.2 m, a 10 kN load at 3.2 m."
+     }
+    },
+    {
+     "family": "mechmat-0019",
+     "problem": "A simply supported beam spans 8 m and carries a uniform load of 14 kN/m over the whole span. What is the shear force 2.2 m from the left support?",
+     "idea": "The shear starts at the reaction, w L / 2, and falls by w for every metre of uniform load. It passes through zero at midspan.",
+     "steps": "V = \\frac{14(8)}{2} - 14(2.2) = 56.0 - 30.8 = 25.2 kN.",
+     "answer": "25.2 kN",
+     "value": 25.2,
+     "figure": {
+      "viewBox": "0 0 400 205",
+      "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>14 kN/m</text><line x1='50' y1='176' x2='350' y2='176' stroke='#00242E'/><line x1='50' y1='170' x2='50' y2='182' stroke='#00242E'/><line x1='350' y1='170' x2='350' y2='182' stroke='#00242E'/><text x='200' y='192' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>8 m</text><line x1='50' y1='162' x2='50' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M50 120 L44 132 L56 132 Z' fill='#568CBB'/><text x='60' y='160' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>56 kN</text><line x1='350' y1='162' x2='350' y2='128' stroke='#568CBB' stroke-width='3'/><path d='M350 120 L344 132 L356 132 Z' fill='#568CBB'/><text x='340' y='160' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>56 kN</text>",
+      "alt": "A beam 8 m long, a pin support at 0 m, a roller support at 8 m, a uniform load of 14 kN/m from 0 to 8 m. Reactions: 56 kN at 0 m, 56 kN at 8 m."
+     }
     }
    ],
    "lookup": [
@@ -188,7 +241,56 @@
     "Check that shear and moment return to zero at free or simply supported ends."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "A mast arm is a cantilever: its moment diagram is zero at the tip and largest at the pole, where the connection is designed.",
+   "primer": "Inside a loaded beam there are two internal effects at every section: a shear force, which tries to slide one side past the other, and a bending moment, which bends the beam. A shear diagram and a moment diagram plot these along the beam, starting from the support reactions.",
+   "needs": [
+    [
+     "statics-c",
+     "statics",
+     "Statics: Equilibrium of rigid bodies"
+    ]
+   ],
+   "leads": [
+    [
+     "mechmat-b",
+     "mechmat",
+     "Mechanics of Materials: Stresses and strains"
+    ],
+    [
+     "structural-a",
+     "structural",
+     "Structural Engineering: Analysis of statically determinant beams, columns, trusses, and frames"
+    ]
+   ],
+   "terms": [
+    [
+     "shear force",
+     "the internal force that acts across a beam's section, trying to slide one part past the other"
+    ],
+    [
+     "bending moment",
+     "the internal turning effect at a beam's section that makes the beam curve"
+    ],
+    [
+     "moment",
+     "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+    ],
+    [
+     "reaction",
+     "the force a support pushes back with to hold a structure in place"
+    ],
+    [
+     "couple",
+     "two equal and opposite forces a distance apart; together they only turn an object and do not push it anywhere"
+    ],
+    [
+     "cantilever",
+     "a beam held rigidly at one end and free at the other, like a diving board or a signal mast arm"
+    ],
+    [
+     "simply supported",
+     "resting on a pin at one end and a roller at the other, so the ends can rotate freely"
+    ]
+   ],
    "symbols": [
     [
      "M_{max}",
@@ -209,6 +311,18 @@
     [
      "L",
      "length"
+    ],
+    [
+     "B",
+     "support B"
+    ],
+    [
+     "A",
+     "cross-sectional area"
+    ],
+    [
+     "M",
+     "bending moment"
     ]
    ]
   },
@@ -321,7 +435,12 @@
      "idea": "Torsional shear stress in a circular shaft grows linearly with radius: stress = T r / J. For a solid shaft J = π d^{4} / 32, so the maximum, at the surface, is 16 T / (π d^{3}).",
      "steps": "Maximum shear stress = \\frac{16 T}{π d^{3}} = \\frac{16(6 × 10^{6})}{π(75)^{3}} = 72.4 MPa.",
      "answer": "72.4 MPa",
-     "value": 72.433183
+     "value": 72.433183,
+     "figure": {
+      "viewBox": "0 0 400 185",
+      "svg": "<path d='M80 150 L210 150 L210 150 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><circle cx='145' cy='85' r='65' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='145' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>75 mm outside diameter</text>",
+      "alt": "A circular section 75 mm in diameter."
+     }
     },
     {
      "family": "mechmat-0010",
@@ -330,6 +449,22 @@
      "steps": "Restrained strain = 12 × 10^{-6} × 75 = 900 × 10^{-6}.\n\nStress = E × strain = (200,000 MPa)(900 × 10^{-6}) = 180.0 MPa (compression).",
      "answer": "180.0 MPa",
      "value": 180.0
+    },
+    {
+     "family": "mechmat-0020",
+     "problem": "A clevis is pinned by a single 18 mm diameter bolt that is loaded in double shear by a force of 67 kN. What is the average shear stress in the bolt?",
+     "idea": "In double shear the bolt is cut on two planes, so each plane carries half the load. Average shear stress is the force on one plane divided by the bolt's cross-sectional area.",
+     "steps": "A = \\frac{π(18)^{2}}{4} = 254.5 mm^{2}.\n\nStress = \\frac{67,000 / 2}{254.5} = 131.6 MPa.",
+     "answer": "131.6 MPa",
+     "value": 131.646681
+    },
+    {
+     "family": "mechmat-0021",
+     "problem": "A 19 mm diameter bolt bears against a plate 10 mm thick and transfers 46 kN to it. What is the average bearing stress on the plate?",
+     "idea": "Bearing stress is taken on the projected area of contact, the bolt diameter times the plate thickness, not on the curved surface.",
+     "steps": "Bearing stress = \\frac{P}{d t} = \\frac{46,000}{19(10)} = 242.1 MPa.",
+     "answer": "242.1 MPa",
+     "value": 242.105263
     }
    ],
    "lookup": [
@@ -362,7 +497,80 @@
     "Compare with the allowable stress if asked, using the factor of safety."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
-   "work": "Anchor bolts at a pole base carry tension from the overturning moment and shear from wind.",
+   "primer": "Stress is how hard the material is working: force divided by the area that carries it. Pulling gives tension, pushing gives compression, sliding gives shear. Strain is how much the material deforms: change in length divided by original length. Bending and twisting give stresses that are largest at the outer surface.",
+   "needs": [
+    [
+     "mechmat-a",
+     "mechmat",
+     "Mechanics of Materials: Shear and moment diagrams"
+    ],
+    [
+     "statics-f",
+     "statics",
+     "Statics: Area moments of inertia"
+    ]
+   ],
+   "leads": [
+    [
+     "mechmat-c",
+     "mechmat",
+     "Mechanics of Materials: Deformations"
+    ],
+    [
+     "mechmat-d",
+     "mechmat",
+     "Mechanics of Materials: Combined stresses, principal stresses, and Mohr's circle"
+    ],
+    [
+     "materials-b",
+     "materials",
+     "Materials: Test methods and specifications of metals, concrete, aggregates, asphalt, and wood"
+    ],
+    [
+     "materials-c",
+     "materials",
+     "Materials: Physical and mechanical properties of metals, concrete, aggregates, asphalt, and wood"
+    ],
+    [
+     "structural-c",
+     "structural",
+     "Structural Engineering: Column analysis"
+    ]
+   ],
+   "terms": [
+    [
+     "strain",
+     "change in length divided by original length; it has no units"
+    ],
+    [
+     "modulus of elasticity",
+     "the stiffness of a material: stress divided by strain while the material still springs back"
+    ],
+    [
+     "normal stress",
+     "force per unit area acting perpendicular to a surface; tension pulls apart, compression pushes together"
+    ],
+    [
+     "neutral axis",
+     "the line through a bent beam's section where the material is neither stretched nor squeezed"
+    ],
+    [
+     "torsion",
+     "twisting of a member about its own long axis"
+    ],
+    [
+     "shear stress",
+     "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+    ],
+    [
+     "poisson's ratio",
+     "how much a bar thins sideways compared with how much it stretches lengthways"
+    ],
+    [
+     "section modulus",
+     "moment of inertia divided by the distance to the outer edge; bending stress is moment divided by it"
+    ]
+   ],
    "symbols": [
     [
      "E",
@@ -431,6 +639,10 @@
     [
      "N",
      "newton"
+    ],
+    [
+     "t",
+     "wall thickness"
     ]
    ]
   },
@@ -528,6 +740,35 @@
      "steps": "J = \\frac{π d^{4}}{32} = \\frac{π(65)^{4}}{32} = 1,752,481 mm^{4}.\n\nAngle = \\frac{T L}{G J} = \\frac{(4 × 10^{6})(2,500)}{(80,000)(1,752,481)} = 0.0713 rad = 4.09°.",
      "answer": "4.09 °",
      "value": 4.086762
+    },
+    {
+     "family": "mechmat-0028",
+     "problem": "A steel bar (E = 200 GPa) 1,400 mm long with an area of 575 mm^{2} is joined end to end with an aluminium bar (E = 70 GPa) 1,350 mm long with an area of 850 mm^{2}. What axial force stretches the pair by a total of 2.2 mm?",
+     "idea": "Bars in series carry the same force, and their elongations add. Write the total as P times the sum of L / (A E) for the two bars, then solve for P. Working in N and mm gives the force in N.",
+     "steps": "\\frac{L}{AE}: steel \\frac{1,400}{575(200,000)} = 1.2174 × 10^{-5} mm/N; aluminium \\frac{1,350}{850(70,000)} = 2.2689 × 10^{-5} mm/N.\n\nP = \\frac{2.2}{3.4863 × 10^{-5}} = 63,104 N = 63.1 kN.",
+     "answer": "63.1 kN",
+     "value": 63.104171
+    },
+    {
+     "family": "mechmat-0029",
+     "problem": "A bar 2.1 m long has a gap of 0.8 mm between its free end and a rigid wall. Its coefficient of thermal expansion is 20 × 10^{-6} per °C. What temperature rise just closes the gap?",
+     "idea": "A free bar lengthens by (coefficient)(length)(temperature change). Set that equal to the gap. No stress develops until the gap has closed.",
+     "steps": "Temperature rise = \\frac{gap}{(coefficient) L} = \\frac{0.8}{(20 × 10^{-6})(2,100)} = 19.0 °C.",
+     "answer": "19.0 °C",
+     "value": 19.047619
+    },
+    {
+     "family": "mechmat-0030",
+     "problem": "A simply supported beam spans 6 m and carries a uniform load of 15 kN/m. Its flexural rigidity EI is 37,500 kN·m^{2}. What is the midspan deflection?",
+     "idea": "For a simply supported beam under uniform load, the maximum deflection is at midspan and equals 5 w L^{4} / (384 EI). The fourth power makes deflection very sensitive to span.",
+     "steps": "Deflection = \\frac{5 w L^{4}}{384 EI} = \\frac{5(15)(6)^{4}}{384(37,500)} = 0.006750 m = 6.75 mm.",
+     "answer": "6.75 mm",
+     "value": 6.75,
+     "figure": {
+      "viewBox": "0 0 400 165",
+      "svg": "<rect x='50' y='78' width='300' height='14' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><path d='M50 92 L36 118 L64 118 Z' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><circle cx='350' cy='103' r='10' fill='#FFFFFF' stroke='#00242E' stroke-width='2'/><line x1='328' y1='114' x2='372' y2='114' stroke='#00242E' stroke-width='2'/><line x1='50' y1='46' x2='50' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M50 77 L44 65 L56 65 Z' fill='#1B795A'/><line x1='88' y1='46' x2='88' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M88 77 L82 65 L94 65 Z' fill='#1B795A'/><line x1='125' y1='46' x2='125' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M125 77 L119 65 L131 65 Z' fill='#1B795A'/><line x1='162' y1='46' x2='162' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M162 77 L156 65 L168 65 Z' fill='#1B795A'/><line x1='200' y1='46' x2='200' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M200 77 L194 65 L206 65 Z' fill='#1B795A'/><line x1='238' y1='46' x2='238' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M238 77 L232 65 L244 65 Z' fill='#1B795A'/><line x1='275' y1='46' x2='275' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M275 77 L269 65 L281 65 Z' fill='#1B795A'/><line x1='312' y1='46' x2='312' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M312 77 L306 65 L318 65 Z' fill='#1B795A'/><line x1='350' y1='46' x2='350' y2='69' stroke='#1B795A' stroke-width='2'/><path d='M350 77 L344 65 L356 65 Z' fill='#1B795A'/><line x1='50' y1='46' x2='350' y2='46' stroke='#1B795A' stroke-width='2'/><text x='200' y='38' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>15 kN/m</text><line x1='50' y1='136' x2='350' y2='136' stroke='#00242E'/><line x1='50' y1='130' x2='50' y2='142' stroke='#00242E'/><line x1='350' y1='130' x2='350' y2='142' stroke='#00242E'/><text x='200' y='152' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>6 m</text>",
+      "alt": "A beam 6 m long, a pin support at 0 m, a roller support at 6 m, a uniform load of 15 kN/m from 0 to 6 m."
+     }
     }
    ],
    "lookup": [
@@ -553,6 +794,47 @@
     "Check units, keeping E in MPa with N and mm."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "Members change shape under load. A bar under tension gets longer, a beam sags, a shaft twists and a heated bar expands. Each has a formula with the load on top and a stiffness underneath: a stiffer material or a bigger section deforms less.",
+   "needs": [
+    [
+     "mechmat-b",
+     "mechmat",
+     "Mechanics of Materials: Stresses and strains"
+    ]
+   ],
+   "leads": [
+    [
+     "structural-b",
+     "structural",
+     "Structural Engineering: Deflection of statically determinant beams, trusses, and frames"
+    ]
+   ],
+   "terms": [
+    [
+     "torsion",
+     "twisting of a member about its own long axis"
+    ],
+    [
+     "strain",
+     "change in length divided by original length; it has no units"
+    ],
+    [
+     "statically indeterminate",
+     "having more unknown support forces than the equilibrium equations can solve, so deformation must be used as well"
+    ],
+    [
+     "polar moment of inertia",
+     "the measure of a cross-section's resistance to twisting"
+    ],
+    [
+     "moment",
+     "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+    ],
+    [
+     "moment of inertia",
+     "a measure of how far an area's material is spread from an axis; the larger it is, the stiffer the shape in bending about that axis"
+    ]
+   ],
    "symbols": [
     [
      "L",
@@ -577,6 +859,10 @@
     [
      "d",
      "diameter"
+    ],
+    [
+     "C",
+     "centre of Mohr's circle"
     ]
    ]
   },
@@ -666,7 +952,12 @@
      "idea": "The maximum in-plane shear stress is the radius of Mohr's circle, half the difference between the principal stresses. Compression is negative, so a tension and a compression add when you take the difference.",
      "steps": "Maximum shear = \\frac{140 - (-80)}{2} = \\frac{220}{2} = 110 MPa.",
      "answer": "110 MPa",
-     "value": 110.0
+     "value": 110.0,
+     "figure": {
+      "viewBox": "0 0 400 162",
+      "svg": "<line x1='40' y1='82.0' x2='370' y2='82.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='154' stroke='#00242E'/><circle cx='280' cy='82.0' r='60' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='340' y1='82' x2='220' y2='82' stroke='#568CBB' stroke-width='2'/><circle cx='340' cy='82' r='4' fill='#568CBB'/><circle cx='220' cy='82' r='4' fill='#568CBB'/><circle cx='280' cy='82.0' r='3' fill='#00242E'/><text x='280' y='98' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 110</text><text x='346' y='96' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(140, 0)</text><text x='376' y='76' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+      "alt": "Mohr's circle for normal stresses 140 and 80 MPa with shear stress 0 MPa."
+     }
     },
     {
      "family": "mechmat-0013",
@@ -675,6 +966,40 @@
      "steps": "Hoop stress = \\frac{p r}{t} = \\frac{1.6(900)}{18} = 80 MPa. The longitudinal stress is half of that, 40 MPa.",
      "answer": "80 MPa",
      "value": 80.0
+    },
+    {
+     "family": "mechmat-0032",
+     "problem": "A square column 125 mm on a side carries a compressive load of 24 kN applied 325 mm from its centroid, on one axis of symmetry. What is the maximum tensile stress on the cross-section?",
+     "idea": "An eccentric load is an axial force plus a moment P e. The axial part compresses the whole section by P / A. The bending part adds M c / I in compression on the loaded side and in tension on the far side.",
+     "steps": "Axial: \\frac{24,000}{15,625} = 1.536 MPa compression.\n\nBending: \\frac{M c}{I} = \\frac{6 P e}{b^{3}} = \\frac{6(24,000)(325)}{125^{3}} = 23.962 MPa.\n\nFar face: 23.962 - 1.536 = 22.43 MPa tension.",
+     "answer": "22.43 MPa",
+     "value": 22.4256,
+     "figure": {
+      "viewBox": "0 0 400 185",
+      "svg": "<path d='M80 150 L210 150 L210 20 L80 20 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='145' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>125 mm square</text><circle cx='288' cy='85' r='5' fill='#00574A'/><text x='297' y='78' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>load, 325 mm from the centroid</text>",
+      "alt": "A square column section with the load point offset from the centroid along one axis."
+     }
+    },
+    {
+     "family": "mechmat-0033",
+     "problem": "A thin-walled cylindrical tank with closed ends has a radius of 575 mm and a wall thickness of 8 mm. The internal pressure is 1.4 MPa. What is the longitudinal (axial) stress in the wall?",
+     "idea": "The pressure on the end cap, p π r^{2}, is carried by the wall's ring of area 2π r t, giving p r / (2t). The hoop stress, p r / t, is twice as large, which is why pipes split lengthwise.",
+     "steps": "Longitudinal stress = \\frac{p r}{2 t} = \\frac{1.4(575)}{2(8)} = 50.3 MPa.",
+     "answer": "50.3 MPa",
+     "value": 50.3125
+    },
+    {
+     "family": "mechmat-0034",
+     "problem": "A bar carries a uniaxial tensile stress of 140 MPa. What is the shear stress on a plane whose normal makes 32° with the bar's axis?",
+     "idea": "On an inclined plane a uniaxial stress resolves into a normal part and a shear part. The shear stress is (stress) sin(angle) cos(angle), which peaks at half the axial stress on the 45° plane.",
+     "steps": "Shear stress = 140 sin 32° cos 32° = 140(0.5299)(0.8480) = 62.92 MPa.",
+     "answer": "62.92 MPa",
+     "value": 62.915583,
+     "figure": {
+      "viewBox": "0 0 400 202",
+      "svg": "<line x1='40' y1='102.0' x2='370' y2='102.0' stroke='#00242E'/><line x1='60' y1='10' x2='60' y2='194' stroke='#00242E'/><circle cx='140' cy='102.0' r='80' fill='#D9F1D6' fill-opacity='.5' stroke='#1B795A' stroke-width='2'/><line x1='220' y1='102' x2='60' y2='102' stroke='#568CBB' stroke-width='2'/><circle cx='220' cy='102' r='4' fill='#568CBB'/><circle cx='60' cy='102' r='4' fill='#568CBB'/><circle cx='140' cy='102.0' r='3' fill='#00242E'/><text x='140' y='118' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>centre 70</text><text x='226' y='116' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>(140, 0)</text><text x='376' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>normal</text><text x='64' y='20' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>shear</text>",
+      "alt": "Mohr's circle for normal stresses 140 and 0 MPa with shear stress 0 MPa."
+     }
     }
    ],
    "lookup": [
@@ -700,6 +1025,43 @@
     "Check: the two principal stresses must add up to the sum of the original normal stresses."
    ],
    "credit": "Some of the points in this lesson follow Mark Mattson's 2022 FE review session for this topic, restated in this site's words.",
+   "primer": "The stress at a point depends on the direction you look in. Turning an imaginary cut changes how much is normal stress and how much is shear. Mohr's circle is a picture that gives the stresses on every such cut, including the largest ones, the principal stresses.",
+   "needs": [
+    [
+     "mechmat-b",
+     "mechmat",
+     "Mechanics of Materials: Stresses and strains"
+    ]
+   ],
+   "leads": [
+    [
+     "geotech-f",
+     "geotech",
+     "Geotechnical Engineering: Shear strength"
+    ]
+   ],
+   "terms": [
+    [
+     "normal stress",
+     "force per unit area acting perpendicular to a surface; tension pulls apart, compression pushes together"
+    ],
+    [
+     "mohr's circle",
+     "a circle drawn on stress axes that shows the normal and shear stress on every plane through a point"
+    ],
+    [
+     "principal stress",
+     "the largest and smallest normal stresses at a point, found on the planes where shear stress is zero"
+    ],
+    [
+     "shear stress",
+     "force per unit area acting parallel to a surface, trying to slide one layer over the next"
+    ],
+    [
+     "moment",
+     "the turning effect of a force about a point: the force times its perpendicular distance from that point"
+    ]
+   ],
    "symbols": [
     [
      "C",
@@ -712,6 +1074,14 @@
     [
      "r",
      "radius"
+    ],
+    [
+     "c",
+     "distance from the neutral axis to the extreme fibre"
+    ],
+    [
+     "e",
+     "eccentricity of the load"
     ]
    ]
   }

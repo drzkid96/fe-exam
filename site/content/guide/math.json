@@ -83,7 +83,7 @@
    "figures": [
     {
      "viewBox": "0 0 540 180",
-     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Math</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Comes back in</text><text x='360' y='55' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Statics A: Resultants</text><line x1='338.0' y1='51.0' x2='356.0' y2='51.0' stroke='#00574A' stroke-width='1'/><line x1='338.0' y1='115.0' x2='356.0' y2='51.0' stroke='#00574A' stroke-width='1'/><text x='360' y='70' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Statics E: Centroids</text><line x1='338.0' y1='83.0' x2='356.0' y2='66.1' stroke='#00574A' stroke-width='1'/><text x='360' y='85' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Dynamics A: Kinematics</text><line x1='338.0' y1='83.0' x2='356.0' y2='81.3' stroke='#00574A' stroke-width='1'/><text x='360' y='100' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Surveying A: Angles, distances</text><line x1='338.0' y1='51.0' x2='356.0' y2='96.4' stroke='#00574A' stroke-width='1'/><text x='360' y='116' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Transport A: Geometric design</text><line x1='338.0' y1='51.0' x2='356.0' y2='111.6' stroke='#00574A' stroke-width='1'/><text x='360' y='131' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Transport C: Traffic flow</text><line x1='338.0' y1='147.0' x2='356.0' y2='126.7' stroke='#00574A' stroke-width='1'/><text x='360' y='146' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Transport E: Planning</text><line x1='338.0' y1='147.0' x2='356.0' y2='141.9' stroke='#00574A' stroke-width='1'/><text x='360' y='161' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Econ D: Uncertainty</text><line x1='338.0' y1='147.0' x2='356.0' y2='157.0' stroke='#00574A' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>1. Lines and curves (A)</text><rect x='198.0' y='72.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='86' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>2. Calculus (B)</text><rect x='198.0' y='104.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='118' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>3. Vectors (C)</text><rect x='198.0' y='136.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='150' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>4. Statistics (D)</text>",
+     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#6E2B3F'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Math</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#2E563B'>Comes back in</text><text x='360' y='55' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Statics A: Resultants</text><line x1='338.0' y1='51.0' x2='356.0' y2='51.0' stroke='#2E563B' stroke-width='1'/><line x1='338.0' y1='115.0' x2='356.0' y2='51.0' stroke='#2E563B' stroke-width='1'/><text x='360' y='70' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Statics E: Centroids</text><line x1='338.0' y1='83.0' x2='356.0' y2='66.1' stroke='#2E563B' stroke-width='1'/><text x='360' y='85' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Dynamics A: Kinematics</text><line x1='338.0' y1='83.0' x2='356.0' y2='81.3' stroke='#2E563B' stroke-width='1'/><text x='360' y='100' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Surveying A: Angles, distances</text><line x1='338.0' y1='51.0' x2='356.0' y2='96.4' stroke='#2E563B' stroke-width='1'/><text x='360' y='116' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Transport A: Geometric design</text><line x1='338.0' y1='51.0' x2='356.0' y2='111.6' stroke='#2E563B' stroke-width='1'/><text x='360' y='131' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Transport C: Traffic flow</text><line x1='338.0' y1='147.0' x2='356.0' y2='126.7' stroke='#2E563B' stroke-width='1'/><text x='360' y='146' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Transport E: Planning</text><line x1='338.0' y1='147.0' x2='356.0' y2='141.9' stroke='#2E563B' stroke-width='1'/><text x='360' y='161' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Econ D: Uncertainty</text><line x1='338.0' y1='147.0' x2='356.0' y2='157.0' stroke='#2E563B' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>1. Lines and curves (A)</text><rect x='198.0' y='72.0' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='86' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>2. Calculus (B)</text><rect x='198.0' y='104.0' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='118' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>3. Vectors (C)</text><rect x='198.0' y='136.0' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='150' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>4. Statistics (D)</text>",
      "alt": "How Mathematics and Statistics connects: the subtopics in a suggested study order, the earlier topics to refresh first, and the later topics that use this one.",
      "caption": "How this topic connects. The middle column is a suggested study order; the left column lists earlier lessons to refresh first; the right column shows where this topic is used again."
     }
@@ -196,7 +196,7 @@
      "value": 11.730152,
      "figure": {
       "viewBox": "0 0 400 180",
-      "svg": "<path d='M70 150 L266 150 L171 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='168' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>15 m</text><text x='112' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>12 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>50°</text>",
+      "svg": "<path d='M70 150 L266 150 L171 30 Z' fill='#E2CBA0' stroke='#22221F' stroke-width='2'/><text x='168' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>15 m</text><text x='112' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#22221F'>12 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>50°</text>",
       "alt": "A triangle with sides of 15 m and 12 m meeting at 50°."
      }
     },
@@ -209,7 +209,7 @@
      "value": -0.8,
      "figure": {
       "viewBox": "0 0 400 190",
-      "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='200' y1='14' x2='200' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='208' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='200' y1='160' x2='297' y2='39' stroke='#00574A' stroke-width='3'/><path d='M304 30 L293 35 L301 42 Z' fill='#00574A'/><text x='314' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>given line</text><line x1='200' y1='160' x2='79' y2='63' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M70 56 L75 67 L82 59 Z' fill='#568CBB'/><text x='60' y='48' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>at 90°</text>",
+      "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#D8C5C2' stroke-width='2'/><line x1='200' y1='14' x2='200' y2='176' stroke='#D8C5C2' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>x</text><text x='208' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>y</text><line x1='200' y1='160' x2='297' y2='39' stroke='#2E563B' stroke-width='3'/><path d='M304 30 L293 35 L301 42 Z' fill='#2E563B'/><text x='314' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#2E563B'>given line</text><line x1='200' y1='160' x2='79' y2='63' stroke='#6E2B3F' stroke-width='3' stroke-dasharray='6 4'/><path d='M70 56 L75 67 L82 59 Z' fill='#6E2B3F'/><text x='60' y='48' text-anchor='end' font-size='12' font-weight='600' fill='#6E2B3F'>at 90°</text>",
       "alt": "Vector diagram: given line; at 90°."
      }
     },
@@ -279,7 +279,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 215",
-     "svg": "<line x1='50.0' y1='190.0' x2='372.0' y2='190.0' stroke='#00242E' stroke-width='1.5'/><path d='M380.0 190.0 L372.0 186.0 L372.0 194.0 Z' fill='#00242E'/><line x1='50.0' y1='190.0' x2='50.0' y2='26.0' stroke='#00242E' stroke-width='1.5'/><path d='M50.0 18.0 L46.0 26.0 L54.0 26.0 Z' fill='#00242E'/><text x='380' y='206' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='56' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='50.0' y1='160.0' x2='320.0' y2='25.0' stroke='#00574A' stroke-width='2.5'/><circle cx='50.0' cy='160.0' r='4' fill='#00574A'/><text x='58' y='174' text-anchor='start' font-size='11' font-weight='400' fill='#00574A'>b, where the line crosses the y-axis</text><line x1='110.0' y1='130.0' x2='230.0' y2='130.0' stroke='#00242E' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='230.0' y1='130.0' x2='230.0' y2='70.0' stroke='#00242E' stroke-width='1.5' stroke-dasharray='6 4'/><text x='170' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>run = 4</text><text x='224' y='104' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>rise = 2</text><text x='86' y='43' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>y = m x + b</text><text x='86' y='58' text-anchor='start' font-size='11' font-weight='400' fill='#00574A'>m = rise / run = 2 / 4 = 0.5</text><line x1='207.5' y1='25.0' x2='290.0' y2='190.0' stroke='#568CBB' stroke-width='2.5'/><text x='293' y='172' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>perpendicular line:</text><text x='293' y='186' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>slope = -1 / m = -2</text><path d='M238.0 66.0 L242.1 74.0 L234.0 78.0' fill='none' stroke='#00242E' stroke-width='1'/>",
+     "svg": "<line x1='50.0' y1='190.0' x2='372.0' y2='190.0' stroke='#22221F' stroke-width='1.5'/><path d='M380.0 190.0 L372.0 186.0 L372.0 194.0 Z' fill='#22221F'/><line x1='50.0' y1='190.0' x2='50.0' y2='26.0' stroke='#22221F' stroke-width='1.5'/><path d='M50.0 18.0 L46.0 26.0 L54.0 26.0 Z' fill='#22221F'/><text x='380' y='206' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>x</text><text x='56' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>y</text><line x1='50.0' y1='160.0' x2='320.0' y2='25.0' stroke='#2E563B' stroke-width='2.5'/><circle cx='50.0' cy='160.0' r='4' fill='#2E563B'/><text x='58' y='174' text-anchor='start' font-size='11' font-weight='400' fill='#2E563B'>b, where the line crosses the y-axis</text><line x1='110.0' y1='130.0' x2='230.0' y2='130.0' stroke='#22221F' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='230.0' y1='130.0' x2='230.0' y2='70.0' stroke='#22221F' stroke-width='1.5' stroke-dasharray='6 4'/><text x='170' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>run = 4</text><text x='224' y='104' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>rise = 2</text><text x='86' y='43' text-anchor='start' font-size='12' font-weight='600' fill='#2E563B'>y = m x + b</text><text x='86' y='58' text-anchor='start' font-size='11' font-weight='400' fill='#2E563B'>m = rise / run = 2 / 4 = 0.5</text><line x1='207.5' y1='25.0' x2='290.0' y2='190.0' stroke='#6E2B3F' stroke-width='2.5'/><text x='293' y='172' text-anchor='start' font-size='11' font-weight='400' fill='#6E2B3F'>perpendicular line:</text><text x='293' y='186' text-anchor='start' font-size='11' font-weight='400' fill='#6E2B3F'>slope = -1 / m = -2</text><path d='M238.0 66.0 L242.1 74.0 L234.0 78.0' fill='none' stroke='#22221F' stroke-width='1'/>",
      "alt": "A straight line y = m x + b: the slope m is rise over run, b is where it crosses the y-axis, and a perpendicular line has slope -1 / m.",
      "caption": "A straight line y = m x + b: the slope m is rise over run, b is where it crosses the y-axis, and a perpendicular line has slope -1 / m."
     }
@@ -313,7 +313,7 @@
       "find": [
        "straight line"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -324,7 +324,7 @@
       "find": [
        "conic sections"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -335,7 +335,7 @@
       "find": [
        "distance between two points"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -346,7 +346,7 @@
       "find": [
        "law of cosines"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -357,7 +357,7 @@
       "find": [
        "straight line"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -368,7 +368,7 @@
       "find": [
        "law of sines"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -379,7 +379,7 @@
       "find": [
        "straight line"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -390,7 +390,7 @@
       "find": [
        "circular sector"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      }
     ]
@@ -655,7 +655,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 200",
-     "svg": "<line x1='30.0' y1='175.0' x2='187.0' y2='175.0' stroke='#00242E' stroke-width='1.5'/><path d='M195.0 175.0 L187.0 171.0 L187.0 179.0 Z' fill='#00242E'/><line x1='30.0' y1='175.0' x2='30.0' y2='28.0' stroke='#00242E' stroke-width='1.5'/><path d='M30.0 20.0 L26.0 28.0 L34.0 28.0 Z' fill='#00242E'/><text x='195' y='191' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='36' y='24' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='215.0' y1='175.0' x2='382.0' y2='175.0' stroke='#00242E' stroke-width='1.5'/><path d='M390.0 175.0 L382.0 171.0 L382.0 179.0 Z' fill='#00242E'/><line x1='215.0' y1='175.0' x2='215.0' y2='28.0' stroke='#00242E' stroke-width='1.5'/><path d='M215.0 20.0 L211.0 28.0 L219.0 28.0 Z' fill='#00242E'/><text x='390' y='191' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='221' y='24' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><path d='M40.0 168.0 L42.4 160.1 L44.8 152.5 L47.2 145.2 L49.7 138.1 L52.1 131.3 L54.5 124.8 L56.9 118.5 L59.3 112.5 L61.8 106.8 L64.2 101.3 L66.6 96.1 L69.0 91.2 L71.4 86.5 L73.8 82.1 L76.2 78.0 L78.7 74.1 L81.1 70.5 L83.5 67.2 L85.9 64.1 L88.3 61.3 L90.8 58.8 L93.2 56.5 L95.6 54.5 L98.0 52.8 L100.4 51.3 L102.8 50.1 L105.2 49.2 L107.7 48.5 L110.1 48.1 L112.5 48.0 L114.9 48.1 L117.3 48.5 L119.8 49.2 L122.2 50.1 L124.6 51.3 L127.0 52.8 L129.4 54.5 L131.8 56.5 L134.2 58.8 L136.7 61.3 L139.1 64.1 L141.5 67.2 L143.9 70.5 L146.3 74.1 L148.8 78.0 L151.2 82.1 L153.6 86.5 L156.0 91.2 L158.4 96.1 L160.8 101.3 L163.2 106.8 L165.7 112.5 L168.1 118.5 L170.5 124.8 L172.9 131.3 L175.3 138.1 L177.8 145.2 L180.2 152.5 L182.6 160.1 L185.0 168.0' fill='none' stroke='#1B795A' stroke-width='2.5'/><line x1='47.0' y1='134.9' x2='87.0' y2='55.4' stroke='#00574A' stroke-width='2'/><circle cx='69.0' cy='91.2' r='4' fill='#00574A'/><text x='115' y='140' text-anchor='middle' font-size='11' font-weight='400' fill='#00574A'>slope of the tangent</text><text x='115' y='154' text-anchor='middle' font-size='11' font-weight='400' fill='#00574A'>= derivative dy/dx</text><line x1='78.5' y1='48.0' x2='146.5' y2='48.0' stroke='#00574A' stroke-width='2' stroke-dasharray='6 4'/><circle cx='112.5' cy='48.0' r='4' fill='#00574A'/><text x='112' y='38' text-anchor='middle' font-size='11' font-weight='400' fill='#00574A'>peak: dy/dx = 0</text><path d='M263.8 168.0 L263.8 118.9 L266.6 117.7 L269.4 116.6 L272.3 115.6 L275.1 114.5 L278.0 113.6 L280.8 112.6 L283.6 111.7 L286.5 110.8 L289.3 110.0 L292.2 109.1 L295.0 108.4 L297.9 107.6 L300.7 106.9 L303.5 106.3 L306.4 105.6 L309.2 105.0 L312.1 104.5 L314.9 104.0 L317.7 103.5 L320.6 103.0 L323.4 102.6 L326.3 102.2 L329.1 101.9 L331.9 101.6 L334.8 101.3 L337.6 101.1 L340.5 100.9 L343.3 100.8 L346.2 100.6 L349.0 100.6 L349.0 168.0 Z' fill='#D9F1D6' stroke='none' stroke-width='0'/><path d='M225.0 138.0 L227.6 136.5 L230.2 135.1 L232.8 133.6 L235.3 132.2 L237.9 130.9 L240.5 129.5 L243.1 128.2 L245.7 127.0 L248.2 125.7 L250.8 124.5 L253.4 123.3 L256.0 122.2 L258.6 121.0 L261.2 119.9 L263.8 118.9 L266.3 117.8 L268.9 116.8 L271.5 115.9 L274.1 114.9 L276.7 114.0 L279.2 113.1 L281.8 112.3 L284.4 111.4 L287.0 110.6 L289.6 109.9 L292.2 109.1 L294.8 108.4 L297.3 107.8 L299.9 107.1 L302.5 106.5 L305.1 105.9 L307.7 105.4 L310.2 104.8 L312.8 104.3 L315.4 103.9 L318.0 103.4 L320.6 103.0 L323.2 102.7 L325.8 102.3 L328.3 102.0 L330.9 101.7 L333.5 101.5 L336.1 101.2 L338.7 101.0 L341.2 100.9 L343.8 100.7 L346.4 100.6 L349.0 100.6 L351.6 100.5 L354.2 100.5 L356.8 100.5 L359.3 100.6 L361.9 100.6 L364.5 100.7 L367.1 100.9 L369.7 101.0 L372.2 101.2 L374.8 101.5 L377.4 101.7 L380.0 102.0' fill='none' stroke='#1B795A' stroke-width='2.5'/><text x='264' y='190' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>a</text><text x='349' y='190' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>b</text><text x='306' y='142' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>area under the curve</text><text x='306' y='156' text-anchor='middle' font-size='11' font-weight='400' fill='#00574A'>= integral from a to b</text>",
+     "svg": "<line x1='30.0' y1='175.0' x2='187.0' y2='175.0' stroke='#22221F' stroke-width='1.5'/><path d='M195.0 175.0 L187.0 171.0 L187.0 179.0 Z' fill='#22221F'/><line x1='30.0' y1='175.0' x2='30.0' y2='28.0' stroke='#22221F' stroke-width='1.5'/><path d='M30.0 20.0 L26.0 28.0 L34.0 28.0 Z' fill='#22221F'/><text x='195' y='191' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>x</text><text x='36' y='24' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>y</text><line x1='215.0' y1='175.0' x2='382.0' y2='175.0' stroke='#22221F' stroke-width='1.5'/><path d='M390.0 175.0 L382.0 171.0 L382.0 179.0 Z' fill='#22221F'/><line x1='215.0' y1='175.0' x2='215.0' y2='28.0' stroke='#22221F' stroke-width='1.5'/><path d='M215.0 20.0 L211.0 28.0 L219.0 28.0 Z' fill='#22221F'/><text x='390' y='191' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>x</text><text x='221' y='24' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>y</text><path d='M40.0 168.0 L42.4 160.1 L44.8 152.5 L47.2 145.2 L49.7 138.1 L52.1 131.3 L54.5 124.8 L56.9 118.5 L59.3 112.5 L61.8 106.8 L64.2 101.3 L66.6 96.1 L69.0 91.2 L71.4 86.5 L73.8 82.1 L76.2 78.0 L78.7 74.1 L81.1 70.5 L83.5 67.2 L85.9 64.1 L88.3 61.3 L90.8 58.8 L93.2 56.5 L95.6 54.5 L98.0 52.8 L100.4 51.3 L102.8 50.1 L105.2 49.2 L107.7 48.5 L110.1 48.1 L112.5 48.0 L114.9 48.1 L117.3 48.5 L119.8 49.2 L122.2 50.1 L124.6 51.3 L127.0 52.8 L129.4 54.5 L131.8 56.5 L134.2 58.8 L136.7 61.3 L139.1 64.1 L141.5 67.2 L143.9 70.5 L146.3 74.1 L148.8 78.0 L151.2 82.1 L153.6 86.5 L156.0 91.2 L158.4 96.1 L160.8 101.3 L163.2 106.8 L165.7 112.5 L168.1 118.5 L170.5 124.8 L172.9 131.3 L175.3 138.1 L177.8 145.2 L180.2 152.5 L182.6 160.1 L185.0 168.0' fill='none' stroke='#2E563B' stroke-width='2.5'/><line x1='47.0' y1='134.9' x2='87.0' y2='55.4' stroke='#2E563B' stroke-width='2'/><circle cx='69.0' cy='91.2' r='4' fill='#2E563B'/><text x='115' y='140' text-anchor='middle' font-size='11' font-weight='400' fill='#2E563B'>slope of the tangent</text><text x='115' y='154' text-anchor='middle' font-size='11' font-weight='400' fill='#2E563B'>= derivative dy/dx</text><line x1='78.5' y1='48.0' x2='146.5' y2='48.0' stroke='#2E563B' stroke-width='2' stroke-dasharray='6 4'/><circle cx='112.5' cy='48.0' r='4' fill='#2E563B'/><text x='112' y='38' text-anchor='middle' font-size='11' font-weight='400' fill='#2E563B'>peak: dy/dx = 0</text><path d='M263.8 168.0 L263.8 118.9 L266.6 117.7 L269.4 116.6 L272.3 115.6 L275.1 114.5 L278.0 113.6 L280.8 112.6 L283.6 111.7 L286.5 110.8 L289.3 110.0 L292.2 109.1 L295.0 108.4 L297.9 107.6 L300.7 106.9 L303.5 106.3 L306.4 105.6 L309.2 105.0 L312.1 104.5 L314.9 104.0 L317.7 103.5 L320.6 103.0 L323.4 102.6 L326.3 102.2 L329.1 101.9 L331.9 101.6 L334.8 101.3 L337.6 101.1 L340.5 100.9 L343.3 100.8 L346.2 100.6 L349.0 100.6 L349.0 168.0 Z' fill='#CACFC1' stroke='none' stroke-width='0'/><path d='M225.0 138.0 L227.6 136.5 L230.2 135.1 L232.8 133.6 L235.3 132.2 L237.9 130.9 L240.5 129.5 L243.1 128.2 L245.7 127.0 L248.2 125.7 L250.8 124.5 L253.4 123.3 L256.0 122.2 L258.6 121.0 L261.2 119.9 L263.8 118.9 L266.3 117.8 L268.9 116.8 L271.5 115.9 L274.1 114.9 L276.7 114.0 L279.2 113.1 L281.8 112.3 L284.4 111.4 L287.0 110.6 L289.6 109.9 L292.2 109.1 L294.8 108.4 L297.3 107.8 L299.9 107.1 L302.5 106.5 L305.1 105.9 L307.7 105.4 L310.2 104.8 L312.8 104.3 L315.4 103.9 L318.0 103.4 L320.6 103.0 L323.2 102.7 L325.8 102.3 L328.3 102.0 L330.9 101.7 L333.5 101.5 L336.1 101.2 L338.7 101.0 L341.2 100.9 L343.8 100.7 L346.4 100.6 L349.0 100.6 L351.6 100.5 L354.2 100.5 L356.8 100.5 L359.3 100.6 L361.9 100.6 L364.5 100.7 L367.1 100.9 L369.7 101.0 L372.2 101.2 L374.8 101.5 L377.4 101.7 L380.0 102.0' fill='none' stroke='#2E563B' stroke-width='2.5'/><text x='264' y='190' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>a</text><text x='349' y='190' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>b</text><text x='306' y='142' text-anchor='middle' font-size='11' font-weight='600' fill='#2E563B'>area under the curve</text><text x='306' y='156' text-anchor='middle' font-size='11' font-weight='400' fill='#2E563B'>= integral from a to b</text>",
      "alt": "Left: the derivative is the slope of the tangent, and it is zero at a peak. Right: the integral from a to b is the area under the curve.",
      "caption": "Left: the derivative is the slope of the tangent, and it is zero at a peak. Right: the integral from a to b is the area under the curve."
     }
@@ -689,7 +689,7 @@
       "find": [
        "integral calculus"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -700,7 +700,7 @@
       "find": [
        "differential calculus"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -722,7 +722,7 @@
       "find": [
        "integral calculus"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -733,7 +733,7 @@
       "find": [
        "integral calculus"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -744,7 +744,7 @@
       "find": [
        "integral calculus"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -755,7 +755,7 @@
       "find": [
        "differential calculus"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -766,7 +766,7 @@
       "find": [
        "differential calculus"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -777,7 +777,7 @@
       "find": [
        "half-life"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -788,7 +788,7 @@
       "find": [
        "differential calculus"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      }
     ]
@@ -869,7 +869,7 @@
      "value": 32,
      "figure": {
       "viewBox": "0 0 400 190",
-      "svg": "<line x1='40' y1='138' x2='370' y2='138' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='133' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='138' x2='189' y2='158' stroke='#00574A' stroke-width='3'/><path d='M200 160 L190 153 L188 164 Z' fill='#00574A'/><text x='210' y='176' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='138' x2='109' y2='40' stroke='#1B795A' stroke-width='3'/><path d='M113 30 L104 38 L114 42 Z' fill='#1B795A'/><text x='123' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text>",
+      "svg": "<line x1='40' y1='138' x2='370' y2='138' stroke='#D8C5C2' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#D8C5C2' stroke-width='2'/><text x='372' y='133' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>y</text><line x1='70' y1='138' x2='189' y2='158' stroke='#2E563B' stroke-width='3'/><path d='M200 160 L190 153 L188 164 Z' fill='#2E563B'/><text x='210' y='176' text-anchor='start' font-size='12' font-weight='600' fill='#2E563B'>A</text><line x1='70' y1='138' x2='109' y2='40' stroke='#2E563B' stroke-width='3'/><path d='M113 30 L104 38 L114 42 Z' fill='#2E563B'/><text x='123' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#2E563B'>B</text>",
       "alt": "Vector diagram: A; B."
      }
     },
@@ -882,7 +882,7 @@
      "value": 7.0,
      "figure": {
       "viewBox": "0 0 400 200",
-      "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='222' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='222' y1='120' x2='269' y2='82' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='269' y1='82' x2='269' y2='34' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='262' y2='43' stroke='#00574A' stroke-width='3'/><path d='M269 34 L258 39 L266 46 Z' fill='#00574A'/><text x='206' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>2</text><text x='261' y='113' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>-6</text><text x='277' y='58' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>3</text><text x='275' y='26' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
+      "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#D8C5C2' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#D8C5C2' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#D8C5C2' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>z</text><line x1='190' y1='120' x2='222' y2='120' stroke='#6E2B3F' stroke-dasharray='5 4'/><line x1='222' y1='120' x2='269' y2='82' stroke='#6E2B3F' stroke-dasharray='5 4'/><line x1='269' y1='82' x2='269' y2='34' stroke='#6E2B3F' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='262' y2='43' stroke='#2E563B' stroke-width='3'/><path d='M269 34 L258 39 L266 46 Z' fill='#2E563B'/><text x='206' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#6E2B3F'>2</text><text x='261' y='113' text-anchor='end' font-size='11' font-weight='400' fill='#6E2B3F'>-6</text><text x='277' y='58' text-anchor='start' font-size='11' font-weight='400' fill='#6E2B3F'>3</text><text x='275' y='26' text-anchor='start' font-size='12' font-weight='600' fill='#2E563B'>vector</text>",
       "alt": "A three-dimensional sketch of the vector with components 2, 3 and -6 along x, y and z."
      }
     },
@@ -895,7 +895,7 @@
      "value": 36,
      "figure": {
       "viewBox": "0 0 400 190",
-      "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='118' y2='112' stroke='#00574A' stroke-width='3'/><path d='M126 104 L114 108 L122 116 Z' fill='#00574A'/><text x='136' y='96' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='86' y2='96' stroke='#1B795A' stroke-width='3'/><path d='M89 86 L81 95 L91 98 Z' fill='#1B795A'/><text x='99' y='78' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><line x1='70' y1='160' x2='139' y2='40' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M144 30 L134 37 L144 42 Z' fill='#568CBB'/><text x='154' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>A + B</text>",
+      "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#D8C5C2' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#D8C5C2' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>y</text><line x1='70' y1='160' x2='118' y2='112' stroke='#2E563B' stroke-width='3'/><path d='M126 104 L114 108 L122 116 Z' fill='#2E563B'/><text x='136' y='96' text-anchor='start' font-size='12' font-weight='600' fill='#2E563B'>A</text><line x1='70' y1='160' x2='86' y2='96' stroke='#2E563B' stroke-width='3'/><path d='M89 86 L81 95 L91 98 Z' fill='#2E563B'/><text x='99' y='78' text-anchor='start' font-size='12' font-weight='600' fill='#2E563B'>B</text><line x1='70' y1='160' x2='139' y2='40' stroke='#6E2B3F' stroke-width='3' stroke-dasharray='6 4'/><path d='M144 30 L134 37 L144 42 Z' fill='#6E2B3F'/><text x='154' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#6E2B3F'>A + B</text>",
       "alt": "Vector diagram: A; B; A + B."
      }
     },
@@ -908,7 +908,7 @@
      "value": 0.285714,
      "figure": {
       "viewBox": "0 0 400 200",
-      "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#E7E8E8' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#E7E8E8' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#E7E8E8' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='190' y1='120' x2='222' y2='120' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='222' y1='120' x2='174' y2='158' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='174' y1='158' x2='174' y2='110' stroke='#568CBB' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='184' y2='116' stroke='#00574A' stroke-width='3'/><path d='M174 110 L181 121 L186 111 Z' fill='#00574A'/><text x='206' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>2</text><text x='166' y='151' text-anchor='end' font-size='11' font-weight='400' fill='#568CBB'>6</text><text x='182' y='134' text-anchor='start' font-size='11' font-weight='400' fill='#568CBB'>3</text><text x='180' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>vector</text>",
+      "svg": "<line x1='190' y1='120' x2='304' y2='120' stroke='#D8C5C2' stroke-width='2'/><text x='312' y='124' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>x</text><line x1='190' y1='120' x2='190' y2='6' stroke='#D8C5C2' stroke-width='2'/><text x='198' y='10' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>y</text><line x1='190' y1='120' x2='133' y2='166' stroke='#D8C5C2' stroke-width='2'/><text x='141' y='170' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>z</text><line x1='190' y1='120' x2='222' y2='120' stroke='#6E2B3F' stroke-dasharray='5 4'/><line x1='222' y1='120' x2='174' y2='158' stroke='#6E2B3F' stroke-dasharray='5 4'/><line x1='174' y1='158' x2='174' y2='110' stroke='#6E2B3F' stroke-dasharray='5 4'/><line x1='190' y1='120' x2='184' y2='116' stroke='#2E563B' stroke-width='3'/><path d='M174 110 L181 121 L186 111 Z' fill='#2E563B'/><text x='206' y='134' text-anchor='middle' font-size='11' font-weight='400' fill='#6E2B3F'>2</text><text x='166' y='151' text-anchor='end' font-size='11' font-weight='400' fill='#6E2B3F'>6</text><text x='182' y='134' text-anchor='start' font-size='11' font-weight='400' fill='#6E2B3F'>3</text><text x='180' y='102' text-anchor='start' font-size='12' font-weight='600' fill='#2E563B'>vector</text>",
       "alt": "A three-dimensional sketch of the vector with components 2, 3 and 6 along x, y and z."
      }
     },
@@ -921,7 +921,7 @@
      "value": 8.4,
      "figure": {
       "viewBox": "0 0 400 190",
-      "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='178' y2='52' stroke='#00574A' stroke-width='3'/><path d='M186 44 L174 48 L182 56 Z' fill='#00574A'/><text x='196' y='36' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A</text><line x1='70' y1='160' x2='121' y2='91' stroke='#1B795A' stroke-width='3'/><path d='M128 83 L117 88 L126 95 Z' fill='#1B795A'/><text x='138' y='75' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><line x1='70' y1='160' x2='161' y2='39' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M168 30 L156 36 L165 42 Z' fill='#568CBB'/><text x='178' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>projection = 8.40</text>",
+      "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#D8C5C2' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#D8C5C2' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>y</text><line x1='70' y1='160' x2='178' y2='52' stroke='#2E563B' stroke-width='3'/><path d='M186 44 L174 48 L182 56 Z' fill='#2E563B'/><text x='196' y='36' text-anchor='start' font-size='12' font-weight='600' fill='#2E563B'>A</text><line x1='70' y1='160' x2='121' y2='91' stroke='#2E563B' stroke-width='3'/><path d='M128 83 L117 88 L126 95 Z' fill='#2E563B'/><text x='138' y='75' text-anchor='start' font-size='12' font-weight='600' fill='#2E563B'>B</text><line x1='70' y1='160' x2='161' y2='39' stroke='#6E2B3F' stroke-width='3' stroke-dasharray='6 4'/><path d='M168 30 L156 36 L165 42 Z' fill='#6E2B3F'/><text x='178' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#6E2B3F'>projection = 8.40</text>",
       "alt": "Vector diagram: A; B; projection = 8.40."
      }
     }
@@ -966,7 +966,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 205",
-     "svg": "<line x1='20.0' y1='170.0' x2='205.0' y2='170.0' stroke='#E7E8E8' stroke-width='1'/><line x1='40.0' y1='170.0' x2='130.7' y2='133.7' stroke='#00574A' stroke-width='2.5'/><path d='M140.0 130.0 L128.9 129.1 L132.6 138.4 Z' fill='#00574A'/><line x1='140.0' y1='130.0' x2='175.5' y2='58.9' stroke='#1B795A' stroke-width='2.5'/><path d='M180.0 50.0 L171.1 56.7 L180.0 61.2 Z' fill='#1B795A'/><line x1='40.0' y1='170.0' x2='172.4' y2='56.5' stroke='#568CBB' stroke-width='3'/><path d='M180.0 50.0 L169.2 52.7 L175.7 60.3 Z' fill='#568CBB'/><line x1='40.0' y1='170.0' x2='140.0' y2='170.0' stroke='#00242E' stroke-width='1.2' stroke-dasharray='6 4'/><line x1='140.0' y1='170.0' x2='140.0' y2='130.0' stroke='#00242E' stroke-width='1.2' stroke-dasharray='6 4'/><text x='90' y='186' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Ax</text><text x='146' y='158' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Ay</text><text x='86' y='142' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>A</text><text x='170' y='94' text-anchor='start' font-size='12' font-weight='600' fill='#1B795A'>B</text><text x='100' y='106' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>A + B</text><text x='12' y='18' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Tip to tail: add x parts, then y parts</text><line x1='240.0' y1='170.0' x2='363.1' y2='148.3' stroke='#00574A' stroke-width='2.5'/><path d='M372.9 146.6 L362.2 143.4 L364.0 153.2 Z' fill='#00574A'/><line x1='240.0' y1='170.0' x2='291.6' y2='96.3' stroke='#1B795A' stroke-width='2.5'/><path d='M297.4 88.1 L287.5 93.4 L295.7 99.1 Z' fill='#1B795A'/><line x1='297.4' y1='88.1' x2='309.6' y2='157.7' stroke='#00242E' stroke-width='1.2' stroke-dasharray='6 4'/><line x1='240.0' y1='176.0' x2='309.6' y2='163.7' stroke='#568CBB' stroke-width='3'/><path d='M273.5 164.1 A34 34 0 0 0 259.5 142.1' fill='none' stroke='#00242E' stroke-width='1.5'/><text x='280' y='152' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>θ</text><text x='373' y='163' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>A</text><text x='293' y='82' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>B</text><text x='275' y='184' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>|B| cos θ</text><text x='315' y='18' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>A · B = |A| |B| cos θ</text>",
+     "svg": "<line x1='20.0' y1='170.0' x2='205.0' y2='170.0' stroke='#D8C5C2' stroke-width='1'/><line x1='40.0' y1='170.0' x2='130.7' y2='133.7' stroke='#2E563B' stroke-width='2.5'/><path d='M140.0 130.0 L128.9 129.1 L132.6 138.4 Z' fill='#2E563B'/><line x1='140.0' y1='130.0' x2='175.5' y2='58.9' stroke='#2E563B' stroke-width='2.5'/><path d='M180.0 50.0 L171.1 56.7 L180.0 61.2 Z' fill='#2E563B'/><line x1='40.0' y1='170.0' x2='172.4' y2='56.5' stroke='#6E2B3F' stroke-width='3'/><path d='M180.0 50.0 L169.2 52.7 L175.7 60.3 Z' fill='#6E2B3F'/><line x1='40.0' y1='170.0' x2='140.0' y2='170.0' stroke='#22221F' stroke-width='1.2' stroke-dasharray='6 4'/><line x1='140.0' y1='170.0' x2='140.0' y2='130.0' stroke='#22221F' stroke-width='1.2' stroke-dasharray='6 4'/><text x='90' y='186' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>Ax</text><text x='146' y='158' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>Ay</text><text x='86' y='142' text-anchor='middle' font-size='12' font-weight='600' fill='#2E563B'>A</text><text x='170' y='94' text-anchor='start' font-size='12' font-weight='600' fill='#2E563B'>B</text><text x='100' y='106' text-anchor='end' font-size='12' font-weight='600' fill='#6E2B3F'>A + B</text><text x='12' y='18' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>Tip to tail: add x parts, then y parts</text><line x1='240.0' y1='170.0' x2='363.1' y2='148.3' stroke='#2E563B' stroke-width='2.5'/><path d='M372.9 146.6 L362.2 143.4 L364.0 153.2 Z' fill='#2E563B'/><line x1='240.0' y1='170.0' x2='291.6' y2='96.3' stroke='#2E563B' stroke-width='2.5'/><path d='M297.4 88.1 L287.5 93.4 L295.7 99.1 Z' fill='#2E563B'/><line x1='297.4' y1='88.1' x2='309.6' y2='157.7' stroke='#22221F' stroke-width='1.2' stroke-dasharray='6 4'/><line x1='240.0' y1='176.0' x2='309.6' y2='163.7' stroke='#6E2B3F' stroke-width='3'/><path d='M273.5 164.1 A34 34 0 0 0 259.5 142.1' fill='none' stroke='#22221F' stroke-width='1.5'/><text x='280' y='152' text-anchor='start' font-size='12' font-weight='400' fill='#22221F'>θ</text><text x='373' y='163' text-anchor='middle' font-size='12' font-weight='600' fill='#2E563B'>A</text><text x='293' y='82' text-anchor='end' font-size='12' font-weight='600' fill='#2E563B'>B</text><text x='275' y='184' text-anchor='middle' font-size='11' font-weight='600' fill='#6E2B3F'>|B| cos θ</text><text x='315' y='18' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>A · B = |A| |B| cos θ</text>",
      "alt": "Left: vectors add tip to tail, component by component. Right: the dot product is |A| times the part of B that lies along A, |B| cos θ.",
      "caption": "Left: vectors add tip to tail, component by component. Right: the dot product is |A| times the part of B that lies along A, |B| cos θ."
     }
@@ -1000,7 +1000,7 @@
       "find": [
        "dot product"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 3
      },
      {
@@ -1011,7 +1011,7 @@
       "find": [
        "cross product"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1022,7 +1022,7 @@
       "find": [
        "vectors"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1033,7 +1033,7 @@
       "find": [
        "cross product"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1044,7 +1044,7 @@
       "find": [
        "unit vector"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1055,7 +1055,7 @@
       "find": [
        "dot product"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      }
     ]
@@ -1272,7 +1272,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 205",
-     "svg": "<path d='M96.0 175.0 L96.0 157.4 L101.2 153.6 L106.4 149.3 L111.6 144.4 L116.8 138.9 L122.0 132.8 L127.2 126.2 L132.4 119.2 L137.6 111.7 L142.8 104.0 L148.0 96.2 L153.2 88.3 L158.4 80.6 L163.6 73.2 L168.8 66.4 L174.0 60.3 L179.2 55.0 L184.4 50.7 L189.6 47.6 L194.8 45.6 L200.0 45.0 L205.2 45.6 L210.4 47.6 L215.6 50.7 L220.8 55.0 L226.0 60.3 L231.2 66.4 L236.4 73.2 L241.6 80.6 L246.8 88.3 L252.0 96.2 L257.2 104.0 L262.4 111.7 L267.6 119.2 L272.8 126.2 L278.0 132.8 L283.2 138.9 L288.4 144.4 L293.6 149.3 L298.8 153.6 L304.0 157.4 L304.0 175.0 Z' fill='#EEEDE8' stroke='none' stroke-width='0'/><path d='M148.0 175.0 L148.0 96.2 L150.6 92.2 L153.2 88.3 L155.8 84.4 L158.4 80.6 L161.0 76.9 L163.6 73.2 L166.2 69.8 L168.8 66.4 L171.4 63.2 L174.0 60.3 L176.6 57.5 L179.2 55.0 L181.8 52.7 L184.4 50.7 L187.0 49.0 L189.6 47.6 L192.2 46.5 L194.8 45.6 L197.4 45.2 L200.0 45.0 L202.6 45.2 L205.2 45.6 L207.8 46.5 L210.4 47.6 L213.0 49.0 L215.6 50.7 L218.2 52.7 L220.8 55.0 L223.4 57.5 L226.0 60.3 L228.6 63.2 L231.2 66.4 L233.8 69.8 L236.4 73.2 L239.0 76.9 L241.6 80.6 L244.2 84.4 L246.8 88.3 L249.4 92.2 L252.0 96.2 L252.0 175.0 Z' fill='#D9F1D6' stroke='none' stroke-width='0'/><path d='M23.2 174.6 L27.6 174.5 L32.0 174.3 L36.5 174.1 L40.9 173.8 L45.3 173.4 L49.7 173.0 L54.1 172.5 L58.6 171.8 L63.0 171.0 L67.4 170.0 L71.8 168.8 L76.2 167.3 L80.7 165.7 L85.1 163.7 L89.5 161.4 L93.9 158.8 L98.3 155.8 L102.8 152.4 L107.2 148.6 L111.6 144.4 L116.0 139.7 L120.4 134.7 L124.9 129.2 L129.3 123.4 L133.7 117.3 L138.1 111.0 L142.5 104.4 L147.0 97.7 L151.4 91.0 L155.8 84.4 L160.2 78.0 L164.6 71.8 L169.1 66.1 L173.5 60.9 L177.9 56.2 L182.3 52.3 L186.7 49.2 L191.2 46.9 L195.6 45.5 L200.0 45.0 L204.4 45.5 L208.8 46.9 L213.3 49.2 L217.7 52.3 L222.1 56.2 L226.5 60.9 L230.9 66.1 L235.4 71.8 L239.8 78.0 L244.2 84.4 L248.6 91.0 L253.0 97.7 L257.5 104.4 L261.9 111.0 L266.3 117.3 L270.7 123.4 L275.1 129.2 L279.6 134.7 L284.0 139.7 L288.4 144.4 L292.8 148.6 L297.2 152.4 L301.7 155.8 L306.1 158.8 L310.5 161.4 L314.9 163.7 L319.3 165.7 L323.8 167.3 L328.2 168.8 L332.6 170.0 L337.0 171.0 L341.4 171.8 L345.9 172.5 L350.3 173.0 L354.7 173.4 L359.1 173.8 L363.5 174.1 L368.0 174.3 L372.4 174.5 L376.8 174.6' fill='none' stroke='#1B795A' stroke-width='2.5'/><line x1='20.0' y1='175.0' x2='380.0' y2='175.0' stroke='#00242E' stroke-width='1.5'/><rect x='14.0' y='22.0' width='14.0' height='10.0' fill='#D9F1D6' stroke='#00242E' stroke-width='0.8'/><text x='32' y='31' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>about 68% within one σ</text><rect x='14.0' y='40.0' width='14.0' height='10.0' fill='#EEEDE8' stroke='#00242E' stroke-width='0.8'/><text x='32' y='49' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>about 95% within two σ</text><line x1='96.0' y1='175.0' x2='96.0' y2='181.0' stroke='#00242E' stroke-width='1.5'/><text x='96' y='195' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>μ - 2σ</text><line x1='148.0' y1='175.0' x2='148.0' y2='181.0' stroke='#00242E' stroke-width='1.5'/><text x='148' y='195' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>μ - σ</text><line x1='200.0' y1='175.0' x2='200.0' y2='181.0' stroke='#00242E' stroke-width='1.5'/><text x='200' y='195' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>μ</text><line x1='252.0' y1='175.0' x2='252.0' y2='181.0' stroke='#00242E' stroke-width='1.5'/><text x='252' y='195' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>μ + σ</text><line x1='304.0' y1='175.0' x2='304.0' y2='181.0' stroke='#00242E' stroke-width='1.5'/><text x='304' y='195' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>μ + 2σ</text><text x='390' y='30' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>μ = mean (centre)</text><text x='390' y='45' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>σ = standard deviation (spread)</text><text x='390' y='60' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>z = (x - μ) / σ</text>",
+     "svg": "<path d='M96.0 175.0 L96.0 157.4 L101.2 153.6 L106.4 149.3 L111.6 144.4 L116.8 138.9 L122.0 132.8 L127.2 126.2 L132.4 119.2 L137.6 111.7 L142.8 104.0 L148.0 96.2 L153.2 88.3 L158.4 80.6 L163.6 73.2 L168.8 66.4 L174.0 60.3 L179.2 55.0 L184.4 50.7 L189.6 47.6 L194.8 45.6 L200.0 45.0 L205.2 45.6 L210.4 47.6 L215.6 50.7 L220.8 55.0 L226.0 60.3 L231.2 66.4 L236.4 73.2 L241.6 80.6 L246.8 88.3 L252.0 96.2 L257.2 104.0 L262.4 111.7 L267.6 119.2 L272.8 126.2 L278.0 132.8 L283.2 138.9 L288.4 144.4 L293.6 149.3 L298.8 153.6 L304.0 157.4 L304.0 175.0 Z' fill='#E2CBA0' stroke='none' stroke-width='0'/><path d='M148.0 175.0 L148.0 96.2 L150.6 92.2 L153.2 88.3 L155.8 84.4 L158.4 80.6 L161.0 76.9 L163.6 73.2 L166.2 69.8 L168.8 66.4 L171.4 63.2 L174.0 60.3 L176.6 57.5 L179.2 55.0 L181.8 52.7 L184.4 50.7 L187.0 49.0 L189.6 47.6 L192.2 46.5 L194.8 45.6 L197.4 45.2 L200.0 45.0 L202.6 45.2 L205.2 45.6 L207.8 46.5 L210.4 47.6 L213.0 49.0 L215.6 50.7 L218.2 52.7 L220.8 55.0 L223.4 57.5 L226.0 60.3 L228.6 63.2 L231.2 66.4 L233.8 69.8 L236.4 73.2 L239.0 76.9 L241.6 80.6 L244.2 84.4 L246.8 88.3 L249.4 92.2 L252.0 96.2 L252.0 175.0 Z' fill='#CACFC1' stroke='none' stroke-width='0'/><path d='M23.2 174.6 L27.6 174.5 L32.0 174.3 L36.5 174.1 L40.9 173.8 L45.3 173.4 L49.7 173.0 L54.1 172.5 L58.6 171.8 L63.0 171.0 L67.4 170.0 L71.8 168.8 L76.2 167.3 L80.7 165.7 L85.1 163.7 L89.5 161.4 L93.9 158.8 L98.3 155.8 L102.8 152.4 L107.2 148.6 L111.6 144.4 L116.0 139.7 L120.4 134.7 L124.9 129.2 L129.3 123.4 L133.7 117.3 L138.1 111.0 L142.5 104.4 L147.0 97.7 L151.4 91.0 L155.8 84.4 L160.2 78.0 L164.6 71.8 L169.1 66.1 L173.5 60.9 L177.9 56.2 L182.3 52.3 L186.7 49.2 L191.2 46.9 L195.6 45.5 L200.0 45.0 L204.4 45.5 L208.8 46.9 L213.3 49.2 L217.7 52.3 L222.1 56.2 L226.5 60.9 L230.9 66.1 L235.4 71.8 L239.8 78.0 L244.2 84.4 L248.6 91.0 L253.0 97.7 L257.5 104.4 L261.9 111.0 L266.3 117.3 L270.7 123.4 L275.1 129.2 L279.6 134.7 L284.0 139.7 L288.4 144.4 L292.8 148.6 L297.2 152.4 L301.7 155.8 L306.1 158.8 L310.5 161.4 L314.9 163.7 L319.3 165.7 L323.8 167.3 L328.2 168.8 L332.6 170.0 L337.0 171.0 L341.4 171.8 L345.9 172.5 L350.3 173.0 L354.7 173.4 L359.1 173.8 L363.5 174.1 L368.0 174.3 L372.4 174.5 L376.8 174.6' fill='none' stroke='#2E563B' stroke-width='2.5'/><line x1='20.0' y1='175.0' x2='380.0' y2='175.0' stroke='#22221F' stroke-width='1.5'/><rect x='14.0' y='22.0' width='14.0' height='10.0' fill='#CACFC1' stroke='#22221F' stroke-width='0.8'/><text x='32' y='31' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>about 68% within one σ</text><rect x='14.0' y='40.0' width='14.0' height='10.0' fill='#E2CBA0' stroke='#22221F' stroke-width='0.8'/><text x='32' y='49' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>about 95% within two σ</text><line x1='96.0' y1='175.0' x2='96.0' y2='181.0' stroke='#22221F' stroke-width='1.5'/><text x='96' y='195' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>μ - 2σ</text><line x1='148.0' y1='175.0' x2='148.0' y2='181.0' stroke='#22221F' stroke-width='1.5'/><text x='148' y='195' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>μ - σ</text><line x1='200.0' y1='175.0' x2='200.0' y2='181.0' stroke='#22221F' stroke-width='1.5'/><text x='200' y='195' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>μ</text><line x1='252.0' y1='175.0' x2='252.0' y2='181.0' stroke='#22221F' stroke-width='1.5'/><text x='252' y='195' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>μ + σ</text><line x1='304.0' y1='175.0' x2='304.0' y2='181.0' stroke='#22221F' stroke-width='1.5'/><text x='304' y='195' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>μ + 2σ</text><text x='390' y='30' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>μ = mean (centre)</text><text x='390' y='45' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>σ = standard deviation (spread)</text><text x='390' y='60' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>z = (x - μ) / σ</text>",
      "alt": "A normal distribution: centred on the mean μ, with about 68% of values within one standard deviation σ of it and about 95% within two.",
      "caption": "A normal distribution: centred on the mean μ, with about 68% of values within one standard deviation σ of it and about 95% within two."
     }
@@ -1332,7 +1332,7 @@
       "find": [
        "probability"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 3
      },
      {
@@ -1343,7 +1343,7 @@
       "find": [
        "unit normal"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1365,7 +1365,7 @@
       "find": [
        "binomial distribution"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1387,7 +1387,7 @@
       "find": [
        "confidence interval"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1409,7 +1409,7 @@
       "find": [
        "joint probability"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1420,7 +1420,7 @@
       "find": [
        "combinations"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]

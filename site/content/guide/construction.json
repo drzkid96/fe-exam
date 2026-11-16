@@ -75,7 +75,7 @@
    "figures": [
     {
      "viewBox": "0 0 540 186",
-     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Construction</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Comes back in</text><text x='182' y='55' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Ethics D: Contracts</text><line x1='186.0' y1='51.0' x2='198.0' y2='51.0' stroke='#568CBB' stroke-width='1'/><text x='182' y='167' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Surveying E: Leveling</text><line x1='186.0' y1='163.0' x2='198.0' y2='158.2' stroke='#568CBB' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>1. Administration (A)</text><rect x='198.0' y='66.8' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='81' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>2. Operations (B)</text><rect x='198.0' y='93.6' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='108' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>3. Project controls (C)</text><rect x='198.0' y='120.4' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='135' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>4. Estimating (D)</text><rect x='198.0' y='147.2' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='162' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>5. Drawings (E)</text>",
+     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#6E2B3F'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Construction</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#2E563B'>Comes back in</text><text x='182' y='55' text-anchor='end' font-size='10' font-weight='400' fill='#6E2B3F'>Ethics D: Contracts</text><line x1='186.0' y1='51.0' x2='198.0' y2='51.0' stroke='#6E2B3F' stroke-width='1'/><text x='182' y='167' text-anchor='end' font-size='10' font-weight='400' fill='#6E2B3F'>Surveying E: Leveling</text><line x1='186.0' y1='163.0' x2='198.0' y2='158.2' stroke='#6E2B3F' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>1. Administration (A)</text><rect x='198.0' y='66.8' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='81' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>2. Operations (B)</text><rect x='198.0' y='93.6' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='108' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>3. Project controls (C)</text><rect x='198.0' y='120.4' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='135' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>4. Estimating (D)</text><rect x='198.0' y='147.2' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='162' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>5. Drawings (E)</text>",
      "alt": "How Construction Engineering connects: the subtopics in a suggested study order, the earlier topics to refresh first, and the later topics that use this one.",
      "caption": "How this topic connects. The middle column is a suggested study order; the left column lists earlier lessons to refresh first; the right column shows where this topic is used again."
     }
@@ -176,7 +176,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 212",
-     "svg": "<text x='70' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Design-bid-build</text><rect x='35.0' y='34.0' width='70.0' height='26.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='70' y='51' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Owner</text><rect x='10.0' y='110.0' width='60.0' height='34.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><text x='40' y='130' text-anchor='middle' font-size='9' font-weight='600' fill='#00242E'>Designer</text><line x1='70.0' y1='60.0' x2='40.0' y2='110.0' stroke='#00574A' stroke-width='2'/><rect x='74.0' y='110.0' width='60.0' height='34.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><text x='104' y='130' text-anchor='middle' font-size='9' font-weight='600' fill='#00242E'>Contractor</text><line x1='70.0' y1='60.0' x2='104.0' y2='110.0' stroke='#00574A' stroke-width='2'/><line x1='70.0' y1='127.0' x2='74.0' y2='127.0' stroke='#00242E' stroke-width='1' stroke-dasharray='6 4'/><text x='200' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Design-build</text><rect x='165.0' y='34.0' width='70.0' height='26.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='200' y='51' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Owner</text><rect x='150.0' y='110.0' width='100.0' height='34.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><text x='200' y='125' text-anchor='middle' font-size='9' font-weight='600' fill='#00242E'>Design-builder</text><text x='200' y='136' text-anchor='middle' font-size='9' font-weight='600' fill='#00242E'>(designer + builder)</text><line x1='200.0' y1='60.0' x2='200.0' y2='110.0' stroke='#00574A' stroke-width='2'/><text x='330' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>CM at risk</text><rect x='295.0' y='34.0' width='70.0' height='26.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='330' y='51' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Owner</text><rect x='270.0' y='110.0' width='60.0' height='34.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><text x='300' y='130' text-anchor='middle' font-size='9' font-weight='600' fill='#00242E'>Designer</text><line x1='330.0' y1='60.0' x2='300.0' y2='110.0' stroke='#00574A' stroke-width='2'/><rect x='334.0' y='110.0' width='60.0' height='34.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><text x='364' y='125' text-anchor='middle' font-size='9' font-weight='600' fill='#00242E'>Construction</text><text x='364' y='136' text-anchor='middle' font-size='9' font-weight='600' fill='#00242E'>manager</text><line x1='330.0' y1='60.0' x2='364.0' y2='110.0' stroke='#00574A' stroke-width='2'/><line x1='330.0' y1='127.0' x2='334.0' y2='127.0' stroke='#00242E' stroke-width='1' stroke-dasharray='6 4'/><text x='76' y='166' text-anchor='middle' font-size='9' font-weight='400' fill='#00242E'>Two contracts; low bid wins.</text><text x='76' y='178' text-anchor='middle' font-size='9' font-weight='400' fill='#00242E'>Design finished before bidding.</text><text x='200' y='166' text-anchor='middle' font-size='9' font-weight='400' fill='#00242E'>One contract, one point of</text><text x='200' y='178' text-anchor='middle' font-size='9' font-weight='400' fill='#00242E'>responsibility; can overlap.</text><text x='330' y='166' text-anchor='middle' font-size='9' font-weight='400' fill='#00242E'>CM joins during design and</text><text x='330' y='178' text-anchor='middle' font-size='9' font-weight='400' fill='#00242E'>guarantees a maximum price.</text><line x1='80.0' y1='200.0' x2='110.0' y2='200.0' stroke='#00574A' stroke-width='2'/><text x='116' y='204' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>contract</text><line x1='190.0' y1='200.0' x2='220.0' y2='200.0' stroke='#00242E' stroke-width='1' stroke-dasharray='6 4'/><text x='226' y='204' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>coordinate, no contract</text>",
+     "svg": "<text x='70' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Design-bid-build</text><rect x='35.0' y='34.0' width='70.0' height='26.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='70' y='51' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Owner</text><rect x='10.0' y='110.0' width='60.0' height='34.0' fill='#E2CBA0' stroke='#22221F' stroke-width='1.5'/><text x='40' y='130' text-anchor='middle' font-size='9' font-weight='600' fill='#22221F'>Designer</text><line x1='70.0' y1='60.0' x2='40.0' y2='110.0' stroke='#2E563B' stroke-width='2'/><rect x='74.0' y='110.0' width='60.0' height='34.0' fill='#E2CBA0' stroke='#22221F' stroke-width='1.5'/><text x='104' y='130' text-anchor='middle' font-size='9' font-weight='600' fill='#22221F'>Contractor</text><line x1='70.0' y1='60.0' x2='104.0' y2='110.0' stroke='#2E563B' stroke-width='2'/><line x1='70.0' y1='127.0' x2='74.0' y2='127.0' stroke='#22221F' stroke-width='1' stroke-dasharray='6 4'/><text x='200' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Design-build</text><rect x='165.0' y='34.0' width='70.0' height='26.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='200' y='51' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Owner</text><rect x='150.0' y='110.0' width='100.0' height='34.0' fill='#E2CBA0' stroke='#22221F' stroke-width='1.5'/><text x='200' y='125' text-anchor='middle' font-size='9' font-weight='600' fill='#22221F'>Design-builder</text><text x='200' y='136' text-anchor='middle' font-size='9' font-weight='600' fill='#22221F'>(designer + builder)</text><line x1='200.0' y1='60.0' x2='200.0' y2='110.0' stroke='#2E563B' stroke-width='2'/><text x='330' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>CM at risk</text><rect x='295.0' y='34.0' width='70.0' height='26.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='330' y='51' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Owner</text><rect x='270.0' y='110.0' width='60.0' height='34.0' fill='#E2CBA0' stroke='#22221F' stroke-width='1.5'/><text x='300' y='130' text-anchor='middle' font-size='9' font-weight='600' fill='#22221F'>Designer</text><line x1='330.0' y1='60.0' x2='300.0' y2='110.0' stroke='#2E563B' stroke-width='2'/><rect x='334.0' y='110.0' width='60.0' height='34.0' fill='#E2CBA0' stroke='#22221F' stroke-width='1.5'/><text x='364' y='125' text-anchor='middle' font-size='9' font-weight='600' fill='#22221F'>Construction</text><text x='364' y='136' text-anchor='middle' font-size='9' font-weight='600' fill='#22221F'>manager</text><line x1='330.0' y1='60.0' x2='364.0' y2='110.0' stroke='#2E563B' stroke-width='2'/><line x1='330.0' y1='127.0' x2='334.0' y2='127.0' stroke='#22221F' stroke-width='1' stroke-dasharray='6 4'/><text x='76' y='166' text-anchor='middle' font-size='9' font-weight='400' fill='#22221F'>Two contracts; low bid wins.</text><text x='76' y='178' text-anchor='middle' font-size='9' font-weight='400' fill='#22221F'>Design finished before bidding.</text><text x='200' y='166' text-anchor='middle' font-size='9' font-weight='400' fill='#22221F'>One contract, one point of</text><text x='200' y='178' text-anchor='middle' font-size='9' font-weight='400' fill='#22221F'>responsibility; can overlap.</text><text x='330' y='166' text-anchor='middle' font-size='9' font-weight='400' fill='#22221F'>CM joins during design and</text><text x='330' y='178' text-anchor='middle' font-size='9' font-weight='400' fill='#22221F'>guarantees a maximum price.</text><line x1='80.0' y1='200.0' x2='110.0' y2='200.0' stroke='#2E563B' stroke-width='2'/><text x='116' y='204' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>contract</text><line x1='190.0' y1='200.0' x2='220.0' y2='200.0' stroke='#22221F' stroke-width='1' stroke-dasharray='6 4'/><text x='226' y='204' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>coordinate, no contract</text>",
      "alt": "Three project delivery methods as contract diagrams: design-bid-build has separate owner contracts with designer and contractor; design-build has one; with a construction manager at risk the CM joins during design.",
      "caption": "Three project delivery methods as contract diagrams: design-bid-build has separate owner contracts with designer and contractor; design-build has one; with a construction manager at risk the CM joins during design."
     }
@@ -231,7 +231,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -240,7 +240,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]
@@ -377,7 +377,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 210",
-     "svg": "<rect x='20.0' y='60.0' width='80.0' height='80.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><text x='60' y='104' text-anchor='middle' font-size='13' font-weight='600' fill='#00242E'>1.00</text><text x='60' y='44' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Bank</text><text x='60' y='158' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>in the ground</text><line x1='106.0' y1='100.0' x2='133.0' y2='100.0' stroke='#00242E' stroke-width='1.5'/><path d='M140.0 100.0 L133.0 96.5 L133.0 103.5 Z' fill='#00242E'/><rect x='148.0' y='60.0' width='100.0' height='80.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='198' y='104' text-anchor='middle' font-size='13' font-weight='600' fill='#00242E'>1.25</text><text x='198' y='44' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Loose</text><text x='198' y='158' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>dug, in the truck</text><line x1='254.0' y1='100.0' x2='281.0' y2='100.0' stroke='#00242E' stroke-width='1.5'/><path d='M288.0 100.0 L281.0 96.5 L281.0 103.5 Z' fill='#00242E'/><rect x='296.0' y='60.0' width='72.0' height='80.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><text x='332' y='104' text-anchor='middle' font-size='13' font-weight='600' fill='#00242E'>0.90</text><text x='332' y='44' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Compacted</text><text x='332' y='158' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>rolled in the fill</text><text x='200' y='186' text-anchor='middle' font-size='10.4701' font-weight='600' fill='#00242E'>Swell = loose / bank - 1 = 25%.  Shrinkage = 1 - compacted / bank = 10%.</text><text x='200' y='202' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>Haul is priced in loose volume; fill is specified in compacted volume.</text>",
+     "svg": "<rect x='20.0' y='60.0' width='80.0' height='80.0' fill='#E2CBA0' stroke='#22221F' stroke-width='1.5'/><text x='60' y='104' text-anchor='middle' font-size='13' font-weight='600' fill='#22221F'>1.00</text><text x='60' y='44' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Bank</text><text x='60' y='158' text-anchor='middle' font-size='10' font-weight='400' fill='#22221F'>in the ground</text><line x1='106.0' y1='100.0' x2='133.0' y2='100.0' stroke='#22221F' stroke-width='1.5'/><path d='M140.0 100.0 L133.0 96.5 L133.0 103.5 Z' fill='#22221F'/><rect x='148.0' y='60.0' width='100.0' height='80.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='198' y='104' text-anchor='middle' font-size='13' font-weight='600' fill='#22221F'>1.25</text><text x='198' y='44' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Loose</text><text x='198' y='158' text-anchor='middle' font-size='10' font-weight='400' fill='#22221F'>dug, in the truck</text><line x1='254.0' y1='100.0' x2='281.0' y2='100.0' stroke='#22221F' stroke-width='1.5'/><path d='M288.0 100.0 L281.0 96.5 L281.0 103.5 Z' fill='#22221F'/><rect x='296.0' y='60.0' width='72.0' height='80.0' fill='#D8C5C2' stroke='#22221F' stroke-width='1.5'/><text x='332' y='104' text-anchor='middle' font-size='13' font-weight='600' fill='#22221F'>0.90</text><text x='332' y='44' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Compacted</text><text x='332' y='158' text-anchor='middle' font-size='10' font-weight='400' fill='#22221F'>rolled in the fill</text><text x='200' y='186' text-anchor='middle' font-size='10.4701' font-weight='600' fill='#22221F'>Swell = loose / bank - 1 = 25%.  Shrinkage = 1 - compacted / bank = 10%.</text><text x='200' y='202' text-anchor='middle' font-size='10' font-weight='400' fill='#22221F'>Haul is priced in loose volume; fill is specified in compacted volume.</text>",
      "alt": "The same soil in three states: one bank cubic yard swells to about 1.25 loose cubic yards when dug and shrinks to about 0.90 when compacted (typical values for illustration).",
      "caption": "The same soil in three states: one bank cubic yard swells to about 1.25 loose cubic yards when dug and shrinks to about 0.90 when compacted (typical values for illustration)."
     }
@@ -416,7 +416,7 @@
       "find": [
        "incidence rate"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -425,7 +425,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -434,7 +434,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -443,7 +443,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -452,7 +452,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]
@@ -502,7 +502,7 @@
    },
    "figure": {
     "viewBox": "0 0 400 160",
-    "svg": "<rect x='20' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='55' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='55' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3 days</text><rect x='165' y='12' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='30' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><text x='200' y='45' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4 days</text><rect x='165' y='108' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='126' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>C</text><text x='200' y='141' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6 days</text><rect x='310' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='345' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>D</text><text x='345' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2 days</text><line x1='90' y1='72' x2='159' y2='33' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='35' r='4' fill='#00574A'/><line x1='90' y1='88' x2='159' y2='127' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='125' r='4' fill='#00574A'/><line x1='235' y1='36' x2='304' y2='75' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='73' r='4' fill='#00574A'/><line x1='235' y1='124' x2='304' y2='85' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='87' r='4' fill='#00574A'/>",
+    "svg": "<rect x='20' y='60' width='70' height='40' rx='6' fill='#E2CBA0' stroke='#22221F' stroke-width='2'/><text x='55' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#22221F'>A</text><text x='55' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>3 days</text><rect x='165' y='12' width='70' height='40' rx='6' fill='#E2CBA0' stroke='#22221F' stroke-width='2'/><text x='200' y='30' text-anchor='middle' font-size='12' font-weight='600' fill='#22221F'>B</text><text x='200' y='45' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>4 days</text><rect x='165' y='108' width='70' height='40' rx='6' fill='#E2CBA0' stroke='#22221F' stroke-width='2'/><text x='200' y='126' text-anchor='middle' font-size='12' font-weight='600' fill='#22221F'>C</text><text x='200' y='141' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>6 days</text><rect x='310' y='60' width='70' height='40' rx='6' fill='#E2CBA0' stroke='#22221F' stroke-width='2'/><text x='345' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#22221F'>D</text><text x='345' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>2 days</text><line x1='90' y1='72' x2='159' y2='33' stroke='#2E563B' stroke-width='2'/><circle cx='162' cy='35' r='4' fill='#2E563B'/><line x1='90' y1='88' x2='159' y2='127' stroke='#2E563B' stroke-width='2'/><circle cx='162' cy='125' r='4' fill='#2E563B'/><line x1='235' y1='36' x2='304' y2='75' stroke='#2E563B' stroke-width='2'/><circle cx='307' cy='73' r='4' fill='#2E563B'/><line x1='235' y1='124' x2='304' y2='85' stroke='#2E563B' stroke-width='2'/><circle cx='307' cy='87' r='4' fill='#2E563B'/>",
     "alt": "An activity network: A (3 days) is followed by B (4 days) and C (6 days), which are both followed by D (2 days).",
     "caption": "An activity-on-node network. The longest path, A-C-D, is critical; B has float."
    },
@@ -538,7 +538,7 @@
      "value": 7,
      "figure": {
       "viewBox": "0 0 400 160",
-      "svg": "<rect x='20' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='55' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>A</text><text x='55' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4 days</text><rect x='165' y='12' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='30' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>B</text><text x='200' y='45' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>5 days</text><rect x='165' y='108' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='126' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>C</text><text x='200' y='141' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>12 days</text><rect x='310' y='60' width='70' height='40' rx='6' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='345' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>D</text><text x='345' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3 days</text><line x1='90' y1='72' x2='159' y2='33' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='35' r='4' fill='#00574A'/><line x1='90' y1='88' x2='159' y2='127' stroke='#00574A' stroke-width='2'/><circle cx='162' cy='125' r='4' fill='#00574A'/><line x1='235' y1='36' x2='304' y2='75' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='73' r='4' fill='#00574A'/><line x1='235' y1='124' x2='304' y2='85' stroke='#00574A' stroke-width='2'/><circle cx='307' cy='87' r='4' fill='#00574A'/>",
+      "svg": "<rect x='20' y='60' width='70' height='40' rx='6' fill='#E2CBA0' stroke='#22221F' stroke-width='2'/><text x='55' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#22221F'>A</text><text x='55' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>4 days</text><rect x='165' y='12' width='70' height='40' rx='6' fill='#E2CBA0' stroke='#22221F' stroke-width='2'/><text x='200' y='30' text-anchor='middle' font-size='12' font-weight='600' fill='#22221F'>B</text><text x='200' y='45' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>5 days</text><rect x='165' y='108' width='70' height='40' rx='6' fill='#E2CBA0' stroke='#22221F' stroke-width='2'/><text x='200' y='126' text-anchor='middle' font-size='12' font-weight='600' fill='#22221F'>C</text><text x='200' y='141' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>12 days</text><rect x='310' y='60' width='70' height='40' rx='6' fill='#E2CBA0' stroke='#22221F' stroke-width='2'/><text x='345' y='78' text-anchor='middle' font-size='12' font-weight='600' fill='#22221F'>D</text><text x='345' y='93' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>3 days</text><line x1='90' y1='72' x2='159' y2='33' stroke='#2E563B' stroke-width='2'/><circle cx='162' cy='35' r='4' fill='#2E563B'/><line x1='90' y1='88' x2='159' y2='127' stroke='#2E563B' stroke-width='2'/><circle cx='162' cy='125' r='4' fill='#2E563B'/><line x1='235' y1='36' x2='304' y2='75' stroke='#2E563B' stroke-width='2'/><circle cx='307' cy='73' r='4' fill='#2E563B'/><line x1='235' y1='124' x2='304' y2='85' stroke='#2E563B' stroke-width='2'/><circle cx='307' cy='87' r='4' fill='#2E563B'/>",
       "alt": "An activity network: A (4 days) is followed by B (5 days) and C (12 days), which are both followed by D (3 days)."
      }
     },
@@ -631,7 +631,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 222",
-     "svg": "<line x1='50.0' y1='200.0' x2='377.0' y2='200.0' stroke='#00242E' stroke-width='1.5'/><path d='M385.0 200.0 L377.0 196.0 L377.0 204.0 Z' fill='#00242E'/><line x1='50.0' y1='200.0' x2='50.0' y2='28.0' stroke='#00242E' stroke-width='1.5'/><path d='M50.0 20.0 L46.0 28.0 L54.0 28.0 Z' fill='#00242E'/><text x='385' y='216' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>time</text><text x='56' y='24' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>cost</text><path d='M50.0 195.6 L55.5 195.1 L61.0 194.5 L66.5 193.8 L72.0 193.1 L77.5 192.2 L83.0 191.3 L88.5 190.3 L94.0 189.1 L99.5 187.9 L105.0 186.5 L110.5 184.9 L116.0 183.2 L121.5 181.3 L127.0 179.3 L132.5 177.0 L138.0 174.6 L143.5 171.9 L149.0 169.1 L154.5 166.0 L160.0 162.7 L165.5 159.2 L171.0 155.5 L176.5 151.5 L182.0 147.4 L187.5 143.1 L193.0 138.7 L198.5 134.1 L204.0 129.5 L209.5 124.8 L215.0 120.0 L220.5 115.2 L226.0 110.5 L231.5 105.9 L237.0 101.3 L242.5 96.9 L248.0 92.6 L253.5 88.5 L259.0 84.5 L264.5 80.8 L270.0 77.3 L275.5 74.0 L281.0 70.9 L286.5 68.1 L292.0 65.4 L297.5 63.0 L303.0 60.7 L308.5 58.7 L314.0 56.8 L319.5 55.1 L325.0 53.5 L330.5 52.1 L336.0 50.9 L341.5 49.7 L347.0 48.7 L352.5 47.8 L358.0 46.9 L363.5 46.2 L369.0 45.5 L374.5 44.9 L380.0 44.4' fill='none' stroke='#00242E' stroke-width='2.5'/><path d='M50.0 196.4 L53.0 196.2 L56.0 195.9 L59.1 195.7 L62.1 195.4 L65.1 195.1 L68.2 194.8 L71.2 194.4 L74.2 194.1 L77.2 193.7 L80.2 193.3 L83.3 192.8 L86.3 192.4 L89.3 191.9 L92.3 191.4 L95.4 190.8 L98.4 190.3 L101.4 189.7 L104.4 189.0 L107.5 188.3 L110.5 187.6 L113.5 186.9 L116.5 186.1 L119.6 185.2 L122.6 184.4 L125.6 183.4 L128.6 182.5 L131.7 181.4 L134.7 180.4 L137.7 179.3 L140.8 178.1 L143.8 176.9 L146.8 175.6 L149.8 174.3 L152.8 172.9 L155.9 171.5 L158.9 170.0 L161.9 168.4 L164.9 166.8 L168.0 165.2 L171.0 163.5 L174.0 161.7 L177.1 159.9 L180.1 158.1 L183.1 156.2 L186.1 154.3 L189.1 152.3 L192.2 150.3 L195.2 148.2 L198.2 146.2 L201.2 144.1 L204.3 142.0 L207.3 139.9 L210.3 137.7 L213.3 135.6 L216.4 133.4 L219.4 131.3 L222.4 129.1 L225.4 127.0 L228.5 124.9 L231.5 122.8' fill='none' stroke='#00574A' stroke-width='2.5'/><path d='M50.0 195.7 L53.0 195.4 L56.0 195.1 L59.1 194.8 L62.1 194.5 L65.1 194.1 L68.2 193.7 L71.2 193.3 L74.2 192.9 L77.2 192.4 L80.2 192.0 L83.3 191.4 L86.3 190.9 L89.3 190.3 L92.3 189.7 L95.4 189.1 L98.4 188.4 L101.4 187.6 L104.4 186.9 L107.5 186.1 L110.5 185.2 L113.5 184.3 L116.5 183.4 L119.6 182.4 L122.6 181.3 L125.6 180.2 L128.6 179.0 L131.7 177.8 L134.7 176.5 L137.7 175.2 L140.8 173.8 L143.8 172.4 L146.8 170.8 L149.8 169.2 L152.8 167.6 L155.9 165.9 L158.9 164.1 L161.9 162.3 L164.9 160.3 L168.0 158.4 L171.0 156.3 L174.0 154.3 L177.1 152.1 L180.1 149.9 L183.1 147.6 L186.1 145.3 L189.1 143.0 L192.2 140.6 L195.2 138.1 L198.2 135.7 L201.2 133.2 L204.3 130.7 L207.3 128.1 L210.3 125.6 L213.3 123.0 L216.4 120.4 L219.4 117.9 L222.4 115.3 L225.4 112.8 L228.5 110.2 L231.5 107.7' fill='none' stroke='#FF6622' stroke-width='2.5'/><line x1='231.5' y1='200.0' x2='231.5' y2='40.0' stroke='#00242E' stroke-width='1' stroke-dasharray='6 4'/><text x='232' y='34' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>status date</text><text x='314' y='49' text-anchor='end' font-size='11' font-weight='600' fill='#00242E'>PV (planned)</text><text x='239' y='127' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>EV (earned)</text><text x='222' y='100' text-anchor='end' font-size='11' font-weight='600' fill='#FF6622'>AC (actual)</text><text x='246' y='150' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>SV = EV - PV (- : behind)</text><text x='246' y='164' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>CV = EV - AC (- : over budget)</text><text x='246' y='178' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>SPI = EV / PV, CPI = EV / AC</text>",
+     "svg": "<line x1='50.0' y1='200.0' x2='377.0' y2='200.0' stroke='#22221F' stroke-width='1.5'/><path d='M385.0 200.0 L377.0 196.0 L377.0 204.0 Z' fill='#22221F'/><line x1='50.0' y1='200.0' x2='50.0' y2='28.0' stroke='#22221F' stroke-width='1.5'/><path d='M50.0 20.0 L46.0 28.0 L54.0 28.0 Z' fill='#22221F'/><text x='385' y='216' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>time</text><text x='56' y='24' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>cost</text><path d='M50.0 195.6 L55.5 195.1 L61.0 194.5 L66.5 193.8 L72.0 193.1 L77.5 192.2 L83.0 191.3 L88.5 190.3 L94.0 189.1 L99.5 187.9 L105.0 186.5 L110.5 184.9 L116.0 183.2 L121.5 181.3 L127.0 179.3 L132.5 177.0 L138.0 174.6 L143.5 171.9 L149.0 169.1 L154.5 166.0 L160.0 162.7 L165.5 159.2 L171.0 155.5 L176.5 151.5 L182.0 147.4 L187.5 143.1 L193.0 138.7 L198.5 134.1 L204.0 129.5 L209.5 124.8 L215.0 120.0 L220.5 115.2 L226.0 110.5 L231.5 105.9 L237.0 101.3 L242.5 96.9 L248.0 92.6 L253.5 88.5 L259.0 84.5 L264.5 80.8 L270.0 77.3 L275.5 74.0 L281.0 70.9 L286.5 68.1 L292.0 65.4 L297.5 63.0 L303.0 60.7 L308.5 58.7 L314.0 56.8 L319.5 55.1 L325.0 53.5 L330.5 52.1 L336.0 50.9 L341.5 49.7 L347.0 48.7 L352.5 47.8 L358.0 46.9 L363.5 46.2 L369.0 45.5 L374.5 44.9 L380.0 44.4' fill='none' stroke='#22221F' stroke-width='2.5'/><path d='M50.0 196.4 L53.0 196.2 L56.0 195.9 L59.1 195.7 L62.1 195.4 L65.1 195.1 L68.2 194.8 L71.2 194.4 L74.2 194.1 L77.2 193.7 L80.2 193.3 L83.3 192.8 L86.3 192.4 L89.3 191.9 L92.3 191.4 L95.4 190.8 L98.4 190.3 L101.4 189.7 L104.4 189.0 L107.5 188.3 L110.5 187.6 L113.5 186.9 L116.5 186.1 L119.6 185.2 L122.6 184.4 L125.6 183.4 L128.6 182.5 L131.7 181.4 L134.7 180.4 L137.7 179.3 L140.8 178.1 L143.8 176.9 L146.8 175.6 L149.8 174.3 L152.8 172.9 L155.9 171.5 L158.9 170.0 L161.9 168.4 L164.9 166.8 L168.0 165.2 L171.0 163.5 L174.0 161.7 L177.1 159.9 L180.1 158.1 L183.1 156.2 L186.1 154.3 L189.1 152.3 L192.2 150.3 L195.2 148.2 L198.2 146.2 L201.2 144.1 L204.3 142.0 L207.3 139.9 L210.3 137.7 L213.3 135.6 L216.4 133.4 L219.4 131.3 L222.4 129.1 L225.4 127.0 L228.5 124.9 L231.5 122.8' fill='none' stroke='#2E563B' stroke-width='2.5'/><path d='M50.0 195.7 L53.0 195.4 L56.0 195.1 L59.1 194.8 L62.1 194.5 L65.1 194.1 L68.2 193.7 L71.2 193.3 L74.2 192.9 L77.2 192.4 L80.2 192.0 L83.3 191.4 L86.3 190.9 L89.3 190.3 L92.3 189.7 L95.4 189.1 L98.4 188.4 L101.4 187.6 L104.4 186.9 L107.5 186.1 L110.5 185.2 L113.5 184.3 L116.5 183.4 L119.6 182.4 L122.6 181.3 L125.6 180.2 L128.6 179.0 L131.7 177.8 L134.7 176.5 L137.7 175.2 L140.8 173.8 L143.8 172.4 L146.8 170.8 L149.8 169.2 L152.8 167.6 L155.9 165.9 L158.9 164.1 L161.9 162.3 L164.9 160.3 L168.0 158.4 L171.0 156.3 L174.0 154.3 L177.1 152.1 L180.1 149.9 L183.1 147.6 L186.1 145.3 L189.1 143.0 L192.2 140.6 L195.2 138.1 L198.2 135.7 L201.2 133.2 L204.3 130.7 L207.3 128.1 L210.3 125.6 L213.3 123.0 L216.4 120.4 L219.4 117.9 L222.4 115.3 L225.4 112.8 L228.5 110.2 L231.5 107.7' fill='none' stroke='#6E2B3F' stroke-width='2.5'/><line x1='231.5' y1='200.0' x2='231.5' y2='40.0' stroke='#22221F' stroke-width='1' stroke-dasharray='6 4'/><text x='232' y='34' text-anchor='middle' font-size='10' font-weight='400' fill='#22221F'>status date</text><text x='314' y='49' text-anchor='end' font-size='11' font-weight='600' fill='#22221F'>PV (planned)</text><text x='239' y='127' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>EV (earned)</text><text x='222' y='100' text-anchor='end' font-size='11' font-weight='600' fill='#6E2B3F'>AC (actual)</text><text x='246' y='150' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>SV = EV - PV (- : behind)</text><text x='246' y='164' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>CV = EV - AC (- : over budget)</text><text x='246' y='178' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>SPI = EV / PV, CPI = EV / AC</text>",
      "alt": "Earned value S-curves at a status date: earned value below planned value means the work is behind schedule, and actual cost above earned value means it is over budget.",
      "caption": "Earned value S-curves at a status date: earned value below planned value means the work is behind schedule, and actual cost above earned value means it is over budget."
     }
@@ -676,7 +676,7 @@
       "find": [
        "earned-value analysis"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -687,7 +687,7 @@
       "find": [
        "earned-value analysis"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 3
      },
      {
@@ -696,7 +696,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -707,7 +707,7 @@
       "find": [
        "earned-value analysis"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -718,7 +718,7 @@
       "find": [
        "PERT"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -727,7 +727,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]
@@ -887,7 +887,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 220",
-     "svg": "<rect x='20.0' y='60.0' width='98.0' height='40.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1'/><text x='69' y='52' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Materials</text><rect x='118.0' y='60.0' width='84.0' height='40.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1'/><text x='160' y='116' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Labor</text><rect x='202.0' y='60.0' width='47.6' height='40.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1'/><text x='226' y='52' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Equipment</text><rect x='249.6' y='60.0' width='42.0' height='40.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1'/><text x='271' y='116' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Overhead</text><rect x='291.6' y='60.0' width='30.8' height='40.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1'/><text x='307' y='52' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Profit</text><rect x='322.4' y='60.0' width='33.6' height='40.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1'/><text x='339' y='116' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Contingency</text><line x1='20.0' y1='134.0' x2='249.6' y2='134.0' stroke='#00242E' stroke-width='1'/><line x1='20.0' y1='129.0' x2='20.0' y2='139.0' stroke='#00242E' stroke-width='1'/><line x1='249.6' y1='129.0' x2='249.6' y2='139.0' stroke='#00242E' stroke-width='1'/><text x='135' y='148' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>direct cost = quantity × unit cost</text><line x1='20.0' y1='168.0' x2='356.0' y2='168.0' stroke='#00242E' stroke-width='1'/><line x1='20.0' y1='163.0' x2='20.0' y2='173.0' stroke='#00242E' stroke-width='1'/><line x1='356.0' y1='163.0' x2='356.0' y2='173.0' stroke='#00242E' stroke-width='1'/><text x='188' y='182' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>bid price</text><text x='20' y='198' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Unit cost = (labor hours × wage + equipment hours × rate</text><text x='20' y='211' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>+ materials) / quantity</text>",
+     "svg": "<rect x='20.0' y='60.0' width='98.0' height='40.0' fill='#E2CBA0' stroke='#22221F' stroke-width='1'/><text x='69' y='52' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>Materials</text><rect x='118.0' y='60.0' width='84.0' height='40.0' fill='#CACFC1' stroke='#22221F' stroke-width='1'/><text x='160' y='116' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>Labor</text><rect x='202.0' y='60.0' width='47.6' height='40.0' fill='#D8C5C2' stroke='#22221F' stroke-width='1'/><text x='226' y='52' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>Equipment</text><rect x='249.6' y='60.0' width='42.0' height='40.0' fill='#E2CBA0' stroke='#22221F' stroke-width='1'/><text x='271' y='116' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>Overhead</text><rect x='291.6' y='60.0' width='30.8' height='40.0' fill='#CACFC1' stroke='#22221F' stroke-width='1'/><text x='307' y='52' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>Profit</text><rect x='322.4' y='60.0' width='33.6' height='40.0' fill='#D8C5C2' stroke='#22221F' stroke-width='1'/><text x='339' y='116' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>Contingency</text><line x1='20.0' y1='134.0' x2='249.6' y2='134.0' stroke='#22221F' stroke-width='1'/><line x1='20.0' y1='129.0' x2='20.0' y2='139.0' stroke='#22221F' stroke-width='1'/><line x1='249.6' y1='129.0' x2='249.6' y2='139.0' stroke='#22221F' stroke-width='1'/><text x='135' y='148' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>direct cost = quantity × unit cost</text><line x1='20.0' y1='168.0' x2='356.0' y2='168.0' stroke='#22221F' stroke-width='1'/><line x1='20.0' y1='163.0' x2='20.0' y2='173.0' stroke='#22221F' stroke-width='1'/><line x1='356.0' y1='163.0' x2='356.0' y2='173.0' stroke='#22221F' stroke-width='1'/><text x='188' y='182' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>bid price</text><text x='20' y='198' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>Unit cost = (labor hours × wage + equipment hours × rate</text><text x='20' y='211' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>+ materials) / quantity</text>",
      "alt": "An estimate built up from direct costs (materials, labor, equipment, each a quantity times a unit cost) plus overhead, profit and contingency to reach the bid price.",
      "caption": "An estimate built up from direct costs (materials, labor, equipment, each a quantity times a unit cost) plus overhead, profit and contingency to reach the bid price."
     }
@@ -915,7 +915,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -924,7 +924,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -933,7 +933,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -942,7 +942,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -951,7 +951,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -969,7 +969,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -978,7 +978,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]
@@ -1096,7 +1096,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 240",
-     "svg": "<rect x='30.0' y='30.0' width='340.0' height='70.0' fill='#E7E8E8' stroke='none' stroke-width='0'/><rect x='30.0' y='30.0' width='340.0' height='14.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1'/><rect x='30.0' y='86.0' width='340.0' height='14.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1'/><line x1='30.0' y1='65.0' x2='370.0' y2='65.0' stroke='#FFFFFF' stroke-width='2' stroke-dasharray='6 4'/><line x1='200.0' y1='18.0' x2='200.0' y2='112.0' stroke='#568CBB' stroke-width='2' stroke-dasharray='6 4'/><line x1='200.0' y1='18.0' x2='215.0' y2='18.0' stroke='#568CBB' stroke-width='2'/><path d='M222.0 18.0 L215.0 14.5 L215.0 21.5 Z' fill='#568CBB'/><line x1='200.0' y1='112.0' x2='215.0' y2='112.0' stroke='#568CBB' stroke-width='2'/><path d='M222.0 112.0 L215.0 108.5 L215.0 115.5 Z' fill='#568CBB'/><text x='196' y='16' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>A</text><text x='196' y='122' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>A</text><text x='372' y='26' text-anchor='end' font-size='11' font-weight='600' fill='#00242E'>Plan (from above)</text><rect x='60.0' y='170.0' width='40.0' height='8.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1'/><rect x='100.0' y='174.0' width='200.0' height='8.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1'/><rect x='300.0' y='170.0' width='40.0' height='8.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1'/><line x1='100.0' y1='170.0' x2='100.0' y2='182.0' stroke='#00242E' stroke-width='2'/><line x1='300.0' y1='170.0' x2='300.0' y2='182.0' stroke='#00242E' stroke-width='2'/><text x='80' y='164' text-anchor='middle' font-size='9' font-weight='400' fill='#00242E'>sidewalk</text><text x='200' y='168' text-anchor='middle' font-size='9' font-weight='400' fill='#00242E'>roadway</text><text x='320' y='164' text-anchor='middle' font-size='9' font-weight='400' fill='#00242E'>sidewalk</text><text x='200' y='202' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Section A-A: the cut seen in the direction of the arrows</text><rect x='30.0' y='214.0' width='40.0' height='6.0' fill='#00242E' stroke='#00242E' stroke-width='1'/><rect x='70.0' y='214.0' width='40.0' height='6.0' fill='#FFFFFF' stroke='#00242E' stroke-width='1'/><text x='30' y='234' text-anchor='middle' font-size='9' font-weight='400' fill='#00242E'>0</text><text x='110' y='234' text-anchor='middle' font-size='9' font-weight='400' fill='#00242E'>20 ft</text><text x='118' y='220' text-anchor='start' font-size='9' font-weight='400' fill='#00242E'>scale bar: measure, do not guess</text>",
+     "svg": "<rect x='30.0' y='30.0' width='340.0' height='70.0' fill='#D8C5C2' stroke='none' stroke-width='0'/><rect x='30.0' y='30.0' width='340.0' height='14.0' fill='#E2CBA0' stroke='#22221F' stroke-width='1'/><rect x='30.0' y='86.0' width='340.0' height='14.0' fill='#E2CBA0' stroke='#22221F' stroke-width='1'/><line x1='30.0' y1='65.0' x2='370.0' y2='65.0' stroke='#F6F1E7' stroke-width='2' stroke-dasharray='6 4'/><line x1='200.0' y1='18.0' x2='200.0' y2='112.0' stroke='#6E2B3F' stroke-width='2' stroke-dasharray='6 4'/><line x1='200.0' y1='18.0' x2='215.0' y2='18.0' stroke='#6E2B3F' stroke-width='2'/><path d='M222.0 18.0 L215.0 14.5 L215.0 21.5 Z' fill='#6E2B3F'/><line x1='200.0' y1='112.0' x2='215.0' y2='112.0' stroke='#6E2B3F' stroke-width='2'/><path d='M222.0 112.0 L215.0 108.5 L215.0 115.5 Z' fill='#6E2B3F'/><text x='196' y='16' text-anchor='end' font-size='12' font-weight='600' fill='#6E2B3F'>A</text><text x='196' y='122' text-anchor='end' font-size='12' font-weight='600' fill='#6E2B3F'>A</text><text x='372' y='26' text-anchor='end' font-size='11' font-weight='600' fill='#22221F'>Plan (from above)</text><rect x='60.0' y='170.0' width='40.0' height='8.0' fill='#E2CBA0' stroke='#22221F' stroke-width='1'/><rect x='100.0' y='174.0' width='200.0' height='8.0' fill='#D8C5C2' stroke='#22221F' stroke-width='1'/><rect x='300.0' y='170.0' width='40.0' height='8.0' fill='#E2CBA0' stroke='#22221F' stroke-width='1'/><line x1='100.0' y1='170.0' x2='100.0' y2='182.0' stroke='#22221F' stroke-width='2'/><line x1='300.0' y1='170.0' x2='300.0' y2='182.0' stroke='#22221F' stroke-width='2'/><text x='80' y='164' text-anchor='middle' font-size='9' font-weight='400' fill='#22221F'>sidewalk</text><text x='200' y='168' text-anchor='middle' font-size='9' font-weight='400' fill='#22221F'>roadway</text><text x='320' y='164' text-anchor='middle' font-size='9' font-weight='400' fill='#22221F'>sidewalk</text><text x='200' y='202' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Section A-A: the cut seen in the direction of the arrows</text><rect x='30.0' y='214.0' width='40.0' height='6.0' fill='#22221F' stroke='#22221F' stroke-width='1'/><rect x='70.0' y='214.0' width='40.0' height='6.0' fill='#F6F1E7' stroke='#22221F' stroke-width='1'/><text x='30' y='234' text-anchor='middle' font-size='9' font-weight='400' fill='#22221F'>0</text><text x='110' y='234' text-anchor='middle' font-size='9' font-weight='400' fill='#22221F'>20 ft</text><text x='118' y='220' text-anchor='start' font-size='9' font-weight='400' fill='#22221F'>scale bar: measure, do not guess</text>",
      "alt": "Reading drawings: a section cut line A-A on the plan, with arrows giving the direction of view, and the matching cross-section drawn below it; a scale bar converts drawing distance to real distance.",
      "caption": "Reading drawings: a section cut line A-A on the plan, with arrows giving the direction of view, and the matching cross-section drawn below it; a scale bar converts drawing distance to real distance."
     }
@@ -1124,7 +1124,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1133,7 +1133,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1160,7 +1160,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1169,7 +1169,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]

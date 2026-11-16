@@ -70,7 +70,7 @@
    "figures": [
     {
      "viewBox": "0 0 540 158",
-     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Dynamics</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Comes back in</text><text x='182' y='55' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Math B: Calculus</text><line x1='186.0' y1='51.0' x2='198.0' y2='51.0' stroke='#568CBB' stroke-width='1'/><text x='182' y='97' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Statics F: Moment of inertia</text><line x1='186.0' y1='93.0' x2='198.0' y2='77.5' stroke='#568CBB' stroke-width='1'/><text x='182' y='139' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Statics C: Equilibrium</text><line x1='186.0' y1='135.0' x2='198.0' y2='104.0' stroke='#568CBB' stroke-width='1'/><text x='360' y='55' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Transport A: Geometric design</text><line x1='338.0' y1='51.0' x2='356.0' y2='51.0' stroke='#00574A' stroke-width='1'/><text x='360' y='139' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Transport D: Signals, devices</text><line x1='338.0' y1='51.0' x2='356.0' y2='135.0' stroke='#00574A' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>1. Kinematics (A)</text><rect x='198.0' y='66.5' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='81' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>2. Mass inertia (B)</text><rect x='198.0' y='93.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='108' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>3. F = m a (C)</text><rect x='198.0' y='119.5' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='134' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>4. Work and energy (D)</text>",
+     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#6E2B3F'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Dynamics</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#2E563B'>Comes back in</text><text x='182' y='55' text-anchor='end' font-size='10' font-weight='400' fill='#6E2B3F'>Math B: Calculus</text><line x1='186.0' y1='51.0' x2='198.0' y2='51.0' stroke='#6E2B3F' stroke-width='1'/><text x='182' y='97' text-anchor='end' font-size='10' font-weight='400' fill='#6E2B3F'>Statics F: Moment of inertia</text><line x1='186.0' y1='93.0' x2='198.0' y2='77.5' stroke='#6E2B3F' stroke-width='1'/><text x='182' y='139' text-anchor='end' font-size='10' font-weight='400' fill='#6E2B3F'>Statics C: Equilibrium</text><line x1='186.0' y1='135.0' x2='198.0' y2='104.0' stroke='#6E2B3F' stroke-width='1'/><text x='360' y='55' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Transport A: Geometric design</text><line x1='338.0' y1='51.0' x2='356.0' y2='51.0' stroke='#2E563B' stroke-width='1'/><text x='360' y='139' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Transport D: Signals, devices</text><line x1='338.0' y1='51.0' x2='356.0' y2='135.0' stroke='#2E563B' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>1. Kinematics (A)</text><rect x='198.0' y='66.5' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='81' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>2. Mass inertia (B)</text><rect x='198.0' y='93.0' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='108' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>3. F = m a (C)</text><rect x='198.0' y='119.5' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='134' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>4. Work and energy (D)</text>",
      "alt": "How Dynamics connects: the subtopics in a suggested study order, the earlier topics to refresh first, and the later topics that use this one.",
      "caption": "How this topic connects. The middle column is a suggested study order; the left column lists earlier lessons to refresh first; the right column shows where this topic is used again."
     }
@@ -124,7 +124,7 @@
    },
    "figure": {
     "viewBox": "0 0 400 180",
-    "svg": "<line x1='30' y1='140' x2='380' y2='140' stroke='#00242E' stroke-width='2'/><path d='M50 140 Q200 53 350 140' fill='none' stroke='#1B795A' stroke-width='2' stroke-dasharray='7 4'/><line x1='50' y1='140' x2='100' y2='111' stroke='#00574A' stroke-width='3'/><path d='M111 105 L97 106 L103 116 Z' fill='#00574A'/><text x='99' y='95' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>20 m/s</text><text x='96' y='134' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>30°</text><line x1='50' y1='156' x2='350' y2='156' stroke='#00242E'/><line x1='50' y1='150' x2='50' y2='162' stroke='#00242E'/><line x1='350' y1='150' x2='350' y2='162' stroke='#00242E'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Range</text>",
+    "svg": "<line x1='30' y1='140' x2='380' y2='140' stroke='#22221F' stroke-width='2'/><path d='M50 140 Q200 53 350 140' fill='none' stroke='#2E563B' stroke-width='2' stroke-dasharray='7 4'/><line x1='50' y1='140' x2='100' y2='111' stroke='#2E563B' stroke-width='3'/><path d='M111 105 L97 106 L103 116 Z' fill='#2E563B'/><text x='99' y='95' text-anchor='middle' font-size='12' font-weight='600' fill='#2E563B'>20 m/s</text><text x='96' y='134' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>30°</text><line x1='50' y1='156' x2='350' y2='156' stroke='#22221F'/><line x1='50' y1='150' x2='50' y2='162' stroke='#22221F'/><line x1='350' y1='150' x2='350' y2='162' stroke='#22221F'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>Range</text>",
     "alt": "The path of a projectile launched from level ground at 20 m/s and 30° above the horizontal.",
     "caption": "Projectile motion: constant horizontal velocity and constant downward acceleration."
    },
@@ -180,7 +180,7 @@
      "value": 163.098879,
      "figure": {
       "viewBox": "0 0 400 180",
-      "svg": "<line x1='30' y1='140' x2='380' y2='140' stroke='#00242E' stroke-width='2'/><path d='M50 140 Q200 -10 350 140' fill='none' stroke='#1B795A' stroke-width='2' stroke-dasharray='7 4'/><line x1='50' y1='140' x2='91' y2='99' stroke='#00574A' stroke-width='3'/><path d='M99 91 L87 95 L95 103 Z' fill='#00574A'/><text x='87' y='81' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>40 m/s</text><text x='96' y='134' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>45°</text><line x1='50' y1='156' x2='350' y2='156' stroke='#00242E'/><line x1='50' y1='150' x2='50' y2='162' stroke='#00242E'/><line x1='350' y1='150' x2='350' y2='162' stroke='#00242E'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Range</text>",
+      "svg": "<line x1='30' y1='140' x2='380' y2='140' stroke='#22221F' stroke-width='2'/><path d='M50 140 Q200 -10 350 140' fill='none' stroke='#2E563B' stroke-width='2' stroke-dasharray='7 4'/><line x1='50' y1='140' x2='91' y2='99' stroke='#2E563B' stroke-width='3'/><path d='M99 91 L87 95 L95 103 Z' fill='#2E563B'/><text x='87' y='81' text-anchor='end' font-size='12' font-weight='600' fill='#2E563B'>40 m/s</text><text x='96' y='134' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>45°</text><line x1='50' y1='156' x2='350' y2='156' stroke='#22221F'/><line x1='50' y1='150' x2='50' y2='162' stroke='#22221F'/><line x1='350' y1='150' x2='350' y2='162' stroke='#22221F'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>Range</text>",
       "alt": "The path of a projectile launched from level ground at 40 m/s and 45° above the horizontal."
      }
     },
@@ -201,7 +201,7 @@
      "value": 4.408376,
      "figure": {
       "viewBox": "0 0 400 234",
-      "svg": "<g transform='rotate(-2.862405226111748 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W</text><line x1='199' y1='76' x2='196' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M196 16 L191 27 L202 27 Z' fill='#1B795A'/><text x='203' y='9.8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='176' y1='101' x2='127' y2='104' stroke='#568CBB' stroke-width='3'/><path d='M116 104 L127 109 L127 98 Z' fill='#568CBB'/><text x='104' y='109' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Braking force</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>On an upgrade the weight component along the slope also slows</text><text x='200' y='229' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>the car</text>",
+      "svg": "<g transform='rotate(-2.862405226111748 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#22221F' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#2E563B' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#2E563B'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>W</text><line x1='199' y1='76' x2='196' y2='27' stroke='#2E563B' stroke-width='3'/><path d='M196 16 L191 27 L202 27 Z' fill='#2E563B'/><text x='203' y='9.8' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>N</text><line x1='176' y1='101' x2='127' y2='104' stroke='#6E2B3F' stroke-width='3'/><path d='M116 104 L127 109 L127 98 Z' fill='#6E2B3F'/><text x='104' y='109' text-anchor='end' font-size='11' font-weight='600' fill='#6E2B3F'>Braking force</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>On an upgrade the weight component along the slope also slows</text><text x='200' y='229' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>the car</text>",
       "alt": "Free-body diagram on a surface inclined at 2.86° showing W, N, Braking force."
      }
     },
@@ -214,7 +214,7 @@
      "value": 28.823577,
      "figure": {
       "viewBox": "0 0 400 180",
-      "svg": "<line x1='30' y1='140' x2='380' y2='140' stroke='#00242E' stroke-width='2'/><path d='M50 140 Q200 -27 350 140' fill='none' stroke='#1B795A' stroke-width='2' stroke-dasharray='7 4'/><line x1='50' y1='140' x2='89' y2='97' stroke='#00574A' stroke-width='3'/><path d='M97 88 L84 93 L93 101 Z' fill='#00574A'/><text x='85' y='78' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>32 m/s</text><text x='96' y='134' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>48°</text><line x1='50' y1='156' x2='350' y2='156' stroke='#00242E'/><line x1='50' y1='150' x2='50' y2='162' stroke='#00242E'/><line x1='350' y1='150' x2='350' y2='162' stroke='#00242E'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Range</text>",
+      "svg": "<line x1='30' y1='140' x2='380' y2='140' stroke='#22221F' stroke-width='2'/><path d='M50 140 Q200 -27 350 140' fill='none' stroke='#2E563B' stroke-width='2' stroke-dasharray='7 4'/><line x1='50' y1='140' x2='89' y2='97' stroke='#2E563B' stroke-width='3'/><path d='M97 88 L84 93 L93 101 Z' fill='#2E563B'/><text x='85' y='78' text-anchor='end' font-size='12' font-weight='600' fill='#2E563B'>32 m/s</text><text x='96' y='134' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>48°</text><line x1='50' y1='156' x2='350' y2='156' stroke='#22221F'/><line x1='50' y1='150' x2='50' y2='162' stroke='#22221F'/><line x1='350' y1='150' x2='350' y2='162' stroke='#22221F'/><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>Range</text>",
       "alt": "The path of a projectile launched from level ground at 32 m/s and 48° above the horizontal."
      }
     },
@@ -284,7 +284,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 205",
-     "svg": "<line x1='50.0' y1='180.0' x2='372.0' y2='180.0' stroke='#00242E' stroke-width='1.5'/><path d='M380.0 180.0 L372.0 176.0 L372.0 184.0 Z' fill='#00242E'/><line x1='50.0' y1='180.0' x2='50.0' y2='28.0' stroke='#00242E' stroke-width='1.5'/><path d='M50.0 20.0 L46.0 28.0 L54.0 28.0 Z' fill='#00242E'/><text x='380' y='196' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>time t</text><text x='56' y='24' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>velocity v</text><path d='M50.0 180.0 L50.0 140.0 L300.0 60.0 L300.0 180.0 Z' fill='#D9F1D6' stroke='none' stroke-width='0'/><line x1='50.0' y1='140.0' x2='300.0' y2='60.0' stroke='#00574A' stroke-width='2.5'/><line x1='50.0' y1='140.0' x2='34.0' y2='140.0' stroke='#00242E' stroke-width='1'/><text x='30' y='144' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>v0</text><line x1='300.0' y1='60.0' x2='300.0' y2='180.0' stroke='#00242E' stroke-width='1' stroke-dasharray='6 4'/><text x='300' y='196' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>t</text><text x='306' y='58' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>v</text><line x1='160.0' y1='105.0' x2='220.0' y2='105.0' stroke='#00242E' stroke-width='1' stroke-dasharray='6 4'/><line x1='220.0' y1='105.0' x2='220.0' y2='86.0' stroke='#00242E' stroke-width='1' stroke-dasharray='6 4'/><text x='226' y='100' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>slope = acceleration a</text><text x='175' y='152' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>area under the line</text><text x='175' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#00574A'>= distance travelled</text><text x='310' y='120' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>v = v0 + a t</text><text x='305' y='135' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>s = v0 t + ½ a t²</text><text x='310' y='150' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>v² = v0² + 2 a s</text>",
+     "svg": "<line x1='50.0' y1='180.0' x2='372.0' y2='180.0' stroke='#22221F' stroke-width='1.5'/><path d='M380.0 180.0 L372.0 176.0 L372.0 184.0 Z' fill='#22221F'/><line x1='50.0' y1='180.0' x2='50.0' y2='28.0' stroke='#22221F' stroke-width='1.5'/><path d='M50.0 20.0 L46.0 28.0 L54.0 28.0 Z' fill='#22221F'/><text x='380' y='196' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>time t</text><text x='56' y='24' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>velocity v</text><path d='M50.0 180.0 L50.0 140.0 L300.0 60.0 L300.0 180.0 Z' fill='#CACFC1' stroke='none' stroke-width='0'/><line x1='50.0' y1='140.0' x2='300.0' y2='60.0' stroke='#2E563B' stroke-width='2.5'/><line x1='50.0' y1='140.0' x2='34.0' y2='140.0' stroke='#22221F' stroke-width='1'/><text x='30' y='144' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>v0</text><line x1='300.0' y1='60.0' x2='300.0' y2='180.0' stroke='#22221F' stroke-width='1' stroke-dasharray='6 4'/><text x='300' y='196' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>t</text><text x='306' y='58' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>v</text><line x1='160.0' y1='105.0' x2='220.0' y2='105.0' stroke='#22221F' stroke-width='1' stroke-dasharray='6 4'/><line x1='220.0' y1='105.0' x2='220.0' y2='86.0' stroke='#22221F' stroke-width='1' stroke-dasharray='6 4'/><text x='226' y='100' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>slope = acceleration a</text><text x='175' y='152' text-anchor='middle' font-size='11' font-weight='600' fill='#2E563B'>area under the line</text><text x='175' y='166' text-anchor='middle' font-size='11' font-weight='400' fill='#2E563B'>= distance travelled</text><text x='310' y='120' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>v = v0 + a t</text><text x='305' y='135' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>s = v0 t + ½ a t²</text><text x='310' y='150' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>v² = v0² + 2 a s</text>",
      "alt": "A velocity-time graph for constant acceleration: the slope is the acceleration and the area under the line is the distance travelled.",
      "caption": "A velocity-time graph for constant acceleration: the slope is the acceleration and the area under the line is the distance travelled."
     }
@@ -340,7 +340,7 @@
       "find": [
        "normal and tangential components"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -362,7 +362,7 @@
       "find": [
        "projectile motion"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -373,7 +373,7 @@
       "find": [
        "particle kinematics"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -384,7 +384,7 @@
       "find": [
        "constant acceleration"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -395,7 +395,7 @@
       "find": [
        "normal and tangential components"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      }
     ]
@@ -596,7 +596,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 224",
-     "svg": "<circle cx='100.0' cy='95.0' r='60.0' fill='none' stroke='#00242E' stroke-width='2'/><circle cx='160.0' cy='95.0' r='6' fill='#00574A'/><circle cx='152.0' cy='65.0' r='6' fill='#00574A'/><circle cx='130.0' cy='43.0' r='6' fill='#00574A'/><circle cx='100.0' cy='35.0' r='6' fill='#00574A'/><circle cx='70.0' cy='43.0' r='6' fill='#00574A'/><circle cx='48.0' cy='65.0' r='6' fill='#00574A'/><circle cx='40.0' cy='95.0' r='6' fill='#00574A'/><circle cx='48.0' cy='125.0' r='6' fill='#00574A'/><circle cx='70.0' cy='147.0' r='6' fill='#00574A'/><circle cx='100.0' cy='155.0' r='6' fill='#00574A'/><circle cx='130.0' cy='147.0' r='6' fill='#00574A'/><circle cx='152.0' cy='125.0' r='6' fill='#00574A'/><circle cx='100.0' cy='95.0' r='4' fill='#00242E'/><circle cx='290.0' cy='95.0' r='60.0' fill='#D9F1D6' stroke='#00242E' stroke-width='2'/><circle cx='305.0' cy='95.0' r='3' fill='#00574A'/><circle cx='297.5' cy='82.0' r='3' fill='#00574A'/><circle cx='282.5' cy='82.0' r='3' fill='#00574A'/><circle cx='275.0' cy='95.0' r='3' fill='#00574A'/><circle cx='282.5' cy='108.0' r='3' fill='#00574A'/><circle cx='297.5' cy='108.0' r='3' fill='#00574A'/><circle cx='320.0' cy='95.0' r='3' fill='#00574A'/><circle cx='316.0' cy='80.0' r='3' fill='#00574A'/><circle cx='305.0' cy='69.0' r='3' fill='#00574A'/><circle cx='290.0' cy='65.0' r='3' fill='#00574A'/><circle cx='275.0' cy='69.0' r='3' fill='#00574A'/><circle cx='264.0' cy='80.0' r='3' fill='#00574A'/><circle cx='260.0' cy='95.0' r='3' fill='#00574A'/><circle cx='264.0' cy='110.0' r='3' fill='#00574A'/><circle cx='275.0' cy='121.0' r='3' fill='#00574A'/><circle cx='290.0' cy='125.0' r='3' fill='#00574A'/><circle cx='305.0' cy='121.0' r='3' fill='#00574A'/><circle cx='316.0' cy='110.0' r='3' fill='#00574A'/><circle cx='335.0' cy='95.0' r='3' fill='#00574A'/><circle cx='332.3' cy='79.6' r='3' fill='#00574A'/><circle cx='324.5' cy='66.1' r='3' fill='#00574A'/><circle cx='312.5' cy='56.0' r='3' fill='#00574A'/><circle cx='297.8' cy='50.7' r='3' fill='#00574A'/><circle cx='282.2' cy='50.7' r='3' fill='#00574A'/><circle cx='267.5' cy='56.0' r='3' fill='#00574A'/><circle cx='255.5' cy='66.1' r='3' fill='#00574A'/><circle cx='247.7' cy='79.6' r='3' fill='#00574A'/><circle cx='245.0' cy='95.0' r='3' fill='#00574A'/><circle cx='247.7' cy='110.4' r='3' fill='#00574A'/><circle cx='255.5' cy='123.9' r='3' fill='#00574A'/><circle cx='267.5' cy='134.0' r='3' fill='#00574A'/><circle cx='282.2' cy='139.3' r='3' fill='#00574A'/><circle cx='297.8' cy='139.3' r='3' fill='#00574A'/><circle cx='312.5' cy='134.0' r='3' fill='#00574A'/><circle cx='324.5' cy='123.9' r='3' fill='#00574A'/><circle cx='332.3' cy='110.4' r='3' fill='#00574A'/><circle cx='290.0' cy='95.0' r='4' fill='#00242E'/><path d='M136.0 32.6 A72 72 0 0 0 64.0 32.6' fill='none' stroke='#568CBB' stroke-width='2'/><line x1='70.9' y1='28.6' x2='69.2' y2='29.6' stroke='#568CBB' stroke-width='2'/><path d='M62.3 33.6 L71.2 33.1 L67.2 26.2 Z' fill='#568CBB'/><path d='M326.0 32.6 A72 72 0 0 0 254.0 32.6' fill='none' stroke='#568CBB' stroke-width='2'/><line x1='260.9' y1='28.6' x2='259.2' y2='29.6' stroke='#568CBB' stroke-width='2'/><path d='M252.3 33.6 L261.2 33.1 L257.2 26.2 Z' fill='#568CBB'/><text x='100' y='178' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Thin ring: I = m r²</text><text x='290' y='178' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Solid disc: I = ½ m r²</text><text x='200' y='202' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Same mass and radius: the ring's mass is all far from the axis,</text><text x='200' y='216' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>so it is twice as hard to spin up.</text>",
+     "svg": "<circle cx='100.0' cy='95.0' r='60.0' fill='none' stroke='#22221F' stroke-width='2'/><circle cx='160.0' cy='95.0' r='6' fill='#2E563B'/><circle cx='152.0' cy='65.0' r='6' fill='#2E563B'/><circle cx='130.0' cy='43.0' r='6' fill='#2E563B'/><circle cx='100.0' cy='35.0' r='6' fill='#2E563B'/><circle cx='70.0' cy='43.0' r='6' fill='#2E563B'/><circle cx='48.0' cy='65.0' r='6' fill='#2E563B'/><circle cx='40.0' cy='95.0' r='6' fill='#2E563B'/><circle cx='48.0' cy='125.0' r='6' fill='#2E563B'/><circle cx='70.0' cy='147.0' r='6' fill='#2E563B'/><circle cx='100.0' cy='155.0' r='6' fill='#2E563B'/><circle cx='130.0' cy='147.0' r='6' fill='#2E563B'/><circle cx='152.0' cy='125.0' r='6' fill='#2E563B'/><circle cx='100.0' cy='95.0' r='4' fill='#22221F'/><circle cx='290.0' cy='95.0' r='60.0' fill='#CACFC1' stroke='#22221F' stroke-width='2'/><circle cx='305.0' cy='95.0' r='3' fill='#2E563B'/><circle cx='297.5' cy='82.0' r='3' fill='#2E563B'/><circle cx='282.5' cy='82.0' r='3' fill='#2E563B'/><circle cx='275.0' cy='95.0' r='3' fill='#2E563B'/><circle cx='282.5' cy='108.0' r='3' fill='#2E563B'/><circle cx='297.5' cy='108.0' r='3' fill='#2E563B'/><circle cx='320.0' cy='95.0' r='3' fill='#2E563B'/><circle cx='316.0' cy='80.0' r='3' fill='#2E563B'/><circle cx='305.0' cy='69.0' r='3' fill='#2E563B'/><circle cx='290.0' cy='65.0' r='3' fill='#2E563B'/><circle cx='275.0' cy='69.0' r='3' fill='#2E563B'/><circle cx='264.0' cy='80.0' r='3' fill='#2E563B'/><circle cx='260.0' cy='95.0' r='3' fill='#2E563B'/><circle cx='264.0' cy='110.0' r='3' fill='#2E563B'/><circle cx='275.0' cy='121.0' r='3' fill='#2E563B'/><circle cx='290.0' cy='125.0' r='3' fill='#2E563B'/><circle cx='305.0' cy='121.0' r='3' fill='#2E563B'/><circle cx='316.0' cy='110.0' r='3' fill='#2E563B'/><circle cx='335.0' cy='95.0' r='3' fill='#2E563B'/><circle cx='332.3' cy='79.6' r='3' fill='#2E563B'/><circle cx='324.5' cy='66.1' r='3' fill='#2E563B'/><circle cx='312.5' cy='56.0' r='3' fill='#2E563B'/><circle cx='297.8' cy='50.7' r='3' fill='#2E563B'/><circle cx='282.2' cy='50.7' r='3' fill='#2E563B'/><circle cx='267.5' cy='56.0' r='3' fill='#2E563B'/><circle cx='255.5' cy='66.1' r='3' fill='#2E563B'/><circle cx='247.7' cy='79.6' r='3' fill='#2E563B'/><circle cx='245.0' cy='95.0' r='3' fill='#2E563B'/><circle cx='247.7' cy='110.4' r='3' fill='#2E563B'/><circle cx='255.5' cy='123.9' r='3' fill='#2E563B'/><circle cx='267.5' cy='134.0' r='3' fill='#2E563B'/><circle cx='282.2' cy='139.3' r='3' fill='#2E563B'/><circle cx='297.8' cy='139.3' r='3' fill='#2E563B'/><circle cx='312.5' cy='134.0' r='3' fill='#2E563B'/><circle cx='324.5' cy='123.9' r='3' fill='#2E563B'/><circle cx='332.3' cy='110.4' r='3' fill='#2E563B'/><circle cx='290.0' cy='95.0' r='4' fill='#22221F'/><path d='M136.0 32.6 A72 72 0 0 0 64.0 32.6' fill='none' stroke='#6E2B3F' stroke-width='2'/><line x1='70.9' y1='28.6' x2='69.2' y2='29.6' stroke='#6E2B3F' stroke-width='2'/><path d='M62.3 33.6 L71.2 33.1 L67.2 26.2 Z' fill='#6E2B3F'/><path d='M326.0 32.6 A72 72 0 0 0 254.0 32.6' fill='none' stroke='#6E2B3F' stroke-width='2'/><line x1='260.9' y1='28.6' x2='259.2' y2='29.6' stroke='#6E2B3F' stroke-width='2'/><path d='M252.3 33.6 L261.2 33.1 L257.2 26.2 Z' fill='#6E2B3F'/><text x='100' y='178' text-anchor='middle' font-size='11' font-weight='600' fill='#2E563B'>Thin ring: I = m r²</text><text x='290' y='178' text-anchor='middle' font-size='11' font-weight='600' fill='#2E563B'>Solid disc: I = ½ m r²</text><text x='200' y='202' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>Same mass and radius: the ring's mass is all far from the axis,</text><text x='200' y='216' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>so it is twice as hard to spin up.</text>",
      "alt": "A ring and a disc of the same mass and radius. All the ring's mass is at the rim, so its mass moment of inertia is twice the disc's: mass far from the axis counts most.",
      "caption": "A ring and a disc of the same mass and radius. All the ring's mass is at the rim, so its mass moment of inertia is twice the disc's: mass far from the axis counts most."
     }
@@ -626,7 +626,7 @@
       "find": [
        "mass moment of inertia"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -637,7 +637,7 @@
       "find": [
        "mass moment of inertia"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -659,7 +659,7 @@
       "find": [
        "mass moment of inertia"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -670,7 +670,7 @@
       "find": [
        "radius of gyration"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -681,7 +681,7 @@
       "find": [
        "mass moment of inertia"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]
@@ -759,7 +759,7 @@
    },
    "figure": {
     "viewBox": "0 0 400 180",
-    "svg": "<path d='M96 150 L304 150 L304 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><g transform='translate(210 84) rotate(-30)'><rect x='-24' y='-30' width='48' height='30' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><text x='140' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>30°</text>",
+    "svg": "<path d='M96 150 L304 150 L304 30 Z' fill='#E2CBA0' stroke='#22221F' stroke-width='2'/><g transform='translate(210 84) rotate(-30)'><rect x='-24' y='-30' width='48' height='30' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/></g><text x='140' y='144' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>30°</text>",
     "alt": "A block on an incline at 30° to the horizontal.",
     "caption": "On a frictionless incline only the weight component along the slope, m g sin(angle), accelerates the block."
    },
@@ -803,7 +803,7 @@
      "value": 2.399833,
      "figure": {
       "viewBox": "0 0 400 219",
-      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 1,177.2 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='9.8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N = 1,177.2 N</text><line x1='224' y1='100' x2='273' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#568CBB'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Pull = 700 N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#00242E' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#00242E'/><text x='106' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#00242E'>Friction = 412.0 N</text>",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#22221F' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#2E563B' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#2E563B'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>W = 1,177.2 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#2E563B' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#2E563B'/><text x='208' y='9.8' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>N = 1,177.2 N</text><line x1='224' y1='100' x2='273' y2='100' stroke='#6E2B3F' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#6E2B3F'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>Pull = 700 N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#22221F' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#22221F'/><text x='106' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#22221F'>Friction = 412.0 N</text>",
       "alt": "Free-body diagram showing W = 1,177.2 N, N = 1,177.2 N, Pull = 700 N, Friction = 412.0 N."
      }
     },
@@ -816,7 +816,7 @@
      "value": 5.626785,
      "figure": {
       "viewBox": "0 0 400 234",
-      "svg": "<g transform='rotate(-35 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = m g</text><line x1='186' y1='80' x2='158' y2='40' stroke='#1B795A' stroke-width='3'/><path d='M152 31 L154 43 L163 37 Z' fill='#1B795A'/><text x='145' y='25' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>N</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Only the weight component along the slope, m g sin(angle),</text><text x='200' y='229' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>causes acceleration</text>",
+      "svg": "<g transform='rotate(-35 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#22221F' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#2E563B' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#2E563B'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>W = m g</text><line x1='186' y1='80' x2='158' y2='40' stroke='#2E563B' stroke-width='3'/><path d='M152 31 L154 43 L163 37 Z' fill='#2E563B'/><text x='145' y='25' text-anchor='end' font-size='11' font-weight='600' fill='#2E563B'>N</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>Only the weight component along the slope, m g sin(angle),</text><text x='200' y='229' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>causes acceleration</text>",
       "alt": "Free-body diagram on a surface inclined at 35° showing W = m g, N."
      }
     },
@@ -837,7 +837,7 @@
      "value": 73.394495,
      "figure": {
       "viewBox": "0 0 400 219",
-      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='9.8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='91' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Friction, toward</text><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>the centre of the</text><text x='104' y='117' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>curve</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>View along the direction of travel</text>",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#22221F' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#2E563B' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#2E563B'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>W</text><line x1='200' y1='76' x2='200' y2='27' stroke='#2E563B' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#2E563B'/><text x='208' y='9.8' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#6E2B3F' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#6E2B3F'/><text x='104' y='91' text-anchor='end' font-size='11' font-weight='600' fill='#6E2B3F'>Friction, toward</text><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#6E2B3F'>the centre of the</text><text x='104' y='117' text-anchor='end' font-size='11' font-weight='600' fill='#6E2B3F'>curve</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>View along the direction of travel</text>",
       "alt": "Free-body diagram showing W, N, Friction, toward the centre of the curve."
      }
     },
@@ -850,7 +850,7 @@
      "value": 2.4525,
      "figure": {
       "viewBox": "0 0 400 219",
-      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 29.4 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='9.8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>T = 22.1 N</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Hanging block: accelerates downward at 2.45 m/s²</text>",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#22221F' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#2E563B' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#2E563B'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>W = 29.4 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#2E563B' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#2E563B'/><text x='208' y='9.8' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>T = 22.1 N</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>Hanging block: accelerates downward at 2.45 m/s²</text>",
       "alt": "Free-body diagram showing W = 29.4 N, T = 22.1 N."
      }
     },
@@ -863,7 +863,7 @@
      "value": 807.12,
      "figure": {
       "viewBox": "0 0 400 219",
-      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = 706.3 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='9.8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N = 807.1 N</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Net upward force = m a = 100.8 N</text>",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#22221F' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#2E563B' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#2E563B'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>W = 706.3 N</text><line x1='200' y1='76' x2='200' y2='27' stroke='#2E563B' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#2E563B'/><text x='208' y='9.8' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>N = 807.1 N</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>Net upward force = m a = 100.8 N</text>",
       "alt": "Free-body diagram showing W = 706.3 N, N = 807.1 N."
      }
     }
@@ -933,7 +933,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 212",
-     "svg": "<rect x='60.0' y='70.0' width='70.0' height='50.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><line x1='95.0' y1='95.0' x2='95.0' y2='150.0' stroke='#00574A' stroke-width='2.5'/><path d='M95.0 160.0 L100.0 150.0 L90.0 150.0 Z' fill='#00574A'/><text x='103' y='158' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = m g</text><line x1='80.0' y1='162.0' x2='80.0' y2='132.0' stroke='#1B795A' stroke-width='2.5'/><path d='M80.0 122.0 L75.0 132.0 L85.0 132.0 Z' fill='#1B795A'/><text x='74' y='160' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='130.0' y1='90.0' x2='170.0' y2='90.0' stroke='#568CBB' stroke-width='2.5'/><path d='M180.0 90.0 L170.0 85.0 L170.0 95.0 Z' fill='#568CBB'/><text x='178' y='82' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>P</text><line x1='70.0' y1='116.0' x2='34.0' y2='116.0' stroke='#FF6622' stroke-width='2.5'/><path d='M24.0 116.0 L34.0 121.0 L34.0 111.0 Z' fill='#FF6622'/><text x='20' y='134' text-anchor='start' font-size='11' font-weight='400' fill='#FF6622'>friction</text><text x='95' y='30' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Free-body diagram:</text><text x='95' y='44' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>every force acting</text><text x='210' y='100' text-anchor='middle' font-size='22' font-weight='600' fill='#00242E'>=</text><rect x='260.0' y='70.0' width='70.0' height='50.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><line x1='330.0' y1='95.0' x2='375.0' y2='95.0' stroke='#00574A' stroke-width='3.5'/><path d='M385.0 95.0 L375.0 90.0 L375.0 100.0 Z' fill='#00574A'/><text x='358' y='86' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>m a</text><text x='300' y='30' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Kinetic diagram:</text><text x='300' y='44' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>the mass times its acceleration</text><text x='200' y='190' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>ΣF = m a in each direction.</text><text x='200' y='204' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Vertically here: N - W = 0 (no vertical acceleration).</text>",
+     "svg": "<rect x='60.0' y='70.0' width='70.0' height='50.0' fill='#E2CBA0' stroke='#22221F' stroke-width='1.5'/><line x1='95.0' y1='95.0' x2='95.0' y2='150.0' stroke='#2E563B' stroke-width='2.5'/><path d='M95.0 160.0 L100.0 150.0 L90.0 150.0 Z' fill='#2E563B'/><text x='103' y='158' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>W = m g</text><line x1='80.0' y1='162.0' x2='80.0' y2='132.0' stroke='#2E563B' stroke-width='2.5'/><path d='M80.0 122.0 L75.0 132.0 L85.0 132.0 Z' fill='#2E563B'/><text x='74' y='160' text-anchor='end' font-size='11' font-weight='600' fill='#2E563B'>N</text><line x1='130.0' y1='90.0' x2='170.0' y2='90.0' stroke='#6E2B3F' stroke-width='2.5'/><path d='M180.0 90.0 L170.0 85.0 L170.0 95.0 Z' fill='#6E2B3F'/><text x='178' y='82' text-anchor='middle' font-size='11' font-weight='600' fill='#6E2B3F'>P</text><line x1='70.0' y1='116.0' x2='34.0' y2='116.0' stroke='#6E2B3F' stroke-width='2.5'/><path d='M24.0 116.0 L34.0 121.0 L34.0 111.0 Z' fill='#6E2B3F'/><text x='20' y='134' text-anchor='start' font-size='11' font-weight='400' fill='#6E2B3F'>friction</text><text x='95' y='30' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Free-body diagram:</text><text x='95' y='44' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>every force acting</text><text x='210' y='100' text-anchor='middle' font-size='22' font-weight='600' fill='#22221F'>=</text><rect x='260.0' y='70.0' width='70.0' height='50.0' fill='#E2CBA0' stroke='#22221F' stroke-width='1.5'/><line x1='330.0' y1='95.0' x2='375.0' y2='95.0' stroke='#2E563B' stroke-width='3.5'/><path d='M385.0 95.0 L375.0 90.0 L375.0 100.0 Z' fill='#2E563B'/><text x='358' y='86' text-anchor='middle' font-size='12' font-weight='600' fill='#2E563B'>m a</text><text x='300' y='30' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Kinetic diagram:</text><text x='300' y='44' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>the mass times its acceleration</text><text x='200' y='190' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>ΣF = m a in each direction.</text><text x='200' y='204' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>Vertically here: N - W = 0 (no vertical acceleration).</text>",
      "alt": "Newton's second law drawn as two diagrams: the forces on the body (left) add up to its mass times its acceleration (right).",
      "caption": "Newton's second law drawn as two diagrams: the forces on the body (left) add up to its mass times its acceleration (right)."
     }
@@ -978,7 +978,7 @@
       "find": [
        "Newton's second law"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -989,7 +989,7 @@
       "find": [
        "kinetics of a rigid body"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1000,7 +1000,7 @@
       "find": [
        "Newton's second law"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1022,7 +1022,7 @@
       "find": [
        "Newton's second law"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1033,7 +1033,7 @@
       "find": [
        "normal and tangential components"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1044,7 +1044,7 @@
       "find": [
        "Newton's second law"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1055,7 +1055,7 @@
       "find": [
        "kinetics of a rigid body"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1066,7 +1066,7 @@
       "find": [
        "impulse and momentum"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]
@@ -1196,7 +1196,7 @@
      "value": 23.544,
      "figure": {
       "viewBox": "0 0 400 219",
-      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight = m g</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='20' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Cable force = m g</text><text x='208' y='33' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>at constant speed</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Constant speed means zero net force</text>",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#22221F' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#2E563B' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#2E563B'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>Weight = m g</text><line x1='200' y1='76' x2='200' y2='27' stroke='#2E563B' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#2E563B'/><text x='208' y='20' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>Cable force = m g</text><text x='208' y='33' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>at constant speed</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>Constant speed means zero net force</text>",
       "alt": "Free-body diagram showing Weight = m g, Cable force = m g at constant speed."
      }
     },
@@ -1209,7 +1209,7 @@
      "value": 5.366563,
      "figure": {
       "viewBox": "0 0 400 234",
-      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#568CBB'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Spring force</text><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='20' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>Support from the</text><text x='208' y='33' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>surface</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Spring force = stiffness × compression; it pushes until its</text><text x='200' y='229' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>stored energy is used up</text>",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#22221F' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#6E2B3F' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#6E2B3F'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>Spring force</text><line x1='200' y1='124' x2='200' y2='173' stroke='#2E563B' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#2E563B'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#2E563B' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#2E563B'/><text x='208' y='20' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>Support from the</text><text x='208' y='33' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>surface</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>Spring force = stiffness × compression; it pushes until its</text><text x='200' y='229' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>stored energy is used up</text>",
       "alt": "Free-body diagram showing Spring force, Weight, Support from the surface."
      }
     },
@@ -1222,7 +1222,7 @@
      "value": 4.043513,
      "figure": {
       "viewBox": "0 0 400 180",
-      "svg": "<circle cx='110' cy='40' r='5' fill='#00242E'/><rect x='110' y='35' width='180' height='10' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><rect x='105' y='40' width='10' height='130' fill='#D9F1D6' fill-opacity='.6' stroke='#1B795A' stroke-dasharray='6 4'/><circle cx='200' cy='40' r='4' fill='#00574A'/><circle cx='110' cy='105' r='4' fill='#00574A'/><line x1='200' y1='40' x2='200' y2='105' stroke='#00574A' stroke-dasharray='5 4'/><line x1='110' y1='105' x2='200' y2='105' stroke='#00574A' stroke-dasharray='5 4'/><text x='208' y='78' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>centre of mass falls 0.90 m</text><text x='200' y='26' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>1.8 m rod, released level</text><text x='124' y='168' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>passing through the vertical</text>",
+      "svg": "<circle cx='110' cy='40' r='5' fill='#22221F'/><rect x='110' y='35' width='180' height='10' fill='#E2CBA0' stroke='#22221F' stroke-width='2'/><rect x='105' y='40' width='10' height='130' fill='#CACFC1' fill-opacity='.6' stroke='#2E563B' stroke-dasharray='6 4'/><circle cx='200' cy='40' r='4' fill='#2E563B'/><circle cx='110' cy='105' r='4' fill='#2E563B'/><line x1='200' y1='40' x2='200' y2='105' stroke='#2E563B' stroke-dasharray='5 4'/><line x1='110' y1='105' x2='200' y2='105' stroke='#2E563B' stroke-dasharray='5 4'/><text x='208' y='78' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>centre of mass falls 0.90 m</text><text x='200' y='26' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>1.8 m rod, released level</text><text x='124' y='168' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>passing through the vertical</text>",
       "alt": "A 1.8 m rod pinned at one end, shown level at release and hanging vertically. Its centre of mass falls by half its length, 0.90 m."
      }
     },
@@ -1235,7 +1235,7 @@
      "value": 43.278431,
      "figure": {
       "viewBox": "0 0 400 219",
-      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W</text><line x1='200' y1='76' x2='200' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#1B795A'/><text x='208' y='9.8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='97' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Friction =</text><text x='104' y='110' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>(coefficient) N</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Friction is the only force doing work</text>",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#22221F' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#2E563B' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#2E563B'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>W</text><line x1='200' y1='76' x2='200' y2='27' stroke='#2E563B' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#2E563B'/><text x='208' y='9.8' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#6E2B3F' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#6E2B3F'/><text x='104' y='97' text-anchor='end' font-size='11' font-weight='600' fill='#6E2B3F'>Friction =</text><text x='104' y='110' text-anchor='end' font-size='11' font-weight='600' fill='#6E2B3F'>(coefficient) N</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>Friction is the only force doing work</text>",
       "alt": "Free-body diagram showing W, N, Friction = (coefficient) N."
      }
     },
@@ -1248,7 +1248,7 @@
      "value": 165.54375,
      "figure": {
       "viewBox": "0 0 400 234",
-      "svg": "<g transform='rotate(-3.433630362450522 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>W = m g</text><line x1='199' y1='76' x2='196' y2='27' stroke='#1B795A' stroke-width='3'/><path d='M195 16 L190 27 L201 27 Z' fill='#1B795A'/><text x='202' y='9.8' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>N</text><line x1='224' y1='99' x2='273' y2='96' stroke='#568CBB' stroke-width='3'/><path d='M284 95 L273 90 L273 101 Z' fill='#568CBB'/><text x='296' y='98' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Driving force</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>At steady speed the driving force equals the weight component</text><text x='200' y='229' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>along the slope</text>",
+      "svg": "<g transform='rotate(-3.433630362450522 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#22221F' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#2E563B' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#2E563B'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>W = m g</text><line x1='199' y1='76' x2='196' y2='27' stroke='#2E563B' stroke-width='3'/><path d='M195 16 L190 27 L201 27 Z' fill='#2E563B'/><text x='202' y='9.8' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>N</text><line x1='224' y1='99' x2='273' y2='96' stroke='#6E2B3F' stroke-width='3'/><path d='M284 95 L273 90 L273 101 Z' fill='#6E2B3F'/><text x='296' y='98' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>Driving force</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>At steady speed the driving force equals the weight component</text><text x='200' y='229' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>along the slope</text>",
       "alt": "Free-body diagram on a surface inclined at 3.43° showing W = m g, N, Driving force."
      }
     }
@@ -1308,7 +1308,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 212",
-     "svg": "<line x1='30.0' y1='180.0' x2='110.0' y2='180.0' stroke='#00242E' stroke-width='2'/><line x1='30.0' y1='180.0' x2='110.0' y2='180.0' stroke='#00242E' stroke-width='2'/><line x1='36.0' y1='180.0' x2='30.0' y2='187.0' stroke='#00242E' stroke-width='1'/><line x1='44.0' y1='180.0' x2='38.0' y2='187.0' stroke='#00242E' stroke-width='1'/><line x1='52.0' y1='180.0' x2='46.0' y2='187.0' stroke='#00242E' stroke-width='1'/><line x1='60.0' y1='180.0' x2='54.0' y2='187.0' stroke='#00242E' stroke-width='1'/><line x1='68.0' y1='180.0' x2='62.0' y2='187.0' stroke='#00242E' stroke-width='1'/><line x1='76.0' y1='180.0' x2='70.0' y2='187.0' stroke='#00242E' stroke-width='1'/><line x1='84.0' y1='180.0' x2='78.0' y2='187.0' stroke='#00242E' stroke-width='1'/><line x1='92.0' y1='180.0' x2='86.0' y2='187.0' stroke='#00242E' stroke-width='1'/><line x1='100.0' y1='180.0' x2='94.0' y2='187.0' stroke='#00242E' stroke-width='1'/><line x1='108.0' y1='180.0' x2='102.0' y2='187.0' stroke='#00242E' stroke-width='1'/><line x1='70.0' y1='40.0' x2='70.0' y2='170.0' stroke='#E7E8E8' stroke-width='1' stroke-dasharray='6 4'/><circle cx='70.0' cy='40.0' r='9.0' fill='#568CBB' stroke='#00242E' stroke-width='1.5'/><text x='88' y='44' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>top: at rest</text><rect x='200.0' y='32.0' width='160.0' height='16.0' fill='#568CBB' fill-opacity='0.6' stroke='none' stroke-width='0'/><rect x='200.0' y='32.0' width='160.0' height='16.0' fill='none' stroke='#00242E' stroke-width='1'/><circle cx='70.0' cy='105.0' r='9.0' fill='#568CBB' stroke='#00242E' stroke-width='1.5'/><text x='88' y='109' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>halfway</text><rect x='200.0' y='97.0' width='80.0' height='16.0' fill='#568CBB' fill-opacity='0.6' stroke='none' stroke-width='0'/><rect x='280.0' y='97.0' width='80.0' height='16.0' fill='#00574A' fill-opacity='0.85' stroke='none' stroke-width='0'/><rect x='200.0' y='97.0' width='160.0' height='16.0' fill='none' stroke='#00242E' stroke-width='1'/><circle cx='70.0' cy='168.0' r='9.0' fill='#568CBB' stroke='#00242E' stroke-width='1.5'/><text x='88' y='172' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>at the ground</text><rect x='200.0' y='160.0' width='160.0' height='16.0' fill='#00574A' fill-opacity='0.85' stroke='none' stroke-width='0'/><rect x='200.0' y='160.0' width='160.0' height='16.0' fill='none' stroke='#00242E' stroke-width='1'/><line x1='48.0' y1='50.0' x2='48.0' y2='150.0' stroke='#00242E' stroke-width='1.5'/><path d='M48.0 160.0 L53.0 150.0 L43.0 150.0 Z' fill='#00242E'/><text x='44' y='108' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>h</text><rect x='200.0' y='192.0' width='12.0' height='10.0' fill='#568CBB' fill-opacity='0.6' stroke='none' stroke-width='0'/><text x='216' y='201' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>PE = m g h</text><rect x='290.0' y='192.0' width='12.0' height='10.0' fill='#00574A' fill-opacity='0.85' stroke='none' stroke-width='0'/><text x='306' y='201' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>KE = ½ m v²</text><text x='280' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>With no friction, PE + KE stays the same</text>",
+     "svg": "<line x1='30.0' y1='180.0' x2='110.0' y2='180.0' stroke='#22221F' stroke-width='2'/><line x1='30.0' y1='180.0' x2='110.0' y2='180.0' stroke='#22221F' stroke-width='2'/><line x1='36.0' y1='180.0' x2='30.0' y2='187.0' stroke='#22221F' stroke-width='1'/><line x1='44.0' y1='180.0' x2='38.0' y2='187.0' stroke='#22221F' stroke-width='1'/><line x1='52.0' y1='180.0' x2='46.0' y2='187.0' stroke='#22221F' stroke-width='1'/><line x1='60.0' y1='180.0' x2='54.0' y2='187.0' stroke='#22221F' stroke-width='1'/><line x1='68.0' y1='180.0' x2='62.0' y2='187.0' stroke='#22221F' stroke-width='1'/><line x1='76.0' y1='180.0' x2='70.0' y2='187.0' stroke='#22221F' stroke-width='1'/><line x1='84.0' y1='180.0' x2='78.0' y2='187.0' stroke='#22221F' stroke-width='1'/><line x1='92.0' y1='180.0' x2='86.0' y2='187.0' stroke='#22221F' stroke-width='1'/><line x1='100.0' y1='180.0' x2='94.0' y2='187.0' stroke='#22221F' stroke-width='1'/><line x1='108.0' y1='180.0' x2='102.0' y2='187.0' stroke='#22221F' stroke-width='1'/><line x1='70.0' y1='40.0' x2='70.0' y2='170.0' stroke='#D8C5C2' stroke-width='1' stroke-dasharray='6 4'/><circle cx='70.0' cy='40.0' r='9.0' fill='#6E2B3F' stroke='#22221F' stroke-width='1.5'/><text x='88' y='44' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>top: at rest</text><rect x='200.0' y='32.0' width='160.0' height='16.0' fill='#6E2B3F' fill-opacity='0.6' stroke='none' stroke-width='0'/><rect x='200.0' y='32.0' width='160.0' height='16.0' fill='none' stroke='#22221F' stroke-width='1'/><circle cx='70.0' cy='105.0' r='9.0' fill='#6E2B3F' stroke='#22221F' stroke-width='1.5'/><text x='88' y='109' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>halfway</text><rect x='200.0' y='97.0' width='80.0' height='16.0' fill='#6E2B3F' fill-opacity='0.6' stroke='none' stroke-width='0'/><rect x='280.0' y='97.0' width='80.0' height='16.0' fill='#2E563B' fill-opacity='0.85' stroke='none' stroke-width='0'/><rect x='200.0' y='97.0' width='160.0' height='16.0' fill='none' stroke='#22221F' stroke-width='1'/><circle cx='70.0' cy='168.0' r='9.0' fill='#6E2B3F' stroke='#22221F' stroke-width='1.5'/><text x='88' y='172' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>at the ground</text><rect x='200.0' y='160.0' width='160.0' height='16.0' fill='#2E563B' fill-opacity='0.85' stroke='none' stroke-width='0'/><rect x='200.0' y='160.0' width='160.0' height='16.0' fill='none' stroke='#22221F' stroke-width='1'/><line x1='48.0' y1='50.0' x2='48.0' y2='150.0' stroke='#22221F' stroke-width='1.5'/><path d='M48.0 160.0 L53.0 150.0 L43.0 150.0 Z' fill='#22221F'/><text x='44' y='108' text-anchor='end' font-size='12' font-weight='600' fill='#22221F'>h</text><rect x='200.0' y='192.0' width='12.0' height='10.0' fill='#6E2B3F' fill-opacity='0.6' stroke='none' stroke-width='0'/><text x='216' y='201' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>PE = m g h</text><rect x='290.0' y='192.0' width='12.0' height='10.0' fill='#2E563B' fill-opacity='0.85' stroke='none' stroke-width='0'/><text x='306' y='201' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>KE = ½ m v²</text><text x='280' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>With no friction, PE + KE stays the same</text>",
      "alt": "A falling ball: potential energy m g h turns into kinetic energy ½ m v², and with no friction their total stays the same.",
      "caption": "A falling ball: potential energy m g h turns into kinetic energy ½ m v², and with no friction their total stays the same."
     }
@@ -1342,7 +1342,7 @@
       "find": [
        "conservation of energy"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1353,7 +1353,7 @@
       "find": [
        "power and efficiency"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1364,7 +1364,7 @@
       "find": [
        "elastic potential energy"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1375,7 +1375,7 @@
       "find": [
        "work and energy"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1386,7 +1386,7 @@
       "find": [
        "principle of work and energy"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1397,7 +1397,7 @@
       "find": [
        "power"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1408,7 +1408,7 @@
       "find": [
        "kinetic energy"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1419,7 +1419,7 @@
       "find": [
        "principle of work and energy"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1430,7 +1430,7 @@
       "find": [
        "principle of work and energy"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      }
     ]

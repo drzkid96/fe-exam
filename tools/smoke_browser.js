@@ -20,7 +20,7 @@ const fakeDb = () => {
   await page.evaluateOnNewDocument(fakeDb);
   const status = () => page.$eval('#status span', e => e.textContent);
   const waitSaved = () => page.waitForFunction(() => document.querySelector('#status span').textContent === 'Progress saved', {timeout: 8000});
-  const text = () => page.$eval('#view', e => e.innerText);
+  const text = () => page.$eval('#view', e => e.textContent);
   const goto = async h => { await page.evaluate(x => { location.hash = x; }, h); await new Promise(r => setTimeout(r, 120)); };
   const click = sel => page.evaluate(s => { const e = document.querySelector(s); if (!e) throw new Error('missing ' + s); e.click(); }, sel);
   let n = 0; const ok = (c, m) => { assert.ok(c, m); n++; };
@@ -80,7 +80,7 @@ const fakeDb = () => {
   await page.type('#gsearch', 'roller'); await page.keyboard.press('Enter'); await new Promise(r => setTimeout(r, 150));
   ok((await text()).includes('point and click') && (await page.$$eval('a.res', a => a.length)) >= 1 && (await page.$$eval('mark', a => a.length)) >= 1, 'search finds and highlights');
   await page.$eval('#s-q', e => { e.value = 'manning'; e.dispatchEvent(new Event('input', {bubbles: true})); });
-  ok((await page.$eval('#s-res', e => e.innerText)).includes('Basic hydraulics'), 'live search on topics');
+  ok((await page.$eval('#s-res', e => e.textContent)).includes('Basic hydraulics'), 'live search on topics');
 
   // exam simulation: answer one, submit, unanswered are scored wrong
   await goto('practice'); await click('[data-act="setMode"][data-mode="exam"]');
@@ -105,7 +105,7 @@ const fakeDb = () => {
     await p2.evaluateOnNewDocument(fakeDb); await p2.goto(real);
     await p2.waitForFunction(() => typeof S !== 'undefined' && S.exam && S.store.mode === 'cloud', {timeout: 10000});
     const res = await p2.evaluate(() => {
-      const bad = [], broke = () => document.querySelector('#view').innerText.includes('This page hit an error'), show = h => { location.hash = h; R = parseRoute(); render(true); return broke(); };
+      const bad = [], broke = () => document.querySelector('#view').textContent.includes('This page hit an error'), show = h => { location.hash = h; R = parseRoute(); render(true); return broke(); };
       const mid = g => g.shape === 'rect' ? {x: g.x + g.w / 2, y: g.y + g.h / 2} : g.shape === 'circle' ? {x: g.cx, y: g.cy} : {x: g.points.reduce((s, p) => s + p[0], 0) / g.points.length, y: g.points.reduce((s, p) => s + p[1], 0) / g.points.length};
       for (const q of S.questions) {
         const a = q.answer; let r = a;

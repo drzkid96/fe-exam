@@ -74,7 +74,7 @@
    "figures": [
     {
      "viewBox": "0 0 540 158",
-     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Fluids</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Comes back in</text><text x='182' y='97' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Statics E: Centroids</text><line x1='186.0' y1='93.0' x2='198.0' y2='77.5' stroke='#568CBB' stroke-width='1'/><text x='360' y='55' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Water B: Hydraulics</text><line x1='338.0' y1='104.0' x2='356.0' y2='51.0' stroke='#00574A' stroke-width='1'/><text x='360' y='72' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Water C: Pumps</text><line x1='338.0' y1='104.0' x2='356.0' y2='67.8' stroke='#00574A' stroke-width='1'/><text x='360' y='89' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Water D: Distribution</text><line x1='338.0' y1='104.0' x2='356.0' y2='84.6' stroke='#00574A' stroke-width='1'/><text x='360' y='105' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Water E: Flood control</text><line x1='338.0' y1='77.5' x2='356.0' y2='101.4' stroke='#00574A' stroke-width='1'/><text x='360' y='122' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Water H: Groundwater</text><line x1='338.0' y1='51.0' x2='356.0' y2='118.2' stroke='#00574A' stroke-width='1'/><text x='360' y='139' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Geotech D: Effective stress</text><line x1='338.0' y1='77.5' x2='356.0' y2='135.0' stroke='#00574A' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>1. Fluid properties (B)</text><rect x='198.0' y='66.5' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='81' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>2. Fluid statics (C)</text><rect x='198.0' y='93.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='108' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>3. Energy, momentum (D)</text><rect x='198.0' y='119.5' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='134' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>4. Flow measurement (A)</text>",
+     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#6E2B3F'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Fluids</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#2E563B'>Comes back in</text><text x='182' y='97' text-anchor='end' font-size='10' font-weight='400' fill='#6E2B3F'>Statics E: Centroids</text><line x1='186.0' y1='93.0' x2='198.0' y2='77.5' stroke='#6E2B3F' stroke-width='1'/><text x='360' y='55' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Water B: Hydraulics</text><line x1='338.0' y1='104.0' x2='356.0' y2='51.0' stroke='#2E563B' stroke-width='1'/><text x='360' y='72' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Water C: Pumps</text><line x1='338.0' y1='104.0' x2='356.0' y2='67.8' stroke='#2E563B' stroke-width='1'/><text x='360' y='89' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Water D: Distribution</text><line x1='338.0' y1='104.0' x2='356.0' y2='84.6' stroke='#2E563B' stroke-width='1'/><text x='360' y='105' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Water E: Flood control</text><line x1='338.0' y1='77.5' x2='356.0' y2='101.4' stroke='#2E563B' stroke-width='1'/><text x='360' y='122' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Water H: Groundwater</text><line x1='338.0' y1='51.0' x2='356.0' y2='118.2' stroke='#2E563B' stroke-width='1'/><text x='360' y='139' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Geotech D: Effective stress</text><line x1='338.0' y1='77.5' x2='356.0' y2='135.0' stroke='#2E563B' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>1. Fluid properties (B)</text><rect x='198.0' y='66.5' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='81' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>2. Fluid statics (C)</text><rect x='198.0' y='93.0' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='108' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>3. Energy, momentum (D)</text><rect x='198.0' y='119.5' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='134' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>4. Flow measurement (A)</text>",
      "alt": "How Fluid Mechanics connects: the subtopics in a suggested study order, the earlier topics to refresh first, and the later topics that use this one.",
      "caption": "How this topic connects. The middle column is a suggested study order; the left column lists earlier lessons to refresh first; the right column shows where this topic is used again."
     }
@@ -118,7 +118,7 @@
    },
    "figure": {
     "viewBox": "0 0 420 175",
-    "svg": "<path d='M60 20 L60 150 L220 150 L220 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='62' y='40' width='156' height='108' fill='#568CBB' fill-opacity='.3'/><path d='M220 126 Q280 128 320 168' fill='none' stroke='#568CBB' stroke-width='5'/><line x1='250' y1='40' x2='250' y2='126' stroke='#00242E'/><line x1='220' y1='40' x2='260' y2='40' stroke='#00242E' stroke-dasharray='4 4'/><text x='258' y='86' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>3 m</text><text x='300' y='122' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>50 mm orifice</text>",
+    "svg": "<path d='M60 20 L60 150 L220 150 L220 20' fill='none' stroke='#22221F' stroke-width='3'/><rect x='62' y='40' width='156' height='108' fill='#6E2B3F' fill-opacity='.3'/><path d='M220 126 Q280 128 320 168' fill='none' stroke='#6E2B3F' stroke-width='5'/><line x1='250' y1='40' x2='250' y2='126' stroke='#22221F'/><line x1='220' y1='40' x2='260' y2='40' stroke='#22221F' stroke-dasharray='4 4'/><text x='258' y='86' text-anchor='start' font-size='12' font-weight='400' fill='#22221F'>3 m</text><text x='300' y='122' text-anchor='start' font-size='12' font-weight='400' fill='#22221F'>50 mm orifice</text>",
     "alt": "A tank discharging through a 50 mm orifice 3 m below the water surface.",
     "caption": "Orifice flow: the ideal jet velocity is the square root of 2 g h, reduced by the discharge coefficient."
    },
@@ -162,7 +162,7 @@
      "value": 15.279239,
      "figure": {
       "viewBox": "0 0 420 175",
-      "svg": "<path d='M60 20 L60 150 L220 150 L220 20' fill='none' stroke='#00242E' stroke-width='3'/><rect x='62' y='40' width='156' height='108' fill='#568CBB' fill-opacity='.3'/><path d='M220 126 Q280 128 320 168' fill='none' stroke='#568CBB' stroke-width='5'/><line x1='250' y1='40' x2='250' y2='126' stroke='#00242E'/><line x1='220' y1='40' x2='260' y2='40' stroke='#00242E' stroke-dasharray='4 4'/><text x='258' y='86' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>4 m</text><text x='300' y='122' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>60 mm orifice</text>",
+      "svg": "<path d='M60 20 L60 150 L220 150 L220 20' fill='none' stroke='#22221F' stroke-width='3'/><rect x='62' y='40' width='156' height='108' fill='#6E2B3F' fill-opacity='.3'/><path d='M220 126 Q280 128 320 168' fill='none' stroke='#6E2B3F' stroke-width='5'/><line x1='250' y1='40' x2='250' y2='126' stroke='#22221F'/><line x1='220' y1='40' x2='260' y2='40' stroke='#22221F' stroke-dasharray='4 4'/><text x='258' y='86' text-anchor='start' font-size='12' font-weight='400' fill='#22221F'>4 m</text><text x='300' y='122' text-anchor='start' font-size='12' font-weight='400' fill='#22221F'>60 mm orifice</text>",
       "alt": "A tank discharging through a 60 mm orifice 4 m below the water surface."
      }
     },
@@ -175,7 +175,7 @@
      "value": 45.802966,
      "figure": {
       "viewBox": "0 0 400 140",
-      "svg": "<path d='M30 40 L170 40 L230 58 L370 58 L370 92 L230 92 L170 110 L30 110 Z' fill='#568CBB' fill-opacity='.25' stroke='#00242E' stroke-width='2'/><line x1='60' y1='75' x2='110' y2='75' stroke='#00574A' stroke-width='3'/><path d='M118 75 L104 69 L104 81 Z' fill='#00574A'/><text x='100' y='30' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>225 mm</text><text x='300' y='48' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>120 mm</text><text x='100' y='130' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 1</text><text x='300' y='112' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 2</text>",
+      "svg": "<path d='M30 40 L170 40 L230 58 L370 58 L370 92 L230 92 L170 110 L30 110 Z' fill='#6E2B3F' fill-opacity='.25' stroke='#22221F' stroke-width='2'/><line x1='60' y1='75' x2='110' y2='75' stroke='#2E563B' stroke-width='3'/><path d='M118 75 L104 69 L104 81 Z' fill='#2E563B'/><text x='100' y='30' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>225 mm</text><text x='300' y='48' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>120 mm</text><text x='100' y='130' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>Section 1</text><text x='300' y='112' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>Section 2</text>",
       "alt": "A pipe narrowing from 225 mm to 120 mm in the direction of flow."
      }
     },
@@ -242,7 +242,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 262",
-     "svg": "<path d='M20.0 100.0 L110.0 100.0 L160.0 122.0 L200.0 122.0 L290.0 100.0 L380.0 100.0 L380.0 180.0 L290.0 180.0 L200.0 158.0 L160.0 158.0 L110.0 180.0 L20.0 180.0 Z' fill='#568CBB' fill-opacity='0.25' stroke='none' stroke-width='0'/><path d='M20.0 100.0 L110.0 100.0 L160.0 122.0 L200.0 122.0 L290.0 100.0 L380.0 100.0' fill='none' stroke='#00242E' stroke-width='2.5'/><path d='M20.0 180.0 L110.0 180.0 L160.0 158.0 L200.0 158.0 L290.0 180.0 L380.0 180.0' fill='none' stroke='#00242E' stroke-width='2.5'/><rect x='60.0' y='22.0' width='10.0' height='78.0' fill='none' stroke='#00242E' stroke-width='1.2'/><rect x='61.0' y='38.0' width='8.0' height='62.0' fill='#568CBB' fill-opacity='0.6' stroke='none' stroke-width='0'/><rect x='175.0' y='22.0' width='10.0' height='100.0' fill='none' stroke='#00242E' stroke-width='1.2'/><rect x='176.0' y='80.0' width='8.0' height='42.0' fill='#568CBB' fill-opacity='0.6' stroke='none' stroke-width='0'/><line x1='65.0' y1='38.0' x2='250.0' y2='38.0' stroke='#00242E' stroke-width='1' stroke-dasharray='6 4'/><line x1='180.0' y1='80.0' x2='250.0' y2='80.0' stroke='#00242E' stroke-width='1' stroke-dasharray='6 4'/><line x1='250.0' y1='38.0' x2='250.0' y2='80.0' stroke='#00242E' stroke-width='1'/><line x1='245.0' y1='38.0' x2='255.0' y2='38.0' stroke='#00242E' stroke-width='1'/><line x1='245.0' y1='80.0' x2='255.0' y2='80.0' stroke='#00242E' stroke-width='1'/><text x='258' y='63' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Δh: pressure drop</text><line x1='30.0' y1='140.0' x2='70.0' y2='140.0' stroke='#568CBB' stroke-width='2'/><path d='M80.0 140.0 L70.0 135.0 L70.0 145.0 Z' fill='#568CBB'/><line x1='150.0' y1='140.0' x2='220.0' y2='140.0' stroke='#568CBB' stroke-width='3'/><path d='M230.0 140.0 L220.0 135.0 L220.0 145.0 Z' fill='#568CBB'/><text x='55' y='160' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>slow,</text><text x='55' y='174' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>high pressure</text><text x='180' y='196' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>throat: fast, low pressure</text><text x='200' y='222' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Continuity: A1 V1 = A2 V2. The speed gained at the throat comes</text><text x='200' y='237' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>from pressure, so the drop Δh gives the flow:</text><text x='200' y='252' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Q = Cd A2 √(2 g Δh / (1 - (A2/A1)²))</text>",
+     "svg": "<path d='M20.0 100.0 L110.0 100.0 L160.0 122.0 L200.0 122.0 L290.0 100.0 L380.0 100.0 L380.0 180.0 L290.0 180.0 L200.0 158.0 L160.0 158.0 L110.0 180.0 L20.0 180.0 Z' fill='#6E2B3F' fill-opacity='0.25' stroke='none' stroke-width='0'/><path d='M20.0 100.0 L110.0 100.0 L160.0 122.0 L200.0 122.0 L290.0 100.0 L380.0 100.0' fill='none' stroke='#22221F' stroke-width='2.5'/><path d='M20.0 180.0 L110.0 180.0 L160.0 158.0 L200.0 158.0 L290.0 180.0 L380.0 180.0' fill='none' stroke='#22221F' stroke-width='2.5'/><rect x='60.0' y='22.0' width='10.0' height='78.0' fill='none' stroke='#22221F' stroke-width='1.2'/><rect x='61.0' y='38.0' width='8.0' height='62.0' fill='#6E2B3F' fill-opacity='0.6' stroke='none' stroke-width='0'/><rect x='175.0' y='22.0' width='10.0' height='100.0' fill='none' stroke='#22221F' stroke-width='1.2'/><rect x='176.0' y='80.0' width='8.0' height='42.0' fill='#6E2B3F' fill-opacity='0.6' stroke='none' stroke-width='0'/><line x1='65.0' y1='38.0' x2='250.0' y2='38.0' stroke='#22221F' stroke-width='1' stroke-dasharray='6 4'/><line x1='180.0' y1='80.0' x2='250.0' y2='80.0' stroke='#22221F' stroke-width='1' stroke-dasharray='6 4'/><line x1='250.0' y1='38.0' x2='250.0' y2='80.0' stroke='#22221F' stroke-width='1'/><line x1='245.0' y1='38.0' x2='255.0' y2='38.0' stroke='#22221F' stroke-width='1'/><line x1='245.0' y1='80.0' x2='255.0' y2='80.0' stroke='#22221F' stroke-width='1'/><text x='258' y='63' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>Δh: pressure drop</text><line x1='30.0' y1='140.0' x2='70.0' y2='140.0' stroke='#6E2B3F' stroke-width='2'/><path d='M80.0 140.0 L70.0 135.0 L70.0 145.0 Z' fill='#6E2B3F'/><line x1='150.0' y1='140.0' x2='220.0' y2='140.0' stroke='#6E2B3F' stroke-width='3'/><path d='M230.0 140.0 L220.0 135.0 L220.0 145.0 Z' fill='#6E2B3F'/><text x='55' y='160' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>slow,</text><text x='55' y='174' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>high pressure</text><text x='180' y='196' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>throat: fast, low pressure</text><text x='200' y='222' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>Continuity: A1 V1 = A2 V2. The speed gained at the throat comes</text><text x='200' y='237' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>from pressure, so the drop Δh gives the flow:</text><text x='200' y='252' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>Q = Cd A2 √(2 g Δh / (1 - (A2/A1)²))</text>",
      "alt": "A Venturi meter: the flow speeds up through the narrow throat, its pressure drops, and the drop Δh read on the tubes gives the flow rate.",
      "caption": "A Venturi meter: the flow speeds up through the narrow throat, its pressure drops, and the drop Δh read on the tubes gives the flow rate."
     }
@@ -272,7 +272,7 @@
       "find": [
        "Pitot tube"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -294,7 +294,7 @@
       "find": [
        "venturi meters"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -305,7 +305,7 @@
       "find": [
        "weir formulas"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -316,7 +316,7 @@
       "find": [
        "orifices"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      }
     ]
@@ -451,7 +451,7 @@
      "value": 30.72,
      "figure": {
       "viewBox": "0 0 400 234",
-      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#00574A' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#00574A'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Pull = 30.7 N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#568CBB' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#568CBB'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#568CBB'>Oil drag</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Constant speed: the pull equals the oil film drag, shear</text><text x='200' y='229' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>stress × plate area</text>",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#22221F' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/></g><line x1='224' y1='100' x2='273' y2='100' stroke='#2E563B' stroke-width='3'/><path d='M284 100 L273 94 L273 106 Z' fill='#2E563B'/><text x='296' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>Pull = 30.7 N</text><line x1='176' y1='100' x2='127' y2='100' stroke='#6E2B3F' stroke-width='3'/><path d='M116 100 L127 105 L127 94 Z' fill='#6E2B3F'/><text x='104' y='104' text-anchor='end' font-size='11' font-weight='600' fill='#6E2B3F'>Oil drag</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>Constant speed: the pull equals the oil film drag, shear</text><text x='200' y='229' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>stress × plate area</text>",
       "alt": "Free-body diagram showing Pull = 30.7 N, Oil drag."
      }
     },
@@ -464,7 +464,7 @@
      "value": 2.669456,
      "figure": {
       "viewBox": "0 0 400 234",
-      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight = 63.8 N</text><line x1='191' y1='78' x2='173' y2='32' stroke='#1B795A' stroke-width='3'/><path d='M169 22 L168 34 L178 30 Z' fill='#1B795A'/><text x='164' y='15' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>Scale reads 39.9 N</text><line x1='209' y1='78' x2='227' y2='32' stroke='#568CBB' stroke-width='3'/><path d='M231 22 L222 30 L232 34 Z' fill='#568CBB'/><text x='236' y='26' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force =</text><text x='236' y='39' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>23.9 N</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Buoyant force = weight in air - weight in water = weight of</text><text x='200' y='229' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>the water displaced</text>",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#22221F' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#2E563B' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#2E563B'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>Weight = 63.8 N</text><line x1='191' y1='78' x2='173' y2='32' stroke='#2E563B' stroke-width='3'/><path d='M169 22 L168 34 L178 30 Z' fill='#2E563B'/><text x='164' y='15' text-anchor='end' font-size='11' font-weight='600' fill='#2E563B'>Scale reads 39.9 N</text><line x1='209' y1='78' x2='227' y2='32' stroke='#6E2B3F' stroke-width='3'/><path d='M231 22 L222 30 L232 34 Z' fill='#6E2B3F'/><text x='236' y='26' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>Buoyant force =</text><text x='236' y='39' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>23.9 N</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>Buoyant force = weight in air - weight in water = weight of</text><text x='200' y='229' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>the water displaced</text>",
       "alt": "Free-body diagram showing Weight = 63.8 N, Scale reads 39.9 N, Buoyant force = 23.9 N."
      }
     }
@@ -535,7 +535,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 210",
-     "svg": "<line x1='40.0' y1='170.0' x2='330.0' y2='170.0' stroke='#00242E' stroke-width='2'/><line x1='40.0' y1='170.0' x2='330.0' y2='170.0' stroke='#00242E' stroke-width='2'/><line x1='46.0' y1='170.0' x2='40.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='54.0' y1='170.0' x2='48.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='62.0' y1='170.0' x2='56.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='70.0' y1='170.0' x2='64.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='78.0' y1='170.0' x2='72.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='86.0' y1='170.0' x2='80.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='94.0' y1='170.0' x2='88.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='102.0' y1='170.0' x2='96.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='110.0' y1='170.0' x2='104.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='118.0' y1='170.0' x2='112.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='126.0' y1='170.0' x2='120.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='134.0' y1='170.0' x2='128.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='142.0' y1='170.0' x2='136.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='150.0' y1='170.0' x2='144.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='158.0' y1='170.0' x2='152.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='166.0' y1='170.0' x2='160.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='174.0' y1='170.0' x2='168.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='182.0' y1='170.0' x2='176.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='190.0' y1='170.0' x2='184.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='198.0' y1='170.0' x2='192.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='206.0' y1='170.0' x2='200.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='214.0' y1='170.0' x2='208.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='222.0' y1='170.0' x2='216.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='230.0' y1='170.0' x2='224.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='238.0' y1='170.0' x2='232.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='246.0' y1='170.0' x2='240.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='254.0' y1='170.0' x2='248.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='262.0' y1='170.0' x2='256.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='270.0' y1='170.0' x2='264.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='278.0' y1='170.0' x2='272.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='286.0' y1='170.0' x2='280.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='294.0' y1='170.0' x2='288.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='302.0' y1='170.0' x2='296.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='310.0' y1='170.0' x2='304.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='318.0' y1='170.0' x2='312.0' y2='177.0' stroke='#00242E' stroke-width='1'/><line x1='326.0' y1='170.0' x2='320.0' y2='177.0' stroke='#00242E' stroke-width='1'/><rect x='40.0' y='50.0' width='290.0' height='10.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><line x1='330.0' y1='55.0' x2='366.0' y2='55.0' stroke='#00574A' stroke-width='3'/><path d='M376.0 55.0 L366.0 50.0 L366.0 60.0 Z' fill='#00574A'/><text x='372' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>V</text><rect x='40.0' y='60.0' width='290.0' height='110.0' fill='#568CBB' fill-opacity='0.15' stroke='none' stroke-width='0'/><line x1='100.0' y1='156.2' x2='109.0' y2='156.2' stroke='#568CBB' stroke-width='1.4'/><path d='M115.0 156.2 L109.0 153.2 L109.0 159.2 Z' fill='#568CBB'/><line x1='100.0' y1='142.5' x2='124.0' y2='142.5' stroke='#568CBB' stroke-width='1.4'/><path d='M130.0 142.5 L124.0 139.5 L124.0 145.5 Z' fill='#568CBB'/><line x1='100.0' y1='128.8' x2='139.0' y2='128.8' stroke='#568CBB' stroke-width='1.4'/><path d='M145.0 128.8 L139.0 125.8 L139.0 131.8 Z' fill='#568CBB'/><line x1='100.0' y1='115.0' x2='154.0' y2='115.0' stroke='#568CBB' stroke-width='1.4'/><path d='M160.0 115.0 L154.0 112.0 L154.0 118.0 Z' fill='#568CBB'/><line x1='100.0' y1='101.2' x2='169.0' y2='101.2' stroke='#568CBB' stroke-width='1.4'/><path d='M175.0 101.2 L169.0 98.2 L169.0 104.2 Z' fill='#568CBB'/><line x1='100.0' y1='87.5' x2='184.0' y2='87.5' stroke='#568CBB' stroke-width='1.4'/><path d='M190.0 87.5 L184.0 84.5 L184.0 90.5 Z' fill='#568CBB'/><line x1='100.0' y1='73.8' x2='199.0' y2='73.8' stroke='#568CBB' stroke-width='1.4'/><path d='M205.0 73.8 L199.0 70.8 L199.0 76.8 Z' fill='#568CBB'/><line x1='100.0' y1='170.0' x2='220.0' y2='60.0' stroke='#00242E' stroke-width='1' stroke-dasharray='6 4'/><line x1='60.0' y1='60.0' x2='60.0' y2='170.0' stroke='#00242E' stroke-width='1'/><line x1='55.0' y1='60.0' x2='65.0' y2='60.0' stroke='#00242E' stroke-width='1'/><line x1='55.0' y1='170.0' x2='65.0' y2='170.0' stroke='#00242E' stroke-width='1'/><text x='52' y='119' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>y</text><text x='18' y='200' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Moving plate drags the fluid; the fixed plate holds it back.</text><text x='236' y='100' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>τ = μ du/dy</text><text x='236' y='115' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>   = μ V / y</text><text x='236' y='130' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>F = τ × plate area</text><text x='236' y='145' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>μ = viscosity</text>",
+     "svg": "<line x1='40.0' y1='170.0' x2='330.0' y2='170.0' stroke='#22221F' stroke-width='2'/><line x1='40.0' y1='170.0' x2='330.0' y2='170.0' stroke='#22221F' stroke-width='2'/><line x1='46.0' y1='170.0' x2='40.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='54.0' y1='170.0' x2='48.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='62.0' y1='170.0' x2='56.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='70.0' y1='170.0' x2='64.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='78.0' y1='170.0' x2='72.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='86.0' y1='170.0' x2='80.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='94.0' y1='170.0' x2='88.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='102.0' y1='170.0' x2='96.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='110.0' y1='170.0' x2='104.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='118.0' y1='170.0' x2='112.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='126.0' y1='170.0' x2='120.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='134.0' y1='170.0' x2='128.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='142.0' y1='170.0' x2='136.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='150.0' y1='170.0' x2='144.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='158.0' y1='170.0' x2='152.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='166.0' y1='170.0' x2='160.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='174.0' y1='170.0' x2='168.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='182.0' y1='170.0' x2='176.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='190.0' y1='170.0' x2='184.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='198.0' y1='170.0' x2='192.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='206.0' y1='170.0' x2='200.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='214.0' y1='170.0' x2='208.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='222.0' y1='170.0' x2='216.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='230.0' y1='170.0' x2='224.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='238.0' y1='170.0' x2='232.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='246.0' y1='170.0' x2='240.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='254.0' y1='170.0' x2='248.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='262.0' y1='170.0' x2='256.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='270.0' y1='170.0' x2='264.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='278.0' y1='170.0' x2='272.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='286.0' y1='170.0' x2='280.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='294.0' y1='170.0' x2='288.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='302.0' y1='170.0' x2='296.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='310.0' y1='170.0' x2='304.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='318.0' y1='170.0' x2='312.0' y2='177.0' stroke='#22221F' stroke-width='1'/><line x1='326.0' y1='170.0' x2='320.0' y2='177.0' stroke='#22221F' stroke-width='1'/><rect x='40.0' y='50.0' width='290.0' height='10.0' fill='#E2CBA0' stroke='#22221F' stroke-width='1.5'/><line x1='330.0' y1='55.0' x2='366.0' y2='55.0' stroke='#2E563B' stroke-width='3'/><path d='M376.0 55.0 L366.0 50.0 L366.0 60.0 Z' fill='#2E563B'/><text x='372' y='46' text-anchor='middle' font-size='12' font-weight='600' fill='#2E563B'>V</text><rect x='40.0' y='60.0' width='290.0' height='110.0' fill='#6E2B3F' fill-opacity='0.15' stroke='none' stroke-width='0'/><line x1='100.0' y1='156.2' x2='109.0' y2='156.2' stroke='#6E2B3F' stroke-width='1.4'/><path d='M115.0 156.2 L109.0 153.2 L109.0 159.2 Z' fill='#6E2B3F'/><line x1='100.0' y1='142.5' x2='124.0' y2='142.5' stroke='#6E2B3F' stroke-width='1.4'/><path d='M130.0 142.5 L124.0 139.5 L124.0 145.5 Z' fill='#6E2B3F'/><line x1='100.0' y1='128.8' x2='139.0' y2='128.8' stroke='#6E2B3F' stroke-width='1.4'/><path d='M145.0 128.8 L139.0 125.8 L139.0 131.8 Z' fill='#6E2B3F'/><line x1='100.0' y1='115.0' x2='154.0' y2='115.0' stroke='#6E2B3F' stroke-width='1.4'/><path d='M160.0 115.0 L154.0 112.0 L154.0 118.0 Z' fill='#6E2B3F'/><line x1='100.0' y1='101.2' x2='169.0' y2='101.2' stroke='#6E2B3F' stroke-width='1.4'/><path d='M175.0 101.2 L169.0 98.2 L169.0 104.2 Z' fill='#6E2B3F'/><line x1='100.0' y1='87.5' x2='184.0' y2='87.5' stroke='#6E2B3F' stroke-width='1.4'/><path d='M190.0 87.5 L184.0 84.5 L184.0 90.5 Z' fill='#6E2B3F'/><line x1='100.0' y1='73.8' x2='199.0' y2='73.8' stroke='#6E2B3F' stroke-width='1.4'/><path d='M205.0 73.8 L199.0 70.8 L199.0 76.8 Z' fill='#6E2B3F'/><line x1='100.0' y1='170.0' x2='220.0' y2='60.0' stroke='#22221F' stroke-width='1' stroke-dasharray='6 4'/><line x1='60.0' y1='60.0' x2='60.0' y2='170.0' stroke='#22221F' stroke-width='1'/><line x1='55.0' y1='60.0' x2='65.0' y2='60.0' stroke='#22221F' stroke-width='1'/><line x1='55.0' y1='170.0' x2='65.0' y2='170.0' stroke='#22221F' stroke-width='1'/><text x='52' y='119' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>y</text><text x='18' y='200' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>Moving plate drags the fluid; the fixed plate holds it back.</text><text x='236' y='100' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>τ = μ du/dy</text><text x='236' y='115' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>   = μ V / y</text><text x='236' y='130' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>F = τ × plate area</text><text x='236' y='145' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>μ = viscosity</text>",
      "alt": "Viscosity: fluid between a moving plate and a fixed plate. The velocity grows linearly across the gap, and the shear stress is the viscosity times that velocity gradient.",
      "caption": "Viscosity: fluid between a moving plate and a fixed plate. The velocity grows linearly across the gap, and the shear stress is the viscosity times that velocity gradient."
     }
@@ -565,7 +565,7 @@
       "find": [
        "specific gravity"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -576,7 +576,7 @@
       "find": [
        "Reynolds number"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -587,7 +587,7 @@
       "find": [
        "kinematic viscosity"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -598,7 +598,7 @@
       "find": [
        "capillary rise"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -609,7 +609,7 @@
       "find": [
        "stress, pressure, and viscosity"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -620,7 +620,7 @@
       "find": [
        "buoyancy"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]
@@ -687,7 +687,7 @@
    },
    "figure": {
     "viewBox": "0 0 400 165",
-    "svg": "<rect x='40' y='30' width='150' height='120' fill='#568CBB' fill-opacity='.25'/><line x1='20' y1='30' x2='190' y2='30' stroke='#568CBB' stroke-width='2'/><rect x='190' y='30' width='12' height='120' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='20' y1='150' x2='260' y2='150' stroke='#00242E' stroke-width='2'/><path d='M190 30 L190 150 L110 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='120' y1='110' x2='180' y2='110' stroke='#00574A' stroke-width='3'/><path d='M188 110 L176 104 L176 116 Z' fill='#00574A'/><text x='100' y='24' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Water surface</text><line x1='222' y1='30' x2='222' y2='150' stroke='#00242E'/><text x='230' y='94' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>3 m tall, 2 m wide</text><text x='112' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>F</text>",
+    "svg": "<rect x='40' y='30' width='150' height='120' fill='#6E2B3F' fill-opacity='.25'/><line x1='20' y1='30' x2='190' y2='30' stroke='#6E2B3F' stroke-width='2'/><rect x='190' y='30' width='12' height='120' fill='#D8C5C2' stroke='#22221F' stroke-width='2'/><line x1='20' y1='150' x2='260' y2='150' stroke='#22221F' stroke-width='2'/><path d='M190 30 L190 150 L110 150 Z' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/><line x1='120' y1='110' x2='180' y2='110' stroke='#2E563B' stroke-width='3'/><path d='M188 110 L176 104 L176 116 Z' fill='#2E563B'/><text x='100' y='24' text-anchor='middle' font-size='11' font-weight='400' fill='#6E2B3F'>Water surface</text><line x1='222' y1='30' x2='222' y2='150' stroke='#22221F'/><text x='230' y='94' text-anchor='start' font-size='12' font-weight='400' fill='#22221F'>3 m tall, 2 m wide</text><text x='112' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#2E563B'>F</text>",
     "alt": "A vertical gate 3 m tall and 2 m wide with its top at the water surface and a triangular pressure diagram.",
     "caption": "Hydrostatic pressure on a vertical gate grows linearly with depth. The resultant acts at two thirds of the depth."
    },
@@ -743,7 +743,7 @@
      "value": 147.15,
      "figure": {
       "viewBox": "0 0 400 176",
-      "svg": "<rect x='60' y='30' width='150' height='120' fill='#568CBB' fill-opacity='.3'/><path d='M60 30 L60 150 L210 150 L210 30' fill='none' stroke='#00242E' stroke-width='3'/><line x1='60' y1='30' x2='210' y2='30' stroke='#568CBB' stroke-width='2'/><path d='M250 30 L250 150 L350 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='52' y='94' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>15 m</text><text x='300' y='168' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>147.2 kPa at the bottom</text><text x='250' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>zero at the surface</text>",
+      "svg": "<rect x='60' y='30' width='150' height='120' fill='#6E2B3F' fill-opacity='.3'/><path d='M60 30 L60 150 L210 150 L210 30' fill='none' stroke='#22221F' stroke-width='3'/><line x1='60' y1='30' x2='210' y2='30' stroke='#6E2B3F' stroke-width='2'/><path d='M250 30 L250 150 L350 150 Z' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/><text x='52' y='94' text-anchor='end' font-size='12' font-weight='400' fill='#22221F'>15 m</text><text x='300' y='168' text-anchor='middle' font-size='11' font-weight='600' fill='#2E563B'>147.2 kPa at the bottom</text><text x='250' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>zero at the surface</text>",
       "alt": "Water 15 m deep with its pressure diagram: zero at the surface, rising in a straight line to 147.2 kPa at the bottom."
      }
     },
@@ -756,7 +756,7 @@
      "value": 158.922,
      "figure": {
       "viewBox": "0 0 400 165",
-      "svg": "<rect x='40' y='30' width='150' height='120' fill='#568CBB' fill-opacity='.25'/><line x1='20' y1='30' x2='190' y2='30' stroke='#568CBB' stroke-width='2'/><rect x='190' y='30' width='12' height='120' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='20' y1='150' x2='260' y2='150' stroke='#00242E' stroke-width='2'/><path d='M190 30 L190 150 L110 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='120' y1='110' x2='180' y2='110' stroke='#00574A' stroke-width='3'/><path d='M188 110 L176 104 L176 116 Z' fill='#00574A'/><text x='100' y='24' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Water surface</text><line x1='222' y1='30' x2='222' y2='150' stroke='#00242E'/><text x='230' y='94' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>3.6 m tall, 2.5 m wide</text><text x='112' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#00574A'>F</text>",
+      "svg": "<rect x='40' y='30' width='150' height='120' fill='#6E2B3F' fill-opacity='.25'/><line x1='20' y1='30' x2='190' y2='30' stroke='#6E2B3F' stroke-width='2'/><rect x='190' y='30' width='12' height='120' fill='#D8C5C2' stroke='#22221F' stroke-width='2'/><line x1='20' y1='150' x2='260' y2='150' stroke='#22221F' stroke-width='2'/><path d='M190 30 L190 150 L110 150 Z' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/><line x1='120' y1='110' x2='180' y2='110' stroke='#2E563B' stroke-width='3'/><path d='M188 110 L176 104 L176 116 Z' fill='#2E563B'/><text x='100' y='24' text-anchor='middle' font-size='11' font-weight='400' fill='#6E2B3F'>Water surface</text><line x1='222' y1='30' x2='222' y2='150' stroke='#22221F'/><text x='230' y='94' text-anchor='start' font-size='12' font-weight='400' fill='#22221F'>3.6 m tall, 2.5 m wide</text><text x='112' y='104' text-anchor='middle' font-size='12' font-weight='600' fill='#2E563B'>F</text>",
       "alt": "A vertical gate 3.6 m tall and 2.5 m wide with its top at the water surface and a triangular pressure diagram."
      }
     },
@@ -769,7 +769,7 @@
      "value": 30.9015,
      "figure": {
       "viewBox": "0 0 420 180",
-      "svg": "<circle cx='70' cy='50' r='22' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><circle cx='330' cy='50' r='22' fill='#568CBB' fill-opacity='.3' stroke='#00242E' stroke-width='2'/><path d='M70 72 L70 150 L330 150 L330 72' fill='none' stroke='#00242E' stroke-width='10' stroke-opacity='.25'/><path d='M70 120 L70 150 L330 150 L330 84' fill='none' stroke='#1B795A' stroke-width='8'/><line x1='90' y1='120' x2='360' y2='120' stroke='#00242E' stroke-dasharray='4 4'/><line x1='310' y1='84' x2='360' y2='84' stroke='#00242E' stroke-dasharray='4 4'/><line x1='352' y1='84' x2='352' y2='120' stroke='#00242E'/><text x='362' y='106' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>0.25 m</text><text x='70' y='20' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Pipe 1</text><text x='330' y='20' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Pipe 2</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#1B795A'>Gauge liquid, specific gravity 13.6</text>",
+      "svg": "<circle cx='70' cy='50' r='22' fill='#6E2B3F' fill-opacity='.3' stroke='#22221F' stroke-width='2'/><circle cx='330' cy='50' r='22' fill='#6E2B3F' fill-opacity='.3' stroke='#22221F' stroke-width='2'/><path d='M70 72 L70 150 L330 150 L330 72' fill='none' stroke='#22221F' stroke-width='10' stroke-opacity='.25'/><path d='M70 120 L70 150 L330 150 L330 84' fill='none' stroke='#2E563B' stroke-width='8'/><line x1='90' y1='120' x2='360' y2='120' stroke='#22221F' stroke-dasharray='4 4'/><line x1='310' y1='84' x2='360' y2='84' stroke='#22221F' stroke-dasharray='4 4'/><line x1='352' y1='84' x2='352' y2='120' stroke='#22221F'/><text x='362' y='106' text-anchor='start' font-size='12' font-weight='400' fill='#22221F'>0.25 m</text><text x='70' y='20' text-anchor='middle' font-size='12' font-weight='600' fill='#22221F'>Pipe 1</text><text x='330' y='20' text-anchor='middle' font-size='12' font-weight='600' fill='#22221F'>Pipe 2</text><text x='200' y='172' text-anchor='middle' font-size='12' font-weight='400' fill='#2E563B'>Gauge liquid, specific gravity 13.6</text>",
       "alt": "A U-tube manometer between two water pipes at the same elevation, with a gauge liquid deflection of 0.25 m."
      }
     },
@@ -782,7 +782,7 @@
      "value": 1.05,
      "figure": {
       "viewBox": "0 0 400 219",
-      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='20' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force =</text><text x='208' y='33' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>weight of water</text><text x='208' y='46' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>displaced</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>A floating body: buoyant force equals weight</text>",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#22221F' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#2E563B' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#2E563B'/><text x='208' y='200' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>Weight</text><line x1='200' y1='76' x2='200' y2='27' stroke='#6E2B3F' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#6E2B3F'/><text x='208' y='20' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>Buoyant force =</text><text x='208' y='33' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>weight of water</text><text x='208' y='46' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>displaced</text><text x='200' y='214' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>A floating body: buoyant force equals weight</text>",
       "alt": "Free-body diagram showing Weight, Buoyant force = weight of water displaced."
      }
     },
@@ -795,7 +795,7 @@
      "value": 27.31104,
      "figure": {
       "viewBox": "0 0 400 170",
-      "svg": "<rect x='70' y='30' width='150' height='44' fill='#EEEDE8' stroke='#00242E'/><rect x='70' y='74' width='150' height='66' fill='#568CBB' fill-opacity='.3' stroke='#00242E'/><path d='M70 30 L70 140 L220 140 L220 30' fill='none' stroke='#00242E' stroke-width='3'/><text x='145' y='56' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Oil, SG 0.82, 1.2 m</text><text x='145' y='111' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Water, 1.8 m</text><path d='M250 30 L250 140 L340 140 L282 74 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='300' y='156' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>27.31 kPa at the floor</text><text x='300' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Pressure</text>",
+      "svg": "<rect x='70' y='30' width='150' height='44' fill='#E2CBA0' stroke='#22221F'/><rect x='70' y='74' width='150' height='66' fill='#6E2B3F' fill-opacity='.3' stroke='#22221F'/><path d='M70 30 L70 140 L220 140 L220 30' fill='none' stroke='#22221F' stroke-width='3'/><text x='145' y='56' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>Oil, SG 0.82, 1.2 m</text><text x='145' y='111' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>Water, 1.8 m</text><path d='M250 30 L250 140 L340 140 L282 74 Z' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/><text x='300' y='156' text-anchor='middle' font-size='11' font-weight='600' fill='#2E563B'>27.31 kPa at the floor</text><text x='300' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>Pressure</text>",
       "alt": "A tank with 1.2 m of oil floating on 1.8 m of water, with the pressure diagram, which steepens in the denser water."
      }
     },
@@ -808,7 +808,7 @@
      "value": 10.43784,
      "figure": {
       "viewBox": "0 0 400 219",
-      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#00242E' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#00574A' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#00574A'/><text x='208' y='169' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Raft weight +</text><text x='208' y='182' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>cargo</text><line x1='200' y1='76' x2='200' y2='27' stroke='#568CBB' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#568CBB'/><text x='208' y='20' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Buoyant force on</text><text x='208' y='33' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>the whole volume</text>",
+      "svg": "<g transform='rotate(0 200 100)'><line x1='70' y1='120' x2='330' y2='120' stroke='#22221F' stroke-width='2'/><rect x='170' y='80' width='60' height='40' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/></g><line x1='200' y1='124' x2='200' y2='173' stroke='#2E563B' stroke-width='3'/><path d='M200 184 L205 173 L194 173 Z' fill='#2E563B'/><text x='208' y='169' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>Raft weight +</text><text x='208' y='182' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>cargo</text><line x1='200' y1='76' x2='200' y2='27' stroke='#6E2B3F' stroke-width='3'/><path d='M200 16 L194 27 L206 27 Z' fill='#6E2B3F'/><text x='208' y='20' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>Buoyant force on</text><text x='208' y='33' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>the whole volume</text>",
       "alt": "Free-body diagram showing Raft weight + cargo, Buoyant force on the whole volume."
      }
     }
@@ -891,13 +891,13 @@
    "figures": [
     {
      "viewBox": "0 0 400 206",
-     "svg": "<path d='M50.0 60.0 L50.0 160.0 L90.0 160.0 L90.0 60.0 Z' fill='#568CBB' fill-opacity='0.3' stroke='none' stroke-width='0'/><path d='M50.0 40.0 L50.0 160.0 L90.0 160.0 L90.0 40.0' fill='none' stroke='#00242E' stroke-width='2.5'/><path d='M140.0 60.0 L140.0 160.0 L260.0 160.0 L260.0 60.0 Z' fill='#568CBB' fill-opacity='0.3' stroke='none' stroke-width='0'/><path d='M140.0 40.0 L140.0 160.0 L260.0 160.0 L260.0 40.0' fill='none' stroke='#00242E' stroke-width='2.5'/><path d='M283.5 60.0 L315.0 160.0 L355.0 160.0 L386.5 60.0 Z' fill='#568CBB' fill-opacity='0.3' stroke='none' stroke-width='0'/><path d='M280.0 40.0 L315.0 160.0 L355.0 160.0 L390.0 40.0' fill='none' stroke='#00242E' stroke-width='2.5'/><line x1='10.0' y1='60.0' x2='395.0' y2='60.0' stroke='#568CBB' stroke-width='1' stroke-dasharray='6 4'/><line x1='14.0' y1='60.0' x2='14.0' y2='160.0' stroke='#00242E' stroke-width='1'/><line x1='9.0' y1='60.0' x2='19.0' y2='60.0' stroke='#00242E' stroke-width='1'/><line x1='9.0' y1='160.0' x2='19.0' y2='160.0' stroke='#00242E' stroke-width='1'/><text x='22' y='114' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>h</text><text x='200' y='180' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>The bottom pressure is the same in all three: p = γ h</text><text x='200' y='196' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>Pressure depends on depth only, not on the shape or the amount of water.</text>",
+     "svg": "<path d='M50.0 60.0 L50.0 160.0 L90.0 160.0 L90.0 60.0 Z' fill='#6E2B3F' fill-opacity='0.3' stroke='none' stroke-width='0'/><path d='M50.0 40.0 L50.0 160.0 L90.0 160.0 L90.0 40.0' fill='none' stroke='#22221F' stroke-width='2.5'/><path d='M140.0 60.0 L140.0 160.0 L260.0 160.0 L260.0 60.0 Z' fill='#6E2B3F' fill-opacity='0.3' stroke='none' stroke-width='0'/><path d='M140.0 40.0 L140.0 160.0 L260.0 160.0 L260.0 40.0' fill='none' stroke='#22221F' stroke-width='2.5'/><path d='M283.5 60.0 L315.0 160.0 L355.0 160.0 L386.5 60.0 Z' fill='#6E2B3F' fill-opacity='0.3' stroke='none' stroke-width='0'/><path d='M280.0 40.0 L315.0 160.0 L355.0 160.0 L390.0 40.0' fill='none' stroke='#22221F' stroke-width='2.5'/><line x1='10.0' y1='60.0' x2='395.0' y2='60.0' stroke='#6E2B3F' stroke-width='1' stroke-dasharray='6 4'/><line x1='14.0' y1='60.0' x2='14.0' y2='160.0' stroke='#22221F' stroke-width='1'/><line x1='9.0' y1='60.0' x2='19.0' y2='60.0' stroke='#22221F' stroke-width='1'/><line x1='9.0' y1='160.0' x2='19.0' y2='160.0' stroke='#22221F' stroke-width='1'/><text x='22' y='114' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>h</text><text x='200' y='180' text-anchor='middle' font-size='11' font-weight='600' fill='#2E563B'>The bottom pressure is the same in all three: p = γ h</text><text x='200' y='196' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>Pressure depends on depth only, not on the shape or the amount of water.</text>",
      "alt": "Three containers of different shapes filled to the same depth h have the same pressure at the bottom, p = γ h: hydrostatic pressure depends only on depth.",
      "caption": "Three containers of different shapes filled to the same depth h have the same pressure at the bottom, p = γ h: hydrostatic pressure depends only on depth."
     },
     {
      "viewBox": "0 0 400 240",
-     "svg": "<rect x='20.0' y='80.0' width='360.0' height='100.0' fill='#568CBB' fill-opacity='0.25' stroke='none' stroke-width='0'/><line x1='20.0' y1='80.0' x2='380.0' y2='80.0' stroke='#568CBB' stroke-width='2'/><rect x='150.0' y='50.0' width='100.0' height='70.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><rect x='150.0' y='80.0' width='100.0' height='40.0' fill='#D9F1D6' fill-opacity='0.9' stroke='none' stroke-width='0'/><rect x='150.0' y='50.0' width='100.0' height='70.0' fill='none' stroke='#00242E' stroke-width='1.5'/><line x1='200.0' y1='70.0' x2='200.0' y2='140.0' stroke='#00574A' stroke-width='2.5'/><path d='M200.0 150.0 L205.0 140.0 L195.0 140.0 Z' fill='#00574A'/><text x='208' y='148' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>W</text><line x1='176.0' y1='140.0' x2='176.0' y2='108.0' stroke='#568CBB' stroke-width='2.5'/><path d='M176.0 98.0 L171.0 108.0 L181.0 108.0 Z' fill='#568CBB'/><text x='170' y='136' text-anchor='end' font-size='12' font-weight='600' fill='#568CBB'>FB</text><text x='258' y='110' text-anchor='start' font-size='11' font-weight='600' fill='#1B795A'>displaced water</text><text x='20' y='196' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Buoyant force FB = γ water × volume of water displaced.</text><text x='20' y='211' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>A floating body sinks until FB = W.</text><text x='20' y='226' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Fully submerged: FB uses the whole volume.</text>",
+     "svg": "<rect x='20.0' y='80.0' width='360.0' height='100.0' fill='#6E2B3F' fill-opacity='0.25' stroke='none' stroke-width='0'/><line x1='20.0' y1='80.0' x2='380.0' y2='80.0' stroke='#6E2B3F' stroke-width='2'/><rect x='150.0' y='50.0' width='100.0' height='70.0' fill='#E2CBA0' stroke='#22221F' stroke-width='1.5'/><rect x='150.0' y='80.0' width='100.0' height='40.0' fill='#CACFC1' fill-opacity='0.9' stroke='none' stroke-width='0'/><rect x='150.0' y='50.0' width='100.0' height='70.0' fill='none' stroke='#22221F' stroke-width='1.5'/><line x1='200.0' y1='70.0' x2='200.0' y2='140.0' stroke='#2E563B' stroke-width='2.5'/><path d='M200.0 150.0 L205.0 140.0 L195.0 140.0 Z' fill='#2E563B'/><text x='208' y='148' text-anchor='start' font-size='12' font-weight='600' fill='#2E563B'>W</text><line x1='176.0' y1='140.0' x2='176.0' y2='108.0' stroke='#6E2B3F' stroke-width='2.5'/><path d='M176.0 98.0 L171.0 108.0 L181.0 108.0 Z' fill='#6E2B3F'/><text x='170' y='136' text-anchor='end' font-size='12' font-weight='600' fill='#6E2B3F'>FB</text><text x='258' y='110' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>displaced water</text><text x='20' y='196' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>Buoyant force FB = γ water × volume of water displaced.</text><text x='20' y='211' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>A floating body sinks until FB = W.</text><text x='20' y='226' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>Fully submerged: FB uses the whole volume.</text>",
      "alt": "A floating block: the water pushes up with a buoyant force equal to the weight of the water it displaces, and it floats when that equals its own weight.",
      "caption": "A floating block: the water pushes up with a buoyant force equal to the weight of the water it displaces, and it floats when that equals its own weight."
     }
@@ -927,7 +927,7 @@
       "find": [
        "pressure field in a static liquid"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -949,7 +949,7 @@
       "find": [
        "manometer"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -960,7 +960,7 @@
       "find": [
        "buoyancy"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -971,7 +971,7 @@
       "find": [
        "pressure field in a static liquid"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -993,7 +993,7 @@
       "find": [
        "center of pressure"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1004,7 +1004,7 @@
       "find": [
        "pressure field in a static liquid"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1015,7 +1015,7 @@
       "find": [
        "forces on submerged surfaces"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]
@@ -1102,7 +1102,7 @@
    },
    "figure": {
     "viewBox": "0 0 400 140",
-    "svg": "<path d='M30 40 L170 40 L230 58 L370 58 L370 92 L230 92 L170 110 L30 110 Z' fill='#568CBB' fill-opacity='.25' stroke='#00242E' stroke-width='2'/><line x1='60' y1='75' x2='110' y2='75' stroke='#00574A' stroke-width='3'/><path d='M118 75 L104 69 L104 81 Z' fill='#00574A'/><text x='100' y='30' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>200 mm</text><text x='300' y='48' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>100 mm</text><text x='100' y='130' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 1</text><text x='300' y='112' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 2</text>",
+    "svg": "<path d='M30 40 L170 40 L230 58 L370 58 L370 92 L230 92 L170 110 L30 110 Z' fill='#6E2B3F' fill-opacity='.25' stroke='#22221F' stroke-width='2'/><line x1='60' y1='75' x2='110' y2='75' stroke='#2E563B' stroke-width='3'/><path d='M118 75 L104 69 L104 81 Z' fill='#2E563B'/><text x='100' y='30' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>200 mm</text><text x='300' y='48' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>100 mm</text><text x='100' y='130' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>Section 1</text><text x='300' y='112' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>Section 2</text>",
     "alt": "A pipe narrowing from 200 mm to 100 mm in the direction of flow.",
     "caption": "Continuity: the flow rate A V is the same at both sections, so the narrower section has the higher velocity and the lower pressure."
    },
@@ -1150,7 +1150,7 @@
      "value": 9.6,
      "figure": {
       "viewBox": "0 0 400 140",
-      "svg": "<path d='M30 40 L170 40 L230 58 L370 58 L370 92 L230 92 L170 110 L30 110 Z' fill='#568CBB' fill-opacity='.25' stroke='#00242E' stroke-width='2'/><line x1='60' y1='75' x2='110' y2='75' stroke='#00574A' stroke-width='3'/><path d='M118 75 L104 69 L104 81 Z' fill='#00574A'/><text x='100' y='30' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>250 mm</text><text x='300' y='48' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>125 mm</text><text x='100' y='130' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 1</text><text x='300' y='112' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>Section 2</text>",
+      "svg": "<path d='M30 40 L170 40 L230 58 L370 58 L370 92 L230 92 L170 110 L30 110 Z' fill='#6E2B3F' fill-opacity='.25' stroke='#22221F' stroke-width='2'/><line x1='60' y1='75' x2='110' y2='75' stroke='#2E563B' stroke-width='3'/><path d='M118 75 L104 69 L104 81 Z' fill='#2E563B'/><text x='100' y='30' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>250 mm</text><text x='300' y='48' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>125 mm</text><text x='100' y='130' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>Section 1</text><text x='300' y='112' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>Section 2</text>",
       "alt": "A pipe narrowing from 250 mm to 125 mm in the direction of flow."
      }
     },
@@ -1171,7 +1171,7 @@
      "value": 1628.601632,
      "figure": {
       "viewBox": "0 0 400 176",
-      "svg": "<line x1='40' y1='90' x2='172' y2='90' stroke='#568CBB' stroke-width='6'/><path d='M180 90 L168 84 L168 96 Z' fill='#568CBB'/><text x='100' y='76' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>Jet</text><rect x='186' y='30' width='12' height='120' fill='#E7E8E8' stroke='#00242E' stroke-width='2'/><line x1='200' y1='90' x2='282' y2='90' stroke='#00574A' stroke-width='3'/><path d='M290 90 L278 84 L278 96 Z' fill='#00574A'/><text x='271' y='94' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>1,628.6 N on the plate</text><text x='200' y='168' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>The plate removes all of the jet's forward momentum</text>",
+      "svg": "<line x1='40' y1='90' x2='172' y2='90' stroke='#6E2B3F' stroke-width='6'/><path d='M180 90 L168 84 L168 96 Z' fill='#6E2B3F'/><text x='100' y='76' text-anchor='middle' font-size='12' font-weight='600' fill='#6E2B3F'>Jet</text><rect x='186' y='30' width='12' height='120' fill='#D8C5C2' stroke='#22221F' stroke-width='2'/><line x1='200' y1='90' x2='282' y2='90' stroke='#2E563B' stroke-width='3'/><path d='M290 90 L278 84 L278 96 Z' fill='#2E563B'/><text x='271' y='94' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>1,628.6 N on the plate</text><text x='200' y='168' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>The plate removes all of the jet's forward momentum</text>",
       "alt": "A water jet striking a flat plate at right angles; the force on it along the jet is 1,628.6 N."
      }
     },
@@ -1192,7 +1192,7 @@
      "value": 629.623329,
      "figure": {
       "viewBox": "0 0 400 176",
-      "svg": "<line x1='40' y1='90' x2='172' y2='90' stroke='#568CBB' stroke-width='6'/><path d='M180 90 L168 84 L168 96 Z' fill='#568CBB'/><text x='100' y='76' text-anchor='middle' font-size='12' font-weight='600' fill='#568CBB'>Jet</text><path d='M180 90 Q230 90 246 32' fill='none' stroke='#00242E' stroke-width='4'/><line x1='248' y1='28' x2='260' y2='-17' stroke='#568CBB' stroke-width='6'/><path d='M263 -28 L255 -19 L266 -16 Z' fill='#568CBB'/><line x1='206' y1='120' x2='278' y2='120' stroke='#00574A' stroke-width='3'/><path d='M286 120 L274 114 L274 126 Z' fill='#00574A'/><text x='203' y='140' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>629.6 N on the vane, along the jet</text><text x='200' y='168' text-anchor='middle' font-size='10.8108' font-weight='400' fill='#00242E'>Turned through 75°: the forward momentum falls by the factor (1 - cos 75°)</text>",
+      "svg": "<line x1='40' y1='90' x2='172' y2='90' stroke='#6E2B3F' stroke-width='6'/><path d='M180 90 L168 84 L168 96 Z' fill='#6E2B3F'/><text x='100' y='76' text-anchor='middle' font-size='12' font-weight='600' fill='#6E2B3F'>Jet</text><path d='M180 90 Q230 90 246 32' fill='none' stroke='#22221F' stroke-width='4'/><line x1='248' y1='28' x2='260' y2='-17' stroke='#6E2B3F' stroke-width='6'/><path d='M263 -28 L255 -19 L266 -16 Z' fill='#6E2B3F'/><line x1='206' y1='120' x2='278' y2='120' stroke='#2E563B' stroke-width='3'/><path d='M286 120 L274 114 L274 126 Z' fill='#2E563B'/><text x='203' y='140' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>629.6 N on the vane, along the jet</text><text x='200' y='168' text-anchor='middle' font-size='10.8108' font-weight='400' fill='#22221F'>Turned through 75°: the forward momentum falls by the factor (1 - cos 75°)</text>",
       "alt": "A water jet striking a vane that turns it through 75°; the force on it along the jet is 629.6 N."
      }
     },
@@ -1205,7 +1205,7 @@
      "value": 22.089323,
      "figure": {
       "viewBox": "0 0 400 190",
-      "svg": "<line x1='40' y1='30' x2='370' y2='30' stroke='#E7E8E8' stroke-width='2'/><line x1='145' y1='14' x2='145' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='25' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='153' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='145' y1='30' x2='284' y2='30' stroke='#00574A' stroke-width='3'/><path d='M295 30 L284 24 L284 36 Z' fill='#00574A'/><text x='305' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>p A in</text><line x1='145' y1='30' x2='76' y2='150' stroke='#1B795A' stroke-width='3'/><path d='M70 160 L80 153 L71 148 Z' fill='#1B795A'/><text x='60' y='176' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>p A out</text><line x1='145' y1='30' x2='215' y2='150' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M220 160 L219 148 L210 153 Z' fill='#568CBB'/><text x='230' y='176' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>22.09 kN</text>",
+      "svg": "<line x1='40' y1='30' x2='370' y2='30' stroke='#D8C5C2' stroke-width='2'/><line x1='145' y1='14' x2='145' y2='176' stroke='#D8C5C2' stroke-width='2'/><text x='372' y='25' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>x</text><text x='153' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>y</text><line x1='145' y1='30' x2='284' y2='30' stroke='#2E563B' stroke-width='3'/><path d='M295 30 L284 24 L284 36 Z' fill='#2E563B'/><text x='305' y='22' text-anchor='start' font-size='12' font-weight='600' fill='#2E563B'>p A in</text><line x1='145' y1='30' x2='76' y2='150' stroke='#2E563B' stroke-width='3'/><path d='M70 160 L80 153 L71 148 Z' fill='#2E563B'/><text x='60' y='176' text-anchor='end' font-size='12' font-weight='600' fill='#2E563B'>p A out</text><line x1='145' y1='30' x2='215' y2='150' stroke='#6E2B3F' stroke-width='3' stroke-dasharray='6 4'/><path d='M220 160 L219 148 L210 153 Z' fill='#6E2B3F'/><text x='230' y='176' text-anchor='start' font-size='12' font-weight='600' fill='#6E2B3F'>22.09 kN</text>",
       "alt": "Vector diagram: p A in; p A out; 22.09 kN."
      }
     }
@@ -1295,7 +1295,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 254",
-     "svg": "<path d='M20 40 L20 190 L90 190 L90 172' fill='none' stroke='#00242E' stroke-width='2'/><rect x='20.0' y='40.0' width='70.0' height='150.0' fill='#568CBB' fill-opacity='0.25' stroke='none' stroke-width='0'/><line x1='20.0' y1='40.0' x2='90.0' y2='40.0' stroke='#568CBB' stroke-width='2'/><line x1='90.0' y1='160.0' x2='90.0' y2='40.0' stroke='#00242E' stroke-width='2'/><rect x='90.0' y='160.0' width='290.0' height='12.0' fill='#568CBB' fill-opacity='0.25' stroke='#00242E' stroke-width='1.5'/><line x1='10.0' y1='205.0' x2='390.0' y2='205.0' stroke='#00242E' stroke-width='1.5'/><text x='390' y='200' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>datum</text><line x1='95.0' y1='44.0' x2='380.0' y2='80.0' stroke='#00574A' stroke-width='2.5'/><line x1='95.0' y1='66.0' x2='380.0' y2='102.0' stroke='#568CBB' stroke-width='2.5' stroke-dasharray='6 4'/><text x='100' y='39' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>energy line (EGL)</text><text x='100' y='93' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>hydraulic grade line (HGL)</text><line x1='310.0' y1='166.0' x2='310.0' y2='205.0' stroke='#00242E' stroke-width='1'/><line x1='305.0' y1='166.0' x2='315.0' y2='166.0' stroke='#00242E' stroke-width='1'/><line x1='305.0' y1='205.0' x2='315.0' y2='205.0' stroke='#00242E' stroke-width='1'/><text x='318' y='190' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>z</text><line x1='310.0' y1='93.2' x2='310.0' y2='166.0' stroke='#00242E' stroke-width='1'/><line x1='305.0' y1='93.2' x2='315.0' y2='93.2' stroke='#00242E' stroke-width='1'/><line x1='305.0' y1='166.0' x2='315.0' y2='166.0' stroke='#00242E' stroke-width='1'/><text x='318' y='134' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>p / γ</text><line x1='310.0' y1='71.2' x2='310.0' y2='93.2' stroke='#00242E' stroke-width='1'/><line x1='305.0' y1='71.2' x2='315.0' y2='71.2' stroke='#00242E' stroke-width='1'/><line x1='305.0' y1='93.2' x2='315.0' y2='93.2' stroke='#00242E' stroke-width='1'/><text x='318' y='86' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>V²/2g</text><text x='5' y='228' text-anchor='start' font-size='10.9589' font-weight='400' fill='#00242E'>Total head = z (elevation) + p/γ (pressure head) + V²/2g (velocity head).</text><text x='10' y='243' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Both lines slope down by the friction loss along the pipe.</text>",
+     "svg": "<path d='M20 40 L20 190 L90 190 L90 172' fill='none' stroke='#22221F' stroke-width='2'/><rect x='20.0' y='40.0' width='70.0' height='150.0' fill='#6E2B3F' fill-opacity='0.25' stroke='none' stroke-width='0'/><line x1='20.0' y1='40.0' x2='90.0' y2='40.0' stroke='#6E2B3F' stroke-width='2'/><line x1='90.0' y1='160.0' x2='90.0' y2='40.0' stroke='#22221F' stroke-width='2'/><rect x='90.0' y='160.0' width='290.0' height='12.0' fill='#6E2B3F' fill-opacity='0.25' stroke='#22221F' stroke-width='1.5'/><line x1='10.0' y1='205.0' x2='390.0' y2='205.0' stroke='#22221F' stroke-width='1.5'/><text x='390' y='200' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>datum</text><line x1='95.0' y1='44.0' x2='380.0' y2='80.0' stroke='#2E563B' stroke-width='2.5'/><line x1='95.0' y1='66.0' x2='380.0' y2='102.0' stroke='#6E2B3F' stroke-width='2.5' stroke-dasharray='6 4'/><text x='100' y='39' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>energy line (EGL)</text><text x='100' y='93' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>hydraulic grade line (HGL)</text><line x1='310.0' y1='166.0' x2='310.0' y2='205.0' stroke='#22221F' stroke-width='1'/><line x1='305.0' y1='166.0' x2='315.0' y2='166.0' stroke='#22221F' stroke-width='1'/><line x1='305.0' y1='205.0' x2='315.0' y2='205.0' stroke='#22221F' stroke-width='1'/><text x='318' y='190' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>z</text><line x1='310.0' y1='93.2' x2='310.0' y2='166.0' stroke='#22221F' stroke-width='1'/><line x1='305.0' y1='93.2' x2='315.0' y2='93.2' stroke='#22221F' stroke-width='1'/><line x1='305.0' y1='166.0' x2='315.0' y2='166.0' stroke='#22221F' stroke-width='1'/><text x='318' y='134' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>p / γ</text><line x1='310.0' y1='71.2' x2='310.0' y2='93.2' stroke='#22221F' stroke-width='1'/><line x1='305.0' y1='71.2' x2='315.0' y2='71.2' stroke='#22221F' stroke-width='1'/><line x1='305.0' y1='93.2' x2='315.0' y2='93.2' stroke='#22221F' stroke-width='1'/><text x='318' y='86' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>V²/2g</text><text x='5' y='228' text-anchor='start' font-size='10.9589' font-weight='400' fill='#22221F'>Total head = z (elevation) + p/γ (pressure head) + V²/2g (velocity head).</text><text x='10' y='243' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>Both lines slope down by the friction loss along the pipe.</text>",
      "alt": "Energy and hydraulic grade lines for a pipe fed by a reservoir: at any point, total head is elevation plus pressure head plus velocity head, and both lines drop by the friction loss.",
      "caption": "Energy and hydraulic grade lines for a pipe fed by a reservoir: at any point, total head is elevation plus pressure head plus velocity head, and both lines drop by the friction loss."
     }
@@ -1329,7 +1329,7 @@
       "find": [
        "continuity equation"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1340,7 +1340,7 @@
       "find": [
        "Bernoulli equation"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1351,7 +1351,7 @@
       "find": [
        "impulse-momentum principle"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1362,7 +1362,7 @@
       "find": [
        "Darcy-Weisbach"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1373,7 +1373,7 @@
       "find": [
        "impulse-momentum principle"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1384,7 +1384,7 @@
       "find": [
        "pipe bends"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1395,7 +1395,7 @@
       "find": [
        "minor losses"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1406,7 +1406,7 @@
       "find": [
        "Reynolds number"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1417,7 +1417,7 @@
       "find": [
        "pump power equation"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1428,7 +1428,7 @@
       "find": [
        "drag force"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]

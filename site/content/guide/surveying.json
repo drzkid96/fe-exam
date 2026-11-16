@@ -73,7 +73,7 @@
    "figures": [
     {
      "viewBox": "0 0 540 186",
-     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Surveying</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Comes back in</text><text x='182' y='111' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Math A: Lines and curves</text><line x1='186.0' y1='107.0' x2='198.0' y2='51.0' stroke='#568CBB' stroke-width='1'/><text x='360' y='111' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Construction E: Drawings</text><line x1='338.0' y1='158.2' x2='356.0' y2='107.0' stroke='#00574A' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>1. Angles, distances (A)</text><rect x='198.0' y='66.8' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='81' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>2. Areas (B)</text><rect x='198.0' y='93.6' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='108' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>3. Earthwork volumes (C)</text><rect x='198.0' y='120.4' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='135' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>4. Coordinates (D)</text><rect x='198.0' y='147.2' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='162' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>5. Leveling (E)</text>",
+     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#6E2B3F'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Surveying</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#2E563B'>Comes back in</text><text x='182' y='111' text-anchor='end' font-size='10' font-weight='400' fill='#6E2B3F'>Math A: Lines and curves</text><line x1='186.0' y1='107.0' x2='198.0' y2='51.0' stroke='#6E2B3F' stroke-width='1'/><text x='360' y='111' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Construction E: Drawings</text><line x1='338.0' y1='158.2' x2='356.0' y2='107.0' stroke='#2E563B' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>1. Angles, distances (A)</text><rect x='198.0' y='66.8' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='81' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>2. Areas (B)</text><rect x='198.0' y='93.6' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='108' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>3. Earthwork volumes (C)</text><rect x='198.0' y='120.4' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='135' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>4. Coordinates (D)</text><rect x='198.0' y='147.2' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='162' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>5. Leveling (E)</text>",
      "alt": "How Surveying connects: the subtopics in a suggested study order, the earlier topics to refresh first, and the later topics that use this one.",
      "caption": "How this topic connects. The middle column is a suggested study order; the left column lists earlier lessons to refresh first; the right column shows where this topic is used again."
     }
@@ -116,7 +116,7 @@
    },
    "figure": {
     "viewBox": "0 0 400 200",
-    "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='9.8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='276' y2='65' stroke='#00574A' stroke-width='3'/><path d='M287 60 L273 60 L278 70 Z' fill='#00574A'/><circle cx='200' cy='100' r='4' fill='#00242E'/><text x='297' y='54' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>200.00 m, azimuth 60°</text>",
+    "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#22221F'/><line x1='80' y1='100' x2='320' y2='100' stroke='#22221F'/><text x='200' y='9.8' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#22221F'>E</text><line x1='200' y1='100' x2='276' y2='65' stroke='#2E563B' stroke-width='3'/><path d='M287 60 L273 60 L278 70 Z' fill='#2E563B'/><circle cx='200' cy='100' r='4' fill='#22221F'/><text x='297' y='54' text-anchor='end' font-size='12' font-weight='600' fill='#2E563B'>200.00 m, azimuth 60°</text>",
     "alt": "A line drawn from the origin at an azimuth of 60° clockwise from north.",
     "caption": "Latitude is L cos(azimuth) and departure is L sin(azimuth)."
    },
@@ -260,7 +260,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 258",
-     "svg": "<line x1='200.0' y1='210.0' x2='200.0' y2='30.0' stroke='#00242E' stroke-width='1.2'/><path d='M200.0 22.0 L196.0 30.0 L204.0 30.0 Z' fill='#00242E'/><line x1='104.0' y1='118.0' x2='296.0' y2='118.0' stroke='#00242E' stroke-width='1.2'/><text x='200' y='18' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>N</text><text x='200' y='224' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>S</text><text x='302' y='122' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>E</text><text x='98' y='122' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>W</text><line x1='200.0' y1='118.0' x2='262.4' y2='82.0' stroke='#00574A' stroke-width='2.5'/><path d='M271.0 77.0 L259.9 77.7 L264.9 86.3 Z' fill='#00574A'/><text x='277' y='71' text-anchor='start' font-size='11' font-weight='600' fill='#00574A'>Az 60° = N 60° E</text><line x1='200.0' y1='118.0' x2='236.0' y2='180.4' stroke='#568CBB' stroke-width='2.5'/><path d='M241.0 189.0 L240.3 177.9 L231.7 182.9 Z' fill='#568CBB'/><text x='247' y='205' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>Az 150° = S 30° E</text><line x1='200.0' y1='118.0' x2='164.0' y2='180.4' stroke='#1B795A' stroke-width='2.5'/><path d='M159.0 189.0 L168.3 182.9 L159.7 177.9 Z' fill='#1B795A'/><text x='153' y='205' text-anchor='end' font-size='11' font-weight='600' fill='#1B795A'>Az 210° = S 30° W</text><line x1='200.0' y1='118.0' x2='137.6' y2='82.0' stroke='#00242E' stroke-width='2.5'/><path d='M129.0 77.0 L135.1 86.3 L140.1 77.7 Z' fill='#00242E'/><text x='123' y='71' text-anchor='end' font-size='11' font-weight='600' fill='#00242E'>Az 300° = N 60° W</text><path d='M200.0 88.0 A30 30 0 0 1 226.0 103.0' fill='none' stroke='#00574A' stroke-width='1.5'/><line x1='222.0' y1='96.1' x2='223.0' y2='97.8' stroke='#00574A' stroke-width='1.5'/><path d='M227.0 104.7 L226.4 95.8 L219.5 99.8 Z' fill='#00574A'/><path d='M200.0 142.0 A24 24 0 0 0 212.0 138.8' fill='none' stroke='#568CBB' stroke-width='1.5'/><text x='10' y='236' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Azimuth: clockwise from north, 0° to 360°.</text><text x='10' y='251' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Bearing: from north or south toward east or west, 0° to 90°.</text>",
+     "svg": "<line x1='200.0' y1='210.0' x2='200.0' y2='30.0' stroke='#22221F' stroke-width='1.2'/><path d='M200.0 22.0 L196.0 30.0 L204.0 30.0 Z' fill='#22221F'/><line x1='104.0' y1='118.0' x2='296.0' y2='118.0' stroke='#22221F' stroke-width='1.2'/><text x='200' y='18' text-anchor='middle' font-size='12' font-weight='600' fill='#22221F'>N</text><text x='200' y='224' text-anchor='middle' font-size='12' font-weight='600' fill='#22221F'>S</text><text x='302' y='122' text-anchor='start' font-size='12' font-weight='600' fill='#22221F'>E</text><text x='98' y='122' text-anchor='end' font-size='12' font-weight='600' fill='#22221F'>W</text><line x1='200.0' y1='118.0' x2='262.4' y2='82.0' stroke='#2E563B' stroke-width='2.5'/><path d='M271.0 77.0 L259.9 77.7 L264.9 86.3 Z' fill='#2E563B'/><text x='277' y='71' text-anchor='start' font-size='11' font-weight='600' fill='#2E563B'>Az 60° = N 60° E</text><line x1='200.0' y1='118.0' x2='236.0' y2='180.4' stroke='#6E2B3F' stroke-width='2.5'/><path d='M241.0 189.0 L240.3 177.9 L231.7 182.9 Z' fill='#6E2B3F'/><text x='247' y='205' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>Az 150° = S 30° E</text><line x1='200.0' y1='118.0' x2='164.0' y2='180.4' stroke='#2E563B' stroke-width='2.5'/><path d='M159.0 189.0 L168.3 182.9 L159.7 177.9 Z' fill='#2E563B'/><text x='153' y='205' text-anchor='end' font-size='11' font-weight='600' fill='#2E563B'>Az 210° = S 30° W</text><line x1='200.0' y1='118.0' x2='137.6' y2='82.0' stroke='#22221F' stroke-width='2.5'/><path d='M129.0 77.0 L135.1 86.3 L140.1 77.7 Z' fill='#22221F'/><text x='123' y='71' text-anchor='end' font-size='11' font-weight='600' fill='#22221F'>Az 300° = N 60° W</text><path d='M200.0 88.0 A30 30 0 0 1 226.0 103.0' fill='none' stroke='#2E563B' stroke-width='1.5'/><line x1='222.0' y1='96.1' x2='223.0' y2='97.8' stroke='#2E563B' stroke-width='1.5'/><path d='M227.0 104.7 L226.4 95.8 L219.5 99.8 Z' fill='#2E563B'/><path d='M200.0 142.0 A24 24 0 0 0 212.0 138.8' fill='none' stroke='#6E2B3F' stroke-width='1.5'/><text x='10' y='236' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>Azimuth: clockwise from north, 0° to 360°.</text><text x='10' y='251' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>Bearing: from north or south toward east or west, 0° to 90°.</text>",
      "alt": "Azimuths and bearings: an azimuth is measured clockwise from north through 360°; a bearing is measured from north or south toward east or west, never more than 90°.",
      "caption": "Azimuths and bearings: an azimuth is measured clockwise from north through 360°; a bearing is measured from north or south toward east or west, never more than 90°."
     }
@@ -288,7 +288,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 3
      },
      {
@@ -299,7 +299,7 @@
       "find": [
        "trigonometry"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -310,7 +310,7 @@
       "find": [
        "regular polygon"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -321,7 +321,7 @@
       "find": [
        "trigonometry"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -332,7 +332,7 @@
       "find": [
        "latitude"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -341,7 +341,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -350,7 +350,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -359,7 +359,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]
@@ -421,7 +421,7 @@
    },
    "figure": {
     "viewBox": "0 0 400 185",
-    "svg": "<path d='M50 160 L206 160 L258 56 L102 30 Z' fill='#D9F1D6' fill-opacity='.6' stroke='#00242E' stroke-width='2'/><circle cx='50' cy='160' r='4' fill='#00242E'/><text x='50' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(0, 0)</text><circle cx='206' cy='160' r='4' fill='#00242E'/><text x='206' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(60, 0)</text><circle cx='258' cy='56' r='4' fill='#00242E'/><text x='258' y='48' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(80, 40)</text><circle cx='102' cy='30' r='4' fill='#00242E'/><text x='102' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(20, 50)</text>",
+    "svg": "<path d='M50 160 L206 160 L258 56 L102 30 Z' fill='#CACFC1' fill-opacity='.6' stroke='#22221F' stroke-width='2'/><circle cx='50' cy='160' r='4' fill='#22221F'/><text x='50' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>(0, 0)</text><circle cx='206' cy='160' r='4' fill='#22221F'/><text x='206' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>(60, 0)</text><circle cx='258' cy='56' r='4' fill='#22221F'/><text x='258' y='48' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>(80, 40)</text><circle cx='102' cy='30' r='4' fill='#22221F'/><text x='102' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>(20, 50)</text>",
     "alt": "A parcel with corners at (0, 0), (60, 0), (80, 40), (20, 50) m.",
     "caption": "Area by coordinates: list the corners in order and apply the cross-product sum."
    },
@@ -457,7 +457,7 @@
      "value": 5500.0,
      "figure": {
       "viewBox": "0 0 400 185",
-      "svg": "<path d='M50 160 L164 160 L212 62 L82 30 Z' fill='#D9F1D6' fill-opacity='.6' stroke='#00242E' stroke-width='2'/><circle cx='50' cy='160' r='4' fill='#00242E'/><text x='50' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(0, 0)</text><circle cx='164' cy='160' r='4' fill='#00242E'/><text x='164' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(70, 0)</text><circle cx='212' cy='62' r='4' fill='#00242E'/><text x='212' y='54' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(100, 60)</text><circle cx='82' cy='30' r='4' fill='#00242E'/><text x='82' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>(20, 80)</text>",
+      "svg": "<path d='M50 160 L164 160 L212 62 L82 30 Z' fill='#CACFC1' fill-opacity='.6' stroke='#22221F' stroke-width='2'/><circle cx='50' cy='160' r='4' fill='#22221F'/><text x='50' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>(0, 0)</text><circle cx='164' cy='160' r='4' fill='#22221F'/><text x='164' y='176' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>(70, 0)</text><circle cx='212' cy='62' r='4' fill='#22221F'/><text x='212' y='54' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>(100, 60)</text><circle cx='82' cy='30' r='4' fill='#22221F'/><text x='82' y='22' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>(20, 80)</text>",
       "alt": "A parcel with corners at (0, 0), (70, 0), (100, 60), (20, 80) m."
      }
     },
@@ -470,7 +470,7 @@
      "value": 6403.90758,
      "figure": {
       "viewBox": "0 0 400 180",
-      "svg": "<path d='M70 150 L281 150 L129 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='175' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>150 m</text><text x='91' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>95 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>64°</text>",
+      "svg": "<path d='M70 150 L281 150 L129 30 Z' fill='#E2CBA0' stroke='#22221F' stroke-width='2'/><text x='175' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>150 m</text><text x='91' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#22221F'>95 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>64°</text>",
       "alt": "A triangle with sides of 150 m and 95 m meeting at 64°."
      }
     },
@@ -483,7 +483,7 @@
      "value": 174.0,
      "figure": {
       "viewBox": "0 0 400 185",
-      "svg": "<path d='M60 150 L60 93 L130 59 L200 40 L270 57 L340 102 L340 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='93' stroke='#00242E' stroke-dasharray='4 3'/><text x='60' y='87' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2.4</text><line x1='130' y1='150' x2='130' y2='59' stroke='#00242E' stroke-dasharray='4 3'/><text x='130' y='53' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3.8</text><line x1='200' y1='150' x2='200' y2='40' stroke='#00242E' stroke-dasharray='4 3'/><text x='200' y='34' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4.6</text><line x1='270' y1='150' x2='270' y2='57' stroke='#00242E' stroke-dasharray='4 3'/><text x='270' y='51' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3.9</text><line x1='340' y1='150' x2='340' y2='102' stroke='#00242E' stroke-dasharray='4 3'/><text x='340' y='96' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2</text><line x1='60' y1='160' x2='130' y2='160' stroke='#00242E'/><line x1='60' y1='154' x2='60' y2='166' stroke='#00242E'/><line x1='130' y1='154' x2='130' y2='166' stroke='#00242E'/><text x='95' y='176' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>12 m</text>",
+      "svg": "<path d='M60 150 L60 93 L130 59 L200 40 L270 57 L340 102 L340 150 Z' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/><line x1='40' y1='150' x2='360' y2='150' stroke='#22221F' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='93' stroke='#22221F' stroke-dasharray='4 3'/><text x='60' y='87' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>2.4</text><line x1='130' y1='150' x2='130' y2='59' stroke='#22221F' stroke-dasharray='4 3'/><text x='130' y='53' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>3.8</text><line x1='200' y1='150' x2='200' y2='40' stroke='#22221F' stroke-dasharray='4 3'/><text x='200' y='34' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>4.6</text><line x1='270' y1='150' x2='270' y2='57' stroke='#22221F' stroke-dasharray='4 3'/><text x='270' y='51' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>3.9</text><line x1='340' y1='150' x2='340' y2='102' stroke='#22221F' stroke-dasharray='4 3'/><text x='340' y='96' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>2</text><line x1='60' y1='160' x2='130' y2='160' stroke='#22221F'/><line x1='60' y1='154' x2='60' y2='166' stroke='#22221F'/><line x1='130' y1='154' x2='130' y2='166' stroke='#22221F'/><text x='95' y='176' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>12 m</text>",
       "alt": "Offsets of 2.4, 3.8, 4.6, 3.9 and 2 m from a baseline to a curved boundary at 12 m intervals."
      }
     },
@@ -496,7 +496,7 @@
      "value": 309.6,
      "figure": {
       "viewBox": "0 0 400 185",
-      "svg": "<path d='M60 150 L60 88 L130 58 L200 40 L270 63 L340 98 L340 150 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='40' y1='150' x2='360' y2='150' stroke='#00242E' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='88' stroke='#00242E' stroke-dasharray='4 3'/><text x='60' y='82' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>4.6</text><line x1='130' y1='150' x2='130' y2='58' stroke='#00242E' stroke-dasharray='4 3'/><text x='130' y='52' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6.8</text><line x1='200' y1='150' x2='200' y2='40' stroke='#00242E' stroke-dasharray='4 3'/><text x='200' y='34' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8.1</text><line x1='270' y1='150' x2='270' y2='63' stroke='#00242E' stroke-dasharray='4 3'/><text x='270' y='57' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>6.4</text><line x1='340' y1='150' x2='340' y2='98' stroke='#00242E' stroke-dasharray='4 3'/><text x='340' y='92' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>3.8</text><line x1='60' y1='160' x2='130' y2='160' stroke='#00242E'/><line x1='60' y1='154' x2='60' y2='166' stroke='#00242E'/><line x1='130' y1='154' x2='130' y2='166' stroke='#00242E'/><text x='95' y='176' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>12 m</text>",
+      "svg": "<path d='M60 150 L60 88 L130 58 L200 40 L270 63 L340 98 L340 150 Z' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/><line x1='40' y1='150' x2='360' y2='150' stroke='#22221F' stroke-width='2'/><line x1='60' y1='150' x2='60' y2='88' stroke='#22221F' stroke-dasharray='4 3'/><text x='60' y='82' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>4.6</text><line x1='130' y1='150' x2='130' y2='58' stroke='#22221F' stroke-dasharray='4 3'/><text x='130' y='52' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>6.8</text><line x1='200' y1='150' x2='200' y2='40' stroke='#22221F' stroke-dasharray='4 3'/><text x='200' y='34' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>8.1</text><line x1='270' y1='150' x2='270' y2='63' stroke='#22221F' stroke-dasharray='4 3'/><text x='270' y='57' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>6.4</text><line x1='340' y1='150' x2='340' y2='98' stroke='#22221F' stroke-dasharray='4 3'/><text x='340' y='92' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>3.8</text><line x1='60' y1='160' x2='130' y2='160' stroke='#22221F'/><line x1='60' y1='154' x2='60' y2='166' stroke='#22221F'/><line x1='130' y1='154' x2='130' y2='166' stroke='#22221F'/><text x='95' y='176' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>12 m</text>",
       "alt": "Offsets of 4.6, 6.8, 8.1, 6.4 and 3.8 m from a baseline to a curved boundary at 12 m intervals."
      }
     },
@@ -509,7 +509,7 @@
      "value": 3521.381547,
      "figure": {
       "viewBox": "0 0 400 180",
-      "svg": "<path d='M70 150 L158 150 L77 30 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='114' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#00242E'>72 m</text><text x='66' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>98 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>86.49°</text>",
+      "svg": "<path d='M70 150 L158 150 L77 30 Z' fill='#E2CBA0' stroke='#22221F' stroke-width='2'/><text x='114' y='168' text-anchor='middle' font-size='12' font-weight='400' fill='#22221F'>72 m</text><text x='66' y='86' text-anchor='end' font-size='12' font-weight='400' fill='#22221F'>98 m</text><text x='104' y='144' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>86.49°</text>",
       "alt": "A triangle with sides of 72 m and 98 m meeting at 86.49°."
      }
     },
@@ -577,7 +577,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 214",
-     "svg": "<line x1='30.0' y1='180.0' x2='370.0' y2='180.0' stroke='#00242E' stroke-width='2'/><text x='370' y='196' text-anchor='end' font-size='10' font-weight='400' fill='#00242E'>baseline</text><path d='M50.0 180.0 L50.0 120.0 L125.0 85.0 L125.0 180.0 Z' fill='#D9F1D6' stroke='none' stroke-width='0'/><path d='M125.0 180.0 L125.0 85.0 L200.0 100.0 L200.0 180.0 Z' fill='#EEEDE8' stroke='none' stroke-width='0'/><path d='M200.0 180.0 L200.0 100.0 L275.0 65.0 L275.0 180.0 Z' fill='#D9F1D6' stroke='none' stroke-width='0'/><path d='M275.0 180.0 L275.0 65.0 L350.0 110.0 L350.0 180.0 Z' fill='#EEEDE8' stroke='none' stroke-width='0'/><path d='M50 120 Q70 70 125 85 Q160 98 200 100 Q240 98 275 65 Q310 40 350 110' fill='none' stroke='#00242E' stroke-width='2'/><text x='200' y='80' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>boundary</text><line x1='50.0' y1='180.0' x2='50.0' y2='120.0' stroke='#568CBB' stroke-width='2'/><text x='54' y='148' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>h1</text><line x1='125.0' y1='180.0' x2='125.0' y2='85.0' stroke='#568CBB' stroke-width='2'/><text x='129' y='130' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>h2</text><line x1='200.0' y1='180.0' x2='200.0' y2='100.0' stroke='#568CBB' stroke-width='2'/><text x='204' y='138' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>h3</text><line x1='275.0' y1='180.0' x2='275.0' y2='65.0' stroke='#568CBB' stroke-width='2'/><text x='279' y='120' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>h4</text><line x1='350.0' y1='180.0' x2='350.0' y2='110.0' stroke='#568CBB' stroke-width='2'/><text x='354' y='143' text-anchor='start' font-size='11' font-weight='600' fill='#568CBB'>h5</text><line x1='50.0' y1='194.0' x2='125.0' y2='194.0' stroke='#00242E' stroke-width='1'/><line x1='50.0' y1='189.0' x2='50.0' y2='199.0' stroke='#00242E' stroke-width='1'/><line x1='125.0' y1='189.0' x2='125.0' y2='199.0' stroke='#00242E' stroke-width='1'/><text x='88' y='208' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>d</text><text x='200' y='22' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Trapezoidal rule: Area ≈ d (h1/2 + h2 + h3 + h4 + h5/2)</text><text x='200' y='38' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>each strip is a trapezoid; equal spacing d</text>",
+     "svg": "<line x1='30.0' y1='180.0' x2='370.0' y2='180.0' stroke='#22221F' stroke-width='2'/><text x='370' y='196' text-anchor='end' font-size='10' font-weight='400' fill='#22221F'>baseline</text><path d='M50.0 180.0 L50.0 120.0 L125.0 85.0 L125.0 180.0 Z' fill='#CACFC1' stroke='none' stroke-width='0'/><path d='M125.0 180.0 L125.0 85.0 L200.0 100.0 L200.0 180.0 Z' fill='#E2CBA0' stroke='none' stroke-width='0'/><path d='M200.0 180.0 L200.0 100.0 L275.0 65.0 L275.0 180.0 Z' fill='#CACFC1' stroke='none' stroke-width='0'/><path d='M275.0 180.0 L275.0 65.0 L350.0 110.0 L350.0 180.0 Z' fill='#E2CBA0' stroke='none' stroke-width='0'/><path d='M50 120 Q70 70 125 85 Q160 98 200 100 Q240 98 275 65 Q310 40 350 110' fill='none' stroke='#22221F' stroke-width='2'/><text x='200' y='80' text-anchor='middle' font-size='10' font-weight='400' fill='#22221F'>boundary</text><line x1='50.0' y1='180.0' x2='50.0' y2='120.0' stroke='#6E2B3F' stroke-width='2'/><text x='54' y='148' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>h1</text><line x1='125.0' y1='180.0' x2='125.0' y2='85.0' stroke='#6E2B3F' stroke-width='2'/><text x='129' y='130' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>h2</text><line x1='200.0' y1='180.0' x2='200.0' y2='100.0' stroke='#6E2B3F' stroke-width='2'/><text x='204' y='138' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>h3</text><line x1='275.0' y1='180.0' x2='275.0' y2='65.0' stroke='#6E2B3F' stroke-width='2'/><text x='279' y='120' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>h4</text><line x1='350.0' y1='180.0' x2='350.0' y2='110.0' stroke='#6E2B3F' stroke-width='2'/><text x='354' y='143' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>h5</text><line x1='50.0' y1='194.0' x2='125.0' y2='194.0' stroke='#22221F' stroke-width='1'/><line x1='50.0' y1='189.0' x2='50.0' y2='199.0' stroke='#22221F' stroke-width='1'/><line x1='125.0' y1='189.0' x2='125.0' y2='199.0' stroke='#22221F' stroke-width='1'/><text x='88' y='208' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>d</text><text x='200' y='22' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Trapezoidal rule: Area ≈ d (h1/2 + h2 + h3 + h4 + h5/2)</text><text x='200' y='38' text-anchor='middle' font-size='10' font-weight='400' fill='#22221F'>each strip is a trapezoid; equal spacing d</text>",
      "alt": "Area of an irregular boundary by offsets: perpendicular offsets h at equal spacing d from a baseline split the area into trapezoids, which are summed.",
      "caption": "Area of an irregular boundary by offsets: perpendicular offsets h at equal spacing d from a baseline split the area into trapezoids, which are summed."
     }
@@ -618,7 +618,7 @@
       "find": [
        "trigonometry"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -629,7 +629,7 @@
       "find": [
        "trapezoidal rule"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -640,7 +640,7 @@
       "find": [
        "Simpson's 1/3 rule"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -651,7 +651,7 @@
       "find": [
        "area formulas"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -662,7 +662,7 @@
       "find": [
        "acre"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      }
     ]
@@ -825,7 +825,7 @@
      "value": 35.75,
      "figure": {
       "viewBox": "0 0 400 185",
-      "svg": "<path d='M147 150 L253 150 L320 120 L80 120 Z' fill='#EEEDE8' stroke='#00242E' stroke-width='2'/><text x='200' y='155' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>8.8 m</text><text x='200' y='135' text-anchor='middle' font-size='11' font-weight='400' fill='#00242E'>2.5 m deep</text><text x='320' y='138' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>2.2 : 1</text>",
+      "svg": "<path d='M147 150 L253 150 L320 120 L80 120 Z' fill='#E2CBA0' stroke='#22221F' stroke-width='2'/><text x='200' y='155' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>8.8 m</text><text x='200' y='135' text-anchor='middle' font-size='11' font-weight='400' fill='#22221F'>2.5 m deep</text><text x='320' y='138' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>2.2 : 1</text>",
       "alt": "A level-section cut: a trapezoid wider at the top than at the base."
      }
     },
@@ -879,7 +879,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 206",
-     "svg": "<line x1='40.0' y1='190.0' x2='190.0' y2='130.0' stroke='#E7E8E8' stroke-width='1.2' stroke-dasharray='6 4'/><line x1='170.0' y1='190.0' x2='350.0' y2='130.0' stroke='#E7E8E8' stroke-width='1.2' stroke-dasharray='6 4'/><line x1='145.0' y1='135.0' x2='315.0' y2='60.0' stroke='#E7E8E8' stroke-width='1.2' stroke-dasharray='6 4'/><line x1='65.0' y1='135.0' x2='220.0' y2='60.0' stroke='#E7E8E8' stroke-width='1.2' stroke-dasharray='6 4'/><path d='M190.0 130.0 L350.0 130.0 L315.0 60.0 L220.0 60.0 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><path d='M40.0 190.0 L170.0 190.0 L145.0 135.0 L65.0 135.0 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><text x='105' y='172' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>A1</text><text x='285' y='102' text-anchor='middle' font-size='12' font-weight='600' fill='#1B795A'>A2</text><line x1='170.0' y1='190.0' x2='360.0' y2='130.0' stroke='#00242E' stroke-width='1'/><text x='250' y='186' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>L: distance between stations</text><text x='30' y='30' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>Average end area:</text><text x='30' y='46' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>V = L (A1 + A2) / 2</text><text x='30' y='62' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>cubic feet ÷ 27 = cubic yards</text><text x='30' y='80' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Slightly high; the prismoidal</text><text x='30' y='92' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>formula is more exact.</text>",
+     "svg": "<line x1='40.0' y1='190.0' x2='190.0' y2='130.0' stroke='#D8C5C2' stroke-width='1.2' stroke-dasharray='6 4'/><line x1='170.0' y1='190.0' x2='350.0' y2='130.0' stroke='#D8C5C2' stroke-width='1.2' stroke-dasharray='6 4'/><line x1='145.0' y1='135.0' x2='315.0' y2='60.0' stroke='#D8C5C2' stroke-width='1.2' stroke-dasharray='6 4'/><line x1='65.0' y1='135.0' x2='220.0' y2='60.0' stroke='#D8C5C2' stroke-width='1.2' stroke-dasharray='6 4'/><path d='M190.0 130.0 L350.0 130.0 L315.0 60.0 L220.0 60.0 Z' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/><path d='M40.0 190.0 L170.0 190.0 L145.0 135.0 L65.0 135.0 Z' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/><text x='105' y='172' text-anchor='middle' font-size='12' font-weight='600' fill='#2E563B'>A1</text><text x='285' y='102' text-anchor='middle' font-size='12' font-weight='600' fill='#2E563B'>A2</text><line x1='170.0' y1='190.0' x2='360.0' y2='130.0' stroke='#22221F' stroke-width='1'/><text x='250' y='186' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>L: distance between stations</text><text x='30' y='30' text-anchor='start' font-size='11' font-weight='600' fill='#22221F'>Average end area:</text><text x='30' y='46' text-anchor='start' font-size='12' font-weight='600' fill='#2E563B'>V = L (A1 + A2) / 2</text><text x='30' y='62' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>cubic feet ÷ 27 = cubic yards</text><text x='30' y='80' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>Slightly high; the prismoidal</text><text x='30' y='92' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>formula is more exact.</text>",
      "alt": "The average end area method: the earthwork volume between two stations is the distance between them times the average of the two cross-section areas.",
      "caption": "The average end area method: the earthwork volume between two stations is the distance between them times the average of the two cross-section areas."
     }
@@ -913,7 +913,7 @@
       "find": [
        "average end area"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -924,7 +924,7 @@
       "find": [
        "earthwork formulas"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -935,7 +935,7 @@
       "find": [
        "prismoidal formula"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -944,7 +944,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -955,7 +955,7 @@
       "find": [
        "earthwork formulas"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -966,7 +966,7 @@
       "find": [
        "right circular cone"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]
@@ -1061,7 +1061,7 @@
      "value": 196.561806,
      "figure": {
       "viewBox": "0 0 400 200",
-      "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#00242E'/><line x1='80' y1='100' x2='320' y2='100' stroke='#00242E'/><text x='200' y='9.8' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#00242E'>E</text><line x1='200' y1='100' x2='265' y2='53' stroke='#00574A' stroke-width='3'/><path d='M274 46 L261 49 L268 58 Z' fill='#00574A'/><circle cx='200' cy='100' r='4' fill='#00242E'/><text x='284' y='40' text-anchor='end' font-size='12' font-weight='600' fill='#00574A'>264.50 m, azimuth 48°</text>",
+      "svg": "<line x1='200' y1='10' x2='200' y2='190' stroke='#22221F'/><line x1='80' y1='100' x2='320' y2='100' stroke='#22221F'/><text x='200' y='9.8' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>N</text><text x='328' y='104' text-anchor='start' font-size='11' font-weight='600' fill='#22221F'>E</text><line x1='200' y1='100' x2='265' y2='53' stroke='#2E563B' stroke-width='3'/><path d='M274 46 L261 49 L268 58 Z' fill='#2E563B'/><circle cx='200' cy='100' r='4' fill='#22221F'/><text x='284' y='40' text-anchor='end' font-size='12' font-weight='600' fill='#2E563B'>264.50 m, azimuth 48°</text>",
       "alt": "A line drawn from the origin at an azimuth of 48° clockwise from north."
      }
     },
@@ -1082,7 +1082,7 @@
      "value": 68.749494,
      "figure": {
       "viewBox": "0 0 400 190",
-      "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='310' y2='67' stroke='#00574A' stroke-width='3'/><path d='M320 63 L308 62 L312 72 Z' fill='#00574A'/><text x='330' y='55' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A to B</text><line x1='70' y1='160' x2='309' y2='160' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M320 160 L309 154 L309 166 Z' fill='#568CBB'/><text x='330' y='152' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>departure</text><line x1='70' y1='160' x2='70' y2='74' stroke='#1B795A' stroke-width='3' stroke-dasharray='6 4'/><path d='M70 63 L64 74 L76 74 Z' fill='#1B795A'/><text x='60' y='55' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>latitude</text>",
+      "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#D8C5C2' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#D8C5C2' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>y</text><line x1='70' y1='160' x2='310' y2='67' stroke='#2E563B' stroke-width='3'/><path d='M320 63 L308 62 L312 72 Z' fill='#2E563B'/><text x='330' y='55' text-anchor='start' font-size='12' font-weight='600' fill='#2E563B'>A to B</text><line x1='70' y1='160' x2='309' y2='160' stroke='#6E2B3F' stroke-width='3' stroke-dasharray='6 4'/><path d='M320 160 L309 154 L309 166 Z' fill='#6E2B3F'/><text x='330' y='152' text-anchor='start' font-size='12' font-weight='600' fill='#6E2B3F'>departure</text><line x1='70' y1='160' x2='70' y2='74' stroke='#2E563B' stroke-width='3' stroke-dasharray='6 4'/><path d='M70 63 L64 74 L76 74 Z' fill='#2E563B'/><text x='60' y='55' text-anchor='end' font-size='12' font-weight='600' fill='#2E563B'>latitude</text>",
       "alt": "Vector diagram: A to B; departure; latitude."
      }
     },
@@ -1095,7 +1095,7 @@
      "value": 130.981869,
      "figure": {
       "viewBox": "0 0 400 190",
-      "svg": "<line x1='40' y1='101' x2='370' y2='101' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='101' x2='309' y2='157' stroke='#00574A' stroke-width='3'/><path d='M320 160 L311 152 L308 163 Z' fill='#00574A'/><text x='330' y='176' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>A to B</text><line x1='70' y1='101' x2='309' y2='101' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M320 101 L309 96 L309 107 Z' fill='#568CBB'/><text x='330' y='93' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>departure</text><line x1='70' y1='101' x2='70' y2='149' stroke='#1B795A' stroke-width='3' stroke-dasharray='6 4'/><path d='M70 160 L76 149 L64 149 Z' fill='#1B795A'/><text x='60' y='176' text-anchor='end' font-size='12' font-weight='600' fill='#1B795A'>latitude</text>",
+      "svg": "<line x1='40' y1='101' x2='370' y2='101' stroke='#D8C5C2' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#D8C5C2' stroke-width='2'/><text x='372' y='96' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>y</text><line x1='70' y1='101' x2='309' y2='157' stroke='#2E563B' stroke-width='3'/><path d='M320 160 L311 152 L308 163 Z' fill='#2E563B'/><text x='330' y='176' text-anchor='start' font-size='12' font-weight='600' fill='#2E563B'>A to B</text><line x1='70' y1='101' x2='309' y2='101' stroke='#6E2B3F' stroke-width='3' stroke-dasharray='6 4'/><path d='M320 101 L309 96 L309 107 Z' fill='#6E2B3F'/><text x='330' y='93' text-anchor='start' font-size='12' font-weight='600' fill='#6E2B3F'>departure</text><line x1='70' y1='101' x2='70' y2='149' stroke='#2E563B' stroke-width='3' stroke-dasharray='6 4'/><path d='M70 160 L76 149 L64 149 Z' fill='#2E563B'/><text x='60' y='176' text-anchor='end' font-size='12' font-weight='600' fill='#2E563B'>latitude</text>",
       "alt": "Vector diagram: A to B; departure; latitude."
      }
     },
@@ -1161,7 +1161,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 256",
-     "svg": "<line x1='80.0' y1='170.0' x2='290.0' y2='179.5' stroke='#00574A' stroke-width='2.5'/><path d='M300.0 180.0 L290.2 174.6 L289.8 184.5 Z' fill='#00574A'/><line x1='300.0' y1='180.0' x2='345.9' y2='79.1' stroke='#00574A' stroke-width='2.5'/><path d='M350.0 70.0 L341.3 77.0 L350.4 81.2 Z' fill='#00574A'/><line x1='350.0' y1='70.0' x2='159.9' y2='41.5' stroke='#00574A' stroke-width='2.5'/><path d='M150.0 40.0 L159.1 46.4 L160.6 36.5 Z' fill='#00574A'/><line x1='150.0' y1='40.0' x2='94.5' y2='149.1' stroke='#00574A' stroke-width='2.5'/><path d='M90.0 158.0 L99.0 151.4 L90.1 146.8 Z' fill='#00574A'/><circle cx='80.0' cy='170.0' r='4' fill='#00242E'/><circle cx='300.0' cy='180.0' r='4' fill='#00242E'/><circle cx='350.0' cy='70.0' r='4' fill='#00242E'/><circle cx='150.0' cy='40.0' r='4' fill='#00242E'/><text x='72' y='184' text-anchor='end' font-size='11' font-weight='600' fill='#00242E'>A (start)</text><text x='292' y='196' text-anchor='end' font-size='12' font-weight='600' fill='#00242E'>B</text><text x='360' y='66' text-anchor='start' font-size='12' font-weight='600' fill='#00242E'>C</text><text x='146' y='32' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>D</text><line x1='300.0' y1='180.0' x2='350.0' y2='180.0' stroke='#568CBB' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='350.0' y1='180.0' x2='350.0' y2='70.0' stroke='#568CBB' stroke-width='1.5' stroke-dasharray='6 4'/><text x='326' y='196' text-anchor='middle' font-size='10' font-weight='400' fill='#568CBB'>departure</text><text x='356' y='128' text-anchor='start' font-size='10' font-weight='400' fill='#568CBB'>latitude</text><line x1='90.0' y1='158.0' x2='84.5' y2='164.6' stroke='#FF6622' stroke-width='2'/><path d='M80.0 170.0 L87.2 166.9 L81.8 162.4 Z' fill='#FF6622'/><text x='98' y='150' text-anchor='start' font-size='11' font-weight='600' fill='#FF6622'>misclosure</text><text x='10' y='222' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Latitude = L cos(azimuth)</text><text x='10' y='235' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Departure = L sin(azimuth)</text><text x='10' y='248' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Closed loop: ΣLat = ΣDep = 0</text><text x='210' y='222' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Misclosure = √(ΣLat² + ΣDep²)</text><text x='210' y='235' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Precision = misclosure / perimeter</text>",
+     "svg": "<line x1='80.0' y1='170.0' x2='290.0' y2='179.5' stroke='#2E563B' stroke-width='2.5'/><path d='M300.0 180.0 L290.2 174.6 L289.8 184.5 Z' fill='#2E563B'/><line x1='300.0' y1='180.0' x2='345.9' y2='79.1' stroke='#2E563B' stroke-width='2.5'/><path d='M350.0 70.0 L341.3 77.0 L350.4 81.2 Z' fill='#2E563B'/><line x1='350.0' y1='70.0' x2='159.9' y2='41.5' stroke='#2E563B' stroke-width='2.5'/><path d='M150.0 40.0 L159.1 46.4 L160.6 36.5 Z' fill='#2E563B'/><line x1='150.0' y1='40.0' x2='94.5' y2='149.1' stroke='#2E563B' stroke-width='2.5'/><path d='M90.0 158.0 L99.0 151.4 L90.1 146.8 Z' fill='#2E563B'/><circle cx='80.0' cy='170.0' r='4' fill='#22221F'/><circle cx='300.0' cy='180.0' r='4' fill='#22221F'/><circle cx='350.0' cy='70.0' r='4' fill='#22221F'/><circle cx='150.0' cy='40.0' r='4' fill='#22221F'/><text x='72' y='184' text-anchor='end' font-size='11' font-weight='600' fill='#22221F'>A (start)</text><text x='292' y='196' text-anchor='end' font-size='12' font-weight='600' fill='#22221F'>B</text><text x='360' y='66' text-anchor='start' font-size='12' font-weight='600' fill='#22221F'>C</text><text x='146' y='32' text-anchor='middle' font-size='12' font-weight='600' fill='#22221F'>D</text><line x1='300.0' y1='180.0' x2='350.0' y2='180.0' stroke='#6E2B3F' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='350.0' y1='180.0' x2='350.0' y2='70.0' stroke='#6E2B3F' stroke-width='1.5' stroke-dasharray='6 4'/><text x='326' y='196' text-anchor='middle' font-size='10' font-weight='400' fill='#6E2B3F'>departure</text><text x='356' y='128' text-anchor='start' font-size='10' font-weight='400' fill='#6E2B3F'>latitude</text><line x1='90.0' y1='158.0' x2='84.5' y2='164.6' stroke='#6E2B3F' stroke-width='2'/><path d='M80.0 170.0 L87.2 166.9 L81.8 162.4 Z' fill='#6E2B3F'/><text x='98' y='150' text-anchor='start' font-size='11' font-weight='600' fill='#6E2B3F'>misclosure</text><text x='10' y='222' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>Latitude = L cos(azimuth)</text><text x='10' y='235' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>Departure = L sin(azimuth)</text><text x='10' y='248' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>Closed loop: ΣLat = ΣDep = 0</text><text x='210' y='222' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>Misclosure = √(ΣLat² + ΣDep²)</text><text x='210' y='235' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>Precision = misclosure / perimeter</text>",
      "alt": "A closed traverse whose measured legs do not quite return to the start: each leg splits into a latitude and a departure, and the leftover sums give the linear misclosure.",
      "caption": "A closed traverse whose measured legs do not quite return to the start: each leg splits into a latitude and a departure, and the leftover sums give the linear misclosure."
     }
@@ -1191,7 +1191,7 @@
       "find": [
        "latitude"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1224,7 +1224,7 @@
       "find": [
        "latitude"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1235,7 +1235,7 @@
       "find": [
        "latitude"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1244,7 +1244,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]
@@ -1296,7 +1296,7 @@
    },
    "figure": {
     "viewBox": "0 0 400 185",
-    "svg": "<path d='M20 150 L120 140 L200 132 L290 150 L380 158' fill='none' stroke='#00242E' stroke-width='2'/><line x1='70' y1='50' x2='330' y2='50' stroke='#568CBB' stroke-dasharray='6 4'/><rect x='66' y='38' width='8' height='107' fill='#EEEDE8' stroke='#00242E'/><rect x='326' y='38' width='8' height='116' fill='#EEEDE8' stroke='#00242E'/><rect x='186' y='43' width='28' height='14' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><path d='M200 57 L186 132 M200 57 L214 132' stroke='#00242E' stroke-width='2'/><text x='70' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Benchmark</text><text x='330' y='176' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>New point</text><text x='84' y='96' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>BS 1.52 m</text><text x='316' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>FS 2.31 m</text><text x='200' y='36' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Line of sight</text>",
+    "svg": "<path d='M20 150 L120 140 L200 132 L290 150 L380 158' fill='none' stroke='#22221F' stroke-width='2'/><line x1='70' y1='50' x2='330' y2='50' stroke='#6E2B3F' stroke-dasharray='6 4'/><rect x='66' y='38' width='8' height='107' fill='#E2CBA0' stroke='#22221F'/><rect x='326' y='38' width='8' height='116' fill='#E2CBA0' stroke='#22221F'/><rect x='186' y='43' width='28' height='14' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/><path d='M200 57 L186 132 M200 57 L214 132' stroke='#22221F' stroke-width='2'/><text x='70' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#22221F'>Benchmark</text><text x='330' y='176' text-anchor='middle' font-size='12' font-weight='600' fill='#22221F'>New point</text><text x='84' y='96' text-anchor='start' font-size='12' font-weight='400' fill='#22221F'>BS 1.52 m</text><text x='316' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#22221F'>FS 2.31 m</text><text x='200' y='36' text-anchor='middle' font-size='11' font-weight='400' fill='#6E2B3F'>Line of sight</text>",
     "alt": "A level set up between a benchmark and a new point, with a backsight of 1.52 m and a foresight of 2.31 m.",
     "caption": "Differential leveling: height of instrument = benchmark + backsight; new elevation = height of instrument - foresight."
    },
@@ -1324,7 +1324,7 @@
      "value": 74.38,
      "figure": {
       "viewBox": "0 0 400 185",
-      "svg": "<path d='M20 150 L120 140 L200 132 L290 150 L380 158' fill='none' stroke='#00242E' stroke-width='2'/><line x1='70' y1='50' x2='330' y2='50' stroke='#568CBB' stroke-dasharray='6 4'/><rect x='66' y='38' width='8' height='107' fill='#EEEDE8' stroke='#00242E'/><rect x='326' y='38' width='8' height='116' fill='#EEEDE8' stroke='#00242E'/><rect x='186' y='43' width='28' height='14' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><path d='M200 57 L186 132 M200 57 L214 132' stroke='#00242E' stroke-width='2'/><text x='70' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>Benchmark</text><text x='330' y='176' text-anchor='middle' font-size='12' font-weight='600' fill='#00242E'>New point</text><text x='84' y='96' text-anchor='start' font-size='12' font-weight='400' fill='#00242E'>BS 1.84 m</text><text x='316' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#00242E'>FS 2.96 m</text><text x='200' y='36' text-anchor='middle' font-size='11' font-weight='400' fill='#568CBB'>Line of sight</text>",
+      "svg": "<path d='M20 150 L120 140 L200 132 L290 150 L380 158' fill='none' stroke='#22221F' stroke-width='2'/><line x1='70' y1='50' x2='330' y2='50' stroke='#6E2B3F' stroke-dasharray='6 4'/><rect x='66' y='38' width='8' height='107' fill='#E2CBA0' stroke='#22221F'/><rect x='326' y='38' width='8' height='116' fill='#E2CBA0' stroke='#22221F'/><rect x='186' y='43' width='28' height='14' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/><path d='M200 57 L186 132 M200 57 L214 132' stroke='#22221F' stroke-width='2'/><text x='70' y='170' text-anchor='middle' font-size='12' font-weight='600' fill='#22221F'>Benchmark</text><text x='330' y='176' text-anchor='middle' font-size='12' font-weight='600' fill='#22221F'>New point</text><text x='84' y='96' text-anchor='start' font-size='12' font-weight='400' fill='#22221F'>BS 1.84 m</text><text x='316' y='96' text-anchor='end' font-size='12' font-weight='400' fill='#22221F'>FS 2.96 m</text><text x='200' y='36' text-anchor='middle' font-size='11' font-weight='400' fill='#6E2B3F'>Line of sight</text>",
       "alt": "A level set up between a benchmark and a new point, with a backsight of 1.84 m and a foresight of 2.96 m."
      }
     },
@@ -1369,7 +1369,7 @@
      "value": 13.579361,
      "figure": {
       "viewBox": "0 0 400 190",
-      "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#E7E8E8' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#E7E8E8' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>y</text><line x1='70' y1='160' x2='309' y2='128' stroke='#00574A' stroke-width='3'/><path d='M320 127 L308 123 L310 133 Z' fill='#00574A'/><text x='330' y='119' text-anchor='start' font-size='12' font-weight='600' fill='#00574A'>sloping</text><line x1='70' y1='160' x2='309' y2='160' stroke='#568CBB' stroke-width='3' stroke-dasharray='6 4'/><path d='M320 160 L309 154 L309 166 Z' fill='#568CBB'/><text x='330' y='152' text-anchor='start' font-size='12' font-weight='600' fill='#568CBB'>level</text>",
+      "svg": "<line x1='40' y1='160' x2='370' y2='160' stroke='#D8C5C2' stroke-width='2'/><line x1='70' y1='14' x2='70' y2='176' stroke='#D8C5C2' stroke-width='2'/><text x='372' y='155' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>x</text><text x='78' y='22' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>y</text><line x1='70' y1='160' x2='309' y2='128' stroke='#2E563B' stroke-width='3'/><path d='M320 127 L308 123 L310 133 Z' fill='#2E563B'/><text x='330' y='119' text-anchor='start' font-size='12' font-weight='600' fill='#2E563B'>sloping</text><line x1='70' y1='160' x2='309' y2='160' stroke='#6E2B3F' stroke-width='3' stroke-dasharray='6 4'/><path d='M320 160 L309 154 L309 166 Z' fill='#6E2B3F'/><text x='330' y='152' text-anchor='start' font-size='12' font-weight='600' fill='#6E2B3F'>level</text>",
       "alt": "Vector diagram: sloping; level."
      }
     }
@@ -1414,7 +1414,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 206",
-     "svg": "<path d='M10 190 L120 180 L240 140 L390 110' fill='none' stroke='#00242E' stroke-width='2'/><rect x='30.0' y='120.0' width='6.0' height='66.0' fill='#FFFFFF' stroke='#00242E' stroke-width='1'/><text x='33' y='112' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>BM</text><rect x='180.0' y='90.0' width='6.0' height='72.0' fill='#FFFFFF' stroke='#00242E' stroke-width='1'/><text x='183' y='82' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>TP</text><rect x='340.0' y='54.0' width='6.0' height='64.0' fill='#FFFFFF' stroke='#00242E' stroke-width='1'/><text x='343' y='46' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>B</text><line x1='95.0' y1='180.0' x2='105.0' y2='120.0' stroke='#00242E' stroke-width='1.5'/><line x1='115.0' y1='180.0' x2='105.0' y2='120.0' stroke='#00242E' stroke-width='1.5'/><rect x='95.0' y='110.0' width='20.0' height='10.0' fill='#00242E' stroke='#00242E' stroke-width='1'/><line x1='36.0' y1='115.0' x2='95.0' y2='115.0' stroke='#568CBB' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='115.0' y1='115.0' x2='180.0' y2='115.0' stroke='#00574A' stroke-width='1.5' stroke-dasharray='6 4'/><text x='69' y='110' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>BS</text><text x='144' y='110' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>FS</text><line x1='255.0' y1='144.0' x2='265.0' y2='84.0' stroke='#00242E' stroke-width='1.5'/><line x1='275.0' y1='144.0' x2='265.0' y2='84.0' stroke='#00242E' stroke-width='1.5'/><rect x='255.0' y='74.0' width='20.0' height='10.0' fill='#00242E' stroke='#00242E' stroke-width='1'/><line x1='186.0' y1='79.0' x2='255.0' y2='79.0' stroke='#568CBB' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='275.0' y1='79.0' x2='340.0' y2='79.0' stroke='#00574A' stroke-width='1.5' stroke-dasharray='6 4'/><text x='224' y='74' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>BS</text><text x='304' y='74' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>FS</text><text x='10' y='30' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Height of instrument HI = elevation + backsight (BS)</text><text x='10' y='45' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>New elevation = HI - foresight (FS)</text><text x='10' y='60' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Elev B = Elev BM + ΣBS - ΣFS</text>",
+     "svg": "<path d='M10 190 L120 180 L240 140 L390 110' fill='none' stroke='#22221F' stroke-width='2'/><rect x='30.0' y='120.0' width='6.0' height='66.0' fill='#F6F1E7' stroke='#22221F' stroke-width='1'/><text x='33' y='112' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>BM</text><rect x='180.0' y='90.0' width='6.0' height='72.0' fill='#F6F1E7' stroke='#22221F' stroke-width='1'/><text x='183' y='82' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>TP</text><rect x='340.0' y='54.0' width='6.0' height='64.0' fill='#F6F1E7' stroke='#22221F' stroke-width='1'/><text x='343' y='46' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>B</text><line x1='95.0' y1='180.0' x2='105.0' y2='120.0' stroke='#22221F' stroke-width='1.5'/><line x1='115.0' y1='180.0' x2='105.0' y2='120.0' stroke='#22221F' stroke-width='1.5'/><rect x='95.0' y='110.0' width='20.0' height='10.0' fill='#22221F' stroke='#22221F' stroke-width='1'/><line x1='36.0' y1='115.0' x2='95.0' y2='115.0' stroke='#6E2B3F' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='115.0' y1='115.0' x2='180.0' y2='115.0' stroke='#2E563B' stroke-width='1.5' stroke-dasharray='6 4'/><text x='69' y='110' text-anchor='middle' font-size='11' font-weight='600' fill='#6E2B3F'>BS</text><text x='144' y='110' text-anchor='middle' font-size='11' font-weight='600' fill='#2E563B'>FS</text><line x1='255.0' y1='144.0' x2='265.0' y2='84.0' stroke='#22221F' stroke-width='1.5'/><line x1='275.0' y1='144.0' x2='265.0' y2='84.0' stroke='#22221F' stroke-width='1.5'/><rect x='255.0' y='74.0' width='20.0' height='10.0' fill='#22221F' stroke='#22221F' stroke-width='1'/><line x1='186.0' y1='79.0' x2='255.0' y2='79.0' stroke='#6E2B3F' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='275.0' y1='79.0' x2='340.0' y2='79.0' stroke='#2E563B' stroke-width='1.5' stroke-dasharray='6 4'/><text x='224' y='74' text-anchor='middle' font-size='11' font-weight='600' fill='#6E2B3F'>BS</text><text x='304' y='74' text-anchor='middle' font-size='11' font-weight='600' fill='#2E563B'>FS</text><text x='10' y='30' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>Height of instrument HI = elevation + backsight (BS)</text><text x='10' y='45' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>New elevation = HI - foresight (FS)</text><text x='10' y='60' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>Elev B = Elev BM + ΣBS - ΣFS</text>",
      "alt": "Differential leveling through a turning point: each setup adds the backsight to get the height of instrument and subtracts the foresight; overall, elevation of B = BM + sum of backsights - sum of foresights.",
      "caption": "Differential leveling through a turning point: each setup adds the backsight to get the height of instrument and subtracts the foresight; overall, elevation of B = BM + sum of backsights - sum of foresights."
     }
@@ -1442,7 +1442,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1451,7 +1451,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -1460,7 +1460,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1469,7 +1469,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1478,7 +1478,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -1489,7 +1489,7 @@
       "find": [
        "trigonometry"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]

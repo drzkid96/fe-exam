@@ -1,5 +1,5 @@
 """Puts an exam playbook at the top of every lesson: the hand-written fast moves (playbook.py) and, from the question bank,
-every question type in the lesson with its exact ask, the handbook page to open, a target time and a link to try it.
+every question type in the lesson with its exact ask, the handbook page to open, a target time (from the number of calculation steps in its solution) and a link to try it.
 Topic overviews get the topic's share of the exam. Run last among the lesson scripts."""
 import json, os, re, glob
 from author_common import ROOT
@@ -15,7 +15,8 @@ for q in qs:
 def ask(stem):
     t = re.sub(r'\s+', ' ', stem.replace('**', '')).strip()
     parts = re.split(r'(?<=[.?])\s+(?=[A-Z])', t); qn = [p for p in parts if p.endswith('?')]
-    a = (qn or parts)[-1]
+    do = [p for p in parts if re.match(r'(Click|Select|Choose|Find|Determine|Calculate|Compute|Match|Drag|Put|Order|Arrange|Estimate|Identify|Classify|Rank)\b', p)]
+    a = (qn or do or parts)[-1]
     return a if len(a) <= 140 else a[:137].rsplit(' ', 1)[0] + '...'
 
 n_rows = n_types = 0; missing = []
@@ -37,8 +38,10 @@ for t in exam['topics']:
             if q.get('subtopic') != sub: continue
             hb = (q.get('handbook') or [{}])[0] if q.get('lookup') is not False else {}
             calc = (q.get('verify') or {}).get('method') == 'computed'
+            steps = sum(1 for ln in re.split(r'\n+|(?<=\.)\s+(?=[A-Z])', q.get('solution', '')) if '=' in ln)
+            tmin = 1 if not calc else 1.5 if steps <= 1 else 2 if steps == 2 else 3 if steps <= 4 else 4
             types.append({'id': q['id'], 'ask': ask(q['stem']), 'section': hb.get('section', ''), 'page': hb.get('page', ''), 'find': (hb.get('find') or [])[:1],
-                          'time': 'about 3 min' if calc else 'about 1 min', 'n': q.get('versions', 1)})
+                          'time': f"about {tmin:g} min", 'n': q.get('versions', 1)})
         s['play'] = {'intro': f"{t['name']} is {share}. This lesson's questions: recognise the type in the left column, make the move on the right, and stay near {per:.0f} minutes each.",
                      'rows': [list(r) for r in rows], 'types': types}
         n_rows += len(rows); n_types += len(types)

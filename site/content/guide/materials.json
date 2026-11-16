@@ -66,7 +66,7 @@
    "figures": [
     {
      "viewBox": "0 0 540 130",
-     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#568CBB'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Materials</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#00574A'>Comes back in</text><text x='182' y='83' text-anchor='end' font-size='10' font-weight='400' fill='#568CBB'>Mechanics B: Stress and strain</text><line x1='186.0' y1='79.0' x2='198.0' y2='77.0' stroke='#568CBB' stroke-width='1'/><line x1='186.0' y1='79.0' x2='198.0' y2='103.0' stroke='#568CBB' stroke-width='1'/><text x='360' y='55' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Structural H: Concrete design</text><line x1='338.0' y1='103.0' x2='356.0' y2='51.0' stroke='#00574A' stroke-width='1'/><text x='360' y='111' text-anchor='start' font-size='10' font-weight='400' fill='#00574A'>Transport B: Pavements</text><line x1='338.0' y1='51.0' x2='356.0' y2='107.0' stroke='#00574A' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>1. Mix design (A)</text><rect x='198.0' y='66.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='80' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>2. Test methods (B)</text><rect x='198.0' y='92.0' width='140.0' height='22.0' fill='#D9F1D6' stroke='#00242E' stroke-width='1.5'/><text x='268' y='106' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>3. Material properties (C)</text>",
+     "svg": "<text x='116' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#6E2B3F'>Refresh first</text><text x='268' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Materials</text><text x='426' y='20' text-anchor='middle' font-size='11' font-weight='600' fill='#2E563B'>Comes back in</text><text x='182' y='83' text-anchor='end' font-size='10' font-weight='400' fill='#6E2B3F'>Mechanics B: Stress and strain</text><line x1='186.0' y1='79.0' x2='198.0' y2='77.0' stroke='#6E2B3F' stroke-width='1'/><line x1='186.0' y1='79.0' x2='198.0' y2='103.0' stroke='#6E2B3F' stroke-width='1'/><text x='360' y='55' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Structural H: Concrete design</text><line x1='338.0' y1='103.0' x2='356.0' y2='51.0' stroke='#2E563B' stroke-width='1'/><text x='360' y='111' text-anchor='start' font-size='10' font-weight='400' fill='#2E563B'>Transport B: Pavements</text><line x1='338.0' y1='51.0' x2='356.0' y2='107.0' stroke='#2E563B' stroke-width='1'/><rect x='198.0' y='40.0' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='54' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>1. Mix design (A)</text><rect x='198.0' y='66.0' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='80' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>2. Test methods (B)</text><rect x='198.0' y='92.0' width='140.0' height='22.0' fill='#CACFC1' stroke='#22221F' stroke-width='1.5'/><text x='268' y='106' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>3. Material properties (C)</text>",
      "alt": "How Materials connects: the subtopics in a suggested study order, the earlier topics to refresh first, and the later topics that use this one.",
      "caption": "How this topic connects. The middle column is a suggested study order; the left column lists earlier lessons to refresh first; the right column shows where this topic is used again."
     }
@@ -252,7 +252,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 216",
-     "svg": "<line x1='50.0' y1='190.0' x2='207.0' y2='190.0' stroke='#00242E' stroke-width='1.5'/><path d='M215.0 190.0 L207.0 186.0 L207.0 194.0 Z' fill='#00242E'/><line x1='50.0' y1='190.0' x2='50.0' y2='28.0' stroke='#00242E' stroke-width='1.5'/><path d='M50.0 20.0 L46.0 28.0 L54.0 28.0 Z' fill='#00242E'/><text x='215' y='206' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'></text><text x='56' y='24' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>strength</text><path d='M50.0 21.0 L52.5 23.9 L55.0 26.7 L57.5 29.4 L60.0 32.1 L62.5 34.8 L65.0 37.4 L67.5 40.0 L70.0 42.5 L72.5 45.0 L75.0 47.5 L77.5 49.9 L80.0 52.2 L82.5 54.5 L85.0 56.8 L87.5 59.1 L90.0 61.3 L92.5 63.5 L95.0 65.6 L97.5 67.7 L100.0 69.7 L102.5 71.8 L105.0 73.8 L107.5 75.7 L110.0 77.7 L112.5 79.5 L115.0 81.4 L117.5 83.2 L120.0 85.0 L122.5 86.8 L125.0 88.5 L127.5 90.3 L130.0 91.9 L132.5 93.6 L135.0 95.2 L137.5 96.8 L140.0 98.4 L142.5 99.9 L145.0 101.4 L147.5 102.9 L150.0 104.4 L152.5 105.9 L155.0 107.3 L157.5 108.7 L160.0 110.0 L162.5 111.4 L165.0 112.7 L167.5 114.0 L170.0 115.3 L172.5 116.6 L175.0 117.8 L177.5 119.0 L180.0 120.2 L182.5 121.4 L185.0 122.5 L187.5 123.7 L190.0 124.8 L192.5 125.9 L195.0 127.0 L197.5 128.0 L200.0 129.1' fill='none' stroke='#00574A' stroke-width='2.5'/><text x='132' y='210' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>water-cement ratio (0.3 to 0.8)</text><text x='120' y='48' text-anchor='start' font-size='11' font-weight='400' fill='#00574A'>more water,</text><text x='120' y='62' text-anchor='start' font-size='11' font-weight='400' fill='#00574A'>weaker concrete</text><rect x='236.0' y='20.0' width='36.0' height='69.7' fill='#EEEDE8' stroke='#00242E' stroke-width='1'/><text x='280' y='59' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Coarse aggregate 41%</text><rect x='236.0' y='89.7' width='36.0' height='44.2' fill='#E7E8E8' stroke='#00242E' stroke-width='1'/><text x='280' y='116' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Fine aggregate 26%</text><rect x='236.0' y='133.9' width='36.0' height='10.2' fill='#FFFFFF' stroke='#00242E' stroke-width='1'/><text x='280' y='143' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Air 6%</text><rect x='236.0' y='144.1' width='36.0' height='27.2' fill='#568CBB' fill-opacity='0.5' stroke='#00242E' stroke-width='1'/><text x='280' y='162' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Water 16%</text><rect x='236.0' y='171.3' width='36.0' height='18.7' fill='#00242E' stroke='#00242E' stroke-width='1'/><text x='280' y='185' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Cement 11%</text><text x='254' y='206' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>typical, by volume</text>",
+     "svg": "<line x1='50.0' y1='190.0' x2='207.0' y2='190.0' stroke='#22221F' stroke-width='1.5'/><path d='M215.0 190.0 L207.0 186.0 L207.0 194.0 Z' fill='#22221F'/><line x1='50.0' y1='190.0' x2='50.0' y2='28.0' stroke='#22221F' stroke-width='1.5'/><path d='M50.0 20.0 L46.0 28.0 L54.0 28.0 Z' fill='#22221F'/><text x='215' y='206' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'></text><text x='56' y='24' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>strength</text><path d='M50.0 21.0 L52.5 23.9 L55.0 26.7 L57.5 29.4 L60.0 32.1 L62.5 34.8 L65.0 37.4 L67.5 40.0 L70.0 42.5 L72.5 45.0 L75.0 47.5 L77.5 49.9 L80.0 52.2 L82.5 54.5 L85.0 56.8 L87.5 59.1 L90.0 61.3 L92.5 63.5 L95.0 65.6 L97.5 67.7 L100.0 69.7 L102.5 71.8 L105.0 73.8 L107.5 75.7 L110.0 77.7 L112.5 79.5 L115.0 81.4 L117.5 83.2 L120.0 85.0 L122.5 86.8 L125.0 88.5 L127.5 90.3 L130.0 91.9 L132.5 93.6 L135.0 95.2 L137.5 96.8 L140.0 98.4 L142.5 99.9 L145.0 101.4 L147.5 102.9 L150.0 104.4 L152.5 105.9 L155.0 107.3 L157.5 108.7 L160.0 110.0 L162.5 111.4 L165.0 112.7 L167.5 114.0 L170.0 115.3 L172.5 116.6 L175.0 117.8 L177.5 119.0 L180.0 120.2 L182.5 121.4 L185.0 122.5 L187.5 123.7 L190.0 124.8 L192.5 125.9 L195.0 127.0 L197.5 128.0 L200.0 129.1' fill='none' stroke='#2E563B' stroke-width='2.5'/><text x='132' y='210' text-anchor='middle' font-size='10' font-weight='400' fill='#22221F'>water-cement ratio (0.3 to 0.8)</text><text x='120' y='48' text-anchor='start' font-size='11' font-weight='400' fill='#2E563B'>more water,</text><text x='120' y='62' text-anchor='start' font-size='11' font-weight='400' fill='#2E563B'>weaker concrete</text><rect x='236.0' y='20.0' width='36.0' height='69.7' fill='#E2CBA0' stroke='#22221F' stroke-width='1'/><text x='280' y='59' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>Coarse aggregate 41%</text><rect x='236.0' y='89.7' width='36.0' height='44.2' fill='#D8C5C2' stroke='#22221F' stroke-width='1'/><text x='280' y='116' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>Fine aggregate 26%</text><rect x='236.0' y='133.9' width='36.0' height='10.2' fill='#F6F1E7' stroke='#22221F' stroke-width='1'/><text x='280' y='143' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>Air 6%</text><rect x='236.0' y='144.1' width='36.0' height='27.2' fill='#6E2B3F' fill-opacity='0.5' stroke='#22221F' stroke-width='1'/><text x='280' y='162' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>Water 16%</text><rect x='236.0' y='171.3' width='36.0' height='18.7' fill='#22221F' stroke='#22221F' stroke-width='1'/><text x='280' y='185' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>Cement 11%</text><text x='254' y='206' text-anchor='middle' font-size='10' font-weight='400' fill='#22221F'>typical, by volume</text>",
      "alt": "Concrete mix design: strength falls as the water-cement ratio rises (left); a typical mix by volume is mostly aggregate, with cement, water and some entrained air (right).",
      "caption": "Concrete mix design: strength falls as the water-cement ratio rises (left); a typical mix by volume is mostly aggregate, with cement, water and some entrained air (right)."
     }
@@ -282,7 +282,7 @@
       "find": [
        "water-cement ratio"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -293,7 +293,7 @@
       "find": [
        "water-cement ratio"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -302,7 +302,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -335,7 +335,7 @@
       "find": [
        "concrete"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -344,7 +344,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -353,7 +353,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]
@@ -507,7 +507,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 226",
-     "svg": "<path d='M30 180 L48 70 L84 70 L102 180 Z' fill='none' stroke='#00242E' stroke-width='2' stroke-dasharray='6 4'/><text x='66' y='60' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>cone mould</text><path d='M115 180 Q115 116 140 100 Q165 90 190 100 Q215 116 215 180 Z' fill='#D9F1D6' stroke='#1B795A' stroke-width='2'/><line x1='20.0' y1='180.0' x2='230.0' y2='180.0' stroke='#00242E' stroke-width='2'/><line x1='84.0' y1='70.0' x2='196.0' y2='70.0' stroke='#00242E' stroke-width='1' stroke-dasharray='6 4'/><line x1='202.0' y1='70.0' x2='202.0' y2='94.0' stroke='#00574A' stroke-width='1'/><line x1='197.0' y1='70.0' x2='207.0' y2='70.0' stroke='#00574A' stroke-width='1'/><line x1='197.0' y1='94.0' x2='207.0' y2='94.0' stroke='#00574A' stroke-width='1'/><text x='210' y='86' text-anchor='start' font-size='11' font-weight='400' fill='#00574A'>slump</text><text x='124' y='204' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>Slump test: workability of fresh concrete</text><text x='124' y='218' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>cone 300 mm (12 in) tall; slump = drop of the top</text><rect x='258.0' y='70.0' width='40.0' height='100.0' fill='#EEEDE8' stroke='#00242E' stroke-width='1.5'/><rect x='246.0' y='56.0' width='64.0' height='12.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><rect x='246.0' y='172.0' width='64.0' height='12.0' fill='#E7E8E8' stroke='#00242E' stroke-width='1.5'/><line x1='278.0' y1='22.0' x2='278.0' y2='44.0' stroke='#00574A' stroke-width='2.5'/><path d='M278.0 54.0 L283.0 44.0 L273.0 44.0 Z' fill='#00574A'/><line x1='278.0' y1='216.0' x2='278.0' y2='196.0' stroke='#00574A' stroke-width='2.5'/><path d='M278.0 186.0 L273.0 196.0 L283.0 196.0 Z' fill='#00574A'/><text x='318' y='100' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>Cylinder</text><text x='318' y='115' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>break:</text><text x='318' y='130' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>f'c = P / A</text><text x='318' y='145' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>at 28 days</text>",
+     "svg": "<path d='M30 180 L48 70 L84 70 L102 180 Z' fill='none' stroke='#22221F' stroke-width='2' stroke-dasharray='6 4'/><text x='66' y='60' text-anchor='middle' font-size='10' font-weight='400' fill='#22221F'>cone mould</text><path d='M115 180 Q115 116 140 100 Q165 90 190 100 Q215 116 215 180 Z' fill='#CACFC1' stroke='#2E563B' stroke-width='2'/><line x1='20.0' y1='180.0' x2='230.0' y2='180.0' stroke='#22221F' stroke-width='2'/><line x1='84.0' y1='70.0' x2='196.0' y2='70.0' stroke='#22221F' stroke-width='1' stroke-dasharray='6 4'/><line x1='202.0' y1='70.0' x2='202.0' y2='94.0' stroke='#2E563B' stroke-width='1'/><line x1='197.0' y1='70.0' x2='207.0' y2='70.0' stroke='#2E563B' stroke-width='1'/><line x1='197.0' y1='94.0' x2='207.0' y2='94.0' stroke='#2E563B' stroke-width='1'/><text x='210' y='86' text-anchor='start' font-size='11' font-weight='400' fill='#2E563B'>slump</text><text x='124' y='204' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>Slump test: workability of fresh concrete</text><text x='124' y='218' text-anchor='middle' font-size='10' font-weight='400' fill='#22221F'>cone 300 mm (12 in) tall; slump = drop of the top</text><rect x='258.0' y='70.0' width='40.0' height='100.0' fill='#E2CBA0' stroke='#22221F' stroke-width='1.5'/><rect x='246.0' y='56.0' width='64.0' height='12.0' fill='#D8C5C2' stroke='#22221F' stroke-width='1.5'/><rect x='246.0' y='172.0' width='64.0' height='12.0' fill='#D8C5C2' stroke='#22221F' stroke-width='1.5'/><line x1='278.0' y1='22.0' x2='278.0' y2='44.0' stroke='#2E563B' stroke-width='2.5'/><path d='M278.0 54.0 L283.0 44.0 L273.0 44.0 Z' fill='#2E563B'/><line x1='278.0' y1='216.0' x2='278.0' y2='196.0' stroke='#2E563B' stroke-width='2.5'/><path d='M278.0 186.0 L273.0 196.0 L283.0 196.0 Z' fill='#2E563B'/><text x='318' y='100' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>Cylinder</text><text x='318' y='115' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>break:</text><text x='318' y='130' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>f'c = P / A</text><text x='318' y='145' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>at 28 days</text>",
      "alt": "Two standard concrete tests: the slump test measures how far fresh concrete sags when the cone is lifted; the cylinder test crushes a hardened cylinder to give the compressive strength f'c.",
      "caption": "Two standard concrete tests: the slump test measures how far fresh concrete sags when the cone is lifted; the cylinder test crushes a hardened cylinder to give the compressive strength f'c."
     }
@@ -570,7 +570,7 @@
       "find": [
        "tensile strength"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -579,7 +579,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -588,7 +588,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -597,7 +597,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -606,7 +606,7 @@
       "section": "",
       "page": "",
       "find": [],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]
@@ -804,7 +804,7 @@
    "figures": [
     {
      "viewBox": "0 0 400 236",
-     "svg": "<line x1='30.0' y1='190.0' x2='197.0' y2='190.0' stroke='#00242E' stroke-width='1.5'/><path d='M205.0 190.0 L197.0 186.0 L197.0 194.0 Z' fill='#00242E'/><line x1='30.0' y1='190.0' x2='30.0' y2='28.0' stroke='#00242E' stroke-width='1.5'/><path d='M30.0 20.0 L26.0 28.0 L34.0 28.0 Z' fill='#00242E'/><text x='205' y='206' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>ε</text><text x='36' y='24' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>stress σ</text><path d='M30 190 L60 80 L100 80 Q140 40 165 50 Q180 58 190 78' fill='none' stroke='#00574A' stroke-width='2.5'/><circle cx='190.0' cy='78.0' r='4' fill='#FF6622'/><text x='64' y='72' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>Fy (yield)</text><text x='150' y='36' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>Fu (ultimate)</text><text x='196' y='74' text-anchor='start' font-size='10' font-weight='400' fill='#FF6622'>break</text><text x='52' y='140' text-anchor='start' font-size='10' font-weight='600' fill='#00574A'>slope = E</text><text x='118' y='226' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Steel: yields, stretches far: ductile</text><line x1='230.0' y1='190.0' x2='387.0' y2='190.0' stroke='#00242E' stroke-width='1.5'/><path d='M395.0 190.0 L387.0 186.0 L387.0 194.0 Z' fill='#00242E'/><line x1='230.0' y1='190.0' x2='230.0' y2='28.0' stroke='#00242E' stroke-width='1.5'/><path d='M230.0 20.0 L226.0 28.0 L234.0 28.0 Z' fill='#00242E'/><text x='395' y='206' text-anchor='end' font-size='11' font-weight='400' fill='#00242E'>ε</text><text x='236' y='24' text-anchor='start' font-size='11' font-weight='400' fill='#00242E'>stress σ</text><path d='M230 190 Q275 70 305 66 Q330 66 350 95' fill='none' stroke='#568CBB' stroke-width='2.5'/><circle cx='350.0' cy='95.0' r='4' fill='#FF6622'/><line x1='305.0' y1='66.0' x2='305.0' y2='190.0' stroke='#00242E' stroke-width='1' stroke-dasharray='6 4'/><text x='305' y='58' text-anchor='middle' font-size='11' font-weight='600' fill='#00242E'>f'c</text><text x='305' y='204' text-anchor='middle' font-size='10' font-weight='400' fill='#00242E'>0.002</text><line x1='350.0' y1='95.0' x2='350.0' y2='190.0' stroke='#00242E' stroke-width='1' stroke-dasharray='6 4'/><text x='352' y='204' text-anchor='start' font-size='10' font-weight='400' fill='#00242E'>0.003</text><text x='354' y='92' text-anchor='start' font-size='10' font-weight='400' fill='#FF6622'>crushes</text><text x='312' y='226' text-anchor='middle' font-size='10' font-weight='600' fill='#00242E'>Concrete in compression: brittle</text>",
+     "svg": "<line x1='30.0' y1='190.0' x2='197.0' y2='190.0' stroke='#22221F' stroke-width='1.5'/><path d='M205.0 190.0 L197.0 186.0 L197.0 194.0 Z' fill='#22221F'/><line x1='30.0' y1='190.0' x2='30.0' y2='28.0' stroke='#22221F' stroke-width='1.5'/><path d='M30.0 20.0 L26.0 28.0 L34.0 28.0 Z' fill='#22221F'/><text x='205' y='206' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>ε</text><text x='36' y='24' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>stress σ</text><path d='M30 190 L60 80 L100 80 Q140 40 165 50 Q180 58 190 78' fill='none' stroke='#2E563B' stroke-width='2.5'/><circle cx='190.0' cy='78.0' r='4' fill='#6E2B3F'/><text x='64' y='72' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>Fy (yield)</text><text x='150' y='36' text-anchor='middle' font-size='10' font-weight='400' fill='#22221F'>Fu (ultimate)</text><text x='196' y='74' text-anchor='start' font-size='10' font-weight='400' fill='#6E2B3F'>break</text><text x='52' y='140' text-anchor='start' font-size='10' font-weight='600' fill='#2E563B'>slope = E</text><text x='118' y='226' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>Steel: yields, stretches far: ductile</text><line x1='230.0' y1='190.0' x2='387.0' y2='190.0' stroke='#22221F' stroke-width='1.5'/><path d='M395.0 190.0 L387.0 186.0 L387.0 194.0 Z' fill='#22221F'/><line x1='230.0' y1='190.0' x2='230.0' y2='28.0' stroke='#22221F' stroke-width='1.5'/><path d='M230.0 20.0 L226.0 28.0 L234.0 28.0 Z' fill='#22221F'/><text x='395' y='206' text-anchor='end' font-size='11' font-weight='400' fill='#22221F'>ε</text><text x='236' y='24' text-anchor='start' font-size='11' font-weight='400' fill='#22221F'>stress σ</text><path d='M230 190 Q275 70 305 66 Q330 66 350 95' fill='none' stroke='#6E2B3F' stroke-width='2.5'/><circle cx='350.0' cy='95.0' r='4' fill='#6E2B3F'/><line x1='305.0' y1='66.0' x2='305.0' y2='190.0' stroke='#22221F' stroke-width='1' stroke-dasharray='6 4'/><text x='305' y='58' text-anchor='middle' font-size='11' font-weight='600' fill='#22221F'>f'c</text><text x='305' y='204' text-anchor='middle' font-size='10' font-weight='400' fill='#22221F'>0.002</text><line x1='350.0' y1='95.0' x2='350.0' y2='190.0' stroke='#22221F' stroke-width='1' stroke-dasharray='6 4'/><text x='352' y='204' text-anchor='start' font-size='10' font-weight='400' fill='#22221F'>0.003</text><text x='354' y='92' text-anchor='start' font-size='10' font-weight='400' fill='#6E2B3F'>crushes</text><text x='312' y='226' text-anchor='middle' font-size='10' font-weight='600' fill='#22221F'>Concrete in compression: brittle</text>",
      "alt": "Stress-strain curves: steel is linear to yield, then stretches a long way before breaking (ductile); concrete in compression peaks at f'c near a strain of 0.002 and crushes at about 0.003 (brittle).",
      "caption": "Stress-strain curves: steel is linear to yield, then stretches a long way before breaking (ductile); concrete in compression peaks at f'c near a strain of 0.002 and crushes at about 0.003 (brittle)."
     }
@@ -838,7 +838,7 @@
       "find": [
        "compressive strength"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -849,7 +849,7 @@
       "find": [
        "Hooke's law"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -860,7 +860,7 @@
       "find": [
        "modulus of elasticity"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -871,7 +871,7 @@
       "find": [
        "percent elongation"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -893,7 +893,7 @@
       "find": [
        "reduction in area"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -904,7 +904,7 @@
       "find": [
        "elastic strain energy"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      },
      {
@@ -915,7 +915,7 @@
       "find": [
        "modular ratio"
       ],
-      "time": "about 3 min",
+      "time": "about 2 min",
       "n": 4
      },
      {
@@ -926,7 +926,7 @@
       "find": [
        "true stress"
       ],
-      "time": "about 3 min",
+      "time": "about 1.5 min",
       "n": 4
      }
     ]

@@ -39,7 +39,7 @@ One JSON object per question, stored in `site/content/questions/<topic>.json` (a
 
 ## Rich text
 
-Albert Sans has no sigma, tau, rho, gamma, phi or theta, so name those quantities in words ("stress", "friction angle") instead of using the symbols. Delta, mu, pi and omega are available.
+The site's typeface may have no sigma, tau, rho, gamma, phi or theta, so name those quantities in words ("stress", "friction angle") instead of using the symbols. Delta, mu, pi and omega are available.
 
 Plain text plus: `**bold**`, `*italic*`, `` `code` ``, `x_{sub}`, `x^{sup}`, `\frac{a}{b}`, `\sqrt{x}`, blank line for a new paragraph, lines starting with `- ` for a list. HTML is escaped, not rendered.
 
